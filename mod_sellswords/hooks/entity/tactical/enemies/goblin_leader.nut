@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/goblin_leader", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/goblin_leader", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/traits/brave_trait"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
@@ -32,4 +32,4 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
-}); 
+});

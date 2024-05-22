@@ -1,9 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/bandit_raider_low", function(o) {
-	
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/bandit_raider_low", function(q)
+{
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local r = this.Math.rand(0, 7);
 
@@ -153,4 +152,4 @@
 			}
 		}
 	}		
-});	
+});

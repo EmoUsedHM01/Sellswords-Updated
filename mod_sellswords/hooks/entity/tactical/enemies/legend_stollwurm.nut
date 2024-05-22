@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/legend_stollwurm", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords("entity/tactical/enemies/legend_stollwurm", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.BaseProperties.IsImmuneToKnockBackAndGrab = true;
 		this.m.BaseProperties.IsImmuneToStun = true;
 		this.m.BaseProperties.IsMovable = false;

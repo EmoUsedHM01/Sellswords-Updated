@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/bandit_leader", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/bandit_leader", function(q)
+{
+	q.onInit = @( __original ) function()
 	{		
-		onInit();
+		__original();
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 40)
 		{
 			this.m.BaseProperties.MeleeSkill += 2;
@@ -40,10 +40,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
 		{
@@ -172,7 +171,7 @@
 			]));
 		}			
 	}
-	o.makeMiniboss = function ()
+	q.makeMiniboss = @( __original ) function ()
 	{
 		if (!this.actor.makeMiniboss())
 		{

@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/legend_demon_hound", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/legend_demon_hound", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 
 		this.m.ActionPointCosts = this.Const.LegendFlightMovementAPCost;
 		this.m.FatigueCosts = this.Const.LegendFlightMovementFatigueCost;
@@ -22,7 +22,7 @@
 		}			
 	}
 
-	o.onDamageReceived = function( _attacker, _skill, _hitInfo )
+	q.onDamageReceived = @( __original ) function( _attacker, _skill, _hitInfo )
 	{
 		this.actor.onDamageReceived(_attacker, _skill, _hitInfo);
 
@@ -148,4 +148,4 @@
 			this.onTeleportStart(tag);
 		}
 	}
-}); 
+});

@@ -1,5 +1,6 @@
-::mods_hookExactClass("entity/tactical/enemies/orc_warrior_low", function(o) {
-	o.assignRandomEquipment = function()
+::Mod_Sellswords("entity/tactical/enemies/orc_warrior_low", function(q)
+{
+	q.assignRandomEquipment = @( __original ) function()
 	{
 		local r;
 		r = this.Math.rand(1, 6);
@@ -107,4 +108,4 @@
 		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));				
 
 	}
-});	
+});

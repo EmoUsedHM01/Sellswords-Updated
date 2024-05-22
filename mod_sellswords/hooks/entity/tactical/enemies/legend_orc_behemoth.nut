@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/legend_orc_behemoth", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/legend_orc_behemoth", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_adrenalin"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
 		local dc = this.World.getTime().Days;	
@@ -62,7 +62,7 @@
 		}				
 	}
 
-	o.assignRandomEquipment = function()	
+	q.assignRandomEquipment = @( __original ) function()	
 	{
 		local r;
 		r = this.Math.rand(1, 4);

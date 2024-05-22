@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/wolf", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/wolf", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
@@ -30,4 +30,4 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
-});	
+});

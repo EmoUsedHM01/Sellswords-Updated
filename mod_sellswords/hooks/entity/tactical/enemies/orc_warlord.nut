@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/orc_warlord", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/orc_warlord", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();			
+		__original();			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));						
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));
 
@@ -64,8 +64,8 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}		
 	}
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
+
+	q.assignRandomEquipment = @( __original ) function()
 	{
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
 		{
@@ -111,7 +111,7 @@
 		this.m.Skills.removeByID("perk.ptr_kata");			
 	}
 	
-	o.makeMiniboss = function ()
+	q.makeMiniboss = @( __original ) function ()
 	{
 		if (!this.actor.makeMiniboss())
 		{
