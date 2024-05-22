@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/legend_peasant_squire", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_peasant_squire", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();				
+		__original();				
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 40)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_muscularity"));
@@ -43,4 +43,4 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
-});	
+});

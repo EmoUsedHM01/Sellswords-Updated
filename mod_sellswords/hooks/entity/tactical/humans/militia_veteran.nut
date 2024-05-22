@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/militia_veteran", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/militia_veteran", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.removeByID("perk.ptr_survival_instinct");
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
@@ -19,10 +19,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
+    q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
 		
 		local r;
 

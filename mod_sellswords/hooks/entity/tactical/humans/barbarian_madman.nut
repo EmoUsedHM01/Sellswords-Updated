@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/barbarian_madman", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/barbarian_madman", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBruiser"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)

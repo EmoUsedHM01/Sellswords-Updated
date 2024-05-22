@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/free_company_billman", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/free_company_billman", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
 
 		if (::Is_PTR_Exist)
@@ -23,10 +23,9 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
+	q.assignRandomEquipment = @( __original ) function()
 	{
-		assignRandomEquipment();
+		__original();
 
 		//if (::Is_PTR_Exist)
 		//{
@@ -35,4 +34,4 @@
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 	}		
-}); 
+});

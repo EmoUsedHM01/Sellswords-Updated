@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/barbarian_chosen", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/barbarian_chosen", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.removeByID("perk.perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
@@ -45,10 +45,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
+    q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
@@ -166,9 +165,9 @@
 			this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));
 		}
 	}	
-	o.makeMiniboss = function()
+	q.makeMiniboss = @( __original ) function()
 	{
-		if (!this.actor.makeMiniboss())
+		if (!__original())
 		{
 			return false;
 		}

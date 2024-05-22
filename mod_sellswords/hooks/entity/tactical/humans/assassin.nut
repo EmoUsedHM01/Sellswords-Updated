@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/assassin", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/assassin", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
 		local dc = this.World.getTime().Days;
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");
@@ -25,9 +25,9 @@
 		}		
 	}
 
-	o.makeMiniboss = function()
+	q.makeMiniboss = @( __original ) function()
 	{
-		if (!this.actor.makeMiniboss())
+		if (!__original())
 		{
 			return false;
 		}

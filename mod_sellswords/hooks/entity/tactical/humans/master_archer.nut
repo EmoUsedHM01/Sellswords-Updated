@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/master_archer", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/master_archer", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));	
 
 		if (::Is_PTR_Exist)
@@ -24,10 +24,9 @@
 		}	
 	}
 	
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
+    q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
@@ -116,4 +115,4 @@
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 	}		
-});	
+});

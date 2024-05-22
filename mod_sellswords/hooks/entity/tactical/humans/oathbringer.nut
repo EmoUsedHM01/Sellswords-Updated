@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/oathbringer", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/oathbringer", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));				
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));	
@@ -43,10 +43,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
+    q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
@@ -136,10 +135,9 @@
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 	}
 
-	local ws_makeMiniboss = o.makeMiniboss;
-	o.makeMiniboss = function()
+	q.makeMiniboss = @( __original ) function()
 	{
-		if (!ws_makeMiniboss())
+		if (!__original())
 		{
 			return false;
 		}

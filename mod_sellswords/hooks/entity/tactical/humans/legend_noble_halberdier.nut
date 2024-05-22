@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/legend_noble_halberdier", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_noble_halberdier", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 120)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));		
@@ -26,10 +26,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
+    q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
 		
 		local r;
 		local banner = 3;
@@ -104,4 +103,4 @@
 			]))
 		}
 	}
-});	
+});

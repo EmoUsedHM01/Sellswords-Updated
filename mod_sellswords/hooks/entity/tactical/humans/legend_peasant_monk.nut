@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/legend_peasant_monk", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_peasant_monk", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		this.human.onInit();
+		this.human.__original();
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.LegendPeasantMonk);
 		this.m.ActionPoints = b.ActionPoints;
@@ -81,10 +81,9 @@
 		}			
 	}
 	
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
+    q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
 		
 		local r;
 		r = this.Math.rand(1, 4);
@@ -146,4 +145,4 @@
 			this.m.Items.equip(item);
 		}
 	}		
-});	
+});

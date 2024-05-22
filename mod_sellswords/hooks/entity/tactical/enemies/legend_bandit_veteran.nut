@@ -31,17 +31,9 @@
 		}			
 	}
 
-<<<<<<< HEAD
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
-=======
 	q.assignRandomEquipment = @( __original ) function()
     {
-		__original();
->>>>>>> e234759 (Refactor enemies to modern hooks)
-		
+		__original();		
 		local r;
 		local weapons;
 		local dc = this.World.getTime().Days;			

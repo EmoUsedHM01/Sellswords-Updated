@@ -28,18 +28,10 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}		
 	}
-<<<<<<< HEAD
-
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
-=======
 	
 	q.assignRandomEquipment = @( __original ) function()
     {
 		__original();
->>>>>>> e234759 (Refactor enemies to modern hooks)
 		
 		local shields = clone this.Const.Items.NamedShields;
 		shields.extend([

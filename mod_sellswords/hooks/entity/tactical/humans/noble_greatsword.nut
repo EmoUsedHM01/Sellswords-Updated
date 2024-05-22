@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/noble_greatsword", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/noble_greatsword", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.BaseProperties.DamageTotalMult += 0.15;	
 
 		if (::Is_PTR_Exist)
@@ -49,10 +49,9 @@
 		}		
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
+    q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
 		
 		local r;
 		local banner = 3;
@@ -158,9 +157,9 @@
 			]));
 		}			
 	}
-	o.makeMiniboss <- function()
+	q.makeMiniboss <- function()
 	{
-		if (!this.actor.makeMiniboss())
+		if (!__original())
 		{
 			return false;
 		}
