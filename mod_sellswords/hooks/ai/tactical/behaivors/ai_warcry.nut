@@ -1,4 +1,4 @@
-::mods_hookExactClass("ai/tactical/behaviors/ai_warcry", function ( o )
+::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/ai_warcry", function ( q )
 {
-	o.m.PossibleSkills.push("actives.kuangzhanshinuhou");	
+	q.m.PossibleSkills.push("actives.kuangzhanshinuhou");	
 });

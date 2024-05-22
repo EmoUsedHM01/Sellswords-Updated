@@ -1,4 +1,4 @@
-::mods_hookExactClass("ai/tactical/behaviors/ai_boost_morale", function ( o )
+::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/ai_boost_morale", function ( q )
 {
-	o.m.PossibleSkills.push("actives.crwhip");	
+	q.m.PossibleSkills.push("actives.crwhip");	
 });

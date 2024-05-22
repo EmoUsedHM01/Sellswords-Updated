@@ -1,5 +1,6 @@
-::mods_hookExactClass("ai/world/orders/mercenary_order", function(o) {
-	o.onExecute = function( _entity, _hasChanged )
+::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/mercenary_order", function ( q )
+{
+	q.onExecute = @( __original ) function( _entity, _hasChanged )
 	{
 		if (this.m.TargetSettlement == null || this.m.TargetSettlement.isNull() || !this.m.TargetSettlement.isAlive())
 		{

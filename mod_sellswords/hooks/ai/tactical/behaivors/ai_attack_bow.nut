@@ -1,4 +1,4 @@
-::mods_hookExactClass("ai/tactical/behaviors/ai_attack_bow", function ( o )
+::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/ai_attack_bow", function ( q )
 {
-	o.m.PossibleSkills.push("actives.legend_piercing_bolt");	
+	q.m.PossibleSkills.push("actives.legend_piercing_bolt");	
 });
