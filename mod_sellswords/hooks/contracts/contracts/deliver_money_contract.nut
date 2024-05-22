@@ -1,6 +1,6 @@
-::mods_hookExactClass("contracts/contracts/deliver_money_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/deliver_money_contract", function(q)
 {
-	o.setup = function()
+	q.setup = @( __original ) function()
 	{
 		local settlements = this.World.EntityManager.getSettlements();
 		local candidates = [];
@@ -88,10 +88,9 @@
 		this.m.Flags.set("Distance", distance);
 	}
 
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	q.createStates = @(__original) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -173,10 +172,9 @@
 		}
 	}
 
-	local ws_createScreens = o.createScreens;
-	o.createScreens = function()
+	q.createScreens = @( __original ) function()
 	{
-		ws_createScreens();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
@@ -251,4 +249,4 @@
 			}
 		}
 	}
-})
+});

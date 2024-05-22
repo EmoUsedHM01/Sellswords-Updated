@@ -1,9 +1,8 @@
-::mods_hookExactClass("contracts/contracts/hold_chokepoint_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/hold_chokepoint_contract", function(q)
 {
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	q.createStates = @( __original ) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -184,7 +183,7 @@
 		}
 	}
 
-	o.spawnAllies = function()
+	q.spawnAllies = @( __original ) function()
 	{
 		local cityState = this.World.FactionManager.getFaction(this.getFaction());
 		local mapSize = this.World.getMapSize();
@@ -303,4 +302,4 @@
 		guard.setTime(240.0);
 		c.addOrder(guard);
 	}
-})
+});

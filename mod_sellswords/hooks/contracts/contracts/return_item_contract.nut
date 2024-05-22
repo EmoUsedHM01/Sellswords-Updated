@@ -1,6 +1,6 @@
-::mods_hookExactClass("contracts/contracts/return_item_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/return_item_contract", function(q)
 {
-	o.start = function()
+	q.start = @( __original ) function()
 	{
 		local crstrength = this.World.State.getPlayer().getStrength();
 		crstrength = this.Math.min(50 * crstrength, 400);	
@@ -31,10 +31,9 @@
 		this.contract.start();
 	}
 
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	q.createStates = @( __original ) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -90,4 +89,4 @@
 			break;
 		}
 	}
-})
+});

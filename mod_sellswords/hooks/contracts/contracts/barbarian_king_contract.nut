@@ -1,9 +1,8 @@
-::mods_hookExactClass("contracts/contracts/barbarian_king_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/barbarian_king_contract", function(q)
 {
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	q.createStates = @(__original) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -60,4 +59,4 @@
 			break;
 		}
 	}
-})
+});

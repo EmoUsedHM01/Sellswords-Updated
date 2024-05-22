@@ -1,9 +1,8 @@
-::mods_hookExactClass("contracts/contracts/free_greenskin_prisoners_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/free_greenskin_prisoners_contract", function(q)
 {
-	local ws_createScreens = o.createScreens;
-	o.createScreens = function()
+	q.createScreens = @( __original ) function()
 	{
-		ws_createScreens();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
@@ -149,4 +148,4 @@
 			}
 		}
 	}
-})
+});

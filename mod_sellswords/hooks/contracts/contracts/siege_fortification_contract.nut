@@ -1,9 +1,8 @@
-::mods_hookExactClass("contracts/contracts/siege_fortification_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/siege_fortification_contract", function(q)
 {
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	q.createStates = @( __original ) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -119,10 +118,9 @@
 		}
 	}
 
-	local ws_createScreens = o.createScreens;
-	o.createScreens = function()
+	q.createScreens = @( __original ) function()
 	{
-		ws_createScreens();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
@@ -360,7 +358,7 @@
 		}
 	}
 
-	o.spawnReliefForces = function()
+	q.spawnReliefForces = @( __original ) function()
 	{
 		local tile;
 		local originTile = this.m.Origin.getTile();
@@ -442,7 +440,7 @@
 		c.addOrder(wait);
 	}
 
-	o.spawnSupplyCaravan = function()
+	q.spawnSupplyCaravan = @( __original ) function()
 	{
 		local tile;
 		local originTile = this.m.Origin.getTile();
@@ -503,7 +501,7 @@
 		c.addOrder(despawn);
 	}
 
-	o.spawnSiege = function()
+	q.spawnSiege = @( __original ) function()
 	{
 		this.m.SituationID = this.m.Origin.addSituation(this.new("scripts/entity/world/settlements/situations/besieged_situation"));
 
@@ -635,4 +633,4 @@
 		}
 	}
 
-})
+});

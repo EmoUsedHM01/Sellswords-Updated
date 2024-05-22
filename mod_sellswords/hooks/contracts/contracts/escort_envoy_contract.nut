@@ -1,9 +1,8 @@
-::mods_hookExactClass("contracts/contracts/escort_envoy_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/escort_envoy_contract", function(q)
 {
-	local ws_createScreens = o.createScreens;
-	o.createScreens = function()
+	q.createScreens = @(__original) function()
 	{
-		ws_createScreens();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
@@ -25,4 +24,4 @@
 			break;
 		}
 	}
-})
+});
