@@ -1,6 +1,6 @@
-::mods_hookExactClass("ai/tactical/behaviors/ai_attack_default", function ( o )
+::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/ai_attack_default", function ( q )
 {
-	o.m.PossibleSkills.extend([
+	q.m.PossibleSkills.extend([
 		"actives.twinaxes_1",
 		"actives.pseudohack",
 		"actives.twincleavers_1",
@@ -10,5 +10,5 @@
 		"actives.crcudgel_skill",
 		"actives.crdecapitate",
 		"actives.crstrike",
-	])
+	])	
 });

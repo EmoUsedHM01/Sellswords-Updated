@@ -1,4 +1,4 @@
-::mods_hookExactClass("ai/tactical/behaviors/ai_rally", function ( o )
+::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/ai_rally", function ( q )
 {
-	o.m.PossibleSkills.push("actives.banner_wave");
+	q.m.PossibleSkills.push("actives.banner_wave");
 });

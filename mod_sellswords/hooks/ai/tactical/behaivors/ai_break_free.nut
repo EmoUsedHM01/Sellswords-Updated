@@ -1,5 +1,6 @@
-::mods_hookExactClass("ai/tactical/behaviors/ai_break_free", function(o) {
-	o.onEvaluate = function( _entity )
+::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/ai_break_free", function ( q )
+{
+	q.onEvaluate = @( __original ) function( _entity )
 	{
 		this.m.Skill = null;
 		local score = this.getProperties().BehaviorMult[this.m.ID];

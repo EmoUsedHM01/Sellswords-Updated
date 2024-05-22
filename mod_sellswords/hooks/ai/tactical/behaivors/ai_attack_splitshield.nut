@@ -1,5 +1,6 @@
-::mods_hookExactClass("ai/tactical/behaviors/ai_attack_splitshield", function(o) {
-	o.onEvaluate = function( _entity )
+::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/ai_attack_splitshield", function ( q )
+{
+	q.onEvaluate = @( __original ) function( _entity )
 	{
 		this.m.TargetTile = null;
 		this.m.Skill = null;
@@ -134,4 +135,4 @@
 		this.m.TargetTile = bestTarget.getTile();
 		return this.Const.AI.Behavior.Score.SplitShield * score * bestScore;
 	}
-})
+});
