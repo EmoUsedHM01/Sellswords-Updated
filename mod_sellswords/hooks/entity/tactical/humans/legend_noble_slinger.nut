@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/legend_noble_slinger", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_noble_slinger", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 80)
 		{
 			this.m.BaseProperties.RangedSkill += 5;
@@ -41,10 +41,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local r;
 		local banner = 3;
@@ -120,4 +119,4 @@
 			]));
 		}			
 	}
-});	
+});

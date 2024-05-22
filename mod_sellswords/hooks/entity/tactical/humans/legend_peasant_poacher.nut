@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/legend_peasant_poacher", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_peasant_poacher", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.BaseProperties.Hitpoints *= 0.6667;	
 	
 		if (::Is_PTR_Exist)
@@ -72,10 +72,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local weapons;
 		local dc = this.World.getTime().Days;
@@ -259,4 +258,4 @@
 			}
 		}							
 	}
-});	
+});

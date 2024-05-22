@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/gladiator", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/gladiator", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		if (this.World.getTime().Days >= 120)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
@@ -21,10 +21,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local r;
 

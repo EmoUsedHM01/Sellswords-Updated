@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/nomad_leader", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/nomad_leader", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");
 		if (mn >= 15)
 		{
@@ -45,10 +45,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
 		{
@@ -176,9 +175,9 @@
 			]));			
 		}
 	}
-	o.makeMiniboss = function ()
+	q.makeMiniboss = function ()
 	{
-		if (!this.actor.makeMiniboss())
+		if (!__original())
 		{
 			return false;
 		}

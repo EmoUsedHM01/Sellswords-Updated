@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/legend_noble_fencer", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_noble_fencer", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 120)
 		{
 			this.m.BaseProperties.Initiative += 3;	
@@ -42,10 +42,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local banner = 3;
 		local dc = this.World.getTime().Days;				
@@ -151,9 +150,9 @@
 			]));
 		}			
 	}
-	o.makeMiniboss <- function()
+	q.makeMiniboss <- function()
 	{
-		if (!this.actor.makeMiniboss())
+		if (!__original())
 		{
 			return false;
 		}

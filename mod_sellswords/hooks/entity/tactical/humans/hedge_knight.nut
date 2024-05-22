@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/hedge_knight", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/hedge_knight", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.removeByID("perk.perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_haspecialize"));		
@@ -88,10 +88,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local dc = this.World.getTime().Days;
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");	
@@ -229,9 +228,9 @@
 			]));
 		}			
 	}
-	o.makeMiniboss = function()
+	q.makeMiniboss = @( __original ) function()
 	{
-		if (!this.actor.makeMiniboss())
+		if (!__original())
 		{
 			return false;
 		}

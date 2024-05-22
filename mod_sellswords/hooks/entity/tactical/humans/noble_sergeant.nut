@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/noble_sergeant", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/noble_sergeant", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -17,10 +17,9 @@
 		}	
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local banner = 3;
 		local dc = this.World.getTime().Days;				
@@ -81,9 +80,9 @@
 			]));
 		}
 	}
-	o.makeMiniboss <- function()
+	q.makeMiniboss <- function()
 	{
-		if (!this.actor.makeMiniboss())
+		if (!__original())
 		{
 			return false;
 		}

@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/legend_peasant_witchhunter", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_peasant_witchhunter", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.removeByID("perk.nimble");
 		this.m.BaseProperties.Hitpoints -= 20;	
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 40)
@@ -68,10 +68,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local weapons;
 		local dc = this.World.getTime().Days;

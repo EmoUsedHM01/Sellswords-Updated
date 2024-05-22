@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/nomad_outlaw", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/nomad_outlaw", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		local matchnumber = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");	
 		if (matchnumber > 15)
 		{	
@@ -22,10 +22,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local weapons = [
 			"weapons/scimitar",

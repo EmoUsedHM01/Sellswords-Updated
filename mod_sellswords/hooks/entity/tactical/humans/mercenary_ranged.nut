@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/mercenary_ranged", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/mercenary_ranged", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 
 		if (::Is_PTR_Exist)
 		{

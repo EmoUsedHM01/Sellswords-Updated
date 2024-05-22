@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/executioner", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/executioner", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_haspecialize"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crDiscipline"));
@@ -20,10 +20,9 @@
 		}			
 	}
 	
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
@@ -112,4 +111,4 @@
 			}
 		}			
 	}		
-});	
+});

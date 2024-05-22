@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/noble_arbalester", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/noble_arbalester", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		local dc = this.World.getTime().Days;			
 		if (::Is_PTR_Exist && 0.5 * dc > this.Math.rand(1, 100) && dc >= 120)
 		{
@@ -22,10 +22,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local r;
 		local banner = 3;

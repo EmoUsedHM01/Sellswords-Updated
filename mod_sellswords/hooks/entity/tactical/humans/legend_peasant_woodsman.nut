@@ -1,8 +1,9 @@
-::mods_hookExactClass("entity/tactical/humans/legend_peasant_woodsman", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_peasant_woodsman", function(q)
+{
+
+	q.onInit = @( __original ) function()
 	{
-		this.human.onInit();
+		this.human.__original();
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.LegendPeasantWoodsman);
 		this.m.ActionPoints = b.ActionPoints;
@@ -85,10 +86,9 @@
 		}			
 	}
 	
-	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
+    q.assignRandomEquipment = @( __original ) function()
     {
-		assignRandomEquipment();
+		__original();
 		
 		local dc = this.World.getTime().Days;		
 		local r;

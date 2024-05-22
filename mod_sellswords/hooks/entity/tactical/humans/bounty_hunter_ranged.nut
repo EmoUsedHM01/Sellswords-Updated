@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/bounty_hunter_ranged", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/bounty_hunter_ranged", function(q) {
+	
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		
 		if (::Is_PTR_Exist)
 		{

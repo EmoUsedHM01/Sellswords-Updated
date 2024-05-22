@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/humans/desert_stalker", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/desert_stalker", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();	
+		__original();	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));			
 		//this.m.Skills.add(this.new("scripts/skills/perks/perk_head_hunter"));
 		if (::Is_PTR_Exist)
