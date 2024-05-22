@@ -1,0 +1,38 @@
+::mods_hookExactClass("entity/tactical/humans/free_company_crossbow", function(o) {
+	local onInit = o.onInit;
+	o.onInit = function()
+	{
+		onInit();
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
+
+		if (::Is_PTR_Exist)
+		{
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));	
+		}
+				
+		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
+		{
+			local dc = this.World.getTime().Days;
+			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
+			this.m.BaseProperties.MeleeSkill += dca;
+			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
+			this.m.BaseProperties.RangedSkill += dca;	
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.Bravery += dca;
+			this.m.BaseProperties.Hitpoints += 2 * dca;	
+		}			
+	}
+	local assignRandomEquipment = o.assignRandomEquipment;
+	o.assignRandomEquipment = function()
+	{
+		assignRandomEquipment();
+
+		//if (::Is_PTR_Exist)
+		//{
+		//	this.m.Skills.addTreeOfEquippedWeapon(6);
+		//}
+		
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 6);
+	}		
+}); 

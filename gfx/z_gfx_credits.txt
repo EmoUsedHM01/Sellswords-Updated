@@ -1,0 +1,73 @@
+目录
+-----------
+1制作此mod的起因和历程
+2一些简单的mod教程
+3致谢
+------------
+1
+
+
+
+
+
+
+
+
+
+
+2
+2.1新单位
+属性Const.Tactical.Actor，Const.EntityType，Const.Strings.EntityName，Const.Strings.EntityNamePlural，Const.EntityIcon
+生成Const.World.Spawn.Troops
+详细scripts/entity/tactical/human
+生成列表在spawnlist_xxx
+可以参考config/mod_sellswords_config，entity/tactical，config/spawnlist
+2.2新物品
+2.3新技能
+2.3.1新perk
+Const.Strings.PerkName，Const.Strings.PerkDescription，Const.Perks.addPerkDefObjects(perkDefObjects)
+可以参考!mods_preload/zmod_CHIRUequipment
+2.3.2新主动技能
+2.3.3新效果
+2.4新合同
+Const.FactionTrait.Actions
+factions/contracts/xxx_action
+contracts/contracts/xxx
+2.5新事件
+2.6新地点
+2.6.1传奇地点
+factions/actions/build_unique_locations_action
+2.6.2营地
+
+
+
+
+
+
+
+
+
+
+3
+感谢给我莫大启发的制作者：
+Gilded Wraith，Luft，MuffledMagda，Wuxiangjinxing，Theplahunter等（Legends）
+LordMidas, Uberbagel, DeepBlueD（PTR）
+TaroEld（Davkul Rising，Dev Console，Stronghold）
+Encke（东方大营，兽人竞技场，武士）
+NgGH707（NgGH's Magic Origins，World Editor, Origin Customizer）
+Enduriel等（MSU）
+Shringshring（SM）
+茫然怪（茫然mod）
+... ...
+
+以及一起玩耍的小伙伴
+encke，白兔十八，苦澀の選擇，Shringshring，Dorick，雍泉居士，鲨鱼辣椒，指环王，卟卟念，洗面奶，七号，反坦克鱼类，火手... ...
+
+
+
+
+
+
+
+
+
