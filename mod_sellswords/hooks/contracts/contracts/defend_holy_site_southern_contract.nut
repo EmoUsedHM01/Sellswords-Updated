@@ -1,9 +1,8 @@
-::mods_hookExactClass("contracts/contracts/defend_holy_site_southern_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/defend_holy_site_southern_contract", function(q)
 {
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	o.createStates = @( __original ) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -216,7 +215,7 @@
 		}
 	}
 
-	o.spawnEnemy = function()
+	q.spawnEnemy = @( __original ) function()
 	{
 		local cityState = this.World.FactionManager.getFaction(this.getFaction());
 		local o = this.m.Destination.getTile().SquareCoords;
@@ -348,4 +347,4 @@
 		c.addOrder(guard);
 		return party;
 	}
-})
+});

@@ -1,9 +1,8 @@
-::mods_hookExactClass("contracts/contracts/privateering_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/privateering_contract", function(q)
 {
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	q.createStates = @( __original ) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -349,10 +348,9 @@
 		}
 	}
 
-	local ws_createScreens = o.createScreens;
-	o.createScreens = function()
+	q.createScreens=  @( __original )function()
 	{
-		ws_createScreens();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
@@ -395,4 +393,4 @@
 			]);
 		}
 	}
-})
+});

@@ -1,16 +1,14 @@
-::mods_hookExactClass("contracts/contracts/legend_barbarian_prisoner_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/legend_barbarian_prisoner_contract", function(q)
 {
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @( __original ) function()
 	{
-		ws_create();
+		__original();
 		this.m.MinStrength = 500;
 	}
 
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	q.createStates = @( __original ) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -70,4 +68,4 @@
 			}
 		}
 	}
-})
+});

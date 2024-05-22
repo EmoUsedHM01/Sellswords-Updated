@@ -1,9 +1,8 @@
-::mods_hookExactClass("contracts/contracts/defend_holy_site_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/defend_holy_site_contract", function(q)
 {
-	local ws_createStates = o.createStates;
-	o.createStates = function()
+	q.createStates = @( __original ) function()
 	{
-		ws_createStates();
+		__original();
 
 		foreach (state in this.m.States)
 		{
@@ -229,10 +228,9 @@
 		}
 	}
 
-	local ws_createScreens = o.createScreens;
-	o.createScreens = function()
+	q.createScreens = @( __original ) function()
 	{
-		ws_createScreens();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
@@ -331,7 +329,7 @@
 		}
 	}
 
-	o.spawnAlly = function()
+	q.spawnAlly = @( __original )function()
 	{
 		local o = this.m.Destination.getTile().SquareCoords;
 		local tiles = [];
@@ -454,7 +452,7 @@
 		return party;
 	}
 
-	o.spawnEnemy = function()
+	q.spawnEnemy = @(__original) function()
 	{
 		local cityState = this.World.FactionManager.getFaction(this.getFaction());
 		local o = this.m.Destination.getTile().SquareCoords;
@@ -583,4 +581,4 @@
 		c.addOrder(guard);
 		return party;
 	}
-})
+});

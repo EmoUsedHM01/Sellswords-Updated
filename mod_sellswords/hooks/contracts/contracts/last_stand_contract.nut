@@ -1,6 +1,6 @@
-::mods_hookExactClass("contracts/contracts/last_stand_contract", function(o)
+::Mod_Sellswords.HooksMod.hook("contracts/contracts/last_stand_contract", function(q)
 {
-	o.spawnWave = function()
+	q.spawnWave = @( __original ) function()
 	{
 		local undeadBase = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).getNearestSettlement(this.m.Origin.getTile());
 		local originTile = this.m.Origin.getTile();
@@ -75,7 +75,7 @@
 		c.addOrder(destroy);
 	}
 
-	o.spawnUndeadAtTheWalls = function()
+	q.spawnUndeadAtTheWalls =  @( __original ) function()
 	{
 		local undeadBase = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Zombies).getNearestSettlement(this.m.Origin.getTile());
 		local dc = this.World.getTime().Days;
@@ -111,4 +111,4 @@
 		destroy.setTargetID(this.m.Origin.getID());
 		c.addOrder(destroy);
 	}
-})
+});
