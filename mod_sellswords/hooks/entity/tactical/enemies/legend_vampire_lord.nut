@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/legend_vampire_lord", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/legend_vampire_lord", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.BaseProperties.IsAffectedByInjuries = true;	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
 

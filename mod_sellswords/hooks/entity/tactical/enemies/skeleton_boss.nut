@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/skeleton_boss", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords("entity/tactical/enemies/skeleton_boss", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.BaseProperties.IsAffectedByInjuries = true;				
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));				
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)

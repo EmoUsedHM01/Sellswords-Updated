@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/legend_bandit_warlord", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/legend_bandit_warlord", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.removeByID("perk.perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));				
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
@@ -28,11 +28,18 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}		
 	}
+<<<<<<< HEAD
 
 	local assignRandomEquipment = o.assignRandomEquipment;
 	o.assignRandomEquipment = function()
 	{
 		assignRandomEquipment();
+=======
+	
+	q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
+>>>>>>> e234759 (Refactor enemies to modern hooks)
 		
 		local shields = clone this.Const.Items.NamedShields;
 		shields.extend([

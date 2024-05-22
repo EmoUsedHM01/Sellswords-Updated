@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/legend_mummy_heavy", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/legend_mummy_heavy", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.BaseProperties.IsAffectedByInjuries = true;				
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));	
@@ -19,7 +19,8 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
-	o.makeMiniboss = function ()
+
+	q.makeMiniboss = @( __original ) function ()
 	{
 		if (!this.actor.makeMiniboss())
 		{
@@ -51,4 +52,4 @@
 		local weaponAdd = this.Const.World.Common.pickItem(weapons, "scripts/items/weapons/named/");
 		this.m.Items.equip(weaponAdd);
 	}		
-}); 
+});

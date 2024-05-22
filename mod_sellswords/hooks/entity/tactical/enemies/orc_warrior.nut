@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/orc_warrior", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/orc_warrior", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
 
 		if (::Is_PTR_Exist)
@@ -67,7 +67,7 @@
 		}			
 	}
 
-	o.assignRandomEquipment = function()	
+	q.assignRandomEquipment = @( __original ) function()	
 	{
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
 		{

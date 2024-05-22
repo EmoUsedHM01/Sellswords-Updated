@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/bandit_raider", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/bandit_raider", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -17,11 +17,9 @@
 		}			
 	}
 
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
-		
+    q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();		
 		local r;
 
 		if (this.Math.rand(1, 100) <= 20)
@@ -356,5 +354,4 @@
 			this.m.Items.equip(item);
 		}
 	}
-	
-}); 
+});

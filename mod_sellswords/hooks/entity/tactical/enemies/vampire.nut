@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/vampire", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/vampire", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		this.m.BaseProperties.IsAffectedByInjuries = true;
 
 		if (::Is_PTR_Exist)
@@ -24,7 +24,7 @@
 		}			
 	}
 
-	o.makeMiniboss <- function()
+	q.makeMiniboss <- function()
 	{
 		if (!this.actor.makeMiniboss())
 		{
@@ -48,4 +48,4 @@
 
 		return true;
 	}
-});	
+});

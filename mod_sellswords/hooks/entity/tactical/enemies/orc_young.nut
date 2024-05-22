@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/orc_young", function(o) {
-	local onInit = o.onInit;
-	o.onInit = function()
+::Mod_Sellswords("entity/tactical/enemies/orc_young", function(q)
+{
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 120)
 		{
 			this.m.BaseProperties.RangedSkill += 5;	
@@ -22,7 +22,7 @@
 		}			
 	}
 
-	o.assignRandomEquipment = function()
+	q.assignRandomEquipment = @( __original ) function()
 	{
 		local r;
 		local weapon;

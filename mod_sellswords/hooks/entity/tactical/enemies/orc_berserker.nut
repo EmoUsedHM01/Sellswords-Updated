@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/tactical/enemies/orc_berserker", function(o) {
-	local create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/orc_berserker", function(q)
+{
+	q.create = @( __original ) function()
 	{	
-		create();
+		__original();
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{	
 			local dc = this.World.getTime().Days;
@@ -24,11 +24,10 @@
 		}				
 		this.m.AIAgent.setActor(this);
 	}		
-	
-	local onInit = o.onInit;
-	o.onInit = function()
+
+	q.onInit = @( __original ) function()
 	{
-		onInit();			
+		__original();			
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -80,10 +79,10 @@
 			this.m.BaseProperties.Bravery += 2 * dca;				
 		}		
 	}
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
+
+	q.assignRandomEquipment = @( __original ) function()
 	{
-		assignRandomEquipment();
+		__original();
 		local weapon = this.getMainhandItem();
 		if (weapon != null && weapon.isWeaponType(this.Const.Items.WeaponType.Sword))
 		{
@@ -92,7 +91,7 @@
 		}
 	}
 
-	o.makeMiniboss <- function()
+	q.makeMiniboss <- function()
 	{
 		if (!this.actor.makeMiniboss())
 		{
@@ -119,4 +118,4 @@
 		this.m.Skills.add(this.new("scripts/skills/effects/berserker_mushrooms_effect"));			
 		return true;
 	}	
-});	
+});

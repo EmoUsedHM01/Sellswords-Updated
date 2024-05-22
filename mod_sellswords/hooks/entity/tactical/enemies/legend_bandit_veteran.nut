@@ -1,5 +1,6 @@
-::mods_hookExactClass("entity/tactical/enemies/legend_bandit_veteran", function(o) {
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/legend_bandit_veteran", function(q)
+{
+	q.create = @( __original ) function()
 	{
 		this.m.Type = this.Const.EntityType.BanditVeteran;
 		this.m.BloodType = this.Const.BloodType.Red;
@@ -13,10 +14,9 @@
 		this.m.AIAgent.setActor(this);	
 	}
 
-	local onInit = o.onInit;
-	o.onInit = function()
+	q.onInit = @( __original ) function()
 	{
-		onInit();
+		__original();
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -31,10 +31,16 @@
 		}			
 	}
 
+<<<<<<< HEAD
 	local assignRandomEquipment = o.assignRandomEquipment;
 	o.assignRandomEquipment = function()
 	{
 		assignRandomEquipment();
+=======
+	q.assignRandomEquipment = @( __original ) function()
+    {
+		__original();
+>>>>>>> e234759 (Refactor enemies to modern hooks)
 		
 		local r;
 		local weapons;
@@ -370,4 +376,4 @@
 			}
 		}	
 	}
-}); 
+});
