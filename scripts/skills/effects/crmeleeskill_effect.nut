@@ -22,23 +22,20 @@ this.crmeleeskill_effect <- this.inherit("scripts/skills/skill", {
 		this.m.InflictedSkill = _inflicted;
 		this.m.SkillProperties = _inflicted.getContainer().buildPropertiesForUse(_inflicted, this.getContainer().getActor());
 	}
-
-	function onDamageReceived( _attacker, _damageHitpoints, _damageArmor )
-	{
-		this.removeSelf();
-	}
 	
 	function onRemoved()
 	{
-		if (this.getContainer().getActor() == null)
+		local actor = this.getContainer().getActor();
+		if (actor == null)
 		{
 			return;
 		}
-		local actor = this.getContainer().getActor();
+
 		if (!actor.isAlive() || actor.isDying())
 		{
 			return;
 		}
+
 		this.m.SkillProperties.DamageTotalMult *= 0.2;
 		local chance_to_hit = this.m.InflictedSkill.getHitchance(actor);
 		local rolled = Math.rand(1,100);
@@ -50,14 +47,16 @@ this.crmeleeskill_effect <- this.inherit("scripts/skills/skill", {
 			Properties = this.m.SkillProperties,
 			DistanceToTarget = this.m.Inflicter.getTile().getDistanceTo(actor.getTile())
 		};
+
 		if (rolled <= chance_to_hit)
 		{
-			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this.m.Inflicter) + " uses " + this.m.InflictedSkill.getName() + " and hits " + this.Const.UI.getColorizedEntityName(actor) + " (Chance: " + this.Math.min(95, this.Math.max(5, chance_to_hit)) + ", Rolled: " + rolled + ")");
+			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this.m.Inflicter) + " uses a feinted " + this.m.InflictedSkill.getName() + " and hits " + this.Const.UI.getColorizedEntityName(actor) + " (Chance: " + this.Math.min(95, this.Math.max(5, chance_to_hit)) + ", Rolled: " + rolled + ")");
 			this.onScheduledTargetHit(info);
 		}
+
 		else
 		{
-			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this.m.Inflicter) + " uses " + this.m.InflictedSkill.getName() + " and misses " + this.Const.UI.getColorizedEntityName(actor) + " (Chance: " + this.Math.min(95, this.Math.max(5, chance_to_hit)) + ", Rolled: " + rolled + ")");
+			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this.m.Inflicter) + " uses a feinted " + this.m.InflictedSkill.getName() + " and misses " + this.Const.UI.getColorizedEntityName(actor) + " (Chance: " + this.Math.min(95, this.Math.max(5, chance_to_hit)) + ", Rolled: " + rolled + ")");
 		}
 	}
 
