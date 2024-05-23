@@ -1,3 +1,26 @@
+6.4.14 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_sprint.nut (deleted)
+Removed redundant Sprint hook (Perk is now coupled with climb into Athlete)
+
+...\scripts\skills\effects\crmeleeskill_effect.nut
+...\scripts\skills\perks\perk_crmeleeskill.nut
+Fixed a bad thing that was causing crashes
+
+...\mod_sellswords\config\perk_defs.nut
+Updated the bad thing
+
+...\mod_sellswords\hooks\ui\screens\tooltip\tooltip_events.nut
+Updated Arena stuff
+
+...\mod_sellswords\hooks\items\weapons\scimitar.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
+...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_saif.nut
+Made all four of the 1h/2h southern swords both Sword and Cleaver weapon types
+
+----------------------------------------------------------------------------------------------------------------------------
+
 6.4.13 changes
 
 ...\scripts\items\misc\cr_pack.nut
