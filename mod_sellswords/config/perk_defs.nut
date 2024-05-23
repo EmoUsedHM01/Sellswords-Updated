@@ -62,7 +62,7 @@ if (!("OneTimeEffect" in ::Const.UI.Color))
 ::Const.Strings.PerkDescription.crstamina <- "\n\n[color=" + ::Const.UI.Color.Passive + "][u]Passive:[/u][/color]\n\n• Unlocks an active skill which lets you convert Fatigue to action points.\n• Also unlocks the \'Recover\' skill.";
 
 ::Const.Strings.PerkName.crmeleeskill <- "Unpredictible Attacker";
-::Const.Strings.PerkDescription.crmeleeskill <- "\n\n[color=" + ::Const.UI.Color.Passive + "][u]Passive:[/u][/color]\n\n• Whenever you attack an enemy, you strike them with a feinted attack beforehand which deals [color=" + ::Const.UI.Color.PositiveValue + "]20%[/color] total damage of the initial attack.";
+::Const.Strings.PerkDescription.crmeleeskill <- "\n\n[color=" + ::Const.UI.Color.Passive + "][u]Passive:[/u][/color]\n\n• Whenever you attack an enemy, you strike them with a feinted follow-up attack which deals [color=" + ::Const.UI.Color.PositiveValue + "]20%[/color] total damage of the initial attack.";
 
 ::Const.Strings.PerkName.crrangedskill <- "The Ace of Aces";
 ::Const.Strings.PerkDescription.crrangedskill <- "\n\n[color=" + ::Const.UI.Color.Passive + "][u]Passive:[/u][/color]\n\n• When using ranged weapons, headshot chance will be converted to hitchance at a ratio of 2:1 if the hitchance is less than 95%, and vice versa above 95%.";
