@@ -10,9 +10,6 @@ Fixed a bad thing that was causing crashes
 ...\mod_sellswords\config\perk_defs.nut
 Updated the bad thing
 
-...\mod_sellswords\hooks\ui\screens\tooltip\tooltip_events.nut
-Updated Arena stuff
-
 ...\mod_sellswords\hooks\items\weapons\scimitar.nut
 ...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
 ...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
