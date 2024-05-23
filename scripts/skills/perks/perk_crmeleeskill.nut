@@ -14,8 +14,8 @@ this.perk_crmeleeskill <- this.inherit("scripts/skills/skill", {
 		this.m.IsStacking = false;
 		this.m.IsHidden = false;
 	}
-
-	function onBeforeTargetHit( _skill, _targetEntity, _hitInfo )
+	
+	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		if (_targetEntity == null)
 		{
@@ -33,18 +33,30 @@ this.perk_crmeleeskill <- this.inherit("scripts/skills/skill", {
 		entity_skills.getSkillByID("effects.crmeleeskill").setSkill(this.getContainer().getActor(), _skill);
 		this.m.AffectedEntity = null;
 		this.m.AffectedEntity = _targetEntity;
-	}
-	
-	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
-	{
-		local actor = this.getContainer().getActor().getSkills();
-		local weapon = this.getContainer().getActor().getMainhandItem();
+
+		_targetEntity.getSkills().removeByID("effects.crmeleeskill");
 	}
 	
 	function onTargetMissed(_skill, _targetEntity)
 	{
-		this.m.AffectedEntity.getSkills().removeByID("effects.crmeleeskill");
+		if (_targetEntity == null)
+		{
+			return;
+		}
+		
+		if(!_targetEntity.isAlive() || _targetEntity.isDying())
+		{
+			this.m.AffectedEntity = null;
+			return;
+		}
+		
+		local entity_skills = _targetEntity.getSkills();
+		entity_skills.add(this.new("scripts/skills/effects/crmeleeskill_effect"));
+		entity_skills.getSkillByID("effects.crmeleeskill").setSkill(this.getContainer().getActor(), _skill);
+		this.m.AffectedEntity = null;
+		this.m.AffectedEntity = _targetEntity;
+
+		_targetEntity.getSkills().removeByID("effects.crmeleeskill");
 	}
 
 });
-
