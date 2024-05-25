@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/legend_mummy_heavy", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/legend_mummy_heavy", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

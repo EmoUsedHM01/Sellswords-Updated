@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/noble_sergeant", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_sergeant", function(q) {
 	
 	q.onInit = @( __original ) function()
 	{

@@ -1,4 +1,4 @@
-::Mod_Sellswords("entity/tactical/enemies/legend_orc_elite", function(q)
+::Mod_Sellswords("scripts/entity/tactical/enemies/legend_orc_elite", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

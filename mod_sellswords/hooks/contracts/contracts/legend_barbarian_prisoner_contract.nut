@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("contracts/contracts/legend_barbarian_prisoner_contract", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/legend_barbarian_prisoner_contract", function(q)
 {
 	q.create = @( __original ) function()
 	{

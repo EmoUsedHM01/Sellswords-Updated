@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/goblin_fighter_low", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/goblin_fighter_low", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("contracts/contracts/barbarian_king_contract", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/barbarian_king_contract", function(q)
 {
 	q.createStates = @(__original) function()
 	{

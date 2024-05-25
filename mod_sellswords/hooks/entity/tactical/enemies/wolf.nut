@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/wolf", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/wolf", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

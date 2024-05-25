@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/goblin_ambusher", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/goblin_ambusher", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

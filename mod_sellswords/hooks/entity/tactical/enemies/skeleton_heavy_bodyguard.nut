@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/skeleton_heavy_bodyguard", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/skeleton_heavy_bodyguard", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

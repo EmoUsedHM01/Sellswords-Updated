@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("ai/world/behaviors/mercenary_order", function ( q )
+::Mod_Sellswords.HooksMod.hook("scripts/ai/world/behaviors/mercenary_order", function ( q )
 {
 	q.onExecute = @( __original ) function( _entity, _hasChanged )
 	{

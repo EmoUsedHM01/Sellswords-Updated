@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("ambitions/oaths/oath_of_fortification_ambition", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/ambitions/oaths/oath_of_fortification_ambition", function(q)
 {
 	q.create = @( __original ) function()
 	{

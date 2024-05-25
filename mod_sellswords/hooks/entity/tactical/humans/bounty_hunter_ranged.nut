@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/bounty_hunter_ranged", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/bounty_hunter_ranged", function(q) {
 	
 	q.onInit = @( __original ) function()
 	{

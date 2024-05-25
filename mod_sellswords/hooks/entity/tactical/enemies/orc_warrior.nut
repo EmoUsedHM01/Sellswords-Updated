@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/orc_warrior", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/orc_warrior", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

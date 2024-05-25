@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod("entity/tactical/enemies/sand_golem", function(q)
+::Mod_Sellswords.HooksMod("scripts/entity/tactical/enemies/sand_golem", function(q)
 {
 	q.onInit = @( __original ) function()
 	{
