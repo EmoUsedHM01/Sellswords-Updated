@@ -4,5 +4,6 @@
 	{
 		ws_create();
 		this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.laspecialize);
+		this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.maspecialize);
 	}
 });
