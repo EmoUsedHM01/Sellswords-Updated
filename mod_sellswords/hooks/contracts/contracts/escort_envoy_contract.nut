@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("contracts/contracts/escort_envoy_contract", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/escort_envoy_contract", function(q)
 {
 	q.createScreens = @(__original) function()
 	{

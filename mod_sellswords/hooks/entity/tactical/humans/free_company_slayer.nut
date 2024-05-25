@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/free_company_slayer", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_slayer", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

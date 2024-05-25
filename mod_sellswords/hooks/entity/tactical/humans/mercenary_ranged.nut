@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/mercenary_ranged", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/mercenary_ranged", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

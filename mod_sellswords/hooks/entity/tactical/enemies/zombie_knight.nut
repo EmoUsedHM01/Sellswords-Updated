@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/zombie_knight", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/zombie_knight", function(o) {
 	local onInit = o.onInit;
 	o.onInit = function()
 	{

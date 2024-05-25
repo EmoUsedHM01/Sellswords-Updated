@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("contracts/contracts/siege_fortification_contract", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/siege_fortification_contract", function(q)
 {
 	q.createStates = @( __original ) function()
 	{

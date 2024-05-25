@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("contracts/contracts/last_stand_contract", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/last_stand_contract", function(q)
 {
 	q.spawnWave = @( __original ) function()
 	{

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/barbarian_champion", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/barbarian_champion", function(q) {
 	
 	q.onInit = @( __original ) function()
 	{

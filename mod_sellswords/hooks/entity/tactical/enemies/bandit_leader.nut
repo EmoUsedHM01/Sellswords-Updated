@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/bandit_leader", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/bandit_leader", function(q)
 {
 	q.onInit = @( __original ) function()
 	{		

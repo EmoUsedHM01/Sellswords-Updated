@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("contracts/contracts/confront_warlord_contract", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/confront_warlord_contract", function(q)
 {
 	q.createScreens = @( __original ) function()
 	{

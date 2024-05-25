@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/legend_noble_fencer", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_noble_fencer", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

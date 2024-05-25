@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/nomad_outlaw", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/nomad_outlaw", function(q) {
 	
 	q.onInit = @( __original ) function()
 	{

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("ai/tactical/behaviors/ai_break_free", function ( q )
+::Mod_Sellswords.HooksMod.hook("scripts/ai/tactical/behaviors/ai_break_free", function ( q )
 {
 	q.onEvaluate = @( __original ) function( _entity )
 	{

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/swordmaster", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/swordmaster", function(q) {
 	
 	q.onInit = @( __original ) function()
 	{

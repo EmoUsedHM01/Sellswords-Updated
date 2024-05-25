@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/desert_devil", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/desert_devil", function(q)
 {
 	q.onInit = @( __original ) function()
 	{

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("contracts/contracts/break_greenskin_siege_contract", function (q)
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/break_greenskin_siege_contract", function (q)
 {
 	q.createStates = @( __original ) function()
 	{

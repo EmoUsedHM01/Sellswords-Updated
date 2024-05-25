@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/enemies/bandit_raider_low", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/bandit_raider_low", function(q)
 {
     q.assignRandomEquipment = @( __original ) function()
     {

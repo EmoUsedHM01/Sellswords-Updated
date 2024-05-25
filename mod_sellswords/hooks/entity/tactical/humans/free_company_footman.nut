@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("entity/tactical/humans/free_company_footman", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_footman", function(q)
 {
 	q.onInit = @( __original ) function()
 	{
