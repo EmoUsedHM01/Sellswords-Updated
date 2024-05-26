@@ -2,6 +2,10 @@
 {
 	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
 	{
+		if (_targetEntity == null)
+		{
+			return;
+		}
 		if (_skill == this)
 		{
 			_skill.resetField("HitChanceBonus");
