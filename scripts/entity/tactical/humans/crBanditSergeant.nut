@@ -151,8 +151,8 @@ this.crBanditSergeant <- this.inherit("scripts/entity/tactical/human", {
 		{
 			//this.m.Skills.addTreeOfEquippedWeapon(7);
 
-			local mainhandItem = this.getMainhandItem();		    					
-			local attack = this.getSkills().getAttackOfOpportunity();			    
+			local mainhandItem = this.getMainhandItem();								
+			local attack = this.getSkills().getAttackOfOpportunity();				
 			if (mainhandItem != null && mainhandItem.isItemType(this.Const.Items.ItemType.TwoHanded))
 			{
 				if (attack != null && !attack.isDuelistValid())

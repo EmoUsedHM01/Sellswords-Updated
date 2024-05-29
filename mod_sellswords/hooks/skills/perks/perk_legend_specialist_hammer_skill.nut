@@ -26,4 +26,29 @@
 			}
 		}
 	}
+
+	o.getUnactivatedPerkTooltipHints <- function()
+	{
+		/*
+		local dc = 0;
+		local actor = this.getContainer().getActor();
+		if (::MSU.isKindOf(actor, "player"))
+		{
+			dc = this.getContainer().getActor().getDaysWithCompany();
+		}
+
+		dc = this.Math.floor(dc/7);
+		dc = 0.01 * this.Math.min(5 * dc + 25, 100); */
+
+		local ret = [
+			{
+				id = 3,
+				type = "hint",
+				icon = "ui/icons/special.png",
+				text = this.format("This character has accrued a banana for other weapons")
+			}
+		];
+		return ret;
+	}
+
 });	

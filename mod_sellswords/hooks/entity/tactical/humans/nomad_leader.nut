@@ -46,8 +46,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
@@ -169,10 +169,10 @@
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crleopard_armor"],            // 225,-29				
+				[1, "crleopard_armor"],			// 225,-29				
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crfeathered_helmet"],       // 210,-9 ~ 220,-10  					
+				[1, "crfeathered_helmet"],	   // 210,-9 ~ 220,-10  					
 			]));			
 		}
 	}

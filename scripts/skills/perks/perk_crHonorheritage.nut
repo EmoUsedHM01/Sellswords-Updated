@@ -15,22 +15,18 @@ this.perk_crHonorheritage <- this.inherit("scripts/skills/skill", {
 
 	function onTurnEnd()
 	{
-		//local chance = -getContainer().getActor().getCurrentProperties().getBravery();
-		//this.getContainer().getActor().checkMorale(1, 50 - chance, this.Const.MoraleCheckType.Default, "status_effect_14");
-		if (this.Math.rand(1, 100) < 85)
-		{
+		if (this.Math.rand(1, 100) < 65)
 			return;
-		}	
-		if (this.getContainer().getActor().getMoraleState() == 4)
-		{
-			return;
-		}		
-		if (!this.getContainer().getActor().isHiddenToPlayer() && this.getContainer().getActor().getTile().IsVisibleForPlayer)
-		{
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(getContainer().getActor()) + "\'s increases morale due to Honor Heritage");
-		}
 
-		if (::Is_PTR_Exist) this.spawnIcon("perk_ptr_exude_confidence", this.getContainer().getActor().getTile());
+		if (this.getContainer().getActor().getMoraleState() == 4)
+			return;
+
+		if (!this.getContainer().getActor().isHiddenToPlayer() && this.getContainer().getActor().getTile().IsVisibleForPlayer)
+			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(getContainer().getActor()) + "\'s increases morale due to Honor Heritage");
+
+		if (::Is_PTR_Exist) 
+			this.spawnIcon("perk_ptr_exude_confidence", this.getContainer().getActor().getTile());
+
 		this.getContainer().getActor().setMoraleState(this.Math.min(4, this.getContainer().getActor().getMoraleState() + 1));		
 	}
 
@@ -41,4 +37,3 @@ this.perk_crHonorheritage <- this.inherit("scripts/skills/skill", {
 	}	
 
 });
-

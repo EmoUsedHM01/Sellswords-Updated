@@ -62,7 +62,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_crypt_location", tile.Coords);    //180
+				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_crypt_location", tile.Coords);	//180
 			}
 		}
 		else if (r <= 60 - 2 * dc)
@@ -110,7 +110,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_necromancers_lair_location", tile.Coords);    //150
+				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_necromancers_lair_location", tile.Coords);	//150
 			}
 		}
 		else if (r <= 100)
@@ -132,7 +132,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_ruins_location", tile.Coords);    //180
+				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_ruins_location", tile.Coords);	//180
 			}
 		}
 

@@ -186,7 +186,7 @@ this.cr_armor_hauberk_sleevless_named <- this.inherit("scripts/items/legend_armo
 		this.m.Description = "Truly fit for a knight, this sleevless mail hauberk is made from the highest quality materials and boasts precious decorations and ornaments.";
 		this.m.ArmorDescription = "Includes a sleevless mail hauberk made from the highest quality materials and boasts precious decorations and ornaments.";
 		this.m.Variants = [
-			1
+			0
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
@@ -200,17 +200,6 @@ this.cr_armor_hauberk_sleevless_named <- this.inherit("scripts/items/legend_armo
 		this.randomizeValues();
 	}
 
-	function updateVariant()
-	{
-		this.m.SpriteBack = "bust_body_cr01";
-		this.m.SpriteDamagedBack = "bust_body_cr01_damaged";
-		this.m.SpriteCorpseBack = "bust_body_cr01_dead";
-		this.m.Icon = "armor/icon_body_armor_cr01.png";
-		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_body_armor_cr01.png";
-		this.m.OverlayIconLarge = "armor/inventory_body_armor_cr01.png";		
-	}
-
 	function randomizeValues()
 	{
 		this.m.StaminaModifier = this.Math.rand(8, 10) * -1;
@@ -218,5 +207,16 @@ this.cr_armor_hauberk_sleevless_named <- this.inherit("scripts/items/legend_armo
 		this.m.ConditionMax = this.m.Condition;
 	}
 
-});
+	function updateVariant()
+	{
+		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
+		this.m.SpriteBack = "bust_cr_armor_hauberk_sleevless_named" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_cr_armor_hauberk_sleevless_named" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_cr_armor_hauberk_sleevless_named" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_cr_armor_hauberk_sleevless_named" + "_" + variant + ".png";
+		this.m.IconLarge = this.m.Icon;
+		this.m.OverlayIcon = "legend_armor/icon_cr_armor_hauberk_sleevless_named" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_cr_armor_hauberk_sleevless_named" + "_" + variant + ".png";
+	}
 
+});

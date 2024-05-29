@@ -136,50 +136,50 @@ this.crPaladin_guest <- this.inherit("scripts/entity/tactical/player", {
 		if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "crfootman_armor_early"],           // 160
-				[1, "crfootman_armor_mid_plate"],       //185
-				[1, "crfootman_armor_mid_patched"],     // 185				
+				[2, "crfootman_armor_early"],		   // 160
+				[1, "crfootman_armor_mid_plate"],	   //185
+				[1, "crfootman_armor_mid_patched"],	 // 185				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				
-				[1, "crfootman_helmet_mid"],               //~150  	
-				[1, "crfootman_helmet_mid_reinforced"],               //~175 					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+				[1, "crfootman_helmet_mid"],			   //~150  	
+				[1, "crfootman_helmet_mid_reinforced"],			   //~175 					
 			]));
 		}	
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crfootman_armor_mid_chain"],     // 185
-				[1, "crfootman_armor_mid_plate"],       //185
-				[1, "crfootman_armor_mid_patched"],     // 185				
+				[1, "crfootman_armor_mid_chain"],	 // 185
+				[1, "crfootman_armor_mid_plate"],	   //185
+				[1, "crfootman_armor_mid_patched"],	 // 185				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				  	
-				[1, "crfootman_helmet_mid_reinforced"],               //~175 
-				[1, "crfootman_helmet_late_kettle"],              //~200 					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				  	
+				[1, "crfootman_helmet_mid_reinforced"],			   //~175 
+				[1, "crfootman_helmet_late_kettle"],			  //~200 					
 			]));
 		}
 		else if (dc <= 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crfootman_armor_mid_chain"],     // 185
-				[1, "crfootman_armor_mid_plate"],       //185
-				[1, "crfootman_armor_mid_patched"],     // 185
-				[2, "crfootman_armor_late_ichi"],      // 195
-				[2, "crfootman_armor_late_ni"],      // 200					
+				[1, "crfootman_armor_mid_chain"],	 // 185
+				[1, "crfootman_armor_mid_plate"],	   //185
+				[1, "crfootman_armor_mid_patched"],	 // 185
+				[2, "crfootman_armor_late_ichi"],	  // 195
+				[2, "crfootman_armor_late_ni"],	  // 200					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				 	
-				[1, "crfootman_helmet_mid_reinforced"],               //~175 
-				[1, "crfootman_helmet_late"],               //~175  	
-				[1, "crfootman_helmet_late_heavy"],               //~200					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				 	
+				[1, "crfootman_helmet_mid_reinforced"],			   //~175 
+				[1, "crfootman_helmet_late"],			   //~175  	
+				[1, "crfootman_helmet_late_heavy"],			   //~200					
 			]));
 		}
 		else if (dc > 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crfootman_armor_late_ichi"],      // 195
-				[1, "crfootman_armor_late_ni"],      // 200					
+				[1, "crfootman_armor_late_ichi"],	  // 195
+				[1, "crfootman_armor_late_ni"],	  // 200					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				
-				[1, "crfootman_helmet_late_heavy"],               //~200					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+				[1, "crfootman_helmet_late_heavy"],			   //~200					
 			]));
 		}
 	}

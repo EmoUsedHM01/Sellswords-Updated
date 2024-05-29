@@ -106,10 +106,10 @@ this.crBarbarianZweihander <- this.inherit("scripts/entity/tactical/human", {
 		//}	
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 		this.m.Items.equip(this.Const.World.Common.pickArmor([
-			[1, "crbarbgreataxe_armor"],          				
+			[1, "crbarbgreataxe_armor"],		  				
 		]));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-			[1, "crbarbgreataxe_helmet"],                					
+			[1, "crbarbgreataxe_helmet"],									
 		]));
 	}
 	

@@ -3,7 +3,7 @@ this.purge_infection_action <- this.inherit("scripts/factions/faction_action", {
 	function create()
 	{
 		this.m.ID = "purge_infection_action";
-		this.m.Cooldown = this.World.getTime().SecondsPerDay * 12;              
+		this.m.Cooldown = this.World.getTime().SecondsPerDay * 12;			  
 		this.m.IsStartingOnCooldown = false;
 		this.m.IsSettlementsRequired = true;
 		this.faction_action.create();

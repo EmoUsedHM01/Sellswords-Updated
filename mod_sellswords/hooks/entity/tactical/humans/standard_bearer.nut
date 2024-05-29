@@ -18,8 +18,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 			local r;
@@ -46,7 +46,7 @@
 			if (dc <= 80)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "crarmor_hauberk_light"],         				
+					[1, "crarmor_hauberk_light"],		 				
 				]));
 				
 				if (banner <= 4)
@@ -144,7 +144,7 @@
 			else if (dc > 180)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "crarmor_hauberk_late"],    				
+					[1, "crarmor_hauberk_late"],					
 				]));
 				if (banner <= 4)
 				{				

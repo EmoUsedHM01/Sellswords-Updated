@@ -99,10 +99,10 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 		local actor = this.getContainer().getActor();
 		local skill = this.m.SkillBonus == null ? actor.getCurrentProperties().getMeleeSkill() : this.m.SkillBonus;
 		local toHit = this.Math.min(100, skill - 10 + this.m.ChanceBonus + (actor.getSkills().hasSkill("effects.goblin_shaman_potion") ? 100 : 0));
+
 		if (actor.getCurrentProperties().IsSpecializedInNets || this.m.IsByNetSpecialist || actor.getSkills().hasSkill("perk.legend_escape_artist"))
-		{
-			toHit = this.Math.max(99, toHit);
-		}
+			toHit = this.Math.max(95, toHit);
+
 		return toHit;
 	}
 
@@ -125,18 +125,12 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 		if (rolled <= toHit)
 		{
 			if (_user.getCurrentProperties().IsSpecializedInNets)
-			{
 				this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " effortlessly breaks free (Chance: " + toHit + ", Rolled: " + rolled + ")");
-			}
 			else
-			{
 				this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " breaks free (Chance: " + toHit + ", Rolled: " + rolled + ")");
-			}
 
 			if (this.m.SoundOnHit.len() != 0)
-			{
 				this.Sound.play(this.m.SoundOnHit[this.Math.rand(0, this.m.SoundOnHit.len() - 1)], this.Const.Sound.Volume.Skill, _targetTile.Pos);
-			}
 
 			_user.getSprite("status_rooted").Visible = false;
 			_user.getSprite("status_rooted_back").Visible = false;
@@ -158,9 +152,7 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 							local tile = ourTile.getNextTile(i);
 
 							if (tile.IsEmpty && !tile.Properties.has("IsItemSpawned") && !tile.IsCorpseSpawned && tile.Level <= ourTile.Level + 1)
-							{
 								candidates.push(tile);
-							}
 						}
 					}
 				}
@@ -218,9 +210,7 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 			this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " fails to break free (Chance: " + toHit + ", Rolled: " + rolled + ")");
 
 			if (this.m.SoundOnMiss.len() != 0)
-			{
 				this.Sound.play(this.m.SoundOnMiss[this.Math.rand(0, this.m.SoundOnMiss.len() - 1)], this.Const.Sound.Volume.Skill, _targetTile.Pos);
-			}
 
 			this.m.ChanceBonus += 10;
 			return false;
@@ -232,9 +222,7 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 	function onUseByAlly( _ally, _targetTile )
 	{
 		if (_ally.getCurrentProperties().IsSpecializedInNets)
-		{
 			this.m.IsByNetSpecialist = true;
-		}
 
 		this.onUse(this.getContainer().getActor(), _targetTile);
 	}
@@ -244,10 +232,11 @@ this.break_free_skill <- this.inherit("scripts/skills/skill", {
 		local actor = this.getContainer().getActor();
 		if (actor.getSprite("status_rooted").getBrush().Name == "bust_web2")
 			actor.getSprite("status_rooted").Visible = false;
+
 		if (actor.getSprite("status_rooted_back").getBrush().Name == "bust_web2_back")
 			actor.getSprite("status_rooted_back").Visible = false;
+
 		this.skill.onCombatFinished();
 	}
 
 });
-

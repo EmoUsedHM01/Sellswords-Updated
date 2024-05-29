@@ -1,6 +1,6 @@
 ::Const.LegendMod.HelmObjs.extend([
 	{
-		ID = "sellsword_helmet_barb",    //255,-18
+		ID = "sellsword_helmet_barb",	//255,-18
 		Script = "",
 		Sets = [
 			{
@@ -26,7 +26,7 @@
 		]
 	},	
 	{
-		ID = "sellsword_helmet_undead",     //235,-16
+		ID = "sellsword_helmet_undead",	 //235,-16
 		Script = "",
 		Sets = [
 			{
@@ -49,7 +49,7 @@
 		]
 	},	
 	{
-		ID = "sellsword_helmet_ancient",         //255,-21
+		ID = "sellsword_helmet_ancient",		 //255,-21
 		Script = "",
 		Sets = [
 			{
@@ -292,7 +292,7 @@
 		]
 	},	
 	{
-		ID = "sellsword_helmet_medium",          //185,-9
+		ID = "sellsword_helmet_medium",		  //185,-9
 		Script = "",
 		Sets = [
 			{
@@ -323,7 +323,7 @@
 		]
 	},
 	{
-		ID = "sellsword_helmet_medium_high",          //215,-9
+		ID = "sellsword_helmet_medium_high",		  //215,-9
 		Script = "",
 		Sets = [
 			{
@@ -352,7 +352,7 @@
 		]
 	},	
 	{
-		ID = "sellsword_helmet_medium_gladitor",          //225,-9
+		ID = "sellsword_helmet_medium_gladitor",		  //225,-9
 		Script = "",
 		Sets = [
 			{
@@ -378,7 +378,7 @@
 		]
 	},	
 	{
-		ID = "sellsword_helmet_light",          //140,-6
+		ID = "sellsword_helmet_light",		  //140,-6
 		Script = "",
 		Sets = [
 			{
@@ -404,7 +404,7 @@
 		]
 	},	
 	{
-		ID = "sellsword_helmet_light_high",          //170,-5
+		ID = "sellsword_helmet_light_high",		  //170,-5
 		Script = "",
 		Sets = [
 			{
@@ -507,7 +507,7 @@
 		]
 	},	
 	{
-		ID = "sellsword_helmet_ranged",        //130,-7_-4
+		ID = "sellsword_helmet_ranged",		//130,-7_-4
 		Script = "",
 		Sets = [
 			{
@@ -939,7 +939,7 @@
 		]
 	},	
 	{
-		ID = "crknight_faction_helm_enclave_armet",   //270,19 - 350,23     
+		ID = "crknight_faction_helm_enclave_armet",   //270,19 - 350,23	 
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_enclave_armet",
 		Sets = [
 			{
@@ -975,7 +975,7 @@
 		]
 	},		
 	{
-		ID = "crknight_faction_helm_enclave_venitian_bascinet",              //365,26 - 445,30
+		ID = "crknight_faction_helm_enclave_venitian_bascinet",			  //365,26 - 445,30
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_enclave_venitian_bascinet",
 		Sets = [
 			{
@@ -987,7 +987,7 @@
 		]
 	},	
 	{
-		ID = "crfemaleknight_helmet",             //230,-11
+		ID = "crfemaleknight_helmet",			 //230,-11
 		Script = "scripts/items/legend_helmets/helmets/crfemaleknight_helmet",
 		Sets = [
 			{
@@ -999,7 +999,7 @@
 		]
 	},
 	{
-		ID = "crknight_faction_helm_great_helm_heavy",             //305,-20     -
+		ID = "crknight_faction_helm_great_helm_heavy",			 //305,-20	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_heavy",
 		Sets = [
 			{
@@ -1011,7 +1011,7 @@
 		]
 	},		
 	{
-		ID = "crknight_faction_helm_great_helm_armet",             //305,-19     -    
+		ID = "crknight_faction_helm_great_helm_armet",			 //305,-19	 -	
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_armet",
 		Sets = [
 			{
@@ -1023,7 +1023,7 @@
 		]
 	},
 	{
-		ID = "crknight_faction_helm_great_helm_faceplate_01",             //340,-24     -
+		ID = "crknight_faction_helm_great_helm_faceplate_01",			 //340,-24	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_faceplate_01",
 		Sets = [
 			{
@@ -1035,7 +1035,7 @@
 		]
 	},			
 	{
-		ID = "crknight_faction_helm_great_helm_armet_heavy",             //345,-23     -
+		ID = "crknight_faction_helm_great_helm_armet_heavy",			 //345,-23	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_armet_heavy",
 		Sets = [
 			{
@@ -1047,7 +1047,7 @@
 		]
 	},	
 	{
-		ID = "crknight_faction_helm_great_helm_frogmouth",             //340,-22     -
+		ID = "crknight_faction_helm_great_helm_frogmouth",			 //340,-22	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_frogmouth",
 		Sets = [
 			{
@@ -1059,7 +1059,7 @@
 		]
 	},
 	{
-		ID = "crknight_faction_helm_great_helm_faceplate_02",             //365,-23     -
+		ID = "crknight_faction_helm_great_helm_faceplate_02",			 //365,-23	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_faceplate_02",
 		Sets = [
 			{
@@ -1071,7 +1071,7 @@
 		]
 	},	
 	{
-		ID = "crknight_faction_helm_great_helm_frogmouth_heavy",             //380,-26     -
+		ID = "crknight_faction_helm_great_helm_frogmouth_heavy",			 //380,-26	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_frogmouth_heavy",
 		Sets = [
 			{
@@ -1083,7 +1083,7 @@
 		]
 	},	
 	{
-		ID = "crknight_faction_helm_great_helm_faceplate_heavy_01",             //385,-30     -
+		ID = "crknight_faction_helm_great_helm_faceplate_heavy_01",			 //385,-30	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_faceplate_heavy_01",
 		Sets = [
 			{
@@ -1095,7 +1095,7 @@
 		]
 	},	
 	{
-		ID = "crknight_faction_helm_great_helm_faceplate_heavy_02",             //410,-32     -
+		ID = "crknight_faction_helm_great_helm_faceplate_heavy_02",			 //410,-32	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_great_helm_faceplate_heavy_02",
 		Sets = [
 			{
@@ -1107,7 +1107,7 @@
 		]
 	},	
 	{
-		ID = "crknight_faction_helm_frogmouth_faceplate",             //440,-30     -
+		ID = "crknight_faction_helm_frogmouth_faceplate",			 //440,-30	 -
 		Script = "scripts/items/legend_helmets/helmets/crknight_faction_helm_frogmouth_faceplate",
 		Sets = [
 			{
@@ -1119,7 +1119,7 @@
 		]
 	},	
 	{
-		ID = "crknight_helmet_early_decorative",        //310,-20   280,-17
+		ID = "crknight_helmet_early_decorative",		//310,-20   280,-17
 		Script = "",
 		Sets = [
 			{
@@ -1160,7 +1160,7 @@
 		]
 	},	
 	{
-		ID = "crknight_helmet_early_unadorned",          //255 -16    310,-21
+		ID = "crknight_helmet_early_unadorned",		  //255 -16	310,-21
 		Script = "",
 		Sets = [
 			{
@@ -1180,7 +1180,7 @@
 		]
 	},	
 	{
-		ID = "crknight_helmet_mid_bread",        //350,-23 pure color
+		ID = "crknight_helmet_mid_bread",		//350,-23 pure color
 		Script = "",
 		Sets = [
 			{
@@ -1207,7 +1207,7 @@
 		]
 	},		
 	{
-		ID = "crknight_helmet_mid_decorative",        //350,-23
+		ID = "crknight_helmet_mid_decorative",		//350,-23
 		Script = "",
 		Sets = [
 			{
@@ -1238,7 +1238,7 @@
 		]
 	},
 	{
-		ID = "crknight_helmet_mid_unadorned",          //325 -21  
+		ID = "crknight_helmet_mid_unadorned",		  //325 -21  
 		Script = "",
 		Sets = [
 			{
@@ -1257,7 +1257,7 @@
 		]
 	},	
 	{
-		ID = "crknight_helmet_mid_bascinet_faceplate",        //385,-26
+		ID = "crknight_helmet_mid_bascinet_faceplate",		//385,-26
 		Script = "",
 		Sets = [
 			{
@@ -1280,7 +1280,7 @@
 		]
 	},		
 	{
-		ID = "crknight_helmet_late_mixed",          //410, min 400 
+		ID = "crknight_helmet_late_mixed",		  //410, min 400 
 		Script = "",
 		Sets = [
 			{
@@ -1308,7 +1308,7 @@
 		]
 	},	
 	{
-		ID = "crknight_helmet_late_mixed_patched",          //405, min 390 
+		ID = "crknight_helmet_late_mixed_patched",		  //405, min 390 
 		Script = "",
 		Sets = [
 			{
@@ -1338,7 +1338,7 @@
 		]
 	},	
 	{
-		ID = "crknight_helmet_late_enclave_ichi",          //420, -30 
+		ID = "crknight_helmet_late_enclave_ichi",		  //420, -30 
 		Script = "",
 		Sets = [
 			{
@@ -1372,7 +1372,7 @@
 		]
 	},
 	{
-		ID = "crknight_helmet_late_enclave_sann",          //460, -30 
+		ID = "crknight_helmet_late_enclave_sann",		  //460, -30 
 		Script = "",
 		Sets = [
 			{
@@ -1406,7 +1406,7 @@
 		]
 	},	
 	{
-		ID = "crknight_helmet_late_enclave_ni",          //460, -34  
+		ID = "crknight_helmet_late_enclave_ni",		  //460, -34  
 		Script = "",
 		Sets = [
 			{
@@ -1443,7 +1443,7 @@
 		]
 	},		
 	{
-		ID = "cr_enclave_armet",        //355,-24
+		ID = "cr_enclave_armet",		//355,-24
 		Script = "",
 		Sets = [
 			{
@@ -1471,7 +1471,7 @@
 		]
 	},	
 	{
-		ID = "cr_enclave_armet_late",        //400,-28
+		ID = "cr_enclave_armet_late",		//400,-28
 		Script = "",
 		Sets = [
 			{
@@ -1498,7 +1498,7 @@
 		]
 	},	
 	{
-		ID = "cr_enclave_great_bascinet",        //415,-29
+		ID = "cr_enclave_great_bascinet",		//415,-29
 		Script = "",
 		Sets = [
 			{
@@ -1526,7 +1526,7 @@
 		]
 	},
 	{
-		ID = "cr_enclave_great_bascinet_late",        //465,-32
+		ID = "cr_enclave_great_bascinet_late",		//465,-32
 		Script = "",
 		Sets = [
 			{
@@ -1553,7 +1553,7 @@
 		]
 	},	
 	{
-		ID = "cr_enclave_venitian_bascinet",        //460,-33
+		ID = "cr_enclave_venitian_bascinet",		//460,-33
 		Script = "",
 		Sets = [
 			{
@@ -1581,7 +1581,7 @@
 		]
 	},
 	{
-		ID = "cr_enclave_venitian_bascinet_late",        //490,-31
+		ID = "cr_enclave_venitian_bascinet_late",		//490,-31
 		Script = "",
 		Sets = [
 			{
@@ -1608,7 +1608,7 @@
 		]
 	},	
 	{
-		ID = "cr_enclave_great_helm",        //475,-36
+		ID = "cr_enclave_great_helm",		//475,-36
 		Script = "",
 		Sets = [
 			{
@@ -1640,7 +1640,7 @@
 		]
 	},
 	{
-		ID = "cr_enclave_great_helm_late",        //515,-39
+		ID = "cr_enclave_great_helm_late",		//515,-39
 		Script = "",
 		Sets = [
 			{
@@ -1670,7 +1670,7 @@
 		]
 	},
 	{
-		ID = "cr_lion_helmet",        //500,-38
+		ID = "cr_lion_helmet",		//500,-38
 		Script = "",
 		Sets = [
 			{
@@ -1702,7 +1702,7 @@
 		]
 	},	
 	{
-		ID = "cr_enclave_kettle",        //270,-18
+		ID = "cr_enclave_kettle",		//270,-18
 		Script = "",
 		Sets = [
 			{
@@ -1723,7 +1723,7 @@
 		]
 	},
 	{
-		ID = "cr_enclave_kettle_with_chain",        //265,-17
+		ID = "cr_enclave_kettle_with_chain",		//265,-17
 		Script = "",
 		Sets = [
 			{
@@ -1746,7 +1746,7 @@
 		]
 	},	
 	{
-		ID = "cr_hedgeknight_low",        //255,-16
+		ID = "cr_hedgeknight_low",		//255,-16
 		Script = "",
 		Sets = [
 			{
@@ -2108,7 +2108,7 @@
 		]
 	},	
 	{
-		ID = "cr_orcwarlord_helmet_medium",     //435
+		ID = "cr_orcwarlord_helmet_medium",	 //435
 		Script = "",
 		Sets = [
 			{
@@ -2135,7 +2135,7 @@
 		]
 	},
 	{
-		ID = "cr_orcwarlord_helmet_heavy",     //500
+		ID = "cr_orcwarlord_helmet_heavy",	 //500
 		Script = "",
 		Sets = [
 			{
@@ -2162,7 +2162,7 @@
 		]
 	},	
 	{
-		ID = "greenskins/orcbehemoth_helmet_heavy",    //+85
+		ID = "greenskins/orcbehemoth_helmet_heavy",	//+85
 		Script = "",
 		Sets = [
 			{
@@ -2203,7 +2203,7 @@
 		]
 	},
 	{
-		ID = "greenskins/orcelite_helmet_heavy",     // +50
+		ID = "greenskins/orcelite_helmet_heavy",	 // +50
 		Script = "",
 		Sets = [
 			{
@@ -2226,7 +2226,7 @@
 		]
 	},	
 	{
-		ID = "cr_executioner_helmet_early",     //180
+		ID = "cr_executioner_helmet_early",	 //180
 		Script = "",
 		Sets = [
 			{
@@ -2243,7 +2243,7 @@
 				],
 				Tops = [
 					[6, ""],					
-					[3, "top/legend_helmet_eyemask"],    //30,-1
+					[3, "top/legend_helmet_eyemask"],	//30,-1
 					[1, "top/legend_helmet_facemask"],	  //-35,-1						
 				],
 				Vanity = []
@@ -2268,7 +2268,7 @@
 				],
 				Tops = [
 					[4, ""],					
-					[4, "top/legend_helmet_eyemask"],    //30,-1
+					[4, "top/legend_helmet_eyemask"],	//30,-1
 					[1, "top/legend_helmet_facemask"],	  //35,-1				
 					[1, "top/legend_helmet_southern_faceplate_bearded"], //70,-5			
 				],
@@ -2309,7 +2309,7 @@
 				],
 				Tops = [
 					[4, ""],					
-					[4, "top/legend_helmet_eyemask"],    //30,-1
+					[4, "top/legend_helmet_eyemask"],	//30,-1
 					[1, "top/legend_helmet_facemask"],	  //35,-1				
 					[1, "top/legend_helmet_southern_faceplate_bearded"], //70,-5			
 				],
@@ -2395,7 +2395,7 @@
 		]
 	},	
 	{
-		ID = "peasant_helmet_late",       //~90
+		ID = "peasant_helmet_late",	   //~90
 		Script = "",
 		Sets = [
 			{
@@ -2419,7 +2419,7 @@
 		]
 	},	
 	{
-		ID = "peasant_helmet_verylate",           //~120,-6
+		ID = "peasant_helmet_verylate",		   //~120,-6
 		Script = "",
 		Sets = [
 			{
@@ -2446,7 +2446,7 @@
 		]
 	},	
 	{
-		ID = "peasant_helmet_late_heavy",             //~150,-9
+		ID = "peasant_helmet_late_heavy",			 //~150,-9
 		Script = "",
 		Sets = [
 			{
@@ -2470,7 +2470,7 @@
 		]
 	},	
 	{
-		ID = "peasant_helmet_late_light",             //~95
+		ID = "peasant_helmet_late_light",			 //~95
 		Script = "",
 		Sets = [
 			{
@@ -2493,7 +2493,7 @@
 		]
 	},	
 	{
-		ID = "crfootman_helmet_early",             //~135
+		ID = "crfootman_helmet_early",			 //~135
 		Script = "",
 		Sets = [
 			{
@@ -2514,7 +2514,7 @@
 		]
 	},
 	{
-		ID = "crfootman_helmet_mid",             //~150
+		ID = "crfootman_helmet_mid",			 //~150
 		Script = "",
 		Sets = [
 			{
@@ -2534,7 +2534,7 @@
 		]
 	},	
 	{
-		ID = "crfootman_helmet_mid_reinforced",             //~175
+		ID = "crfootman_helmet_mid_reinforced",			 //~175
 		Script = "",
 		Sets = [
 			{
@@ -2554,7 +2554,7 @@
 		]
 	},		
 	{
-		ID = "crfootman_helmet_late",             //~175
+		ID = "crfootman_helmet_late",			 //~175
 		Script = "",
 		Sets = [
 			{
@@ -2575,7 +2575,7 @@
 		]
 	},
 	{
-		ID = "crfootman_helmet_late_kettle",             //~200
+		ID = "crfootman_helmet_late_kettle",			 //~200
 		Script = "",
 		Sets = [
 			{
@@ -2595,7 +2595,7 @@
 		]
 	},	
 	{
-		ID = "crfootman_helmet_late_heavy",             //~200
+		ID = "crfootman_helmet_late_heavy",			 //~200
 		Script = "",
 		Sets = [
 			{
@@ -2622,7 +2622,7 @@
 		]
 	},	
 	{
-		ID = "crfootman_helmet_late_kettle_reinforced",             //~225
+		ID = "crfootman_helmet_late_kettle_reinforced",			 //~225
 		Script = "",
 		Sets = [
 			{
@@ -2641,7 +2641,7 @@
 		]
 	},
 	{
-		ID = "crbillman_helmet_low",             //~30
+		ID = "crbillman_helmet_low",			 //~30
 		Script = "",
 		Sets = [
 			{
@@ -2661,7 +2661,7 @@
 		]
 	},	
 	{
-		ID = "crbillman_helmet_early",             //~85
+		ID = "crbillman_helmet_early",			 //~85
 		Script = "",
 		Sets = [
 			{
@@ -2676,7 +2676,7 @@
 		]
 	},	
 	{
-		ID = "crbillman_helmet_mid_chain",             //~115
+		ID = "crbillman_helmet_mid_chain",			 //~115
 		Script = "",
 		Sets = [
 			{
@@ -2693,7 +2693,7 @@
 		]
 	},	
 	{
-		ID = "crbillman_helmet_mid",             //~110
+		ID = "crbillman_helmet_mid",			 //~110
 		Script = "",
 		Sets = [
 			{
@@ -2713,7 +2713,7 @@
 		]
 	},
 	{
-		ID = "crbillman_helmet_late_chain",             //~140
+		ID = "crbillman_helmet_late_chain",			 //~140
 		Script = "",
 		Sets = [
 			{
@@ -2733,7 +2733,7 @@
 		]
 	},	
 	{
-		ID = "crbillman_helmet_late",             //~140
+		ID = "crbillman_helmet_late",			 //~140
 		Script = "",
 		Sets = [
 			{
@@ -2756,7 +2756,7 @@
 		]
 	},	
 	{
-		ID = "crbillman_helmet_heavy",             //~160
+		ID = "crbillman_helmet_heavy",			 //~160
 		Script = "",
 		Sets = [
 			{
@@ -2780,7 +2780,7 @@
 		]
 	},
 	{
-		ID = "crmasterarcher_helmet",             //~125
+		ID = "crmasterarcher_helmet",			 //~125
 		Script = "",
 		Sets = [
 			{
@@ -2803,7 +2803,7 @@
 		]
 	},	
 	{
-		ID = "crfencer_helmet_early",             //~100,-5
+		ID = "crfencer_helmet_early",			 //~100,-5
 		Script = "",
 		Sets = [
 			{
@@ -2822,7 +2822,7 @@
 		]
 	},	
 	{
-		ID = "crfencer_helmet_mid",             //~130,-7
+		ID = "crfencer_helmet_mid",			 //~130,-7
 		Script = "",
 		Sets = [
 			{
@@ -2847,7 +2847,7 @@
 		]
 	},
 	{
-		ID = "crfencer_helmet_late",             //~160,-6
+		ID = "crfencer_helmet_late",			 //~160,-6
 		Script = "",
 		Sets = [
 			{
@@ -2870,7 +2870,7 @@
 		]
 	},	
 	{
-		ID = "crgreatsword_helmet_early",             //~165,-10
+		ID = "crgreatsword_helmet_early",			 //~165,-10
 		Script = "",
 		Sets = [
 			{
@@ -2891,7 +2891,7 @@
 		]
 	},
 	{
-		ID = "crgreatsword_helmet_mid",             //~210,-11
+		ID = "crgreatsword_helmet_mid",			 //~210,-11
 		Script = "",
 		Sets = [
 			{
@@ -2915,7 +2915,7 @@
 		]
 	},	
 	{
-		ID = "crgreatsword_helmet_mid_low",             //~205,-12
+		ID = "crgreatsword_helmet_mid_low",			 //~205,-12
 		Script = "",
 		Sets = [
 			{
@@ -2933,7 +2933,7 @@
 		]
 	},		
 	{
-		ID = "crgreatsword_helmet_late",             //~225,-12
+		ID = "crgreatsword_helmet_late",			 //~225,-12
 		Script = "",
 		Sets = [
 			{
@@ -2956,7 +2956,7 @@
 		]
 	},	
 	{
-		ID = "crgreatsword_helmet_heavy",             //~270,-16
+		ID = "crgreatsword_helmet_heavy",			 //~270,-16
 		Script = "",
 		Sets = [
 			{
@@ -2979,7 +2979,7 @@
 		]
 	},		
 	{
-		ID = "crInfantry_helmet",             //~225
+		ID = "crInfantry_helmet",			 //~225
 		Script = "",
 		Sets = [
 			{
@@ -3035,7 +3035,7 @@
 		]
 	},			
 	{
-		ID = "crbandit_warlord_helmet",             //~320
+		ID = "crbandit_warlord_helmet",			 //~320
 		Script = "",
 		Sets = [
 			{
@@ -3109,7 +3109,7 @@
 		]
 	},
 	{
-		ID = "crGuardsman_helmet",                  //190, -10
+		ID = "crGuardsman_helmet",				  //190, -10
 		Script = "",
 		Sets = [
 			{
@@ -3160,7 +3160,7 @@
 		]
 	},	
 	{
-		ID = "crGuardsman_helmet_light",                  //155, -6
+		ID = "crGuardsman_helmet_light",				  //155, -6
 		Script = "",
 		Sets = [
 			{
@@ -3204,7 +3204,7 @@
 		]
 	},	
 	{
-		ID = "peasant_champion_helmet_light",                  //140, -5
+		ID = "peasant_champion_helmet_light",				  //140, -5
 		Script = "",
 		Sets = [
 			{
@@ -3228,7 +3228,7 @@
 		]
 	},	
 	{
-		ID = "peasant_champion_helmet_heavy",                  //200, -12
+		ID = "peasant_champion_helmet_heavy",				  //200, -12
 		Script = "",
 		Sets = [
 			{
@@ -3252,14 +3252,14 @@
 		]
 	},		
 	{
-		ID = "cr_barb_chosen_ichi",                  //310, -22
+		ID = "cr_barb_chosen_ichi",				  //310, -22
 		Script = "",
 		Sets = [
 			{
 				Hoods = [
 					[
 						1,
-						"hood/legend_helmet_chain_hood"        //80, -4
+						"hood/legend_helmet_chain_hood"		//80, -4
 					],					
 				],
 				Helms = [
@@ -3279,7 +3279,7 @@
 		]
 	},	
 	{
-		ID = "cr_barb_chosen_ni",         //285, -25
+		ID = "cr_barb_chosen_ni",		 //285, -25
 		Script = "",
 		Sets = [
 			{
@@ -3290,7 +3290,7 @@
 					],
 					[
 						0,
-						"hood/legend_helmet_chain_hood"        //80, -4
+						"hood/legend_helmet_chain_hood"		//80, -4
 					],				
 				],
 				Helms = [
@@ -3456,7 +3456,7 @@
 		]
 	},
 	{
-		ID = "outlander_helmet",     //130
+		ID = "outlander_helmet",	 //130
 		Script = "",
 		Sets = [
 			{
@@ -3470,7 +3470,7 @@
 				],
 				Tops = [
 					[8, ""],					
-					[1, "top/legend_helmet_eyemask"],    //30,-1
+					[1, "top/legend_helmet_eyemask"],	//30,-1
 					[1, "top/legend_helmet_facemask"],	  //-35,-1						
 				],
 				Vanity = []
@@ -3486,7 +3486,7 @@
 					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss90,-5,600					
 				],
 				Helms = [			
-					[1, "helm/legend_helmet_heavy_plate_helm_named"],//185,-14,3500,-3      275-300,18-20					
+					[1, "helm/legend_helmet_heavy_plate_helm_named"],//185,-14,3500,-3	  275-300,18-20					
 				],
 				Tops = [],
 				Vanity = [				
@@ -3511,7 +3511,7 @@
 					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss90,-5,600					
 				],
 				Helms = [			
-					[1, "helm/legend_helmet_heavy_spiked_helm"],//165,-10,1800,-2       185-205,10-12					
+					[1, "helm/legend_helmet_heavy_spiked_helm"],//165,-10,1800,-2	   185-205,10-12					
 				],
 				Tops = [],
 				Vanity = [
@@ -3600,7 +3600,7 @@
 		]
 	},	
 	{
-		ID = "crsellsword_named_helmet_dentist",     //145,-5
+		ID = "crsellsword_named_helmet_dentist",	 //145,-5
 		Script = "",
 		Sets = [
 			{
@@ -3608,7 +3608,7 @@
 					[1, "hood/legend_helmet_open_chain_hood"],// 65,-3,225				
 				],
 				Helms = [
-					[1, "helm/legend_helmet_dentist_helmet"],//70,-3,1200,-1       70-95,1-3				
+					[1, "helm/legend_helmet_dentist_helmet"],//70,-3,1200,-1	   70-95,1-3				
 				],
 				Tops = [],
 				Vanity = []
@@ -3616,7 +3616,7 @@
 		]
 	},	
 	{
-		ID = "crsellsword_named_helmet_barbute",     //145,-4
+		ID = "crsellsword_named_helmet_barbute",	 //145,-4
 		Script = "",
 		Sets = [
 			{
@@ -3634,7 +3634,7 @@
 		]
 	},
 	{
-		ID = "crsellsword_named_helmet_southern_conic",     //150,-4
+		ID = "crsellsword_named_helmet_southern_conic",	 //150,-4
 		Script = "",
 		Sets = [
 			{
@@ -3652,7 +3652,7 @@
 		]
 	},	
 	{
-		ID = "crsellsword_named_helmet_bascinet",     //250,-9
+		ID = "crsellsword_named_helmet_bascinet",	 //250,-9
 		Script = "",
 		Sets = [
 			{
@@ -3672,7 +3672,7 @@
 		]
 	},	
 	{
-		ID = "crsellsword_named_helmet_italo_norman",     //215,-8
+		ID = "crsellsword_named_helmet_italo_norman",	 //215,-8
 		Script = "",
 		Sets = [
 			{
@@ -3680,7 +3680,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325			
 				],
 				Helms = [
-					[1, "helm/legend_helmet_italo_norman_helm_named"],//110,-5,2000,-2	  110-135,4-5             duckbilled			
+					[1, "helm/legend_helmet_italo_norman_helm_named"],//110,-5,2000,-2	  110-135,4-5			 duckbilled			
 				],
 				Tops = [],
 				Vanity = [
@@ -3690,7 +3690,7 @@
 		]
 	},	
 	{
-		ID = "crsellsword_named_helmet_wallace",     //275,-11
+		ID = "crsellsword_named_helmet_wallace",	 //275,-11
 		Script = "",
 		Sets = [
 			{
@@ -3710,7 +3710,7 @@
 		]
 	},	
 	{
-		ID = "crsellsword_named_helmet_deep_sallet",     //290,-13
+		ID = "crsellsword_named_helmet_deep_sallet",	 //290,-13
 		Script = "",
 		Sets = [
 			{
@@ -3718,7 +3718,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325			
 				],
 				Helms = [
-					[1, "helm/legend_helmet_deep_sallet_named"],//105,-6,3200,-1         105-125,5-6	ss115-135,5-6			
+					[1, "helm/legend_helmet_deep_sallet_named"],//105,-6,3200,-1		 105-125,5-6	ss115-135,5-6			
 				],
 				Tops = [
 					[1, "top/legend_helmet_faceplate_full_01_named"],//75,-6,2000,-2				
@@ -3730,7 +3730,7 @@
 		]
 	},
 	{
-		ID = "crsellsword_named_helmet_kettle",     //250,-12
+		ID = "crsellsword_named_helmet_kettle",	 //250,-12
 		Script = "",
 		Sets = [
 			{
@@ -3738,7 +3738,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325			
 				],
 				Helms = [
-					[1, "helm/legend_helmet_kettle_helm_named"],//130,-9,3500,-2        130-155,7-9		ss140-175,7-9  	without visor			
+					[1, "helm/legend_helmet_kettle_helm_named"],//130,-9,3500,-2		130-155,7-9		ss140-175,7-9  	without visor			
 				],
 				Tops = [],
 				Vanity = [
@@ -3748,7 +3748,7 @@
 		]
 	},		
 	{
-		ID = "crsellsword_named_helmet_tailed_conic",     //260,-12
+		ID = "crsellsword_named_helmet_tailed_conic",	 //260,-12
 		Script = "",
 		Sets = [
 			{
@@ -3766,7 +3766,7 @@
 		]
 	},
 	{
-		ID = "crsellsword_named_helmet_stag",     //400
+		ID = "crsellsword_named_helmet_stag",	 //400
 		Script = "",
 		Sets = [
 			{
@@ -3774,11 +3774,11 @@
 					[1, "hood/legend_helmet_enclave_bevor"],// 95,-7,750	ss120,-8,1000			
 				],
 				Helms = [
-					[1, "helm/legend_helmet_stag_helm"],//200,-15,5000,-2	        200-225,14-16  ss225-250,14-16
+					[1, "helm/legend_helmet_stag_helm"],//200,-15,5000,-2			200-225,14-16  ss225-250,14-16
 					[1, "helm/legend_helmet_swan_helm"],//200,-15,5000,-2			200-225,14-16  ss225-250,14-16 					
 				],
 				Tops = [
-					[1, "top/legend_helmet_faceplate_sharp"],//35,-2,300,-1      oooooooo				
+					[1, "top/legend_helmet_faceplate_sharp"],//35,-2,300,-1	  oooooooo				
 				],
 				Vanity = [
 					[1, "vanity/legend_helmet_noble_buckle"],//10,0,100
@@ -3788,7 +3788,7 @@
 		]
 	},	
 	{
-		ID = "crsellsword_named_helmet_nordic",     //350,-20
+		ID = "crsellsword_named_helmet_nordic",	 //350,-20
 		Script = "",
 		Sets = [
 			{
@@ -3811,7 +3811,7 @@
 		]
 	},
 	{
-		ID = "crsellsword_named_helmet_steppe",     //220,-9
+		ID = "crsellsword_named_helmet_steppe",	 //220,-9
 		Script = "",
 		Sets = [
 			{
@@ -3830,7 +3830,7 @@
 		]
 	},	
 	{
-		ID = "crbanditveteran_helmet_verylate",     //215,-10
+		ID = "crbanditveteran_helmet_verylate",	 //215,-10
 		Script = "",
 		Sets = [
 			{
@@ -3852,7 +3852,7 @@
 		]
 	},
 	{
-		ID = "cremperors_helmet",     //490
+		ID = "cremperors_helmet",	 //490
 		Script = "",
 		Sets = [
 			{
@@ -3872,7 +3872,7 @@
 		]
 	},	
 	{
-		ID = "crijirok_helmet",    
+		ID = "crijirok_helmet",	
 		Script = "",
 		Sets = [
 			{
@@ -3888,7 +3888,7 @@
 		]
 	},	
 	{
-		ID = "crmountain_helmet",    
+		ID = "crmountain_helmet",	
 		Script = "",
 		Sets = [
 			{
@@ -3908,7 +3908,7 @@
 		]
 	},	
 	{
-		ID = "crskeleton_helmet",     //280,-18
+		ID = "crskeleton_helmet",	 //280,-18
 		Script = "",
 		Sets = [
 			{
@@ -3930,7 +3930,7 @@
 		]
 	},	
 	{
-		ID = "crmercenary_helmet_verylow",     //50-100
+		ID = "crmercenary_helmet_verylow",	 //50-100
 		Script = "",
 		Sets = [
 			{
@@ -3956,7 +3956,7 @@
 		]
 	},
 	{
-		ID = "crmercenary_helmet_low",     //100
+		ID = "crmercenary_helmet_low",	 //100
 		Script = "",
 		Sets = [
 			{
@@ -3993,7 +3993,7 @@
 		]
 	},
 	{
-		ID = "crmercenary_helmet_mid",     //130
+		ID = "crmercenary_helmet_mid",	 //130
 		Script = "",
 		Sets = [
 			{
@@ -4081,7 +4081,7 @@
 		]
 	},	
 	{
-		ID = "crmercenary_helmet_late",     //180
+		ID = "crmercenary_helmet_late",	 //180
 		Script = "",
 		Sets = [
 			{
@@ -4149,7 +4149,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325							
 				],
 				Helms = [
-					[1, "helm/legend_helmet_nordic_helm"],//125,-8,1000,-2             ------------
+					[1, "helm/legend_helmet_nordic_helm"],//125,-8,1000,-2			 ------------
 					[1, "helm/legend_helmet_nordic_helm_high"],//140,-8,1750,-2			-------------
 					[1, "helm/legend_helmet_nordic_helm_low"],//110,-7,460,-2					
 				],
@@ -4180,7 +4180,7 @@
 		]
 	},
 	{
-		ID = "crmercenary_helmet_barbute",     //160
+		ID = "crmercenary_helmet_barbute",	 //160
 		Script = "",
 		Sets = [
 			{
@@ -4204,7 +4204,7 @@
 		]			
 	},	
 	{
-		ID = "crmercenary_helmet_kettle",     //230
+		ID = "crmercenary_helmet_kettle",	 //230
 		Script = "",
 		Sets = [
 			{
@@ -4222,7 +4222,7 @@
 		]			
 	},	
 	{
-		ID = "crmercenary_helmet_heavy",     //210
+		ID = "crmercenary_helmet_heavy",	 //210
 		Script = "",
 		Sets = [
 			{
@@ -4255,7 +4255,7 @@
 		]
 	},
 	{
-		ID = "crbandit_helmet_low",     //125,-6
+		ID = "crbandit_helmet_low",	 //125,-6
 		Script = "",
 		Sets = [
 			{					 //125,-6
@@ -4289,7 +4289,7 @@
 		]
 	},
 	{
-		ID = "crbandit_helmet_early",     //170,-10
+		ID = "crbandit_helmet_early",	 //170,-10
 		Script = "",
 		Sets = [
 			{					
@@ -4310,7 +4310,7 @@
 		]
 	},	
 	{
-		ID = "crbandit_helmet_mid",    //215,-12
+		ID = "crbandit_helmet_mid",	//215,-12
 		Script = "",
 		Sets = [
 			{							
@@ -4334,7 +4334,7 @@
 		]
 	},
 	{
-		ID = "heavy_mail_coif_helmet",    //90,-4
+		ID = "heavy_mail_coif_helmet",	//90,-4
 		Script = "",
 		Sets = [
 			{							
@@ -4350,7 +4350,7 @@
 		]
 	},
 	{
-		ID = "adorned_closed_flat_top_with_mail_helmet",    //250,-13
+		ID = "adorned_closed_flat_top_with_mail_helmet",	//250,-13
 		Script = "",
 		Sets = [
 			{							
@@ -4370,7 +4370,7 @@
 		]
 	},	
 	{
-		ID = "adorned_full_helm_helmet",    //300,-18
+		ID = "adorned_full_helm_helmet",	//300,-18
 		Script = "",
 		Sets = [
 			{							
@@ -4388,7 +4388,7 @@
 		]
 	},
 	{
-		ID = "named/heraldic_mail_helmet",    //230,-11
+		ID = "named/heraldic_mail_helmet",	//230,-11
 		Script = "",
 		Sets = [
 			{							
@@ -4399,7 +4399,7 @@
 					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1			ss90,-5,900					
 				],
 				Tops = [
-					[1, "top/legend_helmet_faceplate_raised"],//500,-3,800,0    named----   ss45_55,-2,0,900				
+					[1, "top/legend_helmet_faceplate_raised"],//500,-3,800,0	named----   ss45_55,-2,0,900				
 				],
 				Vanity = [
 					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100				
@@ -4409,7 +4409,7 @@
 		]
 	},	
 	{
-		ID = "cr_named_steppe_helmet_with_mail",    //225,-10
+		ID = "cr_named_steppe_helmet_with_mail",	//225,-10
 		Script = "",
 		Sets = [
 			{							
@@ -4427,7 +4427,7 @@
 		]
 	},	
 	{
-		ID = "cr_named_nordic_helmet",    //290,-15
+		ID = "cr_named_nordic_helmet",	//290,-15
 		Script = "",
 		Sets = [
 			{							
@@ -4435,7 +4435,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325					
 				],
 				Helms = [
-					[1, "helm/cr_named_nordic_helmet"],//200-225,10-12    4000			
+					[1, "helm/cr_named_nordic_helmet"],//200-225,10-12	4000			
 				],
 				Tops = [],
 				Vanity = []
@@ -4443,7 +4443,7 @@
 		]
 	},	
 	{
-		ID = "cr_named_southern_wrap_helmet",    //330,-17
+		ID = "cr_named_southern_wrap_helmet",	//330,-17
 		Script = "",
 		Sets = [
 			{							
@@ -4461,7 +4461,7 @@
 		]
 	},
 	{
-		ID = "named/named_conic_helmet_with_faceguard",    //380,-20
+		ID = "named/named_conic_helmet_with_faceguard",	//380,-20
 		Script = "",
 		Sets = [
 			{							
@@ -4483,7 +4483,7 @@
 		]
 	},		
 	{
-		ID = "cr_named_southern_mask_helmet",    //380,-20
+		ID = "cr_named_southern_mask_helmet",	//380,-20
 		Script = "",
 		Sets = [
 			{							
@@ -4502,7 +4502,7 @@
 		]
 	},	
 	{
-		ID = "cr_barb_berserker_helm",    //120
+		ID = "cr_barb_berserker_helm",	//120
 		Script = "",
 		Sets = [
 			{							
@@ -4521,7 +4521,7 @@
 		]
 	},	
 	{
-		ID = "cr_death_knight_helm",    //260
+		ID = "cr_death_knight_helm",	//260
 		Script = "",
 		Sets = [
 			{							
@@ -4567,7 +4567,7 @@
 		]
 	},
 	{
-		ID = "cr_lion_helm",    //460
+		ID = "cr_lion_helm",	//460
 		Script = "",
 		Sets = [
 			{							
@@ -4873,7 +4873,7 @@
 		]
 	},
 	{
-		ID = "cr_barb_king_helmet_early",     //195
+		ID = "cr_barb_king_helmet_early",	 //195
 		Script = "",
 		Sets = [
 			{
@@ -4893,7 +4893,7 @@
 		]
 	},		
 	{
-		ID = "cr_barb_king_helmet_mid",     //250
+		ID = "cr_barb_king_helmet_mid",	 //250
 		Script = "",
 		Sets = [
 			{
@@ -4911,7 +4911,7 @@
 		]
 	},
 	{
-		ID = "cr_barb_king_helmet_late",     //285
+		ID = "cr_barb_king_helmet_late",	 //285
 		Script = "",
 		Sets = [
 			{
@@ -4955,7 +4955,7 @@
 					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss90,-5,600					
 				],
 				Helms = [			
-					[1, "helm/legend_helmet_heavy_spiked_helm"],//165,-10,1800,-2       185-205,10-12					
+					[1, "helm/legend_helmet_heavy_spiked_helm"],//165,-10,1800,-2	   185-205,10-12					
 				],
 				Tops = [],
 				Vanity = [
@@ -4973,7 +4973,7 @@
 					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss90,-5,600					
 				],
 				Helms = [			
-					[1, "helm/legend_helmet_heavy_plate_helm_named"],//185,-14,3500,-3      275-300,18-20					
+					[1, "helm/legend_helmet_heavy_plate_helm_named"],//185,-14,3500,-3	  275-300,18-20					
 				],
 				Tops = [],
 				Vanity = [				
@@ -4984,7 +4984,7 @@
 		]
 	},
 	{
-		ID = "crfencer_helmet_champion",     //200,-10
+		ID = "crfencer_helmet_champion",	 //200,-10
 		Script = "",
 		Sets = [
 			{

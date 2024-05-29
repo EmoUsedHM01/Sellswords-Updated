@@ -110,7 +110,7 @@ this.dryad_archer <- this.inherit("scripts/entity/tactical/human", {
 			[
 				1,
 				"dryad_helmet"
-			]              			
+			]			  			
 		]));		
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);		

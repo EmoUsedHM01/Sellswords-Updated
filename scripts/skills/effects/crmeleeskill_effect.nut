@@ -1,8 +1,8 @@
 this.crmeleeskill_effect <- this.inherit("scripts/skills/skill", {
 	m = {
-        Inflicter = null,
-        InflictedSkill = null,
-        SkillProperties = null
+		Inflicter = null,
+		InflictedSkill = null,
+		SkillProperties = null
 	},
 	function create()
 	{
@@ -12,7 +12,7 @@ this.crmeleeskill_effect <- this.inherit("scripts/skills/skill", {
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.IsActive = false;
 		this.m.IsStacking = false;
-        this.m.IsHidden = false;
+		this.m.IsHidden = false;
 		this.m.IsRemovedAfterBattle = true;
 	}
 

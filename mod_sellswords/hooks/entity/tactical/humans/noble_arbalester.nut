@@ -23,8 +23,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		local r;
@@ -71,11 +71,11 @@
 		if (dc <= 80)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "padded_surcoat"],    
-				[1, "gambeson"],        				
+				[1, "padded_surcoat"],	
+				[1, "gambeson"],						
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[2, "mail_coif"],               
+				[2, "mail_coif"],			   
 				[1, "aketon_cap"],  
 				[1, "open_leather_cap"], 
 				[1, "headscarf"], 
@@ -85,10 +85,10 @@
 		else if (dc <= 130)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_early"],    				
+				[3, "crarbalester_armor_early"],					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				
-				[1, "crbillman_helmet_low"],               //~30 					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+				[1, "crbillman_helmet_low"],			   //~30 					
 			]));
 		}			
 		else if (dc <= 180)
@@ -96,8 +96,8 @@
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[3, "crarbalester_armor_mid"],   				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				
-				[1, "crbillman_helmet_early"],              //~85          				
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+				[1, "crbillman_helmet_early"],			  //~85		  				
 			]));
 		}	
 		else if (dc > 180)
@@ -105,9 +105,9 @@
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[3, "crarbalester_armor_late"],   				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				  	
-				[2, "crbillman_helmet_mid_chain"],               //~115  	
-				[2, "crbillman_helmet_mid"],              //~110            					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				  	
+				[2, "crbillman_helmet_mid_chain"],			   //~115  	
+				[2, "crbillman_helmet_mid"],			  //~110								
 			]));
 		}			
 	}

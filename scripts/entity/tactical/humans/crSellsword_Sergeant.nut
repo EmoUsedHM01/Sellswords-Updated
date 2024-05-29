@@ -144,11 +144,11 @@ this.crSellsword_Sergeant <- this.inherit("scripts/entity/tactical/human", {
 		if (r == 1)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "sellsword_armor_medium"],      	  //165,-22
-				[2, "sellsword_armor_medium_chain"],          //190,-21	
+				[1, "sellsword_armor_medium"],	  	  //165,-22
+				[2, "sellsword_armor_medium_chain"],		  //190,-21	
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "sellsword_helmet_medium"],               	//185,-9
+				[1, "sellsword_helmet_medium"],			   	//185,-9
 			]));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_balance"));
@@ -157,14 +157,14 @@ this.crSellsword_Sergeant <- this.inherit("scripts/entity/tactical/human", {
 		else if (r >= 2)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_late"],       //370,-50                 375
-				[1, "cr_plate_full_heavy"],       //380,-49		     	
+				[1, "cr_plate_full_late"],	   //370,-50				 375
+				[1, "cr_plate_full_heavy"],	   //380,-49			 	
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crknight_helmet_late_mixed"],                //410, min 400	
-				[1, "crknight_helmet_late_mixed_patched"],        //405, min 390
-				[1, "cr_enclave_armet"],               //355,-24  	
-				[1, "crknight_helmet_mid_bascinet_faceplate"],               //385,-26 					
+				[1, "crknight_helmet_late_mixed"],				//410, min 400	
+				[1, "crknight_helmet_late_mixed_patched"],		//405, min 390
+				[1, "cr_enclave_armet"],			   //355,-24  	
+				[1, "crknight_helmet_mid_bascinet_faceplate"],			   //385,-26 					
 			]));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
 			
@@ -174,7 +174,7 @@ this.crSellsword_Sergeant <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_wears_it_well"));
 			}		
 		}		
-    }
+	}
 
 });
 

@@ -17,11 +17,13 @@
 			if (item.getID() == "weapon.knife" || item.getID() == "weapon.legend_shiv")
 			{
 				_properties.MeleeSkill += 12;
+				_properties.DamageDirectMult += 0.4;
 			}
 
 			else if (item.isWeaponType(this.Const.Items.WeaponType.Dagger))
 			{
 				_properties.MeleeSkill += 12 * dc;	
+				_properties.DamageDirectMult += 0.4 * dc;
 			}
 		}
 	}

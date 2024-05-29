@@ -57,7 +57,7 @@ this.crConscript <- this.inherit("scripts/entity/tactical/human", {
 					
 			if (this.World.getTime().Days >= 30)
 			{
-			    b.RangedSkill += 5;
+				b.RangedSkill += 5;
 			}			
 
 			if (dc >= 60)
@@ -67,7 +67,7 @@ this.crConscript <- this.inherit("scripts/entity/tactical/human", {
 			}
 			if (dc >= 120)
 			{
-			    b.RangedSkill += 5;
+				b.RangedSkill += 5;
 			}			
 		}
 		

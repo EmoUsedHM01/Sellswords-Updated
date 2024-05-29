@@ -9,7 +9,7 @@ this.cr_adorned_heavy_plate <- this.inherit("scripts/items/legend_armor/legend_a
 		this.m.Description = "A heavy chainmail hauberk worn under a thick riveted jacket and reinforced with vambraces. Adorned with trophies and lovingly maintained despite its extensive use, this is the armor of a true questing knight.";
 		this.m.ArmorDescription = "Includes a heavy chainmail hauberk worn under a thick riveted jacket and reinforced with vambraces. Adorned with trophies and lovingly maintained despite its extensive use, this is the armor of a true questing knight.";
 		this.m.Variants = [
-			1
+			0
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
@@ -20,17 +20,17 @@ this.cr_adorned_heavy_plate <- this.inherit("scripts/items/legend_armor/legend_a
 		this.m.ConditionMax = 150;
 		this.m.StaminaModifier = -20;
 	}
-	
+
 	function updateVariant()
 	{
-		this.m.SpriteBack = "bust_body_cr53";
-		this.m.SpriteDamagedBack = "bust_body_cr53_damaged";
-		this.m.SpriteCorpseBack = "bust_body_cr53_dead";
-		this.m.Icon = "armor/icon_body_armor_cr53.png";
+		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
+		this.m.SpriteBack = "bust_cr_adorned_heavy_plate" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_cr_adorned_heavy_plate" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_cr_adorned_heavy_plate" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_cr_adorned_heavy_plate" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_body_armor_cr53.png";
-		this.m.OverlayIconLarge = "armor/inventory_body_armor_cr53.png";		
-	}	
+		this.m.OverlayIcon = "legend_armor/icon_cr_adorned_heavy_plate" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_cr_adorned_heavy_plate" + "_" + variant + ".png";
+	}
 
 });
-

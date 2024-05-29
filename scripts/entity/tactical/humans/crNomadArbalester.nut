@@ -128,7 +128,7 @@ this.crNomadArbalester <- this.inherit("scripts/entity/tactical/human", {
 			[
 				1,
 				"leather_wraps"
-			]          				
+			]		  				
 		]));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
 			[
@@ -158,7 +158,7 @@ this.crNomadArbalester <- this.inherit("scripts/entity/tactical/human", {
 			[
 				6,
 				"cr_cutthroat_helmet"
-			]                					
+			]									
 		]));
 	}
 

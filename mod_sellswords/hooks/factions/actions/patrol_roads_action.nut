@@ -17,8 +17,8 @@
 		local z = this.Math.rand(1, 100);
 		local dc = this.World.getTime().Days;
 		dc = this.Math.min(dc, 250);
-        if (z > 83)
-        {		
+		if (z > 83)
+		{		
 			party = this.getFaction().spawnEntity(waypoints[0].getTile(), waypoints[0].getName() + " Noble man-at-arms", true, this.Const.World.Spawn.Noblewithbaron, this.Math.rand(180 + 0.4 * dc, 375) * this.getReputationToDifficultyLightMult());
 			party.getSprite("body").setBrush("figure_player_noble");
 			party.setDescription("Soldiers typically well-versed in the use of arms and served as a fully armoured heavy cavalryman.");
@@ -32,7 +32,7 @@
 		}
 		
 		else if (z > 0)
-        {		
+		{		
 			party = this.getFaction().spawnEntity(waypoints[0].getTile(), waypoints[0].getName() + " Company", true, this.Const.World.Spawn.Noble, this.Math.rand(120 + 0.4 * dc, 250) * this.getReputationToDifficultyLightMult());
 			party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + _faction.getBannerString());
 			party.setDescription("Professional soldiers in service to local lords.");

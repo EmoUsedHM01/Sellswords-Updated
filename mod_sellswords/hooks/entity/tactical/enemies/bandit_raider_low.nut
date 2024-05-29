@@ -1,8 +1,8 @@
 ::mods_hookExactClass("entity/tactical/enemies/bandit_raider_low", function(o) {
 	
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		local r = this.Math.rand(0, 7);

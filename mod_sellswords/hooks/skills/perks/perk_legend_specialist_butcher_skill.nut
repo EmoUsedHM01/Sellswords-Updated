@@ -3,8 +3,8 @@
 	o.onUpdate = function( _properties )
 	{
 		local dc = 0;
-		local actor = this.getContainer().getActor();
-		if (actor.isPlayerControlled())
+		local actor = this.getContainer().getActor().get();
+		if (::MSU.isKindOf(actor, "player"))
 		{
 			dc = this.getContainer().getActor().getDaysWithCompany();
 		}

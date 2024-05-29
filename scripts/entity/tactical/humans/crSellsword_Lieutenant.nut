@@ -109,7 +109,7 @@ this.crSellsword_Lieutenant <- this.inherit("scripts/entity/tactical/human", {
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}	
-	    local r = this.Math.rand(1, 3);
+		local r = this.Math.rand(1, 3);
 		if (r <= 2)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
@@ -153,13 +153,13 @@ this.crSellsword_Lieutenant <- this.inherit("scripts/entity/tactical/human", {
 		if (this.m.Skills.hasSkill("perk.legend_lithe"))
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "sellsword_armor_medium_high_ichi"],      	  //230,-22
-				[2, "sellsword_armor_medium_high_ni"],          //260,-22
-				[2, "sellsword_armor_medium_high_sann"],          //250,-22	
-				[2, "sellsword_armor_medium_high_yonn"],           //220,-20
+				[1, "sellsword_armor_medium_high_ichi"],	  	  //230,-22
+				[2, "sellsword_armor_medium_high_ni"],		  //260,-22
+				[2, "sellsword_armor_medium_high_sann"],		  //250,-22	
+				[2, "sellsword_armor_medium_high_yonn"],		   //220,-20
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[2, "sellsword_helmet_medium_high"],               //215,-9
+				[2, "sellsword_helmet_medium_high"],			   //215,-9
 			]));
 
 			if (::Is_PTR_Exist)
@@ -167,15 +167,15 @@ this.crSellsword_Lieutenant <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.addPerkTree(this.Const.Perks.MediumArmorTree);	
 			}
 		}
-		if (this.m.Skills.hasSkill("perk.battle_forged"))                
+		if (this.m.Skills.hasSkill("perk.battle_forged"))				
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "sellsword_armor_heavy_northern"],     //400 	     	
+				[1, "sellsword_armor_heavy_northern"],	 //400 		 	
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "cr_enclave_great_helm"],                //475,-36						
-				[1, "cr_enclave_great_bascinet_late"],              //465,-32
-				[2, "cr_enclave_venitian_bascinet"],               //460,-33					
+				[1, "cr_enclave_great_helm"],				//475,-36						
+				[1, "cr_enclave_great_bascinet_late"],			  //465,-32
+				[2, "cr_enclave_venitian_bascinet"],			   //460,-33					
 			]));
 
 			if (::Is_PTR_Exist)
@@ -185,7 +185,7 @@ this.crSellsword_Lieutenant <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_wears_it_well"));
 			}	
 		}		
-    }
+	}
 	
 	function makeMiniboss()
 	{
@@ -199,33 +199,33 @@ this.crSellsword_Lieutenant <- this.inherit("scripts/entity/tactical/human", {
 		if (this.m.Skills.hasSkill("perk.battle_forged"))
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crsellsword_named_armor_heavy_cloth"],           					
-				[1, "crsellsword_named_armor_heavy_chain"],           	
-				[1, "crsellsword_named_armor_heavy_plate"],           	 
-				[1, "crsellsword_barbarian_bronze"],           	  				
+				[1, "crsellsword_named_armor_heavy_cloth"],		   					
+				[1, "crsellsword_named_armor_heavy_chain"],		   	
+				[1, "crsellsword_named_armor_heavy_plate"],		   	 
+				[1, "crsellsword_barbarian_bronze"],		   	  				
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[2, "crsellsword_named_helmet_stag"],            //235,-19
-				[1, "crbarbarian_champion_heavy"],            //375,-24					
+				[2, "crsellsword_named_helmet_stag"],			//235,-19
+				[1, "crbarbarian_champion_heavy"],			//375,-24					
 			]));			
 		}
 		else if (this.m.Skills.hasSkill("perk.legend_lithe"))
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crsellsword_named_armor_medium_cloth"],           	//255,-24				
-				[1, "crsellsword_named_armor_medium_chain"],           	//275,-24
-				[1, "crsellsword_named_armor_medium_plate"],           	//310,-24
-				[1, "crsellsword_named_armor_medium_plate02"],           //275,-26
-				[1, "crsellsword_barbarian_fur"],           	 //270,-25				
-				[1, "crsellsword_barbarian_skull"],           	//275,-24				
+				[1, "crsellsword_named_armor_medium_cloth"],		   	//255,-24				
+				[1, "crsellsword_named_armor_medium_chain"],		   	//275,-24
+				[1, "crsellsword_named_armor_medium_plate"],		   	//310,-24
+				[1, "crsellsword_named_armor_medium_plate02"],		   //275,-26
+				[1, "crsellsword_barbarian_fur"],		   	 //270,-25				
+				[1, "crsellsword_barbarian_skull"],		   	//275,-24				
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crsellsword_named_helmet_bascinet"],            //250,-9  
-				[1, "crsellsword_named_helmet_italo_norman"],            //215,-8
-				[1, "crsellsword_named_helmet_deep_sallet"],            //290,-13
-				[1, "crsellsword_named_helmet_kettle"],            //250,-12
-				[1, "crsellsword_named_helmet_tailed_conic"],            //260,-12
-				[1, "crsellsword_named_helmet_wallace"],             //275,-11					
+				[1, "crsellsword_named_helmet_bascinet"],			//250,-9  
+				[1, "crsellsword_named_helmet_italo_norman"],			//215,-8
+				[1, "crsellsword_named_helmet_deep_sallet"],			//290,-13
+				[1, "crsellsword_named_helmet_kettle"],			//250,-12
+				[1, "crsellsword_named_helmet_tailed_conic"],			//260,-12
+				[1, "crsellsword_named_helmet_wallace"],			 //275,-11					
 			]));			
 		}	
 		this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 30;

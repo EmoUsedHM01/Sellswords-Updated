@@ -1,21 +1,21 @@
-::mods_hookExactClass("skills/perks/perk_legend_balance", function(o) {
-	o.m.Minus <- 0;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_balance", function( q ) {
 
-	local ws_create = o.create;
-	o.create = function()
+	q.m.Minus <- 0;
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Description = "%name% gains increased defense and endurance by balancing their armor and mobility.";		
 		this.m.BonusMin = 0;
 		this.m.BonusMax = 10;
 	}
-	
-	o.getTooltip = function()
+
+	q.getTooltip = @(__original) function()
 	{
 		local tooltip = this.skill.getTooltip();
 		local bonus = this.getBonus();
 
-		if (bonus > this.m.BonusMin)
+		if (bonus >= this.m.BonusMin)
 		{
 			tooltip.push({
 				id = 6,
@@ -40,7 +40,7 @@
 					icon = "ui/icons/ranged_defense.png",
 					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + (10 - bonus - this.m.Minus) + "[/color] Ranged Defense"
 				});
-			}				
+			}
 		}
 		else if (this.getContainer().getActor().getBodyItem() == null)
 		{
@@ -57,33 +57,32 @@
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "This character\'s armor is too light or too heavy or their Initiative is too low to receive any bonus from this perk"
+				text = "This character\'s armor is too heavy or their Initiative is too low to receive any bonus from this perk"
 			});
 		}
 		tooltip.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Initiative loss due to built Fatigue is reduced by [color=" + this.Const.UI.Color.PositiveValue + "]30%[/color]"
-		});			
+			text = "The penalty to Initiative from built-up Fatigue is reduced by [color=" + this.Const.UI.Color.PositiveValue + "]30%[/color]"
+		});
 
 		return tooltip;
 	}
-	
-	o.getBonus = function ()
+
+	q.getBonus = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 		local bodyitem = actor.getBodyItem();
 
 		if (bodyitem == null)
-		{
 			return 0;
-		}
 
 		local armorFatPen = actor.getItems().getStaminaModifier([
 			::Const.ItemSlot.Body,
 			::Const.ItemSlot.Head
 		]) * -1;
+
 		local bonus = this.Math.min(this.m.BonusMax, this.Math.abs(armorFatPen - 15) / 2);
 		local currIni = actor.getInitiative();
 
@@ -93,24 +92,27 @@
 			bonus -= this.m.Minus;				
 		}
 
-		return this.Math.max(this.m.BonusMin, bonus);
-	}		
+		if (armorFatPen <= 15)
+			bonus = 0;
 
-	o.getInitiativeBonus <- function()
+		return this.Math.max(this.m.BonusMin, bonus);
+	}
+
+	q.getInitiativeBonus <- function()
 	{
 		return this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]) * -1 * 0.3;
 	}
 
-	o.onUpdate <- function( _properties )
+	q.onUpdate <- function( _properties )
 	{
-		_properties.FatigueToInitiativeRate *= 0.7;
-		//_properties.Initiative += this.getInitiativeBonus();		
+		_properties.FatigueToInitiativeRate *= 0.7;		
 	}
 
-	o.onAfterUpdate = function( _properties )
+	q.onAfterUpdate = @(__original) function( _properties )
 	{
 		local bonus = this.getBonus();
 		_properties.MeleeDefense += bonus;
 		_properties.RangedDefense += (10 - bonus - this.m.Minus) + _properties.MeleeDefense / 3;	
 	}
-});	
+
+});

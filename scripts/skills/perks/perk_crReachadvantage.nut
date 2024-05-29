@@ -128,7 +128,7 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 	{
 		for (local i = this.m.Opponents.len() - 1; i >= 0; i--)
 		{			
-			local e = this.Tactical.getEntityByID(this.m.Opponents[i]);      //Opponents.push(_entity.getID())  entity id is inputed
+			local e = this.Tactical.getEntityByID(this.m.Opponents[i]);	  //Opponents.push(_entity.getID())  entity id is inputed
 			if (e == null || !e.isAlive())
 			{
 				this.m.Opponents.remove(i);

@@ -192,11 +192,11 @@ this.crSellswordveteran_Ranger <- this.inherit("scripts/entity/tactical/human", 
 		this.m.Items.addToBag(this.new("scripts/items/accessory/poison_item"));		
 
 		local armor = this.Const.World.Common.pickArmor([
-			[1, "crsellsword_named_armor_light_chain"],            //180,-12
-			[1, "crsellsword_named_armor_light_plate_01"],            //180,-10 
-			[1, "crsellsword_named_armor_light_plate_02"],            //185,-10
-			[1, "crsellsword_named_armor_light_plate_03"],            //160,-9 	
-			[1, "crsellsword_named_armor_light_cloth"],            //160,-9
+			[1, "crsellsword_named_armor_light_chain"],			//180,-12
+			[1, "crsellsword_named_armor_light_plate_01"],			//180,-10 
+			[1, "crsellsword_named_armor_light_plate_02"],			//185,-10
+			[1, "crsellsword_named_armor_light_plate_03"],			//160,-9 	
+			[1, "crsellsword_named_armor_light_cloth"],			//160,-9
 		]);		
 
 		local upgrade = [

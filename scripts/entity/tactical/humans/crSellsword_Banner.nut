@@ -104,26 +104,26 @@ this.crSellsword_Banner <- this.inherit("scripts/entity/tactical/human", {
 		weapon.m.IsDroppedAsLoot = false;
 		this.m.Items.equip(weapon);
 										
-		if (v <= 45)                //northern
+		if (v <= 45)				//northern
 		{
 			local r = this.Math.rand(1, 2);	
 			if (r == 1)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "sellsword_armor_medium"],      	  //165,-22
-					[2, "sellsword_armor_medium_chain"],          //190,-21	
+					[1, "sellsword_armor_medium"],	  	  //165,-22
+					[2, "sellsword_armor_medium_chain"],		  //190,-21	
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[1, "sellsword_helmet_medium"],               	//185,-9
+					[1, "sellsword_helmet_medium"],			   	//185,-9
 				]));
 			}
-			else if (r == 2)                
+			else if (r == 2)				
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "sellsword_armor_light"],      //150,-11     	
+					[1, "sellsword_armor_light"],	  //150,-11	 	
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[1, "sellsword_helmet_light"],       //140,-6                   				
+					[1, "sellsword_helmet_light"],	   //140,-6				   				
 				]));
 			}
 			
@@ -136,29 +136,29 @@ this.crSellsword_Banner <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_pattern_recognition"));
 			}		
 		}
-		else if (v <= 70)                    //southern
+		else if (v <= 70)					//southern
 		{
 			local r = this.Math.rand(1, 2);	
 			if (r == 1)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "crGuardsman_armor_ichi"],          //~200 -23
-					[1, "crGuardsman_armor_ni"],      //~225 -27
-					[1, "crGuardsman_armor_sann"],     //~205 -25	
+					[1, "crGuardsman_armor_ichi"],		  //~200 -23
+					[1, "crGuardsman_armor_ni"],	  //~225 -27
+					[1, "crGuardsman_armor_sann"],	 //~205 -25	
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[1, "crGuardsman_helmet"],               //190, -10          			
+					[1, "crGuardsman_helmet"],			   //190, -10		  			
 				]));
 			}
 			else if (r == 2)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[2, "crGuardsman_armor_light"],      //~135 -11
-					[1, "solemner_late_light_armor"],           //120
+					[2, "crGuardsman_armor_light"],	  //~135 -11
+					[1, "solemner_late_light_armor"],		   //120
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[2, "crGuardsman_helmet_light"],           //155, -6 	   
-					[1, "solemner_late_light_helmet"],             				
+					[2, "crGuardsman_helmet_light"],		   //155, -6 	   
+					[1, "solemner_late_light_helmet"],			 				
 				]));
 			}
 
@@ -173,13 +173,13 @@ this.crSellsword_Banner <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
 			}		
 		}	
-		else if (v <= 85)                   //ancient
+		else if (v <= 85)				   //ancient
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "sellsword_armor_ancient"],           	//250,-33				
+				[1, "sellsword_armor_ancient"],		   	//250,-33				
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "sellsword_helmet_ancient"],            //235,-19                 				 					
+				[1, "sellsword_helmet_ancient"],			//235,-19				 				 					
 			]));
 
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_battleheart"));
@@ -197,21 +197,21 @@ this.crSellsword_Banner <- this.inherit("scripts/entity/tactical/human", {
 			if (r <= 2)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "sellsword_armor_light"],      //150,-11     	
+					[1, "sellsword_armor_light"],	  //150,-11	 	
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[1, "sellsword_helmet_light"],       //140,-6                   				
+					[1, "sellsword_helmet_light"],	   //140,-6				   				
 				]));
 			}
 			else if (r == 3)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "crGuardsman_armor_light"],      //~135 -11
-					[1, "solemner_late_light_armor"],           //120	
+					[1, "crGuardsman_armor_light"],	  //~135 -11
+					[1, "solemner_late_light_armor"],		   //120	
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[1, "crGuardsman_helmet_light"],           //155, -6 	   
-					[1, "solemner_late_light_helmet"],           			
+					[1, "crGuardsman_helmet_light"],		   //155, -6 	   
+					[1, "solemner_late_light_helmet"],		   			
 				]));
 			}
 			
@@ -259,7 +259,7 @@ this.crSellsword_Banner <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bulwark"));
 			}		
 		}		
-    }
+	}
 
 });
 

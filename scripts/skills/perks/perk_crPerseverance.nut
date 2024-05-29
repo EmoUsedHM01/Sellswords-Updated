@@ -22,32 +22,38 @@ this.perk_crPerseverance <- this.inherit("scripts/skills/skill", {
 			return;
 		}
 
-		//this.logInfo("damagebefore: " + _hitInfo.DamageRegular);
-		local count = this.Math.max(0, _hitInfo.DamageRegular - 25)/5;
+		local count = this.Math.max(0, _hitInfo.DamageRegular - 25) / 5;
 		local damagereduction = 0;
 		local i = 0;
+
 		while (i <= count)
 		{
-			damagereduction += 0.5 * this.Math.min(i, 6);		
+			damagereduction += 0.5 * this.Math.min(i, 6);
 			i = ++i;
-		}	
+		}
+
 		this.m.DamageReduction = damagereduction;
-		_hitInfo.DamageRegular -= damagereduction;		
-		//this.logInfo("damageafter: " + _hitInfo.DamageRegular);					
-	}	
+		_hitInfo.DamageRegular -= damagereduction;
+	}
 	
 	function onDamageReceived( _attacker, _damageHitpoints, _damageArmor )
 	{
-		local actor = this.getContainer().getActor();
+		local actor = this.getContainer().getActor().get();
+
 		if (this.m.DamageReduction < 20 || _damageHitpoints < 11)
 		{
-			return;		
+			return;
 		}
-		local bldeffect = this.new("scripts/skills/effects/bleeding_effect");
-		bldeffect.setDamage(this.Math.floor(this.m.DamageReduction / 4));
-		bldeffect.m.durability = 2;		
-		actor.getSkills().add(bldeffect);
-		this.m.DamageReduction = 0;		
-	}	
-});
 
+		if (!actor.getCurrentProperties().IsImmuneToBleeding)
+		{
+			local bleed = this.new("scripts/skills/effects/bleeding_effect");
+			bleed.setDamage(this.Math.floor(this.m.DamageReduction / 4));
+			bleed.m.durability = 2;
+			actor.getSkills().add(bleed);
+		}
+
+		this.m.DamageReduction = 0;
+	}
+
+});

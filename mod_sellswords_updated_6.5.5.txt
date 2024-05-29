@@ -1,4 +1,67 @@
-6.4.14 changes
+6.5.5 changes
+
+...\scripts\!mods_preload\mod_sellswords.nut
+Added FB incompat to conflict list
+
+----------------------------------------------------------------------------------------------------------------------------
+6.5.4 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
+Bad sloppy Emo
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.3 changes
+
+...\mod_sellswords\hooks\skills\actives\disarm_skill.nut
+Added a null check on entities
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_assassin_commander_background.nut
+Added MA spec to maintain consistency
+
+...\mod_sellswords\load.nut
+...\mod_sellswords\hooks_breditor
+...\ui\mods\mod_ssu_breditor_add_on.js
+...\ui\mods\mod_nggh_breditor_add_on.js
+...\ui\mods\mod_ptr_breditor_add_on.js
+...\ui\mods\mod_ptr_and_nggh_breditor_add_on.js
+Did a complete rewrite to the Breditor hooks, much nicer now
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
+Updated some weird values
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.2 changes
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated a few typos and incorrect values
+
+...\scripts\skills\actives\break_free_skill.nut
+Updated the tooltip and some bad values
+
+...\mod_sellswords\hooks\items\weapons\scimitar.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
+...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_saif.nut
+Made sure the weapon types now appear
+
+...\mod_sellswords\hooks\items\weapons\oriental\firelance.nut
+Edited the ammo stats, was the same as the Advanced Firelance for some reason
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.1 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_knife_skill.nut
+Fixed the armour pen not existing
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.0 changes
+
+...\scripts\!mods_preload\mod_sellswords.nut
+Moved to Modern Hooks
 
 ...\mod_sellswords\hooks\skills\perks\perk_sprint.nut (deleted)
 Removed redundant Sprint hook (Perk is now coupled with climb into Athlete)
@@ -7,14 +70,97 @@ Removed redundant Sprint hook (Perk is now coupled with climb into Athlete)
 ...\scripts\skills\perks\perk_crmeleeskill.nut
 Fixed a bad thing that was causing crashes
 
-...\mod_sellswords\config\perk_defs.nut
-Updated the bad thing
-
 ...\mod_sellswords\hooks\items\weapons\scimitar.nut
 ...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
 ...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
 ...\mod_sellswords\hooks\items\weapons\oriental\two_handed_saif.nut
 Made all four of the 1h/2h southern swords both Sword and Cleaver weapon types
+
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\config\y_perk_defs.nut
+...\mod_sellswords\config\z_background_perks.nut
+...\mod_sellswords\config\z_perks_tree_magic.nut
+...\mod_sellswords\config\z_perks_tree_special_no_ptr.nut
+Did some reshuffling to account for modern hooks and the new layout for perks and their strings
+
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\hooks\config\strings.nut
+Updated the tooltips to match Rygar's new tooltip rework (This is amazing btw, ty Rygar)
+
+...\mod_sellswords\hooks\skills\perks\perk_last_stand.nut
+Fixed a real bad error, I wonder how nobody ever noticed it lmao
+
+...\mod_sellswords\hooks\skills\actives\split_shield.nut
+Fixed an issue with the AP refund if you had the Smashing Shields perk
+
+...\mod_sellswords\hooks\skills\effects\legend_knockback_prepared_effect.nut (new)
+...\scripts\skills\effects\cr_smackdown_effect.nut (also new)
+Fixed a hook not functioning as intended
+
+...\scripts\skills\effects\cr_clarity_effect.nut
+Updated the effect not removing itself after battle
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_blend_in.nut
+Updated an outdated hook system
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+Fixed an oversight with an Unarmed Mastery interaction
+
+...\scripts\skills\actives\zcr_charge.nut
+Updated the skill not attacking if the target was already stunned + cleanup
+
+...\scripts\skills\perks\perk_crrangedskill.nut
+Swapped the skill around a bit to work a little different to before
+
+...\scripts\skills\perks\perk_crPerseverance.nut
+Updated the syntax and a clause for bleed immune units still getting bled
+
+...\scripts\skills\perks\perk_crHonorheritage.nut
+Updated the syntax and values associated
+
+...\mod_sellswords\hooks\config\z_legends_fav_enemies.nut
+...\mod_sellswords\hooks\skills\legend_favoured_enemy_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
+Removed the old level 18 system, and implemented a kills for refund approach instead
+
+...\mod_sellswords\hooks\skills\actives\chop.nut
+Cleaned up tooltips
+
+...\gfx\ui\items\armor\...
+Moved to legend_armor and renamed them for easier file management
+
+...\gfx\ui\items\helmets\...
+Moved some to legend_helmets and renamed them for easier file management
+
+...\gfx\chiru_equipment.png
+...\brushes\chiru_equipment.brush
+...\scripts\items\legend_armor\plate\cr_emperors_armor.nut
+...\scripts\items\legend_armor\plate\cr_lindwurm_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_lindwurm_armor.nut
+...\scripts\items\legend_armor\plate\cr_mountain_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_mountain_armor.nut
+...\scripts\items\legend_armor\plate\cr_skin_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_skin_armor.nut
+-
+...\scripts\items\legend_armor\plate\cr_named_heraldic_mail.nut
+...\scripts\items\legend_armor\plate\cr_named_noble_mail_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_plated_mail_hauberk.nut
+...\scripts\items\legend_armor\plate\cr_named_sellswords_armor.nut
+-
+...\scripts\items\legend_armor\plate\cr_adorned_heavy_plate.nut
+...\scripts\items\legend_armor\plate\cr_adorned_mail_shirt.nut
+...\scripts\items\legend_armor\plate\cr_adorned_warriors_plate.nut
+-
+...\scripts\items\legend_armor\plate\cr_leather_lamellar_harness_heavy_rotten.nut
+...\scripts\items\legend_armor\plate\cr_leather_lamellar_heavy_rotten.nut
+-
+...\scripts\items\legend_armor\chain\cr_armor_hauberk_sleevless_named.nut
+-
+...\scripts\items\legend_helmets\helm\cr_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_mountain_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_mountain_helmet.nut
+Updated nomenclature for clarity and cleaned up syntax
 
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -671,7 +817,7 @@ Changed up the special tree a little, was fairly unintuitive code wise, cleaned 
 Updated a few typos and continuity errors
 
 ..\mod_sellswords\hooks\skills\perks\perk_legend_battleheart.nut
-C:\Users\joema_mpevn9w\Downloads\mod_sellswords_updated_6.0.4\scripts\skills\perks\perk_crmeleedefense.nut
+..._6.0.4\scripts\skills\perks\perk_crmeleedefense.nut
 
 ----------------------------------------------------------------------------------------------------------------------------
 

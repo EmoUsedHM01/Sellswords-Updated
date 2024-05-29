@@ -3,8 +3,8 @@ this.cr_named_sellswords_armor <- this.inherit("scripts/items/legend_armor/legen
 	function create()
 	{
 		this.legend_named_armor_upgrade.create();
-		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;		
-		this.m.ID = "armor.body.cr_named_sellswords_armor";	
+		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;
+		this.m.ID = "armor.body.cr_named_sellswords_armor";
 		this.m.NameList = [
 			"Mercenary Coat",
 			"Sellsword\'s Hide",
@@ -23,17 +23,17 @@ this.cr_named_sellswords_armor <- this.inherit("scripts/items/legend_armor/legen
 		this.m.StaminaModifier = -14;
 		this.randomizeValues();
 	}
-	
+
 	function updateVariant()
 	{
 		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
-		this.m.SpriteBack = "bust_body_cr101";
-		this.m.SpriteDamagedBack = "bust_body_cr101_damaged";
-		this.m.SpriteCorpseBack = "bust_body_cr101_dead";
-		this.m.Icon = "armor/icon_body_armor_cr101.png";
+		this.m.SpriteBack = "bust_cr_named_sellswords_armor";
+		this.m.SpriteDamagedBack = "bust_cr_named_sellswords_armor_damaged";
+		this.m.SpriteCorpseBack = "bust_cr_named_sellswords_armor_dead";
+		this.m.Icon = "armor/icon_cr_named_sellswords_armor.png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_body_armor_cr101.png";
-		this.m.OverlayIconLarge = "armor/inventory_body_armor_cr101.png";		
+		this.m.OverlayIcon = "armor/icon_cr_named_sellswords_armor.png";
+		this.m.OverlayIconLarge = "armor/inventory_cr_named_sellswords_armor.png";		
 	}
 
 	function randomizeValues()
@@ -41,7 +41,6 @@ this.cr_named_sellswords_armor <- this.inherit("scripts/items/legend_armor/legen
 		this.m.StaminaModifier = this.Math.rand(24, 26) * -1;
 		this.m.Condition = this.Math.rand(240, 260);
 		this.m.ConditionMax = this.m.Condition;
-	}	
+	}
 
 });
-

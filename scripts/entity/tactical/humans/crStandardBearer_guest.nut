@@ -89,7 +89,7 @@ this.crStandardBearer_guest <- this.inherit("scripts/entity/tactical/player", {
 		if (dc <= 80)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_light"],         				
+				[1, "crarmor_hauberk_light"],		 				
 			]));
 			
 			if (banner <= 4)
@@ -187,7 +187,7 @@ this.crStandardBearer_guest <- this.inherit("scripts/entity/tactical/player", {
 		else if (dc > 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_late"],    				
+				[1, "crarmor_hauberk_late"],					
 			]));
 			if (banner <= 4)
 			{				

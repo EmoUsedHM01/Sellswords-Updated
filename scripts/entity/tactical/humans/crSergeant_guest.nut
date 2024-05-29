@@ -164,8 +164,8 @@ this.crSergeant_guest <- this.inherit("scripts/entity/tactical/player", {
 		
 		if (::Is_PTR_Exist)
 		{
-			local mainhandItem = this.getMainhandItem();		    					
-			local attack = this.getSkills().getAttackOfOpportunity();			    
+			local mainhandItem = this.getMainhandItem();								
+			local attack = this.getSkills().getAttackOfOpportunity();				
 			if (mainhandItem != null && mainhandItem.isItemType(this.Const.Items.ItemType.TwoHanded))
 			{
 				if (attack != null && !attack.isDuelistValid())

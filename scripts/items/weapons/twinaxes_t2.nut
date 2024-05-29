@@ -45,7 +45,7 @@ this.twinaxes_t2 <- this.inherit("scripts/items/weapons/weapon", {
 		this.addSkill(skillToAdd);
 	}
   
-    function onDamageDealt( _target, _skill, _hitInfo )
+	function onDamageDealt( _target, _skill, _hitInfo )
 	{
 		local actor = this.getContainer().getActor();
 

@@ -27,7 +27,7 @@
 
 		if (_faction.hasTrait(this.Const.FactionTrait.OrientalCityState))
 		{
-		    if (z > 75)
+			if (z > 75)
 			{
 				party = _faction.spawnEntity(this.m.Start.getTile(), "Trading Convoy", false, this.Const.World.Spawn.CaravanSouthernwithSellswords, 50 + this.m.Start.getResources() * (80 + dc) * 0.01 + 7 * dc);			
 				y = 2 + 0.03 * dc;
@@ -40,7 +40,7 @@
 		}
 		else
 		{
-		    if (z > 75)
+			if (z > 75)
 			{
 				party = _faction.spawnEntity(this.m.Start.getTile(), "Trading Convoy", false, this.Const.World.Spawn.CaravanwithSellswords, 50 + this.m.Start.getResources() * (60 + dc) * 0.01 + 7 * dc);
 				y = 2 + 0.03 * dc;

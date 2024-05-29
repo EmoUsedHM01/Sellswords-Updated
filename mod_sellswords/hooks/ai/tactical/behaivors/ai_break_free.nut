@@ -68,7 +68,7 @@
 					polmult = 0.15;
 				}
 				score += polmult;				
-				if (nextTurnInitiative <= t.getTurnOrderInitiative() && nextTurnInitiative * 2 > t.getTurnOrderInitiative())    //break free will allow me act faster
+				if (nextTurnInitiative <= t.getTurnOrderInitiative() && nextTurnInitiative * 2 > t.getTurnOrderInitiative())	//break free will allow me act faster
 				{
 					score += 0.2;	
 				}

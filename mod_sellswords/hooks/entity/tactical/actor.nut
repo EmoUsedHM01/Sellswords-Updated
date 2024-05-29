@@ -130,5 +130,27 @@
 
 		return false;
 	}
+
+	local old_resetPerks = o.resetPerks;
+	o.resetPerks = function()
+	{
+		old_resetPerks();
+		// Remove all flags related to Favoured Enemy Perks
+		local flags = this.getFlags();
+		local flagsRemoved = 0; 
+
+		foreach (flag in flags.m)
+		{
+			if (flag.Key.find("favoured_enemy") != null)
+			{
+				::Mod_Sellswords.Mod.Debug.printLog("Removing flag \"" + flag.Key + "\" for " + this.getName());
+				flags.remove(flag.Key);
+				flagsRemoved++;
+			}
+		}
+
+		// Remove perks points that were earned from fulfilling favoured enemy refund requirement
+		this.m.PerkPoints -= flagsRemoved;
+	};
 	
 });

@@ -43,8 +43,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		local banner = 3;
@@ -80,74 +80,74 @@
 		if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarmor_hauberk_fencer_early"],           //100,-11
-				[1, "crarmor_hauberk_fencer_mid"],       //120,-13 					
+				[3, "crarmor_hauberk_fencer_early"],		   //100,-11
+				[1, "crarmor_hauberk_fencer_mid"],	   //120,-13 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[3, "crbillman_helmet_low"],            //~30
-				[1, "crbillman_helmet_early"],               //~85,-5 						
+				[3, "crbillman_helmet_low"],			//~30
+				[1, "crbillman_helmet_early"],			   //~85,-5 						
 			]));
 		}
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_fencer_early"],           //100,-11
-				[3, "crarmor_hauberk_fencer_mid"],       //120,-13 					
+				[1, "crarmor_hauberk_fencer_early"],		   //100,-11
+				[3, "crarmor_hauberk_fencer_mid"],	   //120,-13 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crbillman_helmet_early"],               //~85,-5 
-				[0, "crfencer_helmet_early"],            //~100,-5
-				[0, "crfencer_helmet_mid"],           //~130,-7					
-				[0, "crfencer_helmet_late"],               //~160,-6 						
+				[1, "crbillman_helmet_early"],			   //~85,-5 
+				[0, "crfencer_helmet_early"],			//~100,-5
+				[0, "crfencer_helmet_mid"],		   //~130,-7					
+				[0, "crfencer_helmet_late"],			   //~160,-6 						
 			]));
 		}			
 		else if (dc <= 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_fencer_mid"],       //120,-13 
-				[1, "crarmor_hauberk_fencer_late"],     //130,-13
-				[0, "crarmor_hauberk_fencer_late_patched"],       //155,-13  
-				[0, "crarmor_leather"],     //155,-12 					
+				[1, "crarmor_hauberk_fencer_mid"],	   //120,-13 
+				[1, "crarmor_hauberk_fencer_late"],	 //130,-13
+				[0, "crarmor_hauberk_fencer_late_patched"],	   //155,-13  
+				[0, "crarmor_leather"],	 //155,-12 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crbillman_helmet_early"],               //~85,-5 
-				[1, "crfencer_helmet_early"],            //~100,-5
-				[0, "crfencer_helmet_mid"],           //~130,-7					
-				[0, "crfencer_helmet_late"],               //~160,-6 						
+				[1, "crbillman_helmet_early"],			   //~85,-5 
+				[1, "crfencer_helmet_early"],			//~100,-5
+				[0, "crfencer_helmet_mid"],		   //~130,-7					
+				[0, "crfencer_helmet_late"],			   //~160,-6 						
 			]));
 		}	
 		else if (dc <= 150)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_fencer_late"],     //130,-13
-				[1, "crarmor_hauberk_fencer_late_patched"],       //155,-13  
-				[0, "crarmor_leather"],     //155,-12 					
+				[1, "crarmor_hauberk_fencer_late"],	 //130,-13
+				[1, "crarmor_hauberk_fencer_late_patched"],	   //155,-13  
+				[0, "crarmor_leather"],	 //155,-12 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crfencer_helmet_early"],            //~100,-5
-				[2, "crfencer_helmet_mid"],           //~130,-7					
-				[0, "crfencer_helmet_late"],               //~160,-6 						
+				[1, "crfencer_helmet_early"],			//~100,-5
+				[2, "crfencer_helmet_mid"],		   //~130,-7					
+				[0, "crfencer_helmet_late"],			   //~160,-6 						
 			]));
 		}
 		else if (dc <= 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "crarmor_hauberk_fencer_late_patched"],       //155,-13  
-				[1, "crarmor_leather"],     //155,-12 					
+				[2, "crarmor_hauberk_fencer_late_patched"],	   //155,-13  
+				[1, "crarmor_leather"],	 //155,-12 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crfencer_helmet_mid"],           //~130,-7					
-				[1, "crfencer_helmet_late"],               //~160,-6 						
+				[1, "crfencer_helmet_mid"],		   //~130,-7					
+				[1, "crfencer_helmet_late"],			   //~160,-6 						
 			]));
 		}
 		else if (dc > 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_fencer_late_patched"],       //155,-13  
-				[2, "crarmor_leather"],     //155,-12 					
+				[1, "crarmor_hauberk_fencer_late_patched"],	   //155,-13  
+				[2, "crarmor_leather"],	 //155,-12 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([								
-				[1, "crfencer_helmet_late"],               //~160,-6 						
+				[1, "crfencer_helmet_late"],			   //~160,-6 						
 			]));
 		}			
 	}

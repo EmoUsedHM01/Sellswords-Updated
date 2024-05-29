@@ -3,12 +3,16 @@ this.cr_skin_armor <- this.inherit("scripts/items/legend_armor/legend_armor_upgr
 	function create()
 	{
 		this.legend_armor_upgrade.create();
-		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;		
-		this.m.ID = "armor.body.cr_named_skin_armor";	
+		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;
+		this.m.ID = "armor.body.cr_named_skin_armor";
 		this.m.Name = "Skin Ghoul Armour";
 		this.m.Description = "This disgusting design is made by nailing metal pieces to layers of flesh taken from skin ghouls. It smells awful, is quite heavy, and feels as if it is healing itself on to your body.";
 		this.m.ArmorDescription = "This disgusting design is made by nailing metal pieces to layers of flesh taken from skin ghouls. It smells awful, is quite heavy, and feels as if it is healing itself on to your body.";
-		this.m.Variant = 515;
+		this.m.Variants = [
+			0,
+			1
+		];
+		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
@@ -53,9 +57,7 @@ this.cr_skin_armor <- this.inherit("scripts/items/legend_armor/legend_armor_upgr
 		local healthAdded = this.Math.min(healthMissing, actor.getHitpointsMax() * 0.1);
 
 		if (healthAdded <= 0)
-		{
 			return;
-		}
 
 		actor.setHitpoints(actor.getHitpoints() + healthAdded);
 		actor.setDirty(true);
@@ -71,14 +73,13 @@ this.cr_skin_armor <- this.inherit("scripts/items/legend_armor/legend_armor_upgr
 	function updateVariant()
 	{
 		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
-		this.m.SpriteBack = "bust_body_cr515";
-		this.m.SpriteDamagedBack = "bust_body_cr515_damaged";
-		this.m.SpriteCorpseBack = "bust_body_cr515_dead";
-		this.m.Icon = "armor/icon_body_armor_cr515.png";
+		this.m.SpriteBack = "bust_skin_armor" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_skin_armor" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_skin_armor" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_skin_armor" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_body_armor_cr515.png";
-		this.m.OverlayIconLarge = "armor/inventory_body_armor_cr515.png";		
+		this.m.OverlayIcon = "legend_armor/icon_skin_armor" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_skin_armor" + "_" + variant + ".png";
 	}
-	
-});
 
+});

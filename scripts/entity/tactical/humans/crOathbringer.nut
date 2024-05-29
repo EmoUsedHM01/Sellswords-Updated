@@ -188,7 +188,7 @@ this.crOathbringer <- this.inherit("scripts/entity/tactical/human", {
 				1,
 				"crknight_helmet_mid_bread"
 				//350,-23
-			],            
+			],			
 			[
 				1,
 				"crknight_helmet_mid_decorative"
@@ -198,12 +198,12 @@ this.crOathbringer <- this.inherit("scripts/entity/tactical/human", {
 				1,
 				"crknight_helmet_mid_unadorned"
 				//325 -21
-			],            
+			],			
 			[
 				1,
 				"cr_enclave_armet"
 				//355,-24 
-			],                			
+			],							
 		]));		
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);		

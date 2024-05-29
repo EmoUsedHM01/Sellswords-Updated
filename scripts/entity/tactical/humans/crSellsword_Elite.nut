@@ -131,10 +131,10 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 
 	function assignRandomEquipment()
 	{	
-	    local v = this.Math.rand(1, 100);
+		local v = this.Math.rand(1, 100);
 	
-	    if (v <= 75)
-	    {
+		if (v <= 75)
+		{
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 			{
 				local weapons = [
@@ -147,7 +147,7 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 
 				this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));				
 			}		
-	    }
+		}
 		else if (v <= 100)
 		{
 			if (::Is_PTR_Exist)
@@ -188,7 +188,7 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 				"sellsword_helmet_elite"
 			]
 		]));		
-    }		
+	}		
 
 	function makeMiniboss()
 	{

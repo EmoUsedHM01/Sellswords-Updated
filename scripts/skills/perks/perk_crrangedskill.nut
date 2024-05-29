@@ -1,7 +1,5 @@
 this.perk_crrangedskill <- this.inherit("scripts/skills/skill", {
-	m = {
-		HitchanceConverted = 0	
-	},
+	m = {},
 	function create()
 	{
 		this.m.ID = "perk.crrangedskill";
@@ -14,17 +12,27 @@ this.perk_crrangedskill <- this.inherit("scripts/skills/skill", {
 		this.m.IsStacking = false;
 		this.m.IsHidden = false;
 	}
-	
-	function onGetHitFactors( _skill, _targetTile, _tooltip )
-	{
-		if (!_skill.isAttack() || !_skill.isRanged() || !_skill.isUsingHitchance())		
-		{
-			return;
-		}		
-		_tooltip.push({
-			icon = "ui/tooltips/positive.png",
-			text = "Ace of Aces"
-		});			
-	}	
-});
 
+	function onUpdate( _properties )
+	{
+		_properties.HitChance[this.Const.BodyPart.Head] += 5;
+	}
+
+	function onTargetKilled(_targetEntity, _skill) 
+	{
+		if (_skill.isAttack() && _skill.isRanged()) 
+		{
+			local entityType = _targetEntity.getType();
+			// Check if entityType is in the FavoriteArcher list
+			foreach (type in this.Const.LegendMod.FavoriteArcher) 
+			{
+				if (entityType == type) 
+				{
+					this.m.BaseProperties.HitChance[this.Const.BodyPart.Head] += 1;
+					break;
+				}
+			}
+		}
+	}
+
+});

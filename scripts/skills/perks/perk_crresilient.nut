@@ -21,5 +21,3 @@ this.perk_crresilient <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-
-

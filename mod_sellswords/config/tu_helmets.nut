@@ -43,13 +43,13 @@
 			}
 		]
 	},										
-    {
+	{
 		ID = "swordmaster_mid_light_helmet", //130
 		Script = "",
 		Sets = [
 			{
 				Hoods = [
-				    [
+					[
 						3,
 						"hood/legend_helmet_padded_hood" //55
 					],
@@ -69,13 +69,13 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_fencer_hat" //15
 					]			
 				],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity_lower/legend_helmet_wings"
 					]
@@ -84,12 +84,12 @@
 		]
 	},
 	{
-	    ID = "swordmaster_late_medium_helmet", //15
+		ID = "swordmaster_late_medium_helmet", //15
 		Script = "",
 		Sets = [
 			{
 				Hoods = [
-				    [
+					[
 						3,
 						"hood/legend_helmet_barb_open_chain" //65
 					]
@@ -110,7 +110,7 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_faceplate_winged"
 					]			
@@ -123,7 +123,7 @@
 		]
 	},
 	{			
-	    ID = "solemner_mid_light_helmet", //130
+		ID = "solemner_mid_light_helmet", //130
 		Script = "",
 		Sets = [
 			{
@@ -148,13 +148,13 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_facemask" //35
 					]			
 				],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_southern_turban_open"
 					]			
@@ -186,13 +186,13 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_chain_attachment" //50
 					]			
 				],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_southern_turban_open"
 					]			
@@ -219,14 +219,14 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_southern_faceplate_bearded" //70
 						2
 					]			
 				],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_southern_turban_open"
 					]			
@@ -262,13 +262,13 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_facemask" //35
 					]			
 				],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_southern_turban_open"
 					]			
@@ -295,13 +295,13 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_chain_attachment" //50
 					]			
 				],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_southern_turban_open"
 					]			
@@ -310,7 +310,7 @@
 		]
 	},
 	{	
-	    ID = "solemner_late_heavy_helmet", //325
+		ID = "solemner_late_heavy_helmet", //325
 		Script = "",
 		Sets = [
 			{
@@ -328,14 +328,14 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_southern_faceplate_bearded" //70
 						2
 					]			
 				],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_southern_turban_open"
 					]			
@@ -378,7 +378,7 @@
 				],
 				Tops = [],				
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_headband"
 					]			
@@ -419,9 +419,9 @@
 						"helm/legend_helmet_flat_top_helm" //85
 					]
 				],
-				Tops = [],			     						
+				Tops = [],				 						
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_headband"
 					]			
@@ -455,9 +455,9 @@
 						"helm/legend_helmet_flat_top_helm_polished" //100
 					]
 				],
-				Tops = [],			        				
+				Tops = [],									
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_headband"
 					],
@@ -501,7 +501,7 @@
 					]
 				],
 				Tops = [],				 																		
-				Vanity = []				    				
+				Vanity = []									
 			}
 		]
 	},
@@ -528,7 +528,7 @@
 						1
 					]
 				],
-				Tops = [				    
+				Tops = [					
 					[
 						1,
 						"top/legend_helmet_chain_attachment" //25
@@ -562,7 +562,7 @@
 					]
 				],
 				Tops = [	
-			        [
+					[
 						1,
 						"top/legend_helmet_enclave_great_jaw" //70			
 					]					
@@ -600,7 +600,7 @@
 					]
 				],
 				Tops = [	
-			        [
+					[
 						1,
 						"top/legend_helmet_chain_attachment"
 					]			
@@ -609,7 +609,7 @@
 			}
 		]
 	},		
-    {
+	{
 		ID = "footman_late_helmet", //220
 		Script = "",
 		Sets = [
@@ -631,7 +631,7 @@
 						1
 					]
 				],
-				Tops = [				        
+				Tops = [						
 					[
 						1,
 						"top/legend_helmet_chain_attachment" //25
@@ -640,8 +640,8 @@
 				Vanity = []				   
 			}
 		]
-    },
-    {
+	},
+	{
 		ID = "footmanhigh_mid_helmet", //200
 		Script = "",
 		Sets = [
@@ -665,7 +665,7 @@
 					],					
 				],
 				Tops = [	
-			        [
+					[
 						1,
 						"top/legend_helmet_chain_attachment" //25
 					]			
@@ -674,7 +674,7 @@
 			}
 		]
 	},		
-    {
+	{
 		ID = "footmanhigh_late_helmet", //~270
 		Script = "",
 		Sets = [
@@ -702,7 +702,7 @@
 					]
 				],
 				Tops = [	
-			        [
+					[
 						1,
 						"top/legend_helmet_faceplate_flat" //40
 						1
@@ -724,7 +724,7 @@
 			}
 		]
 	},
-    {
+	{
 		ID = "archer_mid_helmet",
 		Script = "",
 		Sets = [
@@ -747,7 +747,7 @@
 					]
 				],
 				Tops = [	
-			        [
+					[
 						1,
 						"top/legend_helmet_chain_attachment"
 					]			
@@ -755,7 +755,7 @@
 				Vanity = []				   
 			}
 		]
-    },		
+	},		
 	{
 		ID = "archer_late_helmet",
 		Script = "",
@@ -777,7 +777,7 @@
 						"helm/helmlegend_helmet_sallet"
 					]					
 				],
-				Tops = [],			       
+				Tops = [],				   
 				Vanity = [
 				[
 						1,
@@ -787,7 +787,7 @@
 			}
 		]
 	},
-    {
+	{
 		ID = "gunner_helmet",
 		Script = "",
 		Sets = [
@@ -809,9 +809,9 @@
 						"helm/legend_helmet_barbute"
 					]
 				],
-				Tops = [],				    				
+				Tops = [],									
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_southern_turban_full"
 						2
@@ -825,7 +825,7 @@
 			}
 		]
 	},			   
-    {
+	{
 		ID = "bodyguard_mid_helmet",
 		Script = "",
 		Sets = [
@@ -852,7 +852,7 @@
 					]
 				],
 				Tops = [	
-			        [
+					[
 						1,
 						"top/legend_helmet_faceplate_winged"
 					],
@@ -902,7 +902,7 @@
 					]
 				],
 				Tops = [	
-			        [
+					[
 						1,
 						"top/legend_helmet_faceplate_flat"
 						1
@@ -969,7 +969,7 @@
 			}
 		]
 	},
-    {
+	{
 		ID = "leader_mid_helmet", //80
 		Script = "",
 		Sets = [
@@ -1015,7 +1015,7 @@
 		]
 	},
 	{
-		ID = "nomadleader_early_helmet", //~180               
+		ID = "nomadleader_early_helmet", //~180			   
 		Script = "",
 		Sets = [
 			{
@@ -1059,7 +1059,7 @@
 		]
 	},
 	{
-		ID = "nomadleader_proto_helmet", //~185,-9               
+		ID = "nomadleader_proto_helmet", //~185,-9			   
 		Script = "",
 		Sets = [
 			{
@@ -1080,7 +1080,7 @@
 		]
 	},	
 	{
-		ID = "nomadleader_mid_helmet",    //  ~200
+		ID = "nomadleader_mid_helmet",	//  ~200
 		Script = "",
 		Sets = [
 			{
@@ -1132,7 +1132,7 @@
 		]
 	},
 	{
-		ID = "nomadleader_late_helmet",    //  ~240
+		ID = "nomadleader_late_helmet",	//  ~240
 		Script = "",
 		Sets = [
 			{
@@ -1172,7 +1172,7 @@
 		]
 	},
 	{
-		ID = "stupied_sallet",     //210 14
+		ID = "stupied_sallet",	 //210 14
 		Script = "",
 		Sets = [
 			{
@@ -1199,7 +1199,7 @@
 		]
 	},
 	{
-		ID = "stupied_helmet",     //325 28
+		ID = "stupied_helmet",	 //325 28
 		Script = "",
 		Sets = [
 			{
@@ -1231,7 +1231,7 @@
 		]
 	},
 	{
-		ID = "eagle_helmet",    //  180 6
+		ID = "eagle_helmet",	//  180 6
 		Script = "",
 		Sets = [
 			{
@@ -1289,9 +1289,9 @@
 						"helm/legend_helmet_enclave_kettle"						
 					]
 				],
-				Tops = [],				       					
+				Tops = [],					   					
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_top_feather"
 					]
@@ -1300,7 +1300,7 @@
 		]		
 	},		
 	{
-	    ID = "officer_late_heavy_helmet", //325
+		ID = "officer_late_heavy_helmet", //325
 		Script = "",
 		Sets = [
 			{
@@ -1317,21 +1317,21 @@
 					]
 				],
 				Tops = [
-				    [
+					[
 						1,
 						"top/legend_helmet_southern_faceplate_bearded" //70
 						1
 					]			
 				],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_southern_turban_open"
 					]			
 				]
 			}
 		]
-    },
+	},
 	{
 		ID = "barbarians/heavy_horned_plate_helmet",
 		Script = "",
@@ -1392,8 +1392,8 @@
 			}
 		]
 	},	
-    {
-	    ID = "fencer_late_helmet", //~110
+	{
+		ID = "fencer_late_helmet", //~110
 		Script = "",
 		Sets = [
 			{
@@ -1416,7 +1416,7 @@
 				],
 				Tops = [],
 				Vanity = [
-				    [
+					[
 						1,
 						"vanity/legend_helmet_faction_helmet_2"
 					]			

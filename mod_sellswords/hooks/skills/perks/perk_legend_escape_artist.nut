@@ -2,8 +2,8 @@
 {
 	//Autobreak free on turn start
 	o.onTurnStart <- function()
-    {
-        local _user = this.getContainer().getActor();
+	{
+		local _user = this.getContainer().getActor();
 		if ( !_user.getSkills().hasSkill("effects.net")
 			&& !_user.getSkills().hasSkill("effects.rooted")
 			&& !_user.getSkills().hasSkill("effects.web")
@@ -12,7 +12,7 @@
 
 		local skill = _user.getCurrentProperties().getMeleeSkill();
 		local toHit = this.Math.min(100, skill - 10);
-        local rolled = this.Math.rand(1, 100);
+		local rolled = this.Math.rand(1, 100);
 
 		if (rolled <= toHit)
 		{

@@ -180,30 +180,30 @@ this.crBarbarianKing <- this.inherit("scripts/entity/tactical/human", {
 		if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_barb_king_armor_early"],            //200-220               									
+				[1, "cr_barb_king_armor_early"],			//200-220			   									
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "cr_barb_king_helmet_early"],            //195                				
+				[1, "cr_barb_king_helmet_early"],			//195								
 				[1, "cr_barb_king_helmet_mid"], 			 //250 
-				[1, "cr_barb_king_helmet_late"],             //285  						
+				[1, "cr_barb_king_helmet_late"],			 //285  						
 			]));
 		}	
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([               				
+			this.m.Items.equip(this.Const.World.Common.pickArmor([			   				
 				[1, "cr_barb_king_armor_mid"], 				//255-265				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				              				
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([							  				
 				[1, "cr_barb_king_helmet_mid"], 				 //250  						
 			]));
 		}
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_barb_king_armor_late"],             //280-300					
+				[1, "cr_barb_king_armor_late"],			 //280-300					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "cr_barb_king_helmet_late"],             //285  						
+				[1, "cr_barb_king_helmet_late"],			 //285  						
 			]));
 		}		
 	}

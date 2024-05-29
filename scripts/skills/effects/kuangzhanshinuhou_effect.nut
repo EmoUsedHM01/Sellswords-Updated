@@ -49,7 +49,7 @@ this.kuangzhanshinuhou_effect <- this.inherit("scripts/skills/skill", {
 		}
 	}
 
-    function onRemoved()
+	function onRemoved()
 	{
 		local actor = this.getContainer().getActor();
 
@@ -85,7 +85,7 @@ this.kuangzhanshinuhou_effect <- this.inherit("scripts/skills/skill", {
 	{
 		local actor = this.getContainer().getActor();
 		actor.m.Sound[this.Const.Sound.ActorEvent.NoDamageReceived] = [
-		    "sounds/combat/rage_01.wav",
+			"sounds/combat/rage_01.wav",
 			"sounds/combat/rage_02.wav"
 		];
 		actor.m.Sound[this.Const.Sound.ActorEvent.DamageReceived] = [
@@ -97,11 +97,11 @@ this.kuangzhanshinuhou_effect <- this.inherit("scripts/skills/skill", {
 			"sounds/combat/rage_02.wav"
 		];
 		actor.m.Sound[this.Const.Sound.ActorEvent.Fatigue] = [
-		    "sounds/combat/rage_01.wav",
+			"sounds/combat/rage_01.wav",
 			"sounds/combat/rage_02.wav"
 		];
 		actor.m.Sound[this.Const.Sound.ActorEvent.Flee] = [
-		    "sounds/combat/rage_01.wav",
+			"sounds/combat/rage_01.wav",
 			"sounds/combat/rage_02.wav"
 		];
 		actor.m.Sound[this.Const.Sound.ActorEvent.Idle] = [

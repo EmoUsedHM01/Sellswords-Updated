@@ -53,7 +53,7 @@
 			}
 		}
 		
-        if (z > dc)
+		if (z > dc)
 		{		
 			party = this.getFaction().spawnEntity(settlement.getTile(), "Nomads", false, this.Const.World.Spawn.NomadRaiders, this.Math.rand(80, 135) * this.getReputationToDifficultyLightMult());
 		}	

@@ -124,10 +124,10 @@ this.crBarbarianFootman <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Items.equip(shield);
 
 		this.m.Items.equip(this.Const.World.Common.pickArmor([
-			[1, "crbarbfootman_armor"],          				
+			[1, "crbarbfootman_armor"],		  				
 		]));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-			[1, "crbarbfootman_helmet"],                					
+			[1, "crbarbfootman_helmet"],									
 		]));
 		
 		//if (::Is_PTR_Exist)

@@ -42,8 +42,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))

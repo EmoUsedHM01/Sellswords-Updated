@@ -62,7 +62,7 @@
 			}
 		}
 		
-        if (z > dc)
+		if (z > dc)
 		{
 			party = this.getFaction().spawnEntity(settlement.getTile(), "Brigands", false, this.Const.World.Spawn.BanditRaiders, this.Math.rand(75, 120) * this.getScaledDifficultyMult() * mult);
 		}

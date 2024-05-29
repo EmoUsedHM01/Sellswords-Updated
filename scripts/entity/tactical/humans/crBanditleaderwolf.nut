@@ -231,34 +231,34 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 			])
 			this.m.Items.equip(helm);
 			
-		    local mainhandItem = this.getMainhandItem();
-		    if (mainhandItem != null)
-		    {
-		    	if (mainhandItem.isItemType(this.Const.Items.ItemType.TwoHanded))
-			    {
+			local mainhandItem = this.getMainhandItem();
+			if (mainhandItem != null)
+			{
+				if (mainhandItem.isItemType(this.Const.Items.ItemType.TwoHanded))
+				{
 					if (::Is_PTR_Exist && ("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 					{
 						this.m.Skills.addPerkTree(this.Const.Perks.TwoHandedTree);
 					}
 
-			        this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));
-			    }
-			    else
-			    {
-			    	if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));
+				}
+				else
+				{
+					if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 					{
-				        this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));
 
-	       				if (::Is_PTR_Exist)
+		   				if (::Is_PTR_Exist)
 						{
 							this.m.Skills.addPerkTree(this.Const.Perks.OneHandedTree);
 							this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_pattern_recognition"));	
 						}
 					}
 
-			        this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));
-			    }
-		    }			
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));
+				}
+			}			
 		}
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Body) == null)

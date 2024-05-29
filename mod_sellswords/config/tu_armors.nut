@@ -1,5 +1,5 @@
 ::Const.LegendMod.ArmorObjs.extend([{
-	    ID = "swordmaster_early_armor", //
+		ID = "swordmaster_early_armor", //
 		Script = "",
 		Sets = [
 			{
@@ -24,7 +24,7 @@
 					]
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_armor_leather_padded" //40
 					],
@@ -34,7 +34,7 @@
 					]
 				],					
 				Cloak = [
-				    [
+					[
 						1,
 						"cloak/legend_armor_cloak_common"//10
 					]				
@@ -45,7 +45,7 @@
 		]
 	},
 	{	 
-	    ID = "swordmaster_mid_armor", //120
+		ID = "swordmaster_mid_armor", //120
 		Script = "",
 		Sets = [
 			{
@@ -66,7 +66,7 @@
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_southern_strips"//40
 					],
@@ -76,13 +76,13 @@
 					]
 				],					
 				Cloak = [
-				    [
+					[
 						1,
 						"cloak/legend_armor_cloak_common"//10
 					]				
 				],
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_common_tabard"
 					]				
@@ -92,7 +92,7 @@
 		]
 	},
 	{
-	    ID = "swordmaster_late_light_armor", //150
+		ID = "swordmaster_late_light_armor", //150
 		Script = "",
 		Sets = [
 			{
@@ -109,25 +109,25 @@
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_armor_leather_noble" //65
 					]				
 				],					
 				Cloak = [
-				    [
+					[
 						1,
 						"cloak/legend_armor_cloak_common" //10
 					]				
 				],
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_noble_tabard"
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_hyena_fur_upgrade"
 					],
@@ -137,7 +137,7 @@
 		]
 	},
 	{
-	    ID = "swordmaster_late_medium_armor", //250
+		ID = "swordmaster_late_medium_armor", //250
 		Script = "",
 		Sets = [
 			{
@@ -147,14 +147,14 @@
 						"cloth/legend_tunic_noble"//40
 					]			
 				],
-				Chain = [				    
+				Chain = [					
 					[
 						1,
 						"chain/legend_armor_hauberk"//95
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_armor_scale"//100
 					],
@@ -168,19 +168,19 @@
 					]
 				],					
 				Cloak = [
-				    [
+					[
 						1,
 						"cloak/legend_armor_cloak_common"
 					]				
 				],
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_common_tabard"
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_hyena_fur_upgrade"
 					],
@@ -194,7 +194,7 @@
 		]
 	},
 	{
-	    ID = "solemner_mid_light_armor", //90
+		ID = "solemner_mid_light_armor", //90
 		Script = "",
 		Sets = [
 			{
@@ -205,28 +205,28 @@
 						6
 					]		
 				],
-				Chain = [				    
+				Chain = [					
 					[
 						1,										
 						"chain/legend_southern_padded_chest" //30
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_southern_arm_guards" //30
 					]					
 				],					
 				Cloak = [],				  			
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_southern_shoulder_cloth"
 						7
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_leather_shoulderguards_upgrade"
 					]					
@@ -235,7 +235,7 @@
 		]
 	},
 	{
-	    ID = "solemner_mid_medium_armor", //210
+		ID = "solemner_mid_medium_armor", //210
 		Script = "",
 		Sets = [
 			{
@@ -245,14 +245,14 @@
 						"cloth/legend_southern_split_gambeson" //65
 					]					
 				],
-				Chain = [				    
+				Chain = [					
 					[
 						1,										
 						"chain/legend_southern_padded_chest" //45
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_southern_plate_full" //75
 						2
@@ -260,13 +260,13 @@
 				],					
 				Cloak = [],				  			
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_southern_overcloth"						
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_double_mail_upgrade" //25
 					]					
@@ -275,7 +275,7 @@
 		]
 	},
 	{
-	    ID = "solemner_mid_heavy_armor", //350
+		ID = "solemner_mid_heavy_armor", //350
 		Script = "",
 		Sets = [
 			{
@@ -285,14 +285,14 @@
 						"cloth/legend_southern_split_gambeson" //65
 					]					
 				],
-				Chain = [				    
+				Chain = [					
 					[
 						1,										
 						"chain/legend_southern_mail" //100
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_armor_leather_lamellar_harness_heavy"  //170
 					],
@@ -303,13 +303,13 @@
 				],					
 				Cloak = [],				  			
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_southern_overcloth"						
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_metal_pauldrons_upgrade"
 					]					
@@ -328,14 +328,14 @@
 						"cloth/legend_southern_noble_surcoat" //600
 					]					
 				],
-				Chain = [				    
+				Chain = [					
 					[
 						1,										
 						"chain/legend_southern_mail" //100
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_armor_leather_lamellar_heavy"	//195			
 					],
@@ -347,13 +347,13 @@
 				],					
 				Cloak = [],				  			
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_southern_overcloth"						
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_metal_pauldrons_upgrade" //40
 					]					
@@ -372,7 +372,7 @@
 						"cloth/legend_southern_noble_surcoat" //60
 					]					
 				],
-				Chain = [				    
+				Chain = [					
 					[
 						1,										
 						"chain/legend_armor_hauberk" //95
@@ -390,13 +390,13 @@
 				],					
 				Cloak = [],				  			
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_southern_overcloth"						
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_double_mail_upgrade" //25
 					]					
@@ -423,20 +423,20 @@
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_southern_strips" //40
 					]				
 				],					
 				Cloak = [],				  			
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_southern_overcloth"					
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_leather_shoulderguards_upgrade"
 					]					
@@ -523,7 +523,7 @@
 				Cloak = [],									
 				Tabard = [],				
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_mail_patch_upgrade" //20
 					]					
@@ -573,7 +573,7 @@
 				Cloak = [],									
 				Tabard = [],
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_joint_cover_upgrade" //30
 					]					
@@ -624,7 +624,7 @@
 				Cloak = [],									
 				Tabard = [],
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_metal_pauldrons_upgrade" //185
 					]					
@@ -632,7 +632,7 @@
 			}
 		]
 	},
-    {
+	{
 		ID = "archer_mid_armor", //
 		Script = "",
 		Sets = [
@@ -682,7 +682,7 @@
 				Cloak = [],									
 				Tabard = [],
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_leather_shoulderguards_upgrade"
 					]					
@@ -690,7 +690,7 @@
 			}
 		]
 	}, 
-    {
+	{
 		ID = "archer_late_armor", //130
 		Script = "",
 		Sets = [
@@ -716,14 +716,14 @@
 				Cloak = [],									
 				Tabard = [],
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_leather_shoulderguards_upgrade"
 					]					
 				]	
 			}
 		]
-	},     	
+	},	 	
 	{
 		ID = "sergeant_late_armor", //~180
 		Script = "",
@@ -757,7 +757,7 @@
 					]					
 				Tabard = [],
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_unhold_fur_upgrade"
 					],
@@ -770,7 +770,7 @@
 		]
 	},	
 	{
-	    ID = "gunner_mid_light_armor", //90
+		ID = "gunner_mid_light_armor", //90
 		Script = "",
 		Sets = [
 			{
@@ -780,32 +780,32 @@
 						"cloth/legend_southern_robe" 	//25					
 					]		
 				],
-				Chain = [				    
+				Chain = [					
 					[
 						1,										
 						"chain/legend_southern_padded_chest" //30
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_southern_arm_guards" //30
 					]					
 				],					
 				Cloak = [],				  			
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_southern_shoulder_cloth"
 						8
 					]				
 				],			
-				Attachments = []				    					
+				Attachments = []										
 			}
 		]
 	},
 	{
-        ID = "gunner_late_armor", //115
+		ID = "gunner_late_armor", //115
 		Script = "",
 		Sets = [
 			{
@@ -822,20 +822,20 @@
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_southern_strips" //40
 					]				
 				],						
 				Cloak = [],				  			
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_southern_shoulder_cloth"
 						8
 					]				
 				],			
-			    Attachments = []			    					
+				Attachments = []									
 			}
 		]
 	},
@@ -876,7 +876,7 @@
 						1,
 						"chain/legend_armor_reinforced_rotten_mail_shirt" //45
 					],
-				    [
+					[
 						1,
 						"chain/legend_armor_rusty_mail_shirt" //20
 					],
@@ -906,7 +906,7 @@
 		]
 	},
 	{
-		ID = "banditveteran_midearly_armor",          // ~130
+		ID = "banditveteran_midearly_armor",		  // ~130
 		Script = "",
 		Sets = [
 			{
@@ -1075,7 +1075,7 @@
 					]	
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_armor_leather_lamellar_reinforced" //55
 					],
@@ -1234,7 +1234,7 @@
 					]	
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_armor_plate_triangle" //185
 					],
@@ -1301,7 +1301,7 @@
 					]
 				],
 				Cloak = [
-				    [
+					[
 						1,
 						"cloak/legend_armor_cloak_common"
 					]				
@@ -1359,14 +1359,14 @@
 					]
 				],
 				Cloak = [
-				    [
+					[
 						1,
 						"cloak/legend_armor_cloak_common"
 					]				
 				],									
 				Tabard = [],								
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_metal_pauldrons_upgrade" //40
 					]					
@@ -1375,7 +1375,7 @@
 		]
 	},
 	{
-	    ID = "officer_late_heavy_armor", //375
+		ID = "officer_late_heavy_armor", //375
 		Script = "",
 		Sets = [
 			{
@@ -1385,14 +1385,14 @@
 						"cloth/legend_southern_noble_surcoat" //60
 					]					
 				],
-				Chain = [				    
+				Chain = [					
 					[
 						1,										
 						"chain/legend_armor_hauberk_full" //115
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_southern_named_golden_plates"	//200	 				
 					]								
@@ -1400,7 +1400,7 @@
 				Cloak = [],				  			
 				Tabard = [],					   								
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_unhold_fur_upgrade"
 					]					
@@ -1409,7 +1409,7 @@
 		]
 	},
 	{	 
-	    ID = "fencer_late_armor", //120
+		ID = "fencer_late_armor", //120
 		Script = "",
 		Sets = [
 			{
@@ -1426,25 +1426,25 @@
 					]					
 				],
 				Plate = [
-				    [
+					[
 						1,
 						"plate/legend_armor_leather_noble" //65
 					]				
 				],					
 				Cloak = [
-				    [
+					[
 						1,
 						"cloak/legend_armor_cloak_common" //10
 					]				
 				],
 				Tabard = [
-				    [
+					[
 						1,
 						"tabard/legend_noble_tabard"
 					]				
 				],			
 				Attachments = [
-				    [
+					[
 						1,
 						"armor_upgrades/legend_hyena_fur_upgrade"
 					],

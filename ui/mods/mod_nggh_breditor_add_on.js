@@ -1,22 +1,19 @@
-
 WorldBreditorScreen.prototype.FirstPerkButton = function (_moveforward)
 {
 	var pt_classnames = ['Weapons', 'Armor', 'Traits', 'Class', 'Enemy', 'Magic', 'Hex', 'Charm', 'Beast', 'Special', 'Leftovers'];
 	if (_moveforward)
 	{
 		this.mPerkButtons[0].Counter +=1;
+
 		if (this.mPerkButtons[0].Counter == pt_classnames.length)
-		{
 			this.mPerkButtons[0].Counter = 0;
-		}
 	}
 	else
 	{
 		this.mPerkButtons[0].Counter -=1;
+
 		if (this.mPerkButtons[0].Counter == -1)
-		{
 			this.mPerkButtons[0].Counter = pt_classnames.length - 1;
-		}
 	}
 
 	this.mPerkButtons[0].Button.changeButtonText(pt_classnames[this.mPerkButtons[0].Counter]);
@@ -33,18 +30,16 @@ WorldBreditorScreen.prototype.SecondPerkButton = function (_moveforward)
 	if (_moveforward)
 	{
 		this.mPerkButtons[1].Counter +=1;
+
 		if (this.mPerkButtons[1].Counter == pt_subclasses)
-		{
 			this.mPerkButtons[1].Counter = 0;
-		}
 	}
 	else
 	{
 		this.mPerkButtons[1].Counter -=1;
+
 		if (this.mPerkButtons[1].Counter == -1)
-		{
 			this.mPerkButtons[1].Counter = pt_subclasses - 1;
-		}
 	}
 	
 	var tempo = this.mPTree[pt_classnames[this.mPerkButtons[0].Counter]][this.mPerkButtons[1].Counter].ID;
@@ -64,7 +59,7 @@ WorldBreditorScreen.prototype.CorrectDisplayedPerks = function ()
 		ButTwo: this.mPerkButtons[1].Counter,
 	}
 	this.notifyBackendOnBadBadPerks(plzsendhelp, function(_result)
-        {           
+		{		   
 			var perkcounter = 0;
 			for (var p = 2; p < self.mPerkButtons.length; p++) 
 			{
@@ -81,7 +76,7 @@ WorldBreditorScreen.prototype.CorrectDisplayedPerks = function ()
 				}
 				perkcounter +=1;
 			} 
-        }); 
+		}); 
 };
 
 WorldBreditorScreen.prototype.AddPG = function ()
@@ -107,10 +102,10 @@ WorldBreditorScreen.prototype.RemovePG = function ()
 		ButOne: pt_classnames[this.mPerkButtons[0].Counter],
 	}
 	this.notifyBackendOnRemovingPG(sendingdhelp, function(_result)
-        {           
-            data.PerkPoints = _result.PerkPoints;
+		{		   
+			data.PerkPoints = _result.PerkPoints;
 			self.mStatsOptions.PerkPoints.SVal.html(data.PerkPoints);
-        }); 
+		}); 
 	
 	this.CorrectDisplayedPerks();
 };
@@ -127,29 +122,21 @@ WorldBreditorScreen.prototype.AddPerk = function (_counter)
 	var self = this;
 	var data = this.mData;
 	this.notifyBackendOnAddingPerk(sendingdhelp, function(_result)
-        {           
-            data.PerkPoints = _result.PerkPoints;
+		{		   
+			data.PerkPoints = _result.PerkPoints;
 			self.mStatsOptions.PerkPoints.SVal.html(data.PerkPoints);
-        }); 
+		}); 
 	this.CorrectDisplayedPerks();
 };
 
 WorldBreditorScreen.prototype.loadFromData = function (_data)
 {
-	if(_data === undefined || _data === null)
-    {
-        return;
-    }
+	if (_data === undefined || _data === null)
+		return;
 
-	if('Title' in _data && _data.Title !== null)
-	{
+	if ('Title' in _data && _data.Title !== null)
 		 this.mDialogContainer.findDialogTitle().html(_data.Title);
-	}
 
-/* 	if('SubTitle' in _data && _data.SubTitle !== null)
-	{
-		 this.mDialogContainer.findDialogSubTitle().html(_data.SubTitle);
-	} */
 	this.mMode = 1;
 	this.mRoster = _data.Roster;
 	this.mTraits = _data.Traits;
@@ -185,20 +172,16 @@ WorldBreditorScreen.prototype.loadFromData = function (_data)
 	this.mNamedItemsPanel.Rows[1][1].TBValue = 0;
 	this.RerollNIData();
 	this.mNamedItemsPanel.Rows[0][4].BroExpImpInput.setInputTextBP("");
-	//this.mNamedItemsPanel.Rows[1][1].TypeButton.changeButtonText(this.mNItems.Items["Weapons"].List[0]);
 	
-	//this.mStatsOptions.Hitpoints.TraitContainer[2].Image.attr('src', Path.GFX + Asset.ICON_FATIGUE); //self.mTraits[1][2]
-	
-	
-    this.mListScrollContainer.empty();
+	this.mListScrollContainer.empty();
 
-    for(var i = 0; i < _data.Roster.length - 1; ++i)
-    {
+	for (var i = 0; i < _data.Roster.length - 1; ++i)
+	{
 		var entry = _data.Roster[i];
-        this.addListEntry(entry);
-    }
+		this.addListEntry(entry);
+	}
 
-    this.selectListEntry(this.mListContainer.findListEntryByIndex(0), true);
+	this.selectListEntry(this.mListContainer.findListEntryByIndex(0), true);
 };
 
 WorldBreditorScreen.prototype.attachPerkEventHandler = function(_perk)
@@ -218,10 +201,8 @@ WorldBreditorScreen.prototype.attachPerkEventHandler = function(_perk)
 				for (var c = 0; c < tempo.length; c++) 
 				{
 					if (perkcounter == secondcounter && perk == _perk)
-					{
-						//self.mDetailsPanel.CharacterName.html("pk "+perkcounter+" sc"+secondcounter);
 						self.AddPerk(secondcounter);
-					}
+
 					secondcounter +=1;
 				}
 			}

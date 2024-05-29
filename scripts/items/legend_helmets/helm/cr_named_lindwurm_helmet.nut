@@ -13,7 +13,11 @@ this.cr_named_lindwurm_helmet <- this.inherit("scripts/items/legend_helmets/lege
 			"Wurmscale Helmet",
 			"Lindwurm Mask"
 		];
-		this.m.Variant = 152;
+		this.m.Variants = [
+			0,
+			1
+		];
+		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
@@ -55,9 +59,7 @@ this.cr_named_lindwurm_helmet <- this.inherit("scripts/items/legend_helmets/lege
 		local c = this.m.Armor.getContainer();
 
 		if (c != null && c.getActor() != null && !c.getActor().isNull())
-		{
 			c.getActor().getFlags().add("head_immune_to_acid");
-		}
 	}
 
 	function onUnequip()
@@ -65,23 +67,21 @@ this.cr_named_lindwurm_helmet <- this.inherit("scripts/items/legend_helmets/lege
 		local c = this.m.Armor.getContainer();
 
 		if (c != null && c.getActor() != null && !c.getActor().isNull())
-		{
 			c.getActor().getFlags().remove("head_immune_to_acid");
-		}
 
 		this.legend_named_helmet_upgrade.onUnequip();
-	}	
-	
+	}
+
 	function updateVariant()
 	{
-		this.m.Sprite = "bust_helmet_cr152";
-		this.m.SpriteDamaged = "bust_helmet_cr152_damaged";
-		this.m.SpriteCorpse = "bust_helmet_cr152_dead";
-		this.m.Icon = "helmets/inventory_helmet_cr152.png";
+		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
+		this.m.Sprite = "bust_lindwurm_helmet" + "_" + variant;
+		this.m.SpriteDamaged = "bust_lindwurm_helmet" + "_" + variant + "_damaged";
+		this.m.SpriteCorpse = "bust_lindwurm_helmet" + "_" + variant + "_dead";
+		this.m.Icon = "legend_helmets/icon_lindwurm_helmet" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = this.m.Icon;
 		this.m.OverlayIconLarge = this.m.OverlayIcon;
 	}
 
 });
-

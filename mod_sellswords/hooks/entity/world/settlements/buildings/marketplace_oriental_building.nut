@@ -22,8 +22,8 @@
 				S = "misc/cr_pack"
 			}
 			]);
-	    }
+		}
 		
-	    fillStash(_list, _stash, 1, true);
+		fillStash(_list, _stash, 1, true);
 	}
 })

@@ -199,74 +199,74 @@ this.crKnightcommander <- this.inherit("scripts/entity/tactical/human", {
 		if (dc <= 80)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_scale_mid"],      //315,-40                             320
-				[1, "cr_plate_full_mid"],           //320,-41
-				[1, "cr_plate_full_mid_reinforced"],     //335,-43					
+				[1, "cr_plate_scale_mid"],	  //315,-40							 320
+				[1, "cr_plate_full_mid"],		   //320,-41
+				[1, "cr_plate_full_mid_reinforced"],	 //335,-43					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
 				[5, "crknight_faction_helm_enclave_armet",banner],  //355,-24  	
-				[1, "crknight_faction_helm_great_helm_faceplate_01",banner],    		//340,-24 
-				[3, "crknight_faction_helm_great_helm_armet_heavy",banner],     		//345,-23 
-				[1, "crknight_faction_helm_great_helm_frogmouth",banner],       		//340,-22  															
+				[1, "crknight_faction_helm_great_helm_faceplate_01",banner],			//340,-24 
+				[3, "crknight_faction_helm_great_helm_armet_heavy",banner],	 		//345,-23 
+				[1, "crknight_faction_helm_great_helm_frogmouth",banner],	   		//340,-22  															
 			]));
 		}	
 		else if (dc <= 110)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_mid"],           //320,-41                    340
-				[2, "cr_plate_full_mid_reinforced"],     //335,-43
-				[1, "cr_plate_full_late"],       //370,-50					
+				[1, "cr_plate_full_mid"],		   //320,-41					340
+				[2, "cr_plate_full_mid_reinforced"],	 //335,-43
+				[1, "cr_plate_full_late"],	   //370,-50					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                				
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([												
 				[2, "crknight_faction_helm_enclave_armet",banner],  //355,-24 
-				[2, "crknight_faction_helm_great_helm_faceplate_02",banner],    		//365,-23					
+				[2, "crknight_faction_helm_great_helm_faceplate_02",banner],			//365,-23					
 				[2, "crknight_faction_helm_great_helm_frogmouth_heavy",banner],  		//380,-26 
-				[2, "crknight_faction_helm_great_helm_faceplate_heavy_01",banner],      //385,-30 					
+				[2, "crknight_faction_helm_great_helm_faceplate_heavy_01",banner],	  //385,-30 					
 			]));
 		}	
 		else if (dc <= 140)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_late"],       //370,-50                 375
-				[1, "cr_plate_full_heavy"],       //380,-49					
+				[1, "cr_plate_full_late"],	   //370,-50				 375
+				[1, "cr_plate_full_heavy"],	   //380,-49					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([	   					 	
-				[3, "crknight_faction_helm_enclave_great_bascinet",banner],  //415,-29          410,6/10
-				[3, "crknight_faction_helm_great_helm_faceplate_heavy_02",banner],      //410,-32 					
+				[3, "crknight_faction_helm_enclave_great_bascinet",banner],  //415,-29		  410,6/10
+				[3, "crknight_faction_helm_great_helm_faceplate_heavy_02",banner],	  //410,-32 					
 			]));
 		}	
 		else if (dc <= 170)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_late"],       //370,-50             
-				[2, "cr_plate_full_heavy"],       //380,-49          380
+				[1, "cr_plate_full_late"],	   //370,-50			 
+				[2, "cr_plate_full_heavy"],	   //380,-49		  380
 				[1, "cr_plate_full_knight"]		 //430,-56						
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
 				[5, "crknight_faction_helm_enclave_venitian_bascinet",banner],   //460,-33	
-				[1, "crknight_faction_helm_enclave_great_bascinet",banner],  //415,-29       
+				[1, "crknight_faction_helm_enclave_great_bascinet",banner],  //415,-29	   
 				[3, "crknight_faction_helm_frogmouth_faceplate",banner],  //440,-30					
 			]));
 		}
 		else if (dc <= 200)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_heavy_late"],       //435,-57         410
-				[1, "cr_plate_full_heavy"],       //380,-49
+				[1, "cr_plate_full_heavy_late"],	   //435,-57		 410
+				[1, "cr_plate_full_heavy"],	   //380,-49
 				[1, "cr_plate_full_knight"]		 //430,-56						
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([												
-				[4, "crknight_faction_helm_enclave_great_helm",banner],    //475,-36       480,4/8					
+				[4, "crknight_faction_helm_enclave_great_helm",banner],	//475,-36	   480,4/8					
 			]));
 		}
 		else if (dc > 200)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "cr_plate_full_knight_late"],        //465,-58          450
+				[2, "cr_plate_full_knight_late"],		//465,-58		  450
 				[1, "cr_plate_full_knight"]		 //430,-56						
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([									
-				[4, "crknight_faction_helm_enclave_great_helm_late",banner],    //515			
+				[4, "crknight_faction_helm_enclave_great_helm_late",banner],	//515			
 			]));
 		}			
 	}

@@ -17,8 +17,10 @@ this.cr_named_mountain_helmet <- this.inherit("scripts/items/legend_helmets/lege
 		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
-		this.m.Variant = 1;
-		this.updateVariant();
+		this.m.Variants = [
+			0,
+			1
+		];
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.Value = 15000;
@@ -28,7 +30,7 @@ this.cr_named_mountain_helmet <- this.inherit("scripts/items/legend_helmets/lege
 		this.m.Vision = -3;
 		this.m.Type = this.Const.Items.HelmetUpgrades.Helm;
 		this.m.ItemType = this.m.ItemType;
-		this.randomizeValues();	
+		this.randomizeValues();
 	}
 
 	function getTooltip()
@@ -46,7 +48,7 @@ this.cr_named_mountain_helmet <- this.inherit("scripts/items/legend_helmets/lege
 			icon = "ui/icons/special.png",
 			text = "Restores 15% helmet armor each turn"
 		});
-	}	
+	}
 
 	function onCombatFinished()
 	{
@@ -62,9 +64,7 @@ this.cr_named_mountain_helmet <- this.inherit("scripts/items/legend_helmets/lege
 		local helmAdded = this.Math.min(helmMissing, this.Math.floor(helm.getArmorMax() * 0.15));
 
 		if (helmAdded <= 0)
-		{
 			return;
-		}
 
 		helm.setArmor(helm.getArmor() + helmAdded);
 		actor.setDirty(true);
@@ -79,14 +79,14 @@ this.cr_named_mountain_helmet <- this.inherit("scripts/items/legend_helmets/lege
 
 	function updateVariant()
 	{
-		this.m.Sprite = "bust_helmet_513";
-		this.m.SpriteDamaged = "bust_helmet_513_damaged";
-		this.m.SpriteCorpse = "bust_helmet_513_dead";
-		this.m.Icon = "helmets/inventory_helmet_cr513.png";
+		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
+		this.m.Sprite = "bust_mountain_helmet" + "_" + variant;
+		this.m.SpriteDamaged = "bust_mountain_helmet" + "_" + variant + "_damaged";
+		this.m.SpriteCorpse = "bust_mountain_helmet" + "_" + variant + "_dead";
+		this.m.Icon = "legend_helmets/icon_mountain_helmet" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = this.m.Icon;
 		this.m.OverlayIconLarge = this.m.OverlayIcon;
-	}	
+	}
 
 });
-

@@ -3,12 +3,16 @@ this.cr_mountain_armor <- this.inherit("scripts/items/legend_armor/legend_armor_
 	function create()
 	{
 		this.legend_armor_upgrade.create();
-		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;		
-		this.m.ID = "armor.body.cr_mountain_armor";	
+		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;
+		this.m.ID = "armor.body.cr_mountain_armor";
 		this.m.Name = "Mountain Armour";
 		this.m.Description = "Armor crafted from the skin and bones of a mighty rock unhold, the beast may be dead, but it continues to mend itself even after death.";
 		this.m.ArmorDescription = "Armor crafted from the skin and bones of a mighty rock unhold, the beast may be dead, but it continues to mend itself even after death.";
-		this.m.Variant = 516;
+		this.m.Variants = [
+			0,
+			1
+		];
+		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
@@ -49,9 +53,7 @@ this.cr_mountain_armor <- this.inherit("scripts/items/legend_armor/legend_armor_
 		local bodyAdded = this.Math.min(bodyMissing, this.Math.floor(body.getArmorMax() * 0.1));
 
 		if (bodyAdded <= 0)
-		{
 			return;
-		}
 
 		body.setArmor(body.getArmor() + bodyAdded);
 		actor.setDirty(true);
@@ -67,13 +69,13 @@ this.cr_mountain_armor <- this.inherit("scripts/items/legend_armor/legend_armor_
 	function updateVariant()
 	{
 		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
-		this.m.SpriteBack = "bust_body_cr516";
-		this.m.SpriteDamagedBack = "bust_body_cr516_damaged";
-		this.m.SpriteCorpseBack = "bust_body_cr516_dead";
-		this.m.Icon = "armor/icon_body_armor_cr516.png";
+		this.m.SpriteBack = "bust_mountain_armor" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_mountain_armor" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_mountain_armor" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_mountain_armor" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_body_armor_cr516.png";
-		this.m.OverlayIconLarge = "armor/inventory_body_armor_cr516.png";		
+		this.m.OverlayIcon = "legend_armor/icon_mountain_armor" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_mountain_armor" + "_" + variant + ".png";
 	}
 
 });

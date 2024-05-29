@@ -205,7 +205,6 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-		local actor = this.getContainer().getActor();
 		this.getContainer().getActor().getSkills().add(this.new("scripts/skills/racial/dryad_racial"));
 	}
 

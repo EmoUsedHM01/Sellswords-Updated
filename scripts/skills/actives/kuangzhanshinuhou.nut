@@ -10,7 +10,7 @@ this.kuangzhanshinuhou <- this.inherit("scripts/skills/skill", {
 		this.m.Icon = "";
 		this.m.IconDisabled = "";
 		this.m.SoundOnUse = [
-		    "sounds/combat/rage_01.wav",
+			"sounds/combat/rage_01.wav",
 			"sounds/combat/rage_02.wav"
 		];
 		this.m.SoundVolume = 0.9;

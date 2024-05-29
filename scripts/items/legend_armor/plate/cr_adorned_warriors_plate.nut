@@ -9,7 +9,7 @@ this.cr_adorned_warriors_plate <- this.inherit("scripts/items/legend_armor/legen
 		this.m.Description = "A long mail shirt covered by a riveted leather gambeson. Heavily worn from extensive use, but adorned with relics and well-maintained.";
 		this.m.ArmorDescription = "Includes a long mail shirt covered by a riveted leather gambeson. Heavily worn from extensive use, but adorned with relics and well-maintained.";
 		this.m.Variants = [
-			1
+			0
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
@@ -20,17 +20,17 @@ this.cr_adorned_warriors_plate <- this.inherit("scripts/items/legend_armor/legen
 		this.m.ConditionMax = 110;
 		this.m.StaminaModifier = -13;
 	}
-	
+
 	function updateVariant()
 	{
-		this.m.SpriteBack = "bust_body_cr52";
-		this.m.SpriteDamagedBack = "bust_body_cr52_damaged";
-		this.m.SpriteCorpseBack = "bust_body_cr52_dead";
-		this.m.Icon = "armor/icon_body_armor_cr52.png";
+		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
+		this.m.SpriteBack = "bust_cr_adorned_warriors_plate" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_cr_adorned_warriors_plate" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_cr_adorned_warriors_plate" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_cr_adorned_warriors_plate" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_body_armor_cr52.png";
-		this.m.OverlayIconLarge = "armor/inventory_body_armor_cr52.png";		
-	}	
+		this.m.OverlayIcon = "legend_armor/icon_cr_adorned_warriors_plate" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_cr_adorned_warriors_plate" + "_" + variant + ".png";
+	}
 
 });
-

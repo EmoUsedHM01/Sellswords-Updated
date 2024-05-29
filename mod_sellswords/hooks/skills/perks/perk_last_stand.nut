@@ -1,11 +1,13 @@
-::mods_hookExactClass("skills/perks/perk_last_stand", function( o ) 
+::mods_hookExactClass("skills/perks/perk_last_stand", function(o) 
 {
 	o.m.IsSpent <- false;
-	
-	o.getTooltip = function ()
+
+	o.getTooltip = function()
 	{
 		local tooltip = this.skill.getTooltip();
 		local currentPercent = this.getContainer().getActor().getHitpointsPct();
+		local missingHealthPercent = 1.0 - currentPercent;
+		local actionPoints = this.Math.floor(missingHealthPercent / 0.20);
 
 		if (currentPercent < 0.66)
 		{
@@ -16,16 +18,6 @@
 				icon = "ui/icons/special.png",
 				text = "Your melee and ranged defense are increased by [color=" + this.Const.UI.Color.PositiveValue + "]" + bonus + "[/color]."
 			});
-
-			if (bonus >= 10)
-			{
-				tooltip.push({
-					id = 6,
-					type = "text",
-					icon = "ui/icons/special.png",
-					text = "Action Points are increased by [color=" + this.Const.UI.Color.PositiveValue + "]" + this.Math.floor(0.1 * bonus) + "[/color]."
-				});
-			}
 			
 			if (currentPercent < 0.33)
 			{
@@ -38,11 +30,23 @@
 			}
 		}
 
+		if (actionPoints > 0)
+		{
+			tooltip.push({
+				id = 6,
+				type = "text",
+				icon = "ui/icons/special.png",
+				text = "Action Points are increased by [color=" + this.Const.UI.Color.PositiveValue + "]" + actionPoints + "[/color]."
+			});
+		}
+
 		return tooltip;
-	}	
+	};
+
 	o.onUpdate = function(_properties)
 	{
 		local currentPercent = this.getContainer().getActor().getHitpointsPct();
+		local missingHealthPercent = 1.0 - currentPercent;
 		local bonus = 0;
 
 		if (currentPercent < 0.66)
@@ -67,6 +71,7 @@
 
 		_properties.MeleeDefense += bonus;
 		_properties.RangedDefense += bonus;
-		_properties.ActionPoints += this.Math.floor(0.1 * bonus);		
+		_properties.ActionPoints += this.Math.floor(missingHealthPercent / 0.20);		
 	}
-});	
+
+});

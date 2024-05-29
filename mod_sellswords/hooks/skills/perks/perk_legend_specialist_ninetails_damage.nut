@@ -19,7 +19,7 @@
 		{
 		  if (item.getID() == "weapon.legend_cat_o_nine_tails")
 		  {
-		    _properties.DamageRegularMin += this.Math.floor(resolve * 0.05);
+			_properties.DamageRegularMin += this.Math.floor(resolve * 0.05);
 			_properties.DamageRegularMax += this.Math.floor(resolve * 0.1);
 		  }
 		  else

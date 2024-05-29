@@ -110,7 +110,7 @@ this.crNomadZweihander <- this.inherit("scripts/entity/tactical/human", {
 		]));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
 			[3, "nomadleader_early_helmet"],
-			[1, "nomadleader_mid_helmet"],               					
+			[1, "nomadleader_mid_helmet"],			   					
 		]));
 	}
 	

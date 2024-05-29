@@ -10,7 +10,7 @@ this.twincleavers_2 <- this.inherit("scripts/skills/skill", {
 		this.m.IconDisabled = "skills/active_182_sw.png";
 		this.m.Overlay = "active_182";
 		this.m.SoundOnUse = [
-		    "sounds/combat/cleave_01.wav",
+			"sounds/combat/cleave_01.wav",
 			"sounds/combat/cleave_02.wav",
 			"sounds/combat/cleave_03.wav"
 		];
@@ -127,12 +127,12 @@ this.twincleavers_2 <- this.inherit("scripts/skills/skill", {
 				ret = this.attackEntity(_user, target) || ret;
 			}
 
-            if (target.isAlive())
+			if (target.isAlive())
 			{
 				ret = this.attackEntity(_user, target) || ret;
 			}
 
-            if (target.isAlive())
+			if (target.isAlive())
 			{
 				ret = this.attackEntity(_user, target) || ret;
 			}

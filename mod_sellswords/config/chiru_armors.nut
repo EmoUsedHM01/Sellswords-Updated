@@ -1,27 +1,27 @@
 ::Const.LegendMod.ArmorObjs.extend([{
-    ID = "apron",
-    Script = "",
-    Sets = [{
-        Cloth = [
-            [1, "cloth/legend_apron"]
-        ],
-        Chain = [
-        ],
-        Plate = [
-            [12, ""],
-            [1, "plate/legend_armor_leather_jacket"],
-            [1, "plate/legend_armor_leather_jacket_simple"]
-        ],
-        Cloak = [
-        ],
-        Tabard = [
-        ],
-        Attachments =[
-        ]
-    }]
+	ID = "apron",
+	Script = "",
+	Sets = [{
+		Cloth = [
+			[1, "cloth/legend_apron"]
+		],
+		Chain = [
+		],
+		Plate = [
+			[12, ""],
+			[1, "plate/legend_armor_leather_jacket"],
+			[1, "plate/legend_armor_leather_jacket_simple"]
+		],
+		Cloak = [
+		],
+		Tabard = [
+		],
+		Attachments =[
+		]
+	}]
 },
 {
-	ID = "sellsword_armor_barb",        //255,-38
+	ID = "sellsword_armor_barb",		//255,-38
 	Script = "",
 	Sets = [
 		{
@@ -167,7 +167,7 @@
 	]
 },		
 {
-	ID = "sellsword_armor_ancient",        //250,-33
+	ID = "sellsword_armor_ancient",		//250,-33
 	Script = "",
 	Sets = [
 		{
@@ -193,7 +193,7 @@
 	]
 },	
 {
-	ID = "sellsword_armor_undead",          //250,-30
+	ID = "sellsword_armor_undead",		  //250,-30
 	Script = "",
 	Sets = [
 		{
@@ -238,10 +238,10 @@
 			],
 			Plate = [				
 				[1, "plate/legend_armor_plate_ancient_scale_coat_restored"],// 170,-23,3000		   7.39						
-				[1, "plate/legend_armor_plate_full"],// 160,-22,4000  ss180,-26,4500           6.92
+				[1, "plate/legend_armor_plate_full"],// 160,-22,4000  ss180,-26,4500		   6.92
 				[1, "plate/legend_armor_leather_lamellar_heavy"],// 165,-24,4750  ss195,-28,5000			6.97	 	
-				[1, "plate/legend_armor_plate_krastenbrust"],// 170,-26,5000  ss205,-30,5000            6.83
-				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000         6.91					
+				[1, "plate/legend_armor_plate_krastenbrust"],// 170,-26,5000  ss205,-30,5000			6.83
+				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000		 6.91					
 			],
 			Cloak = [
 				[
@@ -353,7 +353,7 @@
 	]
 },
 {
-	ID = "sellsword_armor_medium",    //165,-22
+	ID = "sellsword_armor_medium",	//165,-22
 	Script = "",
 	Sets = [
 		{
@@ -410,7 +410,7 @@
 	]
 },
 {
-	ID = "sellsword_armor_medium_high_ichi",    //230,-22
+	ID = "sellsword_armor_medium_high_ichi",	//230,-22
 	Script = "",
 	Sets = [
 		{
@@ -436,7 +436,7 @@
 	]
 },	
 {
-	ID = "sellsword_armor_medium_high_ni",    //260,-22
+	ID = "sellsword_armor_medium_high_ni",	//260,-22
 	Script = "",
 	Sets = [
 		{
@@ -460,7 +460,7 @@
 	]
 },	
 {
-	ID = "sellsword_armor_medium_high_sann",    //250,-22
+	ID = "sellsword_armor_medium_high_sann",	//250,-22
 	Script = "",
 	Sets = [
 		{
@@ -484,7 +484,7 @@
 	]
 },	
 {
-	ID = "sellsword_armor_medium_high_yonn",    //220,-20
+	ID = "sellsword_armor_medium_high_yonn",	//220,-20
 	Script = "",
 	Sets = [
 		{
@@ -511,7 +511,7 @@
 	]
 },
 {
-	ID = "sellsword_armor_light",    //150,-11
+	ID = "sellsword_armor_light",	//150,-11
 	Script = "",
 	Sets = [
 		{
@@ -531,14 +531,14 @@
 			Tabard = [],
 			Attachments = [
 				[1, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 5,0,50					
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//       15,0
+				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0
 				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0				
 			]
 		}
 	]
 },	
 {
-	ID = "sellsword_armor_light_high_ichi",    //160,-9
+	ID = "sellsword_armor_light_high_ichi",	//160,-9
 	Script = "",
 	Sets = [
 		{
@@ -562,7 +562,7 @@
 	]
 },	
 {
-	ID = "sellsword_armor_light_high_ni",    //140,-9
+	ID = "sellsword_armor_light_high_ni",	//140,-9
 	Script = "",
 	Sets = [
 		{
@@ -580,14 +580,14 @@
 			],
 			Tabard = [],
 			Attachments = [
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//       15,0
+				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0
 				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0				
 			]
 		}
 	]
 },		
 {
-	ID = "sellsword_armor_elite",     //-27
+	ID = "sellsword_armor_elite",	 //-27
 	Script = "",
 	Sets = [
 		{
@@ -798,7 +798,7 @@
 				[2, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 30,-2,250
 				[1, "armor_upgrades/legend_leather_neckguard_upgrade"],// 10,-2,250	
 				[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 45,-2
-				[4, "armor_upgrades/legend_hyena_fur_upgrade"],//       15,0					
+				[4, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0					
 			]
 		}
 	]
@@ -1020,7 +1020,7 @@
 	]
 },	
 {
-	ID = "desperado_armor",     //285
+	ID = "desperado_armor",	 //285
 	Script = "",
 	Sets = [
 		{
@@ -1046,10 +1046,10 @@
 			Plate = [
 				[6, "plate/legend_armor_leather_riveted"],// 95,-13,900		
 				[2, "plate/legend_armor_scale_shirt"],// 85,-10,1750						
-				[1, "plate/legend_armor_scale"],// 100,-12,2250             8.33
-				[1, "plate/legend_armor_scale_coat"],// 120,-15,2500          8
-				[3, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250        7.33
-				[1, "plate/legend_armor_plate_chest"],// 125,-17,2250  ss140,-20,2500           7
+				[1, "plate/legend_armor_scale"],// 100,-12,2250			 8.33
+				[1, "plate/legend_armor_scale_coat"],// 120,-15,2500		  8
+				[3, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250		7.33
+				[1, "plate/legend_armor_plate_chest"],// 125,-17,2250  ss140,-20,2500		   7
 				[1, "plate/legend_armor_leather_lamellar_harness_heavy"],// 130,-20,1750  ss135,-20,2000 		 6.75					
 			],
 			Cloak = [
@@ -1188,7 +1188,7 @@
 	]
 },
 {
-	ID = "cr_plate_scale_early_patched_low",          //270,-35
+	ID = "cr_plate_scale_early_patched_low",		  //270,-35
 	Script = "",
 	Sets = [
 		{
@@ -1220,7 +1220,7 @@
 	]
 },
 {
-	ID = "cr_plate_full_early_low",          //300,-41
+	ID = "cr_plate_full_early_low",		  //300,-41
 	Script = "",
 	Sets = [
 		{
@@ -1248,7 +1248,7 @@
 	]
 },	
 {
-	ID = "cr_plate_scale_early",          //280,-35
+	ID = "cr_plate_scale_early",		  //280,-35
 	Script = "",
 	Sets = [
 		{
@@ -1280,7 +1280,7 @@
 	]
 },	
 {
-	ID = "cr_plate_scale_early_patched",          //275,-36
+	ID = "cr_plate_scale_early_patched",		  //275,-36
 	Script = "",
 	Sets = [
 		{
@@ -1315,7 +1315,7 @@
 	]
 },	
 {
-	ID = "cr_plate_full_early",          //300,-40
+	ID = "cr_plate_full_early",		  //300,-40
 	Script = "",
 	Sets = [
 		{
@@ -1346,7 +1346,7 @@
 	]
 },	
 {
-	ID = "cr_plate_scale_mid",          //315,-40
+	ID = "cr_plate_scale_mid",		  //315,-40
 	Script = "",
 	Sets = [
 		{
@@ -1378,7 +1378,7 @@
 	]
 },	
 {
-	ID = "cr_plate_full_mid",          //320,-41
+	ID = "cr_plate_full_mid",		  //320,-41
 	Script = "",
 	Sets = [
 		{
@@ -1402,7 +1402,7 @@
 	]
 },	
 {
-	ID = "cr_plate_full_mid_reinforced",          //335,-43
+	ID = "cr_plate_full_mid_reinforced",		  //335,-43
 	Script = "",
 	Sets = [
 		{
@@ -1429,7 +1429,7 @@
 	]
 },	
 {
-	ID = "cr_plate_scale_late",          //360,-44
+	ID = "cr_plate_scale_late",		  //360,-44
 	Script = "",
 	Sets = [
 		{
@@ -1455,7 +1455,7 @@
 	]
 },	
 {
-	ID = "cr_plate_full_late",          //370,-50
+	ID = "cr_plate_full_late",		  //370,-50
 	Script = "",
 	Sets = [
 		{
@@ -1490,7 +1490,7 @@
 	]
 },	
 {
-	ID = "cr_plate_full_heavy",          //380,-49
+	ID = "cr_plate_full_heavy",		  //380,-49
 	Script = "",
 	Sets = [
 		{
@@ -1522,7 +1522,7 @@
 	]
 },	
 {
-	ID = "cr_plate_full_heavy_late",          //435,-57
+	ID = "cr_plate_full_heavy_late",		  //435,-57
 	Script = "",
 	Sets = [
 		{
@@ -1551,7 +1551,7 @@
 	]
 },	
 {
-	ID = "cr_plate_full_hedgeknight_midlate",          //405
+	ID = "cr_plate_full_hedgeknight_midlate",		  //405
 	Script = "",
 	Sets = [
 		{
@@ -1578,7 +1578,7 @@
 	]
 },		
 {
-	ID = "cr_plate_full_hedgeknight",          //430,-59
+	ID = "cr_plate_full_hedgeknight",		  //430,-59
 	Script = "",
 	Sets = [
 		{
@@ -1605,7 +1605,7 @@
 	]
 },		
 {
-	ID = "cr_plate_full_knight",          //430,-56
+	ID = "cr_plate_full_knight",		  //430,-56
 	Script = "",
 	Sets = [
 		{
@@ -1633,7 +1633,7 @@
 	]
 },	
 {
-	ID = "cr_plate_full_knight_late",          //465,-58
+	ID = "cr_plate_full_knight_late",		  //465,-58
 	Script = "",
 	Sets = [
 		{
@@ -1659,7 +1659,7 @@
 	]
 },	
 {
-	ID = "crfemaleknight_armor",          //230,-24
+	ID = "crfemaleknight_armor",		  //230,-24
 	Script = "",
 	Sets = [
 		{
@@ -2097,7 +2097,7 @@
 	]
 },
 {
-	ID = "cr_peasant_armor_mid",          //  ~80
+	ID = "cr_peasant_armor_mid",		  //  ~80
 	Script = "",
 	Sets = [
 		{
@@ -2136,7 +2136,7 @@
 	]
 },	
 {
-	ID = "cr_peasant_armor_late",     //~130,-17
+	ID = "cr_peasant_armor_late",	 //~130,-17
 	Script = "",
 	Sets = [
 		{
@@ -2177,7 +2177,7 @@
 	]
 },	
 {
-	ID = "cr_peasant_armor_verylate",     //~130,-15
+	ID = "cr_peasant_armor_verylate",	 //~130,-15
 	Script = "",
 	Sets = [
 		{
@@ -2214,7 +2214,7 @@
 	]
 },	
 {
-	ID = "cr_peasant_armor_light",     //~100,-11
+	ID = "cr_peasant_armor_light",	 //~100,-11
 	Script = "",
 	Sets = [
 		{
@@ -2241,7 +2241,7 @@
 	]
 },	
 {
-	ID = "cr_peasant_armor_heavy",     //~160,-17
+	ID = "cr_peasant_armor_heavy",	 //~160,-17
 	Script = "",
 	Sets = [
 		{
@@ -2273,7 +2273,7 @@
 	]
 },
 {
-	ID = "cr_peasant_armor_ranged",     //~85,-7
+	ID = "cr_peasant_armor_ranged",	 //~85,-7
 	Script = "",
 	Sets = [
 		{
@@ -2298,7 +2298,7 @@
 	]
 },	
 {
-	ID = "crbandit_warlord_armor",     //~340
+	ID = "crbandit_warlord_armor",	 //~340
 	Script = "",
 	Sets = [
 		{
@@ -2358,7 +2358,7 @@
 	]
 },	
 {
-	ID = "crGuardsman_armor_ichi",     //~200 -23
+	ID = "crGuardsman_armor_ichi",	 //~200 -23
 	Script = "",
 	Sets = [
 		{
@@ -2412,7 +2412,7 @@
 	]
 },	
 {
-	ID = "crGuardsman_armor_ni",     //~225 -27
+	ID = "crGuardsman_armor_ni",	 //~225 -27
 	Script = "",
 	Sets = [
 		{
@@ -2466,7 +2466,7 @@
 	]
 },	
 {
-	ID = "crGuardsman_armor_sann",     //~205 -25
+	ID = "crGuardsman_armor_sann",	 //~205 -25
 	Script = "",
 	Sets = [
 		{
@@ -2520,7 +2520,7 @@
 	]
 },	
 {
-	ID = "crGuardsman_armor_light",     //~135 -11
+	ID = "crGuardsman_armor_light",	 //~135 -11
 	Script = "",
 	Sets = [
 		{
@@ -2566,7 +2566,7 @@
 	]
 },
 {
-	ID = "crInfantry_armor",     
+	ID = "crInfantry_armor",	 
 	Script = "",
 	Sets = [
 		{																				//~245 -30
@@ -2818,11 +2818,11 @@
 			Chain = [				
 				[
 					1,
-					"chain/legend_armor_basic_mail"     //50
+					"chain/legend_armor_basic_mail"	 //50
 				],	
 				[
 					1,
-					"chain/legend_armor_hauberk_sleevless"    //65
+					"chain/legend_armor_hauberk_sleevless"	//65
 				]					
 			],
 			Plate = [				
@@ -2853,11 +2853,11 @@
 			Chain = [									
 				[
 					1,
-					"chain/legend_armor_reinforced_mail_shirt"    //80
+					"chain/legend_armor_reinforced_mail_shirt"	//80
 				],					
 				[
 					1,
-					"chain/legend_armor_hauberk"        //95
+					"chain/legend_armor_hauberk"		//95
 				]
 			],
 			Plate = [
@@ -2870,7 +2870,7 @@
 	]
 },
 {
-	ID = "crfootman_armor_low",          // 130
+	ID = "crfootman_armor_low",		  // 130
 	Script = "",
 	Sets = [
 		{
@@ -2894,7 +2894,7 @@
 	]
 },	
 {
-	ID = "crfootman_armor_early",          // 160
+	ID = "crfootman_armor_early",		  // 160
 	Script = "",
 	Sets = [
 		{
@@ -2916,7 +2916,7 @@
 				],
 				[
 					1,
-					"plate/legend_armor_leather_padded"    //40
+					"plate/legend_armor_leather_padded"	//40
 				]					
 			],
 			Cloak = [],
@@ -2926,7 +2926,7 @@
 	]
 },	
 {
-	ID = "crfootman_armor_mid_chain",          // 185
+	ID = "crfootman_armor_mid_chain",		  // 185
 	Script = "",
 	Sets = [
 		{
@@ -2950,7 +2950,7 @@
 	]
 },	
 {
-	ID = "crfootman_armor_mid_plate",          // 185
+	ID = "crfootman_armor_mid_plate",		  // 185
 	Script = "",
 	Sets = [
 		{
@@ -2974,7 +2974,7 @@
 	]
 },	
 {
-	ID = "crfootman_armor_mid_patched",          // 185
+	ID = "crfootman_armor_mid_patched",		  // 185
 	Script = "",
 	Sets = [
 		{
@@ -3001,7 +3001,7 @@
 	]
 },	
 {
-	ID = "crfootman_armor_late_ichi",          // 195
+	ID = "crfootman_armor_late_ichi",		  // 195
 	Script = "",
 	Sets = [
 		{
@@ -3031,7 +3031,7 @@
 	]
 },	
 {
-	ID = "crfootman_armor_late_ni",          // 200
+	ID = "crfootman_armor_late_ni",		  // 200
 	Script = "",
 	Sets = [
 		{
@@ -3063,7 +3063,7 @@
 	]
 },
 {
-	ID = "crarbalester_armor_early",          
+	ID = "crarbalester_armor_early",		  
 	Script = "",
 	Sets = [
 		{
@@ -3084,7 +3084,7 @@
 	]
 },	
 {
-	ID = "crarbalester_armor_mid",          
+	ID = "crarbalester_armor_mid",		  
 	Script = "",
 	Sets = [
 		{
@@ -3105,7 +3105,7 @@
 	]
 },	
 {
-	ID = "crarbalester_armor_late",          
+	ID = "crarbalester_armor_late",		  
 	Script = "",
 	Sets = [
 		{
@@ -3130,7 +3130,7 @@
 	]
 },
 {
-	ID = "crmasterarcher_armor",          
+	ID = "crmasterarcher_armor",		  
 	Script = "",
 	Sets = [
 		{
@@ -3158,7 +3158,7 @@
 	]
 },	
 {
-	ID = "crarmor_hauberk_fencer_early",         //100,-11  
+	ID = "crarmor_hauberk_fencer_early",		 //100,-11  
 	Script = "",
 	Sets = [
 		{
@@ -3183,7 +3183,7 @@
 	]
 },		
 {
-	ID = "crarmor_hauberk_fencer_mid",         //120,-13  
+	ID = "crarmor_hauberk_fencer_mid",		 //120,-13  
 	Script = "",
 	Sets = [
 		{
@@ -3203,7 +3203,7 @@
 	]
 },	
 {
-	ID = "crarmor_hauberk_fencer_late",         //130,-13  
+	ID = "crarmor_hauberk_fencer_late",		 //130,-13  
 	Script = "",
 	Sets = [
 		{
@@ -3225,7 +3225,7 @@
 	]
 },
 {
-	ID = "crarmor_hauberk_fencer_late_patched",         //155,-13  
+	ID = "crarmor_hauberk_fencer_late_patched",		 //155,-13  
 	Script = "",
 	Sets = [
 		{
@@ -3246,7 +3246,7 @@
 	]
 },	
 {
-	ID = "crarmor_leather",         //155,-12 
+	ID = "crarmor_leather",		 //155,-12 
 	Script = "",
 	Sets = [
 		{
@@ -3269,7 +3269,7 @@
 	]
 },	
 {
-	ID = "crarmor_hauberk_light",         //140,-16  
+	ID = "crarmor_hauberk_light",		 //140,-16  
 	Script = "",
 	Sets = [
 		{
@@ -3291,7 +3291,7 @@
 	]
 },	
 {
-	ID = "crarmor_hauberk_medium",         //170,-20 
+	ID = "crarmor_hauberk_medium",		 //170,-20 
 	Script = "",
 	Sets = [
 		{
@@ -3320,7 +3320,7 @@
 	]
 },	
 {
-	ID = "crarmor_hauberk_medium_patched",         //170,-20 
+	ID = "crarmor_hauberk_medium_patched",		 //170,-20 
 	Script = "",
 	Sets = [
 		{
@@ -3351,7 +3351,7 @@
 	]
 },
 {
-	ID = "crarmor_hauberk_late",         //200,-24 
+	ID = "crarmor_hauberk_late",		 //200,-24 
 	Script = "",
 	Sets = [
 		{
@@ -3374,7 +3374,7 @@
 	]
 },
 {
-	ID = "crarmor_scale_ni",         //250,-29 
+	ID = "crarmor_scale_ni",		 //250,-29 
 	Script = "",
 	Sets = [
 		{
@@ -3395,7 +3395,7 @@
 	]
 },	
 {
-	ID = "crarmor_scale_ichi",         //240,-29 
+	ID = "crarmor_scale_ichi",		 //240,-29 
 	Script = "",
 	Sets = [
 		{
@@ -3416,7 +3416,7 @@
 	]
 },	
 {
-	ID = "crarmor_scale_ichi_patched",         //265,-32 
+	ID = "crarmor_scale_ichi_patched",		 //265,-32 
 	Script = "",
 	Sets = [
 		{
@@ -3442,7 +3442,7 @@
 	]
 },
 {
-	ID = "crarmor_scale_ni_patched",         //275,-32 
+	ID = "crarmor_scale_ni_patched",		 //275,-32 
 	Script = "",
 	Sets = [
 		{
@@ -3468,7 +3468,7 @@
 	]
 },	
 {
-	ID = "crsergeant_armor_early",    //185,-23     
+	ID = "crsergeant_armor_early",	//185,-23	 
 	Script = "",
 	Sets = [
 		{
@@ -3493,7 +3493,7 @@
 	]
 },
 {
-	ID = "crsergeant_armor_medium",         //230,-28
+	ID = "crsergeant_armor_medium",		 //230,-28
 	Script = "",
 	Sets = [
 		{
@@ -3522,7 +3522,7 @@
 	]
 },
 {
-	ID = "crsergeant_armor_late",      //270,-33    
+	ID = "crsergeant_armor_late",	  //270,-33	
 	Script = "",
 	Sets = [
 		{
@@ -3548,7 +3548,7 @@
 	]
 },	
 {
-	ID = "crsergeant_armor_scale",      //280,-33    
+	ID = "crsergeant_armor_scale",	  //280,-33	
 	Script = "",
 	Sets = [
 		{
@@ -3563,7 +3563,7 @@
 			Plate = [					
 				[1, "plate/legend_armor_leather_riveted_light"],// 80,-11,700
 				[2, "plate/legend_armor_leather_riveted"],// 95,-13,900	
-				[4, "plate/legend_armor_scale"],// 100,-12,2250             8.33					
+				[4, "plate/legend_armor_scale"],// 100,-12,2250			 8.33					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -3575,7 +3575,7 @@
 	]
 },	
 {
-	ID = "crbillman_armor_low",          // 110
+	ID = "crbillman_armor_low",		  // 110
 	Script = "",
 	Sets = [
 		{
@@ -3594,7 +3594,7 @@
 	]
 },	
 {
-	ID = "crbillman_armor_early",          // 110
+	ID = "crbillman_armor_early",		  // 110
 	Script = "",
 	Sets = [
 		{
@@ -3614,7 +3614,7 @@
 	]
 },
 {
-	ID = "crbillman_armor_mid",          // 140
+	ID = "crbillman_armor_mid",		  // 140
 	Script = "",
 	Sets = [
 		{
@@ -3635,7 +3635,7 @@
 	]
 },	
 {
-	ID = "crbillman_armor_mid_mixed",          // 130
+	ID = "crbillman_armor_mid_mixed",		  // 130
 	Script = "",
 	Sets = [
 		{
@@ -3657,7 +3657,7 @@
 	]
 },	
 {
-	ID = "crbillman_armor_late",          // 150
+	ID = "crbillman_armor_late",		  // 150
 	Script = "",
 	Sets = [
 		{
@@ -3681,7 +3681,7 @@
 	]
 },	
 {
-	ID = "retiredsoldier_armor",          // 160
+	ID = "retiredsoldier_armor",		  // 160
 	Script = "",
 	Sets = [
 		{
@@ -3710,7 +3710,7 @@
 				],
 				[
 					1,
-					"plate/legend_armor_leather_padded"    //40
+					"plate/legend_armor_leather_padded"	//40
 				],
 				[
 					1,
@@ -3728,7 +3728,7 @@
 	]
 },	
 {
-	ID = "retiredsoldier_armor_pol",          // 140
+	ID = "retiredsoldier_armor_pol",		  // 140
 	Script = "",
 	Sets = [
 		{
@@ -3757,7 +3757,7 @@
 				],
 				[
 					2,
-					"plate/legend_armor_leather_padded"    //40
+					"plate/legend_armor_leather_padded"	//40
 				],
 				[
 					1,
@@ -3771,7 +3771,7 @@
 	]
 },	
 {
-	ID = "crslayer_armor",          // 300,-43
+	ID = "crslayer_armor",		  // 300,-43
 	Script = "",
 	Sets = [
 		{
@@ -3793,7 +3793,7 @@
 	]
 },	
 {
-	ID = "crleopard_armor",          // 225,-29
+	ID = "crleopard_armor",		  // 225,-29
 	Script = "",
 	Sets = [
 		{
@@ -3815,7 +3815,7 @@
 	]
 },	
 {
-	ID = "zombieswordmaster_armor_ichi",          // 130,-19
+	ID = "zombieswordmaster_armor_ichi",		  // 130,-19
 	Script = "",
 	Sets = [
 		{
@@ -3837,7 +3837,7 @@
 	]
 },	
 {
-	ID = "zombieswordmaster_armor_ni",          // 120,-16
+	ID = "zombieswordmaster_armor_ni",		  // 120,-16
 	Script = "",
 	Sets = [
 		{
@@ -3861,7 +3861,7 @@
 	]
 },	
 {
-	ID = "cr_zombieknight_armor_ichi",          //185,190
+	ID = "cr_zombieknight_armor_ichi",		  //185,190
 	Script = "",
 	Sets = [
 		{
@@ -3891,7 +3891,7 @@
 	]
 },
 {
-	ID = "cr_zombieknight_armor_ni",          //230
+	ID = "cr_zombieknight_armor_ni",		  //230
 	Script = "",
 	Sets = [
 		{
@@ -3907,7 +3907,7 @@
 				[4, "chain/legend_armor_reinforced_worn_mail_shirt"],// 65,-11,350
 			],
 			Plate = [ 					
-				[3, "plate/legend_armor_plate_chest_rotten"],// 100,-16,1250  ss140,-24,1750      5.83
+				[3, "plate/legend_armor_plate_chest_rotten"],// 100,-16,1250  ss140,-24,1750	  5.83
 				[1, "plate/cr_leather_lamellar_heavy_rotten"],//170,-30,2250	  5.67					
 			],
 			Cloak = [],
@@ -3917,7 +3917,7 @@
 	]
 },	
 {
-	ID = "cr_zombieknight_armor_high",          //270
+	ID = "cr_zombieknight_armor_high",		  //270
 	Script = "",
 	Sets = [
 		{
@@ -3931,7 +3931,7 @@
 				[1, "chain/legend_armor_reinforced_worn_mail_shirt"],// 65,-11,350
 			],
 			Plate = [					
-				[3, "plate/legend_armor_plate_chest_rotten"],// 100,-16,1250  ss140,-24,1750      5.83	
+				[3, "plate/legend_armor_plate_chest_rotten"],// 100,-16,1250  ss140,-24,1750	  5.83	
 				[1, "plate/cr_leather_lamellar_heavy_rotten"],//170,-30,2250	  5.67									
 			],
 			Cloak = [],
@@ -3941,7 +3941,7 @@
 	]
 },	
 {
-	ID = "outlander_armor",          // 130,-16
+	ID = "outlander_armor",		  // 130,-16
 	Script = "",
 	Sets = [
 		{
@@ -3978,7 +3978,7 @@
 	]
 },
 {
-	ID = "crnomad_armor_early_cloth",          //90,-8 60,-3
+	ID = "crnomad_armor_early_cloth",		  //90,-8 60,-3
 	Script = "",
 	Sets = [
 		{
@@ -4002,7 +4002,7 @@
 	]
 },	
 {
-	ID = "crnomad_armor_early_ichi",          //95,-11  55,-4
+	ID = "crnomad_armor_early_ichi",		  //95,-11  55,-4
 	Script = "",
 	Sets = [
 		{
@@ -4023,7 +4023,7 @@
 	]
 },	
 {
-	ID = "crnomad_armor_early_ni",          //80,-6
+	ID = "crnomad_armor_early_ni",		  //80,-6
 	Script = "",
 	Sets = [
 		{
@@ -4044,7 +4044,7 @@
 	]
 },	
 {
-	ID = "crnomad_armor_mid_ichi",          //125,-11
+	ID = "crnomad_armor_mid_ichi",		  //125,-11
 	Script = "",
 	Sets = [
 		{
@@ -4064,7 +4064,7 @@
 	]
 },
 {
-	ID = "crnomad_armor_mid_ni",          //110,-8
+	ID = "crnomad_armor_mid_ni",		  //110,-8
 	Script = "",
 	Sets = [
 		{
@@ -4087,7 +4087,7 @@
 	]
 },	
 {
-	ID = "crnomad_armor_mid_sann",          //105,-11
+	ID = "crnomad_armor_mid_sann",		  //105,-11
 	Script = "",
 	Sets = [
 		{
@@ -4114,7 +4114,7 @@
 	]
 },	
 {
-	ID = "crnomad_armor_mid_plate_low",          //130,-16
+	ID = "crnomad_armor_mid_plate_low",		  //130,-16
 	Script = "",
 	Sets = [
 		{
@@ -4138,7 +4138,7 @@
 	]
 },	
 {
-	ID = "crnomad_armor_mid_chain",          //152,-16
+	ID = "crnomad_armor_mid_chain",		  //152,-16
 	Script = "",
 	Sets = [
 		{
@@ -4168,7 +4168,7 @@
 	]
 },
 {
-	ID = "crnomad_armor_mid_plate",          //150,-16
+	ID = "crnomad_armor_mid_plate",		  //150,-16
 	Script = "",
 	Sets = [
 		{
@@ -4194,7 +4194,7 @@
 	]
 },
 {
-	ID = "crnomad_armor_mid_plate_heavy",          //170,-20
+	ID = "crnomad_armor_mid_plate_heavy",		  //170,-20
 	Script = "",
 	Sets = [
 		{
@@ -4222,7 +4222,7 @@
 	]
 },	
 {
-	ID = "crnomad_armor_late",          //190,-23                 
+	ID = "crnomad_armor_late",		  //190,-23				 
 	Script = "",
 	Sets = [
 		{
@@ -4234,7 +4234,7 @@
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375				
 			],
 			Plate = [
-				[1, "plate/legend_southern_leather_scale"],// 155,-26,1500  ss110,-16,1500          6.88					
+				[1, "plate/legend_southern_leather_scale"],// 155,-26,1500  ss110,-16,1500		  6.88					
 			],
 			Cloak = [],
 			Tabard = [
@@ -4245,7 +4245,7 @@
 	]
 },
 {
-	ID = "crnomad_officer_leather",          //210,-24
+	ID = "crnomad_officer_leather",		  //210,-24
 	Script = "",
 	Sets = [
 		{
@@ -4267,7 +4267,7 @@
 	]
 },	
 {
-	ID = "crnomad_officer_plate",          //275,-37
+	ID = "crnomad_officer_plate",		  //275,-37
 	Script = "",
 	Sets = [
 		{
@@ -4278,7 +4278,7 @@
 				[1, "chain/legend_southern_mail"],// 100,-13,1400				
 			],
 			Plate = [
-				[1, "plate/legend_southern_plate"],// 155,-26,1500        ss135,-20,1750          6.75				
+				[1, "plate/legend_southern_plate"],// 155,-26,1500		ss135,-20,1750		  6.75				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4287,7 +4287,7 @@
 	]
 },	
 {
-	ID = "crnomad_officer_plate_patched",          //270,-35
+	ID = "crnomad_officer_plate_patched",		  //270,-35
 	Script = "",
 	Sets = [
 		{
@@ -4309,7 +4309,7 @@
 	]
 },	
 {
-	ID = "crnomad_officer_plate_full",          //310,-37
+	ID = "crnomad_officer_plate_full",		  //310,-37
 	Script = "",
 	Sets = [
 		{
@@ -4320,7 +4320,7 @@
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500				
 			],
 			Plate = [
-				[1, "plate/legend_southern_named_golden_plates"],// 200,-36,5600   ss155,-21,3600      7.38				
+				[1, "plate/legend_southern_named_golden_plates"],// 200,-36,5600   ss155,-21,3600	  7.38				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4329,7 +4329,7 @@
 	]
 },
 {
-	ID = "crbarbarian_champion_fur",          
+	ID = "crbarbarian_champion_fur",		  
 	Script = "",
 	Sets = [
 		{
@@ -4345,7 +4345,7 @@
 	]
 },	
 {
-	ID = "crbarbarian_champion_skull",          
+	ID = "crbarbarian_champion_skull",		  
 	Script = "",
 	Sets = [
 		{
@@ -4361,7 +4361,7 @@
 	]
 },	
 {
-	ID = "crbarbarian_champion_bronze",          
+	ID = "crbarbarian_champion_bronze",		  
 	Script = "",
 	Sets = [
 		{
@@ -4379,7 +4379,7 @@
 	]
 },	
 {
-	ID = "crnamed_studded_mail_armor",  //140,-10 worn by archers      
+	ID = "crnamed_studded_mail_armor",  //140,-10 worn by archers	  
 	Script = "",
 	Sets = [
 		{
@@ -4399,7 +4399,7 @@
 	]
 },	
 {
-	ID = "crnamed_leather_jacket",  //150,-11 worn by fencers       
+	ID = "crnamed_leather_jacket",  //150,-11 worn by fencers	   
 	Script = "",
 	Sets = [
 		{
@@ -4421,7 +4421,7 @@
 	]
 },
 {
-	ID = "crnamed_leather_brigandine",  //250,-21 used by zweihanders       
+	ID = "crnamed_leather_brigandine",  //250,-21 used by zweihanders	   
 	Script = "",
 	Sets = [
 		{
@@ -4444,7 +4444,7 @@
 	]
 },		
 {
-	ID = "crnamed_noble_mail_armor",  //200,-14 used by swordmasters      
+	ID = "crnamed_noble_mail_armor",  //200,-14 used by swordmasters	  
 	Script = "",
 	Sets = [
 		{
@@ -4462,13 +4462,13 @@
 			Attachments = [
 				[1, "armor_upgrades/legend_leather_neckguard_upgrade"],// 10,-2,100	
 				[1, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 30,-2,250				
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//       15,0				
+				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0				
 			]
 		}			
 	]
 },	
 {
-	ID = "crsellsword_named_armor_medium_chain",        //275,-24
+	ID = "crsellsword_named_armor_medium_chain",		//275,-24
 	Script = "",
 	Sets = [
 		{
@@ -4492,13 +4492,13 @@
 			Attachments = [										
 				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//       15,0					
+				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0					
 			]
 		}
 	]
 },
 {
-	ID = "crsellsword_named_armor_medium_plate",        //310,-24
+	ID = "crsellsword_named_armor_medium_plate",		//310,-24
 	Script = "",
 	Sets = [
 		{
@@ -4526,7 +4526,7 @@
 	]
 },
 {
-	ID = "crsellsword_named_armor_medium_plate02",        //275,-26
+	ID = "crsellsword_named_armor_medium_plate02",		//275,-26
 	Script = "",
 	Sets = [
 		{
@@ -4555,7 +4555,7 @@
 	]
 },	
 {
-	ID = "crsellsword_named_armor_medium_cloth",        //255,-24
+	ID = "crsellsword_named_armor_medium_cloth",		//255,-24
 	Script = "",
 	Sets = [
 		{
@@ -4580,13 +4580,13 @@
 				[2, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2
 				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//       15,0					
+				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0					
 			]
 		}
 	]
 },	
 {
-	ID = "crsellsword_named_armor_light_chain",        //180,-12
+	ID = "crsellsword_named_armor_light_chain",		//180,-12
 	Script = "",
 	Sets = [
 		{
@@ -4630,7 +4630,7 @@
 	]
 },	
 {
-	ID = "crsellsword_named_armor_light_plate_01",        //180,-10
+	ID = "crsellsword_named_armor_light_plate_01",		//180,-10
 	Script = "",
 	Sets = [
 		{
@@ -4658,7 +4658,7 @@
 	]
 },
 {
-	ID = "crsellsword_named_armor_light_plate_02",        //185,-10
+	ID = "crsellsword_named_armor_light_plate_02",		//185,-10
 	Script = "",
 	Sets = [
 		{
@@ -4685,7 +4685,7 @@
 	]
 },	
 {
-	ID = "crsellsword_named_armor_light_plate_03",        //160,-9
+	ID = "crsellsword_named_armor_light_plate_03",		//160,-9
 	Script = "",
 	Sets = [
 		{
@@ -4714,7 +4714,7 @@
 	]
 },	
 {
-	ID = "crsellsword_named_armor_light_cloth",        //160,-9
+	ID = "crsellsword_named_armor_light_cloth",		//160,-9
 	Script = "",
 	Sets = [
 		{
@@ -4743,7 +4743,7 @@
 	]
 },
 {
-	ID = "crsellsword_named_armor_heavy_cloth",       
+	ID = "crsellsword_named_armor_heavy_cloth",	   
 	Script = "",
 	Sets = [
 		{
@@ -4754,7 +4754,7 @@
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500						
 			],
 			Plate = [
-				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000         6.91
+				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000		 6.91
 				[1, "plate/legend_armor_plate_full_greaves"],// 170,-22,5000  ss260,-38,7500	  6.84			
 			],
 			Cloak = [],
@@ -4772,7 +4772,7 @@
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500						
 			],
 			Plate = [
-				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000         6.91
+				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000		 6.91
 				[1, "plate/legend_armor_plate_full_greaves"],// 170,-22,5000  ss260,-38,7500	  6.84			
 			],
 			Cloak = [
@@ -4787,7 +4787,7 @@
 	]
 },	
 {
-	ID = "crsellsword_named_armor_heavy_chain",        
+	ID = "crsellsword_named_armor_heavy_chain",		
 	Script = "",
 	Sets = [
 		{
@@ -4798,7 +4798,7 @@
 				[1, "chain/legend_armor_hauberk_full_named"],// 125_150,-13_-9,5000						
 			],
 			Plate = [
-				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000         6.91
+				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000		 6.91
 				[1, "plate/legend_armor_plate_full_greaves"],// 170,-22,5000  ss260,-38,7500	  6.84			
 			],
 			Cloak = [],
@@ -4816,7 +4816,7 @@
 				[1, "chain/legend_armor_hauberk_full_named"],// 125_150,-13_-9,5000						
 			],
 			Plate = [
-				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000         6.91
+				[1, "plate/legend_armor_plate_milanese"],// 170,-22,5000  ss235,-34,6000		 6.91
 				[1, "plate/legend_armor_plate_full_greaves"],// 170,-22,5000  ss260,-38,7500	  6.84			
 			],
 			Cloak = [
@@ -4831,7 +4831,7 @@
 	]
 },	
 {
-	ID = "crsellsword_named_armor_heavy_plate",        
+	ID = "crsellsword_named_armor_heavy_plate",		
 	Script = "",
 	Sets = [
 		{
@@ -4881,7 +4881,7 @@
 	]
 },	
 {
-	ID = "crsellsword_barbarian_fur",       //270,-25  
+	ID = "crsellsword_barbarian_fur",	   //270,-25  
 	Script = "",
 	Sets = [
 		{
@@ -4900,7 +4900,7 @@
 	]
 },	
 {
-	ID = "crsellsword_barbarian_skull",   //265,-24       
+	ID = "crsellsword_barbarian_skull",   //265,-24	   
 	Script = "",
 	Sets = [
 		{
@@ -4919,7 +4919,7 @@
 	]
 },		
 {
-	ID = "crsellsword_barbarian_bronze",        
+	ID = "crsellsword_barbarian_bronze",		
 	Script = "",
 	Sets = [
 		{
@@ -4938,7 +4938,7 @@
 	]
 },	
 {
-	ID = "crskeleton_armor",   //260,-36      
+	ID = "crskeleton_armor",   //260,-36	  
 	Script = "",
 	Sets = [
 		{
@@ -4950,7 +4950,7 @@
 			],
 			Plate = [
 				[1, "plate/legend_armor_plate_ancient_scale_coat_restored"],// 170,-23,3000		   7.39	
-				[2, "plate/legend_armor_plate_ancient_scale_harness_restored"],// 130,-15,500	    8.67				
+				[2, "plate/legend_armor_plate_ancient_scale_harness_restored"],// 130,-15,500		8.67				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4959,7 +4959,7 @@
 	]
 },
 {
-	ID = "crmercenary_armor_verylow",   //65,-8      
+	ID = "crmercenary_armor_verylow",   //65,-8	  
 	Script = "",
 	Sets = [
 		{
@@ -4976,7 +4976,7 @@
 	]
 },	
 {
-	ID = "crmercenary_armor_low",   //80,-9      
+	ID = "crmercenary_armor_low",   //80,-9	  
 	Script = "",
 	Sets = [
 		{
@@ -5007,7 +5007,7 @@
 	]
 },	
 {
-	ID = "crmercenary_armor_mid",   //110,-12      
+	ID = "crmercenary_armor_mid",   //110,-12	  
 	Script = "",
 	Sets = [
 		{
@@ -5073,7 +5073,7 @@
 	]
 },	
 {
-	ID = "crmercenary_armor_late",   //160,-      
+	ID = "crmercenary_armor_late",   //160,-	  
 	Script = "",
 	Sets = [
 		{
@@ -5178,7 +5178,7 @@
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375					
 			],
 			Plate = [
-				[1, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250        7.33					
+				[1, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250		7.33					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5194,7 +5194,7 @@
 	]
 },
 {
-	ID = "crmercenary_armor_heavy",   //250      
+	ID = "crmercenary_armor_heavy",   //250	  
 	Script = "",
 	Sets = [
 		{
@@ -5208,10 +5208,10 @@
 			],
 			Plate = [
 				[4, "plate/legend_armor_leather_lamellar_harness_heavy"],// 130,-20,1750  ss135,-20,2000 		 6.75
-				[2, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250        7.33
-				[2, "plate/legend_armor_leather_brigandine_hardened_full"],// 140,-19,3000      7.37
-				[1, "plate/legend_armor_plate_chest"],// 125,-17,2250  ss140,-20,2500           7	
-				[1, "plate/legend_armor_scale_coat"],// 120,-15,2500          8					
+				[2, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250		7.33
+				[2, "plate/legend_armor_leather_brigandine_hardened_full"],// 140,-19,3000	  7.37
+				[1, "plate/legend_armor_plate_chest"],// 125,-17,2250  ss140,-20,2500		   7	
+				[1, "plate/legend_armor_scale_coat"],// 120,-15,2500		  8					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5241,7 +5241,7 @@
 				[3, "plate/legend_armor_leather_riveted"],// 95,-13,900	
 				[1, "plate/legend_armor_leather_scale"],// 70,-9,600	
 				[1, "plate/legend_armor_scale_shirt"],// 85,-10,1750						
-				[1, "plate/legend_armor_scale"],// 100,-12,2250             8.33					
+				[1, "plate/legend_armor_scale"],// 100,-12,2250			 8.33					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5257,11 +5257,11 @@
 	]
 },	
 {
-	ID = "crbandit_early",   //180      
+	ID = "crbandit_early",   //180	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               //150,-19
+			Cloth = [							   //150,-19
 				[1, "cloth/legend_gambeson_wolf"],// 70,-9,300					
 			],
 			Chain = [
@@ -5308,11 +5308,11 @@
 	]
 },	
 {
-	ID = "crbandit_mid",   //220      
+	ID = "crbandit_mid",   //220	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               //210,-27
+			Cloth = [							   //210,-27
 				[1, "cloth/legend_gambeson_wolf"],// 70,-9,300					
 			],
 			Chain = [
@@ -5393,7 +5393,7 @@
 	]
 },	
 {
-	ID = "crbandit_late",   //270      
+	ID = "crbandit_late",   //270	  
 	Script = "",
 	Sets = [
 		{
@@ -5490,7 +5490,7 @@
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800					
 			],
 			Plate = [
-				[1, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250        7.33					
+				[1, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250		7.33					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5517,7 +5517,7 @@
 	]
 },	
 {
-	ID = "crbandit_heavy",   //290      
+	ID = "crbandit_heavy",   //290	  
 	Script = "",
 	Sets = [
 		{
@@ -5545,7 +5545,7 @@
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
 			],
 			Plate = [
-				[1, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250        7.33					
+				[1, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250		7.33					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5598,7 +5598,7 @@
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
 			],
 			Plate = [
-				[1, "plate/legend_armor_plate_chest"],// 125,-17,2250  ss140,-20,2500           7					
+				[1, "plate/legend_armor_plate_chest"],// 125,-17,2250  ss140,-20,2500		   7					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5614,7 +5614,7 @@
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
 			],
 			Plate = [
-				[1, "plate/legend_armor_leather_brigandine_hardened_full"],// 140,-19,3000      7.37					
+				[1, "plate/legend_armor_leather_brigandine_hardened_full"],// 140,-19,3000	  7.37					
 			],
 			Cloak = [],
 			Tabard = [
@@ -5631,7 +5631,7 @@
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750					
 			],
 			Plate = [
-				[1, "plate/legend_armor_scale"],// 100,-12,2250             8.33					
+				[1, "plate/legend_armor_scale"],// 100,-12,2250			 8.33					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5647,7 +5647,7 @@
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750						
 			],
 			Plate = [
-				[1, "plate/legend_armor_scale_coat"],// 120,-15,2500          8					
+				[1, "plate/legend_armor_scale_coat"],// 120,-15,2500		  8					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5656,11 +5656,11 @@
 	]
 },	
 {
-	ID = "crbarbarblester_armor",   //80      
+	ID = "crbarbarblester_armor",   //80	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_sackcloth"],// 10,-0,15
 				[1, "cloth/legend_sackcloth_patched"],// 15,-1,25
 				[2, "cloth/legend_thick_tunic"],// 30,-3,40
@@ -5682,11 +5682,11 @@
 	]
 },
 {
-	ID = "crbarbfootman_armor",   //140      
+	ID = "crbarbfootman_armor",   //140	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_thick_tunic"],// 30,-3,40
 				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
 			],
@@ -5706,11 +5706,11 @@
 	]
 },	
 {
-	ID = "crbarbbillman_armor",   //100      
+	ID = "crbarbbillman_armor",   //100	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_thick_tunic"],// 30,-3,40
 				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
 			],
@@ -5727,7 +5727,7 @@
 			Attachments = []
 		},
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_thick_tunic"],// 30,-3,40
 				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
 			],
@@ -5744,7 +5744,7 @@
 			Attachments = []
 		},
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_thick_tunic"],// 30,-3,40
 				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
 			],
@@ -5761,11 +5761,11 @@
 	]
 },	
 {
-	ID = "crbarbgreataxe_armor",   //180      
+	ID = "crbarbgreataxe_armor",   //180	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_thick_tunic"],// 30,-3,40
 				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
 			],
@@ -5785,11 +5785,11 @@
 	]
 },	
 {
-	ID = "crbarbsergeant_armor",   //210      
+	ID = "crbarbsergeant_armor",   //210	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_thick_tunic"],// 30,-3,40
 				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
 			],
@@ -5807,11 +5807,11 @@
 	]
 },
 {
-	ID = "crbarbarian_rugged_scale_armor",   //155      
+	ID = "crbarbarian_rugged_scale_armor",   //155	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_ancient_cloth"],// 30,-5,20
 				[1, "cloth/legend_ancient_cloth_restored"],// 35,-4,40					
 			],
@@ -5830,11 +5830,11 @@
 	]
 },	
 {
-	ID = "crbarbarian_heavy_iron_armor",   //180      
+	ID = "crbarbarian_heavy_iron_armor",   //180	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_ancient_cloth"],// 30,-5,20
 				[1, "cloth/legend_ancient_cloth_restored"],// 35,-4,40					
 			],
@@ -5853,11 +5853,11 @@
 	]
 },
 {
-	ID = "crbarbarian_reinforced_heavy_iron_armor",   //190      
+	ID = "crbarbarian_reinforced_heavy_iron_armor",   //190	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_sackcloth_patched"],// 15,-1,25					
 			],
 			Chain = [
@@ -5874,11 +5874,11 @@
 	]
 },	
 {
-	ID = "crbarbarian_thick_plated_barbarian_armor",   //210      
+	ID = "crbarbarian_thick_plated_barbarian_armor",   //210	  
 	Script = "",
 	Sets = [
 		{
-			Cloth = [                               
+			Cloth = [							   
 				[1, "cloth/legend_ancient_cloth"],// 30,-5,20
 				[1, "cloth/legend_ancient_cloth_restored"],// 35,-4,40					
 			],
@@ -5888,7 +5888,7 @@
 				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200					
 			],
 			Plate = [
-				[1, "plate/legend_thick_plated_barbarian_armor"],// 155,-26,1500             5.96						
+				[1, "plate/legend_thick_plated_barbarian_armor"],// 155,-26,1500			 5.96						
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5897,7 +5897,7 @@
 	]
 },	
 {
-	ID = "craktk_armor",         //310,-35 -- 365,-44, 340,-40
+	ID = "craktk_armor",		 //310,-35 -- 365,-44, 340,-40
 	Script = "",
 	Sets = [
 		{
@@ -5908,10 +5908,10 @@
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750				
 			],
 			Plate = [
-				[4, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250        7.33				
-				[3, "plate/legend_armor_plate_chest"],// 125,-17,2250  ss140,-20,2500           7
+				[4, "plate/legend_armor_leather_brigandine_hardened"],// 110,-15,1250		7.33				
+				[3, "plate/legend_armor_plate_chest"],// 125,-17,2250  ss140,-20,2500		   7
 				[2, "plate/legend_armor_leather_lamellar_harness_heavy"],// 130,-20,1750  ss135,-20,2000 		 6.75					
-				[1, "plate/legend_armor_plate_cuirass"],// 150,-21,3500  ss165,-24,3500       6.88				
+				[1, "plate/legend_armor_plate_cuirass"],// 150,-21,3500  ss165,-24,3500	   6.88				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -6049,7 +6049,7 @@
 	]
 },	
 {
-	ID = "adorned_mail_shirt_armor",         //150,-18
+	ID = "adorned_mail_shirt_armor",		 //150,-18
 	Script = "",
 	Sets = [
 		{
@@ -6069,7 +6069,7 @@
 	]
 },	
 {
-	ID = "adorned_mail_shirt_armor_heavy",         //270,-35
+	ID = "adorned_mail_shirt_armor_heavy",		 //270,-35
 	Script = "",
 	Sets = [
 		{
@@ -6091,7 +6091,7 @@
 	]
 },	
 {
-	ID = "adorned_warriors_armor_armor",         //200,-21
+	ID = "adorned_warriors_armor_armor",		 //200,-21
 	Script = "",
 	Sets = [
 		{
@@ -6111,7 +6111,7 @@
 	]
 },
 {
-	ID = "adorned_warriors_armor_armor_heavy",         //295,-35
+	ID = "adorned_warriors_armor_armor_heavy",		 //295,-35
 	Script = "",
 	Sets = [
 		{
@@ -6133,7 +6133,7 @@
 	]
 },	
 {
-	ID = "adorned_heavy_mail_hauberk_armor",         //300,-37
+	ID = "adorned_heavy_mail_hauberk_armor",		 //300,-37
 	Script = "",
 	Sets = [
 		{
@@ -6144,7 +6144,7 @@
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750				
 			],
 			Plate = [
-				[1, "plate/cr_adorned_heavy_plate"],// 150,-20,3500      7.5 						
+				[1, "plate/cr_adorned_heavy_plate"],// 150,-20,3500	  7.5 						
 			],
 			Cloak = [],
 			Tabard = [],
@@ -6153,7 +6153,7 @@
 	]
 },
 {
-	ID = "hashshashin_armor_low",        
+	ID = "hashshashin_armor_low",		
 	Script = "",
 	Sets = [
 		{
@@ -6196,7 +6196,7 @@
 	]
 },	
 {
-	ID = "hashshashin_armor_low_reinforced",     
+	ID = "hashshashin_armor_low_reinforced",	 
 	Script = "",
 	Sets = [
 		{
@@ -6221,7 +6221,7 @@
 	]
 },	
 {
-	ID = "hashshashin_armor_medium",       
+	ID = "hashshashin_armor_medium",	   
 	Script = "",
 	Sets = [
 		{
@@ -6246,7 +6246,7 @@
 	]
 },
 {
-	ID = "hashshashin_armor_high",       
+	ID = "hashshashin_armor_high",	   
 	Script = "",
 	Sets = [
 		{
@@ -6284,7 +6284,7 @@
 	]
 },	
 {
-	ID = "cr_barb_king_armor_early",    //200-220
+	ID = "cr_barb_king_armor_early",	//200-220
 	Script = "",
 	Sets = [
 		{
@@ -6387,7 +6387,7 @@
 				],					
 				[
 					1,
-					"chain/legend_armor_reinforced_worn_mail"     
+					"chain/legend_armor_reinforced_worn_mail"	 
 				],					
 			],
 			Plate = [
@@ -6466,7 +6466,7 @@
 				],					
 				[
 					1,
-					"chain/legend_armor_reinforced_worn_mail"     
+					"chain/legend_armor_reinforced_worn_mail"	 
 				],					
 			],
 			Plate = [
@@ -6536,7 +6536,7 @@
 				],					
 				[
 					1,
-					"chain/legend_armor_reinforced_mail_shirt"     
+					"chain/legend_armor_reinforced_mail_shirt"	 
 				]
 			],
 			Plate = [

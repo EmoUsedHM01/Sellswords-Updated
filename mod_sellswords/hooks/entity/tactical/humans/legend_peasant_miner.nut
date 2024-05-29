@@ -84,8 +84,8 @@
 	}
 	
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		local dc = this.World.getTime().Days;		

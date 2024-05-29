@@ -41,8 +41,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
@@ -98,77 +98,77 @@
 		if (dc <= 35)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crbandit_early"],         //180 				
-				[1, "crbandit_mid"],      	   //220					
+				[3, "crbandit_early"],		 //180 				
+				[1, "crbandit_mid"],	  	   //220					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crbandit_helmet_low"],            //125,-6                 					
-				[1, "crbandit_helmet_early"],          //170,-10					
+				[1, "crbandit_helmet_low"],			//125,-6				 					
+				[1, "crbandit_helmet_early"],		  //170,-10					
 			]));
 		}
 		else if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crbandit_early"],         //180 				
-				[1, "crbandit_mid"],      	   //220					
+				[1, "crbandit_early"],		 //180 				
+				[1, "crbandit_mid"],	  	   //220					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crbandit_helmet_low"],            //125,-6                 					
-				[3, "crbandit_helmet_early"],          //170,-10
-				[1, "red_bandit_leader_helmet"],       //195					
-				[1, "crbandit_helmet_mid"],            //215,-12				
+				[1, "crbandit_helmet_low"],			//125,-6				 					
+				[3, "crbandit_helmet_early"],		  //170,-10
+				[1, "red_bandit_leader_helmet"],	   //195					
+				[1, "crbandit_helmet_mid"],			//215,-12				
 			]));
 		}
 		else if (dc <= 85)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crbandit_early"],         //180 				
-				[2, "crbandit_mid"],      	   //220
-				[1, "crbandit_late"],          //270 									
+				[1, "crbandit_early"],		 //180 				
+				[2, "crbandit_mid"],	  	   //220
+				[1, "crbandit_late"],		  //270 									
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([                 					
-				[2, "crbandit_helmet_early"],          //170,-10
-				[2, "red_bandit_leader_helmet"],       //195					
-				[4, "crbandit_helmet_mid"],            //215,-12					
-				[1, "cr_hedgeknight_low"],            //255,-16					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([				 					
+				[2, "crbandit_helmet_early"],		  //170,-10
+				[2, "red_bandit_leader_helmet"],	   //195					
+				[4, "crbandit_helmet_mid"],			//215,-12					
+				[1, "cr_hedgeknight_low"],			//255,-16					
 			]));
 		}
 		else if (dc <= 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crbandit_late"],          //270 				
-				[1, "crbandit_heavy"],     	   //290					
+				[1, "crbandit_late"],		  //270 				
+				[1, "crbandit_heavy"],	 	   //290					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([	
-				[1, "red_bandit_leader_helmet"],       //195				
-				[1, "crbandit_helmet_mid"],            //215,-12
+				[1, "red_bandit_leader_helmet"],	   //195				
+				[1, "crbandit_helmet_mid"],			//215,-12
 				[3, "cr_enclave_kettle_with_chain"],   //265,-17					
-				[1, "cr_enclave_kettle"],              //270,-18					
-				[1, "cr_hedgeknight_low"],            //255,-16					
+				[1, "cr_enclave_kettle"],			  //270,-18					
+				[1, "cr_hedgeknight_low"],			//255,-16					
 			]));
 		}
 		else if (dc <= 160)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crbandit_late"],          //270 				
-				[2, "crbandit_heavy"],     	   //290					
+				[1, "crbandit_late"],		  //270 				
+				[2, "crbandit_heavy"],	 	   //290					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
 				[1, "cr_enclave_kettle_with_chain"],   //265,-17					
-				[1, "cr_enclave_kettle"],              //270,-18					
-				[1, "cr_hedgeknight_low"],            //255,-16					
+				[1, "cr_enclave_kettle"],			  //270,-18					
+				[1, "cr_hedgeknight_low"],			//255,-16					
 			]));
 		}
 		else if (dc > 160)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crbandit_late"],          //270 				
-				[3, "crbandit_heavy"],     	   //290					
+				[1, "crbandit_late"],		  //270 				
+				[3, "crbandit_heavy"],	 	   //290					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
 				[1, "cr_enclave_kettle_with_chain"],   //265,-17					
-				[2, "cr_enclave_kettle"],              //270,-18					
-				[1, "cr_hedgeknight_low"],            //255,-16					
+				[2, "cr_enclave_kettle"],			  //270,-18					
+				[1, "cr_hedgeknight_low"],			//255,-16					
 			]));
 		}			
 	}

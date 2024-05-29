@@ -25,8 +25,8 @@
 	}
 	
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
@@ -56,11 +56,11 @@
 		if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "padded_surcoat"],    
-				[1, "gambeson"],        				
+				[1, "padded_surcoat"],	
+				[1, "gambeson"],						
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[2, "mail_coif"],               
+				[2, "mail_coif"],			   
 				[1, "aketon_cap"],  
 				[1, "open_leather_cap"], 
 				[1, "headscarf"], 
@@ -70,10 +70,10 @@
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_early"],    				
+				[3, "crarbalester_armor_early"],					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				
-				[1, "crbillman_helmet_low"],               //~30 					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+				[1, "crbillman_helmet_low"],			   //~30 					
 			]));
 		}			
 		else if (dc <= 120)
@@ -81,8 +81,8 @@
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[3, "crarbalester_armor_mid"],   				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				
-				[1, "crbillman_helmet_early"],              //~85          				
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+				[1, "crbillman_helmet_early"],			  //~85		  				
 			]));
 		}	
 		else if (dc <= 150)
@@ -91,9 +91,9 @@
 				[2, "crarbalester_armor_late"], 
 				[1, "crmasterarcher_armor"], 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				  	
-				[1, "crbillman_helmet_mid_chain"],               //~115  	
-				[1, "crbillman_helmet_mid"],              //~110            					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				  	
+				[1, "crbillman_helmet_mid_chain"],			   //~115  	
+				[1, "crbillman_helmet_mid"],			  //~110								
 			]));
 		}	
 		else if (dc > 150)
@@ -102,10 +102,10 @@
 				[1, "crarbalester_armor_late"], 
 				[3, "crmasterarcher_armor"], 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				                              				  	
-				[4, "crmasterarcher_helmet"],               //~115  	
-				[1, "crbillman_helmet_mid"],              //~110 
-				[1, "crbillman_helmet_mid_chain"],               //~115 					
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				  	
+				[4, "crmasterarcher_helmet"],			   //~115  	
+				[1, "crbillman_helmet_mid"],			  //~110 
+				[1, "crbillman_helmet_mid_chain"],			   //~115 					
 			]));
 		}			
 

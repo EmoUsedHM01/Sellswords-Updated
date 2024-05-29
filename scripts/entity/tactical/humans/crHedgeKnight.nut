@@ -175,104 +175,104 @@ this.crHedgeKnight <- this.inherit("scripts/entity/tactical/human", {
 		if (dc <= 80)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_scale_early"],         //280,-35				
-				[1, "cr_plate_scale_early_patched"],      //275,-36
-				[1, "cr_plate_full_early"],            //300,-40
-				[1, "cr_plate_full_early_low"],         //280,-35					
+				[1, "cr_plate_scale_early"],		 //280,-35				
+				[1, "cr_plate_scale_early_patched"],	  //275,-36
+				[1, "cr_plate_full_early"],			//300,-40
+				[1, "cr_plate_full_early_low"],		 //280,-35					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[2, "crknight_helmet_early_unadorned"],            //255 -16    310,-21                   					
-				[1, "crknight_helmet_early_decorative"],            //310,-20   280,-17	
-				[1, "cr_enclave_kettle"],            //265,-18	
-				[1, "cr_hedgeknight_low"],            //255,-16							
+				[2, "crknight_helmet_early_unadorned"],			//255 -16	310,-21				   					
+				[1, "crknight_helmet_early_decorative"],			//310,-20   280,-17	
+				[1, "cr_enclave_kettle"],			//265,-18	
+				[1, "cr_hedgeknight_low"],			//255,-16							
 			]));
 		}
 		else if (dc <= 100)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "cr_plate_scale_early"],         //280,-35				
-				[1, "cr_plate_scale_early_patched"],      //275,-36
-				[3, "cr_plate_full_early"],            //300,-40
-				[1, "cr_plate_scale_mid"],      //315,-40
-				[1, "cr_plate_full_mid"],           //320,-41					
+				[2, "cr_plate_scale_early"],		 //280,-35				
+				[1, "cr_plate_scale_early_patched"],	  //275,-36
+				[3, "cr_plate_full_early"],			//300,-40
+				[1, "cr_plate_scale_mid"],	  //315,-40
+				[1, "cr_plate_full_mid"],		   //320,-41					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crknight_helmet_early_unadorned"],            //255 -16    310,-21                  				
-				[1, "crknight_helmet_early_decorative"],            //310,-20   280,-17
-				[1, "crknight_helmet_mid_bread"],            //350,-23 
-				[1, "crknight_helmet_mid_decorative"],         //335,-22
-				[1, "crknight_helmet_mid_unadorned"],            //325 -21
-				[1, "cr_enclave_armet"],               //330, -22  					 					
+				[1, "crknight_helmet_early_unadorned"],			//255 -16	310,-21				  				
+				[1, "crknight_helmet_early_decorative"],			//310,-20   280,-17
+				[1, "crknight_helmet_mid_bread"],			//350,-23 
+				[1, "crknight_helmet_mid_decorative"],		 //335,-22
+				[1, "crknight_helmet_mid_unadorned"],			//325 -21
+				[1, "cr_enclave_armet"],			   //330, -22  					 					
 			]));
 		}
 		else if (dc <= 130)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_scale_mid"],      //315,-40
-				[1, "cr_plate_full_mid"],           //320,-41
-				[1, "cr_plate_full_mid_reinforced"],     //335,-43					
+				[1, "cr_plate_scale_mid"],	  //315,-40
+				[1, "cr_plate_full_mid"],		   //320,-41
+				[1, "cr_plate_full_mid_reinforced"],	 //335,-43					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[2, "crknight_helmet_mid_bread"],            //350,-23                        350
-				[2, "crknight_helmet_mid_decorative"],         //335,-22
-				[1, "crknight_helmet_mid_unadorned"],            //325 -21
-				[1, "cr_enclave_armet"],               //355,-24  	
-				[1, "crknight_helmet_mid_bascinet_faceplate"],               //385,-26  											
+				[2, "crknight_helmet_mid_bread"],			//350,-23						350
+				[2, "crknight_helmet_mid_decorative"],		 //335,-22
+				[1, "crknight_helmet_mid_unadorned"],			//325 -21
+				[1, "cr_enclave_armet"],			   //355,-24  	
+				[1, "crknight_helmet_mid_bascinet_faceplate"],			   //385,-26  											
 			]));
 		}	
 		else if (dc <= 160)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_mid"],           //320,-41
-				[1, "cr_plate_full_mid_reinforced"],     //335,-43
-				[1, "cr_plate_full_late"],       //370,-50					
+				[1, "cr_plate_full_mid"],		   //320,-41
+				[1, "cr_plate_full_mid_reinforced"],	 //335,-43
+				[1, "cr_plate_full_late"],	   //370,-50					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crknight_helmet_mid_bread"],            //350,-23               370                 				
-				[1, "cr_enclave_armet"],               //355,-24  	
-				[1, "crknight_helmet_mid_bascinet_faceplate"],               //385,-26 											
+				[1, "crknight_helmet_mid_bread"],			//350,-23			   370				 				
+				[1, "cr_enclave_armet"],			   //355,-24  	
+				[1, "crknight_helmet_mid_bascinet_faceplate"],			   //385,-26 											
 			]));
 		}	
 		else if (dc <= 190)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_late"],       //370,-50
-				[1, "cr_plate_full_heavy"],       //380,-49					
+				[1, "cr_plate_full_late"],	   //370,-50
+				[1, "cr_plate_full_heavy"],	   //380,-49					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
-				[1, "cr_enclave_great_bascinet"],               //415,-29	
-				[1, "cr_enclave_armet_late"],               //400,-28
-				[1, "crknight_helmet_late_mixed"],                //410, min 400	
-				[1, "crknight_helmet_late_mixed_patched"],        //405, min 390					
+				[1, "cr_enclave_great_bascinet"],			   //415,-29	
+				[1, "cr_enclave_armet_late"],			   //400,-28
+				[1, "crknight_helmet_late_mixed"],				//410, min 400	
+				[1, "crknight_helmet_late_mixed_patched"],		//405, min 390					
 			]));
 		}	
 		else if (dc <= 220)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_hedgeknight_midlate"],       //405
-				[1, "cr_plate_full_heavy"],       //380,-49
+				[1, "cr_plate_full_hedgeknight_midlate"],	   //405
+				[1, "cr_plate_full_heavy"],	   //380,-49
 				[1, "cr_plate_full_knight"]		 //415,-54						
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
-				[2, "cr_enclave_great_bascinet_late"],               //465,-32			 	      440
-				[3, "cr_enclave_venitian_bascinet"],               //460,-33	     
-				[1, "cr_enclave_great_bascinet"],               //415,-29	
-				[1, "crknight_helmet_late_mixed"],                //410, min 400	
-				[1, "crknight_helmet_late_mixed_patched"],        //405, min 390					
-				[1, "crknight_helmet_late_enclave_ichi"],               //420					
+				[2, "cr_enclave_great_bascinet_late"],			   //465,-32			 		  440
+				[3, "cr_enclave_venitian_bascinet"],			   //460,-33		 
+				[1, "cr_enclave_great_bascinet"],			   //415,-29	
+				[1, "crknight_helmet_late_mixed"],				//410, min 400	
+				[1, "crknight_helmet_late_mixed_patched"],		//405, min 390					
+				[1, "crknight_helmet_late_enclave_ichi"],			   //420					
 			]));
 		}
 		else if (dc > 220)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_heavy_late"],       //435,-57
+				[1, "cr_plate_full_heavy_late"],	   //435,-57
 				[2, "cr_plate_full_hedgeknight"]		 //415,-54						
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
-				[1, "cr_enclave_great_helm"],                //475,-36						
-				[1, "cr_enclave_great_bascinet_late"],              //465,-32
-				[1, "crknight_helmet_late_enclave_ni"],               //460
-				[1, "crknight_helmet_late_enclave_sann"]               //460					
+				[1, "cr_enclave_great_helm"],				//475,-36						
+				[1, "cr_enclave_great_bascinet_late"],			  //465,-32
+				[1, "crknight_helmet_late_enclave_ni"],			   //460
+				[1, "crknight_helmet_late_enclave_sann"]			   //460					
 			]));
 		}
 

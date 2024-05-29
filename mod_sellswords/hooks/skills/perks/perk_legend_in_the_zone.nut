@@ -6,7 +6,7 @@
 	{
 		local tooltip = this.skill.getTooltip();
 		local bonus = this.getBonus();
-		local crbonus = this.getBonus();     
+		local crbonus = this.getBonus();	 
 		local actor = this.getContainer().getActor();
 
 		if (bonus > 0)
@@ -14,7 +14,7 @@
 			if (actor.isPlacedOnMap() && ::Tactical.Entities.getHostileActors(actor.getFaction(), actor.getTile(), 1, true).len() > 0)		//engaged	  	
 			{
 				bonus = bonus * 2;			//melee damage		
-				crbonus *= 0;              //melee attack
+				crbonus *= 0;			  //melee attack
 			}
 
 			if (crbonus > 0)

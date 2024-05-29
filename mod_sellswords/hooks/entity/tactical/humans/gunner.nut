@@ -18,8 +18,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		local r;
@@ -44,58 +44,58 @@
 		if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "oriental/padded_vest"],          
-				[0, "gunner_mid_light_armor"],       //90 
-				[0, "gunner_late_armor"],       //115 					
+				[1, "oriental/padded_vest"],		  
+				[0, "gunner_mid_light_armor"],	   //90 
+				[0, "gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "oriental/gunner_hat"],          
-				[0, "gunner_helmet"],    						
+				[1, "oriental/gunner_hat"],		  
+				[0, "gunner_helmet"],							
 			]));
 		}
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "oriental/padded_vest"],          
-				[1, "gunner_mid_light_armor"],       //90 
-				[0, "gunner_late_armor"],       //115 					
+				[1, "oriental/padded_vest"],		  
+				[1, "gunner_mid_light_armor"],	   //90 
+				[0, "gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "oriental/gunner_hat"],          
-				[0, "gunner_helmet"],    						
+				[1, "oriental/gunner_hat"],		  
+				[0, "gunner_helmet"],							
 			]));
 		}			
 		else if (dc <= 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "oriental/padded_vest"],          
-				[2, "gunner_mid_light_armor"],       //90 
-				[1, "gunner_late_armor"],       //115 					
+				[1, "oriental/padded_vest"],		  
+				[2, "gunner_mid_light_armor"],	   //90 
+				[1, "gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "oriental/gunner_hat"],          
-				[1, "gunner_helmet"],    						
+				[1, "oriental/gunner_hat"],		  
+				[1, "gunner_helmet"],							
 			]));
 		}	
 		else if (dc <= 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([         
-				[1, "gunner_mid_light_armor"],       //90 
-				[1, "gunner_late_armor"],       //115 					
+			this.m.Items.equip(this.Const.World.Common.pickArmor([		 
+				[1, "gunner_mid_light_armor"],	   //90 
+				[1, "gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "oriental/gunner_hat"],          
-				[2, "gunner_helmet"],    						
+				[1, "oriental/gunner_hat"],		  
+				[2, "gunner_helmet"],							
 			]));
 		}
 		else if (dc > 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([         
-				[1, "gunner_mid_light_armor"],       //90 
-				[3, "gunner_late_armor"],       //115 					
+			this.m.Items.equip(this.Const.World.Common.pickArmor([		 
+				[1, "gunner_mid_light_armor"],	   //90 
+				[3, "gunner_late_armor"],	   //115 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				       
-				[1, "gunner_helmet"],    						
+			this.m.Items.equip(this.Const.World.Common.pickHelmet([					   
+				[1, "gunner_helmet"],							
 			]));
 		}				
 	}

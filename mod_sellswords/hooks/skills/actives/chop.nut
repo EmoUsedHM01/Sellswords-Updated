@@ -20,7 +20,7 @@
 
 			if (this.m.infantry)
 			{
-				tooltip.text = "Always hit the body part.";
+				tooltip.text = "Always hits the body.";
 			}
 			else
 			{

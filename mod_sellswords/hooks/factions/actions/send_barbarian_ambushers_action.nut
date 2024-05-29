@@ -64,11 +64,11 @@
 			}
 		}
 		
-        if (z > 90 - 0.25 * dc)
+		if (z > 90 - 0.25 * dc)
 		{
 			party = this.getFaction().spawnEntity(settlement.getTile(), "Barbarians Hunters", false, this.Const.World.Spawn.Barbhunters, this.Math.rand(60, 90) * this.getScaledDifficultyMult() * mult);
 		}				
-        else if (z > 0.5 * dc)
+		else if (z > 0.5 * dc)
 		{
 			party = this.getFaction().spawnEntity(settlement.getTile(), "Barbarians", false, this.Const.World.Spawn.Barbarians, this.Math.rand(75, 120) * this.getScaledDifficultyMult() * mult);
 		}

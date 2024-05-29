@@ -7,7 +7,7 @@
 		local dc = this.World.getTime().Days;
 		dc = this.Math.min(this.Math.floor(dc/40), 6);				
 
-		if (r <= 13 - dc)     //13-7
+		if (r <= 13 - dc)	 //13-7
 		{
 			local tile;
 
@@ -74,7 +74,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_ruins_location", tile.Coords);    //180
+				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_ruins_location", tile.Coords);	//180
 			}
 		}
 		else if (r <= 50 - dc) //13-13
@@ -155,7 +155,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_ruins_location", tile.Coords);       //180
+				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_ruins_location", tile.Coords);	   //180
 			}
 		}
 		else if (r <= 87 + dc)  //12-12
@@ -217,7 +217,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_mass_grave_location", tile.Coords);    //200
+				camp = this.World.spawnLocation("scripts/entity/world/locations/undead_mass_grave_location", tile.Coords);	//200
 			}
 		}
 

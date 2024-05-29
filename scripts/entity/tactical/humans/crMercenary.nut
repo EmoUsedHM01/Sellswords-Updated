@@ -343,9 +343,9 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 					this.m.Items.equip(this.new("scripts/items/shields/wooden_shield"));					
 				}
 
-			    this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
 			  
-			    if (::Is_PTR_Exist)
+				if (::Is_PTR_Exist)
 				{
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_str_cover_ally"));
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_str_line_breaker"));

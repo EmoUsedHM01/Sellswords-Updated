@@ -41,11 +41,11 @@
 		local party;
 		if (dc < 150)
 		{
-		    party = _faction.spawnEntity(settlement.getTile(), "Undead", false, this.Const.World.Spawn.UndeadScourge, rand * this.getScaledDifficultyMult() * mult);
+			party = _faction.spawnEntity(settlement.getTile(), "Undead", false, this.Const.World.Spawn.UndeadScourge, rand * this.getScaledDifficultyMult() * mult);
 		}
 		if (dc >= 150)
 		{
-		    party = _faction.spawnEntity(settlement.getTile(), "Undead", false, this.Const.World.Spawn.UndeadScourgeenhanced, rand * this.getScaledDifficultyMult() * mult);		
+			party = _faction.spawnEntity(settlement.getTile(), "Undead", false, this.Const.World.Spawn.UndeadScourgeenhanced, rand * this.getScaledDifficultyMult() * mult);		
 		}		
 		party.getSprite("banner").setBrush(settlement.getBanner());
 		party.setDescription("A legion of walking dead, back to claim from the living what was once theirs.");

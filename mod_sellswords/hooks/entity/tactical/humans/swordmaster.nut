@@ -75,8 +75,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
@@ -143,7 +143,7 @@
 					[2, "swordmaster_early_helmet"],
 					[3, "swordmaster_mid_light_helmet"],
 					[1, "swordmaster_late_medium_helmet"],
-					[1, "crfeathered_helmet"],               	// 210,-9 ~ 220,-10							
+					[1, "crfeathered_helmet"],			   	// 210,-9 ~ 220,-10							
 				]));
 			}				
 			else if (dc > 150)
@@ -158,7 +158,7 @@
 					[0, "swordmaster_early_helmet"],
 					[0, "swordmaster_mid_light_helmet"],
 					[1, "swordmaster_late_medium_helmet"],
-					[1, "crfeathered_helmet"],               	// 210,-9 ~ 220,-10						
+					[1, "crfeathered_helmet"],			   	// 210,-9 ~ 220,-10						
 				]));
 			}			
 		}
@@ -233,7 +233,7 @@
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crnamed_noble_mail_armor"],           				
+				[1, "crnamed_noble_mail_armor"],		   				
 			]));				
 		}
 

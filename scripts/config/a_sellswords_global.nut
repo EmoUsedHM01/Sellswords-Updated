@@ -22,7 +22,7 @@ addEntityType("crSellsword_Ranger", "Sellsword Ranger", "Sellsword Rangers", "ss
 addEntityType("crSellsword", "Sellsword", "Sellswords", "ss06");
 addEntityType("crSellsword_Elite", "Sellsword Elite", "Sellsword Elites", "ss07");
 addEntityType("crSellswordveteran", "Sellsword Veteran", "Sellsword Veterans", "ss09");
-addEntityType("crSquire", "Squire", "Squires", "ss10");															    //folk pack
+addEntityType("crSquire", "Squire", "Squires", "ss10");																//folk pack
 addEntityType("crSquireLow", "Squire", "Squires", "ss10");
 addEntityType("crBarbblacksmith", "Barbarian Blacksmith", "Barbarian Blacksmiths", "ss01");		//171
 addEntityType("crConscript", "Conscript", "Conscripts", "conscript_orientation");
@@ -112,13 +112,13 @@ addEntityType("crPaladin_guest", "Paladin", "Paladins", "monk_orientation");
 addEntityType("crOrcWarlock", "Orc Warlock", "Orc Warlocks", "orientation_orcwarlock");
 addEntityType("crBarbarianKing", "Barbarian King", "Barbarian Kings", "wildman_06_orientation");
 addEntityType("crSlayer", "Beast Slayer", "Beast Slayers", "ss08");
-addEntityType("crLindwurm_slayer", "Lindwurm Slayer", "Lindwurm Slayers", "orientation_slayer");                         //257
+addEntityType("crLindwurm_slayer", "Lindwurm Slayer", "Lindwurm Slayers", "orientation_slayer");						 //257
 addEntityType("crDeathknight", "Death Knight", "Death Knights", "deathknight_orientation");
 addEntityType("crKnightcommander", "Knight Commander", "Knight Commanders", "ss07");
 addEntityType("crOrcGrunt", "Orc Grunt", "Orc Grunts", "orc_grunt_orientation");	
 addEntityType("crOrcVanguard", "Orc Slaughterer", "Orc Slaughterers", "orc_slaughterer_orientation");	
 addEntityType("crOrcPackleader", "Orc Packleader", "Orc Packleaders", "orc_packleader_orientation");
-addEntityType("crAbjectgladiator02", "Slave Gladiator", "Slave Gladiators", "gladiator_orientation");      //263
+addEntityType("crAbjectgladiator02", "Slave Gladiator", "Slave Gladiators", "gladiator_orientation");	  //263
 addEntityType("crNomadScavenger", "Nomad Scavenger", "Nomad Scavengers", "gladiator_orientation");
 addEntityType("crBaron02", "Baron", "Barons", "ss02");
 addEntityType("crGoblinRider01", "Goblin Gendarme", "Goblin Gendarmes", "goblin_05_orientation");	
@@ -128,7 +128,7 @@ addEntityType("crGoblinRider04", "Goblin Ranger", "Goblin Rangers", "goblin_05_o
 addEntityType("crGoblinRider00", "Goblin Fighter", "Goblin Fighters", "goblin_05_orientation");
 addEntityType("crConqueror", "The Conqueror", "The Conquerors", "skeleton_05_orientation");
 
-addEntityType("DryadWolf", "Verdant Hound", "Verdant Hounds", "ss_dryad_wolf");       // dryad entities
+addEntityType("DryadWolf", "Verdant Hound", "Verdant Hounds", "ss_dryad_wolf");	   // dryad entities
 addEntityType("DryadSnake", "Thicket Stalker", "Thicket Stalkers", "ss_dryad_snake");
 addEntityType("DryadUnhold", "Woodland Protector", "Woodland Protector", "ss_dryad_unhold");
 addEntityType("DryadLindy", "Forest Avatar", "Forest Avatars", "ss_dryad_lindy");

@@ -1,8 +1,8 @@
 ::Const.LegendMod.ArmorObjs.extend([
 	{
-    ID = "dryad_armour",
-    Script = "",
-    Sets = [
+	ID = "dryad_armour",
+	Script = "",
+	Sets = [
 		{
 			Cloth = [
 				[1, "cloth/dryad_cloth"]

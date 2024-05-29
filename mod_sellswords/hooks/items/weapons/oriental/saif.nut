@@ -1,8 +1,8 @@
-::mods_hookExactClass("items/weapons/oriental/saif", function (o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/oriental/saif", function( q ) 
+{
+	q.create = @(__original) function()
 	{
-		ws_create()
-		this.m.WeaponType = this.Const.Items.WeaponType.Sword | this.Const.Items.WeaponType.Cleaver;
+		__original();
+		this.setCategories("Sword/Cleaver, One-Handed");
 	}
 });

@@ -23,8 +23,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		local banner = 3;
@@ -59,13 +59,13 @@
 		{
 			if (dc <= 75)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([       
-					[3, "crnomad_officer_leather"],      //210,-24
+				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
+					[3, "crnomad_officer_leather"],	  //210,-24
 					[1, "crnomad_officer_plate_patched"],   //270,-35					
 					[1, "crnomad_officer_plate"], 			 //275,-35
-					[0, "crnomad_officer_plate_full"],     //310,-37					
+					[0, "crnomad_officer_plate_full"],	 //310,-37					
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([                           					
+				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
 					[1, "oriental/southern_helmet_with_coif"], 
 					[2, "oriental/heavy_lamellar_helmet"], 
 					[1, "oriental/turban_helmet"], 
@@ -75,13 +75,13 @@
 			}
 			else if (dc <= 125)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([       
-					[1, "crnomad_officer_leather"],      //210,-24
+				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
+					[1, "crnomad_officer_leather"],	  //210,-24
 					[1, "crnomad_officer_plate_patched"],   //270,-35					
 					[1, "crnomad_officer_plate"], 			 //275,-35
-					[1, "crnomad_officer_plate_full"],     //310,-37					
+					[1, "crnomad_officer_plate_full"],	 //310,-37					
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([                           					
+				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
 					[1, "oriental/southern_helmet_with_coif"], 
 					[2, "oriental/heavy_lamellar_helmet"], 
 					[2, "oriental/turban_helmet"], 
@@ -90,12 +90,12 @@
 			}
 			else if (dc > 125)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([       
+				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
 					[1, "crnomad_officer_plate_patched"],   //270,-35					
 					[1, "crnomad_officer_plate"], 			 //275,-35
-					[2, "crnomad_officer_plate_full"],     //310,-37					
+					[2, "crnomad_officer_plate_full"],	 //310,-37					
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([                           					
+				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
 					[1, "oriental/heavy_lamellar_helmet"], 
 					[1, "oriental/turban_helmet"], 
 					[2, "cr_officer_helmet_late_lamellar"],			//265,-15					
@@ -106,10 +106,10 @@
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crleopard_armor"],            // 225,-29 					
+				[1, "crleopard_armor"],			// 225,-29 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crfeathered_helmet"],       // 210,-9 ~ 220,-10 					
+				[1, "crfeathered_helmet"],	   // 210,-9 ~ 220,-10 					
 			]));
 			this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 50;
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 50;		

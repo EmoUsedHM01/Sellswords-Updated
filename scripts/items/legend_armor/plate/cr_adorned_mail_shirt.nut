@@ -9,7 +9,7 @@ this.cr_adorned_mail_shirt <- this.inherit("scripts/items/legend_armor/legend_ar
 		this.m.Description = "A heavy mail shirt covered by a quilted surcoat. An impressive and well-maintained piece, adorned with trophies and holy symbols.";
 		this.m.ArmorDescription = "Includes a heavy mail shirt covered by a quilted surcoat. An impressive and well-maintained piece, adorned with trophies and holy symbols.";
 		this.m.Variants = [
-			1
+			0
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
@@ -20,17 +20,17 @@ this.cr_adorned_mail_shirt <- this.inherit("scripts/items/legend_armor/legend_ar
 		this.m.ConditionMax = 75;
 		this.m.StaminaModifier = -8;
 	}
-	
+
 	function updateVariant()
 	{
-		this.m.SpriteBack = "bust_body_cr51";
-		this.m.SpriteDamagedBack = "bust_body_cr51_damaged";
-		this.m.SpriteCorpseBack = "bust_body_cr51_dead";
-		this.m.Icon = "armor/icon_body_armor_cr51.png";
+		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
+		this.m.SpriteBack = "bust_cr_adorned_mail_shirt" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_cr_adorned_mail_shirt" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_cr_adorned_mail_shirt" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_cr_adorned_mail_shirt" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_body_armor_cr51.png";
-		this.m.OverlayIconLarge = "armor/inventory_body_armor_cr51.png";		
-	}	
+		this.m.OverlayIcon = "legend_armor/icon_cr_adorned_mail_shirt" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_cr_adorned_mail_shirt" + "_" + variant + ".png";
+	}
 
 });
-

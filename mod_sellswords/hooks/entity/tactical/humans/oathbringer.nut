@@ -44,8 +44,8 @@
 	}
 
 	local assignRandomEquipment = o.assignRandomEquipment;
-    o.assignRandomEquipment = function()
-    {
+	o.assignRandomEquipment = function()
+	{
 		assignRandomEquipment();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
@@ -122,10 +122,10 @@
 				8,
 				"adorned_full_helm_helmet"
 			],
-			[1, "crknight_helmet_mid_bread"],            //350,-23                        350,10/16
-			[1, "crknight_helmet_mid_decorative"],         //335,-22
-			[1, "crknight_helmet_mid_unadorned"],            //325 -21
-			[1, "cr_enclave_armet"],               //355,-24  			
+			[1, "crknight_helmet_mid_bread"],			//350,-23						350,10/16
+			[1, "crknight_helmet_mid_decorative"],		 //335,-22
+			[1, "crknight_helmet_mid_unadorned"],			//325 -21
+			[1, "cr_enclave_armet"],			   //355,-24  			
 		]));		
 
 		//if (::Is_PTR_Exist)

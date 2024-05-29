@@ -3,12 +3,16 @@ this.cr_emperors_armor <- this.inherit("scripts/items/legend_armor/legend_armor_
 	function create()
 	{
 		this.legend_armor_upgrade.create();
-		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;	
+		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;
 		this.m.ID = "legend_armor.body.cr_emperors_armor";
-		this.m.Name = "The Emperor\'s Armor";	
+		this.m.Name = "The Emperor\'s Armor";
 		this.m.Description = "A shining armor once worn by the emperor of an age long past, made from the most woundrous of materials, imbued with mystical energies. Light reflects easily off the polished armor, turning the wearer into a shimmering figure of light during the day.";
 		this.m.ArmorDescription = "A shining armor once worn by the emperor of an age long past, made from the most woundrous of materials, imbued with mystical energies. Light reflects easily off the polished armor, turning the wearer into a shimmering figure of light during the day.";
-		this.m.Variant = 99;
+		this.m.Variants = [
+			0,
+			1
+		];
+		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
@@ -25,7 +29,7 @@ this.cr_emperors_armor <- this.inherit("scripts/items/legend_armor/legend_armor_
 		this.onArmorTooltip(result);
 		return result;
 	}
-	
+
 	function onArmorTooltip( _result )
 	{
 		_result.push({
@@ -34,7 +38,7 @@ this.cr_emperors_armor <- this.inherit("scripts/items/legend_armor/legend_armor_
 			icon = "ui/icons/special.png",
 			text = "At the start of your turn, apply the Dazed status effect to all nearby enemies"
 		});
-	}		
+	}
 
 	function onTurnStart()
 	{
@@ -45,36 +49,32 @@ this.cr_emperors_armor <- this.inherit("scripts/items/legend_armor/legend_armor_
 			foreach( a in i )
 			{
 				if (a.getID() == actor.getID())
-				{
 					continue;
-				}
+
 				if (actor.getTile().getDistanceTo(a.getTile()) > 3)
-				{
 					continue;
-				}			
+
 				if (a.getFaction() == actor.getFaction())
-				{
 					continue;
-				}			
+
 				if (this.Math.rand(1, 100) <= 80)
-				{
 					continue;
-				}
+
 				a.getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
 			}
-		}		
+		}
 	}
 
 	function updateVariant()
 	{
-		this.m.SpriteBack = "bust_body_cr99";
-		this.m.SpriteDamagedBack = "bust_body_cr99_damaged";
-		this.m.SpriteCorpseBack = "bust_body_cr99_dead";
-		this.m.Icon = "armor/icon_body_armor_cr99.png";
+		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
+		this.m.SpriteBack = "bust_cr_emperors_armor" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_cr_emperors_armor" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_cr_emperors_armor" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_cr_emperors_armor" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_body_armor_cr99.png";
-		this.m.OverlayIconLarge = "armor/inventory_body_armor_cr99.png";		
-	}	
+		this.m.OverlayIcon = "legend_armor/icon_cr_emperors_armor" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_cr_emperors_armor" + "_" + variant + ".png";
+	}
 
 });
-

@@ -153,10 +153,10 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);	
 
 		this.m.Items.equip(this.Const.World.Common.pickArmor([ 
-			[1, "crslayer_armor"],            // 300,-43			
+			[1, "crslayer_armor"],			// 300,-43			
 		]));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-			[1, "crslayer_helmet"],       // 205+95,-17 				
+			[1, "crslayer_helmet"],	   // 205+95,-17 				
 		]));				
 	}
 

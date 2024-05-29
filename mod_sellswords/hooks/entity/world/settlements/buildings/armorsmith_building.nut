@@ -35,7 +35,7 @@
 			S = "legend_helmets/helm/cr_knightly_fullhelm"
 		}
 		]);
-	    
-	    fillStash(_list, _stash, 1.25, false);
+		
+		fillStash(_list, _stash, 1.25, false);
 	}		
 });
