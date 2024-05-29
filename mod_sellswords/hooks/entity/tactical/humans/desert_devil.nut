@@ -39,16 +39,9 @@
 		}		
 	}
 
-<<<<<<< HEAD
-	local assignRandomEquipment = o.assignRandomEquipment;
-	o.assignRandomEquipment = function()
-	{
-		assignRandomEquipment();
-=======
     q.assignRandomEquipment = @( __original ) function()
     {
 		__original();
->>>>>>> a8c2746 (Refactor tactical/humans to modern hooks)
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
