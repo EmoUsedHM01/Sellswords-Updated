@@ -1,14 +1,13 @@
-::mods_hookExactClass("entity/tactical/actor", function(o)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/actor", function(q)
 {
-	local onInit = o.onInit;
-	o.onInit = function()
+	q.onInit = @(__original) function()
 	{
-		onInit();
+		__original();
 		this.getSkills().add(this.new("scripts/skills/effects/crbolstered_effect"));
 		this.getSkills().add(this.new("scripts/skills/effects/ptr_armor_fatigue_recovery_effect"));
 	}
 	
-	o.onOtherActorDeath = function ( _killer, _victim, _skill )
+	q.onOtherActorDeath = @(__original) function ( _killer, _victim, _skill )
 	{
 		if (!this.m.IsAlive || this.m.IsDying)
 		{
@@ -42,7 +41,7 @@
 		}			
 	}
 
-	o.onMovementInZoneOfControl = function( _entity, _isOnEnter )
+	q.onMovementInZoneOfControl = @(__original) function( _entity, _isOnEnter )
 	{		
 		if (!this.m.IsActingEachTurn)
 		{
@@ -81,7 +80,7 @@
 		return false;
 	}
 
-	o.onAttackOfOpportunity = function( _entity, _isOnEnter )
+	q.onAttackOfOpportunity = @(__original) function( _entity, _isOnEnter )
 	{	
 		if (!this.m.IsActingEachTurn)
 		{
@@ -131,10 +130,9 @@
 		return false;
 	}
 
-	local old_resetPerks = o.resetPerks;
-	o.resetPerks = function()
+	q.resetPerks = @(__original) function()
 	{
-		old_resetPerks();
+		__original();
 		// Remove all flags related to Favoured Enemy Perks
 		local flags = this.getFlags();
 		local flagsRemoved = 0; 
@@ -152,5 +150,4 @@
 		// Remove perks points that were earned from fulfilling favoured enemy refund requirement
 		this.m.PerkPoints -= flagsRemoved;
 	};
-	
 });

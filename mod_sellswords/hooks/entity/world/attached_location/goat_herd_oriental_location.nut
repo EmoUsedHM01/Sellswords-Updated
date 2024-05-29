@@ -1,10 +1,9 @@
-::mods_hookExactClass("entity/world/attached_location/goat_herd_oriental_location", function(o) {
-	local ws_onUpdateShopList = o.onUpdateShopList;
-	o.onUpdateShopList = function( _id, _list )
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/attached_location/goat_herd_oriental_location", function(q) {
+	q.onUpdateShopList = function( _id, _list )
 	{
 		local before = _list.len();
 
-		ws_onUpdateShopList(_id, _list);
+		__original(_id, _list);
 
 		local after = _list.len();
 
@@ -22,4 +21,4 @@
 			}
 		}
 	}
-})
+});

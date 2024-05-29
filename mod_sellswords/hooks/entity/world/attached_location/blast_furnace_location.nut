@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/world/attached_location/blast_furnace_location", function(o) {
-	local ws_onUpdateShopList = o.onUpdateShopList;
-	o.onUpdateShopList = function( _id, _list )
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/attached_location/blast_furnace_location", function(q)
+{
+	q.onUpdateShopList = @(__original) function( _id, _list )
 	{
-		ws_onUpdateShopList(_id, _list);
+		__original(_id, _list);
 
 		if (_id == "building.armorsmith")
 		{
@@ -35,4 +35,4 @@
 			]);
 		}
 	}
-})
+});

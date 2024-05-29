@@ -1,10 +1,10 @@
-::mods_hookExactClass("entity/world/attached_location/wheat_fields_location", function(o) {
-	local ws_onUpdateShopList = o.onUpdateShopList;
-	o.onUpdateShopList = function( _id, _list )
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/attached_location/wheat_fields_location", function(q)
+{
+	q.onUpdateShopList = @(__original) function( _id, _list )
 	{
 		local before = _list.len();
 
-		ws_onUpdateShopList(_id, _list);
+		__original(_id, _list);
 
 		local after = _list.len();
 
@@ -23,4 +23,4 @@
 			}
 		}
 	}
-})
+});
