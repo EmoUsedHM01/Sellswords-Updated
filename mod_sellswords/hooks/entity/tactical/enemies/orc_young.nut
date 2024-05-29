@@ -1,4 +1,4 @@
-::Mod_Sellswords("scripts/entity/tactical/enemies/orc_young", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/orc_young", function(q)
 {
 	q.onInit = @( __original ) function()
 	{
