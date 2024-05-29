@@ -3,6 +3,15 @@
 ...\scripts\!mods_preload\mod_sellswords.nut
 Added FB incompat to conflict list
 
+...\mod_sellswords\hooks\ai\...
+...\mod_sellswords\hooks\ambitions\...
+...\mod_sellswords\hooks\contracts\...
+...\mod_sellswords\hooks\entity\...
+Updated to Modern Hooks
+
+...\README.md
+Added a README for the git/ppl
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 
