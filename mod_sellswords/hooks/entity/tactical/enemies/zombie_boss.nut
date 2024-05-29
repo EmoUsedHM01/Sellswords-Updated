@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/zombie_boss", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/zombie_boss", function( q ) {
+
 	q.onInit = @(__original) function()
 	{
 		__original();

@@ -175,7 +175,7 @@
 			]));			
 		}
 	}
-	q.makeMiniboss = function ()
+	q.makeMiniboss = @(__original) function ()
 	{
 		if (!__original())
 		{
@@ -215,4 +215,4 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		return true;
 	}
-});	
+});

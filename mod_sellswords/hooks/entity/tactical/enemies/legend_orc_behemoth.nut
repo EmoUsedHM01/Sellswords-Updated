@@ -106,11 +106,18 @@
 				1,
 				"greenskins/legend_orc_behemoth_armor"
 			]
+<<<<<<< HEAD
 		];
 		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
 	}
 
 	q.makeMiniboss = @( __original ) function()
+=======
+		];			
+		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));					
+	},
+	q.makeMiniboss = @(__original) function ()
+>>>>>>> cf10ae5 (Fix mh errors and add blueprints)
 	{
 		if (!this.actor.makeMiniboss())
 		{

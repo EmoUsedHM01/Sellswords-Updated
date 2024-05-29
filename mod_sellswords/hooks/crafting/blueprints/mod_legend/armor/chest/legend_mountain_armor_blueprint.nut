@@ -1,8 +1,8 @@
-::mods_hookExactClass("crafting/blueprints/mod_legend/armor/chest/legend_mountain_armor_blueprint", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/armor/chest/legend_mountain_armor_blueprint", function( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.PreviewCraftable = this.new("scripts/items/legend_armor/plate/cr_mountain_armor");
 		this.m.PreviewComponents.clear();
@@ -28,7 +28,7 @@
 		]);
 	}
 
-	o.onCraft = function( _stash )
+	q.onCraft = @(__original) function( _stash )
 	{
 		local r = this.Math.rand(1, 4);
 
@@ -41,5 +41,4 @@
 			_stash.add(this.new("scripts/items/legend_armor/plate/cr_mountain_armor"));
 		}
 	}
-})
-
+});

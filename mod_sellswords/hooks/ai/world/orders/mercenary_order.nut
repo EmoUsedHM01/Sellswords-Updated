@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/ai/world/behaviors/mercenary_order", function ( q )
-{
+::Mod_Sellswords.HooksMod.hook("scripts/ai/world/orders/mercenary_order", function ( q ) {
+
 	q.onExecute = @( __original ) function( _entity, _hasChanged )
 	{
 		if (this.m.TargetSettlement == null || this.m.TargetSettlement.isNull() || !this.m.TargetSettlement.isAlive())

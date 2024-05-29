@@ -1,6 +1,6 @@
-::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/defend_holy_site_southern_contract", function(q)
-{
-	o.createStates = @( __original ) function()
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/defend_holy_site_southern_contract", function( q ) {
+
+	q.createStates = @( __original ) function()
 	{
 		__original();
 

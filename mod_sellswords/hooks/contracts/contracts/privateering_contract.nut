@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/privateering_contract", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/privateering_contract", function( q ) {
+
 	q.createStates = @( __original ) function()
 	{
 		__original();
@@ -361,7 +361,7 @@
 		}
 	}
 
-	q.onPrepareVariables = function( _vars )
+	q.onPrepareVariables = @(__original) function( _vars )
 	{
 		_vars.push([
 			"noblehouse",

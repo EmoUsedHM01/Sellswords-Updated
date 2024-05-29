@@ -24,7 +24,7 @@
 		}			
 	}
 
-	q.makeMiniboss <- function()
+	q.makeMiniboss = @(__original) function()
 	{
 		if (!this.actor.makeMiniboss())
 		{

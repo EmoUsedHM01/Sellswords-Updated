@@ -1,10 +1,10 @@
-::mods_hookExactClass("crafting/blueprints/horn_plate_upgrade_blueprint", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/horn_plate_upgrade_blueprint", function( q ) {
 
-	o.create = function() // Removing the ability to craft the Kraken armour attachment as SSU replaces it with a Tabard layer
+	q.create = @(__original) function() // Removing the ability to craft the Kraken armour attachment as SSU replaces it with a Tabard layer
 	{
 	}
 
-	o.onCraft = function( _stash )
+	q.onCraft = @(__original) function( _stash )
 	{
 	}
 })

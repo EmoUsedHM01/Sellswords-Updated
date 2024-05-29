@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/ai/tactical/behaviors/ai_attack_splitshield", function ( q )
-{
+::Mod_Sellswords.HooksMod.hook("scripts/ai/tactical/behaviors/ai_attack_splitshield", function ( q ) {
+
 	q.onEvaluate = @( __original ) function( _entity )
 	{
 		this.m.TargetTile = null;
