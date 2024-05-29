@@ -1,8 +1,8 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/zombie_boss", function(q)
-{
-	q.onInit = @(__original) function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/zombie_boss", function(o) {
+	local onInit = o.onInit;
+	o.onInit = function()
 	{
-		__original();
+		onInit();
 		this.m.BaseProperties.IsAffectedByInjuries = true;				
 		this.m.Skills.removeByID("perk.perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));			
@@ -44,4 +44,4 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;					
 		}						
 	}	
-});
+});	

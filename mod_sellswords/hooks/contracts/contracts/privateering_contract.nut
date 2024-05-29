@@ -361,7 +361,7 @@
 		}
 	}
 
-	q.onPrepareVariables = function( _vars )
+	o.onPrepareVariables = function( _vars )
 	{
 		_vars.push([
 			"noblehouse",

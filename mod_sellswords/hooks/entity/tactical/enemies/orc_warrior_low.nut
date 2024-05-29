@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/orc_warrior_low", function(q)
+::Mod_Sellswords("scripts/entity/tactical/enemies/orc_warrior_low", function(q)
 {
 	q.assignRandomEquipment = @( __original ) function()
 	{

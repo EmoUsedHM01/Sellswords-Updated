@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/skeleton_boss", function(q)
+::Mod_Sellswords("scripts/entity/tactical/enemies/skeleton_boss", function(q)
 {
 	q.onInit = @( __original ) function()
 	{
