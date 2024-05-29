@@ -4,6 +4,7 @@ If you're looking for latest builds or other info, check the pinned messages in 
 
 **New to Sellswords?**
 For those unfamiliar with Sellswords, you can check out the original version here. https://www.nexusmods.com/battlebrothers/mods/606
+
 Additional changes from SS include, but are not limited to;
 - Dryad Origin and faction
 - Revamped Legendary Sword system
