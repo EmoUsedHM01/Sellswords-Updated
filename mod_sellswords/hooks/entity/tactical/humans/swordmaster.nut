@@ -204,7 +204,7 @@
 			}
 		}
 	}
-	q.makeMiniboss = function ()
+	q.makeMiniboss = @(__original) function ()
 	{
 		if (!__original())
 		{
