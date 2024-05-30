@@ -2,7 +2,7 @@
 
 	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Cost = 250;
 	}
 });
