@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/world/locations/barbarian_shelter_location", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/barbarian_shelter_location", function( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		local r = this.Math.rand(1, 100);
 		if (r <= 20)
@@ -14,4 +14,4 @@
 			this.setDefenderSpawnList(this.Const.World.Spawn.Barbarians);
 		}	
 	}
-})
+});

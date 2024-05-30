@@ -1,5 +1,6 @@
-::mods_hookExactClass("entity/world/locations/legendary/black_monolith_location", function(o) {
-	o.onSpawned = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/legendary/black_monolith_location", function( q ) {
+
+	q.onSpawned = @(__original) function()
 	{
 		this.m.Name = "Black Monolith";
 		this.location.onSpawned();
@@ -79,7 +80,7 @@
 		}
 	}
 
-	o.onDropLootForPlayer = function( _lootTable )
+	q.onDropLootForPlayer = @(__original) function( _lootTable )
 	{
 		this.location.onDropLootForPlayer(_lootTable);
 		this.dropArmorParts(this.Math.rand(0, 60), _lootTable);
@@ -98,4 +99,4 @@
 			]
 		]));
 	}
-})
+});

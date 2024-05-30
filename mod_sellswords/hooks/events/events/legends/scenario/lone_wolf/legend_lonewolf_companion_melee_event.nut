@@ -1,12 +1,11 @@
-::mods_hookExactClass("events/events/legends/scenario/lone_wolf/legend_lonewolf_companion_melee_event", function ( o )
-{
-	local create = o.create;
-	o.create = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/events/events/legends/scenario/lone_wolf/legend_lonewolf_companion_melee_event", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		create();
+		__original();
 		this.m.Cooldown = 35.0 * this.World.getTime().SecondsPerDay;
 	};
-	o.onUpdateScore = function ()
+	q.onUpdateScore = @(__original) function()
 	{
 		if (this.World.Assets.getOrigin().getID() != "scenario.lone_wolf" && this.World.Assets.getOrigin().getID() != "scenario.lone_wolf_easy")
 		{

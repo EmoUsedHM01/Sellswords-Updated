@@ -1,8 +1,8 @@
-::mods_hookExactClass("entity/world/locations/legendary/waterwheel_location", function(o) {
-	local ws_onSpawned = o.onSpawned;
-	o.onSpawned = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/legendary/waterwheel_location", function( q ) {
+
+	q.onSpawned = @(__original) function()
 	{
-		ws_onSpawned();
+		__original();
 
 		for( local i = 0; i < 4; ++i )
 		{
@@ -25,4 +25,4 @@
 			}, false, 100);
 		}	
 	}
-})
+});

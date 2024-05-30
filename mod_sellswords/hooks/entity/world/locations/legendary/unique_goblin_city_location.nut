@@ -1,5 +1,6 @@
-::mods_hookExactClass("entity/world/locations/legendary/unique_goblin_city_location", function(o) {
-	o.onDropLootForPlayer = function( _lootTable )
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/legendary/unique_goblin_city_location", function( q ) {
+
+	q.onDropLootForPlayer = @(__original) function( _lootTable )
 	{
 		this.location.onDropLootForPlayer(_lootTable);
 		this.dropMoney(this.Math.rand(0, 100), _lootTable);
@@ -30,4 +31,4 @@
 			]
 		]));
 	}
-})
+});

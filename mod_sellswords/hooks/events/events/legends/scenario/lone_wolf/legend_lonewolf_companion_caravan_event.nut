@@ -1,6 +1,5 @@
-::mods_hookExactClass("events/events/legends/scenario/lone_wolf/legend_lonewolf_companion_caravan_event", function ( o )
-{
-	o.onUpdateScore = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/events/events/legends/scenario/lone_wolf/legend_lonewolf_companion_caravan_event", function ( q ) {
+	q.onUpdateScore = @(__original) function()
 	{		
 		if (this.World.Assets.getOrigin().getID() != "scenario.lone_wolf" && this.World.Assets.getOrigin().getID() != "scenario.lone_wolf_easy")
 		{
@@ -26,4 +25,4 @@
 		}
 		this.m.Score = 15;
 	};			
-});	
+});

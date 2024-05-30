@@ -1,9 +1,8 @@
-::mods_hookExactClass("events/events/dlc8/lindwurm_slayer_event", function ( o )
+::mods_hookExactClass("events/events/dlc8/lindwurm_slayer_event", function ( q )
 {
-	local ws_create = o.create;
-	o.create = function()
+	q.create = function()
 	{
-		ws_create();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
@@ -115,5 +114,4 @@
 			}
 		}
 	}
-
-});	
+});

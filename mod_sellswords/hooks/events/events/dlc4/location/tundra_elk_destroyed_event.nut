@@ -1,15 +1,14 @@
-::mods_hookExactClass("events/events/dlc4/location/tundra_elk_destroyed_event", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/events/events/dlc4/location/tundra_elk_destroyed_event", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
 			if (screen.ID != "A") continue;
 
-			screen.start = function( _event )
+			screen.start = @(__original) function( _event )
 			{
 				this.World.Flags.set("IjirokStage", 5);
 				local stash = this.World.Assets.getStash().getItems();
@@ -63,5 +62,4 @@
 			}
 		}
 	}
-
-});	
+});

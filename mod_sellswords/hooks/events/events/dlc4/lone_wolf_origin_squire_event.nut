@@ -1,6 +1,6 @@
-::mods_hookExactClass("events/events/dlc4/lone_wolf_origin_squire_event", function ( o )
+::Mod_Sellswords.HooksMod.hook("scripts/events/events/dlc4/lone_wolf_origin_squire_event", function ( q )
 {
-	o.onUpdateScore = function ()
+	q.onUpdateScore = @(__original) function()
 	{
 		if (this.World.Assets.getOrigin().getID() != "scenario.lone_wolf" && this.World.Assets.getOrigin().getID() != "scenario.lone_wolf_easy")
 		{
@@ -30,4 +30,4 @@
 		this.m.Town = town;
 		this.m.Score = 100;
 	};
-});	
+});

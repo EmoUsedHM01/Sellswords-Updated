@@ -1,6 +1,6 @@
-::mods_hookExactClass("entity/world/location", function ( o )
-{
-	o.createDefenders = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/location", function ( q ) {
+
+	q.createDefenders = @(__original) function()
 	{
 		local resources = this.m.Resources;
 
@@ -118,4 +118,4 @@
 
 		this.updateStrength();
 	}
-});		
+});

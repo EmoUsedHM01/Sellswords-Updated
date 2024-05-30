@@ -1,7 +1,6 @@
-::mods_hookExactClass("entity/world/player_party", function ( o )
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/player_party", function ( q )
 {
-	local updateStrength = o.updateStrength;
-	o.updateStrength = function ()
+	q.updateStrength = @(__original) function()
 	{
 		this.m.Strength = 0.0;
 		local roster = this.World.getPlayerRoster().getAll();

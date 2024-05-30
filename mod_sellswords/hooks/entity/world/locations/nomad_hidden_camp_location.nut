@@ -1,6 +1,6 @@
-::mods_hookExactClass("entity/world/locations/nomad_hidden_camp_location", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/nomad_hidden_camp_location", function( q ) {
+
+	q.create = @(__original) function()
 	{
 		ws_create();
 
@@ -14,4 +14,4 @@
 			this.setDefenderSpawnList(this.Const.World.Spawn.NomadDefenders);
 		}	
 	}
-})
+});
