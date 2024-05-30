@@ -24,12 +24,6 @@
 		return ret;
 	}
 
-	q.onAfterUpdate = @( __original ) function( _properties)
-	{
-		__original(_properties);
-		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
-	}
-
 	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)

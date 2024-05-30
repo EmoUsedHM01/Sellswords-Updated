@@ -6,7 +6,7 @@
 		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
 	}
 
-	q.onUse = function ( _user, _targetTile )
+	q.onUse = @( __original ) function ( _user, _targetTile )
 	{
 		this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectBash);
 		local success = this.attackEntity(_user, _targetTile.getEntity());
