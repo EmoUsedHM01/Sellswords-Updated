@@ -26,6 +26,9 @@ Added a README for the git/ppl
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_cleave.nut
 Updated to MH and made all Polearm weapon attacks benefit from Polearm Mastery
 
+...\mod_sellswords\hooks\skills\perks\perk_legend_escape_artist.nut
+Updated to MH and reworked the mechanic and syntax
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 
