@@ -1,6 +1,12 @@
-::mods_hookExactClass("skills/actives/knock_over_skill", function ( o )
-{
-	o.onUse = function ( _user, _targetTile )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/knock_over_skill", function( q ) {
+
+	q.onAfterUpdate = @( __original ) function( _properties)
+	{
+		__original(_properties);
+		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+	}
+
+	q.onUse = function ( _user, _targetTile )
 	{
 		this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectBash);
 		local success = this.attackEntity(_user, _targetTile.getEntity());
@@ -34,4 +40,5 @@
 		}
 		return success;
 	}
-});	
+
+});

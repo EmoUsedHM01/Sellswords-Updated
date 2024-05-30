@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/actives/legend_ranged_flail_skill", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_ranged_flail_skill", function( q ) {
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		ret.extend([
 			{
@@ -33,7 +32,13 @@
 		return ret;
 	}
 
-	o.onAnySkillUsed <- function( _skill, _targetEntity, _properties )
+	q.onAfterUpdate = @( __original ) function( _properties)
+	{
+		__original(_properties);
+		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+	}
+
+	q.onAnySkillUsed <- function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -47,6 +52,6 @@
 				this.m.HitChanceBonus = 0;
 			}
 		}
-	}	
+	}
 
-})
+});

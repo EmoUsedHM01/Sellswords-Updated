@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/actives/legend_voulge_cleave", function(o) {
-	
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_voulge_cleave", function( q ) {
+
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		ret.push({
 			id = 7,
@@ -24,7 +23,13 @@
 		return ret;
 	}
 
-	o.onAnySkillUsed <- function( _skill, _targetEntity, _properties )
+	q.onAfterUpdate = @( __original ) function( _properties)
+	{
+		__original(_properties);
+		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+	}
+
+	q.onAnySkillUsed <- function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -34,10 +39,8 @@
 				this.m.HitChanceBonus = -15;
 			}
 			else
-			{
 				this.m.HitChanceBonus = 0;
-			}			
 		}
 	}
 
-})
+});
