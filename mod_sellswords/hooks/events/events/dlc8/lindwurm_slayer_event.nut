@@ -1,6 +1,6 @@
-::mods_hookExactClass("events/events/dlc8/lindwurm_slayer_event", function ( q )
-{
-	q.create = function()
+::mods_hookExactClass("events/events/dlc8/lindwurm_slayer_event", function ( q ) {
+
+	q.create = @(__original) function()
 	{
 		__original();
 
@@ -11,7 +11,7 @@
 			case "A":
 				screen.start = function( _event )
 				{
-					local item;			
+					local item;
 					local roster = this.World.getTemporaryRoster();
 					_event.m.Dude = roster.create("scripts/entity/tactical/player");
 					_event.m.Dude.setStartValuesEx([
@@ -47,14 +47,14 @@
 							1,
 							"crlindwurm_slayer_helmet"
 						]
-					]);					
+					]);
 					_event.m.Dude.getItems().equip(item);
 					item = this.Const.World.Common.pickArmor([
 						[
 							1,
 							"crlindwurm_slayer_armor"
 						]
-					]);				
+					]);
 					_event.m.Dude.getItems().equip(item);
 					this.Characters.push(_event.m.Dude.getImagePath());
 				}
@@ -63,7 +63,7 @@
 			case "B":
 				screen.start = function( _event )
 				{
-					local item;				
+					local item;
 					local roster = this.World.getTemporaryRoster();
 					_event.m.Dude = roster.create("scripts/entity/tactical/player");
 					_event.m.Dude.setStartValuesEx([
@@ -99,14 +99,14 @@
 							1,
 							"crlindwurm_slayer_helmet"
 						]
-					]);					
+					]);
 					_event.m.Dude.getItems().equip(item);
 					item = this.Const.World.Common.pickArmor([
 						[
 							1,
 							"crlindwurm_slayer_armor"
 						]
-					]);				
+					]);
 					_event.m.Dude.getItems().equip(item);
 					this.Characters.push(_event.m.Dude.getImagePath());
 				}
@@ -114,4 +114,5 @@
 			}
 		}
 	}
+
 });
