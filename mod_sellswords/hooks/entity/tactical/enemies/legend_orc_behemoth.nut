@@ -106,23 +106,14 @@
 				1,
 				"greenskins/legend_orc_behemoth_armor"
 			]
-<<<<<<< HEAD
 		];
 		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
 	}
 
-	q.makeMiniboss = @( __original ) function()
-=======
-		];			
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));					
-	},
 	q.makeMiniboss = @(__original) function ()
->>>>>>> cf10ae5 (Fix mh errors and add blueprints)
 	{
 		if (!this.actor.makeMiniboss())
-		{
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss_greenskins");
 		local weapons = [
@@ -133,7 +124,6 @@
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));
-		//this.m.Skills.addTreeOfEquippedWeapon();
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 		return true;
 	}
