@@ -2,16 +2,13 @@
 
 	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		local r = this.Math.rand(1, 100);
 		if (r <= 25)
-		{
 			this.setDefenderSpawnList(this.Const.World.Spawn.Manhunters);
-		}
 		else if (r > 25)
-		{
 			this.setDefenderSpawnList(this.Const.World.Spawn.NomadDefenders);
-		}	
 	}
+
 });
