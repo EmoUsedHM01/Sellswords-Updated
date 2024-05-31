@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/tools/daze_bomb_item", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/items/tools/daze_bomb_item", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Description = "A throwable pot filled with mysterious powders that react violently on impact to create a bright flash and loud bang. Will daze anyone close by. Is refilled after each battle, consuming 30 ammunition per charge.";
 		this.m.Value = 1000;
 		this.m.ItemType = this.Const.Items.ItemType.Ammo | this.Const.Items.ItemType.Tool;
@@ -15,17 +14,17 @@
 		this.m.IsDroppedAsLoot = true;
 	}
 	
-	o.isAmountShown <- function ()
+	q.isAmountShown <- function ()
 	{
 		return true;
 	}
 
-	o.getAmountString <- function ()
+	q.getAmountString <- function ()
 	{
 		return this.m.Ammo + "/" + this.m.AmmoMax;
 	}
 
-	o.setAmmo <- function ( _a )
+	q.setAmmo <- function ( _a )
 	{
 		this.weapon.setAmmo( _a );
 
@@ -46,5 +45,4 @@
 
 		this.updateAppearance();
 	}
-	
 });

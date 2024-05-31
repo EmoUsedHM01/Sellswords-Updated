@@ -1,6 +1,6 @@
-::mods_hookExactClass("items/tools/player_banner", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/items/tools/player_banner", function ( q ) {
+
+	q.getTooltip = @(__original) function()
 	{
 		local result = this.weapon.getTooltip();
 		result.push({
@@ -12,10 +12,9 @@
 		return result;
 	};
 	
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function ()
+	q.onEquip = @(__original) function()
 	{
-		ws_onEquip();
+		__original();
 
 		local skill = ::new("scripts/skills/actives/banner_wave");
 		skill.setItem(this);

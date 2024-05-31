@@ -1,15 +1,14 @@
-::mods_hookExactClass("items/trade/legend_cooking_spices_trade_item", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/trade/legend_cooking_spices_trade_item", function ( q )  {
+	
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Uses = 4;
 	}
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 		ret.pop();
 
 		if (this.m.Uses == 4)
@@ -32,10 +31,9 @@
 		return ret;
 	}
 
-	local ws_getValue = o.getValue;
-	o.getValue = function()
+	q.getValue = @(__original) function()
 	{
-		return ws_getValue() * 2.0;
+		return __original() * 2.0;
 	}
 
 })

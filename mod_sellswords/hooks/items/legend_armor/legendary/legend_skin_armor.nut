@@ -1,12 +1,10 @@
-::mods_hookExactClass("items/legend_armor/legendary/legend_skin_armor", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/legend_armor/legendary/legend_skin_armor", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.ConditionMax = 220;
 		this.m.Condition = this.m.ConditionMax;
 	}
-	
 });

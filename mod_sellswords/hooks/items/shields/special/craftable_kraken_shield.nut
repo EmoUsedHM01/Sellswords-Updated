@@ -1,8 +1,8 @@
-::mods_hookExactClass("items/shields/special/craftable_kraken_shield", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/shields/special/craftable_kraken_shield", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		
 		this.m.Value = 1400;
 		this.m.MeleeDefense = 26;
@@ -10,4 +10,4 @@
 		this.m.Condition = 60;
 		this.m.ConditionMax = 60;
 	}
-})
+});

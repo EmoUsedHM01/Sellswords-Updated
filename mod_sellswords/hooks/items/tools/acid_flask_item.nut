@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/tools/acid_flask_item", function ( o )
-{
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/items/tools/acid_flask_item", function ( q ) {
+	
+	q.onEquip = @(__original) function()
 	{
-		ws_onEquip();
+		__original();
 
 		local skill = ::new("scripts/skills/actives/throw_acid_flask_pro");
 		skill.setItem(this);

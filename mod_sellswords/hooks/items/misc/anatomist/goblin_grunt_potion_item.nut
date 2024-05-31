@@ -1,8 +1,8 @@
-::mods_hookExactClass("items/misc/anatomist/goblin_grunt_potion_item", function (o) {
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/misc/anatomist/goblin_grunt_potion_item", function ( q )  {
+
+	q.getTooltip = @(__original) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		foreach (tooltip in ret)
 		{
@@ -22,4 +22,4 @@
 
 		return ret;
 	}
-})
+});

@@ -1,11 +1,10 @@
-::mods_hookExactClass("items/shields/named/named_shield", function(o) {
-	o.m.IsAllowedRandomizeValues <- true;
+::Mod_Sellswords.HooksMod.hook("scripts/items/shields/named/named_shield", function( q ) {
 
-	local ws_randomizeValues = o.randomizeValues;
-	o.randomizeValues = function()
+	q.m.IsAllowedRandomizeValues <- true;
+	q.randomizeValues = @(__original) function()
 	{
 		if (!this.m.IsAllowedRandomizeValues) return;
 
-		ws_randomizeValues();
+		__original();
 	}
-})
+});

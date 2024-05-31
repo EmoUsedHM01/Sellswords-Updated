@@ -1,6 +1,6 @@
-::mods_hookExactClass("items/legend_armor/legend_armor", function ( o )
-{
-	o.getStaminaModifier = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/items/legend_armor/legend_armor", function ( q ) {
+
+	q.getStaminaModifier = @(__original) function()
 	{
 		local upgrademutiplier = 1;
 		foreach( i, upgrade in this.m.Upgrades )
@@ -12,4 +12,4 @@
 		}			
 		return this.Math.floor(upgrademutiplier * this.getAddedValue("getStaminaModifier", this.m.StaminaModifier));	 			
 	}		
-});	
+});

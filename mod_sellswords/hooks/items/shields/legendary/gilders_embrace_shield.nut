@@ -1,11 +1,9 @@
-::mods_hookExactClass("items/shields/legendary/gilders_embrace_shield", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/shields/legendary/gilders_embrace_shield", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 		this.m.MeleeDefense = 28;
 		this.m.RangedDefense = 28;
 	}
-	
 });

@@ -1,8 +1,8 @@
-::mods_hookExactClass("items/misc/anatomist/research_notes_legendary_item", function (o) {
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/misc/anatomist/research_notes_legendary_item", function ( q )  {
+
+	q.getTooltip = @(__original) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 		local new =
 		{
 			flag = "isCrConquerorPotionDiscovered",
@@ -31,4 +31,4 @@
 
 		return ret;
 	}
-})
+});

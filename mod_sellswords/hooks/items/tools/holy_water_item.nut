@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/tools/holy_water_item", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/items/tools/holy_water_item", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Description = "A flask filled with water blessed by a man of the gods. Can be thrown at short ranges. Is refilled after each battle, consuming 30 ammunition per charge.";
 		this.m.Value = 1000;
 		this.m.ItemType = this.Const.Items.ItemType.Ammo | this.Const.Items.ItemType.Tool;
@@ -15,10 +14,9 @@
 		this.m.IsDroppedAsLoot = true;
 	}
 	
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function ()
+	q.onEquip = @(__original) function()
 	{
-		ws_onEquip();
+		__original();
 
 		local skill = ::new("scripts/skills/actives/throw_holy_water_pro");
 		skill.setItem(this);
@@ -29,17 +27,17 @@
 		this.addSkill(skill);		
 	};
 	
-	o.isAmountShown <- function ()
+	q.isAmountShown <- function ()
 	{
 		return true;
 	}
 
-	o.getAmountString <- function ()
+	q.getAmountString <- function ()
 	{
 		return this.m.Ammo + "/" + this.m.AmmoMax;
 	}
 
-	o.setAmmo <- function ( _a )
+	q.setAmmo <- function ( _a )
 	{
 		this.weapon.setAmmo( _a );
 
@@ -60,5 +58,4 @@
 
 		this.updateAppearance();
 	}
-	
 });

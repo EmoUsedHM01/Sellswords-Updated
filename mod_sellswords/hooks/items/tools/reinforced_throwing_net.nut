@@ -1,7 +1,6 @@
-::mods_hookExactClass("items/tools/reinforced_throwing_net", function ( o )
-{
+::Mod_Sellswords.HooksMod.hook("scripts/items/tools/reinforced_throwing_net", function ( q ) {
 
-	o.onEquip <- function ()
+	q.onEquip <- function ()
 	{
 		this.weapon.onEquip();
 		local skill = this.new("scripts/skills/actives/throw_net");
@@ -15,7 +14,7 @@
 
 	}
 
-	o.onUpdateProperties <- function ( _properties )
+	q.onUpdateProperties <- function ( _properties )
 	{
 		this.weapon.onUpdateProperties(_properties);
 		// Net Repair Perk negates the weight
@@ -26,7 +25,7 @@
 	}
 
 	// Bag fatigue uses getStaminaModifier
-	o.getStaminaModifier <- function ()
+	q.getStaminaModifier <- function ()
 	{
 		if (this.getContainer().getActor().getSkills().hasSkill("perk.legend_net_repair"))
 		{
@@ -37,5 +36,4 @@
 			return this.m.StaminaModifier;
 		}
 	}
-
 });
