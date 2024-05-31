@@ -30,6 +30,11 @@ Updated to MH and made all Polearm weapon attacks benefit from Polearm Mastery
 ...\mod_sellswords\hooks\skills\perks\perk_legend_escape_artist.nut
 Updated to MH and reworked the mechanic and syntax
 
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_battleheart.nut (deleted)
+...\mod_sellswords\hooks_ptr\skills\backgrounds\legend_lonewolf_background.nut
+Updated a clause for Battleheart with the movement/moral checks
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 
@@ -844,7 +849,7 @@ Changed up the special tree a little, was fairly unintuitive code wise, cleaned 
 Updated a few typos and continuity errors
 
 ..\mod_sellswords\hooks\skills\perks\perk_legend_battleheart.nut
-..._6.0.4\scripts\skills\perks\perk_crmeleedefense.nut
+...\scripts\skills\perks\perk_crmeleedefense.nut
 
 ----------------------------------------------------------------------------------------------------------------------------
 
