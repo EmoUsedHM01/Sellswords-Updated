@@ -39,7 +39,7 @@ if (!(::Is_PTR_Exist))
 				{
 					totalPerksInTree += row.len();
 				}
-				if (totalPerksInTree >= 6)
+				if (totalPerksInTree >= 5)
 				{
 					i++;
 					continue;					

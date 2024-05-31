@@ -74,7 +74,7 @@
 			this.Const.Perks.PerkDefs.crinitiative,
 			this.Const.Perks.PerkDefs.crhitpoints,
 			this.Const.Perks.PerkDefs.crstamina,
-			this.Const.Perks.PerkDefs.crmeleedefense,
+			this.Const.Perks.PerkDefs.LegendBattleheart,
 			this.Const.Perks.PerkDefs.crmeleeskill
 		];
 		ptad = ptad[this.Math.rand(0, ptad.len() - 1)];
