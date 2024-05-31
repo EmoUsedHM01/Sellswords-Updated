@@ -1,5 +1,6 @@
-::mods_hookExactClass("items/weapons/named/named_orc_flail_2h", function ( o ) {
-	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_orc_flail_2h", function ( q ) {
+
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		local baseWeapon = ::new("scripts/items/weapons/greenskins/orc_flail_2h");
 		this.m.Condition = baseWeapon.m.Condition;
 		this.m.ConditionMax = baseWeapon.m.ConditionMax;
@@ -15,5 +16,4 @@
 		this.m.FatigueOnSkillUse = baseWeapon.m.FatigueOnSkillUse;
 		this.m.Value = 2600;
 	});
-	
-});	
+});

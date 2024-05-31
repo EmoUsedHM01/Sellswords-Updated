@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/greenskins/legend_meat_hacker", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/greenskins/legend_meat_hacker", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Description = "A long shard of sharpened rock firmly wedged into a massive bone. Not well suited for human hands.";
 		this.m.IsDoubleGrippable = true;		
@@ -18,10 +17,9 @@
 		this.m.DirectDamageMult = 0.35;
 	}
 
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function()
+	q.onEquip = @(__original) function()
 	{
-		ws_onEquip();
+		__original();
 
 		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.split_man", function(_skill) {
 			_skill.m.DirectDamageMult = this.m.DirectDamageMult;		
@@ -41,5 +39,4 @@
 		skill.m.orc = true;
 		this.addSkill(skill);
 	}
-
-});	
+});

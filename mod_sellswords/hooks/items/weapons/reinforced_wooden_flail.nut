@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/reinforced_wooden_flail", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/reinforced_wooden_flail", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 800;
 		this.m.Condition = 50.0;

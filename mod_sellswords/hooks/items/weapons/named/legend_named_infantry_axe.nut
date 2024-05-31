@@ -1,15 +1,15 @@
-::mods_hookExactClass("items/weapons/named/legend_named_infantry_axe", function(o) {
-	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/legend_named_infantry_axe", function ( q ) {
+
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		this.m.ShieldDamage = 40;
 		this.m.Condition = 72.0;
 		this.m.ConditionMax = 72.0;
 		this.m.ArmorDamageMult = 1.2;
 	});
 
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function()
+	q.onEquip = @(__original) function()
 	{
-		ws_onEquip();
+		__original();
 
 		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.chop", function(_skill) {
 			_skill.m.DirectDamageMult = this.m.DirectDamageMult;

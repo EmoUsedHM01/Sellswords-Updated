@@ -1,5 +1,6 @@
-::mods_hookExactClass("items/weapons/named/named_longsword", function(o) {
-	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_longsword", function ( q ) {
+
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		this.m.Description = "This blade shows great craftmanship. It is certainly brutally efficient in cutting, but the simple design has also a subtlety that is easily overlooked.";
 		this.m.IsAgainstShields = false;
 		this.m.Value = 3600;
@@ -9,10 +10,9 @@
 		this.m.ArmorDamageMult = 0.85;
 	});
 
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function()
+	q.onEquip = @(__original) function()
 	{
-		ws_onEquip();
+		__original();
 
 		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.overhead_strike", function(_skill) {
 			_skill.setStunChance(this.m.StunChance);
@@ -33,5 +33,4 @@
 
 		this.addSkill(this.new("scripts/skills/actives/split"));
 	}
-
 });

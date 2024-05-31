@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/legend_swordstaff", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/legend_swordstaff", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Condition = 92.0;
 		this.m.ConditionMax = 92.0;
@@ -13,8 +12,7 @@
 		this.m.Value = 2900;
 	}
 
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function()
+	q.onEquip = @(__original) function()
 	{
 		if (!::Is_PTR_Exist)
 		{
@@ -35,7 +33,7 @@
 		}
 		else
 		{
-			ws_onEquip();
+			__original();
 		}
 		
 		this.addSkill(this.new("scripts/skills/actives/repel"));	

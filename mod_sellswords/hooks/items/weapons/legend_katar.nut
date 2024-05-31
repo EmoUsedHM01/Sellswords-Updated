@@ -1,14 +1,12 @@
-::mods_hookExactClass("items/weapons/legend_katar", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/legend_katar", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 1800;
 		this.m.ArmorDamageMult = 0.9;
 		this.m.DirectDamageMult = 0.2;
 		this.m.DirectDamageAdd = 0.1;		
 	}
-		
-});	
+});

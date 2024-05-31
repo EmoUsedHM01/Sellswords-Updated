@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/barbarians/skull_hammer", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/barbarians/skull_hammer", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Name = "Two-Handed Rusty Hammer";
 		this.m.Description = "A crude metal hammer used with two hands to crush both armor and its wearer alike.";

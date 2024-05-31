@@ -1,11 +1,10 @@
-::mods_hookExactClass("items/weapons/barbarians/heavy_javelin", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/barbarians/heavy_javelin", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.WeaponType = this.m.WeaponType | this.Const.Items.WeaponType.Spear;
 		this.setupWeaponType();
 	}
-});	
+});

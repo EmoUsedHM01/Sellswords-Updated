@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/legend_chain", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/legend_chain", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 600;
 		this.m.Condition = 56.0;
@@ -14,4 +13,4 @@
 		this.m.DirectDamageMult = 0.3;
 		this.m.DirectDamageAdd = 0.15;
 	}
-});	
+});

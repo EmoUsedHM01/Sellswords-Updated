@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/greenskins/goblin_heavy_bow", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/greenskins/goblin_heavy_bow", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 1800;
 		this.m.Condition = 90.0;

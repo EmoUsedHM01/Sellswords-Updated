@@ -1,6 +1,5 @@
-::mods_hookExactClass("items/weapons/named/legend_named_swordstaff", function(o) {
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/legend_named_swordstaff", function ( q ) {
+	q.onEquip = @(__original) function()
 	{
 		if (!::Is_PTR_Exist)
 		{
@@ -21,7 +20,7 @@
 		}
 		else
 		{
-			ws_onEquip();
+			__original();
 		}
 		
 		this.addSkill(this.new("scripts/skills/actives/repel"));	

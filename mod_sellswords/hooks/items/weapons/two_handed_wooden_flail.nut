@@ -1,11 +1,10 @@
-::mods_hookExactClass("items/weapons/two_handed_wooden_flail", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/two_handed_wooden_flail", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 700;
 		this.m.RegularDamageMax = 65;
 	}
-});	
+});

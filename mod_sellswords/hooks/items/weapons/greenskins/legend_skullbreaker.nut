@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/greenskins/legend_skullbreaker", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/greenskins/legend_skullbreaker", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 
 		this.m.IconLarge = "weapons/melee/orc_hammer_2h_low.png";
 		this.m.Icon = "weapons/melee/orc_hammer_2h_low_70x70.png";
@@ -16,4 +15,4 @@
 		this.m.RegularDamageMax = 110;
 		this.m.ArmorDamageMult = 2.10;
 	}
-});	
+});

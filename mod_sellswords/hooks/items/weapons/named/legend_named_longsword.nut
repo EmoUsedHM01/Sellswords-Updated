@@ -1,7 +1,7 @@
-::mods_hookExactClass("items/weapons/named/legend_named_longsword", function(o) {
-	o.m.StunChance <- 0;
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/legend_named_longsword", function ( q ) {
+	q.m.StunChance <- 0;
 
-	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		this.m.Value = 3600;
 		this.m.Condition = 60.0;
 		this.m.ConditionMax = 60.0;
@@ -11,10 +11,9 @@
 		this.m.ArmorDamageMult = 0.85;
 	});
 
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function()
+	q.onEquip = @(__original) function()
 	{
-		ws_onEquip();
+		__original();
 
 		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.overhead_strike", function(_skill) {
 			_skill.setStunChance(this.m.StunChance);

@@ -1,5 +1,6 @@
-::mods_hookExactClass("items/weapons/named/named_goblin_heavy_bow", function(o) {
-	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_goblin_heavy_bow", function ( q ) {
+
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		this.m.Value = 3300;
 		this.m.Condition = 84.0;
 		this.m.ConditionMax = 84.0;

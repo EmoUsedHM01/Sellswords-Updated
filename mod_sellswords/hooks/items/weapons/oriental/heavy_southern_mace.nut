@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/oriental/heavy_southern_mace", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/oriental/heavy_southern_mace", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 		this.m.ArmorDamageMult = 1.25;
 	}
 });

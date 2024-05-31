@@ -1,5 +1,6 @@
-::mods_hookExactClass("items/weapons/named/legend_named_voulge", function ( o ) {
-	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/legend_named_voulge", function ( q ) {
+
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		local baseWeapon = ::new("scripts/items/weapons/legend_military_voulge");
 		this.m.Condition = baseWeapon.m.Condition;
 		this.m.ConditionMax = baseWeapon.m.ConditionMax;

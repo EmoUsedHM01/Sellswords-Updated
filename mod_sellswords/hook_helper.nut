@@ -158,14 +158,13 @@
 	hookNamedItemToChangeStats = function ( _object , _function )
 	{
 		local hookFunction = _function;
-		local ws_create = _object.create;
-		_object.create = function()
+		_object.create = @(__original) function()
 		{
 			// turn off randomize values
 			this.m.IsAllowedRandomizeValues = false;
 
 			// call the original function
-			ws_create();
+			__original();
 
 			// turn on randomize values
 			this.m.IsAllowedRandomizeValues = true;

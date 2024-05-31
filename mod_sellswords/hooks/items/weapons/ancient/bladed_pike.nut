@@ -1,10 +1,9 @@
-::mods_hookExactClass("items/weapons/ancient/bladed_pike", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/ancient/bladed_pike", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 900;
 	}
-});	
+});

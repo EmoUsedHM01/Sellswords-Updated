@@ -1,5 +1,6 @@
-::mods_hookExactClass("items/weapons/named/named_handgonne", function ( o ) {
-	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_handgonne", function ( q ) {
+
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		local baseWeapon = this.new("scripts/items/weapons/oriental/handgonne");
 		this.m.RegularDamage = baseWeapon.m.RegularDamage;
 		this.m.RegularDamageMax = baseWeapon.m.RegularDamageMax;
@@ -9,5 +10,4 @@
 		this.m.StaminaModifier = baseWeapon.m.StaminaModifier;
 		this.m.Value = 5000;
 	});
-	
 });

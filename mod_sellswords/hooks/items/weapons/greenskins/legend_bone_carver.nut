@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/greenskins/legend_bone_carver", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/greenskins/legend_bone_carver", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.RegularDamage = 35;
 		this.m.RegularDamageMax = 65;

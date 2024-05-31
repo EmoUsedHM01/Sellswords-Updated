@@ -1,7 +1,7 @@
-::mods_hookExactClass("items/weapons/named/named_weapon", function ( o ) {
-	o.m.IsAllowedRandomizeValues <- true;
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_weapon", function ( q ) {
+	q.m.IsAllowedRandomizeValues <- true;
 
-	o.randomizeValues = function ()
+	q.randomizeValues = @(__original) function()
 	{
 		if (!this.m.IsAllowedRandomizeValues) return;
 
@@ -85,4 +85,4 @@
 			n = --n;
 		}
 	}
-});	
+});

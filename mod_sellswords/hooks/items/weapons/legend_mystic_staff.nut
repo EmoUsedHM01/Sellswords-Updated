@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/legend_mystic_staff", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/legend_mystic_staff", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.RegularDamage = 20;
 		this.m.RegularDamageMax = 25;
@@ -11,10 +10,9 @@
 		this.m.DirectDamageAdd = 0.0;
 	}
 	
-	local ws_onEquip = o.onEquip;
-	o.onEquip = function ()
+	q.onEquip = @(__original) function()
 	{
-		ws_onEquip()
+		__original()
 		if (::Is_PTR_Exist)
 		{
 			return

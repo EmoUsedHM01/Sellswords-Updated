@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/oriental/polemace", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/oriental/polemace", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 1300;
 		this.m.ShieldDamage = 0;

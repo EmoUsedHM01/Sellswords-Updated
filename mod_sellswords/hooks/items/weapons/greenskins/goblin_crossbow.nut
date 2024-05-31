@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/greenskins/goblin_crossbow", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/greenskins/goblin_crossbow", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 3500;
 		this.m.Condition = 80;

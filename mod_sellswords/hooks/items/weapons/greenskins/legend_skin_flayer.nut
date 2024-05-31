@@ -1,10 +1,9 @@
-::mods_hookExactClass("items/weapons/greenskins/legend_skin_flayer", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/greenskins/legend_skin_flayer", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.RegularDamage = 50;
 	}
-});	
+});

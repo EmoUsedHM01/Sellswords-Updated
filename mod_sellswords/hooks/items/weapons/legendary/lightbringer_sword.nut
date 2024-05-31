@@ -1,16 +1,15 @@
-::mods_hookExactClass("items/weapons/legendary/lightbringer_sword", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/legendary/lightbringer_sword", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.RegularDamage = 60;
 		this.m.RegularDamageMax = 65;
 		this.m.ArmorDamageMult = 0.8;
 	}
 	
-	o.getTooltip = function ()
+	q.getTooltip = @(__original) function()
 	{
 		local result = this.weapon.getTooltip();
 		result.push({

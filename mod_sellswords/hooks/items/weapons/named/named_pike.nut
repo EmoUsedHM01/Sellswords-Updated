@@ -1,5 +1,6 @@
-::mods_hookExactClass("items/weapons/named/named_pike", function ( o ) {
-	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_pike", function ( q ) {
+
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		local baseWeapon = this.new("scripts/items/weapons/pike");
 		this.m.Condition = baseWeapon.m.Condition;
 		this.m.ConditionMax = baseWeapon.m.ConditionMax;
@@ -15,5 +16,4 @@
 		this.m.FatigueOnSkillUse = baseWeapon.m.FatigueOnSkillUse;
 		this.m.Value = 3400;
 	});
-	
 });

@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/legend_staff_gnarled", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/legend_staff_gnarled", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Value = 3500;
 		this.m.RegularDamage = 30;

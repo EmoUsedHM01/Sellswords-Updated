@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/greenskins/legend_man_mangler", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/greenskins/legend_man_mangler", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.StunChance = 15;
 		this.m.RegularDamage = 80;
@@ -14,7 +13,7 @@
 		this.m.FatigueOnSkillUse = 5;
 	}
 
-	o.onEquip = function()
+	q.onEquip = @(__original) function()
 	{
 		this.weapon.onEquip();
 		local skillToAdd = this.new("scripts/skills/actives/overhead_strike");
@@ -32,5 +31,4 @@
 		skillToAdd = this.new("scripts/skills/actives/split_shield");
 		this.addSkill(skillToAdd);
 	}
-
-});	
+});

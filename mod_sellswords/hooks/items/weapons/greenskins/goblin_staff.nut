@@ -1,9 +1,8 @@
-::mods_hookExactClass("items/weapons/greenskins/goblin_staff", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/greenskins/goblin_staff", function ( q ) {
+	
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.RegularDamage = 15;
 		this.m.RegularDamageMax = 25;

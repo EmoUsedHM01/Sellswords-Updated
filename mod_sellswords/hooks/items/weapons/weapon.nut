@@ -1,6 +1,5 @@
-::mods_hookExactClass("items/weapons/weapon", function ( o )
-{
-	o.onDamageDealt = function ( _target, _skill, _hitInfo )
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/weapon", function ( q ) {
+	q.onDamageDealt = @(__original) function( _target, _skill, _hitInfo )
 	{
 		local actor = this.getContainer().getActor();
 		local pe = actor.getSkills().hasSkill("perk.ptr_pointy_end") && _skill.getDamageType().contains(this.Const.Damage.DamageType.Piercing) && !_target.isArmedWithShield();
