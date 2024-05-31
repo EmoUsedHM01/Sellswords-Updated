@@ -1,6 +1,6 @@
-::mods_hookExactClass("factions/actions/send_military_army_action", function ( o )
-{
-	o.onExecute = function ( _faction )
+::Mod_Sellswords.HooksMod.hook("scripts/factions/actions/send_military_army_action", function ( q ) {
+
+	q.onExecute = @(__original) function( _faction )
 	{
 		local potential_origins = [];
 

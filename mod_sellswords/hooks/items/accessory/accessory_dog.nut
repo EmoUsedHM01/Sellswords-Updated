@@ -1,6 +1,6 @@
-::mods_hookExactClass("items/accessory/accessory_dog", function ( o )
-{
-	o.onActorDied = function ( _onTile )
+::Mod_Sellswords.HooksMod.hook("scripts/items/accessory/accessory_dog", function ( q ) {
+
+	q.onActorDied = @(__original) function( _onTile )
 	{
 		if (!this.isUnleashed())
 		{
@@ -74,4 +74,4 @@
 			this.Sound.play(this.m.UnleashSounds[this.Math.rand(0, this.m.UnleashSounds.len() - 1)], this.Const.Sound.Volume.Skill, _onTile.Pos);
 		}
 	}
-});	
+});

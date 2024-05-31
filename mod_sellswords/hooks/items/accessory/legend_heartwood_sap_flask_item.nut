@@ -1,14 +1,13 @@
-::mods_hookExactClass("items/accessory/legend_heartwood_sap_flask_item", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/items/accessory/legend_heartwood_sap_flask_item", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Value = 2000;
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		local result = this.accessory.getTooltip();
 		result.push({
@@ -19,5 +18,4 @@
 		});
 		return result;
 	}
-
-});	
+});

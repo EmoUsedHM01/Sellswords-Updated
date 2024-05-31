@@ -1,6 +1,6 @@
-::mods_hookExactClass("factions/actions/send_caravan_action", function ( o )
-{
-	o.onExecute = function ( _faction )
+::Mod_Sellswords.HooksMod.hook("scripts/factions/actions/send_caravan_action", function ( q ) {
+
+	q.onExecute = @(__original) function( _faction )
 	{
 		local party;
 		local z = this.Math.rand(1, 100);
@@ -199,6 +199,5 @@
 		c.addOrder(move);
 		c.addOrder(unload);
 		c.addOrder(despawn);
-	};
-	
-});	
+	};	
+});

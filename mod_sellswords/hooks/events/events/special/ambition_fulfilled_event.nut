@@ -1,15 +1,14 @@
-::mods_hookExactClass("events/events/special/ambition_fulfilled_event", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/events/events/special/ambition_fulfilled_event", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		foreach (screen in this.m.Screens)
 		{
 			if (screen.ID != "A") continue;
 
-			screen.start = function( _event )
+			screen.start = @(__original) function( _event )
 			{
 				this.Music.setTrackList(this.Const.Music.VictoryTracks, this.Const.Music.CrossFadeTime);
 				local active = this.World.Ambitions.getActiveAmbition();
@@ -93,7 +92,7 @@
 		}
 	}
 
-	o.onPrepareVariables = function( _vars )
+	q.onPrepareVariables = @(__original) function( _vars )
 	{
 		local brothers = this.World.getPlayerRoster().getAll();
 		local lowest_hiretime = 100000000.0;
@@ -180,4 +179,4 @@
 		]);
 		this.World.Ambitions.getActiveAmbition().onPrepareVariables(_vars);
 	}
-});	
+});

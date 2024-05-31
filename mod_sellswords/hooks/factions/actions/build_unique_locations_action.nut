@@ -1,11 +1,10 @@
-::mods_hookExactClass("factions/actions/build_unique_locations_action", function (o)
-{
-	o.m.Buildcrorc_fortress  <- true;
-	o.m.Buildcrss_camp  <- true;	
-	local updateBuildings = o.updateBuildings;		
-	o.updateBuildings = function( )
+::Mod_Sellswords.HooksMod.hook("scripts/factions/actions/build_unique_locations_action", function ( q ) {
+
+	q.m.Buildcrorc_fortress  <- true;
+	q.m.Buildcrss_camp  <- true;		
+	q.updateBuildings = @(__original) function( )
 	{	
-		updateBuildings();
+		__original();
 		local locations = this.World.EntityManager.getLocations();
 
 		foreach( v in locations )
@@ -20,10 +19,9 @@
 			}			
 		}		
 	}
-	local onExecute = o.onExecute;		
-	o.onExecute = function( _faction )
+	q.onExecute = @(__original) function( _faction )
 	{
-		onExecute( _faction );
+		__original( _faction );
 		local camp;
 		local distanceToOthers = 15;		
 		if (this.m.Buildcrss_camp)
@@ -95,4 +93,4 @@
 			}
 		}			
 	}		
-})
+});

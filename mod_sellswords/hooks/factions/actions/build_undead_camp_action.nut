@@ -1,6 +1,6 @@
-::mods_hookExactClass("factions/actions/build_undead_camp_action", function ( o )
-{
-	o.onExecute = function ( _faction )
+::Mod_Sellswords.HooksMod.hook("scripts/factions/actions/build_undead_camp_action", function ( q ) {
+
+	q.onExecute = @(__original) function( _faction )
 	{
 		local camp;
 		local r = this.Math.rand(1, 100);
@@ -229,4 +229,4 @@
 			_faction.addSettlement(camp, false);
 		}		
 	};
-});		
+});

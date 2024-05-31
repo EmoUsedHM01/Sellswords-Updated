@@ -1,6 +1,6 @@
-::mods_hookExactClass("factions/actions/send_undead_ambushers_action", function ( o )
-{
-	o.onExecute = function ( _faction )
+::Mod_Sellswords.HooksMod.hook("scripts/factions/actions/send_undead_ambushers_action", function ( q ) {
+
+	q.onExecute = @(__original) function( _faction )
 	{
 		local settlements = [];
 
@@ -73,5 +73,4 @@
 		c.addOrder(despawn);
 		return true;
 	}
-	
-});	
+});

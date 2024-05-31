@@ -1,6 +1,6 @@
-::mods_hookExactClass("factions/actions/build_orc_camp_action", function ( o )
-{
-	o.onExecute = function ( _faction )
+::Mod_Sellswords.HooksMod.hook("scripts/factions/actions/build_orc_camp_action", function ( q ) {
+
+	q.onExecute = @(__original) function( _faction )
 	{
 		local camp;
 		local r;
@@ -162,4 +162,4 @@
 			_faction.addSettlement(camp, false);
 		}		
 	};
-});	
+});
