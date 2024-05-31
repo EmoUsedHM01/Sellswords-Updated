@@ -8,7 +8,7 @@
 		{
 			if (screen.ID != "A") continue;
 
-			screen.start = @(__original) function( _event )
+			screen.start = function( _event )
 			{
 				this.Music.setTrackList(this.Const.Music.VictoryTracks, this.Const.Music.CrossFadeTime);
 				local active = this.World.Ambitions.getActiveAmbition();
@@ -177,6 +177,8 @@
 			"nearesttown",
 			nearest_town.getName()
 		]);
+
 		this.World.Ambitions.getActiveAmbition().onPrepareVariables(_vars);
 	}
+
 });
