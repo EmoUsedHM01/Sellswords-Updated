@@ -1,7 +1,8 @@
-::mods_hookExactClass("skills/actives/strike_skill", function(o) {
-	o.m.ApplyBonusToBodyPart <- -1;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/strike_skill", function( q ) {
 
-	o.getTooltip = function()
+	q.m.ApplyBonusToBodyPart <- -1;
+
+	q.getTooltip = @(__original) function()
 	{
 		local ret = this.getDefaultTooltip();
 		ret.push({
@@ -32,7 +33,7 @@
 						text = "Do a free extra attack with [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] damage(not regarded as critical strikes) on a hit"
 					}
 				]);	
-			}			
+			}
 		}
 		else
 		{
@@ -52,12 +53,19 @@
 					text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
 				});
 			}
-		}				
+		}
 
 		return ret;
 	}
 
-	o.onUse = function( _user, _targetTile )
+	q.onAfterUpdate = @(__original) function( _properties )
+	{
+		this.m.FatigueCostMult = _properties.IsSpecializedInAxes ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+		this.m.FatigueCostMult = _properties.IsSpecializedInPolearms ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+	}
+
+	q.onUse = @(__original) function( _user, _targetTile )
 	{
 		if (!this.m.ApplyAxeMastery || !this.getContainer().hasSkill("perk.crHackSPM"))
 		{
@@ -92,16 +100,16 @@
 		return success;
 	}
 
-	o.onTargetHit <- function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
+	q.onTargetHit <- function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		if (_skill == this)
 		{
 			//this.m.ApplyBonusToBodyPart = _bodyPart;
-			this.m.ApplyBonusToBodyPart = _bodyPart == this.Const.BodyPart.Body ? this.Const.BodyPart.Head : this.Const.BodyPart.Body;			
+			this.m.ApplyBonusToBodyPart = _bodyPart == this.Const.BodyPart.Body ? this.Const.BodyPart.Head : this.Const.BodyPart.Body;
 		}
 	}
 
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @(__original) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -118,8 +126,8 @@
 			else
 			{
 				this.m.HitChanceBonus = this.m.ApplyAxeMastery ? 0 : 5;
-			}			
+			}
 		}
 	}
 
-})
+});

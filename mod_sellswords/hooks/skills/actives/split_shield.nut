@@ -1,10 +1,23 @@
-::mods_hookExactClass("skills/actives/split_shield", function ( o )
-{
-	local ws_onUse = o.onUse;
-	o.onUse = function ( _user, _targetTile )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/split_shield", function( q ) {
+
+	q.onAfterUpdate = @(__original) function( _properties )
+	{
+		this.m.FatigueCostMult = this.m.ApplyAxeMastery && _properties.IsSpecializedInAxes ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+
+		if (this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand) != null && this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand).getBlockedSlotType() != null)
+		{
+			this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+		}
+		else
+		{
+			this.m.ActionPointCost = 4;
+		}
+	}
+
+	q.onUse = @(__original) function( _user, _targetTile )
 	{
 		local shield = _targetTile.getEntity().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
-		local ret = ws_onUse(_user, _targetTile);
+		local ret = __original(_user, _targetTile);
 
 		if (ret && shield != null && shield.getCondition() == 0 && this.getContainer().hasSkill("perk.legend_smashing_shields"))
 		{
@@ -19,6 +32,6 @@
 		}
 
 		return ret;
-	};
+	}
 
 });

@@ -47,6 +47,9 @@ Updated a null value
 ...\scripts\skills\actives\throw_net_free.nut
 Net stuff cleanup
 
+...\mod_sellswords\hooks\skills\traits\huge_trait.nut
+Added fat penalty to reduction from Huge
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 

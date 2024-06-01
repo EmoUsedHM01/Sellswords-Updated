@@ -1,8 +1,8 @@
-::mods_hookNewObject("items/weapons/longaxe", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/longaxe", function ( q ) {
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.Value = 1300;
 		this.m.ShieldDamage = 24;
@@ -17,4 +17,5 @@
 		this.m.ArmorDamageMult = 1.2;
 		this.m.DirectDamageMult = 0.3;
 	}
+
 });
