@@ -12,7 +12,7 @@
 		this.m.debuff = _d;
 	}
 
-	q.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		local debuff = this.getdebuff();
 		return [
