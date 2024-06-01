@@ -2,7 +2,7 @@
 	
 	q.onInit = @( __original ) function()
 	{
-		this.human.__original();
+		this.human.onInit();
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.LegendPeasantFarmhand);
 		this.m.ActionPoints = b.ActionPoints;

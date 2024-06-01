@@ -1,8 +1,8 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_monk", function(q)
 {
-	q.onInit = @( __original ) function()
+	q.onInit = @(__original) function()
 	{
-		this.human.__original();
+		this.human.onInit();
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.LegendPeasantMonk);
 		this.m.ActionPoints = b.ActionPoints;
