@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/backgrounds/legend_berserker_commander_background", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_berserker_commander_background", function( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crAudaciouscharge)
 		this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.laspecialize);
 		this.m.CustomPerkTree[6].push(this.Const.Perks.PerkDefs.crGrandslam);

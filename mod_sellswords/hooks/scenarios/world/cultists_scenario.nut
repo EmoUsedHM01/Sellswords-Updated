@@ -1,12 +1,11 @@
-::mods_hookExactClass("scenarios/world/cultists_scenario", function ( o )
-{
-	local create = o.create;
-	o.create = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/cultists_scenario", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		create();
+		__original();
 		this.m.Description = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul awaits. You lead a small flock devoted to the elder god, and it is time to spread the word. Find more followers, acquire riches, and please Davkul with sacrifices.\n\n[color=#bcad8c]Cultists:[/color] Start with a group of five cultists. Encounter fanatical special cultists in towns.\n[color=#bcad8c]Sacrifices:[/color] Davkul will occasionally demand sacrifices from you, but also bestow boons upon those loyal to him. Davkul will not sacrifice his chosen elite. Cultists cost 25% less to buy and maintain.\n[color=#c90000]Let the Blood Flow:[/color] All cultists gain whip skills and favour fighting nobles and caravans.[/p]";		
 	}	
-	o.onSpawnAssets = function()
+	q.onSpawnAssets = @(__original) function()
 	{
 		local roster = this.World.getPlayerRoster();
 		local names = [];
@@ -112,4 +111,4 @@
 		this.World.Assets.m.Money = this.World.Assets.m.Money + 300;
 	}
 
-});	
+});

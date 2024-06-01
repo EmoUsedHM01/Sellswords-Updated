@@ -1,6 +1,6 @@
-::mods_hookExactClass("scenarios/world/legends_noble_scenario", function ( o )
-{
-	o.onSpawnAssets = function()
+::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/legends_noble_scenario", function ( q ) {
+
+	q.onSpawnAssets = @(__original) function()
 	{
 		local roster = this.World.getPlayerRoster();
 
@@ -176,5 +176,4 @@
 		this.World.Assets.addBusinessReputation(this.m.StartingBusinessReputation);
 		this.World.Assets.m.Money = this.World.Assets.m.Money * 3;
 	}
-
-});	
+});

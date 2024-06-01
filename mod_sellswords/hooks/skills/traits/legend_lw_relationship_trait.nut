@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/traits/legend_lw_relationship_trait", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/traits/legend_lw_relationship_trait", function( q ) {
 	
-	o.onAdded = function()
+	q.onAdded = @(__original) function()
 	{
 		if (!this.m.Container.hasSkill("effects.legend_lw_relationship"))
 		{
@@ -10,5 +10,4 @@
 			this.m.Container.add(effect);
 		}
 	}
-
-})
+});

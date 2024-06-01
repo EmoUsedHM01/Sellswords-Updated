@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/traits/oath_of_valor_trait", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/traits/oath_of_valor_trait", function( q ) {
 	
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		foreach (tooltip in ret)
 		{
@@ -16,7 +15,7 @@
 		return ret;
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		_properties.XPGainMult *= 0.75;	
 
@@ -39,5 +38,4 @@
 		}
 		
 	}	
-
-})
+});

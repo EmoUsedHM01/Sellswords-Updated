@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/backgrounds/character_background", function ( o )
-{
-	o.adjustHiringCostBasedOnEquipment = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/character_background", function ( q ) {
+
+	q.adjustHiringCostBasedOnEquipment = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 		local dc = this.World.getTime().Days;
@@ -31,7 +31,7 @@
 		actor.m.HiringCost *= 10;
 	};
 	
-	o.calculateAdditionalRecruitmentLevels = function ()
+	q.calculateAdditionalRecruitmentLevels = @(__original) function()
 	{
 		local roster = this.World.getPlayerRoster().getAll();
 		local levels = 0;
@@ -63,7 +63,7 @@
 			return 0;
 		}			
 	};
-	o.onAdded = function ()
+	q.onAdded = @(__original) function()
 	{
 		if (this.m.DailyCost > 0)
 		{

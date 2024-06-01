@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/special/double_grip", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/special/double_grip", function ( q ) {
+
+	q.getTooltip = @(__original) function ()
 	{
 		local cof = 25;
 
@@ -29,7 +29,8 @@
 		});
 		return ret;
 	};
-	o.onUpdate = function ( _properties )
+
+	q.onUpdate = @(__original) function ( _properties )
 	{
 		if (this.canDoubleGrip())
 		{

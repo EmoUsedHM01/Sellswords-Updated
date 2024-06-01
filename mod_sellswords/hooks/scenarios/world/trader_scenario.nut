@@ -1,14 +1,13 @@
-::mods_hookExactClass("scenarios/world/trader_scenario", function ( o )
-{
-	local create = o.create;
-	o.create = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/trader_scenario", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		create();
+		__original();
 		this.m.Description = "[p=c][img]gfx/ui/events/event_41.png[/img][/p]You are running a small trading caravan and have most of your crowns invested into trading goods. But the roads have become dangerous - brigands and greenskins lay in ambush, and there are rumors of even worse things out there.\n\n [color=#bcad8c]Trader:[/color] Get better prices for buying and selling.\n[color=#bcad8c]Not a Warrior:[/color] Start with no renown, and gain renown at half the normal rate. Every non-combat recruit gains the Pacifist perk. \n[color=#bcad8c]Bribery:[/color] Pay off human enemies instead of fighting them. Combat backgrounds cost more to hire, peddlers and donkeys cost less.";
 		this.m.Difficulty = 2;
 	}
 
-	o.onSpawnAssets = function()
+	q.onSpawnAssets = @(__original) function()
 	{
 		local roster = this.World.getPlayerRoster();
 		local names = [];
@@ -68,14 +67,12 @@
 		this.World.Assets.m.Money = this.World.Assets.m.Money * 2;
 	}
 
-	local onInit = o.onInit;
-	o.onInit = function()
+	q.onInit = @(__original) function()
 	{
-		onInit();
+		__original();
 		this.World.Assets.m.BusinessReputationRate = 0.5;
 		this.World.Assets.m.BuyPriceMult = 0.9;
 		this.World.Assets.m.SellPriceMult = 1.1;
 		this.World.Flags.set("IsLegendsTrader", true);
 	}
-
 });

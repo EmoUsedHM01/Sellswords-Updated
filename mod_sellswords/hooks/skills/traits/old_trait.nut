@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/traits/old_trait", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/traits/old_trait", function( q ) {
 	
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		ret.push({
 			id = 10,
@@ -15,12 +14,10 @@
 		return ret;
 	}
 
-	local ws_onUpdate = o.onUpdate;
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
-		ws_onUpdate(_properties);
+		__original(_properties);
 
 		_properties.MeleeDamageMult *= 0.85;	
 	}
-
-})
+});

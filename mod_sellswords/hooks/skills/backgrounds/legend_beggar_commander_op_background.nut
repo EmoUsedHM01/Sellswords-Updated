@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/backgrounds/legend_beggar_commander_op_background", function ( o )
-{
-	o.onTargetKilled = function ( _targetEntity, _skill )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_beggar_commander_op_background", function ( q ) {
+
+	q.onTargetKilled = @(__original) function( _targetEntity, _skill )
 	{
 		local actor = this.getContainer().getActor();
 

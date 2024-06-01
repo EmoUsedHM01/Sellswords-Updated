@@ -1,6 +1,6 @@
-::mods_hookExactClass("scenarios/world/anatomists_scenario", function ( o )
-{
-	o.onSpawnAssets = function()
+::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/anatomists_scenario", function ( q ) {
+
+	q.onSpawnAssets = @(__original) function()
 	{
 		local roster = this.World.getPlayerRoster();
 		local names = [];
@@ -128,7 +128,7 @@
 		this.World.Assets.m.Money = this.World.Assets.m.Money + 700;
 	}
 
-	o.onActorKilled = function( _actor, _killer, _combatID )
+	q.onActorKilled = @(__original) function( _actor, _killer, _combatID )
 	{
 		if (this.Tactical.State.getStrategicProperties().IsArenaMode)
 		{
@@ -344,7 +344,7 @@
 		}
 	}
 
-	o.onBattleWon = function( _combatLoot )
+	q.onBattleWon = @(__original) function( _combatLoot )
 	{
 		local buffs = [
 			{
@@ -642,7 +642,7 @@
 		}
 	}
 
-	o.onCombatFinished = function()
+	q.onCombatFinished = @(__original) function()
 	{
 		this.World.Statistics.getFlags().set("shouldDropNecromancerPotion", false);
 		this.World.Statistics.getFlags().set("shouldDropWiedergangerPotion", false);
@@ -693,5 +693,4 @@
 		this.World.Statistics.getFlags().set("shouldDropCrConquerorPotion", false);		
 		return true;
 	}
-
-});	
+});

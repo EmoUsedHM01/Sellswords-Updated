@@ -1,9 +1,8 @@
-::mods_hookExactClass("scenarios/world/legends_scaling_beggar_scenario", function ( o )
-{
-	local create = o.create;
-	o.create = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/legends_scaling_beggar_scenario", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		create();
+		__original();
 		this.m.Difficulty = 0;
 	}	
-});	
+});
