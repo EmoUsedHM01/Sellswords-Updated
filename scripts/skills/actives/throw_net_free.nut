@@ -38,7 +38,7 @@ this.throw_net_free <- this.inherit("scripts/skills/skill", {
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 25;
 		this.m.MinRange = 1;
-		this.m.MaxRange = 3;
+		this.m.MaxRange = 5;
 		this.m.MaxLevelDifference = 1;
 	}
 	
@@ -82,10 +82,6 @@ this.throw_net_free <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.FatigueCostMult = _properties.IsSpecializedInNets ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 
-		if (_properties.IsSpecializedInNets)
-		{
-			this.m.MaxRange = 4;
-		}
 		if (this.getContainer().getActor().getSkills().hasSkill("perk.legend_net_repair"))
 		{
 			this.m.ActionPointCost = 3;		

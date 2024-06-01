@@ -1,19 +1,18 @@
-::mods_hookExactClass("skills/effects/net_effect", function(o) {
-	o.m.debuff <- 45;
-	o.m.DropNet <- false;
-	o.m.IsReinforced <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/net_effect", function( q ) {
 
-	o.getdebuff <- function()
+	q.m.debuff <- 45;
+
+	q.getdebuff <- function()
 	{
 		return this.m.debuff;
 	}
 
-	o.setdebuff <- function( _d )
+	q.setdebuff <- function( _d )
 	{
 		this.m.debuff = _d;
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = function()
 	{
 		local debuff = this.getdebuff();
 		return [
@@ -54,29 +53,12 @@
 		];
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		_properties.IsRooted = true;
 		_properties.MeleeDefenseMult *= 1 - 0.01 * this.getdebuff();
 		_properties.RangedDefenseMult *= 1 - 0.01 * this.getdebuff();
 		_properties.InitiativeMult *= 1 - 0.01 * this.getdebuff();
 	}
-	
-	o.onDeath <- function( _fatalityType )
-	{
-		if (this.m.DropNet)
-		{
-			local net;
-			if (this.m.IsReinforced)
-			{
-				net = this.new("scripts/items/tools/reinforced_throwing_net");
-			}
-			else
-			{
-				net = this.new("scripts/items/tools/throwing_net");	
-			}
-			net.drop(this.getContainer().getActor().getTile());
-		}
-	}
 
-})
+});
