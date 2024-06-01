@@ -41,8 +41,8 @@ Updated a few typos and some descriptions
 ...\scripts\skills\perks\perk_crrangedskill.nut
 Updated a null value
 
-...\mod_sellswords\hooks\scripts\items\tools\throwing_net.nut
-...\mod_sellswords\hooks\scripts\items\tools\reinforced_throwing_net.nut
+...\mod_sellswords\hooks\scripts\items\tools\throwing_net.nut (deleted)
+...\mod_sellswords\hooks\scripts\items\tools\reinforced_throwing_net.nut (deleted)
 ...\mod_sellswords\hooks\skills\effects\net_effect.nut
 ...\scripts\skills\actives\throw_net_free.nut
 Net stuff cleanup
