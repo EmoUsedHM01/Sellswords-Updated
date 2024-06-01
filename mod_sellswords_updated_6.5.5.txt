@@ -16,15 +16,16 @@ Updated to Modern Hooks
 Added a README for the git/ppl
 
 ...\mod_sellswords\hooks\skills\actives\batter_skill.nut
-...\mod_sellswords\hooks\skills\actives\rupture.nut
-...\mod_sellswords\hooks\skills\actives\prong_skill.nut
-...\mod_sellswords\hooks\skills\actives\demolish_armor_skill.nut
 ...\mod_sellswords\hooks\skills\actives\crumble_skill.nut
+...\mod_sellswords\hooks\skills\actives\demolish_armor_skill.nut
 ...\mod_sellswords\hooks\skills\actives\knock_over_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_ranged_lash_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_ranged_flail_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_decapitate.nut
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_cleave.nut
+...\mod_sellswords\hooks\skills\actives\prong_skill.nut
+...\mod_sellswords\hooks\skills\actives\rupture.nut
+...\mod_sellswords\hooks\skills\actives\strike_skill.nut
 Updated to MH and made all Polearm weapon attacks benefit from Polearm Mastery
 
 ...\mod_sellswords\hooks\skills\perks\perk_legend_escape_artist.nut
@@ -48,7 +49,7 @@ Updated a null value
 Net stuff cleanup
 
 ...\mod_sellswords\hooks\skills\traits\huge_trait.nut
-Added fat penalty to reduction from Huge
+Added fat penalty reduction to the Huge trait
 
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
