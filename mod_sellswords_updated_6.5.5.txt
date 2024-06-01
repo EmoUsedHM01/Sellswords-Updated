@@ -35,6 +35,12 @@ Updated to MH and reworked the mechanic and syntax
 ...\mod_sellswords\hooks_ptr\skills\backgrounds\legend_lonewolf_background.nut
 Updated a clause for Battleheart with the movement/moral checks
 
+...\mod_sellswords\hooks\config\strings.nut
+Updated a few typos and some descriptions
+
+...\scripts\skills\perks\perk_crrangedskill.nut
+Updated a null value
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 

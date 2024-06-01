@@ -15,11 +15,13 @@ this.perk_crrangedskill <- this.inherit("scripts/skills/skill", {
 
 	function onUpdate( _properties )
 	{
-		_properties.HitChance[this.Const.BodyPart.Head] += 5;
+		_properties.HitChance[::Const.BodyPart.Head] += 5;
 	}
 
 	function onTargetKilled(_targetEntity, _skill) 
 	{
+		local actor = this.getContainer().getActor().get();
+
 		if (_skill.isAttack() && _skill.isRanged()) 
 		{
 			local entityType = _targetEntity.getType();
@@ -28,7 +30,7 @@ this.perk_crrangedskill <- this.inherit("scripts/skills/skill", {
 			{
 				if (entityType == type) 
 				{
-					this.m.BaseProperties.HitChance[this.Const.BodyPart.Head] += 1;
+					actor.m.BaseProperties.HitChance[::Const.BodyPart.Head] += 1;
 					break;
 				}
 			}
