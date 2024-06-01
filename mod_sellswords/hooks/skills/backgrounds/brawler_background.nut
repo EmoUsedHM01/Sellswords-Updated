@@ -1,5 +1,6 @@
-::mods_hookExactClass("skills/backgrounds/brawler_background", function(o) {
-	o.onChangeAttributes = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/brawler_background", function( q ) {
+
+	q.onChangeAttributes = @(__original) function()
 	{
 		return {
 			Hitpoints = [
@@ -37,7 +38,7 @@
 		};
 	}
 	
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		local ret = this.character_background.getTooltip();
 		ret.push({
@@ -48,4 +49,4 @@
 		});
 		return ret;
 	}
-})
+});

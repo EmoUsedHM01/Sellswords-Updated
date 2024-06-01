@@ -1,12 +1,10 @@
-::mods_hookExactClass("skills/traits/craven_trait", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/traits/craven_trait", function( q ) {
 	
-	local ws_onUpdate = o.onUpdate;
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
-		ws_onUpdate(_properties);
+		__original(_properties);
 
 		_properties.DamageTooltipMinMult *= 0.9;
 		_properties.DamageTooltipMaxMult *= 0.9;			
 	}
-
-})
+});

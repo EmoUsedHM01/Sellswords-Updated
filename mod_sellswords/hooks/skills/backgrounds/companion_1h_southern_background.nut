@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/backgrounds/companion_1h_southern_background", function ( o )
-{
-	o.onAddEquipment = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/companion_1h_southern_background", function ( q ) {
+
+	q.onAddEquipment = @(__original) function()
 	{
 		local talents = this.getContainer().getActor().getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);

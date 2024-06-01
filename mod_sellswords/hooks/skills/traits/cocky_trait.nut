@@ -1,12 +1,10 @@
-::mods_hookExactClass("skills/traits/cocky_trait", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/traits/cocky_trait", function( q ) {
 	
-	local ws_onUpdate = o.onUpdate;
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
-		ws_onUpdate(_properties);
+		__original(_properties);
 
 		_properties.DamageTooltipMinMult *= 1.2;
 		_properties.DamageTooltipMaxMult *= 1.2;		
 	}
-
-})
+});

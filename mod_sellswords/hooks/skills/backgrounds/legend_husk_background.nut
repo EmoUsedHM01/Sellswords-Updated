@@ -1,12 +1,12 @@
-::mods_hookExactClass("skills/backgrounds/legend_husk_background", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_husk_background", function( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 		this.m.DailyCost = 24;
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		local ret = this.character_background.getTooltip();
 		ret.push({
@@ -18,7 +18,7 @@
 		return ret;
 	}
 
-	o.onChangeAttributes = function()
+	q.onChangeAttributes = @(__original) function()
 	{
 		return {
 			Hitpoints = [
@@ -56,7 +56,7 @@
 		};
 	}
 
-	o.onAddEquipment = function()
+	q.onAddEquipment = @(__original) function()
 	{
 		local talents = this.getContainer().getActor().getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);

@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/special/bag_fatigue", function ( o )
-{
-	local onUpdate = o.onUpdate;
-	o.onUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/special/bag_fatigue", function ( q ) {
+
+	q.onUpdate = @(__original) function ( _properties )
 	{
-		onUpdate(_properties);
+		__original(_properties);
 		local dc = this.Math.floor(this.World.getTime().Days / 10);
 		local lv = this.getContainer().getActor().getLevel();
 		lv = this.Math.min(dc, lv);

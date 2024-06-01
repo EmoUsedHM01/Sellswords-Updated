@@ -1,6 +1,6 @@
-::mods_hookExactClass("scenarios/world/paladins_scenario", function ( o )
-{
-	o.onActorKilled = function( _actor, _killer, _combatID )
+::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/paladins_scenario", function ( q ) {
+	
+	q.onActorKilled = @(__original) function( _actor, _killer, _combatID )
 	{
 		if (!this.World.Ambitions.hasActiveAmbition())
 		{
@@ -56,5 +56,4 @@
 			this.World.Statistics.getFlags().increment("OathtakersWrathSlain");
 		}
 	}
-
 });

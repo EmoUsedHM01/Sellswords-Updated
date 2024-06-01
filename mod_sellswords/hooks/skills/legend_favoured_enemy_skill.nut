@@ -1,7 +1,6 @@
-::mods_hookExactClass("skills/legend_favoured_enemy_skill", function( o )
-{
-	local ws_onUpdate = o.onUpdate;
-	o.onUpdate = function( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/legend_favoured_enemy_skill", function ( q ) {
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local actor = this.getContainer().getActor().get();
 		if (!actor.getFlags().has(this.m.ID))
@@ -14,13 +13,12 @@
 			}
 		}
 
-		ws_onUpdate(_properties);
+		__original(_properties);
 	};
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 		if (this.getContainer().getActor().getFlags().has(this.m.ID))
 		{
 			// Perk Point has been refunded
@@ -34,5 +32,4 @@
 		
 		return ret;
 	};
-
 });

@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/backgrounds/legend_donkey_background", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_donkey_background", function( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 
 		this.m.ID = "background.legend_donkey_background";
 		this.m.DailyCost = 1;
@@ -86,15 +86,14 @@
 		];
 	}
 
-	local ws_onAdded = o.onAdded;
-	o.onAdded = function()
+	q.onAdded = @(__original) function()
 	{
-		ws_onAdded();
+		__original();
 
 		this.m.Container.add(this.new("scripts/skills/actives/knock_back"));
 	}
 
-	o.onUpdate <- function( _properties )
+	q.onUpdate <- function( _properties )
 	{
 		this.character_background.onUpdate(_properties);
 		_properties.XPGainMult *= 1.5;
