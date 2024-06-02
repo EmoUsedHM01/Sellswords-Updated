@@ -54,6 +54,13 @@ Added fat penalty reduction to the Huge trait
 ...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_commander_background.nut
 Added a couple perks that it should really have
 
+...\gfx\ui\perks\crHybridization.png
+...\gfx\ui\perks\crHybridization_bw.png
+...\mod_sellswords\config\y_perk_defs.nut
+...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
+...\scripts\skills\perks\perk_crhybridization.nut
+Added a throwing weapon perk to their tree
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 

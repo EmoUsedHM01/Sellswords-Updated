@@ -378,6 +378,15 @@
 		Const = "crParthianshot"
 	},
 	{
+		ID = "perk.cr_hybridization",
+		Script = "scripts/skills/perks/perk_crhybridization",
+		Name = ::Const.Strings.PerkName.crHybridization,
+		Tooltip = ::Const.Strings.PerkDescription.crHybridization,
+		Icon = "ui/perks/crHybridization.png",
+		IconDisabled = "ui/perks/crHybridization_bw.png",
+		Const = "crHybridization"
+	},
+	{
 		ID = "perk.dryad_summon_snake",
 		Script = "scripts/skills/perks/dryad_summon_snake",
 		Name = this.Const.Strings.PerkName.DryadSummonSnake,
