@@ -25,7 +25,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Target's every negative effect will make you deal [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] more damage"
+				text = "For each negative effect your target has, deal [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] more damage"
 			});
 		}
 

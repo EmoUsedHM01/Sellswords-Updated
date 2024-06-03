@@ -1,24 +1,23 @@
-::mods_hookExactClass("skills/actives/legend_staff_bash", function(o) {
-	o.m.BonusPerNegativeStatusEffect <- 0.33;
-	o.m.Effects <- [
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_staff_bash", function( q ) {
+
+	q.m.BonusPerNegativeStatusEffect <- 0.33;
+	q.m.Effects <- [
 		"effects.stunned",
 		"effects.staggered",
 		"effects.legend_baffled",
 		"effects.dazed"
 	];
 
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.DirectDamageMult = 0.95;
 	}
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInStaves)
 		{
@@ -26,30 +25,28 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Target's every negative effect will make you deal [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] more damage"
+				text = "For each negative effect your target has, deal [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] more damage"
 			});
 		}
 
 		return ret;
 	}
 
-	local ws_onAnySkillUsed = o.onAnySkillUsed;
-	o.onAnySkillUsed = function(_skill, _targetEntity, _properties)
+	q.onAnySkillUsed = @(__original) function(_skill, _targetEntity, _properties)
 	{
 		if (_skill == this)
 		{
-			ws_onAnySkillUsed(_skill, _targetEntity, _properties);
+			__original(_skill, _targetEntity, _properties);
 
 			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInStaves)
 			{
 				if (_targetEntity == null || !_skill.isAttack())
-				{
 					return;
-				}			
-				local count = _targetEntity.getSkills().getSkillsByFunction((@(_skill) this.m.Effects.find(_skill.getID()) != null).bindenv(this)).len();				
-				_properties.DamageTotalMult *= 1.0 + (count * this.m.BonusPerNegativeStatusEffect);				
-			}			
+
+				local count = _targetEntity.getSkills().getSkillsByFunction((@(_skill) this.m.Effects.find(_skill.getID()) != null).bindenv(this)).len();
+				_properties.DamageTotalMult *= 1.0 + (count * this.m.BonusPerNegativeStatusEffect);
+			}
 		}
 	}
 
-})
+});
