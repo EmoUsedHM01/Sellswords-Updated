@@ -76,6 +76,10 @@ Bleed changes/fixes
 ...\scripts\items\legend_armor\plate\cr_named_sellswords_armor.nut
 Updated bad pathing issue
 
+...\gfx\ui\items\helmets\inventory_legend_helmet_barbarian_berserker_01.png (needs variant tag)
+...\scripts\items\legend_helmets\top\legend_helmet_barbarian_berserker.nut
+Updated bad values
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 
