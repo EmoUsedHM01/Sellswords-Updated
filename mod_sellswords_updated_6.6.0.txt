@@ -86,6 +86,10 @@ Updated bad values
 ...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_bolts.nut
 Updated the AP values to +25% from +15%, looking for feedback on this though
 
+...\mod_sellswords\hooks\skills\actives\legend_sling_heavy_stone_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_staff_knock_out.nut
+Updated and fixed calls
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 
