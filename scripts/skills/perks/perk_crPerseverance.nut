@@ -49,7 +49,7 @@ this.perk_crPerseverance <- this.inherit("scripts/skills/skill", {
 		{
 			local bleed = this.new("scripts/skills/effects/bleeding_effect");
 			bleed.setDamage(this.Math.floor(this.m.DamageReduction / 4));
-			bleed.m.durability = 2;
+			bleed.m.bleed_type = 2;
 			actor.getSkills().add(bleed);
 		}
 
