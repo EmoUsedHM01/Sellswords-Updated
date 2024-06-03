@@ -30,10 +30,10 @@ this.cr_named_sellswords_armor <- this.inherit("scripts/items/legend_armor/legen
 		this.m.SpriteBack = "bust_cr_named_sellswords_armor";
 		this.m.SpriteDamagedBack = "bust_cr_named_sellswords_armor_damaged";
 		this.m.SpriteCorpseBack = "bust_cr_named_sellswords_armor_dead";
-		this.m.Icon = "armor/icon_cr_named_sellswords_armor.png";
+		this.m.Icon = "legend_armor/icon_cr_named_sellswords_armor.png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_cr_named_sellswords_armor.png";
-		this.m.OverlayIconLarge = "armor/inventory_cr_named_sellswords_armor.png";		
+		this.m.OverlayIcon = "legend_armor/icon_cr_named_sellswords_armor.png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_cr_named_sellswords_armor.png";		
 	}
 
 	function randomizeValues()

@@ -70,6 +70,12 @@ Added a throwing weapon perk to their tree#
 ...\scripts\skills\perks\perk_crPerseverance.nut
 Bleed changes/fixes
 
+...\scripts\items\legend_armor\plate\cr_named_heraldic_mail.nut
+...\scripts\items\legend_armor\plate\cr_named_noble_mail_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_plated_mail_hauberk.nut
+...\scripts\items\legend_armor\plate\cr_named_sellswords_armor.nut
+Updated bad pathing issue
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 

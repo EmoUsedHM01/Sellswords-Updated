@@ -34,10 +34,10 @@ this.cr_named_heraldic_mail <- this.inherit("scripts/items/legend_armor/legend_n
 		this.m.SpriteBack = "bust_cr_named_heraldic_mail";
 		this.m.SpriteDamagedBack = "bust_cr_named_heraldic_mail_damaged";
 		this.m.SpriteCorpseBack = "bust_cr_named_heraldic_mail_dead";
-		this.m.Icon = "armor/icon_cr_named_heraldic_mail.png";
+		this.m.Icon = "legend_armor/icon_cr_named_heraldic_mail.png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_cr_named_heraldic_mail.png";
-		this.m.OverlayIconLarge = "armor/inventory_cr_named_heraldic_mail.png";
+		this.m.OverlayIcon = "legend_armor/icon_cr_named_heraldic_mail.png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_cr_named_heraldic_mail.png";
 	}
 
 	function randomizeValues()

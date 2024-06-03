@@ -33,10 +33,10 @@ this.cr_named_plated_mail_hauberk <- this.inherit("scripts/items/legend_armor/le
 		this.m.SpriteBack = "bust_cr_named_plated_mail_hauberk";
 		this.m.SpriteDamagedBack = "bust_cr_named_plated_mail_hauberk_damaged";
 		this.m.SpriteCorpseBack = "bust_cr_named_plated_mail_hauberk_dead";
-		this.m.Icon = "armor/icon_cr_named_plated_mail_hauberk.png";
+		this.m.Icon = "legend_armor/icon_cr_named_plated_mail_hauberk.png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "armor/icon_cr_named_plated_mail_hauberk.png";
-		this.m.OverlayIconLarge = "armor/inventory_cr_named_plated_mail_hauberk.png";		
+		this.m.OverlayIcon = "legend_armor/icon_cr_named_plated_mail_hauberk.png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_cr_named_plated_mail_hauberk.png";		
 	}
 
 	function randomizeValues()
