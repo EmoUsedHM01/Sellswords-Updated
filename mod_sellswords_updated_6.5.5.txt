@@ -59,7 +59,16 @@ Added a couple perks that it should really have
 ...\mod_sellswords\config\y_perk_defs.nut
 ...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
 ...\scripts\skills\perks\perk_crhybridization.nut
-Added a throwing weapon perk to their tree
+Added a throwing weapon perk to their tree#
+
+...\mod_sellswords\hooks\config\tactical_entity_common.nut
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_skin_ghoul_blood_effect.nut
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_internal_hemorrhage.nut
+...\scripts\skills\perks\perk_crFoB.nut
+...\scripts\skills\perks\perk_crPerseverance.nut
+Bleed changes/fixes
 
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
