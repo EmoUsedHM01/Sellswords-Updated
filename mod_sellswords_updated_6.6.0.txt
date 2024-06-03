@@ -80,6 +80,12 @@ Updated bad pathing issue
 ...\scripts\items\legend_helmets\top\legend_helmet_barbarian_berserker.nut
 Updated bad values
 
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_bolts.nut
+Updated the AP values to +25% from +15%, looking for feedback on this though
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 

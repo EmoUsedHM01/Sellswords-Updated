@@ -4,7 +4,7 @@
 	{
 		__original();
 
-		this.m.Description = "A large quiver of bolts with thin piercing tips, designed for punching through thick armour.\nIs automatically refilled after each battle if you have enough ammunition.\nGrants [color=" + ::Const.UI.Color.PositiveValue + "]+15%[/color] Armour Piercing but [color=" + ::Const.UI.Color.NegativeValue + "]-5%[/color] Damage";
+		this.m.Description = "A large quiver of bolts with thin piercing tips, designed for punching through thick armour.\nIs automatically refilled after each battle if you have enough ammunition.\nGrants [color=" + ::Const.UI.Color.PositiveValue + "]+25%[/color] Armour Piercing but [color=" + ::Const.UI.Color.NegativeValue + "]-5%[/color] Damage";
 	}
 
 	q.onUpdateProperties = @(__original) function( _properties )
@@ -18,7 +18,7 @@
 			return;
 		}
 
-		_properties.DamageDirectMult += 0.15;
+		_properties.DamageDirectMult += 0.25;
 		_properties.RangedDamageMult *= 0.95;
 	}
 });
