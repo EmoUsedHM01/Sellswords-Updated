@@ -1,6 +1,6 @@
 this.crReachadvantage_effect <- this.inherit("scripts/skills/skill", {
 	m = {
-		Opponents = []	
+		Opponents = []
 	},
 	function create()
 	{
@@ -16,7 +16,7 @@ this.crReachadvantage_effect <- this.inherit("scripts/skills/skill", {
 
 	function getDescription()
 	{
-		return "This character is using the superior reach of their melee weapon to keep opponents at bay.";
+		return "This character is using the superior reach of their weapon to keep nearby opponents at bay.";
 	}
 
 	function onAdded()
@@ -24,13 +24,10 @@ this.crReachadvantage_effect <- this.inherit("scripts/skills/skill", {
 		local item = this.m.Container.getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		local sourceperk = this.getContainer().getSkillByID("perk.crReachadvantage");
 		if (sourceperk != null)
-		{
 			this.m.Opponents = sourceperk.m.Opponents;
-		}
+
 		if (item != null && item.isItemType(this.Const.Items.ItemType.MeleeWeapon) && this.m.Opponents.len() > 0)
-		{
 			item.onLowerWeapon();
-		}
 	}
 
 	function onTurnStart()
@@ -43,9 +40,7 @@ this.crReachadvantage_effect <- this.inherit("scripts/skills/skill", {
 		local item = this.m.Container.getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 
 		if (item != null && item.isItemType(this.Const.Items.ItemType.MeleeWeapon))
-		{
 			item.onRaiseWeapon();
-		}
 		else
 		{
 			local app = this.getContainer().getActor().getItems().getAppearance();
@@ -53,24 +48,11 @@ this.crReachadvantage_effect <- this.inherit("scripts/skills/skill", {
 			this.getContainer().getActor().getItems().updateAppearance();
 		}
 	}
-	
-	//function onUpdate( _properties )
-	//{
-	//	local sourceperk = this.getContainer().getSkillByID("perk.crReachadvantage");
-	//	//this.logInfo("checkperk: " + sourceperk);
-	//	if (sourceperk != null)
-	//	{
-	//		this.m.Opponents = sourceperk.m.Opponents;
-	//	}
-	//}	
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )
-	{	
+	{
 		if ((this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() != this.getContainer().getActor().getID()) && (_targetEntity != null && this.m.Opponents.find(_targetEntity.getID()) != null))
-		{			
 			_properties.DamageTotalMult *= 0.2;
-		}
 	}
 
 });
-

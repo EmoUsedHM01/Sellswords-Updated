@@ -9,7 +9,7 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 		this.m.Name = this.Const.Strings.PerkName.crReachadvantage;
 		this.m.Description = "This character is using the superior reach of their melee weapon to keep opponents at bay.";
 		this.m.Icon = "ui/perks/perk_19.png";
-		//this.m.IconMini = "perk_19_mini";
+		this.m.IconMini = "perk_19_mini";
 		this.m.Type = this.Const.SkillType.Perk | this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.Perk | this.Const.SkillType.StatusEffect;
 		this.m.IsActive = false;

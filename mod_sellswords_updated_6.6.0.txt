@@ -90,6 +90,10 @@ Updated the AP values to +25% from +15%, looking for feedback on this though
 ...\mod_sellswords\hooks\skills\actives\legend_staff_knock_out.nut
 Updated and fixed calls
 
+...\scripts\skills\effects\crReachadvantage_effect.nut
+...\scripts\skills\perks\perk_crReachadvantage.nut
+Updated both the Reach Advantage perk and the associated effect
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 
