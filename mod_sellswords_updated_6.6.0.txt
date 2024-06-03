@@ -1,4 +1,4 @@
-6.5.5 changes
+6.6.0 changes
 
 ...\scripts\!mods_preload\mod_sellswords.nut
 Added FB incompat to conflict list
