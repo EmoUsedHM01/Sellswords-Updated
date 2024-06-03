@@ -13,15 +13,16 @@
 				return;
 
 			local actor = this.getContainer().getActor();
-			local effect = this.new("scripts/skills/effects/bleeding_effect");
-			effect.m.ptr_hemo = true;
-			effect.m.TurnsLeft = 1;
+			local bleed = this.new("scripts/skills/effects/bleeding_effect");
+			bleed.m.bleed_type = 1;
+			bleed.m.ptr_hemo = true;
+			bleed.m.TurnsLeft = 1;
 
 			if (actor.getFaction() == this.Const.Faction.Player || actor.getFaction() == this.Const.Faction.PlayerAnimals)
-				effect.setActor(actor);
+				bleed.setActor(actor);
 
-			effect.setDamage(hemorrhageDamage);
-			_targetEntity.getSkills().add(effect);
+			bleed.setDamage(hemorrhageDamage);
+			_targetEntity.getSkills().add(bleed);
 		}
 	}
 
