@@ -3,12 +3,7 @@
 ...\scripts\!mods_preload\mod_sellswords.nut
 Added FB incompat to conflict list
 
-...\mod_sellswords\hooks\ai\...
-...\mod_sellswords\hooks\ambitions\...
-...\mod_sellswords\hooks\contracts\...
-...\mod_sellswords\hooks\crafting\...
-...\mod_sellswords\hooks\entity\...
-...\mod_sellswords\hooks\events...
+...\mod_sellswords\hooks\...
 ...\mod_sellswords\config\z_background_perks.nut
 Updated to Modern Hooks
 
@@ -34,7 +29,7 @@ Updated to MH and reworked the mechanic and syntax
 ...\mod_sellswords\hooks\entity\tactical\actor.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_battleheart.nut (deleted)
 ...\mod_sellswords\hooks_ptr\skills\backgrounds\legend_lonewolf_background.nut
-Updated a clause for Battleheart with the movement/moral checks
+Updated a clause for Battleheart with the movement based moral checks
 
 ...\mod_sellswords\hooks\config\strings.nut
 Updated a few typos and some descriptions
@@ -59,7 +54,7 @@ Added a couple perks that it should really have
 ...\mod_sellswords\config\y_perk_defs.nut
 ...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
 ...\scripts\skills\perks\perk_crhybridization.nut
-Added a throwing weapon perk to their tree#
+Added a throwing weapon perk to their tree
 
 ...\mod_sellswords\hooks\config\tactical_entity_common.nut
 ...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
@@ -68,15 +63,15 @@ Added a throwing weapon perk to their tree#
 ...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_internal_hemorrhage.nut
 ...\scripts\skills\perks\perk_crFoB.nut
 ...\scripts\skills\perks\perk_crPerseverance.nut
-Bleed changes/fixes
+Bleed changes and fixes
 
 ...\scripts\items\legend_armor\plate\cr_named_heraldic_mail.nut
 ...\scripts\items\legend_armor\plate\cr_named_noble_mail_armor.nut
 ...\scripts\items\legend_armor\plate\cr_named_plated_mail_hauberk.nut
 ...\scripts\items\legend_armor\plate\cr_named_sellswords_armor.nut
-Updated bad pathing issue
+Updated bad pathing issues
 
-...\gfx\ui\items\helmets\inventory_legend_helmet_barbarian_berserker_01.png (needs variant tag)
+...\gfx\ui\items\helmets\inventory_legend_helmet_barbarian_berserker_01.png (needed variant tag)
 ...\scripts\items\legend_helmets\top\legend_helmet_barbarian_berserker.nut
 Updated bad values
 
@@ -129,7 +124,7 @@ Updated both the Reach Advantage perk and the associated effect
 ...\scripts\items\weapons\greenskins\cr_orc_staff.nut
 ...\scripts\items\weapons\greenskins\cr_orc_sword.nut
 ...\scripts\items\weapons\named\cr_named_orc_mace_2h.nut
-Updated Barb and Orc weapons, their file locations, and added new 2h Orc sword
+Updated Barb and Orc weapons, their names and file locations, as-well-as adding a new 2h Orc sword
 
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
