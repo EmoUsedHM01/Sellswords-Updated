@@ -100,6 +100,7 @@ Updated both the Reach Advantage perk and the associated effect
 ...\gfx\entity_crorc.png (deleted)
 ...\gfx\ui\items\weapons\melee\cr_orc_sword.png
 ...\gfx\ui\items\weapons\melee\cr_orc_sword_70x70.png
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
 ...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
 ...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
 ...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior.nut
