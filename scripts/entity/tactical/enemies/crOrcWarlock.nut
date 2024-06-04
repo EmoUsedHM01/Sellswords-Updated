@@ -88,9 +88,7 @@ this.crOrcWarlock <- this.inherit("scripts/entity/tactical/actor", {
 	function playSound( _type, _volume, _pitch = 1.0 )
 	{
 		if (_type == this.Const.Sound.ActorEvent.Move && this.Math.rand(1, 100) <= 50)
-		{
 			return;
-		}
 
 		this.actor.playSound(_type, _volume, _pitch);
 	}
@@ -143,14 +141,10 @@ this.crOrcWarlock <- this.inherit("scripts/entity/tactical/actor", {
 				local layers = [];
 
 				if (!appearance.HideCorpseHead)
-				{
 					layers.push(sprite_head.getBrush().Name + "_dead");
-				}
 
 				if (appearance.HelmetCorpse.len() != 0)
-				{
 					layers.push(appearance.HelmetCorpse);
-				}
 
 				local decap = this.Tactical.spawnHeadEffect(this.getTile(), layers, this.createVec(-50, 30), 180.0, "bust_orc_04_head_dead_bloodpool");
 				local idx = 0;
@@ -197,30 +191,6 @@ this.crOrcWarlock <- this.inherit("scripts/entity/tactical/actor", {
 
 		this.getItems().dropAll(_tile, _killer, flip);
 		this.actor.onDeath(_killer, _skill, _tile, _fatalityType);
-		
-		//if (_killer == null || _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals)
-		//{
-		//	local n = 1 + (!this.Tactical.State.isScenarioMode() && this.Math.rand(1, 100) <= this.World.Assets.getExtraLootChance() ? 1 : 0);
-		//
-		//	for( local i = 0; i < n; i = ++i )
-		//	{
-		//		if (this.Const.DLC.Unhold)
-		//		{
-		//			local r = this.Math.rand(1, 100);
-		//			local loot;
-		//
-		//			if (r <= 95)
-		//			{
-		//				loot = this.new("scripts/items/weapons/niutouguaikandao");
-		//			}
-		//
-		//			loot.drop(_tile);
-		//		}
-		//		
-		//	}
-		//
-		//}
-		
 	}
 
 	function onInit()
@@ -276,23 +246,21 @@ this.crOrcWarlock <- this.inherit("scripts/entity/tactical/actor", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.Skills.add(this.new("scripts/skills/racial/vampire_racial"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));		
-		this.m.BaseProperties.HitChance[this.Const.BodyPart.Head] -= 15;	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
+		this.m.BaseProperties.HitChance[this.Const.BodyPart.Head] -= 15;
 
 		if (::Is_PTR_Exist)
-		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_formidable_approach"));
-		}
 
 		if("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
-		{				
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));				
+		{
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 
 			if (::Is_PTR_Exist)
 			{
 				this.m.Skills.addPerkTree(this.Const.Perks.MaceTree);
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_personal_armor"));			
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_personal_armor"));
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_unstoppable"));
 			}
 		}
@@ -301,79 +269,66 @@ this.crOrcWarlock <- this.inherit("scripts/entity/tactical/actor", {
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));
 			if (this.World.getTime().Days >= 100)
-			{			
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));	
+			{
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
-				b.MeleeDefense += 5;				
+				b.MeleeDefense += 5;
 				if (this.World.getTime().Days >= 150)
 				{
 					if (::Is_PTR_Exist)
 					{
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_exude_confidence"));
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));	
-					}							
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));
+					}
 
 					if (this.World.getTime().Days >= 200)
-					{				
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));						
+					{
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
-						b.MeleeDefense += 5;	
-						this.setMoraleState(this.Const.MoraleState.Confident);						
+						b.MeleeDefense += 5;
+						this.setMoraleState(this.Const.MoraleState.Confident);
 					}
 				}
 			}
-		}		
-		
+		}
+
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 			this.m.BaseProperties.MeleeSkill += dca;
 			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-			this.m.BaseProperties.RangedSkill += dca;	
-			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.RangedSkill += dca;
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}		
+		}
 	}
 
-	
-  
 	function assignRandomEquipment()
 	{
-		this.m.Items.equip(this.new("scripts/items/weapons/orc_staff"));		
+		this.m.Items.equip(this.new("scripts/items/weapons/greenskins/cr_orc_staff"));
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Body) == null)
-		{
 			this.m.Items.equip(this.new("scripts/items/armor/guerdan_armor"));
-		}
 
-		//if (::Is_PTR_Exist)
-		//{
-		//	this.m.Skills.addTreeOfEquippedWeapon(7);	
-		//}
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 	}
-	
+
 	function makeMiniboss()
 	{
 		if (!this.actor.makeMiniboss())
-		{
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
-		this.m.Skills.add(this.new("scripts/skills/effects/dodge_effect"));		
+		this.m.Skills.add(this.new("scripts/skills/effects/dodge_effect"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
 
 		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));	
-		}
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));
+
 		return true;
 	}
-	
 
 });
-

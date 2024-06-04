@@ -1,9 +1,9 @@
-this.goblin_axe <- this.inherit("scripts/items/weapons/weapon", {
+this.cr_goblin_axe <- this.inherit("scripts/items/weapons/weapon", {
 	m = {},
 	function create()
 	{
 		this.weapon.create();
-		this.m.ID = "weapon.goblin_axe";
+		this.m.ID = "weapon.cr_goblin_axe";
 		this.m.Name = "Raider Axe";
 		this.m.Description = "A cruel and crude axe forged en masse by goblin hordes.";
 		this.m.IconLarge = "weapons/melee/goblin_weapon_05.png";
@@ -61,13 +61,9 @@ this.goblin_axe <- this.inherit("scripts/items/weapons/weapon", {
 		{
 			local skills = this.getSkills();
 			foreach (s in skills)
-			{
 				if (s.isAttack() && !s.isRanged())
-				{
 					s.m.ActionPointCost -= 1;
-				}						
-			}
 		}	
-	}			
+	}
+			
 });
-

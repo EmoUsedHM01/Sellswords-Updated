@@ -67,20 +67,20 @@
 		}			
 	}
 
-	q.assignRandomEquipment = @( __original ) function()	
+	q.assignRandomEquipment = @( __original ) function()
 	{
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
 		{
 			local weapons = [
 				"weapons/greenskins/orc_axe",
-				"weapons/greenskins/orc_axe",				
+				"weapons/greenskins/orc_axe",
 				"weapons/greenskins/orc_cleaver",
-				"weapons/greenskins/orc_cleaver",				
-				"weapons/greenskins/legend_skin_flayer",				
+				"weapons/greenskins/orc_cleaver",
+				"weapons/greenskins/legend_skin_flayer",
 				"weapons/greenskins/legend_skullsmasher",
-				"weapons/greenskins/legend_skin_flayer",				
-				"weapons/greenskins/legend_skullsmasher",					
-				"weapons/crorc_mace",					
+				"weapons/greenskins/legend_skin_flayer",
+				"weapons/greenskins/legend_skullsmasher",
+				"weapons/greenskins/cr_orc_mace"
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}

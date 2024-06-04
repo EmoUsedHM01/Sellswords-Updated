@@ -1,11 +1,11 @@
-this.crorc_mace <- this.inherit("scripts/items/weapons/weapon", {
+this.cr_orc_mace <- this.inherit("scripts/items/weapons/weapon", {
 	m = {
 		StunChance = 30
 	},
 	function create()
 	{
 		this.weapon.create();
-		this.m.ID = "weapon.crorc_mace";
+		this.m.ID = "weapon.cr_orc_mace";
 		this.m.Name = "Spiked Mace";
 		this.m.Description = "A wooden shaft fitted with a skull for good measure, used to deliver a combination of blunt-force and puncturing blows. Not well suited for human hands.";
 		this.m.Categories = "Mace, One-Handed";

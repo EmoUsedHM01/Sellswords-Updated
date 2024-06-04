@@ -83,9 +83,7 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 	function playSound( _type, _volume, _pitch = 1.0 )
 	{
 		if (_type == this.Const.Sound.ActorEvent.Move && this.Math.rand(1, 100) <= 50)
-		{
 			return;
-		}
 
 		this.actor.playSound(_type, _volume, _pitch);
 	}
@@ -93,9 +91,7 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 	function onDeath( _killer, _skill, _tile, _fatalityType )
 	{
 		if (!this.Tactical.State.isScenarioMode() && _killer != null && _killer.isPlayerControlled() && _skill != null && !_skill.isRanged() && _killer.getSkills().hasSkill("effects.berserker_mushrooms"))
-		{
 			this.updateAchievement("HowToBerserk", 1, 1);
-		}
 
 		local flip = this.Math.rand(1, 100) < 50;
 
@@ -163,19 +159,13 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 				local layers = [];
 
 				if (!appearance.HideCorpseHead)
-				{
 					layers.push(sprite_head.getBrush().Name + "_dead");
-				}
 
 				if (!appearance.HideCorpseHead && tattoo_head.HasBrush)
-				{
 					layers.push(tattoo_head.getBrush().Name + "_dead");
-				}
 
 				if (appearance.HelmetCorpse.len() != 0)
-				{
 					layers.push(appearance.HelmetCorpse);
-				}
 
 				local decap = this.Tactical.spawnHeadEffect(this.getTile(), layers, this.createVec(-50, 30), 180.0, "bust_orc_02_head_dead_bloodpool");
 				local idx = 0;
@@ -212,39 +202,27 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 			if (_fatalityType == this.Const.FatalityType.Disemboweled)
 			{
 				if (appearance.CorpseArmor != "")
-				{
 					decal = _tile.spawnDetail(appearance.CorpseArmor + "_guts", this.Const.Tactical.DetailFlag.Corpse, flip);
-				}
 				else
-				{
 					decal = _tile.spawnDetail("bust_orc_02_body_dead_guts", this.Const.Tactical.DetailFlag.Corpse, flip);
-				}
 
 				decal.Scale = 0.9;
 			}
 			else if (_skill && _skill.getProjectileType() == this.Const.ProjectileType.Arrow)
 			{
 				if (appearance.CorpseArmor != "")
-				{
 					decal = _tile.spawnDetail(appearance.CorpseArmor + "_arrows", this.Const.Tactical.DetailFlag.Corpse, flip);
-				}
 				else
-				{
 					decal = _tile.spawnDetail("bust_orc_02_body_dead_arrows", this.Const.Tactical.DetailFlag.Corpse, flip);
-				}
 
 				decal.Scale = 0.9;
 			}
 			else if (_skill && _skill.getProjectileType() == this.Const.ProjectileType.Javelin)
 			{
 				if (appearance.CorpseArmor != "")
-				{
 					decal = _tile.spawnDetail(appearance.CorpseArmor + "_javelin", this.Const.Tactical.DetailFlag.Corpse, flip);
-				}
 				else
-				{
 					decal = _tile.spawnDetail("bust_orc_02_body_dead_javelin", this.Const.Tactical.DetailFlag.Corpse, flip);
-				}
 
 				decal.Scale = 0.9;
 			}
@@ -279,9 +257,7 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 		foreach( a in this.Const.CharacterSprites.Helmets )
 		{
 			if (!this.hasSprite(a))
-			{
 				continue;
-			}
 
 			this.getSprite(a).setHorizontalFlipping(flip);
 		}
@@ -318,9 +294,7 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 		local tattoo_body = this.addSprite("tattoo_body");
 
 		if (this.Math.rand(1, 100) <= 50)
-		{
 			tattoo_body.setBrush("bust_orc_02_body_paint_0" + this.Math.rand(1, 3));
-		}
 
 		local injury_body = this.addSprite("injury_body");
 		injury_body.Visible = false;
@@ -333,18 +307,14 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 		local tattoo_head = this.addSprite("tattoo_head");
 
 		if (this.Math.rand(1, 100) <= 50)
-		{
 			tattoo_head.setBrush("bust_orc_02_head_paint_0" + this.Math.rand(1, 3));
-		}
 
 		local injury = this.addSprite("injury");
 		injury.Visible = false;
 		injury.setBrush("bust_orc_02_head_injured");
 
 		foreach( a in this.Const.CharacterSprites.Helmets )
-		{
 			this.addSprite(a);
-		}
 
 		local v = 3;
 		local v2 = -5;
@@ -352,9 +322,7 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 		foreach( a in this.Const.CharacterSprites.Helmets )
 		{
 			if (!this.hasSprite(a))
-			{
 				continue;
-			}
 
 			this.setSpriteOffset(a, this.createVec(v2, v));
 		}
@@ -374,12 +342,12 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
-		
+
 		if (::Is_PTR_Exist)
 		{
 			this.m.Skills.addPerkTree(this.Const.Perks.TwoHandedTree);
 			this.m.Skills.addPerkTree(this.Const.Perks.OneHandedTree);
-			this.m.Skills.removeByID("perk.duelist");		
+			this.m.Skills.removeByID("perk.duelist");
 
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_menacing"));
 			this.m.Skills.add(this.new("scripts/skills/racial/ptr_orc_racial"));
@@ -389,7 +357,7 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));			
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
@@ -401,53 +369,53 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bully"));
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_unstoppable"));
-				this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));			
-				//this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_vigorous_assault"));
-			}		
+				this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));
+			}
 		}
 
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 80)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 			if (this.World.getTime().Days >= 120)
-			{	
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));	
+			{
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));
+
 				if (this.World.getTime().Days >= 160)
-				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_crPerseverance"));							
-				}				
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_crPerseverance"));
 			}
+
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50);
 			local crr = this.Math.rand(1, 5);
+
 			if (crr <= dca)
 			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));					
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
 				if (dc <= 150)
 				{
 					this.m.BaseProperties.Hitpoints -= 40;
 					if (dc <= 100)
-					{
-						this.m.BaseProperties.Hitpoints -= 40;					
-					}						
+						this.m.BaseProperties.Hitpoints -= 40;
 				}
-			}				
-			dca = this.Math.min(dca, 5);	
-			this.m.BaseProperties.MeleeSkill += 2 * dca;				
-			this.m.BaseProperties.Bravery += 2 * dca;			
-		}		
+			}
+
+			dca = this.Math.min(dca, 5);
+			this.m.BaseProperties.MeleeSkill += 2 * dca;
+			this.m.BaseProperties.Bravery += 2 * dca;
+		}
+
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 			this.m.BaseProperties.MeleeSkill += dca;
 			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-			this.m.BaseProperties.RangedSkill += dca;	
-			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.RangedSkill += dca;
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
-			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}		
+			this.m.BaseProperties.Hitpoints += 2 * dca;
+		}
 	}
 
 	function onFinish()
@@ -465,58 +433,38 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 			return;
 		}
 		else
-		{
 			body_rage.Visible = true;
-		}
 
 		if (_rage <= 12)
-		{
 			body_rage.setBrush("bust_orc_02_body_bloodied_00");
-		}
 		else if (_rage <= 18)
-		{
 			body_rage.setBrush("bust_orc_02_body_bloodied_01");
-		}
 		else if (_rage <= 24)
-		{
 			body_rage.setBrush("bust_orc_02_body_bloodied_02");
-		}
 		else
-		{
 			body_rage.setBrush("bust_orc_02_body_bloodied_03");
-		}
 
 		this.setDirty(true);
 	}
 
 	function assignRandomEquipment()
 	{
-		local r = this.Math.rand(1, 6);
+		local r = this.Math.rand(1, 7);
 
 		if (r == 1)
-		{
 			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/orc_axe"));
-		}
 		else if (r == 2)
-		{
 			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/orc_cleaver"));
-		}
 		else if (r == 3)
-		{
 			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/legend_skin_flayer"));
-		}
 		else if (r == 4)
-		{
 			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/orc_axe_2h"));
-		}
 		else if (r == 5)
-		{
 			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/legend_limb_lopper"));
-		}
 		else if (r == 6)
-		{
+			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/cr_orc_sword"));
+		else
 			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/legend_man_mangler"));
-		}
 
 		local item = this.Const.World.Common.pickArmor([
 			[
@@ -537,25 +485,18 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 		]);
 
 		if (item != null)
-		{
 			this.m.Items.equip(item);
-		}
 
 		if (::Is_PTR_Exist)
-		{
-			//this.m.Skills.addTreeOfEquippedWeapon();
-			this.m.Skills.removeByID("perk.ptr_kata");	
-		}
-		
+			this.m.Skills.removeByID("perk.ptr_kata");
+
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 	}
 
 	function makeMiniboss()
 	{
 		if (!this.actor.makeMiniboss())
-		{
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		
@@ -563,26 +504,24 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 			"weapons/named/named_orc_cleaver",
 			"weapons/named/named_orc_axe",
 			"weapons/named/named_orc_axe_2h",
-			"weapons/named/named_orc_flail_2h",			
+			"weapons/named/named_orc_flail_2h",
 			"weapons/named/cr_named_orc_cleaver_2h",
 			"weapons/named/cr_named_orc_sword_2h",
 			"weapons/named/cr_named_orc_axe_infantry"
 		];
 
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));			
-		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
+		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/effects/berserker_mushrooms_effect"));
 		
 		if (::Is_PTR_Exist)
-		{
-			//this.m.Skills.addTreeOfEquippedWeapon();
-			this.m.Skills.removeByID("perk.ptr_kata");	
-		}
+			this.m.Skills.removeByID("perk.ptr_kata");
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
-		return true;
-	}	
-});
 
+		return true;
+	}
+
+});

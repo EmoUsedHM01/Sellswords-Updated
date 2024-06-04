@@ -130,7 +130,7 @@ this.crGoblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
 		{
 			local weapons = [
-				"weapons/greenskins/goblin_axe",
+				"weapons/greenskins/cr_goblin_axe",
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}

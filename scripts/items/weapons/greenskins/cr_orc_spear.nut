@@ -1,9 +1,9 @@
-this.orcspear <- this.inherit("scripts/items/weapons/weapon", {
+this.cr_orc_spear <- this.inherit("scripts/items/weapons/weapon", {
 	m = {},
 	function create()
 	{
 		this.weapon.create();
-		this.m.ID = "weapon.orcspear";
+		this.m.ID = "weapon.cr_orc_spear";
 		this.m.Name = "Flakes";
 		this.m.Description = "A raw and rough spear-like patchwork used by orc youngs. Not well suited for human hands.";
 		this.m.Categories = "Spear, One-Handed";

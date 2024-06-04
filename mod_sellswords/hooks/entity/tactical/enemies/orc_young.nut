@@ -28,9 +28,7 @@
 		local weapon;
 
 		if (this.Math.rand(1, 100) <= 25)
-		{
 			this.m.Items.addToBag(this.new("scripts/items/weapons/greenskins/orc_javelin"));
-		}
 
 		if (this.Math.rand(1, 100) <= 75)
 		{
@@ -39,41 +37,25 @@
 				r = this.Math.rand(1, 3);
 
 				if (r == 1)
-				{
 					weapon = this.new("scripts/items/weapons/greenskins/orc_axe");
-				}
 				else if (r == 2)
-				{
 					weapon = this.new("scripts/items/weapons/greenskins/orc_cleaver");
-				}
-				else if (r == 3)
-				{
+				else
 					weapon = this.new("scripts/items/weapons/greenskins/legend_skin_flayer");
-				}					
 			}
 			else
 			{
 				r = this.Math.rand(1, 6);
 				if (r == 1)
-				{
 					weapon = this.new("scripts/items/weapons/greenskins/orc_wooden_club");
-				}
 				else if (r == 2 || r == 3)
-				{
 					weapon = this.new("scripts/items/weapons/greenskins/orc_metal_club");
-				}
 				else if (r == 4)
-				{
 					weapon = this.new("scripts/items/weapons/greenskins/legend_skullsmasher");
-				}
 				else if (r == 5)
-				{
-					weapon = this.new("scripts/items/weapons/orcspear");
-				}
-				else if (r == 6)
-				{
-					weapon = this.new("scripts/items/weapons/crorc_mace");
-				}					
+					weapon = this.new("scripts/items/weapons/greenskins/cr_orc_spear");
+				else
+					weapon = this.new("scripts/items/weapons/greenskins/cr_orc_mace");
 			}
 		}
 		else
@@ -81,38 +63,23 @@
 			r = this.Math.rand(1, 4);
 
 			if (r == 1)
-			{
 				weapon = this.new("scripts/items/weapons/greenskins/goblin_falchion");
-			}
 			else if (r == 2)
-			{
 				weapon = this.new("scripts/items/weapons/morning_star");
-			}
 			else if (r == 3)
-			{
 				weapon = this.new("scripts/items/weapons/greenskins/legend_meat_hacker");
-			}
-				else if (r == 4)
-			{
+			else
 				weapon = this.new("scripts/items/weapons/greenskins/legend_bone_carver");
-			}
 		}
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
-		{
 			this.m.Items.equip(weapon);
-		}
 		else
-		{
 			this.m.Items.addToBag(weapon);
-		}
 
 		if (this.Math.rand(1, 100) <= 50)
-		{
 			this.m.Items.equip(this.new("scripts/items/shields/greenskins/orc_light_shield"));
-		}
 
-		//if (::Is_PTR_Exist) this.m.Skills.addTreeOfEquippedWeapon(4);
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 4);	
 
 		local armor;
@@ -182,4 +149,5 @@
 
 		this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));			
 	}
+
 });

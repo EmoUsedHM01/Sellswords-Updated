@@ -140,13 +140,13 @@ this.crBarbarianZerker_Low <- this.inherit("scripts/entity/tactical/human", {
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
 			local weapons = [
-				"weapons/twinaxes_t1",
-				"weapons/twinaxes_t1",				
-				"weapons/twinaxes_t1",
-				"weapons/twinaxes_t2",							
-				"weapons/twincleavers_t1",				
-				"weapons/twincleavers_t1",
-				"weapons/twincleavers_t1",
+				"weapons/barbarians/twinaxes_t1",
+				"weapons/barbarians/twinaxes_t1",				
+				"weapons/barbarians/twinaxes_t1",
+				"weapons/barbarians/twinaxes_t2",							
+				"weapons/barbarians/twincleavers_t1",				
+				"weapons/barbarians/twincleavers_t1",
+				"weapons/barbarians/twincleavers_t1",
 				"weapons/barbarians/rusty_warblade",				
 				"weapons/barbarians/rusty_warblade",
 				"weapons/barbarians/heavy_rusty_axe"				

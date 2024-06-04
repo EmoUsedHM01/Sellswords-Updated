@@ -217,8 +217,8 @@ this.crSellsword <- this.inherit("scripts/entity/tactical/human", {
 				weapons = [
 					"weapons/barbarians/heavy_rusty_axe",	
 					"weapons/barbarians/rusty_warblade",
-					"weapons/twinaxes_t1",
-					"weapons/twincleavers_t1",					
+					"weapons/barbarians/twinaxes_t1",
+					"weapons/barbarians/twincleavers_t1",					
 				]
 			}										
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));							

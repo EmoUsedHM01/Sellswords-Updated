@@ -5,7 +5,7 @@ this.cr_named_orc_mace_2h <- this.inherit("scripts/items/weapons/named/named_wea
 		this.named_weapon.create();
 		this.m.ID = "weapon.cr_named_orc_mace_2h";
 		this.m.NameList = this.Const.Strings.TwoHandedMaceNames;
-		this.m.UseRandomName = false;		
+		this.m.UseRandomName = false;
 		this.m.Description = "Almost a whole bronze statue uprooted, haphazardly reinforced with protruding iron rivets. Too heavy to be used effectively by the average human.";
 		this.m.IconLarge = "weapons/melee/orc_named_mace_2h.png";
 		this.m.Icon = "weapons/melee/orc_named_mace_2h_70x70.png";
@@ -17,7 +17,7 @@ this.cr_named_orc_mace_2h <- this.inherit("scripts/items/weapons/named/named_wea
 		this.m.AddGenericSkill = true;
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
-		this.m.ArmamentIcon = "icon_orc_named_mace";
+		this.m.ArmamentIcon = "cr_named_orc_mace_2h";
 		this.m.Value = 3200;
 		this.m.ShieldDamage = 38;
 		this.m.Condition = 84.0;
@@ -46,4 +46,3 @@ this.cr_named_orc_mace_2h <- this.inherit("scripts/items/weapons/named/named_wea
 	}
 
 });
-

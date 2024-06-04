@@ -40,7 +40,7 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Hitpoints = b.Hitpoints;
 		this.m.CurrentProperties = clone b;
 		this.setAppearance();
-		this.getSprite("socket").setBrush("bust_base_military");		
+		this.getSprite("socket").setBrush("bust_base_military");
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
@@ -48,17 +48,17 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_berserk"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));					
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));		
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/actives/barbarian_fury_skill"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_adrenalin"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_adrenalin"));
 		
 
 		if (::Is_PTR_Exist)
 		{
-			this.m.Skills.addPerkTree(this.Const.Perks.TwoHandedTree);	
+			this.m.Skills.addPerkTree(this.Const.Perks.TwoHandedTree);
 
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_unstoppable"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_the_rush_of_battle"));
@@ -66,39 +66,31 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 		}
 
 		local dc = this.World.getTime().Days;
-		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");	
-		dc = this.Math.max(dc, mn * 3);			
+		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");
+		dc = this.Math.max(dc, mn * 3);
 		if (dc >= 80)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_fist"));
 			
 			if (::Is_PTR_Exist)
-			{
-				this.m.Skills.add(this.new("scripts/skills/racial/ptr_orc_racial"));	
-			}
+				this.m.Skills.add(this.new("scripts/skills/racial/ptr_orc_racial"));
 
 			if (dc >= 120)
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
 
 				if (::Is_PTR_Exist)
-				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_personal_armor"));	
-				}
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_personal_armor"));
 
 				if (dc >= 150)
 				{
 					if (::Is_PTR_Exist)
-					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_the_rush_of_battle"));	
-					}
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_the_rush_of_battle"));
 					
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_muscularity"));
 					if (dc >= 180)
-					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));						
-					}					
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));
 				}
 			}
 		}
@@ -108,57 +100,52 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 			if (::Is_PTR_Exist)
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));	
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_vigorous_assault"));	
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_vigorous_assault"));
 			}
-					
+
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));				
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 		}
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 			this.m.BaseProperties.MeleeSkill += dca;
 			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-			this.m.BaseProperties.RangedSkill += dca;	
-			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.RangedSkill += dca;
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
-			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}		
+			this.m.BaseProperties.Hitpoints += 2 * dca;
+		}
 	}
 
 	function assignRandomEquipment()
 	{
 		local r;
-		local dc = this.World.getTime().Days;		
+		local dc = this.World.getTime().Days;
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
 			local weapons = [
-				"weapons/crbarbarian_hammer",
-				"weapons/crbarbarian_mace",
-				"weapons/greenskins/orc_axe_2h",			
+				"weapons/barbarians/crbarbarian_hammer",
+				"weapons/barbarians/crbarbarian_mace",
+				"weapons/greenskins/orc_axe_2h",
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
 
-		//if (::Is_PTR_Exist)
-		//{
-		//	this.m.Skills.addTreeOfEquippedWeapon(7);	
-		//}	
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);	
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([ 
-			[1, "crslayer_armor"],			// 300,-43			
+		this.m.Items.equip(this.Const.World.Common.pickArmor([
+			[1, "crslayer_armor"]
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-			[1, "crslayer_helmet"],	   // 205+95,-17 				
-		]));				
+		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			[1, "crslayer_helmet"]
+		]));
 	}
 
 });
-
