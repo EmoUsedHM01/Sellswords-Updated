@@ -95,6 +95,52 @@ Updated and fixed calls
 ...\scripts\skills\perks\perk_crReachadvantage.nut
 Updated both the Reach Advantage perk and the associated effect
 
+...\brushes\chiru_orcs.brush
+...\gfx\chiru_orcs.png
+...\gfx\entity_crorc.png
+...\gfx\ui\items\weapons\melee\cr_orc_sword.png
+...\gfx\ui\items\weapons\melee\cr_orc_sword_70x70.png
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_young.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
+...\scripts\entity\tactical\enemies\crOrcVanguard.nut
+...\scripts\entity\tactical\enemies\crOrcWarlock.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_High.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+...\scripts\entity\tactical\humans\crImmortal.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSlayer.nut
+...\scripts\items\weapons\barbarians\crbarbarian_hammer.nut
+...\scripts\items\weapons\barbarians\crbarbarian_mace.nut
+...\scripts\items\weapons\barbarians\twinaxes_t1.nut
+...\scripts\items\weapons\barbarians\twinaxes_t2.nut
+...\scripts\items\weapons\barbarians\twinaxes_t3.nut
+...\scripts\items\weapons\barbarians\twincleavers_t1.nut
+...\scripts\items\weapons\barbarians\twincleavers_t2.nut
+...\scripts\items\weapons\crbarbarian_hammer.nut
+...\scripts\items\weapons\crbarbarian_mace.nut
+...\scripts\items\weapons\crorc_mace.nut
+...\scripts\items\weapons\greenskins\cr_goblin_axe.nut
+...\scripts\items\weapons\greenskins\cr_orc_mace.nut
+...\scripts\items\weapons\greenskins\cr_orc_spear.nut
+...\scripts\items\weapons\greenskins\cr_orc_staff.nut
+...\scripts\items\weapons\greenskins\cr_orc_sword.nut
+...\scripts\items\weapons\greenskins\goblin_axe.nut
+...\scripts\items\weapons\named\cr_named_orc_mace_2h.nut
+...\scripts\items\weapons\orc_staff.nut
+...\scripts\items\weapons\orcspear.nut
+...\scripts\items\weapons\twinaxes_t1.nut
+...\scripts\items\weapons\twinaxes_t2.nut
+...\scripts\items\weapons\twinaxes_t3.nut
+...\scripts\items\weapons\twincleavers_t1.nut
+...\scripts\items\weapons\twincleavers_t2.nut
+Updated Barb and Orc weapons, added new 2h Orc sword
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 
