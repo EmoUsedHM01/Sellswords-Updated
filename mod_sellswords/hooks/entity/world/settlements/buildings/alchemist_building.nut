@@ -81,42 +81,42 @@
 			{
 				R = 95,
 				P = 2.0,
-				S = "weapons/named/alp_sequence_item"
+				S = "misc/anatomist/alp_sequence_item"
 			},
 			{
 				R = 95,
 				P = 2.0,
-				S = "weapons/named/direwolf_sequence_item"
+				S = "misc/anatomist/direwolf_sequence_item"
 			},
 			{
 				R = 95,
 				P = 2.0,
-				S = "weapons/named/goblin_sequence_item"
+				S = "misc/anatomist/goblin_sequence_item"
 			},
 			{
 				R = 95,
 				P = 2.0,
-				S = "weapons/named/nachzehrer_sequence_item"
+				S = "misc/anatomist/nachzehrer_sequence_item"
 			},
 			{
 				R = 95,
 				P = 2.0,
-				S = "weapons/named/orc_sequence_item"
+				S = "misc/anatomist/orc_sequence_item"
 			},
 			{
 				R = 95,
 				P = 2.0,
-				S = "weapons/named/serpent_sequence_item"
+				S = "misc/anatomist/serpent_sequence_item"
 			},
 			{
 				R = 95,
 				P = 2.0,
-				S = "weapons/named/unhold_sequence_item"
+				S = "misc/anatomist/unhold_sequence_item"
 			},
 			{
 				R = 95,
 				P = 2.0,
-				S = "weapons/named/webknecht_sequence_item"
+				S = "misc/anatomist/webknecht_sequence_item"
 			}
 		];
 
