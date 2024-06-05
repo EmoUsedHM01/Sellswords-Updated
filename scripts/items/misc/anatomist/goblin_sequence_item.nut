@@ -98,10 +98,10 @@ this.goblin_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 		if (!_actor.getFlags().has("goblin"))
 			_actor.getFlags().add("goblin");
 
-		if (_actor.getSkills().hasSkill("trait.huge"))
+		if (_actor.getSkills().getSkillByID("trait.huge"))
 			_actor.getSkills().removeByID("trait.huge");
 
-		if (!_actor.getSkills().hasSkill("trait.tiny"))
+		if (!_actor.getSkills().getSkillByID("trait.tiny"))
 			_actor.getSkills().add(this.new("scripts/skills/traits/tiny_trait"));
 
 		if (_actor.getSkills().getSkillByID("effects.goblin_overseer_potion") == null)

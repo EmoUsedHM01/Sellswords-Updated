@@ -63,7 +63,7 @@
 		if (this.getContainer().getActor().getFlags().has("orc_w"))
 			_properties.DamageTotalMult *= 1.2;
 		else
-			_properties.DamageTotalMult *= 1.10;
+			_properties.DamageTotalMult *= 1.1;
 	}
 
 });

@@ -104,16 +104,16 @@ this.orc_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 		if (!_actor.getFlags().has("orc"))
 			_actor.getFlags().add("orc");
 
-		if (_actor.getSkills().hasSkill("trait.tiny"))
+		if (_actor.getSkills().getSkillByID("trait.tiny"))
 			_actor.getSkills().removeByID("trait.tiny");
 
-		if (!_actor.getSkills().hasSkill("trait.huge"))
+		if (!_actor.getSkills().getSkillByID("trait.huge"))
 			_actor.getSkills().add(this.new("scripts/skills/traits/huge_trait"));
 
-		if (_actor.getSkills().hasSkill("effects.orc_young_potion") == null)
+		if (_actor.getSkills().getSkillByID("effects.orc_young_potion") == null)
 			_actor.getSkills().add(this.new("scripts/skills/effects/orc_young_potion_effect"));
 
-		if (_actor.getSkills().hasSkill("effects.orc_warrior_potion") == null)
+		if (_actor.getSkills().getSkillByID("effects.orc_warrior_potion") == null)
 			_actor.getSkills().add(this.new("scripts/skills/effects/orc_warrior_potion_effect"));
 
 		if (_actor.getSkills().getSkillByID("perk.colossus") == null)

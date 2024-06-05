@@ -1,6 +1,10 @@
 7.0.2 changes
 
-...
+...\mod_sellswords\hooks\skills\effects\orc_young_potion_effect.nut
+...\scripts\items\misc\anatomist\goblin_sequence_item.nut
+...\scripts\items\misc\anatomist\orc_sequence_item.nut
+...\scripts\items\misc\anatomist\orc_warlord_sequence_item.nut
+Updated a couple bad calls
 
 ----------------------------------------------------------------------------------------------------------------------------
 
