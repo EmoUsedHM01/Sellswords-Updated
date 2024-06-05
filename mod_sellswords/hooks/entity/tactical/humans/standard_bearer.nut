@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/standard_bearer", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/standard_bearer", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -16,6 +16,7 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;
 		}
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
@@ -281,4 +282,5 @@
 			this.m.Items.equip(helmet);
 		}
 	}
+
 }); 

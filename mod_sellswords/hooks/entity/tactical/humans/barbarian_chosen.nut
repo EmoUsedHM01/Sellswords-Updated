@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/barbarian_chosen", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/barbarian_chosen", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -178,10 +178,8 @@
 	}	
 	q.makeMiniboss = @( __original ) function()
 	{
-		if (!__original())
-		{
+		if (!this.actor.makeMiniboss())
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local weapons = [
@@ -235,4 +233,5 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));			
 		return true;
 	}
-});	
+
+});

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_footman", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_footman", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -157,4 +157,5 @@
 			]));
 		}			
 	}
+
 });	

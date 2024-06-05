@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/gladiator", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/gladiator", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
@@ -20,6 +20,7 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;
 		}
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
@@ -116,4 +117,5 @@
 		]);
 		this.m.Items.equip(helm);
 	}
+
 });

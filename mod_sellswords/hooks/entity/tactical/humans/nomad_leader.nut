@@ -184,12 +184,11 @@
 			]));			
 		}
 	}
+
 	q.makeMiniboss = @(__original) function ()
 	{
-		if (!__original())
-		{
+		if (!this.actor.makeMiniboss())
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local r = this.Math.rand(1, 4);
@@ -224,4 +223,5 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		return true;
 	}
+
 });

@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_noble_fencer", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_noble_fencer", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
@@ -41,6 +41,7 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;
 		}
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
@@ -149,12 +150,11 @@
 			]));
 		}			
 	}
+
 	q.makeMiniboss = @(__original) function()
 	{
-		if (!__original())
-		{
+		if (!this.actor.makeMiniboss())
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local r = this.Math.rand(1, 2);
@@ -186,5 +186,6 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_nine_lives"));					
 		return true;
-	}	
+	}
+	
 });

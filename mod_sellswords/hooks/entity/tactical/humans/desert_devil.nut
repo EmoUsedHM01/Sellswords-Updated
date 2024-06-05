@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/desert_devil", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/desert_devil", function( q ) {
 
 	q.onInit = @( __original ) function()
 	{
@@ -92,6 +92,9 @@
 
 	q.makeMiniboss = @( __original ) function()
 	{
+		if (!this.actor.makeMiniboss())
+			return false;
+
 		local ret = __original();
 		if (ret)
 		{
@@ -112,4 +115,5 @@
 
 		return ret;
 	}
-}); 
+
+});

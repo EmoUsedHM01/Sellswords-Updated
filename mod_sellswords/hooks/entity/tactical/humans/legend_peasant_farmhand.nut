@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_farmhand", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_farmhand", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -245,5 +245,6 @@
 				this.m.Items.equip(helm);				
 			}
 		}			
-	}		
+	}
+		
 });

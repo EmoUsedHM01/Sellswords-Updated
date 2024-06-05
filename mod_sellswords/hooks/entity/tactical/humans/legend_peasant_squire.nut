@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_squire", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_squire", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();				
@@ -43,4 +43,5 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
+
 });

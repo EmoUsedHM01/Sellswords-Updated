@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/officer", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/officer", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -21,6 +21,7 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;
 		}
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
@@ -115,4 +116,5 @@
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 45;					
 		}	
 	}
+
 });	

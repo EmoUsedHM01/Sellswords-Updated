@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_archer", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_archer", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
@@ -24,11 +24,13 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 7);
 		
-	}		
+	}
+
 });

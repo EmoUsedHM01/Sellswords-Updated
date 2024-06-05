@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_noble_halberdier", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_noble_halberdier", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
@@ -25,6 +25,7 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;
 		}
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
@@ -102,4 +103,5 @@
 			]))
 		}
 	}
+
 });

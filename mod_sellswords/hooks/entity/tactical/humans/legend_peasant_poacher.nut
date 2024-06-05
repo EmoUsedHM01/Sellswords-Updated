@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_poacher", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_poacher", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -258,4 +258,5 @@
 			}
 		}							
 	}
+
 });

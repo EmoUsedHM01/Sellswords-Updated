@@ -1,8 +1,9 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/gunner", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/gunner", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
+
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -16,6 +17,7 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;
 		}
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
@@ -97,12 +99,11 @@
 			]));
 		}				
 	}
+
 	q.makeMiniboss <- function()
 	{
-		if (!__original())
-		{
+		if (!this.actor.makeMiniboss())
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		this.m.Items.equip(this.new("scripts/items/weapons/named/named_handgonne"));
@@ -120,4 +121,5 @@
 
 		return true;
 	}
+
 });	

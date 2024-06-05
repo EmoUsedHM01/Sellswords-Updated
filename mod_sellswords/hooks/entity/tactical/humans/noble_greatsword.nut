@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_greatsword", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_greatsword", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -157,12 +157,11 @@
 			]));
 		}			
 	}
+
 	q.makeMiniboss <- function()
 	{
-		if (!__original())
-		{
+		if (!this.actor.makeMiniboss())
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local r = this.Math.rand(1, 3);
@@ -186,5 +185,6 @@
 		}
 					
 		return true;
-	}	
-});	
+	}
+	
+});

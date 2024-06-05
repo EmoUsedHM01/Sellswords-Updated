@@ -1,10 +1,10 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/desert_stalker", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/desert_stalker", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));			
-		//this.m.Skills.add(this.new("scripts/skills/perks/perk_head_hunter"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
+
 		if (::Is_PTR_Exist)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_eyes_up"));
@@ -27,4 +27,6 @@
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;
 		}
-	}});
+	}
+
+});

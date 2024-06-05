@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_monk", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_monk", function( q ) {
+
 	q.onInit = @(__original) function()
 	{
 		this.human.onInit();
@@ -144,5 +144,6 @@
 		{
 			this.m.Items.equip(item);
 		}
-	}		
+	}
+		
 });

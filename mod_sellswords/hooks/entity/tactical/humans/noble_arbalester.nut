@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_arbalester", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_arbalester", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -21,6 +21,7 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;
 		}
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
@@ -109,4 +110,5 @@
 			]));
 		}			
 	}
+
 });	

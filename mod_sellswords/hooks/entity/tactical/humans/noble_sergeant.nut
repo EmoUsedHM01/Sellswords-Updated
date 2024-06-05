@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_sergeant", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/noble_sergeant", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -80,12 +80,11 @@
 			]));
 		}
 	}
+
 	q.makeMiniboss <- function()
 	{
-		if (!__original())
-		{
+		if (!this.actor.makeMiniboss())
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 
@@ -98,5 +97,6 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));					
 		return true;
-	}	
+	}
+
 });	
