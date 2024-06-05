@@ -4,7 +4,7 @@ this.ssu_ap_potion_item <- this.inherit("scripts/items/item", {
 	{
 		this.m.ID = "misc.gain_ap_potion";
 		this.m.Name = "Elixir of Potency";
-		this.m.Description = "Few people heard about this alleged potion, and fewer still would be capable enough to craft it.\nMixed from the rarest components, it pushes the abilities of any who imbibe to their upmost limits.";
+		this.m.Description = "Few people have heard about this legendary potion, and fewer still would be capable enough to craft it.\nCreated from using the rarest of ingredients, it pushes the abilities of any who imbibe to their upmost limits.";
 		this.m.Icon = "consumables/vial_red_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
@@ -32,8 +32,8 @@ this.ssu_ap_potion_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 11,
 			type = "text",
-			icon = "ui/icons/initiative.png",
-			text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Action Point permanently."
+			icon = "ui/icons/special.png",
+			text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Action Point.\nPermanently."
 		});
 		result.push({
 			id = 66,
