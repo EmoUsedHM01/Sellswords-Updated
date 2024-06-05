@@ -1,6 +1,55 @@
 7.0.3 changes
 
-...
+...\mod_sellswords\hooks\entity\tactical\humans\assassin.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_madman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\bounty_hunter_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_devil.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_stalker.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_archer_low.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_billman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_crossbow.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_footman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_infantry.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_leader_low.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_longbow.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_pikeman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_slayer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_spearman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_spearman_low.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gladiator.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gunner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_fencer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_halberdier.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_slinger.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_farmhand.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_miner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_monk.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_poacher.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_squire.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_witchhunter.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\mercenary_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\militia_veteran.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_arbalester.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_billman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_footman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_greatsword.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_sergeant.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_cutthroat.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_outlaw.nut
+...\mod_sellswords\hooks\entity\tactical\humans\oathbringer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\officer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\standard_bearer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+Fixed bad original function calls
 
 ----------------------------------------------------------------------------------------------------------------------------
 
