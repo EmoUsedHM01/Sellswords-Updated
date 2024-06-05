@@ -1,5 +1,6 @@
-::mods_hookExactClass("entity/world/settlements/buildings/alchemist_building", function(o) {
-	o.onUpdateShopList = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/alchemist_building", function( q ) {
+
+	q.onUpdateShopList = @(__original) function()
 	{
 		local list = [
 			{
@@ -71,11 +72,51 @@
 				R = 50,
 				P = 1.0,
 				S = "weapons/advancedfirelance"
-			},			
+			},
 			{
 				R = 99,
 				P = 2.0,
 				S = "weapons/named/named_handgonne"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "weapons/named/alp_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "weapons/named/direwolf_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "weapons/named/goblin_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "weapons/named/nachzehrer_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "weapons/named/orc_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "weapons/named/serpent_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "weapons/named/unhold_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "weapons/named/webknecht_sequence_item"
 			}
 		];
 
@@ -123,4 +164,5 @@
 		this.m.Settlement.onUpdateShopList(this.m.ID, list);
 		this.fillStash(list, this.m.Stash, 1.0, false);
 	}
-})
+
+});
