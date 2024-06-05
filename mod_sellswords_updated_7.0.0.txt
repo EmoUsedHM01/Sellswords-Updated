@@ -229,6 +229,7 @@ Added Sequence functions and configs
 ...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
 ...\mod_sellswords\hooks\entity\tactical\player.nut
 -
+...\mod_sellswords\hooks\entity\world\settlements\buildings\alchemist_building.nut
 ...\mod_sellswords\hooks\items\misc\anatomist\anatomist_potion_item.nut
 ...\mod_sellswords\hooks\scenarios\world\anatomists_scenario.nut
 -
