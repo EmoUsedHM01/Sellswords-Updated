@@ -1,4 +1,4 @@
-6.6.0 changes
+7.0.0 changes
 
 ...\scripts\!mods_preload\mod_sellswords.nut
 Added FB incompat to conflict list
@@ -133,6 +133,233 @@ Adding a new end-game AP potion
 
 ...\mod_sellswords\hooks\items\misc\...
 Deleted due to reworked potions
+
+...\gfx\ui\items\consumables\potion_demon.png
+...\gfx\ui\items\consumables\potion_greenwood.png
+...\gfx\ui\items\consumables\potion_redback.png
+...\gfx\ui\items\consumables\potion_rock.png
+...\gfx\ui\items\consumables\potion_skin.png
+...\gfx\ui\items\consumables\potion_stoll.png
+...\gfx\ui\items\consumables\potion_white_direwolf.png
+...\gfx\ui\items\consumables\vial_red_01.png
+New gfx for Legendary Beast potions
+
+...\mod_sellswords\config\sequence_logic.nut
+Added Sequence functions and configs
+
+...\mod_sellswords\hooks\ai\tactical\agents\bandit_melee_agent.nut
+...\mod_sellswords\hooks\ai\tactical\agents\bounty_hunter_melee_agent.nut
+...\mod_sellswords\hooks\ai\tactical\agents\military_melee_agent.nut
+-
+...\mod_sellswords\hooks\entity\tactical\enemies\alp.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_raider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_raider_low.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\direwolf.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\ghoul.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_veteran.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_demon_alp.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_demon_hound.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_greenwood_schrat.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_queen.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_elite.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_redback_spider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_rock_unhold.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_skin_ghoul.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_stollwurm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_vampire_lord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_white_direwolf.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\lindwurm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior_low.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_young.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\sand_golem.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\schrat.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\serpent.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_boss.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy_bodyguard.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\spider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\unhold.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\vampire.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\wolf.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_betrayer.nut
+-
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_madman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\bounty_hunter_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_devil.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_stalker.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gladiator.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gunner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_fencer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_halberdier.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_slinger.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_farmhand.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_miner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_monk.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_poacher.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_witchhunter.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\mercenary_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\militia_veteran.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_arbalester.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_billman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_footman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_greatsword.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_sergeant.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_cutthroat.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_outlaw.nut
+...\mod_sellswords\hooks\entity\tactical\humans\oathbringer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\officer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\standard_bearer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+...\mod_sellswords\hooks\entity\tactical\player.nut
+-
+...\mod_sellswords\hooks\items\misc\anatomist\anatomist_potion_item.nut
+...\mod_sellswords\hooks\scenarios\world\anatomists_scenario.nut
+-
+...\mod_sellswords\hooks\skills\actives\legend_gruesome_feast.nut
+-
+...\mod_sellswords\hooks\skills\backgrounds\anatomist_background.nut
+-
+...\mod_sellswords\hooks\skills\effects\alp_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\ancient_priest_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\direwolf_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\fallen_hero_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\geist_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\goblin_grunt_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\goblin_overseer_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\honor_guard_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\hyena_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\lindwurm_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\nachzehrer_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\necrosavant_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_berserker_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_warlord_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_warrior_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_young_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\schrat_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\skeleton_warrior_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\unhold_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\wiederganger_potion_effect.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_escape_artist.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
+-
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_know_their_weakness.nut
+-
+...\scripts\ai\tactical\behaviors\ai_gruesome_feast_sequence.nut
+...\scripts\crafting\blueprints\gain_ap_potion_blueprint.nut
+...\scripts\entity\tactical\humans\crBanditleaderwolf.nut
+...\scripts\entity\tactical\humans\crBanditSergeant.nut
+...\scripts\entity\tactical\humans\crBanditZweihander.nut
+...\scripts\entity\tactical\humans\crBarbarianChampionhigh.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_High.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+...\scripts\entity\tactical\humans\crBarbarianZweihander.nut
+...\scripts\entity\tactical\humans\crBarbhunter.nut
+...\scripts\entity\tactical\humans\crBaron.nut
+...\scripts\entity\tactical\humans\crBaron02.nut
+...\scripts\entity\tactical\humans\crDesperado.nut
+...\scripts\entity\tactical\humans\crDesperado_High.nut
+...\scripts\entity\tactical\humans\crDesperado_Low.nut
+...\scripts\entity\tactical\humans\crDesperado_Weak.nut
+...\scripts\entity\tactical\humans\crHashshashin.nut
+...\scripts\entity\tactical\humans\crHashshashin_High.nut
+...\scripts\entity\tactical\humans\crHashshashin_Low.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crKnight.nut
+...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
+...\scripts\entity\tactical\humans\crMercenaryranged.nut
+...\scripts\entity\tactical\humans\crOathbringer.nut
+...\scripts\entity\tactical\humans\crPeasantminstrel.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSellsword_Banner.nut
+...\scripts\entity\tactical\humans\crSellsword_Elite.nut
+...\scripts\entity\tactical\humans\crSellsword_Lieutenant.nut
+...\scripts\entity\tactical\humans\crSellsword_Polearm.nut
+...\scripts\entity\tactical\humans\crSellsword_Ranger.nut
+...\scripts\entity\tactical\humans\crSellsword_Sergeant.nut
+...\scripts\entity\tactical\humans\crSellsword_Tank.nut
+...\scripts\entity\tactical\humans\crSellswordveteran.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Polearm.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Ranger.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Tank.nut
+...\scripts\entity\tactical\humans\crSlayer.nut
+...\scripts\entity\tactical\humans\crSquire.nut
+...\scripts\entity\tactical\humans\crSquire_normal.nut
+...\scripts\entity\tactical\humans\crSquireFencer.nut
+...\scripts\entity\tactical\humans\crStandardbearer.nut
+-
+...\scripts\items\misc\anatomist\alp_sequence_item.nut
+...\scripts\items\misc\anatomist\demon_alp_sequence_item.nut
+...\scripts\items\misc\anatomist\direwolf_sequence_item.nut
+...\scripts\items\misc\anatomist\goblin_sequence_item.nut
+...\scripts\items\misc\anatomist\greenwood_schrat_sequence_item.nut
+...\scripts\items\misc\anatomist\lindwurm_sequence_item.nut
+...\scripts\items\misc\anatomist\nachzehrer_sequence_item.nut
+...\scripts\items\misc\anatomist\necrosavant_lord_sequence_item.nut
+...\scripts\items\misc\anatomist\necrosavant_sequence_item.nut
+...\scripts\items\misc\anatomist\orc_sequence_item.nut
+...\scripts\items\misc\anatomist\orc_warlord_sequence_item.nut
+...\scripts\items\misc\anatomist\redback_sequence_item.nut
+...\scripts\items\misc\anatomist\rock_unhold_sequence_item.nut
+...\scripts\items\misc\anatomist\schrat_sequence_item.nut
+...\scripts\items\misc\anatomist\serpent_sequence_item.nut
+...\scripts\items\misc\anatomist\skin_ghoul_sequence_item.nut
+...\scripts\items\misc\anatomist\stollwurm_sequence_item.nut
+...\scripts\items\misc\anatomist\unhold_sequence_item.nut
+...\scripts\items\misc\anatomist\webknecht_sequence_item.nut
+...\scripts\items\misc\anatomist\white_direwolf_sequence_item.nut
+-
+...\scripts\items\misc\anatomist\crdemonalp_potion_item.nut (deleted v)
+...\scripts\items\misc\anatomist\crdemonhound_potion_item.nut
+...\scripts\items\misc\anatomist\crfallenbetrayer_potion_item.nut
+...\scripts\items\misc\anatomist\crgreenschrat_potion_item.nut
+...\scripts\items\misc\anatomist\crleaderhexe_potion_item.nut
+...\scripts\items\misc\anatomist\crnecrosavantlord_potion_item.nut
+...\scripts\items\misc\anatomist\crorcbehemoth_potion_item.nut
+...\scripts\items\misc\anatomist\crorcelite_potion_item.nut
+...\scripts\items\misc\anatomist\crreadbackwebknecht_potion_item.nut
+...\scripts\items\misc\anatomist\crrockunhold_potion_item.nut
+...\scripts\items\misc\anatomist\crskinnachzehrer_potion_item.nut
+...\scripts\items\misc\anatomist\crstollwurm_potion_item.nut
+...\scripts\items\misc\anatomist\crwhitedirewolf_potion_item.nut
+...\scripts\items\misc\anatomist\crzombieswordmaster_potion_item.nut (everything upto here)
+-
+...\scripts\items\misc\ssu_ap_potion_item.nut
+-
+...\scripts\skills\actives\howl_player.nut
+...\scripts\skills\effects\player_levitate.nut
+...\scripts\skills\racial\direwolf_player_racial.nut
+
+Wow, that was a lot huh?
+It definitely took a while to get it all working so hopefully it's something that people enjoy using, although any feedback, positive or negative, will be listened to regarding this new system.
+While this isn't the all inclusive list, it covers pretty much everything that was added with the Sequence overhaul. (A few deleted files aren't listed but Abyss can figure that one out)
+This is essentially a comprehensive overhaul of the old potion system that the Anatomist Origin had.
+Sequences are reworked potions, slightly stronger on average but you're limited to a single Sequence per bro.
+Beware! Enemies can also have Sequences, although the chance is fairly low. If you're not a fan I added an option to disable it for enemies in the mod configs.
+You obtain these by either buying them at Alchemists or from having an Anatomist in your roster.
+Each Anatomist will increase the odds at harvesting a Sequence from a suitable slain enemy.
+Playing the Anatomist Origin will not only double that chance overall, but also provides each bro you recruit with the Resilient perk, perfect for any aspiring mutants.
+Hopefully with this in place, the game should feel a little different if you decide to pursue mutations.
+If you don't, then if you disable the option for enemies to spawn with them, the gameplay shouldn't be affected in any major way.
+Hopefully you all enjoy the update <3
 
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
