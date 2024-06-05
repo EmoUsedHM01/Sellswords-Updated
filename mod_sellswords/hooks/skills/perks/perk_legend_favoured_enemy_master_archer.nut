@@ -1,8 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_legend_favoured_enemy_master_archer", function( o )
-{
-    // Gotta add a second copy of this because FE Archer overwrites the original onUpdate function
-	local ws_onUpdate = o.onUpdate;
-	o.onUpdate = function( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_favoured_enemy_master_archer", function( q ) {
+
+	q.onAfterUpdate <- function( _properties )
 	{
 		local actor = this.getContainer().getActor().get();
 		if (!actor.getFlags().has(this.m.ID))
@@ -14,8 +12,5 @@
 				actor.m.PerkPoints += 1;
 			}
 		}
-
-		ws_onUpdate(_properties);
 	};
-
 });

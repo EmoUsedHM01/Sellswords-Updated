@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/perks/perk_rotation", function ( o )
-{
-	local onAdded = o.onAdded;
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_rotation", function ( q ) {
+
+	q.onAdded = @( __original ) function ()
 	{
-		onAdded();
+		__original();
 		local addPerk = function ( _perk, _row = 0 )
 		{
 			local actor = this.getContainer().getActor();
@@ -45,4 +44,4 @@
 		this.skill.onDeserialize(_in);
 	};
 	*/
-});	
+});

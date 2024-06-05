@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/net_effect", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/net_effect", function ( q ) {
 
 	q.m.debuff <- 45;
 

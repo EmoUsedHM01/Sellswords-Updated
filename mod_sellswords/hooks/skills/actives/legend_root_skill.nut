@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/legend_root_skill", function ( o )
-{
-	o.getTooltip <- function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_root_skill", function ( q ) {
+
+	q.getTooltip <- function ()
 	{
 		local ret = this.getDefaultTooltip();
 		ret.extend([
@@ -25,7 +25,7 @@
 		]);
 		return ret;
 	}	
-	o.onAfterUpdate = function ( _properties )
+	q.onAfterUpdate = @( __original ) function ( _properties )
 	{
 		this.m.FatigueCost = _properties.IsSpecializedInStaves ? 15 : 20;
 		this.m.ActionPointCost = _properties.IsSpecializedInStaves ? 5 : 6;
@@ -35,4 +35,4 @@
 			this.m.ActionPointCost -= 1;
 		}
 	}
-});		
+});

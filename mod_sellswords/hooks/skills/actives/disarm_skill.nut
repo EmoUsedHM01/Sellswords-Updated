@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/disarm_skill", function ( o )
-{
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/disarm_skill", function ( q ) {
+
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_targetEntity == null)
 		{
@@ -25,7 +25,7 @@
 			_properties.HitChanceMult[this.Const.BodyPart.Head] = 0.0;
 		}
 	}
-	o.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
+	q.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
 	{
 		if (_skill.getID() != "actives.disarm")
 		{

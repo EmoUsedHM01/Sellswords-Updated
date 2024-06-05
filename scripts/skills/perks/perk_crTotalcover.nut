@@ -3,7 +3,7 @@ this.perk_crTotalcover <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "perk.crTotalcover";
-		this.m.Name = "Total Cover";
+		this.m.Name = this.Const.Strings.PerkName.crTotalcover;
 		this.m.Description = this.Const.Strings.PerkDescription.crTotalcover;
 		this.m.Icon = "ui/perks/crTotalcover.png";
 		this.m.Type = this.Const.SkillType.Perk;

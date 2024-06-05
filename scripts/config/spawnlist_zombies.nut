@@ -452,7 +452,7 @@ gt.Const.World.Spawn.Ghosts <- {
 		},
 		{
 			Weight = 10,
-			MinR = 500,
+			MinR = 400,
 			Types = [
 				{
 					Type = this.Const.World.Spawn.Troops.LegendBanshee,

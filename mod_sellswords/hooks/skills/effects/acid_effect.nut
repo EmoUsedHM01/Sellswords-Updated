@@ -1,7 +1,8 @@
-::mods_hookExactClass("skills/effects/acid_effect", function(o) {
-	o.m.Concentrate <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/acid_effect", function( q ) {
 
-	o.applyDamage = function()
+	q.m.Concentrate <- false;
+
+	q.applyDamage = @(__original) function()
 	{
 		if (this.m.LastRoundApplied != this.Time.getRound())
 		{
@@ -81,4 +82,4 @@
 			}
 		}
 	}
-})
+});

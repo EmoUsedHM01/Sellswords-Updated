@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/deathblow_skill", function ( o )
-{
-	o.onAfterUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/deathblow_skill", function ( q ) {
+
+	q.onAfterUpdate = @( __original ) function ( _properties )
 	{
 		if (_properties.IsSpecializedInDaggers)
 		{

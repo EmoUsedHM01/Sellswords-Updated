@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_balance", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_balance", function ( q ) {
 
 	q.m.Minus <- 0;
 

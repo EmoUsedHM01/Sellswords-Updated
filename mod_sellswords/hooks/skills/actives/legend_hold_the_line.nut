@@ -1,15 +1,15 @@
-::mods_hookExactClass("skills/actives/legend_hold_the_line", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_hold_the_line", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 
 		this.m.Description = "Instruct your mercenaries to push their advantages, raising melee defence by 10 within 4 tiles";
 		this.m.ActionPointCost = 5;
 		this.m.FatigueCost = 20;
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
 		local ret = this.getDefaultUtilityTooltip();
 
@@ -23,4 +23,4 @@
 		return ret;
 	}
 
-});	
+});

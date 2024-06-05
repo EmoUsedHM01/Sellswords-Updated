@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/rupture", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/rupture", function ( q ) {
 
 	q.onAfterUpdate = @( __original ) function( _properties)
 	{

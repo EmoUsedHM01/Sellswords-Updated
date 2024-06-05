@@ -6,7 +6,7 @@ this.perk_crBackswing <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "perk.crBackswing";
-		this.m.Name = "Backswing";
+		this.m.Name = this.Const.Strings.PerkName.crBackswing;
 		this.m.Description = this.Const.Strings.PerkDescription.crBackswing;
 		this.m.Icon = "ui/perks/crBackswing.png";
 		this.m.Type = this.Const.SkillType.Perk | this.Const.SkillType.StatusEffect;

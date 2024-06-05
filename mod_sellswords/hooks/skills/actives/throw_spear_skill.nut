@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/throw_spear_skill", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/throw_spear_skill", function( q ) {
 
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{

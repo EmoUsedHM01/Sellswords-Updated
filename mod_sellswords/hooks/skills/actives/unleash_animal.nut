@@ -1,6 +1,5 @@
-::mods_hookExactClass("skills/actives/unleash_animal", function ( o )
-{
-	o.addAnimalSkills = function ( entity )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/unleash_animal", function ( q ) {
+	q.addAnimalSkills = @( __original ) function ( entity )
 	{
 		local houndeffect = this.new("scripts/skills/effects/cr_houndmaster_effect");
 		if (this.getContainer().getActor().getSkills().hasSkill("perk.legend_dogwhisperer"))
@@ -47,4 +46,4 @@
 		ai.m.Properties.EngageAgainstSpearwallMult = 0.5;
 		ai.m.Properties.EngageAgainstSpearwallWithShieldwallMult = 0.25;
 	}
-});	
+});

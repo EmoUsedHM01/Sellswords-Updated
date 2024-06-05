@@ -1,19 +1,18 @@
-::mods_hookExactClass("skills/actives/release_falcon_skill", function(o) {
-	o.m.Turn <- 2;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/release_falcon_skill", function ( q ) {
+	q.m.Turn <- 2;
 
-	local ws_create = o.create;
-	o.create = function()
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "Release your falcon to gain vision of the surrounding 12 tiles for the duration of the current round. Can be used every other turn.";
 		this.m.ActionPointCost = 6;
 	}
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		ret.push({
 			id = 7,
@@ -25,38 +24,37 @@
 		return ret;
 	}
 
-	o.isUsable = function()
+	q.isUsable = @( __original ) function()
 	{
 		return this.skill.isUsable() && this.m.Turn >= 2;
 	}	
 	
-	o.isHidden <- function()
+	q.isHidden <- function()
 	{
 		return this.m.Turn < 2;
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @( __original ) function( _properties )
 	{
 	}
 
-	local ws_onUse = o.onUse;
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		this.m.Turn -= 2;
-		return ws_onUse(_user,_targetTile);
+		return __original( _user, _targetTile );
 	}
 
-	o.onTurnStart <- function()
+	q.onTurnStart <- function()
 	{
 		this.m.Turn += this.m.Turn < 2 ? 1 : 0;	
 	}
 
-	o.onCombatStarted <- function()
+	q.onCombatStarted <- function()
 	{
 		this.m.Turn = 1;			
 	}
 	
-	o.onCombatFinished <- function()
+	q.onCombatFinished <- function()
 	{
 		this.m.Turn = 2;			
 	}	

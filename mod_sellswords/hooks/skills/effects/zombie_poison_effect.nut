@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/zombie_poison_effect", function ( o )
-{
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/zombie_poison_effect", function ( q ) {
+
+	q.onAdded = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
@@ -19,7 +19,8 @@
 			++this.m.TurnsLeft;
 		}
 	};
-	o.getTooltip = function ()
+
+	q.getTooltip = @(__original) function()
 	{
 		local nsed = this.getContainer().getActor().getCurrentProperties().NegativeStatusEffectDuration;
 		local remaining = 10 - (this.m.TurnsLeft - nsed);
@@ -55,7 +56,8 @@
 			}
 		];
 	}
-	o.onUpdate = function ( _properties )
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local seriouslevel = this.getContainer().hasSkill("perk.crresilient") ? 7.5 : 10;		
 		local nsed = this.getContainer().getActor().getCurrentProperties().NegativeStatusEffectDuration;

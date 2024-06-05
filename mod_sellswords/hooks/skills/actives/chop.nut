@@ -1,11 +1,10 @@
-::mods_hookExactClass("skills/actives/chop", function(o) {
-	o.m.orc <- false;
-	o.m.infantry <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/chop", function ( q ) {
+	q.m.orc <- false;
+	q.m.infantry <- false;
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		foreach (i, tooltip in ret)
 		{
@@ -33,7 +32,7 @@
 		return ret;
 	}
 
-	o.isHidden <- function()
+	q.isHidden <- function()
 	{
 		//local off = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local shield = 1;
@@ -44,10 +43,9 @@
 		return this.m.orc == true && shield == 0;
 	}
 
-	local ws_onAnySkillUsed = o.onAnySkillUsed;
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
-		ws_onAnySkillUsed(_skill, _targetEntity, _properties);
+		__original(_skill, _targetEntity, _properties);
 
 		if (_skill == this)
 		{
@@ -63,4 +61,4 @@
 			}
 		}
 	}
-})
+});

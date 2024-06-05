@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/distracted_effect", function ( o )
-{
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/distracted_effect", function ( q ) {
+
+	q.onAdded = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 		local statusResisted = actor.getCurrentProperties().IsResistantToAnyStatuses ? this.Math.rand(1, 100) <= 50 : false;
@@ -20,8 +20,9 @@
 		{
 			this.m.TurnsLeft = this.Math.max(1, 1 + actor.getCurrentProperties().NegativeStatusEffectDuration);
 		}
-	};
-	o.onUpdate = function ( _properties )
+	}
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local actor = this.getContainer().getActor();
 		if (this.getContainer().hasSkill("perk.crresilient"))

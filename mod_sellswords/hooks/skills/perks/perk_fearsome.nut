@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_fearsome", function ( o )
-{
-	o.onAfterUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_fearsome", function ( q ) {
+
+	q.onAfterUpdate = @( __original ) function ( _properties )
 	{
 		local modification = 1;
 
@@ -11,7 +11,7 @@
 
 		_properties.ThreatOnHit += this.Math.min(modification * 20, this.Math.max(0, modification * _properties.getBravery() * 0.2));
 	};
-	o.onTargetHit = function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
+	q.onTargetHit = @( __original ) function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		if (_targetEntity == null || !_targetEntity.isAlive())
 		{
@@ -53,7 +53,7 @@
 			this.getContainer().getActor().getSkills().removeByID("effects.crfearsome");
 		}			
 	}		
-	o.onTargetKilled <- function ( _targetEntity, _skill )
+	q.onTargetKilled <- function ( _targetEntity, _skill )
 	{
 		if (!_targetEntity.isAlliedWith(this.getContainer().getActor()))
 		{

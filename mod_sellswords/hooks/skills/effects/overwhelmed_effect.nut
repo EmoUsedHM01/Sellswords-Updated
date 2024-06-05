@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/overwhelmed_effect", function ( o )
-{
-	o.onUpdate = function( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/overwhelmed_effect", function ( q ) {
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		if (this.getContainer().hasSkill("perk.crresilient"))
 		{
@@ -13,4 +13,4 @@
 			_properties.RangedSkillMult = this.Math.maxf(0.0, _properties.RangedSkillMult - 0.1 * this.m.Count);
 		}			
 	}	
-});	
+});

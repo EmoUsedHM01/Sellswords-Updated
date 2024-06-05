@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/disarmed_effect", function ( o )
-{
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/disarmed_effect", function ( q ) {
+
+	q.onAdded = @(__original) function()
 	{
 		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= this.getContainer().getActor().getBaseProperties().RangedDefense : false;
 
@@ -29,5 +29,5 @@
 				this.m.IsGarbage = true;
 			}
 		}
-	};
+	}
 });

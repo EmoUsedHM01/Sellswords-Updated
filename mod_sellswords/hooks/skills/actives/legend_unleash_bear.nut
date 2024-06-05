@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/legend_unleash_bear", function ( o )
-{
-	o.onUse = function ( _user, _targetTile )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_unleash_bear", function ( q ) {
+
+	q.onUse = @( __original ) function ( _user, _targetTile )
 	{
 		_user.getSkills().add(this.new("scripts/skills/effects/legend_summoned_bear_effect"));
 		local entity = this.Tactical.spawnEntity(this.m.Script, _targetTile.Coords.X, _targetTile.Coords.Y);
@@ -32,4 +32,4 @@
 		entity.getSkills().add(houndeffect);			
 		return true;
 	}
-});	
+});

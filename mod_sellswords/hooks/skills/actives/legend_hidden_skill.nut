@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/actives/legend_hidden_skill", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_hidden_skill", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.FatigueCost = 25;
 	}
 

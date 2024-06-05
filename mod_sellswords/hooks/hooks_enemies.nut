@@ -24,11 +24,11 @@ foreach(script in [
 	"unhold_frost",
 ])
 {
-	::mods_hookExactClass("entity/tactical/enemies/" + script, function(o) {
-		local onInit = o.onInit;
-		o.onInit = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/" + script, function ( q ) {
+
+		q.onInit = @( __original ) function()
 		{
-			onInit();
+			__original();
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
 				local dc = this.World.getTime().Days;
@@ -59,11 +59,11 @@ foreach(script in [
 	"zombie_yeoman",
 ])
 {
-	::mods_hookExactClass("entity/tactical/enemies/" + script, function(o) {
-		local onInit = o.onInit;
-		o.onInit = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/" + script, function ( q ) {
+
+		q.onInit = @( __original ) function()
 		{
-			onInit();
+			__original();
 			this.m.BaseProperties.IsAffectedByInjuries = true;	
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
@@ -86,11 +86,11 @@ foreach(script in [
 	"hyena_high",
 ])
 {
-	::mods_hookExactClass("entity/tactical/enemies/" + script, function(o) {
-		local onInit = o.onInit;
-		o.onInit = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/" + script, function ( q ) {
+
+		q.onInit = @( __original ) function()
 		{
-			onInit();			
+			__original();			
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBattlerhaposdy"));		
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
@@ -114,11 +114,11 @@ foreach(script in [
 	"lindwurm_tail",
 ])
 {
-	::mods_hookExactClass("entity/tactical/enemies/" + script, function(o) {
-		local onInit = o.onInit;
-		o.onInit = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/" + script, function ( q ) {
+
+		q.onInit = @( __original ) function()
 		{
-			onInit();
+			__original();
 			this.m.Skills.removeByID("perk.perk.hold_out");	
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));				
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
@@ -142,11 +142,11 @@ foreach(script in [
 	"legend_white_direwolf",
 ])
 {
-	::mods_hookExactClass("entity/tactical/enemies/" + script, function(o) {
-		local onInit = o.onInit;
-		o.onInit = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/" + script, function ( q ) {
+
+		q.onInit = @( __original ) function()
 		{
-			onInit();
+			__original();
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
@@ -169,8 +169,9 @@ foreach(script in [
 	"unhold_frost_armored",
 ])
 {
-	::mods_hookExactClass("entity/tactical/enemies/" + script, function(o) {
-		o.onTurnStart = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/" + script, function ( q ) {
+
+		q.onTurnStart = @( __original ) function()
 		{
 			this.actor.onTurnStart();
 
@@ -196,4 +197,3 @@ foreach(script in [
 		}
 	}); 
 }
-

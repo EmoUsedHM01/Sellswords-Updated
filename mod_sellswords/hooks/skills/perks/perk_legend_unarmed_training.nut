@@ -1,6 +1,5 @@
-::mods_hookExactClass("skills/perks/perk_legend_unarmed_training", function ( o )
-{
-	o.onAnySkillUsed = function ( _skill, _targetEntity, _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_unarmed_training", function ( q ) {
+	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
 		local actor = this.getContainer().getActor();
 

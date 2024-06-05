@@ -1,13 +1,12 @@
-::mods_hookExactClass("skills/actives/puncture", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/puncture", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 
 		this.m.HitChanceBonus = 0;
 	}
-	o.getHitChance = function ( _targetEntity )
+	q.getHitChance = @( __original ) function ( _targetEntity )
 	{
 		if (_targetEntity == null)
 		{
@@ -64,7 +63,7 @@
 		local chance = (1.0 - _targetEntity.getFatiguePct()) * 50;
 		return mod - this.Math.round(chance);
 	};
-	o.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
+	q.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
 	{
 		if (_skill.getID() != "actives.puncture")
 		{
@@ -122,7 +121,7 @@
 			});	
 		}
 	}		
-	o.onAnySkillUsed = function ( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -152,7 +151,7 @@
 			}
 		}
 	};
-	o.onAfterUpdate = function ( _properties )
+	q.onAfterUpdate = @( __original ) function ( _properties )
 	{
 		if (_properties.IsSpecializedInDaggers)
 		{
@@ -160,7 +159,7 @@
 			this.m.ActionPointCost -= 1;
 		}
 	};
-	o.getTooltip = function ()
+	q.getTooltip = @( __original ) function ()
 	{
 		local ret = this.getDefaultTooltip();
 		ret.extend([
@@ -179,4 +178,4 @@
 		]);
 		return ret;
 	}		
-});	
+});

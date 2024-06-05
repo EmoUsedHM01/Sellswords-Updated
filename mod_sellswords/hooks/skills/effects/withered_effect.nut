@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/withered_effect", function ( o )
-{
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/withered_effect", function ( q ) {
+
+	q.onAdded = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 		local statusResisted = actor.getCurrentProperties().IsResistantToAnyStatuses ? this.Math.rand(1, 100) <= 50 : false;
@@ -20,5 +20,5 @@
 		{
 			this.m.TurnsLeft = this.Math.max(1, 2 + actor.getCurrentProperties().NegativeStatusEffectDuration);
 		}
-	};
+	}
 });

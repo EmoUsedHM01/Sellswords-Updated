@@ -1,5 +1,6 @@
-::mods_hookExactClass("skills/effects/return_favor_effect", function(o) {
-	o.onMissed = function( _attacker, _skill )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/return_favor_effect", function ( q ) {
+
+	q.onMissed = @(__original) function( _attacker, _skill )
 	{
 		if (!_skill.isRanged())
 		{
@@ -41,4 +42,4 @@
 			}
 		}
 	}
-})	
+});

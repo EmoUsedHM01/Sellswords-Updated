@@ -1,10 +1,11 @@
-::mods_hookExactClass("skills/perks/perk_legend_lithe", function(o) {
-	o.isHidden <- function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_lithe", function ( q ) {
+
+	q.isHidden = @( __original ) function()
 	{
 		return (::Math.floor(this.getHitpointsDamageReduction() * 100) >= 100 && ::Math.floor(this.getArmorDamageReduction() * 100) >= 100);
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
 		local tooltip = this.skill.getTooltip();
 		local hpBonus = ::Math.round(this.getHitpointsDamageReduction() * 100);
@@ -41,7 +42,7 @@
 		return tooltip;
 	}
 
-	o.getHitpointsDamageReduction <- function()
+	q.getHitpointsDamageReduction <- function()
 	{
 		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 		fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
@@ -55,7 +56,7 @@
 		}
 	}
 
-	o.getArmorDamageReduction <- function()
+	q.getArmorDamageReduction <- function()
 	{
 		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 		fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
@@ -69,7 +70,7 @@
 		}
 	}
 
-	function onBeforeDamageReceived( _attacker, _skill, _hitInfo, _properties )
+	q.onBeforeDamageReceived = @( __original ) function( _attacker, _skill, _hitInfo, _properties )
 	{
 		if (_attacker != null && _attacker.getID() == this.getContainer().getActor().getID() || _skill == null || !_skill.isAttack() || !_skill.isUsingHitchance())
 		{
@@ -79,4 +80,4 @@
 		_properties.DamageReceivedRegularMult *= this.getHitpointsDamageReduction();
 		_properties.DamageReceivedArmorMult *= this.getArmorDamageReduction();
 	}
-});	
+});

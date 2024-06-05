@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/world/attached_location/goat_herd_oriental_location", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/attached_location/goat_herd_oriental_location", function ( q ) {
 
 	q.onUpdateShopList = @(__original) function  ( _id, _list )
 	{

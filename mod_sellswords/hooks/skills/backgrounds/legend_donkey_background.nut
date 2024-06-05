@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_donkey_background", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_donkey_background", function ( q ) {
 
 	q.create = @(__original) function()
 	{

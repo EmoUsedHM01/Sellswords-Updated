@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/footwork", function ( o )
-{
-	o.onAfterUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/footwork", function ( q ) {
+
+	q.onAfterUpdate = @( __original ) function ( _properties )
 	{
 		this.m.FatigueCost = 10;
 		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]) * -1;
@@ -14,7 +14,7 @@
 			this.m.ActionPointCost = 2;
 		}			
 	};		
-	o.onAdded <- function ()
+	q.onAdded <- function ()
 	{
 		local addPerk = function ( _perk, _row = 0 )
 		{

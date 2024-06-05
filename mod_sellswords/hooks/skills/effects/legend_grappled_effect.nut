@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/legend_grappled_effect", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_grappled_effect", function ( q ) {
+
+	q.getTooltip = @(__original) function()
 	{
 		return [
 			{
@@ -27,7 +27,7 @@
 			}
 		];
 	}	
-	o.onUpdate = function ( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local actor = this.getContainer().getActor();
 		_properties.StaminaMult *= 0.6;
@@ -41,4 +41,4 @@
 			actor.setDirty(true);
 		}
 	}		
-});	
+});

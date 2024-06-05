@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/hand_to_hand", function ( o )
-{	
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/hand_to_hand", function ( q ) {
+
+	q.getTooltip = @( __original ) function ()
 	{
 		local ret = this.getDefaultTooltip();
 		local actor = this.getContainer().getActor();
@@ -44,10 +44,9 @@
 		return ret;
 	};
 	
-	local ws_onAnySkillUsed = o.onAnySkillUsed;
-	o.onAnySkillUsed = function ( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
-		ws_onAnySkillUsed( _skill, _targetEntity, _properties )
+		__original( _skill, _targetEntity, _properties );
 		if (_skill == this && this.getContainer().getActor().getCurrentProperties().IsSpecializedInFists)
 		{
 			_properties.MeleeSkill += 10;

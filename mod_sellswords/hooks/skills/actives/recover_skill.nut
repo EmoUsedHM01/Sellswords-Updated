@@ -1,7 +1,6 @@
-::mods_hookExactClass("skills/actives/recover_skill", function ( o )
-{
-	local getTooltip = o.getTooltip;
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/recover_skill", function ( q ) {
+
+	q.getTooltip = @( __original ) function ()
 	{
 		local actor = this.getContainer().getActor();
 		local fatReduc = actor.getActionPoints() * 5.5;
@@ -30,7 +29,7 @@
 		];
 		return ret;
 	};
-	o.getActionPointCost = function ()
+	q.getActionPointCost = @( __original ) function ()
 	{
 		local actor = this.getContainer().getActor();
 		if (!this.getContainer().hasSkill("perk.crbeforethestorm"))
@@ -43,7 +42,7 @@
 		}
 	}
 
-	o.onBeforeUse = function ( _user, _targetTile )
+	q.onBeforeUse = @( __original ) function ( _user, _targetTile )
 	{
 		if (!this.getContainer().hasSkill("perk.crbeforethestorm"))
 		{
@@ -54,8 +53,8 @@
 			this.m.AP = this.Math.max(0, _user.getActionPoints() - 1);
 		}			
 	}		
-	local onUse = o.onUse;
-	o.onUse = function ( _user, _targetTile )
+
+	q.onUse = @( __original ) function ( _user, _targetTile )
 	{
 		local actor = this.getContainer().getActor();
 		local fatMult = this.m.AP * 0.055;

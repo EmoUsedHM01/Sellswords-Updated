@@ -1,18 +1,17 @@
-::mods_hookExactClass("skills/actives/ignite_firelance_skill", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/ignite_firelance_skill", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.HitChanceBonus = 30;
 		this.m.ActionPointCost = 5;
 		this.m.FatigueCost = 10;
 	}
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		foreach (i, tooltip in ret)
 		{
@@ -25,10 +24,9 @@
 		return ret;
 	}
 
-	local ws_onAnySkillUsed = o.onAnySkillUsed;
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
-		ws_onAnySkillUsed(_skill, _targetEntity, _properties);
+		__original(_skill, _targetEntity, _properties);
 
 		if (_skill == this)
 		{
@@ -45,10 +43,9 @@
 		}
 	}
 
-	local ws_onAfterUpdate = o.onAfterUpdate;
-	o.onAfterUpdate = function(_properties)
+	q.onAfterUpdate = @( __original ) function(_properties)
 	{
-		ws_onAfterUpdate(_properties);
+		__original(_properties);
 
 		if (_properties.IsSpecializedInCrossbows)
 		{
@@ -57,4 +54,4 @@
 		}
 	}
 
-})
+});

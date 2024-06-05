@@ -1,19 +1,18 @@
-::mods_hookExactClass("skills/perks/perk_legend_full_force", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_full_force", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Name = "Immovable Object";
 		this.m.Type = this.Const.SkillType.Perk | this.Const.SkillType.StatusEffect;
 	}
 
-	o.getDescription <- function()
+	q.getDescription <- function()
 	{
 		return "Put your full weight into defending every blow and gain [color=" + ::Const.UI.Color.PositiveValue + "]+10%[/color] of the combined Fatigue modifier from body, head, main hand and off hand as additional Damage.\n• You will gain a weakened \'Steadfast\' effect if the combined Fatigue modifier from body, head and off hand is [color=" + ::Const.UI.Color.PositiveValue + "]50[/color] or more.\n• This effect upgrades to the standard \'Steadfast\' once combined Fatigue is at [color=" + ::Const.UI.Color.PositiveValue + "]65[/color] or more.\n• Grants an additional immunity to being Stunned once the combined Fatigue modifier is at [color=" + ::Const.UI.Color.PositiveValue + "]80[/color] or more, this stacks with the \'Steadfast\' effect.";
 	}		
 
-	o.getTooltip <- function()
+	q.getTooltip <- function()
 	{
 		local tooltip = this.skill.getTooltip();
 
@@ -39,6 +38,7 @@
 		if (mainhand != null)
 		{
 			fat = fat + mainhand.getStaminaModifier();
+			crfat = crfat - mainhand.getStaminaModifier();
 		}
 
 		if (offhand != null)
@@ -63,7 +63,7 @@
 		return tooltip;
 	}
 	
-	o.onUpdate = function( _properties )
+	q.onUpdate = @( __original ) function( _properties )
 	{
 		local fat = 0;
 		local crfat = 0;
@@ -117,4 +117,4 @@
 		}		
 	}
 
-});	
+});

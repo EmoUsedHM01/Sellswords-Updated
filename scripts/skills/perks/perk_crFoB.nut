@@ -3,7 +3,7 @@ this.perk_crFoB <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "perk.crFoB";
-		this.m.Name = "Flurry of Blows";
+		this.m.Name = this.Const.Strings.PerkName.crFoB;
 		this.m.Description = this.Const.Strings.PerkDescription.crFoB;
 		this.m.Icon = "ui/perks/crFoB.png";	
 		this.m.Type = this.Const.SkillType.Perk;

@@ -3,11 +3,11 @@ foreach (script in [
 	"legend_cured_rations_blueprint"
 ])
 {
-	::mods_hookExactClass("crafting/blueprints/mod_legend/food/" + script, function(o) {
-		local ws_create = o.create;
-		o.create = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/food/" + script, function ( q ) {
+	
+		q.create = @(__original) function()
 		{
-			ws_create();
+			__original();
 			this.m.Cost = 100;
 		}
 	})
@@ -22,11 +22,11 @@ foreach (script in [
 	"legend_pudding_blueprint",
 ])
 {
-	::mods_hookExactClass("crafting/blueprints/mod_legend/food/" + script, function(o) {
-		local ws_create = o.create;
-		o.create = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/food/" + script, function ( q ) {
+	
+		q.create = @(__original) function()
 		{
-			ws_create();
+			__original();
 			this.m.Cost = 50;
 		}
 	})

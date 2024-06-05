@@ -1,7 +1,43 @@
-::mods_hookExactClass("skills/actives/legend_eat_pudding_skill", function(o) {
-	::Mod_Sellswords.HookHelper.hookNewEatFoodSystem(o, false);
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_eat_pudding_skill", function ( q ) {
 
-	o.getTooltip = function()
+	q.create = @(__original) function()
+	{
+		__original();
+
+		this.m.Amount = amount;
+		this.m.TurnsLeft = turnLeft;
+		this.m.Icon = "skills/status_effect_93.png";
+		this.m.IconMini = "status_effect_93_mini";
+		this.m.Overlay = "status_effect_93";
+		this.m.Icon = "ui/items/supplies/legend_fresh_fruit.png";
+		this.m.IconDisabled = "ui/items/supplies/legend_fresh_fruit.png";
+	}
+	q.getAmount <- function()
+	{
+		return this.m.Amount;
+	}
+
+	q.addAmount <- function( _a )
+	{
+		this.m.Amount = _a;
+	}
+
+	q.getTurnsLeft <- function()
+	{
+		return this.m.TurnsLeft;
+	}
+
+	q.resetTurns <- function()
+	{
+		this.m.TurnsLeft = turnLeft;
+	}
+
+	q.onAdded = @(__original) function()
+	{
+		this.m.TurnsLeft = turnLeft;
+	}
+
+	q.getTooltip = @( __original ) function()
 	{
 		local amount = this.m.Amount;
 		local pudding;
@@ -80,7 +116,7 @@
 		return ret;
 	}
 
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local target = _targetTile.getEntity();
 

@@ -1,4 +1,4 @@
-::mods_hookExactClass("items/helmets/legendary/ijirok_helmet", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/helmets/legendary/ijirok_helmet", function ( q ) {
 
 	q.create = @(__original) function()
 	{

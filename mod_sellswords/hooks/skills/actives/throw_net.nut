@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/throw_net", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/throw_net", function( q ) {
 	
-	o.onAfterUpdate = function( _properties )
+	q.onAfterUpdate = @( __original ) function( _properties )
 	{
 		this.m.FatigueCostMult = _properties.IsSpecializedInNets ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 
@@ -15,7 +15,7 @@
 		}
 	}
 
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local targetEntity = _targetTile.getEntity();
 		local rd = this.Math.rand(1, 100);

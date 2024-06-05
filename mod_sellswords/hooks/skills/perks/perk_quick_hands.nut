@@ -1,7 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_quick_hands", function ( o )
-{
-	local getItemActionCost = o.getItemActionCost;
-	o.getItemActionCost = function ( _items )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_quick_hands", function ( q ) {
+
+	q.getItemActionCost = @( __original ) function ( _items )
 	{
 		if (this.getContainer().hasSkill("perk.quick_hands"))
 		{

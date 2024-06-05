@@ -1,5 +1,6 @@
-::mods_hookExactClass("entity/world/settlements/buildings/alchemist_building", function(o) {
-	o.onUpdateShopList = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/alchemist_building", function( q ) {
+
+	q.onUpdateShopList = @( __original ) function()
 	{
 		local list = [
 			{

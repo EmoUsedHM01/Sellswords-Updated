@@ -8,12 +8,11 @@ foreach (script in [
 	"trader_scenario",
 ])
 {
-	::mods_hookExactClass("scenarios/world/" + script, function ( o )
-	{
-		local create = o.create;
-		o.create = function ()
+	::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/" + script, function ( q ) {
+
+		q.create = @( __original ) function ()
 		{
-			create();
+			__original();
 			this.m.Difficulty = 1;
 		}	
 	});	
@@ -31,12 +30,11 @@ foreach (script in [
 	"tutorial_scenario",
 ])
 {
-	::mods_hookExactClass("scenarios/world/" + script, function ( o )
-	{
-		local create = o.create;
-		o.create = function ()
+	::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/" + script, function ( q ) {
+
+		q.create = @( __original ) function ()
 		{
-			create();
+			__original();
 			this.m.Difficulty = 2;
 		}	
 	});	

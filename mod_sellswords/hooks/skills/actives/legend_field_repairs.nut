@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/actives/legend_field_repairs", function(o) {
-	
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_field_repairs", function ( q ) {	
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "Repair 20% of missing armor, costs 3 Armor Parts for every 10 missing armor.";
 		this.m.ActionPointCost = 6;
@@ -11,7 +10,7 @@
 		this.m.RepairPerTool = 3.33;
 	}
 	
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
 		local ret = this.getDefaultUtilityTooltip();
 		ret.push({
@@ -31,7 +30,7 @@
 	}
 	
 	
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local target = _targetTile.getEntity();
 		local head = target.getHeadItem();

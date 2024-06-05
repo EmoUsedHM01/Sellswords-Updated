@@ -1,5 +1,6 @@
-::mods_hookExactClass("entity/world/settlements/buildings/weaponsmith_building", function(o) {
-	o.onUpdateShopList = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/weaponsmith_building", function ( q ) {
+
+	q.onUpdateShopList = @( __original ) function()
 	{
 		local list = [
 			{
@@ -431,4 +432,4 @@
 		this.m.Settlement.onUpdateShopList(this.m.ID, list);
 		this.fillStash(list, this.m.Stash, 1.25, false);
 	}
-})
+});

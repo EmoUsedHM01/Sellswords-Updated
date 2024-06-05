@@ -1,19 +1,18 @@
-::mods_hookExactClass("skills/effects/legend_safeguarding_effect", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_safeguarding_effect", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "This character\'s guard is down while safeguarding";
 	}
 
-	o.onUpdate = function ( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		// remove the downsides
 	}
 
-	o.getTooltip = function ()
+	q.getTooltip = @(__original) function()
 	{
 		return [
 			{
@@ -28,4 +27,4 @@
 			}
 		];
 	}		
-});	
+});

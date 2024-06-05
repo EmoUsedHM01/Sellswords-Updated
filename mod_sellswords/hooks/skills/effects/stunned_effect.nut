@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/stunned_effect", function ( o )
-{
-	o.getTooltip <- function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/stunned_effect", function ( q ) {
+
+	q.getTooltip <- function()
 	{
 		return [
 			{
@@ -27,7 +27,7 @@
 			}
 		];
 	}		
-	o.onAdded = function ()
+	q.onAdded = @(__original) function()
 	{
 		local skill = this.getContainer().getSkillByID("effects.shieldwall");
 		local steel = this.getContainer().getSkillByID("effects.steel_brow");
@@ -92,10 +92,10 @@
 			this.m.IsGarbage = true;
 		}
 	};
-	local onUpdate = o.onUpdate;
-	o.onUpdate = function( _properties )
+
+	q.onUpdate = @(__original) function( _properties )
 	{
-		onUpdate(_properties);
+		__original(_properties);
 		if (this.getContainer().hasSkill("perk.crresilient"))
 		{
 			_properties.MeleeDefenseMult *= 0.74;

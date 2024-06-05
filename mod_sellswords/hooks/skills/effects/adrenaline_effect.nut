@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/adrenaline_effect", function ( o )
-{	
-	o.onTurnStart = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/adrenaline_effect", function ( q ) {	
+
+	q.onTurnStart = @(__original) function()
 	{
 		if (--this.m.TurnsLeft <= 0)
 		{
@@ -13,7 +13,7 @@
 			}
 		}
 	};
-	o.onUpdate = function ( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		if (this.m.TurnsLeft != 0)
 		{

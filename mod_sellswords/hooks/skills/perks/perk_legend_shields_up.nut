@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_legend_shields_up", function ( o )
-{
-	o.onCombatStarted = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_shields_up", function ( q ) {
+
+	q.onCombatStarted = @( __original ) function ()
 	{
 		this.skill.onCombatStarted();
 		local allies = this.Tactical.Entities.getInstancesOfFaction(this.getContainer().getActor().getFaction());

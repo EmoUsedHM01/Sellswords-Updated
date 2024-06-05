@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_sundering_strikes", function ( o )
-{
-	o.onUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_sundering_strikes", function ( q ) {
+
+	q.onUpdate = @( __original ) function ( _properties )
 	{
 		local actor = this.getContainer().getActor();
 		local weapon = actor.getMainhandItem();

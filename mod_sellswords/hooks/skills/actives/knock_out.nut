@@ -1,6 +1,5 @@
-::mods_hookExactClass("skills/actives/knock_out", function ( o )
-{
-	o.onUse = function ( _user, _targetTile )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/knock_out", function ( q ) {
+	q.onUse = @( __original ) function ( _user, _targetTile )
 	{
 		this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectBash);
 		local success = this.attackEntity(_user, _targetTile.getEntity());
@@ -34,4 +33,4 @@
 		}
 		return success;
 	}
-});	
+});

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_berserker_background", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_berserker_background", function ( q ) {
 	q.getTooltip = @(__original) function()
 	{
 		local ret = this.character_background.getTooltip();

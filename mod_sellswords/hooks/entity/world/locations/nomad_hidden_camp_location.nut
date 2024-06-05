@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/nomad_hidden_camp_location", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/nomad_hidden_camp_location", function ( q ) {
 
 	q.create = @(__original) function()
 	{

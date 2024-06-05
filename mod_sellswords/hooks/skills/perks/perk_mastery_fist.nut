@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_mastery_fist", function ( o )
-{
-	o.onAfterUpdate <- function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_mastery_fist", function ( q ) {
+
+	q.onAfterUpdate <- function ( _properties )
 	{
 		local handToHand = this.getContainer().getSkillByID("actives.hand_to_hand");
 
@@ -23,6 +23,4 @@
 			kick.m.ActionPointCost -= 1;
 		}
 	}
-	
 });
-

@@ -1,7 +1,6 @@
-::mods_hookExactClass("entity/world/settlements/buildings/armorsmith_building", function(o) 
-{
-	local fillStash = ::mods_getMember(o, "fillStash");
-	o.fillStash<- function(_list, _stash, _priceMult, _allowDamagedEquipment = false)
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/armorsmith_building", function ( q ) {
+
+	q.fillStash = @( __original ) function(_list, _stash, _priceMult, _allowDamagedEquipment = false)
 	{
 		_list.extend([
 		{
@@ -36,6 +35,6 @@
 		}
 		]);
 		
-		fillStash(_list, _stash, 1.25, false);
+		__original( _list, _stash, _priceMult, _allowDamagedEquipment = true );
 	}		
 });

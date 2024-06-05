@@ -1,6 +1,6 @@
-::mods_hookNewObject("entity/world/entity_manager", function(o) 
-{
-	o.manageAIMercenaries = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/entity_manager", function ( q ) {
+
+	q.manageAIMercenaries = @( __original ) function()
 	{
 		local garbage = [];
 
@@ -205,7 +205,7 @@
 		}
 	}
 	
-	o.manageAIFreeCompanies <- function()
+	q.manageAIFreeCompanies = @( __original ) function()
 	{
 		if (::Mod_Sellswords.EnableEnemySS)
 		{
@@ -434,4 +434,4 @@
 			}
 		}
 	}
-})
+});

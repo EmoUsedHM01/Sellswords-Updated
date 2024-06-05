@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/traits/old_trait", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/traits/old_trait", function ( q ) {
 	
 	q.getTooltip = @(__original) function()
 	{

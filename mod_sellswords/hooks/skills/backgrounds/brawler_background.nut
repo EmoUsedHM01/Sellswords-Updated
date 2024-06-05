@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/brawler_background", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/brawler_background", function ( q ) {
 
 	q.onChangeAttributes = @(__original) function()
 	{

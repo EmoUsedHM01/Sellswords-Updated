@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/shieldwall_effect", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/shieldwall_effect", function ( q ) {
+
+	q.getTooltip = @(__original) function()
 	{
 		local bonus = this.getBonus();
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
@@ -58,9 +58,9 @@
 		}
 
 		return tooltip;
-	};
+	}
 	
-	o.onAfterUpdate <- function ( _properties )
+	q.onAfterUpdate <- function ( _properties )
 	{
 		local dr = 100;
 
@@ -70,5 +70,5 @@
 		}
 
 		_properties.DamageReceivedTotalMult *= dr * 0.01;
-	};
+	}
 });

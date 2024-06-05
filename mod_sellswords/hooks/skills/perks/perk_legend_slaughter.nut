@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_legend_slaughter", function ( o )
-{
-	o.getBleeders <- function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_slaughter", function ( q ) {
+
+	q.getBleeders <- function()
 	{
 		if (!("Entities" in this.Tactical))
 		{
@@ -34,9 +34,9 @@
 		return bleeders;		
 	}
 
-	o.onUpdate <- function( _properties )
+	q.onUpdate <- function( _properties )
 	{
 		_properties.Bravery += 2 * this.getBleeders();
 		_properties.Initiative += 2 * this.getBleeders();
 	}	
-});	
+});

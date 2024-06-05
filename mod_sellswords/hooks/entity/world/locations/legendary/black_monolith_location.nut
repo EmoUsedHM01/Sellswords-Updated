@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/legendary/black_monolith_location", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/legendary/black_monolith_location", function ( q ) {
 
 	q.onSpawned = @(__original) function()
 	{

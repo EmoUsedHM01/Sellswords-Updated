@@ -1,5 +1,6 @@
-::mods_hookExactClass("skills/effects/goblin_grunt_potion_effect", function(o) {
-	o.getTooltip = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/goblin_grunt_potion_effect", function( q ) {
+
+	q.getTooltip = @(__original) function()
 	{
 		return [
 			{
@@ -32,4 +33,4 @@
 			}
 		];
 	}
-})
+});

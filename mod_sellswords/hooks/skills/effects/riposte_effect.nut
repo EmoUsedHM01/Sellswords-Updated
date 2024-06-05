@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/riposte_effect", function ( o )
-{
-	o.onAnySkillUsed = function ( _skill, _targetEntity, _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/riposte_effect", function ( q ) {
+
+	q.onAnySkillUsed = @(__original) function( _skill, _targetEntity, _properties )
 	{
 		if (this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() != this.getContainer().getActor().getID())
 		{
@@ -14,5 +14,5 @@
 				_properties.MeleeSkill -= 15;
 			}
 		}
-	};
-});	
+	}
+});

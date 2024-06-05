@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/legend_veteran_levels_effect", function ( o )
-{
-	o.onUpdateLevel = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_veteran_levels_effect", function ( q ) {
+
+	q.onUpdateLevel = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 
@@ -33,5 +33,5 @@
 				}
 			}
 		}
-	};
+	}
 });	

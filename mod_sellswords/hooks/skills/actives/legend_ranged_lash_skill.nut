@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_ranged_lash_skill", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_ranged_lash_skill", function ( q ) {
 
 	q.getTooltip = @( __original ) function()
 	{

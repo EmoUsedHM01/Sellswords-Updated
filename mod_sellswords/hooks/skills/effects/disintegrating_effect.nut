@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/effects/disintegrating_effect", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/disintegrating_effect", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original()
 
 		this.m.Damage = 33;
 	}

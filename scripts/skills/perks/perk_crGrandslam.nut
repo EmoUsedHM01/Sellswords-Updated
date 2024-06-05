@@ -4,7 +4,7 @@ this.perk_crGrandslam <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "perk.crGrandslam";
-		this.m.Name = "Grand Slam";
+		this.m.Name = this.Const.Strings.PerkName.crGrandslam;
 		this.m.Description = this.Const.Strings.PerkDescription.crGrandslam;
 		this.m.Icon = "ui/perks/crGrandslam.png";
 		this.m.Type = this.Const.SkillType.Perk;

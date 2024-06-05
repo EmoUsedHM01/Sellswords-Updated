@@ -1,12 +1,13 @@
-::mods_hookExactClass("skills/effects/legend_hexe_ichor_potion_effect", function(o) {
-	o.m.SkillsUsedCount <- 0;
-	o.m.MalusPerCount <- 15;
-	o.m.IsSpent <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_hexe_ichor_potion_effect", function ( q ) {
 
-	local ws_create = o.create;
-	o.create = function()
+	q.m.SkillsUsedCount <- 0;
+	q.m.MalusPerCount <- 15;
+	q.m.IsSpent <- false;
+
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.TurnsLeft = 3;
 		this.m.Name = "Perfect Focus";
@@ -14,12 +15,12 @@
 		this.m.Type = this.Const.SkillType.StatusEffect;
 	}
 
-	o.getDescription = function()
+	q.getDescription = @(__original) function()
 	{
 		return this.skill.getDescription();
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		local tooltip = this.skill.getTooltip();
 		if (this.m.SkillsUsedCount > 0)
@@ -64,7 +65,7 @@
 		return tooltip;
 	}
 
-	o.onUpdate = function(_properties)
+	q.onUpdate = @(__original) function(_properties)
 	{
 		if (this.getContainer().hasSkill("effects.perfect_focus"))
 		{
@@ -86,19 +87,19 @@
 		}
 	}
 
-	o.onAdded = function()
+	q.onAdded = @(__original) function()
 	{
 		this.m.TurnsLeft = 3;
 	}
 
-	o.onRemoved <- function()
+	q.onRemoved <- function()
 	{
 		if (!::Is_PTR_Exist) return;
 
 		this.getContainer().add(this.new("scripts/skills/effects/ptr_exhausted_effect_severe"));
 	}
 
-	o.onAnySkillExecuted <- function(_skill, _targetTile, _targetEntity, _forFree)
+	q.onAnySkillExecuted <- function(_skill, _targetTile, _targetEntity, _forFree)
 	{
 		if (this.Tactical.TurnSequenceBar.getActiveEntity() != null && this.Tactical.TurnSequenceBar.getActiveEntity().getID() == this.getContainer().getActor().getID())
 		{
@@ -106,12 +107,12 @@
 		}
 	}
 
-	o.getMalus <- function()
+	q.getMalus <- function()
 	{
 		return this.m.SkillsUsedCount * this.m.MalusPerCount;
 	}
 	
-	o.onTurnEnd = function()
+	q.onTurnEnd = @(__original) function()
 	{
 		this.m.SkillsUsedCount = this.Math.max(1, this.m.SkillsUsedCount - 1);	
 		if (--this.m.TurnsLeft <= 0)
@@ -119,4 +120,4 @@
 			this.removeSelf();
 		}
 	}	
-})
+});

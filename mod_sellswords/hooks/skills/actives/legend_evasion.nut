@@ -1,15 +1,14 @@
-::mods_hookExactClass("skills/actives/legend_evasion", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_evasion", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 30;
 	}
 
-	o.onAfterUpdate <- function ( _properties )
+	q.onAfterUpdate <- function ( _properties )
 	{
 		local frkz = this.getContainer().hasSkill("perk.crFurinkazan") && !this.getContainer().hasSkill("perk.legend_tumble");
 		this.m.FatigueCostMult = _properties.IsFleetfooted || frkz ? 0.5 : 1.0;

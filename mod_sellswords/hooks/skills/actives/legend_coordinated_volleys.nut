@@ -1,5 +1,6 @@
-::mods_hookExactClass("skills/actives/legend_coordinated_volleys", function(o) {	
-	o.getTooltip = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_coordinated_volleys", function ( q ) {
+
+	q.getTooltip = @( __original ) function()
 	{
 		local tooltip = this.skill.getDefaultUtilityTooltip();
 		tooltip.extend([

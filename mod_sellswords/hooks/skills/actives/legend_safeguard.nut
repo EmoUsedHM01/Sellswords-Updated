@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/legend_safeguard", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_safeguard", function ( q ) {
+
+	q.getTooltip = @( __original ) function ()
 	{
 		local ret = this.skill.getDefaultUtilityTooltip();
 		ret.push({
@@ -10,5 +10,5 @@
 			text = "Applies Safeguard to someone, increasing their defenses by [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color]"
 		});
 		return ret;
-	}		
-});	
+	}
+});

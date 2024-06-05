@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_voulge_decapitate", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_voulge_decapitate", function ( q ) {
 
 	q.create = @( __original ) function()
 	{

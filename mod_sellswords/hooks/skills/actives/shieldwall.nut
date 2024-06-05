@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/shieldwall", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/shieldwall", function ( q ) {
+
+	q.getTooltip = @( __original ) function ()
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local mult = 1.0;

@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/adrenaline_skill", function ( o )
-{	
-	o.onAfterUpdate <- function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/adrenaline_skill", function ( q ) {	
+
+	q.onAfterUpdate <- function ( _properties )
 	{
 		local rac = this.getContainer().getActor().getSkills().hasSkill("effects.crorcbehemoth_potion");
 

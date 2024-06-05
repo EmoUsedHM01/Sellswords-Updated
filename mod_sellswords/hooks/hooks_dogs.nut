@@ -4,11 +4,11 @@ foreach(script in [
 	"wardog",
 ])
 {
-	::mods_hookExactClass("entity/tactical/" + script, function(o) {
-		local onInit = o.onInit;
-		o.onInit = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/" + script, function ( q ) {
+
+		q.onInit = @( __original ) function()
 		{
-			onInit();
+			__original();
 
 			if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 50)
 			{

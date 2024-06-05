@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/strike_skill", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/strike_skill", function ( q ) {
 
 	q.m.ApplyBonusToBodyPart <- -1;
 

@@ -1,19 +1,17 @@
-::mods_hookExactClass("skills/actives/legend_dog_master", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_dog_master", function ( q ) {
 	
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "Use food to restore a friendly dog's morale";
 		this.m.FatigueCost = 15;
 		this.m.MaxRange = 7;
 	}
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		ret.push({
 			id = 7,
@@ -25,10 +23,9 @@
 		return ret;
 	}
 
-	local ws_onVerifyTarget = o.onVerifyTarget;
-	o.onVerifyTarget = function( _originTile, _targetTile )
+	q.onVerifyTarget = @( __original ) function( _originTile, _targetTile )
 	{
-		if (!ws_onVerifyTarget(_originTile, _targetTile))
+		if (!__original(_originTile, _targetTile))
 		{
 			return false;
 		}
@@ -36,10 +33,9 @@
 		return this.getContainer().getActor().isAlliedWith(_targetTile.getEntity());
 	}
 
-	local ws_onUse = o.onUse;
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
-		local ret = ws_onUse(_user, _targetTile);
+		local ret = __original(_user, _targetTile);
 
 		if (ret)
 		{
@@ -51,4 +47,4 @@
 		return ret;
 	}
 
-})
+});

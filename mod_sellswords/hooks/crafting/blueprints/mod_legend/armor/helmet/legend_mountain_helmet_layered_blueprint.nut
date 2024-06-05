@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/armor/helmet/legend_mountain_helmet_layered_blueprint", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/armor/helmet/legend_mountain_helmet_layered_blueprint", function ( q ) {
 
 	q.create = @(__original) function()
 	{

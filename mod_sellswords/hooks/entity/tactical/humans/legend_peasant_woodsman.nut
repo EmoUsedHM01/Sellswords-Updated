@@ -1,9 +1,8 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_woodsman", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_woodsman", function( q ) {
 
 	q.onInit = @( __original ) function()
 	{
-		this.human.onInit();
+		this.human.__original();
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.LegendPeasantWoodsman);
 		this.m.ActionPoints = b.ActionPoints;
@@ -238,4 +237,4 @@
 			}
 		}			
 	}		
-});	
+});

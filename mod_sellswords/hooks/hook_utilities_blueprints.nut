@@ -5,12 +5,12 @@ foreach (script in [
 	"legend_stollwurm_blood_flask_blueprint"
 ])
 {
-	::mods_hookExactClass("crafting/blueprints/mod_legend/utilities/" + script, function(o) {
-		local ws_create = o.create;
-		o.create = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/utilities/" + script, function ( q ) {
+	
+		q.create = @(__original) function()
 		{
-			ws_create();
+			__original();
 			this.m.Cost = 300;
 		}
-	})
+	});
 }

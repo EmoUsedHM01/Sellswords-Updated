@@ -1,19 +1,17 @@
-::mods_hookExactClass("skills/actives/legend_bandage", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_bandage", function ( q ) {
 
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "Save yourself or another character from bleeding to death by applying pressure and provisional bandaging to any such wound. Heals 5 hitpoints instantly and 5 hitpoints next turn. Cost 10 Medicine to use.";
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 10;
 	}
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		ret.push({
 			id = 7,
@@ -26,7 +24,7 @@
 	}
 	
 	//local onVerifyTarget = o.onVerifyTarget;
-	o.onVerifyTarget = function( _originTile, _targetTile )
+	q.onVerifyTarget = @( __original ) function( _originTile, _targetTile )
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
 		{
@@ -80,8 +78,8 @@
 		return false;
 	}
 
-	local onUse = o.onUse;
-	o.onUse = function( _user, _targetTile )
+
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local target = _targetTile.getEntity();
 		target.setHitpoints(this.Math.min(target.getHitpointsMax(), target.getHitpoints() + 5));
@@ -114,4 +112,4 @@
 		return onUse( _user, _targetTile );
 	}
 
-})
+});

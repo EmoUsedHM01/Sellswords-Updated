@@ -1,16 +1,15 @@
-::mods_hookExactClass("skills/actives/legend_field_triage", function(o) {
-	
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_field_triage", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "Heal a unit, costs 3 medicine for every 4 health. Heals up to 20% missing health per use";
 		this.m.ActionPointCost = 6;
 		this.m.MaxLevelDifference = 1;
 	}
 	
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
 		local ret = this.getDefaultUtilityTooltip();
 		ret.push({
@@ -29,7 +28,7 @@
 		return ret;
 	}
 	
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local meds = this.World.Assets.getMedicine();
 		local target = _targetTile.getEntity();
@@ -49,4 +48,4 @@
 		target.setHitpoints(this.Math.min(target.getHitpointsMax(), target.getHitpoints() + finalHeal));
 		return true;
 	}
-})
+});

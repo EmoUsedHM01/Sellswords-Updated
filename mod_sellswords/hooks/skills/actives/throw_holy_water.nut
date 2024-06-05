@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/actives/throw_holy_water", function(o) {
-	
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/throw_holy_water", function( q ) {
+
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 		local ammo = this.getAmmo();
 
 		if (ammo > 0)
@@ -28,17 +27,17 @@
 		return ret;
 	}
 	
-	o.isHidden <- function()
+	q.isHidden <- function()
 	{
 		return this.getContainer().getActor().getCurrentProperties().IsSpecializedInNets;
 	}
 
-	o.isUsable <- function()
+	q.isUsable <- function()
 	{
 		return !this.Tactical.isActive() || this.skill.isUsable() && this.getAmmo() > 0 && !this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions());
 	}
 
-	o.getAmmo <- function()
+	q.getAmmo <- function()
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 
@@ -50,7 +49,7 @@
 		return item.getAmmo();
 	}
 
-	o.consumeAmmo <- function()
+	q.consumeAmmo <- function()
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 
@@ -60,7 +59,7 @@
 		}
 	}
 	
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local targetEntity = _targetTile.getEntity();
 
@@ -77,10 +76,10 @@
 		this.consumeAmmo();
 	}
 	
-	o.onAfterUpdate = function( _properties )
+	q.onAfterUpdate = @( __original ) function( _properties )
 	{
 		this.m.FatigueCostMult = (_properties.IsSpecializedInThrowing || _properties.IsSpecializedInNets) ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 		this.m.MaxRange = _properties.IsSpecializedInNets ? 4 : 3;
 	}
 
-})
+});

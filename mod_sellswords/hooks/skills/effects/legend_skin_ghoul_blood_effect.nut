@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_skin_ghoul_blood_effect", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_skin_ghoul_blood_effect", function ( q ) {
 
 	q.m.SoundsA <- [
 		"sounds/combat/cleave_hit_hitpoints_01.wav",

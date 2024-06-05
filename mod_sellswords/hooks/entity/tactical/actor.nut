@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/actor", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/actor", function ( q ) {
 
 	q.onInit = @(__original) function()
 	{
