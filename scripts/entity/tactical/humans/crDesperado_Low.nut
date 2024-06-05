@@ -117,14 +117,21 @@ this.crDesperado_Low <- this.inherit("scripts/entity/tactical/human", {
 		{
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 			this.m.BaseProperties.MeleeSkill += dca;
 			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-			this.m.BaseProperties.RangedSkill += dca;	
-			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.RangedSkill += dca;
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
-			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}			
+			this.m.BaseProperties.Hitpoints += 2 * dca;
+		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 15.0)
+				::Mod_Sellswords.add_direwolf(this.actor, false);
+		}
 	}
 
 	function assignRandomEquipment()

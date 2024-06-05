@@ -21,7 +21,7 @@
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "this character's next attack will decrease targets' defense and resolve."
+			text = "this character\'s next attack will decrease targets' defense and resolve."
 		});
 
 		return tooltip;

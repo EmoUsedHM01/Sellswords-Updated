@@ -126,6 +126,14 @@ Updated both the Reach Advantage perk and the associated effect
 ...\scripts\items\weapons\named\cr_named_orc_mace_2h.nut
 Updated Barb and Orc weapons, their names and file locations, as-well-as adding a new 2h Orc sword
 
+...\gfx\ui\items\consumables\vial_red_01.png
+...\scripts\crafting\blueprints\gain_ap_potion_blueprint.nut
+...\scripts\items\misc\ssu_ap_potion_item.nut
+Adding a new end-game AP potion
+
+...\mod_sellswords\hooks\items\misc\...
+Deleted due to reworked potions
+
 ----------------------------------------------------------------------------------------------------------------------------
 6.5.4 changes
 

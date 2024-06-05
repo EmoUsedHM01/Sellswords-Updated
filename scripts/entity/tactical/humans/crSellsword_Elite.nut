@@ -111,6 +111,21 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 3.0)
+				::Mod_Sellswords.add_serpent(this.actor, false);
+			else if (roll <= 6.0)
+				::Mod_Sellswords.add_spider(this.actor, false);
+			else if (roll <= 9.0)
+				::Mod_Sellswords.add_direwolf(this.actor, false);
+			else if (roll <= 12.0)
+				::Mod_Sellswords.add_ghoul(this.actor, false);
+			else if (roll <= 15.0)
+				::Mod_Sellswords.add_orc(this.actor, false);
+		}
 	}
 
 	function onDeath(_killer, _skill, _tile, _fatalityType)

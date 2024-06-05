@@ -13,18 +13,14 @@
 
 		local dc = this.World.getTime().Days;			
 		local blk = this.Math.rand(1, 100);
+
 		if (dc > 180 && blk >= 80)
-		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockmaster"));
-		}
 		else if(dc > 140 && blk >= 60)
-		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockskilled"));
-		}
 		else if(dc > 100 && blk >= 40)
-		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlocknormal"));
-		}			
+
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -36,11 +32,18 @@
 			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}		
+		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 30.0)
+				::Mod_Sellswords.add_serpent(this.actor, true);
+		}	
 	}
 
-    q.assignRandomEquipment = @( __original ) function()
-    {
+	q.assignRandomEquipment = @( __original ) function()
+	{
 		__original();
 		
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))

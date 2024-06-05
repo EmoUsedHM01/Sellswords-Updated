@@ -5,12 +5,14 @@
 		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBruiser"));
+
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 80)
 		{
 			this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 10;
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 10;
 			this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 10;
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 10;
+
 			if (this.World.getTime().Days >= 160)
 			{
 				this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 10;
@@ -18,6 +20,7 @@
 				this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 10;
 				this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 10;
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+
 				if (this.World.getTime().Days >= 200)
 				{
 					this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 10;
@@ -27,6 +30,7 @@
 				}
 			}
 		}
+
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -38,6 +42,13 @@
 			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;
+		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 20.0)
+				::Mod_Sellswords.add_unhold(this.actor, false);
 		}
 	}
 

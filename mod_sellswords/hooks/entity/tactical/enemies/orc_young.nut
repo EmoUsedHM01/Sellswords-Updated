@@ -12,16 +12,15 @@
 		{
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 			this.m.BaseProperties.MeleeSkill += dca;
 			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-			this.m.BaseProperties.RangedSkill += dca;	
-			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.RangedSkill += dca;
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
-			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}			
+			this.m.BaseProperties.Hitpoints += 2 * dca;
+		}
 	}
-
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		local r;
@@ -148,6 +147,14 @@
 		}			
 
 		this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));			
+	}
+
+	q.onDeath = @(__original) function(_killer, _skill, _tile, _fatalityType)
+	{
+		__original(_killer, _skill, _tile, _fatalityType);
+		local chance = 1.25;
+		local item = "scripts/items/misc/anatomist/orc_sequence_item";
+		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 
 });

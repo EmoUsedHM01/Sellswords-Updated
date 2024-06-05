@@ -1,6 +1,6 @@
 ::mods_hookExactClass("skills/perks/perk_legend_favoured_enemy_master_archer", function( o )
 {
-    // Gotta add a second copy of this because FE Archer overwrites the original onUpdate function
+	// Gotta add a second copy of this because FE Archer overwrites the original onUpdate function
 	local ws_onUpdate = o.onUpdate;
 	o.onUpdate = function( _properties )
 	{

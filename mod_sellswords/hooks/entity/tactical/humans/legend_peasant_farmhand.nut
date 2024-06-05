@@ -85,8 +85,8 @@
 		}			
 	}
 	
-    q.assignRandomEquipment = @( __original ) function()
-    {
+	q.assignRandomEquipment = @( __original ) function()
+	{
 		__original();
 		
 		local dc = this.World.getTime().Days;		
