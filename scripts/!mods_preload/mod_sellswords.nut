@@ -3,7 +3,8 @@
 	Name = "Sellswords Updated",
 	Version = "7.0.2",
 	EnableEnemySS = true,
-	SellswordStrengthMultiplier = 100
+	SellswordStrengthMultiplier = 100,
+	EnableHostileSequences = true
 };
 
 ::Mod_Sellswords.HooksMod <- ::Hooks.register(::Mod_Sellswords.ID, ::Mod_Sellswords.Version, ::Mod_Sellswords.Name);

@@ -9,6 +9,9 @@ Updated a couple bad calls
 ...\scripts\items\misc\ssu_ap_potion_item.nut
 Adjusted the text
 
+...\scripts\!mods_preload\mod_sellswords.nut
+Fixed the fact I didn't add the new Sequence mod config to the mod's stored values
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.0.1 changes
