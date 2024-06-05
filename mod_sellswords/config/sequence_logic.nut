@@ -53,11 +53,10 @@
 
 			if (bro.getBackground().getID() == "background.anatomist")
 				count++;
-
-			if (::World.Assets.getOrigin().getID() == "scenario.anatomists")
-				count *= 2.0;
 		}
 
+		if (::World.Assets.getOrigin().getID() == "scenario.anatomists")
+			count *= 2;
 		
 		local rand = this.Math.rand(1.0, 100.0);
 		this.logInfo("Rolling for potion: " + rand + " vs " + chance * count)
