@@ -6,6 +6,9 @@
 ...\scripts\items\misc\anatomist\orc_warlord_sequence_item.nut
 Updated a couple bad calls
 
+...\scripts\items\misc\ssu_ap_potion_item.nut
+Adjusted the text
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.0.1 changes
