@@ -1,6 +1,7 @@
 7.0.4 changes
 
-...
+...\mod_sellswords\hooks\skills\perks\perk_legend_full_force.nut
+Refractored and MH
 
 ----------------------------------------------------------------------------------------------------------------------------
 
