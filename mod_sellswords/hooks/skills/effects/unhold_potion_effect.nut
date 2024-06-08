@@ -61,7 +61,7 @@
 	{
 		local actor = this.getContainer().getActor().get();
 
-		if (actor != null && !actor.isNull() && actor.isAlive())
+		if (actor != null && actor.isAlive())
 		{
 			actor.setHitpoints(actor.getHitpointsMax());
 			
