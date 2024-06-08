@@ -69,6 +69,13 @@ this.crBanditZweihander <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_sweeping_strikes"));		
 			}		
 		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 15.0)
+				::Mod_Sellswords.add_direwolf(this.actor, true);
+		}
 	}
 
 	function assignRandomEquipment()

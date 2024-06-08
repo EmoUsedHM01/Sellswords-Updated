@@ -1,7 +1,7 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/bandit_raider_low", function(q)
 {
-    q.assignRandomEquipment = @( __original ) function()
-    {
+	q.assignRandomEquipment = @( __original ) function()
+	{
 		__original();		
 		local r = this.Math.rand(0, 7);
 

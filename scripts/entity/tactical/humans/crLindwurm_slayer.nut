@@ -128,7 +128,14 @@ this.crLindwurm_slayer <- this.inherit("scripts/entity/tactical/human", {
 			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}		
+		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 15.0)
+				::Mod_Sellswords.add_direwolf(this.actor, true);
+		}
 	}
 
 	function assignRandomEquipment()

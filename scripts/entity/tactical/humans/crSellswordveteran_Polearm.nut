@@ -164,7 +164,22 @@ this.crSellswordveteran_Polearm <- this.inherit("scripts/entity/tactical/human",
 			{	
 				this.getSprite("accessory_special").setBrush("hexe_leader_trophy");	
 			}			
-		}		
+		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 3.0)
+				::Mod_Sellswords.add_serpent(this.actor, false);
+			else if (roll <= 6.0)
+				::Mod_Sellswords.add_spider(this.actor, false);
+			else if (roll <= 9.0)
+				::Mod_Sellswords.add_direwolf(this.actor, false);
+			else if (roll <= 12.0)
+				::Mod_Sellswords.add_ghoul(this.actor, false);
+			else if (roll <= 15.0)
+				::Mod_Sellswords.add_orc(this.actor, false);
+		}
 	}
 
 	function assignRandomEquipment()

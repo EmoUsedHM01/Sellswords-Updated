@@ -1,36 +1,36 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/knight", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/knight", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
+
 		this.m.Skills.removeByID("perk.perk.hold_out");	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));			
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_haspecialize"));					
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_haspecialize"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crSignaturemove"));
-		local dc = this.World.getTime().Days;			
+
+		local dc = this.World.getTime().Days;
 		local blk = this.Math.rand(1, 100);
+
 		if (dc > 210 && blk >= 85)
-		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockmaster"));
-		}
 		else if(dc > 175 && blk >= 70)
-		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockskilled"));
-		}
 		else if(dc > 140 && blk >= 55)
-		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlocknormal"));
-		}			
+
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 80)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));								
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));
 			this.m.BaseProperties.Stamina += 5;
+
 			if (this.World.getTime().Days >= 120)
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_crFoB"));	
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));						
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));
 				this.m.BaseProperties.Stamina += 5;	
+
 				if (this.World.getTime().Days >= 150)
 				{
 					if (::Is_PTR_Exist)
@@ -38,48 +38,54 @@
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_wears_it_well"));	
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));	
 					}
-																		
-					this.m.BaseProperties.MeleeSkill += 2;			
-					this.m.BaseProperties.MeleeDefense += 2;			
+
+					this.m.BaseProperties.MeleeSkill += 2;
+					this.m.BaseProperties.MeleeDefense += 2;
 					this.m.BaseProperties.RangedDefense += 2;
+
 					if (this.World.getTime().Days >= 180)
 					{
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_crTotalcover"));
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));							
-						this.m.BaseProperties.MeleeSkill += 3;	
-						//this.m.BaseProperties.Initiative += 3;
-						this.m.BaseProperties.Stamina += 5;							
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+						this.m.BaseProperties.MeleeSkill += 3;
+						this.m.BaseProperties.Stamina += 5;
+
 						if (this.World.getTime().Days >= 210)
 						{
 							if (::Is_PTR_Exist)
-							{
-								this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_the_rush_of_battle"));		
-							}	
-											
-							this.m.BaseProperties.MeleeDefense += 3;	
-							//this.m.BaseProperties.Initiative += 2;
-							this.m.BaseProperties.RangedDefense += 3;								
-						}						
-					}		
+								this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_the_rush_of_battle"));
+
+							this.m.BaseProperties.MeleeDefense += 3;
+							this.m.BaseProperties.RangedDefense += 3;
+						}
+					}
 				}
 			}
-		}			
+		}
+
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 			this.m.BaseProperties.MeleeSkill += dca;
 			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-			this.m.BaseProperties.RangedSkill += dca;	
-			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.RangedSkill += dca;
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
-			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}			
+			this.m.BaseProperties.Hitpoints += 2 * dca;
+		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 10.0)
+				::Mod_Sellswords.add_necrosavant(this.actor, true);
+		}
 	}
 
-    q.assignRandomEquipment = @( __original ) function()
-    {
+	q.assignRandomEquipment = @( __original ) function()
+	{
 		__original();
 		
 		local r;
@@ -275,10 +281,8 @@
 	}
 	q.makeMiniboss = @( __original ) function()
 	{
-		if (!__original())
-		{
+		if (!this.actor.makeMiniboss())
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local weapons = [
@@ -320,4 +324,5 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 		return true;
 	}
+
 });

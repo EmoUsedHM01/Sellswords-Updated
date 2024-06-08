@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_poacher", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_poacher", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -72,8 +72,8 @@
 		}			
 	}
 
-    q.assignRandomEquipment = @( __original ) function()
-    {
+	q.assignRandomEquipment = @( __original ) function()
+	{
 		__original();
 		
 		local weapons;
@@ -258,4 +258,5 @@
 			}
 		}							
 	}
+
 });

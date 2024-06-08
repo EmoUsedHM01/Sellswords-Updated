@@ -72,11 +72,51 @@
 				R = 50,
 				P = 1.0,
 				S = "weapons/advancedfirelance"
-			},			
+			},
 			{
 				R = 99,
 				P = 2.0,
 				S = "weapons/named/named_handgonne"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "misc/anatomist/alp_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "misc/anatomist/direwolf_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "misc/anatomist/goblin_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "misc/anatomist/nachzehrer_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "misc/anatomist/orc_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "misc/anatomist/serpent_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "misc/anatomist/unhold_sequence_item"
+			},
+			{
+				R = 95,
+				P = 2.0,
+				S = "misc/anatomist/webknecht_sequence_item"
 			}
 		];
 
@@ -124,4 +164,5 @@
 		this.m.Settlement.onUpdateShopList(this.m.ID, list);
 		this.fillStash(list, this.m.Stash, 1.0, false);
 	}
-})
+
+});

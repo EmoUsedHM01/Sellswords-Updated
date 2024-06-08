@@ -1,7 +1,9 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_longbow", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_longbow", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
+
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
 
 		if (::Is_PTR_Exist)
@@ -22,15 +24,12 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
 
-		//if (::Is_PTR_Exist)
-		//{
-		//	this.m.Skills.addTreeOfEquippedWeapon(5);
-		//}
-
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
-	}		
+	}
+
 });

@@ -129,6 +129,12 @@ this.crHashshashin <- this.inherit("scripts/entity/tactical/human", {
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}
 		
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 15.0)
+				::Mod_Sellswords.add_serpent(this.actor, true);
+		}
 	}
 
 	function onAppearanceChanged( _appearance, _setDirty = true )

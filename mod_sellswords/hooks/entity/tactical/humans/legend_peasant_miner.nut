@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_miner", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_miner", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		this.human.onInit();
@@ -83,8 +83,8 @@
 		}			
 	}
 	
-    q.assignRandomEquipment = @( __original ) function()
-    {
+	q.assignRandomEquipment = @( __original ) function()
+	{
 		__original();
 		
 		local dc = this.World.getTime().Days;		
@@ -234,5 +234,6 @@
 				this.m.Items.equip(helm);				
 			}
 		}				
-	}			
+	}
+			
 });

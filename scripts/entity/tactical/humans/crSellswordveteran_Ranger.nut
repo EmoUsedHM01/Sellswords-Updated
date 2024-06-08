@@ -92,6 +92,19 @@ this.crSellswordveteran_Ranger <- this.inherit("scripts/entity/tactical/human", 
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 3.0)
+				::Mod_Sellswords.add_serpent(this.actor, false);
+			else if (roll <= 6.0)
+				::Mod_Sellswords.add_spider(this.actor, false);
+			else if (roll <= 9.0)
+				::Mod_Sellswords.add_direwolf(this.actor, false);
+			else if (roll <= 15.0)
+				::Mod_Sellswords.add_goblin(this.actor, false);
+		}
 	}
 
 	function assignRandomEquipment()

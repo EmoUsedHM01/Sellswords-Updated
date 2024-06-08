@@ -1,6 +1,9 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/traits/huge_trait", function( q ) {
 
-	q.m.Skills <- [];
+	if (!(::Is_PTR_Exist))
+	{
+		q.m.Skills <- [];
+	}
 
 	q.getTooltip = @(__original) function()
 	{

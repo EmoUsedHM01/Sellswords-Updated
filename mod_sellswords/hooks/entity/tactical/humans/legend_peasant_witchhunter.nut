@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_witchhunter", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_peasant_witchhunter", function( q ) {
 	
 	q.onInit = @( __original ) function()
 	{
@@ -68,8 +68,8 @@
 		}			
 	}
 
-    q.assignRandomEquipment = @( __original ) function()
-    {
+	q.assignRandomEquipment = @( __original ) function()
+	{
 		__original();
 		
 		local weapons;
@@ -228,5 +228,6 @@
 				this.m.Items.equip(helm);				
 			}
 		}	
-	}	
+	}
+
 });	

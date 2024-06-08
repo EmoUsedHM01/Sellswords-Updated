@@ -1,4 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_leader_low", function(q) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_leader_low", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
@@ -24,15 +25,12 @@
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
 		}			
 	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();
 
-		//if (::Is_PTR_Exist)
-		//{
-		//	this.m.Skills.addTreeOfEquippedWeapon(5);
-		//}
-
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
-	}		
+	}
+
 });

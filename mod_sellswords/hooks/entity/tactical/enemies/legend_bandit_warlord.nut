@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/legend_bandit_warlord", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/legend_bandit_warlord", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
@@ -26,11 +26,29 @@
 			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
 			this.m.BaseProperties.Bravery += dca;
 			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}		
+		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 20.0)
+			{
+				if (roll <= 4.0)
+					::Mod_Sellswords.add_ghoul(this.actor, true);
+				else if (roll <= 8.0)
+					::Mod_Sellswords.add_ghoul(this.actor, false);
+				else if (roll <= 12.0)
+					::Mod_Sellswords.add_orc(this.actor, true);
+				else if (roll <= 16.0)
+					::Mod_Sellswords.add_orc(this.actor, false);
+				else if (roll <= 20.0)
+					::Mod_Sellswords.add_necrosavant(this.actor, true);
+			}
+		}
 	}
-	
+
 	q.assignRandomEquipment = @( __original ) function()
-    {
+	{
 		__original();
 		
 		local shields = clone this.Const.Items.NamedShields;
@@ -132,4 +150,5 @@
 			this.m.Items.equip(item);
 		}	
 	}
+
 });

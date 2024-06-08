@@ -1,0 +1,2285 @@
+7.0.5 changes
+
+...
+
+----------------------------------------------------------------------------------------------------------------------------
+
+7.0.4 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_full_force.nut
+Refractored and MH
+
+...\mod_sellswords\hooks\skills\effects\legend_knockback_prepared_effect.nut
+Fixed accidently crashing the game on kill
+
+...\mod_sellswords\hooks\skills\effects\unhold_potion_effect.nut
+Fixed another crash related to not having null checks (ty Rygar)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+7.0.3 changes
+
+...\mod_sellswords\hooks\entity\tactical\humans\assassin.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_madman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\bounty_hunter_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_devil.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_stalker.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_archer_low.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_billman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_crossbow.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_footman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_infantry.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_leader_low.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_longbow.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_pikeman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_slayer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_spearman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_spearman_low.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gladiator.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gunner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_fencer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_halberdier.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_slinger.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_farmhand.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_miner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_monk.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_poacher.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_squire.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_witchhunter.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\mercenary_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\militia_veteran.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_arbalester.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_billman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_footman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_greatsword.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_sergeant.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_cutthroat.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_outlaw.nut
+...\mod_sellswords\hooks\entity\tactical\humans\oathbringer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\officer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\standard_bearer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+Fixed bad original function calls
+
+----------------------------------------------------------------------------------------------------------------------------
+
+7.0.2 changes
+
+...\mod_sellswords\hooks\skills\effects\orc_young_potion_effect.nut
+...\scripts\items\misc\anatomist\goblin_sequence_item.nut
+...\scripts\items\misc\anatomist\orc_sequence_item.nut
+...\scripts\items\misc\anatomist\orc_warlord_sequence_item.nut
+Updated a couple bad calls
+
+...\scripts\items\misc\ssu_ap_potion_item.nut
+Adjusted the text
+
+...\scripts\!mods_preload\mod_sellswords.nut
+Fixed the fact I didn't add the new Sequence mod config to the mod's stored values
+
+----------------------------------------------------------------------------------------------------------------------------
+
+7.0.1 changes
+
+...\mod_sellswords\hooks\skills\traits\huge_trait.nut
+Updated PTR conflict
+
+----------------------------------------------------------------------------------------------------------------------------
+
+7.0.0 changes
+
+...\scripts\!mods_preload\mod_sellswords.nut
+Added FB incompat to conflict list
+
+...\mod_sellswords\hooks\...
+...\mod_sellswords\config\z_background_perks.nut
+Updated to Modern Hooks
+
+...\README.md
+Added a README for the git/ppl
+
+...\mod_sellswords\hooks\skills\actives\batter_skill.nut
+...\mod_sellswords\hooks\skills\actives\crumble_skill.nut
+...\mod_sellswords\hooks\skills\actives\demolish_armor_skill.nut
+...\mod_sellswords\hooks\skills\actives\knock_over_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_ranged_lash_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_ranged_flail_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_voulge_decapitate.nut
+...\mod_sellswords\hooks\skills\actives\legend_voulge_cleave.nut
+...\mod_sellswords\hooks\skills\actives\prong_skill.nut
+...\mod_sellswords\hooks\skills\actives\rupture.nut
+...\mod_sellswords\hooks\skills\actives\strike_skill.nut
+Updated to MH and made all Polearm weapon attacks benefit from Polearm Mastery
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_escape_artist.nut
+Updated to MH and reworked the mechanic and syntax
+
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_battleheart.nut (deleted)
+...\mod_sellswords\hooks_ptr\skills\backgrounds\legend_lonewolf_background.nut
+Updated a clause for Battleheart with the movement based moral checks
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated a few typos and some descriptions
+
+...\scripts\skills\perks\perk_crrangedskill.nut
+Updated a null value
+
+...\mod_sellswords\hooks\scripts\items\tools\throwing_net.nut (deleted)
+...\mod_sellswords\hooks\scripts\items\tools\reinforced_throwing_net.nut (deleted)
+...\mod_sellswords\hooks\skills\effects\net_effect.nut
+...\scripts\skills\actives\throw_net_free.nut
+Net stuff cleanup
+
+...\mod_sellswords\hooks\skills\traits\huge_trait.nut
+Added fat penalty reduction to the Huge trait
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_commander_background.nut
+Added a couple perks that it should really have
+
+...\gfx\ui\perks\crHybridization.png
+...\gfx\ui\perks\crHybridization_bw.png
+...\mod_sellswords\config\y_perk_defs.nut
+...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
+...\scripts\skills\perks\perk_crhybridization.nut
+Added a throwing weapon perk to their tree
+
+...\mod_sellswords\hooks\config\tactical_entity_common.nut
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_skin_ghoul_blood_effect.nut
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_internal_hemorrhage.nut
+...\scripts\skills\perks\perk_crFoB.nut
+...\scripts\skills\perks\perk_crPerseverance.nut
+Bleed changes and fixes
+
+...\scripts\items\legend_armor\plate\cr_named_heraldic_mail.nut
+...\scripts\items\legend_armor\plate\cr_named_noble_mail_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_plated_mail_hauberk.nut
+...\scripts\items\legend_armor\plate\cr_named_sellswords_armor.nut
+Updated bad pathing issues
+
+...\gfx\ui\items\helmets\inventory_legend_helmet_barbarian_berserker_01.png (needed variant tag)
+...\scripts\items\legend_helmets\top\legend_helmet_barbarian_berserker.nut
+Updated bad values
+
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_bolts.nut
+Updated the AP values to +25% from +15%, looking for feedback on this though
+
+...\mod_sellswords\hooks\skills\actives\legend_sling_heavy_stone_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_staff_bash.nut
+...\mod_sellswords\hooks\skills\actives\legend_staff_knock_out.nut
+Updated and fixed calls
+
+...\scripts\skills\effects\crReachadvantage_effect.nut
+...\scripts\skills\perks\perk_crReachadvantage.nut
+Updated both the Reach Advantage perk and the associated effect
+
+...\brushes\chiru_orcs.brush
+...\gfx\chiru_orcs.png
+...\gfx\entity_crorc.png (deleted)
+...\gfx\ui\items\weapons\melee\cr_orc_sword.png
+...\gfx\ui\items\weapons\melee\cr_orc_sword_70x70.png
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_young.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
+...\scripts\entity\tactical\enemies\crOrcVanguard.nut
+...\scripts\entity\tactical\enemies\crOrcWarlock.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_High.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+...\scripts\entity\tactical\humans\crImmortal.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSlayer.nut
+...\scripts\items\weapons\barbarians\crbarbarian_hammer.nut
+...\scripts\items\weapons\barbarians\crbarbarian_mace.nut
+...\scripts\items\weapons\barbarians\twinaxes_t1.nut
+...\scripts\items\weapons\barbarians\twinaxes_t2.nut
+...\scripts\items\weapons\barbarians\twinaxes_t3.nut
+...\scripts\items\weapons\barbarians\twincleavers_t1.nut
+...\scripts\items\weapons\barbarians\twincleavers_t2.nut
+...\scripts\items\weapons\greenskins\cr_goblin_axe.nut
+...\scripts\items\weapons\greenskins\cr_orc_mace.nut
+...\scripts\items\weapons\greenskins\cr_orc_spear.nut
+...\scripts\items\weapons\greenskins\cr_orc_staff.nut
+...\scripts\items\weapons\greenskins\cr_orc_sword.nut
+...\scripts\items\weapons\named\cr_named_orc_mace_2h.nut
+Updated Barb and Orc weapons, their names and file locations, as-well-as adding a new 2h Orc sword
+
+...\gfx\ui\items\consumables\vial_red_01.png
+...\scripts\crafting\blueprints\gain_ap_potion_blueprint.nut
+...\scripts\items\misc\ssu_ap_potion_item.nut
+Adding a new end-game AP potion
+
+...\mod_sellswords\hooks\items\misc\...
+Deleted due to reworked potions
+
+...\gfx\ui\items\consumables\potion_demon.png
+...\gfx\ui\items\consumables\potion_greenwood.png
+...\gfx\ui\items\consumables\potion_redback.png
+...\gfx\ui\items\consumables\potion_rock.png
+...\gfx\ui\items\consumables\potion_skin.png
+...\gfx\ui\items\consumables\potion_stoll.png
+...\gfx\ui\items\consumables\potion_white_direwolf.png
+...\gfx\ui\items\consumables\vial_red_01.png
+New gfx for Legendary Beast potions
+
+...\mod_sellswords\config\sequence_logic.nut
+Added Sequence functions and configs
+
+...\mod_sellswords\hooks\ai\tactical\agents\bandit_melee_agent.nut
+...\mod_sellswords\hooks\ai\tactical\agents\bounty_hunter_melee_agent.nut
+...\mod_sellswords\hooks\ai\tactical\agents\military_melee_agent.nut
+-
+...\mod_sellswords\hooks\entity\tactical\enemies\alp.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_raider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_raider_low.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\direwolf.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\ghoul.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_veteran.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_demon_alp.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_demon_hound.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_greenwood_schrat.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_queen.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_elite.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_redback_spider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_rock_unhold.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_skin_ghoul.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_stollwurm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_vampire_lord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_white_direwolf.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\lindwurm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior_low.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_young.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\sand_golem.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\schrat.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\serpent.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_boss.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy_bodyguard.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\spider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\unhold.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\vampire.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\wolf.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_betrayer.nut
+-
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_madman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\bounty_hunter_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_devil.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_stalker.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gladiator.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gunner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_fencer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_halberdier.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_slinger.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_farmhand.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_miner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_monk.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_poacher.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_witchhunter.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\mercenary_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\militia_veteran.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_arbalester.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_billman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_footman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_greatsword.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_sergeant.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_cutthroat.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_outlaw.nut
+...\mod_sellswords\hooks\entity\tactical\humans\oathbringer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\officer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\standard_bearer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+...\mod_sellswords\hooks\entity\tactical\player.nut
+-
+...\mod_sellswords\hooks\entity\world\settlements\buildings\alchemist_building.nut
+...\mod_sellswords\hooks\items\misc\anatomist\anatomist_potion_item.nut
+...\mod_sellswords\hooks\scenarios\world\anatomists_scenario.nut
+-
+...\mod_sellswords\hooks\skills\actives\legend_gruesome_feast.nut
+-
+...\mod_sellswords\hooks\skills\backgrounds\anatomist_background.nut
+-
+...\mod_sellswords\hooks\skills\effects\alp_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\ancient_priest_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\direwolf_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\fallen_hero_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\geist_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\goblin_grunt_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\goblin_overseer_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\honor_guard_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\hyena_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\lindwurm_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\nachzehrer_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\necrosavant_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_berserker_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_warlord_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_warrior_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_young_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\schrat_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\skeleton_warrior_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\unhold_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\wiederganger_potion_effect.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_escape_artist.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
+-
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_know_their_weakness.nut
+-
+...\scripts\ai\tactical\behaviors\ai_gruesome_feast_sequence.nut
+...\scripts\crafting\blueprints\gain_ap_potion_blueprint.nut
+...\scripts\entity\tactical\humans\crBanditleaderwolf.nut
+...\scripts\entity\tactical\humans\crBanditSergeant.nut
+...\scripts\entity\tactical\humans\crBanditZweihander.nut
+...\scripts\entity\tactical\humans\crBarbarianChampionhigh.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_High.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+...\scripts\entity\tactical\humans\crBarbarianZweihander.nut
+...\scripts\entity\tactical\humans\crBarbhunter.nut
+...\scripts\entity\tactical\humans\crBaron.nut
+...\scripts\entity\tactical\humans\crBaron02.nut
+...\scripts\entity\tactical\humans\crDesperado.nut
+...\scripts\entity\tactical\humans\crDesperado_High.nut
+...\scripts\entity\tactical\humans\crDesperado_Low.nut
+...\scripts\entity\tactical\humans\crDesperado_Weak.nut
+...\scripts\entity\tactical\humans\crHashshashin.nut
+...\scripts\entity\tactical\humans\crHashshashin_High.nut
+...\scripts\entity\tactical\humans\crHashshashin_Low.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crKnight.nut
+...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
+...\scripts\entity\tactical\humans\crMercenaryranged.nut
+...\scripts\entity\tactical\humans\crOathbringer.nut
+...\scripts\entity\tactical\humans\crPeasantminstrel.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSellsword_Banner.nut
+...\scripts\entity\tactical\humans\crSellsword_Elite.nut
+...\scripts\entity\tactical\humans\crSellsword_Lieutenant.nut
+...\scripts\entity\tactical\humans\crSellsword_Polearm.nut
+...\scripts\entity\tactical\humans\crSellsword_Ranger.nut
+...\scripts\entity\tactical\humans\crSellsword_Sergeant.nut
+...\scripts\entity\tactical\humans\crSellsword_Tank.nut
+...\scripts\entity\tactical\humans\crSellswordveteran.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Polearm.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Ranger.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Tank.nut
+...\scripts\entity\tactical\humans\crSlayer.nut
+...\scripts\entity\tactical\humans\crSquire.nut
+...\scripts\entity\tactical\humans\crSquire_normal.nut
+...\scripts\entity\tactical\humans\crSquireFencer.nut
+...\scripts\entity\tactical\humans\crStandardbearer.nut
+-
+...\scripts\items\misc\anatomist\alp_sequence_item.nut
+...\scripts\items\misc\anatomist\demon_alp_sequence_item.nut
+...\scripts\items\misc\anatomist\direwolf_sequence_item.nut
+...\scripts\items\misc\anatomist\goblin_sequence_item.nut
+...\scripts\items\misc\anatomist\greenwood_schrat_sequence_item.nut
+...\scripts\items\misc\anatomist\lindwurm_sequence_item.nut
+...\scripts\items\misc\anatomist\nachzehrer_sequence_item.nut
+...\scripts\items\misc\anatomist\necrosavant_lord_sequence_item.nut
+...\scripts\items\misc\anatomist\necrosavant_sequence_item.nut
+...\scripts\items\misc\anatomist\orc_sequence_item.nut
+...\scripts\items\misc\anatomist\orc_warlord_sequence_item.nut
+...\scripts\items\misc\anatomist\redback_sequence_item.nut
+...\scripts\items\misc\anatomist\rock_unhold_sequence_item.nut
+...\scripts\items\misc\anatomist\schrat_sequence_item.nut
+...\scripts\items\misc\anatomist\serpent_sequence_item.nut
+...\scripts\items\misc\anatomist\skin_ghoul_sequence_item.nut
+...\scripts\items\misc\anatomist\stollwurm_sequence_item.nut
+...\scripts\items\misc\anatomist\unhold_sequence_item.nut
+...\scripts\items\misc\anatomist\webknecht_sequence_item.nut
+...\scripts\items\misc\anatomist\white_direwolf_sequence_item.nut
+-
+...\scripts\items\misc\anatomist\crdemonalp_potion_item.nut (deleted v)
+...\scripts\items\misc\anatomist\crdemonhound_potion_item.nut
+...\scripts\items\misc\anatomist\crfallenbetrayer_potion_item.nut
+...\scripts\items\misc\anatomist\crgreenschrat_potion_item.nut
+...\scripts\items\misc\anatomist\crleaderhexe_potion_item.nut
+...\scripts\items\misc\anatomist\crnecrosavantlord_potion_item.nut
+...\scripts\items\misc\anatomist\crorcbehemoth_potion_item.nut
+...\scripts\items\misc\anatomist\crorcelite_potion_item.nut
+...\scripts\items\misc\anatomist\crreadbackwebknecht_potion_item.nut
+...\scripts\items\misc\anatomist\crrockunhold_potion_item.nut
+...\scripts\items\misc\anatomist\crskinnachzehrer_potion_item.nut
+...\scripts\items\misc\anatomist\crstollwurm_potion_item.nut
+...\scripts\items\misc\anatomist\crwhitedirewolf_potion_item.nut
+...\scripts\items\misc\anatomist\crzombieswordmaster_potion_item.nut (everything upto here)
+-
+...\scripts\items\misc\ssu_ap_potion_item.nut
+-
+...\scripts\skills\actives\howl_player.nut
+...\scripts\skills\effects\player_levitate.nut
+...\scripts\skills\racial\direwolf_player_racial.nut
+
+Wow, that was a lot huh?
+It definitely took a while to get it all working so hopefully it's something that people enjoy using, although any feedback, positive or negative, will be listened to regarding this new system.
+While this isn't the all inclusive list, it covers pretty much everything that was added with the Sequence overhaul. (A few deleted files aren't listed but Abyss can figure that one out)
+This is essentially a comprehensive overhaul of the old potion system that the Anatomist Origin had.
+Sequences are reworked potions, slightly stronger on average but you're limited to a single Sequence per bro.
+Beware! Enemies can also have Sequences, although the chance is fairly low. If you're not a fan I added an option to disable it for enemies in the mod configs.
+You obtain these by either buying them at Alchemists or from having an Anatomist in your roster.
+Each Anatomist will increase the odds at harvesting a Sequence from a suitable slain enemy.
+Playing the Anatomist Origin will not only double that chance overall, but also provides each bro you recruit with the Resilient perk, perfect for any aspiring mutants.
+Hopefully with this in place, the game should feel a little different if you decide to pursue mutations.
+If you don't, then if you disable the option for enemies to spawn with them, the gameplay shouldn't be affected in any major way.
+Hopefully you all enjoy the update <3
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.4 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
+Bad sloppy Emo
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.3 changes
+
+...\mod_sellswords\hooks\skills\actives\disarm_skill.nut
+Added a null check on entities
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_assassin_commander_background.nut
+Added MA spec to maintain consistency
+
+...\mod_sellswords\load.nut
+...\mod_sellswords\hooks_breditor
+...\ui\mods\mod_ssu_breditor_add_on.js
+...\ui\mods\mod_nggh_breditor_add_on.js
+...\ui\mods\mod_ptr_breditor_add_on.js
+...\ui\mods\mod_ptr_and_nggh_breditor_add_on.js
+Did a complete rewrite to the Breditor hooks, much nicer now
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
+Updated some weird values
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.2 changes
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated a few typos and incorrect values
+
+...\scripts\skills\actives\break_free_skill.nut
+Updated the tooltip and some bad values
+
+...\mod_sellswords\hooks\items\weapons\scimitar.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
+...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_saif.nut
+Made sure the weapon types now appear
+
+...\mod_sellswords\hooks\items\weapons\oriental\firelance.nut
+Edited the ammo stats, was the same as the Advanced Firelance for some reason
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.1 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_knife_skill.nut
+Fixed the armour pen not existing
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.5.0 changes
+
+...\scripts\!mods_preload\mod_sellswords.nut
+Moved to Modern Hooks
+
+...\mod_sellswords\hooks\skills\perks\perk_sprint.nut (deleted)
+Removed redundant Sprint hook (Perk is now coupled with climb into Athlete)
+
+...\scripts\skills\effects\crmeleeskill_effect.nut
+...\scripts\skills\perks\perk_crmeleeskill.nut
+Fixed a bad thing that was causing crashes
+
+...\mod_sellswords\hooks\items\weapons\scimitar.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
+...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_saif.nut
+Made all four of the 1h/2h southern swords both Sword and Cleaver weapon types
+
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\config\y_perk_defs.nut
+...\mod_sellswords\config\z_background_perks.nut
+...\mod_sellswords\config\z_perks_tree_magic.nut
+...\mod_sellswords\config\z_perks_tree_special_no_ptr.nut
+Did some reshuffling to account for modern hooks and the new layout for perks and their strings
+
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\hooks\config\strings.nut
+Updated the tooltips to match Rygar's new tooltip rework (This is amazing btw, ty Rygar)
+
+...\mod_sellswords\hooks\skills\perks\perk_last_stand.nut
+Fixed a real bad error, I wonder how nobody ever noticed it lmao
+
+...\mod_sellswords\hooks\skills\actives\split_shield.nut
+Fixed an issue with the AP refund if you had the Smashing Shields perk
+
+...\mod_sellswords\hooks\skills\effects\legend_knockback_prepared_effect.nut (new)
+...\scripts\skills\effects\cr_smackdown_effect.nut (also new)
+Fixed a hook not functioning as intended
+
+...\scripts\skills\effects\cr_clarity_effect.nut
+Updated the effect not removing itself after battle
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_blend_in.nut
+Updated an outdated hook system
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+Fixed an oversight with an Unarmed Mastery interaction
+
+...\scripts\skills\actives\zcr_charge.nut
+Updated the skill not attacking if the target was already stunned + cleanup
+
+...\scripts\skills\perks\perk_crrangedskill.nut
+Swapped the skill around a bit to work a little different to before
+
+...\scripts\skills\perks\perk_crPerseverance.nut
+Updated the syntax and a clause for bleed immune units still getting bled
+
+...\scripts\skills\perks\perk_crHonorheritage.nut
+Updated the syntax and values associated
+
+...\mod_sellswords\hooks\config\z_legends_fav_enemies.nut
+...\mod_sellswords\hooks\skills\legend_favoured_enemy_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
+Removed the old level 18 system, and implemented a kills for refund approach instead
+
+...\mod_sellswords\hooks\skills\actives\chop.nut
+Cleaned up tooltips
+
+...\gfx\ui\items\armor\...
+Moved to legend_armor and renamed them for easier file management
+
+...\gfx\ui\items\helmets\...
+Moved some to legend_helmets and renamed them for easier file management
+
+...\gfx\chiru_equipment.png
+...\brushes\chiru_equipment.brush
+...\scripts\items\legend_armor\plate\cr_emperors_armor.nut
+...\scripts\items\legend_armor\plate\cr_lindwurm_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_lindwurm_armor.nut
+...\scripts\items\legend_armor\plate\cr_mountain_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_mountain_armor.nut
+...\scripts\items\legend_armor\plate\cr_skin_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_skin_armor.nut
+-
+...\scripts\items\legend_armor\plate\cr_named_heraldic_mail.nut
+...\scripts\items\legend_armor\plate\cr_named_noble_mail_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_plated_mail_hauberk.nut
+...\scripts\items\legend_armor\plate\cr_named_sellswords_armor.nut
+-
+...\scripts\items\legend_armor\plate\cr_adorned_heavy_plate.nut
+...\scripts\items\legend_armor\plate\cr_adorned_mail_shirt.nut
+...\scripts\items\legend_armor\plate\cr_adorned_warriors_plate.nut
+-
+...\scripts\items\legend_armor\plate\cr_leather_lamellar_harness_heavy_rotten.nut
+...\scripts\items\legend_armor\plate\cr_leather_lamellar_heavy_rotten.nut
+-
+...\scripts\items\legend_armor\chain\cr_armor_hauberk_sleevless_named.nut
+-
+...\scripts\items\legend_helmets\helm\cr_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_mountain_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_mountain_helmet.nut
+Updated nomenclature for clarity and cleaned up syntax
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.13 changes
+
+...\scripts\items\misc\cr_pack.nut
+Updated the value string I forgot to put in
+
+...\scripts\crafting\blueprints\cr_lindwurm_helmet_layered_blueprint.nut
+Forgot to fix the Lindwurm craftables
+
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut
+Should have the calc properly fixed this time (ty SoS)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.12 changes
+
+...\scripts\items\weapons\longsword03.nut
+Fixed overlay error
+
+...\scripts\scenarios\world\lone_wolf_easy_scenario.nut
+Removed the 0 wage cost for all recruits that comes with playing Lone Wolf
+
+...\scripts\scenarios\world\ssu_dryad_scenario.nut
+Updated the player party visual, was getting issues with the player icon flickering between dryad and human
+
+...\mod_sellswords\hooks_ptr\skills\backgrounds\female_butcher_background.nut
+...\mod_sellswords\hooks_ptr\skills\backgrounds\female_farmhand_background.nut
+Deleted redundant hooks
+
+...\mod_sellswords\hooks_ptr\skills\perks\perk_legend_hair_splitter.nut
+...\mod_sellswords\hooks_ptr\config\strings.nut
+Reverted the PTR Hairsplitter nerf
+
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut
+Updated an issue with the Nimble perk damage calculation
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.11 changes
+
+...\scripts\items\legend_helmets\helm\cr_mountain_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_mountain_helmet.nut
+Same fix as the Armours had. Forgot to update helms too
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+6.4.10 changes
+
+...\mod_sellswords\hooks\items\ammo\legend_large_broad_head_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_broad_head_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_broad_head_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_broad_head_arrows.nut
+Updated values and descriptions of the specialist ammo
+
+...\mod_sellswords\hooks_ptr\config\strings.nut
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_promised_potential.nut
+Updated pPromised Potential to always pass if it's the first perk taken, and always fail otherwise
+
+...\mod_sellswords\config\background_perks.nut
+Adding support for missing female noble backgrounds
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.9 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_mastery_throwing.nut
+Fixed an issue with inflating the numbers on throwing mastery by 100% (this is bad)
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_shortbow_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_sickle_skill.nut
+Updated a multiplier issue where a low day count for the bro would actually reduce the armour penetration
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated the strings to reflect the change, also removed some duped entries
+
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut
+Updated an issue with the Nimble perk and double hook if user had PTR
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+Updated numbers on unarmed training (ty Breaky)
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_berserker_commander_background.nut
+Added three new perks to the Zerker origin avatar (ty Breaky)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.8 changes
+
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_fluid_weapon.nut
+Forgot to add a null catch in case the user has no weapon or weapon breaks
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.7 changes
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated the specialist perks to make it clear that it's now time spent with company, and not overall days played
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.6 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut
+Fixed a local value that was incorrectly called
+
+...\mod_sellswords\config\background_perks.nut
+Fixed a pathing issue for the trader backgrounds
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\arena_building.nut
+Fixed oversight with Arena building hook
+
+...\mod_sellswords\hooks_ptr\config\strings.nut
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_fluid_weapon.nut
+Fixed the parameters being called incorrectly and the string for the perk
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.5 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut
+Fixed Nimble, but for REALLY real this time
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_background.nut
+Fixed a function hook that was missing
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.4 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut
+Fixed Nimble, but for real this time
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_witch_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\swordmaster_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_noble_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_druid_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_assassin_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_berserker_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_crusader_commander_background.nut
+Fixed the extra bracket I put in like a dingus
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.3 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut
+Fixed error in mathrand
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.2 changes
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_witch_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\swordmaster_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_noble_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_druid_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_assassin_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_berserker_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_crusader_commander_background.nut
+Swapped back to regular hooks, forgot they were in modern
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.1 changes
+
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_fluid_weapon.nut
+Fixed a function error
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.4.0 changes
+
+...\scripts\skills\perks\perk_crIronsideweak.nut
+Fixed a null call if the player wasn't in combat
+
+...\scripts\items\legend_armor\plate\cr_named_mountain_armor.nut
+...\scripts\items\legend_armor\plate\cr_mountain_armor.nut
+Updated an arguement call that was throwing errors
+
+...\mod_sellswords\hooks\skills\perks\perk_mastery_throwing.nut
+Updated an incorrect multiplier (ty Breaky)
+
+..\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
+Fixed Ranged Defense always rolling negative instead of positive (ty Breaky)
+
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut (updated)
+...\mod_sellswords\hooks_ptr\skills\perks\perk_nimble.nut (new)
+Added a nimble specific for PTR hooks, for some reason it was under regular ones lmao
+
+...\mod_sellswords\hooks_ptr\config\strings.nut
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_fluid_weapon.nut
+Updated to a cleaner hook and fixed the string for the skill
+
+...\scripts\skills\traits\cr_rogue_trait.nut
+...\scripts\skills\traits\cr_rogue_mark_trait.nut
+...\scripts\skills\racial\cr_rogue_champion_racial.nut
+...\scripts\skills\effects\rogue_special_01_effect.nut
+...\scripts\skills\effects\rogue_special_02_effect.nut
+...\scripts\skills\backgrounds\cr_rogue_vanguard_background.nut
+...\scripts\skills\backgrounds\cr_rogue_defender_background.nut
+...\scripts\skills\backgrounds\cr_rogue_guard_background.nut
+...\scripts\skills\backgrounds\cr_rogue_medic_background.nut
+...\scripts\skills\backgrounds\cr_rogue_sniper_background.nut
+...\scripts\skills\backgrounds\cr_rogue_specialist_background.nut
+...\scripts\skills\backgrounds\cr_rogue_supporter_background.nut
+...\scripts\items\weapons\special\cr_rogue_staff.nut
+...\scripts\items\weapons\special\cr_rogue_axe.nut
+...\scripts\items\weapons\special\cr_rogue_cleaver.nut
+...\scripts\items\weapons\special\cr_rogue_hammer.nut
+...\scripts\items\legend_armor\cloak\rogue_stollwurm_scales_upgrade.nut
+...\scripts\items\legend_armor\armor_upgrades\rogue_white_wolf_pelt_upgrade.nut
+...\scripts\entity\world\settlements\buildings\rogue_weaponsmith_oriental_building.nut
+...\scripts\entity\world\settlements\buildings\rogue_alchemist_building.nut
+...\scripts\entity\world\settlements\buildings\rogue_armorsmith_oriental_building.nut
+...\scripts\entity\world\settlements\buildings\rogue_marketplace_oriental_building.nut
+...\scripts\contracts\contracts\cr_rogue_arena_contract.nut
+...\scripts\config\spawnlist_roguespecial.nut
+...\scripts\config\spawnlist_rogue.nut
+...\scripts\config\spawnlist_rogueE.nut
+...\scripts\config\spawnlist_rogueH.nut
+Deleted all remnants of Rogue Mode in hopes that this sorts out the config errors
+
+...\mod_sellswords\config\chiru_helmets.nut
+...\mod_sellswords\config\chiru_armors.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy_polearm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_knight.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin_ambusher.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin_fighter.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin_wolfrider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_elite.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_vampire_lord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+...\mod_sellswords\hooks\entity\tactical\humans\assassin.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_devil.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_stalker.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gunner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_greatsword.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_sergeant.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\officer.nut
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+...\mod_sellswords\hooks\ui\screens\tooltip\tooltip_events.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\arena_building.nut
+...\scripts\config\a_sellswords_global.nut
+...\scripts\entity\tactical\enemies\crZombieswordmaster.nut
+...\scripts\entity\tactical\enemies\crDeathknight.nut
+...\scripts\entity\tactical\enemies\crFallenbetrayer.nut
+...\scripts\entity\tactical\enemies\crOrcPackleader.nut
+...\scripts\entity\tactical\enemies\crSkeleton.nut
+...\scripts\entity\tactical\enemies\crSkeleton_pol.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_tank.nut
+...\scripts\entity\tactical\humans\barbarian_dualwielder_t1.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crHonoraryknight.nut
+...\scripts\entity\tactical\humans\crImmortal.nut
+...\scripts\entity\tactical\humans\crKnight.nut
+...\scripts\entity\tactical\humans\crOathbringer.nut
+...\scripts\entity\tactical\humans\crSellswordelite.nut
+...\scripts\entity\tactical\humans\crSellswordlieutenant.nut
+...\scripts\entity\tactical\humans\crSellswordveteran.nut
+...\scripts\entity\tactical\humans\crSellswordveteranranger.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_pol.nut
+Modified various entities to reflect the changes
+
+...\scripts\entity\tactical\humans\crBarbarianZerker_High.nut (previously DW'ers)
+..\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+...\scripts\entity\tactical\humans\crDesperado_High.nut
+...\scripts\entity\tactical\humans\crDesperado_Low.nut
+...\scripts\entity\tactical\humans\crDesperado_Weak.nut
+...\scripts\entity\tactical\humans\crHashshashin_Low.nut
+...\scripts\entity\tactical\humans\crHashshashin_High.nut
+...\scripts\entity\tactical\humans\crSellsword_Tank.nut
+...\scripts\entity\tactical\humans\crSellsword_Banner.nut
+...\scripts\entity\tactical\humans\crSellsword_Elite.nut
+...\scripts\entity\tactical\humans\crSellsword_Lieutenant.nut
+...\scripts\entity\tactical\humans\crSellsword_Polearm.nut
+...\scripts\entity\tactical\humans\crSellsword_Ranger.nut
+...\scripts\entity\tactical\humans\crSellsword_Sergeant.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Polearm.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Tank.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Ranger.nut
+...\scripts\config\a_sellswords_global.nut
+...\scripts\config\a_sellswords_spawn_troops_.nut
+...\scripts\config\spawnlist_barbarians.nut
+...\scripts\config\z_spawnlist_chiruunit.nut
+...\scripts\config\z_spawnlist_enhancedunit.nut
+...\mod_sellswords\hooks\config\z_legends_fav_enemies.nut
+...\mod_sellswords\config\faction_sellswords.nut
+...\scripts\entity\world\locations\crss_camp_location.nut
+Updated various entity nomenclature for future clarity
+
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_rally.nut
+...\scripts\ai\tactical\agents\barbarian_zerker_agent.nut
+Updated some AI and renamed zerkers
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_woodaxe_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_butcher_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_butcher_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_hammer_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_hammer_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_knife_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_knife_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_militia_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_militia_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_ninetails_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_ninetails_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pickaxe_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pickaxe_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pitchfork_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pitchfork_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_shortbow_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_shortbow_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_shovel_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_shovel_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_sickle_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_sickle_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_woodaxe_damage.nut
+Updated and fix the syntax for the Specialist perk groups
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_witch_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_assassin_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_berserker_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_crusader_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_druid_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_noble_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_commander_background.nut
+Pulled in Breaky's commander background patch
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.3.0 changes
+
+...\mod_sellswords\hooks\config\strings.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+Perk too strong, got nerfed
+
+...\mod_sellswords\config\temp_world_state_hook.nut
+...\mod_sellswords\hooks\scenarios\world\beast_hunters_scenario.nut
+Temporary hook to fix Beast Slayer issue
+
+...\gfx\ui\items\misc\cr_pack.png (moved from accessory)
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_oriental_building.nut
+...\scripts\items\misc\cr_pack.nut (moved from accessory)
+Changed the backpack again, works good now, promise
+
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_attack_split.nut
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_attack_swing.nut
+...\mod_sellswords\hooks\skills\perks\perk_overwhelm.nut
+...\scripts\skills\actives\cr_overwhelm_attack.nut (was zcroverwhelming before)
+Updated the Overwhelm active skill
+
+...\gfx\chiru_weapons.png
+...\gfx\sellswords.png
+...\brushes\chiru_weapons.brush
+...\brushes\sellswords.brush
+...\gfx\ui\items\weapons\melee\
+...\gfx\ui\items\weapons\ranged\
+...\scripts\items\weapons\advancedfirelance.nut
+Updated various weapon gfx, alongside their brushes
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.2.1 changes
+
+...\mod_sellswords\hooks\ambitions\ambition_manager.nut (deleted)
+...\mod_sellswords\hooks\config\world_entity_common.nut
+...\mod_sellswords\hooks\contracts\contract_manager.nut (deleted)
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_elite.nut
+...\mod_sellswords\hooks\entity\tactical\player.nut
+...\mod_sellswords\hooks\entity\world\camp\buildings\training_building.nut (deleted)
+...\mod_sellswords\hooks\entity\world\settlement.nut (deleted)
+...\mod_sellswords\hooks\entity\world\settlements\city_state.nut (deleted)
+...\mod_sellswords\hooks\events\event_manager.nut (deleted)
+...\mod_sellswords\hooks\factions\faction_action.nut (deleted)
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+...\mod_sellswords\hooks\skills\traits\intensive_training_trait.nut (deleted)
+...\scripts\entity\tactical\enemies\crOrcPackleader.nut
+...\scripts\skills\racial\cr_rogue_champion_racial.nut
+Ok, this should be everything that required rogue mode, will do a more thorough cleanse tomorrow
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.2.0 changes
+
+...\gfx\chiru_equipment.png
+...\brushes\chiru_equipment.brush
+...\gfx\ui\items\helmets\inventory_helmet_cr63.png
+...\gfx\ui\items\helmets\inventory_helmet_cr61.png
+Did some shuffling to make them fit better visually
+
+...\mod_sellswords\hooks\skills\actives\legend_sling_heavy_stone_skill.nut
+Re-added the northern sling stun on head hits with staff stun mastery
+
+...\mod_sellswords\config\chiru_helmets.nut
+...\mod_sellswords\config\chiru_armors.nut
+Fixed a few null values that weren't searching correctly
+
+...\scripts\entity\tactical\humans\crSellswordveteran_tank.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSellsword_pol.nut
+...\scripts\entity\tactical\humans\crSellsword_tank.nut
+...\scripts\entity\tactical\humans\crSellswordlieutenant.nut
+...\scripts\entity\tactical\humans\crSellswordsergeant.nut
+...\scripts\entity\tactical\humans\crSellswordveteran.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_pol.nut
+No more naked Sellswords, if you see any mroe naked people, please let me know ty
+
+...\scripts\items\accessory\cr_pack.nut
+Changed the backback to grant the Bags and Belts perk instead of an alternative version of it, this should ease bug issues
+
+...\gfx\ui\items\accessory\cr_pack.png
+Updated backpack to be just a backpack, no more free sword, also removed the shadows since BB doesn't have them for items
+
+...\mod_sellswords\hooks\!mods_preload\legends_msu_settings.nut
+...\scripts\events\events\rogue_intro_event.nut
+...\scripts\scenarios\world\rogue_scenario.nut
+Removed the option to start the Rogue stuff, will do a proper deep dive cleanout soon
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.1.5 changes
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated some typos
+
+...\scripts\skills\racial\dryad_racial.nut
+Updated a null clause that was causing issues
+
+...\scripts\contracts\contracts\explore_treasures_contract.nut
+Updated some bad values and make the location reveal itself when selected
+
+...\gfx\sellswords.png
+...\brushes\sellswords.brush
+...\gfx\skills\active_banner_wave.png
+...\gfx\skills\active_banner_wave_bw.png
+...\mod_sellswords\hooks\items\tools\player_banner.nut
+...\scripts\skills\actives\banner_wave.nut
+...\scripts\skills\effects\valor_effect.nut
+Did some banner things, might revert later depending on feedback, we'll see
+
+...\mod_sellswords\hooks\skills\actives\sprint_skill_3.nut
+Fixed a bad hook
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.1.4 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist... (all of them)
+Did a reformat to both clean up the code and make it actually work as intended
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.1.3 changes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist... (all of them)
+Forgot to add the 'actor' as a localised value
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.1.2 changes
+
+...\mod_sellswords\hooks\items\weapons\named\named_weapon.nut
+...\mod_sellswords\hooks\items\shields\named\named_shield.nut
+They weren't redundant, added them back in :kekw:
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.1.1 changes
+
+...\scripts\skills\perks\perk_crGrandslam.nut
+Fixed an oversight that happened because I used an incorrect function call for the polearm clause
+
+...\mod_sellswords\hooks\items\weapons\named\named_weapon.nut
+...\mod_sellswords\hooks\items\shields\named\named_shield.nut
+Removed redundant files that were conflicting with the new Legends named item changes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist... (all of them)
+Updated the specialist perks again due to an oversight when enemies obtained the perk
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.1.0 changes
+
+...\gfx\chiru_equipment.png
+...\brushes\chiru_equipment.brush
+...\scripts\items\legend_helmets\helm\cr_knightly_fullhelm.nut
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_00.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_01.png (deleted)
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_02.png (deleted)
+Finally got the helmet to a place where I'm happy with the art, only a single helm variant now but it fits in much better than the spiky one
+
+...\gfx\dryad_entities.png
+...\brushes\dryad_entities.brush
+Updated some of the Dryad visuals, like making some entities smaller
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\armorsmith_building.nut
+Updated the rarity for the helmet, should be about as common as a named helmet now
+
+...\scripts\entity\tactical\enemies\dryad_lindy.nut
+Fixed the Dryad Lindwurm not spawning the tail correctly due to incorrect file designation
+
+...\scripts\items\helmets\yemanrenkuangzhanshi_helmet.nut (deleted)
+...\scripts\items\legend_helmets\top\legend_helmet_barbarian_berserker.nut
+Moved and cleaned up a couple incorrect calls for a berserker helmet that I overlooked
+
+...\scripts\skills\actives\natural_regrowth.nut
+Should have fixed the Dryad heal crash, hopefully not buggo mode anymore
+
+...\scripts\items\legend_helmets\vanity\dryad_mask.nut
+Fixed the tooltip being an armour call instead of a helmet one
+
+...\mod_sellswords\hooks\skills\traits\intensive_training_trait.nut
+Removed the duplicate training stats now that Legends has implemented it
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist... (all of them)
+Updated the specialist perks to have their secondary effects increase, and now it's based on days the bro is with the company for and not overall playtime
+
+...\mod_sellswords\hooks\skills\perks\perk_sundering_strikes.nut
+Updated Sundering Strikes hook
+
+...\mod_sellswords\config\perk_defs.nut
+...\mod_sellswords\hooks\config\strings.nut
+Updated the descriptions for a few skills, mostly favoured enemy ones
+
+...\mod_sellswords\hooks\hooks_favoured_enemy_perks.nut
+Updated the Favoured Enemy perk hook
+
+...\mod_sellswords\hooks\config\z_perks_tree_class.nut
+Some edits to the Veteran class tags and Unarmed tree
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+Updated the one punch man perk to both renable it, and make it less OP than it was
+
+...\mod_sellswords\hooks\skills\actives\throw_smoke_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_fire_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_daze_bomb_skill.nut
+Fixed an oversight when you obtained Net Mastery
+
+...\scripts\skills\actives\throw_acid_flask_pro.nut
+...\scripts\skills\actives\throw_acid_flask_pro_02.nut
+Updated the range on the Net Mastery versions of the Acid Flasks
+
+...\scripts\skills\perks\perk_crGrandslam.nut
+Fundemantally changed Grandslam, now the AP penalty is only increased by 1 but the splash damage is removed
+
+...\mod_sellswords\config\perks_tree_special_no_ptr.nut
+Added the Special tree into the game without the dependancy on PTR
+
+...\ui\mods\ssu_breditor_add_on.js
+...\ui\mods\mod_nggh_breditor_add_on.js
+...\mod_sellswords\hooks_breditor_MC
+...\mod_sellswords\hooks_breditor
+...\mod_sellswords\load.nut
+...\scripts\!mods_preload\!register_mod_sellswords.nut
+Added built in support for Breditor as well as MC compatibility, no longer need the MC bred patch unless you use PTR
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.0.5 changes
+
+...\scripts\!mods_preload\!register_mod_sellswords.nut
+Updated load order to require PTR 2.2.2
+
+...\gfx\chiru_equipment.png
+...\brushes\chiru_equipment.brush
+...\scripts\items\legend_helmets\helm\cr_knightly_fullhelm.nut
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_00.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_01.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_02.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_03.png (deleted)
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_04.png (deleted)
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_05.png (deleted)
+Updated Sato's old Barbute helm visuals
+
+...\scripts\items\legend_helmets\helm\cr_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_mountain_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_mountain_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_ijirok_helmet.nut
+Fixed a tooltip visual bug I overlooked and mountain helm visuals
+
+...\scripts\items\legend_armor\tabard\cr_horn_tabard.nut
+...\gfx\ui\items\legend_armor\icon_kraken_tabard.png
+...\gfx\ui\items\legend_armor\inventory_kraken_tabard.png
+Fixed icons, tooltips and tweaked values a little
+
+...\mod_sellswords\hooks\crafting\blueprints\mod_legend\armor\chest\horn_plate_upgrade_blueprint.nut
+Effectively deleted the old Legend Kraken armour attachment to reduce confusion
+
+..\scripts\items\accessory\cr_pack.nut
+Updated the values a little to balance it better
+
+...\mod_sellswords\hooks\skills\actives\hand_to_hand.nut
+Added a new H2H hook which better reflects the SSU changes to unarmed
+
+...\scripts\items\weapons\advancedfirelance.nut
+Nerfed Advanced Fire Lance, was a little OP with stats almost matching named weapon ones
+
+...\scripts\items\weapons\named\named_northern_sling.nut
+Updated value since named was cheaper than the base
+
+...\mod_sellswords\hooks\items\weapons\legend_longsword.nut
+Fixed bunt visual error
+
+...\scripts\items\weapons\orcspear.nut
+Added a small fat penalty to the weapon to line up with the high base stats typical of orc weapons
+
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_unstoppable.nut
+Fixed unstoppable breaking when you take any damage 
+
+...\mod_sellswords\hooks_ptr\skills\effects\ptr_arrow_to_the_knee_debuff_effect.nut
+Fixed tooltip for the effect
+
+...\scripts\skills\perks\perk_crGrandslam.nut
+Hopefully fixed oversight for Grandslam causing crashes if multi-hit skills kill the target
+
+...\scripts\skills\actives\natural_regrowth.nut
+Hopefully fixed Dryad heal
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.0.4 changes
+
+...\mod_sellswords\hooks_ptr\config\perks_tree_special.nut
+Changed up the special tree a little, was fairly unintuitive code wise, cleaned that shit up a little (ty Necro)
+
+...\mod_sellswords\config\perk_defs.nut
+...\mod_sellswords\hooks\config\strings.nut
+Updated a few typos and continuity errors
+
+..\mod_sellswords\hooks\skills\perks\perk_legend_battleheart.nut
+...\scripts\skills\perks\perk_crmeleedefense.nut
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.0.3 changes
+
+...\scripts\skills\perks\perk_crSpecialize_ha.nut
+...\scripts\skills\perks\perk_crSpecialize_la.nut
+...\scripts\skills\perks\perk_crSpecialize_ma.nut
+Updated them back to old names for perks to preserve save compatibility
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.0.2 changes
+
+...\mod_sellswords\hooks\skills\effects\net_effect.nut
+Forgot to add the new IsReinforced index to the net effect hook
+
+...\gfx\ui\items\accessory\cr_pack.png
+Playing around with some gfx, still a little too sloppy for my liking but it should better differenciate between bags now at a glance
+
+...\gfx\ui\items\helmets\inventory_helmet_cr513.png
+...\gfx\ui\items\helmets\inventory_helmet_cr74.png
+Updated the visual offsets of the new mountain helmet alongside another I apparently missed
+
+...\gfx\ui\perks\crAnchor.png
+...\gfx\ui\perks\crAnchor_bw.png
+Updated the Anchor icon to another that's more clear
+
+
+...\gfx\chiru_skills.png (deleted)
+...\gfx\sellswords.png
+...\brushes\chiru_skills.brush (deleted)
+...\brushes\sellswords.brush
+Removed the old chiru_skills brush, updated a few of the mini skill icons, and incorporated it into the Sellswords one
+
+...\gfx\ui\perks\haspecialize.png (renamed all armour files to crSpecialize_) v
+...\gfx\ui\perks\haspecialize_bw.png 
+...\gfx\ui\perks\laspecialize.png
+...\gfx\ui\perks\laspecialize_bw.png
+...\gfx\ui\perks\maspecialize.png
+...\gfx\ui\perks\maspecialize_bw.png (renamed all armour files to crSpecialize_) ^
+...\gfx\ui\perks\crBackswing.png
+...\gfx\ui\perks\crBackswing_bw.png
+...\gfx\ui\perks\crbeforethestorm.png
+...\gfx\ui\perks\crbeforethestorm_bw.png
+...\gfx\ui\perks\crBlocknormal.png
+...\gfx\ui\perks\crBlocknormal_bw.png
+...\gfx\ui\perks\crBruiser.png
+...\gfx\ui\perks\crBruiser_bw.png
+...\gfx\ui\perks\crClarity.png
+...\gfx\ui\perks\crClarity_bw.png
+...\gfx\ui\perks\crFoB.png
+...\gfx\ui\perks\crFoB_bw.png
+...\gfx\ui\perks\crFurinkazan.png
+...\gfx\ui\perks\crFurinkazan_bw.png
+...\gfx\ui\perks\crGrandslam.png
+...\gfx\ui\perks\crGrandslam_bw.png
+...\gfx\ui\perks\crGuardian.png
+...\gfx\ui\perks\crGuardian_bw.png
+Updated various perk gfx
+
+...\scripts\skills\perks\perk_crSpecialize_ha.nut
+...\scripts\skills\perks\perk_crSpecialize_la.nut
+...\scripts\skills\perks\perk_crSpecialize_ma.nut
+Updated the old spec files to these, kept the in-game IDs all the same, so should be save compatible
+
+...\scripts\skills\perks\perk_crmeleeskill.nut
+...\scripts\skills\effects\crmeleeskill_effect.nut
+...\mod_sellswords\config\perk_defs.nut
+Updated the old 'hit cap breaking' special tree skill for something a little more unique
+
+...\scripts\!mods_preload\!register_mod_sellswords.nut
+Added new MSU config so you can edit the CR of the Sellsword faction
+
+...\mod_sellswords\hooks\entity\world\entity_manager.nut
+Edited to support the new MSU config
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.0.1 changes
+
+...\gfx\chiru_equipment.png
+...\gfx\sellswords.png
+...\brushes\chiru_equipment.brush
+...\brushes\sellswords.brush
+More gfx updates and a little rearranging done to the Equipment and Sellsword brushes to better differentiate what goes where
+
+...\scripts\!mods_preload\!register_mod_sellswords.nut
+Added new version dependancies to make sure people aren't trying to fuck around with old PTRs or Legends
+
+...\gfx\ui\items\helmets\inventory_helmet_cr513.png
+Renamed the mountain helmet UI icon to cr513 to match the same value that the brush has and saves me editing both of the new mountain helmets because I put the wrong number in
+
+...\scripts\skills\actives\break_free_skill.nut
+Copying the test version of Break Free into an overwrite location. Will remove when Legends updates
+
+----------------------------------------------------------------------------------------------------------------------------
+
+6.0.0 changes
+
+...\mod_sellswords\hooks\events\events\dlc4\kings_guard_2_event.nut (deleted)
+...\mod_sellswords\hooks\events\events\dlc8\disowned_noble_welcomed_back_event.nut (deleted)
+...\mod_sellswords\hooks\events\events\dlc8\anatomist_helps_blighted_guy_2_event.nut (deleted)
+Removed since they kept causing needless issues
+
+...\mod_sellswords\hooks\items\supplies\... (deleted)
+Deleted the entire folder, all the contents are still saved, but they were causing issues and so I'm still holding off on a full update of the food system til Legends finalises what they want to do with it
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_field_triage.nut (deleted)
+Deleted a redundant hook due to new overhaul that Barcode did for the healing perks
+
+...\mod_sellswords\hooks\events\events\dlc4\location\tundra_elk_destroyed_event.nut
+Adding the SSU Ice Sword to the Ijirok rewards
+
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_outlaw.nut
+...\mod_sellswords\hooks\entity\tactical\humans\officer.nut
+Fixed some more assignRandomEquipment functions that were missed in the previous changes to human entities (ty Barcode)
+
+...\scripts\skills\actives\throw_net_free.nut
+Added the ranged dodge for Escape Artist and a "IsReinforced" variable to support the new net changes
+
+...\mod_sellswords\hooks\skills\actives\throw_net.nut
+Added the ranged dodge for Escape Artist and an rewrite of the "IsReinforced" check
+
+...\gfx\chiru_equipment.png
+...\gfx\sellswords.png
+...\brushes\chiru_equipment.brush
+...\brushes\sellswords.brush
+Updated equipment and sellsword brush
+
+...\scripts\items\accessory\cr_pack.nut
+...\gfx\ui\items\accessory\cr_pack.png
+Fixed the extra bag items being deleted when you unequipped the accessory
+Updated the name, description, and brush visuals
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_oriental_building.nut
+Cleaned up the hooks for the Marketplace buildings
+
+...\scripts\!mods_preload\!register_mod_sellswords.nut
+Added new MSU config so you can toggle the Sellsword faction
+
+...\mod_sellswords\hooks\entity\world\entity_manager.nut
+Edited to support the new MSU config
+
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_weapons.nut
+Updated Primal Fear back into the Crossbow tree
+
+...\scripts\items\legend_armor\plate\cr_named_lindwurm_armor.nut
+...\scripts\items\legend_armor\plate\cr_lindwurm_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_mountain_armor.nut
+...\scripts\items\legend_armor\plate\cr_mountain_armor.nut
+...\scripts\items\legend_armor\plate\cr_named_skin_armor.nut
+...\scripts\items\legend_armor\plate\cr_skin_armor.nut
+...\scripts\items\legend_helmets\helm\cr_named_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_mountain_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_mountain_helmet.nut
+...\scripts\items\helmets\named\crlegend_mountain_helmet_named.nut (deleted)
+...\scripts\items\armor\named\crlegend_armor_mountain_named.nut (deleted)
+...\scripts\crafting\blueprints\cr_lindwurm_helmet_layered_blueprint.nut
+...\mod_sellswords\hooks\crafting\blueprints\mod_legend\armor\chest\legend_skin_armor_blueprint.nut
+...\mod_sellswords\hooks\crafting\blueprints\mod_legend\armor\chest\legend_lindwurm_armor_blueprint.nut
+...\mod_sellswords\hooks\crafting\blueprints\mod_legend\armor\chest\legend_mountain_armor_blueprint.nut
+...\mod_sellswords\hooks\crafting\blueprints\mod_legend\armor\helmet\legend_mountain_helmet_layered_blueprint.nut
+Did a little fucking around with the beast armours, now you have a 25% chance to get a named version on each craft
+
+...\gfx\ui\items\armor\...
+...\gfx\ui\items\armor\icon_body_armor_cr82.png (deleted)
+Cleaned up pretty much all the armour layers visually and removed a redundant Lindwurm layer
+
+...\gfx\ui\items\helmets\...
+More cleaning, this time helmet layers
+
+...\mod_sellswords\config\chiru_armors.nut
+...\mod_sellswords\config\chiru_helmets.nut
+Edited a couple armour/helmet loadouts to match the new beast layered armour system
+
+...\mod_sellswords\hooks\events\events\dlc8\lindwurm_slayer_event.nut
+Updated with new lindwurm based kit
+
+...\scripts\items\legend_armor\plate\cr_emperors_armor.nut
+Updated the SSU layered version of the Emperor's Armour from Black Monolith
+
+...\mod_sellswords\config\perk_defs.nut
+Updated the crAnchor entry to reflect the new values
+
+...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
+...\scripts\config\a_sellswords_global.nut
+...\scripts\config\a_sellswords_spawn_troops_.nut
+...\scripts\config\z_spawnlist_enhancedunit.nu
+...\mod_sellswords\config\faction_sellswords.nut
+Added a new Lindwurm Slayer enemy as an alternative way of armour aquisition 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.9.0 changes
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated net perk strings to account for new changes
+
+...\mod_sellswords\hooks\items\tools\reinforced_throwing_net.nut
+...\mod_sellswords\hooks\items\tools\throwing_net.nut
+...\mod_sellswords\hooks\skills\actives\throw_net.nut
+...\mod_sellswords\hooks\skills\effects\net_effect.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_net_casting.nut
+Hooking new net changes, won't do anything once update comes
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_freedom_of_movement.nut
+Re-fixed FoM
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.9 changes
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated various strings for perks
+
+...\mod_sellswords\hooks\skills\actives\bandage_ally_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_bandage.nut
+...\mod_sellswords\hooks\skills\actives\legend_field_repairs.nut
+...\mod_sellswords\hooks\skills\actives\legend_field_triage.nut
+Reworked various mid-battle healing skills (ty Barcode)
+
+...\scripts\skills\effects\cr_bandage_effect.nut
+New bandage effect (ty Barcode)
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_freedom_of_movement.nut
+...\mod_sellswords\hooks\skills\perks\perk_sundering_strikes.nut
+Various fixes for problematic perks (ty Barcode)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.8 changes
+
+...\gfx\sellswords.png
+...\brushes\sellswords.brush
+Added a new helmet layer
+
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_05.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_00.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_01.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_02.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_03.png
+...\gfx\ui\items\legend_helmets\icon_knightly_fullhelm_04.png
+New helmet layer icons
+
+..\scripts\items\legend_helmets\helm\cr_knightly_fullhelm.nut
+Said new helmet
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\armorsmith_building.nut
+Added new helm to spawnlist for Armoursmiths
+
+...\mod_sellswords\config\chiru_helmets.nut
+Updated helmet spawnlist to account for new knight helm
+
+...\mod_sellswords\hooks\skills\effects\shieldwall_effect.nut
+Fixed fringe case crash (possibly)
+
+...\scripts\entity\tactical\humans\crKnightcommander.nut
+Fixed some other shit to do with a badly coded property 
+
+...\mod_sellswords\hooks\entity\tactical\player.nut
+Fixed possible AC issue
+
+...\tactical\enemies\legend_bandit_warlord.nut
+...\tactical\enemies\bandit_leader.nut
+...\tactical\enemies\bandit_raider.nut
+...\tactical\enemies\bandit_raider_low.nut
+...\tactical\enemies\legend_bandit_veteran.nut
+...\tactical\humans\barbarian_champion.nut
+...\tactical\humans\barbarian_chosen.nut
+...\tactical\humans\desert_devil.nut
+...\tactical\humans\gladiator.nut
+...\tactical\humans\gunner.nut
+...\tactical\humans\hedge_knight.nut
+...\tactical\humans\knight.nut
+...\tactical\humans\legend_noble_fencer.nut
+...\tactical\humans\legend_noble_halberdier.nut
+...\tactical\humans\legend_noble_slinger.nut
+...\tactical\humans\legend_peasant_farmhand.nut
+...\tactical\humans\legend_peasant_miner.nut
+...\tactical\humans\legend_peasant_monk.nut
+...\tactical\humans\legend_peasant_poacher.nut
+...\tactical\humans\legend_peasant_witchhunter.nut
+...\tactical\humans\legend_peasant_woodsman.nut
+...\tactical\humans\militia_veteran.nut
+...\tactical\humans\noble_arbalester.nut
+...\tactical\humans\noble_billman.nut
+...\tactical\humans\noble_footman.nut
+...\tactical\humans\noble_greatsword.nut
+...\tactical\humans\noble_sergeant.nut
+...\tactical\humans\nomad_cutthroat.nut
+...\tactical\humans\nomad_leader.nut
+...\tactical\humans\oathbringer.nut
+...\tactical\humans\standard_bearer.nut
+...\tactical\humans\swordmaster.nut
+Updated equipment and perk spawns on human hooked entities (ty Barcode)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.7 changes
+
+...\mod_sellswords\hooks\items\tools\holy_water_item.nut
+...\mod_sellswords\hooks\items\tools\daze_bomb_item.nut
+...\mod_sellswords\hooks\items\tools\fire_bomb_item.nut
+...\mod_sellswords\hooks\items\tools\smoke_bomb_item.nut
+Fixed the issue of pots not replenishing after battles
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.6 changes
+
+...\mod_sellswords\hooks\config\z_perks_tree_class.nut
+Gave Houndmaster tree the Summon Hound skill
+
+...\scripts\items\legend_armor\plate\cr_ijirok_armor.nut
+...\scripts\items\legend_armor\plate\cr_emperors_armor.nut
+...\scripts\items\legend_helmets\helm\cr_ijirok_helmet.nut
+Cleaned up config for the layered Legendary armours
+
+...\gfx\ui\orientation\
+Adjusted a number of icons so that they face towards the left, basically just consistency stuff
+
+...\mod_sellswords\hooks\items\tools\holy_water_item.nut
+...\mod_sellswords\hooks\items\tools\daze_bomb_item.nut
+...\mod_sellswords\hooks\items\tools\fire_bomb_item.nut
+...\mod_sellswords\hooks\items\tools\smoke_bomb_item.nut
+More re-usable pot stuff
+
+...\mod_sellswords\hooks\skills\actives\throw_daze_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_fire_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_holy_water.nut
+...\mod_sellswords\hooks\skills\actives\throw_smoke_bomb_skill.nut
+Even more re-usable pot stuff
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.5 changes
+
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_weapon_master.nut
+Fixed an oversight with the updated hooked method
+
+...\scripts\config\z_spawnlist_enhancedunit.nut
+...\mod_sellswords\config\faction_sellswords.nut
+...\mod_sellswords\hooks\entity\world\entity_manager.nut
+Updated the BH faction stuff, they should be a lot more reasonable now, with high end units only spawning once your combat rating is high enough to give them a challenge
+
+...\scripts\entity\tactical\humans\crOathbringer.nut
+Made the Oathbringer somewhat stronger, should be a lot closer to Hedgeknight stats now
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.4 changes
+
+...\mod_sellswords\hooks\items\tools\holy_water_item.nut
+...\mod_sellswords\hooks\skills\actives\throw_holy_water.nut
+...\scripts\skills\actives\throw_holy_water_focus.nut
+...\scripts\skills\actives\throw_holy_water_pro.nut
+Hooking throwables to be single use rechargable items like the Throwing Spear
+
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_weapon_master.nut
+Fixed a bug with the modhook
+
+...\mod_sellswords\hooks\config\strings.nut
+Updated Lookout perk strings
+
+...\mod_sellswords\hooks\skills\perks\perk_mastery_fist.nut
+Made the Unarmed Mastery perk to function as intended
+
+...\scripts\entity\tactical\humans\crOathbringer.nut
+Fixed incorrect weapon mastery index generation, was using the old defunct version instead of SSUs custom one
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.3 changes
+
+...\brushes\dryad_entities.brush
+...\gfx\dryad_entities.png
+Added the missing leaves for the Dryad heal
+
+...\gfx\skills\dryad_summon_wolf_sw.png
+...\gfx\skills\dryad_summon_lindy.png
+...\gfx\skills\dryad_summon_lindy_sw.png
+...\gfx\skills\dryad_summon_snake.png
+...\gfx\skills\dryad_summon_snake_sw.png
+...\gfx\skills\dryad_summon_unhold.png
+...\gfx\skills\dryad_summon_unhold_sw.png
+...\gfx\skills\dryad_summon_wolf.png
+Updated the icons for the Dryad's summoning skills
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.2 changes
+
+...\brushes\dryad_entities.brush
+...\brushes\sellswords.brush
+...\gfx\dryad_entities.png
+...\gfx\sellswords.png
+Needed to add new sellsword entity icons and the legendary Dryad location
+
+...\mod_sellswords\config\faction_sellswords.nut
+...\scripts\config\a_sellswords_spawn_troops_.nut
+...\scripts\config\a_sellswords_gobal.nut
+...\scripts\config\z_spawnlist_dryad.nut
+Added Dryad entities to spawnlists
+
+...\scripts\entity\tactical\dryad_wolf.nut
+...\scripts\entity\tactical\dryad_lindy.nut
+...\scripts\entity\tactical\dryad_lindy_tail.nut
+...\scripts\entity\tactical\dryad_snake.nut
+...\scripts\entity\tactical\dryad_unhold.nut
+Moved all these to \scripts\entity\tactical\enemy\ to better format the mod directories, also changed some values around to balance the summons more effectively when playing the Dryad scenario
+
+...\scripts\entity\tactical\enemies\dryad_archer.nut
+...\scripts\entity\tactical\enemies\dryad_shaman.nut
+...\scripts\entity\tactical\enemies\dryad_warrior.nut
+Added new unit entries for the Dryads, placeholder atm
+
+...\scripts\skills\actives\summon_dryad_wolf.nut
+...\scripts\skills\actives\summon_dryad_lindy.nut
+...\scripts\skills\actives\summon_dryad_snake.nut
+...\scripts\skills\actives\summon_dryad_unhold.nut
+Changed the entity location to the new enemy directory
+
+...\gfx\ui\orientation\ss_oathbringer.png
+...\gfx\ui\orientation\ss_dryad_archer.png
+...\gfx\ui\orientation\ss_dryad_lindy.png
+...\gfx\ui\orientation\ss_dryad_shaman.png
+...\gfx\ui\orientation\ss_dryad_snake.png
+...\gfx\ui\orientation\ss_dryad_unhold.png
+...\gfx\ui\orientation\ss_dryad_warrior.png
+...\gfx\ui\orientation\ss_dryad_wolf.png
+Added new enemy gfx icons
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.1 changes
+
+...\gfx\ui\banners\banner_dryad_01.png
+...\gfx\ui\banners\banner_dryad_02.png
+Added Dryad banners for their camps/roamers
+
+...\scripts\config\spawnlist_orc.nut
+Added Orc Warlocks in high-end Orc roamers/camps
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.8.0 changes
+
+...\scripts\entity\tactical\humans\crOathbringer.nut
+Added in hostile Oathbringers
+
+...\mod_sellswords\config\faction_sellswords.nut
+...\scripts\config\a_sellswords_spawn_troops_.nut
+...\scripts\config\a_sellswords_gobal.nut
+...\scripts\config\spawnlist_roguespecial.nut
+Added crOathbringer entry
+
+...\mod_sellswords\hooks\entity\world\entity_manager.nut
+Added the Bounty Hunter spawnlist and faction
+
+...\scripts\config\z_spawnlist_enhancedunit.nut
+Made adjustments to the MercenariesHIGH spawnlist to include BH and Oathtakers
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.7.2 changes
+
+...\scripts\entity\tactical\dryad_wolf.nut
+Lowered the base armour the dryad wolf summon got, having 100 for both head and body was a little too much early game
+
+...\scripts\contracts\contracts\explore_treasures_contract.nut
+Fixed possible crash/softlock
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
+Fixed possible crash/softlock, also fixed the perk giving a free extra base 50 damage to all calculations 
+
+...\mod_sellswords\hooks\skills\actives\hand_to_hand.nut (deleted)
+Deleted the hook as it caused issues with ambidex
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.7.1 changes
+
+...\brushes\druid_ui.brush (deleted) 
+...\brushes\druid_mod.brush (deleted)
+...\gfx\druid_ui.png (deleted)
+...\gfx\druid_mod.png (deleted)
+
+...\brushes\dryad_entities.brush
+...\gfx\dryad_entities.png
+Replaced old brush entities with new updated formating variants
+
+...\scripts\skills\effects\forest_blessing_effect.nut
+Added a new mini buff icon
+
+...\mod_sellswords\config\perk_defs.nut
+Updated Skullsplitter/crHackSPM description
+
+...\mod_sellswords\hooks\skills\actives\split_man.nut
+Fixed error pertaining to the damage calculations when interfacing with the Skullsplitter/crHackSPM perk
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.7.0 changes
+
+...\scripts\skills\actives\grass_slash.nut
+Fixed some soontm Legendary Sword stuff
+
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_attack_default.nut
+Updated the AI behaviour in a couple places, typo'd some skills
+
+...\mod_sellswords\config\dryad_armors.nut
+...\mod_sellswords\config\dryad_sprite_table.nut
+...\mod_sellswords\config\perk_defs.nut
+...\mod_sellswords\config\z_perks_tree_magic.nut
+...\mod_sellswords\config\ammo_types.nut
+Added some Dryad stuff, these are the hooks but there is over 200 new files so forgive me if I don't link each of them. I'm sure the only person that bothers to read these is Abyss and he's already working on integration for RotU. 
+All future updates to Dryad stuff will be listed as usual
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.6.5 changes
+
+...\mod_sellswords\hooks_ptr\skills\actives\ptr_swordmaster_versatile_swordsman_stance_reverse_grip_skill.nut
+...\mod_sellswords\hooks_ptr\skills\actives\ptr_swordmaster_versatile_swordsman_stance_half_swording_skill.nut
+...\mod_sellswords\hooks_ptr\skills\actives\ptr_swordmaster_versatile_swordsman_stance_meisterhau_skill.nut
+Removed these hooks since they caused issues and cba to fix them (changing back to vanilla PTR values)
+
+...\mod_sellswords\hooks_ptr\config\strings.nut
+Removed the PTRSwordmasterVersatileSwordsman entry (changing back to vanilla PTR values)
+
+...\mod_sellswords\config\background_perks.nut
+Fixed a couple trees that didn't get Furinkazan
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
+Updated the hook to remove the old Muscularity formula
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_knife_skill.nut
+Fixed Prisoner's Rush giving the values as Knife Fighting
+
+...\mod_sellswords\hooks\items\ammo\legend_broad_head_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_broad_head_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_broad_head_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_broad_head_bolts.nut
+Updated values
+
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_bolts.nut
+Updated descriptions
+
+...\mod_sellswords\hooks_ptr\skills\effects\ptr_armor_fatigue_recovery_effect.nut (deleted)
+...\scripts\skills\effects\ptr_armor_fatigue_recovery_effect.nut
+Deleted as a hook, then made an override so it works with or without PTR
+
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+Added ptr_armor_fatigue_recovery_effect to player initialisation (does nothing if you have PTR)
+
+...\gfx\skills\ptr_armor_fatigue_recovery_effect.png
+Added the icon for ptr_armor_fatigue_recovery_effect (does nothing if you have PTR)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.6.4 changes
+
+...\scripts\entity\tactical\enemies\crFallenbetrayer.nut
+Fixed PTR perk call
+
+...\brushes\chiru_weapons.brush
+...\gfx\chiru_weapons.png
+...\gfx\ui\items\weapons\melee\grass_sword_70x70.png
+...\gfx\ui\items\weapons\melee\grass_sword_70x140.png
+...\gfx\ui\items\weapons\melee\ice_sword_70x70.png
+...\gfx\ui\items\weapons\melee\ice_sword_70x140.png
+...\gfx\skills\grass_riposte.png
+...\gfx\skills\grass_riposte_sw.png
+...\gfx\skills\grass_slash.png
+...\gfx\skills\grass_slash_sw.png
+...\gfx\skills\grass_swing.png
+...\gfx\skills\grass_swing_sw.png
+...\gfx\skills\ice_riposte.png
+...\gfx\skills\ice_riposte_sw.png
+...\gfx\skills\ice_slash.png
+...\gfx\skills\ice_slash_sw.png
+...\gfx\skills\ice_swing.png
+...\gfx\skills\ice_swing_sw.png
+Adding new icons and sprites for the soontm Legendary Swords rework
+
+...\scripts\skills\actives\grass_slash.nut
+...\scripts\skills\actives\ice_slash.nut
+...\scripts\skills\actives\ice_swing.nut
+...\scripts\items\weapons\special\ssu_sword_grass.nut
+...\scripts\items\weapons\special\ssu_sword_ice.nut
+The actual soontm Legendary Swords rework stuff
+
+...\sounds\combat\ice_sword_impact.wav
+New file directory for soontm Legendary sword sounds
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.6.3 changes
+
+...\mod_sellswords\hooks\ui\screens\world\modules\camp_screen\camp_painter_dialog_module.nut
+Changed the shield value to 5 for painting to keep it consistent with the price of armour/helm paint prices
+
+...\mod_sellswords\hooks\items\accessory\accessory_dog.nut
+Probably fixed an entity.setVariant error
+
+...\mod_sellswords\config\perk_defs.nut
+Updated Furinkazan description to include new Climb skill from Athlete
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_athlete.nut
+Added new file and hook for the Sprint replacement perk Athlete
+
+...\mod_sellswords\hooks\skills\actives\sprint_skill_3.nut
+Updated syntax
+
+...\mod_sellswords\hooks\skills\actives\legend_climb.nut
+Added new file and hook for the Sprint replacement perk Athlete which gives the Climb active
+
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
+Updated both the Agile and Fast trees with the new Athlete and Quick Step perks
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.6.2 changes
+
+...\mod_sellswords\hooks\items\legend_armor\cloth\wanderers_coat.nut
+...\mod_sellswords\hooks\items\legend_armor\cloth\legend_knightly_robe.nut
+...\mod_sellswords\hooks\items\legend_armor\cloth\legend_gambeson_wolf.nut
+Changed some values to better balance the availability of the new Legend base layers
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\armorsmith_building.nut
+Added the new Legend pauldrons to the Armorsmith spawnlist
+
+...\mod_sellswords\hooks\factions\actions\send_nomad_ambushers_action.nut
+Fixed an oversight on the nomad ambusher call
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.6.1 changes
+
+...\scripts\contracts\contracts\explore_treasures_contract.nut
+Changed the "treature" to "treasure" in the contract description
+
+...\mod_sellswords\hooks_ptr\skills\backgrounds\female_butcher_background.nut
+...\mod_sellswords\hooks_ptr\skills\backgrounds\female_disowned_noble_background.nut
+...\mod_sellswords\hooks_ptr\skills\backgrounds\female_farmhand_background.nut
+Removed redundant files from the PTR hooks
+
+...\mod_sellswords\config\background_perks.nut
+Added the crirresistibleimpulse to the perk trees generated on units that gain Adrenaline (Berserkers)
+
+...\scripts\entity\tactical\humans\crBarbarianChampionhigh.nut
+Updated old nomenclature for weapons
+
+...\mod_sellswords\hooks\factions\actions\send_bandit_ambushers_action.nut
+...\mod_sellswords\hooks\factions\actions\send_barbarian_ambushers_action.nut
+...\mod_sellswords\hooks\factions\actions\send_nomad_ambushers_action.nut
+...\mod_sellswords\hooks\factions\actions\send_undead_ambushers_action.nut
+Updated 'Ambusher' spawn actions to the new timed spawning system
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.6.0 changes
+
+...\mod_sellswords\config\a_ptr_player.nut
+Added the PTR patch that was needed into the base mod, was too much hassle before
+
+...\mod_sellswords\config\background_perks.nut
+Removed the Female Background hooks as they no longer exist
+
+...\mod_sellswords\hooks\skills\actives\legend_en_garde.nut
+Fixed the onAnySkillUsed call
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.11 changes
+
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
+Fixed Overwhelm being commented out
+
+...\scripts\!mods_preload\!register_mod_sellswords.nut
+Fixed MC dependancy oversight
+
+...\scripts\skills\perks\perk_crBackswing.nut
+Changed PTR icon changes
+
+...\mod_sellswords\config\perk_defs.nut
+Changed crBackswing perk name and description to better explain that it works for melee *and* ranged attacks
+
+...\gfx\ui\perks\crBackswing.png
+...\gfx\ui\perks\crBackswing_bw.png
+Changed perks to have new icons better differentiate from Exploit Opening/Feint 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.10 changes
+
+...\scripts\skills\actives\throw_net_free.nut
+Added a clause for PTR's Off-hand Training
+
+...\scripts\config\a_sellswords_gobal.nut
+Fixed typos in unit names
+
+...\scripts\entity\tactical\humans\crHonoraryknight.nut
+...\scripts\entity\tactical\humans\crGuardsman.nut
+Fixed PTR perks being put into non-PTR skill containers
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.9 changes
+
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
+Fixed Overwhelm being commented out
+
+Fixed MC dependancy oversight
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.8 changes
+
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_class.nut
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
+Fixed up various PTR trees
+
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+Fixed up various Legends trees and added a much clearer method of documentation
+Added various missing perks and a couple new ones
+
+..\mod_sellswords\config\perks_tree_class.nut
+...\mod_sellswords\hooks\config\z_perks_tree_class.nut
+Deleted the perks_tree_class.nut and added the new z_perks_tree_class.nut inside the hooks folder for cleaner formatting
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.7 changes
+
+...\mod_sellswords\hooks\config\tactical.nut
+Deleted as feedback seemed geared towards having night battles stay darkened instead of being visually day time
+
+...\scripts\config\spawnlist_barbarians.nut
+...\scripts\config\z_spawnlist_chiruunit.nut
+Fixed the soloHedgeKnight World Spawn
+
+...\mod_sellswords\hooks\factions\actions\send_barbarian_ambushers_action.nut
+Fixed the 'settlements' ID which was causing errors with the setLastSpawnTimeToNow function
+
+...\scripts\entity\tactical\humans\crSquire_guest.nut
+Fixed an incorrect calling for a skill named addTreeOfEquippedWeapon instead of use the custom, non-ptr hook, ::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.6 changes
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\arena_building.nut
+Did an oopsie, all fixed now
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.5 changes
+
+...\mod_sellswords\hooks\scenarios\world\beast_hunters_scenario.nut
+...\mod_sellswords\hooks\scenarios\world\legends_rangers_scenario.nut
+...\mod_sellswords\hooks\scenarios\world\gladiators_scenario.nut
+Adjusted Beast Slayers to have 10% worse prices instead of 20%
+Adjusted Ranger Scenario to give everyone Pathfinder instead of just Ranger backgrounds
+Adjusted Gladiator Scenario to give all new recruits the Throw Sand skill
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_throw_sand.nut
+Created a hook for the Throw Sand perk as base Legends has it formatted wrong
+
+...\mod_sellswords\hooks\skills\actives\throw_dirt_skill.nut
+Hooked the throw_dirt_skill that the Throw Sand Perk gives
+
+...\mod_sellswords\hooks\config\strings.nut
+Improved perk description for Throw Sand
+
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_attack_swing.nut
+Added the new Staff Swing to AI behaviour
+
+...\mod_sellswords\hooks\items\weapons\legend_staff.nut
+...\mod_sellswords\hooks\items\weapons\legend_tipstaff.nut
+...\mod_sellswords\hooks\items\weapons\legend_staff_vala.nut
+...\mod_sellswords\hooks\items\weapons\legend_mystic_staff.nut
+Added the new Staff Swing skill provided PTR isn't active in the mod list
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\arena_building.nut
+Added a new Arena system to stop the infinite run abuse. Now it saves up to 5 runs, ticking up by 1 available fight each day
+
+...\mod_sellswords\hooks\ui\screens\tooltip\tooltip_events.nut
+Added a hook for the new Arena system
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.4 changes
+
+...\brushes\chiru_orcs.brush
+Cleaned up the Orc Bone Staff sprite and added a bloodied version
+
+...\gfx\ui\items\weapons\melee\bone_staff_70x70.png
+...\gfx\ui\items\weapons\melee\bone_staff_70x140.png
+Added new inventory and equipped sprites for the Orc Bone Staff
+
+...\scripts\items\weapons\guerdanfazhang.nut
+Added the new sprites, changed the description from "bone stick" and changed the file name and all IDs to orc_staff
+
+...\scripts\entity\tactical\enemies\crOrcWarlock.nut
+Changed guerdanfazhang weapon entry to orc_staff
+
+..\scripts\skills\actives\crstaff_sweep.nut
+Created a new staff sweep active skill
+
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+Added back Climb, Mind Over Body, Sprint, Anticipation, and Fortified Mind to their Perk trees
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.3 changes
+
+...\scripts\contracts\contracts\purge_infection_contract.nut
+Fucked up a symbol, blame Notepad++
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.2 changes
+
+...\mod_sellswords\config\background_perks.nut
+Fixed the issue with Beast Slayers and Guildmasters by changing their perk to Net Repair. I'll revisit this in the future
+
+...\scripts\contracts\contracts\purge_infection_contract.nut
+Cleaned up the dialogue significantly, will get around to the other contracts soon too
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.1 changes
+
+...\mod_sellswords\config\background_perks.nut
+Fixed the Adrenaline string
+Changed Assassin perk from Knife Spec to Opportunist
+
+...\mod_sellswords\hooks\skills\actives\perfect_focus.nut
+Deleted the string hook as it's now redundant
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.5.0 changes
+
+...\mod_sellswords\config\background_perks.nut
+Added unique perks which come pre-selected to each background 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.4.16 changes
+
+...\mod_sellswords\hooks\skills\effects\perfect_focus_effect.nut
+Deleted as redundant without PTR despite hooking without it
+
+...\mod_sellswords\hooks\skills\effects\stunned_effect.nut
+Added the "stuns turn into a daze" effect back to Steel Brow
+
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+Changed the Composure entry back to Steelbrow for the Sturdy tree
+
+...\scripts\skills\perks\perk_crGrandslam.nut
+...\scripts\skills\effects\cr_sword_jugg_effect.nut
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_swordmaster_juggernaut.nut
+Fixed the IsPerformingAttackOfOpportunity index
+
+...\mod_sellswords\config\chiru_helmets.nut
+...\mod_sellswords\config\tu_helmets.nut
+...\scripts\entity\world\settlements\buildings\rogue_armorsmith_oriental_building.nut
+Removed all references to a non existing item \legend_helmet_busijun
+
+...\mod_sellswords\config\chiru_helmets.nut
+...\scripts\entity\world\settlements\buildings\rogue_armorsmith_oriental_building.nut
+Changed most versions of vanity/legend_helmet_lion_pelt back to the new v17 top/legend_helmet_ancient_lion_mask
+
+...\scripts\entity\world\settlements\buildings\rogue_weaponsmith_oriental_building.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\barbarian_kuangzhanshi.nut
+...\scripts\entity\tactical\humans\barbarian_kuangzhanshi02.nut
+Changed several leftover entities from kuangzhanshishuangfu to twinaxes
+
+...\scripts\entity\world\settlements\buildings\rogue_weaponsmith_oriental_building.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\barbarian_kuangzhanshi.nut
+...\scripts\entity\tactical\humans\barbarian_kuangzhanshi02.nut
+Changed several leftover entities from kuangzhanshishuangkandao to twincleavers
+
+...\scripts\config\a_sellswords_spawn_troops_.nut
+...\scripts\entity\tactical\humans\barbarian_kuangzhanshi.nut
+...\scripts\entity\tactical\humans\barbarian_kuangzhanshi02.nut
+Changed several entities from barbarian_kuangzhanshi to barbarian_dualwielder
+
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+Did a bit of rejigging so that the trait trees are more balanced and thematic
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.4.15 changes
+
+...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
+Removed the duplicate LegendPiercingShot from the Crossbow tree
+
+...\mod_sellswords\hooks\config\z_perks_tree_defense.nut
+Removed the duplicate LegendFreedomOfMovement from the Light Armour tree
+
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+Removed the duplicate LegendPacifist and crScintillating from their respective Trait trees
+
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
+Replaced crScintillating with the new Legend Adaptive Perk
+
+...\gfx\ui\perks\crScintillating.png and crScintillating_bw.png
+...\mod_sellswords\config\perk_defs.nut
+...\mod_sellswords\hooks\events\events\dlc4\kings_guard_2_event.nut
+...\mod_sellswords\hooks\events\events\dlc8\anatomist_helps_blighted_guy_2_event.nut
+...\mod_sellswords\hooks\events\events\dlc8\disowned_noble_welcomed_back_event.nut
+...\mod_sellswords\hooks_ptr\skills\backgrounds\legend_lonewolf_background.nut
+...\scripts\skills\perks\perk_crScintillating.nut
+Deleted all reference to crScintillating as it's now redundant with the new Legends Adaptive perk
+
+...\scripts\skills\perks\perk_crAnchor.nut
+Raised the bonus from +5 to +10. Old increase didn't feel like it warranted a perk point for such low and restrictive buffs
+
+...\scripts\skills\perks\perk_crGuardian.nut
+...\mod_sellswords\config\perk_defs.nut
+
+Changed name to pull from the perk_defs.nut and edited the isInEffect() function to correctly pull if shield is used
+
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+Added a new onInit function for the crbolstered_effect to be added which enables the new hooked Guardian perk to work
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.4.14 changes
+
+...\mod_sellswords\hooks\hooks_dogs.nut
+
+Fixed the old b. formats to ::m.BaseProperties.
+
+...\mod_sellswords\hooks\hooks_rune_blueprints.nut
+
+Deleted as redundant now
+
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_en_garde.nut
+...\mod_sellswords\hooks_ptr\config\string.nut
+
+Deleted, effect was very convoluted and took away from what direction PTR initially went with for the perk
+Deleted references to PTREnGarde
+
+...\mod_sellswords\config\chiru_helmets.nut
+
+Changed all outdated versions of helm\legend_helmet_ancient_lion_mask to legend_helmets/vanity/legend_helmet_lion_pelt 
+
+...\scripts\entity\tactical\humans\crHonoraryknight.nut
+...\scripts\entity\tactical\humans\crGuardsman.nut
+
+Added if (::Is_PTR_Exist) to the /perk_str_line_breaker entries on tactical entities
+
+...\mod_sellswords\hooks\items\legend_armor\cloth\legend_tunic_noble.nut
+
+Changed Noble Tunic hook to 0 stam 30 durability, a pricy alternative to the southern light armour
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\armorsmith_building.nut
+
+Added a hook for the Armorsmith building to allow for the new Wander's Coat and Knightly Robe items to spawn
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+5.4.13 changes
+
+...\mod_sellswords\config\chiru_helmets.nut
+...\scripts\entity\world\settlements\buildings\rogue_armorsmith_oriental_building.nut
+
+Changed all outdated versions of legend_helmets/helm/legend_helmet_lion_helm to legend_helmets/vanity/legend_helmet_lion_pelt
+
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_eyes_up.nut
+
+Fixed the bugged interactions by cleaning up the hooks that affected the perk
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5.4.12 changes
+
+...\scripts\entity\tactical\humans\crOutlander.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\alchemist_building.nut
+...\scripts\entity\world\settlements\buildings\rogue_alchemist_building.nut
+
+Changed references from huomao to advancedfirelance
+
+...\mod_sellswords\hooks_ptr\skills\effects\ptr_bolstered_effect.nut
+...\scripts\skills\perks\perk_crGuardian.nut < new
+
+Deleted the hook in ptr_bolstered_effect which only existed for crGuardian
+Added new skill effect for it instead so it wasn't PTR dependant
+
+
+
+
+

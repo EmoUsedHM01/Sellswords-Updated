@@ -1,48 +1,71 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/bandit_leader", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/bandit_leader", function( q ) {
+
 	q.onInit = @( __original ) function()
-	{		
+	{
 		__original();
+
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 40)
 		{
 			this.m.BaseProperties.MeleeSkill += 2;
 			this.m.BaseProperties.Initiative += 2;
+
 			if (this.World.getTime().Days >= 60)
 			{			
 				this.m.BaseProperties.MeleeDefense += 2;
 				this.m.BaseProperties.RangedDefense += 2;
 				this.m.BaseProperties.Bravery += 2;
+
 				if (this.World.getTime().Days >= 80)
-				{					
+				{
 					this.m.BaseProperties.MeleeSkill += 3;
 					this.m.BaseProperties.Initiative += 3;
+
 					if (this.World.getTime().Days >= 100)
 					{
 						this.m.BaseProperties.MeleeDefense += 3;
 						this.m.BaseProperties.RangedDefense += 3;
-						this.m.BaseProperties.Bravery += 3;											
-					}		
+						this.m.BaseProperties.Bravery += 3;
+					}
 				}
 			}
-		}			
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));				
+		}
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
+
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 			this.m.BaseProperties.MeleeSkill += dca;
 			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-			this.m.BaseProperties.RangedSkill += dca;	
-			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.RangedSkill += dca;
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
-			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}			
+			this.m.BaseProperties.Hitpoints += 2 * dca;
+		}
+
+		if (::Mod_Sellswords.EnableHostileSequences)
+		{
+			local roll = this.Math.rand(1.0, 100.0);
+			if (roll <= 15.0)
+			{
+				if (roll <= 3.0)
+					::Mod_Sellswords.add_ghoul(this.actor, true);
+				else if (roll <= 6.0)
+					::Mod_Sellswords.add_ghoul(this.actor, false);
+				else if (roll <= 9.0)
+					::Mod_Sellswords.add_orc(this.actor, true);
+				else if (roll <= 12.0)
+					::Mod_Sellswords.add_orc(this.actor, false);
+				else
+					::Mod_Sellswords.add_unhold(this.actor, false);
+			}
+		}
 	}
 
-    q.assignRandomEquipment = @( __original ) function()
-    {
-		__original();		
+	q.assignRandomEquipment = @( __original ) function()
+	{
+		__original();
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
 		{
 			local weapons = [
@@ -170,6 +193,7 @@
 			]));
 		}			
 	}
+
 	q.makeMiniboss = @( __original ) function ()
 	{
 		if (!this.actor.makeMiniboss())
@@ -216,5 +240,6 @@
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		return true;
-	}	
+	}
+
 });

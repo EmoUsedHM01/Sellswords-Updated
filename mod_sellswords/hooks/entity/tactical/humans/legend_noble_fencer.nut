@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_noble_fencer", function(q)
-{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_noble_fencer", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
@@ -32,18 +32,18 @@
 		{
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+			dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 			this.m.BaseProperties.MeleeSkill += dca;
 			this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-			this.m.BaseProperties.RangedSkill += dca;	
-			this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+			this.m.BaseProperties.RangedSkill += dca;
+			this.m.BaseProperties.RangedDefense += 0.5 * dca;
 			this.m.BaseProperties.Bravery += dca;
-			this.m.BaseProperties.Hitpoints += 2 * dca;	
-		}			
+			this.m.BaseProperties.Hitpoints += 2 * dca;
+		}
 	}
 
-    q.assignRandomEquipment = @( __original ) function()
-    {
+	q.assignRandomEquipment = @( __original ) function()
+	{
 		__original();
 		
 		local banner = 3;
@@ -150,12 +150,11 @@
 			]));
 		}			
 	}
+
 	q.makeMiniboss = @(__original) function()
 	{
-		if (!__original())
-		{
+		if (!this.actor.makeMiniboss())
 			return false;
-		}
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local r = this.Math.rand(1, 2);
@@ -187,5 +186,6 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_nine_lives"));					
 		return true;
-	}	
+	}
+	
 });
