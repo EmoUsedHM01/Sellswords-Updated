@@ -12,7 +12,7 @@ Refractored and MH
 ...\mod_sellswords\hooks\skills\effects\legend_knockback_prepared_effect.nut
 Fixed accidently crashing the game on kill
 
-C:\Users\joema_mpevn9w\Documents\GitHub\Sellswords-Updated\mod_sellswords\hooks\skills\effects\unhold_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\unhold_potion_effect.nut
 Fixed another crash related to not having null checks (ty Rygar)
 
 ----------------------------------------------------------------------------------------------------------------------------
