@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_staff_knock_out", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_staff_knock_out", function ( q ) {
 
 	q.m.BonusPerNegativeStatusEffect <- 0.33;
 	q.m.Effects <- [

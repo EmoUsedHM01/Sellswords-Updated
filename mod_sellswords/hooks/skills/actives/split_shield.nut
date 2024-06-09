@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/split_shield", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/split_shield", function ( q ) {
 
 	q.onAfterUpdate = @(__original) function( _properties )
 	{
@@ -33,5 +33,4 @@
 
 		return ret;
 	}
-
 });

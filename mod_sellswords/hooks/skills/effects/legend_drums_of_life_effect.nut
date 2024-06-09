@@ -1,5 +1,6 @@
-::mods_hookExactClass("skills/effects/legend_drums_of_life_effect", function(o) {
-	o.onAdded = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_drums_of_life_effect", function( q ) {
+
+	q.onAdded = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 
@@ -9,4 +10,4 @@
 			this.spawnIcon(this.m.Overlay, actor.getTile());
 		}
 	}
-})
+});

@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/effects/legend_stollwurm_blood_effect", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_stollwurm_blood_effect", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Icon = "skills/status_effect_78.png";
 		this.m.IconMini = "status_effect_78_mini";
@@ -12,12 +12,12 @@
 		];	
 	}
 	
-	o.getDescription = function()
+	q.getDescription = @(__original) function()
 	{
 		return "This character\'s blood is highly pressurized and burns upon prolonged exposure to air. Attackers who break skin or spattered with blood will find themselves unpleasantly surprised by the resultant spray.";
 	}
 	
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		return [
 			{
@@ -39,11 +39,11 @@
 		];
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 	}
 	
-	o.onDamageReceived <- function( _attacker, _damageHitpoints, _damageArmor )
+	q.onDamageReceived <- function( _attacker, _damageHitpoints, _damageArmor )
 	{
 		if (_damageHitpoints <= 5)
 		{
@@ -84,7 +84,7 @@
 		this.spawnIcon("status_effect_78", _attacker.getTile());
 	}
 	
-	o.onTargetHit <- function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
+	q.onTargetHit <- function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		if (_damageInflictedHitpoints <= 5)
 		{
@@ -125,4 +125,4 @@
 		this.spawnIcon("status_effect_78", _targetEntity.getTile());		
 
 	}	
-})
+});

@@ -1,14 +1,15 @@
-::mods_hookExactClass("skills/actives/split_man", function(o) {
-	o.m.crcriticalbonus <- 0.5;
-	o.m.infantry <- 0;
-	o.m.orc <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/split_man", function ( q ) {
 
-	o.resetcrcriticalbonus <- function()
+	q.m.crcriticalbonus <- 0.5;
+	q.m.infantry <- 0;
+	q.m.orc <- false;
+
+	q.resetcrcriticalbonus <- function()
 	{
 		this.m.crcriticalbonus = 0.5;
 	}
 
-	o.isHidden <- function()
+	q.isHidden <- function()
 	{
 		local shield = 1;
 		if (this.getContainer().hasSkill("actives.shieldwall") || this.getContainer().hasSkill("actives.legend_fortify_skill"))
@@ -18,7 +19,7 @@
 		return this.m.orc == true && shield == 1;
 	}	
 
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectBash);
 		local targetEntity = _targetTile.getEntity();
@@ -52,8 +53,7 @@
 		return success;
 	}
 
-	local ws_onAnySkillUsed = o.onAnySkillUsed;
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -68,4 +68,4 @@
 		}
 	}
 
-})
+});

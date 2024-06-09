@@ -1,6 +1,6 @@
-::mods_hookExactClass("ui/screens/world/modules/camp_screen/camp_painter_dialog_module", function ( o )
-{
-	o.queryRosterInformation = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/ui/screens/world/modules/camp_screen/camp_painter_dialog_module", function ( q ) {
+
+	q.queryRosterInformation = @( __original ) function ()
 	{
 		local brothers = this.World.getPlayerRoster().getAll();
 		local roster = [];
@@ -119,4 +119,4 @@
 			Assets = this.m.Parent.queryAssetsInformation()
 		};
 	}
-});	
+});

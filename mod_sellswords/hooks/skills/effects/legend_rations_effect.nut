@@ -1,12 +1,22 @@
-::mods_hookExactClass("skills/effects/legend_rations_effect", function(o) {
-	::Mod_Sellswords.HookHelper.hookNewEatFoodEffectSystem(o);
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_rations_effect", function ( q ) {
 
-	o.getDescription = function()
+	q.create = @(__original) function()
+	{
+		__original();
+
+		this.m.Amount = amount;
+		this.m.TurnsLeft = turnLeft;
+		this.m.Icon = "skills/status_effect_93.png";
+		this.m.IconMini = "status_effect_93_mini";
+		this.m.Overlay = "status_effect_93";
+	}
+
+	q.getDescription = @(__original) function()
 	{
 		return "Thanks to eating food, this character regains Health, Fatigue, Resolve and Initiative for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.TurnsLeft + "[/color] turn(s). ";
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		local rate = this.Math.max(1, this.Math.ceil(this.m.Amount / 8));
 		local turns = this.m.TurnsLeft;
@@ -69,7 +79,7 @@
 		return ret;
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local rate = this.Math.max(1, this.Math.ceil(this.m.Amount / 8));
 		_properties.FatigueRecoveryRate += rate;
@@ -77,7 +87,7 @@
 		_properties.Initiative += rate;		
 	}
 
-	o.onTurnEnd = function()
+	q.onTurnEnd = @(__original) function()
 	{
 		local rate = this.Math.max(1, this.Math.ceil(this.m.Amount / 8));
 		local actor = this.getContainer().getActor();
@@ -88,4 +98,4 @@
 			this.removeSelf();
 		}
 	}
-})
+});

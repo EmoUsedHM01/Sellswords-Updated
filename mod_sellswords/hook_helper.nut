@@ -4,10 +4,9 @@
 	{
 		if (_withTooltip)
 		{
-			local ws_getTooltip = _object.getTooltip;
-			_object.getTooltip = function()
+			_object.getTooltip = @(__original) function()
 			{
-				local ret = ws_getTooltip();
+				local ret = __original();
 
 				foreach (tooltip in ret)
 				{
@@ -21,10 +20,10 @@
 			}
 		}
 
-		if ("isUsable" in _object)
+		if (_object.contains("isUsable"))
 		{
 			// must overdrive
-			_object.isUsable = function()
+			_object.isUsable = @(__original) function()
 			{
 				return !::Tactical.isActive() || this.skill.isUsable();
 			}
@@ -37,12 +36,11 @@
 			}
 		}
 
-		if ("onAfterUpdate" in _object)
+		if (_object.contains("onAfterUpdate"))
 		{
-			local ws_onAfterUpdate = _object.onAfterUpdate;
-			_object.onAfterUpdate = function( _properties )
+			_object.onAfterUpdate = @(__original) function( _properties )
 			{
-				ws_onAfterUpdate(_properties);
+				__original(_properties);
 
 				if (!this.getContainer().getActor().isPlacedOnMap()) return;	
 
@@ -71,7 +69,7 @@
 		local amount = _amountNum;
 		local turnLeft = _turnNum;
 
-		if (!("getAmount" in _object))
+		if (!(_object.contains("getAmount")))
 		{
 			_object.getAmount <- function()
 			{
@@ -79,7 +77,7 @@
 			}
 		}
 
-		if (!("addAmount" in _object))
+		if (!(_object.contains("addAmount")))
 		{
 			_object.addAmount <- function( _a )
 			{
@@ -87,7 +85,7 @@
 			}
 		}
 
-		if (!("getTurnsLeft" in _object))
+		if (!(_object.contains("getTurnsLeft")))
 		{
 			_object.getTurnsLeft <- function()
 			{
@@ -95,7 +93,7 @@
 			}
 		}
 
-		if (!("resetTurns" in _object))
+		if (!(_object.contains("resetTurns")))
 		{
 			_object.resetTurns <- function()
 			{
@@ -103,15 +101,14 @@
 			}
 		}
 
-		_object.onAdded = function()
+		_object.onAdded = @(__original) function()
 		{
 			this.m.TurnsLeft = turnLeft;
 		}
 
-		local ws_create = _object.create;
-		_object.create = function()
+		_object.create = @(__original) function()
 		{
-			ws_create();
+			__original();
 
 			this.m.Amount = amount;
 			this.m.TurnsLeft = turnLeft;
@@ -140,10 +137,9 @@
 			"effects.legend_porridge_effect"
 		];
 
-		local ws_create = _object.create;
-		_object.create = function()
+		_object.create = @(__original) function()
 		{
-			ws_create();
+			__original();
 
 			this.m.Name = "Eat or Give Food";
 			this.m.Description = "Give to an adjacent ally or eat food that slowly heals. AP cost is doubled while engaged in melee, and anyone receiving the item needs to have a free bag slot. Eating this kind of comestible will increase your Fatigue recovery, hitchance and initiative, based on amount of the food.";
@@ -226,7 +222,7 @@
 		_object.m.StaminaModifier <- 0;
 		_object.m.StashModifier <- 0;
 
-		if (!("onPutIntoBag" in _object))
+		if (!(_object.contains("resetTurns")))
 		{
 			_object.onPutIntoBag <- function()
 			{
@@ -234,7 +230,7 @@
 			};
 		}
 
-		if (!("isDesirable" in _object))
+		if (!(_object.contains("isDesirable")))
 		{
 			_object.isDesirable <- function()
 			{
@@ -242,10 +238,9 @@
 			};
 		}
 
-		local old_create = _object.create;
 		_object.create = function()
 		{
-			old_create();
+			__original();
 
 			// usable food
 			this.m.SlotType = ::Const.ItemSlot.Bag;

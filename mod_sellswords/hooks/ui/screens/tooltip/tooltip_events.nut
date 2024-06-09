@@ -1,6 +1,6 @@
-::mods_hookNewObject("ui/screens/tooltip/tooltip_events", function(o) {
-	local ws_general_queryUIElementTooltipData = o.general_queryUIElementTooltipData;
-	o.general_queryUIElementTooltipData = function( _entityId, _elementId, _elementOwner )
+::Mod_Sellswords.HooksMod.hook("scripts/ui/screens/tooltip/tooltip_events", function ( q ) {
+
+	q.general_queryUIElementTooltipData = @( __original) function( _entityId, _elementId, _elementOwner )
 	{
 		switch(_elementId)
 		{
@@ -147,7 +147,7 @@
 			return ret;
 		}
 		
-		return ws_general_queryUIElementTooltipData(_entityId, _elementId, _elementOwner);
+		return __original(_entityId, _elementId, _elementOwner);
 	}
 
-})
+});

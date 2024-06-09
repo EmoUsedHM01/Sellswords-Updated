@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/legend_prepare_knockback_skill", function ( o )
-{
-	o.onAfterUpdate <- function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_prepare_knockback_skill", function ( q ) {
+
+	q.onAfterUpdate <- function ( _properties )
 	{
 		this.m.FatigueCost = 10;
 		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
@@ -13,7 +13,7 @@
 			this.m.ActionPointCost = 2;
 		}			
 	};	
-	o.getTooltip = function ()
+	q.getTooltip = @( __original ) function ()
 	{
 		local ret = [
 			{
@@ -39,5 +39,6 @@
 			}
 		];
 		return ret;
-	}		
-});	
+	}
+
+});

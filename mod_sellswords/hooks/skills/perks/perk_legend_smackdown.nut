@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_legend_smackdown", function ( o )
-{
-	o.onTargetHit = function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_smackdown", function ( q ) {
+
+	q.onTargetHit = @( __original ) function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		this.m.TilesUsed = [];
 		if (!_targetEntity.isAlive() || _targetEntity.isDying())

@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/insect_swarm_effect", function ( o )
-{
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/insect_swarm_effect", function ( q ) {
+
+	q.onAdded = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
@@ -37,8 +37,9 @@
 			actor.setSpriteOffset("insects_14", this.createVec(-20, 0));
 			actor.setSpriteOffset("insects_15", this.createVec(10, 0));
 		}
-	};
-	o.onUpdate = function ( _properties )
+	}
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		if (this.getContainer().hasSkill("perk.crresilient"))
 		{

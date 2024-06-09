@@ -1,8 +1,7 @@
-::mods_hookExactClass("skills/perks/perk_legend_in_the_zone", function ( o )
-{
-	o.m.MaxStacks = 20;
-	local getTooltip = o.getTooltip;
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_in_the_zone", function ( q ) {
+
+	q.m.MaxStacks = 20;
+	q.getTooltip = @( __original ) function ()
 	{
 		local tooltip = this.skill.getTooltip();
 		local bonus = this.getBonus();
@@ -57,8 +56,8 @@
 
 		return tooltip;
 	};
-	local onAfterUpdate = o.onAfterUpdate;
-	o.onAfterUpdate = function ( _properties )
+
+	q.onAfterUpdate = @( __original ) function ( _properties )
 	{
 		local actor = this.getContainer().getActor();
 
@@ -101,4 +100,4 @@
 			_properties.MeleeDamageMult *= 1 + bonus * 0.01;
 		}
 	};
-});	
+});

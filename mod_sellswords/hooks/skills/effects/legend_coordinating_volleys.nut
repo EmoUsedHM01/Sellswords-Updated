@@ -1,5 +1,6 @@
-::mods_hookExactClass("skills/effects/legend_coordinating_volleys", function(o) {
-	o.getTooltip <- function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_coordinating_volleys", function( q ) {
+
+	q.getTooltip <- function()
 	{
 		local tooltip = this.skill.getTooltip();
 		tooltip.extend([
@@ -18,7 +19,7 @@
 		]);
 		return tooltip;
 	}
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		_properties.RangedSkill += 10;
 		_properties.RangedAttackBlockedChanceMult *= 0.8;			

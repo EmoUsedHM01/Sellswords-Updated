@@ -4,12 +4,11 @@ foreach (skill in [
 	"legend_drink_mead_skill",
 ])
 {
-	::mods_hookExactClass("skills/actives/" + skill, function ( o )
-	{
-		local ws_create = o.create;
-		o.create = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/" + skill, function ( q ) {
+	
+		q.create = @(__original) function()
 		{
-			ws_create()
+			__original();
 
 			this.m.ActionPointCost = 1;
 		}

@@ -1,6 +1,5 @@
-::mods_hookExactClass("skills/perks/perk_legend_athlete", function ( o )
-{
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_athlete", function ( q ) {
+	q.onAdded = @( __original ) function ()
 	{
 		if (!this.m.Container.hasSkill("actives.legend_climb"))
 		{
@@ -39,16 +38,16 @@
 			addPerk(this.Const.Perks.PerkDefs.crFurinkazan, 5);
 		}			
 	}
-	o.onRemoved = function ()
+	q.onRemoved = @( __original ) function()
 	{
 		this.m.Container.removeByID("actives.legend_climb");
 		this.m.Container.removeByID("actives.sprint");
 	}
-	o.onSerialize <- function ( _out )
+	q.onSerialize <- function ( _out )
 	{
 		this.skill.onSerialize(_out);
 	};
-	o.onDeserialize <- function ( _in )
+	q.onDeserialize <- function ( _in )
 	{
 		this.skill.onDeserialize(_in);
 	};		

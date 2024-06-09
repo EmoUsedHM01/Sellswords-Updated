@@ -1,7 +1,8 @@
-::mods_hookExactClass("skills/effects/holy_water_effect", function(o) {
-	o.m.Concentrate <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/holy_water_effect", function( q ) {
 
-	o.applyDamage = function( _dropIcon = true )
+	q.m.Concentrate <- false;
+
+	q.applyDamage = @(__original) function( _dropIcon = true )
 	{
 		if (this.m.LastRoundApplied != this.Time.getRound())
 		{
@@ -40,4 +41,4 @@
 			}
 		}
 	}
-})
+});

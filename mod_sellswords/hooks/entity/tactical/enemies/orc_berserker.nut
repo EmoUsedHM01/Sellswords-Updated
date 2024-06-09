@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/orc_berserker", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/enemies/orc_berserker", function ( q ) {
 
 	q.create = @( __original ) function()
 	{

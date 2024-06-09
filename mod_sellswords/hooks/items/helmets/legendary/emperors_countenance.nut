@@ -1,4 +1,4 @@
-::mods_hookExactClass("items/helmets/legendary/emperors_countenance", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/helmets/legendary/emperors_countenance", function ( q ) {
 
 	q.create = @(__original) function()
 	{

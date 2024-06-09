@@ -1,6 +1,6 @@
-::mods_hookExactClass("ui/screens/world/modules/world_town_screen/town_hire_dialog_module", function ( o )
-{
-	o.onDismissRosterEntry = function ( _entityID )
+::Mod_Sellswords.HooksMod.hook("scripts/ui/screens/world/modules/world_town_screen/town_hire_dialog_module", function ( q ) {
+
+	q.onDismissRosterEntry = @( __original) function ( _entityID )
 	{
 		local entry = this.findEntityWithinRoster(_entityID);
 

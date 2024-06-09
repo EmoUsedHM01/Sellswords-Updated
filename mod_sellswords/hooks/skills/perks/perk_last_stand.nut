@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/perks/perk_last_stand", function(o) 
-{
-	o.m.IsSpent <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_last_stand", function ( q ) {
 
-	o.getTooltip = function()
+	q.m.IsSpent <- false;
+
+	q.getTooltip = @( __original ) function()
 	{
 		local tooltip = this.skill.getTooltip();
 		local currentPercent = this.getContainer().getActor().getHitpointsPct();
@@ -43,7 +43,7 @@
 		return tooltip;
 	};
 
-	o.onUpdate = function(_properties)
+	q.onTargetMissed = @( __original ) function ( _skill, _targetEntity )
 	{
 		local currentPercent = this.getContainer().getActor().getHitpointsPct();
 		local missingHealthPercent = 1.0 - currentPercent;

@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/actives/throw_acid_flask", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/throw_acid_flask", function ( q ) {
 	
-	o.isHidden <- function()
+	q.isHidden <- function()
 	{
 		return this.getContainer().getActor().getCurrentProperties().IsSpecializedInNets;
 	}
 
-})
+});

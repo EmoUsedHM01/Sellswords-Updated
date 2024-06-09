@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_sling_heavy_stone_skill", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_sling_heavy_stone_skill", function ( q ) {
 
 	q.onTargetHit = @(__original) function(_skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor)
 	{

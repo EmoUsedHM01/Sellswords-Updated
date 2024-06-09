@@ -52,8 +52,8 @@
 		});
 		return tooltip;
 	}
-
-	q.onUpdate = @(__original) function( _properties )
+	
+	q.onUpdate = @( __original ) function( _properties )
 	{
 		local modifiers = this.calculateFatigueModifiers();
 		local bonus = this.Math.abs(modifiers.fat / 10);

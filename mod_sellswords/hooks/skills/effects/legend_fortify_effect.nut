@@ -1,7 +1,6 @@
-::mods_hookExactClass("skills/effects/legend_fortify_effect", function ( o )
-{
-	local getTooltip = o.getTooltip;
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_fortify_effect", function ( q ) {
+
+	q.getTooltip = @(__original) function()
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local mult = 1.0;
@@ -49,8 +48,8 @@
 
 		return tooltip;
 	};
-	local onUpdate = o.onUpdate;
-	o.onUpdate = function ( _properties )
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local dr = 100;
@@ -74,4 +73,4 @@
 			_properties.DamageReceivedTotalMult *= dr * 0.01;
 		}
 	};
-});	
+});

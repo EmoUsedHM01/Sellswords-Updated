@@ -1,17 +1,16 @@
-::mods_hookExactClass("skills/actives/thrust", function(o) {
-	o.m.spontoon <- 0;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/thrust", function( q ) {
+	q.m.spontoon <- 0;
 
-	o.isDuelistValid <- function()
+	q.isDuelistValid <- function()
 	{
 		return true;
 	}
 
-	local ws_onAnySkillUsed = o.onAnySkillUsed;
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
-			ws_onAnySkillUsed(_skill, _targetEntity, _properties);
+			__original(_skill, _targetEntity, _properties);
 			
 			if (this.m.spontoon == 1)
 			{
@@ -20,4 +19,4 @@
 			}			
 		}
 	}
-});	
+});

@@ -1,9 +1,10 @@
-this.mods_hookExactClass("entity/world/settlements/buildings/arena_building", function(o) {
-	o.m.AlreadyRefreshed <- false;
-	o.m.HoursInADay <- 24;
-	o.m.CooldownUntil = 0;
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/arena_building", function( q ) {
 
-	o.getDaysUntilNextFight <- function()
+	q.m.AlreadyRefreshed <- false;
+	q.m.HoursInADay <- 24;
+	q.m.CooldownUntil = 0;
+
+	q.getDaysUntilNextFight <- function()
 	{
 		local rawDayDifference = (this.World.getTime().Days - this.m.CooldownUntil);
 		local codedArenaFightsInDays = (storedFights() * 1);
@@ -11,27 +12,27 @@ this.mods_hookExactClass("entity/world/settlements/buildings/arena_building", fu
 		local inverseDayDifference = 1 - dayDifference - 1;
 		return inverseDayDifference;
 	}
-	o.getHoursUntilNextFight <- function()
+	q.getHoursUntilNextFight <- function()
 	{
 		return this.m.HoursInADay - this.World.getTime().Hours;
 	}
 
-	o.getAvailableFights <- function()
+	q.getAvailableFights <- function()
 	{
 		return this.Math.min(5, storedFights());
 	}
 
-	o.storedFights  <- function()
+	q.storedFights  <- function()
 	{
 		return this.Math.floor((this.World.getTime().Days - this.m.CooldownUntil) / 1);
 	}
 
-	o.isClosed = function()
+	q.isClosed = @( __original ) function()
 	{
 		return (getAvailableFights() == 0);
 	}
 
-	o.refreshCooldown = function()
+	q.refreshCooldown = @( __original ) function()
 	{
 		if(this.m.AlreadyRefreshed == true) return;
 		this.m.AlreadyRefreshed = true;
@@ -49,7 +50,7 @@ this.mods_hookExactClass("entity/world/settlements/buildings/arena_building", fu
 		}
 	}
 
-	o.getUIImage = function()
+	q.getUIImage = @( __original) function()
 	{
 		if (!this.World.getTime().IsDaytime)
 		{
@@ -65,12 +66,11 @@ this.mods_hookExactClass("entity/world/settlements/buildings/arena_building", fu
 			return this.m.UIImage;
 		}
 	}
-	
-	local ws_onClicked = o.onClicked;
-	o.onClicked = function( _townScreen )
+
+	q.onClicked = @( __original ) function( _townScreen )
 	{
 		this.m.AlreadyRefreshed = false;
 		if (isClosed() && this.World.State.getCurrentTown().hasSituation("situation.arena_tournament") == false) return;
-		ws_onClicked( _townScreen );
+		__original( _townScreen );
 	}
 });

@@ -3,7 +3,7 @@ this.perk_crHackSPM <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "perk.crHackSPM";
-		this.m.Name = "Split Man";
+		this.m.Name = this.Const.Strings.PerkName.crHackSPM;
 		this.m.Description = this.Const.Strings.PerkDescription.crHackSPM;
 		this.m.Icon = "ui/perks/crHackSPM.png";
 		this.m.Type = this.Const.SkillType.Perk;

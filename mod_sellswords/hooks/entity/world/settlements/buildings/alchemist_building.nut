@@ -1,6 +1,6 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/alchemist_building", function( q ) {
 
-	q.onUpdateShopList = @(__original) function()
+	q.onUpdateShopList = @( __original ) function()
 	{
 		local list = [
 			{

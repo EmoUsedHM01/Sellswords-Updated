@@ -1,4 +1,4 @@
-::mods_hookExactClass("events/events/dlc8/lindwurm_slayer_event", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/events/events/dlc8/lindwurm_slayer_event", function ( q ) {
 
 	q.create = @(__original) function()
 	{

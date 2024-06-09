@@ -1,19 +1,17 @@
-::mods_hookExactClass("skills/actives/legend_cheer_on_skill", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_cheer_on_skill", function ( q ) {
 	
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.ActionPointCost = 3;
 		this.m.FatigueCost = 10;
 		this.m.MaxRange = 2;
 	}
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		ret.push({
 			id = 7,
@@ -25,4 +23,4 @@
 		return ret;
 	}
 
-})
+});

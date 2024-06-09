@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_rebound", function ( o )
-{
-	o.onUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_rebound", function ( q ) {
+
+	q.onUpdate = @( __original ) function ( _properties )
 	{
 		local actor = this.getContainer().getActor();
 		local maxFat = actor.getFatigueMax();

@@ -1,19 +1,17 @@
-::mods_hookExactClass("skills/actives/legend_drink_heartwood_sap_skill", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_drink_heartwood_sap_skill", function ( q ) {
 	
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "Give to an adjacent ally or drink yourself a flask of heartwood sap that promises to render someone indomitable for three turns. AP cost is doubled while engaged in melee, and anyone receiving the item needs to have a free bag slot.";
 	}
 
-	::Mod_Sellswords.HookHelper.hookDoubleAP_CostIfEngageMelee(o);
+	::Mod_Sellswords.HookHelper.hookDoubleAP_CostIfEngageMelee(q);
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		foreach (tooltip in ret)
 		{
@@ -26,4 +24,4 @@
 		return ret;
 	}
 
-})
+});

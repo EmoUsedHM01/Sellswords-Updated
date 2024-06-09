@@ -18,11 +18,11 @@ foreach(script in [
 	"wildman",
 ])
 {
-	::mods_hookExactClass("entity/tactical/humans/" + script, function(o) {
-		local onInit = o.onInit;
-		o.onInit = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/" + script, function ( q ) {
+
+		q.onInit = @( __original ) function()
 		{
-			onInit();
+			__original();
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
 				local dc = this.World.getTime().Days;
@@ -44,11 +44,11 @@ foreach(script in [
 	"conscript_polearm",
 ])
 {
-	::mods_hookExactClass("entity/tactical/humans/" + script, function(o) {
-		local onInit = o.onInit;
-		o.onInit = function()
+	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/" + script, function ( q ) {
+
+		q.onInit = @( __original ) function()
 		{
-			onInit();				
+			__original();				
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{				
 				local dc = this.World.getTime().Days;
@@ -62,8 +62,8 @@ foreach(script in [
 				this.m.BaseProperties.Hitpoints += 2 * dca;					
 			}			
 		}
-		local assignRandomEquipment = o.assignRandomEquipment;
-		o.assignRandomEquipment = function()
+
+		q.assignRandomEquipment = @( __original ) function()
 		{
 			assignRandomEquipment();
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
@@ -82,4 +82,3 @@ foreach(script in [
 		}		
 	});	
 }
-

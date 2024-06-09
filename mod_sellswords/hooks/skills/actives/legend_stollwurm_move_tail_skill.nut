@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/actives/legend_stollwurm_move_tail_skill", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_stollwurm_move_tail_skill", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 
 		this.m.ActionPointCost = 8;
 	}

@@ -1,16 +1,16 @@
-::mods_hookExactClass("skills/actives/legend_piercing_bolt", function(o) {
-	o.m.AdditionalAccuracy <- 0;
-	o.m.AdditionalHitChance <- 0;			
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_piercing_bolt", function ( q ) {
+
+	q.m.AdditionalAccuracy = 0;
+	q.m.AdditionalHitChance = 0;			
 	
-	o.onItemSet <- function()
+	q.onItemSet = @( __original ) function()
 	{
 		this.m.MaxRange = this.m.Item.getRangeMax();
 	}
 
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Name = "Piercing Shot";
 		this.m.Description = "A shot with so much force that it passes straight through one enemy to the enemy behind them.";
@@ -20,12 +20,12 @@
 		this.m.Overlay = "active_17";
 	}
 
-	o.isHidden = function()
+	q.isHidden = @( __original ) function()
 	{
 		return !this.getContainer().getActor().isArmedWithRangedWeapon() || !this.getContainer().hasSkill("perk.legend_piercing_shot");
 	}	
 
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
 		local ret = this.getDefaultTooltip();
 		ret.extend([
@@ -80,7 +80,7 @@
 		return ret;
 	}
 
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -89,13 +89,11 @@
 		}
 	}
 
-	local ws_onAfterUpdate = o.onAfterUpdate;
-	o.onAfterUpdate = function( _properties )
+	q.onAfterUpdate = @( __original ) function( _properties )
 	{
-		ws_onAfterUpdate(_properties);
+		__original(_properties);
 
 		this.m.DirectDamageMult = _properties.IsSpecializedInCrossbows ? 0.6 : 0.4;
 		this.m.AdditionalAccuracy = this.m.Item.getAdditionalAccuracy();
 	}
-
-})
+});

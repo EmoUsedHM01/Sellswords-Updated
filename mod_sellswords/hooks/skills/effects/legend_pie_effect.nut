@@ -1,12 +1,12 @@
-::mods_hookExactClass("skills/effects/legend_pie_effect", function(o) {
-	::Mod_Sellswords.HookHelper.hookNewEatFoodEffectSystem(o);
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_pie_effect", function ( q ) {
+	::Mod_Sellswords.HookHelper.hookNewEatFoodEffectSystem(q);
 
-	o.getDescription = function()
+	q.getDescription = @(__original) function()
 	{
 		return "Thanks to eating food, this character regains Health, Fatigue, Resolve and Initiative for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.TurnsLeft + "[/color] turn(s). ";
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		local rate = this.Math.max(1, this.Math.ceil(this.m.Amount / 8));
 		local crate = this.Math.ceil(1.5 * rate);		
@@ -70,7 +70,7 @@
 		return ret;
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local rate = this.Math.max(1, this.Math.ceil(this.m.Amount / 8));
 		local crate = this.Math.ceil(1.5 * rate);		
@@ -80,7 +80,7 @@
 		_properties.RangedSkill += rate;	
 	}
 
-	o.onTurnEnd = function()
+	q.onTurnEnd = @(__original) function()
 	{
 		local rate = this.Math.max(1, this.Math.ceil(this.m.Amount / 8));
 		local crate = this.Math.ceil(1.5 * rate);		
@@ -92,4 +92,4 @@
 			this.removeSelf();
 		}
 	}
-})
+});

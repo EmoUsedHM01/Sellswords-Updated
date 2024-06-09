@@ -1,5 +1,5 @@
-::mods_hookExactClass("skills/perks/perk_mastery_throwing", function(o) {
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_mastery_throwing", function ( q ) {
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_targetEntity == null || !_skill.isRanged()) return;
 

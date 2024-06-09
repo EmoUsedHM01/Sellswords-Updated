@@ -1,12 +1,12 @@
-::mods_hookExactClass("skills/effects/legend_porridge_effect", function(o) {
-	::Mod_Sellswords.HookHelper.hookNewEatFoodEffectSystem(o);
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_porridge_effect", function ( q ) {
+	::Mod_Sellswords.HookHelper.hookNewEatFoodEffectSystem(q);
 
-	o.getDescription = function()
+	q.getDescription = @(__original) function()
 	{
 		return "Thanks to eating food, this character increase all combat attributes for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.TurnsLeft + "[/color] turn(s). ";
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		local rate = this.Math.max(1, this.Math.floor(this.m.Amount / 8));
 		local turns = this.m.TurnsLeft;
@@ -87,7 +87,7 @@
 		return ret;
 	}
 
-	o.onAfterUpdate <- function( _properties )
+	q.onAfterUpdate <- function( _properties )
 	{
 		local rate = this.Math.max(1, this.Math.floor(this.m.Amount / 8));
 		_properties.DamageTotalMult *= (1 + 0.02 * rate);		
@@ -100,7 +100,7 @@
 		_properties.Initiative += rate;	
 	}
 
-	o.onTurnEnd = function()
+	q.onTurnEnd = @(__original) function()
 	{
 		local rate = this.Math.max(1, this.Math.floor(this.m.Amount / 8));
 		local actor = this.getContainer().getActor();
@@ -111,4 +111,4 @@
 			this.removeSelf();
 		}
 	}
-})
+});

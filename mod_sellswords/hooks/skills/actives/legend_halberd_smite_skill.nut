@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/actives/legend_halberd_smite_skill", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_halberd_smite_skill", function ( q ) {
 
-	local ws_getTooltip = o.getTooltip;
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
-		local ret = ws_getTooltip();
+		local ret = __original();
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInPolearms)
 		{
@@ -18,8 +17,7 @@
 		return ret;
 	}
 
-	local ws_onAnySkillUsed = o.onAnySkillUsed;
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -37,4 +35,4 @@
 		}
 	}
 
-})
+});

@@ -1,16 +1,16 @@
-::mods_hookExactClass("skills/actives/legend_field_treats", function(o) {
-	o.m.Treated <- [];
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_field_treats", function ( q ) {
 
-	local ws_create = o.create;
-	o.create = function()
+	q.m.Treated <- [];
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.FatigueCost = 15;
 		this.m.MinRange = 0;
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
 		local ret = this.getDefaultUtilityTooltip();
 		ret.extend([
@@ -36,7 +36,7 @@
 		return ret;
 	}
 
-	o.onVerifyTarget = function( _originTile, _targetTile )
+	q.onVerifyTarget = @( __original ) function( _originTile, _targetTile )
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
 		{
@@ -78,8 +78,7 @@
 		return true;
 	}
 
-	local ws_onUse = o.onUse;
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local a = _targetTile.getEntity();
 		this.m.Treated.push(a.getID());	
@@ -87,7 +86,7 @@
 		return ws_onUse(_user, _targetTile);
 	}
 	
-	o.onCombatFinished <- function()
+	q.onCombatFinished <- function()
 	{		
 		this.m.Treated.clear();
 	}

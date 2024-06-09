@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/legend_baffled_effect", function ( o )
-{
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_baffled_effect", function ( q ) {
+
+	q.onAdded = @(__original) function()
 	{
 		if (this.getContainer().hasSkill("effects.crbear_potion") || this.getContainer().getActor().getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 25 || this.getContainer().hasSkill("perk.crrangeddefense") && this.Math.rand(1, 100) <= this.getContainer().getActor().getBaseProperties().RangedDefense)
 		{
@@ -10,8 +10,9 @@
 		{
 			this.m.TurnsLeft = this.Math.max(1, 1 + this.getContainer().getActor().getCurrentProperties().NegativeStatusEffectDuration);
 		}
-	};
-	o.onUpdate = function ( _properties )
+	}
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local actor = this.getContainer().getActor();
 		if (this.getContainer().hasSkill("perk.crresilient"))

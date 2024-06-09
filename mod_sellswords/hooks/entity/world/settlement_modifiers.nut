@@ -1,8 +1,8 @@
-::mods_hookNewObject("entity/world/settlement_modifiers", function(o) {
-	local ws_reset = o.reset;
-	o.reset = function()
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlement_modifiers", function ( q ) {
+
+	q.reset = @( __original ) function()
 	{
-		ws_reset();
+		__original();
 
 		this.FoodPriceMult -= 0.427;
 
@@ -21,4 +21,4 @@
 			this.RecruitsMult += 0.75;
 		}
 	}
-})
+});

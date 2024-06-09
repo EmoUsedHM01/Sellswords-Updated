@@ -1,12 +1,12 @@
-::mods_hookExactClass("skills/actives/slash", function(o) {
-	o.m.isBunt <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/slash", function ( q ) {
 
-	local ws_onAnySkillUsed = o.onAnySkillUsed;
-	o.onAnySkillUsed = function( _skill, _targetEntity, _properties )
+	q.m.isBunt <- false;
+
+	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
-			ws_onAnySkillUsed(_skill, _targetEntity, _properties)
+			__original(_skill, _targetEntity, _properties)
 			
 			if (this.m.isBunt)
 			{
@@ -16,4 +16,4 @@
 		}
 	}
 
-})
+});

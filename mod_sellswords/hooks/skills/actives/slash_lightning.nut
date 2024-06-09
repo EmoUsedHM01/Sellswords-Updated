@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/slash_lightning", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/slash_lightning", function ( q ) {
+
+	q.getTooltip = @( __original ) function ()
 	{
 		local ret = this.getDefaultTooltip();
 		ret.extend([
@@ -19,7 +19,7 @@
 		]);
 		return ret;
 	};
-	o.applyEffect = function ( _data, _delay )
+	q.applyEffect = @( __original ) function ( _data, _delay )
 	{
 		this.Time.scheduleEvent(this.TimeUnit.Virtual, _delay, function ( _data )
 		{
@@ -47,7 +47,7 @@
 			_data.Target.onDamageReceived(_data.User, _data.Skill, hitInfo);
 		}, _data);
 	};
-	o.onAnySkillUsed = function ( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -60,7 +60,7 @@
 			}
 		}
 	};
-	o.onUse = function ( _user, _targetTile )
+	q.onUse = @( __original ) function ( _user, _targetTile )
 	{
 		this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectSlash);
 		local success = this.attackEntity(_user, _targetTile.getEntity());

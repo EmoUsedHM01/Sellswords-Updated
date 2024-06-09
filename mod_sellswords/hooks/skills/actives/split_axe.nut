@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/actives/split_axe", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/split_axe", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 
 		this.m.DirectDamageMult = 0.35;
 	}

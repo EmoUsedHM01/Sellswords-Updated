@@ -1,7 +1,8 @@
-::mods_hookExactClass("skills/effects/legend_evasion_effect", function(o) {
-	o.m.isValid <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_evasion_effect", function( q ) {
 
-	o.onUpdate = function( _properties )
+	q.m.isValid <- false;
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		if (this.m.isValid)
 		{
@@ -9,7 +10,7 @@
 		}
 	}
 
-	o.onTurnEnd = function()
+	q.onTurnEnd = @(__original) function()
 	{
 		this.m.isValid = false;
 		if (--this.m.TurnsLeft <= 0)
@@ -18,22 +19,22 @@
 		}
 	}
 	
-	o.onTurnStart <- function()
+	q.onTurnStart <- function()
 	{
 		this.m.isValid = true;
 	}
 
-	o.onCombatFinished <- function()
+	q.onCombatFinished <- function()
 	{
 		this.m.isValid = false;		
 	}
 
-	o.isHidden <- function()
+	q.isHidden <- function()
 	{
 		return !this.m.isValid;
 	}
 
-	o.applyDamage <- function()
+	q.applyDamage <- function()
 	{
 		if (this.m.LastRoundApplied != this.Time.getRound())
 		{
@@ -113,4 +114,4 @@
 			}
 		}
 	}
-})
+});

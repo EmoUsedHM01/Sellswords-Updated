@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/battle_standard_effect", function ( o )
-{
-	o.onAfterUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/battle_standard_effect", function ( q ) {
+
+	q.onAfterUpdate = @(__original) function( _properties )
 	{
 		local bonus = this.getBonus(_properties);
 
@@ -17,4 +17,4 @@
 			this.m.Difference = 0;
 		}			
 	}
-});		
+});

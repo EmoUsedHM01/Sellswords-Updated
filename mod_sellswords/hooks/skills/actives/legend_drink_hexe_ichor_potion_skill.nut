@@ -1,16 +1,15 @@
-::mods_hookExactClass("skills/actives/legend_drink_hexe_ichor_potion_skill", function(o) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_drink_hexe_ichor_potion_skill", function ( q ) {
 	
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "Give to an adjacent ally or drink yourself a dubious hexen brew, grants someone perfect focus, halving the action point costs of all skills for three turns. AP cost is doubled while engaged in melee, and anyone receiving the item needs to have a free bag slot.";
 	}
 
-	::Mod_Sellswords.HookHelper.hookDoubleAP_CostIfEngageMelee(o, false);
+	::Mod_Sellswords.HookHelper.hookDoubleAP_CostIfEngageMelee(q, false);
 
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
 		local ret = [
 			{
@@ -49,7 +48,7 @@
 		return ret;
 	}
 
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local user = _targetTile.getEntity();
 

@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/legend_choke", function ( o )
-{
-	o.getHitChance = function ( _targetEntity )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_choke", function ( q ) {
+
+	q.getHitChance = @( __original ) function ( _targetEntity )
 	{
 		if (_targetEntity == null)
 		{
@@ -57,7 +57,7 @@
 		local chance = (1.0 - _targetEntity.getFatiguePct()) * 50;
 		return mod - this.Math.round(chance);
 	};
-	o.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
+	q.onGetHitFactors = @( __original ) function ( _skill, _targetTile, _tooltip )
 	{
 		local targetEntity = _targetTile.getEntity();
 		local targetArmor = targetEntity.getArmor(this.Const.BodyPart.Body);
@@ -112,7 +112,7 @@
 			});	
 		}
 	}
-	o.getTooltip = function()
+	q.getTooltip = @( __original ) function()
 	{
 		local ret = this.getDefaultTooltip();
 		local actor = this.getContainer().getActor();
@@ -149,13 +149,13 @@
 
 		return ret;
 	}		
-	o.isUsable = function ()
+	q.isUsable = @( __original ) function ()
 	{
 		local mainhand = this.m.Container.getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		local offhand = this.m.Container.getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		return (mainhand == null || this.getContainer().hasSkill("effects.disarmed")) && this.skill.isUsable();
 	}		
-	o.onAnySkillUsed = function ( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
 		if (_skill != this)
 		{

@@ -1,6 +1,5 @@
-::mods_hookExactClass("skills/perks/perk_legend_specialist_hammer_skill", function ( o )
-{
-	o.onUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_hammer_skill", function ( q ) {
+	q.onUpdate = @( __original ) function ( _properties )
 	{
 		local dc = 0;
 		local actor = this.getContainer().getActor();
@@ -27,7 +26,7 @@
 		}
 	}
 
-	o.getUnactivatedPerkTooltipHints <- function()
+	q.getUnactivatedPerkTooltipHints <- function()
 	{
 		/*
 		local dc = 0;
@@ -51,4 +50,4 @@
 		return ret;
 	}
 
-});	
+});

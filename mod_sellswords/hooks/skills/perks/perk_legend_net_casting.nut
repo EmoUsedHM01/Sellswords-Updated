@@ -1,16 +1,16 @@
-::mods_hookExactClass("skills/perks/perk_legend_net_casting", function ( o )
-{
-	o.onAdded <- function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_net_casting", function ( q ) {
+
+	q.onAdded <- function ()
 	{
 		this.m.Container.add(this.new("scripts/skills/actives/throw_net_free"));
 	};
 	
-	o.onRemoved <- function ()
+	q.onRemoved <- function ()
 	{
 		this.m.Container.removeByID("actives.throw_net_free");
 	};
 	
-	o.getItemActionCost <- function ( _items )
+	q.getItemActionCost = @( __original ) function ( _items )
 	{
 		local nets = 0;
 		local notNets = 0;
@@ -37,4 +37,4 @@
 
 		return null;
 	}
-});	
+});

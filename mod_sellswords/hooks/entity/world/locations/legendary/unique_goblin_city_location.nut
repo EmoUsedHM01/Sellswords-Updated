@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/legendary/unique_goblin_city_location", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/locations/legendary/unique_goblin_city_location", function ( q ) {
 
 	q.onDropLootForPlayer = @(__original) function( _lootTable )
 	{

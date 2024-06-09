@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/actives/indomitable", function ( o )
-{
-	o.m.Islow <- false;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/indomitable", function ( q ) {
+
+	q.m.Islow <- false;
 	
-	o.getTooltip = function ()
+	q.getTooltip = @( __original ) function ()
 	{
 		local smc = 1;
 		if (this.m.Islow)

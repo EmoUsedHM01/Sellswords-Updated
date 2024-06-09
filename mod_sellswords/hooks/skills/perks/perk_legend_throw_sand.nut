@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/perks/perk_legend_throw_sand", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_throw_sand", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Name = this.Const.Strings.PerkName.LegendThrowSand;
 		this.m.Description = this.Const.Strings.PerkDescription.LegendThrowSand;
 	}

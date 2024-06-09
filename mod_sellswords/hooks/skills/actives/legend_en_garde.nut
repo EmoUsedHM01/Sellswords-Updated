@@ -1,14 +1,13 @@
-::mods_hookExactClass("skills/actives/legend_en_garde", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_en_garde", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create()
+		__original();
 
 		this.m.FatigueCost = 20;
 	}
 
-	o.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
+	q.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
 	{
 		if (_skill.getID() != "actives.legend_en_garde")
 		{
@@ -20,7 +19,7 @@
 		});				
 	}
 	
-	o.getTooltip = function ()
+	q.getTooltip = @( __original ) function ()
 	{
 		local ret = this.skill.getDefaultTooltip();
 		ret.push({
@@ -57,7 +56,7 @@
 		return ret;
 	}		
 	
-	o.onAnySkillUsed <- function ( _skill, _targetEntity, _properties )
+	q.onAnySkillUsed <- function ( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
 		{
@@ -68,4 +67,4 @@
 			_properties.MeleeSkill *= 1.2;				
 		}
 	}		
-});	
+});

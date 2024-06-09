@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/goblin_poison_effect", function ( o )
-{
-	o.onAdded = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/goblin_poison_effect", function ( q ) {
+
+	q.onAdded = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
 		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
@@ -18,5 +18,5 @@
 		{
 			++this.m.TurnsLeft;
 		}
-	};
+	}
 });

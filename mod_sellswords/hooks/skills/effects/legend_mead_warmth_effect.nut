@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/effects/legend_mead_warmth_effect", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_mead_warmth_effect", function( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.TurnsLeft = 10;
 		this.m.Icon = "skills/status_effect_93.png";
@@ -10,12 +10,12 @@
 		this.m.Overlay = "status_effect_93";
 	}
 	
-	o.getDescription = function()
+	q.getDescription = @(__original) function()
 	{
 		return "After consuming mead, this character has [color=" + this.Const.UI.Color.PositiveValue + "]+12%[/color] damage, damage reduction and  [color=" + this.Const.UI.Color.PositiveValue + "]+24%[/color] Resolve. At the expense of [color=" + this.Const.UI.Color.NegativeValue + "]-9%[/color] initiative and hitchance for [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.TurnsLeft + "[/color] turn(s).";
 	}
 	
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		return [
 			{
@@ -67,7 +67,7 @@
 		];
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		_properties.DamageTotalMult *= 1.12;
 		_properties.DamageReceivedTotalMult *= 0.88;		
@@ -77,8 +77,8 @@
 		_properties.InitiativeMult *= 0.92;
 	}
 	
-	o.onAdded = function()
+	q.onAdded = @(__original) function()
 	{
 		this.m.TurnsLeft = 10;
 	}
-})
+});

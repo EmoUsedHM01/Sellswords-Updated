@@ -1,8 +1,7 @@
-::mods_hookExactClass("entity/world/settlements/buildings/marketplace_oriental_building", function(o) 
-{
-	local fillStash = ::mods_getMember(o, "fillStash");
-	o.fillStash<- function(_list, _stash, _priceMult, _allowDamagedEquipment = true)
-	{
+::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/marketplace_oriental_building", function ( q ) {
+
+	q.fillStash = @( __original ) function( _list, _stash, _priceMult, _allowDamagedEquipment = true )
+	{	
 		if (this.m.Settlement.getSize() >= 2)
 		{
 			_list.extend([
@@ -24,6 +23,6 @@
 			]);
 		}
 		
-		fillStash(_list, _stash, 1, true);
+		__original( _list, _stash, _priceMult, _allowDamagedEquipment = true );
 	}
-})
+});

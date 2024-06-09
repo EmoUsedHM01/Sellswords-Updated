@@ -1,16 +1,15 @@
-::mods_hookExactClass("skills/actives/throw_dirt_skill", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/throw_dirt_skill", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Description = "Throws dirt or sand to distract the enemy. Reduces inititive and damage output of the target by 35% for one turn. Wild Nomad used sand-attack!";
 		this.m.Icon = "skills/active_215.png";
 		this.m.IconDisabled = "skills/active_215_sw.png";
 		this.m.IsUsingHitchance = false;
 	};
 	
-	o.getTooltip <- function()
+	q.getTooltip <- function()
 	{
 		local ret = [
 			{
@@ -38,12 +37,12 @@
 		return ret;
 	};
 	
-	o.isUsable = function()
+	q.isUsable = @( __original ) function()
 	{
 		return this.skill.isUsable();
 	};
 	
-	o.onUse = function( _user, _targetTile )
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		if (_targetTile.getEntity().isAlliedWithPlayer())
 		{

@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/legend_fortify_skill", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_fortify_skill", function ( q ) {
+
+	q.getTooltip = @( __original ) function ()
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local mult = 1.0;

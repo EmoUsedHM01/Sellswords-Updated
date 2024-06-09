@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/effects/legend_knockback_prepared_effect", function ( o ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_knockback_prepared_effect", function ( q ) {
 
-	o.onTargetHit = function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
+	q.onTargetHit = @(__original) function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		--this.m.AttacksLeft;
 		if (this.m.AttacksLeft <= 0)
@@ -15,5 +15,4 @@
 		_targetEntity.getSkills().getSkillByID("effects.legend_baffled");
 		_targetEntity.getSkills().getSkillByID("effects.cr_smackdown");
 	}
-
 });

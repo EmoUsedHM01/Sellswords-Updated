@@ -1,6 +1,6 @@
-::mods_hookExactClass("states/world_state", function(o) 
+::Mod_Sellswords.HooksMod.hook("scripts/states/world_state", function ( q ) 
 {
-	o.onDeserialize <- function(_in)
+	q.onDeserialize = @( __original ) function( _in )
 	{
 		this.World.State.m.AppropriateTimeToRecalc = 0;
 		this.Sound.stopAmbience();

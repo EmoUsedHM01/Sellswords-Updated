@@ -1,20 +1,21 @@
-::mods_hookExactClass("skills/effects/legend_lw_relationship_effect", function(o) {
-	o.m.Level <- 0;
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_lw_relationship_effect", function( q ) {
 
-	o.setLevel <- function( _lv )
+	q.m.Level <- 0;
+
+	q.setLevel <- function( _lv )
 	{
 		this.m.Level = _lv;
 	}
 
-	local ws_create = o.create;
-	o.create = function()
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 		this.m.Icon = "ui/traits/trait_icon_58.png";
 		this.m.IconMini = "status_effect_78_mini";
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		return [
 			{
@@ -66,7 +67,7 @@
 		];
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		if (!this.getContainer().getActor().isPlacedOnMap())
 		{
@@ -110,11 +111,11 @@
 		}
 	}
 
-	o.onCombatFinished = function()
+	q.onCombatFinished = @(__original) function()
 	{
 		this.m.IsHidden = true;
 		local actor = this.getContainer().getActor();	
 		actor.getSkills().removeByID("trait.legend_lw_relationship");		
 		actor.getSkills().add(this.new("scripts/skills/traits/legend_lw_relationship_trait"));
 	}
-})
+});

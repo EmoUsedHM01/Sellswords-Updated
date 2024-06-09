@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/lunge_skill", function ( o )
-{
-	o.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/lunge_skill", function ( q ) {
+
+	q.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
 	{
 		if (_skill.getID() != "actives.lunge")
 		{
@@ -17,4 +17,4 @@
 			});				
 		}	
 	}				
-});	
+});

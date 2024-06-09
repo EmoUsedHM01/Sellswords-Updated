@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/perks/perk_legend_barter_greed", function ( o )
-{
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_barter_greed", function ( q ) {
+
+	q.getTooltip = @( __original ) function ()
 	{
 		return [
 			{
@@ -45,7 +45,7 @@
 			}
 		];
 	}	
-	o.onUpdate = function ( _properties )
+	q.onUpdate = @( __original ) function ( _properties )
 	{
 		_properties.MeleeSkill += this.Math.min(20, this.getBonus() * 0.0006);
 		_properties.RangedSkill += this.Math.min(20, this.getBonus() * 0.0006);
@@ -53,7 +53,7 @@
 		_properties.RangedDefense += this.Math.min(20, this.getBonus() * 0.0004);
 		_properties.Bravery += this.Math.min(20, this.getBonus() * 0.0008);
 	}	
-	o.getBonus <- function ()
+	q.getBonus <- function ()
 	{
 		local mainhand = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		local offhand = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
@@ -87,4 +87,4 @@
 		local gearvalue = mainhandvalue + offhandvalue + bodyvalue + headvalue; 
 		return gearvalue;
 	}
-});	
+});

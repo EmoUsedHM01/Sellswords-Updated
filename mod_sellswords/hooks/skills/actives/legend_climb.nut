@@ -1,6 +1,6 @@
-::mods_hookExactClass("skills/actives/legend_climb", function ( o )
-{
-	o.onAfterUpdate <- function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_climb", function ( q ) {
+
+	q.onAfterUpdate = @( __original ) function ( _properties )
 	{		
 		local frkz = this.getContainer().hasSkill("perk.crFurinkazan") && !this.getContainer().hasSkill("perk.legend_tumble");
 		this.m.FatigueCostMult = _properties.IsFleetfooted || frkz ? 0.5 : 1.0;

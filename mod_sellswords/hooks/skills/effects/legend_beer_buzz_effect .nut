@@ -1,8 +1,8 @@
-::mods_hookExactClass("skills/effects/legend_beer_buzz_effect", function(o) {
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_beer_buzz_effect", function( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Icon = "skills/status_effect_93.png";
 		this.m.IconMini = "status_effect_93_mini";
@@ -10,12 +10,12 @@
 		this.m.TurnsLeft = 10;
 	}
 
-	o.getDescription = function()
+	q.getDescription = @(__original) function()
 	{
 		return "After guzzling beer, this character has [color=" + this.Const.UI.Color.PositiveValue + "]+9%[/color] damage, damage reduction and  [color=" + this.Const.UI.Color.PositiveValue + "]+18%[/color] Resolve. At the expense of [color=" + this.Const.UI.Color.NegativeValue + "]-6%[/color] initiative and hitchance for [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.TurnsLeft + "[/color] turn(s).";
 	}
 
-	o.getTooltip = function()
+	q.getTooltip = @(__original) function()
 	{
 		return [
 			{
@@ -67,7 +67,7 @@
 		]
 	}
 
-	o.onUpdate = function( _properties )
+	q.onUpdate = @(__original) function( _properties )
 	{
 		_properties.DamageTotalMult *= 1.09;
 		_properties.DamageReceivedTotalMult *= 0.91;		
@@ -77,9 +77,8 @@
 		_properties.InitiativeMult *= 0.94;
 	}
 
-	function onAdded()
+	q.onAdded = @(__original) function()
 	{
 		this.m.TurnsLeft = 10;
 	}
-
-})
+});

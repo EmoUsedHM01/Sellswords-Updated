@@ -1,9 +1,8 @@
-::mods_hookExactClass("skills/actives/bandage_ally_skill", function ( o )
-{
-	local ws_create = o.create;
-	o.create = function()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/bandage_ally_skill", function ( q ) {
+
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.Description = "Save yourself or another character from bleeding to death by applying pressure and provisional bandaging to any such wound. Heals 5 hitpoints instantly and 5 hitpoints next turn if user has Bandage Mastery. Neither the character using this skill nor the patient may be engaged in melee, unless the character using this skill has Bandage Mastery.";
 		this.m.ActionPointCost = 4;
@@ -12,7 +11,7 @@
 	
 	
 	//local onVerifyTarget = o.onVerifyTarget;
-	o.onVerifyTarget = function( _originTile, _targetTile )
+	q.onVerifyTarget = @( __original ) function( _originTile, _targetTile )
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
 		{
@@ -66,8 +65,8 @@
 		return false;
 	}
 	
-	local onUse = o.onUse;
-	o.onUse = function( _user, _targetTile )
+
+	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local target = _targetTile.getEntity();
 		target.setHitpoints(this.Math.min(target.getHitpointsMax(), target.getHitpoints() + 5));

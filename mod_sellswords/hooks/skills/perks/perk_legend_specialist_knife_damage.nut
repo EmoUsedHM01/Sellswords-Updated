@@ -1,6 +1,5 @@
-::mods_hookExactClass("skills/perks/perk_legend_specialist_knife_damage", function ( o )
-{
-	o.onUpdate = function ( _properties )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_knife_damage", function ( q ) {
+	q.onUpdate = @( __original ) function ( _properties )
 	{
 		local dc = 0;
 		local actor = this.getContainer().getActor();
@@ -27,4 +26,4 @@
 			}
 		}
 	}
-});	
+});

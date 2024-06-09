@@ -1,6 +1,5 @@
-::mods_hookExactClass("skills/actives/charm_skill", function ( o )
-{
-	o.onDelayedEffect = function ( _tag )
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/charm_skill", function ( q ) {
+	q.onDelayedEffect = @( __original ) function ( _tag )
 	{
 		local _targetTile = _tag.TargetTile;
 		local _user = _tag.User;

@@ -1,21 +1,19 @@
-::mods_hookExactClass("skills/actives/sprint_skill", function ( o ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/sprint_skill", function ( q ) {
 	
-	local ws_create = o.create;
-	o.create = function()
+	q.create = @(__original) function()
 	{
-		ws_create();
+		__original();
 
 		this.m.ActionPointCost = 3;
 		this.m.FatigueCost = 12;
 	}
 
-	local ws_isUsable = o.isUsable;
-	o.isUsable = function()
+	q.isUsable = @( __original ) function()
 	{
-		return ws_isUsable() && (!this.Tactical.isActive() || this.Const.DefaultMovementAPCost[this.getContainer().getActor().getTile().Type] <= 2);
+		return __original() && (!this.Tactical.isActive() || this.Const.DefaultMovementAPCost[this.getContainer().getActor().getTile().Type] <= 2);
 	}
 
-	o.onAfterUpdate <- function ( _properties )
+	q.onAfterUpdate <- function ( _properties )
 	{
 		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]) * -1;
 		this.m.FatigueCost = ::Math.min(22, this.m.FatigueCost + fat);	
@@ -27,5 +25,4 @@
 			this.m.ActionPointCost = 2;
 		}
 	}	
-
 });

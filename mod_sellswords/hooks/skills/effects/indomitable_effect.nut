@@ -1,7 +1,7 @@
-::mods_hookExactClass("skills/effects/indomitable_effect", function ( o )
-{
-	o.m.Islow <- false;
-	o.getTooltip = function ()
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/indomitable_effect", function ( q ) {
+
+	q.m.Islow <- false;
+	q.getTooltip = @(__original) function()
 	{
 		local smc = 1;
 		if (this.m.Islow)
@@ -49,8 +49,9 @@
 				text = "Become immune to being knocked back or grabbed"
 			}
 		];
-	};
-	o.onUpdate = function ( _properties )
+	}
+
+	q.onUpdate = @(__original) function( _properties )
 	{
 		local smc = 1;
 		if (this.m.Islow)
