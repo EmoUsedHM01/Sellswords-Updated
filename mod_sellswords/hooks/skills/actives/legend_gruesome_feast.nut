@@ -48,6 +48,8 @@
 
 		foreach( a in actors )
 		{
+			if !a.isPlayerControlled() continue;
+
 			if (a.getID() == _user.getID()) continue;
 			if (_user.getTile().getDistanceTo(a.getTile()) > 4) continue;
 			if (a.getFaction() != _user.getFaction()) continue;
