@@ -78,7 +78,7 @@
 		if (_targetEntity.getCurrentProperties().IsImmuneToPoison || _damageInflictedHitpoints < this.Const.Combat.PoisonEffectMinDamage || _targetEntity.getHitpoints() <= 0)
 			return;
 
-		if (!_targetEntity.isAlive())
+		if (!_targetEntity.isAlive() || _targetEntity == null)
 			return;
 
 		if (_targetEntity.getFlags().has("undead"))
