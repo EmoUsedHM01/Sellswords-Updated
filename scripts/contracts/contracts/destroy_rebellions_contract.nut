@@ -548,7 +548,7 @@ this.destroy_rebellions_contract <- this.inherit("scripts/contracts/contract", {
 
 				},
 				{
-					Text = "Those strongest soldiers will help us break through thier frontline.",
+					Text = "Those strongest soldiers will help us break through their frontline.",
 					function getResult()
 					{
 						for( local i = 0; i != 6; i = ++i )
