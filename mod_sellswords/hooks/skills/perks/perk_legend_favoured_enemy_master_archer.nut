@@ -1,7 +1,8 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_favoured_enemy_master_archer", function( q ) {
 
-	q.onAfterUpdate <- function( _properties )
+	q.onAfterUpdate = @( __original ) function( _properties )
 	{
+		__original;
 		local actor = this.getContainer().getActor().get();
 		if (!actor.getFlags().has(this.m.ID))
 		{
