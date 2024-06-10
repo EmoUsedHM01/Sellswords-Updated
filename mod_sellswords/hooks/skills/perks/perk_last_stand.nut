@@ -1,6 +1,9 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_last_stand", function ( q ) {
 
-	q.m.IsSpent <- false;
+	if (!(::Is_PTR_Exist))
+	{
+		q.m.IsSpent <- false;
+	}
 
 	q.getTooltip = @( __original ) function()
 	{

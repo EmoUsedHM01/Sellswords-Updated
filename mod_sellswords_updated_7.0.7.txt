@@ -9,6 +9,11 @@
 ...\mod_sellswords\hooks\entity\world\settlements\buildings\weaponsmith_oriental_building.nut
 Fixed some hooks being naughty
 
+...\mod_sellswords\hooks\skills\perks\perk_last_stand.nut
+fixed a bad ptr hook - Breaky
+...\mod_sellswords\hooks\skills\perks\duelist.nut
+added duelist logic according to perk description
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.0.6 changes
