@@ -2,7 +2,7 @@
 
 	q.onAfterUpdate = @( __original ) function( _properties )
 	{
-		__original;
+		__original();
 		local actor = this.getContainer().getActor().get();
 		if (!actor.getFlags().has(this.m.ID))
 		{
