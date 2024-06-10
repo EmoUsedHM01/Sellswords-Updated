@@ -32,16 +32,4 @@
 			addPerk(this.Const.Perks.PerkDefs.crFurinkazan, 5);
 		}
 	};
-
-	// redundant
-	/* 
-	o.onSerialize <- function ( _out )
-	{
-		this.skill.onSerialize(_out);
-	};
-	o.onDeserialize <- function ( _in )
-	{
-		this.skill.onDeserialize(_in);
-	};
-	*/
 });

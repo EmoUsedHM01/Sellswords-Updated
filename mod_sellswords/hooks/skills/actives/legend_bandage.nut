@@ -23,7 +23,6 @@
 		return ret;
 	}
 	
-	//local onVerifyTarget = o.onVerifyTarget;
 	q.onVerifyTarget = @( __original ) function( _originTile, _targetTile )
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
