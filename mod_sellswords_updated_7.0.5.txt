@@ -3,6 +3,21 @@
 ...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
 Added null check
 
+...\mod_sellswords\hooks\skills\actives\legend_gruesome_feast.nut
+Fixed Gruesome Feast trying to lower the mood of enemies - Breaky
+
+...\scripts\contracts\contracts\destroy_rebellions_contract.nut
+Fixed typo - Breaky
+
+...\mod_sellswords\hooks\skills\actives\footwork.nut
+...\mod_sellswords\hooks\skills\actives\legend_bandage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_evasion.nut
+...\mod_sellswords\hooks\skills\perks\perk_rotation.nut
+Removed redundant code - Breaky
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
+Fixed the FE Archer perk that had shit moved with 18.2.7 - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.0.4 changes
