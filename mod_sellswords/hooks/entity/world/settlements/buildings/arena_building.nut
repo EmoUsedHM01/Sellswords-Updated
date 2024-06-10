@@ -12,6 +12,7 @@
 		local inverseDayDifference = 1 - dayDifference - 1;
 		return inverseDayDifference;
 	}
+
 	q.getHoursUntilNextFight <- function()
 	{
 		return this.m.HoursInADay - this.World.getTime().Hours;
@@ -45,26 +46,18 @@
 
 		local oldAvailableFights = getAvailableFights();
 		while ( oldAvailableFights <= getAvailableFights())
-		{
 			this.m.CooldownUntil += 1;
-		}
 	}
 
 	q.getUIImage = @( __original) function()
 	{
 		if (!this.World.getTime().IsDaytime)
-		{
 			return this.m.UIImageNight;
-		}
 
 		if (isClosed())
-		{
 			return this.m.UIImageClosed;
-		}
 		else
-		{
 			return this.m.UIImage;
-		}
 	}
 
 	q.onClicked = @( __original ) function( _townScreen )
@@ -73,4 +66,5 @@
 		if (isClosed() && this.World.State.getCurrentTown().hasSituation("situation.arena_tournament") == false) return;
 		__original( _townScreen );
 	}
+
 });

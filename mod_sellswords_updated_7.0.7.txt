@@ -1,6 +1,13 @@
 7.0.7 changes
 
-...
+...\mod_sellswords\hooks\entity\world\settlements\buildings\alchemist_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\arena_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\armorsmith_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_oriental_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\weaponsmith_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\weaponsmith_oriental_building.nut
+Fixed some hooks being naughty
 
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -11,7 +18,7 @@ Fixed missing bracket on if statement - Breaky
 
 ...\mod_sellswords\hooks\skills\actives\legend_halberd_smite_skill.nut
 ...\mod_sellswords\hooks\skills\actives\split_man.nut
-Fixed bad old-hook call
+Fixed bad old-hook call - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 

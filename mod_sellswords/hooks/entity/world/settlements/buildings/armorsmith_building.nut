@@ -34,7 +34,8 @@
 			S = "legend_helmets/helm/cr_knightly_fullhelm"
 		}
 		]);
-		
-		__original( _list, _stash, _priceMult, _allowDamagedEquipment = true );
-	}		
+
+		__original( _list, _stash, _priceMult, _allowDamagedEquipment = false );
+	}
+
 });

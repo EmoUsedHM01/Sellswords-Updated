@@ -25,4 +25,5 @@
 		
 		__original( _list, _stash, _priceMult, _allowDamagedEquipment = true );
 	}
+
 });
