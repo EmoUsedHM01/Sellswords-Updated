@@ -21,7 +21,7 @@
 	{
 		if (_skill == this)
 		{
-			ws_onAnySkillUsed( _skill, _targetEntity, _properties );
+			__original( _skill, _targetEntity, _properties );
 			
 			if (_targetEntity != null && !this.getContainer().getActor().getCurrentProperties().IsSpecializedInPolearms && this.getContainer().getActor().getTile().getDistanceTo(_targetEntity.getTile()) == 1)
 			{

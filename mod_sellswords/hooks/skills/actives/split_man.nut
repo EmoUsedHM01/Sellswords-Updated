@@ -57,7 +57,7 @@
 	{
 		if (_skill == this)
 		{
-			ws_onAnySkillUsed(_skill, _targetEntity, _properties)
+			__original(_skill, _targetEntity, _properties)
 			
 			if (this.m.infantry == 1)
 			{
