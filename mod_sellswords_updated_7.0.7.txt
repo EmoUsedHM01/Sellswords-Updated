@@ -1,6 +1,17 @@
-7.0.6 changes
+7.0.7 changes
 
 ...
+
+----------------------------------------------------------------------------------------------------------------------------
+
+7.0.6 changes
+
+...\mod_sellswords\hooks\skills\actives\legend_gruesome_feast.nut
+Fixed missing bracket on if statement - Breaky
+
+...\mod_sellswords\hooks\skills\actives\legend_halberd_smite_skill.nut
+...\mod_sellswords\hooks\skills\actives\split_man.nut
+Fixed bad old-hook call
 
 ----------------------------------------------------------------------------------------------------------------------------
 
