@@ -19,11 +19,12 @@
 				_properties.MeleeSkill += 12;
 				_properties.DamageArmorMult += 0.25;
 			}
-			else if (item.getRangeMax() == 2 && item.isItemType(this.Const.Items.ItemType.TwoHanded) && item.isItemType(this.Const.Items.ItemType.MeleeWeapon))
+			else if (this.Const.Items.WeaponType.Polearm)
 			{
 				_properties.MeleeSkill += 12 * dc;
 				_properties.DamageArmorMult += 0.25 * dc;
 			}
 		}
 	}
+
 });

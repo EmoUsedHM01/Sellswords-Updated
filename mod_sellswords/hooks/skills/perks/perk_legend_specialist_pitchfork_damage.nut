@@ -19,11 +19,12 @@
 				_properties.DamageRegularMin += 6;
 				_properties.DamageRegularMax += 16;
 			}
-			else if (item.getRangeMax() == 2 && item.isItemType(this.Const.Items.ItemType.TwoHanded) && item.isItemType(this.Const.Items.ItemType.MeleeWeapon))			
+			else if (this.Const.Items.WeaponType.Polearm)	
 			{
 				_properties.DamageRegularMin += (6 * dc);
 				_properties.DamageRegularMax += (16 * dc);
 			}
 		}
 	}
+
 });
