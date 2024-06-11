@@ -200,10 +200,8 @@
 		return false;
 	}
 
-	q.resetPerks = @(__original) function()
+	q.resetPerks <- function()
 	{
-		__original();
-		// Remove all flags related to Favoured Enemy Perks
 		local flags = this.getFlags();
 		local flagsRemoved = 0; 
 
@@ -217,7 +215,6 @@
 			}
 		}
 
-		// Remove perks points that were earned from fulfilling favoured enemy refund requirement
 		this.m.PerkPoints -= flagsRemoved;
 	};
 
