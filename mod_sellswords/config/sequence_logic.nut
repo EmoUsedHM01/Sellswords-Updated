@@ -79,7 +79,7 @@
 ::Mod_Sellswords.add_direwolf <- function (_actor, complete) {
 
 	_actor.getFlags().add("werewolf");
-	_actor.getSkills().add(this.new("scripts/skills/racial/werewolf_player_racial"));
+	_actor.getSkills().add(this.new("scripts/skills/racial/direwolf_player_racial"));
 	_actor.getSkills().add(this.new("scripts/skills/effects/direwolf_potion_effect"));
 	_actor.getSkills().add(this.new("scripts/skills/effects/alp_potion_effect"));
 
