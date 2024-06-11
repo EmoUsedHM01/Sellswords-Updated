@@ -4,8 +4,14 @@
 	{
 		this.m.FatigueCostMult = _properties.IsSpecializedInPolearms ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+
+		local actor = this.getContainer().getActor().get();
+		if (actor.getSkills().getSkillByID("perk.crGrandslam"))
+			this.m.ActionPointCost += 1;
+
 		this.m.FatigueCostMult *= this.getContainer().hasSkill("perk.crretrofithooks") ? 0.8 : 1.0;
-	};
+	}
+
 	q.getTooltip = @( __original ) function ()
 	{
 		local ret = this.getDefaultUtilityTooltip();
@@ -29,7 +35,8 @@
 			text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + bonus + "%[/color] chance to hit"
 		});
 		return ret;
-	};
+	}
+
 	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
@@ -37,9 +44,8 @@
 			_properties.MeleeSkill += 10;
 
 			if (this.getContainer().hasSkill("perk.crretrofithooks"))
-			{
 				_properties.MeleeSkill += 10;
-			}
 		}
-	};
+	}
+
 });

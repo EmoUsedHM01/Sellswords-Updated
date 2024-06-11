@@ -5,13 +5,13 @@
 		this.m.FatigueCostMult = this.m.ApplyAxeMastery && _properties.IsSpecializedInAxes ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 
 		if (this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand) != null && this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand).getBlockedSlotType() != null)
-		{
 			this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
-		}
 		else
-		{
 			this.m.ActionPointCost = 4;
-		}
+
+		local actor = this.getContainer().getActor().get();
+		if (actor.getSkills().getSkillByID("perk.crGrandslam"))
+			this.m.ActionPointCost += 1;
 	}
 
 	q.onUse = @(__original) function( _user, _targetTile )
@@ -33,4 +33,5 @@
 
 		return ret;
 	}
+
 });

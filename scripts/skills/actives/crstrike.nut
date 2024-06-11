@@ -64,6 +64,10 @@ this.crstrike <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.FatigueCostMult = _properties.IsSpecializedInPolearms ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+
+		local actor = this.getContainer().getActor().get();
+		if (actor.getSkills().getSkillByID("perk.crGrandslam"))
+			this.m.ActionPointCost += 1;
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )

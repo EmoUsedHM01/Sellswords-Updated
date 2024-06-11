@@ -33,6 +33,10 @@
 	{
 		__original(_properties);
 		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
+
+		local actor = this.getContainer().getActor().get();
+		if (actor.getSkills().getSkillByID("perk.crGrandslam"))
+			this.m.ActionPointCost += 1;
 	}
 
 	q.onAnySkillUsed = @( __original ) function(_skill, _targetEntity, _properties)
