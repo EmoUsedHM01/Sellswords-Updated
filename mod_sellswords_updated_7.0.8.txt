@@ -19,6 +19,9 @@ Fixed Pitchfork Spec applying to things that weren't Polearms
 ...\scripts\skills\actives\crstrike.nut
 Added Grand Slame clause to all the hooked Polearm skills
 
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+Fixed a fix I already fixed
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.0.7 changes
