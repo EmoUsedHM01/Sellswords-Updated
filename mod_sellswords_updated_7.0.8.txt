@@ -1,6 +1,8 @@
 7.0.8 changes
 
-...
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pitchfork_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pitchfork_skill.nut
+Fixed Pitchfork Spec applying to things that weren't Polearms
 
 ----------------------------------------------------------------------------------------------------------------------------
 
