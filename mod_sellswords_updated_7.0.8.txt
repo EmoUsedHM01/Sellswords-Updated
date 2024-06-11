@@ -29,9 +29,6 @@ Fixed a fix I already fixed
 ...\scripts\contracts\contracts\purge_infection_contract.nut
 Cleaned up the SSU contracts and added the new Legends descriptors for contracts
 
-...\mod_sellswords\hooks\entity\tactical\actor.nut
-Fixed the function to add instead of copy
-
 ...\mod_sellswords\config\sequence_logic.nut
 Fixed bad pathing
 
