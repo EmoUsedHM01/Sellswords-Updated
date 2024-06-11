@@ -23,21 +23,15 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		local r = this.Math.rand(1, 100);
 		
 		if (r <= 20)
-		{
 			this.m.DifficultyMult = this.Math.rand(90, 105) * 0.01;
-		}
 		else if (r <= 80)
-		{
 			this.m.DifficultyMult = this.Math.rand(115, 135) * 0.01;
-		}
 		else
-		{
 			this.m.DifficultyMult = this.Math.rand(145, 165) * 0.01;
-		}
+
 		this.m.Type = "contract.purge_infection";
 		this.m.Name = "Purge Infection";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
-//add by bigmap
 		local s = this.World.EntityManager.getSettlements()[this.Math.rand(0, this.World.EntityManager.getSettlements().len() - 1)];
 		while(s.getAttachedLocations().len() == 0)
 		{
@@ -49,6 +43,15 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		
 		this.m.Flags.set("NecroEscaped", 0);
 		this.m.Flags.set("IsDone", false);
+		this.m.DescriptionTemplates = [
+			"The dead rise in %townname%, spreading fear and chaos. Purge the undead and restore peace to the town.",
+			"From the haunted grounds of %location% emerges a threat of the undead. Cleanse the area and reclaim the town.",
+			"Behold, the rise of the undead in %townname%. Your mission: to eradicate this unholy menace and bring safety.",
+			"The streets of %townname% are overrun with the undead. A sellsword is needed to purge this blight and restore order.",
+			"The restless dead have emerged in %townname%, spreading terror. Rid the town of these horrors and bring peace.",
+			"An undead horde threatens %townname%. Your task: to eliminate the undead and ensure the safety of its people."
+		];
+
 	}
 
 	function onImportIntro()
@@ -69,20 +72,6 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		{
 			this.m.Payment.Completion = 1.0;
 		}
-		
-		//local settlements = this.World.FactionManager.getFaction(this.m.Faction).getSettlements();		
-		//local s = settlements()[this.Math.rand(0, settlements().len() - 1)];
-		//foreach( l in s.getAttachedLocations() )
-		//{
-		//	if (l.getTypeID() == "attached_location.wheat_fields" || l.getTypeID() == "attached_location.pig_farm")
-		//	{
-		//		this.m.Destination = l;
-		//	}
-		//	else
-		//	{
-		//		this.m.Destination = this.WeakTableRef(s.getAttachedLocations()[this.Math.rand(0, s.getAttachedLocations().len() - 1)]);
-		//	}	
-		//}		
 
 		this.contract.start();
 	}
@@ -113,9 +102,6 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 				this.World.Assets.addMoney(this.Contract.m.Payment.getInAdvance());
 				this.Contract.m.Destination.setDiscovered(true);
 				this.World.uncoverFogOfWar(this.Contract.m.Destination.getTile().Pos, 500.0);
-
-				//this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.ZombieMilitary, this.Math.rand(120, 150) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-
 				this.Contract.setScreen("Overview");
 				this.World.Contracts.setActiveContract(this.Contract);
 			}
@@ -129,7 +115,6 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 				{
 					this.Contract.m.Destination.getSprite("selection").Visible = true;
 					this.Contract.m.Destination.setFaction(this.Const.Faction.Enemy);
-					//this.Contract.m.Destination.setBanner(this.World.FactionManager.getFaction(this.Contract.getFaction()).getPartyBanner());					
 					this.Contract.m.Destination.setAttackable(true);
 					this.Contract.m.Destination.setOnCombatWithPlayerCallback(this.onDestinationAttacked.bindenv(this));
 				}
@@ -169,12 +154,12 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 					p.CombatID = "PURGEEE";
 					p.TemporaryEnemies = [
 						this.Contract.getFaction()
-					];					
+					];
 					p.TerrainTemplate = this.Const.World.TerrainTacticalTemplate[this.Contract.m.Destination.getTile().Type];
 					p.Tile = this.World.getTile(this.World.worldToTile(this.World.State.getPlayer().getPos()));
 					p.LocationTemplate = clone this.Const.Tactical.LocationTemplate;
 					p.LocationTemplate.Template[0] = "tactical.human_camp";
-					this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.ZombieMilitary, 80 + this.Math.rand(115, 125) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());					
+					this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.ZombieMilitary, 80 + this.Math.rand(115, 125) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
 					p.LocationTemplate.Fortification = this.Const.Tactical.FortificationType.None;
 					p.LocationTemplate.CutDownTrees = true;
 					p.LocationTemplate.AdditionalRadius = 5;
@@ -184,18 +169,14 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 					p.IsAutoAssigningBases = false;
 					p.IsFogOfWarVisible = false;
 					this.Contract.m.temprostercbt = this.World.Assets.m.BrothersMaxInCombat;
-					this.Contract.m.temproster = this.World.Assets.m.BrothersMax;					
-					//this.logInfo("temproster: " + this.World.Assets.m.BrothersMaxInCombat);					
+					this.Contract.m.temproster = this.World.Assets.m.BrothersMax;
 					this.World.Assets.m.BrothersMaxInCombat = 27;
-					//this.logInfo("asset: " + this.World.Assets.m.BrothersMaxInCombat);						
-					//p.EnemyBanners.push(this.World.FactionManager.getFaction(this.Contract.getFaction()).getPartyBanner());
 					p.EnemyBanners = [
 						this.World.FactionManager.getFaction(this.Contract.getFaction()).getPartyBanner()
 					];
 					foreach( e in p.Entities )
-					{
 						e.Callback <- this.onEntityPlaced.bindenv(this);
-					}					
+
 					this.World.Contracts.startScriptedCombat(p, false, true, true);
 				}
 			}
@@ -203,25 +184,19 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 			function onActorRetreated( _actor, _combatID )
 			{
 				if (_actor.getFlags().has("Necro"))
-				{
 					this.Flags.set("NecroEscaped", this.Flags.get("NecroEscaped") + 1);
-				}
 			}
 
 			function onCombatVictory( _combatID )
 			{
 				if (_combatID == "PURGEEE")
-				{
 					this.Flags.set("IsDone", true);
-				}	
 			}
 
 			function onRetreatedFromCombat( _combatID )
 			{
 				if (_combatID == "PURGEEE")
-				{
 					this.Flags.set("NecroEscaped", 100);
-				}
 			}
 
 		});
@@ -268,14 +243,14 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Negotiations",
-			Text = "[img]gfx/ui/events/event_31.png[/img]{%employer% throws back his silken sleeves and cracks his knuckles.%SPEECH_ON%Just weeks ago, an extremely vile threat arose in the form of the a plague. To our horror, my Cabinet discovered that the plague was not merely a means of illness, but rather a way of turning innocent townsfolk into undead creatures. The fallen have been resurrected en masse by a local clique of Necromancers.%SPEECH_OFF%You nod, a sellsword is often hired to deal with difficult things. The man continues.%SPEECH_ON%Some of my men were sent to the town of %settlementname% for an investigation, the grain there had been tampered with and without an influx of new foodstuff and a quarantine, the people of %settlementname% will all soon become infected, %noblehousename% are sorry for this but we must do anything we can to prevent further harm to our House.\n\n What I need you to do is burn them all, especially those despicable necromancers, the puppeteers that hold the strings to this insidious plot, along with any infected who continue to spread this plague. To end the assault by these monsters, I will also send along two experienced Paladins with you, these are strong men, experienced against the \'undead\', but unfortunately two men won\'t be enough here. There\'ll be a large satchel of crowns waiting for you right here if you go there and help them. What do you say, hm?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_31.png[/img]{%employer% throws back his silken sleeves and cracks his knuckles.%SPEECH_ON%Just weeks ago, an extremely vile threat arose in the form of a plague. To our horror, my cabinet discovered that the plague was not merely an illness but a way of turning innocent townsfolk into undead creatures. The fallen have been resurrected en masse by a local clique of Necromancers.%SPEECH_OFF%You nod, as a sellsword is often hired to deal with difficult things. The man continues.%SPEECH_ON%Some of my men were sent to the town of %settlementname% for an investigation. The grain there had been tampered with, and without an influx of new food and a quarantine, the people of %settlementname% will all soon become infected. %noblehousename% is sorry for this, but we must do anything we can to prevent further harm to our House.\n\n What I need you to do is burn them all, especially those despicable necromancers, the puppeteers behind this insidious plot, along with any infected who continue to spread this plague. To end the assault by these monsters, I will also send along two experienced Paladins with you. These are strong men, experienced against the \'undead\', but unfortunately, two men won\'t be enough here. There\'ll be a large satchel of crowns waiting for you right here if you go there and help them. What do you say, hm?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{Let\'s talk money. | How many crowns are we talking about? | What will the pay be? | For the right price, everything can be done.}",
+					Text = "{Let\'s talk money. | How many crowns are we talking about? | What will the pay be? | For the right price, anything can be done.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -300,7 +275,7 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "DefaultAttack",
 			Title = "As you approach...",
-			Text = "[img]gfx/ui/events/event_02.png[/img]{Approaching %settlementname%, %randombrother% suddenly calls out from on point.%SPEECH_ON%Sir, hurry!%SPEECH_OFF%You rush over to him and look ahead. The town is absolutely surrounded by a pale sea of bobbing, moaning undead! The %companyname% will have to cut through them if it is to get inside. \nA man jogs toward the %companyname%. He\'s holding one of his arms and a crown of blood runs down his head. He yells out.%SPEECH_ON%Go, go away! There\'s nothing for you here but horrors!%SPEECH_OFF%%randombrother% throws the stranger to the ground and draws a weapon to keep him there. You stay the mercenary\'s hand as you look ahead, %settlementname% is already surrounded by a large number of the undead. The %companyname% needs to act fast! \nIt seems you\'ve arrived just in time. The walls of %settlementname% are already under assault by the undead! \nRounding a pathway, you\'re brought to a sudden stop. Near to you a few of the cold, pale bodies linger, oddly outcast from the horde. %randombrother% remarks that there are a couple warm-blooded figures clad in black among these outliers, seems you\'ve found your target. \nWith the horde of undead already pushing in from outside %settlementname%\'s walls, and the heads of the militia peeking over the defenses, you leave them to the defense of the town while you make your way over to the Necromancers. \nDrawing out your sword, you command the %companyname% to battle!}",
+			Text = "[img]gfx/ui/events/event_02.png[/img]{Approaching %settlementname%, %randombrother% suddenly calls out from the front.%SPEECH_ON%Sir, hurry!%SPEECH_OFF%You rush over to him and look ahead. The town is absolutely surrounded by a pale sea of bobbing, moaning undead! The %companyname% will have to cut through them to get inside. \nA man jogs toward the %companyname%. He\'s holding one of his arms and a crown of blood runs down his head. He yells out.%SPEECH_ON%Go, go away! There\'s nothing for you here but horrors!%SPEECH_OFF%%randombrother% throws the stranger to the ground and draws a weapon to keep him there. You stay the mercenary\'s hand as you look ahead; %settlementname% is already surrounded by a large number of the undead. The %companyname% needs to act fast! \nRounding a pathway, you\'re brought to a sudden stop. Near you, a few of the cold, pale undead linger, oddly outcast from the horde. %randombrother% remarks that there are a couple of warm-blooded figures clad in black among these outliers; it seems you\'ve found your target. \nWith the horde of undead already pushing in from outside %settlementname%\'s walls, and the heads of the militia peeking over the defenses, you leave them to defend the town while you make your way over to the Necromancers. \nDrawing out your sword, you command the %companyname% to battle!}",
 			Image = "",
 			List = [],
 			Options = [
@@ -329,7 +304,7 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Done",
 			Title = "After the battle...",
-			Text = "[img]gfx/ui/events/event_46.png[/img]{You stare over the battlefield. It is littered with the dead, the dying, the undying, and the dying undying. Men, of the living, breathing sort, march about the muck, finishing off anything that remotely resembles a walking corpse. With the fight over, and the town saved, %employer% should now be expecting you. | The battle is over and the town is saved. Time to return %employer% for a hell of a payday. | %settlementname% resembles a flooded graveyard more than any town you know of. Corpses, new and old, are washed out across the earth, blood and moulded filth pooled about each. The stench reminds you of a dead dog you found alongside a creek, bones dripping the decomposition, the body being fed upon by crawfish and maggots.\n\nThe relentless attacks having finally ceased, %settlementname% seems safe for now. %employer% should be expecting you and you\'ve no reason to not escape this horrid place as soon as possible. | Well, the town is saved. The peasants step about the battlefield with long sticks, poking the earth like pelicans prodding over a pool of the most dangerous waters. %randombrother% comes over, cleaning the sludge off his blade, and asks if it is time to return to %employer%. You nod. The sooner you can get back for your pay the better. | The battle is over. Among the dead are peasants and militiamen, each attended by survivors who\'ve come to cloak the bodies with sobbing silhouettes. As for the dead undead, well, nobody cares. Those bodies lay as though they came with no purpose and yet departed with thorough destruction of whatever they touched. The sight of their corpses, and the chaotic nothingness they represent, is infuriating. Not wanting to be around a second longer, you inform the men to get ready to return to %employer%. | You and the %companyname% stand victorious. The town and its people will survive, for now, and you can return to %employer% for your pay. | The lieutenant of the guard thanks you for saving the town. You mention that the only reason you\'re here is because someone paid you. He shrugs.%SPEECH_ON%I thank the rains I\'ve no command over, I\'ll thank you mercenary whether you like it or not.%SPEECH_OFF% | The battle is over and, thankfully, won. Undead bodies spill over the earth in such disarray that they hardly look any different than they did shambling and shuffling just hours ago. But the more recently expired share no such cosmic despondence. Wailing women and confused children attend to them. You look away from the scene, ordering the %companyname% to prepare its return to %employer%. | A dead man is at your feet and beside him is an undead corpse. It\'s the strangest of sights, for they are equally put out of this world, but there\'s life yet in the man. The breath of a recent memory. You saw him swinging to the very end. A noble way for a fighter to go. This corpse, though? What of it? You\'ll remember it tearing a man\'s throat out with its bare teeth. Maybe the corpse had a time beyond that moment, when it had a family, a time when it was but a kind man doing good in this world. But a throat-ripping monstrosity is all it is now. All it will be remembered as .\n\nThe relentless attacks on %settlementname% have finally ceased, and so you hurry to collect the company and prepare a return to %employer% in %townname%. A good payday is better than another moment of looking at this shite. | What is a dead man? What if a dead man was killed twice over? And what of a dead man killed thrice over? Unfortunate. Misfortunate. And a joke.\n\n You walk the battlefield collecting the men of the %companyname%. The town of %settlementname% is saved for now, and so it\'s time for you to get back to %employer% in %townname% for a well-earned payday. | %randombrother% wipes his forehead with a cloth, leaving behind a disgusting smear of pale liquid.%SPEECH_ON%Shite, what is that? Is that brain? Sir, would you please?%SPEECH_OFF%You help the man clean himself off. He stands back, arms wide. He\'s still absolutely covered in blood, guts, and things which may forever be left unknown.%SPEECH_ON%How do I look?%SPEECH_OFF%His grin winks out of the murk like a rind of the moon through a pale sky. You refuse to answer and just tell him to go get the men. With %settlementname% saved for now, %employer% will be expecting the company back in %townname%, and the company should be expecting a well-earned payday. | %randombrother% comes to your side, together the two of you overlooking the battlefield. Already you can see the families of the dead coming out to find their lost ones. Their wailing is sharp, humanly pitched, a disturbingly welcomed respite from the growling, moaning despondence of the undead. The mercenary claps you on the shoulder.%SPEECH_ON%I\'ll go and collect the men so we can get on back to %townname% and collect our pay.%SPEECH_OFF% | You watch as women shuffle about the battlefield, holding their dresses up like wetted fowl steering clear of a pond\'s murk. Of course, once they find what they\'re looking for, they drop all regard for cleanliness and drop into the filth, wailing and howling, covering themselves in the very horrors which had dispatched their fathers and husbands with infuriating indifference.\n\n %randombrother% joins your side.%SPEECH_ON%Sir, the attacks have ceased and the men are ready to return to %townname%. Just give the word.%SPEECH_OFF% | The lieutenant of the guard comes to your side and shakes your hand. Drying blood cracks and crumbles as you shake. He puts his fists to his hips and nods at the scene .%SPEECH_ON%You did well sellsword, and we could not have done it without you. I\'d like to offer you more as thanks, but this town needs all the resources it has to rebuild. I do hope that %employer% pays you all that you are worth.%SPEECH_OFF%You hope so, too.}",
+			Text = "[img]gfx/ui/events/event_46.png[/img]{You stare over the battlefield. It is littered with the dead, the dying, the undying, and the dying undead. Men, of the living, breathing sort, march through the muck, finishing off anything that remotely resembles a walking corpse. With the fight over and the town saved, %employer% should now be expecting you. | The battle is over and the town is saved. Time to return to %employer% for a hell of a payday. | %settlementname% resembles a flooded graveyard more than any town you know. Corpses, new and old, are washed out across the earth, blood and moldy filth pooled about each. The stench reminds you of a dead dog you found alongside a creek, bones dripping with decomposition, the body being fed upon by crawfish and maggots.\n\nThe relentless attacks have finally ceased; %settlementname% seems safe for now. %employer% should be expecting you and you\'ve no reason to stay in this horrid place any longer. | Well, the town is saved. The peasants step about the battlefield with long sticks, poking the earth like pelicans prodding over a pool of the most dangerous waters. %randombrother% comes over, cleaning the sludge off his blade, and asks if it is time to return to %employer%. You nod. The sooner you can get back for your pay, the better. | The battle is over. Among the dead are peasants and militiamen, each attended by survivors who\'ve come to cloak the bodies with sobbing silhouettes. As for the dead undead, well, nobody cares. Those bodies lay as though they came with no purpose and yet departed with thorough destruction of whatever they touched. The sight of their corpses, and the chaotic nothingness they represent, is infuriating. Not wanting to be around a second longer, you inform the men to get ready to return to %employer%. | You and the %companyname% stand victorious. The town and its people will survive, for now, and you can return to %employer% for your pay. | The lieutenant of the guard thanks you for saving the town. You mention that the only reason you\'re here is because someone paid you. He shrugs.%SPEECH_ON%I thank the rains I\'ve no command over; I\'ll thank you mercenary whether you like it or not.%SPEECH_OFF% | The battle is over and, thankfully, won. Undead bodies spill over the earth in such disarray that they hardly look any different than they did shambling and shuffling just hours ago. But the more recently expired share no such cosmic despondence. Wailing women and confused children attend to them. You look away from the scene, ordering the %companyname% to prepare its return to %employer%. | A dead man is at your feet and beside him is an undead corpse. It\'s the strangest of sights, for they are equally put out of this world, but there\'s life yet in the man. The breath of a recent memory. You saw him swinging to the very end. A noble way for a fighter to go. This corpse, though? What of it? You\'ll remember it tearing a man\'s throat out with its bare teeth. Maybe the corpse had a time beyond that moment, when it had a family, a time when it was but a kind man doing good in this world. But a throat-ripping monstrosity is all it is now. All it will be remembered as.\n\nThe relentless attacks on %settlementname% have finally ceased, and so you hurry to collect the company and prepare a return to %employer% in %townname%. A good payday is better than another moment of looking at this shite. | What is a dead man? What if a dead man was killed twice over? And what of a dead man killed thrice over? Unfortunate. Misfortunate. And a joke.\n\n You walk the battlefield collecting the men of the %companyname%. The town of %settlementname% is saved for now, and so it\'s time for you to get back to %employer% in %townname% for a well-earned payday. | %randombrother% wipes his forehead with a cloth, leaving behind a disgusting smear of pale liquid.%SPEECH_ON%Shite, what is that? Is that brain? Sir, would you please?%SPEECH_OFF%You help the man clean himself off. He stands back, arms wide. He\'s still absolutely covered in blood, guts, and things which may forever be left unknown.%SPEECH_ON%How do I look?%SPEECH_OFF%His grin winks out of the murk like a rind of the moon through a pale sky. You refuse to answer and just tell him to go get the men. With %settlementname% saved for now, %employer% will be expecting the company back in %townname%, and the company should be expecting a well-earned payday. | %randombrother% comes to your side, together the two of you overlooking the battlefield. Already you can see the families of the dead coming out to find their lost ones. Their wailing is sharp, humanly pitched, a disturbingly welcome respite from the growling, moaning despondence of the undead. The mercenary claps you on the shoulder.%SPEECH_ON%I\'ll go and collect the men so we can get on back to %townname% and collect our pay.%SPEECH_OFF% | You watch as women shuffle about the battlefield, holding their dresses up like wetted fowl steering clear of a pond\'s murk. Of course, once they find what they\'re looking for, they drop all regard for cleanliness and drop into the filth, wailing and howling, covering themselves in the very horrors which had dispatched their fathers and husbands with infuriating indifference.\n\n %randombrother% joins your side.%SPEECH_ON%Sir, the attacks have ceased and the men are ready to return to %townname%. Just give the word.%SPEECH_OFF% | The lieutenant of the guard comes to your side and shakes your hand. Drying blood cracks and crumbles as you shake. He puts his fists to his hips and nods at the scene.%SPEECH_ON%You did well, sellsword, and we could not have done it without you. I\'d like to offer you more as thanks, but this town needs all the resources it has to rebuild. I do hope that %employer% pays you all that you are worth.%SPEECH_OFF%You hope so, too.}",
 			Image = "",
 			List = [],
 			Options = [
@@ -381,7 +356,7 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Failure1",
 			Title = "On your return...",
-			Text = "[img]gfx/ui/events/event_56.png[/img]{The undead were too many and you had to retreat. Unfortunately, a whole town doesn\'t have such liberties and so %settlementname% was completely overrun. You didn\'t stick around to see what became of its citizens, though it doesn\'t take a genius to guess. | The %companyname% has been defeated in the field by the hordes of undead! In the wake of your failure, %settlementname% is quickly overrun. A mass of peasants run from the town and those too slow are added to the sea of shambling corpses. | You failed to hold back the undead! The corpses slowly shuffle beyond the walls of %settlementname% and eat and kill all that they come across. As you flee the field, you see the lieutenant of the guards shuffling alongside the horde of corpses.}",
+			Text = "[img]gfx/ui/events/event_56.png[/img]{The undead were too many and you had to retreat. Unfortunately, a whole town doesn\'t have such liberties and so %settlementname% was completely overrun. You didn\'t stick around to see what became of its citizens, though it doesn\'t take a genius to guess. | The %companyname% has been defeated in the field by the hordes of undead. In the wake of your failure, %settlementname% is quickly overrun. A mass of peasants run from the town and those too slow are added to the sea of shambling corpses. | You failed to hold back the undead! The corpses slowly shuffle beyond the walls of %settlementname% and eat and kill all that they come across. As you flee the field, you see the lieutenant of the militia shuffling alongside the horde of corpses.}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
@@ -502,4 +477,3 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 	}
 
 });
-

@@ -1,8 +1,5 @@
-- Update the contracts added with better dialogue
+
+- Dryad faction addition (prio)
 
 - Legendary Sword stuff
-
-- Dryad Lego locations
-
-- Move over fully to Modern Hooks
 

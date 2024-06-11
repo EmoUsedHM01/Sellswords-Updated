@@ -22,6 +22,13 @@ Added Grand Slame clause to all the hooked Polearm skills
 ...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
 Fixed a fix I already fixed
 
+...\scripts\ambitions\ambitions\named_swords_ambition.nut (commented out)
+...\scripts\contracts\contracts\destroy_rebellions_contract.nut
+...\scripts\contracts\contracts\explore_treasures_contract.nut
+...\scripts\contracts\contracts\named_sword_contract.nut (deleted)
+...\scripts\contracts\contracts\purge_infection_contract.nut
+Cleaned up the SSU contracts and added the new Legends descriptors for contracts
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.0.7 changes

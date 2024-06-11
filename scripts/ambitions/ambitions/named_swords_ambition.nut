@@ -1,4 +1,4 @@
-this.named_swords_ambition <- this.inherit("scripts/ambitions/ambition", {
+/*this.named_swords_ambition <- this.inherit("scripts/ambitions/ambition", {
 	m = {
 		Obtained = 0,
 	},
@@ -13,7 +13,7 @@ this.named_swords_ambition <- this.inherit("scripts/ambitions/ambition", {
 		this.m.SuccessText = "[img]gfx/ui/events/event_82.png[/img]After weeks spent listening for rumors, buying pints of beer for decrepit old veterans, and negotiating with wheedling crones, you were able to ferret out the locations of a set of prestigious weapons. Having learned where to find the pieces, all that remained was the minor matter of defeating the various horrors and cutthroats guarding it. Now soon to be wielded by the men of your company, the pieces form a set fearsome to behold. %SPEECH_ON%The man who dons this arming onto the battlefield will see the fiercest enemy hobble away shaking a load down the leg of his pants!%SPEECH_OFF%%randombrother% exclaims proudly and to the laughing approval of his brothers in arms. You only hope their joy and excitement doesn\'t turn into envy once you announce which man will get to own all these legendary swords.";
 		this.m.SuccessButtonText = "Tell everyone it was the %companyname% who won here!";
 	}
-		
+
 	function CheckAbtswords()
 	{		
 		local items = this.World.Assets.getStash().getItems();
@@ -114,4 +114,4 @@ this.named_swords_ambition <- this.inherit("scripts/ambitions/ambition", {
 	}
 
 });
-
+*/

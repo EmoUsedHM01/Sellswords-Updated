@@ -8,20 +8,23 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 		local r = this.Math.rand(1, 100);
 
 		if (r <= 10)
-		{
 			this.m.DifficultyMult = this.Math.rand(90, 105) * 0.01;
-		}
 		else if (r <= 75)
-		{
 			this.m.DifficultyMult = this.Math.rand(115, 135) * 0.01;
-		}
 		else
-		{
 			this.m.DifficultyMult = this.Math.rand(145, 165) * 0.01;
-		}		
+
 		this.m.Type = "contract.explore_treasures";
 		this.m.Name = "Explore Treasures";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
+		this.m.DescriptionTemplates = [
+			"An ancient idol, sacred to %townname%, has been stolen. Its recovery promises untold rewards, including a famed item!",
+			"From the depths of %location% comes a quest to retrieve a lost idol, with the promise of a famed item as your reward.",
+			"Behold, the call to recover a revered idol from %location%, with a famed item waiting for the hero who succeeds!",
+			"The people of %townname% seek a champion to reclaim their sacred idol, offering a famed item as a reward for its return.",
+			"A revered idol, lost to the ages, must be recovered from %location%. The reward: a famed item of great renown.",
+			"An ancient idol has been taken from %townname%, and its recovery will be handsomely rewarded with a famed item."
+		];
 	}
 
 	function onImportIntro()
@@ -40,13 +43,9 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 			item = this.new("scripts/items/" + items[this.Math.rand(0, items.len() - 1)]);
 		}
 		else if (idx == 2)
-		{
 			item = this.Const.World.Common.pickHelmet(this.Const.World.Common.convNameToList(this.Const.Items.NamedHelmets));
-		}
 		else if (idx == 3)
-		{
 			item = this.Const.World.Common.pickArmor(this.Const.World.Common.convNameToList(this.Const.Items.NamedArmors));
-		}
 
 		local cnh;
 
@@ -60,23 +59,17 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 			local nameList = [];
 
 			if ((item.m.ItemType & this.Const.Items.ItemType.Named) != 0)
-			{
 				nameList.push(item);
-			}
 
 			foreach( i in item.getUpgrades() )
 			{
 				if (i != 1)
-				{
 					continue;
-				}
 
 				local u = item.getUpgrade(i);
 
 				if (u != null && u.isItemType(this.Const.Items.ItemType.Named))
-				{
 					nameList.push(u);
-				}
 			}
 
 			local idx = this.Math.rand(0, nameList.len() - 1);
@@ -88,21 +81,13 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Flags.set("PrizeScript", cnh);
 
 		if (item.isItemType(this.Const.Items.ItemType.Weapon))
-		{
 			this.m.Flags.set("PrizeType", "weapon");
-		}
 		else if (item.isItemType(this.Const.Items.ItemType.Shield))
-		{
 			this.m.Flags.set("PrizeType", "shield");
-		}
 		else if (item.isItemType(this.Const.Items.ItemType.Armor))
-		{
 			this.m.Flags.set("PrizeType", "armor");
-		}
 		else if (item.isItemType(this.Const.Items.ItemType.Helmet))
-		{
 			this.m.Flags.set("PrizeType", "helmet");
-		}
 
 		local r = this.Math.rand(0, 6);
 		local myTile = this.World.State.getPlayer().getTile();
@@ -147,9 +132,7 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 		foreach( b in objcamp )
 		{
 			if (b.isLocationType(this.Const.World.LocationType.Unique))
-			{
 				continue;
-			}
 
 			local d = myTile.getDistanceTo(b.getTile()) + this.Math.rand(0, 45);
 
@@ -178,13 +161,9 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 				];
 
 				if (this.Math.rand(1, 100) <= this.Const.Contracts.Settings.IntroChance)
-				{
 					this.Contract.setScreen("Intro");
-				}
 				else
-				{
 					this.Contract.setScreen("Task");
-				}
 			}
 
 			function end()
@@ -194,38 +173,23 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 				this.Contract.m.Destination.clearTroops();
 
 				if (this.Contract.getDifficultyMult() <= 1.35 && !this.Contract.m.Destination.getFlags().get("IsEventLocation"))
-				{
 					this.Contract.m.Destination.getLoot().clear();
-				}
 
 				if (this.Flags.get("IsBandits"))
-				{
 					this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.BanditBoss, 200 + 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				}
 				else if (this.Flags.get("IsBarbarians"))
-				{
 					this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.Barbarians, 200 + 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				}	
 				else if (this.Flags.get("IsOrientalBandits"))
-				{
 					this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.NomadDefenders, 200 + 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				}
 				else if (this.Flags.get("IsOrcs"))
-				{
 					this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.OrcBoss, 200 + 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				}	
 				else if (this.Flags.get("IsGoblins"))
-				{
 					this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.GoblinBoss, 200 + 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				}
 				else if (this.Flags.get("IsUndead"))
-				{
 					this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.RomaLegion, 150 + 135 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				}				
 				else if (this.Flags.get("IsZombies"))	
-				{
 					this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.Necromancer, 180 + 140 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				}				
+
 				this.Contract.m.Destination.setLootScaleBasedOnResources(110 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				this.Contract.m.Destination.setDiscovered(true);
 				this.World.uncoverFogOfWar(this.Contract.m.Destination.getTile().Pos, 500.0);
@@ -290,14 +254,14 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "Task",
 			Title = "Negotiations",
-			Text = "[img]gfx/ui/events/event_92.png[/img]%employer% welcomes you and walks you toward the town's square. There\'s a party of peasants milling about, but when they see you coming they shape up and start talking as though they\'d been expecting you all along. They mostly talk in descriptors: tall as any man! Armor like you\'d never seen before! Spears as sharp as a peddler\'s tongue! You hold your hand up and ask what it is they are talking about. %employer% laughs.%SPEECH_ON%The men here say they saw some oddities out in a spot by the name of %location%. Naturally, they weren\'t out there for no reason. They were looking for something by the name of %item%, a relic dear to the town for through it we pray for food and shelter.%SPEECH_OFF%One of the peasants speak up.%SPEECH_ON%And we was lookin\' fer it at his behest!%SPEECH_OFF%%employer% nods.%SPEECH_ON%Of course. And where they failed, perhaps you can succeed? Get this relic for me and you\'ll be paid quite well for your services. Let's see, I've heard that a famed item called %prizename% was also buried there. Pay no mind to their fairy tales. I\'m sure there\'s nothing to worry about.%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_92.png[/img]%employer% welcomes you and walks you toward the town\'s square. There\'s a group of peasants milling about, but when they see you coming, they shape up and start talking as though they\'d been expecting you all day. They mostly talk in descriptors:\nTall as any man!\nArmour like you\'d never seen before!\nSpears as sharp as a peddler\'s tongue!\n\nYou hold your hand up and ask what it is they are talking about.\n%employer% laughs.%SPEECH_ON%The men here say they saw something out in a spot by the name of %location%. Naturally, they weren\'t out there for no reason. They were looking for something called %item%, a relic dear to the town that was stolen by savages, and through it we pray for food and shelter.%SPEECH_OFF%One of the peasants speaks up.%SPEECH_ON%And we was lookin\' fer it at his behest!%SPEECH_OFF%%employer% nods.%SPEECH_ON%Of course. And where they failed, perhaps you can succeed? Retrieve this relic for me and you\'ll be paid quite well for your services. Hmmmm, let\'s see. From the reports of the townsfolk, they saw a statue bearing %prizename% while they were scouting. I assume that will provide motivation enough for your assistance?%SPEECH_OFF%}",
 			Image = "",
 			List = [],
 			ShowEmployer = true,
 			ShowDifficulty = true,
 			Options = [
 				{
-					Text = "{How many crowns are we talking about? | What is %townname% prepared to pay for their safety? | Let\'s talk money.}",
+					Text = "{Maybe it is. | What is %townname% prepared to pay for their idol back? | Let\'s talk money.}",
 					function getResult()
 					{
 						return "Negotiation";
@@ -344,7 +308,7 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Screens.push({
 			ID = "ItemObtained",
 			Title = "After the battle...",
-			Text = "[img]gfx/ui/events/event_133.png[/img]{With the help of local bounty hunters, all damned enemies have been slain to the last. With the %item% in hand, you figure you might as well grab the %item%. %randombrother% goes and does it, carefully freeing the statue of the piece. Once the metal wriggles free, the man pauses, readied to get clobbered if the statue were to jump to life. Instead, nothing happens. He nervously laughs.%SPEECH_ON%E-easy-peasy!%SPEECH_OFF%As relief spreads over the men, you tell them to get ready to return to %employer%. And, of course, you obtained the impressive %prizename%.}",
+			Text = "[img]gfx/ui/events/event_133.png[/img]{With the help of local bounty hunters, all damned enemies have been slain to the last. With the %item% in hand, you figure you might as well grab the %prizename%. %randombrother% goes and does it, carefully freeing the statue of the piece. Once the metal wriggles free, the man pauses, readied to get clobbered if the statue were to jump to life. Instead, nothing happens. He nervously laughs.%SPEECH_ON%E-easy-peasy!%SPEECH_OFF%As relief spreads over the men, you tell them to get ready to return to %employer%.}",
 			Image = "",
 			List = [],
 			Options = [
@@ -511,4 +475,3 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 	}
 
 });
-
