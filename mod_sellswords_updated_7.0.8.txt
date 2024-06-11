@@ -1,3 +1,9 @@
+7.0.8 changes
+
+...
+
+----------------------------------------------------------------------------------------------------------------------------
+
 7.0.7 changes
 
 ...\mod_sellswords\hooks\entity\world\settlements\buildings\alchemist_building.nut
@@ -10,9 +16,10 @@
 Fixed some hooks being naughty
 
 ...\mod_sellswords\hooks\skills\perks\perk_last_stand.nut
-fixed a bad ptr hook - Breaky
+Fixed a bad ptr hook - Breaky
+
 ...\mod_sellswords\hooks\skills\perks\duelist.nut
-added duelist logic according to perk description
+Added duelist logic according to perk description - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
