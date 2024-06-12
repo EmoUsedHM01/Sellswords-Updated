@@ -46,7 +46,7 @@
 		return tooltip;
 	};
 
-	q.onTargetMissed = @( __original ) function ( _skill, _targetEntity )
+	q.onUpdate = @(__original) function ( _properties )
 	{
 		local currentPercent = this.getContainer().getActor().getHitpointsPct();
 		local missingHealthPercent = 1.0 - currentPercent;
@@ -75,6 +75,15 @@
 		_properties.MeleeDefense += bonus;
 		_properties.RangedDefense += bonus;
 		_properties.ActionPoints += this.Math.floor(missingHealthPercent / 0.20);		
+	}
+
+	if (!(::Is_PTR_Exist))
+	{
+		q.onCombatFinished <- function()
+		{
+			this.skill.onCombatFinished();
+			this.m.IsSpent = false;
+		}
 	}
 
 });
