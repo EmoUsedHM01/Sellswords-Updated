@@ -35,6 +35,9 @@ Fixed bad pathing
 ...\mod_sellswords\hooks\skills\perks\perk_last_stand.nut
 Fixed bad function stuff - Breaky
 
+...\mod_sellswords\hooks\config\strings.nut
+Updated tooltips
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.0.7 changes
