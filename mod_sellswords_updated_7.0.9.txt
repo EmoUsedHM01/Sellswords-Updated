@@ -1,3 +1,9 @@
+7.0.9 changes
+
+...
+
+----------------------------------------------------------------------------------------------------------------------------
+
 7.0.8 changes
 
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pitchfork_damage.nut
