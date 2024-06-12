@@ -3,3 +3,4 @@
 
 - Legendary Sword stuff
 
+- add hooks for status effect tooltips to take resilient into account.
