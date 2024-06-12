@@ -17,7 +17,7 @@ Fixed Pitchfork Spec applying to things that weren't Polearms
 ...\mod_sellswords\hooks\skills\actives\strike_skill.nut
 ...\scripts\skills\actives\cr_hook_skill.nut
 ...\scripts\skills\actives\crstrike.nut
-Added Grand Slame clause to all the hooked Polearm skills
+Added Grand Slam clause to all the hooked Polearm skills
 
 ...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
 Fixed a fix I already fixed
@@ -34,6 +34,13 @@ Fixed bad pathing
 
 ...\mod_sellswords\hooks\skills\perks\perk_last_stand.nut
 Fixed bad function stuff - Breaky
+
+...\mod_sellswords\hooks\skills\actives\legend_halberd_smite_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_ranged_flail_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_ranged_lash_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_voulge_decapitate.nut
+...\mod_sellswords\hooks\skills\actives\legend_voulge_cleave.nut
+Fixed double application of hitchance mallus for polearms in melee when not specialized - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
