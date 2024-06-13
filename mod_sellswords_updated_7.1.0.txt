@@ -1,4 +1,4 @@
-7.0.9 changes
+7.1.0 changes
 
 ...
 
@@ -49,7 +49,7 @@ Updated tooltips
 ...\mod_sellswords\hooks\skills\actives\legend_ranged_lash_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_decapitate.nut
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_cleave.nut
-Fixed double application of hitchance mallus for polearms in melee when not specialized - Breaky
+Fixed double application of hitchance malus for polearms in melee when not specialized - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
