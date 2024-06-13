@@ -39,6 +39,7 @@ this.heavy_mining_pick <- this.inherit("scripts/items/weapons/weapon", {
 		local crush = this.new("scripts/skills/actives/crush_armor");
 		crush.m.Icon = "skills/active_59.png";
 		crush.m.IconDisabled = "skills/active_59_sw.png";
+		crush.m.ActionPointCost = 6;
 		crush.m.Overlay = "active_59";
 		this.addSkill(crush);
 	}
