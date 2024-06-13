@@ -13,6 +13,15 @@
 ...\mod_sellswords\hooks\skills\actives\legend_drink_wine_skill.nut
 Deleted some redundant hooks
 
+...\brushes\chiru_weapons.brush
+...\gfx\chiru_weapons.png
+...\gfx\ui\items\weapons\melee\two_handed_miners_pick.png
+...\gfx\ui\items\weapons\melee\two_handed_miners_pick_70x70.png
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
+...\mod_sellswords\hooks\skills\backgrounds\miner_background.nut
+...\scripts\items\weapons\heavy_mining_pick.nut
+Added new 2h mining pickaxe and hooks to the background and marketplace for it
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.1.0 changes
