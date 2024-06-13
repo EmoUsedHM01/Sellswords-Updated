@@ -1,6 +1,17 @@
 7.1.1 changes
 
-...
+...\mod_sellswords\hooks\skills\actives\legend_eat_pie_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_eat_porridge_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_eat_pudding_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_eat_rations_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_drink_beer_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_drink_heartwood_sap_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_drink_hexe_ichor_potion_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_drink_mead_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_drink_skin_ghoul_blood_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_drink_stollwurm_blood_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_drink_wine_skill.nut
+Deleted some redundant hooks
 
 ----------------------------------------------------------------------------------------------------------------------------
 
