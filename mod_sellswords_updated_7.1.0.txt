@@ -1,6 +1,7 @@
 7.1.0 changes
 
-...
+...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
+Fixed bad hook - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
