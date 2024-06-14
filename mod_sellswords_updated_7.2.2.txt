@@ -4,6 +4,9 @@
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pickaxe_skill.nut
 Added the new heavy pickaxe to pickaxe spec
 
+...\mod_sellswords\config\strings.nut
+Updated strings - Rygar
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.1 changes
