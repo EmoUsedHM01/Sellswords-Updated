@@ -2,9 +2,9 @@ this.quiver_of_fire_arrows <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "ammo.fire_arrows";
+		this.m.ID = "ammo.arrows";
 		this.m.Name = "Quiver of Fire Arrows";
-		this.m.Description = "A quiver of arrows with a oiled bulbous tip and a sparker on the rim.\nIt will inflict an additional 50% of damage as fire damage and ignite the ground the target stands on for 2 turns, does extra damage against undead and trees.\nCan cause fire related injuries.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";
+		this.m.Description = "A quiver of arrows with a oiled tip and a sparker on the rim.\nIt will inflict an additional 50% of damage as fire damage and ignite the ground the target stands on for 2 turns, does extra damage against undead and trees.\nCan cause fire related injuries.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";
 		this.m.Icon = "ammo/quiver_fire.png";
 		this.m.IconEmpty = "ammo/quiver_fire_empty";
 		this.m.SlotType = this.Const.ItemSlot.Ammo;
@@ -14,8 +14,8 @@ this.quiver_of_fire_arrows <- this.inherit("scripts/items/ammo/ammo", {
 		this.m.ShowQuiver = true;
 		this.m.Sprite = "bust_quiver_01";
 		this.m.Value = 1500;
-		this.m.Ammo = 10;
-		this.m.AmmoMax = 10;
+		this.m.Ammo = 8;
+		this.m.AmmoMax = 8;
 		this.m.AmmoCost = 3;
 		this.m.IsDroppedAsLoot = true;
 	}
@@ -86,13 +86,11 @@ this.quiver_of_fire_arrows <- this.inherit("scripts/items/ammo/ammo", {
 		this.ammo.onEquip();
 		this.getContainer().getActor().getSkills().add(this.new("scripts/skills/effects/flaming_arrows_effect"));
 	}
-	
+
 	function onUnequip()
 	{
 		this.ammo.onUnequip();
-
-		local skills = this.getContainer().getActor().getSkills();
-		skills.removeByID("effects.flaming_arrows");
+		this.getContainer().getActor().getSkills().removeByID("effects.flaming_arrows");
 	}
-});
 
+});

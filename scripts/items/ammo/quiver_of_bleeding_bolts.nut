@@ -2,7 +2,7 @@ this.quiver_of_bleeding_bolts <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "ammo.bleed_bolts";
+		this.m.ID = "ammo.bolts";
 		this.m.Name = "Quiver of Serrated Bolts";
 		this.m.Description = "A quiver of bolts with arrowheads made of sharp serrated metal.\nIt will cause targets to gain a stacking bleed debuff, causing 10 damage per stack for 2 turns.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";
 		this.m.Icon = "ammo/quiver_bleedbolts.png";
@@ -14,8 +14,8 @@ this.quiver_of_bleeding_bolts <- this.inherit("scripts/items/ammo/ammo", {
 		this.m.ShowQuiver = true;
 		this.m.Sprite = "bust_quiver_01";
 		this.m.Value = 1500;
-		this.m.Ammo = 10;
-		this.m.AmmoMax = 10;
+		this.m.Ammo = 8;
+		this.m.AmmoMax = 8;
 		this.m.AmmoCost = 3;
 		this.m.IsDroppedAsLoot = true;
 	}

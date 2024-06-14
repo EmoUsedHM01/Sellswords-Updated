@@ -1,4 +1,3 @@
-local gt = this.getroottable();
 ::Const.Items.AmmoType <- {
 	None = 0,
 	Arrows = 1,

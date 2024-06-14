@@ -12,8 +12,8 @@
 				this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectChop);
 				this.attackEntity(_user, target);
 				
-				local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
-				if (item.getID() == "ammo.phantom_arrows")
+				local ammo = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+				if (ammo.m.Name == "Quiver of Phantom Arrows")
 				{
 					local skill = this.getContainer().getActor().getSkills().getSkillByID("effects.phantom_strike");
 					local stacks = skill.m.PhantomStacks;
@@ -62,7 +62,7 @@
 
 	q.onTargetHit <- function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
-		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+		local ammo = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 		local actor = this.getContainer().getActor();
 
 		if (!actor.isAlive() || actor.isDying())
@@ -71,7 +71,7 @@
 		if (!_targetEntity.isAlive() || _targetEntity.isDying())
 			return;
 		
-		if (item.getID() == "ammo.bleed_arrows")
+		if (ammo.m.Name == "Quiver of Serrated Arrows")
 		{
 			if (!_targetEntity.getCurrentProperties().IsImmuneToBleeding)
 			{
@@ -82,7 +82,7 @@
 			}
 		}
 
-		if (item.getID() == "ammo.poison_arrows")
+		if (ammo.m.Name == "Quiver of Poisoned Arrows")
 		{
 			if (_targetEntity.getFlags().has("undead"))
 				return;
@@ -101,18 +101,24 @@
 			}
 
 			local gobboPoison = _targetEntity.getSkills().getSkillByID("effects.goblin_poison");
+
 			if (gobboPoison == null)
 				_targetEntity.getSkills().add(this.new("scripts/skills/effects/goblin_poison_effect"));
 			else
 				gobboPoison.resetTime();
 		}
 
-		if (item.getID() == "ammo.ice_arrows")
+		if (ammo.m.Name == "Quiver of Freezing Arrows")
 		{
 			if (!_targetEntity.isHiddenToPlayer())
 				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");
 
-			_targetEntity.getSkills().add(this.new("scripts/skills/effects/chilled_effect"));
+			local chilled = _targetEntity.getSkills().getSkillByID("effects.chilled");
+
+			if (chilled == null)
+				_targetEntity.getSkills().add(this.new("scripts/skills/effects/chilled_effect"));
+			else
+				chilled.resetTime();
 		}
 	}
 

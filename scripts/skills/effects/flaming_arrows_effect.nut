@@ -34,6 +34,7 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 	function onBeforeTargetHit( _skill, _targetEntity, _hitInfo )
 	{
 		this.m.TargetTile = _targetEntity.getTile();
+
 		local mainhand = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		this.m.DamageMin = this.Math.round(mainhand.getDamageMin() * 0.5);
 		this.m.DamageMax = this.Math.round(mainhand.getDamageMax() * 0.5);
@@ -81,28 +82,22 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 				}
 			};
 
-			foreach( tile in targets )
+			foreach( tile in targets ) // Apply the fire to the tiles
 			{
 				if (tile.Subtype != this.Const.Tactical.TerrainSubtype.Snow && tile.Subtype != this.Const.Tactical.TerrainSubtype.LightSnow && tile.Type != this.Const.Tactical.TerrainType.ShallowWater && tile.Type != this.Const.Tactical.TerrainType.DeepWater)
 				{
 					if (tile.Properties.Effect != null && tile.Properties.Effect.Type == "fire")
-					{
 						tile.Properties.Effect.Timeout = this.Time.getRound() + 2;
-					}
 					else
 					{
 						if (tile.Properties.Effect != null)
-						{
 							this.Tactical.Entities.removeTileEffect(tile);
-						}
 
 						tile.Properties.Effect = clone p;
 						local particles = [];
 
 						for( local i = 0; i < this.Const.Tactical.FireParticles.len(); i = ++i )
-						{
 							particles.push(this.Tactical.spawnParticleEffect(true, this.Const.Tactical.FireParticles[i].Brushes, tile, this.Const.Tactical.FireParticles[i].Delay, this.Const.Tactical.FireParticles[i].Quantity, this.Const.Tactical.FireParticles[i].LifeTimeQuantity, this.Const.Tactical.FireParticles[i].SpawnRate, this.Const.Tactical.FireParticles[i].Stages));
-						}
 
 						this.Tactical.Entities.addTileEffect(tile, tile.Properties.Effect, particles);
 						tile.clear(this.Const.Tactical.DetailFlag.Scorchmark);
@@ -110,14 +105,12 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 					}
 				}
 
-				if (tile.IsOccupiedByActor)
+				if (tile.IsOccupiedByActor) // Apply the damage
 				{
 					local entity = tile.getEntity();
 					
 					if (entity.getCurrentProperties().IsImmuneToFire)
-					{
 						return;
-					}
 			
 					this.Tactical.spawnIconEffect("status_effect_116", tile, this.Const.Tactical.Settings.SkillIconOffsetX, this.Const.Tactical.Settings.SkillIconOffsetY, this.Const.Tactical.Settings.SkillIconScale, this.Const.Tactical.Settings.SkillIconFadeInDuration, this.Const.Tactical.Settings.SkillIconStayDuration, this.Const.Tactical.Settings.SkillIconFadeOutDuration, this.Const.Tactical.Settings.SkillIconMovement);
 					local sounds = [
@@ -129,19 +122,13 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 					local damageMult = 1.0;
 			
 					if (entity.getSkills().hasSkill("racial.schrat") || entity.getSkills().hasSkill("racial.legend_greenwood_schrat"))
-					{
 						damageMult = 5.0;
-					}
 			
 					if (entity.getSkills().hasSkill("racial.skeleton") || entity.getSkills().hasSkill("racial.vampire"))
-					{
 						damageMult = 2.0;
-					}
 			
 					if (entity.getSkills().hasSkill("items.firearms_resistance") || entity.getSkills().hasSkill("racial.serpent"))
-					{
 						damageMult = 0.66;
-					}
 			
 					local damage = this.Math.rand(_data.DamageMin, _data.DamageMax);
 					local hitInfo = clone this.Const.Tactical.HitInfo;
@@ -158,6 +145,7 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 				}
 			}
 		}
+
 		if (item.isWeaponType(::Const.Items.WeaponType.Crossbow))
 		{
 			local targets = [];
@@ -181,28 +169,22 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 				}
 			};
 
-			foreach( tile in targets )
+			foreach( tile in targets ) // Apply the fire to the tiles
 			{
 				if (tile.Subtype != this.Const.Tactical.TerrainSubtype.Snow && tile.Subtype != this.Const.Tactical.TerrainSubtype.LightSnow && tile.Type != this.Const.Tactical.TerrainType.ShallowWater && tile.Type != this.Const.Tactical.TerrainType.DeepWater)
 				{
 					if (tile.Properties.Effect != null && tile.Properties.Effect.Type == "fire")
-					{
 						tile.Properties.Effect.Timeout = this.Time.getRound() + 2;
-					}
 					else
 					{
 						if (tile.Properties.Effect != null)
-						{
 							this.Tactical.Entities.removeTileEffect(tile);
-						}
 
 						tile.Properties.Effect = clone p;
 						local particles = [];
 
 						for( local i = 0; i < this.Const.Tactical.FireParticles.len(); i = ++i )
-						{
 							particles.push(this.Tactical.spawnParticleEffect(true, this.Const.Tactical.FireParticles[i].Brushes, tile, this.Const.Tactical.FireParticles[i].Delay, this.Const.Tactical.FireParticles[i].Quantity, this.Const.Tactical.FireParticles[i].LifeTimeQuantity, this.Const.Tactical.FireParticles[i].SpawnRate, this.Const.Tactical.FireParticles[i].Stages));
-						}
 
 						this.Tactical.Entities.addTileEffect(tile, tile.Properties.Effect, particles);
 						tile.clear(this.Const.Tactical.DetailFlag.Scorchmark);
@@ -210,14 +192,12 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 					}
 				}
 
-				if (tile.IsOccupiedByActor)
+				if (tile.IsOccupiedByActor) // Apply the damage
 				{
 					local entity = tile.getEntity();
 					
 					if (entity.getCurrentProperties().IsImmuneToFire)
-					{
 						return;
-					}
 			
 					this.Tactical.spawnIconEffect("status_effect_116", tile, this.Const.Tactical.Settings.SkillIconOffsetX, this.Const.Tactical.Settings.SkillIconOffsetY, this.Const.Tactical.Settings.SkillIconScale, this.Const.Tactical.Settings.SkillIconFadeInDuration, this.Const.Tactical.Settings.SkillIconStayDuration, this.Const.Tactical.Settings.SkillIconFadeOutDuration, this.Const.Tactical.Settings.SkillIconMovement);
 					local sounds = [
@@ -229,19 +209,13 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 					local damageMult = 1.0;
 			
 					if (entity.getSkills().hasSkill("racial.schrat") || entity.getSkills().hasSkill("racial.legend_greenwood_schrat"))
-					{
 						damageMult = 5.0;
-					}
 			
 					if (entity.getSkills().hasSkill("racial.skeleton") || entity.getSkills().hasSkill("racial.vampire"))
-					{
 						damageMult = 2.0;
-					}
 			
 					if (entity.getSkills().hasSkill("items.firearms_resistance") || entity.getSkills().hasSkill("racial.serpent"))
-					{
 						damageMult = 0.66;
-					}
 			
 					local damage = this.Math.rand(_data.DamageMin, _data.DamageMax);
 					local hitInfo = clone this.Const.Tactical.HitInfo;
@@ -254,10 +228,10 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 					hitInfo.Injuries = this.Const.Injury.Burning;
 					hitInfo.IsPlayingArmorSound = false;
 					entity.onDamageReceived(entity, null, hitInfo);		
-					
+
 				}
 			}
 		}
 	}
-});
 
+});

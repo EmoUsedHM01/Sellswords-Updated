@@ -26,7 +26,7 @@ Deleted some redundant hooks
 ...\scripts\items\weapons\heavy_mining_pick.nut
 Added new 2h mining pickaxe and hooks to the background and marketplace for it
 
-...\gfx\skills\phantom_arrow_effect.png
+...\gfx\skills\phantom_strike_effect.png
 ...\gfx\ui\items\ammo\quiver_bleed.png
 ...\gfx\ui\items\ammo\quiver_bleed_empty.png
 ...\gfx\ui\items\ammo\quiver_bleedbolts.png
@@ -49,6 +49,7 @@ Added new 2h mining pickaxe and hooks to the background and marketplace for it
 ...\gfx\ui\items\ammo\quiver_poisonbolts_empty.png
 Added new gfx for the arrow/bolt update
 
+...\mod_sellswords\config\ammo_types.nut
 ...\mod_sellswords\hooks\entity\tactical\humans\desert_stalker.nut
 ...\mod_sellswords\hooks\entity\tactical\humans\free_company_crossbow.nut
 ...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut

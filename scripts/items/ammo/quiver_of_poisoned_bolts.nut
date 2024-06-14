@@ -2,9 +2,9 @@ this.quiver_of_poisoned_bolts <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "ammo.poison_bolts";
+		this.m.ID = "ammo.bolts";
 		this.m.Name = "Quiver of Poisoned Bolts";
-		this.m.Description = "A quiver of arrows, taken from the corpse of a dead Goblin Ambusher.\nIt contains a liquid filling the bottom of the quiver to quickly apply the Goblin's poison to inserted arrows, the poison lasts for 3 turns.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";
+		this.m.Description = "A quiver of bolts, taken from the corpse of a dead Goblin.\nIt contains a liquid filling the bottom of the quiver to quickly apply the Goblin\'s poison to inserted bolts, the poison lasts for 3 turns.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";
 		this.m.Icon = "ammo/quiver_poisonbolts.png";
 		this.m.IconEmpty = "ammo/quiver_poisonbolts_empty.png";
 		this.m.SlotType = this.Const.ItemSlot.Ammo;
@@ -13,9 +13,9 @@ this.quiver_of_poisoned_bolts <- this.inherit("scripts/items/ammo/ammo", {
 		this.m.ShowOnCharacter = true;
 		this.m.ShowQuiver = true;
 		this.m.Sprite = "bust_quiver_01";
-		this.m.Value = 1500;
-		this.m.Ammo = 10;
-		this.m.AmmoMax = 10;
+		this.m.Value = 2000;
+		this.m.Ammo = 7;
+		this.m.AmmoMax = 7;
 		this.m.AmmoCost = 3;
 		this.m.IsDroppedAsLoot = true;
 	}

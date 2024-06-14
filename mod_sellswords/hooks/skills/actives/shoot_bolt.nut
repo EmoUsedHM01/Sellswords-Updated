@@ -10,8 +10,8 @@
 		this.getContainer().add(skillToAdd);
 		this.attackEntity(_user, target);
 
-		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
-		if (item.getID() == "ammo.phantom_bolt")
+		local ammo = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+		if (ammo.m.Name == "Quiver of Phantom Bolts")
 		{
 			local skill = this.getContainer().getActor().getSkills().getSkillByID("effects.phantom_strike");
 			local stacks = skill.m.PhantomStacks;
@@ -59,7 +59,7 @@
 
 	q.onTargetHit <- function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
-		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+		local ammo = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 		local actor = this.getContainer().getActor();
 
 		if (!actor.isAlive() || actor.isDying())
@@ -68,7 +68,7 @@
 		if (!_targetEntity.isAlive() || _targetEntity.isDying())
 			return;
 		
-		if (item.getID() == "ammo.bleed_bolts")
+		if (ammo.m.Name == "Quiver of Serrated Bolts")
 		{
 			if (!_targetEntity.getCurrentProperties().IsImmuneToBleeding)
 			{
@@ -79,7 +79,7 @@
 			}
 		}
 
-		if (item.getID() == "ammo.poison_bolts")
+		if (ammo.m.Name == "Quiver of Poisoned Bolts")
 		{
 			if (_targetEntity.getFlags().has("undead"))
 				return;
@@ -104,7 +104,7 @@
 				gobboPoison.resetTime();
 		}
 
-		if (item.getID() == "ammo.ice_bolts")
+		if (ammo.m.Name == "Quiver of Freezing Bolts")
 		{
 			if (!_targetEntity.isHiddenToPlayer())
 				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");
