@@ -1,6 +1,7 @@
 7.2.1 changes
 
-...
+...\mod_sellswords\hooks\hooks_humans.nut
+Updated a bad pathing hook which was causing unlogged crashes
 
 ----------------------------------------------------------------------------------------------------------------------------
 

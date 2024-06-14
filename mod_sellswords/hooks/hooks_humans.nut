@@ -15,70 +15,69 @@ foreach(script in [
 	"nomad_archer",
 	"nomad_slinger",
 	"vizier",
-	"wildman",
-])
-{
+	"wildman"]) {
+
 	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/" + script, function ( q ) {
 
 		q.onInit = @( __original ) function()
 		{
 			__original();
+
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
 				local dc = this.World.getTime().Days;
 				local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-				dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+				dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 				this.m.BaseProperties.MeleeSkill += dca;
 				this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-				this.m.BaseProperties.RangedSkill += dca;	
-				this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+				this.m.BaseProperties.RangedSkill += dca;
+				this.m.BaseProperties.RangedDefense += 0.5 * dca;
 				this.m.BaseProperties.Bravery += dca;
-				this.m.BaseProperties.Hitpoints += 2 * dca;	
-			}			
+				this.m.BaseProperties.Hitpoints += 2 * dca;
+			}
 		}
-	}); 
+	});
 }
 
 foreach(script in [
 	"conscript",
-	"conscript_polearm",
-])
-{
+	"conscript_polearm"]) {
+
 	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/" + script, function ( q ) {
 
 		q.onInit = @( __original ) function()
 		{
-			__original();				
+			__original();
+
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
-			{				
+			{
 				local dc = this.World.getTime().Days;
 				local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);
-				dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));				
+				dca = this.Math.min(dca, 8 + this.Math.floor(dc/100));
 				this.m.BaseProperties.MeleeSkill += dca;
 				this.m.BaseProperties.MeleeDefense += 0.5 * dca;
-				this.m.BaseProperties.RangedSkill += dca;	
-				this.m.BaseProperties.RangedDefense += 0.5 * dca;				
+				this.m.BaseProperties.RangedSkill += dca;
+				this.m.BaseProperties.RangedDefense += 0.5 * dca;
 				this.m.BaseProperties.Bravery += dca;
-				this.m.BaseProperties.Hitpoints += 2 * dca;					
-			}			
+				this.m.BaseProperties.Hitpoints += 2 * dca;
+			}
 		}
 
 		q.assignRandomEquipment = @( __original ) function()
 		{
-			assignRandomEquipment();
+			__original();
+
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 			{
 				if (::Is_PTR_Exist)
 				{
-					this.m.Skills.removeByID("perk.ptr_fresh_and_furious");	
-					this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));	
+					this.m.Skills.removeByID("perk.ptr_fresh_and_furious");
+					this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));
 				}
-				
+
 				if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 100)
-				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));				
-				}
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
 			}
-		}		
-	});	
+		}
+	});
 }
