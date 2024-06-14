@@ -1,5 +1,9 @@
 7.1.1 changes
 
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\hooks\config\strings.nut
+Updated all perk strings to include colors for skills, perks, and status effects - Rygar
+
 ...\mod_sellswords\hooks\skills\actives\legend_eat_pie_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_eat_porridge_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_eat_pudding_skill.nut
@@ -21,6 +25,29 @@ Deleted some redundant hooks
 ...\mod_sellswords\hooks\skills\backgrounds\miner_background.nut
 ...\scripts\items\weapons\heavy_mining_pick.nut
 Added new 2h mining pickaxe and hooks to the background and marketplace for it
+
+...\gfx\skills\phantom_arrow_effect.png
+...\gfx\ui\items\ammo\quiver_bleed.png
+...\gfx\ui\items\ammo\quiver_bleed_empty.png
+...\gfx\ui\items\ammo\quiver_bleedbolts.png
+...\gfx\ui\items\ammo\quiver_bleedbolts_empty.png
+...\gfx\ui\items\ammo\quiver_fire.png
+...\gfx\ui\items\ammo\quiver_fire_empty.png
+...\gfx\ui\items\ammo\quiver_firebolts.png
+...\gfx\ui\items\ammo\quiver_firebolts_empty.png
+...\gfx\ui\items\ammo\quiver_ice.png
+...\gfx\ui\items\ammo\quiver_ice_empty.png
+...\gfx\ui\items\ammo\quiver_icebolts.png
+...\gfx\ui\items\ammo\quiver_icebolts_empty.png
+...\gfx\ui\items\ammo\quiver_phantom.png
+...\gfx\ui\items\ammo\quiver_phantom_empty.png
+...\gfx\ui\items\ammo\quiver_phantombolts.png
+...\gfx\ui\items\ammo\quiver_phantombolts_empty.png
+...\gfx\ui\items\ammo\quiver_poison.png
+...\gfx\ui\items\ammo\quiver_poison_empty.png
+...\gfx\ui\items\ammo\quiver_poisonbolts.png
+...\gfx\ui\items\ammo\quiver_poisonbolts_empty.png
+Added new gfx for the arrow/bolt update
 
 ----------------------------------------------------------------------------------------------------------------------------
 
