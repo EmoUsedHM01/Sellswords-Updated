@@ -14,7 +14,7 @@
 ::Mod_Sellswords.HooksMod.require("mod_msu >= 1.2.6", "mod_modern_hooks >= 0.4.0", "mod_legends>= 18.1.0");
 
 // Use this to list which mods may causes conflicts
-::Mod_Sellswords.HooksMod.conflictWith("mod_ROTU", "mod_fantasybro");
+::Mod_Sellswords.HooksMod.conflictWith("mod_ROTU", "mod_fantasybro", "modMoreArrows");
 
 
 // Like above you can add as many parameters as you need to in order to determine the queue of the mods before adding the parameters that run the callback function

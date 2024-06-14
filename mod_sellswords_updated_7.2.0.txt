@@ -85,6 +85,9 @@ Editing SSU entities
 ...\scripts\skills\effects\phantom_strike_effect.nut
 Adding the new arrows, bolts, and their accompanying effects
 
+...\scripts\!mods_preload\mod_sellswords.nut
+Updated conflicts
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.1.0 changes
