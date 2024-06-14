@@ -1,5 +1,9 @@
 7.1.1 changes
 
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\hooks\config\strings.nut
+Updated all perk strings to include colors for skills, perks, and status effects. -Rygar
+
 ...\mod_sellswords\hooks\skills\actives\legend_eat_pie_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_eat_porridge_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_eat_pudding_skill.nut
