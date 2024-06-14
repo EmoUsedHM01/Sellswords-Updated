@@ -1,6 +1,8 @@
 7.2.2 changes
 
-...
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pickaxe_damage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_pickaxe_skill.nut
+Added the new heavy pickaxe to pickaxe spec
 
 ----------------------------------------------------------------------------------------------------------------------------
 

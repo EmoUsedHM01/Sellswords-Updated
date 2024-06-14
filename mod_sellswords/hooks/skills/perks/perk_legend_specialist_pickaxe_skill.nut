@@ -14,7 +14,7 @@
 		local item = this.getContainer().getActor().getMainhandItem();
 		if (item != null)
 		{
-			if (item.getID() == "weapon.pickaxe")
+			if (item.getID() == "weapon.pickaxe" || item.getID() == "weapon.heavy_mining_pick")
 			{
 				_properties.MeleeSkill += 12;
 			}
