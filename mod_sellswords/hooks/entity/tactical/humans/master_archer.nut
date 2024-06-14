@@ -34,18 +34,27 @@
 	{
 		__original();
 
-		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
-		{
-			if (this.Math.rand(1, 100) <= 66)
-			{
-				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+		this.m.Items.unequip(this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
+		this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+
+		this.m.Items.unequip(this.m.Items.getItemAtSlot(this.Const.ItemSlot.Ammo));
+		local r = this.Math.rand(1, 10);
+		switch (r) {
+			case 1:
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_arrows"));
+				break;
+			case 2:
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_freezing_arrows"));
+				break;
+			case 3:
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_arrows"));
+				break;
+			case 4:
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_arrows"));
+				break;
+			default:
 				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
-			}
-			else
-			{
-				this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bolts"));
-			}
+				break;
 		}
 
 		local weapons = [
@@ -81,7 +90,7 @@
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
 				[1, "crbillman_helmet_low"]
 			]));
-		}			
+		}
 		else if (dc <= 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
@@ -116,6 +125,17 @@
 		}
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
+	}
+
+	q.makeMiniboss = @(__original) function()
+	{
+		__original();
+
+		this.m.Items.unequip(this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
+		this.m.Items.equip(this.new("scripts/items/weapons/named/named_warbow"));
+
+		this.m.Items.unequip(this.m.Items.getItemAtSlot(this.Const.ItemSlot.Ammo));
+		this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_phantom_arrows"));
 	}
 
 });

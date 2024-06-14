@@ -83,28 +83,33 @@ this.crBanditArbalester <- this.inherit("scripts/entity/tactical/human", {
 		local r;
 		local dc = this.World.getTime().Days;				
 
-		r = this.Math.max(0, 66 - 0.5 * dc);
-		if (this.Math.rand(1, 100) <= r)
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/crossbow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bolts"));
-		}
-		else
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bolts"));
+		local weapons = [
+			"weapons/crossbow",
+			"weapons/heavy_crossbow"
+		];
+		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+
+		local r = this.Math.rand(1, 10);
+		switch (r) {
+			case 1:
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_bolts"));
+				break;
+			case 2:
+				this.m.Items.equip(this.new("scripts/items/ammo/legend_armor_piercing_bolts"));
+				break;
+			case 3:
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_bolts"));
+				break;
+			default:
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bolts"));
+				break;
 		}
 
-		r = this.Math.rand(1, 2);
-
-		if (r == 1)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/dagger"));
-		}
-		else if (r == 2)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/knife"));
-		}
+		local weapons = [
+			"weapons/dagger",
+			"weapons/knife"
+		];
+		this.m.Items.addToBag(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		
 		if (dc <= 80)
 		{

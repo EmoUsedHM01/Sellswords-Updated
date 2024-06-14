@@ -1,20 +1,17 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/aimed_shot", function ( q ) {
-
-	q.create = @(__original) function()
-	{
-		__original();
-		this.m.FatigueCost = 20;
-		this.m.ActionPointCost = 6;
-	}
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/shoot_bolt", function ( q ) {
 
 	q.onUse = @(__original) function( _user, _targetTile )
 	{
 		local target = _targetTile.getEntity();
-		this.consumeAmmo();
+		this.getItem().setLoaded(false);
+		local skillToAdd = this.new("scripts/skills/actives/reload_bolt");
+		skillToAdd.setItem(this.getItem());
+		skillToAdd.setFatigueCost(this.Math.max(0, skillToAdd.getFatigueCostRaw() + this.getItem().m.FatigueOnSkillUse));
+		this.getContainer().add(skillToAdd);
 		this.attackEntity(_user, target);
 
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
-		if (item.getID() == "ammo.phantom_arrows")
+		if (item.getID() == "ammo.phantom_bolt")
 		{
 			local skill = this.getContainer().getActor().getSkills().getSkillByID("effects.phantom_strike");
 			local stacks = skill.m.PhantomStacks;
@@ -33,7 +30,7 @@
 					this.m.Name ="Phantom Strike";
 					this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectChop);
 					this.attackEntity(_user, target);
-					this.m.Name ="Aimed Shot";
+					this.m.Name ="Shoot Bolt";
 					this.m.ProjectileType = this.Const.ProjectileType.Arrow;
 				}
 			}.bindenv(this), this);
@@ -50,7 +47,7 @@
 					this.m.Name ="Phantom Strike";
 					this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectChop);
 					this.attackEntity(_user, target);
-					this.m.Name ="Aimed Shot";
+					this.m.Name ="Shoot Bolt";
 					this.m.ProjectileType = this.Const.ProjectileType.Arrow;
 				}
 				this.getContainer().setBusy(false);
@@ -58,20 +55,6 @@
 		}
 
 		return true;
-	}
-
-	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
-	{
-		if (_skill == this)
-		{
-			_properties.RangedSkill += this.m.AdditionalAccuracy;
-			_properties.HitChanceAdditionalWithEachTile += this.m.AdditionalHitChance;
-
-			if (this.getContainer().hasSkill("perk.ptr_target_practice"))
-				_properties.DamageRegularMult *= 1.15;
-			else
-				_properties.DamageRegularMult *= 1.1;
-		}
 	}
 
 	q.onTargetHit <- function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
@@ -85,7 +68,7 @@
 		if (!_targetEntity.isAlive() || _targetEntity.isDying())
 			return;
 		
-		if (item.getID() == "ammo.bleed_arrows")
+		if (item.getID() == "ammo.bleed_bolts")
 		{
 			if (!_targetEntity.getCurrentProperties().IsImmuneToBleeding)
 			{
@@ -96,7 +79,7 @@
 			}
 		}
 
-		if (item.getID() == "ammo.poison_arrows")
+		if (item.getID() == "ammo.poison_bolts")
 		{
 			if (_targetEntity.getFlags().has("undead"))
 				return;
@@ -121,7 +104,7 @@
 				gobboPoison.resetTime();
 		}
 
-		if (item.getID() == "ammo.ice_arrows")
+		if (item.getID() == "ammo.ice_bolts")
 		{
 			if (!_targetEntity.isHiddenToPlayer())
 				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");

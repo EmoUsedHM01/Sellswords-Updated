@@ -5,21 +5,21 @@
 		if (this.m.Settlement.getSize() >= 2)
 		{
 			_list.extend([
-			{
-				R = 80,
-				P = 2.1,
-				S = "supplies/banquet_item"
-			},
-			{
-				R = 60,
-				P = 2.1,
-				S = "supplies/cured_rations_item"
-			},
-			{
-				R = 50,
-				P = 1.0,
-				S = "misc/cr_pack"
-			}
+				{
+					R = 80,
+					P = 2.1,
+					S = "supplies/banquet_item"
+				},
+				{
+					R = 60,
+					P = 2.1,
+					S = "supplies/cured_rations_item"
+				},
+				{
+					R = 50,
+					P = 1.0,
+					S = "misc/cr_pack"
+				}
 			]);
 		}
 
@@ -31,6 +31,59 @@
 				S = "weapon/heavy_mining_pick"
 			});
 		}
+
+		_list.extend([
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_fire_arrows"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_freezing_arrows"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_bleeding_arrows"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_poisoned_arrows"
+			},
+			{
+				R = 95,
+				P = 1.0,
+				S = "ammo/quiver_of_phantom_arrows"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_fire_bolts"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_freezing_bolts"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_bleeding_bolts"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_poisoned_bolts"
+			},
+			{
+				R = 95,
+				P = 1.0,
+				S = "ammo/quiver_of_phantom_bolts"
+			},
+		]);
 
 		__original( _list, _stash, _priceMult, _allowDamagedEquipment = true );
 	}

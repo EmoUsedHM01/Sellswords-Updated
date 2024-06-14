@@ -1,4 +1,4 @@
-7.1.1 changes
+7.2.0 changes
 
 ...\mod_sellswords\config\strings.nut
 ...\mod_sellswords\hooks\config\strings.nut
@@ -48,6 +48,41 @@ Added new 2h mining pickaxe and hooks to the background and marketplace for it
 ...\gfx\ui\items\ammo\quiver_poisonbolts.png
 ...\gfx\ui\items\ammo\quiver_poisonbolts_empty.png
 Added new gfx for the arrow/bolt update
+
+...\mod_sellswords\hooks\entity\tactical\humans\desert_stalker.nut
+...\mod_sellswords\hooks\entity\tactical\humans\free_company_crossbow.nut
+...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\mercenary_ranged.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_arbalester.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\fletcher_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
+...\mod_sellswords\hooks\skills\actives\aimed_shot.nut
+...\mod_sellswords\hooks\skills\actives\legend_cascade_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_piercing_bolt.nut
+...\mod_sellswords\hooks\skills\actives\quick_shot.nut
+...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
+Edited hooks relating to the new arrow/bolt update
+
+...\scripts\entity\tactical\humans\crArbalester_guest.nut
+...\scripts\entity\tactical\humans\crBanditArbalester.nut
+...\scripts\entity\tactical\humans\crBarbarianArbalester.nut
+...\scripts\entity\tactical\humans\crMercenaryranged.nut
+...\scripts\entity\tactical\humans\crSellsword_Ranger.nut
+Editing SSU entities
+
+...\scripts\items\ammo\quiver_of_bleeding_arrows.nut
+...\scripts\items\ammo\quiver_of_bleeding_bolts.nut
+...\scripts\items\ammo\quiver_of_fire_arrows.nut
+...\scripts\items\ammo\quiver_of_fire_bolts.nut
+...\scripts\items\ammo\quiver_of_freezing_arrows.nut
+...\scripts\items\ammo\quiver_of_freezing_bolts.nut
+...\scripts\items\ammo\quiver_of_phantom_arrows.nut
+...\scripts\items\ammo\quiver_of_phantom_bolts.nut
+...\scripts\items\ammo\quiver_of_poisoned_arrows.nut
+...\scripts\items\ammo\quiver_of_poisoned_bolts.nut
+...\scripts\skills\effects\flaming_arrows_effect.nut
+...\scripts\skills\effects\phantom_strike_effect.nut
+Adding the new arrows, bolts, and their accompanying effects
 
 ----------------------------------------------------------------------------------------------------------------------------
 

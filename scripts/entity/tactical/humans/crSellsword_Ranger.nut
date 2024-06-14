@@ -106,53 +106,67 @@ this.crSellsword_Ranger <- this.inherit("scripts/entity/tactical/human", {
 
 	function assignRandomEquipment()
 	{
-		local r = this.Math.rand(1, 6);
-
-		if (r <= 3)
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/legend_armor_piercing_arrows"));
-		}
-		else if (r == 4)
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/legend_broad_head_arrows"));
-		}			
-		else if (r == 5)
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/legend_armor_piercing_bolts"));
-		}
-		else if (r == 6)
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/goblin_crossbow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/legend_armor_piercing_bolts"));
-		}
-		
-		//if (::Is_PTR_Exist)
-		//{
-		//	this.m.Skills.addTreeOfEquippedWeapon(7);	
-		//}	
+		local r = this.Math.rand(1, 15);
+		switch (r) {
+			case 1:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_arrows"));
+				break;
+			case 2:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_freezing_arrows"));
+				break;
+			case 3:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_arrows"));
+				break;
+			case 4:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_arrows"));
+				break;
+			case 5:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/legend_broad_head_arrows"));
+				break;
+			case 6:
+				this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_bolts"));
+				break;
+			case 7:
+				this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_freezing_bolts"));
+				break;
+			case 8:
+				this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_bolts"));
+				break;
+			case 9:
+				this.m.Items.equip(this.new("scripts/items/weapons/goblin_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_bolts"));
+				break;
+			default:
+				local r = this.Math.rand(1, 2);
+				if (r == 1)
+				{
+					this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+					this.m.Items.equip(this.new("scripts/items/ammo/legend_armor_piercing_arrows"));
+				}
+				else
+				{
+					this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
+					this.m.Items.equip(this.new("scripts/items/ammo/legend_armor_piercing_bolts"));
+				}
+				break;
+		}		
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
-		
-		r = this.Math.rand(1, 4);
 
-		if (r == 1)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/rondel_dagger"));
-		}
-		else if (r == 2)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/military_cleaver"));
-		}
-		else if (r == 3)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/noble_sword"));
-		}
-		else if (r == 4)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/winged_mace"));
-		}
+		local weapons = [
+			"weapons/rondel_dagger",
+			"weapons/military_cleaver",
+			"weapons/noble_sword",
+			"weapons/winged_mace"
+		];
+		this.m.Items.addToBag(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 
 		this.m.Items.equip(this.Const.World.Common.pickArmor([
 			[
@@ -169,6 +183,4 @@ this.crSellsword_Ranger <- this.inherit("scripts/entity/tactical/human", {
 		]))
 	}
 
-
 });
-

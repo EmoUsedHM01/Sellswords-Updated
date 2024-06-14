@@ -26,7 +26,7 @@ this.crMercenaryranged <- this.inherit("scripts/entity/tactical/human", {
 		b.setValues(this.Const.Tactical.Actor.MercenaryRanged);
 		b.RangedSkill -= 5;
 		b.Bravery -= 10;
-		b.MeleeDefense -= 5;	
+		b.MeleeDefense -= 5;
 		b.TargetAttractionMult = 1.1;
 		b.Vision = 8;
 		b.IsSpecializedInBows = true;
@@ -47,7 +47,7 @@ this.crMercenaryranged <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_footwork"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
-		
+
 		if("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ballistics"));
@@ -58,38 +58,39 @@ this.crMercenaryranged <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_close_combat_archer"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 		}
-			
+
 		if (this.World.getTime().Days >= 40 && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			b.RangedSkill += 5;
 			b.Bravery += 5;
 
 			if (::Is_PTR_Exist)
-			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));	
-			}
-			
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
+
 			if (this.World.getTime().Days >= 60)
 			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_nimble"));	
-				b.MeleeDefense += 5;				
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_nimble"));
+				b.MeleeDefense += 5;
+
 				if (this.World.getTime().Days >= 90)
-				{											
-					b.RangedSkill += 5;			
-					b.RangedDefense += 5;			
+				{
+					b.RangedSkill += 5;
+					b.RangedDefense += 5;
 					b.Bravery += 5;
+
 					if (this.World.getTime().Days >= 120)
 					{
-						b.MeleeSkill += 2;	
-						b.Initiative += 2;												
+						b.MeleeSkill += 2;
+						b.Initiative += 2;
+
 						if (this.World.getTime().Days >= 150)
 						{
-							b.MeleeSkill += 3;								
-							b.MeleeDefense += 2;	
+							b.MeleeSkill += 3;
+							b.MeleeDefense += 2;
 							b.Initiative += 3;
-							b.Bravery += 5;							
-						}						
-					}		
+							b.Bravery += 5;
+						}
+					}
 				}
 			}
 		}
@@ -115,48 +116,96 @@ this.crMercenaryranged <- this.inherit("scripts/entity/tactical/human", {
 
 	function assignRandomEquipment()
 	{
-		local r = this.Math.rand(1, 3);
-
-		if (r == 1)
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/hunting_bow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
+		local r = this.Math.rand(1, 30);
+		switch (r) {
+			case 1:
+				this.m.Items.equip(this.new("scripts/items/weapons/hunting_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_arrows"));
+				break;
+			case 2:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_arrows"));
+				break;
+			case 3:
+				this.m.Items.equip(this.new("scripts/items/weapons/hunting_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_freezing_arrows"));
+				break;
+			case 4:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_freezing_arrows"));
+				break;
+			case 5:
+				this.m.Items.equip(this.new("scripts/items/weapons/hunting_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_arrows"));
+				break;
+			case 6:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_arrows"));
+				break;
+			case 7:
+				this.m.Items.equip(this.new("scripts/items/weapons/hunting_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_arrows"));
+				break;
+			case 8:
+				this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_arrows"));
+				break;
+			case 9:
+				this.m.Items.equip(this.new("scripts/items/weapons/crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_bolts"));
+				break;
+			case 10:
+				this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_bolts"));
+				break;
+			case 11:
+				this.m.Items.equip(this.new("scripts/items/weapons/crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_freezing_bolts"));
+				break;
+			case 12:
+				this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_freezing_bolts"));
+				break;
+			case 13:
+				this.m.Items.equip(this.new("scripts/items/weapons/crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_bolts"));
+				break;
+			case 14:
+				this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_bolts"));
+				break;
+			case 15:
+				this.m.Items.equip(this.new("scripts/items/weapons/crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_bolts"));
+				break;
+			case 16:
+				this.m.Items.equip(this.new("scripts/items/weapons/heavy_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_bolts"));
+				break;
+			default:
+				local r = this.Math.rand(1, 2);
+				if (r == 1)
+				{
+					this.m.Items.equip(this.new("scripts/items/weapons/hunting_bow"));
+					this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
+				}
+				else
+				{
+					this.m.Items.equip(this.new("scripts/items/weapons/crossbow"));
+					this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bolts"));
+				}
+				break;
 		}
-		else if (r == 2)
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/war_bow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
-		}
-		else if (r == 3)
-		{
-			this.m.Items.equip(this.new("scripts/items/weapons/crossbow"));
-			this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bolts"));
-		}
-		
-		//if (::Is_PTR_Exist)
-		//{
-		//	this.m.Skills.addTreeOfEquippedWeapon(6);	
-		//}	
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 6);
 
-		r = this.Math.rand(1, 4);
-
-		if (r == 1)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/dagger"));
-		}
-		else if (r == 2)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/scramasax"));
-		}
-		else if (r == 3)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/hatchet"));
-		}
-		else if (r == 4)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/weapons/bludgeon"));
-		}
+		local weapons = [
+			"weapons/dagger",
+			"weapons/knife",
+			"weapons/scramasax",
+			"weapons/hatchet",
+			"weapons/bludgeon"
+		];
+		this.m.Items.addToBag(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 
 		this.m.Items.equip(this.Const.World.Common.pickArmor([
 			[1, "thick_tunic"],
@@ -166,7 +215,7 @@ this.crMercenaryranged <- this.inherit("scripts/entity/tactical/human", {
 			[1, "ragged_surcoat"],
 			[1, "padded_leather"]
 		]));
-				
+
 		if (this.Math.rand(1, 100) <= 85)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
@@ -184,4 +233,3 @@ this.crMercenaryranged <- this.inherit("scripts/entity/tactical/human", {
 	}
 
 });
-
