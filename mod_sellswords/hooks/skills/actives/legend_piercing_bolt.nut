@@ -141,13 +141,31 @@
 				if (target.isAlive())
 				{
 					this.m.ProjectileType = this.Const.ProjectileType.None;
-
 					local prop = _user.getCurrentProperties();
 					prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
 					prop.RangedAttackBlockedChanceMult *= 0;
+
 					this.m.Name = "Phantom Strike";
-					this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectSplit);
-					return ret;
+					this.attackEntity(_user, target);
+
+					this.m.Name = "Piercing Bolt";
+					this.m.ProjectileType = this.Const.ProjectileType.Arrow;
+				}
+
+			}.bindenv(this), this);
+
+			this.Time.scheduleEvent(this.TimeUnit.Virtual, 500, function ( _skill )
+			{
+				if (_targetEntity.isAlive())
+				{
+					this.m.ProjectileType = this.Const.ProjectileType.None;
+					local prop = _user.getCurrentProperties();
+					prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
+					prop.RangedAttackBlockedChanceMult *= 0;
+
+					this.m.Name = "Phantom Strike";
+					this.attackEntity(_user, target);
+
 					this.m.Name = "Piercing Bolt";
 					this.m.ProjectileType = this.Const.ProjectileType.Arrow;
 				}
@@ -159,13 +177,31 @@
 				if (target.isAlive())
 				{
 					this.m.ProjectileType = this.Const.ProjectileType.None;
-
 					local prop = _user.getCurrentProperties();
 					prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
 					prop.RangedAttackBlockedChanceMult *= 0;
+
 					this.m.Name = "Phantom Strike";
-					this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectSplit);
-					return ret;
+					this.attackEntity(_user, _targetEntity);
+
+					this.m.Name = "Piercing Bolt";
+					this.m.ProjectileType = this.Const.ProjectileType.Arrow;
+				}
+
+			}.bindenv(this), this);
+
+			this.Time.scheduleEvent(this.TimeUnit.Virtual, 500, function ( _skill )
+			{
+				if (_targetEntity.isAlive())
+				{
+					this.m.ProjectileType = this.Const.ProjectileType.None;
+					local prop = _user.getCurrentProperties();
+					prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
+					prop.RangedAttackBlockedChanceMult *= 0;
+
+					this.m.Name = "Phantom Strike";
+					this.attackEntity(_user, _targetEntity);
+
 					this.m.Name = "Piercing Bolt";
 					this.m.ProjectileType = this.Const.ProjectileType.Arrow;
 				}
