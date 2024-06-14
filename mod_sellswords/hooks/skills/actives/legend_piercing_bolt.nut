@@ -176,62 +176,6 @@
 		return ret;
 	}
 
-	q.onTargetHit <- function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
-	{
-		local ammo = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
-		local actor = this.getContainer().getActor();
-
-		if (!actor.isAlive() || actor.isDying())
-			return;
-
-		if (!_targetEntity.isAlive() || _targetEntity.isDying())
-			return;
-		
-		if (ammo.m.Name == "Quiver of Serrated Bolts")
-		{
-			if (!_targetEntity.getCurrentProperties().IsImmuneToBleeding)
-			{
-				_targetEntity.getSkills().add(this.new("scripts/skills/effects/bleeding_effect"));
-
-				if (!_targetEntity.isHiddenToPlayer())
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is bleeding");
-			}
-		}
-
-		if (ammo.m.Name == "Quiver of Poisoned Bolts")
-		{
-			if (_targetEntity.getFlags().has("undead"))
-				return;
-
-			if (_targetEntity.getCurrentProperties().IsImmuneToPoison || _targetEntity.getHitpoints() <= 0)
-				return;
-
-			if (!_targetEntity.isHiddenToPlayer())
-			{
-				local poisonSound = [
-					"sounds/combat/poison_applied_01.wav",
-					"sounds/combat/poison_applied_02.wav"
-				];
-				this.Sound.play(poisonSound[this.Math.rand(0, poisonSound.len() - 1)], this.Const.Sound.Volume.Actor, _targetEntity.getPos());
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is poisoned");
-			}
-
-			local gobboPoison = _targetEntity.getSkills().getSkillByID("effects.goblin_poison");
-			if (gobboPoison == null)
-				_targetEntity.getSkills().add(this.new("scripts/skills/effects/goblin_poison_effect"));
-			else
-				gobboPoison.resetTime();
-		}
-
-		if (ammo.m.Name == "Quiver of Freezing Bolts")
-		{
-			if (!_targetEntity.isHiddenToPlayer())
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");
-
-			_targetEntity.getSkills().add(this.new("scripts/skills/effects/chilled_effect"));
-		}
-	}
-
 	q.onAnySkillUsed = @(__original) function( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
