@@ -3,6 +3,10 @@
 ...\mod_sellswords\hooks\skills\perks\perk_legend_full_force.nut
 Updated for damage to only increase with melee weapons - Rygar
 
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\hooks\config\strings.nut
+Updated perk strings - Rygar
+
 ...\mod_sellswords\hooks\skills\effects\goblin_grunt_potion_effect.nut
 ...\scripts\items\misc\anatomist\goblin_sequence_item.nut
 Updated the descriptions to clarify they don't stack with other movement skill cost reductions
