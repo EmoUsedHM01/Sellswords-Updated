@@ -3,6 +3,8 @@
 ...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
 Fixed crRA not existing unless you had PTR
 
+...mod_sellswords/hooks/skills/perks/perk_legend_full_force.nut
+Fixed a mistake - Rygar
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.3 changes
