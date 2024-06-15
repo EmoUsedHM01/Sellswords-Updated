@@ -10,6 +10,9 @@ Fixed a mistake and added null check - Rygar
 ...\scripts\skills\actives\ice_swing.nut
 Swapped ice sword skills from 1h mastery to 2h mastery
 
+...\mod_sellswords\hooks\config\strings.nut
+Added debilitate tooltip hook
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.3 changes

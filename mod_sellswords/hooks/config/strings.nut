@@ -302,6 +302,9 @@
 ::Const.Strings.PerkDescription.LegendThrowSand = "Its hard to fight with sand in your eyes.\n\n[color=" + ::Const.UI.Color.Passive + "][u]Active:[/u][/color]\n• Unlocks the [color=" + ::Const.UI.Color.Skill + "]Throw Dirt[/color] skill, which lets you throw dirt in the eyes of an enemy to [color=" + ::Const.UI.Color.Status + "]Distract[/color] them.\n\n• [color=" + ::Const.UI.Color.Status + "]Distracted[/color] enemies have [color=" + this.Const.UI.Color.NegativeValue + "]-35%[/color] Initiative and deal [color=" + this.Const.UI.Color.NegativeValue + "]-35%[/color] Damage.\n\n• Costs [color=" + this.Const.UI.Color.NegativeValue + "]3[/color] AP and [color=" + this.Const.UI.Color.NegativeValue + "]5[/color] Fatigue.";
 ::Const.Perks.PerkDefObjects[::Const.Perks.PerkDefs.LegendThrowSand].Tooltip = ::Const.Strings.PerkDescription.LegendThrowSand;
 
+::Const.Strings.PerkDescription.Debilitate = "Ankles, hands, elbows and knees, you've learned how to fight dirty to secure victory.\n\n[color=#4f1800][u]Active:[/u][/color]\n• Unlocks the [color=" + ::Const.UI.Color.Skill + "]Debilitate[/color] skill which primes your next attack to cripple a target for three turns, reducing their ability to inflict damage by [color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] and increasing the damage they take by [color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color].\n\n• Costs [color=" + this.Const.UI.Color.NegativeValue + "]2[/color] AP and [color=" + this.Const.UI.Color.NegativeValue + "]10[/color] Fatigue.";
+::Const.Perks.PerkDefObjects[::Const.Perks.PerkDefs.Debilitate].Tooltip = ::Const.Strings.PerkDescription.Debilitate;
+
 
 
 local poleWeaponStrings = [
