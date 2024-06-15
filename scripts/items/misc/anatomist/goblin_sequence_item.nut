@@ -59,7 +59,7 @@ this.goblin_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reactive Leg Muscles: The AP cost of Rotation and Footwork is reduced to [color=" + this.Const.UI.Color.PositiveValue + "]2[/color] and the Fatigue costs are reduced by [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative"
+			text = "Reactive Leg Muscles: The AP cost of Rotation and Footwork is reduced to [color=" + this.Const.UI.Color.PositiveValue + "]2[/color] and the Fatigue costs are reduced by [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]. Does not stack with other reductions." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative"
 		});
 		result.push({
 			id = 13,

@@ -19,13 +19,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The Action Point costs of the Rotation and Footwork skills are reduced to by [color=" + this.Const.UI.Color.PositiveValue + "]1[/color]."
+				text = "The Action Point costs of the Rotation and Footwork skills are reduced by [color=" + this.Const.UI.Color.PositiveValue + "]1[/color]. Does not stack with other reductions."
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The Fatigue costs of the Rotation and Footwork skills are reduced by [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative."
+				text = "The Fatigue costs of the Rotation and Footwork skills are reduced by [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]. Does not stack with other reductions." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative."
 			},
 			{
 				id = 12,
