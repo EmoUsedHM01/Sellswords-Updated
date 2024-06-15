@@ -3,6 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
+
 		this.m.Name = "Immovable Object";
 		this.m.Type = this.Const.SkillType.Perk | this.Const.SkillType.StatusEffect;
 	}
@@ -18,7 +19,7 @@
 		local fat = 0;
 		local crfat = 0;
 		local slots = [this.Const.ItemSlot.Body, this.Const.ItemSlot.Head, this.Const.ItemSlot.Mainhand, this.Const.ItemSlot.Offhand];
-		
+
 		foreach (slot in slots)
 		{
 			local item = actor.getItems().getItemAtSlot(slot);
@@ -37,7 +38,7 @@
 		local tooltip = this.skill.getTooltip();
 		local modifiers = this.calculateFatigueModifiers();
 		local bonus = this.Math.abs(modifiers.fat / 10);
-		
+
 		tooltip.push({
 			id = 10,
 			type = "text",
@@ -52,13 +53,13 @@
 		});
 		return tooltip;
 	}
-	
+
 	q.onUpdate = @( __original ) function( _properties )
 	{
 		local modifiers = this.calculateFatigueModifiers();
 		local bonus = this.Math.abs(modifiers.fat / 10);
 		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
-		
+
 		if (weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon))
 		{
 			_properties.DamageRegularMin += this.Math.floor(bonus);
