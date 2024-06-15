@@ -13,8 +13,6 @@
 ...\scripts\skills\effects\ssu_ice_axe_effect.nut
 Updated the ice Legendary to an Axe, keeping the old sword there til a new version to make it save compatible
 
-...\brushes\chiru_weapons.brush
-...\gfx\chiru_weapons.png
 ...\gfx\ui\items\weapons\melee\ssu_lightning_sword.png
 ...\gfx\ui\items\weapons\melee\ssu_lightning_sword_70x70.png
 ...\mod_sellswords\hooks\entity\tactical\enemies\zombie_boss.nut
