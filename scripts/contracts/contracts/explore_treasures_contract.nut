@@ -15,16 +15,26 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 			this.m.DifficultyMult = this.Math.rand(145, 165) * 0.01;
 
 		this.m.Type = "contract.explore_treasures";
-		this.m.Name = "Explore Treasures";
+		this.m.Name = "Recover Lost Treasures";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 		this.m.DescriptionTemplates = [
-			"An ancient idol, sacred to %townname%, has been stolen. Its recovery promises untold rewards, including a famed item!",
-			"From the depths of %location% comes a quest to retrieve a lost idol, with the promise of a famed item as your reward.",
-			"Behold, the call to recover a revered idol from %location%, with a famed item waiting for the hero who succeeds!",
-			"The people of %townname% seek a champion to reclaim their sacred idol, offering a famed item as a reward for its return.",
-			"A revered idol, lost to the ages, must be recovered from %location%. The reward: a famed item of great renown.",
-			"An ancient idol has been taken from %townname%, and its recovery will be handsomely rewarded with a famed item."
+			"An ancient idol, sacred to %, has been stolen. Its recovery promises untold rewards, including a famed item!",
+			"From the depths of an enemy camp comes a quest to retrieve a lost idol, with the promise of a famed item as your reward.",
+			"Behold, the call to recover a revered idol from an enemy camp, with a famed item waiting for the hero who succeeds!",
+			"The people of % seek a champion to reclaim their sacred idol, offering a famed item as a reward for its return.",
+			"A revered idol, lost to the ages, must be recovered from an enemy camp. The reward: a famed item of great renown.",
+			"An ancient idol has been taken from %, and its recovery will be handsomely rewarded with a famed item."
 		];
+	}
+
+	function formatDescription()
+	{
+		local r = ::MSU.Array.rand(this.m.DescriptionTemplates);
+
+		if (r.find("%") != null)
+			r = this.format(r, ::Const.UI.getColorized(this.m.Home.getName(), ::Const.UI.Color.getHighlightLightBackgroundValue()));
+
+		this.m.Description = r;
 	}
 
 	function onImportIntro()
@@ -33,7 +43,10 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 	}
 
 	function start()
-	{		
+	{
+		if (this.m.Home == null)
+			this.setHome(this.World.State.getCurrentTown());
+
 		local item;
 		local idx = this.Math.rand(1, 3);
 
@@ -89,46 +102,14 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 		else if (item.isItemType(this.Const.Items.ItemType.Helmet))
 			this.m.Flags.set("PrizeType", "helmet");
 
-		local r = this.Math.rand(0, 6);
 		local myTile = this.World.State.getPlayer().getTile();
 		local objcamp;
 		local highestDistance = 0;
-		local best;		
-		if (r == 0)
-		{
-			objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).getSettlements();
-			this.m.Flags.set("IsUndead", true);			
-		}		
-		else if (r == 1)
-		{
-			objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Zombies).getSettlements();
-			this.m.Flags.set("IsZombies", true);			
-		}
-		else if (r == 2)
-		{
-			objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).getSettlements();
-			this.m.Flags.set("IsBandits", true);				
-		}
-		else if (r == 3)
-		{
-			objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians).getSettlements();
-			this.m.Flags.set("IsBarbarians", true);				
-		}
-		else if (r == 4)
-		{
-			objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.OrientalBandits).getSettlements();
-			this.m.Flags.set("IsOrientalBandits", true);				
-		}
-		else if (r == 5)
-		{
-			objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).getSettlements();
-			this.m.Flags.set("IsGoblins", true);				
-		}
-		else if (r == 6)
-		{
-			objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).getSettlements();
-			this.m.Flags.set("IsOrcs", true);				
-		}		
+		local best;
+
+		objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians).getSettlements();
+		this.m.Flags.set("IsBarbarians", true);
+
 		foreach( b in objcamp )
 		{
 			if (b.isLocationType(this.Const.World.LocationType.Unique))
@@ -145,7 +126,9 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 
 		this.m.Destination = this.WeakTableRef(best);
 		this.m.Flags.set("DestinationName", this.m.Destination.getName());
-		this.m.Payment.Pool = 1200 * this.getPaymentMult() * this.Math.pow(this.getDifficultyMult(), this.Const.World.Assets.ContractRewardPOW) * this.getReputationToPaymentMult();		
+		this.m.Payment.Pool = 1200 * this.getPaymentMult() * this.Math.pow(this.getDifficultyMult(), this.Const.World.Assets.ContractRewardPOW) * this.getReputationToPaymentMult();
+
+		this.m.Payment.Completion = 0.75;
 
 		this.contract.start();
 	}

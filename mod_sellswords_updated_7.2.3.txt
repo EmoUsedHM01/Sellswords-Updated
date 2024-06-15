@@ -1,7 +1,16 @@
 7.2.3 changes
 
 ...\mod_sellswords\hooks\skills\perks\perk_legend_full_force.nut
-updated for damage to only increase with melee weapons.
+Updated for damage to only increase with melee weapons - Rygar
+
+...\mod_sellswords\hooks\skills\effects\goblin_grunt_potion_effect.nut
+...\scripts\items\misc\anatomist\goblin_sequence_item.nut
+Updated the descriptions to clarify they don't stack with other movement skill cost reductions
+
+...\scripts\contracts\contracts\destroy_rebellions_contract.nut
+...\scripts\contracts\contracts\explore_treasures_contract.nut
+...\scripts\contracts\contracts\purge_infection_contract.nut
+Fixed bad tooltips for the SSU contracts
 
 ----------------------------------------------------------------------------------------------------------------------------
 

@@ -33,25 +33,33 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Name = "Purge Infection";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 		local s = this.World.EntityManager.getSettlements()[this.Math.rand(0, this.World.EntityManager.getSettlements().len() - 1)];
+
 		while(s.getAttachedLocations().len() == 0)
-		{
 			s = this.World.EntityManager.getSettlements()[this.Math.rand(0, this.World.EntityManager.getSettlements().len() - 1)];
-		}
+
 		this.logDebug("------raze_attached_location_contract getAttachedLocations's nunm: " + s.getAttachedLocations().len());
-		
 		this.m.Destination = this.WeakTableRef(s.getAttachedLocations()[this.Math.rand(0, s.getAttachedLocations().len() - 1)]);
 		
 		this.m.Flags.set("NecroEscaped", 0);
 		this.m.Flags.set("IsDone", false);
 		this.m.DescriptionTemplates = [
-			"The dead rise in %townname%, spreading fear and chaos. Purge the undead and restore peace to the town.",
-			"From the haunted grounds of %location% emerges a threat of the undead. Cleanse the area and reclaim the town.",
-			"Behold, the rise of the undead in %townname%. Your mission: to eradicate this unholy menace and bring safety.",
-			"The streets of %townname% are overrun with the undead. A sellsword is needed to purge this blight and restore order.",
-			"The restless dead have emerged in %townname%, spreading terror. Rid the town of these horrors and bring peace.",
-			"An undead horde threatens %townname%. Your task: to eliminate the undead and ensure the safety of its people."
+			"The dead rise in %, spreading fear and chaos. Purge the undead and restore peace to the town.",
+			"From the town of % emerges a threat of the undead. Cleanse the area and reclaim the town.",
+			"Behold, the rise of the undead in %. Your mission: to eradicate this unholy menace and bring safety.",
+			"The streets of % are overrun with the undead. A sellsword is needed to purge this blight and restore order.",
+			"The restless dead have emerged in %, spreading terror. Rid the town of these horrors and bring peace.",
+			"An undead horde threatens %. Your task: to eliminate the undead and ensure the safety of its people."
 		];
+	}
 
+	function formatDescription()
+	{
+		local r = ::MSU.Array.rand(this.m.DescriptionTemplates);
+
+		if (r.find("%") != null)
+			r = this.format(r, ::Const.UI.getColorized(this.m.Destination.getName(), ::Const.UI.Color.getHighlightLightBackgroundValue()));
+
+		this.m.Description = r;
 	}
 
 	function onImportIntro()

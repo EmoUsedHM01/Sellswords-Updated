@@ -22,13 +22,23 @@ this.destroy_rebellions_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.MakeAllSpawnsResetOrdersOnContractEnd = false;
 		this.m.MakeAllSpawnsAttackableByAIOnceDiscovered = true;
 		this.m.DescriptionTemplates = [
-			"Tensions rise in %townname%. A formidable rebel leader has emerged, spreading chaos and defiance in his wake.",
-			"From the heart of %townname% emerges a rebel leader, determined to overthrow the existing order and claim power.",
-			"Behold, the rise of a rebel leader in %townname%, his defiance unmatched, his cause unstoppable!",
-			"The streets of %townname% are ablaze with rebellion, led by a fierce leader whose resolve is unchallenged and strength unmatched!",
-			"The oppressed people of %townname% rally under the banner of their new leader, a rebel of unmatched determination.",
-			"A powerful rebel leader rises in %townname%, his rule marked by defiance and the promise of change."
+			"Tensions rise in %. A formidable rebel leader has emerged, spreading chaos and defiance in his wake.",
+			"From the heart of % emerges a rebel leader, determined to overthrow the existing order and claim power.",
+			"Behold, the rise of a rebel leader in %, his defiance unmatched, his cause unstoppable!",
+			"The streets of % are ablaze with rebellion, led by a fierce leader whose resolve is unchallenged and strength unmatched!",
+			"The oppressed people of % rally under the banner of their new leader, a rebel of unmatched determination.",
+			"A powerful rebel leader rises in %, his rule marked by defiance and the promise of change."
 		];
+	}
+
+	function formatDescription()
+	{
+		local r = ::MSU.Array.rand(this.m.DescriptionTemplates);
+
+		if (r.find("%") != null)
+			r = this.format(r, ::Const.UI.getColorized(this.m.Home.getName(), ::Const.UI.Color.getHighlightLightBackgroundValue()));
+
+		this.m.Description = r;
 	}
 
 	function onImportIntro()
