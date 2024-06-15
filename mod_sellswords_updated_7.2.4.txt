@@ -7,7 +7,7 @@ Fixed crRA not existing unless you had PTR
 Fixed a mistake and added null check - Rygar
 
 ...\mod_sellswords\hooks\config\strings.nut
-Ddded debilitate tooltip hook
+Added debilitate tooltip hook
 
 ----------------------------------------------------------------------------------------------------------------------------
 
