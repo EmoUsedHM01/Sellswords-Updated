@@ -1,6 +1,7 @@
 7.2.4 changes
 
-...
+...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
+Fixed crRA not existing unless you had PTR
 
 ----------------------------------------------------------------------------------------------------------------------------
 
