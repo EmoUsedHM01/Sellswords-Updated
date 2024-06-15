@@ -15,7 +15,7 @@ this.ssu_ice_axe_effect <- this.inherit("scripts/skills/skill", {
 	
 	function getTooltip()
 	{
-		this.getDefaultTooltip();
+		return this.getDefaultTooltip();
 	}
 
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )

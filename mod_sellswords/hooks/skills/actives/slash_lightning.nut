@@ -60,7 +60,7 @@
 			}
 		}
 	};
-	q.onUse = @( __original ) function ( _user, _targetTile )
+	function onUse( _user, _targetTile )
 	{
 		this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectSlash);
 		local success = this.attackEntity(_user, _targetTile.getEntity());
@@ -177,5 +177,5 @@
 			this.applyEffect(data, 550);
 		}
 		return success;
-	}		
+	}
 });
