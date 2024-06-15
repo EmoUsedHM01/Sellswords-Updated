@@ -57,8 +57,12 @@
 	{
 		local modifiers = this.calculateFatigueModifiers();
 		local bonus = this.Math.abs(modifiers.fat / 10);
-		_properties.DamageRegularMin += this.Math.floor(bonus);
-		_properties.DamageRegularMax += this.Math.floor(bonus);
+		
+		if (weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon))
+		{
+			_properties.DamageRegularMin += this.Math.floor(bonus);
+			_properties.DamageRegularMax += this.Math.floor(bonus);
+		}
 
 		if (modifiers.crfat >= 50)
 		{
