@@ -32,7 +32,7 @@
 	// ::Mod_Sellswords.Mod.Registry.addModSource(::MSU.System.Registry.ModSourceDomain.NexusMods, "https://www.nexusmods.com/battlebrothers/mods/");
 	// But the NexusMods api is closed so don't actually
 	//::Mod_Sellswords.Mod.Registry.setUpdateSource(::MSU.System.Registry.ModSourceDomain.NexusMods);
-	
+
 	// MSU config page
 	local page = ::Mod_Sellswords.Mod.ModSettings.addPage("General");
 	local settingEnableEnemySS = page.addBooleanSetting("EnableHostileSellswords", true, "Enable Hostile Sellswords", "When enabled, there will be roaming groups of hostile Sellsword companies, these parties will stop spawning once you defeat the Legendary Company Tower location.");
