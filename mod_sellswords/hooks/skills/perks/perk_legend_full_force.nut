@@ -59,7 +59,7 @@
 		local bonus = this.Math.abs(modifiers.fat / 10);
 		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		
-		if (weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon))
+		if (weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon))
 		{
 			_properties.DamageRegularMin += this.Math.floor(bonus);
 			_properties.DamageRegularMax += this.Math.floor(bonus);
