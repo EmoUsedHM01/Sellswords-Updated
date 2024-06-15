@@ -6,6 +6,9 @@ Fixed crRA not existing unless you had PTR
 ...\mod_sellswords\hooks\skills\perks\perk_legend_full_force.nut
 Fixed a mistake and added null check - Rygar
 
+...\mod_sellswords\hooks\config\strings.nut
+Ddded debilitate tooltip hook
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.3 changes
