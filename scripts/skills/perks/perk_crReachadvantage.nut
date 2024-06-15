@@ -131,11 +131,10 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 	function onTurnStart()
 	{
 		this.m.Opponents.clear();
-		if (!this.getContainer().getActor().isPlayerControlled())
-		{
+		local actor = this.getContainer().getActor().get();
+
+		if (!::MSU.isKindOf(actor, "player"))
 			this.m.Container.removeByID("perk.crReachadvantage")
-			this.getContainer().add(this.new("scripts/skills/perks/perk_reach_advantage"));
-		}
 
 		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		if (weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon) && weapon.isItemType(this.Const.Items.ItemType.TwoHanded) && !this.getContainer().getSkillByID("perk.ptr_en_garde"))

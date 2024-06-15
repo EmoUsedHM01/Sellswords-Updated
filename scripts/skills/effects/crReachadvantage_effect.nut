@@ -30,6 +30,11 @@ this.crReachadvantage_effect <- this.inherit("scripts/skills/skill", {
 			item.onLowerWeapon();
 	}
 
+	function onUpdate( _properties )
+	{
+		_properties.IsAttackingOnZoneOfControlEnter = true;
+	}
+
 	function onTurnStart()
 	{
 		this.removeSelf();

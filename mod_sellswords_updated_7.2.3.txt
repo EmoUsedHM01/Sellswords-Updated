@@ -12,6 +12,10 @@ Updated the descriptions to clarify they don't stack with other movement skill c
 ...\scripts\contracts\contracts\purge_infection_contract.nut
 Fixed bad tooltips for the SSU contracts
 
+...\scripts\skills\effects\crReachadvantage_effect.nut
+...\scripts\skills\perks\perk_crReachadvantage.nut
+Fixed the Reach Advantage perk and effect
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.2 changes
