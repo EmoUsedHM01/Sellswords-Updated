@@ -38,7 +38,7 @@
 				this.List.push({
 					id = 10,
 					icon = "ui/items/helmets/inventory_helmet_198.png",
-					text = "You gain Helmet of the Ijirok"
+					text = "You gain [color=#456ca0]Helmet of the Ijirok[/color]"
 				});
 				item = this.Const.World.Common.pickArmor([
 					[
@@ -50,16 +50,17 @@
 				this.List.push({
 					id = 10,
 					icon = "ui/items/armor/icon_body_armor_98.png",
-					text = "You gain Armor of the Ijirok"
+					text = "You gain [color=#456ca0]Armor of the Ijirok[/color]"
 				});
-				item = this.new("scripts/items/weapons/special/ssu_sword_ice");
+				item = this.new("scripts/items/weapons/special/ssu_legendary_axe");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,
-					icon = "ui/items/weapons/melee/ice_sword_70x70.png",
-					text = "You gain Winter's Touch"
+					icon = "ui/items/weapons/melee/ssu_ice_axe_70x70.png",
+					text = "You gain [color=#456ca0]Winter\'s Touch[/color]"
 				});
 			}
 		}
 	}
+
 });
