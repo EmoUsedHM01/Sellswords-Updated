@@ -6,6 +6,10 @@ Fixed crRA not existing unless you had PTR
 ...\mod_sellswords\hooks\skills\perks\perk_legend_full_force.nut
 Fixed a mistake and added null check - Rygar
 
+...\scripts\skills\actives\ice_slash.nut
+...\scripts\skills\actives\ice_swing.nut
+Swapped ice sword skills from 1h mastery to 2h mastery
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.3 changes

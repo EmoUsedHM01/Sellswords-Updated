@@ -63,7 +63,7 @@ this.ice_slash <- this.inherit("scripts/skills/skill", {
 
 	function onAfterUpdate( _properties )
 	{
-		this.m.FatigueCostMult = _properties.IsSpecializedInSwords ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+		this.m.FatigueCostMult = _properties.IsSpecializedInGreatSwords ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 	}
 
 	function onUse( _user, _targetTile )
@@ -79,7 +79,7 @@ this.ice_slash <- this.inherit("scripts/skills/skill", {
 			_properties.MeleeSkill += 10;
 			_skill.resetField("HitChanceBonus");
 
-			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInSwords)
+			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInGreatSwords)
 			{
 				_properties.MeleeSkill += 5;
 				this.m.HitChanceBonus += 5;
