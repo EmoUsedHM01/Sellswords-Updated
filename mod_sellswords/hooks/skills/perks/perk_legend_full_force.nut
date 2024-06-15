@@ -57,6 +57,7 @@
 	{
 		local modifiers = this.calculateFatigueModifiers();
 		local bonus = this.Math.abs(modifiers.fat / 10);
+		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		
 		if (weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon))
 		{
