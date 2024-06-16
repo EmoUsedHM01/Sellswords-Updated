@@ -44,6 +44,9 @@ Fixed crreachadvantage tooltip - Rygar
 ...\scripts\items\weapons\heavy_mining_pick.nut
 Adjusted heavy pick stats a little, was overperforming
 
+...\scripts\skills\perks\perk_crReachadvantage.nut
+Fixed a bug with crRA
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.4 changes
