@@ -27,6 +27,9 @@ Made Reproach 2h and gave all the skills it gains the lightning effect
 ...\scripts\skills\effects\ssu_obsidian_dagger_effect.nut
 Updated Obsidian Dagger and made it worthy of being a Legendary
 
+...\mod_sellswords\config\strings.nut
+Fixed crreachadvantage tooltip
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.4 changes
