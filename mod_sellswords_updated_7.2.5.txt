@@ -22,13 +22,27 @@ Updated the ice Legendary to an Axe, keeping the old sword there til a new versi
 ...\scripts\skills\effects\ssu_lightning_sword_effect.nut
 Made Reproach 2h and gave all the skills it gains the lightning effect
 
+...\gfx\skills\earth_hammer_smite.png
+...\gfx\skills\earth_hammer_smite_bw.png
+...\gfx\skills\ssu_earth_shatter.png
+...\gfx\skills\ssu_earth_split_shield.png
+...\gfx\ui\items\weapons\melee\ssu_earth_hammer.png
+...\gfx\ui\items\weapons\melee\ssu_earth_hammer_70x70.png
+...\scripts\items\weapons\special\ssu_legendary_hammer.nut
+...\scripts\skills\actives\earth_hammer_smite_skill.nut
+...\scripts\skills\effects\ssu_earth_hammer_effect.nut
+Added the Legendary Dryad weapon
+
 ...\mod_sellswords\hooks\events\events\dlc2\witchhut_destroyed_event.nut
 ...\scripts\items\weapons\special\ssu_legendary_dagger.nut
 ...\scripts\skills\effects\ssu_obsidian_dagger_effect.nut
 Updated Obsidian Dagger and made it worthy of being a Legendary
 
 ...\mod_sellswords\config\strings.nut
-Fixed crreachadvantage tooltip
+Fixed crreachadvantage tooltip - Rygar
+
+...\scripts\items\weapons\heavy_mining_pick.nut
+Adjusted heavy pick stats a little, was overperforming
 
 ----------------------------------------------------------------------------------------------------------------------------
 
