@@ -1,7 +1,5 @@
 this.ssu_legendary_dagger <- this.inherit("scripts/items/weapons/weapon", {
-	m = {
-		SpawnedUndead = []
-	},
+	m = {},
 	function create()
 	{
 		this.weapon.create();
@@ -66,39 +64,6 @@ this.ssu_legendary_dagger <- this.inherit("scripts/items/weapons/weapon", {
 		this.addSkill(this.new("scripts/skills/actives/stab"));
 		this.addSkill(this.new("scripts/skills/actives/puncture"));
 		this.addSkill(this.new("scripts/skills/actives/deathblow_skill"));
-	}
-
-	function onDamageDealt( _target, _skill, _hitInfo )
-	{
-		this.weapon.onDamageDealt(_target, _skill, _hitInfo);
-
-		if (!this.isKindOf(_target, "player") && !this.isKindOf(_target, "human"))
-			return;
-
-		if (_target.getHitpoints() > 0)
-			return;
-
-		if (_hitInfo.Tile.IsCorpseSpawned && _hitInfo.Tile.Properties.get("Corpse").IsResurrectable)
-		{
-			local corpse = _hitInfo.Tile.Properties.get("Corpse");
-			corpse.Faction = this.Const.Faction.PlayerAnimals;
-			corpse.Hitpoints = 1.0;
-			corpse.Items = _target.getItems();
-			corpse.IsConsumable = false;
-			corpse.IsResurrectable = false;
-			this.Time.scheduleEvent(this.TimeUnit.Rounds, this.Math.rand(1, 1), this.Tactical.Entities.resurrect, corpse);
-		}
-
-		this.m.SpawnedUndead.push([corpse, _user]);
-	}
-
-	function onCombatFinished()
-	{
-		while(this.m.SpawnedUndead.len() != 0)
-		{
-			local pair = this.m.SpawnedUndead.pop();
-			pair[0].kill(pair[1], this, this.Const.FatalityType.Kraken, true);
-		}
 	}
 
 	function onUnequip()
