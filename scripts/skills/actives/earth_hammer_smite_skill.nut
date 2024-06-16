@@ -116,7 +116,19 @@ this.earth_hammer_smite_skill <- this.inherit("scripts/skills/skill", {
 					this.Tactical.getShaker().shake(adjacentTile.getEntity(), adjacentTile, 7);
 					_user.playSound(this.Const.Sound.ActorEvent.Move, 2.0);
 				}
-				this.attackEntity(_user, adjacentTile.getEntity());
+
+				local _targetEntity = adjacentTile.getEntity();
+				local properties = this.m.Container.buildPropertiesForUse(this, _targetEntity);
+				properties.DamageTotalMult *= 0.5;
+				local info = {
+					Skill = this,
+					Container = this.getContainer(),
+					User = _user,
+					TargetEntity = _targetEntity,
+					Properties = properties,
+					DistanceToTarget = _user.getTile().getDistanceTo(_targetEntity.getTile())
+				};
+				this.onScheduledTargetHit(info);
 			}
 		}
 

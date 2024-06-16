@@ -2,7 +2,8 @@ this.destroy_rebellions_contract <- this.inherit("scripts/contracts/contract", {
 	m = {
 		Reward = 0,
 		Kidnapper = null,
-		Militia = null
+		Militia = null,
+		Category = ::Const.Contracts.Categories.Battle
 	},
 	function create()
 	{
@@ -22,12 +23,12 @@ this.destroy_rebellions_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.MakeAllSpawnsResetOrdersOnContractEnd = false;
 		this.m.MakeAllSpawnsAttackableByAIOnceDiscovered = true;
 		this.m.DescriptionTemplates = [
-			"Tensions rise in %. A formidable rebel leader has emerged, spreading chaos and defiance in his wake.",
-			"From the heart of % emerges a rebel leader, determined to overthrow the existing order and claim power.",
-			"Behold, the rise of a rebel leader in %, his defiance unmatched, his cause unstoppable!",
-			"The streets of % are ablaze with rebellion, led by a fierce leader whose resolve is unchallenged and strength unmatched!",
-			"The oppressed people of % rally under the banner of their new leader, a rebel of unmatched determination.",
-			"A powerful rebel leader rises in %, his rule marked by defiance and the promise of change."
+			"Tensions rise in %s. A formidable rebel leader has emerged, spreading chaos and defiance in his wake.",
+			"From the heart of %s emerges a rebel leader, determined to overthrow the existing order and claim power.",
+			"Behold, the rise of a rebel leader in %s, his defiance unmatched, his cause unstoppable!",
+			"The streets of %s are ablaze with rebellion, led by a fierce leader whose resolve is unchallenged and strength unmatched!",
+			"The oppressed people of %s rally under the banner of their new leader, a rebel of unmatched determination.",
+			"A powerful rebel leader rises in %s, his rule marked by defiance and the promise of change."
 		];
 	}
 

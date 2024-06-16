@@ -1,6 +1,7 @@
 this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 	m = {
 		Destination = null,
+		Category = ::Const.Contracts.Categories.Battle
 	},
 	function create()
 	{
@@ -18,12 +19,12 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Name = "Recover Lost Treasures";
 		this.m.TimeOut = this.Time.getVirtualTimeF() + this.World.getTime().SecondsPerDay * 7.0;
 		this.m.DescriptionTemplates = [
-			"An ancient idol, sacred to %, has been stolen. Its recovery promises untold rewards, including a famed item!",
+			"An ancient idol, sacred to %s, has been stolen. Its recovery promises untold rewards, including a famed item!",
 			"From the depths of an enemy camp comes a quest to retrieve a lost idol, with the promise of a famed item as your reward.",
 			"Behold, the call to recover a revered idol from an enemy camp, with a famed item waiting for the hero who succeeds!",
-			"The people of % seek a champion to reclaim their sacred idol, offering a famed item as a reward for its return.",
+			"The people of %s seek a champion to reclaim their sacred idol, offering a famed item as a reward for its return.",
 			"A revered idol, lost to the ages, must be recovered from an enemy camp. The reward: a famed item of great renown.",
-			"An ancient idol has been taken from %, and its recovery will be handsomely rewarded with a famed item."
+			"An ancient idol has been taken from %s, and its recovery will be handsomely rewarded with a famed item."
 		];
 	}
 

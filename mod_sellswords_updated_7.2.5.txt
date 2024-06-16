@@ -47,6 +47,11 @@ Adjusted heavy pick stats a little, was overperforming
 ...\scripts\skills\perks\perk_crReachadvantage.nut
 Fixed a bug with crRA
 
+...\scripts\contracts\contracts\destroy_rebellions_contract.nut
+...\scripts\contracts\contracts\explore_treasures_contract.nut
+...\scripts\contracts\contracts\purge_infection_contract.nut
+Fixed a contract bug and added categories
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.4 changes

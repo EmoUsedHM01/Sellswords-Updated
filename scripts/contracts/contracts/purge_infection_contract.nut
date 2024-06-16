@@ -3,7 +3,8 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		Destination = null,
 		Settlement = null,
 		temproster = null,
-		temprostercbt = null
+		temprostercbt = null,
+		Category = ::Const.Contracts.Categories.Battle
 	},
 	function setSettlement( _s )
 	{
@@ -43,12 +44,12 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Flags.set("NecroEscaped", 0);
 		this.m.Flags.set("IsDone", false);
 		this.m.DescriptionTemplates = [
-			"The dead rise in %, spreading fear and chaos. Purge the undead and restore peace to the town.",
-			"From the town of % emerges a threat of the undead. Cleanse the area and reclaim the town.",
-			"Behold, the rise of the undead in %. Your mission: to eradicate this unholy menace and bring safety.",
-			"The streets of % are overrun with the undead. A sellsword is needed to purge this blight and restore order.",
-			"The restless dead have emerged in %, spreading terror. Rid the town of these horrors and bring peace.",
-			"An undead horde threatens %. Your task: to eliminate the undead and ensure the safety of its people."
+			"The dead rise in %s, spreading fear and chaos. Purge the undead and restore peace to the town.",
+			"From the town of %s emerges a threat of the undead. Cleanse the area and reclaim the town.",
+			"Behold, the rise of the undead in %s. Your mission: to eradicate this unholy menace and bring safety.",
+			"The streets of %s are overrun with the undead. A sellsword is needed to purge this blight and restore order.",
+			"The restless dead have emerged in %s, spreading terror. Rid the town of these horrors and bring peace.",
+			"An undead horde threatens %s. Your task: to eliminate the undead and ensure the safety of its people."
 		];
 	}
 
