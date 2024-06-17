@@ -19,4 +19,5 @@
 		}
 		_properties.DamageDirectAdd += 0.2;
 	}
+
 });

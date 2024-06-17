@@ -20,6 +20,18 @@ Updated the twin cleaver skills
 ...\scripts\items\ammo\quiver_of_fire_arrows.nut
 Fixed bad icon call
 
+...\brushes\chiru_weapons.brush
+...\gfx\chiru_weapons.png
+...\gfx\ui\items\weapons\melee\ssu_bone_cleaver.png
+...\gfx\ui\items\weapons\melee\ssu_bone_cleaver_70x70.png
+...\scripts\items\weapons\special\ssu_legendary_cleaver.nut
+...\scripts\items\weapons\special\ssu_legendary_sword.nut
+...\scripts\skills\actives\ssu_bone_cleaver_flurry.nut
+...\scripts\skills\actives\ssu_bone_cleaver_slash.nut
+...\scripts\skills\actives\ssu_bone_cleaver_swing.nut
+...\scripts\skills\effects\ssu_bone_cleaver_effect.nut
+Added the Legendary Vampire weapon
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.5 changes

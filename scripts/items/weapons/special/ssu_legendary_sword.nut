@@ -8,7 +8,7 @@ this.ssu_legendary_sword <- ::inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.ssu_legendary_sword";
 		this.m.Name = "[color=#456ca0]Reproach of the Old Gods[/color]";
 		this.m.Description = "One of the seven legendary weapons,\n[color=#456ca0]Reproach of the Old Gods[/color] bends purples and oranges until it seemingly carries twilight itself in its fuller.\nHeld to the touch, one cannot tell if they are being burned or chilled. Magic or well-crafted, whatever the weapon is it vibrates as though it were fighting off power immense and you need only swing it to find the steel\'s true charge.";
-		this.m.IconLarge = "weapons/melee/ssu_lightning_sword.png"; 
+		this.m.IconLarge = "weapons/melee/ssu_lightning_sword.png";
 		this.m.Icon = "weapons/melee/ssu_lightning_sword_70x70.png";
 		this.m.SlotType = ::Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
