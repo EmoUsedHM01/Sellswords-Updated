@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/throwing_axe", function ( q ) {
-	
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/barbarians/heavy_throwing_axe", function( q )
+{
 	q.onAfterUpdate <- function( _properties )
 	{	
 		local actor = this.getContainer().getActor();
@@ -15,4 +15,4 @@
 		__original();
 		local skillToAdd = this.new("scripts/skills/actives/chop_ranged");
 	}
-});	
+});

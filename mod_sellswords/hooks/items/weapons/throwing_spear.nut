@@ -1,10 +1,18 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/throwing_spear", function ( q ) {
-	
-	q.create = @(__original) function()
-	{
-		__original()
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/throwing_spear", function ( q ) {	
+{
+	q.onAfterUpdate <- function( _properties )
+	{	
+		local actor = this.getContainer().getActor();
+		if (actor.getCurrentProperties().isCloseCombatArcher)
+		{
+			this.m.MaxRange = 3;
+			this.m.MinRange = 1;
+		}
+	}
 
-		this.m.WeaponType = this.m.WeaponType | this.Const.Items.WeaponType.Spear;
-		this.setupWeaponType();
+	q.onEquip = @( __original ) function()
+	{
+		__original();
+		local skillToAdd = this.new("scripts/skills/actives/thrust_ranged");
 	}
 });	

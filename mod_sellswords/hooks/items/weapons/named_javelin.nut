@@ -1,5 +1,5 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/throwing_axe", function ( q ) {
-	
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_javelin", function( q )
+{
 	q.onAfterUpdate <- function( _properties )
 	{	
 		local actor = this.getContainer().getActor();
@@ -13,6 +13,6 @@
 	q.onEquip = @( __original ) function()
 	{
 		__original();
-		local skillToAdd = this.new("scripts/skills/actives/chop_ranged");
+		local skillToAdd = this.new("scripts/skills/actives/thrust_ranged");
 	}
-});	
+});
