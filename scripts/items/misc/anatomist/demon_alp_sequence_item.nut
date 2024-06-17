@@ -98,7 +98,7 @@ this.demon_alp_sequence_item <- this.inherit("scripts/items/misc/anatomist/anato
 		if (_actor.getSkills().getSkillByID("effects.alp_potion") == null)
 			_actor.getSkills().add(this.new("scripts/skills/effects/alp_potion_effect"));
 
-		if (_actor.getSkills().getSkillByID("effects.alp_potion") == null)
+		if (_actor.getSkills().getSkillByID("effects.player_levitate") == null)
 			_actor.getSkills().add(this.new("scripts/skills/effects/player_levitate"));
 
 		if (_actor.getSkills().getSkillByID("perk.legend_item_horrify") == null)
