@@ -6,7 +6,7 @@ this.quiver_of_fire_arrows <- this.inherit("scripts/items/ammo/ammo", {
 		this.m.Name = "Quiver of Fire Arrows";
 		this.m.Description = "A quiver of arrows with a oiled tip and a sparker on the rim.\nIt will inflict an additional 50% of damage as fire damage and ignite the ground the target stands on for 2 turns, does extra damage against undead and trees.\nCan cause fire related injuries.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";
 		this.m.Icon = "ammo/quiver_fire.png";
-		this.m.IconEmpty = "ammo/quiver_fire_empty";
+		this.m.IconEmpty = "ammo/quiver_fire_empty.png";
 		this.m.SlotType = this.Const.ItemSlot.Ammo;
 		this.m.ItemType = this.Const.Items.ItemType.Ammo;
 		this.m.AmmoType = this.Const.Items.AmmoType.Arrows;

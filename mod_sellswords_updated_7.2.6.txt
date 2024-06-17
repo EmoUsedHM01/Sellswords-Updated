@@ -17,6 +17,9 @@ Fixed a bad effect ID
 ...\scripts\skills\actives\twincleavers_2.nut
 Updated the twin cleaver skills
 
+...\scripts\items\ammo\quiver_of_fire_arrows.nut
+Fixed bad icon call
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.5 changes
