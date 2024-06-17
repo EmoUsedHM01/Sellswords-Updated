@@ -8,7 +8,14 @@ Fixed bad modern hook stuff
 Bug fixes
 
 ...\mod_sellswords\hooks\skills\perks\duelist.nut
-Fixed it applying to all weapons including ranged
+Fixed it applying to all weapons including ranged - Breaky
+
+...\scripts\items\misc\anatomist\demon_alp_sequence_item.nut
+Fixed a bad effect ID
+
+...\scripts\skills\actives\twincleavers_1.nut
+...\scripts\skills\actives\twincleavers_2.nut
+Updated the twin cleaver skills
 
 ----------------------------------------------------------------------------------------------------------------------------
 

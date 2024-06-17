@@ -71,74 +71,61 @@ this.twincleavers_2 <- this.inherit("scripts/skills/skill", {
 		this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectChop);
 		local target = _targetTile.getEntity();
 		local ret = this.attackEntity(_user, target);
+		local hp = target.getHitpoints();
 
 		if (this.Tactical.TurnSequenceBar.getActiveEntity().getID() == _user.getID() && (!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer))
 		{
 			this.m.IsDoingAttackMove = false;
 			this.getContainer().setBusy(true);
-			this.Time.scheduleEvent(this.TimeUnit.Virtual, 200, function ( _skill )
-			{
-				if (target.isAlive())
-				{
-					_skill.attackEntity(_user, target);
-				}
-			}.bindenv(this), this);
-			this.Time.scheduleEvent(this.TimeUnit.Virtual, 400, function ( _skill )
-			{
-				if (target.isAlive())
-				{
-					_skill.attackEntity(_user, target);
-				}
 
-				_skill.m.IsDoingAttackMove = true;
-				_skill.getContainer().setBusy(false);
-			}.bindenv(this), this);
-			this.Time.scheduleEvent(this.TimeUnit.Virtual, 600, function ( _skill )
+			for (local i = 0; i < 4; i++) // 4 attacks
 			{
-				if (target.isAlive())
+				this.Time.scheduleEvent(this.TimeUnit.Virtual, 200 + (i * 50), function ( _skill )
 				{
-					_skill.attackEntity(_user, target);
-				}
+					if (target.isAlive())
+					{
+						_skill.attackEntity(_user, target);
+						if (!target.isAlive() || target.isDying() || !target.getCurrentProperties().IsImmuneToBleeding && hp - target.getHitpoints() >= this.Const.Combat.MinDamageToApplyBleeding)
+						{
+							local effect = this.new("scripts/skills/effects/bleeding_effect");
+							effect.setDamage(this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers ? 10 : 5);
+							target.getSkills().add(effect);
+						}
+					}
 
-				_skill.m.IsDoingAttackMove = true;
-				_skill.getContainer().setBusy(false);
-			}.bindenv(this), this);
-			this.Time.scheduleEvent(this.TimeUnit.Virtual, 800, function ( _skill )
-			{
-				if (target.isAlive())
-				{
-					_skill.attackEntity(_user, target);
-				}
-
-				_skill.m.IsDoingAttackMove = true;
-				_skill.getContainer().setBusy(false);
-			}.bindenv(this), this);
-			return true;
+					if (i == 3) // On the 4th attack, unlock char
+					{
+						_skill.m.IsDoingAttackMove = true;
+						_skill.getContainer().setBusy(false);
+					}
+				}.bindenv(this), this);
+			}
 		}
 		else
 		{
-			if (target.isAlive())
+			for (local i = 0; i < 4; i++)
 			{
-				ret = this.attackEntity(_user, target) || ret;
+				if (target.isAlive())
+				{
+					ret = this.attackEntity(_user, target) || ret;
+					if (!target.isAlive() || target.isDying() || !target.getCurrentProperties().IsImmuneToBleeding && hp - target.getHitpoints() >= this.Const.Combat.MinDamageToApplyBleeding)
+					{
+						local effect = this.new("scripts/skills/effects/bleeding_effect");
+						effect.setDamage(this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers ? 10 : 5);
+						target.getSkills().add(effect);
+					}
+				}
 			}
-
-			if (target.isAlive())
-			{
-				ret = this.attackEntity(_user, target) || ret;
-			}
-
-			if (target.isAlive())
-			{
-				ret = this.attackEntity(_user, target) || ret;
-			}
-
-			if (target.isAlive())
-			{
-				ret = this.attackEntity(_user, target) || ret;
-			}
-
-			return ret;
 		}
+
+		if (!target.isAlive() || target.isDying() || !target.getCurrentProperties().IsImmuneToBleeding && hp - target.getHitpoints() >= this.Const.Combat.MinDamageToApplyBleeding)
+		{
+			local effect = this.new("scripts/skills/effects/bleeding_effect");
+			effect.setDamage(this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers ? 10 : 5);
+			target.getSkills().add(effect);
+		}
+
+		return ret; // 5th attack
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )
@@ -146,9 +133,9 @@ this.twincleavers_2 <- this.inherit("scripts/skills/skill", {
 		if (_skill == this)
 		{
 			_properties.DamageTotalMult *= 0.5;
+			_properties.DamageTooltipMinMult *= 5.0;
 			_properties.DamageTooltipMaxMult *= 5.0;
 		}
 	}
 
 });
-
