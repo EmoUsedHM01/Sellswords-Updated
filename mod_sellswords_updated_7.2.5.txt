@@ -52,6 +52,10 @@ Fixed a bug with crRA
 ...\scripts\contracts\contracts\purge_infection_contract.nut
 Fixed a contract bug and added categories
 
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin_ambusher.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\goblin_fighter.nut
+Fixed bad hook call
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.4 changes

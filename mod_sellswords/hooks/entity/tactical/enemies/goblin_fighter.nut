@@ -29,7 +29,7 @@
 
 	q.makeMiniboss = @( __original ) function()
 	{
-		local ret = makeMiniboss();
+		local ret = __original();
 		if (ret)
 		{
 
