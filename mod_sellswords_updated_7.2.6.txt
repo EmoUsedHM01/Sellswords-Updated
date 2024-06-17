@@ -30,6 +30,7 @@ Fixed bad icon call
 ...\scripts\skills\actives\ssu_bone_cleaver_slash.nut
 ...\scripts\skills\actives\ssu_bone_cleaver_swing.nut
 ...\scripts\skills\effects\ssu_bone_cleaver_effect.nut
+...\mod_sellswords\hooks\events\events\legends\legend_mummy_enter_event.nut
 Added the Legendary Vampire weapon
 
 ----------------------------------------------------------------------------------------------------------------------------
