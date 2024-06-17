@@ -25,7 +25,7 @@ this.ssu_earth_hammer_effect <- this.inherit("scripts/skills/skill", {
 		if (!actor.isAlive() || actor.isDying())
 			return;
 
-		if (!_targetEntity.isAlive() || _targetEntity.isDying() || _targetEntity.getSkills().getSkillByID("effects.rooted"))
+		if (!_targetEntity.isAlive() || _targetEntity.isDying() || _targetEntity.getSkills().getSkillByID("effects.rooted") || _targetEntity.getCurrentProperties().IsImmuneToRoot))
 			return;
 
 		if (!_targetEntity.isHiddenToPlayer())
