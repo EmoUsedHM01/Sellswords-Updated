@@ -14,7 +14,8 @@
 			case weapon.isItemType(this.Const.Items.ItemType.OneHanded):
 				_properties.DamageDirectAdd -= 0.1;
 				return;
-
+			case weapon.isItemType(this.Const.Items.ItemType.RangedWeapon) && !weapon.isWeaponType(this.Const.Items.WeaponType.Throwing):
+				return;
 		}
 		_properties.DamageDirectAdd += 0.2;
 	}

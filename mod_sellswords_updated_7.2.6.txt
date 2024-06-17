@@ -7,6 +7,9 @@ Fixed bad modern hook stuff
 ...\scripts\skills\effects\ssu_earth_hammer_effect.nut
 Bug fixes
 
+...\mod_sellswords\hooks\skills\perks\duelist.nut
+Fixed it applying to all weapons including ranged
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.5 changes
