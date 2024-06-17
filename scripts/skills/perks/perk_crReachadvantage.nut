@@ -1,8 +1,7 @@
 this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 	m = {
 		Opponents = [],
-		tempOpponents = [],
-		hasAdjacentEnemies = false
+		tempOpponents = []
 	},
 	function create()
 	{
@@ -116,7 +115,7 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 		this.m.tempOpponents.clear();
 		local actor = this.getContainer().getActor();
 		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
-		if (!this.getContainer().getSkillByID("effects.crReachadvantage") && !this.getContainer().getSkillByID("effects.spearwall") && actor.hasZoneOfControl() && weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon) && weapon.isItemType(this.Const.Items.ItemType.TwoHanded) && this.m.hasAdjacentEnemies = true)
+		if (!this.getContainer().getSkillByID("effects.crReachadvantage") && !this.getContainer().getSkillByID("effects.spearwall") && actor.hasZoneOfControl() && weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon) && weapon.isItemType(this.Const.Items.ItemType.TwoHanded) && this.m.Opponents.len() != 0)
 			this.getContainer().add(this.new("scripts/skills/effects/crReachadvantage_effect"));
 	}
 
@@ -129,7 +128,6 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 			this.m.Container.removeByID("perk.crReachadvantage")
 
 		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
-		this.m.hasAdjacentEnemies = false;
 
 		if (weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon) && weapon.isItemType(this.Const.Items.ItemType.TwoHanded) && !this.getContainer().getSkillByID("perk.ptr_en_garde"))
 		{
@@ -142,10 +140,7 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 					if (nextTile.IsOccupiedByActor)
 					{
 						if (nextTile.getEntity().getFaction() != this.getContainer().getActor().getFaction())
-						{
 							this.procIfApplicable(nextTile.getEntity());
-							this.m.hasAdjacentEnemies = true;
-						}
 					}
 				}
 			}

@@ -56,8 +56,9 @@ this.crReachadvantage_effect <- this.inherit("scripts/skills/skill", {
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )
 	{
-		if ((this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() != this.getContainer().getActor().getID()) && (_targetEntity != null && this.m.Opponents.find(_targetEntity.getID()) != null))
+		if ((this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() != this.getContainer().getActor().getID()) && (_targetEntity != null && this.m.Opponents.find(_targetEntity.getID()) != null)) {
 			_properties.DamageTotalMult *= 0.2;
+		}
 	}
 
 });
