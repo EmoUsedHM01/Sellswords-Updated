@@ -8,7 +8,7 @@
 		{
 			if (screen.ID != "A") continue;
 
-			screen.start = @(__original) function( _event )
+			screen.start = function( _event )
 			{
 				this.World.Flags.set("IjirokStage", 5);
 				local stash = this.World.Assets.getStash().getItems();

@@ -1,6 +1,11 @@
 7.2.6 changes
 
-...
+...\mod_sellswords\hooks\events\events\dlc2\witchhut_destroyed_event.nut
+...\mod_sellswords\hooks\events\events\dlc4\location\tundra_elk_destroyed_event.nut
+Fixed bad modern hook stuff
+
+...\scripts\skills\effects\ssu_earth_hammer_effect.nut
+Bug fixes
 
 ----------------------------------------------------------------------------------------------------------------------------
 

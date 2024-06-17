@@ -8,7 +8,7 @@
 		{
 			if (screen.ID != "WhoAmI") continue;
 
-			screen.start = @(__original) function( _event )
+			screen.start = function( _event )
 			{
 				this.World.Assets.getStash().makeEmptySlots(1);
 				local item = this.new("scripts/items/weapons/special/ssu_legendary_dagger");
