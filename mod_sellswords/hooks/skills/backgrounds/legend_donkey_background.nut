@@ -39,7 +39,7 @@
 			],
 			[
 				this.Const.Perks.PerkDefs.Dodge,
-				this.Const.Perks.PerkDefs.HoldOut,
+				this.Const.Perks.PerkDefs.crresilient,
 				this.Const.Perks.PerkDefs.LegendComposure,
 				this.Const.Perks.PerkDefs.LegendAlert,
 				this.Const.Perks.PerkDefs.Relentless,

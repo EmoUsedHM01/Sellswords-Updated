@@ -11,6 +11,32 @@ Updated and fixed Emperor gearset
 
 7.2.6 changes
 
+...\mod_sellswords\hooks\scenarios\world\legends_sisterhood_scenario.nut
+replace resilient with recuperation for sisterhood scenario
+
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+add #attachPerks and #buildPerkTree so the new perks are properly applied on all custom perk trees
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_assassin_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_berserker_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_druid_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_noble_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_witch_commander_background.nut
+deleted cause useless
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_crusader_commander_background.nut
+add crblockmaster
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
+add new resilient
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_commander_background.nut
+cleanup
+
+...\mod_sellswords\hooks\skills\backgrounds\veteran_background_hooks.nut
+add veteran skill tree to classes that should have it
+
 ...\mod_sellswords\hooks\events\events\dlc2\witchhut_destroyed_event.nut
 ...\mod_sellswords\hooks\events\events\dlc4\location\tundra_elk_destroyed_event.nut
 Fixed bad modern hook stuff
