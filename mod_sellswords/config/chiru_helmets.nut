@@ -3852,25 +3852,23 @@
 		]
 	},
 	{
-		ID = "cremperors_helmet",	 //490
+		ID = "cremperors_helmet",	 // 395
 		Script = "",
 		Sets = [
 			{
 				Hoods = [
-					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss90,-5,600			
+					[1, "hood/legend_helmet_chain_hood_full"], // 85, -5, 450
 				],
 				Helms = [
-					[1, "helm/legend_helmet_legend_frogmouth"],//160,-10,2250,-2	ss250,-18,3500	 					
+					[1, "helm/cr_emperors_countenance"], // 300, -18, 12000
 				],
-				Tops = [
-					[1, "top/legend_helmet_golden_helm"],//90,-7,3000,-2		ss135_150,-8,-2,5000				
-				],
+				Tops = [],
 				Vanity = [
-					[1, "vanity_lower/legend_helmet_back_crest", 1],//10,0,100				
+					[1, "vanity_lower/legend_helmet_back_crest", 1], // 10, 0, 100
 				]
 			}
 		]
-	},	
+	},
 	{
 		ID = "crijirok_helmet",	
 		Script = "",
