@@ -11,8 +11,8 @@ this.howl_player <- this.inherit("scripts/skills/skill", {
 		this.m.SoundOnUse = [
 			"sounds/enemies/werewolf_howl.wav"
 		];
-		this.m.Type = this.Const.SkillType.Active | this.Const.SkillType.Perk;
-		this.m.Order = this.Const.SkillOrder.OffensiveTargeted;
+		this.m.Type = this.Const.SkillType.Active;
+		this.m.Order = this.Const.SkillOrder.Any;
 		this.m.IsRemovedAfterBattle = false;
 		this.m.IsSerialized = true;
 		this.m.IsActive = true;

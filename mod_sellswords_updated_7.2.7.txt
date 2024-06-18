@@ -7,6 +7,9 @@
 ...\scripts\items\legend_helmets\helm\cr_emperors_countenance.nut
 Updated and fixed Emperor gearset
 
+...\scripts\skills\actives\howl_player.nut
+Moved Howl down the skill ordering
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.6 changes
