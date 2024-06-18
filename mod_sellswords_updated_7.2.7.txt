@@ -7,10 +7,6 @@
 ...\scripts\items\legend_helmets\helm\cr_emperors_countenance.nut
 Updated and fixed Emperor gearset
 
-----------------------------------------------------------------------------------------------------------------------------
-
-7.2.6 changes
-
 ...\mod_sellswords\hooks\scenarios\world\legends_sisterhood_scenario.nut
 replace resilient with recuperation for sisterhood scenario
 
@@ -36,6 +32,10 @@ cleanup
 
 ...\mod_sellswords\hooks\skills\backgrounds\veteran_background_hooks.nut
 add veteran skill tree to classes that should have it
+
+----------------------------------------------------------------------------------------------------------------------------
+
+7.2.6 changes
 
 ...\mod_sellswords\hooks\events\events\dlc2\witchhut_destroyed_event.nut
 ...\mod_sellswords\hooks\events\events\dlc4\location\tundra_elk_destroyed_event.nut
