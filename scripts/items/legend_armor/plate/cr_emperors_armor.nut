@@ -51,16 +51,14 @@ this.cr_emperors_armor <- this.inherit("scripts/items/legend_armor/legend_armor_
 				if (a.getID() == actor.getID())
 					continue;
 
-				if (actor.getTile().getDistanceTo(a.getTile()) > 3)
+				if (actor.getTile().getDistanceTo(a.getTile()) > 2)
 					continue;
 
-				if (a.getFaction() == actor.getFaction())
+				if (a.isAlliedWith(actor))
 					continue;
 
-				if (this.Math.rand(1, 100) <= 80)
-					continue;
-
-				a.getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
+				if (!a.getCurrentProperties().IsImmuneToDaze)
+					a.getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
 			}
 		}
 	}
