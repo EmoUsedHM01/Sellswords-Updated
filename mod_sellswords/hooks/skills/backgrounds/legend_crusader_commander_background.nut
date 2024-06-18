@@ -3,6 +3,6 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.haspecialize);
+		this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crBlocknormal);
 	}
 });

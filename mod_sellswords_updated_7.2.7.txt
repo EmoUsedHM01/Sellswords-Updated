@@ -10,6 +10,32 @@ Updated and fixed Emperor gearset
 ...\scripts\skills\actives\howl_player.nut
 Moved Howl down the skill ordering
 
+...\mod_sellswords\hooks\scenarios\world\legends_sisterhood_scenario.nut
+Replace resilient with recuperation for sisterhood scenario - Breaky
+
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+Add #attachPerks and #buildPerkTree so the new perks are properly applied on all custom perk trees - Breaky
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_assassin_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_berserker_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_druid_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_noble_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_witch_commander_background.nut
+Deleted cause useless - Breaky
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_crusader_commander_background.nut
+Add crblockmaster - Breaky
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
+Add new resilient - Breaky
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_commander_background.nut
+Cleanup - Breaky
+
+...\mod_sellswords\hooks\skills\backgrounds\veteran_background_hooks.nut
+Add veteran skill tree to classes that should have it - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.6 changes

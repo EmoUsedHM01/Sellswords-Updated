@@ -166,4 +166,135 @@
 			actor.m.XP = this.Const.LevelXP[this.m.Level - 1];
 		}
 	};
+
+	q.buildPerkTree = @(__original) function ()
+	{
+		local a = {
+			Hitpoints = [
+				0,
+				0
+			],
+			Bravery = [
+				0,
+				0
+			],
+			Stamina = [
+				0,
+				0
+			],
+			MeleeSkill = [
+				0,
+				0
+			],
+			RangedSkill = [
+				0,
+				0
+			],
+			MeleeDefense = [
+				0,
+				0
+			],
+			RangedDefense = [
+				0,
+				0
+			],
+			Initiative = [
+				0,
+				0
+			]
+		};
+		
+		if (this.m.PerkTree != null)
+		{
+			return a;
+		}
+
+		if (this.m.CustomPerkTree == null)
+		{
+				local mins = this.getPerkTreeDynamicMins();
+
+				local result  = this.Const.Perks.GetDynamicPerkTree(mins, this.m.PerkTreeDynamic);
+				this.m.CustomPerkTree = result.Tree
+				a = result.Attributes;
+		}
+		attachPerks();
+		local pT = this.Const.Perks.BuildCustomPerkTree(this.m.CustomPerkTree);
+		this.m.PerkTree = pT.Tree;
+		this.m.PerkTreeMap = pT.Map;
+
+
+		local origin = this.World.Assets.getOrigin();
+		if (origin != null)
+		{
+			origin.onBuildPerkTree(this);
+		}
+
+		return a;
+	}
+
+	q.attachPerks <- function()
+	{
+		for ( local i = 0; i < this.m.CustomPerkTree.len(); i++ )
+		{
+			for ( local j = 0; j < this.m.CustomPerkTree[i].len(); j++ )
+			{
+				switch (true)
+				{
+					// attach new perks based on perk tree herecontinue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Nimble:
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.laspecialize);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendLithe:
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.maspecialize);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.BattleForged:
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.haspecialize);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendMuscularity:
+						this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crAudaciouscharge);
+						this.m.CustomPerkTree[6].push(this.Const.Perks.PerkDefs.crGrandslam);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendSpecFists:
+						this.m.CustomPerkTree[6].push(this.Const.Perks.PerkDefs.LegendUnarmedTraining);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecAxe:
+						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crHackSPM);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecBow:
+						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crParthianshot);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecPolearm:
+						this.m.CustomPerkTree[0].push(this.Const.Perks.PerkDefs.crretrofithooks);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecDagger:
+						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crFoB);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.NineLives:
+						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crPerseverance);
+						this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crresilient);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Rebound:
+						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crbeforethestorm);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Footwork:
+						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crBackswing);
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendBackToBasics:
+						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crAnchor);
+						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crBattlerhaposdy);
+						continue;
+					// replace perks herecontinue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.HoldOut:
+						this.m.CustomPerkTree[i][j] = this.Const.Perks.PerkDefs.crresilient;
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.ReachAdvantage:
+						this.m.CustomPerkTree[i][j] = this.Const.Perks.PerkDefs.crReachadvantage;
+						continue;
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendClarity:
+						this.m.CustomPerkTree[i][j] = this.Const.Perks.PerkDefs.crClarity;
+						continue;
+				}
+			}
+		}
+	}
 });
