@@ -18,7 +18,7 @@ this.ssu_legendary_dagger <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ArmamentIcon = "icon_obsidian_dagger";
 		this.m.Condition = 95.0;
 		this.m.ConditionMax = 95.0;
-		this.m.Value = 5000;
+		this.m.Value = 15000;
 		this.m.RegularDamage = 50;
 		this.m.RegularDamageMax = 65;
 		this.m.ArmorDamageMult = 1.15;
