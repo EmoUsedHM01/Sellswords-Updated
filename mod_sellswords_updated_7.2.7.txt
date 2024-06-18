@@ -1,6 +1,11 @@
 7.2.7 changes
 
-...
+...\mod_sellswords\config\chiru_helmets.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_boss.nut
+...\mod_sellswords\hooks\entity\world\locations\legendary\unique_goblin_city_location.nut
+...\scripts\items\legend_armor\plate\cr_emperors_armor.nut
+...\scripts\items\legend_helmets\helm\cr_emperors_countenance.nut
+Updated and fixed Emperor gearset
 
 ----------------------------------------------------------------------------------------------------------------------------
 
