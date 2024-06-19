@@ -2,7 +2,7 @@ this.dryad_tree_location <- ::inherit("scripts/entity/world/location", {
 	m = {},
 	function getDescription()
 	{
-		return "A broken down stronghold, one which wraps you in a bone-deep chill when you gaze upon it. Rumors say there are great treasures that reside inside, but no-one dares to reclaim or trespass the cursed monument.";
+		return "An immensely tall ash tree. You can see things climbing between the giant branches as you gaze from afar.";
 	}
 
 	function create()
