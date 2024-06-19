@@ -7,6 +7,9 @@
 ...\scripts\items\legend_helmets\helm\cr_emperors_countenance.nut
 Updated and fixed Emperor gearset
 
+...\mod_sellswords\hooks\config\strings.nut
+Fixed Debil tooltip -Rygar
+
 ...\scripts\skills\actives\howl_player.nut
 Moved Howl down the skill ordering
  
