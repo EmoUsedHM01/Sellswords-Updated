@@ -1,4 +1,4 @@
-7.2.7 changes
+7.3.0 changes
 
 ...\mod_sellswords\config\chiru_helmets.nut
 ...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_boss.nut
@@ -65,6 +65,26 @@ Lowered the capacity to a flat 5 for all special quivers
 ...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
 ...\scripts\skills\effects\ssu_ice_axe_effect.nut
 Stopped Ijirok from being chilled
+
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_attack_default.nut
+...\scripts\items\weapons\barbarians\twinaxes_t1.nut
+...\scripts\items\weapons\barbarians\twinaxes_t2.nut
+...\scripts\items\weapons\barbarians\twinaxes_t3.nut
+...\scripts\items\weapons\barbarians\twincleavers_t1.nut
+...\scripts\items\weapons\barbarians\twincleavers_t2.nut
+...\scripts\items\weapons\named\named_twinaxes.nut
+...\scripts\items\weapons\named\named_twincleavers.nut
+...\scripts\skills\actives\grass_slash.nut
+...\scripts\skills\actives\ice_slash.nut
+...\scripts\skills\actives\ice_swing.nut
+...\scripts\skills\actives\pseudohack.nut
+...\scripts\skills\actives\pseudomince.nut
+...\scripts\skills\effects\crdagger_effect.nut
+...\scripts\skills\effects\crdagger_new_effect.nut
+...\scripts\skills\effects\crFoB_effect.nut
+...\scripts\skills\perks\perk_crFoB.nut
+Fixed various scripts and cleaned up a bunch of perks/effects
 
 ----------------------------------------------------------------------------------------------------------------------------
 
