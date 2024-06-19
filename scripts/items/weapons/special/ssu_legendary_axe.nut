@@ -23,11 +23,11 @@ this.ssu_legendary_axe <- ::inherit("scripts/items/weapons/weapon", {
 		this.m.Value = 15000;
 		this.m.Condition = 115;
 		this.m.ConditionMax = 115;
-		this.m.StaminaModifier = -16;
+		this.m.StaminaModifier = -18;
 		this.m.ShieldDamage = 42;
-		this.m.RegularDamage = 100;
-		this.m.RegularDamageMax = 140;
-		this.m.ArmorDamageMult = 1.8;
+		this.m.RegularDamage = 90;
+		this.m.RegularDamageMax = 120;
+		this.m.ArmorDamageMult = 1.6;
 		this.m.DirectDamageMult = 0.4;
 		this.m.ChanceToHitHead = 15;
 	}
