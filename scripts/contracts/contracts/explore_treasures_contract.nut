@@ -129,7 +129,7 @@ this.explore_treasures_contract <- this.inherit("scripts/contracts/contract", {
 		this.m.Flags.set("DestinationName", this.m.Destination.getName());
 		this.m.Payment.Pool = 1200 * this.getPaymentMult() * this.Math.pow(this.getDifficultyMult(), this.Const.World.Assets.ContractRewardPOW) * this.getReputationToPaymentMult();
 
-		this.m.Payment.Completion = 0.75;
+		this.m.Payment.Completion = 0.2;
 
 		this.contract.start();
 	}
