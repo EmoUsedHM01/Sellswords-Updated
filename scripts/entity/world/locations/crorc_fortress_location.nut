@@ -22,6 +22,7 @@ this.crorc_fortress_location <- this.inherit("scripts/entity/world/location", {
 	function onSpawned()
 	{
 		this.m.Name = "Fortress of the Warlord";
+		::logInfo("Built Legendary Orc location");
 		this.location.onSpawned();		
 		for( local i = 0; i < 10; i = i )
 		{
@@ -102,6 +103,15 @@ this.crorc_fortress_location <- this.inherit("scripts/entity/world/location", {
 			}, false, 100);
 			i = ++i;
 		}		
+	}
+
+	function onDiscovered()
+	{
+		this.location.onDiscovered();
+		::World.Flags.increment("LegendaryLocationsDiscovered", 1);
+
+		if (::World.Flags.get("LegendaryLocationsDiscovered") >= 10)
+			this.updateAchievement("FamedExplorer", 1, 1);
 	}
 	
 	function onBeforeCombatStarted()

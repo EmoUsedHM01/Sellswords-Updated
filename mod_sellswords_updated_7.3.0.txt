@@ -86,6 +86,18 @@ Stopped Ijirok from being chilled
 ...\scripts\skills\perks\perk_crFoB.nut
 Fixed various scripts and cleaned up a bunch of perks/effects
 
+...\brushes\dryad_entities.brush
+...\brushes\ssu_undead_entities.brush
+...\gfx\ssu_undead_entities.png
+...\mod_sellswords\hooks\factions\actions\build_unique_locations_action.nut
+...\scripts\entity\world\locations\crorc_fortress_location.nut
+...\scripts\entity\world\locations\crss_camp_location.nut
+...\scripts\entity\world\locations\dryad_tree_location.nut
+...\scripts\entity\world\locations\kriegsgeist_location.nut
+...\scripts\events\events\dryad_tree_enter_event.nut
+...\scripts\events\events\kriegsgeist_castle_enter_event.nut
+Updated Legendary locations
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.6 changes

@@ -21,6 +21,7 @@ this.crss_camp_location <- this.inherit("scripts/entity/world/location", {
 	function onSpawned()
 	{
 		this.m.Name = this.Const.Strings.MercenaryCompanyNames[this.Math.rand(0, this.Const.Strings.MercenaryCompanyNames.len() - 1)] + "’s Tower";
+		::logInfo("Built Legendary Sellsword location");
 		this.location.onSpawned();		
 		for( local i = 0; i < 2; i = i )
 		{
@@ -149,6 +150,15 @@ this.crss_camp_location <- this.inherit("scripts/entity/world/location", {
 			}, false, 100);
 			i = ++i;
 		}		
+	}
+
+	function onDiscovered()
+	{
+		this.location.onDiscovered();
+		::World.Flags.increment("LegendaryLocationsDiscovered", 1);
+
+		if (::World.Flags.get("LegendaryLocationsDiscovered") >= 10)
+			this.updateAchievement("FamedExplorer", 1, 1);
 	}
 	
 	function onBeforeCombatStarted()
