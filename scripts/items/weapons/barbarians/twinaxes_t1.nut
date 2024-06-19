@@ -1,6 +1,6 @@
 this.twinaxes_t1 <- this.inherit("scripts/items/weapons/weapon", {
 	m = {
-	LastSkillUse = 0
+		LastSkillUse = 0
 	},
 	function create()
 	{
@@ -30,40 +30,34 @@ this.twinaxes_t1 <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ArmorDamageMult = 1.2;
 		this.m.DirectDamageMult = 0.40;
 		this.m.ChanceToHitHead = 0;
-		this.m.FatigueOnSkillUse = 1;		
+		this.m.FatigueOnSkillUse = 1;
 	}
 
 	function onEquip()
 	{
 		this.weapon.onEquip();
-		//this.addSkill(this.new("scripts/skills/actives/pseudohack"));
-		this.addSkill(this.new("scripts/skills/actives/twinaxes_1"));		
+		this.addSkill(this.new("scripts/skills/actives/twinaxes_1"));
 		this.addSkill(this.new("scripts/skills/actives/twinaxes_2"));
 		local skillToAdd = this.new("scripts/skills/actives/split_shield");
 		skillToAdd.setApplyAxeMastery(true);
 		skillToAdd.setFatigueCost(skillToAdd.getFatigueCostRaw() + 1);
 		this.addSkill(skillToAdd);
 	}
-  
+
 	function onDamageDealt( _target, _skill, _hitInfo )
 	{
 		local actor = this.getContainer().getActor();
 
 		if (actor == null || actor.isNull() || this.m.LastSkillUse == this.Const.SkillCounter)
-		{
 			return;
-		}
 
 		if (actor.isPlayerControlled() && _skill.getDirectDamage() < 1.0 && !_skill.isRanged() && this.m.ConditionMax > 1)
 		{
 			this.m.LastSkillUse = this.Const.SkillCounter;
 
 			if (_target.getArmorMax(_hitInfo.BodyPart) >= 50 && _hitInfo.DamageInflictedArmor >= 5 || this.m.ConditionMax == 2)
-			{
 				this.lowerCondition();
-			}
 		}
 	}
-  
-});
 
+});

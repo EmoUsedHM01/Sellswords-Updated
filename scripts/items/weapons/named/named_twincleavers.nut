@@ -27,18 +27,15 @@ this.named_twincleavers <- this.inherit("scripts/items/weapons/named/named_weapo
 		this.m.ArmorDamageMult = 1.1;
 		this.m.DirectDamageAdd = 0.1;
 		this.m.DirectDamageMult = 0.25;
-		this.m.FatigueOnSkillUse = 3;			
+		this.m.FatigueOnSkillUse = 2;
 		this.randomizeValues();
 	}
 
-	
 	function onEquip()
 	{
-		this.named_weapon.onEquip();
+		this.weapon.onEquip();
 		this.addSkill(this.new("scripts/skills/actives/twincleavers_1"));
 		this.addSkill(this.new("scripts/skills/actives/twincleavers_2"));
-		//this.addSkill(this.new("scripts/skills/actives/pseudomince"));			
 	}
 
 });
-

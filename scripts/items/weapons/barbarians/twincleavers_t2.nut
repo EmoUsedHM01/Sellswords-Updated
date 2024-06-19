@@ -26,7 +26,7 @@ this.twincleavers_t2 <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ArmorDamageMult = 1.1;
 		this.m.DirectDamageAdd = 0.1;
 		this.m.DirectDamageMult = 0.25;
-		this.m.FatigueOnSkillUse = 2;		
+		this.m.FatigueOnSkillUse = 2;
 	}
 
 	function onEquip()
@@ -34,9 +34,6 @@ this.twincleavers_t2 <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.onEquip();
 		this.addSkill(this.new("scripts/skills/actives/twincleavers_1"));
 		this.addSkill(this.new("scripts/skills/actives/twincleavers_2"));
-		//this.addSkill(this.new("scripts/skills/actives/pseudomince"));			
 	}
 
-  
 });
-
