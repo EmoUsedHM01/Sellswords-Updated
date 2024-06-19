@@ -36,6 +36,31 @@ Cleanup - Breaky
 ...\mod_sellswords\hooks\skills\backgrounds\veteran_background_hooks.nut
 Add veteran skill tree to classes that should have it - Breaky
 
+...\scripts\contracts\contracts\explore_treasures_contract.nut
+Lowered payout for completion
+
+...\scripts\items\weapons\special\ssu_legendary_axe.nut
+...\scripts\items\weapons\special\ssu_legendary_dagger.nut
+Updated stats on a couple legendary weps
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\weaponsmith_oriental_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\weaponsmith_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\fletcher_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\armorsmith_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\alchemist_building.nut
+Updated the hooks for buildings
+
+...\scripts\items\ammo\quiver_of_bleeding_arrows.nut
+...\scripts\items\ammo\quiver_of_bleeding_bolts.nut
+...\scripts\items\ammo\quiver_of_fire_arrows.nut
+...\scripts\items\ammo\quiver_of_fire_bolts.nut
+...\scripts\items\ammo\quiver_of_freezing_arrows.nut
+...\scripts\items\ammo\quiver_of_freezing_bolts.nut
+...\scripts\items\ammo\quiver_of_poisoned_arrows.nut
+...\scripts\items\ammo\quiver_of_poisoned_bolts.nut
+Lowered the capacity to a flat 5 for all special quivers
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.2.6 changes
