@@ -1,9 +1,3 @@
-7.3.1 changes
-
-...
-
-----------------------------------------------------------------------------------------------------------------------------
-
 7.3.0 changes
 
 ...\mod_sellswords\config\chiru_helmets.nut
@@ -103,6 +97,17 @@ Fixed various scripts and cleaned up a bunch of perks/effects
 ...\scripts\events\events\dryad_tree_enter_event.nut
 ...\scripts\events\events\kriegsgeist_castle_enter_event.nut
 Updated Legendary locations
+
+...\scripts\items\weapons\special\named_sword_abt_durandal.nut
+...\scripts\items\weapons\special\named_sword_abt_excalibur.nut
+...\scripts\items\weapons\special\named_sword_abt_guinevere.nut
+...\scripts\items\weapons\special\named_sword_abt_herbstnebel.nut
+...\scripts\items\weapons\special\named_sword_abt_mikazuki.nut
+...\scripts\items\weapons\special\named_sword_abt_mystletainn.nut
+...\scripts\items\weapons\special\named_sword_abt_zhanlu.nut
+...\scripts\items\weapons\special\ssu_sword_grass.nut
+...\scripts\items\weapons\special\ssu_sword_ice.nut
+Deleted old Legendary weapons
 
 ----------------------------------------------------------------------------------------------------------------------------
 
