@@ -245,7 +245,7 @@
 						this.m.CustomPerkTree[0].push(this.Const.Perks.PerkDefs.crretrofithooks);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecDagger:
-						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crFoB);
+						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crFoB);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.NineLives:
 						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crPerseverance);
@@ -259,7 +259,7 @@
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendBackToBasics:
 						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crAnchor);
-						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crBattlerhaposdy);
+						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crBattlerhaposdy);
 						continue;
 					// replace perks herecontinue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.HoldOut:
