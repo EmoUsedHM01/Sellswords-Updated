@@ -24,11 +24,6 @@
 				S = "ammo/quiver_of_poisoned_arrows"
 			},
 			{
-				R = 95,
-				P = 1.0,
-				S = "ammo/quiver_of_phantom_arrows"
-			},
-			{
 				R = 50,
 				P = 1.0,
 				S = "ammo/quiver_of_fire_bolts"
@@ -47,12 +42,7 @@
 				R = 50,
 				P = 1.0,
 				S = "ammo/quiver_of_poisoned_bolts"
-			},
-			{
-				R = 95,
-				P = 1.0,
-				S = "ammo/quiver_of_phantom_bolts"
-			},
+			}
 		]);
 
 		__original( _list, _stash, _priceMult, _allowDamagedEquipment = false );
