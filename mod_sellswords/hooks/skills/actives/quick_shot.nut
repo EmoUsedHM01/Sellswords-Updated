@@ -103,6 +103,9 @@
 
 		if (ammo.m.Name == "Quiver of Freezing Arrows")
 		{
+			if (_targetEntity.hasSkill("racial.trickster_god"))
+				return;
+
 			if (!_targetEntity.isHiddenToPlayer())
 				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");
 

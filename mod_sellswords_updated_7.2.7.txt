@@ -9,7 +9,7 @@ Updated and fixed Emperor gearset
 
 ...\scripts\skills\actives\howl_player.nut
 Moved Howl down the skill ordering
-
+ 
 ...\mod_sellswords\hooks\scenarios\world\legends_sisterhood_scenario.nut
 Replace resilient with recuperation for sisterhood scenario - Breaky
 
@@ -60,6 +60,11 @@ Updated the hooks for buildings
 ...\scripts\items\ammo\quiver_of_poisoned_arrows.nut
 ...\scripts\items\ammo\quiver_of_poisoned_bolts.nut
 Lowered the capacity to a flat 5 for all special quivers
+
+...\mod_sellswords\hooks\skills\actives\quick_shot.nut
+...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
+...\scripts\skills\effects\ssu_ice_axe_effect.nut
+Stopped Ijirok from being chilled
 
 ----------------------------------------------------------------------------------------------------------------------------
 

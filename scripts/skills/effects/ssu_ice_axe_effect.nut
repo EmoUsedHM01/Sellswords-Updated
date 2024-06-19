@@ -28,11 +28,20 @@ this.ssu_ice_axe_effect <- this.inherit("scripts/skills/skill", {
 		if (!_targetEntity.isAlive() || _targetEntity.isDying())
 			return;
 
+		_targetEntity.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
+
+		if (_targetEntity.hasSkill("racial.trickster_god"))
+			return;
+
 		if (!_targetEntity.isHiddenToPlayer())
 			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");
 
-		_targetEntity.getSkills().add(this.new("scripts/skills/effects/chilled_effect"));
-		_targetEntity.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
+		local chilled = _targetEntity.getSkills().getSkillByID("effects.chilled");
+
+		if (chilled == null)
+			_targetEntity.getSkills().add(this.new("scripts/skills/effects/chilled_effect"));
+		else
+			chilled.resetTime();
 	}
 
 });

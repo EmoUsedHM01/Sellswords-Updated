@@ -106,10 +106,18 @@
 
 		if (ammo.m.Name == "Quiver of Freezing Bolts")
 		{
+			if (_targetEntity.hasSkill("racial.trickster_god"))
+				return;
+
 			if (!_targetEntity.isHiddenToPlayer())
 				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");
 
-			_targetEntity.getSkills().add(this.new("scripts/skills/effects/chilled_effect"));
+			local chilled = _targetEntity.getSkills().getSkillByID("effects.chilled");
+
+			if (chilled == null)
+				_targetEntity.getSkills().add(this.new("scripts/skills/effects/chilled_effect"));
+			else
+				chilled.resetTime();
 		}
 	}
 
