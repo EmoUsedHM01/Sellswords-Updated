@@ -3,6 +3,9 @@
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 Fixed FoB and Rhap being wrong row
 
+...\mod_sellswords\hooks\config\strings.nut
+Updated strings - Rygar
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.0 changes
