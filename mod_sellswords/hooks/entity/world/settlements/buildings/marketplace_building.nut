@@ -34,42 +34,42 @@
 
 		_list.extend([
 			{
-				R = 50,
+				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_fire_arrows"
 			},
 			{
-				R = 50,
+				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_freezing_arrows"
 			},
 			{
-				R = 50,
+				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_bleeding_arrows"
 			},
 			{
-				R = 50,
+				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_poisoned_arrows"
 			},
 			{
-				R = 50,
+				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_fire_bolts"
 			},
 			{
-				R = 50,
+				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_freezing_bolts"
 			},
 			{
-				R = 50,
+				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_bleeding_bolts"
 			},
 			{
-				R = 50,
+				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_poisoned_bolts"
 			}
