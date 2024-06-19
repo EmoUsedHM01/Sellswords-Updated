@@ -14,8 +14,8 @@ this.quiver_of_bleeding_bolts <- this.inherit("scripts/items/ammo/ammo", {
 		this.m.ShowQuiver = true;
 		this.m.Sprite = "bust_quiver_01";
 		this.m.Value = 1500;
-		this.m.Ammo = 8;
-		this.m.AmmoMax = 8;
+		this.m.Ammo = 5;
+		this.m.AmmoMax = 5;
 		this.m.AmmoCost = 3;
 		this.m.IsDroppedAsLoot = true;
 	}
