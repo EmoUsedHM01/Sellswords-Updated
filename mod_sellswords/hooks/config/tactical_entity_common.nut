@@ -12,11 +12,11 @@
 	this.Sound.play(sounds[this.Math.rand(0, sounds.len() - 1)], this.Const.Sound.Volume.Actor, _entity.getPos());
 	local damageMult = 1.0;
 
-	if (_entity.getType() == this.Const.EntityType.Schrat)
-		damageMult = 3.0;
+	if (_entity.getSkills().hasSkill("racial.schrat") || _entity.getSkills().hasSkill("racial.legend_greenwood_schrat"))
+		damageMult = 5.0;
 
-	if (_entity.getSkills().hasSkill("racial.skeleton"))
-		damageMult = 0.33;
+	if (_entity.getSkills().hasSkill("racial.skeleton") || _entity.getSkills().hasSkill("racial.vampire"))
+		damageMult = 2.0;
 
 	if (_entity.getSkills().hasSkill("items.firearms_resistance") || _entity.getSkills().hasSkill("racial.serpent"))
 		damageMult = 0.66;
@@ -32,6 +32,9 @@
 	hitInfo.Injuries = this.Const.Injury.Burning;
 	hitInfo.IsPlayingArmorSound = false;
 	_entity.onDamageReceived(_entity, null, hitInfo);
+
+	if ((!_entity.isAlive() || _entity.isDying()) && !_entity.isPlayerControlled() && (_tile.Properties.Effect == null || _tile.Properties.Effect.IsByPlayer))
+		this.updateAchievement("BurnThemAll", 1, 1);
 };
 
 ::Const.Tactical.Common.onApplyFirefield = function( _tile, _entity )
@@ -53,6 +56,9 @@
 	hitInfo.BodyDamageMult = 1.0;
 	hitInfo.FatalityChanceMult = 0.0;
 	_tile.getEntity().onDamageReceived(_entity, null, hitInfo);
+
+	if ((!_entity.isAlive() || _entity.isDying()) && !_entity.isPlayerControlled() && (_tile.Properties.Effect == null || _tile.Properties.Effect.IsByPlayer))
+		this.updateAchievement("BurnThemAll", 1, 1);
 };
 
 ::Const.Tactical.Common.onApplyHolyFlame = function( _tile, _entity )
@@ -134,5 +140,4 @@
 		else
 			_entity.getSkills().add(this.new("scripts/skills/effects/legend_sanctified_effect"));
 	}
-
 };

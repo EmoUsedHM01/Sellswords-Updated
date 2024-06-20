@@ -6,6 +6,10 @@ Fixed FoB and Rhap being wrong row
 ...\mod_sellswords\hooks\config\strings.nut
 Updated strings - Rygar
 
+...\mod_sellswords\hooks\config\tactical_entity_common.nut
+...\scripts\skills\effects\flaming_arrows_effect.nut
+Fixed Fire Arrows crashing the game on kill
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.0 changes
@@ -18,7 +22,7 @@ Updated strings - Rygar
 Updated and fixed Emperor gearset
 
 ...\mod_sellswords\hooks\config\strings.nut
-Fixed Debil tooltip -Rygar
+Fixed Debil tooltip - Rygar
 
 ...\scripts\skills\actives\howl_player.nut
 Moved Howl down the skill ordering
