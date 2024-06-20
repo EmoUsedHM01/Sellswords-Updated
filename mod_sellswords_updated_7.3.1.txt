@@ -13,6 +13,9 @@ Fixed Fire Arrows crashing the game on kill
 ...\scripts\skills\perks\perk_crrangedskill.nut
 Fixed the kill count not being serialised
 
+...\mod_sellswords\hooks\config\z_legends_fav_enemies.nut
+Cleaned up format and added some missing entities
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.0 changes
