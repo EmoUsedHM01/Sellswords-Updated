@@ -149,65 +149,67 @@
 		}
 	}
 
-	q.buildPerkTree = @(__original) function ()
+	if (!(::Is_PTR_Exist))
 	{
-		local a = {
-			Hitpoints = [
-				0,
-				0
-			],
-			Bravery = [
-				0,
-				0
-			],
-			Stamina = [
-				0,
-				0
-			],
-			MeleeSkill = [
-				0,
-				0
-			],
-			RangedSkill = [
-				0,
-				0
-			],
-			MeleeDefense = [
-				0,
-				0
-			],
-			RangedDefense = [
-				0,
-				0
-			],
-			Initiative = [
-				0,
-				0
-			]
-		};
-
-		if (this.m.PerkTree != null)
-			return a;
-
-		if (this.m.CustomPerkTree == null)
+		q.buildPerkTree = @(__original) function ()
 		{
-			local mins = this.getPerkTreeDynamicMins();
+			local a = {
+				Hitpoints = [
+					0,
+					0
+				],
+				Bravery = [
+					0,
+					0
+				],
+				Stamina = [
+					0,
+					0
+				],
+				MeleeSkill = [
+					0,
+					0
+				],
+				RangedSkill = [
+					0,
+					0
+				],
+				MeleeDefense = [
+					0,
+					0
+				],
+				RangedDefense = [
+					0,
+					0
+				],
+				Initiative = [
+					0,
+					0
+				]
+			};
 
-			local result  = this.Const.Perks.GetDynamicPerkTree(mins, this.m.PerkTreeDynamic);
-			this.m.CustomPerkTree = result.Tree
-			a = result.Attributes;
+			if (this.m.PerkTree != null)
+				return a;
+
+			if (this.m.CustomPerkTree == null)
+			{
+				local mins = this.getPerkTreeDynamicMins();
+				local result  = this.Const.Perks.GetDynamicPerkTree(mins, this.m.PerkTreeDynamic);
+				this.m.CustomPerkTree = result.Tree
+				a = result.Attributes;
+			}
+			attachPerks();
+
+			local pT = this.Const.Perks.BuildCustomPerkTree(this.m.CustomPerkTree);
+			local origin = this.World.Assets.getOrigin();
+			this.m.PerkTree = pT.Tree;
+			this.m.PerkTreeMap = pT.Map;
+
+			if (origin != null)
+				origin.onBuildPerkTree(this);
+
+			return a;
 		}
-		attachPerks();
-
-		local pT = this.Const.Perks.BuildCustomPerkTree(this.m.CustomPerkTree);
-		local origin = this.World.Assets.getOrigin();
-		this.m.PerkTree = pT.Tree;
-		this.m.PerkTreeMap = pT.Map;
-
-		if (origin != null)
-			origin.onBuildPerkTree(this);
-
-		return a;
 	}
 
 	q.attachPerks <- function()

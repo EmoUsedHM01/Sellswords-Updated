@@ -98,14 +98,17 @@
 		return this.Math.max(this.m.BonusMin, bonus);
 	}
 
-	q.getInitiativeBonus <- function()
+	if (!(::Is_PTR_Exist))
 	{
-		return this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]) * -1 * 0.3;
-	}
+		q.getInitiativeBonus <- function()
+		{
+			return this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]) * -1 * 0.3;
+		}
 
-	q.onUpdate <- function( _properties )
-	{
-		_properties.FatigueToInitiativeRate *= 0.7;		
+		q.onUpdate <- function( _properties )
+		{
+			_properties.FatigueToInitiativeRate *= 0.7;		
+		}
 	}
 
 	q.onAfterUpdate = @(__original) function( _properties )

@@ -41,32 +41,64 @@
 
 		return tooltip;
 	}
-
-	q.getHitpointsDamageReduction <- function()
+	if (!(::Is_PTR_Exist))
 	{
-		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
-		fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
-		if (!this.getContainer().getActor().isPlayerControlled())
+		q.getHitpointsDamageReduction <- function()
 		{
-			return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
+			local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
+			fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
+			if (!this.getContainer().getActor().isPlayerControlled())
+			{
+				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
+			}
+			else
+			{
+				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
+			}
 		}
-		else
+
+		q.getArmorDamageReduction <- function()
 		{
-			return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
+			local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
+			fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
+			if (!this.getContainer().getActor().isPlayerControlled())
+			{
+				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
+			}
+			else
+			{
+				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
+			}
 		}
 	}
-
-	q.getArmorDamageReduction <- function()
+	else
 	{
-		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
-		fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
-		if (!this.getContainer().getActor().isPlayerControlled())
+		q.getHitpointsDamageReduction = @(__original) function()
 		{
-			return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
+			local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
+			fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
+			if (!this.getContainer().getActor().isPlayerControlled())
+			{
+				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
+			}
+			else
+			{
+				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
+			}
 		}
-		else
+
+		q.getArmorDamageReduction = @(__original) function()
 		{
-			return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
+			local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
+			fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
+			if (!this.getContainer().getActor().isPlayerControlled())
+			{
+				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
+			}
+			else
+			{
+				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
+			}
 		}
 	}
 
