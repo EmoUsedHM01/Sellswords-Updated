@@ -248,6 +248,12 @@
 		case "this.Const.EntityType.SpiderBodyguard":
 			return 8;
 
+		case "this.Const.EntityType.CaravanHand":
+		case "this.Const.EntityType.Wardog":
+		case "this.Const.EntityType.Warhound":
+		case "this.Const.EntityType.ZombieYeoman":
+			return 10;
+
 		case "this.Const.EntityType.BanditPoacher":
 		case "this.Const.EntityType.NomadSlinger":
 			return 12;
@@ -256,12 +262,6 @@
 		case "this.Const.EntityType.Engineer":
 		case "this.Const.EntityType.NomadCutthroat":
 			return 15;
-
-		case "this.Const.EntityType.CaravanHand":
-		case "this.Const.EntityType.Wardog":
-		case "this.Const.EntityType.Warhound":
-		case "this.Const.EntityType.ZombieYeoman":
-			return 10;
 
 		case "this.Const.EntityType.BanditRabble":
 		case "this.Const.EntityType.BanditRabblePoacher":
@@ -273,6 +273,6 @@
 			return 30;
 
 		default:
-			return 10;
+			return 5;
 	}
 };
