@@ -1,289 +1,517 @@
 ::Const.LegendMod.FavoriteZombies.extend([
-	::Const.EntityType.crFallenbetrayer,
-	::Const.EntityType.crZombieswordmaster
+	this.Const.EntityType.crFallenbetrayer,
+	this.Const.EntityType.crZombieswordmaster	
 ]);
 
 ::Const.LegendMod.FavoriteDirewolf.extend([
-	::Const.EntityType.Wolf,
-	::Const.EntityType.GoblinWolfrider,
-	::Const.EntityType.KoboldWolfrider
+	this.Const.EntityType.Wolf,
+	this.Const.EntityType.GoblinWolfrider,
+	this.Const.EntityType.KoboldWolfrider,
 ]);
 
 ::Const.LegendMod.FavoriteGoblin.extend([
-	::Const.EntityType.KoboldWolfrider,
-	::Const.EntityType.KoboldFighter,
-	::Const.EntityType.crGoblinwarrior
+	this.Const.EntityType.KoboldWolfrider,
+	this.Const.EntityType.KoboldFighter,
+	this.Const.EntityType.crGoblinwarrior	
 ]);
 
 ::Const.LegendMod.FavoriteOrc.extend([
-	::Const.EntityType.crOrcPillager,
-	::Const.EntityType.crOrcGrunt,
-	::Const.EntityType.crOrcVanguard,
-	::Const.EntityType.crOrcPackleader
+	this.Const.EntityType.crOrcPillager,
+	this.Const.EntityType.crOrcGrunt,	
+	this.Const.EntityType.crOrcVanguard,	
+	this.Const.EntityType.crOrcPackleader		
 ]);
 
 ::Const.LegendMod.FavoriteSwordmaster.extend([
-	::Const.EntityType.LegendFencer,
-	::Const.EntityType.BarbarianChampion,
-	::Const.EntityType.BarbarianChosen,
-	::Const.EntityType.crImmortal,
-	::Const.EntityType.crDesperado,
-	::Const.EntityType.crBanditleaderwolf,
-	::Const.EntityType.crSquire,
-	::Const.EntityType.crSquireFencer,
-	::Const.EntityType.crKnight,
-	::Const.EntityType.crHonoraryknight,
-	::Const.EntityType.crMercenary,
-	::Const.EntityType.crSellsword,
-	::Const.EntityType.crHedgeKnight,
-	::Const.EntityType.crHashshashin
+	this.Const.EntityType.LegendFencer,
+	this.Const.EntityType.BarbarianChampion,
+	this.Const.EntityType.BarbarianChosen,	
+	this.Const.EntityType.crImmortal,
+	this.Const.EntityType.crDesperado,
+	this.Const.EntityType.crBanditleaderwolf,
+	this.Const.EntityType.crSquire,
+	this.Const.EntityType.crSquireFencer,	
+	this.Const.EntityType.crKnight,
+	this.Const.EntityType.crHonoraryknight,	
+	this.Const.EntityType.crMercenary,	
+	this.Const.EntityType.crSellsword,
+	this.Const.EntityType.crHedgeKnight,
+	this.Const.EntityType.crHashshashin	
 ]);
 
 ::Const.LegendMod.FavoriteArcher.extend([
-	::Const.EntityType.crSellsword_Ranger,
-	::Const.EntityType.crConscript,
-	::Const.EntityType.NobleSureshot,
-	::Const.EntityType.MercenaryRanged
+	this.Const.EntityType.crSellsword_Ranger,
+	this.Const.EntityType.crConscript,
+	this.Const.EntityType.MercenaryRanged,
+	this.Const.EntityType.NobleSureshot
 ]);
 
 ::Const.LegendMod.FavoriteBarbarian.extend([
-	::Const.EntityType.crBarbarianKing,	
-	::Const.EntityType.crBarbblacksmith,
-	::Const.EntityType.crBarbarianZerker_Low,
-	::Const.EntityType.crBarbarianZerker_High,
-	::Const.EntityType.crBarbhunter,
-	::Const.EntityType.crImmortal
+	this.Const.EntityType.crBarbarianKing,	
+	this.Const.EntityType.crBarbblacksmith,
+	this.Const.EntityType.crBarbarianZerker_Low,
+	this.Const.EntityType.crBarbarianZerker_High,
+	this.Const.EntityType.crBarbhunter,
+	this.Const.EntityType.crImmortal	
 ]);
 
 ::Const.LegendMod.FavoriteBandit.extend([
-	::Const.EntityType.crDesperado,
-	::Const.EntityType.crDesperado_Low,
-	::Const.EntityType.crDesperado_Weak,
-	::Const.EntityType.crOutlander,
-	::Const.EntityType.crBanditleaderwolf
+	this.Const.EntityType.crDesperado,
+	this.Const.EntityType.crDesperado_Low,
+	this.Const.EntityType.crDesperado_Weak,
+	this.Const.EntityType.crOutlander,
+	this.Const.EntityType.crBanditleaderwolf	
 ]);
 
 ::Const.LegendMod.FavoriteCaravan.extend([
-	::Const.EntityType.Slave,
-	::Const.EntityType.Engineer,
-	::Const.EntityType.PeasantSouthern,
-	::Const.EntityType.crSquireLow,
-	::Const.EntityType.crPeasantgravedigger,
-	::Const.EntityType.crPeasantherbalist,
-	::Const.EntityType.crPeasantjuggler,
-	::Const.EntityType.crPeasantkiller,
-	::Const.EntityType.crPeasantgravedigger,
-	::Const.EntityType.crPeasantbutcher,
-	::Const.EntityType.crPeasantblacksmith,
-	::Const.EntityType.crPeasantminstrel,
-	::Const.EntityType.crRetiredsoldier,
-	::Const.EntityType.crRetiredsoldierpol
+	this.Const.EntityType.Slave,
+	this.Const.EntityType.Engineer,
+	this.Const.EntityType.PeasantSouthern,
+	this.Const.EntityType.crSquireLow,
+	this.Const.EntityType.crPeasantgravedigger,
+	this.Const.EntityType.crPeasantherbalist,
+	this.Const.EntityType.crPeasantjuggler,
+	this.Const.EntityType.crPeasantkiller,
+	this.Const.EntityType.crPeasantgravedigger,
+	this.Const.EntityType.crPeasantbutcher,
+	this.Const.EntityType.crPeasantblacksmith,
+	this.Const.EntityType.crPeasantminstrel,	
+	this.Const.EntityType.crRetiredsoldier,	
+	this.Const.EntityType.crRetiredsoldierpol,		
 ]);
 
 ::Const.LegendMod.FavoriteNoble.extend([
-	::Const.EntityType.crSquire,
-	::Const.EntityType.crSquireFencer,
-	::Const.EntityType.crKnight,
-	::Const.EntityType.crHonoraryknight,
-	::Const.EntityType.crInfantry
+	this.Const.EntityType.crSquire,
+	this.Const.EntityType.crSquireFencer,	
+	this.Const.EntityType.crKnight,
+	this.Const.EntityType.crHonoraryknight,	
+	this.Const.EntityType.crInfantry	
 ]);
 
 ::Const.LegendMod.FavoriteMercenary.extend([
-	::Const.EntityType.Swordmaster,
-	::Const.EntityType.HedgeKnight,
-	::Const.EntityType.MasterArcher,
-	::Const.EntityType.FreeCompanyArcher,
-	::Const.EntityType.FreeCompanyCrossbow,
-	::Const.EntityType.FreeCompanyLongbow,
-	::Const.EntityType.FreeCompanyBillman,
-	::Const.EntityType.FreeCompanyPikeman,
-	::Const.EntityType.FreeCompanyInfantry,
-	::Const.EntityType.FreeCompanyLeader,
-	::Const.EntityType.FreeCompanyLeaderLow,
-	::Const.EntityType.crSellsword_Ranger,
-	::Const.EntityType.crMercenary,
-	::Const.EntityType.crSellsword,
-	::Const.EntityType.crHedgeKnight,
-	::Const.EntityType.crSellsword_Polearm,
-	::Const.EntityType.crSellsword_Tank,
-	::Const.EntityType.crSellsword_Sergeant,
-	::Const.EntityType.crSellsword_Banner,
-	::Const.EntityType.crSellsword_Ranger,
-	::Const.EntityType.crSquire_normal
+	this.Const.EntityType.Swordmaster,
+	this.Const.EntityType.HedgeKnight,
+	this.Const.EntityType.MasterArcher,
+	this.Const.EntityType.FreeCompanyArcher,
+	this.Const.EntityType.FreeCompanyCrossbow,
+	this.Const.EntityType.FreeCompanyLongbow,
+	this.Const.EntityType.FreeCompanyBillman,
+	this.Const.EntityType.FreeCompanyPikeman,
+	this.Const.EntityType.FreeCompanyInfantry,
+	this.Const.EntityType.FreeCompanyLeader,
+	this.Const.EntityType.FreeCompanyLeaderLow,
+	this.Const.EntityType.crSellsword_Ranger,
+	this.Const.EntityType.crMercenary,	
+	this.Const.EntityType.crSellsword,
+	this.Const.EntityType.crHedgeKnight,
+	this.Const.EntityType.crSellsword_Polearm,
+	this.Const.EntityType.crSellsword_Tank,
+	this.Const.EntityType.crSellsword_Sergeant,
+	this.Const.EntityType.crSellsword_Banner,
+	this.Const.EntityType.crSellsword_Ranger,
+	this.Const.EntityType.crSquire_normal	
 ]);
 
 ::Const.LegendMod.FavoriteSoutherners.extend([
-	::Const.EntityType.SatoManhunterVeteran,
-	::Const.EntityType.Gladiator,
-	::Const.EntityType.PeasantSouthern,
-	::Const.EntityType.crConscript,
-	::Const.EntityType.crGuardsman,
-	::Const.EntityType.crGuardsman_pol,
-	::Const.EntityType.Solemner	
+	this.Const.EntityType.SatoManhunterVeteran,
+	this.Const.EntityType.Gladiator,
+	this.Const.EntityType.PeasantSouthern,
+	this.Const.EntityType.crConscript,
+	this.Const.EntityType.crGuardsman,
+	this.Const.EntityType.crGuardsman_pol,
+	this.Const.EntityType.Solemner	
 ]);
 
 ::Const.LegendMod.FavoriteNomad.extend([
-	::Const.EntityType.Gladiator,
-	::Const.EntityType.DesertStalker,
-	::Const.EntityType.Executioner,
-	::Const.EntityType.DesertDevil,
-	::Const.EntityType.PeasantSouthern,
-	::Const.EntityType.crHashshashin,
-	::Const.EntityType.crHashshashin_Low,
-	::Const.EntityType.crOutlander
+	this.Const.EntityType.Gladiator,
+	this.Const.EntityType.DesertStalker,
+	this.Const.EntityType.Executioner,
+	this.Const.EntityType.DesertDevil,
+	this.Const.EntityType.PeasantSouthern,
+	this.Const.EntityType.crHashshashin,
+	this.Const.EntityType.crHashshashin_Low,	
+	this.Const.EntityType.crOutlander	
 ]);
 
-::Const.LegendMod.FavoriteSkeleton.push(::Const.EntityType.crSkeleton);
+::Const.LegendMod.FavoriteSkeleton.push(this.Const.EntityType.crSkeleton);
 
-::Const.LegendMod.GetFavoriteEnemyValue = function(_type)
+::Const.LegendMod.GetFavoriteEnemyValue = function ( _type )
 {
 	switch(_type)
 	{
-		// Grouped by return values, lower number means higher %
-		case "::Const.EntityType.LegendStollwurm":
-		case "::Const.EntityType.LegendDemonAlp":
-		case "::Const.EntityType.LegendGreenwoodSchrat":
-		case "::Const.EntityType.SkeletonLich":
-			return 0.3;
-
-		case "::Const.EntityType.LegendRockUnhold":
-		case "::Const.EntityType.LegendHexeLeader":
-		case "::Const.EntityType.LegendWhiteDirewolf":
-		case "::Const.EntityType.SkeletonLichMirrorImage":
-			return 0.5;
-
-		case "::Const.EntityType.Lindwurm":
-		case "::Const.EntityType.SandGolem":
-		case "::Const.EntityType.Schrat":
-		case "::Const.EntityType.LegendRedbackSpider":
-		case "::Const.EntityType.Vampire":
-		case "::Const.EntityType.LegendVampireLord":
-		case "::Const.EntityType.ZombieBoss":
-		case "::Const.EntityType.Mercenary":
-		case "::Const.EntityType.MercenaryRanged":
-		case "::Const.EntityType.BarbarianMadman":
+		case "this.Const.EntityType.Lindwurm":
 			return 1;
 
-		case "::Const.EntityType.Unhold":
-		case "::Const.EntityType.UnholdBog":
-		case "::Const.EntityType.UnholdFrost":
-		case "::Const.EntityType.Hexe":
-		case "::Const.EntityType.OrcElite":
-		case "::Const.EntityType.OrcWarlord":
-		case "::Const.EntityType.OrcBehemoth":
-		case "::Const.EntityType.MasterArcher":
-		case "::Const.EntityType.NobleSureshot":
-		case "::Const.EntityType.Swordmaster":
-		case "::Const.EntityType.Knight":
-		case "::Const.EntityType.LegendSkinGhoul":
-		case "::Const.EntityType.ZombieTreasureHunter":
-		case "::Const.EntityType.crFallenbetrayer":
-		case "::Const.EntityType.crZombieswordmaster":
-		case "::Const.EntityType.crSkeleton":
-		case "::Const.EntityType.crImmortal":
-		case "::Const.EntityType.crDesperado":
-		case "::Const.EntityType.crBanditleaderwolf":
-		case "::Const.EntityType.crKnight":
-		case "::Const.EntityType.crHonoraryknight":
-		case "::Const.EntityType.crHedgeKnight":
-		case "::Const.EntityType.crHashshashin":
-		case "::Const.EntityType.crOrcPackleader":
-		case "::Const.EntityType.DesertStalker":
-		case "::Const.EntityType.Executioner":
-		case "::Const.EntityType.DesertDevil":
-		case "::Const.EntityType.BarbarianChosen":
-		case "::Const.EntityType.crBarbarianKing":
-		case "::Const.EntityType.BarbarianUnhold":
-		case "::Const.EntityType.BarbarianUnholdFrost":
-			return 2;
-
-		case "::Const.EntityType.Alp":
-		case "::Const.EntityType.SkeletonHeavy":
-		case "::Const.EntityType.LegendBanshee":
-		case "::Const.EntityType.Necromancer":
-		case "::Const.EntityType.GoblinShaman":
-		case "::Const.EntityType.GoblinLeader":
-		case "::Const.EntityType.OrcWarrior":
-		case "::Const.EntityType.Sergeant":
-		case "::Const.EntityType.BarbarianChampion":
-		case "::Const.EntityType.Officer":
-		case "::Const.EntityType.Assassin":
-		case "::Const.EntityType.Gladiator":
-		case "::Const.EntityType.NomadLeader":
-			return 3;
-
-		case "::Const.EntityType.Serpent":
-		case "::Const.EntityType.Hyena":
-		case "::Const.EntityType.Ghost":
-		case "::Const.EntityType.OrcBerserker":
-		case "::Const.EntityType.Greatsword":
-		case "::Const.EntityType.StandardBearer":
-		case "::Const.EntityType.Solemner":
-		case "::Const.EntityType.crGoblinwarrior":
-		case "::Const.EntityType.crSquire":
-		case "::Const.EntityType.crMercenary":
-		case "::Const.EntityType.crInfantry":
-		case "::Const.EntityType.crGuardsman":
-		case "::Const.EntityType.crGuardsman_pol":
-		case "::Const.EntityType.SatoManhunterVeteranRanged":
+		case "this.Const.EntityType.Serpent":
 			return 4;
 
-		case "::Const.EntityType.LegendGreenwoodSchratSmall":
-		case "::Const.EntityType.SkeletonMedium":
-		case "::Const.EntityType.ZombieKnight":
-		case "::Const.EntityType.GoblinWolfrider":
-		case "::Const.EntityType.GoblinAmbusher":
-		case "::Const.EntityType.BarbarianBeastmaster":
-		case "::Const.EntityType.MilitiaCaptain":
-		case "::Const.EntityType.BountyHunter":
-		case "::Const.EntityType.Footman":
-		case "::Const.EntityType.Billman":
-		case "::Const.EntityType.Arbalester":
-		case "::Const.EntityType.SkeletonPhylactery":
-		case "::Const.EntityType.Conscript":
-		case "::Const.EntityType.Gunner":
-		case "::Const.EntityType.NomadOutlaw":
-		case "::Const.EntityType.crBarbblacksmith":
-		case "::Const.EntityType.crBarbarianZerker_High":
-		case "::Const.EntityType.crSquireLow":
-		case "::Const.EntityType.crSquire_normal":
-		case "::Const.EntityType.crOrcGrunt":
+		case "this.Const.EntityType.LegendStollwurm":
+			return 0.3;
+
+		case "this.Const.EntityType.Alp":
+			return 3;
+
+		case "this.Const.EntityType.LegendDemonAlp":
+			return 0.3;
+
+		case "this.Const.EntityType.LegendGreenwoodSchrat":
+			return 0.3;
+
+		case "this.Const.EntityType.LegendGreenwoodSchratSmall":
 			return 5;
 
-		case "::Const.EntityType.Ghoul":
-		case "::Const.EntityType.Direwolf":
-		case "::Const.EntityType.GoblinFighter":
-		case "::Const.EntityType.OrcYoung":
-		case "::Const.EntityType.SatoManhunterRanged":
-			return 6;
+		case "this.Const.EntityType.SandGolem":
+			return 1;
 
-		case "::Const.EntityType.SkeletonLight":
-		case "::Const.EntityType.BanditMarksman":
-		case "::Const.EntityType.CaravanGaurd":
-		case "::Const.EntityType.NomadArcher":
-		case "::Const.EntityType.MilitiaVeteran":
-			return 7;
+		case "this.Const.EntityType.Schrat":
+			return 1;
 
-		case "::Const.EntityType.Spider":
-		case "::Const.EntityType.SpiderBodyguard":
-		case "::Const.EntityType.BarbarianThrall":
-		case "::Const.EntityType.MilitiaRanged":
+		case "this.Const.EntityType.LegendRockUnhold":
+			return 0.5;
+
+		case "this.Const.EntityType.Unhold":
+			return 2;
+
+		case "this.Const.EntityType.UnholdBog":
+			return 2;
+
+		case "this.Const.EntityType.UnholdFrost":
+			return 2;
+
+		case "this.Const.EntityType.Hexe":
+			return 2;
+
+		case "this.Const.EntityType.LegendHexeLeader":
+			return 0.5;
+
+		case "this.Const.EntityType.Spider":
 			return 8;
 
-		case "::Const.EntityType.BanditThug":
-		case "::Const.EntityType.NomadCutthroat":
-		case "::Const.EntityType.Engineer":
-			return 15;
+		case "this.Const.EntityType.SpiderBodyguard":
+			return 8;
 
-		case "::Const.EntityType.Zombie":
+		case "this.Const.EntityType.LegendRedbackSpider":
+			return 1;
+
+		case "this.Const.EntityType.Ghoul":
+			return 6;
+
+		case "this.Const.EntityType.LegendSkinGhoul":
+			return 2;
+
+		case "this.Const.EntityType.Hyena":
+			return 4;
+
+		case "this.Const.EntityType.Direwolf":
+			return 6;
+
+		case "this.Const.EntityType.LegendWhiteDirewolf":
+			return 0.5;
+
+		case "this.Const.EntityType.Vampire":
+			return 2;
+
+		case "this.Const.EntityType.LegendVampireLord":
+			return 1;
+
+		case "this.Const.EntityType.SkeletonPriest":
+			return 2;
+
+		case "this.Const.EntityType.SkeletonHeavy":
+			return 3;
+
+		case "this.Const.EntityType.SkeletonMedium":
+			return 5;
+
+		case "this.Const.EntityType.SkeletonLight":
+			return 7;
+
+		case "this.Const.EntityType.Ghost":
+			return 4;
+
+		case "this.Const.EntityType.LegendBanshee":
+			return 3;
+
+		case "this.Const.EntityType.ZombieBoss":
+			return 1;
+
+		case "this.Const.EntityType.ZombieBetrayer":
+			return 4;
+
+		case "this.Const.EntityType.ZombieKnight":
+			return 5;
+
+		case "this.Const.EntityType.ZombieYeoman":
+			return 10;
+
+		case "this.Const.EntityType.Zombie":
 			return 20;
 
-		case "::Const.EntityType.Peasant":
-		case "::Const.EntityType.PeasantSouthern":
-		case "::Const.EntityType.Slave":
-		case "::Const.EntityType.BanditRabble":
-		case "::Const.EntityType.BanditRabblePoacher":
-		case "::Const.EntityType.FlyingSkull":
+		case "this.Const.EntityType.Necromancer":
+			return 3;
+
+		case "this.Const.EntityType.GoblinWolfrider":
+			return 5;
+
+		case "this.Const.EntityType.GoblinShaman":
+			return 3;
+
+		case "this.Const.EntityType.GoblinLeader":
+			return 3;
+
+		case "this.Const.EntityType.GoblinFighter":
+			return 6;
+
+		case "this.Const.EntityType.GoblinAmbusher":
+			return 5;
+
+		case "this.Const.EntityType.OrcYoung":
+			return 6;
+
+		case "this.Const.EntityType.OrcBerserker":
+			return 4;
+
+		case "this.Const.EntityType.OrcElite":
+			return 2;
+
+		case "this.Const.EntityType.OrcWarlord":
+			return 2;
+
+		case "this.Const.EntityType.OrcBehemoth":
+			return 2;
+
+		case "this.Const.EntityType.OrcWarrior":
+			return 3;
+
+		case "this.Const.EntityType.Militia":
+			return 10;
+
+		case "this.Const.EntityType.MilitiaRanged":
+			return 8;
+
+		case "this.Const.EntityType.MilitiaCaptain":
+			return 5;
+
+		case "this.Const.EntityType.MilitiaVeteran":
+			return 7;
+
+		case "this.Const.EntityType.BountyHunter":
+			return 5;
+
+		case "this.Const.EntityType.Peasant":
+			return 25;
+
+		case "this.Const.EntityType.CaravanHand":
+			return 10;
+
+		case "this.Const.EntityType.CaravanGaurd":
+			return 7;
+
+		case "this.Const.EntityType.Wardog":
+			return 12;
+
+		case "this.Const.EntityType.Mercenary":
+		case "this.Const.EntityType.MercenaryRanged":
+			return 4;
+
+		case "this.Const.EntityType.HedgeKnight":
+			return 2;
+
+		case "this.Const.EntityType.MasterArcher":
+			return 2;
+
+		case "this.Const.EntityType.Footman":
+			return 5;
+
+		case "this.Const.EntityType.Greatsword":
+			return 4;
+
+		case "this.Const.EntityType.Swordmaster":
+			return 2;
+
+		case "this.Const.EntityType.Billman":
+			return 5;
+
+		case "this.Const.EntityType.Arbalester":
+			return 5;
+
+		case "this.Const.EntityType.StandardBearer":
+			return 4;
+
+		case "this.Const.EntityType.Sergeant":
+			return 3;
+
+		case "this.Const.EntityType.Knight":
+			return 2;
+
+		case "this.Const.EntityType.BanditRabble":
+		case "this.Const.EntityType.BanditRabblePoacher":
 			return 30;
+
+		case "this.Const.EntityType.BanditThug":
+			return 15;
+
+		case "this.Const.EntityType.BanditPoacher":
+			return 12;
+
+		case "this.Const.EntityType.BanditMarksman":
+			return 7;
+
+		case "this.Const.EntityType.BanditRaider":
+			return 5;
+
+		case "this.Const.EntityType.BanditLeader":
+			return 3;
+
+		case "this.Const.EntityType.Warhound":
+			return 10;
+
+		case "this.Const.EntityType.BarbarianThrall":
+			return 8;
+
+		case "this.Const.EntityType.BarbarianMarauder":
+			return 4;
+
+		case "this.Const.EntityType.BarbarianChampion":
+			return 3;
+
+		case "this.Const.EntityType.BarbarianChosen":
+		case "this.Const.EntityType.crBarbarianKing":	
+			return 2;
+
+		case "this.Const.EntityType.BarbarianDrummer":
+			return 3;
+
+		case "this.Const.EntityType.BarbarianUnhold":
+			return 2;
+
+		case "this.Const.EntityType.BarbarianUnholdFrost":
+			return 2;
+
+		case "this.Const.EntityType.BarbarianBeastmaster":
+			return 5;
+
+		case "this.Const.EntityType.BarbarianMadman":
+			return 1;
+
+		case "this.Const.EntityType.Conscript":
+			return 5;
+
+		case "this.Const.EntityType.Gunner":
+			return 5;
+
+		case "this.Const.EntityType.Officer":
+			return 3;
+
+		case "this.Const.EntityType.Engineer":
+			return 15;
+
+		case "this.Const.EntityType.Assassin":
+			return 3;
+
+		case "this.Const.EntityType.Slave":
+			return 30;
+
+		case "this.Const.EntityType.Gladiator":
+			return 3;
+
+		case "this.Const.EntityType.NomadCutthroat":
+			return 15;
+
+		case "this.Const.EntityType.NomadOutlaw":
+			return 5;
+
+		case "this.Const.EntityType.NomadSlinger":
+			return 12;
+
+		case "this.Const.EntityType.NomadArcher":
+			return 7;
+
+		case "this.Const.EntityType.NomadLeader":
+			return 3;
+
+		case "this.Const.EntityType.DesertStalker":
+			return 2;
+
+		case "this.Const.EntityType.Executioner":
+			return 2;
+
+		case "this.Const.EntityType.DesertDevil":
+			return 2;
+
+		case "this.Const.EntityType.PeasantSouthern":
+			return 25;
+
+		case "this.Const.EntityType.SatoManhunter":
+			return 5;
+
+		case "this.Const.EntityType.SatoManhunterVeteran":
+			return 3;
+
+		case "this.Const.EntityType.SatoManhunterRanged":
+			return 6;
+
+		case "this.Const.EntityType.SatoManhunterVeteranRanged":
+			return 4;
+
+		case "this.Const.EntityType.SkeletonLich":
+			return 0.3;
+
+		case "this.Const.EntityType.SkeletonLichMirrorImage":
+			return 0.5;
+
+		case "this.Const.EntityType.SkeletonPhylactery":
+			return 5;
+
+		case "this.Const.EntityType.ZombieTreasureHunter":
+			return 2;
+
+		case "this.Const.EntityType.FlyingSkull":
+			return 30;
+			
+		case "this.Const.EntityType.crFallenbetrayer":
+		case "this.Const.EntityType.crZombieswordmaster":
+		case "this.Const.EntityType.crSkeleton":
+		case "this.Const.EntityType.crImmortal":
+		case "this.Const.EntityType.crDesperado":
+		case "this.Const.EntityType.crBanditleaderwolf":
+		case "this.Const.EntityType.crKnight":
+		case "this.Const.EntityType.crHonoraryknight":	
+		case "this.Const.EntityType.crHedgeKnight":
+		case "this.Const.EntityType.crHashshashin":
+		case "this.Const.EntityType.crOrcPackleader":		
+			return 2;
+
+		case "this.Const.EntityType.crOrcPillager":	
+		case "this.Const.EntityType.crSquireFencer":
+		case "this.Const.EntityType.crSellsword":	
+		case "this.Const.EntityType.crSellsword_Ranger":
+		case "this.Const.EntityType.crSellsword_Polearm":
+		case "this.Const.EntityType.crSellswordveteran_Tank":	
+		case "this.Const.EntityType.crSellsword_Polearm":
+		case "this.Const.EntityType.crSellsword_Sergeant":		
+		case "this.Const.EntityType.crSellsword_Banner":	
+		case "this.Const.EntityType.crOrcVanguard":	
+		case "this.Const.EntityType.MercenaryRanged":
+		case "this.Const.EntityType.NobleSureshot":
+			return 3;
+
+		case "this.Const.EntityType.crGoblinwarrior":
+		case "this.Const.EntityType.crSquire":
+		case "this.Const.EntityType.crMercenary":	
+		case "this.Const.EntityType.crInfantry":
+		case "this.Const.EntityType.crGuardsman":
+		case "this.Const.EntityType.crGuardsman_pol":
+		case "this.Const.EntityType.Solemner":	
+			return 4;
+
+		case "this.Const.EntityType.crBarbblacksmith":
+		case "this.Const.EntityType.crBarbarianZerker_High":
+		case "this.Const.EntityType.crSquireLow":
+		case "this.Const.EntityType.crSquire_normal":
+		case "this.Const.EntityType.crOrcGrunt":
+			return 5;
 	}
+
+	return 10;
 };
