@@ -1,5 +1,7 @@
 this.perk_crrangedskill <- this.inherit("scripts/skills/skill", {
-	m = {},
+	m = {
+		KillCount = 0
+	},
 	function create()
 	{
 		this.m.ID = "perk.crrangedskill";
@@ -16,9 +18,10 @@ this.perk_crrangedskill <- this.inherit("scripts/skills/skill", {
 	function onUpdate( _properties )
 	{
 		_properties.HitChance[::Const.BodyPart.Head] += 5;
+		_properties.HitChance[::Const.BodyPart.Head] += this.m.KillCount;
 	}
 
-	function onTargetKilled(_targetEntity, _skill) 
+	function onTargetKilled( _targetEntity, _skill ) 
 	{
 		local actor = this.getContainer().getActor().get();
 
@@ -30,11 +33,23 @@ this.perk_crrangedskill <- this.inherit("scripts/skills/skill", {
 			{
 				if (entityType == type) 
 				{
-					actor.m.BaseProperties.HitChance[::Const.BodyPart.Head] += 1;
+					this.m.KillCount += 1;
 					break;
 				}
 			}
 		}
+	}
+
+	function onSerialize( _out )
+	{
+		this.skill.onSerialize(_out);
+		_out.writeU32(this.m.KillCount);
+	}
+
+	function onDeserialize( _in )
+	{
+		this.skill.onDeserialize(_in);
+		this.m.KillCount = _in.readU32();
 	}
 
 });

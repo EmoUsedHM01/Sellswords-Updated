@@ -10,6 +10,9 @@ Updated strings - Rygar
 ...\scripts\skills\effects\flaming_arrows_effect.nut
 Fixed Fire Arrows crashing the game on kill
 
+C:\Users\joema_mpevn9w\Documents\GitHub\Sellswords-Updated\scripts\skills\perks\perk_crrangedskill.nut
+Fixed the kill count not being serialised
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.0 changes
