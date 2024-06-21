@@ -20,6 +20,7 @@ this.ssu_ice_axe_effect <- this.inherit("scripts/skills/skill", {
 
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
+		if (_skill == this && _targetEntity.isAlive() && !_targetEntity.isDying() && !_targetEntity.getCurrentProperties().IsImmuneToStun)
 		local actor = this.getContainer().getActor().get();
 
 		if (!actor.isAlive() || actor.isDying())
@@ -30,7 +31,7 @@ this.ssu_ice_axe_effect <- this.inherit("scripts/skills/skill", {
 
 		_targetEntity.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
 
-		if (_targetEntity.hasSkill("racial.trickster_god"))
+		if (_targetEntity.getType() == this.Const.EntityType.TricksterGod)
 			return;
 
 		if (!_targetEntity.isHiddenToPlayer())
