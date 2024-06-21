@@ -15,4 +15,5 @@
 		_targetEntity.getSkills().getSkillByID("effects.legend_baffled");
 		_targetEntity.getSkills().getSkillByID("effects.cr_smackdown");
 	}
+
 });

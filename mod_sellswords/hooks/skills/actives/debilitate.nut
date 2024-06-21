@@ -4,6 +4,7 @@
 	{
 		__original();
 		this.m.ActionPointCost = 2;
-		this.m.FatigueCost = 20;
+		this.m.FatigueCost = 15;
 	}
+
 });
