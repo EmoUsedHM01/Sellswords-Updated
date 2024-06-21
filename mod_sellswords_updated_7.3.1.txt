@@ -28,6 +28,12 @@ properly hook for ptr - Breaky
 ...\scripts\skills\effects\crReachadvantage_effect.nut
 Fixed crRA effect not cleansing stored values
 
+...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
+Added a new hook to debil to allow for AoE attacks
+
+...\mod_sellswords\hooks\skills\actives\debilitate.nut
+Reduced fat cost down to 15
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.0 changes
