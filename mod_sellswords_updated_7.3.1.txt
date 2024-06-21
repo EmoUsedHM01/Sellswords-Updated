@@ -17,13 +17,16 @@ Fixed the kill count not being serialised
 Cleaned up format and added some missing entities
 
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
-Temprorarily remove the new perk map cause ptr is fucky wucky
+Temprorarily remove the new perk map cause ptr is fucky wucky - Breaky
 
 ...\mod_sellswords\hooks\skills\perks\perk_duelist.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_lithe.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
-properly hook for ptr
+properly hook for ptr - Breaky
+
+...\scripts\skills\effects\crReachadvantage_effect.nut
+Fixed crRA effect not cleansing stored values
 
 ----------------------------------------------------------------------------------------------------------------------------
 

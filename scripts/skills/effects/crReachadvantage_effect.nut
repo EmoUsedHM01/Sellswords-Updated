@@ -37,6 +37,7 @@ this.crReachadvantage_effect <- this.inherit("scripts/skills/skill", {
 
 	function onTurnStart()
 	{
+		this.m.Opponents.clear();
 		this.removeSelf();
 	}
 
