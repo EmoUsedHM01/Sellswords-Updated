@@ -220,7 +220,7 @@
 			{
 				switch (true)
 				{
-					// attach new perks based on perk tree herecontinue;
+					// attach new perks based on perk tree here
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Nimble:
 						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.laspecialize);
 						continue;
@@ -263,7 +263,7 @@
 						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crAnchor);
 						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crBattlerhaposdy);
 						continue;
-					// replace perks herecontinue;
+					// replace perks here
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.HoldOut:
 						this.m.CustomPerkTree[i][j] = this.Const.Perks.PerkDefs.crresilient;
 						continue;
