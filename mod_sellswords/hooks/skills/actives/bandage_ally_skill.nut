@@ -74,7 +74,7 @@
 		if (this.m.Container.hasSkill("perk.legend_mastery_bandage"))
 			target.getSkills().add(this.new("scripts/skills/effects/cr_bandage_effect"));
 		
-		return onUse( _user, _targetTile );
+		return __original( _user, _targetTile );
 	}
 
 });
