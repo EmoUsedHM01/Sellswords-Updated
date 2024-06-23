@@ -2,10 +2,16 @@
 
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 fixed regex comments
-...\mod_sellswords\scripts\skills\effects\ssu_ice_axe_effect.nut
-attempt to fix ijirok ice effect immunity
+
 ...\mod_sellswords\hooks\skills\actives\bandage_ally_skill.nut
 fix bad hook
+
+...\mod_sellswords\hooks\skills\actives\quick_shot.nut
+...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
+...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
+...\mod_sellswords\scripts\skills\effects\ssu_ice_axe_effect.nut
+attempt to fix ijirok ice effect immunity
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

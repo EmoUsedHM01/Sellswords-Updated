@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/shoot_bolt", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/shoot_stake", function ( q ) {
 
 	q.onUse = @(__original) function( _user, _targetTile )
 	{
@@ -57,7 +57,7 @@
 		return true;
 	}
 
-	q.onTargetHit <- function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
+	q.onTargetHit = @( __original ) function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		local ammo = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 		local actor = this.getContainer().getActor();
@@ -119,6 +119,8 @@
 			else
 				chilled.resetTime();
 		}
+
+		__original(_skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor);
 	}
 
 });

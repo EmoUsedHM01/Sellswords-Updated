@@ -103,7 +103,7 @@
 
 		if (ammo.m.Name == "Quiver of Freezing Arrows")
 		{
-			if (_targetEntity.hasSkill("racial.trickster_god"))
+			if (_targetEntity.getType() == this.Const.EntityType.TricksterGod)
 				return;
 
 			if (!_targetEntity.isHiddenToPlayer())
