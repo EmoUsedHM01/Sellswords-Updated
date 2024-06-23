@@ -20,8 +20,7 @@ this.ssu_ice_axe_effect <- this.inherit("scripts/skills/skill", {
 
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
-		if (_skill == this && _targetEntity.isAlive() && !_targetEntity.isDying() && !_targetEntity.getCurrentProperties().IsImmuneToStun)
-		local actor = this.getContainer().getActor().get();
+		local actor = this.getContainer().getActor();
 
 		if (!actor.isAlive() || actor.isDying())
 			return;
