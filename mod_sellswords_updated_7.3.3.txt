@@ -1,5 +1,21 @@
 7.3.3 changes
 
+...\mod_sellswords\hooks\items\weapons\barbarians\heavy_javelin.nut
+...\mod_sellswords\hooks\items\weapons\barbarians\heavy_throwing_axe.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_heavy_bow.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_spiked_balls.nut
+...\mod_sellswords\hooks\items\weapons\named\named_javelin.nut
+...\mod_sellswords\hooks\items\weapons\named\named_throwing_axe.nut
+...\mod_sellswords\hooks\items\weapons\throwing_axe.nut
+...\mod_sellswords\hooks\items\weapons\throwing_spear.nut
+clean up msu 1.30 incompatibility
+
+...\mod_sellswords\hooks\skills\actives\aimed_shot.nut
+...\mod_sellswords\hooks\skills\actives\quick_shot.nut
+...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
+...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.2 changes

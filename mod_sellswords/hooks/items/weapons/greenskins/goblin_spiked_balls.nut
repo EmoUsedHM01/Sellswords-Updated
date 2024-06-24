@@ -10,9 +10,6 @@
 		this.m.StaminaModifier = -4;
 		this.m.RegularDamage = 25;
 		this.m.ArmorDamageMult = 0.9;
-		this.m.DirectDamageAdd = 0.1;	
-
-		this.m.WeaponType = this.m.WeaponType | this.Const.Items.WeaponType.Mace;
-		this.setupWeaponType();
+		this.m.DirectDamageAdd = 0.1;
 	}
 });	

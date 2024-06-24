@@ -68,7 +68,13 @@
 		{
 			if (!_targetEntity.getCurrentProperties().IsImmuneToBleeding)
 			{
-				_targetEntity.getSkills().add(this.new("scripts/skills/effects/bleeding_effect"));
+				local effect = this.new("scripts/skills/effects/bleeding_effect");
+				effect.setDamage(10);
+				if (_user.getFaction() == this.Const.Faction.Player )
+				{
+					effect.setActor(this.getContainer().getActor());
+				}
+				_targetEntity.getSkills().add(this.new(effect));
 
 				if (!_targetEntity.isHiddenToPlayer())
 					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is bleeding");
