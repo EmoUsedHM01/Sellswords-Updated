@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/legend_favoured_enemy_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hookTree("scripts/skills/legend_favoured_enemy_skill", function ( q ) {
 
 	q.onUpdate = @(__original) function( _properties )
 	{
