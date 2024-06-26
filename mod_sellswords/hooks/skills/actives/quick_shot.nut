@@ -57,6 +57,10 @@
 	{
 		local ammo = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 		local actor = this.getContainer().getActor();
+		local weapon = actor.getMainhandItem().isWeaponType(this.Const.Items.WeaponType.Bow)
+
+		if (weapon == null || weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow))
+			return;
 
 		if (!actor.isAlive() || actor.isDying())
 			return;

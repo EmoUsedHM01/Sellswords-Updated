@@ -1,5 +1,17 @@
 7.3.4 changes
+...\mod_sellswords\hooks\skills\actives\quick_shot.nut
+...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
+...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
+check if weapon is still equipped
 
+...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
+check if target is alive first
+
+...\mod_sellswords\hooks\skills\legend_favoured_enemy_skill.nut
+treeHook so it applies to children files
+
+...\mod_sellswords\hooks\ui\screens\tooltip\tooltip_events.nut
+attempt to fix a bug with tournament and arena building
 
 ----------------------------------------------------------------------------------------------------------------------------
 
