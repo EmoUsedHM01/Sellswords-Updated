@@ -13,6 +13,11 @@ treeHook so it applies to children files
 ...\mod_sellswords\hooks\ui\screens\tooltip\tooltip_events.nut
 attempt to fix a bug with tournament and arena building
 
+...\scripts\items\legend_helmets\helm\cr_mountain_helmet.nut
+...\scripts\items\legend_helmets\helm\cr_named_mountain_helmet.nut
+fix mountain helm and named mountain helm variants
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.3 changes
