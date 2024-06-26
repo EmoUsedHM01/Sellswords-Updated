@@ -110,7 +110,7 @@
 			
 			if(_elementId == "world-town-screen.main-dialog-module.Arena")
 			{
-				if(this.World.State.getCurrentTown().hasSituation("situation.arena_tournament") == false)
+				if(this.World.State.getCurrentTown() != null && this.World.State.getCurrentTown().hasSituation("situation.arena_tournament") == false)
 				{
 					local arenaBuilding = this.World.State.getCurrentTown().getBuilding("building.arena");
 					local availableArenaFights = arenaBuilding.getAvailableFights();
