@@ -74,7 +74,7 @@
 			{
 				local effect = this.new("scripts/skills/effects/bleeding_effect");
 				effect.setDamage(10);
-				if (_user.getFaction() == this.Const.Faction.Player )
+				if (actor.getFaction() == this.Const.Faction.Player )
 				{
 					effect.setActor(this.getContainer().getActor());
 				}

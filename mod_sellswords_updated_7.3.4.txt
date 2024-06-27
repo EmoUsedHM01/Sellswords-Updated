@@ -2,7 +2,7 @@
 ...\mod_sellswords\hooks\skills\actives\quick_shot.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
-check if weapon is still equipped
+check if weapon is still equipped and fix set killer from _user to actor
 
 ...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
 check if target is alive first
