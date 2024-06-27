@@ -17,6 +17,9 @@ attempt to fix a bug with tournament and arena building
 ...\scripts\items\legend_helmets\helm\cr_named_mountain_helmet.nut
 fix mountain helm and named mountain helm variants
 
+...\scripts\items\legend_armor\chain\cr_armor_hauberk_sleevless_named.nut
+change names so it doesn't sound like a helmet
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
