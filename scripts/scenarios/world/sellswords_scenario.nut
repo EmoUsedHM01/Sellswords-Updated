@@ -193,40 +193,39 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 	}	
 	
 	function onBuildPerkTree( _background )
-	{
-		local p;
-
-		switch(this.World.Flags.get("CrSellswordsSkill"))
+	{	
+		switch (::Mod_Sellswords.SellswordsPerk)
 		{
-		case 1:
-			p = this.Const.Perks.PerkDefs.BagsAndBelts;
-			break;
-
-		case 2:
-			p = this.Const.Perks.PerkDefs.NineLives
-			break;
+			case "Backstabber":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Backstabber);
+				return;
+			case "Berserker":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Berserk);
+				return;
+			case "Fortified Mind":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.FortifiedMind);
+				return;
+			case "Mind Over Body":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendMindOverBody);
+				return;
+			case "Rotation":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Rotation);
+				return;
+			case "Pathfinder":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Pathfinder);
+				return;
+			case "Student":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
+				return;
+			case "Nine Lives":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.NineLives);
+				return;
+			case "Quick Hands":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.QuickHands);
+				return;
 			
-		case 3:
-			p = this.Const.Perks.PerkDefs.Adrenaline
-			break;
-			
-		case 4:
-			p = this.Const.Perks.PerkDefs.FastAdaption
-			break;
-			
-		case 5:
-			p = this.Const.Perks.PerkDefs.Pathfinder
-			break;
-			
-		case 6:
-			p = this.Const.Perks.PerkDefs.CripplingStrikes
-			break;
-			
-		default:
-			p = this.Const.Perks.PerkDefs.Student
+			this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
 		}
-
-		this.addScenarioPerk(_background, p);	
 	}	
 
 });
