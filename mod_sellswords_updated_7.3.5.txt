@@ -1,3 +1,22 @@
+7.3.5 changes
+...\mod_sellswords\hooks\skills\actives\quick_shot.nut
+...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
+...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
+...\mod_sellswords\hooks\skills\actives\hook_shoot_bolts_and_arrows.nut
+check if weapon is still equipped and fix set killer from _user to actor
+
+...\mod_sellswords\hooks\skills\legend_favoured_enemy_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
+hook fav enemies directly in perks
+
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+add check in char background to try to fix deserialization issue
+
+...\scripts\events\events\sellswords_intro_event.nut
+...\scripts\scenarios\world\sellswords_scenario.nut
+refactor sellswords scenario to choose perk before campaign start
+
+
 7.3.4 changes
 ...\mod_sellswords\hooks\skills\actives\quick_shot.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
