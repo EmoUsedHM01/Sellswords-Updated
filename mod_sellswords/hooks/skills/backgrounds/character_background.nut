@@ -1,4 +1,5 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/character_background", function ( q ) {
+	q.m.characterCreated <- false;
 
 	q.adjustHiringCostBasedOnEquipment = @(__original) function()
 	{
@@ -198,7 +199,9 @@
 				this.m.CustomPerkTree = result.Tree
 				a = result.Attributes;
 			}
-			attachPerks();
+			if (!this.m.characterCreated)
+				attachPerks();
+				this.m.characterCreated = true;
 
 			local pT = this.Const.Perks.BuildCustomPerkTree(this.m.CustomPerkTree);
 			local origin = this.World.Assets.getOrigin();
