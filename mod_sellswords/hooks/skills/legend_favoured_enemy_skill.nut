@@ -6,7 +6,7 @@
 		if (!actor.getFlags().has(this.m.ID))
 		{
 			local stats = this.Const.LegendMod.GetFavoriteEnemyStats(actor, this.m.ID);
-			if (stats.Strength >= 10)
+			if (stats.HitChance >= 15)
 			{
 				actor.getFlags().add(this.m.ID);
 				actor.m.PerkPoints += 1;

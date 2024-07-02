@@ -1,5 +1,4 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/character_background", function ( q ) {
-	q.m.characterCreated <- false;
 
 	q.adjustHiringCostBasedOnEquipment = @(__original) function()
 	{
@@ -149,69 +148,15 @@
 			actor.m.XP = this.Const.LevelXP[this.m.Level - 1];
 		}
 	}
+});
+::Mod_Sellswords.HooksMod.hookTree("scripts/skills/backgrounds/character_background", function ( q ) {
 
-	if (!(::Is_PTR_Exist))
+	q.create = @(__original) function()
 	{
-		q.buildPerkTree = @(__original) function ()
+		__original();
+		if (this.m.CustomPerkTree)
 		{
-			local a = {
-				Hitpoints = [
-					0,
-					0
-				],
-				Bravery = [
-					0,
-					0
-				],
-				Stamina = [
-					0,
-					0
-				],
-				MeleeSkill = [
-					0,
-					0
-				],
-				RangedSkill = [
-					0,
-					0
-				],
-				MeleeDefense = [
-					0,
-					0
-				],
-				RangedDefense = [
-					0,
-					0
-				],
-				Initiative = [
-					0,
-					0
-				]
-			};
-
-			if (this.m.PerkTree != null)
-				return a;
-
-			if (this.m.CustomPerkTree == null)
-			{
-				local mins = this.getPerkTreeDynamicMins();
-				local result  = this.Const.Perks.GetDynamicPerkTree(mins, this.m.PerkTreeDynamic);
-				this.m.CustomPerkTree = result.Tree
-				a = result.Attributes;
-			}
-			if (!this.m.characterCreated)
-				attachPerks();
-				this.m.characterCreated = true;
-
-			local pT = this.Const.Perks.BuildCustomPerkTree(this.m.CustomPerkTree);
-			local origin = this.World.Assets.getOrigin();
-			this.m.PerkTree = pT.Tree;
-			this.m.PerkTreeMap = pT.Map;
-
-			if (origin != null)
-				origin.onBuildPerkTree(this);
-
-			return a;
+			attachPerks();
 		}
 	}
 
@@ -280,5 +225,4 @@
 			}
 		}
 	}
-
 });

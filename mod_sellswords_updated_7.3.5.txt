@@ -1,3 +1,16 @@
+7.3.6 changes
+
+...\mod_sellswords\hooks\skills\actives\hook_shoot_bolts_and_arrows.nut
+don't try to do the effect if no weapon is equipped
+
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+refactor this again to save a corruption error when too much savescumming happens
+
+...\mod_sellswords\hooks\skills\legend_favoured_enemy_skill.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
+revert last changes and change effect to refund when you reach 15 hitchance
+
+
 7.3.5 changes
 ...\mod_sellswords\hooks\skills\actives\quick_shot.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut

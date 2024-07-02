@@ -11,6 +11,9 @@ foreach (shoot_skill in [
 			local actor = this.getContainer().getActor()
 			local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 			local weapon = actor.getMainhandItem()
+			if (weapon == null) return;
+
+
 			if (weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow))
 			{
 				local target = _targetTile.getEntity();
