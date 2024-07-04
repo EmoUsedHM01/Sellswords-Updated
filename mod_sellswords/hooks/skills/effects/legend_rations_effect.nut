@@ -4,7 +4,7 @@
 	{
 		__original();
 
-		this.m.Amount = amount;
+		this.m.Amount = Amount;
 		this.m.TurnsLeft = turnLeft;
 		this.m.Icon = "skills/status_effect_93.png";
 		this.m.IconMini = "status_effect_93_mini";

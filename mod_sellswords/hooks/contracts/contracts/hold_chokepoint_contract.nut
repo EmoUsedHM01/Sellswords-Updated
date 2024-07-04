@@ -259,7 +259,7 @@
 		{			
 			party = cityState.spawnEntity(tiles[0].Tile, "Regiment of " + cityState.getNameOnly(), true, this.Const.World.Spawn.Southern, this.Math.rand(100, 150) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		}
-		else if (dc < 150)
+		else if (dc >= 150)
 		{			
 			party = cityState.spawnEntity(tiles[0].Tile, "Regiment of " + cityState.getNameOnly(), true, this.Const.World.Spawn.Southernenhanced, this.Math.rand(135, 175) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		}		

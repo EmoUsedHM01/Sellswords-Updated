@@ -1,12 +1,17 @@
 7.3.7 changes
 
 
+...\hooks\contracts\contracts\hold_chokepoint_contract.nut
+fix doubled conditions
+
+...\hooks\skills\effects\legend_rations_effect.nut
+fix typo
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.6 changes
 
-
-----------------------------------------------------------------------------------------------------------------------------
 
 ...\mod_sellswords\hooks\skills\actives\hook_shoot_bolts_and_arrows.nut
 don't try to do the effect if no weapon is equipped
