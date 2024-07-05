@@ -85,22 +85,22 @@ this.twinaxes_1 <- this.inherit("scripts/skills/skill", {
 			this.getContainer().setBusy(true);
 			this.Time.scheduleEvent(this.TimeUnit.Virtual, 200, function ( _skill )
 			{
-				if (target.isAlive())
+				if (_targetTile.IsOccupiedByActor && !::MSU.isNull(_targetTile.getEntity()) && _targetTile.getEntity().isAlive())
 				{
-					_skill.attackEntity(_user, target);
+					_skill.attackEntity(_user, _targetTile.getEntity());
 				}
 			}.bindenv(this), this);
 			if (this.getContainer().hasSkill("perk.crHackSPM"))
 			{
 				this.Time.scheduleEvent(this.TimeUnit.Virtual, 400, function ( _skill )
 				{
-					if (target.isAlive())
-					{
-						_skill.attackEntity(_user, target);
-					}
-
 					_skill.m.IsDoingAttackMove = true;
 					_skill.getContainer().setBusy(false);
+
+					if (_targetTile.IsOccupiedByActor && !::MSU.isNull(_targetTile.getEntity()) && _targetTile.getEntity().isAlive())
+					{
+						_skill.attackEntity(_user, _targetTile.getEntity());
+					}
 				}.bindenv(this), this);
 			}			
 			return true;

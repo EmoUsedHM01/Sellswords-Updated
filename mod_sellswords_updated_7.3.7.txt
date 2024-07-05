@@ -7,6 +7,14 @@ fix doubled conditions
 ...\hooks\skills\effects\legend_rations_effect.nut
 fix typo
 
+...\mod_sellswords\hooks\skills\actives\legend_bandage.nut
+fix a bad hook causing a crash
+...\scripts\skills\actives\twinaxes_1.nut
+use necro's fixes from rotu 
+...\scripts\skills\actives\zcr_charge.nut
+add a case where the charge can kill the target
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

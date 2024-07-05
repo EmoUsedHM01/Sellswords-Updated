@@ -108,7 +108,7 @@
 		target.setHitpoints(this.Math.min(target.getHitpointsMax(), target.getHitpoints() + finalHeal));
 
 		
-		return onUse( _user, _targetTile );
+		return __original( _user, _targetTile );
 	}
 
 });
