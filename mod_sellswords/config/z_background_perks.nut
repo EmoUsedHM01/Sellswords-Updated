@@ -55,7 +55,7 @@ setupBackground("scripts/skills/backgrounds/companion_2h_background", ["scripts/
 	
 setupBackground("scripts/skills/backgrounds/companion_ranged_background", ["scripts/skills/perks/perk_bullseye"], [{def = ::Const.Perks.PerkDefs.Bullseye, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/cripple_background", ["scripts/skills/perks/perk_legend_meek"], [{def = ::Const.Perks.PerkDefs.LegendMeek, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/cripple_background", ["scripts/skills/perks/perk_legend_blend_in"], [{def = ::Const.Perks.PerkDefs.LegendBlendIn, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/crusader_background", ["scripts/skills/perks/perk_legend_favoured_enemy_zombie"], [{def = ::Const.Perks.PerkDefs.LegendFavouredEnemyZombie, level = 0, optional = false}]);
 
@@ -105,9 +105,9 @@ setupBackground("scripts/skills/backgrounds/legend_assassin_background", ["scrip
 	
 setupBackground("scripts/skills/backgrounds/legend_assassin_commander_background", ["scripts/skills/perks/perk_legend_opportunist"], [{def = ::Const.Perks.PerkDefs.LegendOpportunist, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_beggar_commander_background", ["scripts/skills/perks/perk_legend_meek"], [{def = ::Const.Perks.PerkDefs.LegendMeek, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_beggar_commander_background", ["scripts/skills/perks/perk_legend_blend_in"], [{def = ::Const.Perks.PerkDefs.LegendBlendIn, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_beggar_commander_op_background", ["scripts/skills/perks/perk_legend_meek"], [{def = ::Const.Perks.PerkDefs.LegendMeek, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_beggar_commander_op_background", ["scripts/skills/perks/perk_legend_blend_in"], [{def = ::Const.Perks.PerkDefs.LegendBlendIn, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_berserker_background", ["scripts/skills/perks/perk_adrenalin"], [{def = ::Const.Perks.PerkDefs.Adrenaline, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crirresistibleimpulse, level = 1, optional = false}]);
 

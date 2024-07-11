@@ -50,7 +50,7 @@ this.crfallenbetrayer_potion_effect <- this.inherit("scripts/skills/skill", {
 
 	function onUpdate( _properties )
 	{
-		_properties.FatigueDealtPerHitMult = 1.5;
+		_properties.FatigueDealtPerHitMult += 0.5;
 	}
 
 	function onDeath( _fatalityType )

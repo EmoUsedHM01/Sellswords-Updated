@@ -16,6 +16,9 @@
 
 	q.onTargetHit = @(__original) function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
+		if (this.m.AttacksLeft <= 0)
+			this.removeSelf();
+
 		if (!this.isGarbage() && _skill.isAttack() && _targetEntity.isAlive() && !_targetEntity.isDying())
 		{
 			local user = this.getContainer().getActor();
@@ -33,7 +36,7 @@
 
 	q.onTurnEnd <- function()
 	{
-		if (this.m.AttacksLeft == 0)
+		if (this.m.AttacksLeft <= 0)
 			this.removeSelf();
 	}
 
