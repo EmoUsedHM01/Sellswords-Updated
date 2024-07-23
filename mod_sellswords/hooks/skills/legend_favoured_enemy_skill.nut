@@ -1,15 +1,15 @@
-::Mod_Sellswords.HooksMod.hookTree("scripts/skills/legend_favoured_enemy_skill", function ( q ) {
-
+::Mod_Sellswords.HooksMod.hook("scripts/skills/legend_favoured_enemy_skill", function ( q ) {
+	
 	q.onUpdate = @(__original) function( _properties )
 	{
-		local actor = this.getContainer().getActor().get();
-		if (!actor.getFlags().has(this.m.ID))
+		local actor = this.getContainer().getActor();
+		if (actor.m.Skills.hasSkill(this.m.ID) && !actor.getFlags().has(this.m.ID + "_refunded"))
 		{
-			local stats = this.Const.LegendMod.GetFavoriteEnemyStats(actor, this.m.ID);
+			local stats = this.getTotalKillStats();
 			if (stats.HitChance >= 15)
 			{
-				actor.getFlags().add(this.m.ID);
 				actor.m.PerkPoints += 1;
+				actor.getFlags().add(this.m.ID + "_refunded");
 			}
 		}
 
@@ -19,7 +19,7 @@
 	q.getTooltip = @(__original) function()
 	{
 		local ret = __original();
-		if (this.getContainer().getActor().getFlags().has(this.m.ID))
+		if (this.getContainer().getActor().getFlags().has(this.m.ID + "_refunded"))
 		{
 			// Perk Point has been refunded
 			ret.push({
