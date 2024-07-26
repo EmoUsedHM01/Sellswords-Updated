@@ -1,3 +1,39 @@
+7.3.8 changes
+...\mod_sellswords\hooks\config\strings.nut
+fix tooltip if ptr not enabled
+...\mod_sellswords\hooks\skills\actives\rupture.nut
+fix the ap cost
+...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
+fix for debil attack, will now apply to all hits on your own turn and 3 attacks of opportunity 
+...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
+fix for graze prepared attack, will now apply to all hits on your own turn and 3 attacks of opportunity
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+floor damage to avoid weird values
+...\mod_sellswords\hooks\skills\effects\legend_bleed_prepared_effect.nut
+fix for bleed prepared attack, will now apply to all hits on your own turn and 3 attacks of opportunity
+...\scripts\skills\effects\bleeding_arrows_effect.nut
+...\scripts\skills\effects\freezing_arrows_effect.nut
+...\scripts\skills\effects\poisoned_arrows_effect.nut
+new effects as part of the arrow refactor
+...\scripts\items\ammo\quiver_of_bleeding_arrows.nut
+...\scripts\items\ammo\quiver_of_bleeding_bolts.nut
+...\scripts\items\ammo\quiver_of_freezing_arrows.nut
+...\scripts\items\ammo\quiver_of_freezing_bolts.nut
+...\scripts\items\ammo\quiver_of_poisoned_arrows.nut
+...\scripts\items\ammo\quiver_of_poisoned_bolts.nut
+add effects on bolts and arrow items
+\scripts\skills\effects\flaming_arrows_effect.nut
+\scripts\skills\effects\phantom_strike_effect.nut
+add checks if weapon is equipped
+...\mod_sellswords\config\arrow_logic.nut
+add a helper for arrow refactor
+...\mod_sellswords\hooks\skills\actives\hook_shoot_bolts_and_arrows.nut
+deleted as part of the arrows refactor
+...\scripts\events\events\crorc_fortress_destroyed_event.nut
+remove condition allowing to get legacy adventurer
+
+----------------------------------------------------------------------------------------------------------------------------
+
 7.3.7 changes
 
 
@@ -16,16 +52,16 @@ use necro's fixes from rotu
 ...\scripts\skills\actives\zcr_charge.nut
 add a case where the charge can kill the target
 
-...\mod_sellswords/config/z_background_perks.nut
+...\mod_sellswords\config\z_background_perks.nut
 replace meek with blendin
 
-...\mod_sellswords/hooks/skills/effects/debilitating_attack_effect.nut
+...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
 attempt to fix debilitating attack applying to every hit from spearwall for an entire turn
 
-...\scripts/!mods_preload/mod_sellswords.nut
+...\scripts\!mods_preload\mod_sellswords.nut
 add a hard incompatibility with background perks mod
 
-...\scripts/skills/effects/crfallenbetrayer_potion_effect.nut
+...\scripts\skills\effects\crfallenbetrayer_potion_effect.nut
 set fatigue multiplier to be additive
 
 

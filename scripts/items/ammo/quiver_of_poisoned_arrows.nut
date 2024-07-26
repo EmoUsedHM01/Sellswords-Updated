@@ -81,5 +81,15 @@ this.quiver_of_poisoned_arrows <- this.inherit("scripts/items/ammo/ammo", {
 		return result;
 	}
 
-});
+	function onEquip()
+	{
+		this.ammo.onEquip();
+		this.getContainer().getActor().getSkills().add(this.new("scripts/skills/effects/poisoned_arrows_effect"));
+	}
 
+	function onUnequip()
+	{
+		this.ammo.onUnequip();
+		this.getContainer().getActor().getSkills().removeByID("effects.poisoned_arrows_effect");
+	}
+});

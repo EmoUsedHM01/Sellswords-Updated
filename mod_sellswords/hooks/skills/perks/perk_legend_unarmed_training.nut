@@ -24,8 +24,8 @@
 				_properties.DamageDirectMult = 1.5;
 			}
 
-			_properties.DamageRegularMin += 0.9 * damage;
-			_properties.DamageRegularMax += damage;
+			_properties.DamageRegularMin += this.Math.floor(0.9 * damage);
+			_properties.DamageRegularMax += this.Math.floor(damage);
 		}
 
 		if (_skill.getID() == "actives.legend_choke")
