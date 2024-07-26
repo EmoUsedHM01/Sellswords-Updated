@@ -63,7 +63,7 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 			case !actor.isAlive():
 			case actor.isDying():
 			case weapon.isWeaponType(this.Const.Items.WeaponType.Bow):
-			case weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow)
+			case weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow):
 				return;
 		}
 
