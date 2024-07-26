@@ -67,7 +67,7 @@ The sequence list is:
 - Vampyre - Bloodletter and Lord
 
 **Perks Added in SSU**
-Follow-up Maneuver
+- Follow-up Maneuver
 
 Master the art of turning failure into opportunity.Once per turn, when missing an attack against an opponent, restore 3 AP so long as the attack cost more than 2 AP. If this effect triggers, the next attack this turn will then use 85% of your Melee and Ranged Skill and only inflicts 85% of normal damage.
 
