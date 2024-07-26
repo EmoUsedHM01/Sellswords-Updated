@@ -81,5 +81,17 @@ this.quiver_of_bleeding_arrows <- this.inherit("scripts/items/ammo/ammo", {
 		return result;
 	}
 
+	function onEquip()
+	{
+		this.ammo.onEquip();
+		this.getContainer().getActor().getSkills().add(this.new("scripts/skills/effects/bleeding_arrow_effect"));
+	}
+
+	function onUnequip()
+	{
+		this.ammo.onUnequip();
+		this.getContainer().getActor().getSkills().removeByID("effects.bleeding_arrow_effect");
+	}
+
 });
 

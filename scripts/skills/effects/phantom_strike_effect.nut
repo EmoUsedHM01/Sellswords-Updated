@@ -41,8 +41,57 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 		this.m.PhantomStacks = this.Math.max(0, this.m.PhantomStacks - 1);
 	}
 
+	function onAnySkillUsed( _skill, _targetEntity, _properties )
+	{
+		local actor = this.getContainer().getActor()
+		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
+			return;
+
+		local skill = actor.getSkills().getSkillByID("effects.phantom_strike");
+		local stacks = skill.m.PhantomStacks;
+		skill.m.skillCount = this.Const.SkillCounter;
+		this.m.IsDoingAttackMove = false;
+		this.getContainer().setBusy(true);
+		this.Time.scheduleEvent(this.TimeUnit.Virtual, 500, function ( _skill )
+		{
+			if (_targetEntity.isAlive())
+			{
+				this.m.ProjectileType = this.Const.ProjectileType.None;
+
+				local prop = actor.getCurrentProperties();
+				prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
+				prop.RangedAttackBlockedChanceMult *= 0;
+				this.m.Name = "Phantom Strike";
+				this.spawnAttackEffect(_targetEntity.getTile(), this.Const.Tactical.AttackEffectChop);
+				this.attackEntity(actor, _targetEntity);
+				this.m.ProjectileType = this.Const.ProjectileType.Arrow;
+			}
+		}.bindenv(this), this);
+
+		this.Time.scheduleEvent(this.TimeUnit.Virtual, 500, function ( _skill )
+		{
+			if (_targetEntity.isAlive())
+			{
+				this.m.ProjectileType = this.Const.ProjectileType.None;
+
+				local prop = actor.getCurrentProperties();
+				prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
+				prop.RangedAttackBlockedChanceMult *= 0;
+				this.m.Name = "Phantom Strike";
+				this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectChop);
+				this.attackEntity(actor, _targetEntity);
+				this.m.ProjectileType = this.Const.ProjectileType.Arrow;
+			}
+			this.getContainer().setBusy(false);
+		}.bindenv(this), this);
+		return true;
+	}
+
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
+		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
+			return;
+
 		if (this.m.skillCount == this.Const.SkillCounter && this.m.LastTargetID == _targetEntity.getID())
 			return;
 

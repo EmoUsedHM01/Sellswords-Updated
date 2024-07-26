@@ -24,7 +24,7 @@ this.crorc_fortress_destroyed_event <- this.inherit("scripts/events/event", {
 			],
 			function start( _event )
 			{
-				this.World.Flags.set("crorc", true);
+				// this.World.Flags.set("crorc", true);
 			}
 
 		});

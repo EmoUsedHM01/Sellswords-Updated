@@ -33,15 +33,40 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 	
 	function onBeforeTargetHit( _skill, _targetEntity, _hitInfo )
 	{
+		local actor = this.getContainer().getActor();
+		local weapon = actor.getMainhandItem();
+		switch (true)
+		{
+			case weapon == null:
+			case !_skill.isAttack:
+			case !actor.isAlive():
+			case actor.isDying():
+			case weapon.isWeaponType(this.Const.Items.WeaponType.Bow):
+			case weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow):
+				return;
+		}
+
 		this.m.TargetTile = _targetEntity.getTile();
 
-		local mainhand = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
-		this.m.DamageMin = this.Math.round(mainhand.getDamageMin() * 0.5);
-		this.m.DamageMax = this.Math.round(mainhand.getDamageMax() * 0.5);
+		this.m.DamageMin = this.Math.round(weapon.getDamageMin() * 0.5);
+		this.m.DamageMax = this.Math.round(weapon.getDamageMax() * 0.5);
 	}
 
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
+		local actor = this.getContainer().getActor();
+		local weapon = actor.getMainhandItem();
+		switch (true)
+		{
+			case weapon == null:
+			case !_skill.isAttack:
+			case !actor.isAlive():
+			case actor.isDying():
+			case weapon.isWeaponType(this.Const.Items.WeaponType.Bow):
+			case weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow)
+				return;
+		}
+
 		if (this.m.TargetTile != null)
 		{
 			this.Time.scheduleEvent(this.TimeUnit.Real, 50, this.onApply.bindenv(_skill), {
