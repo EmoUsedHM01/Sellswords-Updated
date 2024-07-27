@@ -31,6 +31,9 @@ add a helper for arrow refactor
 deleted as part of the arrows refactor
 ...\scripts\events\events\crorc_fortress_destroyed_event.nut
 remove condition allowing to get legacy adventurer
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+fix unarmed damage penetration
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

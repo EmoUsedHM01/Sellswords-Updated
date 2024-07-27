@@ -30,6 +30,11 @@ this.poisoned_arrows_effect <- this.inherit("scripts/skills/skill", {
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		local actor = this.getContainer().getActor();
+		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+
+		if (this.isGarbage())
+			return;
+
 		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
 			return;
 		

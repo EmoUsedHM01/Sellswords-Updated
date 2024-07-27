@@ -33,6 +33,9 @@ this.freezing_arrows_effect <- this.inherit("scripts/skills/skill", {
 		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
 			return;
 
+		if (this.isGarbage())
+			return;
+
 		if (_targetEntity.getType() == this.Const.EntityType.TricksterGod)
 			return;
 

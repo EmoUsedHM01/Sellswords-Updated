@@ -4,7 +4,6 @@
 
 	switch (true)
 	{
-		case this.isGarbage():
 		case !_skill.isAttack():
 		case !_skill.isRanged():
 		case !_actor.isAlive():

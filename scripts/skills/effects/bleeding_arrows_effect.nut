@@ -32,6 +32,9 @@ this.bleeding_arrows_effect <- this.inherit("scripts/skills/skill", {
 		local actor = this.getContainer().getActor();
 		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 
+		if (this.isGarbage())
+			return;
+
 		if (_targetEntity.getCurrentProperties().IsImmuneToBleeding)
 			return;
 

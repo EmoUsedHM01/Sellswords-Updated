@@ -46,6 +46,9 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 		local actor = this.getContainer().getActor()
 		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 
+		if (this.isGarbage())
+			return;
+
 		if (!(ammo.m.Name == "Quiver of Phantom Bolts" || ammo.m.Name == "Quiver of Phantom Arrows"))
 			return;
 
@@ -98,6 +101,9 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 
 		if (!(ammo.m.Name == "Quiver of Phantom Bolts" || ammo.m.Name == "Quiver of Phantom Arrows"))
+			return;
+
+		if (this.isGarbage())
 			return;
 
 		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
