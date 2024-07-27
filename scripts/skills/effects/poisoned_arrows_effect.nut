@@ -32,7 +32,10 @@ this.poisoned_arrows_effect <- this.inherit("scripts/skills/skill", {
 		local actor = this.getContainer().getActor();
 		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
 			return;
-	
+		
+		if (!(ammo.m.Name == "Quiver of Poisoned Bolts" || ammo.m.Name == "Quiver of Poisoned Arrows"))
+			return;
+
 		if (_targetEntity.getFlags().has("undead"))
 			return;
 

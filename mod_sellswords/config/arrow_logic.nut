@@ -4,14 +4,15 @@
 
 	switch (true)
 	{
-		case weapon == null:
-		case !_skill.isAttack:
+		case this.isGarbage():
+		case !_skill.isAttack():
+		case !_skill.isRanged():
 		case !_actor.isAlive():
 		case _actor.isDying():
 		case !_targetEntity.isAlive():
 		case _targetEntity.isDying():
-		case weapon.isWeaponType(this.Const.Items.WeaponType.Bow):
-		case weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow):
+		case weapon == null:
+		case !(weapon.isWeaponType(this.Const.Items.WeaponType.Bow) || weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow)):
 			return true;
 	}
 	return false;

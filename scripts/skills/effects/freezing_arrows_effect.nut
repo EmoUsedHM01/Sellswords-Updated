@@ -1,4 +1,4 @@
-this.freezing_arrow_effect <- this.inherit("scripts/skills/skill", {
+this.freezing_arrows_effect <- this.inherit("scripts/skills/skill", {
 	m = {},
 	function create()
 	{

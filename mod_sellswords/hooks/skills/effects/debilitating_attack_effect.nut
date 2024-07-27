@@ -34,7 +34,7 @@
 		}
 	}
 
-	q.onAnySkillUsed <- function()
+	q.onAnySkillUsed <- function( _skill, _targetEntity, _properties )
 	{
 		// this portion should work on attack of opportunity attacks, the rest is handled in #onTargetHit
 		if (!_skill.isAttack())

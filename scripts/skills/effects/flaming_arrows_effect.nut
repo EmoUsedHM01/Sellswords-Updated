@@ -35,15 +35,19 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 	{
 		local actor = this.getContainer().getActor();
 		local weapon = actor.getMainhandItem();
+		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+
 		switch (true)
 		{
-			case weapon == null:
-			case !_skill.isAttack:
+			case this.isGarbage():
+			case !_skill.isAttack():
+			case !_skill.isRanged():
 			case !actor.isAlive():
 			case actor.isDying():
-			case weapon.isWeaponType(this.Const.Items.WeaponType.Bow):
-			case weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow):
-				return;
+			case weapon == null:
+			case !(weapon.isWeaponType(this.Const.Items.WeaponType.Bow) || weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow)):
+			case !(ammo.m.Name == "Quiver of Flaming Bolts" || ammo.m.Name == "Quiver of Flaming Arrows"):
+				return true;
 		}
 
 		this.m.TargetTile = _targetEntity.getTile();
@@ -56,16 +60,21 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 	{
 		local actor = this.getContainer().getActor();
 		local weapon = actor.getMainhandItem();
+		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+
 		switch (true)
 		{
-			case weapon == null:
-			case !_skill.isAttack:
+			case this.isGarbage():
+			case !_skill.isAttack():
+			case !_skill.isRanged():
 			case !actor.isAlive():
 			case actor.isDying():
-			case weapon.isWeaponType(this.Const.Items.WeaponType.Bow):
-			case weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow):
-				return;
+			case weapon == null:
+			case !(weapon.isWeaponType(this.Const.Items.WeaponType.Bow) || weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow)):
+			case !(ammo.m.Name == "Quiver of Flaming Bolts" || ammo.m.Name == "Quiver of Flaming Arrows"):
+				return true;
 		}
+
 
 		if (this.m.TargetTile != null)
 		{

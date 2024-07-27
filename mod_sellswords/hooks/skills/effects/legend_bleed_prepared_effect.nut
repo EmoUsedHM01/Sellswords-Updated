@@ -33,7 +33,7 @@
 			--this.m.AttacksLeft;
 	}
 
-	q.onAnySkillUsed <- function()
+	q.onAnySkillUsed <- function( _skill, _targetEntity, _properties )
 	{
 		// this portion should work on attack of opportunity attacks, the rest is handled in #onTargetHit
 		if (this.m.SpecialAttacksLeft <= 0)
