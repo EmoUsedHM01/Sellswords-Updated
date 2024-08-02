@@ -54,11 +54,12 @@
 
 	q.onUpdate <- function(_properties)
 	{
-		if (this.getContainer().getActor().getFlags().has("wurm_8"))
+		if (this.getContainer().getActor().getFlags().has("wurm_s"))
 		{
 			_properties.Hitpoints += 30;
 			_properties.DamageTotalMult *= 1.30;
 		}
+		else
 		{
 			_properties.Hitpoints += 15;
 			_properties.DamageTotalMult *= 1.15;

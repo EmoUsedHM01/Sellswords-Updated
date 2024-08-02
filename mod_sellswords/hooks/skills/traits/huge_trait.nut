@@ -23,24 +23,8 @@
 		local weapon = this.getContainer().getActor().getMainhandItem();
 		if (weapon != null)
 		{
-			local skills = weapon.getSkills();
-			if (skills.len() == 0)
-			{
-				this.m.Skills.clear();
-				return;
-			}
-
-			if (weapon.m.FatigueOnSkillUse > 0)
-			{
-				foreach (skill in skills)
-				{
-					if (this.m.Skills.find(skill.getID()) == null)
-					{
-						this.m.Skills.push(skill.getID());
-						skill.m.FatigueCost -= ::Math.min(3, weapon.m.FatigueOnSkillUse);
-					}
-				}
-			}
+			if (weapon.m.FatigueOnSkillUse > 0 && _properties.FatigueOnSkillUse == 0) 
+				_properties.FatigueOnSkillUse -= ::Math.min(3, weapon.m.FatigueOnSkillUse) * _properties.FatigueEffectMult;
 		}
 	}
 
