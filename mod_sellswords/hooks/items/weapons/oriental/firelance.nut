@@ -6,6 +6,5 @@
 		this.m.Ammo = 1;
 		this.m.AmmoMax = 1;
 		this.m.AmmoCost = 3;
-		this.setCategories("Spear/Firearm, One-Handed");
 	}
 });

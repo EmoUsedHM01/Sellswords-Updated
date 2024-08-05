@@ -90,7 +90,7 @@ this.quiver_of_freezing_bolts <- this.inherit("scripts/items/ammo/ammo", {
 	function onUnequip()
 	{
 		this.ammo.onUnequip();
-		this.getContainer().getActor().getSkills().removeByID("effects.freezing_arrows_effect");
+		this.getContainer().getActor().getSkills().removeByID("effects.freezing_arrows");
 	}
 
 });

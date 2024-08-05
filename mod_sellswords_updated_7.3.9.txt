@@ -1,3 +1,80 @@
+7.3.9 changes
+
+...\mod_sellswords\hooks\skills\traits\huge_trait.nut
+remove fatigue effects
+...\mod_sellswords\config\sequence_logic.nut
+add helper function to drop sequences on human enemies
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_veteran.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_devil.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+add onDeath with sequence checks if Hostile Sequences are enabled
+...\mod_sellswords\hooks\items\weapons\oriental\firelance.nut
+...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_saif.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
+...\mod_sellswords\hooks\items\weapons\scimitar.nut
+remove setupCategories because it's removed in later versions of MSU
+...\mod_sellswords\hooks\items\weapons\weapon.nut
+hook addSkill too apply huge trait effects
+...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_bleed_prepared_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
+rework again, so they work as advertised
+...\mod_sellswords\hooks\skills\traits\huge_trait.nut
+remove additional effects and move them to weapon.nut
+...\scripts\entity\tactical\humans\crBanditSergeant.nut
+...\scripts\entity\tactical\humans\crBanditZweihander.nut
+...\scripts\entity\tactical\humans\crBanditleaderwolf.nut
+...\scripts\entity\tactical\humans\crBarbarianChampionhigh.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_High.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+...\scripts\entity\tactical\humans\crBarbarianZweihander.nut
+...\scripts\entity\tactical\humans\crBarbhunter.nut
+...\scripts\entity\tactical\humans\crDesperado.nut
+...\scripts\entity\tactical\humans\crDesperado_High.nut
+...\scripts\entity\tactical\humans\crDesperado_Low.nut
+...\scripts\entity\tactical\humans\crDesperado_Weak.nut
+...\scripts\entity\tactical\humans\crHashshashin.nut
+...\scripts\entity\tactical\humans\crHashshashin_High.nut
+...\scripts\entity\tactical\humans\crHashshashin_Low.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crKnight.nut
+...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
+...\scripts\entity\tactical\humans\crOathbringer.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSellsword_Banner.nut
+...\scripts\entity\tactical\humans\crSellsword_Elite.nut
+...\scripts\entity\tactical\humans\crSellsword_Lieutenant.nut
+...\scripts\entity\tactical\humans\crSellsword_Polearm.nut
+...\scripts\entity\tactical\humans\crSellsword_Ranger.nut
+...\scripts\entity\tactical\humans\crSellsword_Sergeant.nut
+...\scripts\entity\tactical\humans\crSellswordveteran.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Polearm.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Ranger.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Tank.nut
+...\scripts\entity\tactical\humans\crSlayer.nut
+add onDeath with sequence checks if Hostile Sequences are enabled
+...\scripts\items\ammo\quiver_of_bleeding_arrows.nut
+...\scripts\items\ammo\quiver_of_bleeding_bolts.nut
+...\scripts\items\ammo\quiver_of_freezing_arrows.nut
+...\scripts\items\ammo\quiver_of_freezing_bolts.nut
+...\scripts\items\ammo\quiver_of_poisoned_arrows.nut
+...\scripts\items\ammo\quiver_of_poisoned_bolts.nut
+fix these so the effect is properly removed if quivers are changed
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
 7.3.8 changes
 ...\mod_sellswords\hooks\config\strings.nut
 fix tooltip if ptr not enabled

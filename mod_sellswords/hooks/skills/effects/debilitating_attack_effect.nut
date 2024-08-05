@@ -2,11 +2,12 @@
 
 	q.m.AttacksLeft <- 0;
 	q.m.SpecialAttacksLeft <- 3;
+	q.m.Frame <- 0;
 
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "This character has a debilitating attack prepared. Hitting a target will temporarily reduce their ability to inflict damage and increase damage recieved for three turns.";
+		this.m.Description = "This character has a debilitating attack prepared. Hitting a target will temporarily reduce their ability to inflict damage and increase damage recieved for three turns. Effect removes itself on turn end after a succesful hit or after 3 attacks. Works on Attacks of Opportunity";
 	}
 
 	q.onAdded <- function()
@@ -16,11 +17,15 @@
 	}
 
 	q.onTargetHit = @(__original) function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
-	{
-		local actor = this.getContainer().getActor();
-		if (this.m.AttacksLeft <= 0 && (this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() != actor.getID()))
-			this.removeSelf();
-
+	{	
+		if (this.Time.getFrame() != this.m.Frame)
+		{
+			this.m.Frame = this.Time.getFrame();
+			if (this.m.SpecialAttacksLeft <= 0)
+				this.removeSelf();
+			this.m.SpecialAttacksLeft -= 1;
+		}
+			
 		if (!this.isGarbage() && _skill.isAttack() && _targetEntity.isAlive() && !_targetEntity.isDying())
 		{
 			if (this.m.SoundOnHit.len() > 0)
@@ -34,19 +39,23 @@
 		}
 	}
 
-	q.onAnySkillUsed <- function( _skill, _targetEntity, _properties )
+	q.onTargetMissed <- function(  _skill, _targetEntity )
 	{
-		// this portion should work on attack of opportunity attacks, the rest is handled in #onTargetHit
-		if (!_skill.isAttack())
-			return;
-		if (this.m.SpecialAttacksLeft <= 0)
-			this.removeSelf();
-		this.m.SpecialAttacksLeft -= 1;
+		if (!this.isGarbage() && _skill.isAttack())
+		{
+			if (this.Time.getFrame() != this.m.Frame)
+			{
+				this.m.Frame = this.Time.getFrame();
+				if (this.m.SpecialAttacksLeft <= 0)
+					this.removeSelf();
+				this.m.SpecialAttacksLeft -= 1;
+			}
+		}
 	}
 
 	q.onTurnEnd <- function()
 	{
-		if (this.m.AttacksLeft <= 0)
+		if (this.m.AttacksLeft <= 0 || this.m.SpecialAttacksLeft <= 0)
 			this.removeSelf();
 	}
 });
