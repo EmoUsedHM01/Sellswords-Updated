@@ -43,17 +43,24 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )
 	{
-		local actor = this.getContainer().getActor()
+		local actor = this.getContainer().getActor();
 		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+		local weapon = actor.getMainhandItem();
 
-		if (this.isGarbage())
-			return;
-
-		if (!(ammo.m.Name == "Quiver of Phantom Bolts" || ammo.m.Name == "Quiver of Phantom Arrows"))
-			return;
-
-		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
-			return;
+		switch (true)
+		{
+			case this.isGarbage():
+			case !_skill.isAttack():
+			case !_skill.isRanged():
+			case !actor.isAlive():
+			case actor.isDying():
+			case _targetEntity == null:
+			case !_targetEntity.isAlive():
+			case _targetEntity.isDying():
+			case weapon == null:
+			case !(weapon.isWeaponType(::Const.Items.WeaponType.Bow) || weapon.isWeaponType(::Const.Items.WeaponType.Crossbow)):
+				return;
+		}
 
 		local skill = actor.getSkills().getSkillByID("effects.phantom_strike");
 		local stacks = skill.m.PhantomStacks;
@@ -106,7 +113,7 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 		if (this.isGarbage())
 			return;
 
-		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
+		if (::Mod_ROTU.doArrowChecks( _skill, _targetEntity, actor))
 			return;
 
 		if (this.m.skillCount == this.Const.SkillCounter && this.m.LastTargetID == _targetEntity.getID())
@@ -133,5 +140,4 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.PhantomStacks = 0;
 	}
-
 });

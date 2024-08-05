@@ -6,7 +6,7 @@
 
 	q.getDescription = @(__original) function()
 	{
-		return = "This character is preparing an attack to inflict slow bleeding by grazing the flesh. The next hit will infict 2 bleed damage for the next five turns. Effect removes itself on turn end after a succesful hit or after 3 attacks. Works on Attacks of Opportunity";
+		return "This character is preparing an attack to inflict slow bleeding by grazing the flesh. The next hit will infict 2 bleed damage for the next five turns. Effect removes itself on turn end after a succesful hit or after 3 attacks. Works on Attacks of Opportunity";
 	}
 
 	q.onAdded <- function()
@@ -52,7 +52,7 @@
 			--this.m.AttacksLeft;
 	}
 
-	q.onTargetMissed <- function(  _skill, _targetEntity )
+	q.onTargetMissed = @(__original) function(  _skill, _targetEntity )
 	{
 		if (!this.isGarbage() && _skill.isAttack())
 		{

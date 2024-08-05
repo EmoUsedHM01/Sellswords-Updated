@@ -24,7 +24,7 @@ add onDeath with sequence checks if Hostile Sequences are enabled
 ...\mod_sellswords\hooks\items\weapons\scimitar.nut
 remove setupCategories because it's removed in later versions of MSU
 ...\mod_sellswords\hooks\items\weapons\weapon.nut
-hook addSkill too apply huge trait effects
+hook addSkill to apply huge trait effects
 ...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
 ...\mod_sellswords\hooks\skills\effects\legend_bleed_prepared_effect.nut
 ...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
@@ -71,7 +71,13 @@ add onDeath with sequence checks if Hostile Sequences are enabled
 ...\scripts\items\ammo\quiver_of_poisoned_arrows.nut
 ...\scripts\items\ammo\quiver_of_poisoned_bolts.nut
 fix these so the effect is properly removed if quivers are changed
-
+...\mod_sellswords/config/arrow_logic.nut
+...\scripts/skills/effects/bleeding_arrows_effect.nut
+...\scripts/skills/effects/flaming_arrows_effect.nut
+...\scripts/skills/effects/freezing_arrows_effect.nut
+...\scripts/skills/effects/phantom_strike_effect.nut
+...\scripts/skills/effects/poisoned_arrows_effect.nut
+move the arrow effect checks outside of the helper to avoid whatever was wrong in rotu
 ----------------------------------------------------------------------------------------------------------------------------
 
 
