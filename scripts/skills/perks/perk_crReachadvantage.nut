@@ -119,6 +119,15 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 			this.getContainer().add(this.new("scripts/skills/effects/crReachadvantage_effect"));
 	}
 
+	function onWaitTurn()
+	{	
+		this.m.tempOpponents.clear();
+		local actor = this.getContainer().getActor();
+		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
+		if (!this.getContainer().getSkillByID("effects.crReachadvantage") && !this.getContainer().getSkillByID("effects.spearwall") && actor.hasZoneOfControl() && weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon) && weapon.isItemType(this.Const.Items.ItemType.TwoHanded) && this.m.Opponents.len() != 0)
+			this.getContainer().add(this.new("scripts/skills/effects/crReachadvantage_effect"));
+	}
+
 	function onTurnStart()
 	{
 		this.m.Opponents.clear();

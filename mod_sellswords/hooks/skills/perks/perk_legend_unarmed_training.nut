@@ -21,7 +21,6 @@
 			if (this.getContainer().hasSkill("perk.crGrandslam"))
 			{
 				damage = damage * 1.5;
-				_properties.DamageDirectMult *= 1.5;
 			}
 
 			_properties.DamageRegularMin += this.Math.floor(0.9 * damage);

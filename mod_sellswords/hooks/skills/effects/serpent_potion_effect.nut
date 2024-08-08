@@ -85,7 +85,7 @@
 		if (_targetEntity.getFlags().has("undead"))
 			return;
 
-		if (_skill.m.InjuriesOnBody != this.Const.Injury.PiercingBody && _skill.m.InjuriesOnBody != this.Const.Injury.CuttingBody)
+		if (!_skill.isAttack() || !_skill.getDamageType().contains(this.Const.Damage.DamageType.Piercing))
 			return;
 
 		if (!_targetEntity.isHiddenToPlayer())

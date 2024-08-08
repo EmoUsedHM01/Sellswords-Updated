@@ -15,7 +15,7 @@
 
 	local num_mutations = _actor.getFlags().getAsInt("ActiveMutations");
 
-	if (num_mutations = 0)
+	if (num_mutations == 0)
 	{
 		_actor.getFlags().increment("ActiveMutations");
 		return;
