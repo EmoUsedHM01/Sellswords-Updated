@@ -5,7 +5,7 @@ this.orc_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 		this.anatomist_potion_item.create();
 		this.m.ID = "misc.orc_sequence";
 		this.m.Name = "Sequence: Orc\nStrain - Unga-Bunga";
-		this.m.Description = "Many Generals have wished that Orcs might be cowed, for if one could control the greenskins and direct their strength with the intellect of man, they would surely control an unstoppable force.\nWith this, such fantasies are within reach!\nWhen you asked the Anatomist about side-effects, they assured you that the constant drooling and excessive violent tendancies that were reported are the norm for sellswords anyway.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.";
+		this.m.Description = "Many Generals have wished that Orcs might be cowed, for if one could control the greenskins and direct their strength with the intellect of man, they would surely control an unstoppable force.\nWith this, such fantasies are within reach!\nWhen you asked the Anatomist about side-effects, they assured you that the constant drooling and excessive violent tendencies that were reported are the norm for sellswords anyway.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.";
 		this.m.Icon = "consumables/potion_14.png";
 		this.m.IconLarge = "";
 		this.m.Value = 7500;
