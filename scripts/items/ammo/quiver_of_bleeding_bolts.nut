@@ -90,6 +90,6 @@ this.quiver_of_bleeding_bolts <- this.inherit("scripts/items/ammo/ammo", {
 	function onUnequip()
 	{
 		this.ammo.onUnequip();
-		this.getContainer().getActor().getSkills().removeByID("effects.bleeding_arrows_effect");
+		this.getContainer().getActor().getSkills().removeByID("effects.bleeding_arrows");
 	}
 });

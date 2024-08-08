@@ -169,6 +169,13 @@ this.crHashshashin_High <- this.inherit("scripts/entity/tactical/human", {
 		}
 	}
 
+	function onDeath(_killer, _skill, _tile, _fatalityType)
+	{
+		if (::Mod_Sellswords.EnableHostileSequences)
+			::Mod_Sellswords.doHostileSequencePotionDrop(_killer, _skill, _tile, _fatalityType, this.getContainer().getActor());
+		this.human.onDeath(_killer, _skill, _tile, _fatalityType);
+	}
+
 	function onAppearanceChanged( _appearance, _setDirty = true )
 	{
 		this.actor.onAppearanceChanged(_appearance, false);

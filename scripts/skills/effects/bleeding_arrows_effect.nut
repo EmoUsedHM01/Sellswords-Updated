@@ -31,18 +31,23 @@ this.bleeding_arrows_effect <- this.inherit("scripts/skills/skill", {
 	{
 		local actor = this.getContainer().getActor();
 		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+		local weapon = actor.getMainhandItem();
 
-		if (this.isGarbage())
-			return;
-
-		if (_targetEntity.getCurrentProperties().IsImmuneToBleeding)
-			return;
-
-		if (!(ammo.m.Name == "Quiver of Serrated Bolts" || ammo.m.Name == "Quiver of Serrated Arrows"))
-			return;
-
-		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
-			return;
+		switch (true)
+		{
+			case this.isGarbage():
+			case _targetEntity.getCurrentProperties().IsImmuneToBleeding:
+			case !_skill.isAttack():
+			case !_skill.isRanged():
+			case !actor.isAlive():
+			case actor.isDying():
+			case _targetEntity == null:
+			case !_targetEntity.isAlive():
+			case _targetEntity.isDying():
+			case weapon == null:
+			case !(weapon.isWeaponType(::Const.Items.WeaponType.Bow) || weapon.isWeaponType(::Const.Items.WeaponType.Crossbow)):
+				return;
+		}
 
 		local effect = this.new("scripts/skills/effects/bleeding_effect");
 		effect.setDamage(10);

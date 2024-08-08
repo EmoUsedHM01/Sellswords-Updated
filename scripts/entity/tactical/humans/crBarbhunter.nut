@@ -111,6 +111,13 @@ this.crBarbhunter <- this.inherit("scripts/entity/tactical/human", {
 		}
 	}
 
+	function onDeath(_killer, _skill, _tile, _fatalityType)
+	{
+		if (::Mod_Sellswords.EnableHostileSequences)
+			::Mod_Sellswords.doHostileSequencePotionDrop(_killer, _skill, _tile, _fatalityType, this.getContainer().getActor());
+		this.human.onDeath(_killer, _skill, _tile, _fatalityType);
+	}
+
 	function assignRandomEquipment()
 	{
 		local r = this.Math.rand(0, 2);

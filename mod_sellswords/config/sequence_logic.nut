@@ -69,6 +69,43 @@
 	}
 };
 
+::Mod_Sellswords.doHostileSequencePotionDrop <- function(_killer, _skill, _tile, _fatalityType, _actor) {
+	local actorFlags = _actor.getFlags();
+	local chance = 0;
+	local item = null;
+	switch (true)
+	{
+		case actorFlags.has("serpent"):
+			chance = 5;
+			item = "scripts/items/misc/anatomist/serpent_sequence_item";
+		case actorFlags.has("werewolf"):
+			chance = 5;
+			item = "scripts/items/misc/anatomist/direwolf_sequence_item";
+		case actorFlags.has("ghoul"):
+			chance = 2.5;
+			item = "scripts/items/misc/anatomist/nachzehrer_sequence_item";
+		case actorFlags.has("spider"):
+			chance = 2.5;
+			item = "scripts/items/misc/anatomist/webknecht_sequence_item";
+		case actorFlags.has("unhold"):
+			chance = 5;
+			item = "scripts/items/misc/anatomist/unhold_sequence_item";
+		case actorFlags.has("vampire"):
+			chance = 5;
+			item = "scripts/items/misc/anatomist/necrosavant_sequence_item";
+		case actorFlags.has("goblin"):
+			chance = 2.5;
+			item = "scripts/items/misc/anatomist/goblin_sequence_item";
+		case actorFlags.has("orc"):
+			chance = 2.5;
+			item = "scripts/items/misc/anatomist/orc_sequence_item";
+	}
+	if (item != null)
+	{
+		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
+	}
+}
+
 ::Mod_Sellswords.add_serpent <- function (_actor, complete) {
 
 	_actor.getFlags().add("serpent");

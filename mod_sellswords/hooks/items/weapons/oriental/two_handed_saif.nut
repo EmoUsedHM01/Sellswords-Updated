@@ -3,7 +3,6 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.setCategories("Sword/Cleaver, Two-Handed");
 		this.m.Value = 1600;
 	}
 });

@@ -30,14 +30,24 @@ this.freezing_arrows_effect <- this.inherit("scripts/skills/skill", {
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		local actor = this.getContainer().getActor();
-		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
-			return;
+		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+		local weapon = actor.getMainhandItem();
 
-		if (this.isGarbage())
-			return;
-
-		if (_targetEntity.getType() == this.Const.EntityType.TricksterGod)
-			return;
+		switch (true)
+		{
+			case this.isGarbage():
+			case _targetEntity.getType() == this.Const.EntityType.TricksterGod:
+			case !_skill.isAttack():
+			case !_skill.isRanged():
+			case !actor.isAlive():
+			case actor.isDying():
+			case _targetEntity == null:
+			case !_targetEntity.isAlive():
+			case _targetEntity.isDying():
+			case weapon == null:
+			case !(weapon.isWeaponType(::Const.Items.WeaponType.Bow) || weapon.isWeaponType(::Const.Items.WeaponType.Crossbow)):
+				return;
+		}
 
 		if (!_targetEntity.isHiddenToPlayer())
 			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");

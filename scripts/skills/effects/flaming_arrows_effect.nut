@@ -33,49 +33,15 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 	
 	function onBeforeTargetHit( _skill, _targetEntity, _hitInfo )
 	{
-		local actor = this.getContainer().getActor();
-		local weapon = actor.getMainhandItem();
-		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
-
-		switch (true)
-		{
-			case this.isGarbage():
-			case !_skill.isAttack():
-			case !_skill.isRanged():
-			case !actor.isAlive():
-			case actor.isDying():
-			case weapon == null:
-			case !(weapon.isWeaponType(this.Const.Items.WeaponType.Bow) || weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow)):
-			case !(ammo.m.Name == "Quiver of Flaming Bolts" || ammo.m.Name == "Quiver of Flaming Arrows"):
-				return true;
-		}
-
 		this.m.TargetTile = _targetEntity.getTile();
 
-		this.m.DamageMin = this.Math.round(weapon.getDamageMin() * 0.5);
-		this.m.DamageMax = this.Math.round(weapon.getDamageMax() * 0.5);
+		local mainhand = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
+		this.m.DamageMin = this.Math.round(mainhand.getDamageMin() * 0.5);
+		this.m.DamageMax = this.Math.round(mainhand.getDamageMax() * 0.5);
 	}
 
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
-		local actor = this.getContainer().getActor();
-		local weapon = actor.getMainhandItem();
-		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
-
-		switch (true)
-		{
-			case this.isGarbage():
-			case !_skill.isAttack():
-			case !_skill.isRanged():
-			case !actor.isAlive():
-			case actor.isDying():
-			case weapon == null:
-			case !(weapon.isWeaponType(this.Const.Items.WeaponType.Bow) || weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow)):
-			case !(ammo.m.Name == "Quiver of Flaming Bolts" || ammo.m.Name == "Quiver of Flaming Arrows"):
-				return true;
-		}
-
-
 		if (this.m.TargetTile != null)
 		{
 			this.Time.scheduleEvent(this.TimeUnit.Real, 50, this.onApply.bindenv(_skill), {

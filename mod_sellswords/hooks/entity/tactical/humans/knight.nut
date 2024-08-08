@@ -84,6 +84,13 @@
 		}
 	}
 
+	q.onDeath = @(__original) function(_killer, _skill, _tile, _fatalityType)
+	{
+		__original(_killer, _skill, _tile, _fatalityType);
+		if (::Mod_Sellswords.EnableHostileSequences)
+			::Mod_Sellswords.doHostileSequencePotionDrop(_killer, _skill, _tile, _fatalityType, this.getContainer().getActor());
+	}
+
 	q.assignRandomEquipment = @( __original ) function()
 	{
 		__original();

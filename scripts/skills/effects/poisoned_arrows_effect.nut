@@ -31,21 +31,25 @@ this.poisoned_arrows_effect <- this.inherit("scripts/skills/skill", {
 	{
 		local actor = this.getContainer().getActor();
 		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+		local weapon = actor.getMainhandItem();
 
-		if (this.isGarbage())
-			return;
-
-		if (::Mod_Sellswords.doArrowChecks( _skill, _targetEntity, actor))
-			return;
-		
-		if (!(ammo.m.Name == "Quiver of Poisoned Bolts" || ammo.m.Name == "Quiver of Poisoned Arrows"))
-			return;
-
-		if (_targetEntity.getFlags().has("undead"))
-			return;
-
-		if (_targetEntity.getCurrentProperties().IsImmuneToPoison || _targetEntity.getHitpoints() <= 0)
-			return;
+		switch (true)
+		{
+			case this.isGarbage():
+			case _targetEntity.getHitpoints() <= 0:
+			case _targetEntity.getCurrentProperties().IsImmuneToPoison:
+			case _targetEntity.getFlags().has("undead"):
+			case !_skill.isAttack():
+			case !_skill.isRanged():
+			case !actor.isAlive():
+			case actor.isDying():
+			case _targetEntity == null:
+			case !_targetEntity.isAlive():
+			case _targetEntity.isDying():
+			case weapon == null:
+			case !(weapon.isWeaponType(::Const.Items.WeaponType.Bow) || weapon.isWeaponType(::Const.Items.WeaponType.Crossbow)):
+				return;
+		}
 
 		if (!_targetEntity.isHiddenToPlayer())
 		{

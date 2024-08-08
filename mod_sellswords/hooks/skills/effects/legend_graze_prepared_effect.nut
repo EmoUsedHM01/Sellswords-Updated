@@ -2,6 +2,12 @@
 
 	q.m.AttacksLeft = 0;
 	q.m.SpecialAttacksLeft <- 3;
+	q.m.Frame <- 0;
+
+	q.getDescription = @(__original) function()
+	{
+		return "This character is preparing an attack to inflict slow bleeding by grazing the flesh. The next hit will infict 2 bleed damage for the next five turns. Effect removes itself on turn end after a succesful hit or after 3 attacks. Works on Attacks of Opportunity";
+	}
 
 	q.onAdded <- function()
 	{
@@ -11,6 +17,14 @@
 
 	q.onTargetHit = @(__original) function ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
+		if (this.Time.getFrame() != this.m.Frame)
+		{
+			this.m.Frame = this.Time.getFrame();
+			if (this.m.SpecialAttacksLeft <= 0)
+				this.removeSelf();
+			this.m.SpecialAttacksLeft -= 1;
+		}
+
 		if (_targetEntity.getCurrentProperties().IsImmuneToBleeding || _damageInflictedHitpoints <= this.Const.Combat.MinDamageToApplyBleeding || _targetEntity.getHitpoints() <= 0)
 			return;
 
@@ -38,14 +52,18 @@
 			--this.m.AttacksLeft;
 	}
 
-	q.onAnySkillUsed <- function( _skill, _targetEntity, _properties )
+	q.onTargetMissed = @(__original) function(  _skill, _targetEntity )
 	{
-		// this portion should work on attack of opportunity attacks, the rest is handled in #onTargetHit
-		if (!_skill.isAttack())
-			return;
-		if (this.m.SpecialAttacksLeft <= 0)
-			this.removeSelf();
-		this.m.SpecialAttacksLeft -= 1;
+		if (!this.isGarbage() && _skill.isAttack())
+		{
+			if (this.Time.getFrame() != this.m.Frame)
+			{
+				this.m.Frame = this.Time.getFrame();
+				if (this.m.SpecialAttacksLeft <= 0)
+					this.removeSelf();
+				this.m.SpecialAttacksLeft -= 1;
+			}
+		}
 	}
 
 	q.onTurnEnd <- function()
@@ -53,5 +71,4 @@
 		if (this.m.AttacksLeft <= 0)
 			this.removeSelf();
 	}
-
 });
