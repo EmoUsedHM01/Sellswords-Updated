@@ -62,6 +62,9 @@ this.flaming_arrows_effect <- this.inherit("scripts/skills/skill", {
 		if (!(item.isWeaponType(::Const.Items.WeaponType.Bow) || item.isWeaponType(::Const.Items.WeaponType.Crossbow)))
 			return;
 
+		if (item.getID() == "weapon.goblin_crossbow")
+			return;
+
 		local targets = [];
 		targets.push(_data.TargetTile);
 
