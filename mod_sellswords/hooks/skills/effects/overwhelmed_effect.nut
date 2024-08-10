@@ -45,6 +45,8 @@
 				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 5 + "%[/color] Ranged Skill"
 			});
 		}
+
+		return ret;
 	}
 
 	q.onUpdate = @(__original) function( _properties )
