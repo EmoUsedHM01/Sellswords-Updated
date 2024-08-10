@@ -18,35 +18,31 @@
 		if (this.getContainer().hasSkill("perk.crresilient"))
 		{
 			ret.push({
-					{
-					id = 10,
-					type = "text",
-					icon = "ui/icons/melee_skill.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 3.75 + "%[/color] Melee Skill"
-				},
-				{
-					id = 11,
-					type = "text",
-					icon = "ui/icons/ranged_skill.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 3.75 + "%[/color] Ranged Skill"
-				}
+				id = 10,
+				type = "text",
+				icon = "ui/icons/melee_skill.png",
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 3.75 + "%[/color] Melee Skill"
+			});
+			ret.push({
+				id = 11,
+				type = "text",
+				icon = "ui/icons/ranged_skill.png",
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 3.75 + "%[/color] Ranged Skill"
 			});
 		}
 		else
 		{
 			ret.push({
-					{
-					id = 10,
-					type = "text",
-					icon = "ui/icons/melee_skill.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 5 + "%[/color] Melee Skill"
-				},
-				{
-					id = 11,
-					type = "text",
-					icon = "ui/icons/ranged_skill.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 5 + "%[/color] Ranged Skill"
-				}
+				id = 10,
+				type = "text",
+				icon = "ui/icons/melee_skill.png",
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 5 + "%[/color] Melee Skill"
+			});
+			ret.push({
+				id = 11,
+				type = "text",
+				icon = "ui/icons/ranged_skill.png",
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 5 + "%[/color] Ranged Skill"
 			});
 		}
 	}
