@@ -4,12 +4,13 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 	{
 		this.m.ID = "scenario.sellswords";
 		this.m.Name = "Sellswords";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_113.png[/img][/p][p]Most sellswords were from the upper classes, third sons with little hope of marriage or a home. They were trained in arms, and given their first set of armor, but then sent out to earn their own way. The best became part of an established Lord's menie, the worst died, the in-betweens bounced from pillar to post with the occasional bout of outlawry or perils.\n[color=#bcad8c]Versatile and Circumspect:[/color] Everyone in your company begins with the selected skill.\n[color=#bcad8c]Mercenary:[/color] All your recruits will have 33% higher daily wages.\n[color=#bcad8c]Life for Rent:[/color] If all of your three starting men should die, your campaign ends.[/p]";
+		local perk = ::Mod_Sellswords.SellswordsPerk;
+		this.m.Description = format("[p=c][img]gfx/ui/events/event_113.png[/img][/p][p]Most sellswords were from the upper classes, third sons with little hope of marriage or a home. They were trained in arms, and given their first set of armor, but then sent out to earn their own way. The best became part of an established Lord's menie, the worst died, the in-betweens bounced from pillar to post with the occasional bout of outlawry or perils.\n[color=#bcad8c]Versatile and Circumspect:[/color] Everyone in your company begins with [color=#bcad8c]%s[/color] (check mod config).\n[color=#bcad8c]Mercenary:[/color] All your recruits will have 15%% higher daily wages.\n[color=#bcad8c]Lifelong Allies:[/color] If all three of your starting men should die, the campaign ends.[/p]", perk);
 		this.m.Difficulty = 1;
 		this.m.Order = 710;
-		this.m.IsFixedLook = true;		
+		this.m.IsFixedLook = true;
 		this.m.StartingBusinessReputation = 900;
-		this.setRosterReputationTiers(this.Const.Roster.createReputationTiers(this.m.StartingBusinessReputation));		
+		this.setRosterReputationTiers(this.Const.Roster.createReputationTiers(this.m.StartingBusinessReputation));
 	}
 
 	function onSpawnAssets()
@@ -27,53 +28,49 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			
 			local traits = bro.getSkills().getAllSkillsOfType(this.Const.SkillType.Trait);
 			foreach( t in traits )
-			{
 				if (!t.isType(this.Const.SkillType.Special) && !t.isType(this.Const.SkillType.Background))
-				{
 					bro.getSkills().remove(t);
-				}
-			}			
+
 			while (names.find(bro.getNameOnly()) != null)
-			{
 				bro.setName(this.Const.Strings.SellswordsNames[this.Math.rand(0, this.Const.Strings.SellswordsNames.len() - 1)]);
-			}
-			names.push(bro.getNameOnly());			
-									
+
+			names.push(bro.getNameOnly());
 			i = ++i;
 		}
 
 		local bros = roster.getAll();
 		bros[0].setVeteranPerks(2);
-		bros[0].m.Talents = [];		
+		bros[0].m.Talents = [];
 		local talents = bros[0].getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);
 		talents[this.Const.Attributes.MeleeSkill] = 2;
-		talents[this.Const.Attributes.Bravery] = 2;	
-		talents[this.Const.Attributes.Initiative] = 1;	
+		talents[this.Const.Attributes.Bravery] = 2;
+		talents[this.Const.Attributes.Initiative] = 1;
 		bros[0].getSkills().add(this.new("scripts/skills/traits/cocky_trait"));
-		bros[0].getSkills().add(this.new("scripts/skills/traits/dexterous_trait"));	
-		bros[0].addLightInjury();		
+		bros[0].getSkills().add(this.new("scripts/skills/traits/dexterous_trait"));
+		bros[0].addLightInjury();
 		bros[0].setStartValuesEx([
 			"crsellsword_background"
-		], false);		
+		], false);
 		bros[0].setPlaceInFormation(3);
+
 		bros[1].setVeteranPerks(2);
-		bros[1].m.Talents = [];		
+		bros[1].m.Talents = [];
 		local talents = bros[1].getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);
 		talents[this.Const.Attributes.MeleeSkill] = 2;
-		talents[this.Const.Attributes.Fatigue] = 1;	
-		talents[this.Const.Attributes.Initiative] = 2;	
+		talents[this.Const.Attributes.Fatigue] = 1;
+		talents[this.Const.Attributes.Initiative] = 2;
 		bros[1].getSkills().add(this.new("scripts/skills/traits/strong_trait"));
-		bros[1].getSkills().add(this.new("scripts/skills/traits/hate_greenskins_trait"));		
-		bros[1].getSkills().add(this.new("scripts/skills/traits/pessimist_trait"));
-		bros[1].addLightInjury();		
+		bros[1].getSkills().add(this.new("scripts/skills/traits/hate_greenskins_trait"));
+		bros[1].addLightInjury();
 		bros[1].setStartValuesEx([
 			"crsellsword_background"
 		], false);
 		bros[1].setPlaceInFormation(4);
+
 		bros[2].setVeteranPerks(2);
-		bros[2].m.Talents = [];		
+		bros[2].m.Talents = [];
 		local talents = bros[2].getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);
 		talents[this.Const.Attributes.MeleeSkill] = 2;
@@ -81,12 +78,13 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		talents[this.Const.Attributes.Initiative] = 1;
 		bros[2].getSkills().add(this.new("scripts/skills/traits/pragmatic_trait"));
 		bros[2].getSkills().add(this.new("scripts/skills/traits/iron_jaw_trait"));
-		bros[2].addLightInjury();		
+		bros[2].addLightInjury();
 		bros[2].setStartValuesEx([
 			"crsellsword_background"
 		], false);
 		bros[2].setPlaceInFormation(5);
-		this.World.Assets.addMoralReputation(-20);		
+
+		this.World.Assets.addMoralReputation(-20);
 		this.World.Assets.addBusinessReputation(this.m.StartingBusinessReputation);
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
@@ -102,9 +100,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			randomVillage = this.World.EntityManager.getSettlements()[i];
 
 			if (!randomVillage.isMilitary() && !randomVillage.isIsolatedFromRoads() && randomVillage.getSize() <= 1)
-			{
 				break;
-			}
 		}
 
 		local randomVillageTile = randomVillage.getTile();
@@ -144,7 +140,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		while (1);
 
 		this.World.State.m.Player = this.World.spawnEntity("scripts/entity/world/player_party", randomVillageTile.Coords.X, randomVillageTile.Coords.Y);
-		this.World.Assets.updateLook(11);		
+		this.World.Assets.updateLook(11);
 		this.World.spawnLocation("scripts/entity/world/locations/battlefield_location", randomVillageTile.Coords).setSize(1);
 		this.World.getCamera().setPos(this.World.State.m.Player.getPos());
 		this.Time.scheduleEvent(this.TimeUnit.Real, 1000, function ( _tag )
@@ -162,9 +158,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		foreach( bro in roster )
 		{
 			if (bro.getFlags().get("IsPlayerCharacter"))
-			{
 				++sellswords;
-			}
 		}
 
 		return sellswords != 0;
@@ -176,7 +170,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 
 		foreach( i, bro in bros )
 		{
-			bro.getBaseProperties().DailyWageMult = 1.3333;
+			bro.getBaseProperties().DailyWageMult = 1.15;
 			bro.getSkills().update();
 		}
 	}
@@ -186,14 +180,11 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		_gender = ::Legends.Mod.ModSettings.getSetting("GenderEquality").getValue() != "Disabled";
 
 		if (this.Math.rand(0, 4) == 0)
-		{
 			_list.push("sellsword_background");
-		}
+	}
 
-	}	
-	
 	function onBuildPerkTree( _background )
-	{	
+	{
 		switch (::Mod_Sellswords.SellswordsPerk)
 		{
 			case "Backstabber":
@@ -217,16 +208,19 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			case "Student":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
 				return;
+			case "Dodge":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Dodge);
+				return;
 			case "Nine Lives":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.NineLives);
 				return;
 			case "Quick Hands":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.QuickHands);
 				return;
-			
-			this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
+
+			default :
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
 		}
-	}	
+	}
 
 });
-
