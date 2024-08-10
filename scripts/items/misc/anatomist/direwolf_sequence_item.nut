@@ -53,23 +53,29 @@ this.direwolf_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatom
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Direwolf: This character counts as a Direwolf in skill checks, and inherits the Direwolf\'s racial traits."
+			text = "Direwolf: This character counts as a Direwolf in skill checks."
 		});
 		result.push({
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Elasticized Sinew: Attacks that miss have [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of their Fatigue cost refunded" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Fatigue"
+			text = "Elasticized Sinew: Attacks that miss have [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of their Fatigue cost refunded" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Fatigue."
+		});
+		result.push({
+			id = 13,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = "Adrenaline Gland: Gain additional flat damage based on missing Hitpoints.\n[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of missing Hitpoints on Legendary, and [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] on other difficulties."
 		});
 
 		result.push({
-			id = 13,
+			id = 14,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
 			text = "Heavily mutates the body. Long periods of sickness are expected."
 		});
 		result.push({
-			id = 14,
+			id = 15,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
 			text = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
