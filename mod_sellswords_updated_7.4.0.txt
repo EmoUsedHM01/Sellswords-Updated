@@ -3,7 +3,7 @@
 ...\scripts\items\misc\anatomist\direwolf_sequence_item.nut
 Changed up the tooltip for added clarity on what "Direwolf Racial" meant
 
-...\mod_sellswords\config\temp_world_state_hook.nut
+...\mod_sellswords\config\temp_world_state_hook.nut -> ...\mod_sellswords\config\world_state_EA_hook.nut
 ...\scripts\states\world_state.nut (TEMPORARY, WILL BE REMOVED ON NEW LEGENDS UPDATE)
 Fixed the old rewrite stuff now that Legends has split up the Beastslayer stuff
 
