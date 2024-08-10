@@ -1,11 +1,7 @@
-7.3.10 changes
+7.4.0 changes
 
 ...\scripts\items\misc\anatomist\direwolf_sequence_item.nut
 Changed up the tooltip for added clarity on what "Direwolf Racial" meant
-
-----------------------------------------------------------------------------------------------------------------------------
-
-7.3.9 changes
 
 ...\mod_sellswords\config\strings.nut
 ...\mod_sellswords\hooks\config\strings.nut
