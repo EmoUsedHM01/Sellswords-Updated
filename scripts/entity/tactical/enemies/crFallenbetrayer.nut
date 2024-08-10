@@ -209,7 +209,7 @@ this.crFallenbetrayer <- this.inherit("scripts/entity/tactical/enemies/zombie", 
 			{
 				weapons.extend([
 					"weapons/greatsword",
-					"weapons/longsword03",					
+					"weapons/ssu_kriegsmesser",					
 					"weapons/two_handed_hammer",
 					"weapons/two_handed_flanged_mace",					
 					"weapons/greataxe",

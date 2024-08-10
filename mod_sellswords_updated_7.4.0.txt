@@ -18,6 +18,21 @@ Fixed the tooltip to include Resilient and added a cap of 7 like the skill says
 ...\scripts\scenarios\world\sellswords_scenario.nut
 Updated the Sellsword origin to display the perk taken based on mod configs, lowered the wage penalty, and added a few more perks to pick from
 
+...\brushes\chiru_weapons.brush
+...\gfx\chiru_weapons.png
+...\gfx\ui\items\weapons\melee\cr_kreigsmesser.png
+...\gfx\ui\items\weapons\melee\cr_kreigsmesser_70x70.png
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\oathbringer.nut
+...\scripts\entity\tactical\enemies\crFallenbetrayer.nut
+...\scripts\entity\tactical\humans\crBanditleaderwolf.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crOathbringer.nut
+...\scripts\items\weapons\longsword03.nut -> ...\scripts\items\weapons\ssu_kriegsmesser.nut
+Updated the name of the Kriegsmesser (was longsword03) and gave it a new visual
+
 ...\mod_sellswords\config\strings.nut
 ...\mod_sellswords\hooks\config\strings.nut
 Rewrote Duelist and Grandslam perks to be more clear - Breaky

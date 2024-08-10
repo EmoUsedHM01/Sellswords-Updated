@@ -137,7 +137,7 @@ this.crOathbringer <- this.inherit("scripts/entity/tactical/human", {
 			{
 				weapons.extend([
 					"weapons/greatsword",
-					"weapons/longsword03",					
+					"weapons/ssu_kriegsmesser",					
 					"weapons/greataxe",
 					"weapons/two_handed_hammer",
 					"weapons/greataxe",

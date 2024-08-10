@@ -175,7 +175,7 @@ this.crHedgeKnight <- this.inherit("scripts/entity/tactical/human", {
 		{
 			local weapons = [
 				"weapons/greatsword",
-				"weapons/longsword03",				
+				"weapons/ssu_kriegsmesser",				
 				"weapons/greataxe",
 				"weapons/two_handed_hammer",					
 				"weapons/two_handed_flanged_mace",

@@ -101,7 +101,7 @@
 					"weapons/greatsword",
 					"weapons/greataxe",
 					"weapons/legend_swordstaff",
-					"weapons/longsword03",
+					"weapons/ssu_kriegsmesser",
 					"weapons/warbrand",
 					"weapons/spontoon03"						
 				]);

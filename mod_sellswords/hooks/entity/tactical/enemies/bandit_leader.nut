@@ -90,7 +90,7 @@
 			{
 				weapons.extend([
 					"weapons/greatsword",
-					"weapons/longsword03",					
+					"weapons/ssu_kriegsmesser",					
 					"weapons/greataxe",
 					"weapons/legend_swordstaff",
 					"weapons/warbrand",
