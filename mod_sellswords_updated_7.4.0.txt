@@ -7,6 +7,14 @@ Changed up the tooltip for added clarity on what "Direwolf Racial" meant
 ...\scripts\states\world_state.nut (TEMPORARY, WILL BE REMOVED ON NEW LEGENDS UPDATE)
 Fixed the old rewrite stuff now that Legends has split up the Beastslayer stuff
 
+...\mod_sellswords\hooks\skills\effects\legend_redback_spider_poison_effect.nut
+...\mod_sellswords\hooks\skills\effects\spider_poison_effect.nut
+...\mod_sellswords\hooks\skills\effects\withered_effect.nut
+Added Resilient clause
+
+...\mod_sellswords\hooks\skills\effects\overwhelmed_effect.nut
+Fixed the tooltip to include Resilient and added a cap of 7 like the skill says
+
 ...\mod_sellswords\config\strings.nut
 ...\mod_sellswords\hooks\config\strings.nut
 Rewrote Duelist and Grandslam perks to be more clear - Breaky
