@@ -69,7 +69,7 @@ The sequence list is:
 **Perks Added in SSU**
 - Follow-up Maneuver
 
-Master the art of turning failure into opportunity.Once per turn, when missing an attack against an opponent, restore 3 AP so long as the attack cost more than 2 AP. If this effect triggers, the next attack this turn will then use 85% of your Melee and Ranged Skill and only inflicts 85% of normal damage.
+Master the art of turning failure into opportunity. Once per turn, when missing an attack against an opponent, restore 3 AP so long as the attack cost more than 2 AP. If this effect triggers, the next attack this turn will then use 85% of your Melee and Ranged Skill and only inflicts 85% of normal damage.
 
 
 
@@ -81,49 +81,49 @@ Unleash the full potential of your axe with a series of devastating enhancements
 
 - Flurry of Blows
 
-Learn to target vitals with your piercing attacks!Every attack that deals at least 10 damage to Hitpoints, applies a stacking debuff that lowers the target's threshold to receive injury and their Resolve by 7%. If this attack does at least 30 damage, apply an addtional stack, then inflict a stackable Bleed on your target. This effect deals 10 damage each turn, for two turns, and can stack up to 5 times. Additionally, Piercing attacks can now inflict injuries to Undead.
+Learn to target vitals with your piercing attacks! Every attack that deals at least 10 damage to Hitpoints, applies a stacking debuff that lowers the target's threshold to receive injury and their Resolve by 7%. If this attack does at least 30 damage, apply an addtional stack, then inflict a stackable Bleed on your target. This effect deals 10 damage each turn, for two turns, and can stack up to 5 times. Additionally, Piercing attacks can now inflict injuries to Undead.
 
 
 
 - Total Cover
 
-Master the art of deflecting blows with your shield, turning powerful enemy attacks into mere glancing hits.Grants +20% damage reduction when using Shieldwall, and +25% when using Fortify.
+Master the art of deflecting blows with your shield, turning powerful enemy attacks into mere glancing hits. Grants +20% damage reduction when using Shieldwall, and +25% when using Fortify.
 
 
 
 - The Guardian
 
-Protect your allies with your shield!Increase the Melee Defense, Ranged Defense, and Initiative of adjacent allies by 8% of your total Melee Defense and Ranged Defense. If multiple users with this perk are present, only the highest bonus applies.
+Protect your allies with your shield! Increase the Melee Defense, Ranged Defense, and Initiative of adjacent allies by 8% of your total Melee Defense and Ranged Defense. If multiple users with this perk are present, only the highest bonus applies.
 
 
 
 - Furinkazan
 
-Master the art of movement!Reduce the Action Point cost of Rotation, Footwork, Evasion, Sprint, Climb, and Audacious Charge by 1 and reduce Fatigue costs by 50% Does not stack with Tumble.
+Master the art of movement! Reduce the Action Point cost of Rotation, Footwork, Evasion, Sprint, Climb, and Audacious Charge by 1 and reduce Fatigue costs by 50% Does not stack with Tumble.
 
 
 
 - Grand Slam
 
-Being massive has its pros and cons.The Double Grip effect now increases damage by 50%. Increases Armor penetration and damage by 50% when Unarmed. The Muscularity perk has its damage effect tripled. Fatigue cost of all skills is increased by 8% of your Hitpoints Melee and throwing AP costs are increased by 1 Melee Defense, Ranged Defense, and Initiative are reduced by 8% of your Hitpoints. The maximum Hitpoint value for this perks bonuses and penalties is 150. The Riposte skill has an additional -15% hit chance. The Duelist perk now provides +20% additional Armor penetration for all weapons, except Non-Throwing Ranged Weapons.
+Being massive has its pros and cons. The Double Grip effect now increases damage by 50%. Increases Armor penetration and damage by 50% when Unarmed. The Muscularity perk has its damage effect tripled. Fatigue cost of all skills is increased by 8% of your Hitpoints Melee and throwing AP costs are increased by 1 Melee Defense, Ranged Defense, and Initiative are reduced by 8% of your Hitpoints. The maximum Hitpoint value for this perks bonuses and penalties is 150. The Riposte skill has an additional -15% hit chance. The Duelist perk now provides +20% additional Armor penetration for all weapons, except Non-Throwing Ranged Weapons.
 
 
 
 - Light Armor Mastery
 
-The ability to move swiftly can seem almost like a dance if done by a true master.Fatigue costs are reduced by up to 20%. This bonus drops exponentially when wearing head and body Armor with a total penalty to Maximum Fatigue above 15.
+The ability to move swiftly can seem almost like a dance if done by a true master. Fatigue costs are reduced by up to 20%. This bonus drops exponentially when wearing head and body Armor with a total penalty to Maximum Fatigue above 15.
 
 
 
 - Medium Armor Mastery
 
-Straps and belts, the crux of any Armor. Knowing how to stay flexible while bound up is what seperates the wheat from the chaff.Grants additional Fatigue recovery and Ranged Defense equal to your current Initiative divided by your Armor's total weight, up to a maximum of +5. This bonus only applies when your Initiative is higher than three times your Armor's total weight, and drops to zero if the total Fatigue penalty is outside the range of 20 to 40.
+Straps and belts, the crux of any Armor. Knowing how to stay flexible while bound up is what seperates the wheat from the chaff. Grants additional Fatigue recovery and Ranged Defense equal to your current Initiative divided by your Armor's total weight, up to a maximum of +5. This bonus only applies when your Initiative is higher than three times your Armor's total weight, and drops to zero if the total Fatigue penalty is outside the range of 20 to 40.
 
 
 
 - Heavy Armor Mastery
 
-You've learnt how to shift the substantial weight that your Armor has from a hinderance to an advantage.Removes the penalties and doubles the Hitpoint mitigation effect applied by Heavy Armor Encumbrance.
+You've learnt how to shift the substantial weight that your Armor has from a hinderance to an advantage. Removes the penalties and doubles the Hitpoint mitigation effect applied by Heavy Armor Encumbrance.
 
 
 
@@ -135,31 +135,31 @@ Patience is the key to understanding the world around you. Unlocks the Clarity s
 
 - Signature Move
 
-Learn to take advantage of your weapon's momentum!The first connecting attack each turn has its Fatigue cost reduced based on the AP cost of the attack: 2 AP : 40% Fatigue Reduction 3 AP : 30% Fatigue Reduction 4+ AP : 20% Fatigue Reduction Your subsequent attacks gain additional damage based on AP cost: 2 AP : +30% Damage 3 AP : +22.5% Damage 4+ AP : +15% Damage If your first attack connects and doesn't cost any AP, then the follow-up attack will gain an additional +10% hitchance instead.
+Learn to take advantage of your weapon's momentum! The first connecting attack each turn has its Fatigue cost reduced based on the AP cost of the attack: 2 AP : 40% Fatigue Reduction 3 AP : 30% Fatigue Reduction 4+ AP : 20% Fatigue Reduction Your subsequent attacks gain additional damage based on AP cost: 2 AP : +30% Damage 3 AP : +22.5% Damage 4+ AP : +15% Damage If your first attack connects and doesn't cost any AP, then the follow-up attack will gain an additional +10% hitchance instead.
 
 
 
 - Hybridization
 
-Hatchet, throwing axe, spear, javelin... they all kill just the same.Gain 10% of your base Ranged Skill as Melee Skill. When wielding a Throwing Weapon, gain 10% of your base Melee Skill as Ranged Skill.
+Hatchet, throwing axe, spear, javelin... they all kill just the same. Gain 10% of your base Ranged Skill as Melee Skill. When wielding a Throwing Weapon, gain 10% of your base Melee Skill as Ranged Skill.
 
 
 
 - Once More Into the Breach
 
-Summon unwavering courage in the face of adversity, enhancing your combat prowess as your morale wavers or breaks.When Morale state is Wavering increase Resolve, Ranged Skill, Melee Skill, Melee Defense, and Ranged Defense by 22%. When Morale state is Breaking increase Resolve, Ranged Skill, Melee Skill, Melee Defense, and Ranged Defense by 38%. When Morale state is Fleeing increase Resolve, Ranged Skill, Melee Skill, Melee Defense, and Ranged Defense by 57%.
+Summon unwavering courage in the face of adversity, enhancing your combat prowess as your morale wavers or breaks. When Morale state is Wavering increase Resolve, Ranged Skill, Melee Skill, Melee Defense, and Ranged Defense by 22%. When Morale state is Breaking increase Resolve, Ranged Skill, Melee Skill, Melee Defense, and Ranged Defense by 38%. When Morale state is Fleeing increase Resolve, Ranged Skill, Melee Skill, Melee Defense, and Ranged Defense by 57%.
 
 
 
 - In Delay, There Lies No Plenty
 
-Harness the power of quick reflexes.Double your Initiative value when determining turn order. Also grants immunity to Staggered.
+Harness the power of quick reflexes. Double your Initiative value when determining turn order. Also grants immunity to Staggered.
 
 
 
 - Too Stubborn to Die
 
-Embrace your indomitable spirit.Gain 0.75% damage reduction for every 1% of missing Hitpoints.
+Embrace your indomitable spirit. Gain 0.75% damage reduction for every 1% of missing Hitpoints.
 
 
 
@@ -171,25 +171,25 @@ Master your breath to transform fatigue into adrenaline. Unlocks the Unceasing M
 
 - Unpredictible Attacker
 
-Confound your foes with deceptive strikes.When attacking a target, you follow-up with a quick attack that deals 20% total damage of the initial attack.
+Confound your foes with deceptive strikes. When attacking a target, you follow-up with a quick attack that deals 20% total damage of the initial attack.
 
 
 
 - The Ace of Aces
 
-Boom, headshot.When using ranged weapons, gain a bonus +5% chance to hit the head. Additionally, for every ranged enemy that you kill, gain a permanent +1% to that chance.
+Boom, headshot. When using ranged weapons, gain a bonus +5% chance to hit the head. Additionally, for every ranged enemy that you kill, gain a permanent +1% to that chance.
 
 
 
 - Battleheart
 
-Wade into the thick of battle, dodging blades from behind and above, aware of all around you during the heat of battle.Being surrounded no longer affects this character's defences at all. Upgraded version of Underdog, immune to Backstabber. Also prevents moral checks upon enemies entering your Zone of Control.
+Wade into the thick of battle, dodging blades from behind and above, aware of all around you during the heat of battle. Being surrounded no longer affects this character's defences at all. Upgraded version of Underdog, immune to Backstabber. Also prevents moral checks upon enemies entering your Zone of Control.
 
 
 
 - Evasive Maneuvers
 
-Increased reaction speed helps you avoid being inflicted by negative effects.Most Negative effects will have a seperate roll against your Ranged Defense before applying to you. These Negative effect include: Charm, Hexed, Bleeding, Dazed, Disarmed, Distracted, Poisons, Horrified, Insect Swarm, Baffled, Staggered, Stunned, Withered, and Netted.
+Increased reaction speed helps you avoid being inflicted by negative effects. Most Negative effects will have a seperate roll against your Ranged Defense before applying to you. These Negative effect include: Charm, Hexed, Bleeding, Dazed, Disarmed, Distracted, Poisons, Horrified, Insect Swarm, Baffled, Staggered, Stunned, Withered, and Netted.
 
 
 
@@ -201,25 +201,25 @@ Pull your enemy closer! Unlocks the Hook skill when you are wielding a reach wea
 
 - Irresistible Impulse
 
-Embrace the adrenaline, and feel it course through your veins!Each time you use the Adrenaline skill, gain +6 Fatigue recovery, +5 Melee Skill, +5% damage, and make enemies 25% more likely to target you until the end of your next turn.
+Embrace the adrenaline, and feel it course through your veins! Each time you use the Adrenaline skill, gain +6 Fatigue recovery, +5 Melee Skill, +5% damage, and make enemies 25% more likely to target you until the end of your next turn.
 
 
 
 - Before the Storm
 
-Take a moment to prepare for what lies ahead.If you end your turn with at least 1 AP left, gain +1 AP next turn and recover 3% of your maximum Fatigue after gear. Recover will always leave you at 1 AP to trigger this effect.
+Take a moment to prepare for what lies ahead. If you end your turn with at least 1 AP left, gain +1 AP next turn and recover 3% of your maximum Fatigue after gear. Recover will always leave you at 1 AP to trigger this effect.
 
 
 
 - Resilient
 
-Keep it together!  [color=#4f1800][u]Passive:[/u] • Any negative status effect with a finite duration (e.g., Bleed, Charmed) has its duration reduced to 1 turn. Status effects that have their effects grow weaker over several turns (e.g. Goblin Poison) are at their weakest state from the start. Grants a 25% reduction to the effect of all negative status effects. Raises the chance to survive being struck down and not killed from 33% to 66%. Allows the use of a second Sequence without negative effects.
+Keep it together! Any negative status effect with a finite duration (e.g., Bleed, Charmed) has its duration reduced to 1 turn. Status effects that have their effects grow weaker over several turns (e.g. Goblin Poison) are at their weakest state from the start. Grants a 25% reduction to the effect of all negative status effects. Raises the chance to survive being struck down and not killed from 33% to 66%. Allows the use of a second Sequence without negative effects.
 
 
 
 - Anchor
 
-Hold your ground!Gain +10 Melee Skill and Melee Defense as long as you have not moved during your turn.
+Hold your ground! Gain +10 Melee Skill and Melee Defense as long as you have not moved during your turn.
 
 
 
@@ -231,77 +231,78 @@ Charge forward with all your might! Unlocks the Audacious Charge skill which all
 
 - Battle Rhapsody
 
-Harmonize your movements and attacks to create a deadly performance that leaves your enemies in awe and disarray.Every successful attack provides a stacking effect which increases Melee Skill, Ranged Skill and Initiative by +2. Your Action Points are increased by a total of +1 at 3 stacks, +2 at 6 stacks and +3 at 10 stacks. Attacks performed against enemies which aren't adjacent only grant a stack after two successful hits. You lose half of the stacks if you miss an attack or if you get hit. Cannot have more than 10 stacks.
+Harmonize your movements and attacks to create a deadly performance that leaves your enemies in awe and disarray. Every successful attack provides a stacking effect which increases Melee Skill, Ranged Skill and Initiative by +2. Your Action Points are increased by a total of +1 at 3 stacks, +2 at 6 stacks and +3 at 10 stacks. Attacks performed against enemies which aren't adjacent only grant a stack after two successful hits. You lose half of the stacks if you miss an attack or if you get hit. Cannot have more than 10 stacks.
 
 
 
 - Perseverance
 
-Learn to persevere in the face of adversity.Damage to health is reduced by up to 60% based on how much base damage is dealt to you. If an attack triggers over 20% damage reduction, half of the damage that was ignored will be converted to a Bleed that will last for two turns. Damage reduction calculation: For every 5 points of damage exceeding 25, gain one iteration that increments damage reduction by +0.5%, capping at 3.0%. Final damage reduction is equal to the sum percentage of all increments.
+Learn to persevere in the face of adversity. Damage to health is reduced by up to 60% based on how much base damage is dealt to you. If an attack triggers over 20% damage reduction, half of the damage that was ignored will be converted to a Bleed that will last for two turns. Damage reduction calculation: For every 5 points of damage exceeding 25, gain one iteration that increments damage reduction by +0.5%, capping at 3.0%. Final damage reduction is equal to the sum percentage of all increments.
 
 
 
 - Thriving in Chaos
 
-Learn to master the chaos of battle.Always set morale state to Wavering at start of each turn. Gain +5 Melee Skill for each negative status effect you have, such as Dazed, Staggered, Poisoned, Debilitated and Bleeding. Gain +5 Melee Defense for every Injury you have, including permament ones. Gain +5 Resolve for every 33% of missing Hitpoints. Gain +5 Initiative for every 33% of accumulated Fatigue. If all the above conditions are met at least once, gain an additional +15% total damage and damage reduction.
+Learn to master the chaos of battle. Always set morale state to Wavering at start of each turn. Gain +5 Melee Skill for each negative status effect you have, such as Dazed, Staggered, Poisoned, Debilitated and Bleeding. Gain +5 Melee Defense for every Injury you have, including permament ones. Gain +5 Resolve for every 33% of missing Hitpoints. Gain +5 Initiative for every 33% of accumulated Fatigue. If all the above conditions are met at least once, gain an additional +15% total damage and damage reduction.
 
 
 
 - Navigator
 
-Share your expertise in navigation with your allies.Grant Pathfinder to all allies adjacent to you at both the start and the end of your turn as long as you are not engaged in melee.
+Share your expertise in navigation with your allies. Grant Pathfinder to all allies adjacent to you at both the start and the end of your turn as long as you are not engaged in melee.
 
 
 
 - Iron-hide
 
-Thrive in the worst of conditions.All damage received is reduced by -3.3% for each adjacent opponent, up to a maximum of -20% damage reduction.
+Thrive in the worst of conditions. All damage received is reduced by -3.3% for each adjacent opponent, up to a maximum of -20% damage reduction.
 
 
 
 - Bruiser
 
-Learn to beat down your opponents.Gain scaling buffs to Fatigue and Armor damage based on the damage from your Mainhand weapon. Every 2 points of maximum damage grants and additional +1% Armor damage and +6% Fatigue damage.
+Learn to beat down your opponents. Gain scaling buffs to Fatigue and Armor damage based on the damage from your Mainhand weapon. Every 2 points of maximum damage grants and additional +1% Armor damage and +6% Fatigue damage.
 
 
 
 - Trump Card
 
-This character is quick to understand the fighting style of their opponents, getting better at fighting them as the combat draws on.Each attack applies Distracted to enemies. Distracted enemies have their damage and Initiative reduced by 35%.
+This character is quick to understand the fighting style of their opponents, getting better at fighting them as the combat draws on. Each attack applies Distracted to enemies. Distracted enemies have their damage and Initiative reduced by 35%.
 
 
 
 - Honoured Heritage
 
-Your optimism has its benefits.Gain a 35% chance to increase your morale by one stage at the end of each turn.
+Your optimism has its benefits. Gain a 35% chance to increase your morale by one stage at the end of each turn.
 
-Block Training
 
-You have learned to block blows with your weapon.Whenever you are attacked by an adjacent opponent, they roll the attack a second time against your Melee Skill. On a success, you receive only 40% of the attack's damage. Otherwise gain between 0-20% damage reduction based on the result.
+- Block Training
+
+You have learned to block blows with your weapon. Whenever you are attacked by an adjacent opponent, they roll the attack a second time against your Melee Skill. On a success, you receive only 40% of the attack's damage. Otherwise gain between 0-20% damage reduction based on the result.
 
 
 
 - Skilled Blocker
 
-You have become skilled in blocking blows with your weapon.Whenever you are attacked by an adjacent opponent, they roll the attack a second time against your Melee Skill. On a success, you receive only 35% of the attack's damage. Otherwise gain between 0-30% damage reduction based on the result.
+You have become skilled in blocking blows with your weapon. Whenever you are attacked by an adjacent opponent, they roll the attack a second time against your Melee Skill. On a success, you receive only 35% of the attack's damage. Otherwise gain between 0-30% damage reduction based on the result.
 
 
 
 - Master Blocker
 
-You have mastered blocking blows with your weapon.Whenever you are attacked by an adjacent opponent, they roll the attack a second time against your Melee Skill. On a success, you receive only 30% of the attack's damage. Otherwise gain between 0-40% damage reduction based on the result.
+You have mastered blocking blows with your weapon. Whenever you are attacked by an adjacent opponent, they roll the attack a second time against your Melee Skill. On a success, you receive only 30% of the attack's damage. Otherwise gain between 0-40% damage reduction based on the result.
 
 
 
 - Discipline
 
-This character's senses are heightened when faced with mortal danger.Gain +10 Melee Defence and 5 Ranged Defense each time you get hit by an attack. This bonus lasts until the start of your turn or until an attack misses against you.
+This character's senses are heightened when faced with mortal danger. Gain +10 Melee Defence and 5 Ranged Defense each time you get hit by an attack. This bonus lasts until the start of your turn or until an attack misses against you.
 
 
 
 - Ravager
 
-Take advantage of the fear in their eyes.Gain a stacking buff to Melee and Ranged Skill when attacking an enemy with a lower morale state than yours, and gain an additional bonus based on their total Fatigue percentage. Gain +5 melee skill and half that as ranged skill for each difference in morale tier, and an additional 1 for each 20% of their accumulated Fatigue.
+Take advantage of the fear in their eyes. Gain a stacking buff to Melee and Ranged Skill when attacking an enemy with a lower morale state than yours, and gain an additional bonus based on their total Fatigue percentage. Gain +5 melee skill and half that as ranged skill for each difference in morale tier, and an additional 1 for each 20% of their accumulated Fatigue.
 
 
 
@@ -313,13 +314,13 @@ Teach your allies to move more efficiently. Unlocks the Rapid March skill which 
 
 - Reach Advantage
 
-Learn to use the superior reach of large weapons to keep the enemy from getting close enough to land a good hit.Mark the enemies adjacent to you at the start of the turn, and gain +100% of your melee skill as melee defense against them until waiting or ending your turn. When attacked by a marked opponent, reduce incoming damage by 80%. You then prevent them from approaching your Zone of Control with an attack of opportunity until the next turn.
+Learn to use the superior reach of large weapons to keep the enemy from getting close enough to land a good hit. Mark the enemies adjacent to you at the start of the turn, and gain +100% of your melee skill as melee defense against them until waiting or ending your turn. When attacked by a marked opponent, reduce incoming damage by 80%. You then prevent them from approaching your Zone of Control with an attack of opportunity until the next turn.
 
 
 
 - Parthian Shot
 
-Master the ancient tactic of the Parthian Shot, allowing you to make a precise ranged attack while retreating, catching your enemies off guard and striking fear into their ranks.Damage penetration and Damage to Hitpoints are increased by +2% of your remaining Action Points. The first tile moved each turn will refund the AP and Fatigue costs. Movement penalty costs will not be refunded.	
+Master the ancient tactic of the Parthian Shot, allowing you to make a precise ranged attack while retreating, catching your enemies off guard and striking fear into their ranks. Damage penetration and Damage to Hitpoints are increased by +2% of your remaining Action Points. The first tile moved each turn will refund the AP and Fatigue costs. Movement penalty costs will not be refunded.	
 
 
 
