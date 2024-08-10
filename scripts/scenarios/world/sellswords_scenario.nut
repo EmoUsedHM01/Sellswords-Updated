@@ -211,6 +211,12 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			case "Dodge":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Dodge);
 				return;
+			case "Steel Brow":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.SteelBrow);
+				return;
+			case "Underdog":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Underdog);
+				return;
 			case "Nine Lives":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.NineLives);
 				return;

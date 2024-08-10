@@ -17,7 +17,6 @@
 // Use this to list which mods may causes conflicts
 ::Mod_Sellswords.HooksMod.conflictWith("mod_ROTU", "mod_fantasybro", "modMoreArrows", "mod_background_perks");
 
-
 // Like above you can add as many parameters as you need to in order to determine the queue of the mods before adding the parameters that run the callback function
 ::Mod_Sellswords.HooksMod.queue(">mod_msu", ">mod_legends", ">mod_legends_PTR", ">mod_breditor", "<mod_AC", "<mod_nggh_magic_concept", "<mod_world_editor_legends", function()
 {
@@ -39,7 +38,7 @@
 	local settingEnableEnemySS = page.addBooleanSetting("EnableHostileSellswords", true, "Enable Hostile Sellswords", "When enabled, there will be roaming groups of hostile Sellsword companies, these parties will stop spawning once you defeat the Legendary Company Tower location.");
 	local settingSellswordStrengthMultiplier = page.addRangeSetting("SellswordStrengthMultiplier", 100, 10, 300, 10.0, "Sellsword Strength Multiplier %", "Affects the CR rating of the hostile SS faction, only affects new spawns, not existing parties.");
 	local settingEnableHostileSequences = page.addBooleanSetting("EnableHostileSequences", true, "Enable Hostile Sequences", "When enabled, enemies have a low chance to roll with Sequences. If they do, then they also have a chance to drop whichever one they obtain.");
-	local settingSellswordsPerk = page.addEnumSetting("SellswordsPerk", "Student", ["Student", "Backstabber", "Berserker", "Fortified Mind", "Nine Lives", "Quick Hands", "Rotation", "Pathfinder", "Dodge", "Mind Over Body"], "Sellsword Scenario Perk", "Choose a company perk to be added when you recruit a bro for the Sellswords Scenario.\n\nStudent by default.");
+	local settingSellswordsPerk = page.addEnumSetting("SellswordsPerk", "Student", ["Student", "Backstabber", "Berserker", "Fortified Mind", "Nine Lives", "Quick Hands", "Rotation", "Pathfinder", "Dodge", "Mind Over Body", "Steel Brow", "Underdog"], "Sellsword Scenario Perk", "Choose a company perk to be added when you recruit a bro for the Sellswords Scenario.\n\nStudent by default.");
 
 	// Settings for that config 
 	settingEnableEnemySS.addCallback(function(_value) { ::Mod_Sellswords.EnableEnemySS = _value; });
