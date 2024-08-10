@@ -1,18 +1,31 @@
+7.3.10 changes
+
+...\scripts\items\misc\anatomist\direwolf_sequence_item.nut
+Changed up the tooltip for added clarity on what "Direwolf Racial" meant
+
+----------------------------------------------------------------------------------------------------------------------------
+
 7.3.9 changes
 
 ...\mod_sellswords\config\strings.nut
 ...\mod_sellswords\hooks\config\strings.nut
-rewrite duelist and grandslam perks to be clearer  
+Rewrote Duelist and Grandslam perks to be clearer - Breaky
+
 ...\scripts\skills\perks\perk_crReachadvantage.nut
-will now properly remove the effect if waiting
+Will now properly remove the effect if waiting - Breaky
+
 ...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
-remove a big armor pen bonus for unarmed with grandslam
+Removed a significant armor pen bonus for unarmed with Grandslam - Breaky
+
 ...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
-will now apply on handgonnes
+Will now apply on handgonnes - Breaky
+
 ...\mod_sellswords\hooks\skills\traits\huge_trait.nut
-remove fatigue effects
+Removed fatigue penalty bonus, was moved to weapon.nut - Breaky
+
 ...\mod_sellswords\config\sequence_logic.nut
-add helper function to drop sequences on human enemies
+Added a helper function to drop sequences on human enemies - Breaky
+
 ...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
 ...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_veteran.nut
 ...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
@@ -25,21 +38,6 @@ add helper function to drop sequences on human enemies
 ...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut
 ...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
 ...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
-add onDeath with sequence checks if Hostile Sequences are enabled
-...\mod_sellswords\hooks\items\weapons\oriental\firelance.nut
-...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
-...\mod_sellswords\hooks\items\weapons\oriental\two_handed_saif.nut
-...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
-...\mod_sellswords\hooks\items\weapons\scimitar.nut
-remove setupCategories because it's removed in later versions of MSU
-...\mod_sellswords\hooks\items\weapons\weapon.nut
-hook addSkill to apply huge trait effects
-...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
-...\mod_sellswords\hooks\skills\effects\legend_bleed_prepared_effect.nut
-...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
-rework again, so they work as advertised
-...\mod_sellswords\hooks\skills\traits\huge_trait.nut
-remove additional effects and move them to weapon.nut
 ...\scripts\entity\tactical\humans\crBanditSergeant.nut
 ...\scripts\entity\tactical\humans\crBanditZweihander.nut
 ...\scripts\entity\tactical\humans\crBanditleaderwolf.nut
@@ -72,157 +70,180 @@ remove additional effects and move them to weapon.nut
 ...\scripts\entity\tactical\humans\crSellswordveteran_Ranger.nut
 ...\scripts\entity\tactical\humans\crSellswordveteran_Tank.nut
 ...\scripts\entity\tactical\humans\crSlayer.nut
-add onDeath with sequence checks if Hostile Sequences are enabled
+Added onDeath with sequence checks if Hostile Sequences are enabled - Breaky
+
+...\mod_sellswords\hooks\items\weapons\oriental\firelance.nut
+...\mod_sellswords\hooks\items\weapons\oriental\saif.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_saif.nut
+...\mod_sellswords\hooks\items\weapons\oriental\two_handed_scimitar.nut
+...\mod_sellswords\hooks\items\weapons\scimitar.nut
+Removed setupCategories because they're removed in later versions of MSU - Breaky
+
+...\mod_sellswords\hooks\items\weapons\weapon.nut
+Hooked addSkill to apply Huge trait effects - Breaky
+
+...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_bleed_prepared_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
+Reworked again, so they now work as advertised - Breaky
+
 ...\scripts\items\ammo\quiver_of_bleeding_arrows.nut
 ...\scripts\items\ammo\quiver_of_bleeding_bolts.nut
 ...\scripts\items\ammo\quiver_of_freezing_arrows.nut
 ...\scripts\items\ammo\quiver_of_freezing_bolts.nut
 ...\scripts\items\ammo\quiver_of_poisoned_arrows.nut
 ...\scripts\items\ammo\quiver_of_poisoned_bolts.nut
-fix these so the effect is properly removed if quivers are changed
+Fixed these so the effect is properly removed if quivers are changed - Breaky
+
 ...\mod_sellswords\config\arrow_logic.nut
 ...\scripts\skills\effects\bleeding_arrows_effect.nut
 ...\scripts\skills\effects\flaming_arrows_effect.nut
 ...\scripts\skills\effects\freezing_arrows_effect.nut
 ...\scripts\skills\effects\phantom_strike_effect.nut
 ...\scripts\skills\effects\poisoned_arrows_effect.nut
-move the arrow effect checks outside of the helper to avoid whatever was wrong in rotu
+Move the arrow effect checks outside of the helper to avoid whatever was wrong in RotU - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
-
 7.3.8 changes
+
 ...\mod_sellswords\hooks\config\strings.nut
-fix tooltip if ptr not enabled
+Fixed tooltip if ptr not enabled - Breaky
+
 ...\mod_sellswords\hooks\skills\actives\rupture.nut
-fix the ap cost
+Fixed the AP cost - Breaky
+
 ...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
-fix for debil attack, will now apply to all hits on your own turn and 3 attacks of opportunity 
+Fix for debil attack, will now apply to all hits on your own turn and 3 attacks of opportunity - Breaky
+
 ...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
-fix for graze prepared attack, will now apply to all hits on your own turn and 3 attacks of opportunity
+Fix for graze prepared attack, will now apply to all hits on your own turn and 3 attacks of opportunity - Breaky
+
 ...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
-floor damage to avoid weird values
+Added floor damage to avoid weird values - Breaky
+
 ...\mod_sellswords\hooks\skills\effects\legend_bleed_prepared_effect.nut
-fix for bleed prepared attack, will now apply to all hits on your own turn and 3 attacks of opportunity
+Fix for bleed prepared attack, will now apply to all hits on your own turn and 3 attacks of opportunity - Breaky
+
 ...\scripts\skills\effects\bleeding_arrows_effect.nut
 ...\scripts\skills\effects\freezing_arrows_effect.nut
 ...\scripts\skills\effects\poisoned_arrows_effect.nut
-new effects as part of the arrow refactor
+New effects as part of the arrow refactor - Breaky
+
 ...\scripts\items\ammo\quiver_of_bleeding_arrows.nut
 ...\scripts\items\ammo\quiver_of_bleeding_bolts.nut
 ...\scripts\items\ammo\quiver_of_freezing_arrows.nut
 ...\scripts\items\ammo\quiver_of_freezing_bolts.nut
 ...\scripts\items\ammo\quiver_of_poisoned_arrows.nut
 ...\scripts\items\ammo\quiver_of_poisoned_bolts.nut
-add effects on bolts and arrow items
+Add effects on bolts and arrow items - Breaky
+
 \scripts\skills\effects\flaming_arrows_effect.nut
 \scripts\skills\effects\phantom_strike_effect.nut
-add checks if weapon is equipped
-...\mod_sellswords\config\arrow_logic.nut
-add a helper for arrow refactor
-...\mod_sellswords\hooks\skills\actives\hook_shoot_bolts_and_arrows.nut
-deleted as part of the arrows refactor
-...\scripts\events\events\crorc_fortress_destroyed_event.nut
-remove condition allowing to get legacy adventurer
-...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
-fix unarmed damage penetration
+Added checks to see if a weapon is equipped - Breaky
 
+...\mod_sellswords\config\arrow_logic.nut
+Added a helper for arrow refactor - Breaky
+
+...\mod_sellswords\hooks\skills\actives\hook_shoot_bolts_and_arrows.nut
+Deleted as part of the arrows refactor - Breaky
+
+...\scripts\events\events\crorc_fortress_destroyed_event.nut
+Remove condition allowing to get legacy adventurer - Breaky
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+Fix unarmed damage penetration - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.7 changes
 
-
 ...\hooks\contracts\contracts\hold_chokepoint_contract.nut
-fix doubled conditions
+Fix duplicated conditions - Breaky
 
 ...\hooks\skills\effects\legend_rations_effect.nut
-fix typo
+Fixed typo - Breaky
 
 ...\mod_sellswords\hooks\skills\actives\legend_bandage.nut
-fix a bad hook causing a crash
+Fixed a bad hook which was causing a crash - Breaky
 
 ...\scripts\skills\actives\twinaxes_1.nut
-use necro's fixes from rotu
+Used Necro's fixes from RotU - Breaky
 
 ...\scripts\skills\actives\zcr_charge.nut
-add a case where the charge can kill the target
+Add a case where the charge can kill the target - Breaky
 
 ...\mod_sellswords\config\z_background_perks.nut
-replace meek with blendin
+Replaced Meek with Blend In - Breaky
 
 ...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
-attempt to fix debilitating attack applying to every hit from spearwall for an entire turn
+Attempt to fix debilitating attack applying to every hit from spearwall for an entire turn - Breaky
 
 ...\scripts\!mods_preload\mod_sellswords.nut
-add a hard incompatibility with background perks mod
+Added a hard incompatibility with background perks mod - Breaky
 
 ...\scripts\skills\effects\crfallenbetrayer_potion_effect.nut
-set fatigue multiplier to be additive
-
-
-
+Set fatigue multiplier to be additive - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.6 changes
 
-
 ...\mod_sellswords\hooks\skills\actives\hook_shoot_bolts_and_arrows.nut
-don't try to do the effect if no weapon is equipped
+Now no longer applies the effect if no weapon is equipped - Breaky
 
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
-refactor this again to save a corruption error when too much savescumming happens
+Refactor this again to save a corruption error when too much savescumming happens - Breaky
 
 ...\mod_sellswords\hooks\skills\legend_favoured_enemy_skill.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
-revert last changes and change effect to refund when you reach 15 hitchance
-
+Reverted last change and modified effect to refund when you reach 15 hitchance - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.5 changes
+
 ...\mod_sellswords\hooks\skills\actives\quick_shot.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
 ...\mod_sellswords\hooks\skills\actives\hook_shoot_bolts_and_arrows.nut
-check if weapon is still equipped and fix set killer from _user to actor
+Added a check to see if weapon is still equipped and fix set killer from _user to actor - Breaky
 
 ...\mod_sellswords\hooks\skills\legend_favoured_enemy_skill.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_favoured_enemy_master_archer.nut
-hook fav enemies directly in perks
+Hook fav enemies directly in perks - Breaky
 
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
-add check in char background to try to fix deserialization issue
+Added a check in char background to try to fix deserialization issue - Breaky
 
 ...\scripts\events\events\sellswords_intro_event.nut
 ...\scripts\scenarios\world\sellswords_scenario.nut
-refactor sellswords scenario to choose perk before campaign start
-
+Refactor Sellswords origin to choose perk before campaign start - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.4 changes
+
 ...\mod_sellswords\hooks\skills\actives\quick_shot.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
-check if weapon is still equipped and fix set killer from _user to actor
+Check if weapon is still equipped and fix set killer from _user to actor - Breaky
 
 ...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
-check if target is alive first
+Check if target is alive first - Breaky
 
 ...\mod_sellswords\hooks\skills\legend_favoured_enemy_skill.nut
-treeHook so it applies to children files
+treeHook so it applies to children files - Breaky
 
 ...\mod_sellswords\hooks\ui\screens\tooltip\tooltip_events.nut
-attempt to fix a bug with tournament and arena building
+Attempt to fix a bug with tournament and arena building - Breaky
 
 ...\scripts\items\legend_helmets\helm\cr_mountain_helmet.nut
 ...\scripts\items\legend_helmets\helm\cr_named_mountain_helmet.nut
-fix mountain helm and named mountain helm variants
+Fixed mountain helm and named mountain helm variants - Breaky
 
 ...\scripts\items\legend_armor\chain\cr_armor_hauberk_sleevless_named.nut
-change names so it doesn't sound like a helmet
-
+Changed names so it doesn't sound like a helmet - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -236,32 +257,31 @@ change names so it doesn't sound like a helmet
 ...\mod_sellswords\hooks\items\weapons\named\named_throwing_axe.nut
 ...\mod_sellswords\hooks\items\weapons\throwing_axe.nut
 ...\mod_sellswords\hooks\items\weapons\throwing_spear.nut
-clean up msu 1.30 incompatibility
+Cleaned up msu 1.30 incompatibility - Breaky
 
 ...\mod_sellswords\hooks\skills\actives\aimed_shot.nut
 ...\mod_sellswords\hooks\skills\actives\quick_shot.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
-add actor to bleeding effect so killer gets rightly attributed and fix damage
+Added Actor to bleeding effect so killer gets rightly attributed and fixed damage - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.3.2 changes
 
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
-fixed regex comments
+Fixed regex comments - Breaky
 
 ...\mod_sellswords\hooks\skills\actives\bandage_ally_skill.nut
-fix bad hook
+Fixed a bad hook - Breaky
 
 ...\mod_sellswords\hooks\skills\actives\quick_shot.nut
 ...\mod_sellswords\hooks\skills\actives\shoot_bolt.nut
 ...\mod_sellswords\scripts\skills\effects\ssu_ice_axe_effect.nut
-attempt to fix ijirok ice effect immunity
+Attempt to fix ijirok ice effect immunity - Breaky
 
 ...\mod_sellswords\hooks\skills\actives\shoot_stake.nut
-added new arrow effects
-
+Added new arrow effects - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
