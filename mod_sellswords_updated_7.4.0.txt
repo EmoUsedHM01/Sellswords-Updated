@@ -5,7 +5,7 @@ Changed up the tooltip for added clarity on what "Direwolf Racial" meant
 
 ...\mod_sellswords\config\strings.nut
 ...\mod_sellswords\hooks\config\strings.nut
-Rewrote Duelist and Grandslam perks to be clearer - Breaky
+Rewrote Duelist and Grandslam perks to be more clear - Breaky
 
 ...\scripts\skills\perks\perk_crReachadvantage.nut
 Will now properly remove the effect if waiting - Breaky
