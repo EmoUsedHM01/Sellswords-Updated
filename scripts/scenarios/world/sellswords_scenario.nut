@@ -43,8 +43,8 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		bros[0].m.Talents = [];
 		local talents = bros[0].getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);
-		talents[this.Const.Attributes.MeleeSkill] = 2;
-		talents[this.Const.Attributes.Bravery] = 2;
+		talents[this.Const.Attributes.MeleeSkill] = 3;
+		talents[this.Const.Attributes.MeleeDefense] = 2;
 		talents[this.Const.Attributes.Initiative] = 1;
 		bros[0].getSkills().add(this.new("scripts/skills/traits/cocky_trait"));
 		bros[0].getSkills().add(this.new("scripts/skills/traits/dexterous_trait"));
@@ -53,30 +53,37 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			"crsellsword_background"
 		], false);
 		bros[0].setPlaceInFormation(3);
+		local items = bros[0].getItems();
+		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
+		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Offhand));
+		items.equip(this.new("scripts/items/weapons/ssu_kriegsmesser"));
 
 		bros[1].setVeteranPerks(2);
 		bros[1].m.Talents = [];
 		local talents = bros[1].getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);
 		talents[this.Const.Attributes.MeleeSkill] = 2;
-		talents[this.Const.Attributes.Fatigue] = 1;
+		talents[this.Const.Attributes.MeleeDefense] = 1;
+		talents[this.Const.Attributes.Hitpoints] = 2;
 		talents[this.Const.Attributes.Initiative] = 2;
 		bros[1].getSkills().add(this.new("scripts/skills/traits/strong_trait"));
-		bros[1].getSkills().add(this.new("scripts/skills/traits/hate_greenskins_trait"));
+		bros[1].getSkills().add(this.new("scripts/skills/traits/pragmatic_trait"));
 		bros[1].addLightInjury();
 		bros[1].setStartValuesEx([
 			"crsellsword_background"
 		], false);
 		bros[1].setPlaceInFormation(4);
+		items = bros[1].getItems();
+		items.addToBag(this.new("scripts/items/tools/reinforced_throwing_net"));
 
 		bros[2].setVeteranPerks(2);
 		bros[2].m.Talents = [];
 		local talents = bros[2].getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);
 		talents[this.Const.Attributes.MeleeSkill] = 2;
-		talents[this.Const.Attributes.MeleeDefense] = 2;
-		talents[this.Const.Attributes.Initiative] = 1;
-		bros[2].getSkills().add(this.new("scripts/skills/traits/pragmatic_trait"));
+		talents[this.Const.Attributes.MeleeDefense] = 3;
+		talents[this.Const.Attributes.RangedDefense] = 2;
+		bros[2].getSkills().add(this.new("scripts/skills/traits/sure_footing_trait"));
 		bros[2].getSkills().add(this.new("scripts/skills/traits/iron_jaw_trait"));
 		bros[2].addLightInjury();
 		bros[2].setStartValuesEx([
@@ -86,8 +93,9 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 
 		this.World.Assets.addMoralReputation(-20);
 		this.World.Assets.addBusinessReputation(this.m.StartingBusinessReputation);
-		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
-		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
+		this.World.Assets.getStash().add(this.new("scripts/items/supplies/cured_rations_item"));
+		this.World.Assets.getStash().add(this.new("scripts/items/supplies/preserved_mead_item"));
+		this.World.Assets.getStash().add(this.new("scripts/items/shields/heater_shield"));
 		this.World.Assets.m.Money = this.World.Assets.m.Money;
 	}
 

@@ -6,7 +6,7 @@ this.sellswords_intro_event <- this.inherit("scripts/events/event", {
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_80.png[/img]You soak in the cool morning air. As the sun slowly rises, so does a new chapter in your life begin. After years of bloodying your sword for meager pay, you\'ve saved enough crowns to start your very own mercenary company. With you are %bro1%, %bro2% and %bro3% with whom you\'ve fought before side by side in the shieldwall. You are their commander now, the leader of the %companyname%.\n\nAs you travel the lands you should hire new men in the villages and cities to fill your ranks. Many who offer their services will have never picked up a weapon before. Maybe they are desperate, maybe they are greedy for quick spoils of war. Most of them will die on the battlefield. But do not be discouraged. Such is the mercenary life, and the next village will always have new men eagerly looking for a new start in life.\n\nThe lands are dangerous these times. Robbers and pillagers lay in ambush by the roads, wild beasts roam the dark forests and orc tribes are restless beyond the boundaries of civilization. There are rumors even of dark magic being at work, the dead rising from their graves and walking again. There is plenty of opportunity to earn good money, whether by taking on contracts you can find in the villages and cities all over the land, or by venturing out on your own to explore and raid.\n\nYour men look to you to give a command. They live and die for the %companyname% now.",
+			Text = "[img]gfx/ui/events/event_80.png[/img] The crisp morning breeze fills your lungs as dawn breaks on the horizon, marking the beginning of a new chapter in your life.\n\nAfter years of fighting in the blood-soaked fields for scant rewards, you\'ve finally amassed enough crowns to forge your own mercenary company. With you stand %bro1%, %bro2%, and %bro3%, battle-hardened companions who you\'ve shared many a battlefield with, and with them you\'ll share many more. Now, as their commander, you lead the %companyname%.\n\nAs you journey across these lands, your first task is to bolster your ranks. In the towns and villages, you\'ll find many eager recruits, though most are untested in the ways of war. Whether driven by desperation or the allure of quick riches, many will not survive their first battle. Yet, do not let this dishearten you. This is the life of a mercenary, and in every village, there are always new souls ready to embrace the dangers and opportunities of this brutal profession.\n\nThese are perilous times. Bandits and marauders lie in wait along the roads, wild beasts haunt the shadowy forests, and orcish hordes stir restlessly on the fringes of civilization. Whispers of dark magic circulate, telling of the dead rising from their graves. But where there is danger, there is also opportunity for profit. Whether you take on contracts in the towns and cities or venture out on your own to plunder and explore, there is no shortage of ways to earn a fortune.\n\nYour men await your command, ready to live and die under the banner of the %companyname%.",
 			Image = "",
 			Banner = "",
 			List = [],
@@ -18,59 +18,8 @@ this.sellswords_intro_event <- this.inherit("scripts/events/event", {
 					{
 						return 0;
 					}
-
 				}
 			],
-			// Options = [
-			// 	{
-			// 		Text = "Bags and Belts",
-			// 		function getResult( _event )
-			// 		{
-			// 			this.World.Flags.set("CrSellswordsSkill", 1);						
-			// 			return 0;
-			// 		}
-			// 	},
-			// 	{
-			// 		Text = "Nine Lives",
-			// 		function getResult( _event )
-			// 		{
-			// 			this.World.Flags.set("CrSellswordsSkill", 2);						
-			// 			return 0;
-			// 		}
-			// 	},
-			// 	{
-			// 		Text = "Adrenaline",
-			// 		function getResult( _event )
-			// 		{
-			// 			this.World.Flags.set("CrSellswordsSkill", 3);						
-			// 			return 0;
-			// 		}
-			// 	},
-			// 	{
-			// 		Text = "Fast Adaptation",
-			// 		function getResult( _event )
-			// 		{
-			// 			this.World.Flags.set("CrSellswordsSkill", 4);						
-			// 			return 0;
-			// 		}
-			// 	},
-			// 	{
-			// 		Text = "Pathfinder",
-			// 		function getResult( _event )
-			// 		{
-			// 			this.World.Flags.set("CrSellswordsSkill", 5);						
-			// 			return 0;
-			// 		}
-			// 	},
-			// 	{
-			// 		Text = "Crippling Strikes",
-			// 		function getResult( _event )
-			// 		{
-			// 			this.World.Flags.set("CrSellswordsSkill", 6);						
-			// 			return 0;
-			// 		}
-			// 	}				
-			// ],
 			function start( _event )
 			{
 				this.Banner = "ui/banners/" + this.World.Assets.getBanner() + "s.png";
@@ -111,4 +60,3 @@ this.sellswords_intro_event <- this.inherit("scripts/events/event", {
 	}
 
 });
-
