@@ -46,8 +46,9 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		talents[this.Const.Attributes.MeleeSkill] = 3;
 		talents[this.Const.Attributes.MeleeDefense] = 2;
 		talents[this.Const.Attributes.Initiative] = 1;
-		bros[0].getSkills().add(this.new("scripts/skills/traits/cocky_trait"));
+		bros[0].getSkills().add(this.new("scripts/skills/traits/firm_trait"));
 		bros[0].getSkills().add(this.new("scripts/skills/traits/dexterous_trait"));
+		bros[0].getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
 		bros[0].addLightInjury();
 		bros[0].setStartValuesEx([
 			"crsellsword_background"
@@ -66,8 +67,9 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		talents[this.Const.Attributes.MeleeDefense] = 1;
 		talents[this.Const.Attributes.Hitpoints] = 2;
 		talents[this.Const.Attributes.Initiative] = 2;
-		bros[1].getSkills().add(this.new("scripts/skills/traits/strong_trait"));
-		bros[1].getSkills().add(this.new("scripts/skills/traits/pragmatic_trait"));
+		bros[1].getSkills().add(this.new("scripts/skills/traits/brute_trait"));
+		bros[1].getSkills().add(this.new("scripts/skills/traits/pugilist_trait"));
+		bros[1].getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
 		bros[1].addLightInjury();
 		bros[1].setStartValuesEx([
 			"crsellsword_background"
@@ -85,6 +87,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		talents[this.Const.Attributes.RangedDefense] = 2;
 		bros[2].getSkills().add(this.new("scripts/skills/traits/sure_footing_trait"));
 		bros[2].getSkills().add(this.new("scripts/skills/traits/iron_jaw_trait"));
+		bros[2].getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
 		bros[2].addLightInjury();
 		bros[2].setStartValuesEx([
 			"crsellsword_background"
@@ -94,7 +97,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		this.World.Assets.addMoralReputation(-20);
 		this.World.Assets.addBusinessReputation(this.m.StartingBusinessReputation);
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/cured_rations_item"));
-		this.World.Assets.getStash().add(this.new("scripts/items/supplies/preserved_mead_item"));
+		this.World.Assets.getStash().add(this.new("scripts/items/supplies/beer_item"));
 		this.World.Assets.getStash().add(this.new("scripts/items/shields/heater_shield"));
 		this.World.Assets.m.Money = this.World.Assets.m.Money;
 	}
