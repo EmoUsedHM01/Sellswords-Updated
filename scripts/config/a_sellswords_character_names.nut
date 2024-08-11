@@ -54,7 +54,7 @@
 	"Lord Louis",
 	"Lord Carloman",
 	"Lord Eudes",
-	"Lord Robert",	
+	"Lord Robert",
 	"Lord Raoul",
 	"Lord Lothaire",
 	"Lord Hugues",
@@ -69,7 +69,7 @@
 	"Muradin",
 	"Modimus",
 	"Aegrim",
-	"Vanndar",	
+	"Vanndar",
 	"Thane",
 	"Baelgun",
 	"Grim"
@@ -90,7 +90,7 @@
 	"Muradin",
 	"Modimus",
 	"Aegrim",
-	"Vanndar",	
+	"Vanndar",
 	"Thane",
 	"Baelgun",
 	"Grim"
@@ -101,23 +101,23 @@
 	"Radovid",
 	"Henselt",
 	"Keira Metz",
-	"Dijkstra",	
+	"Dijkstra",
 	"Vernon Roche",
 	"John Natalis",
 	"Dandelion",
 	"Thaler",
-	"John Calveit",	
+	"John Calveit",
 	"Morvran Voorhis",
 	"Stefan Skellen",
 	"Cahir",
 	"James Hind",
 	"Cartouche",
 	"Hannikel",
-	"Eppelein",	
+	"Eppelein",
 	"Schinderhannes",
 	"Boarische Hiasl",
 	"Hans Kohlhase",
-	"Mathias Kneibl",	
+	"Mathias Kneibl"
 ]
 
 ::Const.Strings.crDesperadoTitles <- [
@@ -133,13 +133,13 @@
 	"the Indomitable Fury",
 	"the Conviction",
 	"the Flame Bringer",
-	"of the Nightfal",	
+	"of the Nightfal",
 	"the Ironbane",
 	"of the Four Winds",
 	"the Savage Hero",
 	"the Vengeance Incarnate",
 	"the Leper",
-	"the Outlaw",		
+	"the Outlaw"
 ]
 
 ::Const.Strings.crHashshashinNames <- [
@@ -147,7 +147,7 @@
 	"Malik",
 	"Kadar",
 	"Ibn Jubayr",
-	"Haytham",	
+	"Haytham",
 	"Suleiman",
 	"Manuel",
 	"Yusuf"
@@ -163,7 +163,7 @@
 	"Savonarola"
 	"Kaczmarek",
 	"Barleti",
-	"Tazim"	
+	"Tazim"
 ]
 
 ::Const.Strings.crBarbarianChampionNames <- [
@@ -171,7 +171,7 @@
 	"Hildr",
 	"Raud",
 	"Steinunn",
-	"Egill",	
+	"Egill",
 	"Steinvor",
 	"Thorkell",
 	"Rusla",
@@ -179,10 +179,10 @@
 	"Hallfrid",
 	"Hrodgeir",
 	"Arinbjorn",
-	"Tyrkir",	
+	"Tyrkir",
 	"Sorli",
 	"Stakar",
-	"Authulf"	
+	"Authulf"
 ]
 
 ::Const.Strings.crBarbarianChampionTitles <- [
@@ -215,7 +215,7 @@
 	"Dame Centaurea",
 	"Dame Senomy",
 	"Dame Willow",
-	"Dame Liz"	
+	"Dame Liz"
 ]
 
 ::Const.Strings.LightSwordsmanNames <- [
@@ -232,7 +232,7 @@
 	"Giacomo di Grassi",
 	"Angelo Viggiani",
 	"George Silver",
-	"Henry de Sainct-Didier",
+	"Henry de Sainct-Didier"
 ]
 
 ::Const.Strings.SergeantTitles <- [
@@ -325,20 +325,20 @@
 	"the Bloodcursed",
 	"Fierce Adamantite Ravager",
 	"the Skullcrusher",
-	"the Thunderstorm"	
+	"the Thunderstorm"
 ]
 
 ::Const.Strings.SlayerNames <- [
 	"the Lindwurm Hunter",
 	"the Wurmhunter",
 	"the Lizard Hunter",
-	"the Lizard Slayer",	
+	"the Lizard Slayer",
 	"Woodstalker",
 	"the Lindwurm Slayer",
-	"the Unhold Slayer",	
+	"the Unhold Slayer",
 	"the Tracker",
 	"the Trophyhunter",
 	"the Hunter",
 	"the Orc Slayer",
-	"the Dragon Slayer",	
+	"the Dragon Slayer"
 ]
