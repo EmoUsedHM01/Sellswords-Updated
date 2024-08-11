@@ -246,7 +246,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 				break;
 		}
 
-		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Offhand))
+		if (this.getContainer().getActor().getItems().hasEmptySlot(this.Const.ItemSlot.Offhand))
 		{
 			r = this.Math.rand(0, 5);
 			switch(r)
