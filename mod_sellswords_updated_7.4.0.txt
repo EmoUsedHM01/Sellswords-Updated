@@ -33,6 +33,12 @@ Updated the Sellsword origin to display the perk taken based on mod configs, low
 ...\scripts\items\weapons\longsword03.nut -> ...\scripts\items\weapons\ssu_kriegsmesser.nut
 Updated the name of the Kriegsmesser (was longsword03) and gave it a new visual
 
+...\gfx\ui\items\weapons\melee\grass_sword_70x70.png
+...\gfx\ui\items\weapons\melee\grass_sword_70x140.png
+...\gfx\ui\items\weapons\melee\ice_sword_70x70.png
+...\gfx\ui\items\weapons\melee\ice_sword_70x140.png
+Removed the old gfx for the draft legendary weapons
+
 ...\mod_sellswords\config\strings.nut
 ...\mod_sellswords\hooks\config\strings.nut
 Rewrote Duelist and Grandslam perks to be more clear - Breaky
