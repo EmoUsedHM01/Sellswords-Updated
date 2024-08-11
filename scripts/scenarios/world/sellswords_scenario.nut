@@ -5,7 +5,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		this.m.ID = "scenario.sellswords";
 		this.m.Name = "Sellswords";
 		local perk = ::Mod_Sellswords.SellswordsPerk;
-		this.m.Description = format("[p=c][img]gfx/ui/events/event_113.png[/img][/p][p]Most sellswords were from the upper classes, third sons with little hope of marriage or a home. They were trained in arms, and given their first set of armor, but then sent out to earn their own way. The best became part of an established Lord's menie, the worst died, the in-betweens bounced from pillar to post with the occasional bout of outlawry or perils.\n[color=#bcad8c]Versatile and Circumspect:[/color] Everyone in your company begins with [color=#008060]%s[/color] (check mod config).\n[color=#bcad8c]Mercenary:[/color] All your recruits will have 15%% higher daily wages.\n[color=#bcad8c]Lifelong Allies:[/color] If all three of your starting men should die, the campaign ends.[/p]", perk);
+		this.m.Description = format("[p=c][img]gfx/ui/events/event_113.png[/img][/p][p]Most sellswords were from the upper classes, third sons with little hope of marriage or a home. They were trained in arms, and given their first set of armor, but then sent out to earn their own way. The best became part of an established Lord's menie, the worst died, the in-betweens bounced from pillar to post with the occasional bout of outlawry or perils.\n[color=#bcad8c]Versatile and Circumspect:[/color] Everyone in your company begins with [color=#008060]%s[/color] (check mod config).\n[color=#bcad8c]Mercenary:[/color] All your recruits will have 20%% higher daily wages.\n[color=#bcad8c]Lifelong Allies:[/color] If all three of your starting men should die, the campaign ends.[/p]", perk);
 		this.m.Difficulty = 1;
 		this.m.Order = 710;
 		this.m.IsFixedLook = true;
@@ -175,27 +175,23 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		return sellswords != 0;
 	}
 
-	function onUpdateHiringRoster( _roster )
+	function onGenerateBro( bro )
 	{
-		this.addBroToRoster(_roster, "crsellsword_background", 8);
-		local bros = _roster.getAll();
-
-		foreach( i, bro in bros )
+		if (!(bro.getBackground().getID() == "background.slave" || bro.getBackground().getID() == "background.legend_donkey_background" || bro.getBackground().getID() == "background.sellsword" || bro.getBackground().getID() == "background.crsellsword"))
 		{
-			if (!(bro.getBackground().getID() == "background.slave" || bro.getBackground().getID() == "background.legend_donkey_background"))
-			{
-				bro.getBaseProperties().DailyWageMult = 1.15;
-				bro.getSkills().update();
-			}
+			bro.getBaseProperties().DailyWageMult *= 1.2;
+			bro.getSkills().update();
 		}
 	}
 
 	function onUpdateDraftList( _list, _gender = null )
 	{
-		_gender = ::Legends.Mod.ModSettings.getSetting("GenderEquality").getValue() != "Disabled";
+	}
 
-		if (this.Math.rand(0, 4) == 0)
-			_list.push("sellsword_background");
+	function onUpdateHiringRoster( _roster )
+	{
+		this.addBroToRoster(_roster, "sellsword_background", 8);
+		this.addBroToRoster(_roster, "crsellsword_background", 8);
 	}
 
 	function onBuildPerkTree( _background )
@@ -208,37 +204,39 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			case "Berserker":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Berserk);
 				return;
+			case "Dodge":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Dodge);
+				return;
 			case "Fortified Mind":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.FortifiedMind);
+				return;
+			case "Greed":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendBarterGreed);
 				return;
 			case "Mind Over Body":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendMindOverBody);
 				return;
-			case "Rotation":
-				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Rotation);
+			case "Nine Lives":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.NineLives);
 				return;
 			case "Pathfinder":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Pathfinder);
 				return;
-			case "Student":
-				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
+			case "Quick Hands":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.QuickHands);
 				return;
-			case "Dodge":
-				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Dodge);
+			case "Rotation":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Rotation);
 				return;
 			case "Steel Brow":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.SteelBrow);
 				return;
+			case "Student":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
+				return;
 			case "Underdog":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Underdog);
 				return;
-			case "Nine Lives":
-				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.NineLives);
-				return;
-			case "Quick Hands":
-				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.QuickHands);
-				return;
-
 			default :
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
 		}

@@ -10,6 +10,9 @@ Replaced the weeb names with historical merc ones
 ...\scripts\scenarios\world\sellswords_scenario.nut
 Added the crSellsword background to the roster list
 
+...\scripts\!mods_preload\mod_sellswords.nut
+Updated the list with alphabetical sorting
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.4.0 changes
