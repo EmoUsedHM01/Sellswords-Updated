@@ -160,26 +160,27 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			this.World.Events.fire("event.sellswords_scenario_intro");
 		}, null);
 	}
-	
+
 	function onCombatFinished()
 	{
 		local roster = this.World.getPlayerRoster().getAll();
 		local sellswords = 0;
 
 		foreach( bro in roster )
-		{
 			if (bro.getFlags().get("IsPlayerCharacter"))
 				++sellswords;
-		}
 
 		return sellswords != 0;
 	}
 
 	function onGenerateBro( bro )
 	{
-		if (!(bro.getBackground().getID() == "background.slave" || bro.getBackground().getID() == "background.legend_donkey_background" || bro.getBackground().getID() == "background.sellsword" || bro.getBackground().getID() == "background.crsellsword"))
+		bro.getBaseProperties().DailyWageMult *= 1.2;
+		bro.getSkills().update();
+
+		if (bro.getBackground().getID() == "background.slave" || bro.getBackground().getID() == "background.legend_donkey_background")
 		{
-			bro.getBaseProperties().DailyWageMult *= 1.2;
+			bro.getBaseProperties().DailyWageMult *= 0.0;
 			bro.getSkills().update();
 		}
 	}
