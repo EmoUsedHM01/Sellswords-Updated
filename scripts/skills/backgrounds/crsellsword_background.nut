@@ -213,8 +213,8 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 	{
 		local items = this.getContainer().getActor().getItems();
 		local r;
-		r = this.Math.rand(0, 8);
 
+		r = this.Math.rand(0, 8);
 		switch(r)
 		{
 			case 0:
@@ -246,20 +246,40 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 				break;
 		}
 
-		items.equip(this.new("scripts/items/tools/throwing_net"));		
+		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Offhand))
+		{
+			r = this.Math.rand(0, 5);
+			switch(r)
+			{
+				case 0:
+					items.equip(this.new("scripts/items/tools/throwing_net"));
+					break;
+				case 1:
+					items.equip(this.new("scripts/items/tools/throwing_net"));
+					break;
+				case 2:
+					items.equip(this.new("scripts/items/shields/heater_shield"));
+					break;
+				case 3:
+					items.equip(this.new("scripts/items/shields/kite_shield"));
+					break;
+				default:
+					break;
+			}
+		}
 
 		items.equip(this.Const.World.Common.pickArmor([
 			[
 				1,
-				"sellsword_armor_medium_high_ichi"
+				"desperado_armor"
 			],
 			[
 				1,
-				"sellsword_armor_medium_high_ni"
+				"adorned_mail_shirt_armor_heavy"
 			],
 			[
 				1,
-				"sellsword_armor_medium_high_sann"
+				"hashshashin_armor_medium"
 			],
 			[
 				1,
@@ -272,17 +292,25 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 			[
 				1,
 				"sellsword_armor_medium_chain"
+			],
+			[
+				1,
+				"crmercenary_armor_late"
+			],
+			[
+				1,
+				"squire_armor"
 			]
 		]));
 
 		items.equip(this.Const.World.Common.pickHelmet([
 			[
 				1,
-				""
+				"adorned_closed_flat_top_with_mail_helmet"
 			],
 			[
 				1,
-				"sellsword_helmet_medium_high"
+				"desperado_helmet"
 			],
 			[
 				1,
