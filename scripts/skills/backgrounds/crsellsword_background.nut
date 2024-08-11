@@ -135,24 +135,24 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 	{
 		local c = {
 			Hitpoints = [
-				0,
-				0
+				5,
+				10
 			],
 			Bravery = [
 				5,
 				5
 			],
 			Stamina = [
-				0,
-				0
+				15,
+				20
 			],
 			MeleeSkill = [
 				13,
-				10
+				13
 			],
 			RangedSkill = [
-				7,
-				5
+				2,
+				4
 			],
 			MeleeDefense = [
 				5,
