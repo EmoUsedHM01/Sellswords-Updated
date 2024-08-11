@@ -205,7 +205,18 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-		this.getContainer().getActor().getSkills().add(this.new("scripts/skills/racial/dryad_racial"));
+
+		if (this.m.IsNew)
+		{
+			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_roots"))
+			this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"))
+		}
+	}
+
+	function buildPerkTree()
+	{
+		this.character_background.buildPerkTree();
+		this.addPerk(::Const.Perks.PerkDefs.LegendRoots, 0, false)
 	}
 
 	function onChangeAttributes()

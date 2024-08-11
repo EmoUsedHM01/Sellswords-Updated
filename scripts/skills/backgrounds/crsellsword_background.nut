@@ -12,7 +12,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 		this.m.GoodEnding = "%name% the sellsword left the %companyname% and started his own mercenary company. As far as you know, it\'s a very successful venture and he often buddies up with the men of the %companyname% to work together.";
 		this.m.BadEnding = "%name% left the %companyname% and started his own competing company. The two companies clashed on opposite sides of a battle between nobles. The sellsword died when a mercenary from the %companyname% stove his head in with a hedge knight\'s helmet.";
 		this.m.HiringCost = 100;
-		this.m.DailyCost = 35;
+		this.m.DailyCost = 30;
 		this.m.Excluded = [
 			"trait.weasel",
 			"trait.night_blind",
@@ -91,14 +91,10 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 	function setGender( _gender = -1 )
 	{
 		if (_gender == -1)
-		{
 			_gender = ::Legends.Mod.ModSettings.getSetting("GenderEquality").getValue() == "Disabled" ? 0 : ::Math.rand(0, 1);
-		}
 
 		if (_gender != 1)
-		{
 			return;
-		}
 
 		this.m.Faces = this.Const.Faces.AllWhiteFemale;
 		this.m.Hairs = this.Const.Hair.AllFemale;
@@ -197,13 +193,20 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 
 	function onAdded()
 	{
+		if (this.m.IsNew)
+			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"))
+
 		this.character_background.onAdded();
 		local actor = this.getContainer().getActor();
 
 		if (this.Math.rand(0, 3) == 3)
-		{
 			actor.setTitle(this.Const.Strings.SellswordTitles[this.Math.rand(0, this.Const.Strings.SellswordTitles.len() - 1)]);
-		}
+	}
+
+	function buildPerkTree()
+	{
+		this.character_background.buildPerkTree();
+		this.addPerk(::Const.Perks.PerkDefs.LegendBackToBasics, 0, false)
 	}
 
 	function onAddEquipment()
@@ -212,71 +215,66 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 		local r;
 		r = this.Math.rand(0, 8);
 
-		if (r == 0)
+		switch(r)
 		{
-			items.equip(this.new("scripts/items/weapons/falchion"));
+			case 0:
+				items.equip(this.new("scripts/items/weapons/falchion"));
+				break;
+			case 1:
+				items.equip(this.new("scripts/items/weapons/flail"));
+				break;
+			case 2:
+				items.equip(this.new("scripts/items/weapons/hand_axe"));
+				break;
+			case 3:
+				items.equip(this.new("scripts/items/weapons/legend_glaive"));
+				break;
+			case 4:
+				items.equip(this.new("scripts/items/weapons/arming_sword"));
+				break;
+			case 5:
+				items.equip(this.new("scripts/items/weapons/billhook"));
+				break;
+			case 6:
+				items.equip(this.new("scripts/items/weapons/oriental/heavy_southern_mace"));
+				break;
+			case 7:
+				items.equip(this.new("scripts/items/weapons/scimitar"));
+				break;
+			default:
+				items.equip(this.new("scripts/items/weapons/boar_spear"));
+				break;
 		}
-		else if (r == 1)
-		{
-			items.equip(this.new("scripts/items/weapons/flail"));
-		}
-		else if (r == 2)
-		{
-			items.equip(this.new("scripts/items/weapons/hand_axe"));
-		}
-		else if (r == 3)
-		{
-			items.equip(this.new("scripts/items/weapons/legend_glaive"));
-		}
-		else if (r == 4)
-		{
-			items.equip(this.new("scripts/items/weapons/arming_sword"));
-		}
-		else if (r == 5)
-		{
-			items.equip(this.new("scripts/items/weapons/billhook"));
-		}
-		else if (r == 6)
-		{
-			items.equip(this.new("scripts/items/weapons/oriental/heavy_southern_mace"));
-		}
-		else if (r == 7)
-		{
-			items.equip(this.new("scripts/items/weapons/scimitar"));
-		}
-		else if (r == 8)
-		{
-			items.equip(this.new("scripts/items/weapons/boar_spear"));
-		}
-		
+
 		items.equip(this.new("scripts/items/tools/throwing_net"));		
 
 		items.equip(this.Const.World.Common.pickArmor([
 			[
 				1,
-				"patched_mail_shirt"
+				"sellsword_armor_medium_high_ichi"
 			],
 			[
 				1,
-				"padded_leather"
+				"sellsword_armor_medium_high_ni"
 			],
 			[
 				1,
-				"basic_mail_shirt"
+				"sellsword_armor_medium_high_sann"
 			],
 			[
 				1,
-				"worn_mail_shirt"
+				"sellsword_armor_medium_high_yonn"
 			],
 			[
 				1,
-				"leather_lamellar"
+				"sellsword_armor_medium"
 			],
 			[
 				1,
-				"mail_shirt"
+				"sellsword_armor_medium_chain"
 			]
 		]));
+
 		items.equip(this.Const.World.Common.pickHelmet([
 			[
 				1,
@@ -284,7 +282,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 			],
 			[
 				1,
-				"nasal_helmet"
+				"sellsword_helmet_medium_high"
 			],
 			[
 				1,
@@ -292,11 +290,11 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 			],
 			[
 				1,
-				"mail_coif"
+				"sellsword_helmet_light_high"
 			],
 			[
 				1,
-				"closed_mail_coif"
+				"sellsword_helmet_medium"
 			],
 			[
 				1,
@@ -312,10 +310,9 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 			],
 			[
 				1,
-				"hood"
+				"sellsword_helmet_light"
 			]
 		]));
 	}
 
 });
-
