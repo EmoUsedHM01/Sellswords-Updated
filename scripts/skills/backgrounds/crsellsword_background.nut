@@ -37,7 +37,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 		this.m.Beards = this.Const.Beards.All;
 		this.m.Bodies = this.Const.Bodies.Muscular;
 		this.m.Level = 3;
-		this.m.BackgroundType = this.Const.BackgroundType.Combat;
+		this.m.BackgroundType = this.Const.BackgroundType.Ranger | this.Const.BackgroundType.Combat;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Kind;
 		this.m.Modifiers.Ammo = this.Const.LegendMod.ResourceModifiers.Ammo[1];

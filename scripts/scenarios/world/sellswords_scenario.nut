@@ -174,6 +174,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 
 	function onUpdateHiringRoster( _roster )
 	{
+		this.addBroToRoster(_roster, "crsellsword_background", 8);
 		local bros = _roster.getAll();
 
 		foreach( i, bro in bros )

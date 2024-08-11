@@ -7,6 +7,9 @@ Updated the backgrounds to get their "free" perk on generation
 ...\scripts\config\a_sellswords_character_names.nut
 Replaced the weeb names with historical merc ones
 
+...\scripts\scenarios\world\sellswords_scenario.nut
+Added the crSellsword background to the roster list
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.4.0 changes
