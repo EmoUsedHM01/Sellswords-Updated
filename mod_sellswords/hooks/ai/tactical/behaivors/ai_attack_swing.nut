@@ -2,7 +2,9 @@
 
 	q.m.PossibleSkills.extend([
 		"actives.twinaxes_2",
-		"actives.cr_overwhelm_attack"
-		"actives.crstaff_sweep"
+		"actives.cr_overwhelm_attack",
+		"actives.crstaff_sweep",
+		"actives.ssu_bone_cleaver_swing"
 	])
+
 });

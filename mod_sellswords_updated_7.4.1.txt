@@ -13,6 +13,11 @@ Added the crSellsword background to the roster list
 ...\scripts\!mods_preload\mod_sellswords.nut
 Updated the list with alphabetical sorting
 
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_attack_default.nut
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_attack_swing.nut
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_warcry.nut
+Updated the AI to include some skills that were recently added and got overlooked
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.4.0 changes
