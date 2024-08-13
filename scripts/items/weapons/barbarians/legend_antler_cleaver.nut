@@ -27,7 +27,7 @@ this.legend_antler_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.DirectDamageMult = 0.35;
 		this.m.DirectDamageAdd = 0.2;
 	}
-	
+
 	function getTooltip()
 	{
 		local result = this.weapon.getTooltip();
@@ -35,11 +35,11 @@ this.legend_antler_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Slowly repairs [color=" + this.Const.UI.Color.PositiveValue + "] +5[/color] durability per turn."
+			text = "Slowly repairs [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] durability each turn."
 		});
 		return result;
 	}
-	
+
 	function onEquip()
 	{
 		this.weapon.onEquip();
@@ -61,5 +61,5 @@ this.legend_antler_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.m.Condition = this.Math.minf(this.m.ConditionMax, this.m.Condition + 5.0);
 	}
-});
 
+});

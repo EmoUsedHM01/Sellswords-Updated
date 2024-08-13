@@ -39,7 +39,7 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 			0.0, // -
 			0.1, // Swamps
 			0.0, // Hills
-			0.5, // Forests
+			0.4, // Forests
 			0.0, // -
 			0.0, // -
 			0.0, // -
@@ -63,98 +63,6 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 			[],
 			[]
 		];
-
-		// Base Trees, basically ones that it always spawns with
-		local trees = [
-			this.Const.Perks.CleaverTree,
-			this.Const.Perks.StaffTree,
-			this.Const.Perks.SturdyTree,
-			this.Const.Perks.MediumArmorTree,
-			this.Const.Perks.DruidMagicTree
-		]
-
-		// If you have PTR, these two are added to the base trees
-		if (::Is_PTR_Exist)
-		{
-			trees.extend([
-				this.Const.Perks.OneHandedTree,
-				this.Const.Perks.ApothecaryProfessionTree
-			])
-		}
-
-		::Mod_Sellswords.HookHelper.addPerkTreesToCustomPerkTree(this.m.CustomPerkTree, trees);
-
-		// Armour Trees
-		local cramtrees = [
-			this.Const.Perks.ClothArmorTree,
-			this.Const.Perks.LightArmorTree,
-			this.Const.Perks.HeavyArmorTree
-		];
-
-		// Weapon Trees
-		local crwptrees = [
-			this.Const.Perks.AxeTree,
-			this.Const.Perks.SwordTree,
-			this.Const.Perks.FlailTree,
-			this.Const.Perks.MaceTree,
-			this.Const.Perks.DaggerTree,
-			this.Const.Perks.HammerTree
-		];
-
-		// Trait Trees
-		local crtttrees = [	
-			this.Const.Perks.AgileTree,
-			this.Const.Perks.FastTree,
-			this.Const.Perks.ViciousTree,
-			this.Const.Perks.CalmTree,
-			this.Const.Perks.LargeTree,
-			this.Const.Perks.FitTree,
-			this.Const.Perks.TrainedTree
-		];
-
-		// If you have PTR, these two are added to the random trait trees
-		if (::Is_PTR_Exist)
-		{
-			crtttrees.extend([
-				this.Const.Perks.UnstoppableTree,
-				this.Const.Perks.ResilientTree
-			])
-		}
-
-		for (local i = 0; i < 1; ++i)
-		{
-			// Picking a single extra armour tree to add to the perk tree
-			::Mod_Sellswords.HookHelper.addPerkTreesToCustomPerkTree(this.m.CustomPerkTree, [cramtrees.remove(this.Math.rand(0, cramtrees.len()-1))]);
-		}
-
-		for (local i = 0; i < 2; ++i)
-		{
-			// Picking two extra weapon tree to add to the perk tree
-			::Mod_Sellswords.HookHelper.addPerkTreesToCustomPerkTree(this.m.CustomPerkTree, [crwptrees.remove(this.Math.rand(0, crwptrees.len()-1))]);
-		}
-
-		for (local i = 0; i < 2; ++i)
-		{
-			// Picking a two extra trait tree to add to the perk tree
-			::Mod_Sellswords.HookHelper.addPerkTreesToCustomPerkTree(this.m.CustomPerkTree, [crtttrees.remove(this.Math.rand(0, crtttrees.len()-1))]);
-		}
-
-		// Adds BattleHeart to the perk map
-		::Mod_Sellswords.HookHelper.addPerksToCustomPerkTree(4, this.m.CustomPerkTree, [
-			this.Const.Perks.PerkDefs.LegendBattleheart
-		]);
-
-		if (::Is_PTR_Exist)
-		{
-			::Mod_Sellswords.HookHelper.addPerksToCustomPerkTree(5, this.m.CustomPerkTree, [
-					this.Const.Perks.PerkDefs.PTRRisingStar,
-				]
-			);
-			::Mod_Sellswords.HookHelper.addPerksToCustomPerkTree(4, this.m.CustomPerkTree, [
-					this.Const.Perks.PerkDefs.PTRManOfSteel,
-				]
-			);
-		}
 	}
 
 	function getTooltip()
@@ -186,7 +94,7 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 	{
 		local actor = this.getContainer().getActor().get();
 
-		// will always die, no survival chance
+		// Will always die, no survival chance when downed
 		actor.isReallyKilled = function( _fatalityType )
 		{
 			return true;
@@ -195,10 +103,8 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 
 	function onUpdate( _properties )
 	{
-		_properties.Vision += 1;
 		_properties.IsImmuneToBleeding = true;
 		_properties.IsImmuneToPoison = true;
-		
 	}
 
 	function onAdded()
@@ -216,46 +122,72 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.LegendRoots, 0, false)
+		
+		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
+		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
+		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
+		this.addPerkGroup(::Const.Perks.DruidMagicTree.Tree);
+		this.addPerkGroup(::Const.Perks.MediumArmorTree.Tree);
+		this.addPerkGroup(::Const.Perks.HeavyArmorTree.Tree);
+		this.addPerkGroup(::Const.Perks.LargeTree.Tree);
+		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
+		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
+		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
+		this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
+		this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
+		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 2, false)
+		this.addPerkGroup(::Const.Perks.CivilizationTree.Tree);
+		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
+
+		if (::Is_PTR_Exist)
+		{
+			this.addPerkGroup(::Const.Perks.UnstoppableTree.Tree);
+			this.addPerkGroup(::Const.Perks.ResilientTree.Tree);
+
+			this.addPerk(::Const.Perks.PerkDefs.PTRRisingStar, 4, false)
+			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false)
+		}
+
+		this.addPerk(::Const.Perks.PerkDefs.LegendBattleheart, 3, false)
 	}
 
 	function onChangeAttributes()
 	{
-		local attri = {
+		local att = {
 			Hitpoints = [
 				10,
 				15
 			],
 			Bravery = [
-				0,
-				5
+				10,
+				15
 			],
 			Stamina = [
-				25,
-				30
+				35,
+				40
 			],
 			MeleeSkill = [
 				5,
 				10
 			],
 			RangedSkill = [
-				-10,
-				-10
+				-15,
+				-20
 			],
 			MeleeDefense = [
-				5,
-				10
+				0,
+				5
 			],
 			RangedDefense = [
-				-5,
-				-5
+				-15,
+				-20
 			],
 			Initiative = [
-				-30,
-				-30
+				-40,
+				-50
 			]
 		};
-		return attri;
+		return att;
 	}
 
 	function onCombatStarted()
@@ -321,10 +253,6 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 			
 			return;
 		}
-	}
-
-	function onFinishingPerkTree()
-	{
 	}
 
 });
