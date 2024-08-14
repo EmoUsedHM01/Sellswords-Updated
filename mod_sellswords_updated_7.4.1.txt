@@ -22,13 +22,15 @@ Updated the AI to include some skills that were recently added and got overlooke
 Fixed a surcoat bug with the standard bearer
 
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
-...\scripts\items\weapons\dryad_bow.nut
-...\scripts\items\weapons\dryad_spear.nut
-...\scripts\items\weapons\barbarians\legend_antler_cleaver.nut
+...\scripts\items\weapons\dryad\dryad_bow.nut
+...\scripts\items\weapons\dryad\dryad_spear.nut
+...\scripts\items\weapons\barbarians\legend_antler_cleaver.nut -> ...\scripts\items\weapons\dryad\dryad_cleaver.nut
+...\gfx\ui\items\weapons\melee\druweapon_01.png -> ...\gfx\ui\items\weapons\melee\dryad_cleaver.png
+...\gfx\ui\items\weapons\melee\druweapon_01_70x70.png -> ...\gfx\ui\items\weapons\melee\dryad_cleaver_70x70.png
 ...\gfx\ui\items\weapons\melee\dryad_spear.png
 ...\gfx\ui\items\weapons\melee\dryad_spear_70x70.png
-...\gfx\ui\items\weapons\ranged\dryad_bow_70x70.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow.png
+...\gfx\ui\items\weapons\ranged\dryad_bow_70x70.png
 ...\gfx\dryad_entities.png
 ...\brushes\dryad_entities.brush
 Adding and rebalancing some Dryad stuff
