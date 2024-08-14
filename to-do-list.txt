@@ -1,6 +1,13 @@
 
-- Dryad faction addition (prio)
+- Dryad faction addition (prio);
+Grunt: Spear/Shieldwaller. Just walls the frontline
+Warrior: 2h sword. Thorns to deal damage if hit in melee
+Archer: Bow. Spawns saplings in adjacent tiles to targets hit
+Shaman: Staff. Root, Insect Swarm, and Healing
+Tamer: Whip. Summons woodland beasts to fight
 
-- Legendary Sword stuff
+- Legendary Glaive/Spear and Orc Mace
 
-- add hooks for status effect tooltips to take resilient into account.
+- Krieghast working
+
+- Add hooks for status effect tooltips to take resilient into account.

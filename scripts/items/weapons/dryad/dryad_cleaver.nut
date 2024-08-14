@@ -15,7 +15,7 @@ this.dryad_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.AddGenericSkill = true;
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
-		this.m.ArmamentIcon = "icon_druweapon_01";
+		this.m.ArmamentIcon = "icon_dryad_cleaver";
 		this.m.ShieldDamage = 0;
 		this.m.Condition = 60.0;
 		this.m.ConditionMax = 60.0;
