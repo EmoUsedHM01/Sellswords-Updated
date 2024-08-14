@@ -23,7 +23,10 @@ Fixed a surcoat bug with the standard bearer
 
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
 ...\scripts\items\weapons\dryad_bow.nut
+...\scripts\items\weapons\dryad_spear.nut
 ...\scripts\items\weapons\barbarians\legend_antler_cleaver.nut
+...\gfx\ui\items\weapons\melee\dryad_spear.png
+...\gfx\ui\items\weapons\melee\dryad_spear_70x70.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow_70x70.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow.png
 ...\gfx\dryad_entities.png
