@@ -6,8 +6,8 @@ this.spontoon01 <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.spontoon01";
 		this.m.Name = "Short Spear";
 		this.m.Description = "A simple pike with a short shaft. Can be used for striking and blocking, while its suitable length is designed to concentrate the force of a punch and thrust at enemies.";
-		this.m.IconLarge = "weapons/melee/changji.png";
-		this.m.Icon = "weapons/melee/changji_70x70.png";
+		this.m.IconLarge = "weapons/melee/cr_spontoon_01.png";
+		this.m.Icon = "weapons/melee/cr_spontoon_01_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Spear;
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
@@ -17,7 +17,7 @@ this.spontoon01 <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.AddGenericSkill = true;
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
-		this.m.ArmamentIcon = "weapon_changji";
+		this.m.ArmamentIcon = "cr_spontoon_01";
 		this.m.Value = 550;
 		this.m.ShieldDamage = 0;
 		this.m.Condition = 54.0;

@@ -11,9 +11,8 @@ this.cr_named_orc_sword_1h <- this.inherit("scripts/items/weapons/named/named_we
 		this.m.Icon = "weapons/melee/named_orc_1h_sword_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Sword;
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
-		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
-		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;
-		this.m.IsAoE = true;
+		this.m.ItemType = this.Const.Items.ItemType.Named | this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
+		this.m.IsAoE = false;
 		this.m.AddGenericSkill = true;
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
@@ -22,9 +21,9 @@ this.cr_named_orc_sword_1h <- this.inherit("scripts/items/weapons/named/named_we
 		this.m.ShieldDamage = 32.0;
 		this.m.Condition = 64.0;
 		this.m.ConditionMax = 64.0;
-		this.m.StaminaModifier = -28;
-		this.m.RegularDamage = 70;
-		this.m.RegularDamageMax = 100;
+		this.m.StaminaModifier = -18;
+		this.m.RegularDamage = 50;
+		this.m.RegularDamageMax = 65;
 		this.m.ArmorDamageMult = 1.3;
 		this.m.DirectDamageMult = 0.25;
 		this.m.FatigueOnSkillUse = 5;

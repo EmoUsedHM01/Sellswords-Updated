@@ -28,7 +28,7 @@ this.named_spontoon <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		this.m.RegularDamage = 75;
 		this.m.RegularDamageMax = 90;
 		this.m.ArmorDamageMult = 1.1;
-		this.m.DirectDamageMult = 0.3;		
+		this.m.DirectDamageMult = 0.3;
 		this.m.ChanceToHitHead = 0;
 		this.randomizeValues();
 	}
@@ -37,15 +37,15 @@ this.named_spontoon <- this.inherit("scripts/items/weapons/named/named_weapon", 
 	{
 		if (this.m.Variant == 1)
 		{
-			this.m.IconLarge = "weapons/melee/named_jin_weapon_02.png";
-			this.m.Icon = "weapons/melee/named_jin_weapon_02_70.png";
-			this.m.ArmamentIcon = "named_jin_weapon_02";
+			this.m.IconLarge = "weapons/melee/named_spontoon_01.png";
+			this.m.Icon = "weapons/melee/named_spontoon_01_70x70.png";
+			this.m.ArmamentIcon = "named_spontoon_01";
 		}
 		else
 		{
-			this.m.IconLarge = "weapons/melee/named_jin_weapon_18.png";
-			this.m.Icon = "weapons/melee/named_jin_weapon_18_70.png";
-			this.m.ArmamentIcon = "named_jin_weapon_18";		
+			this.m.IconLarge = "weapons/melee/named_spontoon_02.png";
+			this.m.Icon = "weapons/melee/named_spontoon_02_70x70.png";
+			this.m.ArmamentIcon = "named_spontoon_02";
 		}
 	}
 
@@ -57,21 +57,20 @@ this.named_spontoon <- this.inherit("scripts/items/weapons/named/named_weapon", 
 		thrust.m.IconDisabled = "skills/jinweapon02_01_sw.png";
 		thrust.m.Overlay = "jinweapon02_01";
 		thrust.setFatigueCost(15);
-		thrust.m.DirectDamageMult = this.m.DirectDamageMult;		
+		thrust.m.DirectDamageMult = this.m.DirectDamageMult;
 		thrust.m.ActionPointCost = 6;
-		thrust.m.spontoon = 1;				
+		thrust.m.spontoon = 1;
 		this.addSkill(thrust);
 		local jab = this.new("scripts/skills/actives/jab");
 		jab.m.Icon = "skills/jinweapon19_01.png";
 		jab.m.IconDisabled = "skills/jinweapon19_01_sw.png";
-		jab.m.Overlay = "jinweapon19_01";				
+		jab.m.Overlay = "jinweapon19_01";
 		this.addSkill(jab);	
 		local crstrike = this.new("scripts/skills/actives/crstrike");
 		crstrike.m.Icon = "skills/jinweapon02_02.png";
 		crstrike.m.IconDisabled = "skills/jinweapon02_02_sw.png";
-		crstrike.m.Overlay = "jinweapon02_02";				
-		this.addSkill(crstrike);			
+		crstrike.m.Overlay = "jinweapon02_02";
+		this.addSkill(crstrike);
 	}
 
 });
-

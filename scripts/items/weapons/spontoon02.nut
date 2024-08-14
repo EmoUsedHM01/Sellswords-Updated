@@ -6,8 +6,8 @@ this.spontoon02 <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ID = "weapon.spontoon02";
 		this.m.Name = "Spontoon";
 		this.m.Description = "A pair of blades or lugs on each side, giving the weapon the look of a military fork. Can be used for striking and blocking, while its suitable length is designed to concentrate the force of a punch and thrust at enemies.";
-		this.m.IconLarge = "weapons/melee/jin_weapon_18.png";
-		this.m.Icon = "weapons/melee/jin_weapon_18_70.png";
+		this.m.IconLarge = "weapons/melee/cr_spontoon_02.png";
+		this.m.Icon = "weapons/melee/cr_spontoon_02_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Spear;
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
@@ -17,7 +17,7 @@ this.spontoon02 <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.AddGenericSkill = true;
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
-		this.m.ArmamentIcon = "jin_weapon_18";
+		this.m.ArmamentIcon = "cr_spontoon_02";
 		this.m.Value = 1100;
 		this.m.ShieldDamage = 0;
 		this.m.Condition = 64.0;
