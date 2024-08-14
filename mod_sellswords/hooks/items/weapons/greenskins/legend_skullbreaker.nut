@@ -6,7 +6,7 @@
 
 		this.m.IconLarge = "weapons/melee/orc_hammer_2h_low.png";
 		this.m.Icon = "weapons/melee/orc_hammer_2h_low_70x70.png";
-		this.m.ArmamentIcon = "pochengzhedachui";
+		this.m.ArmamentIcon = "cr_orc_hammer_2h_low";
 
 		this.m.ShieldDamage = 38;
 		this.m.Condition = 72.0;

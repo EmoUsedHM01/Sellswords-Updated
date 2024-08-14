@@ -5,10 +5,10 @@ this.cr_orc_spear <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.cr_orc_spear";
 		this.m.Name = "Flakes";
-		this.m.Description = "A raw and rough spear-like patchwork used by orc youngs. Not well suited for human hands.";
+		this.m.Description = "A rough yet sturdy patchwork spear used by Orc Young. Not well suited for human hands.";
 		this.m.Categories = "Spear, One-Handed";
-		this.m.IconLarge = "weapons/melee/orcweapon_03.png";
-		this.m.Icon = "weapons/melee/orcweapon_03_70x70.png";
+		this.m.IconLarge = "weapons/melee/orc_spear.png";
+		this.m.Icon = "weapons/melee/orc_spear_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
 		this.m.IsDoubleGrippable = true;

@@ -30,7 +30,7 @@
 ::Const.Items.NamedHelmets.push("helmets/cr_named_southern_wrap_helmet");
 
 ::Const.Items.NamedOrcWeapons.push("weapons/named/cr_named_orc_axe_infantry");
-::Const.Items.NamedOrcWeapons.push("weapons/named/cr_named_orc_cleaver_2h");
+::Const.Items.NamedOrcWeapons.push("weapons/named/cr_named_orc_sword_1h");
 ::Const.Items.NamedOrcWeapons.push("weapons/named/cr_named_orc_hammer_2h");
 ::Const.Items.NamedOrcWeapons.push("weapons/named/cr_named_orc_mace_2h");
 ::Const.Items.NamedOrcWeapons.push("weapons/named/cr_named_orc_sword_2h");

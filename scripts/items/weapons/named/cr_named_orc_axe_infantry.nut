@@ -17,7 +17,7 @@ this.cr_named_orc_axe_infantry <- this.inherit("scripts/items/weapons/named/name
 		this.m.AddGenericSkill = true;
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
-		this.m.ArmamentIcon = "daqiuzhangdafu";
+		this.m.ArmamentIcon = "cr_orc_axe";
 		this.m.Value = 3000;
 		this.m.ShieldDamage = 32;
 		this.m.Condition = 68.0;

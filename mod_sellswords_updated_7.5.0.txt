@@ -1,4 +1,4 @@
-7.4.1 changes
+7.5.0 changes
 
 ...\scripts\skills\backgrounds\crsellsword_background.nut
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
@@ -34,6 +34,50 @@ Fixed a surcoat bug with the standard bearer
 ...\gfx\dryad_entities.png
 ...\brushes\dryad_entities.brush
 Adding and rebalancing some Dryad stuff
+
+...\brushes\chiru_orcs.brush
+...\brushes\chiru_weapons.brush
+...\brushes\dongfang.brush <- DELETED
+...\brushes\dryad_entities.brush
+...\brushes\sellswords.brush
+...\gfx\chiru_orcs.png
+...\gfx\chiru_weapons.png
+...\gfx\dongfang.png <- DELETED
+...\gfx\sellswords.png
+Updated some brushes/gfx
+
+...\gfx\ui\items\weapons\melee\changji.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_01.png
+...\gfx\ui\items\weapons\melee\changji_70x70.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_01_70x70.png
+...\gfx\ui\items\weapons\melee\icon_crorc_weapon_04.png
+...\gfx\ui\items\weapons\melee\icon_crorc_weapon_04_70x70.png
+...\gfx\ui\items\weapons\melee\jin_weapon_12.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_03.png
+...\gfx\ui\items\weapons\melee\jin_weapon_12_70.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_03_70x70.png
+...\gfx\ui\items\weapons\melee\jin_weapon_18.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_02.png
+...\gfx\ui\items\weapons\melee\jin_weapon_18_70.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_02_70x70.png
+...\gfx\ui\items\weapons\melee\orc_cleaver_2h.png <- ...\gfx\ui\items\weapons\melee\named_orc_1h_sword.png
+...\gfx\ui\items\weapons\melee\orc_cleaver_2h_70x70.png <- ...\gfx\ui\items\weapons\melee\named_orc_1h_sword_70x70.png
+...\gfx\ui\items\weapons\melee\orc_hammer_2h_low.png
+...\gfx\ui\items\weapons\melee\orc_hammer_2h_low_70x70.png
+...\gfx\ui\items\weapons\melee\orc_mace.png
+...\gfx\ui\items\weapons\melee\orc_mace_70x70.png
+...\gfx\ui\items\weapons\melee\orcweapon_03.png <- ...\gfx\ui\items\weapons\melee\orc_spear.png
+...\gfx\ui\items\weapons\melee\orcweapon_03_70x70.png <- ...\gfx\ui\items\weapons\melee\orc_spear_70x70.png
+...\gfx\ui\items\weapons\melee\polemace_03.png
+...\gfx\ui\items\weapons\melee\wildmen_089.png
+...\gfx\ui\items\weapons\melee\wildmen_089_70x70.png
+Sorted some weapon icons
+
+...\mod_sellswords\config\items.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_skullbreaker.nut
+...\scripts\entity\tactical\enemies\crOrcPackleader.nut
+...\scripts\entity\tactical\enemies\crOrcVanguard.nut
+...\scripts\items\weapons\greenskins\cr_orc_mace.nut
+...\scripts\items\weapons\greenskins\cr_orc_spear.nut
+...\scripts\items\weapons\named\cr_named_orc_axe_infantry.nut
+...\scripts\items\weapons\named\cr_named_orc_cleaver_2h.nut <- ...\scripts\items\weapons\named\cr_named_orc_sword_1h.nut
+Updated entries to match the above changes
 
 ----------------------------------------------------------------------------------------------------------------------------
 

@@ -412,7 +412,7 @@ this.crOrcPackleader <- this.inherit("scripts/entity/tactical/actor", {
 			"weapons/named/named_orc_axe",
 			"weapons/named/named_orc_axe_2h",
 			"weapons/named/named_orc_flail_2h",			
-			"weapons/named/cr_named_orc_cleaver_2h",
+			"weapons/named/cr_named_orc_sword_1h",
 			"weapons/named/cr_named_orc_sword_2h",
 			"weapons/named/cr_named_orc_axe_infantry"			
 		];

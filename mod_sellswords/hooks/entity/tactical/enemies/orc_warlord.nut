@@ -120,7 +120,7 @@
 			"weapons/named/named_orc_axe",
 			"weapons/named/named_orc_axe_2h",
 			"weapons/named/named_orc_axe_2h",
-			"weapons/named/cr_named_orc_cleaver_2h",
+			"weapons/named/cr_named_orc_sword_1h",
 			"weapons/named/cr_named_orc_sword_2h"
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
