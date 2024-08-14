@@ -74,7 +74,7 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 	function onAddEquipment()
 	{
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.new("scripts/items/weapons/barbarians/legend_antler_cleaver"));
+		items.equip(this.new("scripts/items/weapons/dryad/dryad_cleaver"));
 		items.equip(this.new("scripts/items/ammo/forest_heart_ammo"));
 		items.equip(this.Const.World.Common.pickArmor([
 			[

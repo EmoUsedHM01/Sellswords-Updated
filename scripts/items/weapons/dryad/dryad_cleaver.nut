@@ -1,13 +1,13 @@
-this.legend_antler_cleaver <- this.inherit("scripts/items/weapons/weapon", {
+this.dryad_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 	m = {},
 	function create()
 	{
 		this.weapon.create();
-		this.m.ID = "weapon.legend_antler_cleaver";
+		this.m.ID = "weapon.dryad_cleaver";
 		this.m.Name = "Dryad Antler Whip";
 		this.m.Description = "A very unique style of whip crafted from an antler and a heart of oak. Unwieldy and blunt, but still dangerous.";
-		this.m.IconLarge = "weapons/melee/druweapon_01.png";
-		this.m.Icon = "weapons/melee/druweapon_01_70x70.png";
+		this.m.IconLarge = "weapons/melee/dryad_cleaver.png";
+		this.m.Icon = "weapons/melee/dryad_cleaver_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Cleaver | this.Const.Items.WeaponType.Whip;
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.ItemType = this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.OneHanded;
@@ -20,7 +20,7 @@ this.legend_antler_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.Condition = 60.0;
 		this.m.ConditionMax = 60.0;
 		this.m.StaminaModifier = -6;
-		this.m.Value = 220;
+		this.m.Value = 450;
 		this.m.RegularDamage = 30;
 		this.m.RegularDamageMax = 45;
 		this.m.ArmorDamageMult = 0.75;
