@@ -54,6 +54,10 @@ Updated some brushes/gfx
 ...\gfx\ui\items\weapons\melee\jin_weapon_12_70.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_03_70x70.png
 ...\gfx\ui\items\weapons\melee\jin_weapon_18.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_02.png
 ...\gfx\ui\items\weapons\melee\jin_weapon_18_70.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_02_70x70.png
+...\gfx\ui\items\weapons\melee\named_jin_weapon_02.png <- ...\gfx\ui\items\weapons\melee\named_spontoon_01.png
+...\gfx\ui\items\weapons\melee\named_jin_weapon_02_70.png <- ...\gfx\ui\items\weapons\melee\named_spontoon_01_70x70.png
+...\gfx\ui\items\weapons\melee\named_jin_weapon_18.png <- ...\gfx\ui\items\weapons\melee\named_spontoon_02.png
+...\gfx\ui\items\weapons\melee\named_jin_weapon_18_70.png <- ...\gfx\ui\items\weapons\melee\named_spontoon_02_70x70.png
 ...\gfx\ui\items\weapons\melee\orc_cleaver_2h.png <- ...\gfx\ui\items\weapons\melee\named_orc_1h_sword.png
 ...\gfx\ui\items\weapons\melee\orc_cleaver_2h_70x70.png <- ...\gfx\ui\items\weapons\melee\named_orc_1h_sword_70x70.png
 ...\gfx\ui\items\weapons\melee\orc_hammer_2h_low.png
@@ -77,6 +81,10 @@ Sorted some weapon icons
 ...\scripts\items\weapons\greenskins\cr_orc_spear.nut
 ...\scripts\items\weapons\named\cr_named_orc_axe_infantry.nut
 ...\scripts\items\weapons\named\cr_named_orc_cleaver_2h.nut <- ...\scripts\items\weapons\named\cr_named_orc_sword_1h.nut
+...\scripts\items\weapons\named\named_spontoon.nut
+...\scripts\items\weapons\spontoon01.nut
+...\scripts\items\weapons\spontoon02.nut
+...\scripts\items\weapons\spontoon03.nut
 Updated entries to match the above changes
 
 ----------------------------------------------------------------------------------------------------------------------------
