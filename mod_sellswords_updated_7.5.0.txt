@@ -46,6 +46,8 @@ Adding and rebalancing some Dryad stuff
 ...\gfx\sellswords.png
 Updated some brushes/gfx
 
+...\gfx\ui\items\weapons\melee\cr_staff_01.png
+...\gfx\ui\items\weapons\melee\cr_staff_01_70x70.png
 ...\gfx\ui\items\weapons\melee\changji.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_01.png
 ...\gfx\ui\items\weapons\melee\changji_70x70.png <- ...\gfx\ui\items\weapons\melee\cr_spontoon_01_70x70.png
 ...\gfx\ui\items\weapons\melee\icon_crorc_weapon_04.png
