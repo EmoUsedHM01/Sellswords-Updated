@@ -18,6 +18,9 @@ Updated the list with alphabetical sorting
 ...\mod_sellswords\hooks\ai\tactical\behaivors\ai_warcry.nut
 Updated the AI to include some skills that were recently added and got overlooked
 
+...\mod_sellswords\hooks\entity\tactical\humans\standard_bearer.nut
+Fixed a surcoat bug with the standard bearer
+
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
 ...\scripts\items\weapons\dryad_bow.nut
 ...\scripts\items\weapons\barbarians\legend_antler_cleaver.nut
