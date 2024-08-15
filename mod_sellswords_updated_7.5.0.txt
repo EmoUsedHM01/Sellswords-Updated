@@ -25,10 +25,67 @@ Fixed a surcoat bug with the standard bearer
 ...\scripts\items\weapons\dryad\dryad_bow.nut
 ...\scripts\items\weapons\dryad\dryad_spear.nut
 ...\scripts\items\weapons\barbarians\legend_antler_cleaver.nut -> ...\scripts\items\weapons\dryad\dryad_cleaver.nut
+...\scripts\items\legend_armor\cloth\dryad_cloth.nut
+...\scripts\items\weapons\dryad\dryad_staff.nut
+...\scripts\items\weapons\dryad\dryad_sword.nut
+...\gfx\ui\items\legend_armor\inventory_dryad_plate_04.png
+...\gfx\ui\items\legend_armor\inventory_dryad_plate_03.png
+...\gfx\ui\items\legend_armor\inventory_dryad_plate_02.png
+...\gfx\ui\items\legend_armor\inventory_dryad_plate_01.png
+...\gfx\ui\items\legend_armor\inventory_dryad_plate_00.png
+...\gfx\ui\items\legend_armor\inventory_dryad_pauldrons_04.png
+...\gfx\ui\items\legend_armor\inventory_dryad_pauldrons_03.png
+...\gfx\ui\items\legend_armor\inventory_dryad_pauldrons_02.png
+...\gfx\ui\items\legend_armor\inventory_dryad_pauldrons_01.png
+...\gfx\ui\items\legend_armor\inventory_dryad_pauldrons_00.png
+...\gfx\ui\items\legend_armor\inventory_dryad_cloth_04.png <- DELETED
+...\gfx\ui\items\legend_armor\inventory_dryad_cloth_03.png <- DELETED
+...\gfx\ui\items\legend_armor\inventory_dryad_cloth_02.png <- DELETED
+...\gfx\ui\items\legend_armor\inventory_dryad_cloth_01.png <- DELETED
+...\gfx\ui\items\legend_armor\inventory_dryad_cloth_00.png
+...\gfx\ui\items\legend_armor\inventory_dryad_cloak_04.png
+...\gfx\ui\items\legend_armor\inventory_dryad_cloak_03.png
+...\gfx\ui\items\legend_armor\inventory_dryad_cloak_02.png
+...\gfx\ui\items\legend_armor\inventory_dryad_cloak_01.png
+...\gfx\ui\items\legend_armor\inventory_dryad_cloak_00.png
+...\gfx\ui\items\legend_armor\inventory_dryad_chain_04.png
+...\gfx\ui\items\legend_armor\inventory_dryad_chain_03.png
+...\gfx\ui\items\legend_armor\inventory_dryad_chain_02.png
+...\gfx\ui\items\legend_armor\inventory_dryad_chain_01.png
+...\gfx\ui\items\legend_armor\inventory_dryad_chain_00.png
+...\gfx\ui\items\legend_armor\icon_dryad_plate_04.png
+...\gfx\ui\items\legend_armor\icon_dryad_plate_03.png
+...\gfx\ui\items\legend_armor\icon_dryad_plate_02.png
+...\gfx\ui\items\legend_armor\icon_dryad_plate_01.png
+...\gfx\ui\items\legend_armor\icon_dryad_plate_00.png
+...\gfx\ui\items\legend_armor\icon_dryad_pauldrons_04.png
+...\gfx\ui\items\legend_armor\icon_dryad_pauldrons_03.png
+...\gfx\ui\items\legend_armor\icon_dryad_pauldrons_02.png
+...\gfx\ui\items\legend_armor\icon_dryad_pauldrons_01.png
+...\gfx\ui\items\legend_armor\icon_dryad_pauldrons_00.png
+...\gfx\ui\items\legend_armor\icon_dryad_cloth_04.png <- DELETED
+...\gfx\ui\items\legend_armor\icon_dryad_cloth_03.png <- DELETED
+...\gfx\ui\items\legend_armor\icon_dryad_cloth_02.png <- DELETED
+...\gfx\ui\items\legend_armor\icon_dryad_cloth_01.png <- DELETED
+...\gfx\ui\items\legend_armor\icon_dryad_cloth_00.png
+...\gfx\ui\items\legend_armor\icon_dryad_cloak_04.png
+...\gfx\ui\items\legend_armor\icon_dryad_cloak_03.png
+...\gfx\ui\items\legend_armor\icon_dryad_cloak_02.png
+...\gfx\ui\items\legend_armor\icon_dryad_cloak_01.png
+...\gfx\ui\items\legend_armor\icon_dryad_cloak_00.png
+...\gfx\ui\items\legend_armor\icon_dryad_chain_04.png
+...\gfx\ui\items\legend_armor\icon_dryad_chain_03.png
+...\gfx\ui\items\legend_armor\icon_dryad_chain_02.png
+...\gfx\ui\items\legend_armor\icon_dryad_chain_01.png
+...\gfx\ui\items\legend_armor\icon_dryad_chain_00.png
 ...\gfx\ui\items\weapons\melee\druweapon_01.png -> ...\gfx\ui\items\weapons\melee\dryad_cleaver.png
 ...\gfx\ui\items\weapons\melee\druweapon_01_70x70.png -> ...\gfx\ui\items\weapons\melee\dryad_cleaver_70x70.png
 ...\gfx\ui\items\weapons\melee\dryad_spear.png
 ...\gfx\ui\items\weapons\melee\dryad_spear_70x70.png
+...\gfx\ui\items\weapons\melee\dryad_staff.png
+...\gfx\ui\items\weapons\melee\dryad_staff_70x70.png
+...\gfx\ui\items\weapons\melee\dryad_sword.png
+...\gfx\ui\items\weapons\melee\dryad_sword_70x70.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow_70x70.png
 ...\gfx\dryad_entities.png
@@ -69,6 +126,7 @@ Updated some brushes/gfx
 ...\gfx\ui\items\weapons\melee\orcweapon_03.png <- ...\gfx\ui\items\weapons\melee\orc_spear.png
 ...\gfx\ui\items\weapons\melee\orcweapon_03_70x70.png <- ...\gfx\ui\items\weapons\melee\orc_spear_70x70.png
 ...\gfx\ui\items\weapons\melee\polemace_03.png
+...\gfx\ui\items\weapons\melee\ssu_lightning_sword.png
 ...\gfx\ui\items\weapons\melee\wildmen_089.png
 ...\gfx\ui\items\weapons\melee\wildmen_089_70x70.png
 Sorted some weapon icons

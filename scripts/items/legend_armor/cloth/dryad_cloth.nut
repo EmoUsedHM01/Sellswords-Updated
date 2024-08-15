@@ -7,11 +7,7 @@ this.dryad_cloth <- this.inherit("scripts/items/legend_armor/legend_armor", {
 		this.m.Name = "Dryad Gown";
 		this.m.Description = "A long and soft gown, magically woven from long leaves. Whatever magic was used to craft it seems to have lingered, slowly regrowing when damaged.";
 		this.m.Variants = [
-			0,
-			1,
-			2,
-			3,
-			4
+			0
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
