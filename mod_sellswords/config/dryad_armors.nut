@@ -10,7 +10,8 @@
 			Chain = [
 				[5, "chain/dryad_chain_warrior"],
 				[1, "chain/dryad_chain_grunt"],
-				[1, "chain/dryad_chain_tamer"]
+				[1, "chain/dryad_chain_tamer"],
+				[1, ""]
 			],
 			Plate = [
 				[5, "plate/dryad_plate_warrior"],
@@ -42,7 +43,8 @@
 			Chain = [
 				[5, "chain/dryad_chain_grunt"],
 				[1, "chain/dryad_chain_tamer"],
-				[1, "chain/dryad_chain_shaman"]
+				[1, "chain/dryad_chain_shaman"],
+				[1, ""]
 			],
 			Plate = [
 				[5, "plate/dryad_plate_grunt"],
@@ -74,7 +76,8 @@
 			Chain = [
 				[5, "chain/dryad_chain_tamer"],
 				[1, "chain/dryad_chain_shaman"],
-				[1, "chain/dryad_chain_archer"]
+				[1, "chain/dryad_chain_archer"],
+				[1, ""]
 			],
 			Plate = [
 				[5, "plate/dryad_plate_tamer"],
@@ -104,9 +107,7 @@
 				[1, "cloth/dryad_cloth"]
 			],
 			Chain = [
-				[5, "chain/dryad_chain_shaman"],
-				[1, "chain/dryad_chain_tamer"],
-				[1, "chain/dryad_chain_archer"]
+				[1, ""]
 			],
 			Plate = [
 				[5, "plate/dryad_plate_shaman"],
@@ -138,7 +139,8 @@
 			Chain = [
 				[1, "chain/dryad_chain_archer"],
 				[1, "chain/dryad_chain_tamer"],
-				[1, "chain/dryad_chain_shaman"]
+				[1, "chain/dryad_chain_shaman"],
+				[1, ""]
 			],
 			Plate = [
 				[1, "plate/dryad_plate_archer"],
