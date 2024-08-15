@@ -1,8 +1,7 @@
 7.5.0 changes
 
 ...\scripts\skills\backgrounds\crsellsword_background.nut
-...\scripts\skills\backgrounds\ssu_dryad_background.nut
-Updated the backgrounds to get their "free" perk on generation
+Updated the background to get their "free" perk on generation
 
 ...\scripts\config\a_sellswords_character_names.nut
 Replaced the weeb names with historical merc ones
