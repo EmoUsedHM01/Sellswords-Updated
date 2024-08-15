@@ -9,7 +9,7 @@ this.dryad_plate_shaman <- this.inherit("scripts/items/legend_armor/legend_armor
 		this.m.Description = "A rigid breastplate made from incredibly tough wood. Whatever magic was used to craft it seems to have lingered, slowly regrowing the armour when damaged.";
 		this.m.ArmorDescription = "";
 		this.m.Variants = [
-			2
+			1
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();

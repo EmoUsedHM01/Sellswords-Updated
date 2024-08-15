@@ -9,7 +9,7 @@ this.dryad_pauldrons_shaman <- this.inherit("scripts/items/legend_armor/legend_a
 		this.m.Description = "Tough yet flexible wooden pauldrons. Whatever magic was used to craft them seems to have lingered, slowly regrowing them when damaged.";
 		this.m.ArmorDescription = "";
 		this.m.Variants = [
-			2
+			1
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();

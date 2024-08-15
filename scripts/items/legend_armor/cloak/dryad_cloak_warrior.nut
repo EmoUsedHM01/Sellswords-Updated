@@ -8,7 +8,7 @@ this.dryad_cloak_warrior <- this.inherit("scripts/items/legend_armor/legend_armo
 		this.m.Description = "A magnificent growth of plants which feels as tough as it is intimiating to your enemies. Whatever magic was used to craft it seems to have lingered, slowly regrowing the armour when damaged.";
 		this.m.ArmorDescription = "";
 		this.m.Variants = [
-			1
+			2
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
