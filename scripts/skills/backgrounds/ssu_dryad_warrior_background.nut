@@ -9,9 +9,34 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 		this.m.HiringCost = 0;
 		this.m.DailyCost = 0;
 		this.m.Excluded = [
-			"trait.asthmatic",
+			"trait.weasel",
+			"trait.teamplayer",
+			"trait.fear_undead",
+			"trait.fear_beasts",
+			"trait.fear_greenskins",
+			"trait.fear_nobles",
+			"trait.ailing",
+			"trait.swift",
+			"trait.clubfooted",
+			"trait.irrational",
+			"trait.hesitant",
+			"trait.loyal",
+			"trait.tiny",
+			"trait.fragile",
 			"trait.clumsy",
-			"trait.cocky"
+			"trait.fainthearted",
+			"trait.craven",
+			"trait.bleeder",
+			"trait.dastard",
+			"trait.insecure",
+			"trait.asthmatic",
+			"trait.light",
+			"trait.frail",
+			"trait.seductive"
+		];
+		this.m.ExcludedTalents = [
+			this.Const.Attributes.Initiative,
+			this.Const.Attributes.RangedSkill
 		];
 		this.m.Faces = ::Const.Dryad.Head;
 		this.m.Bodies = ::Const.Dryad.Body;
@@ -19,8 +44,8 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 		this.m.HairColors = ::Const.HairColors.All;
 		this.m.Beards = null;
 		this.m.BeardChance = 0;
-		this.m.Level = 3;
-		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Druid | ::Const.BackgroundType.Ranger;
+		this.m.Level = this.Math.rand(2, 5);
+		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Crusader | ::Const.BackgroundType.Ranger;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
 		this.m.Modifiers.Stash = ::Const.LegendMod.ResourceModifiers.Stash[2];
@@ -47,15 +72,31 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 			0.0, // Deserts
 			0.0  // Oasis
 		];
-		this.m.CustomPerkTree = [
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[]
-		];
+		this.m.PerkTreeDynamic = {
+			Weapon = [
+				this.Const.Perks.GreatSwordTree,
+				this.Const.Perks.PolearmTree,
+				this.Const.Perks.AxeTree,
+				this.Const.Perks.MaceTree,
+				this.Const.Perks.FlailTree,
+				this.Const.Perks.HammerTree
+			],
+			Defense = [
+				this.Const.Perks.HeavyArmorTree,
+				this.Const.Perks.MediumArmorTree
+			],
+			Traits = [
+				this.Const.Perks.TrainedTree,
+				this.Const.Perks.ViciousTree,
+				this.Const.Perks.LargeTree,
+				this.Const.Perks.IndestructibleTree,
+				this.Const.Perks.MartyrTree,
+				this.Const.Perks.FitTree
+			],
+			Enemy = [],
+			Class = [],
+			Magic = []
+		};
 	}
 
 	function getTooltip()
@@ -111,40 +152,12 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 		}
 	}
 
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		
-		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
-		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
-		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
-		this.addPerkGroup(::Const.Perks.DruidMagicTree.Tree);
-		this.addPerkGroup(::Const.Perks.MediumArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.HeavyArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.LargeTree.Tree);
-		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
-		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
-		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
-		this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
-		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 2, false)
-		this.addPerkGroup(::Const.Perks.CivilizationTree.Tree);
-		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
-
-		if (::Is_PTR_Exist)
-		{
-			this.addPerkGroup(::Const.Perks.UnstoppableTree.Tree);
-			this.addPerkGroup(::Const.Perks.ResilientTree.Tree);
-			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false)
-		}
-	}
-
 	function onChangeAttributes()
 	{
 		local att = {
 			Hitpoints = [
-				10,
-				15
+				25,
+				35
 			],
 			Bravery = [
 				10,
@@ -155,24 +168,24 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 				40
 			],
 			MeleeSkill = [
-				5,
-				10
+				10,
+				15
 			],
 			RangedSkill = [
-				-15,
-				-20
+				-10,
+				-5
 			],
 			MeleeDefense = [
-				0,
-				5
+				9,
+				12
 			],
 			RangedDefense = [
 				-15,
 				-20
 			],
 			Initiative = [
-				-40,
-				-50
+				-60,
+				-70
 			]
 		};
 		return att;

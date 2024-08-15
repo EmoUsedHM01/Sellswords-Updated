@@ -47,15 +47,26 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 			0.0, // Deserts
 			0.0  // Oasis
 		];
-		this.m.CustomPerkTree = [
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[]
-		];
+		this.m.PerkTreeDynamic = {
+			Weapon = [
+				this.Const.Perks.CleaverTree,
+				this.Const.Perks.ThrowingTree,
+				this.Const.Perks.PolearmTree,
+			],
+			Defense = [
+				this.Const.Perks.MediumArmorTree
+			],
+			Traits = [
+				this.Const.Perks.ViciousTree,
+				this.Const.Perks.TrainedTree,
+				this.Const.Perks.IndestructibleTree
+			],
+			Enemy = [],
+			Class = [
+				this.Const.Perks.DryadTamerTree
+			],
+			Magic = []
+		};
 	}
 
 	function getTooltip()
@@ -112,38 +123,6 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 		}
 	}
 
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		
-		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
-		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
-		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
-		this.addPerkGroup(::Const.Perks.DruidMagicTree.Tree);
-		this.addPerkGroup(::Const.Perks.MediumArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.HeavyArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.LargeTree.Tree);
-		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
-		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
-		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
-		this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
-		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 2, false)
-		this.addPerkGroup(::Const.Perks.CivilizationTree.Tree);
-		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
-
-		if (::Is_PTR_Exist)
-		{
-			this.addPerkGroup(::Const.Perks.UnstoppableTree.Tree);
-			this.addPerkGroup(::Const.Perks.ResilientTree.Tree);
-
-			this.addPerk(::Const.Perks.PerkDefs.PTRRisingStar, 4, false)
-			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false)
-		}
-
-		this.addPerk(::Const.Perks.PerkDefs.LegendBattleheart, 3, false)
-	}
-
 	function onChangeAttributes()
 	{
 		local att = {
@@ -161,23 +140,23 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 			],
 			MeleeSkill = [
 				5,
-				10
+				5
 			],
 			RangedSkill = [
-				-15,
-				-20
+				-5,
+				0
 			],
 			MeleeDefense = [
 				0,
 				5
 			],
 			RangedDefense = [
-				-15,
-				-20
+				-10,
+				-15
 			],
 			Initiative = [
-				-40,
-				-50
+				-30,
+				-40
 			]
 		};
 		return att;

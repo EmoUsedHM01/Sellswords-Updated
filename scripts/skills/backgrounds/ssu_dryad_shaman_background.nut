@@ -49,15 +49,25 @@ this.ssu_dryad_shaman_background <- ::inherit("scripts/skills/backgrounds/charac
 			0.0, // Deserts
 			0.0  // Oasis
 		];
-		this.m.CustomPerkTree = [
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[]
-		];
+		this.m.PerkTreeDynamic = {
+			Weapon = [
+				this.Const.Perks.HammerTree,
+				this.Const.Perks.MaceTree,
+				this.Const.Perks.StaffTree,
+				this.Const.Perks.DryadShamanTree
+			],
+			Defense = [
+				this.Const.Perks.ClothArmorTree
+			],
+			Traits = [
+				this.Const.Perks.IntelligentTree,
+				this.Const.Perks.LargeTree,
+				this.Const.Perks.FitTree
+			],
+			Enemy = [],
+			Class = [],
+			Magic = []
+		};
 	}
 
 	function getTooltip()
@@ -114,68 +124,36 @@ this.ssu_dryad_shaman_background <- ::inherit("scripts/skills/backgrounds/charac
 		}
 	}
 
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		
-		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
-		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
-		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
-		this.addPerkGroup(::Const.Perks.DruidMagicTree.Tree);
-		this.addPerkGroup(::Const.Perks.MediumArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.HeavyArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.LargeTree.Tree);
-		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
-		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
-		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
-		this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
-		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 2, false)
-		this.addPerkGroup(::Const.Perks.CivilizationTree.Tree);
-		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
-
-		if (::Is_PTR_Exist)
-		{
-			this.addPerkGroup(::Const.Perks.UnstoppableTree.Tree);
-			this.addPerkGroup(::Const.Perks.ResilientTree.Tree);
-
-			this.addPerk(::Const.Perks.PerkDefs.PTRRisingStar, 4, false)
-			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false)
-		}
-
-		this.addPerk(::Const.Perks.PerkDefs.LegendBattleheart, 3, false)
-	}
-
 	function onChangeAttributes()
 	{
 		local att = {
 			Hitpoints = [
-				10,
-				15
+				5,
+				10
 			],
 			Bravery = [
 				10,
 				15
 			],
 			Stamina = [
-				35,
-				40
+				25,
+				30
 			],
 			MeleeSkill = [
-				5,
-				10
+				0,
+				0
 			],
 			RangedSkill = [
-				-15,
-				-20
+				-5,
+				-5
 			],
 			MeleeDefense = [
-				0,
-				5
+				-5,
+				-5
 			],
 			RangedDefense = [
-				-15,
-				-20
+				-5,
+				-10
 			],
 			Initiative = [
 				-40,

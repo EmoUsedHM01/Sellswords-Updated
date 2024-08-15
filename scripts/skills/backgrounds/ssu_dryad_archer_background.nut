@@ -9,6 +9,8 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.m.HiringCost = 0;
 		this.m.DailyCost = 0;
 		this.m.Excluded = [
+			"trait.night_blind",
+			"trait.short_sighted",
 			"trait.asthmatic",
 			"trait.clumsy",
 			"trait.cocky"
@@ -20,7 +22,7 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.m.Beards = null;
 		this.m.BeardChance = 0;
 		this.m.Level = 2;
-		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Druid | ::Const.BackgroundType.Ranger;
+		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Ranger | this.Const.BackgroundType.ExpertHunter;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
 		this.m.Modifiers.Ammo = ::Const.LegendMod.ResourceModifiers.Ammo[2];
@@ -48,15 +50,32 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 			0.0, // Deserts
 			0.0  // Oasis
 		];
-		this.m.CustomPerkTree = [
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[]
-		];
+		this.m.PerkTreeDynamic = {
+			Weapon = [
+				this.Const.Perks.BowTree,
+				this.Const.Perks.CrossbowTree,
+				this.Const.Perks.SwordTree,
+				this.Const.Perks.ThrowingTree
+			],
+			Defense = [
+				this.Const.Perks.LightArmorTree
+			],
+			Traits = [
+				this.Const.Perks.AgileTree,
+				this.Const.Perks.FastTree,
+				this.Const.Perks.ViciousTree,
+				this.Const.Perks.FitTree,
+				this.Const.Perks.DeviousTree
+			],
+			Enemy = [
+				this.Const.Perks.DirewolfTree,
+				this.Const.Perks.SpiderTree,
+				this.Const.Perks.SchratTree,
+				this.Const.Perks.ArcherTree
+			],
+			Class = [],
+			Magic = []
+		};
 	}
 
 	function getTooltip()
@@ -113,44 +132,12 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 		}
 	}
 
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		
-		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
-		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
-		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
-		this.addPerkGroup(::Const.Perks.DruidMagicTree.Tree);
-		this.addPerkGroup(::Const.Perks.MediumArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.HeavyArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.LargeTree.Tree);
-		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
-		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
-		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
-		this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
-		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 2, false)
-		this.addPerkGroup(::Const.Perks.CivilizationTree.Tree);
-		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
-
-		if (::Is_PTR_Exist)
-		{
-			this.addPerkGroup(::Const.Perks.UnstoppableTree.Tree);
-			this.addPerkGroup(::Const.Perks.ResilientTree.Tree);
-
-			this.addPerk(::Const.Perks.PerkDefs.PTRRisingStar, 4, false)
-			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false)
-		}
-
-		this.addPerk(::Const.Perks.PerkDefs.LegendBattleheart, 3, false)
-	}
-
 	function onChangeAttributes()
 	{
 		local att = {
 			Hitpoints = [
-				10,
-				15
+				5,
+				5
 			],
 			Bravery = [
 				10,
@@ -161,24 +148,24 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 				40
 			],
 			MeleeSkill = [
-				5,
-				10
+				0,
+				0
 			],
 			RangedSkill = [
-				-15,
-				-20
+				20,
+				17
 			],
 			MeleeDefense = [
 				0,
-				5
+				0
 			],
 			RangedDefense = [
-				-15,
-				-20
+				0,
+				3
 			],
 			Initiative = [
-				-40,
-				-50
+				-20,
+				-30
 			]
 		};
 		return att;

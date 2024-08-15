@@ -79,13 +79,13 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		items.equip(this.Const.World.Common.pickArmor([
 			[
 				1,
-				"dryad_armour_tamer"
+				"dryad_armour_shaman"
 			]
 		]));
 		items.equip(this.Const.World.Common.pickHelmet([
 			[
 				1,
-				"dryad_helmet_tamer"
+				"dryad_helmet_shaman"
 			]
 		]));
 	}
@@ -126,7 +126,8 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
 		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
 		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
-		this.addPerkGroup(::Const.Perks.DruidMagicTree.Tree);
+		this.addPerkGroup(::Const.Perks.DryadShamanTree.Tree);
+		this.addPerkGroup(::Const.Perks.DryadTamerTree.Tree);
 		this.addPerkGroup(::Const.Perks.MediumArmorTree.Tree);
 		this.addPerkGroup(::Const.Perks.HeavyArmorTree.Tree);
 		this.addPerkGroup(::Const.Perks.LargeTree.Tree);
@@ -171,8 +172,8 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 				10
 			],
 			RangedSkill = [
-				-15,
-				-20
+				5,
+				10
 			],
 			MeleeDefense = [
 				0,

@@ -19,19 +19,26 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 		this.m.HairColors = ::Const.HairColors.All;
 		this.m.Beards = null;
 		this.m.BeardChance = 0;
-		this.m.Level = 3;
-		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Druid | ::Const.BackgroundType.Ranger;
+		this.m.Level = 1;
+		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Ranger;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
-		this.m.Modifiers.Stash = ::Const.LegendMod.ResourceModifiers.Stash[2];
-		this.m.Modifiers.Training = ::Const.LegendMod.ResourceModifiers.Training[3];
-		this.m.Modifiers.Gathering = ::Const.LegendMod.ResourceModifiers.Gather[1];
+		this.m.Modifiers.Meds = this.Const.LegendMod.ResourceModifiers.Meds[1];
+		this.m.Modifiers.Stash = this.Const.LegendMod.ResourceModifiers.Stash[1];
+		this.m.Modifiers.Healing = this.Const.LegendMod.ResourceModifiers.Healing[1];
+		this.m.Modifiers.Injury = this.Const.LegendMod.ResourceModifiers.Injury[1];
+		this.m.Modifiers.Repair = this.Const.LegendMod.ResourceModifiers.Repair[1];
+		this.m.Modifiers.Salvage = this.Const.LegendMod.ResourceModifiers.Salvage[1];
+		this.m.Modifiers.Crafting = this.Const.LegendMod.ResourceModifiers.Crafting[1];
+		this.m.Modifiers.MedConsumption = this.Const.LegendMod.ResourceModifiers.MedConsumption[1];
+		this.m.Modifiers.Fletching = this.Const.LegendMod.ResourceModifiers.Fletching[1];
+		this.m.Modifiers.Gathering = this.Const.LegendMod.ResourceModifiers.Gather[1];
 		this.m.Modifiers.Terrain = [
-			0.0, // Plains
+			0.1, // Plains
 			0.0, // -
 			0.0, // -
 			0.1, // Swamps
-			0.0, // Hills
+			0.1, // Hills
 			0.2, // Forests
 			0.0, // -
 			0.0, // -
@@ -41,21 +48,34 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 			0.1, // Farmlands
 			0.0, // Snow
 			0.0, // Badlands
-			0.0, // Highlands
-			0.0, // Steppes
+			0.1, // Highlands
+			0.1, // Steppes
 			0.0, // -
 			0.0, // Deserts
 			0.0  // Oasis
 		];
-		this.m.CustomPerkTree = [
-			[],
-			[],
-			[],
-			[],
-			[],
-			[],
-			[]
-		];
+		this.m.PerkTreeDynamic = {
+			Weapon = [
+				this.Const.Perks.DaggerTree,
+				this.Const.Perks.MaceTree,
+				this.Const.Perks.StaffTree,
+				this.Const.Perks.ThrowingTree
+			],
+			Defense = [
+				this.Const.Perks.ClothArmorTree,
+				this.Const.Perks.LightArmorTree
+			],
+			Traits = [
+				this.Const.Perks.OrganisedTree,
+				this.Const.Perks.CalmTree,
+				this.Const.Perks.IntelligentTree,
+				this.Const.Perks.FastTree
+			],
+			Enemy = [],
+			Class = [
+				this.Const.Perks.ChefClassTree
+			],
+			Magic = []
 	}
 
 	function getTooltip()
@@ -111,34 +131,6 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 		}
 	}
 
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		
-		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
-		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
-		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
-		this.addPerkGroup(::Const.Perks.DruidMagicTree.Tree);
-		this.addPerkGroup(::Const.Perks.MediumArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.HeavyArmorTree.Tree);
-		this.addPerkGroup(::Const.Perks.LargeTree.Tree);
-		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
-		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
-		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
-		this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
-		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 2, false)
-		this.addPerkGroup(::Const.Perks.CivilizationTree.Tree);
-		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
-
-		if (::Is_PTR_Exist)
-		{
-			this.addPerkGroup(::Const.Perks.UnstoppableTree.Tree);
-			this.addPerkGroup(::Const.Perks.ResilientTree.Tree);
-			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false)
-		}
-	}
-
 	function onChangeAttributes()
 	{
 		local att = {
@@ -147,28 +139,28 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 				15
 			],
 			Bravery = [
-				10,
-				15
+				0,
+				5
 			],
 			Stamina = [
 				35,
 				40
 			],
 			MeleeSkill = [
-				5,
-				10
+				0,
+				5
 			],
 			RangedSkill = [
-				-15,
-				-20
+				-10,
+				-15
 			],
 			MeleeDefense = [
 				0,
 				5
 			],
 			RangedDefense = [
-				-15,
-				-20
+				-5,
+				-10
 			],
 			Initiative = [
 				-40,

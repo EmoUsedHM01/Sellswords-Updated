@@ -229,6 +229,9 @@ Deleted two redundant old backgrounds
 ...\gfx\ui\backgrounds\background_rogue_07.png <- DELETED
 Deleted some old background icons that are no longer in use
 
+...\mod_sellswords\config\z_perks_tree_magic.nut -> ...\mod_sellswords\hooks\config\z_perks_tree_magic.nut
+Moved over the old magic tree hook and tweaked it to account for Tamers and Shamans
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.4.0 changes

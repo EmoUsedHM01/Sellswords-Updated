@@ -1,10 +1,5 @@
 
-- Dryad faction addition (prio);
-Grunt: Spear/Shieldwaller. Just walls the frontline SET 3
-Warrior: 2h sword. Thorns to deal damage if hit in melee SET 1
-Archer: Bow. Spawns saplings in adjacent tiles to targets hit SET 0
-Shaman: Staff. Root, Insect Swarm, and Healing SET 2
-Tamer: Whip. Summons woodland beasts to fight SET 4
+- Dryad faction addition (prio)
 
 - Legendary Glaive/Spear and Orc Mace
 
