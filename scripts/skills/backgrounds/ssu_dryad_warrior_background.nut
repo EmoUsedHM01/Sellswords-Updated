@@ -108,7 +108,7 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 	function onAddEquipment()
 	{
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.new("scripts/items/weapons/dryad/dryad_sword"));
+		items.equip(this.new("scripts/items/weapons/dryad/dryad_flail"));
 		items.equip(this.Const.World.Common.pickArmor([
 			[
 				1,

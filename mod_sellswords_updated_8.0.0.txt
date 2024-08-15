@@ -59,7 +59,7 @@ Fixed a surcoat bug with the standard bearer
 ...\scripts\items\weapons\barbarians\legend_antler_cleaver.nut -> ...\scripts\items\weapons\dryad\dryad_cleaver.nut
 ...\scripts\items\legend_armor\cloth\dryad_cloth.nut
 ...\scripts\items\weapons\dryad\dryad_staff.nut
-...\scripts\items\weapons\dryad\dryad_sword.nut
+...\scripts\items\weapons\dryad\dryad_flail.nut
 ...\gfx\ui\backgrounds\dryad_archer_background.png
 ...\gfx\ui\backgrounds\dryad_avatar_background.png
 ...\gfx\ui\backgrounds\dryad_background.png
@@ -128,8 +128,8 @@ Fixed a surcoat bug with the standard bearer
 ...\gfx\ui\items\weapons\melee\dryad_spear_70x70.png
 ...\gfx\ui\items\weapons\melee\dryad_staff.png
 ...\gfx\ui\items\weapons\melee\dryad_staff_70x70.png
-...\gfx\ui\items\weapons\melee\dryad_sword.png
-...\gfx\ui\items\weapons\melee\dryad_sword_70x70.png
+...\gfx\ui\items\weapons\melee\dryad_flail.png
+...\gfx\ui\items\weapons\melee\dryad_flail_70x70.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow_70x70.png
 ...\gfx\ui\orientation\ss_dryad_archer.png
