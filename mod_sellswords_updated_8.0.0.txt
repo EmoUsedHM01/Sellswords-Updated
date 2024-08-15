@@ -28,8 +28,20 @@ Updated the AI to include some skills that were recently added and got overlooke
 Fixed a surcoat bug with the standard bearer
 
 ...\mod_sellswords\config\dryad_armors.nut
+...\mod_sellswords\config\faction_sellswords.nut
+...\mod_sellswords\hooks\ai\tactical\agents\barbarian_beastmaster_agent.nut
+...\scripts\ai\tactical\agents\dryad_shaman_agent.nut
+...\scripts\ai\tactical\behaviors\ai_dryad_buff.nut
+...\scripts\ai\tactical\behaviors\ai_dryad_summon.nut
+...\scripts\config\a_sellswords_global.nut
+...\scripts\entity\tactical\enemies\dryad_archer.nut <- ...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_grunt.nut
+...\scripts\entity\tactical\enemies\dryad_shaman.nut <- ...\scripts\entity\tactical\enemies\dryad_enemy_shaman.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_tamer.nut
+...\scripts\entity\tactical\enemies\dryad_warrior.nut <- ...\scripts\entity\tactical\enemies\dryad_enemy_warrior.nut
 ...\scripts\skills\actives\natural_regrowth.nut
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
+...\scripts\skills\traits\dryad_thorns_trait.nut
 ...\scripts\items\ammo\forest_heart_ammo.nut
 ...\scripts\items\legend_helmets\hood\dryad_horns.nut
 ...\scripts\items\legend_helmets\helm\dryad_helm_warrior.nut
@@ -239,6 +251,9 @@ Deleted some old background icons that are no longer in use
 
 ...\mod_sellswords\config\z_perks_tree_magic.nut -> ...\mod_sellswords\hooks\config\z_perks_tree_magic.nut
 Moved over the old magic tree hook and tweaked it to account for Tamers and Shamans
+
+...\scripts\items\weapons\named\named_staff.nut
+Added a missing Sweep skill
 
 ----------------------------------------------------------------------------------------------------------------------------
 

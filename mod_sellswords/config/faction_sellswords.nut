@@ -1508,7 +1508,7 @@
 	Hitpoints = 125,
 	Bravery = 130,
 	Stamina = 245,
-	MeleeSkill = 70,
+	MeleeSkill = 80,
 	RangedSkill = 0,
 	MeleeDefense = 5,
 	RangedDefense = 5,
@@ -1520,6 +1520,26 @@
 		0
 	],
 	FatigueRecoveryRate = 25
+};
+
+::Const.Tactical.Actor.DryadGrunt <- {
+	XP = 200,
+	ActionPoints = 9,
+	Hitpoints = 85,
+	Bravery = 100,
+	Stamina = 245,
+	MeleeSkill = 60,
+	RangedSkill = 0,
+	MeleeDefense = 5,
+	RangedDefense = 5,
+	Initiative = 35,
+	FatigueEffectMult = 1.0,
+	MoraleEffectMult = 1.0,
+	Armor = [
+		0,
+		0
+	],
+	FatigueRecoveryRate = 20
 };
 
 ::Const.Tactical.Actor.DryadArcher <- {
@@ -1550,6 +1570,26 @@
 	Stamina = 300,
 	MeleeSkill = 80,
 	RangedSkill = 80,
+	MeleeDefense = -5,
+	RangedDefense = -5,
+	Initiative = 45,
+	FatigueEffectMult = 1.0,
+	MoraleEffectMult = 1.0,
+	Armor = [
+		0,
+		0
+	],
+	FatigueRecoveryRate = 25
+};
+
+::Const.Tactical.Actor.DryadTamer <- {
+	XP = 550,
+	ActionPoints = 9,
+	Hitpoints = 145,
+	Bravery = 150,
+	Stamina = 300,
+	MeleeSkill = 70,
+	RangedSkill = 60,
 	MeleeDefense = -5,
 	RangedDefense = -5,
 	Initiative = 45,
