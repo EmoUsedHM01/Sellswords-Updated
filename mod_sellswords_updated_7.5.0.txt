@@ -21,7 +21,38 @@ Updated the AI to include some skills that were recently added and got overlooke
 ...\mod_sellswords\hooks\entity\tactical\humans\standard_bearer.nut
 Fixed a surcoat bug with the standard bearer
 
+...\mod_sellswords\config\dryad_armors.nut
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
+...\scripts\items\legend_helmets\hood\dryad_horns.nut
+...\scripts\items\legend_helmets\helm\dryad_helm_warrior.nut
+...\scripts\items\legend_helmets\helm\dryad_helm_tamer.nut
+...\scripts\items\legend_helmets\helm\dryad_helm_shaman.nut
+...\scripts\items\legend_helmets\helm\dryad_helm_archer.nut
+...\scripts\items\legend_armor\plate\dryad_plate_warrior.nut
+...\scripts\items\legend_armor\plate\dryad_plate_tamer.nut
+...\scripts\items\legend_armor\plate\dryad_plate_shaman.nut
+...\scripts\items\legend_armor\plate\dryad_plate_grunt.nut
+...\scripts\items\legend_armor\plate\dryad_plate_archer.nut
+...\scripts\items\legend_armor\plate\dryad_plate.nut <- DELETED
+...\scripts\items\legend_armor\cloth\dryad_cloth.nut <- DELETED
+...\scripts\items\legend_armor\cloak\dryad_cloak_warrior.nut
+...\scripts\items\legend_armor\cloak\dryad_cloak_tamer.nut
+...\scripts\items\legend_armor\cloak\dryad_cloak_shaman.nut
+...\scripts\items\legend_armor\cloak\dryad_cloak_grunt.nut
+...\scripts\items\legend_armor\cloak\dryad_cloak_archer.nut
+...\scripts\items\legend_armor\cloak\dryad_cloak.nut <- DELETED
+...\scripts\items\legend_armor\chain\dryad_chain_warrior.nut
+...\scripts\items\legend_armor\chain\dryad_chain_tamer.nut
+...\scripts\items\legend_armor\chain\dryad_chain_shaman.nut
+...\scripts\items\legend_armor\chain\dryad_chain_grunt.nut
+...\scripts\items\legend_armor\chain\dryad_chain_archer.nut
+...\scripts\items\legend_armor\chain\dryad_chain.nut <- DELETED
+...\scripts\items\legend_armor\armor_upgrades\dryad_pauldrons_warrior.nut
+...\scripts\items\legend_armor\armor_upgrades\dryad_pauldrons_tamer.nut
+...\scripts\items\legend_armor\armor_upgrades\dryad_pauldrons_shaman.nut
+...\scripts\items\legend_armor\armor_upgrades\dryad_pauldrons_grunt.nut
+...\scripts\items\legend_armor\armor_upgrades\dryad_pauldrons_archer.nut
+...\scripts\items\legend_armor\armor_upgrades\dryad_pauldrons.nut <- DELETED
 ...\scripts\items\weapons\dryad\dryad_bow.nut
 ...\scripts\items\weapons\dryad\dryad_spear.nut
 ...\scripts\items\weapons\barbarians\legend_antler_cleaver.nut -> ...\scripts\items\weapons\dryad\dryad_cleaver.nut

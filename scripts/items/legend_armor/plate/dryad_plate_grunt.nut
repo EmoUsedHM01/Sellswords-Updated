@@ -1,41 +1,37 @@
-this.dryad_chain <- this.inherit("scripts/items/legend_armor/legend_armor_upgrade", {
+this.dryad_plate_grunt <- this.inherit("scripts/items/legend_armor/legend_armor_upgrade", {
 	m = {},
 	function create()
 	{
 		this.legend_armor_upgrade.create();
-		this.m.Type = this.Const.Items.ArmorUpgrades.Chain;
-		this.m.ID = "legend_armor.body.dryad_chain";
-		this.m.Name = "Greenwood Gorget";
-		this.m.Description = "A thick wooden gorget. Whatever magic was used to craft it seems to have lingered, slowly regrowing the armour when damaged.";
+		this.m.Type = this.Const.Items.ArmorUpgrades.Plate;
+		this.m.ID = "legend_armor.body.dryad_plate_grunt";
+		this.m.Name = "Greenwood Breastplate";
+		this.m.Description = "A rigid breastplate made from incredibly tough wood. Whatever magic was used to craft it seems to have lingered, slowly regrowing the armour when damaged.";
 		this.m.ArmorDescription = "";
 		this.m.Variants = [
-			0,
-			1,
-			2,
-			3,
-			4
+			3
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
-		this.m.Value = 650;
-		this.m.Condition = 30;
-		this.m.ConditionMax = 30;
-		this.m.StaminaModifier = -5;
+		this.m.Value = 1700;
+		this.m.Condition = 130;
+		this.m.ConditionMax = 130;
+		this.m.StaminaModifier = -15;
 		this.m.ItemType = this.m.ItemType;
 	}
 
 	function updateVariant()
 	{
 		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
-		this.m.SpriteBack = "bust_dryad_chain" + "_" + variant;
-		this.m.SpriteDamagedBack = "bust_dryad_chain" + "_" + variant + "_damaged";
-		this.m.SpriteCorpseBack = "bust_dryad_chain" + "_" + variant + "_dead";
-		this.m.Icon = "legend_armor/icon_dryad_chain" + "_" + variant + ".png";
+		this.m.SpriteBack = "bust_dryad_plate" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_dryad_plate" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_dryad_plate" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_dryad_plate" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "legend_armor/icon_dryad_chain" + "_" + variant + ".png";
-		this.m.OverlayIconLarge = "legend_armor/inventory_dryad_chain" + "_" + variant + ".png";
+		this.m.OverlayIcon = "legend_armor/icon_dryad_plate" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_dryad_plate" + "_" + variant + ".png";
 	}
 
 	function getTooltip()

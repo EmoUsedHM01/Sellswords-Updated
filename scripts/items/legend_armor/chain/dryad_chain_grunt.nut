@@ -1,27 +1,23 @@
-this.dryad_pauldrons <- this.inherit("scripts/items/legend_armor/legend_armor_upgrade", {
+this.dryad_chain_grunt <- this.inherit("scripts/items/legend_armor/legend_armor_upgrade", {
 	m = {},
 	function create()
 	{
 		this.legend_armor_upgrade.create();
-		this.m.Type = this.Const.Items.ArmorUpgrades.Attachment;
-		this.m.ID = "legend_armor_upgrade.dryad_pauldrons";
-		this.m.Name = "Greenwood Pauldrons";
-		this.m.Description = "Tough yet flexible wooden pauldrons. Whatever magic was used to craft them seems to have lingered, slowly regrowing them when damaged.";
+		this.m.Type = this.Const.Items.ArmorUpgrades.Chain;
+		this.m.ID = "legend_armor.body.dryad_chain_grunt";
+		this.m.Name = "Greenwood Gorget";
+		this.m.Description = "A thick wooden gorget. Whatever magic was used to craft it seems to have lingered, slowly regrowing the armour when damaged.";
 		this.m.ArmorDescription = "";
 		this.m.Variants = [
-			0,
-			1,
-			2,
-			3,
-			4
+			3
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
 		this.m.ImpactSound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
-		this.m.Value = 1250;
-		this.m.Condition = 40;
-		this.m.ConditionMax = 40;
+		this.m.Value = 950;
+		this.m.Condition = 50;
+		this.m.ConditionMax = 50;
 		this.m.StaminaModifier = -5;
 		this.m.ItemType = this.m.ItemType;
 	}
@@ -29,13 +25,13 @@ this.dryad_pauldrons <- this.inherit("scripts/items/legend_armor/legend_armor_up
 	function updateVariant()
 	{
 		local variant = this.m.Variant > 9 ? this.m.Variant : "0" + this.m.Variant;
-		this.m.SpriteBack = "bust_dryad_pauldrons" + "_" + variant;
-		this.m.SpriteDamagedBack = "bust_dryad_pauldrons" + "_" + variant + "_damaged";
-		this.m.SpriteCorpseBack = "bust_dryad_pauldrons" + "_" + variant + "_dead";
-		this.m.Icon = "legend_armor/icon_dryad_pauldrons" + "_" + variant + ".png";
+		this.m.SpriteBack = "bust_dryad_chain" + "_" + variant;
+		this.m.SpriteDamagedBack = "bust_dryad_chain" + "_" + variant + "_damaged";
+		this.m.SpriteCorpseBack = "bust_dryad_chain" + "_" + variant + "_dead";
+		this.m.Icon = "legend_armor/icon_dryad_chain" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
-		this.m.OverlayIcon = "legend_armor/icon_dryad_pauldrons" + "_" + variant + ".png";
-		this.m.OverlayIconLarge = "legend_armor/inventory_dryad_pauldrons" + "_" + variant + ".png";
+		this.m.OverlayIcon = "legend_armor/icon_dryad_chain" + "_" + variant + ".png";
+		this.m.OverlayIconLarge = "legend_armor/inventory_dryad_chain" + "_" + variant + ".png";
 	}
 
 	function getTooltip()
@@ -84,3 +80,4 @@ this.dryad_pauldrons <- this.inherit("scripts/items/legend_armor/legend_armor_up
 	}
 	
 });
+
