@@ -30,6 +30,18 @@ this.dryad_flail <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ChanceToHitHead = 20;
 	}
 
+	function getTooltip()
+	{
+		local result = this.weapon.getTooltip();
+		result.push({
+			id = 6,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = "Slowly repairs [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] durability each turn."
+		});
+		return result;
+	}
+
 	function onEquip()
 	{
 		this.weapon.onEquip();
@@ -44,6 +56,16 @@ this.dryad_flail <- this.inherit("scripts/items/weapons/weapon", {
 		skill.m.IconDisabled = "skills/active_130_sw.png";
 		skill.m.Overlay = "active_130";
 		this.addSkill(skill);
+	}
+
+	function onUpdateProperties( _properties )
+	{
+		this.weapon.onUpdateProperties(_properties);
+	}
+
+	function onTurnStart()
+	{
+		this.m.Condition = this.Math.minf(this.m.ConditionMax, this.m.Condition + 5.0);
 	}
 
 });
