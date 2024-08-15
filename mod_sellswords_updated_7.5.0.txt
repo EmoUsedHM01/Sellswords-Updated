@@ -59,6 +59,12 @@ Fixed a surcoat bug with the standard bearer
 ...\scripts\items\legend_armor\cloth\dryad_cloth.nut
 ...\scripts\items\weapons\dryad\dryad_staff.nut
 ...\scripts\items\weapons\dryad\dryad_sword.nut
+...\gfx\ui\backgrounds\dryad_archer_background.png
+...\gfx\ui\backgrounds\dryad_avatar_background.png
+...\gfx\ui\backgrounds\dryad_background.png
+...\gfx\ui\backgrounds\dryad_shaman_background.png
+...\gfx\ui\backgrounds\dryad_tamer_background.png
+...\gfx\ui\backgrounds\dryad_warrior_background.png
 ...\gfx\ui\items\legend_armor\inventory_dryad_plate_04.png
 ...\gfx\ui\items\legend_armor\inventory_dryad_plate_03.png
 ...\gfx\ui\items\legend_armor\inventory_dryad_plate_02.png
@@ -125,6 +131,11 @@ Fixed a surcoat bug with the standard bearer
 ...\gfx\ui\items\weapons\melee\dryad_sword_70x70.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow_70x70.png
+...\gfx\ui\orientation\ss_dryad_archer.png
+...\gfx\ui\orientation\ss_dryad_grunt.png
+...\gfx\ui\orientation\ss_dryad_shaman.png
+...\gfx\ui\orientation\ss_dryad_tamer.png
+...\gfx\ui\orientation\ss_dryad_warrior.png
 ...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
 ...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
 ...\scripts\skills\backgrounds\ssu_dryad_grunt_background.nut
@@ -203,6 +214,20 @@ Added a Militia Armband inspired by another mod which increases resolve based on
 ...\scripts\skills\backgrounds\cr_aktk_background.nut <- DELETED
 ...\scripts\skills\backgrounds\crbladedancer_background.nut <- DELETED
 Deleted two redundant old backgrounds
+
+...\gfx\ui\backgrounds\background_71.png <- DELETED
+...\gfx\ui\backgrounds\background_baldedancer.png <- DELETED
+...\gfx\ui\backgrounds\background_barbarianhunter.png <- DELETED
+...\gfx\ui\backgrounds\background_base.png <- DELETED
+...\gfx\ui\backgrounds\background_desertstalker.png <- DELETED
+...\gfx\ui\backgrounds\background_rogue_01.png <- DELETED
+...\gfx\ui\backgrounds\background_rogue_02.png <- DELETED
+...\gfx\ui\backgrounds\background_rogue_03.png <- DELETED
+...\gfx\ui\backgrounds\background_rogue_04.png <- DELETED
+...\gfx\ui\backgrounds\background_rogue_05.png <- DELETED
+...\gfx\ui\backgrounds\background_rogue_06.png <- DELETED
+...\gfx\ui\backgrounds\background_rogue_07.png <- DELETED
+Deleted some old background icons that are no longer in use
 
 ----------------------------------------------------------------------------------------------------------------------------
 
