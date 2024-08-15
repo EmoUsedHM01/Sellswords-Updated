@@ -1,7 +1,7 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/marketplace_oriental_building", function ( q ) {
 
 	q.fillStash = @( __original ) function( _list, _stash, _priceMult, _allowDamagedEquipment = true )
-	{	
+	{
 		if (this.m.Settlement.getSize() >= 2)
 		{
 			_list.extend([
@@ -22,7 +22,7 @@
 			}
 			]);
 		}
-		
+
 		__original( _list, _stash, _priceMult, _allowDamagedEquipment = true );
 	}
 

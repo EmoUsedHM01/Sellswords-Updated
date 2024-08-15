@@ -89,6 +89,15 @@ Sorted some weapon icons
 ...\scripts\items\weapons\spontoon03.nut
 Updated entries to match the above changes
 
+...\gfx\ui\items\accessory\militia_armband.png
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_oriental_building.nut
+...\mod_sellswords\hooks\items\accessory\sergeant_badge_item.nut
+...\mod_sellswords\hooks\scenarios\world\militia_scenario.nut
+...\mod_sellswords\hooks\skills\backgrounds\militia_background.nut
+...\scripts\items\accessory\militia_armband_item.nut
+Added a Militia Armband which increases resolve based on the number of bros with it on
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 7.4.0 changes

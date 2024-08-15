@@ -72,6 +72,11 @@
 				R = 70,
 				P = 1.0,
 				S = "ammo/quiver_of_poisoned_bolts"
+			},
+			{
+				R = 25,
+				P = 1.0,
+				S = "accessory/militia_armband_item"
 			}
 		]);
 
