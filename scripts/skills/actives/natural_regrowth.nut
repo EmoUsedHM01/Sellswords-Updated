@@ -1,7 +1,5 @@
 this.natural_regrowth <- this.inherit("scripts/skills/skill", {
-	m = {
-	},
-	
+	m = {},
 	function create()
 	{
 		this.m.ID = "actives.natural_regrowth";
@@ -84,49 +82,35 @@ this.natural_regrowth <- this.inherit("scripts/skills/skill", {
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 
 		if (item == null)
-		{
 			return 0;
-		}
 
 		if (item.getAmmoType() == this.Const.Items.AmmoType.Heart)
-		{
 			return item.getAmmo();
-		}
 	}
-	
+
 	function consumeAmmo()
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 
 		if (item != null)
-		{
 			item.consumeAmmo();
-		}
 	}
-	
+
 	function onVerifyTarget( _originTile, _targetTile )
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
-		{
 			return false;
-		}
 
 		local target = _targetTile.getEntity();
 
 		if (target == null)
-		{
 			return false;
-		}
 
 		if (!this.m.Container.getActor().isAlliedWith(target))
-		{
 			return false;
-		}
 
 		if (target.getHitpoints() >= target.getHitpointsMax())
-		{
 			return false;
-		}
 
 		return true;
 	}
@@ -184,38 +168,60 @@ this.natural_regrowth <- this.inherit("scripts/skills/skill", {
 				ForceMin = this.createVec(0, -60),
 				ForceMax = this.createVec(0, -60)
 			}
-		]
-		};
+		]};
+
 		this.Tactical.spawnParticleEffect(false, effect.Brushes, _targetTile, effect.Delay, effect.Quantity * 0.5, effect.LifeTimeQuantity * 0.5, effect.SpawnRate, effect.Stages, this.createVec(0, 40));
-		
+
 		local target = _targetTile.getEntity();
 		local maxHeal = 60;
 		local neededHeal = target.getHitpointsMax() - target.getHitpoints();
 		local finalHeal = maxHeal;
-		
+
 		if (neededHeal < maxHeal)
-		{
 			local finalHeal = neededHeal;
-		}
 
 		target.setHitpoints(this.Math.min(target.getHitpointsMax(), target.getHitpoints() + finalHeal));
-		
-		if (target.getSkills().query(this.Const.SkillType.TemporaryInjury));
+
+		if (target.hasSkill("racial.dryad"))
 		{
-			local injury = target.getSkills().query(this.Const.SkillType.TemporaryInjury);
-			foreach( inj in injury )
+			local head = target.getHeadItem();
+			local headArmor = head == null ? 1 : head.getArmor();
+			local maxHeadArmor = head == null ? 1 : head.getArmorMax();
+			local body = target.getBodyItem();
+			local bodyArmor = body == null ? 1 : body.getArmor();
+			local maxBodyArmor = body == null ? 1 : body.getArmorMax();
+
+			for( local i = 0; i < this.Math.ceil((maxHeadArmor - headArmor + maxBodyArmor - bodyArmor)) && i < 100; i = i )
 			{
-				inj.removeSelf();
+				if (headArmor + 1 / maxHeadArmor > bodyArmor + 1 / maxBodyArmor)
+				{
+					body.setArmor(this.Math.minf(maxBodyArmor, bodyArmor + 1));
+					bodyArmor = body.getArmor();
+				}
+				else
+				{
+					head.setArmor(this.Math.minf(maxHeadArmor, headArmor + 1));
+					headArmor = head.getArmor();
+				}
+
+				i = ++i;
 			}
 		}
-		
+
+		if (target.getSkills().query(this.Const.SkillType.TemporaryInjury))
+		{
+			local injury = target.getSkills().query(this.Const.SkillType.TemporaryInjury);
+
+			foreach( inj in injury )
+				inj.removeSelf();
+		}
+
 		this.consumeAmmo();
-		
+
 		target.getSkills().update();
-		target.updateInjuryVisuals();
-		
+		target.setDirty(true);
+
 		return true;
 	}
 
 });
-

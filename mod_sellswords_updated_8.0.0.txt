@@ -21,6 +21,7 @@ Updated the AI to include some skills that were recently added and got overlooke
 Fixed a surcoat bug with the standard bearer
 
 ...\mod_sellswords\config\dryad_armors.nut
+...\scripts\skills\actives\natural_regrowth.nut
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
 ...\scripts\items\ammo\forest_heart_ammo.nut
 ...\scripts\items\legend_helmets\hood\dryad_horns.nut
