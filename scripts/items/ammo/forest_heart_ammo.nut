@@ -13,8 +13,8 @@ this.forest_heart_ammo <- this.inherit("scripts/items/ammo/ammo", {
 		this.m.ShowOnCharacter = false;
 		this.m.ShowQuiver = false;
 		this.m.Value = 0;
-		this.m.Ammo = 5;
-		this.m.AmmoMax = 5;
+		this.m.Ammo = 3;
+		this.m.AmmoMax = 3;
 		this.m.AmmoCost = 5;
 		this.m.IsDroppedAsLoot = true;
 	}

@@ -23,6 +23,7 @@ Fixed a surcoat bug with the standard bearer
 
 ...\mod_sellswords\config\dryad_armors.nut
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
+...\scripts\items\ammo\forest_heart_ammo.nut
 ...\scripts\items\legend_helmets\hood\dryad_horns.nut
 ...\scripts\items\legend_helmets\helm\dryad_helm_warrior.nut
 ...\scripts\items\legend_helmets\helm\dryad_helm_tamer.nut
