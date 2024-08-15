@@ -1,4 +1,4 @@
-7.5.0 changes
+8.0.0 changes
 
 ...\scripts\skills\backgrounds\crsellsword_background.nut
 Updated the background to get their "free" perk on generation
