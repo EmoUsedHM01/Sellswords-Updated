@@ -22,40 +22,4 @@
 			}
 		}
 	}
-
-	q.addSkill = @(__original) function( _skill )
-	{
-		this.item.addSkill(_skill);
-
-		if (_skill.isType(this.Const.SkillType.Active))
-		{
-			local actor = this.getContainer().getActor();
-			local fatigueOnSkillUse = this.m.FatigueOnSkillUse;
-
-			if (fatigueOnSkillUse > 0)
-			{
-				if (actor.getCurrentProperties().IsProficientWithHeavyWeapons)
-				{
-					fatigueOnSkillUse = 0;
-				}
-				else if (actor.getSkills().hasSkill("trait.huge") && actor.getSkills().hasSkill("trait.strong"))
-				{
-					fatigueOnSkillUse = 0;
-				}
-				else if (actor.getSkills().hasSkill("trait.huge"))
-				{
-					fatigueOnSkillUse -= 3;
-				}
-				// might just make a positive trait too good
-				// else if (actor.getSkills().hasSkill("trait.strong"))
-				// {
-				// 	fatigueOnSkillUse -= 1;
-				// }
-
-				fatigueOnSkillUse = this.Math.max(0, fatigueOnSkillUse)
-			}
-
-			_skill.setFatigueCost(this.Math.max(0, _skill.getFatigueCostRaw() + fatigueOnSkillUse));
-		}
-	}
 });	
