@@ -7,12 +7,12 @@ this.dryad_horns <- this.inherit("scripts/items/legend_helmets/legend_helmet", {
 		this.m.Name = "Dryad Horns";
 		this.m.Description = "Long protruding horns grown from the head of a Dryad.";
 		this.m.Variants = [
+			0,
 			1,
 			2,
 			3,
 			4,
-			5,
-			6
+			5
 		];
 		this.m.Variant = this.m.Variants[this.Math.rand(0, this.m.Variants.len() - 1)];
 		this.updateVariant();
@@ -34,13 +34,13 @@ this.dryad_horns <- this.inherit("scripts/items/legend_helmets/legend_helmet", {
 		this.m.Sprite = "bust_dryad_horns" + "_" + variant;
 		this.m.SpriteDamaged = "bust_dryad_horns" + "_" + variant + "_damaged";
 		this.m.SpriteCorpse = "bust_dryad_horns" + "_" + variant + "_dead";
-		this.m.Icon = "legend_helmets/bust_dryad_horns" + "_" + variant + ".png";
+		this.m.Icon = "legend_helmets/icon_dryad_horns" + "_" + variant + ".png";
 		this.m.IconLarge = this.m.Icon;
 	}
 
 	function getTooltip()
 	{
-		local result = this.legend_helmet_upgrade.getTooltip();
+		local result = this.legend_helmet.getTooltip();
 		this.onArmorTooltip(result);
 		return result;
 	}

@@ -39,7 +39,7 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		local bros = roster.getAll();
 		local talents;
 		bros[0].setStartValuesEx([
-			"ssu_dryad_background"
+			"ssu_dryad_avatar_background"
 		]);
 		bros[0].getBackground().m.RawDescription = "%name% has only ever known the heartwoods, the world of man is strange and disgusting.";
 		bros[0].getSkills().add(this.new("scripts/skills/traits/player_character_trait"));
@@ -142,8 +142,12 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 
 	function onUpdateHiringRoster( _roster )
 	{
+		this.addBroToRoster(_roster, "ssu_dryad_grunt_background", 6);
 		this.addBroToRoster(_roster, "legend_druid_background", 8);
-		this.addBroToRoster(_roster, "ssu_dryad_background", 10);
+		this.addBroToRoster(_roster, "ssu_dryad_warrior_background", 8);
+		this.addBroToRoster(_roster, "ssu_dryad_archer_background", 8);
+		this.addBroToRoster(_roster, "ssu_dryad_tamer_background", 12);
+		this.addBroToRoster(_roster, "ssu_dryad_shaman_background", 12);
 	}
 	
 	function onInit()
@@ -166,15 +170,10 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		local roster = this.World.getPlayerRoster().getAll();
 
 		foreach( bro in roster )
-		{
 			if (bro.getFlags().get("IsPlayerCharacter"))
-			{
 				return true;
-			}
-		}
 
 		return false;
 	}
 	
 });
-

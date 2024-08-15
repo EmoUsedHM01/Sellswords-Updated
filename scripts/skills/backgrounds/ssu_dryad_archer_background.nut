@@ -1,20 +1,17 @@
-this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_background", {
+this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/character_background", {
 	m = {},
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.ssu_dryad";
-		this.m.Icon = "ui/backgrounds/dryad_background.png";
-		this.m.Name = "Dryad";
-		this.m.HiringCost = 6000;
+		this.m.ID = "background.ssu_dryad_archer";
+		this.m.Icon = "ui/backgrounds/dryad_archer_background.png";
+		this.m.Name = "Dryad Archer";
+		this.m.HiringCost = 0;
 		this.m.DailyCost = 0;
 		this.m.Excluded = [
 			"trait.asthmatic",
 			"trait.clumsy",
 			"trait.cocky"
-		];
-		this.m.Titles = [
-			"the Dryad"
 		];
 		this.m.Faces = ::Const.Dryad.Head;
 		this.m.Bodies = ::Const.Dryad.Body;
@@ -22,30 +19,27 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 		this.m.HairColors = ::Const.HairColors.All;
 		this.m.Beards = null;
 		this.m.BeardChance = 0;
-		this.m.Level = 1;
+		this.m.Level = 2;
 		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Druid | ::Const.BackgroundType.Ranger;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
-		this.m.Modifiers.Meds = ::Const.LegendMod.ResourceModifiers.Meds[2];
-		this.m.Modifiers.Injury = ::Const.LegendMod.ResourceModifiers.Injury[2];
-		this.m.Modifiers.MedConsumption = ::Const.LegendMod.ResourceModifiers.MedConsumption[2];
-		this.m.Modifiers.Stash = ::Const.LegendMod.ResourceModifiers.Stash[0];
+		this.m.Modifiers.Ammo = ::Const.LegendMod.ResourceModifiers.Ammo[2];
 		this.m.Modifiers.Hunting = ::Const.LegendMod.ResourceModifiers.Hunting[2];
-		this.m.Modifiers.Scout = ::Const.LegendMod.ResourceModifiers.Scout[2];
-		this.m.Modifiers.Gathering = ::Const.LegendMod.ResourceModifiers.Gather[3];
+		this.m.Modifiers.Scout = ::Const.LegendMod.ResourceModifiers.Scout[3];
+		this.m.Modifiers.Gathering = ::Const.LegendMod.ResourceModifiers.Gather[1];
 		this.m.Modifiers.Terrain = [
-			0.0, // Plains
+			0.1, // Plains
 			0.0, // -
 			0.0, // -
-			0.1, // Swamps
+			0.0, // Swamps
 			0.0, // Hills
-			0.4, // Forests
+			0.5, // Forests
 			0.0, // -
 			0.0, // -
 			0.0, // -
 			0.0, // Mountains
 			0.0, // -
-			0.1, // Farmlands
+			0.0, // Farmlands
 			0.0, // Snow
 			0.0, // Badlands
 			0.0, // Highlands
@@ -74,18 +68,18 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 	function onAddEquipment()
 	{
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.new("scripts/items/weapons/dryad/dryad_cleaver"));
-		items.equip(this.new("scripts/items/ammo/forest_heart_ammo"));
+		items.equip(this.new("scripts/items/weapons/dryad/dryad_bow"));
+		items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
 		items.equip(this.Const.World.Common.pickArmor([
 			[
 				1,
-				"dryad_armour"
+				"dryad_armour_archer"
 			]
 		]));
 		items.equip(this.Const.World.Common.pickHelmet([
 			[
 				1,
-				"dryad_helmet"
+				"dryad_helmet_archer"
 			]
 		]));
 	}
@@ -114,7 +108,7 @@ this.ssu_dryad_background <- ::inherit("scripts/skills/backgrounds/character_bac
 
 		if (this.m.IsNew)
 		{
-			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_roots"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_ballistics"))
 			this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"))
 		}
 	}

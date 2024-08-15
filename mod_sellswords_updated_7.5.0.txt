@@ -109,6 +109,12 @@ Fixed a surcoat bug with the standard bearer
 ...\gfx\ui\items\legend_armor\icon_dryad_chain_02.png
 ...\gfx\ui\items\legend_armor\icon_dryad_chain_01.png
 ...\gfx\ui\items\legend_armor\icon_dryad_chain_00.png
+...\gfx\ui\items\legend_helmets\icon_dryad_horns_00.png
+...\gfx\ui\items\legend_helmets\icon_dryad_horns_01.png
+...\gfx\ui\items\legend_helmets\icon_dryad_horns_02.png
+...\gfx\ui\items\legend_helmets\icon_dryad_horns_03.png
+...\gfx\ui\items\legend_helmets\icon_dryad_horns_04.png
+...\gfx\ui\items\legend_helmets\icon_dryad_horns_05.png
 ...\gfx\ui\items\weapons\melee\druweapon_01.png -> ...\gfx\ui\items\weapons\melee\dryad_cleaver.png
 ...\gfx\ui\items\weapons\melee\druweapon_01_70x70.png -> ...\gfx\ui\items\weapons\melee\dryad_cleaver_70x70.png
 ...\gfx\ui\items\weapons\melee\dryad_spear.png
@@ -119,6 +125,13 @@ Fixed a surcoat bug with the standard bearer
 ...\gfx\ui\items\weapons\melee\dryad_sword_70x70.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow.png
 ...\gfx\ui\items\weapons\ranged\dryad_bow_70x70.png
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_grunt_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_shaman_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_tamer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_warrior_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_background.nut <- DELETED
 ...\gfx\dryad_entities.png
 ...\brushes\dryad_entities.brush
 Adding and rebalancing some Dryad stuff
@@ -186,6 +199,10 @@ Updated entries to match the above changes
 ...\mod_sellswords\hooks\skills\backgrounds\militia_background.nut
 ...\scripts\items\accessory\militia_armband_item.nut
 Added a Militia Armband inspired by another mod which increases resolve based on the number of bros with it on
+
+...\scripts\skills\backgrounds\cr_aktk_background.nut <- DELETED
+...\scripts\skills\backgrounds\crbladedancer_background.nut <- DELETED
+Deleted two redundant old backgrounds
 
 ----------------------------------------------------------------------------------------------------------------------------
 
