@@ -166,7 +166,7 @@ Fixed a surcoat bug with the standard bearer
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut <- DELETED
 ...\gfx\dryad_entities.png
 ...\brushes\dryad_entities.brush
-Adding and rebalancing some Dryad stuff
+Adding, expanding on, and rebalancing the Dryad faction
 
 ...\brushes\chiru_orcs.brush
 ...\brushes\chiru_weapons.brush
