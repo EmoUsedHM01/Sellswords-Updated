@@ -1,5 +1,12 @@
 8.0.0 changes
 
+...\mod_sellswords\hooks\entity\tactical\enemies\ghost_knight.nut
+Breaky - fix ghost knight to drop the proper reproach of the old gods
+
+...\mod_sellswords\hooks\items\weapons\weapon.nut
+...\mod_sellswords\hooks\skills\traits\huge_trait.nut
+Breaky - revert huge changes because of msu bug
+
 ...\scripts\skills\backgrounds\crsellsword_background.nut
 Updated the background to get their "free" perk on generation
 
