@@ -76,7 +76,7 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 				this.Const.Perks.ChefClassTree
 			],
 			Magic = []
-		}
+		};
 	}
 
 	function getTooltip()
