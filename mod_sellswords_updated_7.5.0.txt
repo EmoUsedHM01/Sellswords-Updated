@@ -96,7 +96,7 @@ Updated entries to match the above changes
 ...\mod_sellswords\hooks\scenarios\world\militia_scenario.nut
 ...\mod_sellswords\hooks\skills\backgrounds\militia_background.nut
 ...\scripts\items\accessory\militia_armband_item.nut
-Added a Militia Armband which increases resolve based on the number of bros with it on
+Added a Militia Armband inspired by another mod which increases resolve based on the number of bros with it on
 
 ----------------------------------------------------------------------------------------------------------------------------
 
