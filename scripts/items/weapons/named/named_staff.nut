@@ -44,6 +44,7 @@ this.named_staff <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		t.m.Icon = "skills/staff_knock_out_mystic.png";
 		t.m.IconDisabled = "skills/staff_knock_out_mystic_bw.png";
 		this.addSkill(t);
+		this.addSkill(this.new("scripts/skills/actives/crstaff_sweep"));
 	}
 
 });
