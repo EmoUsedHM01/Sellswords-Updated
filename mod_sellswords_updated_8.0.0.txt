@@ -28,6 +28,7 @@ Updated the AI to include some skills that were recently added and got overlooke
 Fixed a surcoat bug with the standard bearer
 
 ...\mod_sellswords\config\dryad_armors.nut
+...\mod_sellswords\config\dryad_sprite_table.nut
 ...\mod_sellswords\config\faction_sellswords.nut
 ...\mod_sellswords\hooks\ai\tactical\agents\barbarian_beastmaster_agent.nut
 ...\mod_sellswords\hooks\config\faction_traits.nut

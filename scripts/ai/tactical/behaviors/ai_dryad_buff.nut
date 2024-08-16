@@ -65,12 +65,11 @@ this.ai_dryad_buff <- this.inherit("scripts/ai/tactical/behavior", {
 
 		yield null;
 		local allAllies = this.getAgent().getKnownAllies();
-		local allEnemies = this.getAgent().getKnownAllies();
 		local potentialTargets = [];
 
 		foreach( a in allAllies )
 		{
-			if (!a.hasSkill("racial.dryad"))
+			if (!a.getSkills().hasSkill("racial.dryad"))
 				continue;
 
 			if (a.getCurrentProperties().IsStunned)

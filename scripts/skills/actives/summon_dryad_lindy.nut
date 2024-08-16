@@ -167,7 +167,7 @@ this.summon_dryad_lindy <- this.inherit("scripts/skills/skill", {
 		local summon = this.Tactical.spawnEntity(this.m.Summon, _targetTile.Coords.X, _targetTile.Coords.Y);
 		this.consumeAmmo();
 
-		summon.setFaction(this.Const.Faction.PlayerAnimals);
+		summon.setFaction(_user.getFaction() == this.Const.Faction.Player ? this.Const.Faction.PlayerAnimals : this.getContainer().getActor().getFaction());
 		summon.setName(this.m.EntityName);
 		summon.setMoraleState(this.Const.MoraleState.Confident);
 		

@@ -30,6 +30,9 @@ this.dryad_enemy_tamer <- this.inherit("scripts/entity/tactical/human", {
 		
 		this.m.Skills.add(this.new("scripts/skills/racial/dryad_racial"));
 
+		this.m.Skills.add(this.new("scripts/skills/actives/summon_dryad_snake"));
+		this.m.Skills.add(this.new("scripts/skills/actives/summon_dryad_wolf"));
+
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));

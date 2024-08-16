@@ -40,7 +40,7 @@ this.dryad_enemy_shaman <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_lithe"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
 
 		if (::Is_PTR_Exist)

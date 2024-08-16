@@ -4,10 +4,16 @@ if (!("Dryad" in ::Const))
 }
 
 ::Const.Dryad.Body <- [
+	"bust_dryad_body",
+	"bust_dryad_body",
+	"bust_dryad_body",
 	"bust_dryad_body"
 ];
 
 ::Const.Dryad.Head <- [
+	"bust_dryad_head",
+	"bust_dryad_head",
+	"bust_dryad_head",
 	"bust_dryad_head"
 ];
 

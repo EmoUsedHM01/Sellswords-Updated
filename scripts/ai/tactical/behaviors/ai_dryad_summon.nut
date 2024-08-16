@@ -7,14 +7,19 @@ this.ai_dryad_summon <- this.inherit("scripts/ai/tactical/behavior", {
 		],
 		Skill = null,
 		Target = null,
-		Round = 0
+		Cooldown = 0
 	},
 	function create()
 	{
 		this.m.ID = this.Const.AI.Behavior.ID.RaiseUndead;
 		this.m.Order = this.Const.AI.Behavior.Order.RaiseUndead;
-		this.m.Round = this.Math.rand(1, 2);
+		this.m.Cooldown = this.Math.rand(1, 3);
 		this.behavior.create();
+	}
+
+	function onTurnStarted()
+	{
+		--this.m.Cooldown;
 	}
 
 	function onEvaluate( _entity )
@@ -34,7 +39,7 @@ this.ai_dryad_summon <- this.inherit("scripts/ai/tactical/behavior", {
 		if (this.m.Skill == null)
 			return this.Const.AI.Behavior.Score.Zero;
 
-		if (this.Time.getRound() < this.m.Round)
+		if (this.m.Cooldown != 0)
 			return this.Const.AI.Behavior.Score.Zero;
 
 		score = score * this.getFatigueScoreMult(this.m.Skill);
@@ -75,6 +80,7 @@ this.ai_dryad_summon <- this.inherit("scripts/ai/tactical/behavior", {
 
 		this.m.Skill = null;
 		this.m.Target = null;
+		this.m.Cooldown = this.Math.rand(2, 4);
 		return true;
 	}
 
