@@ -1371,7 +1371,7 @@
 	Variant = 0,
 	Strength = 40,
 	Cost = 40,
-	Row = 0,
+	Row = 2,
 	Script = "scripts/entity/tactical/enemies/dryad_snake",
 	TitleList = null
 }
@@ -1391,9 +1391,9 @@
 {
 	ID = this.Const.EntityType.DryadLindy,
 	Variant = 0,
-	Strength = 400,
-	Cost = 400,
-	Row = 0,
+	Strength = 300,
+	Cost = 300,
+	Row = 1,
 	Script = "scripts/entity/tactical/enemies/dryad_lindy",
 	TitleList = null
 }
@@ -1402,10 +1402,21 @@
 {
 	ID = this.Const.EntityType.DryadWarrior,
 	Variant = 0,
-	Strength = 30,
-	Cost = 30,
+	Strength = 35,
+	Cost = 35,
 	Row = 0,
-	Script = "scripts/entity/tactical/enemies/dryad_warrior",
+	Script = "scripts/entity/tactical/enemies/dryad_enemy_warrior",
+	TitleList = null
+}
+
+::Const.World.Spawn.Troops.DryadGrunt <-
+{
+	ID = this.Const.EntityType.DryadGrunt,
+	Variant = 0,
+	Strength = 25,
+	Cost = 25,
+	Row = 0,
+	Script = "scripts/entity/tactical/enemies/dryad_enemy_grunt",
 	TitleList = null
 }
 
@@ -1413,10 +1424,10 @@
 {
 	ID = this.Const.EntityType.DryadArcher,
 	Variant = 0,
-	Strength = 30,
-	Cost = 30,
-	Row = 0,
-	Script = "scripts/entity/tactical/enemies/dryad_archer",
+	Strength = 35,
+	Cost = 35,
+	Row = 1,
+	Script = "scripts/entity/tactical/enemies/dryad_enemy_archer",
 	TitleList = null
 }
 
@@ -1426,7 +1437,18 @@
 	Variant = 0,
 	Strength = 80,
 	Cost = 80,
-	Row = 0,
-	Script = "scripts/entity/tactical/enemies/dryad_shaman",
+	Row = 2,
+	Script = "scripts/entity/tactical/enemies/dryad_enemy_shaman",
+	TitleList = null
+}
+
+::Const.World.Spawn.Troops.DryadTamer <-
+{
+	ID = this.Const.EntityType.DryadTamer,
+	Variant = 0,
+	Strength = 50,
+	Cost = 50,
+	Row = 2,
+	Script = "scripts/entity/tactical/enemies/dryad_enemy_tamer",
 	TitleList = null
 }

@@ -30,36 +30,45 @@ if (!("Spawn" in ::Const.World))
 			MaxGuardsWeight = 100,
 			Guards = [
 				{
-					Type = this.Const.World.Spawn.Troops.DryadWolf,
-					Cost = 30,
+					Type = this.Const.World.Spawn.Troops.DryadGrunt,
+					Cost = 25,
 					function Weight( scale )
 					{
 						return 100;
 					}
-
 				}
-			]			
-		}			
-	],	
+			]
+		}
+	],
 	Troops = [
 		{
+			Weight = 40,
+			MinR = 50,
+			Types = [
+				{
+					Type = this.Const.World.Spawn.Troops.DryadGrunt,
+					Cost = 25,
+				}
+			]
+		},
+		{
 			Weight = 25,
-			MinR = 150,	
+			MinR = 150,
 			Types = [
 				{
 					Type = this.Const.World.Spawn.Troops.DryadWarrior,
-					Cost = 30,				
+					Cost = 35,
 				}
 			]
-		},	
+		},
 		{
 			Weight = 25,
 			MinR = 150,
 			Types = [
 				{
 					Type = this.Const.World.Spawn.Troops.DryadArcher,
-					Cost = 40
-				}			
+					Cost = 35
+				}
 			]
 		},
 		{
@@ -70,12 +79,12 @@ if (!("Spawn" in ::Const.World))
 					Type = this.Const.World.Spawn.Troops.DryadWolf,
 					Cost = 30
 				},
-				{					
+				{
 					Type = this.Const.World.Spawn.Troops.DryadSnake, 
 					Cost = 40
-				}				
+				}
 			]
-		},	
+		},
 		{
 			Weight = 10,
 			MinR = 250,
@@ -83,7 +92,7 @@ if (!("Spawn" in ::Const.World))
 				{
 					Type = this.Const.World.Spawn.Troops.DryadUnhold,
 					Cost = 70
-				}				
+				}
 			]
 		},
 		{
@@ -97,13 +106,23 @@ if (!("Spawn" in ::Const.World))
 			]
 		},
 		{
+			Weight = 10,
+			MinR = 300,
+			Types = [
+				{
+					Type = this.Const.World.Spawn.Troops.DryadTamer,
+					Cost = 50
+				}
+			]
+		},
+		{
 			Weight = 2,
 			MinR = 600,
 			Types = [
 				{
 					Type = this.Const.World.Spawn.Troops.DryadLindy,
-					Cost = 400
-				}				
+					Cost = 300
+				}
 			]
 		}
 	]
