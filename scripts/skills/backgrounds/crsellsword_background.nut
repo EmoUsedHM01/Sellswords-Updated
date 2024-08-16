@@ -172,8 +172,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 
 	function onAdded()
 	{
-		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"))
+		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"))
 
 		this.character_background.onAdded();
 		local actor = this.getContainer().getActor();

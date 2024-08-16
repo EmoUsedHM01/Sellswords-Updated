@@ -111,12 +111,8 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-
-		if (this.m.IsNew)
-		{
-			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_roots"))
-			this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"))
-		}
+		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_roots"))
+		this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"))
 	}
 
 	function buildPerkTree()

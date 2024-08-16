@@ -1,6 +1,13 @@
 8.0.1 changes
 
-...
+...\scripts\skills\backgrounds\crsellsword_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_grunt_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_shaman_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_tamer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_warrior_background.nut
+Fixed a broken isNew error
 
 ----------------------------------------------------------------------------------------------------------------------------
 
