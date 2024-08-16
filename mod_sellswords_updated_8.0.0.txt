@@ -45,6 +45,8 @@ Fixed a surcoat bug with the standard bearer
 ...\scripts\entity\tactical\enemies\dryad_shaman.nut <- ...\scripts\entity\tactical\enemies\dryad_enemy_shaman.nut
 ...\scripts\entity\tactical\enemies\dryad_enemy_tamer.nut
 ...\scripts\entity\tactical\enemies\dryad_warrior.nut <- ...\scripts\entity\tactical\enemies\dryad_enemy_warrior.nut
+...\scripts\entity\world\locations\dryad_tree_location.nut
+...\scripts\events\events\dryad_tree_enter_event.nut
 ...\scripts\events\events\ssu_dryad_event.nut
 ...\scripts\factions\dryad_faction.nut
 ...\scripts\skills\actives\natural_regrowth.nut

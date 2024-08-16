@@ -38,16 +38,11 @@ this.dryad_tree_location <- ::inherit("scripts/entity/world/location", {
 	{
 		this.location.onDropLootForPlayer(_lootTable);
 		this.dropMoney(::Math.rand(0, 0), _lootTable);
-		this.dropTreasure(::Math.rand(4, 6), [
-			"loot/silverware_item",
-			"loot/silver_bowl_item",
-			"loot/signet_ring_item",
-			"loot/white_pearls_item",
-			"loot/ornate_tome_item",
-			"loot/jeweled_crown_item",
-			"loot/gemstones_item",
-			"loot/golden_chalice_item",
-			"loot/ancient_gold_coins_item",
+		this.dropTreasure(::Math.rand(8, 12), [
+			"misc/legend_ancient_green_wood_item",
+			"misc/glowing_resin_item",
+			"misc/heart_of_the_forest_item",
+			"misc/ancient_wood_item",
 			"misc/legend_ancient_scroll_item"
 		], _lootTable);
 	}
@@ -57,12 +52,6 @@ this.dryad_tree_location <- ::inherit("scripts/entity/world/location", {
 		this.location.onInit();
 		local body = this.addSprite("body");
 		body.setBrush("world_dryad_legendary_location");
-	}
-
-	function onDeserialize( _in )
-	{
-		this.location.onDeserialize(_in);
-		this.setVisited(false);
 	}
 
 });
