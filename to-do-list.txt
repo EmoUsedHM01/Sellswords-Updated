@@ -1,6 +1,3 @@
-
-- Dryad faction addition (prio)
-
 - Legendary Glaive/Spear and Orc Mace
 
 - Krieghast working
