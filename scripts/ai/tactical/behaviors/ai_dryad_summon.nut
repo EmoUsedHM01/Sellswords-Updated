@@ -11,8 +11,8 @@ this.ai_dryad_summon <- this.inherit("scripts/ai/tactical/behavior", {
 	},
 	function create()
 	{
-		this.m.ID = this.Const.AI.Behavior.ID.DryadSummon;
-		this.m.Order = this.Const.AI.Behavior.Order.DryadSummon;
+		this.m.ID = this.Const.AI.Behavior.ID.RaiseUndead;
+		this.m.Order = this.Const.AI.Behavior.Order.RaiseUndead;
 		this.m.Round = this.Math.rand(1, 2);
 		this.behavior.create();
 	}

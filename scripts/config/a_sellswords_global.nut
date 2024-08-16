@@ -1,17 +1,5 @@
 local function addEntityType(_id, _name, _namePlural, _icon)
-{
-	/*
-	if (!("EntityTypeMax" in ::Const))
-	{
-		local max = 0;
-		foreach(key, value in ::Const.EntityType)
-		{
-			if (typeof value == "integer" && value > max) max = value; 
-		}
-		::Const.EntityTypeMax <- max;
-	}
-	*/
-	
+{	
 	::Const.EntityType[_id] <- ::Const.Strings.EntityName.len();
 	::Const.Strings.EntityName.push(_name);
 	::Const.Strings.EntityNamePlural.push(_namePlural);
@@ -133,7 +121,7 @@ addEntityType("DryadSnake", "Thicket Stalker", "Thicket Stalkers", "ss_dryad_sna
 addEntityType("DryadUnhold", "Woodland Protector", "Woodland Protector", "ss_dryad_unhold");
 addEntityType("DryadLindy", "Forest Avatar", "Forest Avatars", "ss_dryad_lindy");
 addEntityType("DryadWarrior", "Briarfoot", "Briarfoots", "ss_dryad_warrior");
-addEntityType("DryadGrunt", "Dryad Sentinel", "Dryad Sentinels", "ss_dryad_warrior");
+addEntityType("DryadGrunt", "Dryad Sentinel", "Dryad Sentinels", "ss_dryad_grunt");
 addEntityType("DryadArcher", "Thornspitter", "Thornspitters", "ss_dryad_archer");
 addEntityType("DryadShaman", "Sylvan Sage", "Sylvan Sages", "ss_dryad_shaman");
 addEntityType("DryadTamer", "Wildcaller", "Wildcallers", "ss_dryad_tamer");

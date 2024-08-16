@@ -3,7 +3,7 @@ this.dryad_shaman_agent <- this.inherit("scripts/ai/tactical/agent", {
 	function create()
 	{
 		this.agent.create();
-		this.m.ID = this.Const.AI.Agent.ID.DryadShaman;
+		this.m.ID = this.Const.AI.Agent.ID.GoblinShaman;
 		this.m.Properties.BehaviorMult[this.Const.AI.Behavior.ID.Defend] = 1.0;
 		this.m.Properties.BehaviorMult[this.Const.AI.Behavior.ID.KeepSafe] = 0.5;
 		this.m.Properties.IsRangedUnit = true;

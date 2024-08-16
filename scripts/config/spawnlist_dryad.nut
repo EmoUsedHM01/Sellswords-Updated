@@ -100,6 +100,16 @@ if (!("Spawn" in ::Const.World))
 			MinR = 250,
 			Types = [
 				{
+					Type = this.Const.World.Spawn.Troops.Schrat,
+					Cost = 70
+				}
+			]
+		},
+		{
+			Weight = 10,
+			MinR = 250,
+			Types = [
+				{
 					Type = this.Const.World.Spawn.Troops.DryadShaman,
 					Cost = 80
 				}

@@ -30,16 +30,21 @@ Fixed a surcoat bug with the standard bearer
 ...\mod_sellswords\config\dryad_armors.nut
 ...\mod_sellswords\config\faction_sellswords.nut
 ...\mod_sellswords\hooks\ai\tactical\agents\barbarian_beastmaster_agent.nut
+...\mod_sellswords\hooks\config\faction_traits.nut
+...\mod_sellswords\hooks\config\factions.nut
+...\mod_sellswords\hooks\factions\actions\send_beast_roamers_action.nut
 ...\scripts\ai\tactical\agents\dryad_shaman_agent.nut
 ...\scripts\ai\tactical\behaviors\ai_dryad_buff.nut
 ...\scripts\ai\tactical\behaviors\ai_dryad_summon.nut
 ...\scripts\config\a_sellswords_global.nut
+...\scripts\config\spawnlist_dryad.nut
 ...\scripts\entity\tactical\enemies\dryad_archer.nut <- ...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
 ...\scripts\entity\tactical\enemies\dryad_enemy_grunt.nut
 ...\scripts\entity\tactical\enemies\dryad_shaman.nut <- ...\scripts\entity\tactical\enemies\dryad_enemy_shaman.nut
 ...\scripts\entity\tactical\enemies\dryad_enemy_tamer.nut
 ...\scripts\entity\tactical\enemies\dryad_warrior.nut <- ...\scripts\entity\tactical\enemies\dryad_enemy_warrior.nut
 ...\scripts\events\events\ssu_dryad_event.nut
+...\scripts\factions\dryad_faction.nut
 ...\scripts\skills\actives\natural_regrowth.nut
 ...\scripts\skills\backgrounds\ssu_dryad_background.nut
 ...\scripts\skills\traits\dryad_thorns_trait.nut
