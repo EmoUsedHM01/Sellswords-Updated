@@ -1,6 +1,7 @@
 8.0.2 changes
 
-...
+...\scripts\skills\traits\dryad_thorns_trait.nut
+Forgot to make the thorn trait proc on armour hits, not hp ones
 
 ----------------------------------------------------------------------------------------------------------------------------
 

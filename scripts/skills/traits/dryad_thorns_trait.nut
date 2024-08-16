@@ -16,9 +16,9 @@ this.dryad_thorns_trait <- this.inherit("scripts/skills/traits/character_trait",
 		if (_attacker == null || !_attacker.isAlive() || _attacker.getTile().getDistanceTo(this.getContainer().getActor().getTile()) != 1 || _attacker.getCurrentProperties().IsImmuneToDamageReflection)
 			return;
 
-		if (_damageHitpoints > 0)
+		if (_damageArmor > 0)
 		{
-			local reflectedDamage = this.Math.floor(0.3 * _damageHitpoints);
+			local reflectedDamage = this.Math.floor(0.3 * _damageArmor);
 
 			// Create a new hit info object to apply the damage
 			local hitInfo = clone this.Const.Tactical.HitInfo;
