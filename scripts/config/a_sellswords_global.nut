@@ -114,14 +114,15 @@ addEntityType("crGoblinRider02", "Goblin Chasseur", "Goblin Chasseurs", "goblin_
 addEntityType("crGoblinRider03", "Goblin Caballero", "Goblin Caballeros", "goblin_05_orientation");
 addEntityType("crGoblinRider04", "Goblin Ranger", "Goblin Rangers", "goblin_05_orientation");
 addEntityType("crGoblinRider00", "Goblin Fighter", "Goblin Fighters", "goblin_05_orientation");
-addEntityType("crConqueror", "The Conqueror", "The Conquerors", "skeleton_05_orientation");
+addEntityType("crConqueror", "Conqueror", "Conquerors", "skeleton_05_orientation");
 
 addEntityType("DryadWolf", "Verdant Hound", "Verdant Hounds", "ss_dryad_wolf");	   // dryad entities
 addEntityType("DryadSnake", "Thicket Stalker", "Thicket Stalkers", "ss_dryad_snake");
 addEntityType("DryadUnhold", "Woodland Protector", "Woodland Protector", "ss_dryad_unhold");
 addEntityType("DryadLindy", "Forest Avatar", "Forest Avatars", "ss_dryad_lindy");
-addEntityType("DryadWarrior", "Briarfoot", "Briarfoots", "ss_dryad_warrior");
+addEntityType("DryadWarrior", "Briarwalker", "Briarwalkers", "ss_dryad_warrior");
 addEntityType("DryadGrunt", "Dryad Sentinel", "Dryad Sentinels", "ss_dryad_grunt");
 addEntityType("DryadArcher", "Thornspitter", "Thornspitters", "ss_dryad_archer");
 addEntityType("DryadShaman", "Sylvan Sage", "Sylvan Sages", "ss_dryad_shaman");
 addEntityType("DryadTamer", "Wildcaller", "Wildcallers", "ss_dryad_tamer");
+addEntityType("DryadBoss", "Grove Guardian", "Grove Guardians", "ss_dryad_boss");

@@ -10,8 +10,8 @@ this.ai_dryad_buff <- this.inherit("scripts/ai/tactical/behavior", {
 	},
 	function create()
 	{
-		this.m.ID = this.Const.AI.Behavior.ID.CommandUndead;
-		this.m.Order = this.Const.AI.Behavior.Order.CommandUndead;
+		this.m.ID = this.Const.AI.Behavior.ID.PossessUndead;
+		this.m.Order = this.Const.AI.Behavior.Order.PossessUndead;
 		this.m.IsThreaded = true;
 		this.behavior.create();
 	}

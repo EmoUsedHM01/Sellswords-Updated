@@ -1503,12 +1503,12 @@
 };
 
 ::Const.Tactical.Actor.DryadWarrior <- {
-	XP = 400,
+	XP = 450,
 	ActionPoints = 9,
 	Hitpoints = 125,
 	Bravery = 130,
 	Stamina = 245,
-	MeleeSkill = 80,
+	MeleeSkill = 75,
 	RangedSkill = 0,
 	MeleeDefense = 5,
 	RangedDefense = 5,
@@ -1523,7 +1523,7 @@
 };
 
 ::Const.Tactical.Actor.DryadGrunt <- {
-	XP = 200,
+	XP = 300,
 	ActionPoints = 9,
 	Hitpoints = 85,
 	Bravery = 100,
@@ -1568,8 +1568,8 @@
 	Hitpoints = 145,
 	Bravery = 150,
 	Stamina = 300,
-	MeleeSkill = 80,
-	RangedSkill = 80,
+	MeleeSkill = 70,
+	RangedSkill = 70,
 	MeleeDefense = -5,
 	RangedDefense = -5,
 	Initiative = 45,
@@ -1600,4 +1600,24 @@
 		0
 	],
 	FatigueRecoveryRate = 25
+};
+
+::Const.Tactical.Actor.DryadBoss <- {
+	XP = 2000,
+	ActionPoints = 9,
+	Hitpoints = 400,
+	Bravery = 200,
+	Stamina = 450,
+	MeleeSkill = 100,
+	RangedSkill = 0,
+	MeleeDefense = 30,
+	RangedDefense = 10,
+	Initiative = 100,
+	FatigueEffectMult = 0.0,
+	MoraleEffectMult = 0.0,
+	Armor = [
+		200,
+		150
+	],
+	DamageTotalMult = 1.2
 };

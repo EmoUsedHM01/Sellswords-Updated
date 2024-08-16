@@ -11,21 +11,24 @@ this.dryad_thorns_trait <- this.inherit("scripts/skills/traits/character_trait",
 		this.m.IsHidden = true;
 	}
 
-	function onDamageReceived( _damage, _fatalityType, _attacker )
+	function onDamageReceived( _attacker, _damageHitpoints, _damageArmor )
 	{
-		local actor = this.getContainer().getActor().get();
-		actor.onDamageReceived(_damage, _fatalityType, _attacker);
+		if (_attacker == null || !_attacker.isAlive() || _attacker.getTile().getDistanceTo(this.getContainer().getActor().getTile()) != 1 || _attacker.getCurrentProperties().IsImmuneToDamageReflection)
+			return;
 
-		if (_attacker != null && _attacker.isAlive() && _attacker.getHitpoints() > 0 && _attacker.getID() != this.getContainer().getActor().getID() && _attacker.getTile().getDistanceTo(this.getContainer().getActor().getTile()) == 1 && !_attacker.getCurrentProperties().IsImmuneToDamageReflection)
+		if (_damageHitpoints > 0)
 		{
+			local reflectedDamage = this.Math.floor(0.3 * _damageHitpoints);
+
+			// Create a new hit info object to apply the damage
 			local hitInfo = clone this.Const.Tactical.HitInfo;
-			hitInfo.DamageRegular = this.Math.maxf(1.0, _damage * 0.25);
-			hitInfo.DamageArmor = this.Math.maxf(1.0, _damage * 0.25);
-			hitInfo.DamageDirect = 0.0;
+			hitInfo.DamageRegular = reflectedDamage;
+			hitInfo.DamageDirect = 1.0;
 			hitInfo.BodyPart = this.Const.BodyPart.Body;
 			hitInfo.BodyDamageMult = 1.0;
 			hitInfo.FatalityChanceMult = 0.0;
-			_attacker.onDamageReceived(_attacker, null, hitInfo);
+
+			_attacker.onDamageReceived(this.getContainer().getActor(), null, hitInfo);
 		}
 	}
 

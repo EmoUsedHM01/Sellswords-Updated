@@ -22,6 +22,9 @@ this.dryad_enemy_warrior <- this.inherit("scripts/entity/tactical/human", {
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.DryadWarrior);
 		b.TargetAttractionMult = 1.0;
+		b.IsImmuneToBleeding = true;
+		b.IsImmuneToPoison = true;
+		b.IsAffectedByNight = false;
 		this.m.ActionPoints = b.ActionPoints;
 		this.m.Hitpoints = b.Hitpoints;
 		this.m.CurrentProperties = clone b;
