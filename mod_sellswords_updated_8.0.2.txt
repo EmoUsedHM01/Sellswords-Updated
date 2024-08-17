@@ -3,6 +3,9 @@
 ...\scripts\skills\traits\dryad_thorns_trait.nut
 Forgot to make the thorn trait proc on armour hits, not hp ones
 
+...\scripts\skills\effects\ptr_armor_fatigue_recovery_effect.nut
+Cleaned up the heavy armour penalty effect
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.1 changes

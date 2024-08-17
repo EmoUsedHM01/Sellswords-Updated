@@ -1,8 +1,8 @@
 this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 	m = {
-	Malus = 0,
-	Afterwait = 1,
-	IsWait = false
+		Malus = 0,
+		Afterwait = 1,
+		IsWait = false
 	},
 	function create()
 	{
@@ -14,7 +14,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.IsActive = false;
 		this.m.IsStacking = false;
-		this.m.IsHidden = false;		
+		this.m.IsHidden = false;
 	}
 
 	function getName()
@@ -22,7 +22,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 		local idt = this.Math.floor(this.m.Afterwait);
 		return this.m.Name + "[color=" + this.Const.UI.Color.NegativeValue + "] (" + (this.getCrweight() * (-1)) + "[/color]" + "  [color=" + this.Const.UI.Color.PositiveValue + "]" + idt +"[/color]" + "[color=" + this.Const.UI.Color.NegativeValue + "])[/color]";
 	}
-	
+
 	function isHidden()
 	{
 		return this.m.Malus == 0 && this.getContainer().getActor().isPlayerControlled();
@@ -52,42 +52,45 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 				id = 15,
 				type = "text",
 				icon = "ui/icons/direct_damage.png",
-				text = "Reduces damage ignoring armor by [color=" + this.Const.UI.Color.PositiveValue + "]" + dr + "%[/color]"
-			},			
-			{
+				text = "Reduces all damage that ignores armour by [color=" + this.Const.UI.Color.PositiveValue + "]" + dr + "%[/color]."
+			}
+		];
+		if (fc != 0)
+		{
+			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + fc + "[/color] Fatigue Recovery per turn"
-			},
-			{
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + fc + "[/color] Fatigue Recovery per turn."
+			});
+			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" +  fc + "[/color] Melee Skill"
-			},
-			{
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" +  fc + "[/color] Melee Skill."
+			});
+			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" +  (3 * fc) + "[/color] Ranged Skill"
-			},
-			{
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" +  (3 * fc) + "[/color] Ranged Skill."
+			});
+			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + fc + "[/color] Melee Defense"
-			},
-			{
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + fc + "[/color] Melee Defense."
+			});
+			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + (3 * fc) + "[/color] Ranged Defense"
-			}
-		];
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + (3 * fc) + "[/color] Ranged Defense."
+			});
+		}
 		return ret;
 	}
-	
+
 	function getCrweight()
 	{
 		return this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]); // Returns a negative number
@@ -96,8 +99,8 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 	function onTurnStart()
 	{
 		this.m.IsWait = false;
-	}	
-	
+	}
+
 	function onWaitTurn()
 	{
 		this.m.IsWait = true;
@@ -106,27 +109,18 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 	function getEncumbranceLevel()
 	{
 		if (this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]) > -20)
-		{
 			return 0;
-		}
 
 		local fat = this.getContainer().getActor().getFatigueMax();
+
 		if (fat < 20)
-		{
 			return 4;
-		}
 		else if (fat < 30)
-		{
 			return 3;
-		}
 		else if (fat < 40)
-		{
 			return 2;
-		}
 		else if (fat < 50)
-		{
 			return 1;
-		}
 
 		return 0;
 	}
@@ -135,15 +129,16 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 	{
 		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]); // Returns a negative number
 		this.m.Malus = (this.Math.min(0, (fat + 20) * 0.05)).tointeger();
-		this.m.Afterwait = this.getContainer().getActor().getInitiative() * (this.m.IsWait ? _properties.InitiativeAfterWaitMult : 1) * _properties.InitiativeForTurnOrderMult;		
+		this.m.Afterwait = this.getContainer().getActor().getInitiative() * (this.m.IsWait ? _properties.InitiativeAfterWaitMult : 1) * _properties.InitiativeForTurnOrderMult;
+
 		if (this.getContainer().hasSkill("perk.haspecialize"))
-		{
-			return;			
-		}		
+			return;
+
 		_properties.FatigueRecoveryRate += this.m.Malus;
 		_properties.RangedSkill += 3 * this.m.Malus;
 		_properties.MeleeDefense += this.m.Malus;
-		_properties.RangedDefense += 3 * this.m.Malus;	
+		_properties.RangedDefense += 3 * this.m.Malus;
+
 		if (this.getContainer().getActor().isPlayerControlled())
 		{
 			_properties.MeleeSkill += this.m.Malus;
@@ -154,19 +149,16 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 			_properties.Initiative += this.Math.min(10, -3 * mls);
 		}
 	}
-	
+
 	function onBeforeDamageReceived( _attacker, _skill, _hitInfo, _properties )
 	{
 		if (_attacker != null)
 		{
 			if (this.getContainer().hasSkill("perk.haspecialize"))
-			{
-				_properties.DamageReceivedDirectMult *= 0.01 * (100 + 6 * this.m.Malus);		
-			}	
+				_properties.DamageReceivedDirectMult *= 0.01 * (100 + 6 * this.m.Malus);
 			else
-			{
 				_properties.DamageReceivedDirectMult *= 0.01 * (100 + 3 * this.m.Malus);
-			}
-		}			
+		}
 	}
+
 });
