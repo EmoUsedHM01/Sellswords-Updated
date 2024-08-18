@@ -9,6 +9,12 @@ Cleaned up the heavy armour penalty effect
 ...\mod_sellswords\hooks\config\factions.nut
 Fixed a bad hook format
 
+...\mod_sellswords\hooks\skills\effects\legend_lw_relationship_effect.nut
+...\mod_sellswords\hooks\skills\traits\legend_lw_relationship_trait.nut <- DELETED
+...\scripts\skills\effects\cr_knights_negative_effect.nut <- DELETED
+...\scripts\skills\effects\cr_knights_positive_effect.nut <- DELETED
+Deleted and fixed a back hook effect
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.1 changes

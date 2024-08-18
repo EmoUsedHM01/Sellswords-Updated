@@ -2,20 +2,12 @@
 
 	q.m.Level <- 0;
 
-	q.setLevel <- function( _lv )
+	q.setLevel <- function( _l )
 	{
-		this.m.Level = _lv;
+		this.m.Level = _l;
 	}
 
-
-	q.create = @(__original) function()
-	{
-		__original();
-		this.m.Icon = "ui/traits/trait_icon_58.png";
-		this.m.IconMini = "status_effect_78_mini";
-	}
-
-	q.getTooltip = @(__original) function()
+	q.getTooltip = @() function()
 	{
 		return [
 			{
@@ -56,18 +48,18 @@
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.Level + "[/color] Initiative"
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + (this.m.Level * 2) + "[/color] Initiative"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
 				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(0.34 * this.m.Level) + "[/color] Fatigue Recovery"
-			}			
+			}
 		];
 	}
 
-	q.onUpdate = @(__original) function( _properties )
+	q.onUpdate = @() function( _properties )
 	{
 		if (!this.getContainer().getActor().isPlacedOnMap())
 		{
@@ -101,9 +93,8 @@
 			_properties.RangedSkill += this.m.Level;
 			_properties.MeleeDefense += this.m.Level;
 			_properties.RangedDefense += this.m.Level;
-			_properties.Initiative += this.m.Level;
-			_properties.Initiative += this.m.Level;
-			_properties.FatigueRecoveryRate += this.Math.floor(0.34 * this.m.Level);			
+			_properties.Initiative += (this.m.Level * 2);
+			_properties.FatigueRecoveryRate += this.Math.floor(0.34 * this.m.Level);
 		}
 		else
 		{
@@ -111,11 +102,10 @@
 		}
 	}
 
-	q.onCombatFinished = @(__original) function()
+	q.onTurnStart <- function()
 	{
-		this.m.IsHidden = true;
-		local actor = this.getContainer().getActor();	
-		actor.getSkills().removeByID("trait.legend_lw_relationship");		
-		actor.getSkills().add(this.new("scripts/skills/traits/legend_lw_relationship_trait"));
+		local actor = this.getContainer().getActor();
+		this.setLevel(this.Math.min(15, actor.getLevel()));
 	}
+
 });
