@@ -66,7 +66,6 @@
 
 ::Const.Strings.crBlacksmithNames <- [
 	"Muradin",
-	"Muradin",
 	"Modimus",
 	"Aegrim",
 	"Vanndar",
@@ -86,7 +85,6 @@
 ]
 
 ::Const.Strings.crPriestNames <- [
-	"Muradin",
 	"Muradin",
 	"Modimus",
 	"Aegrim",
