@@ -24,7 +24,7 @@ Deleted and fixed a back hook effect
 ...\scripts\events\events\special\crcheck_difficulty_event.nut
 Updated the difficulty event
 
-...\Sellswords-Updated\gfx\ui\pics\... <- DELETED
+...\gfx\ui\pics\... <- DELETED
 Deleted old pics folder since none of the images are in use anymore
 
 ----------------------------------------------------------------------------------------------------------------------------
