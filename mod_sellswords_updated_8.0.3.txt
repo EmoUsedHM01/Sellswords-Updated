@@ -3,6 +3,9 @@
 ...\scripts\config\a_sellswords_character_names.nut
 Removed a couple duplicate names
 
+...\scripts\events\events\anatomist_recruit_event.nut
+Created an event to recruit an Anatomist for origins without access to them otherwise
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.2 changes
