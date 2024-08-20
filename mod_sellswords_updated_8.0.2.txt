@@ -1,10 +1,10 @@
 8.0.2 changes
 
 ...\mod_sellswords\hooks\skills\traits\huge_trait.nut
-Breaky: fix an error where huge is removed
+Fixed an error that occurred if huge was removed - Breaky
 
 ...\scripts\skills\effects\phantom_strike_effect.nut
-fix #onTargetHit checks because they were pre refactor
+Fix #onTargetHit checks because they were pre-refactor - Breaky
 
 ...\scripts\skills\traits\dryad_thorns_trait.nut
 Forgot to make the thorn trait proc on armour hits, not hp ones
@@ -20,6 +20,12 @@ Fixed a bad hook format
 ...\scripts\skills\effects\cr_knights_negative_effect.nut <- DELETED
 ...\scripts\skills\effects\cr_knights_positive_effect.nut <- DELETED
 Deleted and fixed a back hook effect
+
+...\scripts\events\events\special\crcheck_difficulty_event.nut
+Updated the difficulty event
+
+...\Sellswords-Updated\gfx\ui\pics\... <- DELETED
+Deleted old pics folder since none of the images are in use anymore
 
 ----------------------------------------------------------------------------------------------------------------------------
 
