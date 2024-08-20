@@ -1,5 +1,11 @@
 8.0.2 changes
 
+...\mod_sellswords\hooks\skills\traits\huge_trait.nut
+Breaky: fix an error where huge is removed
+
+...\scripts\skills\effects\phantom_strike_effect.nut
+fix #onTargetHit checks because they were pre refactor
+
 ...\scripts\skills\traits\dryad_thorns_trait.nut
 Forgot to make the thorn trait proc on armour hits, not hp ones
 
