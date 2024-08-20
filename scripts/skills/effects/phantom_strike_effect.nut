@@ -104,20 +104,25 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
-		local actor = this.getContainer().getActor()
+		local actor = this.getContainer().getActor();
 		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
+		local weapon = actor.getMainhandItem();
 
-		if (!(ammo.m.Name == "Quiver of Phantom Bolts" || ammo.m.Name == "Quiver of Phantom Arrows"))
-			return;
-
-		if (this.isGarbage())
-			return;
-
-		if (::Mod_ROTU.doArrowChecks( _skill, _targetEntity, actor))
-			return;
-
-		if (this.m.skillCount == this.Const.SkillCounter && this.m.LastTargetID == _targetEntity.getID())
-			return;
+		switch (true)
+		{
+			case this.isGarbage():
+			case !_skill.isAttack():
+			case !_skill.isRanged():
+			case !actor.isAlive():
+			case actor.isDying():
+			case _targetEntity == null:
+			case !_targetEntity.isAlive():
+			case _targetEntity.isDying():
+			case weapon == null:
+			case !(weapon.isWeaponType(::Const.Items.WeaponType.Bow) || weapon.isWeaponType(::Const.Items.WeaponType.Crossbow)):
+			case this.m.skillCount == this.Const.SkillCounter && this.m.LastTargetID == _targetEntity.getID():
+				return;
+		}
 
 		this.m.skillCount = this.Const.SkillCounter;
 		this.m.LastTargetID = _targetEntity.getID();
