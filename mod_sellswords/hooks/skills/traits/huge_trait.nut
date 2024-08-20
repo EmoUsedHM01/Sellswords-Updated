@@ -34,7 +34,7 @@
 
 	q.onRemoved <- function()
 	{
-		_properties.IsProficientWithHeavyWeapons = false;
+		this.getContainer().getActor().getCurrentProperties().IsProficientWithHeavyWeapons = false;
 	}
 
 	q.onAfterUpdate <- function ( _properties )
