@@ -26,8 +26,7 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 					Text = "We\'ve no time for your experiments. Move along.",
 					function getResult( _event )
 					{
-						this.World.getTemporaryRoster().clear();
-						return 0;
+						return "D";
 					}
 				}
 			],
@@ -61,7 +60,7 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 					Text = "We\'re not keen on dragging a scholar into battle.",
 					function getResult( _event )
 					{
-						return D;
+						return "D";
 					}
 				}
 			],
