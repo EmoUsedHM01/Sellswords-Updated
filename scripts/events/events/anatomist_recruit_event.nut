@@ -37,7 +37,7 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 				_event.m.Dude.setStartValuesEx([
 					"anatomist_background"
 				]);
-				_event.m.Dude.getBackground().m.RawDescription = "{You encountered %name% in a tavern. %They%\'s a former physician whose obsession with the secrets of life and death has driven %them% to study the fallen in search of forbidden knowledge. Now an outcast, %they% sought to join your company, offering %their% dark expertise to both enhance your men and discover the vulnerabilities of your enemies through macabre research.}";
+				_event.m.Dude.getBackground().m.RawDescription = "{You encountered %name% in a tavern. %They%\'s a former physician whose obsession with the secrets of life and death has driven %them% to study the fallen in search of new-found knowledge. As an outcast, %they% sought to join your company, offering %their% unusual expertise to both enhance your men and discover the vulnerabilities of your enemies through macabre research.}";
 				_event.m.Dude.getBackground().buildDescription(true);
 
 				this.Characters.push(_event.m.Dude.getImagePath());
