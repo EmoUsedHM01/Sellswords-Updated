@@ -1,6 +1,8 @@
 8.0.4 changes
 
-...\
+...\gfx\ui\items\weapons\melee\ssu_ghost_spear.png
+...\gfx\ui\items\weapons\melee\ssu_ghost_spear_70x70.png
+Added the new gfx for the Legendary Spear
 
 ----------------------------------------------------------------------------------------------------------------------------
 
