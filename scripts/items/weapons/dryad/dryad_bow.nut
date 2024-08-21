@@ -21,13 +21,13 @@ this.dryad_bow <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.RangeMin = 2;
 		this.m.RangeMax = 7;
 		this.m.RangeIdeal = 7;
-		this.m.StaminaModifier = -6;
+		this.m.StaminaModifier = -7;
 		this.m.Condition = 50.0;
 		this.m.ConditionMax = 50.0;
 		this.m.RegularDamage = 40;
 		this.m.RegularDamageMax = 55;
 		this.m.ArmorDamageMult = 0.55;
-		this.m.DirectDamageMult = 0.4;
+		this.m.DirectDamageMult = 0.45;
 	}
 
 	function getTooltip()

@@ -5,7 +5,7 @@ this.dryad_spear <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.dryad_spear";
 		this.m.Name = "Dryad Spear";
-		this.m.Description = "A short and heavy spear with two wings behind the bladed tip.";
+		this.m.Description = "A short yet sturdy glaive, crafted from Heartwood by the Dryads. Despite its appearance, the end of the blade holds a dangerously sharp edge.";
 		this.m.IconLarge = "weapons/melee/dryad_spear.png";
 		this.m.Icon = "weapons/melee/dryad_spear_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Spear;

@@ -9,6 +9,12 @@ Created an event to recruit an Anatomist for origins without access to them othe
 ...\mod_sellswords\hooks\factions\actions\send_beast_roamers_action.nut
 Forgot to add a local variable for distanceToNextAlly
 
+...\scripts\items\weapons\dryad\dryad_bow.nut
+...\scripts\items\weapons\dryad\dryad_cleaver.nut
+...\scripts\items\weapons\dryad\dryad_spear.nut
+...\scripts\items\weapons\dryad\dryad_staff.nut
+Replaced the placeholder descriptions and adjusted stat values slightly
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.2 changes

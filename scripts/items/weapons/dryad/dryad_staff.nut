@@ -5,7 +5,7 @@ this.dryad_staff <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.dryad_staff";
 		this.m.Name = "Dryad Staff";
-		this.m.Description = "A sturdy staff, good for walking and whacking";
+		this.m.Description = "A sturdy staff crafted by Dryads from their sacred Heartwood. When exposed to blood, the mystical properties of these staves reveal themselves.";
 		this.m.IconLarge = "weapons/melee/dryad_staff.png";
 		this.m.Icon = "weapons/melee/dryad_staff_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Staff;
@@ -16,16 +16,16 @@ this.dryad_staff <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_dryad_staff";
-		this.m.Value = 750;
+		this.m.Value = 1050;
 		this.m.ShieldDamage = 0;
 		this.m.Condition = 60.0;
 		this.m.ConditionMax = 60.0;
-		this.m.StaminaModifier = -4;
+		this.m.StaminaModifier = -6;
 		this.m.RangeMin = 1;
 		this.m.RangeMax = 2;
 		this.m.RangeIdeal = 2;
-		this.m.RegularDamage = 45;
-		this.m.RegularDamageMax = 60;
+		this.m.RegularDamage = 35;
+		this.m.RegularDamageMax = 50;
 		this.m.ArmorDamageMult = 0.3;
 		this.m.DirectDamageMult = 0.95;
 	}

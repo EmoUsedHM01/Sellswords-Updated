@@ -25,7 +25,6 @@ this.dryad_cleaver <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.RegularDamageMax = 45;
 		this.m.ArmorDamageMult = 0.75;
 		this.m.DirectDamageMult = 0.35;
-		this.m.DirectDamageAdd = 0.2;
 	}
 
 	function getTooltip()
