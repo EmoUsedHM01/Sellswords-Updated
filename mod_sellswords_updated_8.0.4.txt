@@ -4,6 +4,16 @@
 ...\gfx\ui\items\weapons\melee\ssu_ghost_spear_70x70.png
 Added the new gfx for the Legendary Spear
 
+...\gfx\ui\perks\crSpecialize_ca.png
+...\gfx\ui\perks\crSpecialize_ca_bw.png
+...\gfx\ui\perks\crSpecialize_ha.png
+...\gfx\ui\perks\crSpecialize_ha_bw.png
+...\gfx\ui\perks\crSpecialize_la.png
+...\gfx\ui\perks\crSpecialize_la_bw.png
+...\gfx\ui\perks\crSpecialize_ma.png
+...\gfx\ui\perks\crSpecialize_ma_bw.png
+Added/updated the armour mastery icons
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
