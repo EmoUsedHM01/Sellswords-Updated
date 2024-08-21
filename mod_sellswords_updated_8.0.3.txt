@@ -6,6 +6,9 @@ Removed a couple duplicate names
 ...\scripts\events\events\anatomist_recruit_event.nut
 Created an event to recruit an Anatomist for origins without access to them otherwise
 
+...\mod_sellswords\hooks\factions\actions\send_beast_roamers_action.nut
+Forgot to add a local variable for distanceToNextAlly
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.2 changes

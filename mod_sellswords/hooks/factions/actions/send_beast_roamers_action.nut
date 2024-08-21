@@ -4,6 +4,7 @@
 	{
 		__original();
 
+		local distanceToNextAlly = 10;
 		local beast;
 		beast = function ( _action, _nearTile = null )
 		{
