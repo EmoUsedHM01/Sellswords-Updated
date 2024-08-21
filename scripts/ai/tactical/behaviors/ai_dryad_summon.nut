@@ -65,7 +65,7 @@ this.ai_dryad_summon <- this.inherit("scripts/ai/tactical/behavior", {
 		if (this.m.Target == null)
 			return this.Const.AI.Behavior.Score.Zero;
 
-		return this.Const.AI.Behavior.Score.UnleashCompanion;  
+		return this.Const.AI.Behavior.Score.RaiseUndead;
 	}
 
 	function onExecute( _entity )

@@ -15,6 +15,9 @@ Forgot to add a local variable for distanceToNextAlly
 ...\scripts\items\weapons\dryad\dryad_staff.nut
 Replaced the placeholder descriptions and adjusted stat values slightly
 
+...\scripts\ai\tactical\behaviors\ai_dryad_summon.nut
+Forgot an edit I needed to make
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.2 changes
