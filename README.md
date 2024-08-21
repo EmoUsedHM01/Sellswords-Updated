@@ -105,7 +105,7 @@ Master the art of movement! Reduce the Action Point cost of Rotation, Footwork, 
 
 - Grand Slam
 
-Being massive has its pros and cons. The Double Grip effect now increases damage by 50%. Increases Armor penetration and damage by 50% when Unarmed. The Muscularity perk has its damage effect tripled. Fatigue cost of all skills is increased by 8% of your Hitpoints Melee and throwing AP costs are increased by 1 Melee Defense, Ranged Defense, and Initiative are reduced by 8% of your Hitpoints. The maximum Hitpoint value for this perks bonuses and penalties is 150. The Riposte skill has an additional -15% hit chance. The Duelist perk now provides +20% additional Armor penetration for all weapons, except Non-Throwing Ranged Weapons.
+Being massive has its pros and cons. The Double Grip effect now increases damage by 50%. Increases Armor penetration and damage by 50% when Unarmed. The Muscularity perk has its damage effect tripled. Fatigue cost of all skills is increased by 8% of your Hitpoints Melee and throwing AP costs are increased by 1. Melee Defense, Ranged Defense, and Initiative are reduced by 8% of your Hitpoints. The maximum Hitpoint value for this perks bonuses and penalties is 150. The Riposte skill has an additional -15% hit chance. The Duelist perk now provides +20% additional Armor penetration Two Handed weapons and Throwing Weapons, but will reduce Armor Penetration by 10% for One Handed weapons.
 
 
 
