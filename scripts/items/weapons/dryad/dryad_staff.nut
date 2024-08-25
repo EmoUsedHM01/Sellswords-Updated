@@ -8,7 +8,7 @@ this.dryad_staff <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.Description = "A sturdy staff crafted by Dryads from their sacred Heartwood. When exposed to blood, the mystical properties of these staves reveal themselves.";
 		this.m.IconLarge = "weapons/melee/dryad_staff.png";
 		this.m.Icon = "weapons/melee/dryad_staff_70x70.png";
-		this.m.WeaponType = this.Const.Items.WeaponType.Staff;
+		this.m.WeaponType = this.Const.Items.WeaponType.Staff | this.Const.Items.WeaponType.MagicStaff;
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.ItemType = this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded | this.Const.Items.ItemType.Defensive;

@@ -182,7 +182,7 @@ this.natural_regrowth <- this.inherit("scripts/skills/skill", {
 
 		target.setHitpoints(this.Math.min(target.getHitpointsMax(), target.getHitpoints() + finalHeal));
 
-		if (target.hasSkill("racial.dryad"))
+		if (target.getSkills().hasSkill("racial.dryad"))
 		{
 			local head = target.getHeadItem();
 			local headArmor = head == null ? 1 : head.getArmor();
