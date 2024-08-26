@@ -32,6 +32,9 @@ Added a clause to prevent Dryad corpses being raised as undead
 ...\scripts\entity\tactical\enemies\dryad_lindy_tail.nut
 Removed an old racial script that bugged out damage calcs
 
+...\scripts\events\events\anatomist_recruit_event.nut
+Updated the dialogue a little
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
