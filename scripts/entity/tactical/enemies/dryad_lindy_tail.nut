@@ -1,8 +1,7 @@
 this.dryad_lindy_tail <- this.inherit("scripts/entity/tactical/actor", {
 	m = {
 		Body = null,
-		Racial = null,
-		Name = "Lindwurm tail"
+		Name = "Avatar tail"
 	},
 	function create()
 	{
@@ -254,7 +253,6 @@ this.dryad_lindy_tail <- this.inherit("scripts/entity/tactical/actor", {
 		damage = this.Math.max(0, this.Math.max(damage, this.Math.min(_hitInfo.DamageMinimum, _hitInfo.DamageMinimum * p.DamageReceivedTotalMult)));
 		_hitInfo.DamageInflictedHitpoints = damage;
 		this.m.Body.m.Skills.onDamageReceived(_attacker, _hitInfo.DamageInflictedHitpoints, _hitInfo.DamageInflictedArmor);
-		this.m.Racial.onDamageReceived(_attacker, _hitInfo.DamageInflictedHitpoints, _hitInfo.DamageInflictedArmor);
 
 		if (armorDamage > 0 && !this.isHiddenToPlayer())
 		{
@@ -565,7 +563,6 @@ this.dryad_lindy_tail <- this.inherit("scripts/entity/tactical/actor", {
 		this.setSpriteOffset("status_rooted", this.createVec(0, 0));
 		
 		this.m.Skills.add(this.new("scripts/skills/racial/lindwurm_racial"));
-		this.m.Skills.add(this.new("scripts/skills/racial/dryad_racial"));
 		
 		this.m.Skills.add(this.new("scripts/skills/traits/loyal_trait"));
 		this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));

@@ -376,7 +376,6 @@ this.dryad_lindy <- this.inherit("scripts/entity/tactical/actor", {
 		this.setSpriteOffset("arrow", this.createVec(-5, 30));
 		
 		this.m.Skills.add(this.new("scripts/skills/racial/lindwurm_racial"));
-		this.m.Skills.add(this.new("scripts/skills/racial/dryad_racial"));
 		
 		this.m.Skills.add(this.new("scripts/skills/traits/loyal_trait"));
 		this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));

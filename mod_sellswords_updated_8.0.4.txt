@@ -28,6 +28,10 @@ Added/updated the armour mastery icons
 ...\scripts\entity\tactical\enemies\dryad_enemy_warrior.nut
 Added a clause to prevent Dryad corpses being raised as undead
 
+...\scripts\entity\tactical\enemies\dryad_lindy.nut
+...\scripts\entity\tactical\enemies\dryad_lindy_tail.nut
+Removed an old racial script that bugged out damage calcs
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
