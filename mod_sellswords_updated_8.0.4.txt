@@ -1,5 +1,11 @@
 8.0.4 changes
 
+...\scripts\items\weapons\dryad\dryad_staff.nut
+Breaky: Made it a Mystic Staff
+
+...\scripts\skills\actives\natural_regrowth.nut
+Breaky: fix an issue with the skill
+
 ...\gfx\ui\items\weapons\melee\ssu_ghost_spear.png
 ...\gfx\ui\items\weapons\melee\ssu_ghost_spear_70x70.png
 Added the new gfx for the Legendary Spear
