@@ -15,7 +15,7 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 			Characters = [],
 			Options = [
 				{
-					Text = "We could use you, but what\'s in it for us?",
+					Text = "We could do that, but what\'s in it for us?",
 					function getResult( _event )
 					{
 						return "B";
@@ -23,7 +23,7 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 
 				},
 				{
-					Text = "We\'ve no time for your experiments. Move along.",
+					Text = "We\'ve no time for your experiments.",
 					function getResult( _event )
 					{
 						return "D";
@@ -93,7 +93,7 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_184.png[/img]{The anatomist sighs, %their_anatomist% shoulders slumping slightly.%SPEECH_ON%A shame, truly. But I understand. Some paths are not meant for everyone.%SPEECH_OFF%%They_anatomist% returns to %their_anatomist% notes, and the company eventually leaves the tavern without them.}",
+			Text = "[img]gfx/ui/events/event_184.png[/img]{The anatomist sighs, %their_anatomist% shoulders slumping slightly.%SPEECH_ON%A shame, truly. But I understand. Some paths are not meant for everyone.%SPEECH_OFF%%They_anatomist% returns to %their_anatomist% notes and you head back over to the company ready for some more drinks.}",
 			Banner = "",
 			Characters = [],
 			Options = [
