@@ -1,10 +1,10 @@
 8.0.4 changes
 
 ...\scripts\items\weapons\dryad\dryad_staff.nut
-Breaky: Made it a Mystic Staff
+Added the "Mystic Staff" weapon type - Breaky
 
 ...\scripts\skills\actives\natural_regrowth.nut
-Breaky: fix an issue with the skill
+Fix an issue with the skill - Breaky
 
 ...\gfx\ui\items\weapons\melee\ssu_ghost_spear.png
 ...\gfx\ui\items\weapons\melee\ssu_ghost_spear_70x70.png
@@ -19,6 +19,14 @@ Added the new gfx for the Legendary Spear
 ...\gfx\ui\perks\crSpecialize_ma.png
 ...\gfx\ui\perks\crSpecialize_ma_bw.png
 Added/updated the armour mastery icons
+
+...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_boss.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_grunt.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_shaman.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_tamer.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_warrior.nut
+Added a clause to prevent Dryad corpses being raised as undead
 
 ----------------------------------------------------------------------------------------------------------------------------
 

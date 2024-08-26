@@ -54,6 +54,13 @@ this.dryad_enemy_grunt <- this.inherit("scripts/entity/tactical/human", {
 		}
 	}
 
+	function onDeath( _killer, _skill, _tile, _fatalityType )
+	{
+		this.human.onDeath(_killer, _skill, _tile, _fatalityType);
+		local corpse = _tile.Properties.get("Corpse");
+		corpse.IsResurrectable = false;
+	}
+
 	function assignRandomEquipment()
 	{
 		this.m.Items.equip(this.new("scripts/items/weapons/dryad/dryad_spear"));
