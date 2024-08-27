@@ -8,18 +8,18 @@
 				[1, "cloth/dryad_cloth"]
 			],
 			Chain = [
-				[5, "chain/dryad_chain_warrior"],
+				[7, "chain/dryad_chain_warrior"],
 				[1, "chain/dryad_chain_grunt"],
 				[1, "chain/dryad_chain_tamer"],
 				[1, ""]
 			],
 			Plate = [
-				[5, "plate/dryad_plate_warrior"],
+				[7, "plate/dryad_plate_warrior"],
 				[1, "plate/dryad_plate_grunt"],
 				[1, "plate/dryad_plate_tamer"]
 			],
 			Cloak = [
-				[5, "cloak/dryad_cloak_warrior"],
+				[7, "cloak/dryad_cloak_warrior"],
 				[1, "cloak/dryad_cloak_grunt"],
 				[1, "cloak/dryad_cloak_tamer"],
 				[1, ""]
@@ -27,7 +27,7 @@
 			Tabard = [
 			],
 			Attachments =[
-				[5, "armor_upgrades/dryad_pauldrons_warrior"],
+				[7, "armor_upgrades/dryad_pauldrons_warrior"],
 				[1, ""]
 			]
 		}]
