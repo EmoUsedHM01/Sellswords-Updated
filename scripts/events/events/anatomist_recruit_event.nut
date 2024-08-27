@@ -93,7 +93,7 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 		});
 		this.m.Screens.push({
 			ID = "D",
-			Text = "[img]gfx/ui/events/event_184.png[/img]{The anatomist sighs, %their_anatomist% shoulders slumping slightly.%SPEECH_ON%A shame, truly. But I understand. Some paths are not meant for everyone.%SPEECH_OFF%%They_anatomist% returns to %their_anatomist% notes and you head back over to the company ready for some more drinks.}",
+			Text = "[img]gfx/ui/events/event_184.png[/img]{The anatomist sighs, %their_anatomist% shoulders slumping slightly.%SPEECH_ON%A shame, truly. But I understand. Some paths are not meant for everyone.%SPEECH_OFF%%They_anatomist% returns to %their_anatomist% notes and you head back over to the company, hoping to get at least another couple drinks in before you retire for the night.}",
 			Banner = "",
 			Characters = [],
 			Options = [
