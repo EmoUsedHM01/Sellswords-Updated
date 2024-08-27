@@ -61,33 +61,42 @@
 		Icon = "ui/perks/crGrandslam.png",
 		IconDisabled = "ui/perks/crGrandslam_bw.png",
 		Const = "crGrandslam"
-	},		
+	},
 	{
-		ID = "perk.laspecialize",
-		Script = "scripts/skills/perks/perk_laspecialize",
-		Name = this.Const.Strings.PerkName.laspecialize,
-		Tooltip = this.Const.Strings.PerkDescription.laspecialize,
+		ID = "perk.armor_mastery_cloth",
+		Script = "scripts/skills/perks/perk_armor_mastery_cloth",
+		Name = this.Const.Strings.PerkName.ArmorMasteryCloth,
+		Tooltip = this.Const.Strings.PerkDescription.ArmorMasteryCloth,
+		Icon = "ui/perks/crSpecialize_ca.png",
+		IconDisabled = "ui/perks/crSpecialize_ca_bw.png",
+		Const = "ArmorMasteryCloth"
+	},
+	{
+		ID = "perk.armor_mastery_light",
+		Script = "scripts/skills/perks/perk_armor_mastery_light",
+		Name = this.Const.Strings.PerkName.ArmorMasteryLight,
+		Tooltip = this.Const.Strings.PerkDescription.ArmorMasteryLight,
 		Icon = "ui/perks/crSpecialize_la.png",
 		IconDisabled = "ui/perks/crSpecialize_la_bw.png",
-		Const = "laspecialize"
+		Const = "ArmorMasteryLight"
 	},
 	{
-		ID = "perk.maspecialize",
-		Script = "scripts/skills/perks/perk_maspecialize",
-		Name = this.Const.Strings.PerkName.maspecialize,
-		Tooltip = this.Const.Strings.PerkDescription.maspecialize,
+		ID = "perk.armor_mastery_medium",
+		Script = "scripts/skills/perks/perk_armor_mastery_medium",
+		Name = this.Const.Strings.PerkName.ArmorMasteryMedium,
+		Tooltip = this.Const.Strings.PerkDescription.ArmorMasteryMedium,
 		Icon = "ui/perks/crSpecialize_ma.png",
 		IconDisabled = "ui/perks/crSpecialize_ma_bw.png",
-		Const = "maspecialize"
+		Const = "ArmorMasteryMedium"
 	},
 	{
-		ID = "perk.haspecialize",
-		Script = "scripts/skills/perks/perk_haspecialize",
-		Name = this.Const.Strings.PerkName.haspecialize,
-		Tooltip = this.Const.Strings.PerkDescription.haspecialize,
+		ID = "perk.armor_mastery_heavy",
+		Script = "scripts/skills/perks/perk_armor_mastery_heavy",
+		Name = this.Const.Strings.PerkName.ArmorMasteryHeavy,
+		Tooltip = this.Const.Strings.PerkDescription.ArmorMasteryHeavy,
 		Icon = "ui/perks/crSpecialize_ha.png",
 		IconDisabled = "ui/perks/crSpecialize_ha_bw.png",
-		Const = "haspecialize"
+		Const = "ArmorMasteryHeavy"
 	},
 	{
 		ID = "perk.crClarity",

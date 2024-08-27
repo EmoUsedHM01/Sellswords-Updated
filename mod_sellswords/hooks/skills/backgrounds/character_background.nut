@@ -169,14 +169,17 @@
 				switch (true)
 				{
 					// attach new perks based on perk tree here
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendSmallTarget:
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryCloth);
+						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Nimble:
-						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.laspecialize);
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryLight);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendLithe:
-						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.maspecialize);
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryMedium);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.BattleForged:
-						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.haspecialize);
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryHeavy);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendMuscularity:
 						this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crAudaciouscharge);

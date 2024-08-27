@@ -8,7 +8,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "effects.ptr_armor_fatigue_recovery";
 		this.m.Name = "Encumbrance";
-		this.m.Description = "This character\'s armour\'s weight is reducing %their% Fatigue Recovery and Flexibility, in exchange for better protection";
+		this.m.Description = "This character\'s armor\'s weight is reducing %their% Fatigue Recovery and Flexibility, in exchange for better protection";
 		this.m.Icon = "skills/ptr_armor_fatigue_recovery_effect.png";
 		//this.m.IconMini = "ptr_armor_fatigue_recovery_effect_mini";
 		this.m.Type = this.Const.SkillType.StatusEffect;
@@ -32,7 +32,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 	{
 		local dr = 3 * this.m.Malus;
 		local fc = this.m.Malus;
-		if (this.getContainer().hasSkill("perk.haspecialize"))
+		if (this.getContainer().hasSkill("perk.armor_mastery_heavy"))
 		{
 			dr *= 2;
 			fc = 0;
@@ -52,7 +52,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 				id = 15,
 				type = "text",
 				icon = "ui/icons/direct_damage.png",
-				text = "Reduces all damage that ignores armour by [color=" + this.Const.UI.Color.PositiveValue + "]" + dr + "%[/color]."
+				text = "Reduces all damage that ignores armor by [color=" + this.Const.UI.Color.PositiveValue + "]" + dr + "%[/color]."
 			}
 		];
 		if (fc != 0)
@@ -131,7 +131,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 		this.m.Malus = (this.Math.min(0, (fat + 20) * 0.05)).tointeger();
 		this.m.Afterwait = this.getContainer().getActor().getInitiative() * (this.m.IsWait ? _properties.InitiativeAfterWaitMult : 1) * _properties.InitiativeForTurnOrderMult;
 
-		if (this.getContainer().hasSkill("perk.haspecialize"))
+		if (this.getContainer().hasSkill("perk.armor_mastery_heavy"))
 			return;
 
 		_properties.FatigueRecoveryRate += this.m.Malus;
@@ -154,7 +154,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 	{
 		if (_attacker != null)
 		{
-			if (this.getContainer().hasSkill("perk.haspecialize"))
+			if (this.getContainer().hasSkill("perk.armor_mastery_heavy"))
 				_properties.DamageReceivedDirectMult *= 0.01 * (100 + 6 * this.m.Malus);
 			else
 				_properties.DamageReceivedDirectMult *= 0.01 * (100 + 3 * this.m.Malus);

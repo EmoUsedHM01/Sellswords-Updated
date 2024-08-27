@@ -1,10 +1,10 @@
-this.perk_maspecialize <- this.inherit("scripts/skills/skill", {
+this.perk_armor_mastery_medium <- this.inherit("scripts/skills/skill", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "perk.maspecialize";
-		this.m.Name = this.Const.Strings.PerkName.maspecialize;
-		this.m.Description = this.Const.Strings.PerkDescription.maspecialize;
+		this.m.ID = "perk.armor_mastery_medium";
+		this.m.Name = this.Const.Strings.PerkName.ArmorMasteryMedium;
+		this.m.Description = this.Const.Strings.PerkDescription.ArmorMasteryMedium;
 		this.m.Icon = "ui/perks/crSpecialize_ma.png";
 		this.m.Type = this.Const.SkillType.Perk | this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.Perk;
