@@ -1,5 +1,7 @@
 this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
-	m = {},
+	m = {
+		dashCost = 4
+	},
 	function create()
 	{
 		this.m.ID = "perk.armor_mastery_cloth";
@@ -45,7 +47,8 @@ this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
 			Skill = this,
 			User = _user,
 			OldTile = _user.getTile(),
-			TargetTile = _targetTile
+			TargetTile = _targetTile,
+			OnRepelled = this.onRepelled
 		};
 
 		if (tag.OldTile.IsVisibleForPlayer || _targetTile.IsVisibleForPlayer)
@@ -77,27 +80,159 @@ this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
 		return true;
 	}
 
+	function onRepelled( _tag )
+	{
+		this.Tactical.getNavigator().teleport(_tag.User, _tag.TargetTile, null, null, false);
+	}
+
+	function onTeleportDone( _entity, _tag )
+	{
+		local myTile = _entity.getTile();
+		local potentialVictims = [];
+		local betterThanNothing;
+		local ZOC = [];
+		local dirToTarget = _tag.OldTile.getDirectionTo(myTile);
+
+		for( local i = 0; i != 6; i = i )
+		{
+			if (!myTile.hasNextTile(i))
+			{
+			}
+			else
+			{
+				local tile = myTile.getNextTile(i);
+
+				if (!tile.IsOccupiedByActor)
+				{
+				}
+				else
+				{
+					local actor = tile.getEntity();
+
+					if (actor.isAlliedWith(_entity) || actor.getCurrentProperties().IsStunned)
+					{
+					}
+					else
+					{
+						ZOC.push(actor);
+
+						if (i != dirToTarget && i + 1 != dirToTarget && i - 1 != dirToTarget)
+						{
+						}
+						else
+						{
+							if (betterThanNothing == null)
+							{
+								betterThanNothing = actor;
+							}
+
+							if (actor.getCurrentProperties().IsImmuneToStun)
+							{
+							}
+							else
+							{
+								potentialVictims.push(actor);
+							}
+						}
+					}
+				}
+			}
+
+			i = ++i;
+		}
+
+		local zoc_fail = false;
+
+		foreach( actor in ZOC )
+		{
+			if (actor.onMovementInZoneOfControl(_entity, true))
+			{
+				if (actor.onAttackOfOpportunity(_entity, true))
+				{
+					zoc_fail = true;
+					local dir = myTile.getDirectionTo(_tag.OldTile);
+
+					if (myTile.hasNextTile(dir))
+					{
+						local tile = myTile.getNextTile(dir);
+
+						if (tile.IsEmpty && this.Math.abs(tile.Level - myTile.Level) <= 1 && tile.getDistanceTo(actor.getTile()) > 1)
+						{
+							if (_entity.isAlive() && !_entity.isDying())
+							{
+								_tag.TargetTile = tile;
+								this.Time.scheduleEvent(this.TimeUnit.Virtual, 50, _tag.OnRepelled, _tag);
+							}
+
+							if (_tag.OldTile.IsVisibleForPlayer || myTile.IsVisibleForPlayer)
+							{
+								this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_entity) + " sprints and is repelled");
+							}
+
+							return;
+						}
+					}
+
+					for( local i = 0; i != 6; i = i )
+					{
+						if (!myTile.hasNextTile(i))
+						{
+						}
+						else
+						{
+							local tile = myTile.getNextTile(i);
+
+							if (tile.IsEmpty && this.Math.abs(tile.Level - myTile.Level) <= 1)
+							{
+								if (_entity.isAlive() && !_entity.isDying())
+								{
+									_tag.TargetTile = tile;
+									this.Time.scheduleEvent(this.TimeUnit.Virtual, 50, _tag.OnRepelled, _tag);
+								}
+
+								if (_tag.OldTile.IsVisibleForPlayer || myTile.IsVisibleForPlayer)
+								{
+									this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_entity) + " sprints and is repelled");
+								}
+
+								return;
+							}
+						}
+
+						i = ++i;
+					}
+				}
+			}
+		}
+
+		if (potentialVictims.len() == 0 && betterThanNothing != null)
+		{
+			potentialVictims.push(betterThanNothing);
+		}
+
+		if (_tag.OldTile.IsVisibleForPlayer || myTile.IsVisibleForPlayer)
+		{
+			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_entity) + " sprints");
+		}
+	}
+
 	function onTurnStart()
 	{
 		local actor = this.getContainer().getActor();
-		if (this.enemyCheck() == false || actor == null || actor.getCurrentProperties().IsStunned || (actor.getCurrentProperties().IsRooted && !actor.getSkillByID("perk.legend_escape_artist")))
+		if (this.enemyCheck == false || actor == null || actor.getCurrentProperties().IsStunned || (actor.getCurrentProperties().IsRooted && !actor.getSkills().getSkillByID("perk.legend_escape_artist")))
 			return;
 
 		local currentTile = actor.getTile();
 		local closestTile = null;
 		local minDistance = 99;
+		local mapSize = this.Tactical.getMapSize();
 
-		// Loop through all possible tiles in a certain radius (e.g 10 tiles)
-		for (local x = currentTile.X - 10; x <= currentTile.X + 10; x++)
+		for( local x = 1; x < mapSize.X - 1; x++ )
 		{
-			for (local y = currentTile.Y - 10; y <= currentTile.Y + 10; y++)
+			for( local y = 1; y < mapSize.Y - 1; y++ )
 			{
-				if (!this.Tactical.isValidTile(x, y))
-					continue;
-
 				local tile = this.Tactical.getTileSquare(x, y);
 
-				// Skip all tiles that are occupied or within enemy ZoC
 				if (tile.IsOccupiedByActor || tile.hasZoneOfControlOtherThan(actor.getAlliedFactions()))
 					continue;
 
@@ -110,9 +245,31 @@ this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
 			}
 		}
 
-		// If a valid tile was found, teleport the actor
 		if (closestTile != null)
+		{
 			this.teleportMe(actor, closestTile);
+			actor.setActionPoints(actor.getActionPoints() - this.m.dashCost)
+		}
+	}
+
+	function onCombatStarted()
+	{
+		local actor = this.getContainer().getActor();
+		this.m.dashCost = 4;
+
+		local skills = [
+			"perk.legend_blend_in",
+			"perk.legend_small_target",
+			"perk.legend_fashionable"
+		];
+
+		foreach( skillID in skills ) // Iterate over the skill IDs
+		{
+			local skill = actor.getSkills().getSkillByID(skillID);
+
+			if (skill) // Check if the actor has the skill and if they do reduce the AP cost by 1 for each skill
+				this.m.dashCost--;
+		}
 	}
 
 });
