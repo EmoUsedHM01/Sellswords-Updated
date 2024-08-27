@@ -13,76 +13,106 @@ this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
 		this.m.IsHidden = false;
 	}
 
-	function getTooltip()
-	{
-		local tooltip = this.skill.getTooltip();
-		local bonus = this.getBonus();
-
-		if (bonus > 0)
-		{
-			tooltip.push({
-				id = 6,
-				type = "text",
-				icon = "ui/icons/fatigue.png",
-				text = "additional [color=" + this.Const.UI.Color.PositiveValue + "]+" + bonus + "[/color] Fatigue Recovery"
-			});
-			tooltip.push({
-				id = 6,
-				type = "text",
-				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + bonus + "[/color] Ranged Defense"
-			});
-		}
-		else if (this.getContainer().getActor().getBodyItem() == null)
-		{
-			tooltip.push({
-				id = 6,
-				type = "text",
-				icon = "ui/tooltips/warning.png",
-				text = "This character is not wearing any body armor and hence receives no bonus from this perk"
-			});
-		}
-		else
-		{
-			tooltip.push({
-				id = 6,
-				type = "text",
-				icon = "ui/tooltips/warning.png",
-				text = "This character\'s armor is too light or too heavy or their Initiative is too low to receive any bonus from this perk"
-			});
-		}
-
-		return tooltip;
-	}
-
-	function getBonus()
+	function enemyCheck()
 	{
 		local actor = this.getContainer().getActor();
-		local bodyitem = actor.getBodyItem();
-		local bonus = 0;
-
-		if (bodyitem == null)
+		if (actor.getTile().hasZoneOfControlOtherThan(actor.getAlliedFactions()))
 		{
-			return 0;
-		}
+			local myTile = this.getContainer().getActor().getTile();
 
-		local armorFatPen = actor.getItems().getStaminaModifier([
-			::Const.ItemSlot.Body,
-			::Const.ItemSlot.Head
-		]) * -1;
-		if (armorFatPen >= 20 && armorFatPen <= 40)
-		{
-			local currIni = actor.getInitiative();
-			bonus = this.Math.floor(currIni /armorFatPen * 1.667);
+			for( local i = 0; i < 6; i++ )
+			{
+				if (myTile.hasNextTile(i))
+				{
+					local nextTile = myTile.getNextTile(i);
+
+					if (nextTile.IsOccupiedByActor && this.Math.abs(nextTile.Level - myTile.Level) <= 1)
+					{
+						local entity = nextTile.getEntity();
+
+						if (!entity.getCurrentProperties().IsStunned && !entity.isAlliedWith(this.getContainer().getActor()))
+							return true;
+					}
+				}
+			}
 		}
-		return this.Math.min(bonus, 5);
+		return false;  // Ensure a boolean is always returned
 	}
 
-	function onAfterUpdate( _properties )
+	function teleportMe( _user, _targetTile )
 	{
-		local bonus = this.getBonus();
-		_properties.FatigueRecoveryRate += bonus;
-		_properties.RangedDefense += bonus;
+		local tag = {
+			Skill = this,
+			User = _user,
+			OldTile = _user.getTile(),
+			TargetTile = _targetTile
+		};
+
+		if (tag.OldTile.IsVisibleForPlayer || _targetTile.IsVisibleForPlayer)
+		{
+			local myPos = _user.getPos();
+			local targetPos = _targetTile.Pos;
+			local distance = tag.OldTile.getDistanceTo(_targetTile);
+			local Dx = (targetPos.X - myPos.X) / distance;
+			local Dy = (targetPos.Y - myPos.Y) / distance;
+
+			// Add an incremental loop to find the tile
+			for( local i = 0; i < distance; i++ )
+			{
+				local x = myPos.X + Dx * i;
+				local y = myPos.Y + Dy * i;
+				local tile = this.Tactical.worldToTile(this.createVec(x, y));
+
+				if (this.Tactical.isValidTile(tile.X, tile.Y) && this.Const.Tactical.DustParticles.len() != 0)
+				{
+					for( local j = 0; j < this.Const.Tactical.DustParticles.len(); j++ )
+					{
+						this.Tactical.spawnParticleEffect(false, this.Const.Tactical.DustParticles[j].Brushes, this.Tactical.getTile(tile), this.Const.Tactical.DustParticles[j].Delay, this.Const.Tactical.DustParticles[j].Quantity * 0.5, this.Const.Tactical.DustParticles[j].LifeTimeQuantity * 0.5, this.Const.Tactical.DustParticles[j].SpawnRate, this.Const.Tactical.DustParticles[j].Stages);
+					}
+				}
+			}
+		}
+
+		this.Tactical.getNavigator().teleport(_user, _targetTile, this.onTeleportDone, tag, false, 2.0);
+		return true;
+	}
+
+	function onTurnStart()
+	{
+		local actor = this.getContainer().getActor();
+		if (this.enemyCheck() == false || actor == null || actor.getCurrentProperties().IsStunned || (actor.getCurrentProperties().IsRooted && !actor.getSkillByID("perk.legend_escape_artist")))
+			return;
+
+		local currentTile = actor.getTile();
+		local closestTile = null;
+		local minDistance = 99;
+
+		// Loop through all possible tiles in a certain radius (e.g 10 tiles)
+		for (local x = currentTile.X - 10; x <= currentTile.X + 10; x++)
+		{
+			for (local y = currentTile.Y - 10; y <= currentTile.Y + 10; y++)
+			{
+				if (!this.Tactical.isValidTile(x, y))
+					continue;
+
+				local tile = this.Tactical.getTileSquare(x, y);
+
+				// Skip all tiles that are occupied or within enemy ZoC
+				if (tile.IsOccupiedByActor || tile.hasZoneOfControlOtherThan(actor.getAlliedFactions()))
+					continue;
+
+				local distance = currentTile.getDistanceTo(tile);
+				if (distance < minDistance)
+				{
+					minDistance = distance;
+					closestTile = tile;
+				}
+			}
+		}
+
+		// If a valid tile was found, teleport the actor
+		if (closestTile != null)
+			this.teleportMe(actor, closestTile);
 	}
 
 });
