@@ -20,6 +20,9 @@ Added the new gfx for the Legendary Spear
 ...\gfx\ui\perks\crSpecialize_ma_bw.png
 Added/updated the armour mastery icons
 
+...\gfx\ui\perks\...
+Updated all the other perk icons, mostly just clean-up and consistency
+
 ...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
 ...\scripts\entity\tactical\enemies\dryad_enemy_boss.nut
 ...\scripts\entity\tactical\enemies\dryad_enemy_grunt.nut
@@ -62,9 +65,6 @@ Added new cloth armour mastery and renamed the old spec perks to the new mastery
 ...\scripts\entity\tactical\humans\crKnightcommander.nut
 ...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
 Updated old HAM perk
-
-...\gfx\ui\perks\...
-Updated all the perk icons, mostly just clean-up and consistency
 
 ----------------------------------------------------------------------------------------------------------------------------
 
