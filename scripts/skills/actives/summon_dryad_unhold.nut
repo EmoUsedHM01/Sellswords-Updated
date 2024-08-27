@@ -34,6 +34,7 @@ this.summon_dryad_unhold <- this.inherit("scripts/skills/skill", {
 		this.m.Description = "Summons a woodland protector. Needs a free nearby tile to spawn in. Can not be used while engaged in melee.";
 		this.m.Icon = "skills/dryad_summon_unhold.png";
 		this.m.IconDisabled = "skills/dryad_summon_unhold_sw.png";
+		this.m.Overlay = "dryad_summon_unhold";
 		this.m.SoundOnUse = [
 			"sounds/enemies/unhold_idle_01.wav",
 			"sounds/enemies/unhold_idle_02.wav"

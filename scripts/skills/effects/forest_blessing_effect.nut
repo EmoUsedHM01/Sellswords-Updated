@@ -26,25 +26,23 @@ this.forest_blessing_effect <- this.inherit("scripts/skills/skill", {
 			_properties.MeleeSkill += 15;
 			_properties.MeleeDefense += 15;
 			_properties.RangedSkill += 15;
-			_properties.RangedDefense += 15;		
+			_properties.RangedDefense += 15;
 		}
 	}
-	function reset()
+
+	function resetTime()
 	{
 		if (this.m.TurnsLeft != 2)
 		{
 			this.m.TurnsLeft = 2;
-			this.spawnIcon("perk_37", this.getContainer().getActor().getTile());
+			this.spawnIcon("dryad_buff", this.getContainer().getActor().getTile());
 		}
 	}
 
-	function onTurnStart()
+	function onTurnEnd()
 	{
 		if (--this.m.TurnsLeft <= 0)
-		{
 			this.removeSelf();
-		}
 	}
 
 });
-

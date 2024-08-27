@@ -93,8 +93,33 @@ Updated old HAM perk
 ...\scripts\items\weapons\named\cr_named_orc_sword_2h.nut
 Fixed bad file path
 
-C:\Users\joema_mpevn9w\Documents\GitHub\Sellswords-Updated\scripts\items\legend_helmets\helm\cr_emperors_countenance.nut
+...\scripts\items\legend_helmets\helm\cr_emperors_countenance.nut
 Fixed a missing _ that wasn't calling the object properly
+
+...\brushes\dryad_entities.brush
+...\gfx\dryad_entities.png
+...\gfx\skills\dryad_forest_blessing.png
+...\gfx\skills\dryad_forest_blessing_sw.png
+...\gfx\skills\dryad_natural_regrowth.png
+...\gfx\skills\dryad_natural_regrowth_sw.png
+...\gfx\skills\dryad_summon_lindy.png
+...\gfx\skills\dryad_summon_lindy_sw.png
+...\gfx\skills\dryad_summon_snake.png
+...\gfx\skills\dryad_summon_snake_sw.png
+...\gfx\skills\dryad_summon_unhold.png
+...\gfx\skills\dryad_summon_unhold_sw.png
+...\gfx\skills\dryad_summon_wolf.png
+...\gfx\skills\dryad_summon_wolf_sw.png
+...\gfx\ui\perks\perk_natural_regrowth.png
+...\gfx\ui\perks\perk_natural_regrowth_bw.png
+...\scripts\skills\actives\forest_blessing.nut
+...\scripts\skills\actives\natural_regrowth.nut
+...\scripts\skills\actives\summon_dryad_lindy.nut
+...\scripts\skills\actives\summon_dryad_snake.nut
+...\scripts\skills\actives\summon_dryad_unhold.nut
+...\scripts\skills\actives\summon_dryad_wolf.nut
+...\scripts\skills\effects\forest_blessing_effect.nut
+Another update to Dryad gfx + bug fixes
 
 ----------------------------------------------------------------------------------------------------------------------------
 

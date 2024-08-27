@@ -1,7 +1,5 @@
 this.forest_blessing <- this.inherit("scripts/skills/skill", {
-	m = {
-	},
-	
+	m = {},
 	function create()
 	{
 		this.m.ID = "actives.forest_blessing";
@@ -9,7 +7,7 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 		this.m.Description = "Instill a target with the power of the Forest's Heart for two turns, granting them additional damage and combat ability. Can not be used while engaged in melee.";
 		this.m.Icon = "skills/dryad_forest_blessing.png";
 		this.m.IconDisabled = "skills/dryad_forest_blessing_sw.png";
-		this.m.Overlay = "active_335";
+		this.m.Overlay = "dryad_buff_active";
 		this.m.SoundOnUse = [
 			"sounds/combat/perfect_focus_01.wav"
 		];
@@ -69,6 +67,7 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 			icon = "ui/icons/ranged_defense.png",
 			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Ranged Defense"
 		});
+
 		if (ammo > 0)
 		{
 			ret.push({
@@ -87,6 +86,7 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Needs a heart filled with power equipped[/color]"
 			});
 		}
+
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
 		{
 			ret.push({
@@ -96,6 +96,7 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
 			});
 		}
+
 		return ret;
 	}
 
@@ -103,70 +104,54 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 	{
 		return !this.Tactical.isActive() || this.skill.isUsable() && this.getAmmo() > 0 && !this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions());
 	}
-	
+
 	function getAmmo()
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 
 		if (item == null)
-		{
 			return 0;
-		}
 
 		if (item.getAmmoType() == this.Const.Items.AmmoType.Heart)
-		{
 			return item.getAmmo();
-		}
 	}
-	
+
 	function consumeAmmo()
 	{
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 
 		if (item != null)
-		{
 			item.consumeAmmo();
-		}
 	}
-	
+
 	function onVerifyTarget( _originTile, _targetTile )
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
-		{
 			return false;
-		}
 
 		local target = _targetTile.getEntity();
 
 		if (target == null)
-		{
 			return false;
-		}
 
 		if (!this.m.Container.getActor().isAlliedWith(target))
-		{
 			return false;
-		}
 
 		return true;
 	}
-	
+
 	function onUse( _user, _targetTile )
 	{
 		local target = _targetTile.getEntity();
 		local effect = target.getSkills().getSkillByID("effects.forest_blessing_effect");
 
 		if (effect != null)
-		{
 			effect.resetTime();
-		}
 		else
-		{
 			target.getSkills().add(this.new("scripts/skills/effects/forest_blessing_effect"));
-		}
 
 		this.consumeAmmo();
 		return true;
 	}
-});
 
+});

@@ -38,6 +38,7 @@ this.summon_dryad_snake <- this.inherit("scripts/skills/skill", {
 		this.m.Description = "Summons a wood-bound serpent. Needs a free nearby tile to spawn in. Can not be used while engaged in melee.";
 		this.m.Icon = "skills/dryad_summon_snake.png";
 		this.m.IconDisabled = "skills/dryad_summon_snake_sw.png";
+		this.m.Overlay = "dryad_summon_snake";
 		this.m.SoundOnUse = [
 			"sounds/enemies/dlc6/snake_idle_01.wav",
 			"sounds/enemies/dlc6/snake_idle_02.wav"

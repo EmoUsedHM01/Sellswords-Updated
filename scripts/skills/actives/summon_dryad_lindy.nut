@@ -36,6 +36,7 @@ this.summon_dryad_lindy <- this.inherit("scripts/skills/skill", {
 		this.m.Description = "Summons a wood-bound leviathan. Needs a free nearby tile to spawn in. Can not be used while engaged in melee.";
 		this.m.Icon = "skills/dryad_summon_lindy.png";
 		this.m.IconDisabled = "skills/dryad_summon_lindy_sw.png";
+		this.m.Overlay = "dryad_summon_lindy";
 		this.m.SoundOnUse = [
 			"sounds/enemies/lindwurm_idle_01.wav",
 			"sounds/enemies/lindwurm_idle_02.wav"

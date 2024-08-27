@@ -47,6 +47,7 @@ this.summon_dryad_wolf <- this.inherit("scripts/skills/skill", {
 		this.m.Description = "Summons a wood-bound wolf. Needs a free nearby tile to spawn in. Can not be used while engaged in melee.";
 		this.m.Icon = "skills/dryad_summon_wolf.png";
 		this.m.IconDisabled = "skills/dryad_summon_wolf_sw.png";
+		this.m.Overlay = "dryad_summon_wolf";
 		this.m.SoundOnUse = [
 			"sounds/enemies/werewolf_idle_01.wav",
 			"sounds/enemies/werewolf_idle_02.wav"

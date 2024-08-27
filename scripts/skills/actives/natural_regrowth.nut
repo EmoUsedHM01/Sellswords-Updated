@@ -7,6 +7,7 @@ this.natural_regrowth <- this.inherit("scripts/skills/skill", {
 		this.m.Description = "Heals a friendly unit, removing all fresh injuries and healing up to 60 health per use. Can not be used while engaged in melee.";
 		this.m.Icon = "skills/dryad_natural_regrowth.png";
 		this.m.IconDisabled = "skills/dryad_natural_regrowth_sw.png";
+		this.m.Overlay = "dryad_heal";
 		this.m.SoundOnUse = [
 			"sounds/combat/first_aid_01.wav",
 			"sounds/combat/first_aid_02.wav"
