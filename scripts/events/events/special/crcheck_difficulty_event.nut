@@ -5,14 +5,28 @@ this.crcheck_difficulty_event <- this.inherit("scripts/events/event", {
 		this.m.ID = "event.crcheck_difficulty";
 		this.m.Title = "Difficulty Customization";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
-		local diff;
-		if (this.World.Flags.get("CrDifficulty") == null)
-			diff = 85;
-		else
-			diff = 40 + 15 * (this.World.Flags.get("CrDifficulty"));
 		this.m.Screens.push({
 			ID = "A",
-			Text = format("[p=c][img]gfx/ui/events/event_64.png[/img]This is a periodical event, which procs every 50 days, the aim of which is to help you adjust the difficulty of the game on the fly.\n\nThis event does not change your selected difficulty and instead adjusts your party strength (combat rating) resulting in enemy parties being easier or harder depending on the multiplier.\n\nThe difficulty adjustment is determined by the most recent choice.\nCurrent difficulty: %d[/p]", diff),
+			Text = "[img]gfx/ui/events/event_64.png[/img]This is a periodical event, which procs every 50 days, the aim of which is to help you adjust the difficulty of the game on the fly.\n\nThis event does not change your selected difficulty and instead adjusts your party strength (combat rating) resulting in enemy parties being easier or harder depending on the multiplier.\n\nThe difficulty adjustment is determined by the most recent choice.",
+			Image = "",
+			List = [],
+			Characters = [],
+			Options = [
+				{
+					Text = "I\'m ready to pick my difficulty.",
+					function getResult( _event )
+					{
+						return "B";
+					}
+				}
+			],
+			function start( _event )
+			{
+			}
+		});
+		this.m.Screens.push({
+			ID = "B",
+			Text = "[img]gfx/ui/events/event_64.png[/img]Again, just to reiterate, this event does not change your selected COMBAT difficulty that you picked at the start of the game, it only adjusts your party strength. The difficulty adjustment is determined by the most recent choice.\n\nThe mod is balanced around the Normal rating of 85%, for best results I\'d recommend you keep it on that. That being said, the option to change it on the fly is here for that specific reason. If you're finding the game too easy or too hard, feel free to adjust the enemy scaling.[/p]",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -32,7 +46,7 @@ this.crcheck_difficulty_event <- this.inherit("scripts/events/event", {
 					}
 				},
 				{
-					Text = "Normal (85%, recommended)",
+					Text = "Normal (85%, default)",
 					function getResult( _event )
 					{
 						return "D3";
