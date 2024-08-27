@@ -1,4 +1,4 @@
-8.0.4 changes
+8.1.0 changes
 
 ...\scripts\items\weapons\dryad\dryad_staff.nut
 Added the "Mystic Staff" weapon type - Breaky
@@ -34,6 +34,20 @@ Removed an old racial script that bugged out damage calcs
 
 ...\scripts\events\events\anatomist_recruit_event.nut
 Updated the dialogue a little
+
+...\mod_sellswords\config\dryad_armors.nut
+Made warrior sets a little more reliable
+
+...\scripts\skills\effects\ptr_armor_fatigue_recovery_effect.nut
+...\scripts\skills\perks\perk_armor_mastery_cloth.nut
+...\scripts\skills\perks\perk_laspecialize.nut -> ...\scripts\skills\perks\perk_armor_mastery_light.nut
+...\scripts\skills\perks\perk_maspecialize.nut -> ...\scripts\skills\perks\perk_armor_mastery_medium.nut
+...\scripts\skills\perks\perk_haspecialize.nut -> ...\scripts\skills\perks\perk_armor_mastery_heavy.nut
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\config\y_perk_defs.nut
+...\mod_sellswords\hooks\config\z_perks_tree_defense.nut
+Added new cloth armour mastery and renamed the old spec perks to the new mastery ones
 
 ----------------------------------------------------------------------------------------------------------------------------
 
