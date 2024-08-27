@@ -47,7 +47,7 @@ this.cr_emperors_countenance <- this.inherit("scripts/items/legend_helmets/legen
 
 	function onArmorTooltip( _result )
 	{
-		result.push({
+		_result.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",

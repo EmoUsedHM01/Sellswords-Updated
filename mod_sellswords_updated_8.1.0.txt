@@ -93,6 +93,9 @@ Updated old HAM perk
 ...\scripts\items\weapons\named\cr_named_orc_sword_2h.nut
 Fixed bad file path
 
+C:\Users\joema_mpevn9w\Documents\GitHub\Sellswords-Updated\scripts\items\legend_helmets\helm\cr_emperors_countenance.nut
+Fixed a missing _ that wasn't calling the object properly
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
