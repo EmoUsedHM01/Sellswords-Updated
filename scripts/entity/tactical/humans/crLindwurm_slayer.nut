@@ -47,7 +47,7 @@ this.crLindwurm_slayer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_haspecialize"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_armor_mastery_heavy"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));					

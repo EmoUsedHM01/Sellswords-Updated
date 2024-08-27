@@ -7,7 +7,7 @@
 		this.m.Skills.removeByID("perk.perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_haspecialize"));				
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_armor_mastery_heavy"));				
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;

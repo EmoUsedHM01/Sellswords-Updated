@@ -4,7 +4,7 @@
 	{
 		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_haspecialize"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_armor_mastery_heavy"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crDiscipline"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
