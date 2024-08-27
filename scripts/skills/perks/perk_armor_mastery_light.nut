@@ -50,7 +50,7 @@ this.perk_armor_mastery_light <- this.inherit("scripts/skills/skill", {
 	{
 		local armorFat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 		armorFat = this.Math.min(0, armorFat + 15);
-		local ret = this.Math.minf(1.0, 0.79 + this.Math.pow(this.Math.abs(armorFat), 1.23) * 0.003);
+		local ret = this.Math.minf(1.0, 0.74 + this.Math.pow(this.Math.abs(armorFat), 1.23) * 0.003);
 		return ret;
 	}
 
