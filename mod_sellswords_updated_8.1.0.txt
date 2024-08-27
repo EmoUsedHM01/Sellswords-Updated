@@ -49,6 +49,20 @@ Made warrior sets a little more reliable
 ...\mod_sellswords\hooks\config\z_perks_tree_defense.nut
 Added new cloth armour mastery and renamed the old spec perks to the new mastery ones
 
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_betrayer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\scripts\entity\tactical\enemies\crDeathknight.nut
+...\scripts\entity\tactical\enemies\crFallenbetrayer.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crHonoraryknight.nut
+...\scripts\entity\tactical\humans\crKnight.nut
+...\scripts\entity\tactical\humans\crKnight_guest.nut
+...\scripts\entity\tactical\humans\crKnightcommander.nut
+...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
+Updated old HAM perk
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes

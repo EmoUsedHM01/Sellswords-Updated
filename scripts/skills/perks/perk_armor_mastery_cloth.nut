@@ -11,7 +11,7 @@ this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
 		this.m.IsActive = false;
 		this.m.IsStacking = false;
 		this.m.IsHidden = false;
-	}	
+	}
 
 	function getTooltip()
 	{
@@ -73,7 +73,7 @@ this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
 		if (armorFatPen >= 20 && armorFatPen <= 40)
 		{
 			local currIni = actor.getInitiative();
-			bonus = this.Math.floor(currIni /armorFatPen * 1.667); 			
+			bonus = this.Math.floor(currIni /armorFatPen * 1.667);
 		}
 		return this.Math.min(bonus, 5);
 	}
@@ -82,6 +82,7 @@ this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
 	{
 		local bonus = this.getBonus();
 		_properties.FatigueRecoveryRate += bonus;
-		_properties.RangedDefense += bonus;		
-	}	
+		_properties.RangedDefense += bonus;
+	}
+
 });

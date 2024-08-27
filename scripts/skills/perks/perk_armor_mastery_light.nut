@@ -11,7 +11,8 @@ this.perk_armor_mastery_light <- this.inherit("scripts/skills/skill", {
 		this.m.IsActive = false;
 		this.m.IsStacking = false;
 		this.m.IsHidden = false;
-	}	
+	}
+
 	function isHidden()
 	{
 		local fm = this.Math.floor(this.getChance() * 100);
@@ -55,7 +56,8 @@ this.perk_armor_mastery_light <- this.inherit("scripts/skills/skill", {
 
 	function onUpdate(_properties)
 	{
-		local chance = this.getChance();	
+		local chance = this.getChance();
 		_properties.FatigueEffectMult *= chance;
-	}		
+	}
+
 });
