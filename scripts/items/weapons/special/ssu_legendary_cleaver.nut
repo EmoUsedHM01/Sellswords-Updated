@@ -43,7 +43,7 @@ this.ssu_legendary_cleaver <- ::inherit("scripts/items/weapons/weapon", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When [color=" + this.Const.UI.Color.NegativeValue + "]Bloodied[/color], grants the user enhanced stats."
+			text = "When [color=" + this.Const.UI.Color.NegativeValue + "]Bloodied[/color], grants the user [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] additional damage dealt and recieved."
 		});
 		result.push({
 			id = 8,
@@ -74,6 +74,12 @@ this.ssu_legendary_cleaver <- ::inherit("scripts/items/weapons/weapon", {
 	function onUpdateProperties( _properties )
 	{
 		this.weapon.onUpdateProperties(_properties);
+
+		if (this.m.IsBloodied = true)
+		{
+			_properties.DamageRegularMult *= 1.2;
+			_properties.DamageReceivedRegularMult *= 1.2
+		}
 	}
 
 	function onUnequip()

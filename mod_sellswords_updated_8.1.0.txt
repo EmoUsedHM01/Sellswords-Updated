@@ -121,6 +121,9 @@ Fixed a missing _ that wasn't calling the object properly
 ...\scripts\skills\effects\forest_blessing_effect.nut
 Another update to Dryad gfx + bug fixes
 
+...\scripts\items\weapons\special\ssu_legendary_cleaver.nut
+Added the bloodied ability boost and updated the tooltip
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
