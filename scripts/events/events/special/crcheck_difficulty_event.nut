@@ -5,22 +5,27 @@ this.crcheck_difficulty_event <- this.inherit("scripts/events/event", {
 		this.m.ID = "event.crcheck_difficulty";
 		this.m.Title = "Difficulty Customization";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
+		local diff;
+		if (this.World.Flags.get("CrDifficulty") == null)
+			diff = 85;
+		else
+			diff = 40 + 15 * (this.World.Flags.get("CrDifficulty"));
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_64.png[/img]This is a periodical event, which procs every 50 days, the aim of which is to help you adjust the difficulty of the game on the fly.\n\nThis event does not change your selected difficulty and instead adjusts your party strength (combat rating) resulting in enemy parties being easier or harder depending on the multiplier.\n\nThe difficulty adjustment is determined by the most recent choice.\nCurrent difficulty: " + 60 + "%",
+			Text = format("[p=c][img]gfx/ui/events/event_64.png[/img]This is a periodical event, which procs every 50 days, the aim of which is to help you adjust the difficulty of the game on the fly.\n\nThis event does not change your selected difficulty and instead adjusts your party strength (combat rating) resulting in enemy parties being easier or harder depending on the multiplier.\n\nThe difficulty adjustment is determined by the most recent choice.\nCurrent difficulty: %d[/p]", diff),
 			Image = "",
 			List = [],
 			Characters = [],
 			Options = [
 				{
-					Text = "Beginner (60%)",
+					Text = "Beginner (55%)",
 					function getResult( _event )
 					{
 						return "D1";
 					}
 				},
 				{
-					Text = "Easy (75%)",
+					Text = "Easy (70%)",
 					function getResult( _event )
 					{
 						return "D2";

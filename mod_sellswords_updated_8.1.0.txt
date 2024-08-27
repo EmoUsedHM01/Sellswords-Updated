@@ -124,6 +124,10 @@ Another update to Dryad gfx + bug fixes
 ...\scripts\items\weapons\special\ssu_legendary_cleaver.nut
 Added the bloodied ability boost and updated the tooltip
 
+...\mod_sellswords\hooks\entity\world\player_party.nut
+...\scripts\events\events\special\crcheck_difficulty_event.nut
+Fixed up the difficulty event and the player_party hook
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
