@@ -9,8 +9,8 @@ this.cr_named_orc_sword_2h <- this.inherit("scripts/items/weapons/named/named_we
 		this.m.NameList = this.Const.Strings.CleaverNames;
 		this.m.UseRandomName = false;		
 		this.m.Description = "A massive, crudely sharpened shard of metal that makes up for its stunted length through sheer weight. Too heavy to be used effectively by the average human.";
-		this.m.IconLarge = "weapons/melee/orc_cleaver_2h.png";
-		this.m.Icon = "weapons/melee/orc_cleaver_2h_70x70.png";
+		this.m.IconLarge = "weapons/melee/named_orc_cleaver_2h.png";
+		this.m.Icon = "weapons/melee/named_orc_cleaver_2h_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Sword;
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
@@ -19,7 +19,7 @@ this.cr_named_orc_sword_2h <- this.inherit("scripts/items/weapons/named/named_we
 		this.m.AddGenericSkill = true;
 		this.m.ShowQuiver = false;
 		this.m.ShowArmamentIcon = true;
-		this.m.ArmamentIcon = "baliankandao";
+		this.m.ArmamentIcon = "cr_orc_cleaver";
 		this.m.Value = 3200;
 		this.m.ShieldDamage = 32;
 		this.m.Condition = 64.0;
