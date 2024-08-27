@@ -23,6 +23,30 @@ Added/updated the armour mastery icons
 ...\gfx\ui\perks\...
 Updated all the other perk icons, mostly just clean-up and consistency
 
+...\gfx\skills\active_banner_wave.png
+...\gfx\skills\active_banner_wave_bw.png
+...\gfx\skills\cr_charge.png
+...\gfx\skills\cr_charge_sw.png
+...\gfx\skills\dryad_forest_blessing.png
+...\gfx\skills\dryad_forest_blessing_sw.png
+Updated some skill icons
+
+...\gfx\skills\grass_riposte.png
+...\gfx\skills\grass_riposte_sw.png
+...\gfx\skills\grass_slash.png
+...\gfx\skills\grass_slash_sw.png
+...\gfx\skills\grass_swing.png
+...\gfx\skills\grass_swing_sw.png
+...\gfx\skills\ice_riposte.png
+...\gfx\skills\ice_riposte_sw.png
+...\gfx\skills\ice_slash.png
+...\gfx\skills\ice_slash_sw.png
+...\gfx\skills\ice_swing.png
+...\gfx\skills\ice_swing_sw.png
+...\gfx\skills\perk_sprint_03.png
+...\gfx\skills\perk_sprint_03_sw.png
+Deleted a number of unused skills
+
 ...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
 ...\scripts\entity\tactical\enemies\dryad_enemy_boss.nut
 ...\scripts\entity\tactical\enemies\dryad_enemy_grunt.nut
