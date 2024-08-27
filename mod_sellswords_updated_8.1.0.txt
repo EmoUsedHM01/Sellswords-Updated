@@ -63,6 +63,9 @@ Added new cloth armour mastery and renamed the old spec perks to the new mastery
 ...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
 Updated old HAM perk
 
+...\gfx\ui\perks\...
+Updated all the perk icons, mostly just clean-up and consistency
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
