@@ -28,26 +28,29 @@
 	q.onUpdate = @(__original) function ( _properties )
 	{
 		__original( _properties );
+
 		if (this.getContainer().getActor().getSkills().hasSkill("trait.strong"))
 			_properties.IsProficientWithHeavyWeapons = true;
 	}
 
-	q.onRemoved <- function()
+	if (!(::Is_PTR_Exist))
 	{
-		this.getContainer().getActor().getCurrentProperties().IsProficientWithHeavyWeapons = false;
-	}
-
-	q.onAfterUpdate <- function ( _properties )
-	{
-		if (_properties.IsProficientWithHeavyWeapons)
-			return;
-		local weapon = this.getContainer().getActor().getMainhandItem();
-		if (weapon != null && weapon.m.FatigueOnSkillUse > 0)
+		q.onRemoved <- function()
 		{
-			foreach (skill in weapon.getSkills())
-			{
-				skill.m.FatigueCost -= ::Math.min(3, weapon.m.FatigueOnSkillUse);
-			}
+			this.getContainer().getActor().getCurrentProperties().IsProficientWithHeavyWeapons = false;
+		}
+
+		q.onAfterUpdate <- function ( _properties )
+		{
+			if (_properties.IsProficientWithHeavyWeapons)
+				return;
+
+			local weapon = this.getContainer().getActor().getMainhandItem();
+
+			if (weapon != null && weapon.m.FatigueOnSkillUse > 0)
+				foreach (skill in weapon.getSkills())
+					skill.m.FatigueCost -= ::Math.min(3, weapon.m.FatigueOnSkillUse);
 		}
 	}
+
 });
