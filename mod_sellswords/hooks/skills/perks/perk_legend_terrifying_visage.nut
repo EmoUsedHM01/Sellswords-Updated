@@ -3,5 +3,6 @@
 	q.onUpdate = @( __original ) function ( _properties )
 	{
 		_properties.Threat += 20;
-	};
+	}
+
 });

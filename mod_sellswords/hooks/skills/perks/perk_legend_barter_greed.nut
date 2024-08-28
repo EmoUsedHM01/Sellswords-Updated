@@ -44,7 +44,8 @@
 				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.min(20, this.getBonus() * 0.0008) + "[/color] Resolve"
 			}
 		];
-	}	
+	}
+
 	q.onUpdate = @( __original ) function ( _properties )
 	{
 		_properties.MeleeSkill += this.Math.min(20, this.getBonus() * 0.0006);
@@ -52,7 +53,8 @@
 		_properties.MeleeDefense += this.Math.min(20, this.getBonus() * 0.0004);
 		_properties.RangedDefense += this.Math.min(20, this.getBonus() * 0.0004);
 		_properties.Bravery += this.Math.min(20, this.getBonus() * 0.0008);
-	}	
+	}
+
 	q.getBonus <- function ()
 	{
 		local mainhand = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
@@ -65,26 +67,19 @@
 		local headvalue = 0;
 
 		if (mainhand != null)
-		{
 			mainhandvalue = mainhandvalue + mainhand.getValue();
-		}
 
 		if (offhand != null)
-		{
 			offhandvalue = offhandvalue + offhand.getValue();
-		}
 
 		if (body != null)
-		{
 			bodyvalue = bodyvalue + body.getValue();
-		}
 
 		if (head != null)
-		{
 			headvalue = headvalue + head.getValue();
-		}
 
 		local gearvalue = mainhandvalue + offhandvalue + bodyvalue + headvalue; 
 		return gearvalue;
 	}
+
 });

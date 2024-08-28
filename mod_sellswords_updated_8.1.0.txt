@@ -135,6 +135,43 @@ Added the bloodied ability boost and updated the tooltip
 ...\scripts\events\events\special\crcheck_difficulty_event.nut
 Fixed up the difficulty event and the player_party hook
 
+...\mod_sellswords\hooks\skills\perks\perk_debilitate.nut
+...\mod_sellswords\hooks\skills\perks\perk_fast_adaption.nut
+...\mod_sellswords\hooks\skills\perks\perk_fearsome.nut
+...\mod_sellswords\hooks\skills\perks\perk_last_stand.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_barter_greed.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_blend_in.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_evasion.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_in_the_zone.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_lithe.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_net_casting.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_piercing_shot.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_shields_up.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_slaughter.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_smackdown.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_terrifying_visage.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_throw_sand.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_tumble.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+...\mod_sellswords\hooks\skills\perks\perk_lookout.nut
+...\mod_sellswords\hooks\skills\perks\perk_mastery_fist.nut
+...\mod_sellswords\hooks\skills\perks\perk_mastery_throwing.nut
+...\mod_sellswords\hooks\skills\perks\perk_nimble.nut
+...\mod_sellswords\hooks\skills\perks\perk_overwhelm.nut
+...\mod_sellswords\hooks\skills\perks\perk_quick_hands.nut
+...\mod_sellswords\hooks\skills\perks\perk_sundering_strikes.nut
+...\mod_sellswords\hooks\skills\perks\perk_underdog.nut
+Cleaned up some code
+
+...\mod_sellswords\config\z_background_perks.nut
+...\mod_sellswords\hooks\skills\perks\perk_adrenalin.nut
+...\mod_sellswords\hooks\skills\perks\perk_footwork.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_athlete.nut
+...\mod_sellswords\hooks\skills\perks\perk_rotation.nut
+Reworked the way perks are added to the tree to clean up perk rows
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes

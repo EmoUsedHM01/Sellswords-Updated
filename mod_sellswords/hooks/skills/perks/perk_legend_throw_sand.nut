@@ -6,4 +6,5 @@
 		this.m.Name = this.Const.Strings.PerkName.LegendThrowSand;
 		this.m.Description = this.Const.Strings.PerkDescription.LegendThrowSand;
 	}
+
 });

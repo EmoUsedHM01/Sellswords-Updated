@@ -3,5 +3,6 @@
 	q.onRemoved <- function ()
 	{
 		this.m.Container.removeByID("actives.debilitate");
-	};
+	}
+
 });

@@ -7,18 +7,15 @@
 			++this.m.Stacks;
 
 			if (this.getContainer().getActor().isPlayerControlled())
-			{
 				++this.m.Stacks;
-			}
 
 			this.m.Frame = this.Time.getFrame();
 			this.m.SkillCount = this.Const.SkillCounter;
 			this.m.IsHidden = false;
 
 			if (this.m.Stacks == 1)
-			{
 				this.getContainer().getActor().setDirty(true);
-			}
 		}
-	};
+	}
+
 });

@@ -3,33 +3,41 @@
 	q.onAdded = @( __original ) function ()
 	{
 		__original();
+
 		local addPerk = function ( _perk, _row = 0 )
 		{
-			local actor = this.getContainer().getActor();
-
-			if (typeof actor == "instance")
-			{
-				actor = actor.get();
-			}
-
-			if (!this.isKindOf(actor, "player"))
-			{
+			local actor = this.getContainer().getActor().get();
+			if (::MSU.isKindOf(actor, "player"))
 				return;
-			}
 
-			local bg = this.getContainer().getActor().getBackground();
-
-			if (bg == null)
+			local bg = actor.getBackground();
+			local hasRow = false;
+			local direction = -1;
+			local row = _row;
+			while (row >= 0 && row <= 6)
 			{
-				return;
+				if (bg.m.CustomPerkTree[row].len() < 13)
+				{
+					hasRow = true;
+					break;
+				}
+
+				row += direction;
+
+				if (row == -1)
+				{
+					row = _row;
+					direction = 1;
+				}
 			}
 
-			bg.addPerk(_perk, _row);
-		};
+			row = hasRow ? this.Math.max(0, this.Math.min(row, 6)) : _row;
+			bg.addPerk(_perk, row);
+			this.m.PerksAdded.push(_perk);
+		}
 
 		if (!this.getContainer().hasSkill("perk.crirresistibleimpulse"))
-		{
 			addPerk(this.Const.Perks.PerkDefs.crirresistibleimpulse, 2);
-		}
-	};
+	}
+
 });

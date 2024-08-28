@@ -1,9 +1,7 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_last_stand", function ( q ) {
 
 	if (!(::Is_PTR_Exist))
-	{
 		q.m.IsSpent <- false;
-	}
 
 	q.getTooltip = @( __original ) function()
 	{
@@ -44,7 +42,7 @@
 		}
 
 		return tooltip;
-	};
+	}
 
 	q.onUpdate = @(__original) function ( _properties )
 	{
@@ -53,9 +51,7 @@
 		local bonus = 0;
 
 		if (currentPercent < 0.66)
-		{
 			bonus = this.Math.floor(100 * (0.66 - currentPercent) / 2.0);
-		}
 
 		if (currentPercent < 0.44)
 		{
@@ -64,9 +60,7 @@
 				this.m.IsSpent = true;
 				local injuries = this.getContainer().getAllSkillsOfType(this.Const.SkillType.TemporaryInjury);
 				foreach (injury in injuries)
-				{
 					injury.m.IsFresh = false;
-				}
 			}
 			_properties.IsAffectedByFreshInjuries = false;
 			_properties.IsAffectedByLosingHitpoints = false;

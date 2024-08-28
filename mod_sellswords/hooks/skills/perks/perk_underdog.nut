@@ -3,8 +3,7 @@
 	q.onUpdate = @( __original ) function ( _properties )
 	{
 		if (!this.getContainer().hasSkill("perk.legend_battleheart"))
-		{
 			_properties.SurroundedDefense += 5;
-		}
-	};
+	}
+
 });

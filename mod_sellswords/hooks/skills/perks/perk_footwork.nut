@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_evasion", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_footwork", function ( q ) {
 
 	q.onAdded = @( __original ) function ()
 	{

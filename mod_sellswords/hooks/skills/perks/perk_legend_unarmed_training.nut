@@ -1,4 +1,5 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_unarmed_training", function ( q ) {
+
 	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
 		local actor = this.getContainer().getActor();
@@ -32,6 +33,6 @@
 			_properties.DamageTotalMult *= 1.5;
 			_properties.MeleeSkill += 10;
 		}
-	};
+	}
 
 });

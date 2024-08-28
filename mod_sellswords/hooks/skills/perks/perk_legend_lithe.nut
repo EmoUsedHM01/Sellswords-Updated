@@ -41,6 +41,7 @@
 
 		return tooltip;
 	}
+
 	if (!(::Is_PTR_Exist))
 	{
 		q.getHitpointsDamageReduction <- function()
@@ -48,13 +49,9 @@
 			local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 			fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
 			if (!this.getContainer().getActor().isPlayerControlled())
-			{
 				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
-			}
 			else
-			{
 				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
-			}
 		}
 
 		q.getArmorDamageReduction <- function()
@@ -62,13 +59,9 @@
 			local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 			fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
 			if (!this.getContainer().getActor().isPlayerControlled())
-			{
 				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
-			}
 			else
-			{
 				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
-			}
 		}
 	}
 	else
@@ -78,13 +71,9 @@
 			local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 			fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
 			if (!this.getContainer().getActor().isPlayerControlled())
-			{
 				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
-			}
 			else
-			{
 				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
-			}
 		}
 
 		q.getArmorDamageReduction = @(__original) function()
@@ -92,24 +81,19 @@
 			local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 			fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
 			if (!this.getContainer().getActor().isPlayerControlled())
-			{
 				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
-			}
 			else
-			{
 				return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
-			}
 		}
 	}
 
 	q.onBeforeDamageReceived = @( __original ) function( _attacker, _skill, _hitInfo, _properties )
 	{
 		if (_attacker != null && _attacker.getID() == this.getContainer().getActor().getID() || _skill == null || !_skill.isAttack() || !_skill.isUsingHitchance())
-		{
 			return;
-		}
 
 		_properties.DamageReceivedRegularMult *= this.getHitpointsDamageReduction();
 		_properties.DamageReceivedArmorMult *= this.getArmorDamageReduction();
 	}
+
 });
