@@ -59,6 +59,13 @@ Added a clause to prevent Dryad corpses being raised as undead
 ...\scripts\entity\tactical\enemies\dryad_lindy_tail.nut
 Removed an old racial script that bugged out damage calcs
 
+...\scripts\entity\tactical\enemies\dryad_lindy.nut
+...\scripts\entity\tactical\enemies\dryad_lindy_tail.nut
+...\scripts\entity\tactical\enemies\dryad_snake.nut
+...\scripts\entity\tactical\enemies\dryad_unhold.nut
+...\scripts\entity\tactical\enemies\dryad_wolf.nut
+Added MC clauses for the MC beast skills and additional Legendary skills
+
 ...\scripts\events\events\anatomist_recruit_event.nut
 Updated the dialogue a little
 
