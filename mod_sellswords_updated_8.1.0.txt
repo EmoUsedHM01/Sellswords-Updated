@@ -185,6 +185,9 @@ Added PTR compatibility to the way perk trees spawn
 ...\mod_sellswords\hooks\skills\traits\huge_trait.nut
 Added PTR compatibility
 
+...\mod_sellswords\hooks\config\z_perks_tree_magic.nut
+Fixed the Shaman's and Tamers having the wrong tree
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
