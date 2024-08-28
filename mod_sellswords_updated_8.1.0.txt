@@ -166,11 +166,21 @@ Fixed up the difficulty event and the player_party hook
 Cleaned up some code
 
 ...\mod_sellswords\config\z_background_perks.nut
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 ...\mod_sellswords\hooks\skills\perks\perk_adrenalin.nut
 ...\mod_sellswords\hooks\skills\perks\perk_footwork.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_athlete.nut
 ...\mod_sellswords\hooks\skills\perks\perk_rotation.nut
 Reworked the way perks are added to the tree to clean up perk rows
+
+...\scripts\skills\backgrounds\crsellsword_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_grunt_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_shaman_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_tamer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_warrior_background.nut
+Added PTR compatibility to the way perk trees spawn
 
 ----------------------------------------------------------------------------------------------------------------------------
 
