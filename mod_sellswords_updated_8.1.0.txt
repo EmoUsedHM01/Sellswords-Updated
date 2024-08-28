@@ -194,6 +194,7 @@ Updated various entries and added a more robust system
 ...\gfx\ui\backgrounds\veteran_sellsword_background.png
 Added new icon for the crSellswords
 
+...\scripts\events\events\sellswords_intro_event.nut
 ...\scripts\scenarios\world\sellswords_scenario.nut
 ...\scripts\!mods_preload\mod_sellswords.nut
 Updated some options for the Origin

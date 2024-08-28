@@ -177,7 +177,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 		this.character_background.onAdded();
 		local actor = this.getContainer().getActor();
 
-		if (this.Math.rand(0, 3) == 3)
+		if (this.Math.rand(0, 2) == 2)
 			actor.setTitle(this.Const.Strings.SellswordTitles[this.Math.rand(0, this.Const.Strings.SellswordTitles.len() - 1)]);
 	}
 
