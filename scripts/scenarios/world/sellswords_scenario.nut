@@ -199,6 +199,9 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 	{
 		switch (::Mod_Sellswords.SellswordsPerk)
 		{
+			case "Back to Basics":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendBackToBasics);
+				return;
 			case "Backstabber":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Backstabber);
 				return;
@@ -208,11 +211,14 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			case "Dodge":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Dodge);
 				return;
+			case "Escape Artist":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendEscapeArtist);
+				return;
+			case "Footwork":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Footwork);
+				return;
 			case "Fortified Mind":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.FortifiedMind);
-				return;
-			case "Greed":
-				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendBarterGreed);
 				return;
 			case "Mind Over Body":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendMindOverBody);
@@ -234,6 +240,9 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 				return;
 			case "Student":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Student);
+				return;
+			case "Thrives in Chaos":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.crTiC);
 				return;
 			case "Underdog":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Underdog);
