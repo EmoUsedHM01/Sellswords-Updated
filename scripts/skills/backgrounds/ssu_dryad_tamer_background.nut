@@ -68,6 +68,47 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 			],
 			Magic = []
 		};
+
+		if (::Is_PTR_Exist)
+		{
+			this.m.SpecialPerkMultipliers = [
+				[5, ::Const.Perks.PerkDefs.LegendBigGameHunter]
+			];
+
+			this.m.PerkGroupMultipliers <- [
+				[3, ::Const.Perks.ViciousTree],
+				[0.33, ::Const.Perks.ShieldTree],
+				[0.5, ::Const.Perks.FlailTree],
+				[0.5, ::Const.Perks.HammerTree],
+				[0.5, ::Const.Perks.MaceTree],
+				[0.5, ::Const.Perks.StaffTree],
+				[0.25, ::Const.Perks.SlingTree],
+				[0, ::Const.Perks.ApothecaryProfessionTree],
+				[0, ::Const.Perks.MinstrelProfessionTree]
+			];
+
+			this.m.PerkTreeDynamic = {
+				Profession = [
+					::MSU.Class.WeightedContainer([
+						[90, ::Const.Perks.NoTree],
+						[10, ::Const.Perks.RandomTree]
+					])
+				],
+				Enemy = [
+					::Const.Perks.CivilizationTree
+				],
+				Class = [
+					::MSU.Class.WeightedContainer([
+						[90, ::Const.Perks.TrapperClassTree],
+						[5, ::Const.Perks.ScoutClassTree],
+						[5, ::Const.Perks.NoTree]
+					])
+				],
+				Weapon = [
+					::Const.Perks.CleaverTree
+				]
+			};
+		}
 	}
 
 	function getTooltip()

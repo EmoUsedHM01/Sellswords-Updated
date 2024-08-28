@@ -83,10 +83,10 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 				[0.1, this.Const.Perks.CalmTree],
 				[3, this.Const.Perks.ViciousTree],
 				[1.5, this.Const.Perks.FastTree],
-				[1.5, this.Const.Perks.UnstoppableTree],			
+				[1.5, this.Const.Perks.UnstoppableTree],
 				[1, this.Const.Perks.HeavyArmorTree],
 				[0, this.Const.Perks.ShieldTree],
-				[0.1, this.Const.Perks.BowTree],			
+				[0.1, this.Const.Perks.BowTree],
 				[0.1, this.Const.Perks.CrossbowTree],
 				[0, this.Const.Perks.SlingTree],
 				[0.66, this.Const.Perks.SpearTree]

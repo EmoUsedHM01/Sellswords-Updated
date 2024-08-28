@@ -76,6 +76,38 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 			Class = [],
 			Magic = []
 		};
+
+		if (::Is_PTR_Exist)
+		{
+			this.m.PerkGroupMultipliers <- [
+				[0.66, ::Const.Perks.ShieldTree],
+				[3, ::Const.Perks.MediumArmorTree]
+			];
+
+			this.m.PerkTreeDynamic = {
+				Profession = [
+					::Const.Perks.HunterProfessionTree
+				],
+				Enemy = [
+					::Const.Perks.ArchersTree
+				],
+				Traits = [
+					::Const.Perks.AgileTree
+				],
+				Class = [
+					::Const.Perks.ScoutClassTree
+				],
+				Defense = [
+					::Const.Perks.LightArmorTree
+				],
+				Weapon = [
+					::Const.Perks.BowTree,
+					::Const.Perks.CrossbowTree,
+					::Const.Perks.SlingTree,
+					::Const.Perks.ThrowingTree
+				]
+			};
+		}
 	}
 
 	function getTooltip()

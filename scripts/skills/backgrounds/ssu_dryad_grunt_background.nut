@@ -77,6 +77,40 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 			],
 			Magic = []
 		};
+
+		if (::Is_PTR_Exist)
+		{
+			this.m.PerkGroupMultipliers <- [
+				[3, ::Const.Perks.CalmTree],
+				[0.2, ::Const.Perks.OrganisedTree],
+				[0.25, ::Const.Perks.DeviousTree],
+				[0.5, ::Const.Perks.ShieldTree],
+				[2, ::Const.Perks.HeavyArmorTree],
+				[0.5, ::Const.Perks.SpearTree]
+			];
+
+			this.m.PerkTreeDynamic = {
+				Profession = [
+					::MSU.Class.WeightedContainer([
+						[30, ::Const.Perks.SoldierProfessionTree],
+						[70, ::Const.Perks.NoTree]
+					])
+				],
+				Traits = [
+					::Const.Perks.TrainedTree
+				],
+				Class = [
+					::MSU.Class.WeightedContainer([
+						[75, ::Const.Perks.VeteranClassTree],
+						[25, ::Const.Perks.TacticianClassTree]
+					])
+				],
+				Weapon = [
+					::Const.Perks.PolearmTree,
+					::Const.Perks.SwordTree
+				]
+			};
+		}
 	}
 
 	function getTooltip()

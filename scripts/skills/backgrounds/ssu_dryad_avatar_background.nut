@@ -130,19 +130,23 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
 		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
 		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
-		this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
 		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 2, false)
 		this.addPerkGroup(::Const.Perks.CivilizationTree.Tree);
 		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
 
 		if (::Is_PTR_Exist)
 		{
-			this.addPerkGroup(::Const.Perks.UnstoppableTree.Tree);
 			this.addPerkGroup(::Const.Perks.ResilientTree.Tree);
+			this.addPerkGroup(::Const.Perks.OneHandedTree.Tree);
+			this.addPerkGroup(::Const.Perks.TwoHandedTree.Tree);
 
 			this.addPerk(::Const.Perks.PerkDefs.PTRRisingStar, 4, false)
 			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false)
+		}
+		else
+		{
+			this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
+			this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
 		}
 
 		this.addPerk(::Const.Perks.PerkDefs.LegendBattleheart, 3, false)
