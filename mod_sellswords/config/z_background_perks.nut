@@ -48,7 +48,7 @@ function setupBackground(classPath, perkScripts, perkDefs)
 }
 
 // Define each background using the helper function
-setupBackground("scripts/skills/backgrounds/adventurous_noble_background", ["scripts/skills/perks/perk_rotation"], [{def = ::Const.Perks.PerkDefs.Rotation, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crFurinkazan, level = 5, optional = false}]);
+setupBackground("scripts/skills/backgrounds/adventurous_noble_background", ["scripts/skills/perks/perk_duelist"], [{def = ::Const.Perks.PerkDefs.Duelist, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/anatomist_background", ["scripts/skills/perks/perk_debilitate"], [{def = ::Const.Perks.PerkDefs.Debilitate, level = 0, optional = false}]);
 
@@ -66,7 +66,7 @@ setupBackground("scripts/skills/backgrounds/beast_hunter_background", ["scripts/
 
 setupBackground("scripts/skills/backgrounds/beggar_background", ["scripts/skills/perks/perk_underdog"], [{def = ::Const.Perks.PerkDefs.Underdog, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/belly_dancer_background", ["scripts/skills/perks/perk_legend_twirl"], [{def = ::Const.Perks.PerkDefs.LegendTwirl, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crFurinkazan, level = 5, optional = false}]);
+setupBackground("scripts/skills/backgrounds/belly_dancer_background", ["scripts/skills/perks/perk_nimble"], [{def = ::Const.Perks.PerkDefs.Nimble, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/bowyer_background", ["scripts/skills/perks/perk_legend_specialist_shortbow_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistShortbowSkill, level = 0, optional = false}]);
 
@@ -100,7 +100,7 @@ setupBackground("scripts/skills/backgrounds/farmhand_background", ["scripts/skil
 
 setupBackground("scripts/skills/backgrounds/female_adventurous_noble_background", ["scripts/skills/perks/perk_bullseye"], [{def = ::Const.Perks.PerkDefs.Bullseye, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/female_disowned_noble_background", ["scripts/skills/perks/perk_rotation"], [{def = ::Const.Perks.PerkDefs.Rotation, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crFurinkazan, level = 5, optional = false}]);
+setupBackground("scripts/skills/backgrounds/female_disowned_noble_background", ["scripts/skills/perks/perk_legend_wind_reader"], [{def = ::Const.Perks.PerkDefs.LegendWindReader, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/fisherman_background", ["scripts/skills/perks/perk_legend_net_casting"], [{def = ::Const.Perks.PerkDefs.LegendNetCasting, level = 0, optional = false}]);
 
@@ -136,10 +136,9 @@ setupBackground("scripts/skills/backgrounds/legend_beggar_commander_background",
 	
 setupBackground("scripts/skills/backgrounds/legend_beggar_commander_op_background", ["scripts/skills/perks/perk_legend_blend_in"], [{def = ::Const.Perks.PerkDefs.LegendBlendIn, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_berserker_background", ["scripts/skills/perks/perk_adrenalin"], [{def = ::Const.Perks.PerkDefs.Adrenaline, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crirresistibleimpulse, level = 1, optional = false}]);
-
+setupBackground("scripts/skills/backgrounds/legend_berserker_background", ["scripts/skills/perks/perk_killing_frenzy"], [{def = ::Const.Perks.PerkDefs.KillingFrenzy, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_berserker_commander_background", ["scripts/skills/perks/perk_adrenalin"], [{def = ::Const.Perks.PerkDefs.Adrenaline, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crirresistibleimpulse, level = 1, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_berserker_commander_background", ["scripts/skills/perks/perk_killing_frenzy"], [{def = ::Const.Perks.PerkDefs.KillingFrenzy, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_blacksmith_background", ["scripts/skills/perks/perk_legend_specialist_hammer_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistHammerSkill, level = 0, optional = false}]);
 	
@@ -204,7 +203,7 @@ setupBackground("scripts/skills/backgrounds/legend_noble_background", ["scripts/
 	
 setupBackground("scripts/skills/backgrounds/legend_noble_commander_background", ["scripts/skills/perks/perk_legend_assured_conquest"], [{def = ::Const.Perks.PerkDefs.LegendAssuredConquest, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_noble_ranged", ["scripts/skills/perks/perk_crParthianshot"], [{def = ::Const.Perks.PerkDefs.crParthianshot, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_noble_ranged", ["scripts/skills/perks/perk_ballistics"], [{def = ::Const.Perks.PerkDefs.Ballistics, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_noble_shield", ["scripts/skills/perks/perk_shield_expert"], [{def = ::Const.Perks.PerkDefs.ShieldExpert, level = 0, optional = false}]);
 	
@@ -270,15 +269,15 @@ setupBackground("scripts/skills/backgrounds/poacher_background", ["scripts/skill
 
 setupBackground("scripts/skills/backgrounds/raider_background", ["scripts/skills/perks/perk_legend_bloodbath"], [{def = ::Const.Perks.PerkDefs.LegendBloodbath, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/ratcatcher_background", ["scripts/skills/perks/perk_legend_net_repair"], [{def = ::Const.Perks.PerkDefs.LegendNetRepair, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/ratcatcher_background", ["scripts/skills/perks/perk_legend_net_casting"], [{def = ::Const.Perks.PerkDefs.LegendNetCasting, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/refugee_background", ["scripts/skills/perks/perk_underdog"], [{def = ::Const.Perks.PerkDefs.Underdog, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/regent_in_absentia_background", ["scripts/skills/perks/perk_rotation"], [{def = ::Const.Perks.PerkDefs.Rotation, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crFurinkazan, level = 5, optional = false}]);
+setupBackground("scripts/skills/backgrounds/regent_in_absentia_background", ["scripts/skills/perks/perk_legend_battleheart"], [{def = ::Const.Perks.PerkDefs.LegendBattleheart, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/retired_soldier_background", ["scripts/skills/perks/perk_legend_back_to_basics"], [{def = ::Const.Perks.PerkDefs.LegendBackToBasics, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/sellsword_background", ["scripts/skills/perks/perk_legend_specialist_shield_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistShieldSkill, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/sellsword_background", ["scripts/skills/perks/perk_legend_barter_greed"], [{def = ::Const.Perks.PerkDefs.LegendBarterGreed, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/servant_background", ["scripts/skills/perks/perk_legend_meal_preperation"], [{def = ::Const.Perks.PerkDefs.LegendMealPreperation, level = 0, optional = false}]);
 	
