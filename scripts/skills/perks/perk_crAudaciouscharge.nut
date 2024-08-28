@@ -16,53 +16,56 @@ this.perk_crAudaciouscharge <- this.inherit("scripts/skills/skill", {
 	function onAdded()
 	{
 		if (!this.m.Container.hasSkill("actives.zcr_charge"))
-		{
 			this.m.Container.add(this.new("scripts/skills/actives/zcr_charge"));
-		}	
+
 		local addPerk = function ( _perk, _row = 0 )
 		{
-			local actor = this.getContainer().getActor();
-
-			if (typeof actor == "instance")
-			{
-				actor = actor.get();
-			}
-
-			if (!this.isKindOf(actor, "player"))
-			{
+			local actor = this.getContainer().getActor().get();
+			if (!actor.isPlayerControlled())
 				return;
-			}
 
-			local bg = this.getContainer().getActor().getBackground();
-
-			if (bg == null)
+			local bg = actor.getBackground();
+			local hasRow = false;
+			local direction = -1;
+			local row = _row;
+			while (row >= 0 && row <= 6)
 			{
-				return;
+				if (bg.m.CustomPerkTree[row].len() < 13)
+				{
+					hasRow = true;
+					break;
+				}
+
+				row += direction;
+
+				if (row == -1)
+				{
+					row = _row;
+					direction = 1;
+				}
 			}
 
-			bg.addPerk(_perk, _row);
-		};
+			row = hasRow ? this.Math.max(0, this.Math.min(row, 6)) : _row;
+			bg.addPerk(_perk, row);
+		}
 
 		if (!this.getContainer().hasSkill("perk.crFurinkazan"))
-		{
 			addPerk(this.Const.Perks.PerkDefs.crFurinkazan, 5);
-		}		
 	}
 
 	function onRemoved()
 	{
-		this.m.Container.removeByID("actives.zcr_charge");	
+		this.m.Container.removeByID("actives.zcr_charge");
 	}
-	
+
 	function onSerialize( _out )
 	{
 		this.skill.onSerialize(_out);
 	}
+
 	function onDeserialize( _in )
 	{
 		this.skill.onDeserialize(_in);
 	}	
 
 });
-
-
