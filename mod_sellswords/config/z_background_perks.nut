@@ -14,7 +14,7 @@ function setupBackground(classPath, perkScripts, perkDefs)
 		{
 			__original();
 
-			local addPerk = function ( _perk, _row = 0 )
+			local addPerk = function ( _perk, _row = 0, isRefundable )
 			{
 				local hasRow = false;
 				local direction = -1;
@@ -37,7 +37,7 @@ function setupBackground(classPath, perkScripts, perkDefs)
 				}
 
 				row = hasRow ? this.Math.max(0, this.Math.min(row, 6)) : _row;
-				this.addPerk(_perk, row);
+				this.addPerk(_perk, row, isRefundable);
 			}
 
 			foreach (perkDef in perkDefs)
