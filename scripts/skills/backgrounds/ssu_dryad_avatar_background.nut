@@ -130,8 +130,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
 		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
 		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 2, false)
-		this.addPerkGroup(::Const.Perks.CivilizationTree.Tree);
+		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 0, false)
 		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
 
 		if (::Is_PTR_Exist)

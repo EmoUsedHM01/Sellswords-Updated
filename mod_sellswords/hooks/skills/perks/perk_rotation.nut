@@ -33,7 +33,6 @@
 
 			row = hasRow ? this.Math.max(0, this.Math.min(row, 6)) : _row;
 			bg.addPerk(_perk, row);
-			this.m.PerksAdded.push(_perk);
 		}
 
 		if (!this.getContainer().hasSkill("perk.crFurinkazan"))

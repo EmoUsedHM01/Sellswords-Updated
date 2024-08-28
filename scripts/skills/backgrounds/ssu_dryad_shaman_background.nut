@@ -74,6 +74,7 @@ this.ssu_dryad_shaman_background <- ::inherit("scripts/skills/backgrounds/charac
 			this.m.PerkGroupMultipliers <- [
 				[0.25, ::Const.Perks.UnstoppableTree],
 				[3, ::Const.Perks.OrganisedTree],
+				[3, ::Const.Perks.DryadShamanTree],
 				[0.25, ::Const.Perks.ViciousTree],
 				[2, ::Const.Perks.TalentedTree]
 			];

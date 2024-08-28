@@ -182,6 +182,9 @@ Reworked the way perks are added to the tree to clean up perk rows
 ...\scripts\skills\backgrounds\ssu_dryad_warrior_background.nut
 Added PTR compatibility to the way perk trees spawn
 
+...\mod_sellswords\hooks\skills\traits\huge_trait.nut
+Added PTR compatibility
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.0.3 changes
