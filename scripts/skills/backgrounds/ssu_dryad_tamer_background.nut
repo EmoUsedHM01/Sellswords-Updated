@@ -81,7 +81,6 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 				[0.5, ::Const.Perks.FlailTree],
 				[0.5, ::Const.Perks.HammerTree],
 				[0.5, ::Const.Perks.MaceTree],
-				[3, ::Const.Perks.DryadTamerTree],
 				[0, ::Const.Perks.ApothecaryProfessionTree],
 				[0, ::Const.Perks.MinstrelProfessionTree]
 			];
@@ -97,11 +96,7 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 					::Const.Perks.CivilizationTree
 				],
 				Class = [
-					::MSU.Class.WeightedContainer([
-						[90, ::Const.Perks.TrapperClassTree],
-						[5, ::Const.Perks.ScoutClassTree],
-						[5, ::Const.Perks.NoTree]
-					])
+					::Const.Perks.DryadTamerTree
 				],
 				Weapon = [
 					::Const.Perks.CleaverTree
