@@ -165,7 +165,6 @@ Fixed up the difficulty event and the player_party hook
 ...\mod_sellswords\hooks\skills\perks\perk_underdog.nut
 Cleaned up some code
 
-...\mod_sellswords\config\z_background_perks.nut
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 ...\mod_sellswords\hooks\skills\perks\perk_adrenalin.nut
 ...\mod_sellswords\hooks\skills\perks\perk_footwork.nut
@@ -188,6 +187,12 @@ Added PTR compatibility
 
 ...\mod_sellswords\hooks\config\z_perks_tree_magic.nut
 Fixed the Shaman's and Tamers having the wrong tree
+
+...\mod_sellswords\config\z_background_perks.nut
+Updated various entries and added a more robust system
+
+...\gfx\ui\backgrounds\veteran_sellsword_background.png
+Added new icon for the crSellswords
 
 ----------------------------------------------------------------------------------------------------------------------------
 

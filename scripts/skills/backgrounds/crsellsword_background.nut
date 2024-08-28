@@ -1,13 +1,13 @@
 this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/character_background", {
 	m = {
-		PerkGroupMultipliers = [],
+		PerkGroupMultipliers = []
 	},
 	function create()
 	{
 		this.character_background.create();
 		this.m.ID = "background.crsellsword";
-		this.m.Name = "Sellsword";
-		this.m.Icon = "ui/backgrounds/background_10.png";
+		this.m.Name = "Veteran Sellsword";
+		this.m.Icon = "ui/backgrounds/veteran_sellsword_background.png";
 		this.m.BackgroundDescription = "Sellswords are expensive, but a life of warfare has forged them into skilled fighters.";
 		this.m.GoodEnding = "%name% the sellsword left the %companyname% and started his own mercenary company. As far as you know, it\'s a very successful venture and he often buddies up with the men of the %companyname% to work together.";
 		this.m.BadEnding = "%name% left the %companyname% and started his own competing company. The two companies clashed on opposite sides of a battle between nobles. The sellsword died when a mercenary from the %companyname% stove his head in with a hedge knight\'s helmet.";
@@ -139,8 +139,8 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 				10
 			],
 			Bravery = [
-				5,
-				5
+				8,
+				10
 			],
 			Stamina = [
 				15,
@@ -148,15 +148,15 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 			],
 			MeleeSkill = [
 				13,
-				13
+				15
 			],
 			RangedSkill = [
-				2,
-				4
+				6,
+				8
 			],
 			MeleeDefense = [
-				5,
-				8
+				9,
+				12
 			],
 			RangedDefense = [
 				5,
@@ -172,7 +172,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 
 	function onAdded()
 	{
-		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"))
+		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_barter_greed"))
 
 		this.character_background.onAdded();
 		local actor = this.getContainer().getActor();
@@ -184,7 +184,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.LegendBackToBasics, 0, false)
+		this.addPerk(::Const.Perks.PerkDefs.LegendBarterGreed, 0, false)
 	}
 
 	function onAddEquipment()

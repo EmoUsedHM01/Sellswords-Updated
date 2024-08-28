@@ -1,5 +1,7 @@
 this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/character_background", {
-	m = {},
+	m = {
+		PerkGroupMultipliers = []
+	},
 	function create()
 	{
 		this.character_background.create();
