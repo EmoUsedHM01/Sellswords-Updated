@@ -192,35 +192,38 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 		local items = this.getContainer().getActor().getItems();
 		local r;
 
-		r = this.Math.rand(0, 8);
+		r = this.Math.rand(0, 9);
 		switch(r)
 		{
 			case 0:
-				items.equip(this.new("scripts/items/weapons/falchion"));
+				items.equip(this.new("scripts/items/weapons/military_cleaver"));
 				break;
 			case 1:
 				items.equip(this.new("scripts/items/weapons/flail"));
 				break;
 			case 2:
-				items.equip(this.new("scripts/items/weapons/hand_axe"));
+				items.equip(this.new("scripts/items/weapons/fighting_axe"));
 				break;
 			case 3:
-				items.equip(this.new("scripts/items/weapons/legend_glaive"));
+				items.equip(this.new("scripts/items/weapons/warhammer"));
 				break;
 			case 4:
 				items.equip(this.new("scripts/items/weapons/arming_sword"));
 				break;
 			case 5:
-				items.equip(this.new("scripts/items/weapons/billhook"));
+				items.equip(this.new("scripts/items/weapons/winged_mace"));
 				break;
 			case 6:
-				items.equip(this.new("scripts/items/weapons/oriental/heavy_southern_mace"));
+				items.equip(this.new("scripts/items/weapons/fighting_spear"));
 				break;
 			case 7:
-				items.equip(this.new("scripts/items/weapons/scimitar"));
+				items.equip(this.new("scripts/items/weapons/bardiche"));
+				break;
+			case 8:
+				items.equip(this.new("scripts/items/weapons/ssu_kriegsmesser"));
 				break;
 			default:
-				items.equip(this.new("scripts/items/weapons/boar_spear"));
+				items.equip(this.new("scripts/items/weapons/polehammer"));
 				break;
 		}
 
@@ -246,79 +249,29 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 			}
 		}
 
-		items.equip(this.Const.World.Common.pickArmor([
-			[
-				1,
-				"desperado_armor"
-			],
-			[
-				1,
-				"adorned_mail_shirt_armor_heavy"
-			],
-			[
-				1,
-				"hashshashin_armor_medium"
-			],
-			[
-				1,
-				"sellsword_armor_medium_high_yonn"
-			],
-			[
-				1,
-				"sellsword_armor_medium"
-			],
-			[
-				1,
-				"sellsword_armor_medium_chain"
-			],
-			[
-				1,
-				"crmercenary_armor_late"
-			],
-			[
-				1,
-				"squire_armor"
-			]
-		]));
+		local equipmentSets = [
+			{ armor: "desperado_armor", helmet: "desperado_helmet" },
+			{ armor: "hashshashin_armor_medium", helmet: "hashshashin_helmet_medium" },
+			{ armor: "hashshashin_armor_high", helmet: "hashshashin_helmet_high" },
+			{ armor: "crbarbarian_thick_plated_barbarian_armor", helmet: "barbarians/crude_metal_helmet" },
+			{ armor: "crbarbarian_heavy_iron_armor", helmet: "barbarians/closed_scrap_metal_helmet" },
+			{ armor: "crbarbarian_rugged_scale_armor", helmet: "barbarians/crude_faceguard_helmet" },
+			{ armor: "crmercenary_armor_mid", helmet: "crmercenary_helmet_mid" },
+			{ armor: "crmercenary_armor_late", helmet: "crmercenary_helmet_late" },
+			{ armor: "crmercenary_armor_heavy", helmet: "crmercenary_helmet_heavy" },
+			{ armor: "oriental/gladiator_harness", helmet: "oriental/gladiator_helmet" },
+			{ armor: "adorned_warriors_armor_armor_heavy", helmet: "adorned_closed_flat_top_with_mail_helmet" },
+			{ armor: "adorned_mail_shirt_armor_heavy", helmet: "adorned_full_helm_helmet" },
+			{ armor: "sellsword_armor_medium", helmet: "sellsword_helmet_medium" },
+			{ armor: "sellsword_armor_heavy_northern", helmet: "cr_enclave_venitian_bascinet" },
+			{ armor: "sellsword_armor_medium_high_yonn", helmet: "sellsword_helmet_medium_high" },
+			{ armor: "sellsword_armor_light_high_ni", helmet: "sellsword_helmet_light_high" }
+		];
 
-		items.equip(this.Const.World.Common.pickHelmet([
-			[
-				1,
-				"adorned_closed_flat_top_with_mail_helmet"
-			],
-			[
-				1,
-				"desperado_helmet"
-			],
-			[
-				1,
-				"padded_nasal_helmet"
-			],
-			[
-				1,
-				"sellsword_helmet_light_high"
-			],
-			[
-				1,
-				"sellsword_helmet_medium"
-			],
-			[
-				1,
-				"reinforced_mail_coif"
-			],
-			[
-				1,
-				"kettle_hat"
-			],
-			[
-				1,
-				"padded_kettle_hat"
-			],
-			[
-				1,
-				"sellsword_helmet_light"
-			]
-		]));
+		local r = this.Math.rand(0, equipmentSets.len() - 1);
+		local selectedSet = equipmentSets[r];
+		items.equip(this.Const.World.Common.pickArmor([[ 1, selectedSet.armor ]]));
+		items.equip(this.Const.World.Common.pickHelmet([[ 1, selectedSet.helmet ]]));
 	}
 
 });
