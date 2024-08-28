@@ -6,8 +6,8 @@
 
 		local addPerk = function ( _perk, _row = 0 )
 		{
-			local actor = this.getContainer().getActor().get();
-			if (::MSU.isKindOf(actor, "player"))
+			local actor = this.getContainer().getActor();
+			if (!actor.isPlayerControlled())
 				return;
 
 			local bg = actor.getBackground();
