@@ -61,21 +61,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 				this.Const.Perks.LightArmorTree
 			],
 			Traits = [],
-			Enemy = [
-				this.Const.Perks.DirewolfTree,
-				this.Const.Perks.SpiderTree,
-				this.Const.Perks.SchratTree,
-				this.Const.Perks.AlpTree,
-				this.Const.Perks.GhoulTree,
-				this.Const.Perks.UnholdTree,
-				this.Const.Perks.BanditTree,
-				this.Const.Perks.BarbarianTree,
-				this.Const.Perks.SkeletonTree,
-				this.Const.Perks.ZombieTree,
-				this.Const.Perks.VampireTree,
-				this.Const.Perks.GoblinTree,
-				this.Const.Perks.OrcTree
-			],
+			Enemy = [],
 			Class = [],
 			Magic = [],
 		};
@@ -202,7 +188,66 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.LegendBarterGreed, 0, false)
+
+		local addPerk = function ( _perk, _row = 0, isRefundable = false)
+		{
+			local hasRow = false;
+			local direction = -1;
+			local row = _row;
+			while (row >= 0 && row <= 6)
+			{
+				if (this.m.CustomPerkTree[row].len() < 13)
+				{
+					hasRow = true;
+					break;
+				}
+
+				row += direction;
+
+				if (row == -1)
+				{
+					row = _row;
+					direction = 1;
+				}
+			}
+
+			row = hasRow ? this.Math.max(0, this.Math.min(row, 6)) : _row;
+			this.addPerk(_perk, row, isRefundable);
+		}
+
+		local enemyPerks = [
+			::Const.Perks.PerkDefs.LegendFavouredEnemyAlps,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyDirewolf,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyGhoul,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyHexen,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyLindwurm,
+			::Const.Perks.PerkDefs.LegendFavouredEnemySpider,
+			::Const.Perks.PerkDefs.LegendFavouredEnemySchrat,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyUnhold,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyBandit,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyBarbarian,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyCaravan,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyMercenary,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyNoble,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyNomad,
+			::Const.Perks.PerkDefs.LegendFavouredEnemySoutherner,
+			::Const.Perks.PerkDefs.LegendFavouredEnemySwordmaster,
+			::Const.Perks.PerkDefs.LegendFavouredEnemySkeleton,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyVampire,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyZombie,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyGoblin,
+			::Const.Perks.PerkDefs.LegendFavouredEnemyOrk
+		];
+
+		// Randomly pick three unique enemy trees
+		for (local i = 0; i < 3; i++)
+		{
+			local randomIndex = this.Math.rand(0, enemyPerks.len() - 1);
+			local randomEnemyPerk = enemyPerks[randomIndex];
+			addPerk(randomEnemyPerk, 4, false);
+		}
+
+		addPerk(::Const.Perks.PerkDefs.LegendBarterGreed, 0, false);
 	}
 
 	function onAddEquipment()
