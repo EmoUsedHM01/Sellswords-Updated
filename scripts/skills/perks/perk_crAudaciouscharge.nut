@@ -20,7 +20,7 @@ this.perk_crAudaciouscharge <- this.inherit("scripts/skills/skill", {
 
 		local addPerk = function ( _perk, _row = 0 )
 		{
-			local actor = this.getContainer().getActor().get();
+			local actor = this.getContainer().getActor();
 			if (!actor.isPlayerControlled())
 				return;
 
@@ -28,6 +28,10 @@ this.perk_crAudaciouscharge <- this.inherit("scripts/skills/skill", {
 			local hasRow = false;
 			local direction = -1;
 			local row = _row;
+
+			if (typeof bg.m.CustomPerkTree != "array")
+				return;
+
 			while (row >= 0 && row <= 6)
 			{
 				if (bg.m.CustomPerkTree[row].len() < 13)
