@@ -55,9 +55,27 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 		this.m.PerkTreeDynamicMins.Enemy = 2;
 		this.m.PerkTreeDynamic = {
 			Weapon = [],
-			Defense = [],
+			Defense = [
+				this.Const.Perks.HeavyArmorTree,
+				this.Const.Perks.MediumArmorTree,
+				this.Const.Perks.LightArmorTree
+			],
 			Traits = [],
-			Enemy = [],
+			Enemy = [
+				this.Const.Perks.DirewolfTree,
+				this.Const.Perks.SpiderTree,
+				this.Const.Perks.SchratTree,
+				this.Const.Perks.AlpTree,
+				this.Const.Perks.GhoulTree,
+				this.Const.Perks.UnholdTree,
+				this.Const.Perks.BanditTree,
+				this.Const.Perks.BarbarianTree,
+				this.Const.Perks.SkeletonTree,
+				this.Const.Perks.ZombieTree,
+				this.Const.Perks.VampireTree,
+				this.Const.Perks.GoblinTree,
+				this.Const.Perks.OrcTree
+			],
 			Class = [],
 			Magic = [],
 		};
