@@ -285,12 +285,39 @@ this.dryad_wolf <- this.inherit("scripts/entity/tactical/actor", {
 		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_stalwart"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_composure"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_poison_immunity"));
-	}
-});
 
+		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
+		{
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_stalwart"));
+		}
+
+		if (::Is_MC_Exist)
+		{
+			local chosenSkills = [];
+			local allSkills = [
+				"scripts/skills/perks/perk_nggh_wolf_bite",
+				"scripts/skills/perks/perk_nggh_wolf_enrage",
+				"scripts/skills/perks/perk_nggh_wolf_rabies",
+				"scripts/skills/perks/perk_nggh_wolf_thick_hide"
+			];
+
+			// Randomly select two different skills
+			while (chosenSkills.len() < 2)
+			{
+				local r = this.Math.rand(0, allSkills.len() - 1);
+
+				if (chosenSkills.find(allSkills[r]) == -1) // Ensure the skill hasn't been picked yet
+				{
+					chosenSkills.push(allSkills[r]);
+					this.m.Skills.add(::new(allSkills[r]));
+				}
+			}
+		}
+	}
+
+});

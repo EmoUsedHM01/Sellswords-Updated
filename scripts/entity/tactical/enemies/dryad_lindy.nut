@@ -378,28 +378,33 @@ this.dryad_lindy <- this.inherit("scripts/entity/tactical/actor", {
 		this.m.Skills.add(this.new("scripts/skills/racial/lindwurm_racial"));
 		
 		this.m.Skills.add(this.new("scripts/skills/traits/loyal_trait"));
-		this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 		
 		this.m.Skills.add(this.new("scripts/skills/actives/gorge_skill"));
 		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_muscularity"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_flow"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_stalwart"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_composure"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_poison_immunity"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_poison_immunity"));
 		
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_muscularity"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_flow"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_stalwart"));
+			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Hitpoints = b.Hitpoints * 1.5;
 			this.m.ActionPoints = b.ActionPoints + 5;
+		}
+
+		if (::Is_MC_Exist)
+		{
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_nggh_lindwurm_acid"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_nggh_lindwurm_body"));
 		}
 		
 		if (!this.Tactical.State.isScenarioMode())
@@ -485,8 +490,6 @@ this.dryad_lindy <- this.inherit("scripts/entity/tactical/actor", {
 		this.actor.onMovementFinish(_tile);
 
 		if (this.m.Tail != null && !this.m.Tail.isNull() && this.m.Tail.isAlive())
-		{
 			this.Tactical.TurnSequenceBar.moveEntityToFront(this.m.Tail.getID());
-		}
 	}
 });
