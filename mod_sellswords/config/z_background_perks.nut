@@ -14,7 +14,7 @@ function setupBackground(classPath, perkScripts, perkDefs)
 		{
 			__original();
 
-			local addPerk = function ( _perk, _row = 0, isRefundable )
+			local addPerk = function ( _perk, _row = 0, isRefundable = false)
 			{
 				local hasRow = false;
 				local direction = -1;
