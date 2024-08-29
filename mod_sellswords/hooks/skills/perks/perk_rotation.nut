@@ -4,6 +4,9 @@
 	{
 		__original();
 
+		if (!this.m.IsNew)
+			return;
+
 		local addPerk = function ( _perk, _row = 0 )
 		{
 			local actor = this.getContainer().getActor();

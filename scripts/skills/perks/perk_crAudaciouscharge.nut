@@ -18,13 +18,19 @@ this.perk_crAudaciouscharge <- this.inherit("scripts/skills/skill", {
 		if (!this.m.Container.hasSkill("actives.zcr_charge"))
 			this.m.Container.add(this.new("scripts/skills/actives/zcr_charge"));
 
+		if (!this.m.IsNew)
+			return;
+
 		local addPerk = function ( _perk, _row = 0 )
 		{
-			local actor = this.getContainer().getActor();
+			local actor = this.getContainer().getActor().get();
 			if (!actor.isPlayerControlled())
 				return;
 
 			local bg = actor.getBackground();
+			if (bg = null)
+				return;
+
 			local hasRow = false;
 			local direction = -1;
 			local row = _row;

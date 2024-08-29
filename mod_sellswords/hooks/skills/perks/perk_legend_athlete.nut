@@ -8,6 +8,9 @@
 		if (!this.m.Container.hasSkill("actives.sprint"))
 			this.m.Container.add(this.new("scripts/skills/actives/sprint_skill_5"));
 
+		if (!this.m.IsNew)
+			return;
+
 		local addPerk = function ( _perk, _row = 0 )
 		{
 			local actor = this.getContainer().getActor();
