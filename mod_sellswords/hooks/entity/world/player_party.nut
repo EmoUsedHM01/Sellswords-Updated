@@ -147,23 +147,14 @@
 			local gearvalue = mainhandvalue + offhandvalue + bodyvalue + headvalue;
 			local gearvaluecount = 0.1 * this.pow(dc / 10, 2.4000001) + 2;
 
-			switch (originID)
-			{
-				case "scenario.gladiators":
-				case "scenario.lone_wolf":
-				case "scenario.lone_wolf_easy":
-					gearvalue = this.Math.max(gearvalue - 5, 0.5);
-					break;
-				case "scenario.legend_risen_legion":
-					gearvalue = this.Math.max(gearvalue - 4, 0.5);
-					break;
-				case "scenario.legends_noble":
-				case "scenario.legends_party":
-				case "scenario.sellswords":
-				case "scenario.trader":
-					gearvalue = this.Math.max(gearvalue - 3, 0.5);
-					break;
-			}
+			if (this.World.Assets.getOrigin().getID() == "scenario.gladiators" || this.World.Assets.getOrigin().getID() == "scenario.lone_wolf" || this.World.Assets.getOrigin().getID() == "scenario.lone_wolf_easy")
+				gearvalue = this.Math.max(gearvalue - 5, 0.5);
+
+			if (this.World.Assets.getOrigin().getID() == "scenario.legend_risen_legion")
+				gearvalue = this.Math.max(gearvalue - 4, 0.5);
+
+			if (this.World.Assets.getOrigin().getID() == "scenario.legends_noble" || this.World.Assets.getOrigin().getID() == "scenario.legends_party" || this.World.Assets.getOrigin().getID() == "scenario.sellswords" || this.World.Assets.getOrigin().getID() == "scenario.trader")
+				gearvalue = this.Math.max(gearvalue - 3, 0.5);
 
 			gearvaluecount = this.Math.max(1, gearvalue - gearvaluecount + 1) * this.Math.max(1, gearvalue / gearvaluecount);
 
