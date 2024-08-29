@@ -14,6 +14,9 @@ function setupBackground(classPath, perkScripts, perkDefs)
 		{
 			__original();
 
+			if (!this.m.IsNew)
+				return;
+
 			local addPerk = function ( _perk, _row = 0, isRefundable = false)
 			{
 				local hasRow = false;
@@ -58,7 +61,7 @@ setupBackground("scripts/skills/backgrounds/assassin_background", ["scripts/skil
 
 setupBackground("scripts/skills/backgrounds/assassin_southern_background", ["scripts/skills/perks/perk_legend_opportunist"], [{def = ::Const.Perks.PerkDefs.LegendOpportunist, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/barbarian_background", ["scripts/skills/perks/perk_berserk"], [{def = ::Const.Perks.PerkDefs.Berserk, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/barbarian_background", ["scripts/skills/perks/perk_adrenalin"], [{def = ::Const.Perks.PerkDefs.Adrenaline, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crirresistibleimpulse, level = 2, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/bastard_background", ["scripts/skills/perks/perk_underdog"], [{def = ::Const.Perks.PerkDefs.Underdog, level = 0, optional = false}]);
 
@@ -189,8 +192,8 @@ setupBackground("scripts/skills/backgrounds/legend_leech_peddler_background", ["
 	
 setupBackground("scripts/skills/backgrounds/legend_lonewolf_background", ["scripts/skills/perks/perk_lone_wolf"], [{def = ::Const.Perks.PerkDefs.LoneWolf, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_man_at_arms_background", ["scripts/skills/perks/perk_crGuardian"], [{def = ::Const.Perks.PerkDefs.crGuardian, level = 0, optional = false}]);
-	
+setupBackground("scripts/skills/backgrounds/legend_man_at_arms_background", ["scripts/skills/perks/perk_rotation"], [{def = ::Const.Perks.PerkDefs.Rotation, level = 0, optional = false}, {def = ::Const.Perks.PerkDefs.crFurinkazan, level = 5, optional = false}]);
+
 setupBackground("scripts/skills/backgrounds/legend_master_archer_background", ["scripts/skills/perks/perk_ballistics"], [{def = ::Const.Perks.PerkDefs.Ballistics, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_muladi_background", ["scripts/skills/perks/perk_legend_dogwhisperer"], [{def = ::Const.Perks.PerkDefs.LegendDogWhisperer, level = 0, optional = false}]);
