@@ -173,6 +173,7 @@ Cleaned up some code
 ...\scripts\skills\perks\perk_crAudaciouscharge.nut
 Reworked the way perks are added to the tree to clean up perk rows
 
+...\scripts\config\a_sellswords_character_names.nut
 ...\scripts\skills\backgrounds\crsellsword_background.nut
 ...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
 ...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
@@ -180,7 +181,7 @@ Reworked the way perks are added to the tree to clean up perk rows
 ...\scripts\skills\backgrounds\ssu_dryad_shaman_background.nut
 ...\scripts\skills\backgrounds\ssu_dryad_tamer_background.nut
 ...\scripts\skills\backgrounds\ssu_dryad_warrior_background.nut
-Added PTR compatibility to the way perk trees spawn
+Added PTR perk tree compatibility, added new equipment variety to the Veteran Sellswords, and added new names and background descriptions to the Dryads
 
 ...\mod_sellswords\hooks\skills\traits\huge_trait.nut
 Added PTR compatibility

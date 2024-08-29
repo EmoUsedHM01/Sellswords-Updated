@@ -15,6 +15,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 			"trait.clumsy",
 			"trait.cocky"
 		];
+		this.m.Names = this.Const.Strings.DryadNames;
 		this.m.Titles = [
 			"the Dryad"
 		];
