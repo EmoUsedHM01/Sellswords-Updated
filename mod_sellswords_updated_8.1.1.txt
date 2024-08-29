@@ -1,6 +1,7 @@
 8.1.1 changes
 
-...
+...\mod_sellswords\hooks\skills\actives\legend_sling_heavy_stone_skill.nut
+Added tooltip for stun effect if you have Staff Spins - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -207,10 +208,7 @@ Added new icon for the crSellswords
 Updated some options for the SS Origin
 
 ...\scripts\skills\traits\dryad_thorns_trait.nut
-Updated the "true damage" to 30% and added a combat log popup
-
-...\mod_sellswords\hooks\skills\actives\legend_sling_heavy_stone_skill.nut
-Added tooltip for stun effect if you have Staff Spins - Breaky 
+Updated the "true damage" to 30% and added a combat log popup 
 
 ----------------------------------------------------------------------------------------------------------------------------
 
