@@ -190,6 +190,9 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 	{
 		this.character_background.buildPerkTree();
 
+		if (!this.m.IsNew)
+			return;
+
 		local addPerk = function ( _perk, _row = 0, isRefundable = false)
 		{
 			local hasRow = false;
