@@ -200,7 +200,7 @@ Added new icon for the crSellswords
 ...\scripts\!mods_preload\mod_sellswords.nut
 Updated some options for the SS Origin
 
-C:\Users\joema_mpevn9w\Documents\GitHub\Sellswords-Updated\scripts\skills\traits\dryad_thorns_trait.nut
+...\scripts\skills\traits\dryad_thorns_trait.nut
 Updated the "true damage" to 30% and added a combat log popup
 
 ----------------------------------------------------------------------------------------------------------------------------
