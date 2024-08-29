@@ -1,5 +1,40 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_sling_heavy_stone_skill", function ( q ) {
 
+	q.getTooltip = @(__original) function()
+	{
+		local ret = this.getRangedTooltip(this.getDefaultTooltip());
+
+		if (_properties.IsSpecializedInStaffStun == true)
+		{
+			ret.push({
+				id = 7,
+				type = "text",
+				icon = "ui/icons/special.png",
+				text = "Has a [color=" + this.Const.UI.Color.NegativeValue + "]100%[/color] chance to stun and daze target on a hit to the head if not immunue and always staggers the target"
+			});	
+		}
+		else
+		{
+			ret.push({
+				id = 7,
+				type = "text",
+				icon = "ui/icons/special.png",
+				text = "Has a [color=" + this.Const.UI.Color.NegativeValue + "]100%[/color] chance to daze a target on a hit to the head and always staggers the target"
+			});	
+		}
+
+		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
+		{
+			ret.push({
+				id = 9,
+				type = "text",
+				icon = "ui/tooltips/warning.png",
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+			});
+		}
+
+		return ret;
+	}
 	q.onTargetHit = @(__original) function(_skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor)
 	{
 		if (_skill == this && _targetEntity.isAlive() && !_targetEntity.isDying())
