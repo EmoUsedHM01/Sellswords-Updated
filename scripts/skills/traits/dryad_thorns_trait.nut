@@ -29,7 +29,7 @@ this.dryad_thorns_trait <- this.inherit("scripts/skills/traits/character_trait",
 			hitInfo.FatalityChanceMult = 0.0;
 
 			if (!this.getContainer().getActor().isHiddenToPlayer())
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + " reflected " + reflectedDamage + " damage back to " + this.Const.UI.getColorizedEntityName(_attacker) + ".");
+				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + " reflected " + reflectedDamage + " damage back to " + this.Const.UI.getColorizedEntityName(_attacker) + " due to their thorns");
 
 			_attacker.onDamageReceived(this.getContainer().getActor(), null, hitInfo);
 		}
