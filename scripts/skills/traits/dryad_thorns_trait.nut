@@ -23,10 +23,13 @@ this.dryad_thorns_trait <- this.inherit("scripts/skills/traits/character_trait",
 			// Create a new hit info object to apply the damage
 			local hitInfo = clone this.Const.Tactical.HitInfo;
 			hitInfo.DamageRegular = reflectedDamage;
-			hitInfo.DamageDirect = 1.0;
+			hitInfo.DamageDirect = 0.3;
 			hitInfo.BodyPart = this.Const.BodyPart.Body;
 			hitInfo.BodyDamageMult = 1.0;
 			hitInfo.FatalityChanceMult = 0.0;
+
+			if (!this.getContainer().getActor().isHiddenToPlayer())
+				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + " reflected " + reflectedDamage + " damage back to " + this.Const.UI.getColorizedEntityName(_attacker) + ".");
 
 			_attacker.onDamageReceived(this.getContainer().getActor(), null, hitInfo);
 		}
