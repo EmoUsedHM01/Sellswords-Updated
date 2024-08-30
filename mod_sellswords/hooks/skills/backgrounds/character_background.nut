@@ -167,79 +167,53 @@
 		{
 			for ( local j = 0; j < this.m.CustomPerkTree[i].len(); j++ )
 			{
-				local addPerk = function ( _perk, _row = 0 )
-				{
-					local hasRow = false;
-					local direction = -1;
-					local row = _row;
-					while (row >= 0 && row <= 6)
-					{
-						if (this.m.CustomPerkTree[row].len() < 13)
-						{
-							hasRow = true;
-							break;
-						}
-
-						row += direction;
-
-						if (row == -1)
-						{
-							row = _row;
-							direction = 1;
-						}
-					}
-
-					row = hasRow ? this.Math.max(0, this.Math.min(row, 6)) : _row;
-					this.addPerk(_perk, row);
-				}
-
 				switch (true)
 				{
 					// attach new perks based on perk tree here
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendSmallTarget:
-						addPerk(this.Const.Perks.PerkDefs.ArmorMasteryCloth, 3);
+						this.addPerk(this.Const.Perks.PerkDefs.ArmorMasteryCloth, 3);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Nimble:
-						addPerk(this.Const.Perks.PerkDefs.ArmorMasteryLight, 3);
+						this.addPerk(this.Const.Perks.PerkDefs.ArmorMasteryLight, 3);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendLithe:
-						addPerk(this.Const.Perks.PerkDefs.ArmorMasteryMedium, 3);
+						this.addPerk(this.Const.Perks.PerkDefs.ArmorMasteryMedium, 3);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.BattleForged:
-						addPerk(this.Const.Perks.PerkDefs.ArmorMasteryHeavy, 3);
+						this.addPerk(this.Const.Perks.PerkDefs.ArmorMasteryHeavy, 3);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendMuscularity:
-						addPerk(this.Const.Perks.PerkDefs.crAudaciouscharge, 2);
-						addPerk(this.Const.Perks.PerkDefs.crGrandslam, 6);
+						this.addPerk(this.Const.Perks.PerkDefs.crAudaciouscharge, 2);
+						this.addPerk(this.Const.Perks.PerkDefs.crGrandslam, 6);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendSpecFists:
-						addPerk(this.Const.Perks.PerkDefs.LegendUnarmedTraining, 6);
+						this.addPerk(this.Const.Perks.PerkDefs.LegendUnarmedTraining, 6);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecAxe:
-						addPerk(this.Const.Perks.PerkDefs.crHackSPM, 5);
+						this.addPerk(this.Const.Perks.PerkDefs.crHackSPM, 5);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecBow:
-						addPerk(this.Const.Perks.PerkDefs.crParthianshot, 4);
+						this.addPerk(this.Const.Perks.PerkDefs.crParthianshot, 4);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecPolearm:
-						addPerk(this.Const.Perks.PerkDefs.crretrofithooks, 0);
+						this.addPerk(this.Const.Perks.PerkDefs.crretrofithooks, 0);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecDagger:
-						addPerk(this.Const.Perks.PerkDefs.crFoB, 4);
+						this.addPerk(this.Const.Perks.PerkDefs.crFoB, 4);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.NineLives:
-						addPerk(this.Const.Perks.PerkDefs.crPerseverance, 4);
-						addPerk(this.Const.Perks.PerkDefs.crresilient, 2);
+						this.addPerk(this.Const.Perks.PerkDefs.crPerseverance, 4);
+						this.addPerk(this.Const.Perks.PerkDefs.crresilient, 2);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Rebound:
-						addPerk(this.Const.Perks.PerkDefs.crbeforethestorm, 5);
+						this.addPerk(this.Const.Perks.PerkDefs.crbeforethestorm, 5);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Footwork:
-						addPerk(this.Const.Perks.PerkDefs.crBackswing, 1);
+						this.addPerk(this.Const.Perks.PerkDefs.crBackswing, 1);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendBackToBasics:
-						addPerk(this.Const.Perks.PerkDefs.crAnchor, 1);
-						addPerk(this.Const.Perks.PerkDefs.crBattlerhaposdy, 5);
+						this.addPerk(this.Const.Perks.PerkDefs.crAnchor, 1);
+						this.addPerk(this.Const.Perks.PerkDefs.crBattlerhaposdy, 5);
 						continue;
 					// replace perks here
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.HoldOut:
