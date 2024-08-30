@@ -12,6 +12,9 @@ Added an actual description instead of it having the perk one
 ...\mod_sellswords\config\z_background_perks.nut
 Fixed event bros not getting their background perk
 
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+Reverted the perk addition system since it was causing issues
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.1 changes
