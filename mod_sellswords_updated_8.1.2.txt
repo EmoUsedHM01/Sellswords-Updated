@@ -1,6 +1,7 @@
 8.1.2 changes
 
-...
+...\scripts\skills\racial\dryad_racial.nut
+Changed the switch case to an if check to stop DamageType errors
 
 ----------------------------------------------------------------------------------------------------------------------------
 

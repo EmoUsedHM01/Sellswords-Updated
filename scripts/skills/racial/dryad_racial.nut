@@ -20,9 +20,7 @@ this.dryad_racial <- this.inherit("scripts/skills/skill", {
 	function onAdded()
 	{
 		if (!this.m.IsNew)
-		{
 			return;
-		}
 
 		local b = this.getContainer().getActor().getBaseProperties();
 		b.Armor[0] += this.m.BonusArmor;
@@ -43,44 +41,30 @@ this.dryad_racial <- this.inherit("scripts/skills/skill", {
 	
 	function onBeforeDamageReceived( _attacker, _skill, _hitInfo, _properties )
 	{
-		switch(_hitInfo.DamageType)
+		if (_hitInfo.DamageType == ::Const.Damage.DamageType.Piercing)
 		{
-		case this.Const.Damage.DamageType.Piercing:
-		if (_skill == null)
-		{
-			_properties.DamageReceivedRegularMult *= 0.25;
-		}
-		else if (_skill.isRanged())
-		{
-			local weapon = _skill.getItem();
-
-			if (weapon != null && weapon.isItemType(this.Const.Items.ItemType.Weapon))
+			if (_skill == null)
+				_properties.DamageReceivedRegularMult *= 0.25;
+			else if (_skill.isRanged())
 			{
-				if (weapon.isWeaponType(this.Const.Items.WeaponType.Bow) || weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow))
+				local weapon = _skill.getItem();
+
+				if (weapon != null && weapon.isItemType(this.Const.Items.ItemType.Weapon))
 				{
-					_properties.DamageReceivedRegularMult *= 0.25;
-				}
-				else if (weapon.isWeaponType(this.Const.Items.WeaponType.Throwing))
-				{
-					_properties.DamageReceivedRegularMult *= 0.5;
+					if (weapon.isWeaponType(this.Const.Items.WeaponType.Bow) || weapon.isWeaponType(this.Const.Items.WeaponType.Crossbow))
+						_properties.DamageReceivedRegularMult *= 0.25;
+					else if (weapon.isWeaponType(this.Const.Items.WeaponType.Throwing))
+						_properties.DamageReceivedRegularMult *= 0.5;
+					else
+						_properties.DamageReceivedRegularMult *= 0.5;
 				}
 				else
-				{
-					_properties.DamageReceivedRegularMult *= 0.5;
-				}
-			}
-			else
-			{
-				_properties.DamageReceivedRegularMult *= 0.2;
+					_properties.DamageReceivedRegularMult *= 0.2;
 			}
 		}
-		break;
 
-		case this.Const.Damage.DamageType.Burning:
+		if (_hitInfo.DamageType == ::Const.Damage.DamageType.Burning)
 			_properties.DamageReceivedRegularMult *= 2.0;
-		break;
-		}
 	}
 
 });
-
