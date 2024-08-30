@@ -9,6 +9,9 @@ Remove the hook for fluid weapon to fix the negative ini problem - Breaky
 ...\scripts\skills\actives\zcr_charge.nut
 Added an actual description instead of it having the perk one
 
+...\mod_sellswords\config\z_background_perks.nut
+Fixed event bros not getting their background perk
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.1 changes

@@ -14,35 +14,6 @@ function setupBackground(classPath, perkScripts, perkDefs)
 		{
 			__original();
 
-			if (!this.m.IsNew)
-				return;
-
-			local addPerk = function ( _perk, _row = 0, isRefundable = false)
-			{
-				local hasRow = false;
-				local direction = -1;
-				local row = _row;
-				while (row >= 0 && row <= 6)
-				{
-					if (this.m.CustomPerkTree[row].len() < 13)
-					{
-						hasRow = true;
-						break;
-					}
-
-					row += direction;
-
-					if (row == -1)
-					{
-						row = _row;
-						direction = 1;
-					}
-				}
-
-				row = hasRow ? this.Math.max(0, this.Math.min(row, 6)) : _row;
-				this.addPerk(_perk, row, isRefundable);
-			}
-
 			foreach (perkDef in perkDefs)
 				addPerk(perkDef.def, perkDef.level, perkDef.optional);
 		}
