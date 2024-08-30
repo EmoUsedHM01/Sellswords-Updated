@@ -3,6 +3,9 @@
 ...\scripts\skills\racial\dryad_racial.nut
 Changed the switch case to an if check to stop DamageType errors
 
+...\mod_sellswords\hooks_ptr\skills\perks\perk_ptr_fluid_weapon.nut
+Remove the hook for fluid weapon to fix the negative ini problem - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.1 changes
