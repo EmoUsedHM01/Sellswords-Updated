@@ -8,7 +8,7 @@ this.zcr_charge <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.zcr_charge";
 		this.m.Name = "Charge";
-		this.m.Description = this.Const.Strings.PerkDescription.crAudaciouscharge;
+		this.m.Description = "Charge at an enemy up to 2 tiles away, attacking them in the process.";
 		this.m.Icon = "skills/cr_charge.png";
 		this.m.IconDisabled = "skills/cr_charge_sw.png";
 		this.m.Overlay = "horse_charge";
