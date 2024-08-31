@@ -3,6 +3,9 @@
 ...\scripts\skills\perks\perk_crAudaciouscharge.nut
 Forgot to add the perk addition fix to Charge
 
+...\scripts\skills\perks\perk_armor_mastery_cloth.nut
+Fixed bad function params causing you to always activate even outside of enemy ZoC
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.2 changes

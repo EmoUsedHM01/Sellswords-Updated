@@ -219,7 +219,11 @@ this.perk_armor_mastery_cloth <- this.inherit("scripts/skills/skill", {
 	function onTurnStart()
 	{
 		local actor = this.getContainer().getActor();
-		if (this.enemyCheck == false || actor == null || actor.getCurrentProperties().IsStunned || (actor.getCurrentProperties().IsRooted && !actor.getSkills().getSkillByID("perk.legend_escape_artist")))
+
+		if (this.enemyCheck() == false || actor == null || actor.getCurrentProperties().IsStunned)
+			return;
+
+		if (actor.getCurrentProperties().IsRooted && !actor.getSkills().getSkillByID("perk.legend_escape_artist"))
 			return;
 
 		local currentTile = actor.getTile();
