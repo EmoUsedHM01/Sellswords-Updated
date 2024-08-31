@@ -1,6 +1,7 @@
 8.1.4 changes
 
-...
+...\mod_sellswords\config\z_background_perks.nut
+Fixed an issue with Barb event bro
 
 ----------------------------------------------------------------------------------------------------------------------------
 
