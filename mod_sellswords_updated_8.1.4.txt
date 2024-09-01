@@ -20,8 +20,14 @@ Fixed small syntax error - Breaky
 ...\mod_sellswords\hooks\items\tools\fire_bomb_item.nut
 ...\mod_sellswords\hooks\items\tools\holy_water_item.nut
 ...\mod_sellswords\hooks\items\tools\smoke_bomb_item.nut
+...\mod_sellswords\hooks\skills\actives\throw_acid_flask.nut
+...\mod_sellswords\hooks\skills\actives\throw_daze_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_fire_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_holy_water.nut
+...\mod_sellswords\hooks\skills\actives\throw_smoke_bomb_skill.nut
 ...\scripts\items\tools\acid_flask_item_02.nut
-Updated the flask items
+...\scripts\skills\actives\throw_acid_flask_02.nut
+Updated the flask items and associated skills
 
 ----------------------------------------------------------------------------------------------------------------------------
 

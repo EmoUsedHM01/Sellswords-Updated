@@ -11,7 +11,7 @@
 				id = 8,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] bottle of holy water left"
+				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] use left"
 			});
 		}
 		else
@@ -20,13 +20,13 @@
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]No bottles of holy water left[/color]"
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Has been used[/color]"
 			});
 		}
-		
+
 		return ret;
 	}
-	
+
 	q.isHidden <- function()
 	{
 		return this.getContainer().getActor().getCurrentProperties().IsSpecializedInNets;
@@ -42,9 +42,7 @@
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 
 		if (item == null)
-		{
 			return 0;
-		}
 
 		return item.getAmmo();
 	}
@@ -54,11 +52,9 @@
 		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 
 		if (item != null)
-		{
 			item.consumeAmmo();
-		}
 	}
-	
+
 	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local targetEntity = _targetTile.getEntity();
@@ -75,11 +71,11 @@
 
 		this.consumeAmmo();
 	}
-	
+
 	q.onAfterUpdate = @( __original ) function( _properties )
 	{
 		this.m.FatigueCostMult = (_properties.IsSpecializedInThrowing || _properties.IsSpecializedInNets) ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
-		this.m.MaxRange = _properties.IsSpecializedInNets ? 4 : 3;
+		this.m.MaxRange = _properties.IsSpecializedInNets ? 5 : 3;
 	}
 
 });

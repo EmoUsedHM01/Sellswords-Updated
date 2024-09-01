@@ -43,58 +43,87 @@ this.throw_acid_flask_02 <- this.inherit("scripts/skills/skill", {
 		this.m.ProjectileTimeScale = 1.5;
 		this.m.IsProjectileRotated = false;
 	}
-	
-	function isHidden()
-	{
-		return this.getContainer().getActor().getCurrentProperties().IsSpecializedInNets;
-	}	
 
 	function getTooltip()
 	{
 		local ret = this.getDefaultUtilityTooltip();
+		local ammo = this.getAmmo();
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces the target\'s armor by [color=" + this.Const.UI.Color.DamageValue + "]25%[/color] each turn for 3 turns."
+			text = "Reduces the target\'s armor by [color=" + this.Const.UI.Color.DamageValue + "]25%[/color] each turn for 3 turns"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has a [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] chance to hit bystanders at the same or lower height level as well."
+			text = "Has a [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] chance to hit bystanders at the same or lower height level as well"
 		});
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
 			text = "Lasts for at least [color=" + this.Const.UI.Color.PositiveValue + "]" + 2 + "[/color] turns"
-		});		
+		});
+		if (ammo > 0)
+		{
+			ret.push({
+				id = 8,
+				type = "text",
+				icon = "ui/icons/ammo.png",
+				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] use left"
+			});
+		}
+		else
+		{
+			ret.push({
+				id = 8,
+				type = "text",
+				icon = "ui/tooltips/warning.png",
+				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Has been used[/color]"
+			});
+		}
 		return ret;
+	}
+
+	function isUsable()
+	{
+		return !this.Tactical.isActive() || this.skill.isUsable() && this.getAmmo() > 0 && !this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions());
+	}
+
+	function getAmmo()
+	{
+		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
+
+		if (item == null)
+			return 0;
+
+		return item.getAmmo();
+	}
+
+	function consumeAmmo()
+	{
+		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
+
+		if (item != null)
+			item.consumeAmmo();
 	}
 
 	function applyAcid( _target )
 	{
 		if (_target.getFlags().has("lindwurm"))
-		{
 			return;
-		}
 
 		if ((_target.getFlags().has("body_immune_to_acid") || _target.getArmor(this.Const.BodyPart.Body) <= 0) && (_target.getFlags().has("head_immune_to_acid") || _target.getArmor(this.Const.BodyPart.Head) <= 0))
-		{
 			return;
-		}
 
 		local poison = _target.getSkills().getSkillByID("effects.acid_strong");
 
 		if (poison == null)
-		{
 			_target.getSkills().add(this.new("scripts/skills/effects/acid_effect_strong"));
-		}
 		else
-		{
 			poison.resetTime();
-		}
 
 		this.spawnIcon("status_effect_78", _target.getTile());
 	}
@@ -102,40 +131,37 @@ this.throw_acid_flask_02 <- this.inherit("scripts/skills/skill", {
 	function onVerifyTarget( _originTile, _targetTile )
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
-		{
 			return false;
-		}
 
 		if (_originTile.Level + 1 < _targetTile.Level)
-		{
 			return false;
-		}
 
 		return true;
 	}
 
 	function onAfterUpdate( _properties )
 	{
-		this.m.FatigueCostMult = _properties.IsSpecializedInThrowing ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+		this.m.FatigueCostMult = (_properties.IsSpecializedInThrowing || _properties.IsSpecializedInNets) ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+		this.m.MaxRange = _properties.IsSpecializedInNets ? 5 : 3;
 	}
 
 	function onUse( _user, _targetTile )
 	{
-		local targetEntity = _targetTile.getEntity();
-
 		if (this.m.IsShowingProjectile && this.m.ProjectileType != 0)
 		{
-			local flip = !this.m.IsProjectileRotated && targetEntity.getPos().X > _user.getPos().X;
+			local flip = !this.m.IsProjectileRotated && _targetTile.Pos.X > _user.getPos().X;
 
-			if (_user.getTile().getDistanceTo(targetEntity.getTile()) >= this.Const.Combat.SpawnProjectileMinDist)
+			if (_user.getTile().getDistanceTo(_targetTile) >= this.Const.Combat.SpawnProjectileMinDist)
 			{
-				this.Tactical.spawnProjectileEffect(this.Const.ProjectileSprite[this.m.ProjectileType], _user.getTile(), targetEntity.getTile(), 1.0, this.m.ProjectileTimeScale, this.m.IsProjectileRotated, flip);
+				this.Tactical.spawnProjectileEffect(this.Const.ProjectileSprite[this.m.ProjectileType], _user.getTile(), _targetTile, 1.0, this.m.ProjectileTimeScale, this.m.IsProjectileRotated, flip);
 			}
 		}
 
-		_user.getItems().unequip(_user.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand));
-		this.Time.scheduleEvent(this.TimeUnit.Real, 200, this.onApplyAcid.bindenv(this), {
+		this.consumeAmmo();
+		
+		this.Time.scheduleEvent(this.TimeUnit.Real, 250, this.onApply.bindenv(this), {
 			Skill = this,
+			User = _user,
 			TargetTile = _targetTile
 		});
 	}
@@ -183,4 +209,3 @@ this.throw_acid_flask_02 <- this.inherit("scripts/skills/skill", {
 	}
 
 });
-
