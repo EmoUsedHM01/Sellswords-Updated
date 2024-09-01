@@ -32,7 +32,7 @@
 		local skills = _targetEntity.getSkills();
 		skills.removeByID("effects.shieldwall");
 		skills.removeByID("effects.spearwall");
-		skills.removeByID("effects.riposte");s
+		skills.removeByID("effects.riposte");
 
 		_targetEntity.setCurrentMovementType(this.Const.Tactical.MovementType.Involuntary);
 

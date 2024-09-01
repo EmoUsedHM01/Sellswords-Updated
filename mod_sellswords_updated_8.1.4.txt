@@ -10,7 +10,10 @@ Added Minstrel clause for Breaky
 Fixed tooltip breaking from previous changes - Breaky
 
 ...\scripts\scenarios\world\sellswords_scenario.nut
-Fixed small typo
+Fixed small typo - Breaky
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_smackdown.nut
+Fixed small syntax error - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
