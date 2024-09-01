@@ -40,6 +40,9 @@ Fixed the MC hook for the Dryad beasts
 ...\mod_sellswords\hooks\factions\actions\send_beast_roamers_action.nut
 Adjusting the party description to read better
 
+...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
+Gave the Dryad Archers footwork
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.3 changes
