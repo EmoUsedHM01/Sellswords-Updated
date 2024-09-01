@@ -29,6 +29,17 @@ Fixed small syntax error - Breaky
 ...\scripts\skills\actives\throw_acid_flask_02.nut
 Updated the flask items and associated skills
 
+...\brushes\dryad_entities.brush
+...\gfx\dryad_entities.png
+Fixed the enemy entity for the Dryads on the world map
+
+...\scripts\entity\tactical\enemies\dryad_snake.nut
+...\scripts\entity\tactical\enemies\dryad_wolf.nut
+Fixed the MC hook for the Dryad beasts
+
+...\mod_sellswords\hooks\factions\actions\send_beast_roamers_action.nut
+Adjusting the party description to read better
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.3 changes
