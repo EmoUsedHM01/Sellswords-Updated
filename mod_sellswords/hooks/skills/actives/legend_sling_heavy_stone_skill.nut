@@ -4,7 +4,7 @@
 	{
 		local ret = this.getRangedTooltip(this.getDefaultTooltip());
 
-		if (_properties.IsSpecializedInStaffStun == true)
+		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInStaffStun == true)
 		{
 			ret.push({
 				id = 7,

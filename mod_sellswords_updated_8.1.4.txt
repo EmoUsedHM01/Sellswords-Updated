@@ -6,6 +6,12 @@ Fixed an issue with Barb event bro
 ...\mod_sellswords\config\z_background_perks.nut
 Added Minstrel clause for Breaky
 
+...\mod_sellswords\hooks\skills\actives\legend_sling_heavy_stone_skill.nut
+Fixed tooltip breaking from previous changes - Breaky
+
+...\scripts\scenarios\world\sellswords_scenario.nut
+Fixed small typo
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.3 changes
