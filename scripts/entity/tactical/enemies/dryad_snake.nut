@@ -280,25 +280,10 @@ this.dryad_snake <- this.inherit("scripts/entity/tactical/actor", {
 
 		if (::Is_MC_Exist)
 		{
-			local chosenSkills = [];
-			local allSkills = [
-				"scripts/skills/perks/perk_nggh_serpent_bite",
-				"scripts/skills/perks/perk_nggh_serpent_drag",
-				"scripts/skills/perks/perk_nggh_serpent_giant",
-				"scripts/skills/perks/perk_nggh_serpent_venom"
-			];
-
-			// Randomly select two different skills
-			while (chosenSkills.len() < 2)
-			{
-				local r = this.Math.rand(0, allSkills.len() - 1);
-
-				if (chosenSkills.find(allSkills[r]) == -1) // Ensure the skill hasn't been picked yet
-				{
-					chosenSkills.push(allSkills[r]);
-					this.m.Skills.add(::new(allSkills[r]));
-				}
-			}
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_nggh_serpent_bite"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_nggh_serpent_drag"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_nggh_serpent_giant"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_nggh_serpent_venom"));
 		}
 	}
 
