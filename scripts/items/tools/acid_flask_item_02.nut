@@ -5,15 +5,18 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.create();
 		this.m.ID = "weapon.acid_flask_02";
 		this.m.Name = "Stollwurm's Acid Flask";
-		this.m.Description = "A flask filled with the concentrate of a Stollwurm\'s acidic blood. It is highly corrosive to many materials and burns through armor quickly and is more robust than normal acid flasks. Can be thrown at short ranges.";
+		this.m.Description = "A flask filled with the concentrate of a Stollwurm\'s acidic blood. It is highly corrosive to many materials and burns through armor quickly and is more robust than normal acid flasks. Can be thrown at short ranges. Is refilled after each battle, consuming 30 ammunition per use.";
 		this.m.IconLarge = "tools/acid_flask_02.png";
 		this.m.Icon = "tools/acid_flask_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Offhand;
-		this.m.ItemType = this.Const.Items.ItemType.Tool;
+		this.m.ItemType = this.Const.Items.ItemType.Ammo | this.Const.Items.ItemType.Tool;
 		this.m.AddGenericSkill = true;
 		this.m.ShowArmamentIcon = true;
-		this.m.ArmamentIcon = "icon_acid_flask_01";
-		this.m.Value = 1600;
+		this.m.ArmamentIcon = "icon_acid_flask_02";
+		this.m.Value = 3400;
+		this.m.Ammo = 1;
+		this.m.AmmoMax = 1;
+		this.m.AmmoCost = 30;
 		this.m.RangeMax = 3;
 		this.m.StaminaModifier = 0;
 		this.m.IsDroppedAsLoot = true;
@@ -103,16 +106,7 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 	function onEquip()
 	{
 		this.weapon.onEquip();
-		local skill = this.new("scripts/skills/actives/throw_acid_flask_02");
-		skill.setItem(this);
-		this.addSkill(skill);
-		skill = this.new("scripts/skills/actives/throw_acid_flask_pro_02");
-		skill.setItem(this);
-		this.addSkill(skill);		
-		skill = this.new("scripts/skills/actives/throw_acid_flask_focus_02");
-		skill.setItem(this);
-		this.addSkill(skill);		
+		this.addSkill(this.new("scripts/skills/actives/throw_acid_flask_02"));
 	}
 
 });
-

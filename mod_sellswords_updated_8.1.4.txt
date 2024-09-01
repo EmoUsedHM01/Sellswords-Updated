@@ -15,6 +15,14 @@ Fixed small typo - Breaky
 ...\mod_sellswords\hooks\skills\perks\perk_legend_smackdown.nut
 Fixed small syntax error - Breaky
 
+...\mod_sellswords\hooks\items\tools\acid_flask_item.nut
+...\mod_sellswords\hooks\items\tools\daze_bomb_item.nut
+...\mod_sellswords\hooks\items\tools\fire_bomb_item.nut
+...\mod_sellswords\hooks\items\tools\holy_water_item.nut
+...\mod_sellswords\hooks\items\tools\smoke_bomb_item.nut
+...\scripts\items\tools\acid_flask_item_02.nut
+Updated the flask items
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.3 changes
