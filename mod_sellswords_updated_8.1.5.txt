@@ -1,6 +1,7 @@
 8.1.5 changes
 
-...
+...\scripts\skills\backgrounds\crsellsword_background.nut
+Added a random level variation
 
 ----------------------------------------------------------------------------------------------------------------------------
 
