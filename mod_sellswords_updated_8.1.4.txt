@@ -43,6 +43,22 @@ Adjusting the party description to read better
 ...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
 Gave the Dryad Archers footwork
 
+...\mod_sellswords\hooks\items\tools\acid_flask_item.nut
+...\mod_sellswords\hooks\items\tools\daze_bomb_item.nut
+...\mod_sellswords\hooks\items\tools\fire_bomb_item.nut
+...\mod_sellswords\hooks\items\tools\holy_water_item.nut
+...\mod_sellswords\hooks\items\tools\smoke_bomb_item.nut
+Rewrite tooltips - Breaky
+
+...\scripts\items\tools\acid_flask_item_02.nut
+Rewrite tooltips and add functions necessary for this to be a ammo based consumable - Breaky
+
+...\mod_sellswords\hooks\states\asset_manager.nut
+Add clause for bomb and flasks to require Alchemy retinue to refill ammo - Breaky
+
+...\mod_sellswords\hooks\retinue\alchemist_follower.nut
+Update tooltip of what the retinue Alchemy retinue does - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.3 changes
