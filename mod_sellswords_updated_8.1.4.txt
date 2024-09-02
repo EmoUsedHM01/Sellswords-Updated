@@ -31,7 +31,7 @@ Updated the flask items and associated skills
 
 ...\brushes\dryad_entities.brush
 ...\gfx\dryad_entities.png
-Fixed the enemy entity for the Dryads on the world map
+Fixed the enemy entity for the Dryads on the world map and dead cloth layers
 
 ...\scripts\entity\tactical\enemies\dryad_snake.nut
 ...\scripts\entity\tactical\enemies\dryad_wolf.nut
