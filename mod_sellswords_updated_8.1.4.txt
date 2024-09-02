@@ -59,6 +59,14 @@ Add clause for bomb and flasks to require Alchemy retinue to refill ammo - Break
 ...\mod_sellswords\hooks\retinue\alchemist_follower.nut
 Update tooltip of what the retinue Alchemy retinue does - Breaky
 
+...\mod_sellswords\hooks\skills\actives\throw_acid_flask.nut
+...\mod_sellswords\hooks\skills\actives\throw_daze_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_fire_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_holy_water.nut
+...\mod_sellswords\hooks\skills\actives\throw_smoke_bomb_skill.nut
+...\scripts\skills\actives\throw_acid_flask_02.nut
+Add #setItem and consume/check ammo directly from the set item - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.3 changes

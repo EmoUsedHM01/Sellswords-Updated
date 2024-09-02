@@ -1,5 +1,11 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/throw_smoke_bomb_skill", function( q ) {
 
+	q.m.Item = null;
+	q.setItem <- function( _i )
+	{
+		this.m.Item = this.WeakTableRef(_i);
+	}
+
 	q.getTooltip = @( __original ) function()
 	{
 		local ret = __original();
@@ -34,22 +40,17 @@
 
 	q.getAmmo <- function()
 	{
-		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
-
-		if (item == null)
+		if (this.m.Item == null && this.m.Item.isNull())
 			return 0;
 
-		return item.getAmmo();
+		return this.m.Item.getAmmo();
 	}
 
 	q.consumeAmmo <- function()
 	{
-		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
-
-		if (item != null)
-			item.consumeAmmo();
+		if (this.m.Item != null && !this.m.Item.isNull())
+			this.m.Item.consumeAmmo();
 	}
-
 	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		if (this.m.IsShowingProjectile && this.m.ProjectileType != 0)

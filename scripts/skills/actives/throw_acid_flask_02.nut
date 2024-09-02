@@ -1,5 +1,13 @@
 this.throw_acid_flask_02 <- this.inherit("scripts/skills/skill", {
-	m = {},
+	m = {
+		Item = null
+	},
+
+	function setItem( _i )
+	{
+		this.m.Item = this.WeakTableRef(_i);
+	}
+
 	function create()
 	{
 		this.m.ID = "actives.throw_acid_flask_02";
@@ -94,20 +102,16 @@ this.throw_acid_flask_02 <- this.inherit("scripts/skills/skill", {
 
 	function getAmmo()
 	{
-		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
-
-		if (item == null)
+		if (this.m.Item == null && this.m.Item.isNull())
 			return 0;
 
-		return item.getAmmo();
+		return this.m.Item.getAmmo();
 	}
 
 	function consumeAmmo()
 	{
-		local item = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
-
-		if (item != null)
-			item.consumeAmmo();
+		if (this.m.Item != null && !this.m.Item.isNull())
+			this.m.Item.consumeAmmo();
 	}
 
 	function applyAcid( _target )
