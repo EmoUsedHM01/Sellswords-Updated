@@ -11,6 +11,14 @@ Added a Warden perk icon that actually looks like the Warden
 ...\gfx\ui\perks\legend_vala_spiritual_bond_sw.png
 Updated Spiritual Bond visuals too
 
+...\brushes\chiru_weapons.brush
+...\brushes\sellswords.brush
+...\gfx\chiru_weapons.png
+...\gfx\sellswords.png
+...\gfx\ui\items\weapons\melee\ssu_ghost_spear.png
+...\gfx\ui\items\weapons\melee\ssu_ghost_spear_70x70.png
+Updated and added visuals for the Ghost Spear
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.4 changes
