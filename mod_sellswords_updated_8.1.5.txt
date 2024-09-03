@@ -7,6 +7,10 @@ Added a random level variation
 ...\gfx\ui\perks\legend_vala_warden_sw.png
 Added a Warden perk icon that actually looks like the Warden
 
+...\gfx\ui\perks\legend_vala_spiritual_bond.png
+...\gfx\ui\perks\legend_vala_spiritual_bond_sw.png
+Updated Spiritual Bond visuals too
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.4 changes
