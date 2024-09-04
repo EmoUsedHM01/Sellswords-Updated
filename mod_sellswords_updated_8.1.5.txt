@@ -19,6 +19,9 @@ Updated Spiritual Bond visuals too
 ...\gfx\ui\items\weapons\melee\ssu_ghost_spear_70x70.png
 Updated and added visuals for the Ghost Spear
 
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+Update #attachPerks because bros with custom perk trees from events weren't receiving perks added by SSU - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.1.4 changes

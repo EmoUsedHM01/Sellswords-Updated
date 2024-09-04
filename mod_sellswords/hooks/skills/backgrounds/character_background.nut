@@ -148,19 +148,6 @@
 			actor.m.XP = this.Const.LevelXP[this.m.Level - 1];
 		}
 	}
-
-});
-
-::Mod_Sellswords.HooksMod.hookTree("scripts/skills/backgrounds/character_background", function ( q ) {
-
-	q.create = @(__original) function()
-	{
-		__original();
-
-		if (this.m.CustomPerkTree)
-			attachPerks();
-	}
-
 	q.attachPerks <- function()
 	{
 		for ( local i = 0; i < this.m.CustomPerkTree.len(); i++ )
@@ -171,49 +158,49 @@
 				{
 					// attach new perks based on perk tree here
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendSmallTarget:
-						this.addPerk(this.Const.Perks.PerkDefs.ArmorMasteryCloth, 3);
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryCloth);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Nimble:
-						this.addPerk(this.Const.Perks.PerkDefs.ArmorMasteryLight, 3);
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryLight);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendLithe:
-						this.addPerk(this.Const.Perks.PerkDefs.ArmorMasteryMedium, 3);
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryMedium);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.BattleForged:
-						this.addPerk(this.Const.Perks.PerkDefs.ArmorMasteryHeavy, 3);
+						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryHeavy);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendMuscularity:
-						this.addPerk(this.Const.Perks.PerkDefs.crAudaciouscharge, 2);
-						this.addPerk(this.Const.Perks.PerkDefs.crGrandslam, 6);
+						this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crAudaciouscharge);
+						this.m.CustomPerkTree[6].push(this.Const.Perks.PerkDefs.crGrandslam);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendSpecFists:
-						this.addPerk(this.Const.Perks.PerkDefs.LegendUnarmedTraining, 6);
+						this.m.CustomPerkTree[6].push(this.Const.Perks.PerkDefs.LegendUnarmedTraining);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecAxe:
-						this.addPerk(this.Const.Perks.PerkDefs.crHackSPM, 5);
+						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crHackSPM);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecBow:
-						this.addPerk(this.Const.Perks.PerkDefs.crParthianshot, 4);
+						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crParthianshot);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecPolearm:
-						this.addPerk(this.Const.Perks.PerkDefs.crretrofithooks, 0);
+						this.m.CustomPerkTree[0].push(this.Const.Perks.PerkDefs.crretrofithooks);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecDagger:
-						this.addPerk(this.Const.Perks.PerkDefs.crFoB, 4);
+						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crFoB);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.NineLives:
-						this.addPerk(this.Const.Perks.PerkDefs.crPerseverance, 4);
-						this.addPerk(this.Const.Perks.PerkDefs.crresilient, 2);
+						this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crresilient);
+						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crPerseverance);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Rebound:
-						this.addPerk(this.Const.Perks.PerkDefs.crbeforethestorm, 5);
+						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crbeforethestorm);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Footwork:
-						this.addPerk(this.Const.Perks.PerkDefs.crBackswing, 1);
+						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crBackswing);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendBackToBasics:
-						this.addPerk(this.Const.Perks.PerkDefs.crAnchor, 1);
-						this.addPerk(this.Const.Perks.PerkDefs.crBattlerhaposdy, 5);
+						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crAnchor);
+						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crBattlerhaposdy);
 						continue;
 					// replace perks here
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.HoldOut:
@@ -229,5 +216,14 @@
 			}
 		}
 	}
+});
 
+::Mod_Sellswords.HooksMod.hookTree("scripts/skills/backgrounds/character_background", function ( q ) {
+	q.create = @(__original) function()
+	{
+		__original();
+
+		if (this.m.CustomPerkTree)
+			attachPerks();
+	}
 });
