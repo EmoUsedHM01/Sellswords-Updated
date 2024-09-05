@@ -142,13 +142,6 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 
 	function onUpdateHiringRoster( _roster )
 	{
-		this.addBroToRoster(_roster, "ssu_dryad_grunt_background", 6);
-		this.addBroToRoster(_roster, "legend_druid_background", 8);
-		this.addBroToRoster(_roster, "ssu_dryad_warrior_background", 8);
-		this.addBroToRoster(_roster, "ssu_dryad_archer_background", 8);
-		this.addBroToRoster(_roster, "ssu_dryad_tamer_background", 12);
-		this.addBroToRoster(_roster, "ssu_dryad_shaman_background", 12);
-
 		local garbage = [];
 		local bros = _roster.getAll();
 		foreach (b, bro in bros)
@@ -163,6 +156,13 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		{
 			_roster.remove(g);
 		}
+
+		this.addBroToRoster(_roster, "ssu_dryad_grunt_background", 6);
+		this.addBroToRoster(_roster, "legend_druid_background", 8);
+		this.addBroToRoster(_roster, "ssu_dryad_warrior_background", 8);
+		this.addBroToRoster(_roster, "ssu_dryad_archer_background", 8);
+		this.addBroToRoster(_roster, "ssu_dryad_tamer_background", 12);
+		this.addBroToRoster(_roster, "ssu_dryad_shaman_background", 12);
 	}
 	
 	function onInit()
