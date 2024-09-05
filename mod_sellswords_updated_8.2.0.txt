@@ -3,6 +3,9 @@
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 Update #attachPerks because bros with custom perk trees from events weren't receiving perks added by SSU - Breaky
 
+...\scripts\scenarios\world\ssu_dryad_scenario.nut
+Updated the hiring roster for the Dryad Origin
+
 ...\scripts\skills\backgrounds\crsellsword_background.nut
 Added a random level variation
 

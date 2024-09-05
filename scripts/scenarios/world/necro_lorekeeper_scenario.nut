@@ -264,6 +264,11 @@ this.necro_lorekeeper_scenario <- this.inherit("scripts/scenarios/world/starting
 			if (bro.getSkills().getSkillByID("trait.hate_undead"))
 				garbage.push(bro);
 		}
+
+		foreach( g in garbage )
+		{
+			_roster.remove(g);
+		}
 	}
 
 });

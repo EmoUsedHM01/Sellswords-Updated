@@ -148,6 +148,21 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		this.addBroToRoster(_roster, "ssu_dryad_archer_background", 8);
 		this.addBroToRoster(_roster, "ssu_dryad_tamer_background", 12);
 		this.addBroToRoster(_roster, "ssu_dryad_shaman_background", 12);
+
+		local garbage = [];
+		local bros = _roster.getAll();
+		foreach (b, bro in bros)
+		{
+			if (!(bro.getBackground().isBackgroundType(this.Const.BackgroundType.Ranger) || bro.getBackground().isBackgroundType(this.Const.BackgroundType.Druid)))
+			{
+				garbage.push(bro);
+			}
+		}
+
+		foreach( g in garbage )
+		{
+			_roster.remove(g);
+		}
 	}
 	
 	function onInit()
