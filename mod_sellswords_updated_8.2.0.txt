@@ -1,4 +1,4 @@
-8.1.5 changes
+8.2.0 changes
 
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 Update #attachPerks because bros with custom perk trees from events weren't receiving perks added by SSU - Breaky
