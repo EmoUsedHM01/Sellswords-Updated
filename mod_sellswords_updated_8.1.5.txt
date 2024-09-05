@@ -1,5 +1,8 @@
 8.1.5 changes
 
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+Update #attachPerks because bros with custom perk trees from events weren't receiving perks added by SSU - Breaky
+
 ...\scripts\skills\backgrounds\crsellsword_background.nut
 Added a random level variation
 
@@ -15,12 +18,34 @@ Updated Spiritual Bond visuals too
 ...\brushes\sellswords.brush
 ...\gfx\chiru_weapons.png
 ...\gfx\sellswords.png
+...\gfx\skills\ssu_ghost_spear_jab.png
+...\gfx\skills\ssu_ghost_spear_jab_sw.png
+...\gfx\skills\ssu_ghost_spear_reap.png
+...\gfx\skills\ssu_ghost_spear_reap_sw.png
+...\gfx\skills\ssu_ghost_spear_strike.png
+...\gfx\skills\ssu_ghost_spear_strike_sw.png
 ...\gfx\ui\items\weapons\melee\ssu_ghost_spear.png
 ...\gfx\ui\items\weapons\melee\ssu_ghost_spear_70x70.png
-Updated and added visuals for the Ghost Spear
+Added the gfx for Kriegsgeist stuff
 
-...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
-Update #attachPerks because bros with custom perk trees from events weren't receiving perks added by SSU - Breaky
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_always_use.nut
+...\mod_sellswords\hooks\ai\tactical\behaivors\ai_attack_default.nut
+...\scripts\ai\tactical\agents\ghost_fragment_agent.nut
+...\scripts\ai\tactical\agents\ghost_praetorian_boss_agent.nut
+...\scripts\ai\tactical\behaviors\ai_ghost_passive_teleport.nut
+...\scripts\ai\tactical\behaviors\ai_ghost_teleport.nut
+...\scripts\ai\tactical\behaviors\ai_spawn_ghost_fragment.nut
+...\scripts\entity\tactical\enemies\ghost_praetorian_boss.nut
+...\scripts\entity\tactical\enemies\ghost_praetorian_boss_fragment.nut
+...\scripts\events\events\kriegsgeist_castle_enter_event.nut
+...\scripts\items\weapons\special\ssu_legendary_spear.nut
+...\scripts\skills\actives\ghost_collect_fragment_skill.nut
+...\scripts\skills\actives\ghost_teleport_skill.nut
+...\scripts\skills\actives\ssu_ghost_spear_strike.nut
+...\scripts\skills\racial\ghastly_touch_racial.nut
+...\scripts\skills\racial\ghost_boss_stats_changer.nut
+...\scripts\skills\racial\ghost_knight_boss_racial.nut
+Added the Kriegsgeist stuff
 
 ----------------------------------------------------------------------------------------------------------------------------
 

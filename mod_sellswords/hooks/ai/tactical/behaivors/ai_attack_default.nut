@@ -10,7 +10,8 @@
 		"actives.crstrike",
 		"actives.earth_hammer_smite",
 		"actives.ssu_bone_cleaver_slash",
-		"actives.ssu_bone_cleaver_flurry"
+		"actives.ssu_bone_cleaver_flurry",
+		"actives.ssu_ghost_spear_strike"
 	])
 
 });
