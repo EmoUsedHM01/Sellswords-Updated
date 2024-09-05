@@ -315,6 +315,12 @@ else
 ::Const.Strings.PerkDescription.Duelist = "Become one with your weapon and go for the weak spots!\n\n[color=#4f1800][u]Passive:[/u][/color]\n• When wielding a one handed weapon and your off hand is empty or you're holding an offhand throwable item, an extra [color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] of damage ignores armor.\n\n• Bucklers and parrying daggers gain half of this bonus.\n\n• An extra [color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] of damage ignores armor when using Two Handed or Throwing Weapons and having the [color=" + ::Const.UI.Color.Perk + "]Grandslam[/color] perk, but will reduce Armor Penetration by [color=" + this.Const.UI.Color.NegativeValue + "]10%[/color] for One Handed weapons.\n\n• Having [color=" + ::Const.UI.Color.Perk + "]Grandslam[/color] also increases Armor penetration and damage by [color=" + ::Const.UI.Color.PositiveValue + "]50%[/color] when Unarmed.",
 ::Const.Perks.PerkDefObjects[::Const.Perks.PerkDefs.Duelist].Tooltip = ::Const.Strings.PerkDescription.Duelist;
 
+::Const.Strings.PerkDescription.LegendConservation = "Conduct profane rituals meant to stave off the passage of time, further preserving the means of your craft.\n\n[color=#4f1800][u]Passive:[/u][/color]\n• Reduces the daily medicine cost of maintaining Human Corpses, Bones, and other Carrion by [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color].";
+::Const.Perks.PerkDefObjects[::Const.Perks.PerkDefs.LegendConservation].Tooltip = ::Const.Strings.PerkDescription.LegendConservation;
+
+::Const.Strings.PerkDescription.LegendChainLightning = "Unleash an arcing barrage of lightning!\n\n[color=#4f1800][u]Active:[/u][/color]\n• Unlocks 'Chain Lightning' skill which inflicts damage to up to 3 enemies, dealing [color=" + this.Const.UI.Color.DamageValue + "]15-30[/color] damage which ignores armor.\n\n• Requires a mystic staff.\n\n• Costs [color=" + this.Const.UI.Color.NegativeValue + "]7[/color] AP and [color=" + this.Const.UI.Color.NegativeValue + "]50[/color] Fatigue.\n• If you have the \'Staff Mastery\' perk, reduce the AP cost by 2 and the base fatigue cost by [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color].";
+::Const.Perks.PerkDefObjects[::Const.Perks.PerkDefs.LegendChainLightning].Tooltip = ::Const.Strings.PerkDescription.LegendChainLightning;
+
 
 local poleWeaponStrings = [
 	"SpecAxe",
