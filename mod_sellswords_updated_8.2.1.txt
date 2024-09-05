@@ -1,6 +1,7 @@
 8.2.1 changes
 
-...
+...\scripts\ai\tactical\behaviors\mod_ai_flying_skulls_player.nut
+Updated the inputs for the tile calculations
 
 ----------------------------------------------------------------------------------------------------------------------------
 

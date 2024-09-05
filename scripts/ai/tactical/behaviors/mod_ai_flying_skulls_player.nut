@@ -78,29 +78,40 @@ this.mod_ai_flying_skulls_player <- ::inherit("scripts/ai/tactical/behavior", {
 
 		local opponents = this.getAgent().getKnownOpponents();
 
-		foreach( t in tiles )
+		foreach (t in tiles)
 		{
 			local tile = t.Tile;
 			local score = 0.0;
 			local farthest = 9000;
 
-			foreach( target in opponents )
+			foreach (target in opponents)
 			{
-				if (target.Actor.isNull())
+				if (target == null || target.Actor.isNull())
+					continue;
+
+				if (!target.Actor.isPlacedOnMap()) // Needs this because otherwise you can get bad inputs
 					continue;
 
 				local targetTile = target.Actor.getTile();
-				local d = t.Tile.getDistanceTo(targetTile);
 
-				if (d <= 4)
-					score = score - 10.0;
+				// Check if both tiles are valid before calculating the distance
+				if (tile != null && targetTile != null)
+				{
+					local d = tile.getDistanceTo(targetTile);
 
-				if (d < farthest)
-					farthest = d;
+					if (d == null)
+						continue;
+
+					if (d <= 4)
+						score -= 10.0;
+
+					if (d < farthest)
+						farthest = d;
+				}
 			}
 
 			if (farthest > 6)
-				score = score - farthest;
+				score -= farthest;
 
 			t.Score = score;
 		}
