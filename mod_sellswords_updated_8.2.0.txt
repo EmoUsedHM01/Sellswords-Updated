@@ -47,8 +47,8 @@ Added the gfx for Kriegsgeist stuff
 ...\scripts\skills\racial\ghost_knight_boss_racial.nut
 Added the Kriegsgeist stuff
 
-...\brushes\necro_entities.brush
-...\gfx\necro_entities.png
+...\brushes\ssu_undead_entities.brush -> ...\brushes\necro_entities.brush
+...\gfx\ssu_undead_entities.png -> ...\gfx\necro_entities.png
 ...\gfx\skills\active_101.png
 ...\gfx\skills\active_101_sw.png
 ...\gfx\skills\active_213.png
