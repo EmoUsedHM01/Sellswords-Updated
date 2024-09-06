@@ -11,7 +11,7 @@
 	{
 		__original();
 
-		local actor = this.getContainer.getActor();
+		local actor = this.getContainer().getActor();
 
 		if (actor.getSkills().getSkillByID("actives.hand_to_hand"))
 			actor.getSkills().removeByID("actives.hand_to_hand");
