@@ -4,6 +4,9 @@
 ...\scripts\skills\actives\mod_raise_all_undead.nut
 Just some minor tweaks
 
+...\mod_sellswords\hooks\skills\traits\legend_fleshless_trait.nut
+Cleaned up the code to account for edge cases
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.1 changes
