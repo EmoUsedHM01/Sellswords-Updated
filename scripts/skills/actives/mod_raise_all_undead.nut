@@ -38,13 +38,32 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 	{
 		local ret = this.getDefaultUtilityTooltip();
 
+		ret.push({
+			id = 7,
+			type = "text",
+			icon = "ui/icons/vision.png",
+			text = "Has an [color=" + this.Const.UI.Color.PositiveValue + "]unlimited[/color] range."
+		});
+		ret.push({
+			id = 8,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = "Raises all suitable corpses on the map as a Wiederganger, lasts until the end of combat."
+		});
+		ret.push({
+			id = 9,
+			type = "text",
+			icon = "ui/tooltips/warning.png",
+			text = "[color=" + ::Const.UI.Color.NegativeValue + "]Can only be used once per battle.[/color]"
+		});
+
 		if (this.m.IsSpent)
 		{
 			ret.push({
-				id = 8,
+				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + ::Const.UI.Color.NegativeValue + "]Can only be used once per battle[/color] "
+				text = "[color=" + ::Const.UI.Color.NegativeValue + "]Has been spent[/color]."
 			});
 
 			return ret;
@@ -57,7 +76,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 			if (count == 1)
 			{
 				ret.push({
-					id = 8,
+					id = 11,
 					type = "text",
 					icon = "ui/icons/kills.png",
 					text = "There is [color=" + ::Const.UI.Color.PositiveValue + "]" + count + "[/color] corpse available for resurrection"
@@ -66,7 +85,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 			else if (count >= 2)
 			{
 				ret.push({
-					id = 9,
+					id = 12,
 					type = "text",
 					icon = "ui/icons/kills.png",
 					text = "There are [color=" + ::Const.UI.Color.PositiveValue + "]" + count + "[/color] corpses available for resurrection"
@@ -75,7 +94,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 			else
 			{
 				ret.push({
-					id = 10,
+					id = 13,
 					type = "text",
 					icon = "ui/tooltips/warning.png",
 					text = "[color=" + ::Const.UI.Color.NegativeValue + "]There is currently no suitable corpse on the map[/color]"

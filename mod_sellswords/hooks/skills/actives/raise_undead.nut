@@ -8,6 +8,7 @@
 
 		this.m.Description = "Raise a corpse back to life as an undead, faithfully follows your bidding.";
 		this.m.IconDisabled = "skills/active_26_sw.png";
+		this.m.MaxRange = 9;
 	}
 
 	q.getTooltip = @(__original) function()

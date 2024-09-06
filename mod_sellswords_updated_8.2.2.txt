@@ -1,6 +1,8 @@
 8.2.2 changes
 
-...
+...\mod_sellswords\hooks\skills\actives\raise_undead.nut
+...\scripts\skills\actives\mod_raise_all_undead.nut
+Just some minor tweaks
 
 ----------------------------------------------------------------------------------------------------------------------------
 
