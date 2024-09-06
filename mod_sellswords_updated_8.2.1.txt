@@ -3,6 +3,10 @@
 ...\scripts\ai\tactical\behaviors\mod_ai_flying_skulls_player.nut
 Updated the inputs for the tile calculations
 
+...\gfx\skills\active_213.png
+...\gfx\skills\active_213_sw.png
+Updated to the vanilla versions
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.0 changes
