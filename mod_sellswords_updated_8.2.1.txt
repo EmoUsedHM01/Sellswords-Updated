@@ -7,6 +7,13 @@ Updated the inputs for the tile calculations
 ...\gfx\skills\active_213_sw.png
 Updated to the vanilla versions
 
+...\scripts\entity\tactical\undead_player.nut
+Fixed the ability to raise bros that are struck down instead of killed
+
+...\mod_sellswords\hooks\skills\actives\legend_possession_skill.nut
+...\mod_sellswords\hooks\skills\actives\raise_undead.nut
+Added tooltips to undead actives
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.0 changes
