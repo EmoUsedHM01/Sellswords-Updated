@@ -247,7 +247,7 @@ this.undead_player <- this.inherit("scripts/entity/tactical/player", {
 		this.m.IsDying = true;
 		this.m.IsReallyDead  = this.isReallyKilled(_fatalityType);
 
-		if (!this.m.IsReallyDead )
+		if (!this.m.IsReallyDead)
 		{
 			_fatalityType = this.Const.FatalityType.Unconscious;
 			this.logDebug(this.getName() + " has fallen and can\'t get up.");
@@ -268,7 +268,7 @@ this.undead_player <- this.inherit("scripts/entity/tactical/player", {
 
 		if (_killer != null && !_killer.isHiddenToPlayer() && !this.isHiddenToPlayer())
 		{
-			if (this.m.IsReallyDead )
+			if (this.m.IsReallyDead)
 			{
 				if (_killer.getID() != this.getID())
 					this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_killer) + " has killed " + this.Const.UI.getColorizedEntityName(this));
@@ -333,7 +333,7 @@ this.undead_player <- this.inherit("scripts/entity/tactical/player", {
 
 		if (this.isPlayerControlled())
 		{
-			if (this.m.IsReallyDead )
+			if (this.m.IsReallyDead)
 			{
 				if (this.isGuest())
 					this.World.getGuestRoster().remove(this);
@@ -355,7 +355,7 @@ this.undead_player <- this.inherit("scripts/entity/tactical/player", {
 				this.World.FactionManager.getFaction(this.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationUnitKilled);
 		}
 
-		if (this.m.IsReallyDead )
+		if (this.m.IsReallyDead)
 		{
 			if (!this.Tactical.State.isScenarioMode() && this.isPlayerControlled() && !this.isGuest())
 			{
@@ -628,7 +628,7 @@ this.undead_player <- this.inherit("scripts/entity/tactical/player", {
 		local tattoo_body = this.getSprite("tattoo_body");
 		local tattoo_head = this.getSprite("tattoo_head");
 
-		if (this.m.IsReallyDead)
+		if (!this.m.IsReallyDead)
 			isResurrectable = false;
 
 		if (!isVampire && this.m.IsResurrectingOnFatality)
