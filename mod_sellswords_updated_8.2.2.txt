@@ -10,6 +10,10 @@ Cleaned up the code to account for edge cases
 ...\mod_sellswords\hooks\skills\traits\legend_rotten_flesh_trait.nut
 Added a clause for zombie bite to prevent edge cases
 
+...\brushes\chiru_orcs.brush
+...\gfx\chiru_orcs.png
+Fixed the alignment issues
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.1 changes
