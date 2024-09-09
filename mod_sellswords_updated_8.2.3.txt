@@ -1,6 +1,7 @@
 8.2.3 changes
 
-...
+...\scripts\ai\tactical\behaviors\ai_spawn_ghost_fragment.nut
+Added an empty tile check for spawning the fragments
 
 ----------------------------------------------------------------------------------------------------------------------------
 
