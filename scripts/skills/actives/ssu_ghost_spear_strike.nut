@@ -7,7 +7,7 @@ this.ssu_ghost_spear_strike <- this.inherit("scripts/skills/skill", {
 		this.m.Description = "A slow overhead strike performed with full force. Due to the nature of the weapon used, it strikes directly at the soul of the enemy.";
 		this.m.KilledString = "Chopped";
 		this.m.Icon = "skills/ssu_ghost_spear_strike.png";
-		this.m.IconDisabled = "skills/ssu_ghost_spear_strike_bw.png";
+		this.m.IconDisabled = "skills/ssu_ghost_spear_strike_sw.png";
 		this.m.Overlay = "ssu_ghost_spear_strike";
 		this.m.SoundOnUse = [
 			"sounds/combat/strike_01.wav",
@@ -42,23 +42,7 @@ this.ssu_ghost_spear_strike <- this.inherit("scripts/skills/skill", {
 
 	function getTooltip()
 	{
-		local ret = [
-			{
-				id = 1,
-				type = "title",
-				text = this.getName()
-			},
-			{
-				id = 2,
-				type = "description",
-				text = this.getDescription()
-			},
-			{
-				id = 3,
-				type = "text",
-				text = this.getCostString()
-			}
-		];
+		local ret = this.getDefaultTooltip();
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInPolearms)
 		{
@@ -76,6 +60,7 @@ this.ssu_ghost_spear_strike <- this.inherit("scripts/skills/skill", {
 			icon = "ui/icons/vision.png",
 			text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]2" + "[/color] tiles"
 		});
+
 		return ret;
 	}
 

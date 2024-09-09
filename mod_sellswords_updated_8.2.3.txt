@@ -4,6 +4,9 @@
 ...\scripts\ai\tactical\behaviors\ai_spawn_ghost_fragment.nut
 Added an empty tile check for the ghost teleport and fragment spawns
 
+...\scripts\skills\actives\ssu_ghost_spear_strike.nut
+Fixed having the wrong base tooltip and bad bw icon
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.2 changes
