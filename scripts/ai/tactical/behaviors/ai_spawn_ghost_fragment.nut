@@ -113,7 +113,7 @@ this.ai_spawn_ghost_fragment <- ::inherit("scripts/ai/tactical/behavior", {
 		{
 			if (!this.m.TargetTile.IsEmpty)
 			{
-				::Tactical.EventLog.log("Target tile is occupied, unable to spawn ghost fragment.");
+				::logInfo("Target tile is occupied, unable to spawn ghost fragment.");
 				this.m.TargetTile = null;
 				return false;
 			}

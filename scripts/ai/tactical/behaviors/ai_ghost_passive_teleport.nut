@@ -129,6 +129,14 @@ this.ai_ghost_passive_teleport <- ::inherit("scripts/ai/tactical/behavior", {
 	{
 		if (this.m.TargetTile != null)
 		{
+			// Ensure the target tile is empty before using the skill
+			if (!this.m.TargetTile.IsEmpty || this.m.TargetTile.Type == ::Const.Tactical.TerrainType.Impassable)
+			{
+				::logInfo("Target tile is occupied or impassable, unable to teleport.");
+				this.m.TargetTile = null;
+				return false;
+			}
+
 			this.m.SelectedSkill.use(this.m.TargetTile, true);
 			this.m.TargetTile = null;
 		}

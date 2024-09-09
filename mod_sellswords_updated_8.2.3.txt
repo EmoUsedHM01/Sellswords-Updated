@@ -1,7 +1,8 @@
 8.2.3 changes
 
+...\scripts\ai\tactical\behaviors\ai_ghost_passive_teleport.nut
 ...\scripts\ai\tactical\behaviors\ai_spawn_ghost_fragment.nut
-Added an empty tile check for spawning the fragments
+Added an empty tile check for the ghost teleport and fragment spawns
 
 ----------------------------------------------------------------------------------------------------------------------------
 
