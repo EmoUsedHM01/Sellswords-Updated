@@ -7,6 +7,10 @@ Added an empty tile check for the ghost teleport and fragment spawns
 ...\scripts\skills\actives\ssu_ghost_spear_strike.nut
 Fixed having the wrong base tooltip and bad bw icon
 
+...\scripts\items\weapons\greenskins\cr_orc_sword.nut
+...\scripts\items\weapons\named\cr_named_orc_sword_1h.nut
+Fixed orc 1h sword to be double grippable - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.2 changes
