@@ -11,6 +11,9 @@ Fixed having the wrong base tooltip and bad bw icon
 ...\scripts\items\weapons\named\cr_named_orc_sword_1h.nut
 Fixed orc 1h sword to be double grippable - Breaky
 
+...\mod_sellswords\config\z_background_perks.nut
+Fixed minstrel background to get daze instead of mage daze when running Specialist Skills Rework - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.2 changes

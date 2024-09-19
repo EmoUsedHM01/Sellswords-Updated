@@ -223,7 +223,7 @@ setupBackground("scripts/skills/backgrounds/miller_background", ["scripts/skills
 setupBackground("scripts/skills/backgrounds/miner_background", ["scripts/skills/perks/perk_legend_specialist_pickaxe_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistPickaxeSkill, level = 0, optional = false}]);
 
 if (::mods_getRegisteredMod("mod_specialist_skills_rework") != null)
-	setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_mage_legend_magic_daze"], [{def = ::Const.Perks.PerkDefs.MageLegendMagicDaze, level = 0, optional = false}]);
+	setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_daze"], [{def = ::Const.Perks.PerkDefs.MageLegendMagicDaze, level = 0, optional = false}]);
 else
 	setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_drums_of_war"], [{def = ::Const.Perks.PerkDefs.LegendDrumsOfWar, level = 0, optional = false}]);
 
