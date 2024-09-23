@@ -14,6 +14,13 @@ Fixed orc 1h sword to be double grippable - Breaky
 ...\mod_sellswords\config\z_background_perks.nut
 Fixed minstrel background to get daze instead of mage daze when running Specialist Skills Rework - Breaky
 
+...\hooks\skills\effects\legend_drums_of_life_effect.nut
+...\hooks\skills\effects\legend_drums_of_war_effect.nut
+Remove redundant overlay effect - Breaky
+
+...\hooks\skills\effects\staggered_effect.nut
+Fix staggered applying outside of combat - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.2 changes
