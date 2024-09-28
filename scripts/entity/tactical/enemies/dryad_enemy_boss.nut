@@ -82,8 +82,11 @@ this.dryad_enemy_boss <- this.inherit("scripts/entity/tactical/human", {
 	function onDeath( _killer, _skill, _tile, _fatalityType )
 	{
 		this.human.onDeath(_killer, _skill, _tile, _fatalityType);
-		local corpse = _tile.Properties.get("Corpse");
-		corpse.IsResurrectable = false;
+		if (_tile != null)
+		{
+			local corpse = _tile.Properties.get("Corpse");
+			corpse.IsResurrectable = false;
+		}
 	}
 
 	function assignRandomEquipment()

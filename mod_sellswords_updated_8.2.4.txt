@@ -1,3 +1,18 @@
+8.2.4 changes
+
+...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_boss.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_grunt.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_shaman.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_tamer.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_warrior.nut
+Add check if tile is not null - Breaky
+
+...\scripts\skills\actives\zcr_charge.nut
+Attempt to fix audacious charge killing the target related crash - Breaky
+
+----------------------------------------------------------------------------------------------------------------------------
+
 8.2.3 changes
 
 ...\scripts\ai\tactical\behaviors\ai_ghost_passive_teleport.nut
