@@ -11,6 +11,14 @@ Add check if tile is not null - Breaky
 ...\scripts\skills\actives\zcr_charge.nut
 Attempt to fix audacious charge killing the target related crash - Breaky
 
+...\scripts\entity\tactical\enemies\crOrcGrunt.nut
+...\scripts\entity\tactical\enemies\crOrcPackleader.nut
+...\scripts\entity\tactical\enemies\crOrcPillager.nut
+...\scripts\entity\tactical\enemies\crOrcVanguard.nut
+...\scripts\entity\tactical\enemies\crOrcWarlock.nut
+Add anatomist potions drop to the 5 orcs introduced by SSU - Breaky
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.3 changes

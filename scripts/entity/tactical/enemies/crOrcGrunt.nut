@@ -207,6 +207,10 @@ this.crOrcGrunt <- this.inherit("scripts/entity/tactical/actor", {
 
 		this.getItems().dropAll(_tile, _killer, flip);
 		this.actor.onDeath(_killer, _skill, _tile, _fatalityType);
+
+		local chance = 1.25;
+		local item = "scripts/items/misc/anatomist/orc_sequence_item";
+		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 
 	function onInit()

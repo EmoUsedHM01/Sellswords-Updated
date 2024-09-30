@@ -237,6 +237,10 @@ this.crOrcVanguard <- this.inherit("scripts/entity/tactical/actor", {
 			corpse.IsHeadAttached = _fatalityType != this.Const.FatalityType.Decapitated;
 			_tile.Properties.set("Corpse", corpse);
 			this.Tactical.Entities.addCorpse(_tile);
+
+			local chance = 1.25;
+			local item = "scripts/items/misc/anatomist/orc_sequence_item";
+			::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 		}
 
 		if (_tile != null && this.Math.rand(1, 100) <= 10)
