@@ -166,15 +166,18 @@ this.crOrcWarlock <- this.inherit("scripts/entity/tactical/actor", {
 				}
 			}
 
-			if (_skill && _skill.getProjectileType() == this.Const.ProjectileType.Arrow)
+			if (appearance.CorpseArmor != "")
 			{
-				decal = _tile.spawnDetail(appearance.CorpseArmor + "_arrows", this.Const.Tactical.DetailFlag.Corpse, flip);
-				decal.Scale = 0.9;
-			}
-			else if (_skill && _skill.getProjectileType() == this.Const.ProjectileType.Javelin)
-			{
-				decal = _tile.spawnDetail(appearance.CorpseArmor + "_javelin", this.Const.Tactical.DetailFlag.Corpse, flip);
-				decal.Scale = 0.9;
+				if (_skill && _skill.getProjectileType() == this.Const.ProjectileType.Arrow)
+				{
+					decal = _tile.spawnDetail(appearance.CorpseArmor + "_arrows", this.Const.Tactical.DetailFlag.Corpse, flip);
+					decal.Scale = 0.9;
+				}
+				else if (_skill && _skill.getProjectileType() == this.Const.ProjectileType.Javelin)
+				{
+					decal = _tile.spawnDetail(appearance.CorpseArmor + "_javelin", this.Const.Tactical.DetailFlag.Corpse, flip);
+					decal.Scale = 0.9;
+				}
 			}
 
 			this.spawnTerrainDropdownEffect(_tile);

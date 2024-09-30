@@ -18,6 +18,8 @@ Attempt to fix audacious charge killing the target related crash - Breaky
 ...\scripts\entity\tactical\enemies\crOrcWarlock.nut
 Add anatomist potions drop to the 5 orcs introduced by SSU - Breaky
 
+...\scripts\entity\tactical\enemies\crOrcWarlock.nut
+Added a null check on arrows and javelins
 
 ----------------------------------------------------------------------------------------------------------------------------
 
