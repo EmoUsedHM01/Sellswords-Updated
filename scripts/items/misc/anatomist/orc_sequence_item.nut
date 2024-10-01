@@ -59,7 +59,7 @@ this.orc_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Shock Absorbant Wrists: Attacks do [color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] additional damage."
+			text = "Shock Absorbant Wrists: Attacks do [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] additional damage."
 		});
 		result.push({
 			id = 13,
