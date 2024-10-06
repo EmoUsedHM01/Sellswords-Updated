@@ -3,8 +3,11 @@
 ...\scripts\items\misc\anatomist\orc_sequence_item.nut
 Updated the tooltip to match the effect
 
-C:\Users\joema_mpevn9w\Documents\GitHub\Sellswords-Updated\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
 Fixed poison not applying on Cutting damage type
+
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+Fix zerker low to get the proper named twin axes/cleavers - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
