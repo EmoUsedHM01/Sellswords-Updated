@@ -3,6 +3,9 @@
 ...\scripts\items\misc\anatomist\orc_sequence_item.nut
 Updated the tooltip to match the effect
 
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+Fix zerker low to get the proper named twin axes/cleavers - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.4 changes

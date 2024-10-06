@@ -202,10 +202,10 @@ this.crBarbarianZerker_Low <- this.inherit("scripts/entity/tactical/human", {
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		
 		local weapons = [
-			"weapons/named/named_double_axe",
-			"weapons/named/named_double_axe",			
-			"weapons/named/named_double_cleaver",
-			"weapons/named/named_double_cleaver",			
+			"weapons/named/named_twinaxes",
+			"weapons/named/named_twinaxes",			
+			"weapons/named/named_twincleavers",
+			"weapons/named/named_twincleavers",			
 			"weapons/named/named_rusty_warblade",
 			"weapons/named/named_heavy_rusty_axe"			
 		];				
