@@ -70,7 +70,6 @@
 			_properties.Initiative += 15;
 			_properties.MeleeSkill += 5;
 		}
-
 	}
 
 	q.onTargetHit <- function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
@@ -85,7 +84,7 @@
 		if (_targetEntity.getFlags().has("undead"))
 			return;
 
-		if (!_skill.isAttack() || !_skill.getDamageType().contains(this.Const.Damage.DamageType.Piercing))
+		if (!_skill.isAttack() || !(_skill.getDamageType().contains(this.Const.Damage.DamageType.Piercing) || _skill.getDamageType().contains(this.Const.Damage.DamageType.Cutting)))
 			return;
 
 		if (!_targetEntity.isHiddenToPlayer())
