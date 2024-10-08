@@ -19,8 +19,8 @@
 		local skillToAdd = this.new("scripts/skills/actives/overhead_strike");
 		skillToAdd.setStunChance(this.m.StunChance);
 		this.addSkill(skillToAdd);		
-		skillToAdd = this.new("scripts/skills/actives/slash");
-		skillToAdd.m.Name = "Bunt";		
+		skillToAdd = this.new("scripts/skills/actives/legend_great_slash");
+		skillToAdd.m.Name = "Great Bunt";		
 		skillToAdd.m.isBunt = true;			
 		skillToAdd.m.Icon = "skills/active_bunt.png";
 		skillToAdd.m.IconDisabled = "skills/active_bunt_sw.png";		

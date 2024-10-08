@@ -9,6 +9,15 @@ Fixed poison not applying on Cutting damage type
 ...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
 Fix zerker low to get the proper named twin axes/cleavers - Breaky
 
+...\scripts\items\weapons\greenskins\cr_orc_sword.nut
+Fix Unhold Gutter to not be double grippable
+
+...\mod_sellswords\hooks\skills\actives\legend_great_slash.nut
+...\scripts\items\weapons\named\cr_named_orc_sword_2h.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_man_mangler.nut
+Add greatslash hook and replace orc sword from bunt to great bunt (basically great slash so it uses the proper mastery) - Breaky
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.4 changes
