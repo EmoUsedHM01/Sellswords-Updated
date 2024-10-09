@@ -49,7 +49,7 @@
 				{
 					local target = nextTile.getEntity();
 
-					if (!target.isAlive() || target.isDying() || target.getFaction() == ::Const.Faction.Player || target.getFaction() == ::Const.Faction.PlayerAnimals)
+					if (!target.isAlive() || target.isDying() || this.getContainer().getActor().isAlliedWith(target))
 					{
 					}
 					else

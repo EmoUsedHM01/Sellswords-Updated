@@ -20,6 +20,8 @@ Add greatslash hook and replace orc sword from bunt to great bunt (basically gre
 ...\scripts\items\tools\acid_flask_item_02.nut
 Properly add the skill for Stollwurm Acid Flask - Breaky
 
+...\mod_sellswords/hooks/entity/tactical/enemies/flying_skull.nut
+Fix an issue with Librarian fight Flying Skulls not exploding - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
