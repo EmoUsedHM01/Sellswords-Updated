@@ -49,7 +49,7 @@
 				{
 					local target = nextTile.getEntity();
 
-					if (!target.isAlive() || target.isDying() || this.getContainer().getActor().isAlliedWith(target))
+					if (!target.isAlive() || target.isDying() || this.actor.isAlliedWith(target))
 					{
 					}
 					else
