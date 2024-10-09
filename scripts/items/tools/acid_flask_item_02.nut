@@ -142,7 +142,7 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 	function onEquip()
 	{
 		this.weapon.onEquip();
-		skill = this.new("scripts/skills/actives/throw_acid_flask_02");
+		local skill = this.new("scripts/skills/actives/throw_acid_flask_02");
 		skill.setItem(this);
 		this.addSkill(skill);
 	}
