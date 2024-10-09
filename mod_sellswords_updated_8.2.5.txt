@@ -20,8 +20,11 @@ Add greatslash hook and replace orc sword from bunt to great bunt (basically gre
 ...\scripts\items\tools\acid_flask_item_02.nut
 Properly add the skill for Stollwurm Acid Flask - Breaky
 
-...\mod_sellswords/hooks/entity/tactical/enemies/flying_skull.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\flying_skull.nut
 Fix an issue with Librarian fight Flying Skulls not exploding - Breaky
+
+...\mod_sellswords\config\strings.nut
+Fix an issue with the Grandslam perk description, incorrectly stating it gives 20% more armor penetration to Throwing Weapons - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
