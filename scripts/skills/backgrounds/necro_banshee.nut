@@ -34,6 +34,7 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 			"trait.fear_undead",
 			"trait.fear_greenskins",
 			"trait.fear_beasts",
+			"trait.fear_dark",
 			"trait.fearless",
 			"trait.gluttonous",
 			"trait.greedy",

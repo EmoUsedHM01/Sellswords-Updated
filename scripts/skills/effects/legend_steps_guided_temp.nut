@@ -22,6 +22,7 @@ this.legend_steps_guided_temp <- this.inherit("scripts/skills/skill", {
 	
 	function onTurnEnd()
 	{
+		this.skill.onTurnEnd();
 		this.removeSelf();
 	}	
 

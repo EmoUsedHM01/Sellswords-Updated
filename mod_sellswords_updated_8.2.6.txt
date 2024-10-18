@@ -1,12 +1,24 @@
 8.2.6 changes
 
-...\mod_sellswords\hooks\skills\actives\/throw_acid_flask.nut
+...\mod_sellswords\hooks\skills\actives\throw_acid_flask.nut
+...\mod_sellswords\hooks\skills\actives\throw_acid_flask_02.nut
 Fix acid flask crash - Breaky
+
 ...\scripts\skills\actives\mod_raise_all_undead.nut
 Add checks for null entity on combat ends - Breaky
-...\scripts\skills\actives\twinaxes_1.nut
-Add check if entity is alive - Breaky
 
+...\scripts\skills\actives\twinaxes_1.nut
+Add check if entity is alive, to prevent a crash on combat end - Breaky
+
+...\scripts\skills\backgrounds\necro_banshee.nut
+...\scripts\skills\backgrounds\necro_ghost.nut
+Ghost backgrounds will no longer be afraid of the dark - Breaky
+
+...\mod_sellswords\hooks\skills\actives\throw_holy_water.nut
+Fix holy water not applying it's effect - Breaky
+
+...\mod_sellswords\hooks\retinue\followers\alchemist_follower.nut
+Shorten the tooltips of alchemist follower a bit so they don't overflow - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
