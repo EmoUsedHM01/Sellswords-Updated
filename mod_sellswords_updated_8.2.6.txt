@@ -1,5 +1,13 @@
 8.2.6 changes
 
+...\mod_sellswords\hooks\skills\actives\/throw_acid_flask.nut
+Fix acid flask crash - Breaky
+...\scripts\skills\actives\mod_raise_all_undead.nut
+Add checks for null entity on combat ends - Breaky
+...\scripts\skills\actives\twinaxes_1.nut
+Add check if entity is alive - Breaky
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.5 changes

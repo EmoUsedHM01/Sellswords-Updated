@@ -79,6 +79,8 @@ this.twinaxes_1 <- this.inherit("scripts/skills/skill", {
 		local target = _targetTile.getEntity();
 		local ret = this.attackEntity(_user, target);
 
+		if (::MSU.isNull(_targetTile.getEntity()) || !_targetTile.getEntity().isAlive())
+
 		if (this.Tactical.TurnSequenceBar.getActiveEntity().getID() == _user.getID() && (!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer))
 		{
 			this.m.IsDoingAttackMove = false;
