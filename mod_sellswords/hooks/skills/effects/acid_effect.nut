@@ -2,6 +2,16 @@
 
 	q.m.Concentrate <- false;
 
+	q.onAdded = @(__original) function()
+	{
+		local actor = this.getContainer.getActor();
+		if (!actor.isPlacedOnMap() || ("State" in this.Tactical) && this.Tactical.State.isBattleEnded())
+		{
+			this.removeSelf();
+			return;
+		}
+		__original();
+	}
 	q.applyDamage = @(__original) function()
 	{
 		if (this.m.LastRoundApplied != this.Time.getRound())

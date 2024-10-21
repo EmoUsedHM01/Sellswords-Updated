@@ -1,5 +1,29 @@
 8.2.7 changes
 
+...\mod_sellswords\config\strings.nut
+Minor adjustment to Skullsplitter - Breaky
+
+...\mod_sellswords\hooks\config\z_legends_fav_enemies.nut
+Fix so it properly counts kills - Breaky
+
+...\mod_sellswords\hooks\skills\effects\acid_effect.nut
+Add a check on added, to prevent save game stopping not load - Breaky
+
+...\scripts\items\weapons\greenskins/cr_orc_staff.nut
+Make the orc warlock staff droppable - Breaky
+
+...\scripts\skills\actives\mod_raise_all_undead.nut
+Revert a previous change as it bugs out on every fight - Breaky
+
+...\scripts\skills\actives\twinaxes_1.nut
+Add a proper return I missed previously and adjust damage according to tooltip - Breaky
+
+...\scripts\entity\tactical\enemies\crOrcWarlock.nut
+Adjust the corpse tooltip - Breaky
+
+...\scripts\ai\tactical\agents\ai_ghost_possess.nut
+Add missing ai file for ghost possession - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.6 changes

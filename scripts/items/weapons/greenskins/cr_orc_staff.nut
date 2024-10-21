@@ -30,7 +30,7 @@ this.cr_orc_staff <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.RegularDamageMax = 65;
 		this.m.ArmorDamageMult = 1.6;
 		this.m.DirectDamageMult = 0.35;
-		this.m.IsDroppedAsLoot = false;
+		this.m.IsDroppedAsLoot = true;
 	}
 
 	function onEquip()

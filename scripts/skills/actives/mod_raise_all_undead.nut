@@ -218,7 +218,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 		while(this.m.SpawnedUndead.len() != 0)
 		{
 			local pair = this.m.SpawnedUndead.pop();
-			if (!pair[0].isNull() && pair[0].isAlive())
+			if (pair[0] != null && !pair[0].isNull() && pair[0].isAlive())
 				pair[0].kill(pair[1], this, this.Const.FatalityType.Kraken, true);
 		}
 	}

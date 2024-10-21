@@ -80,6 +80,7 @@ this.twinaxes_1 <- this.inherit("scripts/skills/skill", {
 		local ret = this.attackEntity(_user, target);
 
 		if (::MSU.isNull(_targetTile.getEntity()) || !_targetTile.getEntity().isAlive())
+			return;
 
 		if (this.Tactical.TurnSequenceBar.getActiveEntity().getID() == _user.getID() && (!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer))
 		{
@@ -135,7 +136,7 @@ this.twinaxes_1 <- this.inherit("scripts/skills/skill", {
 			_properties.DamageAgainstMult[this.Const.BodyPart.Head] += 0.35;
 			if (this.getContainer().hasSkill("perk.crHackSPM"))
 			{
-				_properties.DamageTotalMult *= 0.85;			
+				_properties.DamageTotalMult *= 0.8;
 				_properties.DamageTooltipMaxMult *= 1.5;
 			}			
 		}
