@@ -249,7 +249,6 @@
 		case this.Const.EntityType.NoblePollax:
 		case this.Const.EntityType.NomadArcher:
 		case this.Const.EntityType.NomadOutlaw:
-		case this.Const.EntityType.OrcVanguard:
 		case this.Const.EntityType.SchratSmall:
 		case this.Const.EntityType.Sergeant:
 		case this.Const.EntityType.SkeletonLight:
