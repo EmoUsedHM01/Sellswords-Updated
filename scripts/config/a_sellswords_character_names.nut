@@ -354,7 +354,7 @@
 	"Twilight Vanquisher",
 	"the Hallowed",
 	"the Nightfall",
-	"Of the shattered Sun",
+	"Of the Shattered Sun",
 	"the Darkbinder",
 	"the Somber",
 	"the Defiler",

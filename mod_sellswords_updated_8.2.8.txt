@@ -1,5 +1,19 @@
 8.2.8 changes
 
+...\gfx\skills\active_22.png
+...\gfx\skills\active_22_sw.png
+Added missing howl icons - Chopeks
+
+...\scripts\ai\tactical\agents\ai_ghost_possess.nut
+...\scripts\ai\tactical\behaviors\ai_ghost_possess.nut
+Fixed ai_ghost_possess to be a behaviour instead of an agent - Breaky
+
+...\mod_sellswords\hooks\config\z_legends_fav_enemies.nut
+Removed legends monsters from hooked fav perk check, used the original instead - Chopeks
+
+...\scripts\config\a_sellswords_character_names.nut
+Capitalized an orc warlock title - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.7 changes
