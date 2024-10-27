@@ -1,5 +1,11 @@
 8.2.9 changes
 
+...\scripts\skills\effects\ssu_lightning_sword_effect.nut
+Attempt to fix lightning sword effect crashes - Breaky
+
+...\mod_sellswords\config\ai.nut
+Add missing ai config for ghost possess - Breaky 
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.8 changes

@@ -65,7 +65,7 @@ this.ssu_lightning_sword_effect <- this.inherit("scripts/skills/skill", {
 		local user = this.getContainer().getActor();
 		local myTile = user.getTile();
 
-		if (user.isAlive() && this.Tactical.TurnSequenceBar.getActiveEntity().getID() == user.getID())
+		if (user.isAlive() && this.Tactical.TurnSequenceBar.getActiveEntity() != null && this.Tactical.TurnSequenceBar.getActiveEntity().getID() == user.getID())
 		{
 			local selectedTargets = [];
 			local potentialTargets = [];
