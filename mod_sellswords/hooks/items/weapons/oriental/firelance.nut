@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 		this.m.Ammo = 1;
 		this.m.AmmoMax = 1;
 		this.m.AmmoCost = 3;

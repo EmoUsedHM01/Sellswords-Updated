@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.Value = 3000;
 		this.m.DirectDamageMult = 0.4;

@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.Value = 3500;
 		this.m.Condition = 80;

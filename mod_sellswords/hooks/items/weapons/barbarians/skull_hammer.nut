@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.Name = "Two-Handed Rusty Hammer";
 		this.m.Description = "A crude metal hammer used with two hands to crush both armor and its wearer alike.";

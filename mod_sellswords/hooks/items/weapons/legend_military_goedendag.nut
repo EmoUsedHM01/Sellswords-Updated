@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.Variants = [2]
 		this.m.Variant = 2;

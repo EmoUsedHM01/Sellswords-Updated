@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.RegularDamage = 45;
 		this.m.RegularDamageMax = 80;

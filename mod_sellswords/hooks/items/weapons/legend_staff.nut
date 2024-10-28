@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.DirectDamageAdd = 0.0;
 		this.m.RegularDamage = 15;
@@ -13,7 +13,7 @@
 	
 	q.onEquip = @(__original) function()
 	{
-		__original()
+		__original();
 		if (::Is_PTR_Exist)
 		{
 			return

@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.StunChance = 15;
 		this.m.RegularDamage = 80;

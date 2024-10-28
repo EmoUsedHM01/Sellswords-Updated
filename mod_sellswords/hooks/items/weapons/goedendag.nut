@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.ArmorDamageMult = 1.0;
 		this.m.DirectDamageMult = 0.3;

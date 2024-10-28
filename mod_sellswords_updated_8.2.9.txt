@@ -4,7 +4,72 @@
 Attempt to fix lightning sword effect crashes - Breaky
 
 ...\mod_sellswords\config\ai.nut
-Add missing ai config for ghost possess - Breaky 
+Add missing ai config for ghost possess - Breaky
+
+...\mod_sellswords\hooks\items\legend_armor\cloth\legend_knightly_robe.nut
+...\mod_sellswords\hooks\items\legend_armor\cloth\legend_tunic_noble.nut
+...\mod_sellswords\hooks\items\legend_armor\cloth\wanderers_coat.nut
+...\mod_sellswords\hooks\items\legend_armor\legendary\legend_skin_armor.nut
+...\mod_sellswords\hooks\items\shields\legendary\gilders_embrace_shield.nut
+...\mod_sellswords\hooks\items\weapons\ancient\bladed_pike.nut
+...\mod_sellswords\hooks\items\weapons\ancient\legend_fan_axe.nut
+...\mod_sellswords\hooks\items\weapons\barbarians\skull_hammer.nut
+...\mod_sellswords\hooks\items\weapons\flail.nut
+...\mod_sellswords\hooks\items\weapons\goedendag.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_bow.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_crossbow.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_falchion.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_heavy_bow.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_spear.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_spiked_balls.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\goblin_staff.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_bone_carver.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_bough.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_limb_lopper.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_man_mangler.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_meat_hacker.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_skin_flayer.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\orc_flail_2h.nut
+...\mod_sellswords\hooks\items\weapons\legend_battle_glaive.nut
+...\mod_sellswords\hooks\items\weapons\legend_chain.nut
+...\mod_sellswords\hooks\items\weapons\legend_estoc.nut
+...\mod_sellswords\hooks\items\weapons\legend_glaive.nut
+...\mod_sellswords\hooks\items\weapons\legend_halberd.nut
+...\mod_sellswords\hooks\items\weapons\legend_infantry_axe.nut
+...\mod_sellswords\hooks\items\weapons\legend_katar.nut
+...\mod_sellswords\hooks\items\weapons\legend_longsword.nut
+...\mod_sellswords\hooks\items\weapons\legend_military_goedendag.nut
+...\mod_sellswords\hooks\items\weapons\legend_military_voulge.nut
+...\mod_sellswords\hooks\items\weapons\legend_mystic_staff.nut
+...\mod_sellswords\hooks\items\weapons\legend_parrying_dagger.nut
+...\mod_sellswords\hooks\items\weapons\legend_ranged_flail.nut
+...\mod_sellswords\hooks\items\weapons\legend_reinforced_flail.nut
+...\mod_sellswords\hooks\items\weapons\legend_slingstaff.nut
+...\mod_sellswords\hooks\items\weapons\legend_staff.nut
+...\mod_sellswords\hooks\items\weapons\legend_staff_gnarled.nut
+...\mod_sellswords\hooks\items\weapons\legend_staff_vala.nut
+...\mod_sellswords\hooks\items\weapons\legend_swordstaff.nut
+...\mod_sellswords\hooks\items\weapons\legend_tipstaff.nut
+...\mod_sellswords\hooks\items\weapons\legend_voulge.nut
+...\mod_sellswords\hooks\items\weapons\legendary\lightbringer_sword.nut
+...\mod_sellswords\hooks\items\weapons\oriental\firelance.nut
+...\mod_sellswords\hooks\items\weapons\oriental\handgonne.nut
+...\mod_sellswords\hooks\items\weapons\oriental\heavy_southern_mace.nut
+...\mod_sellswords\hooks\items\weapons\oriental\polemace.nut
+...\mod_sellswords\hooks\items\weapons\oriental\qatal_dagger.nut
+...\mod_sellswords\hooks\items\weapons\oriental\swordlance.nut
+...\mod_sellswords\hooks\items\weapons\pike.nut
+...\mod_sellswords\hooks\items\weapons\polehammer.nut
+...\mod_sellswords\hooks\items\weapons\reinforced_wooden_flail.nut
+...\mod_sellswords\hooks\items\weapons\spetum.nut
+...\mod_sellswords\hooks\items\weapons\two_handed_flail.nut
+...\mod_sellswords\hooks\items\weapons\two_handed_wooden_flail.nut
+...\mod_sellswords\hooks\items\weapons\two_handed_wooden_hammer.nut
+...\mod_sellswords\hooks\items\weapons\warbrand.nut
+...\mod_sellswords\hooks\skills\effects\disintegrating_effect.nut
+
+Add ; to each original create function call for these files - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

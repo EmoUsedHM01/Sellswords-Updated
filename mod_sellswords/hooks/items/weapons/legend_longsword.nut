@@ -4,7 +4,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.StaminaModifier = -10;
 		this.m.RegularDamage = 60;

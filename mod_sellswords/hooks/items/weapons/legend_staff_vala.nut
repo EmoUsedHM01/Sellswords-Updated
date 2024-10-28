@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.RegularDamageMax = 25;
 		this.m.ArmorDamageMult = 0.3;
@@ -11,7 +11,7 @@
 	
 	q.onEquip = @(__original) function()
 	{
-		__original()
+		__original();
 		if (::Is_PTR_Exist)
 		{
 			return

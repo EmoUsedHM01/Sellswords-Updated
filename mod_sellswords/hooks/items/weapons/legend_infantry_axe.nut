@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.ShieldDamage = 40;
 		this.m.Condition = 72.0;

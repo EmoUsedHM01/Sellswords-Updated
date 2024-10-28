@@ -2,7 +2,7 @@
 	
 	q.create = @(__original) function()
 	{
-		__original()
+		__original();
 
 		this.m.Condition = 92.0;
 		this.m.ConditionMax = 92.0;
