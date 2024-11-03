@@ -36,7 +36,7 @@
 			this.m.PerksAdded.push(_perk);
 		}
 
-		if (!this.getContainer().hasSkill("perk.crFurinkazan"))
+		if (!this.getContainer().hasSkill("perk.crFurinkazan") && ::MSU.isKindOf(this.getContainer().getActor(), "player") && !::MSU.isNull(this.getContainer().getActor().getBackground()))
 			addPerk(this.Const.Perks.PerkDefs.crFurinkazan, 5);
 	}
 

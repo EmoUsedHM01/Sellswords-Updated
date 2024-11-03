@@ -16,11 +16,11 @@ this.crmeleeskill_effect <- this.inherit("scripts/skills/skill", {
 		this.m.IsRemovedAfterBattle = true;
 	}
 
-	function setSkill(_inflicter, _inflicted)
+	function setSkill(_inflicter, _inflicted, _targetEntity)
 	{
 		this.m.Inflicter = _inflicter;
 		this.m.InflictedSkill = _inflicted;
-		this.m.SkillProperties = _inflicted.getContainer().buildPropertiesForUse(_inflicted, this.getContainer().getActor());
+		this.m.SkillProperties = _inflicted.getContainer().buildPropertiesForUse(_inflicted, _targetEntity);
 	}
 	
 	function onRemoved()

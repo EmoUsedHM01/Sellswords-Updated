@@ -79,7 +79,7 @@ this.twinaxes_1 <- this.inherit("scripts/skills/skill", {
 		local target = _targetTile.getEntity();
 		local ret = this.attackEntity(_user, target);
 
-		if (::MSU.isNull(_targetTile.getEntity()) || !_targetTile.getEntity().isAlive())
+		if (::MSU.isNull(target) || !target.isAlive())
 			return;
 
 		if (this.Tactical.TurnSequenceBar.getActiveEntity().getID() == _user.getID() && (!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer))
@@ -88,9 +88,9 @@ this.twinaxes_1 <- this.inherit("scripts/skills/skill", {
 			this.getContainer().setBusy(true);
 			this.Time.scheduleEvent(this.TimeUnit.Virtual, 200, function ( _skill )
 			{
-				if (_targetTile.IsOccupiedByActor && !::MSU.isNull(_targetTile.getEntity()) && _targetTile.getEntity().isAlive())
+				if (_targetTile.IsOccupiedByActor && !::MSU.isNull(target) && target.isAlive())
 				{
-					_skill.attackEntity(_user, _targetTile.getEntity());
+					_skill.attackEntity(_user, target);
 				}
 			}.bindenv(this), this);
 			if (this.getContainer().hasSkill("perk.crHackSPM"))
@@ -108,23 +108,24 @@ this.twinaxes_1 <- this.inherit("scripts/skills/skill", {
 			}			
 			return true;
 		}
-		else
-		{
-			if (target.isAlive())
-			{
-				ret = this.attackEntity(_user, target) || ret;
-			}
+		// else
+		// {
+		// 	if (_targetTile.IsOccupiedByActor && !::MSU.isNull(target) && target.isAlive())
+		// 	{
+		// 		ret = this.attackEntity(_user, target) || ret;
+		// 	}
 			
-			if (this.getContainer().hasSkill("perk.crHackSPM"))
-			{
-				if (target.isAlive())
-				{
-					ret = this.attackEntity(_user, target) || ret;
-				}
-			}				
+			// if (this.getContainer().hasSkill("perk.crHackSPM"))
+			// {
+			// 	if (target.isAlive())
+			// 	{
+			// 		ret = this.attackEntity(_user, target) || ret;
+			// 	}
+			// }
 
-			return ret;
-		}
+		// 	return ret;
+		// }
+		return ret;
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )

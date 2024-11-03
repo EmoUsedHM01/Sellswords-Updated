@@ -29,7 +29,9 @@ this.perk_crmeleeskill <- this.inherit("scripts/skills/skill", {
 		}
 		
 		local entity_skills = _targetEntity.getSkills();
-		entity_skills.add(this.new("scripts/skills/effects/crmeleeskill_effect"));
+		local effect = ::new("scripts/skills/effects/crmeleeskill_effect");
+		effect.setSkill(this.getContainer().getActor(), _skill, _targetEntity);
+		_targetEntity.getSkills().add(effect);
 		entity_skills.getSkillByID("effects.crmeleeskill").setSkill(this.getContainer().getActor(), _skill);
 		this.m.AffectedEntity = null;
 		this.m.AffectedEntity = _targetEntity;

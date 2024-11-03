@@ -70,6 +70,30 @@ Add missing ai config for ghost possess - Breaky
 
 Add ; to each original create function call for these files - Breaky
 
+...\mod_sellswords\config\sequence_logic.nut
+Add Necro's additional killer is null check for sequence logic - Breaky
+
+...\scripts\skills\effects\adrenaline_consequntial_effect.nut
+Irresistible Impulse effect will show up as a status and have an expanded tooltip - Breaky
+
+...\mod_sellswords\hooks\skills\perks\perk_adrenalin.nut
+...\mod_sellswords\hooks\skills\perks\perk_footwork.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_evasion.nut
+...\mod_sellswords\hooks\skills\perks\perk_rotation.nut
+Add some Necro fixes to perks that unlock additional perks - Breaky
+
+...\mod_sellswords\hooks\skills\effects\acid_effect.nut
+Fix a small issue - Breaky
+
+...\scripts\skills\actives\mod_raise_all_undead.nut
+Add Necro's fix for Danse Macabre - Breaky
+
+...\scripts\skills\actives\twinaxes_1.nut
+Make the skill only do 1 attack when not on your turn to prevent ai flee errors - Breaky
+
+...\scripts\skills\effects\crmeleeskill_effect.nut
+...\scripts\skills\perks\perk_crmeleeskill.nut
+Integrate necro's fixes for crmeleeskill - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 

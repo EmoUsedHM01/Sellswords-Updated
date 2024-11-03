@@ -158,7 +158,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 			e.getSprite("socket").setBrush(_user.getSprite("socket").getBrush().Name);
 		
 		local zombie = _tile.getEntity();
-		this.m.SpawnedUndead.push([zombie, _user]);
+		this.m.SpawnedUndead.push([::MSU.asWeakTableRef(e), _user]);
 	}
 
 	function onUse( _user, _targetTile )

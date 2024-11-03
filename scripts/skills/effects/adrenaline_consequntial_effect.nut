@@ -13,6 +13,7 @@ this.adrenaline_consequntial_effect <- this.inherit("scripts/skills/skill", {
 		this.m.IsActive = false;
 		this.m.IsStacking = false;		
 		this.m.IsRemovedAfterBattle = true;
+		this.m.IsHidden = false;
 	}
 
 	function getDescription()
@@ -44,7 +45,20 @@ this.adrenaline_consequntial_effect <- this.inherit("scripts/skills/skill", {
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
 				text = "[color=" + this.Const.UI.Color.PositiveValue + "] +5% [/color] Damage"
+			},			
+			{
+				id = 11,
+				type = "text",
+				icon = "ui/icons/fatigue.png",
+				text = "[color=" + this.Const.UI.Color.PositiveValue + "]6[/color] Fatigue Recovery"
+			},			
+			{
+				id = 12,
+				type = "text",
+				icon = "ui/icons/special.png",
+				text = "Makes enemies [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] more likely to target you"
 			}
+
 		];
 	}	
 

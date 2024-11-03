@@ -42,7 +42,7 @@
 
 ::Mod_Sellswords.doPotionDrop <- function (_killer, _skill, _tile, _fatalityType, chance, item) {
 
-	if (_tile != null && _killer == null || _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals)
+	if ((_tile != null && _killer == null) || (_killer != null && _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals))
 	{
 		local count = 0.0
 		local roster = ::World.getPlayerRoster().getAll();
