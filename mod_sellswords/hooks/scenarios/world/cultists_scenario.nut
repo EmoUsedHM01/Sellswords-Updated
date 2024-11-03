@@ -17,6 +17,10 @@
 			bro.getSprite("socket").setBrush("bust_base_orcs");
 			bro.m.HireTime = this.Time.getVirtualTimeF();
 			bro.getSkills().add(this.new("scripts/skills/traits/cultist_fanatic_trait"));
+			bro.getSkills().removeByID("trait.superstitious"); //If cultist, this ID will be removed as True believer is not removing them on start
+			bro.getSkills().removeByID("trait.dastard"); //If cultist, this ID will be removed as True believer is not removing them on start
+			bro.getSkills().removeByID("trait.insecure"); //If cultist, this ID will be removed as True believer is not removing them on start
+			bro.getSkills().removeByID("trait.craven"); //If cultist, this ID will be removed as True believer is not removing them on start
 
 			while (names.find(bro.getNameOnly()) != null)
 			{
@@ -43,6 +47,7 @@
 		]);
 		bros[1].getBackground().m.RawDescription = "%name% found you upon the road, stating with certainty you were a mercenary captain. You wore but ordinary cloth at that moment, but %name% said that by Davkul\'s darkness you had an aura of wanted Black about you.";
 		this.addScenarioPerk(bros[1].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
+		bros[1].getBaseProperties().MeleeSkill += 10;
 		bros[1].setPlaceInFormation(3);
 		bros[1].setVeteranPerks(2);
 		local items = bros[1].getItems();
@@ -53,6 +58,7 @@
 		]);
 		bros[2].getBackground().m.RawDescription = "A quiet figure, %name% has shadows beneath the fingerprints, running like the brine beneath a pallid shore. When you exchanged a handshake, it was as though you could hear the hissing of your sanity.";
 		this.addScenarioPerk(bros[2].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
+		bros[2].getBaseProperties().MeleeSkill += 10;
 		bros[2].setPlaceInFormation(4);
 		bros[2].setVeteranPerks(2);
 		local items = bros[2].getItems();
@@ -79,6 +85,7 @@
 		this.addScenarioPerk(bros[3].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
 		bros[3].setPlaceInFormation(5);
 		bros[3].setVeteranPerks(2);
+		bros[3].getBaseProperties().MeleeSkill += 10;
 		local items = bros[3].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Body));
@@ -103,6 +110,7 @@
 		this.addScenarioPerk(bros[4].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
 		bros[4].setPlaceInFormation(6);
 		bros[4].setVeteranPerks(2);
+		bros[4].getBaseProperties().MeleeSkill += 10;
 		local items = bros[4].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.equip(this.new("scripts/items/weapons/legend_sling"));
