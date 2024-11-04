@@ -3,6 +3,7 @@
 	Name = "Sellswords Updated",
 	Version = "8.3.0",
 	EnableEnemySS = true,
+	KeepSpawningEnemySS = false,
 	SellswordStrengthMultiplier = 100,
 	EnableHostileSequences = true,
 	SellswordsPerk = "Student"
@@ -35,13 +36,48 @@
 
 	// MSU config page
 	local page = ::Mod_Sellswords.Mod.ModSettings.addPage("General");
-	local settingEnableEnemySS = page.addBooleanSetting("EnableHostileSellswords", true, "Enable Hostile Sellswords", "When enabled, there will be roaming groups of hostile Sellsword companies, these parties will stop spawning once you defeat the Legendary Company Tower location.");
-	local settingSellswordStrengthMultiplier = page.addRangeSetting("SellswordStrengthMultiplier", 100, 10, 300, 10.0, "Sellsword Strength Multiplier %", "Affects the CR rating of the hostile SS faction, only affects new spawns, not existing parties.");
-	local settingEnableHostileSequences = page.addBooleanSetting("EnableHostileSequences", true, "Enable Hostile Sequences", "When enabled, enemies have a low chance to roll with Sequences. If they do, then they also have a chance to drop whichever one they obtain.");
-	local settingSellswordsPerk = page.addEnumSetting("SellswordsPerk", "Student", ["Back to Basics", "Backstabber", "Berserker", "Dodge", "Escape Artist", "Footwork", "Fortified Mind", "Mind Over Body", "Nine Lives", "Pathfinder", "Quick Hands", "Rotation", "Steel Brow", "Student", "Thrives in Chaos", "Underdog"], "Sellsword Scenario Perk", "Choose a company perk to be added when you recruit a bro for the Sellswords Scenario.\n\nStudent by default.");
+	local settingSellswordsEnable = page.addEnumSetting(
+		"SellswordsSpawn",
+		"Enabled until destroyed",
+		["Enabled", "Enabled until destroyed", "Disabled"],
+		"Enable hostile Sellswords",
+		"Enabled - there will be roaming groups of hostile Sellsword companies,\n\nEnabled until destroyed - there will be roaming groups of hostile Sellsword companies, but these parties will stop spawning once you defeat the Legendary Company Tower location,\n\nDisabled - standard non-hostile mercenary parties will spawn."
+	);
+	local settingSellswordStrengthMultiplier = page.addRangeSetting(
+		"SellswordStrengthMultiplier",
+		100, 10, 300, 10.0,
+		"Sellsword Strength Multiplier %",
+		"Affects the CR rating of the hostile SS faction, only affects new spawns, not existing parties."
+	);
+	page.addDivider("divider_sequences");
+	local settingEnableHostileSequences = page.addBooleanSetting(
+		"EnableHostileSequences",
+		true,
+		"Enable Hostile Sequences",
+		"When enabled, enemies have a low chance to roll with Sequences. If they do, then they also have a chance to drop whichever one they obtain."
+	);
+	page.addDivider("divider_perks");
+	local settingSellswordsPerk = page.addEnumSetting(
+		"SellswordsPerk",
+		"Student",
+		["Back to Basics", "Backstabber", "Berserker", "Dodge", "Escape Artist", "Footwork", "Fortified Mind", "Mind Over Body", "Nine Lives", "Pathfinder", "Quick Hands", "Rotation", "Steel Brow", "Student", "Thrives in Chaos", "Underdog"],
+		"Sellsword Scenario Perk",
+		"Choose a company perk to be added when you recruit a bro for the Sellswords Scenario.\n\nStudent by default."
+	);
 
 	// Settings for that config 
-	settingEnableEnemySS.addCallback(function(_value) { ::Mod_Sellswords.EnableEnemySS = _value; });
+	settingSellswordsEnable.addCallback(function(_value) {
+		if (_value == "Disabled") {
+			::Mod_Sellswords.EnableEnemySS = false;
+			::Mod_Sellswords.KeepSpawningEnemySS = false;
+		} else if (_value == "Enabled") {
+			::Mod_Sellswords.EnableEnemySS = true;
+			::Mod_Sellswords.KeepSpawningEnemySS = true;
+		} else {
+			::Mod_Sellswords.EnableEnemySS = true;
+			::Mod_Sellswords.KeepSpawningEnemySS = false;
+		}
+	});
 	settingSellswordStrengthMultiplier.addCallback(function(_value) { ::Mod_Sellswords.SellswordStrengthMultiplier = _value; });
 	settingEnableHostileSequences.addCallback(function(_value) { ::Mod_Sellswords.EnableHostileSequences = _value; });
 	settingSellswordsPerk.addCallback(function(_value) { ::Mod_Sellswords.SellswordsPerk = _value; });
