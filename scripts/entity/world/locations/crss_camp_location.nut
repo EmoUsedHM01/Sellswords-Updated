@@ -333,5 +333,9 @@ this.crss_camp_location <- this.inherit("scripts/entity/world/location", {
 		body.setBrush("legend_ranger_tower");
 	}
 
+	function onCombatLost() {
+		this.World.Flags.set("crss_camp_Defeated", true);
+	}
+
 });
 
