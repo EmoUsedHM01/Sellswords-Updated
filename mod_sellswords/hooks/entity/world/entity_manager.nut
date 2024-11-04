@@ -218,7 +218,7 @@
 			return;
 		}
 
-		// otherwise overwrite orignal logic
+		// otherwise overwrite original logic
 
 		local garbage = [];
 
