@@ -5,6 +5,19 @@
 	{
 		if (!this.m.IsAllowedRandomizeValues) return;
 
+		if (this.m.BaseProperties.len() == 0) {
+			this.m.BaseProperties.ConditionMax <- this.m.ConditionMax;
+			this.m.BaseProperties.RegularDamageMax <- this.m.RegularDamageMax;
+			this.m.BaseProperties.ArmorDamageMult <- this.m.ArmorDamageMult;
+			this.m.BaseProperties.ChanceToHitHead <- this.m.ChanceToHitHead;
+			this.m.BaseProperties.DirectDamageAdd <- this.m.DirectDamageAdd;
+			this.m.BaseProperties.StaminaModifier <- this.m.StaminaModifier;
+			this.m.BaseProperties.ShieldDamage <- this.m.ShieldDamage;
+			this.m.BaseProperties.AmmoMax <- this.m.AmmoMax;
+			this.m.BaseProperties.AdditionalAccuracy <- this.m.AdditionalAccuracy;
+			this.m.BaseProperties.FatigueOnSkillUse <- this.m.FatigueOnSkillUse;
+		}
+
 		if (this.m.ConditionMax > 1)
 		{
 			this.m.Condition = this.Math.round(this.m.Condition * this.Math.rand(90, 140) * 0.01) * 1.0;
