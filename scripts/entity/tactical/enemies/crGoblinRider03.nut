@@ -151,7 +151,7 @@ this.crGoblinRider03 <- this.inherit("scripts/entity/tactical/goblin", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_push_the_advantage"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_push_the_advantage"));
 
 			if (::Is_PTR_Exist)
 			{

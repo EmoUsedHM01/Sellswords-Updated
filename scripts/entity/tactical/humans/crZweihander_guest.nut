@@ -48,7 +48,7 @@ this.crZweihander_guest <- this.inherit("scripts/entity/tactical/player", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));		
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_feint"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_feint"));
 		this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));												
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_flow"));

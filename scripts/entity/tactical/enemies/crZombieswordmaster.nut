@@ -54,7 +54,7 @@ this.crZombieswordmaster <- this.inherit("scripts/entity/tactical/enemies/zombie
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_push_the_advantage"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_push_the_advantage"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_nine_lives"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crFoB"));	
 		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));

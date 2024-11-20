@@ -80,7 +80,7 @@ this.crHedgeKnight <- this.inherit("scripts/entity/tactical/human", {
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_feint"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_feint"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_bloody_harvest"));

@@ -248,7 +248,7 @@ this.ghost_praetorian_boss_fragment <- ::inherit("scripts/entity/tactical/actor"
 		{
 			b.DamageRegularMin += 5;
 			b.DamageRegularMax += 10;
-			this.m.Skills.add(::new("scripts/skills/perks/perk_feint"));
+			this.m.Skills.add(::new("scripts/skills/perks/perk_legend_feint"));
 			this.m.Skills.add(::new("scripts/skills/perks/perk_dodge"));
 		}
 	}

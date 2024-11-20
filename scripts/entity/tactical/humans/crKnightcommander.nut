@@ -120,7 +120,7 @@ this.crKnightcommander <- this.inherit("scripts/entity/tactical/human", {
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_feint"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_feint"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));

@@ -194,7 +194,7 @@
 
 				if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_feint"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_feint"));
 				}
 			}
 			else if (r == 8)

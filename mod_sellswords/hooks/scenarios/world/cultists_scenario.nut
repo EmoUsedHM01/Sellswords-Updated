@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul awaits. You lead a small flock devoted to the elder god, and it is time to spread the word. Find more followers, acquire riches, and please Davkul with sacrifices.\n\n[color=#bcad8c]Cultists:[/color] Start with a group of five cultists. Encounter fanatical special cultists in towns.\n[color=#bcad8c]Sacrifices:[/color] Davkul will occasionally demand sacrifices from you, but also bestow boons upon those loyal to him. Davkul will not sacrifice his chosen elite. Cultists cost 25% less to buy and maintain.\n[color=#c90000]Let the Blood Flow:[/color] All cultists gain whip skills and favour fighting nobles and caravans.[/p]";		
+		this.m.Description = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul awaits. You lead a small flock devoted to the elder god, and it is time to spread the word. Find more followers, acquire riches, and please Davkul with sacrifices.\n\n[color=#bcad8c]Cultists:[/color] Start with a group of five cultists. Encounter fanatical special cultists in towns.\n[color=#bcad8c]Sacrifices:[/color] Davkul will occasionally demand sacrifices from you, but also bestow boons upon those loyal to him. Davkul will not sacrifice his chosen elite. Cultists cost 25% less to buy and maintain.\n[color=#c90000]Let the Blood Flow:[/color] All cultists gain bonus melee skill and the [color=#008060]True Believer[/color] perk.[/p]";		
 	}	
 	q.onSpawnAssets = @(__original) function()
 	{

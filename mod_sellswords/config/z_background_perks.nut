@@ -51,7 +51,7 @@ setupBackground("scripts/skills/backgrounds/butcher_background", ["scripts/skill
 
 setupBackground("scripts/skills/backgrounds/caravan_hand_background", ["scripts/skills/perks/perk_legend_efficient_packing"], [{def = ::Const.Perks.PerkDefs.LegendEfficientPacking, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/companion_1h_background", ["scripts/skills/perks/perk_feint"], [{def = ::Const.Perks.PerkDefs.Feint, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/companion_1h_background", ["scripts/skills/perks/perk_legend_feint"], [{def = ::Const.Perks.PerkDefs.Feint, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/companion_2h_background", ["scripts/skills/perks/perk_bloody_harvest"], [{def = ::Const.Perks.PerkDefs.BloodyHarvest, level = 0, optional = false}]);
 	
