@@ -1,4 +1,4 @@
-this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/character_background", {
+this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/ssu_base_dryad_background", {
 	m = {
 		PerkGroupMultipliers = []
 	},
@@ -102,12 +102,6 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		{
 			return true;
 		}
-	}
-
-	function onUpdate( _properties )
-	{
-		_properties.IsImmuneToBleeding = true;
-		_properties.IsImmuneToPoison = true;
 	}
 
 	function onAdded()
