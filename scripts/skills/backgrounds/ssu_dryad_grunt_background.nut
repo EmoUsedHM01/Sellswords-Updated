@@ -4,6 +4,7 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/ssu_bas
 	},
 	function create()
 	{
+		this.character_background.create();
 		this.m.ID = "background.ssu_dryad_grunt";
 		this.m.Icon = "ui/backgrounds/dryad_background.png";
 		this.m.Name = "Dryad";
