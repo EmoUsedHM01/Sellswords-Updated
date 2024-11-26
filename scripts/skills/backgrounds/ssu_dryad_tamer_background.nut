@@ -1,10 +1,9 @@
-this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/character_background", {
+this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/ssu_base_dryad_background", {
 	m = {
 		PerkGroupMultipliers = []
 	},
 	function create()
 	{
-		this.character_background.create();
 		this.m.ID = "background.ssu_dryad_tamer";
 		this.m.Icon = "ui/backgrounds/dryad_tamer_background.png";
 		this.m.Name = "Dryad Tamer";
@@ -147,12 +146,6 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 		{
 			return true;
 		}
-	}
-
-	function onUpdate( _properties )
-	{
-		_properties.IsImmuneToBleeding = true;
-		_properties.IsImmuneToPoison = true;
 	}
 
 	function onAdded()
