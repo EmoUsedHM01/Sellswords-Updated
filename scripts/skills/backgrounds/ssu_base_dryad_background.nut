@@ -86,4 +86,21 @@ this.ssu_base_dryad_background <- ::inherit("scripts/skills/backgrounds/characte
 			return;
 		}
 	}
+
+	function getTooltip()
+	{
+		local ret = this.character_background.getTooltip();
+		return ret;
+	}
+
+	function setupUpdateInjuryLayer()
+	{
+		local actor = this.getContainer().getActor().get();
+
+		// Will always die, no survival chance when downed
+		actor.isReallyKilled = function( _fatalityType )
+		{
+			return true;
+		}
+	}
 });

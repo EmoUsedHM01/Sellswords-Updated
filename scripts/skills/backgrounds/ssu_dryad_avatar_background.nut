@@ -68,12 +68,6 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/ssu_ba
 		];
 	}
 
-	function getTooltip()
-	{
-		local ret = this.character_background.getTooltip();
-		return ret;
-	}
-
 	function onAddEquipment()
 	{
 		local items = this.getContainer().getActor().getItems();
@@ -91,17 +85,6 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/ssu_ba
 				"dryad_helmet_shaman"
 			]
 		]));
-	}
-
-	function setupUpdateInjuryLayer()
-	{
-		local actor = this.getContainer().getActor().get();
-
-		// Will always die, no survival chance when downed
-		actor.isReallyKilled = function( _fatalityType )
-		{
-			return true;
-		}
 	}
 
 	function onAdded()
