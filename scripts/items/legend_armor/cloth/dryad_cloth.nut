@@ -3,6 +3,7 @@ this.dryad_cloth <- this.inherit("scripts/items/legend_armor/legend_armor", {
 	function create()
 	{
 		this.legend_armor.create();
+
 		this.m.ID = "legend_armor.body.dryad_cloth";
 		this.m.Name = "Dryad Gown";
 		this.m.Description = "A long and soft gown, magically woven from long leaves. Whatever magic was used to craft it seems to have lingered, slowly regrowing it when damaged.";
@@ -39,7 +40,7 @@ this.dryad_cloth <- this.inherit("scripts/items/legend_armor/legend_armor", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/repair_item.png",
-			text = "Repairs [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] armour each turn"
+			text = "Regrows [color=" + this.Const.UI.Color.PositiveValue + "]"+ 5 + "[/color] armour each turn"
 		});
 		return result;
 	}
@@ -47,25 +48,101 @@ this.dryad_cloth <- this.inherit("scripts/items/legend_armor/legend_armor", {
 	function onTurnStart()
 	{
 		local actor = this.getContainer().getActor();
-		local body = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Body);
-		local bodyMissing = body.getArmorMax() - body.getArmor();
-		local bodyAdded = this.Math.min(bodyMissing, 5);
 
-		if (bodyAdded <= 0)
+		local layersWithRegen = findLayersWithRegenFor(actor);
+		local armorRegen = calculateRegenFrom(layersWithRegen);
+
+		applyArmorRegenTo(actor, armorRegen);
+	}
+
+	function findLayersWithRegenFor( _actor )
+	{
+		local body = _actor.getItems().getItemAtSlot(this.Const.ItemSlot.Body);
+		if (body == null)
 		{
 			return;
 		}
 
-		body.setArmor(body.getArmor() + bodyAdded);
-		actor.setDirty(true);
+		local upgradeTypes = body.getUpgrades();
 
-		if (!actor.isHiddenToPlayer())
+		local layersWithRegen = [];
+		for( local i = 0; i < upgradeTypes.len(); i++ )
 		{
-			this.Tactical.spawnIconEffect("status_effect_79", actor.getTile(), this.Const.Tactical.Settings.SkillIconOffsetX, this.Const.Tactical.Settings.SkillIconOffsetY, this.Const.Tactical.Settings.SkillIconScale, this.Const.Tactical.Settings.SkillIconFadeInDuration, this.Const.Tactical.Settings.SkillIconStayDuration, this.Const.Tactical.Settings.SkillIconFadeOutDuration, this.Const.Tactical.Settings.SkillIconMovement);
-			this.Sound.play("sounds/enemies/dlc2/schrat_idle_05.wav", this.Const.Sound.Volume.RacialEffect * 2.0, actor.getPos());
-			this.Tactical.EventLog.log(this.Const.UI.getColorized(this.m.Name, "#1e468f") + " repaired for " + bodyAdded + " points");
+			local upgradeType = upgradeTypes[i];
+			if (upgradeType != null && upgradeType ==  1) { // 1 is visible upgrade
+				local layer = body.getUpgrade(i);
+
+				if (hasRegen(layer)) {
+					layersWithRegen.push(layer);
+				}
+			}
 		}
+
+		// check the armor base layer
+		if (hasRegen(this))
+		{
+			layersWithRegen.push(this);
+		}
+		local totalLayers = upgradeTypes.len() + 1;
+		this.logInfo("Found : " + layersWithRegen.len() + " regenerating layers out of " + totalLayers);
+		return layersWithRegen;
 	}
-	
+
+	function hasRegen ( _armor ) {
+		return _armor.m.ID.find("dryad") != null;
+	}
+
+	function calculateRegenFrom( _layers)
+	{
+		local totalRegen = 0;
+
+		foreach (layer in _layers)
+		{
+			if (layer.m.ConditionMax == layer.m.Condition) {
+				// only damaged layers will contribute to regeneration
+				continue;
+			}
+			local regenValue = regenValueFor(layer);
+			totalRegen += regenValue;
+
+			this.Tactical.EventLog.log(this.Const.UI.getColorized(layer.m.Name, "#1e468f") + " contributes " + regenValue + " armor regen");
+		}
+
+		return totalRegen;
+	}
+
+	function regenValueFor( _layer ) {
+		return this.Math.min(_layer.m.ConditionMax - _layer.m.Condition, 5);
+	}
+
+
+	function applyArmorRegenTo( _actor, _regenValue ) {
+		if (_regenValue <= 0)
+		{
+			return;
+		}
+
+		if (!_actor.isHiddenToPlayer())
+		{
+			this.Tactical.spawnIconEffect(
+				"status_effect_79",
+				_actor.getTile(),
+				this.Const.Tactical.Settings.SkillIconOffsetX,
+				this.Const.Tactical.Settings.SkillIconOffsetY,
+				this.Const.Tactical.Settings.SkillIconScale,
+				this.Const.Tactical.Settings.SkillIconFadeInDuration,
+				this.Const.Tactical.Settings.SkillIconStayDuration,
+				this.Const.Tactical.Settings.SkillIconFadeOutDuration,
+				this.Const.Tactical.Settings.SkillIconMovement
+				);
+		}
+		this.Sound.play("sounds/enemies/dlc2/schrat_idle_05.wav", this.Const.Sound.Volume.RacialEffect * 2.0, _actor.getPos());
+
+		local body = _actor.getItems().getItemAtSlot(this.Const.ItemSlot.Body);
+		body.addArmor(_regenValue); // this will repair all layers, even non-dryad ones from bottom up
+
+		this.Tactical.EventLog.log(this.Const.UI.getColorized(this.m.Name, "#1e468f") + " regrows by " + _regenValue + " points");
+	}
+
 });
 
