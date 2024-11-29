@@ -50,7 +50,7 @@ this.crMercenaryranged <- this.inherit("scripts/entity/tactical/human", {
 
 		if("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ballistics"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_ballistics"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_lookout"));

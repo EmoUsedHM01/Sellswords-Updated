@@ -48,7 +48,7 @@ this.dryad_enemy_archer <- this.inherit("scripts/entity/tactical/human", {
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ballistics"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_ballistics"));
 
 			if (::Is_PTR_Exist)
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_eyes_up"));

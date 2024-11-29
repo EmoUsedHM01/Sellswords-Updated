@@ -110,7 +110,7 @@ this.crConscript <- this.inherit("scripts/entity/tactical/human", {
 		{
 			this.m.Skills.add(this.new("scripts/skills/effects/dodge_effect"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ballistics"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_ballistics"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 		}

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/accessory/accessory_dog", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/accessory/legend_accessory_dog", function ( q ) {
 
 	q.onActorDied = @(__original) function( _onTile )
 	{

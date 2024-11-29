@@ -109,7 +109,7 @@
 		this.m.Items.equip(this.new("scripts/items/weapons/named/named_handgonne"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_ballistics"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_ballistics"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_hair_splitter"));
 
 		if (::Is_PTR_Exist)

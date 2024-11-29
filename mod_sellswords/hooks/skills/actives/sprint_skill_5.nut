@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/sprint_skill_5", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_sprint_skill_5", function ( q ) {
 
 	q.create = @(__original) function()
 	{

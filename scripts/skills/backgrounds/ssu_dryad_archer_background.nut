@@ -164,7 +164,7 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-		this.m.Container.add(this.new("scripts/skills/perks/perk_ballistics"))
+		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_ballistics"))
 		this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"))
 	}
 

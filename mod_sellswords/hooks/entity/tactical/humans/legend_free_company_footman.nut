@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_pikeman", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_free_company_footman", function( q ) {
 
 	q.onInit = @( __original ) function()
 	{
@@ -8,8 +8,10 @@
 		if (::Is_PTR_Exist)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_personal_armor"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_cover_ally"));
 		}
-				
+					
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;

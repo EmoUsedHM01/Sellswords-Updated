@@ -5,8 +5,8 @@
 		if (!this.m.Container.hasSkill("actives.legend_climb"))
 			this.m.Container.add(this.new("scripts/skills/actives/legend_climb"));
 
-		if (!this.m.Container.hasSkill("actives.sprint"))
-			this.m.Container.add(this.new("scripts/skills/actives/sprint_skill_5"));
+		if (!this.m.Container.hasSkill("actives.legend_sprint"))
+			this.m.Container.add(this.new("scripts/skills/actives/legend_sprint_skill_5"));
 
 		if (!this.m.IsNew)
 			return;
@@ -49,7 +49,7 @@
 	q.onRemoved = @( __original ) function()
 	{
 		this.m.Container.removeByID("actives.legend_climb");
-		this.m.Container.removeByID("actives.sprint");
+		this.m.Container.removeByID("actives.legend_sprint");
 	}
 
 	q.onSerialize <- function ( _out )

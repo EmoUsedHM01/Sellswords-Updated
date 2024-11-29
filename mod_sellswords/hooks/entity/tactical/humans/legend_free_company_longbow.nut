@@ -1,15 +1,16 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_spearman_low", function( q ) {
-	
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_free_company_longbow", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
+
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
 
 		if (::Is_PTR_Exist)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
 		}
-				
+			
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -28,7 +29,7 @@
 	{
 		__original();
 
-		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 4);
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 	}
 
 });

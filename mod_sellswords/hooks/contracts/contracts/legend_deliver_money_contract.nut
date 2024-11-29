@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/deliver_money_contract", function(q)
+::Mod_Sellswords.HooksMod.hook("scripts/contracts/contracts/legend_deliver_money_contract", function(q)
 {
 	q.setup = @( __original ) function()
 	{

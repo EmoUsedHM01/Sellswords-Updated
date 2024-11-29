@@ -1,16 +1,16 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_spearman", function( q ) {
-	
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_free_company_infantry", function( q ) {
+
 	q.onInit = @( __original ) function()
 	{
 		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
-		
+
 		if (::Is_PTR_Exist)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_phalanx"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));	
 		}
-
+				
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;

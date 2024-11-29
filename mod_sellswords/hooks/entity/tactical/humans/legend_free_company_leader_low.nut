@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/free_company_infantry", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/legend_free_company_leader_low", function( q ) {
 
 	q.onInit = @( __original ) function()
 	{
@@ -8,7 +8,8 @@
 		if (::Is_PTR_Exist)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_formidable_approach"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bulwark"));	
 		}
 				
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
@@ -29,7 +30,7 @@
 	{
 		__original();
 
-		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 6);
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 	}
 
 });
