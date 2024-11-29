@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_last_stand", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_last_stand", function ( q ) {
 
 	if (!(::Is_PTR_Exist))
 		q.m.IsSpent <- false;
