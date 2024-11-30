@@ -5,7 +5,7 @@ this.cr_smackdown_effect <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "effects.cr_smackdown";
-		this.m.Name = "Rattled";
+		this.m.Name = "Smacked Down";
 		this.m.Icon = "ui/perks/legend_vala_trance_mastery.png";
 		this.m.IconMini = "crSmackdown_mini";
 		this.m.Type = this.Const.SkillType.StatusEffect;
