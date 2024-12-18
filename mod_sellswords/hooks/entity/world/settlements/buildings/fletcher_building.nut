@@ -4,19 +4,45 @@
 	{
 		_list.extend([
 			{
-				R = 20,
+				R = 50,
 				P = 1.0,
-				S = "weapons/crossbow_chukonu"
+				S = "ammo/quiver_of_fire_arrows"
 			},
 			{
-				R = 20,
+				R = 50,
 				P = 1.0,
-				S = "weapons/crossbow_chukonu"
+				S = "ammo/quiver_of_freezing_arrows"
 			},
 			{
+				R = 50,
 				R = 0,
 				P = 1.0,
-				S = "ammo/chukonu_ammo"
+				S = "ammo/quiver_of_bleeding_arrows"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_poisoned_arrows"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_fire_bolts"
+			}
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_freezing_bolts"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_bleeding_bolts"
+			},
+			{
+				R = 50,
+				P = 1.0,
+				S = "ammo/quiver_of_poisoned_bolts"
 			}
 		]);
 

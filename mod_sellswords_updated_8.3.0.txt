@@ -1,5 +1,255 @@
 8.3.0 changes
 
+...\mod_sellswords\config\z_background_perks.nut
+...\mod_sellswords\hooks\config\strings.nut
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_raider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_elite.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_stollwurm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_stollwurm_tail.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_betrayer.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_boss.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_slayer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_miner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_greatsword.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_sergeant.nut
+...\mod_sellswords\hooks\entity\tactical\humans\oathbringer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+...\mod_sellswords\hooks\hooks_enemies.nut
+...\mod_sellswords\hooks\items\weapons\named\named_orc_flail_2h.nut -> mod_sellswords\hooks\items\weapons\named\legend_named_orc_flail_2h.nut
+...\mod_sellswords\hooks\skills\actives\sprint_skill_3.nut -> mod_sellswords\hooks\skills\actives\legend_sprint_skill_3.nut
+...\mod_sellswords\hooks\skills\actives\sprint_skill_5.nut -> mod_sellswords\hooks\skills\actives\legend_sprint_skill_5.nut
+...\mod_sellswords\hooks\skills\effects\return_favor_effect.nut -> mod_sellswords\hooks\skills\effects\legend_return_favor_effect.nut
+...\mod_sellswords\hooks\skills\perks\perk_lookout.nut -> mod_sellswords\hooks\skills\perks\perk_legend_lookout.nut
+...\mod_sellswords\hooks\skills\perks\perk_mastery_fist.nut -> mod_sellswords\hooks\skills\perks\perk_legend_mastery_fist.nut
+...\mod_sellswords\hooks\skills\perks\perk_slaughterer.nut -> mod_sellswords\hooks\skills\perks\perk_legend_slaughterer.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_smackdown.nut
+...\mod_sellswords\hooks\skills\racial\mummy_racial.nut -> mod_sellswords\hooks\skills\racial\legend_mummy_racial.nut
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
+...\scripts\entity\tactical\enemies\crGoblinRider00.nut
+...\scripts\entity\tactical\enemies\crGoblinRider01.nut
+...\scripts\entity\tactical\enemies\crGoblinRider02.nut
+...\scripts\entity\tactical\enemies\crGoblinRider03.nut
+...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
+...\scripts\entity\tactical\enemies\crZombieArbalester.nut
+...\scripts\entity\tactical\enemies\crZombieBillman.nut
+...\scripts\entity\tactical\enemies\crZombieswordmaster.nut
+...\scripts\entity\tactical\enemies\dryad_unhold.nut
+...\scripts\entity\tactical\enemies\ghost_praetorian_boss.nut
+...\scripts\entity\tactical\enemies\ghost_praetorian_boss_fragment.nut
+...\scripts\entity\tactical\humans\Solemner.nut
+...\scripts\entity\tactical\humans\crArbalester_guest.nut
+...\scripts\entity\tactical\humans\crBanditArbalester.nut
+...\scripts\entity\tactical\humans\crBanditBillman.nut
+...\scripts\entity\tactical\humans\crBanditSergeant.nut
+...\scripts\entity\tactical\humans\crBanditZweihander.nut
+...\scripts\entity\tactical\humans\crBanditleaderwolf.nut
+...\scripts\entity\tactical\humans\crBarbarianArbalester.nut
+...\scripts\entity\tactical\humans\crBarbarianBillman.nut
+...\scripts\entity\tactical\humans\crBarbarianChampionhigh.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crBarbarianSergeant.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_High.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+...\scripts\entity\tactical\humans\crBarbarianZweihander.nut
+...\scripts\entity\tactical\humans\crBarbblacksmith.nut
+...\scripts\entity\tactical\humans\crBaron.nut
+...\scripts\entity\tactical\humans\crBaron02.nut
+...\scripts\entity\tactical\humans\crBillman_guest.nut
+...\scripts\entity\tactical\humans\crDesperado.nut
+...\scripts\entity\tactical\humans\crDesperado_High.nut
+...\scripts\entity\tactical\humans\crGuardsman_pol.nut
+...\scripts\entity\tactical\humans\crHashshashin.nut
+...\scripts\entity\tactical\humans\crHashshashin_High.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crHonoraryknight.nut
+...\scripts\entity\tactical\humans\crImmortal.nut
+...\scripts\entity\tactical\humans\crKnight.nut
+...\scripts\entity\tactical\humans\crKnight_guest.nut
+...\scripts\entity\tactical\humans\crKnightcommander.nut
+...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
+...\scripts\entity\tactical\humans\crMercenary.nut
+...\scripts\entity\tactical\humans\crMercenaryranged.nut
+...\scripts\entity\tactical\humans\crNomadArbalester.nut
+...\scripts\entity\tactical\humans\crNomadBillman.nut
+...\scripts\entity\tactical\humans\crNomadSergeant.nut
+...\scripts\entity\tactical\humans\crNomadZweihander.nut
+...\scripts\entity\tactical\humans\crOathbringer.nut
+...\scripts\entity\tactical\humans\crPeasantblacksmith.nut
+...\scripts\entity\tactical\humans\crPeasantgravedigger.nut
+...\scripts\entity\tactical\humans\crPeasantherbalist.nut
+...\scripts\entity\tactical\humans\crPeasantkiller.nut
+...\scripts\entity\tactical\humans\crRetiredsoldierpol.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSellsword_Polearm.nut
+...\scripts\entity\tactical\humans\crSellsword_Tank.nut
+...\scripts\entity\tactical\humans\crSellswordveteran.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Tank.nut
+...\scripts\entity\tactical\humans\crSlayer.nut
+...\scripts\entity\tactical\humans\crSquire.nut
+...\scripts\entity\tactical\humans\crSquireFencer.nut
+...\scripts\entity\tactical\humans\crSquire_guest.nut
+...\scripts\entity\tactical\humans\crSquire_normal.nut
+...\scripts\entity\tactical\necro_zombie_dog.nut
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_always_use.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_bow.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_default.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_knock_out.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_split.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_splitshield.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_swing.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_throw_net.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_boost_morale.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_break_free.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_rally.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_throw_bomb.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_warcry.nut
+...\mod_sellswords\hooks\contracts\contracts\legend_deliver_money_contract.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gunner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_archer_low.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_billman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_crossbow.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_footman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_infantry.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_leader_low.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_longbow.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_pikeman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_slayer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_spearman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_spearman_low.nut
+...\mod_sellswords\hooks\items\accessory\legend_accessory_dog.nut
+...\mod_sellswords\hooks\skills\effects\riposte_effect.nut
+...\mod_sellswords\hooks\skills\perks\perk_debilitate.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_athlete.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_tumble.nut
+...\scripts\entity\tactical\enemies\crZombieArbalester.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_archer.nut
+...\scripts\entity\tactical\humans\crArbalester_guest.nut
+...\scripts\entity\tactical\humans\crBanditArbalester.nut
+...\scripts\entity\tactical\humans\crBarbarianArbalester.nut
+...\scripts\entity\tactical\humans\crConscript.nut
+...\scripts\entity\tactical\humans\crMercenaryranged.nut
+...\scripts\entity\tactical\humans\crNomadArbalester.nut
+...\scripts\items\misc\anatomist\lindwurm_sequence_item.nut
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\mod_sellswords\config\z_background_perks.nut
+...\mod_sellswords\hooks\config\strings.nut
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_raider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_elite.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_stollwurm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_stollwurm_tail.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_betrayer.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_boss.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_free_company_slayer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_miner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_greatsword.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_sergeant.nut
+...\mod_sellswords\hooks\entity\tactical\humans\oathbringer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\fletcher_building.nut
+...\mod_sellswords\hooks\hooks_enemies.nut
+...\mod_sellswords\hooks\items\weapons\named\named_orc_flail_2h.nut -> mod_sellswords\hooks\items\weapons\named\legend_named_orc_flail_2h.nut
+...\mod_sellswords\hooks\skills\actives\sprint_skill_3.nut -> mod_sellswords\hooks\skills\actives\legend_sprint_skill_3.nut
+...\mod_sellswords\hooks\skills\actives\sprint_skill_5.nut -> mod_sellswords\hooks\skills\actives\legend_sprint_skill_5.nut
+...\mod_sellswords\hooks\skills\effects\return_favor_effect.nut -> mod_sellswords\hooks\skills\effects\legend_return_favor_effect.nut
+...\mod_sellswords\hooks\skills\perks\perk_lookout.nut -> mod_sellswords\hooks\skills\perks\perk_legend_lookout.nut
+...\mod_sellswords\hooks\skills\perks\perk_mastery_fist.nut -> mod_sellswords\hooks\skills\perks\perk_legend_mastery_fist.nut
+...\mod_sellswords\hooks\skills\perks\perk_slaughterer.nut -> mod_sellswords\hooks\skills\perks\perk_legend_slaughterer.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_smackdown.nut
+...\mod_sellswords\hooks\skills\racial\mummy_racial.nut -> mod_sellswords\hooks\skills\racial\legend_mummy_racial.nut
+...\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
+...\scripts\entity\tactical\enemies\crGoblinRider00.nut
+...\scripts\entity\tactical\enemies\crGoblinRider01.nut
+...\scripts\entity\tactical\enemies\crGoblinRider02.nut
+...\scripts\entity\tactical\enemies\crGoblinRider03.nut
+...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
+...\scripts\entity\tactical\enemies\crZombieArbalester.nut
+...\scripts\entity\tactical\enemies\crZombieBillman.nut
+...\scripts\entity\tactical\enemies\crZombieswordmaster.nut
+...\scripts\entity\tactical\enemies\dryad_unhold.nut
+...\scripts\entity\tactical\enemies\ghost_praetorian_boss.nut
+...\scripts\entity\tactical\enemies\ghost_praetorian_boss_fragment.nut
+...\scripts\entity\tactical\humans\Solemner.nut
+...\scripts\entity\tactical\humans\crArbalester_guest.nut
+...\scripts\entity\tactical\humans\crBanditArbalester.nut
+...\scripts\entity\tactical\humans\crBanditBillman.nut
+...\scripts\entity\tactical\humans\crBanditSergeant.nut
+...\scripts\entity\tactical\humans\crBanditZweihander.nut
+...\scripts\entity\tactical\humans\crBanditleaderwolf.nut
+...\scripts\entity\tactical\humans\crBarbarianArbalester.nut
+...\scripts\entity\tactical\humans\crBarbarianBillman.nut
+...\scripts\entity\tactical\humans\crBarbarianChampionhigh.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crBarbarianSergeant.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_High.nut
+...\scripts\entity\tactical\humans\crBarbarianZerker_Low.nut
+...\scripts\entity\tactical\humans\crBarbarianZweihander.nut
+...\scripts\entity\tactical\humans\crBarbblacksmith.nut
+...\scripts\entity\tactical\humans\crBaron.nut
+...\scripts\entity\tactical\humans\crBaron02.nut
+...\scripts\entity\tactical\humans\crBillman_guest.nut
+...\scripts\entity\tactical\humans\crDesperado.nut
+...\scripts\entity\tactical\humans\crDesperado_High.nut
+...\scripts\entity\tactical\humans\crGuardsman_pol.nut
+...\scripts\entity\tactical\humans\crHashshashin.nut
+...\scripts\entity\tactical\humans\crHashshashin_High.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crHonoraryknight.nut
+...\scripts\entity\tactical\humans\crImmortal.nut
+...\scripts\entity\tactical\humans\crKnight.nut
+...\scripts\entity\tactical\humans\crKnight_guest.nut
+...\scripts\entity\tactical\humans\crKnightcommander.nut
+...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
+...\scripts\entity\tactical\humans\crMercenary.nut
+...\scripts\entity\tactical\humans\crMercenaryranged.nut
+...\scripts\entity\tactical\humans\crNomadArbalester.nut
+...\scripts\entity\tactical\humans\crNomadBillman.nut
+...\scripts\entity\tactical\humans\crNomadSergeant.nut
+...\scripts\entity\tactical\humans\crNomadZweihander.nut
+...\scripts\entity\tactical\humans\crOathbringer.nut
+...\scripts\entity\tactical\humans\crPeasantblacksmith.nut
+...\scripts\entity\tactical\humans\crPeasantgravedigger.nut
+...\scripts\entity\tactical\humans\crPeasantherbalist.nut
+...\scripts\entity\tactical\humans\crPeasantkiller.nut
+...\scripts\entity\tactical\humans\crRetiredsoldierpol.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSellsword_Polearm.nut
+...\scripts\entity\tactical\humans\crSellsword_Tank.nut
+...\scripts\entity\tactical\humans\crSellswordveteran.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Tank.nut
+...\scripts\entity\tactical\humans\crSlayer.nut
+...\scripts\entity\tactical\humans\crSquire.nut
+...\scripts\entity\tactical\humans\crSquireFencer.nut
+...\scripts\entity\tactical\humans\crSquire_guest.nut
+...\scripts\entity\tactical\humans\crSquire_normal.nut
+...\scripts\entity\tactical\necro_zombie_dog.nut
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_slinger.nut
+...\mod_sellswords\hooks\items\weapons\legend_slingstaff.nut
+...\scripts\skills\actives\twincleavers_1.nut
+
+Renamings for legends 19.0.0 - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.2.9 changes
@@ -130,7 +380,7 @@ Fix so it properly counts kills - Breaky
 ...\mod_sellswords\hooks\skills\effects\acid_effect.nut
 Add a check on added, to prevent save game stopping not load - Breaky
 
-...\scripts\items\weapons\greenskins/cr_orc_staff.nut
+...\scripts\items\weapons\greenskins\cr_orc_staff.nut
 Make the orc warlock staff droppable - Breaky
 
 ...\scripts\skills\actives\mod_raise_all_undead.nut

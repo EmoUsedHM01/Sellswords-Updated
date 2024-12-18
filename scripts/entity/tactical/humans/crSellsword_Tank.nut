@@ -63,7 +63,7 @@ this.crSellsword_Tank <- this.inherit("scripts/entity/tactical/human", {
 			[2, "perk_anticipation", 1],
 			[8, "perk_colossus", 1],
 			[4, "perk_stalwart", 1],
-			[3, "perk_last_stand", 1],
+			[3, "perk_legend_last_stand", 1],
 			[3, "perk_nine_lives", 2],			
 			[4, "perk_legend_second_wind", 1],
 			[2, "perk_crBlocknormal", 1],

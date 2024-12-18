@@ -114,7 +114,7 @@ this.crDesperado <- this.inherit("scripts/entity/tactical/human", {
 				}
 				
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));				
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));				
 				b.MeleeDefense += 5;				
 
 				if (dc >= 100)

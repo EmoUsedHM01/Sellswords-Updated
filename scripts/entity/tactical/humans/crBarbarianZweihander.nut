@@ -136,7 +136,7 @@ this.crBarbarianZweihander <- this.inherit("scripts/entity/tactical/human", {
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		this.m.Items.equip(this.new("scripts/items/weapons/named/named_heavy_rusty_axe"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	
 
 		if (::Is_PTR_Exist)
 		{

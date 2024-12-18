@@ -127,7 +127,7 @@ this.crGoblinRider01 <- this.inherit("scripts/entity/tactical/goblin", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_head_hunter"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 
 		if (::Is_PTR_Exist)

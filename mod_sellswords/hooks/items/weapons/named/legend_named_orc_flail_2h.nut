@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_orc_flail_2h", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/legend_named_orc_flail_2h", function ( q ) {
 
 	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		local baseWeapon = ::new("scripts/items/weapons/greenskins/orc_flail_2h");

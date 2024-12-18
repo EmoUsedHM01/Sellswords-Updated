@@ -85,7 +85,7 @@ this.twincleavers_1 <- this.inherit("scripts/skills/skill", {
 
 		if (!_user.isAlive() || _user.isDying())
 		{
-			return;
+			return success;
 		}
 
 		if (success)

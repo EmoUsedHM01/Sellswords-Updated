@@ -71,7 +71,7 @@ this.crBarbarianZerker_Low <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_fist"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_fist"));
 
 		if (::Is_PTR_Exist)
 		{
@@ -108,7 +108,7 @@ this.crBarbarianZerker_Low <- this.inherit("scripts/entity/tactical/human", {
 			if (this.World.getTime().Days >= 175)
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_muscularity"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));					
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));					
 				b.MeleeDefense += 2;				
 
 				if (this.World.getTime().Days >= 225)

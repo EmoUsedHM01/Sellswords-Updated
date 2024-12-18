@@ -79,7 +79,7 @@ this.crDesperado_High <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));
 
 		if (::Is_PTR_Exist)
@@ -154,7 +154,7 @@ this.crDesperado_High <- this.inherit("scripts/entity/tactical/human", {
 							this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_fruits_of_labor"));	
 						}
 						
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));						
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));						
 						if (dc >= 200)
 						{
 							b.DamageTotalMult += 0.05;						

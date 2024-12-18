@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_mastery_fist", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_mastery_fist", function ( q ) {
 
 	q.onAfterUpdate <- function ( _properties )
 	{

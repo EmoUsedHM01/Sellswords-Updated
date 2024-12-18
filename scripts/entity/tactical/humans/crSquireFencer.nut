@@ -78,7 +78,7 @@ this.crSquireFencer <- this.inherit("scripts/entity/tactical/human", {
 				this.m.BaseProperties.MeleeDefense += 5;				
 				if (dc >= 160)
 				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));	
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));	
 					this.m.BaseProperties.Stamina += 10;					
 					if (dc >= 200)
 					{

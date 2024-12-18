@@ -50,7 +50,7 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/actives/barbarian_fury_skill"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_adrenalin"));
@@ -71,7 +71,7 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 		if (dc >= 80)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_fist"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_fist"));
 			
 			if (::Is_PTR_Exist)
 				this.m.Skills.add(this.new("scripts/skills/racial/ptr_orc_racial"));
@@ -104,7 +104,7 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_vigorous_assault"));
 			}
 
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 		}

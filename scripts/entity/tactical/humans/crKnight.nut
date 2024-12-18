@@ -55,7 +55,7 @@ this.crKnight <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));				
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_shield_skill"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_shield_push"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_bash"));
@@ -127,7 +127,7 @@ this.crKnight <- this.inherit("scripts/entity/tactical/human", {
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{	
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_feint"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 

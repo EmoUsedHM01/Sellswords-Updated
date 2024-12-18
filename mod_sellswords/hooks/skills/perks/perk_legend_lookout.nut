@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_lookout", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_lookout", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{

@@ -79,7 +79,7 @@ this.crSquire_guest <- this.inherit("scripts/entity/tactical/player", {
 				this.m.BaseProperties.MeleeDefense += 5;					
 				if (this.World.getTime().Days >= 160)
 				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));	
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));	
 					this.m.BaseProperties.Stamina += 10;						
 					if (this.World.getTime().Days >= 200)
 					{

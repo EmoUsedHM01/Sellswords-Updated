@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/return_favor_effect", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_return_favor_effect", function ( q ) {
 
 	q.onMissed = @(__original) function( _attacker, _skill )
 	{

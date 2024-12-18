@@ -51,7 +51,7 @@ this.crLindwurm_slayer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));					
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));		
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlocknormal"));	
 		
@@ -112,7 +112,7 @@ this.crLindwurm_slayer <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_vigorous_assault"));	
 			}
 					
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));			
 		}

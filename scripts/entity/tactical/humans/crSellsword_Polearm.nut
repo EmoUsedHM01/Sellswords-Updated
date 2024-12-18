@@ -46,7 +46,7 @@ this.crSellsword_Polearm <- this.inherit("scripts/entity/tactical/human", {
 			[2, "perk_anticipation", 1],
 			[6, "perk_colossus", 1],
 			[8, "perk_underdog", 1],			
-			[2, "perk_last_stand", 1],
+			[2, "perk_legend_last_stand", 1],
 			[2, "perk_nine_lives", 2],			
 			[1, "perk_legend_second_wind", 1],
 			[2, "perk_crBlocknormal", 1],

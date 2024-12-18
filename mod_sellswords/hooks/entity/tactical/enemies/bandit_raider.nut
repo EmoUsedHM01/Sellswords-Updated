@@ -58,7 +58,7 @@
 
 				if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_bloody_harvest"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_bloody_harvest"));
 				}
 			}
 			else if (r == 4)
@@ -76,7 +76,7 @@
 
 				if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
 				}
 			}
 			else if (r == 6)

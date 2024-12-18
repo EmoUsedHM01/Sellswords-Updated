@@ -45,7 +45,7 @@ this.crHashshashin <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_perfect_fit"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));	
 		
 		if (::Is_PTR_Exist)
 		{

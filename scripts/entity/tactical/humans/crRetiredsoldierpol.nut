@@ -39,7 +39,7 @@ this.crRetiredsoldierpol <- this.inherit("scripts/entity/tactical/human", {
 		if("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));		
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));			
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 		}

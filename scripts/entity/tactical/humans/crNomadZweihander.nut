@@ -127,7 +127,7 @@ this.crNomadZweihander <- this.inherit("scripts/entity/tactical/human", {
 			"weapons/named/named_two_handed_scimitare",				
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));		
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	
 		
 		if (::Is_PTR_Exist)
 		{

@@ -4,7 +4,7 @@
 	{
 		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
-		this.m.Skills.removeByID("perk.perk.hold_out");	
+		this.m.Skills.removeByID("perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBruiser"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crIronsideweak"));
@@ -23,7 +23,7 @@
 				this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 20;		
 				this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 10;
 				this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 10;				
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 
 				if (this.World.getTime().Days >= 200)
 				{
@@ -236,7 +236,7 @@
 			]));
 		}
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_alert"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));			
 		return true;
 	}

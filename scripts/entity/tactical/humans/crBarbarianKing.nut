@@ -107,7 +107,7 @@ this.crBarbarianKing <- this.inherit("scripts/entity/tactical/human", {
 				this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 20;
 				this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 10;
 				this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 10;
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 				if (dc >= 200)
 				{
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_alert"));
@@ -273,7 +273,7 @@ this.crBarbarianKing <- this.inherit("scripts/entity/tactical/human", {
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_alert"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 
 		return true;

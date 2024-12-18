@@ -4,7 +4,7 @@
 	{
 		__original();
 
-		this.m.Skills.removeByID("perk.perk.hold_out");	
+		this.m.Skills.removeByID("perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_armor_mastery_heavy"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
@@ -46,7 +46,7 @@
 					if (this.World.getTime().Days >= 180)
 					{
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_crTotalcover"));
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 						this.m.BaseProperties.MeleeSkill += 3;
 						this.m.BaseProperties.Stamina += 5;
 

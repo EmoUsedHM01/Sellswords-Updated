@@ -136,7 +136,7 @@ this.crBaron02 <- this.inherit("scripts/entity/tactical/human", {
 			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_head_hunter"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));			
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_perfect_fit"));
 		this.m.Skills.add(this.new("scripts/skills/effects/dodge_effect"));			

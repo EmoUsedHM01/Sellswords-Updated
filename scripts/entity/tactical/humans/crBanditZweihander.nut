@@ -207,7 +207,7 @@ this.crBanditZweihander <- this.inherit("scripts/entity/tactical/human", {
 			]));
 		}
 
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	
 
 		if (::Is_PTR_Exist)
 		{

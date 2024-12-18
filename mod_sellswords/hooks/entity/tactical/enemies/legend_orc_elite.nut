@@ -4,7 +4,7 @@
 	{
 		__original();
 
-		this.m.Skills.removeByID("perk.perk.hold_out");
+		this.m.Skills.removeByID("perk.hold_out");
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
@@ -38,7 +38,7 @@
 					this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 25;
 					this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 25;
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 					if (dc >= 200)
 					{
 						if (::Is_PTR_Exist)

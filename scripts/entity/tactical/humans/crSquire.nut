@@ -69,7 +69,7 @@ this.crSquire <- this.inherit("scripts/entity/tactical/human", {
 				this.m.BaseProperties.Stamina += 10;				
 				if (dc >= 200)
 				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));				
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));				
 					if (dc >= 240)
 					{
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_crFoB"));												

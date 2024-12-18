@@ -65,7 +65,7 @@ this.crSellswordveteran <- this.inherit("scripts/entity/tactical/human", {
 			[2, ["perk_colossus", "perk_steadfast"], 2],
 			[2, ["perk_lone_wolf", "perk_anticipation"], 2],			
 			[1, "perk_head_hunter", 1],													
-			[2, "perk_last_stand", 1],
+			[2, "perk_legend_last_stand", 1],
 			[2, "perk_nine_lives", 2],			
 			[2, "perk_crBlocknormal", 1],
 			[2, "perk_crTrumpcard", 1],
@@ -321,7 +321,7 @@ this.crSellswordveteran <- this.inherit("scripts/entity/tactical/human", {
 		local mainhandItem = this.getMainhandItem();		
 		if (::Is_PTR_Exist && mainhandItem != null && mainhandItem.isItemType(this.Const.Items.ItemType.OneHanded))
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));
 			this.m.Skills.addPerkTree(this.Const.Perks.OneHandedTree);	
 		}		
 
@@ -460,7 +460,7 @@ this.crSellswordveteran <- this.inherit("scripts/entity/tactical/human", {
 					"weapons/named/named_spontoon",					
 				];
 
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));
 				
 				if (::Is_PTR_Exist)
 				{

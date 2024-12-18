@@ -119,7 +119,7 @@ foreach(script in [
 		q.onInit = @( __original ) function()
 		{
 			__original();
-			this.m.Skills.removeByID("perk.perk.hold_out");	
+			this.m.Skills.removeByID("perk.hold_out");	
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));				
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{

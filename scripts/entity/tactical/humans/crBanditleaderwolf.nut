@@ -59,13 +59,13 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_quick_hands"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_nine_lives"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_close_combat_archer"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_close_combat_archer"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_shields_up"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rally_the_troops"));
@@ -261,7 +261,7 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 				{
 					if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));
 
 		   				if (::Is_PTR_Exist)
 						{

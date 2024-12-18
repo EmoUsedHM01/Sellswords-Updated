@@ -66,7 +66,7 @@ this.crSquire_normal <- this.inherit("scripts/entity/tactical/human", {
 				this.m.BaseProperties.Stamina += 10;				
 				if (this.World.getTime().Days >= 200)
 				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));				
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));				
 					if (this.World.getTime().Days >= 240)
 					{
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_crFoB"));												

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/racial/mummy_racial", function( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/racial/legend_mummy_racial", function( q ) {
 
 	q.create = @(__original) function()
 	{

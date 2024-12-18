@@ -39,7 +39,7 @@
 
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 75)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));	
 			this.m.BaseProperties.Initiative += 3;
 
 			if (this.World.getTime().Days >= 100)

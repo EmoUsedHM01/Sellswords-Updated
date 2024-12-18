@@ -53,7 +53,7 @@ this.crNomadBillman <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));										
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_clarity"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));				
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));				
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
 
 			if (::Is_PTR_Exist)

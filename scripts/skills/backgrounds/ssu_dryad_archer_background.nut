@@ -171,7 +171,7 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.Ballistics, 0, false)
+		this.addPerk(::Const.Perks.PerkDefs.LegendBallistics, 0, false)
 	}
 
 	function onChangeAttributes()

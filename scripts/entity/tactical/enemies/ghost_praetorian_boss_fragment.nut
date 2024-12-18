@@ -238,7 +238,7 @@ this.ghost_praetorian_boss_fragment <- ::inherit("scripts/entity/tactical/actor"
 		this.m.Skills.add(ghastly_touch);
 
 		this.m.Skills.add(::new("scripts/skills/perks/perk_fast_adaption"));
-		this.m.Skills.add(::new("scripts/skills/perks/perk_double_strike"));
+		this.m.Skills.add(::new("scripts/skills/perks/perk_legend_double_strike"));
 		this.m.Skills.add(::new("scripts/skills/perks/perk_anticipation"));
 		this.m.Skills.add(::new("scripts/skills/perks/perk_fearsome"));
 		this.m.Skills.add(::new("scripts/skills/perks/perk_footwork"));

@@ -56,7 +56,7 @@ this.crHashshashin_High <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));		
 
@@ -134,7 +134,7 @@ this.crHashshashin_High <- this.inherit("scripts/entity/tactical/human", {
 							b.DamageTotalMult += 0.05;						
 							b.MeleeSkill += 2;	
 							b.Initiative += 3;
-							this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));																				
+							this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));																				
 							if (this.World.getTime().Days >= 200)
 							{
 								b.DamageTotalMult += 0.05;							

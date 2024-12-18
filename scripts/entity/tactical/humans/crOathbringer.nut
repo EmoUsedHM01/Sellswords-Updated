@@ -48,7 +48,7 @@ this.crOathbringer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 		
@@ -81,7 +81,7 @@ this.crOathbringer <- this.inherit("scripts/entity/tactical/human", {
 			if (this.World.getTime().Days >= 175)
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_muscularity"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));					
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));					
 				b.MeleeDefense += 2;				
 
 				if (this.World.getTime().Days >= 225)

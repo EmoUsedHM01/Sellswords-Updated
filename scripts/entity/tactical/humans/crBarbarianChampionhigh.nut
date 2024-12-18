@@ -99,7 +99,7 @@ this.crBarbarianChampionhigh <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_alert"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_fist"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_fist"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_flow"));
@@ -140,7 +140,7 @@ this.crBarbarianChampionhigh <- this.inherit("scripts/entity/tactical/human", {
 							this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_dismemberment"));		
 						}
 
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));						
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));						
 						if (this.World.getTime().Days >= 150)
 						{
 							b.DamageTotalMult += 0.05;						

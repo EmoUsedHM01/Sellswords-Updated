@@ -45,7 +45,7 @@
 						this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 30;
 						this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 30;
 						this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 30;
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 					}
 				}
 			}

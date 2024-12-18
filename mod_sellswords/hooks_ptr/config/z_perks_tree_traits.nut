@@ -112,7 +112,7 @@
 
 ::Const.Perks.ViciousTree.Tree[0] = [::Const.Perks.PerkDefs.CripplingStrikes];
 ::Const.Perks.ViciousTree.Tree[1] = [::Const.Perks.PerkDefs.CoupDeGrace];
-::Const.Perks.ViciousTree.Tree[2] = [::Const.Perks.PerkDefs.Debilitate];
+::Const.Perks.ViciousTree.Tree[2] = [::Const.Perks.PerkDefs.LegendDebilitate];
 ::Const.Perks.ViciousTree.Tree[3] = [];
 ::Const.Perks.ViciousTree.Tree[4] = [::Const.Perks.PerkDefs.Vengeance];
 ::Const.Perks.ViciousTree.Tree[5] = [::Const.Perks.PerkDefs.Berserk];

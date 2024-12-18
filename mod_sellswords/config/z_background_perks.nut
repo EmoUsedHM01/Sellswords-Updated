@@ -25,7 +25,7 @@ function setupBackground(classPath, perkScripts, perkDefs)
 // Define each background using the helper function
 setupBackground("scripts/skills/backgrounds/adventurous_noble_background", ["scripts/skills/perks/perk_duelist"], [{def = ::Const.Perks.PerkDefs.Duelist, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/anatomist_background", ["scripts/skills/perks/perk_legend_debilitate"], [{def = ::Const.Perks.PerkDefs.Debilitate, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/anatomist_background", ["scripts/skills/perks/perk_legend_debilitate"], [{def = ::Const.Perks.PerkDefs.LegendDebilitate, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/apprentice_background", ["scripts/skills/perks/perk_student"], [{def = ::Const.Perks.PerkDefs.Student, level = 0, optional = false}]);
 
@@ -51,9 +51,9 @@ setupBackground("scripts/skills/backgrounds/butcher_background", ["scripts/skill
 
 setupBackground("scripts/skills/backgrounds/caravan_hand_background", ["scripts/skills/perks/perk_legend_efficient_packing"], [{def = ::Const.Perks.PerkDefs.LegendEfficientPacking, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/companion_1h_background", ["scripts/skills/perks/perk_legend_feint"], [{def = ::Const.Perks.PerkDefs.Feint, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/companion_1h_background", ["scripts/skills/perks/perk_legend_feint"], [{def = ::Const.Perks.PerkDefs.LegendFeint, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/companion_2h_background", ["scripts/skills/perks/perk_bloody_harvest"], [{def = ::Const.Perks.PerkDefs.BloodyHarvest, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/companion_2h_background", ["scripts/skills/perks/perk_legend_bloody_harvest"], [{def = ::Const.Perks.PerkDefs.LegendBloodyHarvest, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/companion_ranged_background", ["scripts/skills/perks/perk_bullseye"], [{def = ::Const.Perks.PerkDefs.Bullseye, level = 0, optional = false}]);
 	
@@ -73,10 +73,6 @@ setupBackground("scripts/skills/backgrounds/eunuch_background", ["scripts/skills
 
 setupBackground("scripts/skills/backgrounds/farmhand_background", ["scripts/skills/perks/perk_legend_specialist_pitchfork_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistPitchforkSkill, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/female_adventurous_noble_background", ["scripts/skills/perks/perk_bullseye"], [{def = ::Const.Perks.PerkDefs.Bullseye, level = 0, optional = false}]);
-
-setupBackground("scripts/skills/backgrounds/female_disowned_noble_background", ["scripts/skills/perks/perk_legend_wind_reader"], [{def = ::Const.Perks.PerkDefs.LegendWindReader, level = 0, optional = false}]);
-
 setupBackground("scripts/skills/backgrounds/fisherman_background", ["scripts/skills/perks/perk_legend_net_casting"], [{def = ::Const.Perks.PerkDefs.LegendNetCasting, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/flagellant_background", ["scripts/skills/perks/perk_legend_specialist_ninetails_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistNinetailsSkill, level = 0, optional = false}]);
@@ -95,7 +91,7 @@ setupBackground("scripts/skills/backgrounds/historian_background", ["scripts/ski
 
 setupBackground("scripts/skills/backgrounds/houndmaster_background", ["scripts/skills/perks/perk_legend_dogwhisperer"], [{def = ::Const.Perks.PerkDefs.LegendDogWhisperer, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/hunter_background", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Const.Perks.PerkDefs.Ballistics, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/hunter_background", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Const.Perks.PerkDefs.LegendBallistics, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/juggler_background", ["scripts/skills/perks/perk_legend_hair_splitter"], [{def = ::Const.Perks.PerkDefs.LegendHairSplitter, level = 0, optional = false}]);
 
@@ -125,7 +121,7 @@ setupBackground("scripts/skills/backgrounds/legend_cannibal_background", ["scrip
 setupBackground("scripts/skills/backgrounds/legend_companion_melee_background", ["scripts/skills/perks/perk_brawny"], [{def = ::Const.Perks.PerkDefs.Brawny, level = 0, optional = false}]);
 	
 //Lonewolf event bro
-setupBackground("scripts/skills/backgrounds/legend_companion_ranged_background", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Const.Perks.PerkDefs.Ballistics, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_companion_ranged_background", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Const.Perks.PerkDefs.LegendBallistics, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_conscript_background", ["scripts/skills/perks/perk_dodge"], [{def = ::Const.Perks.PerkDefs.Dodge, level = 0, optional = false}]);
 	
@@ -166,7 +162,7 @@ setupBackground("scripts/skills/backgrounds/legend_lonewolf_background", ["scrip
 	
 setupBackground("scripts/skills/backgrounds/legend_man_at_arms_background", ["scripts/skills/perks/perk_shield_expert"], [{def = ::Const.Perks.PerkDefs.ShieldExpert, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/legend_master_archer_background", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Const.Perks.PerkDefs.Ballistics, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_master_archer_background", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Const.Perks.PerkDefs.LegendBallistics, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_muladi_background", ["scripts/skills/perks/perk_legend_dogwhisperer"], [{def = ::Const.Perks.PerkDefs.LegendDogWhisperer, level = 0, optional = false}]);
 	
@@ -178,7 +174,7 @@ setupBackground("scripts/skills/backgrounds/legend_noble_background", ["scripts/
 	
 setupBackground("scripts/skills/backgrounds/legend_noble_commander_background", ["scripts/skills/perks/perk_legend_assured_conquest"], [{def = ::Const.Perks.PerkDefs.LegendAssuredConquest, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_noble_ranged", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Const.Perks.PerkDefs.Ballistics, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_noble_ranged", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Const.Perks.PerkDefs.LegendBallistics, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_noble_shield", ["scripts/skills/perks/perk_shield_expert"], [{def = ::Const.Perks.PerkDefs.ShieldExpert, level = 0, optional = false}]);
 	
@@ -196,13 +192,13 @@ setupBackground("scripts/skills/backgrounds/legend_shieldmaiden_background", ["s
 	
 setupBackground("scripts/skills/backgrounds/legend_taxidermist_background", ["scripts/skills/perks/perk_bags_and_belts"], [{def = ::Const.Perks.PerkDefs.BagsAndBelts, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_trader_background", ["scripts/skills/perks/legends/off_book_deal"], [{def = ::Const.Perks.PerkDefs.LegendOffBookDeal, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_trader_background", ["scripts/skills/perks/legends/perk_legend_off_book_deal"], [{def = ::Const.Perks.PerkDefs.LegendOffBookDeal, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_trader_commander_background", ["scripts/skills/perks/legends/off_book_deal"], [{def = ::Const.Perks.PerkDefs.LegendOffBookDeal, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_trader_commander_background", ["scripts/skills/perks/legends/perk_legend_off_book_deal"], [{def = ::Const.Perks.PerkDefs.LegendOffBookDeal, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_vala_background", ["scripts/skills/perks/legend_vala_warden"], [{def = ::Const.Perks.PerkDefs.LegendValaWarden, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_vala_background", ["scripts/skills/perks/perk_legend_vala_warden"], [{def = ::Const.Perks.PerkDefs.LegendValaWarden, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_vala_commander_background", ["scripts/skills/perks/legend_vala_warden"], [{def = ::Const.Perks.PerkDefs.LegendValaWarden, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_vala_commander_background", ["scripts/skills/perks/perk_legend_vala_warden"], [{def = ::Const.Perks.PerkDefs.LegendValaWarden, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_youngblood_background", ["scripts/skills/perks/perk_legend_favoured_enemy_hexen"], [{def = ::Const.Perks.PerkDefs.LegendFavouredEnemyHexen, level = 0, optional = false}]);
 	
@@ -214,7 +210,7 @@ setupBackground("scripts/skills/backgrounds/manhunter_background", ["scripts/ski
 
 setupBackground("scripts/skills/backgrounds/mason_background", ["scripts/skills/perks/perk_crPerseverance"], [{def = ::Const.Perks.PerkDefs.crPerseverance, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/messenger_background", ["scripts/skills/perks/perk_lookout"], [{def = ::Const.Perks.PerkDefs.Lookout, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/messenger_background", ["scripts/skills/perks/perk_legend_lookout"], [{def = ::Const.Strings.PerkDescription.LegendLookout, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/militia_background", ["scripts/skills/perks/perk_legend_specialist_militia_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistMilitiaSkill, level = 0, optional = false}]);
 
@@ -223,13 +219,11 @@ setupBackground("scripts/skills/backgrounds/miller_background", ["scripts/skills
 setupBackground("scripts/skills/backgrounds/miner_background", ["scripts/skills/perks/perk_legend_specialist_pickaxe_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistPickaxeSkill, level = 0, optional = false}]);
 
 if (::mods_getRegisteredMod("mod_specialist_skills_rework") != null)
-	setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_daze"], [{def = ::Const.Perks.PerkDefs.MageLegendMagicDaze, level = 0, optional = false}]);
+	setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_daze"], [{def = ::Const.Perks.PerkDefs.LegendDaze, level = 0, optional = false}]);
 else
 	setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_drums_of_war"], [{def = ::Const.Perks.PerkDefs.LegendDrumsOfWar, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/monk_background", ["scripts/skills/perks/perk_legend_holyflame"], [{def = ::Const.Perks.PerkDefs.LegendHolyFlame, level = 0, optional = false}]);
-
-setupBackground("scripts/skills/backgrounds/legend_nun_background", ["scripts/skills/perks/perk_legend_holyflame"], [{def = ::Const.Perks.PerkDefs.LegendHolyFlame, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/nomad_background", ["scripts/skills/perks/perk_legend_throw_sand"], [{def = ::Const.Perks.PerkDefs.LegendThrowSand, level = 0, optional = false}]);
 
@@ -243,7 +237,7 @@ setupBackground("scripts/skills/backgrounds/peddler_background", ["scripts/skill
 
 setupBackground("scripts/skills/backgrounds/pimp_background", ["scripts/skills/perks/perk_legend_barter_convincing"], [{def = ::Const.Perks.PerkDefs.LegendBarterConvincing, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/poacher_background", ["scripts/skills/perks/perk_lookout"], [{def = ::Const.Perks.PerkDefs.Lookout, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/poacher_background", ["scripts/skills/perks/perk_legend_lookout"], [{def = ::Const.Strings.PerkDescription.LegendLookout, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/raider_background", ["scripts/skills/perks/perk_legend_bloodbath"], [{def = ::Const.Perks.PerkDefs.LegendBloodbath, level = 0, optional = false}]);
 

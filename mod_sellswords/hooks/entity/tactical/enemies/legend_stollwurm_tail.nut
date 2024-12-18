@@ -9,7 +9,7 @@
 		this.m.BaseProperties.IsImmuneToRoot = true;
 		this.m.BaseProperties.IsImmuneToDisarm = true;			
 		this.m.BaseProperties.MeleeSkill += 5;			
-		this.m.Skills.removeByID("perk.perk.hold_out");	
+		this.m.Skills.removeByID("perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));	//resilient	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));	
 		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));

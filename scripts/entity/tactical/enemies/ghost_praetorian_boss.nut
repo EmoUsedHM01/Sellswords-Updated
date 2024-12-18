@@ -343,7 +343,7 @@ this.ghost_praetorian_boss <- ::inherit("scripts/entity/tactical/actor", {
 		{
 			this.m.Skills.add(::new("scripts/skills/perks/perk_devastating_strikes"));
 			this.m.Skills.add(::new("scripts/skills/perks/perk_crippling_strikes"));
-			this.m.Skills.add(::new("scripts/skills/perks/perk_bloody_harvest"));
+			this.m.Skills.add(::new("scripts/skills/perks/perk_legend_bloody_harvest"));
 			this.m.Skills.add(::new("scripts/skills/perks/perk_colossus"));
 		}
 	}

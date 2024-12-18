@@ -91,7 +91,7 @@ this.crHonoraryknight <- this.inherit("scripts/entity/tactical/human", {
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));				
 			this.m.Skills.add(this.new("scripts/skills/effects/dodge_effect"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));				
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));				
 
 			if (dc >= 120)
 			{
@@ -125,7 +125,7 @@ this.crHonoraryknight <- this.inherit("scripts/entity/tactical/human", {
 
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_crTotalcover"));					
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));									
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));				
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));				
 						b.MeleeSkill += 3;	
 						b.Initiative += 3;
 						

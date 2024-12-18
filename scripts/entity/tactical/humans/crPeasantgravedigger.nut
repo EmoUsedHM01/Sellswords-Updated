@@ -32,7 +32,7 @@ this.crPeasantgravedigger <- this.inherit("scripts/entity/tactical/human", {
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_shovel_damage"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sundering_strikes"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
 		this.getSprite("socket").setBrush("bust_base_militia");
 
 		if (::Is_PTR_Exist)
@@ -45,7 +45,7 @@ this.crPeasantgravedigger <- this.inherit("scripts/entity/tactical/human", {
 		{
 			this.m.Hitpoints = b.Hitpoints * 1.4;		
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_last_stand"));			
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));			
 			
 			if (::Is_PTR_Exist)
 			{

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/legend_slingstaff", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/legend_northern_sling", function ( q ) {
 	
 	q.create = @(__original) function()
 	{

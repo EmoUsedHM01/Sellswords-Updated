@@ -66,7 +66,7 @@ this.crSellsword <- this.inherit("scripts/entity/tactical/human", {
 			[6, "perk_colossus", 1],
 			[1, "perk_stalwart", 1],
 			[8, "perk_underdog", 1],			
-			[2, "perk_last_stand", 1],
+			[2, "perk_legend_last_stand", 1],
 			[2, "perk_nine_lives", 2],			
 			[1, "perk_legend_second_wind", 1],	
 			[2, "perk_crBlocknormal", 1],
@@ -294,7 +294,7 @@ this.crSellsword <- this.inherit("scripts/entity/tactical/human", {
 		local mainhandItem = this.getMainhandItem();		
 		if (mainhandItem != null && mainhandItem.isItemType(this.Const.Items.ItemType.OneHanded))
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_double_strike"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));
 			
 			if (::Is_PTR_Exist)
 			{

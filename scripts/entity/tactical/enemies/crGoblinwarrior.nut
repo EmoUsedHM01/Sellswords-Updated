@@ -96,7 +96,7 @@ this.crGoblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 				this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_close_combat_archer"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_close_combat_archer"));
 
 				if (::Is_PTR_Exist)
 				{

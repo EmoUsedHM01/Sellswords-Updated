@@ -161,7 +161,7 @@
 ::Const.Perks.ViciousTree.Attributes.MeleeSkill = [2, 0];
 ::Const.Perks.ViciousTree.Attributes.RangedSkill = [1, 0];
 //::Const.Perks.ViciousTree.Tree[0] = [::Const.Perks.PerkDefs.CripplingStrikes];
-::Const.Perks.ViciousTree.Tree[1] = [::Const.Perks.PerkDefs.Debilitate]; // No swap
+::Const.Perks.ViciousTree.Tree[1] = [::Const.Perks.PerkDefs.LegendDebilitate]; // No swap
 ::Const.Perks.ViciousTree.Tree[2] = [::Const.Perks.PerkDefs.CoupDeGrace]; // Swaps Debilitate
 //::Const.Perks.ViciousTree.Tree[3] = [];
 ::Const.Perks.ViciousTree.Tree[4] = []; // Swaps Berserk
