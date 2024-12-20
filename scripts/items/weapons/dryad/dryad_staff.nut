@@ -45,8 +45,8 @@ this.dryad_staff <- this.inherit("scripts/items/weapons/weapon", {
 	function onEquip()
 	{
 		this.weapon.onEquip();
-		this.addSkill(this.new("scripts/skills/actives/legend_staff_bash"));
-		this.addSkill(this.new("scripts/skills/actives/legend_staff_knock_out"));
+		this.addSkill(this.new("scripts/skills/actives/legend_staff_bash_skill"));
+		this.addSkill(this.new("scripts/skills/actives/legend_staff_knock_out_skill"));
 		this.addSkill(this.new("scripts/skills/actives/crstaff_sweep"));
 	}
 

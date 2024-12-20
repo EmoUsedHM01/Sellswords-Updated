@@ -47,7 +47,7 @@ this.crFootman_guest <- this.inherit("scripts/entity/tactical/player", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_bash"));
 		this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));									
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));				
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_return_favor"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_return_favor"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_clarity"));
 

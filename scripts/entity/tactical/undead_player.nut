@@ -1136,10 +1136,10 @@ this.undead_player <- this.inherit("scripts/entity/tactical/player", {
 		this.m.StarWeights = background.buildAttributes(null, null);
 		background.buildDescription();
 		
-		local inTraining = this.new("scripts/skills/traits/intensive_training_trait");
+		local inTraining = this.new("scripts/skills/traits/legend_intensive_training_trait");
 		local maxTraits = 0;
 
-		if (!this.getSkills().hasSkill("trait.intensive_training_trait"))
+		if (!this.getSkills().hasSkill("trait.legend_intensive_training_trait"))
 			this.m.Skills.add(inTraining);
 
 		if (_addTraits)
@@ -1517,7 +1517,7 @@ this.undead_player <- this.inherit("scripts/entity/tactical/player", {
 		this.m.Sound[this.Const.Sound.ActorEvent.NoDamageReceived] = this.m.Sound[this.Const.Sound.ActorEvent.DamageReceived];
 		this.m.Sound[this.Const.Sound.ActorEvent.Flee] = this.m.Sound[this.Const.Sound.ActorEvent.Idle];
 		this.m.Flags.add("skeleton");
-		this.m.Skills.add(this.new("scripts/skills/racial/mummy_racial"));
+		this.m.Skills.add(this.new("scripts/skills/racial/legend_mummy_racial"));
 		this.m.Skills.add(this.new("scripts/skills/traits/legend_fleshless_trait"));
 	}
 

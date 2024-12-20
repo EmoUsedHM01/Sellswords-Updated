@@ -14,10 +14,10 @@ this.boss_undead_player <- this.inherit("scripts/entity/tactical/undead_player",
 		this.m.StarWeights = background.buildAttributes(null, null);
 		background.buildDescription();
 		
-		local inTraining = this.new("scripts/skills/traits/intensive_training_trait");
+		local inTraining = this.new("scripts/skills/traits/legend_intensive_training_trait");
 		local maxTraits = 0;
 
-		if (!this.getSkills().hasSkill("trait.intensive_training_trait"))
+		if (!this.getSkills().hasSkill("trait.legend_intensive_training_trait"))
 			this.m.Skills.add(inTraining);
 
 		if (_addTraits)

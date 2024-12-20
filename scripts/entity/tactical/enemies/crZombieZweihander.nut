@@ -39,7 +39,7 @@ this.crZombieZweihander <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_greatsword"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_greatsword"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 

@@ -21,7 +21,7 @@ this.perk_mummy_cursed_body <- this.inherit("scripts/skills/skill", {
 	function onDamageReceived( _attacker, _damageHitpoints, _damageArmor )
 	{
 		if (_attacker != null && this.Math.rand(1, 100) <= 25)
-			_attacker.getSkills().add(this.new("scripts/skills/effects/mummy_curse_effect"));
+			_attacker.getSkills().add(this.new("scripts/skills/effects/legend_mummy_curse_effect"));
 	}
 
 });

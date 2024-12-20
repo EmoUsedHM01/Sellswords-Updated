@@ -12,6 +12,6 @@
 	{
 		__original();
 
-		this.addSkill(this.new("scripts/skills/actives/legend_harvest_rock"));
+		this.addSkill(this.new("scripts/skills/actives/legend_harvest_rock_skill"));
 	}
 });

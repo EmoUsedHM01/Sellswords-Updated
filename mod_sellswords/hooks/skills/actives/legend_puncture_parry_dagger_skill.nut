@@ -66,7 +66,7 @@
 	};	
 	q.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
 	{
-		if (_skill.getID() != "actives.puncture_parry_dagger")
+		if (_skill.getID() != "actives.legend_puncture_parry_dagger")
 		{
 			return;
 		}		

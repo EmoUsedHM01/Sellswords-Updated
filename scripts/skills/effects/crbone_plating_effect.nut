@@ -2,7 +2,7 @@ this.crbone_plating_effect <- this.inherit("scripts/skills/skill", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "effects.bone_plating";
+		this.m.ID = "effects.legend_bone_plating_effect";
 		this.m.Name = "Bone Plating";
 		this.m.Icon = "skills/boneplating_effect.png";
 		this.m.IconMini = "mini_boneplating_effect";

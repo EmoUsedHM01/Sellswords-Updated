@@ -30,7 +30,7 @@
 	q.onAdded = @(__original) function()
 	{
 		local skill = this.getContainer().getSkillByID("effects.shieldwall");
-		local steel = this.getContainer().getSkillByID("effects.steel_brow");
+		local steel = this.getContainer().getSkillByID("effects.legend_steel_brow");
 
 		if (steel != null)
 		{

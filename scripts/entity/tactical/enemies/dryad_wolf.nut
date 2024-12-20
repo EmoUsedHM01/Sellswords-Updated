@@ -276,7 +276,7 @@ this.dryad_wolf <- this.inherit("scripts/entity/tactical/actor", {
 		this.setSpriteOffset("status_stunned", this.createVec(-35, 20));
 		this.setSpriteOffset("arrow", this.createVec(0, 20));
 		
-		this.m.Skills.add(this.new("scripts/skills/racial/werewolf_racial"));
+		this.m.Skills.add(this.new("scripts/skills/racial/legend_werewolf_racial"));
 		this.m.Skills.add(this.new("scripts/skills/racial/dryad_racial"));
 		
 		this.m.Skills.add(this.new("scripts/skills/traits/loyal_trait"));

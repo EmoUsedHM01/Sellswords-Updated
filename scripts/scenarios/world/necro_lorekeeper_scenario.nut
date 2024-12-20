@@ -40,7 +40,7 @@ this.necro_lorekeeper_scenario <- this.inherit("scripts/scenarios/world/starting
 		bro.getTalents()[this.Const.Attributes.Bravery] = 3;
 		bro.getSkills().add(this.new("scripts/skills/traits/bright_trait"));
 		bro.getSkills().add(this.new("scripts/skills/traits/mad_trait"));
-		bro.getSkills().add(this.new("scripts/skills/traits/necromancer_trait"));
+		bro.getSkills().add(this.new("scripts/skills/traits/legend_necromancer_trait"));
 		bro.getSkills().add(this.new("scripts/skills/traits/player_character_trait"));
 		bro.getSkills().add(this.new("scripts/skills/traits/legend_fleshless_trait"));
 		bro.getSkills().add(this.new("scripts/skills/perks/perk_legend_possession"));

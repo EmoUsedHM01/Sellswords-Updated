@@ -100,7 +100,7 @@ this.lindwurm_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatom
 			"trait.asthmatic",
 			"trait.clubfooted",
 			"trait.night_blind",
-			"trait.frail",
+			"trait.legend_frail",
 			"trait.clumsy"
 		];
 

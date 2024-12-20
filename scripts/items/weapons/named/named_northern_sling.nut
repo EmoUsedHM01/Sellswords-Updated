@@ -36,7 +36,7 @@ this.named_northern_sling <- this.inherit("scripts/items/weapons/named/named_wea
 		this.named_weapon.onEquip();
 		local aimed_shot = this.new("scripts/skills/actives/legend_sling_heavy_stone_skill");
 		this.addSkill(aimed_shot);
-		this.addSkill(this.new("scripts/skills/actives/legend_slingstaff_bash"));
+		this.addSkill(this.new("scripts/skills/actives/legend_slingstaff_bash_skill"));
 	}
 
 });

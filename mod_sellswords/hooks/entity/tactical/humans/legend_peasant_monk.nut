@@ -33,7 +33,7 @@
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Hitpoints = b.Hitpoints * 1.2;
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_inspire"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_inspire"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));				
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_fortified_mind"));

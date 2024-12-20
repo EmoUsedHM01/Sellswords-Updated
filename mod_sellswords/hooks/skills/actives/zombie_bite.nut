@@ -68,7 +68,7 @@
 
 			if ((isPlayer && isSpecialized) || isEnemy)
 			{
-				local effect = this.new("scripts/skills/effects/zombie_poison_effect");
+				local effect = this.new("scripts/skills/effects/legend_zombie_poison_effect");
 				target.getSkills().add(effect);
 			}
 

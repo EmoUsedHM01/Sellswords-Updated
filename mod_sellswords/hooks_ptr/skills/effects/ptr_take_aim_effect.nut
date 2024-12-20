@@ -76,7 +76,7 @@
 		{
 			crrskill.m.FatigueCost += 10;				
 		}
-		local crrrskill = this.getContainer().getSkillByID("actives.actives.shoot_bolt");
+		local crrrskill = this.getContainer().getSkillByID("actives.shoot_bolt");
 		if (crrrskill != null)
 		{
 			crrskill.m.FatigueCost += 10;				
