@@ -6,7 +6,7 @@ ancient_weapons.extend([
 	"scripts/items/weapons/named/named_bladed_pike",
 	"scripts/items/weapons/named/named_crypt_cleaver",
 	"scripts/items/weapons/named/named_khopesh",
-	"scripts/items/weapons/named/named_legend_great_khopesh",
+	"scripts/items/weapons/named/legend_named_great_khopesh",
 	"scripts/items/weapons/named/named_warscythe"
 ]);
 

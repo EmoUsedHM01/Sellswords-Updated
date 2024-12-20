@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/armor/chest/legend_mountain_armor_blueprint", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/armor/chest/legend_mountain_armor_blueprint", function ( q ) {
 
 	q.create = @(__original) function()
 	{

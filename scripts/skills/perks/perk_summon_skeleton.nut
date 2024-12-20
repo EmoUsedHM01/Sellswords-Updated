@@ -17,7 +17,7 @@ this.perk_summon_skeleton <- this.inherit("scripts/skills/skill", {
 	function onUnlocked()
 	{
 		local stash = this.World.Assets.getStash();
-		stash.add(this.new("scripts/items/spawns/skeleton_item"));
+		stash.add(this.new("scripts/items/spawns/legend_skeleton_item"));
 	}
 
 	function onAdded()

@@ -1,8 +1,8 @@
-this.banquet_blueprint <- this.inherit("scripts/crafting/food_blueprint", {
+this.banquet_blueprint <- this.inherit("scripts/crafting/legend_food_blueprint", {
 	m = {},
 	function create()
 	{
-		this.food_blueprint.create();
+		this.legend_food_blueprint.create();
 		this.m.ID = "blueprint.banquet";
 		this.m.PreviewCraftable = this.new("scripts/items/supplies/banquet_item");
 		this.m.Cost = 150;		

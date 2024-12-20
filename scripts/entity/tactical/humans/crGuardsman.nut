@@ -43,7 +43,7 @@ this.crGuardsman <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_rebound"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_rebound"));
 
 		if (::Is_PTR_Exist)
 		{

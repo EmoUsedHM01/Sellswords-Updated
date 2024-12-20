@@ -66,7 +66,7 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_freedom_of_movement"));										
 					if (dc >= 145)
 					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_vengeance"));					
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_vengeance"));
 						b.MeleeSkill += 2;	
 						b.Initiative += 2;						
 						if (dc >= 180)

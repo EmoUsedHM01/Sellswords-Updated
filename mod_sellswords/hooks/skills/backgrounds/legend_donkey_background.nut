@@ -61,13 +61,13 @@
 			[
 				this.Const.Perks.PerkDefs.LoneWolf,
 				this.Const.Perks.PerkDefs.Footwork,
-				this.Const.Perks.PerkDefs.LastStand,
+				this.Const.Perks.PerkDefs.LegendLastStand,
 				this.Const.Perks.PerkDefs.LegendBlendIn,
 				this.Const.Perks.PerkDefs.Underdog
 			],
 			[
 				this.Const.Perks.PerkDefs.Nimble,
-				this.Const.Perks.PerkDefs.Rebound,
+				this.Const.Perks.PerkDefs.LegendRebound,
 				this.Const.Perks.PerkDefs.LegendPacifist,
 				this.Const.Perks.PerkDefs.LegendSkillfulStacking,
 				this.Const.Perks.PerkDefs.LegendMuscularity

@@ -192,7 +192,7 @@
 						this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crresilient);
 						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crPerseverance);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Rebound:
+					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendRebound:
 						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crbeforethestorm);
 						continue;
 					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Footwork:

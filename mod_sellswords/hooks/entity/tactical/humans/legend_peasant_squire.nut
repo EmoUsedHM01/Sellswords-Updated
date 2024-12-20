@@ -18,7 +18,7 @@
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_freedom_of_movement"));										
 					if (this.World.getTime().Days >= 130)
 					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_vengeance"));					
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_vengeance"));
 						this.m.BaseProperties.MeleeSkill += 2;	
 						this.m.BaseProperties.Initiative += 2;						
 						if (this.World.getTime().Days >= 160)

@@ -1,6 +1,6 @@
 foreach(script in [
 	"alp",
-	"alp_shadow",
+	"legend_alp_shadow",
 	"bandit_raider_wolf",
 	"direwolf",
 	"hexe",

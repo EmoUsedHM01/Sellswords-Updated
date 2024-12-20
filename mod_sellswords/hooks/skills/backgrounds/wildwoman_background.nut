@@ -1,5 +1,5 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/wildwoman_background", function ( q ) {
-
+	// todo wildwoman deleted in legends
 	q.create = @(__original) function()
 	{
 		__original();

@@ -1,8 +1,8 @@
-this.banquet_item <- this.inherit("scripts/items/supplies/legend_usable_food", {
+this.banquet_item <- this.inherit("scripts/items/supplies/food_item", {
 	m = {},
 	function create()
 	{
-		this.legend_usable_food.create();
+		this.food_item.create();
 		this.m.ID = "supplies.banquet";
 		this.m.Name = "Excellent Banquet";
 		this.m.Description = "Provisions. A meal that is well prepared and greatly enjoyed. The ideal provision to take with you on long journeys and expeditions. Can be eaten in battle to increase all of your combat attributes, based on amount of the food. Will be used as provisions if left in the company stash.";
@@ -53,7 +53,7 @@ this.banquet_item <- this.inherit("scripts/items/supplies/legend_usable_food", {
 
 	function onEquip()
 	{
-		this.legend_usable_food.onEquip();
+		this.food_item.onEquip();
 		local skill = this.new("scripts/skills/actives/legend_eat_porridge_skill");
 		skill.setItem(this);
 		skill.setAmount(this.m.Amount);

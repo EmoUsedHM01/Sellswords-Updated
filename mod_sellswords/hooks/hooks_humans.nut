@@ -15,7 +15,7 @@ foreach(script in [
 	"nomad_archer",
 	"nomad_slinger",
 	"vizier",
-	"wildman"]) {
+	"legend_wildman"]) {
 
 	::Mod_Sellswords.HooksMod.hook("scripts/entity/tactical/humans/" + script, function ( q ) {
 

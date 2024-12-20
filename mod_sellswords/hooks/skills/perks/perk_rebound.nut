@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_rebound", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_rebound", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{

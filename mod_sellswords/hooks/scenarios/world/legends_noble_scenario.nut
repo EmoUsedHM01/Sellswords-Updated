@@ -110,9 +110,9 @@
 		talents[this.Const.Attributes.Fatigue] = 2;
 		talents[this.Const.Attributes.MeleeDefense] = 2;
 		talents[this.Const.Attributes.Hitpoints] = 1;		
-		bros[3].getSkills().add(this.new("scripts/skills/traits/pragmatic_trait"));
+		bros[3].getSkills().add(this.new("scripts/skills/traits/legend_pragmatic_trait"));
 		bros[3].getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
-		bros[3].getSkills().add(this.new("scripts/skills/traits/slack_trait"));
+		bros[3].getSkills().add(this.new("scripts/skills/traits/legend_slack_trait"));
 		this.addScenarioPerk(bros[3].getBackground(), this.Const.Perks.PerkDefs.Rotation);
 		bros[3].setPlaceInFormation(5);
 		//bros[3].setVeteranPerks(2);
@@ -160,9 +160,9 @@
 		talents[this.Const.Attributes.Fatigue] = 2;
 		talents[this.Const.Attributes.RangedSkill] = 2;
 		talents[this.Const.Attributes.Initiative] = 1;			
-		bros[5].getSkills().add(this.new("scripts/skills/traits/sureshot_trait"));
+		bros[5].getSkills().add(this.new("scripts/skills/traits/legend_sureshot_trait"));
 		bros[5].getSkills().add(this.new("scripts/skills/traits/teamplayer_trait"));
-		bros[5].getSkills().add(this.new("scripts/skills/traits/predictable_trait"));
+		bros[5].getSkills().add(this.new("scripts/skills/traits/legend_predictable_trait"));
 		this.addScenarioPerk(bros[5].getBackground(), this.Const.Perks.PerkDefs.Rotation);
 
 		if (bros[5].getBaseProperties().RangedSkill <= 60)

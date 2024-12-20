@@ -12,7 +12,7 @@
 
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days <= 60) 
 		{
-			this.m.Skills.add(this.new("scripts/skills/traits/pragmatic_trait"));				
+			this.m.Skills.add(this.new("scripts/skills/traits/legend_pragmatic_trait"));
 		}
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 40)
 		{
