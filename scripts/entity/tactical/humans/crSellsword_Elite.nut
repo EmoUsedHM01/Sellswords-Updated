@@ -157,7 +157,7 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 			{
 				local weapons = [
 					"weapons/named/legend_named_bastardsword",
-					"weapons/named/named_longsword",					
+					"weapons/named/legend_named_longsword",
 					"weapons/named/named_greatsword",
 					"weapons/named/named_greatsword",
 					"weapons/named/named_warbrand"	

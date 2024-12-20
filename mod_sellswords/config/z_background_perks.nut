@@ -198,8 +198,6 @@ setupBackground("scripts/skills/backgrounds/legend_trader_commander_background",
 	
 setupBackground("scripts/skills/backgrounds/legend_vala_background", ["scripts/skills/perks/perk_legend_vala_warden"], [{def = ::Const.Perks.PerkDefs.LegendValaWarden, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_vala_commander_background", ["scripts/skills/perks/perk_legend_vala_warden"], [{def = ::Const.Perks.PerkDefs.LegendValaWarden, level = 0, optional = false}]);
-	
 setupBackground("scripts/skills/backgrounds/legend_youngblood_background", ["scripts/skills/perks/perk_legend_favoured_enemy_hexen"], [{def = ::Const.Perks.PerkDefs.LegendFavouredEnemyHexen, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/lindwurm_slayer_background", ["scripts/skills/perks/perk_legend_favoured_enemy_lindwurm"], [{def = ::Const.Perks.PerkDefs.LegendFavouredEnemyLindwurm, level = 0, optional = false}]);
@@ -269,6 +267,4 @@ setupBackground("scripts/skills/backgrounds/vagabond_background", ["scripts/skil
 
 setupBackground("scripts/skills/backgrounds/wildman_background", ["scripts/skills/perks/perk_legend_gatherer"], [{def = ::Const.Perks.PerkDefs.LegendGatherer, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/wildwoman_background", ["scripts/skills/perks/perk_legend_gatherer"], [{def = ::Const.Perks.PerkDefs.LegendGatherer, level = 0, optional = false}]);
-
 setupBackground("scripts/skills/backgrounds/witchhunter_background", ["scripts/skills/perks/perk_legend_favoured_enemy_hexen"], [{def = ::Const.Perks.PerkDefs.LegendFavouredEnemyHexen, level = 0, optional = false}]);
