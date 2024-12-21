@@ -57,7 +57,7 @@ this.dryad_bow <- this.inherit("scripts/items/weapons/weapon", {
 		this.weapon.onEquip();
 		this.addSkill(this.new("scripts/skills/actives/quick_shot"));
 		this.addSkill(this.new("scripts/skills/actives/aimed_shot"));
-		this.addSkill(this.new("scripts/skills/actives/legend_piercing_shot"));
+		this.addSkill(this.new("scripts/skills/actives/legend_piercing_shot_skill"));
 		this.addSkill(this.new("scripts/skills/actives/legend_cascade_skill"));
 	}
 

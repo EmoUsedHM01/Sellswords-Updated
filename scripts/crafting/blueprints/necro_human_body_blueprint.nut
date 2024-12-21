@@ -5,7 +5,7 @@ this.necro_human_body_blueprint <- this.inherit("scripts/crafting/blueprint", {
 		this.blueprint.create();
 		this.m.ID = "blueprint.necro_human_body";
 		this.m.Type = this.Const.Items.ItemType.Misc;
-		this.m.PreviewCraftable = this.new("scripts/items/spawns/zombie_item");
+		this.m.PreviewCraftable = this.new("scripts/items/spawns/legend_zombie_item");
 		this.m.Cost = 150;
 		local ingredients = [
 			{
@@ -36,7 +36,7 @@ this.necro_human_body_blueprint <- this.inherit("scripts/crafting/blueprint", {
 
 	function onCraft(_stash)
 	{
-		_stash.add(this.new("scripts/items/spawns/zombie_item"));
+		_stash.add(this.new("scripts/items/spawns/legend_zombie_item"));
 	}
 
 });

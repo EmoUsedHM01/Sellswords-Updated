@@ -5,7 +5,7 @@ foreach (script in [
 	"legend_stollwurm_blood_flask_blueprint"
 ])
 {
-	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/utilities/" + script, function ( q ) {
+	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/utilities/" + script, function ( q ) {
 	
 		q.create = @(__original) function()
 		{

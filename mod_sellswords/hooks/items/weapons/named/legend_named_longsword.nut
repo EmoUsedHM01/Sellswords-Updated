@@ -1,6 +1,4 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/legend_named_longsword", function ( q ) {
-	q.m.StunChance <- 0;
-
 	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		this.m.Value = 3600;
 		this.m.Condition = 60.0;

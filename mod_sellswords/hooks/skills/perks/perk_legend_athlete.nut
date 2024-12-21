@@ -3,7 +3,7 @@
 	q.onAdded = @( __original ) function ()
 	{
 		if (!this.m.Container.hasSkill("actives.legend_climb"))
-			this.m.Container.add(this.new("scripts/skills/actives/legend_climb"));
+			this.m.Container.add(this.new("scripts/skills/actives/legend_climb_skill"));
 
 		if (!this.m.Container.hasSkill("actives.legend_sprint"))
 			this.m.Container.add(this.new("scripts/skills/actives/legend_sprint_skill_5"));

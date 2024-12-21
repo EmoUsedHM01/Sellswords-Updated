@@ -30,8 +30,8 @@ this.necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character_bac
 			"trait.hate_undead",
 			"trait.iron_lungs",
 			"trait.loyal",
-			"trait.fear_nobles",
-			"trait.seductive"
+			"trait.legend_fear_nobles",
+			"trait.legend_seductive"
 		];
 
 		this.m.ExcludedTalents = [

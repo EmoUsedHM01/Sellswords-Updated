@@ -59,7 +59,7 @@ this.crKnight <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_shield_skill"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_shield_push"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_bash"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_return_favor"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_return_favor"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
 
@@ -104,7 +104,7 @@ this.crKnight <- this.inherit("scripts/entity/tactical/human", {
 					this.m.BaseProperties.MeleeSkill += 2;			
 					this.m.BaseProperties.MeleeDefense += 2;			
 					this.m.BaseProperties.RangedDefense += 2;
-					this.m.Skills.removeByID("perk.return_favor");						
+					this.m.Skills.removeByID("perk.legend_return_favor");
 					local returnFavor = this.new("scripts/skills/effects/return_favor_effect");
 					returnFavor.onTurnStart = function() {}; // overwrite the original function which removes it
 					this.m.Skills.add(returnFavor);						
@@ -345,7 +345,7 @@ this.crKnight <- this.inherit("scripts/entity/tactical/human", {
 			"weapons/named/named_greatsword",
 			"weapons/named/named_mace",
 			"weapons/named/named_sword",
-			"weapons/named/named_longsword"
+			"weapons/named/legend_named_longsword"
 		];
 		local shields = clone this.Const.Items.NamedShields;
 		local r = this.Math.rand(1, 4);

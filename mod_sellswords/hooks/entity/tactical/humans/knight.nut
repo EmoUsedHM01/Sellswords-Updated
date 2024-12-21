@@ -297,7 +297,7 @@
 			"weapons/named/named_greatsword",
 			"weapons/named/named_mace",
 			"weapons/named/named_sword",
-			"weapons/named/named_longsword"
+			"weapons/named/legend_named_longsword"
 		];
 		local shields = clone this.Const.Items.NamedShields;
 		local r = this.Math.rand(1, 4);

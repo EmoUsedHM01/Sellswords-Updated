@@ -1,8 +1,8 @@
-this.salad_item <- this.inherit("scripts/items/supplies/legend_usable_food", {
+this.salad_item <- this.inherit("scripts/items/supplies/food_item", {
 	m = {},
 	function create()
 	{
-		this.legend_usable_food.create();
+		this.food_item.create();
 		this.m.ID = "supplies.salad";
 		this.m.Name = "Salad";
 		this.m.Description = "Provisions. Food mixtures either arranged on a plate or tossed and served with a moist dressing, usually consisting of greens. Can be eaten in battle to provide up to 5 healing and fatigue recovery over ten turns, based on the amount remaining. Will be used as provisions if left in the company stash.";
@@ -51,7 +51,7 @@ this.salad_item <- this.inherit("scripts/items/supplies/legend_usable_food", {
 
 	function onEquip()
 	{
-		this.legend_usable_food.onEquip();
+		this.food_item.onEquip();
 		local skill = this.new("scripts/skills/actives/legend_eat_rations_skill");
 		skill.setItem(this);
 		skill.setAmount(this.m.Amount);

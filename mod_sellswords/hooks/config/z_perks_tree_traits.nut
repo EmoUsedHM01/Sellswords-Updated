@@ -33,7 +33,7 @@
 ::Const.Perks.DeviousTree.Tree[2] = [::Const.Perks.PerkDefs.LegendEvasion]; // Swaps LegendBlendIn
 //::Const.Perks.DeviousTree.Tree[3] = [];
 ::Const.Perks.DeviousTree.Tree[4] = []; // Swaps LegendEvasion
-::Const.Perks.DeviousTree.Tree[5] = [::Const.Perks.PerkDefs.DoubleStrike]; // No swap
+::Const.Perks.DeviousTree.Tree[5] = [::Const.Perks.PerkDefs.LegendDoubleStrike]; // No swap
 ::Const.Perks.DeviousTree.Tree[6] = [::Const.Perks.PerkDefs.LegendMindOverBody]; // No swap
 
 // Fast tree
@@ -56,7 +56,7 @@
 //::Const.Perks.FitTree.Tree[1] = [];
 //::Const.Perks.FitTree.Tree[2] = [];
 //::Const.Perks.FitTree.Tree[3] = [];
-::Const.Perks.FitTree.Tree[4] = [::Const.Perks.PerkDefs.Rebound]; // No swap
+::Const.Perks.FitTree.Tree[4] = [::Const.Perks.PerkDefs.LegendRebound]; // No swap
 ::Const.Perks.FitTree.Tree[5] = [::Const.Perks.PerkDefs.crbeforethestorm]; // Swaps Overwhelm
 ::Const.Perks.FitTree.Tree[6] = [::Const.Perks.PerkDefs.Overwhelm]; // Swaps Rebound
 
@@ -115,10 +115,10 @@
 //::Const.Perks.MartyrTree.Tree[0] = [];
 ::Const.Perks.MartyrTree.Tree[1] = [::Const.Perks.PerkDefs.crTiC]; // No swap
 //::Const.Perks.MartyrTree.Tree[2] = [];
-::Const.Perks.MartyrTree.Tree[3] = [::Const.Perks.PerkDefs.Vengeance]; // No swap 
+::Const.Perks.MartyrTree.Tree[3] = [::Const.Perks.PerkDefs.LegendVengeance]; // No swap
 ::Const.Perks.MartyrTree.Tree[4] = [::Const.Perks.PerkDefs.LegendSecondWind]; // Swaps LoneWolf
 ::Const.Perks.MartyrTree.Tree[5] = [::Const.Perks.PerkDefs.Fearsome]; // Swaps Vengeance
-//::Const.Perks.MartyrTree.Tree[6] = [::Const.Perks.PerkDefs.LastStand];
+//::Const.Perks.MartyrTree.Tree[6] = [::Const.Perks.PerkDefs.LegendLastStand];
 
 // Organised tree
 ::Const.Perks.OrganisedTree.Attributes.Hitpoints = [1, 0];

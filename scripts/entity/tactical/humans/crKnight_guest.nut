@@ -72,7 +72,7 @@ this.crKnight_guest <- this.inherit("scripts/entity/tactical/player", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_shield_skill"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_shield_push"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_bash"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_return_favor"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_return_favor"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_feint"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));

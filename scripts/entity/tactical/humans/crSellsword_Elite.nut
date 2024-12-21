@@ -44,7 +44,7 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_rebound"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_rebound"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_footwork"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_battleheart"));				
@@ -157,7 +157,7 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 			{
 				local weapons = [
 					"weapons/named/legend_named_bastardsword",
-					"weapons/named/named_longsword",					
+					"weapons/named/legend_named_longsword",
 					"weapons/named/named_greatsword",
 					"weapons/named/named_greatsword",
 					"weapons/named/named_warbrand"	

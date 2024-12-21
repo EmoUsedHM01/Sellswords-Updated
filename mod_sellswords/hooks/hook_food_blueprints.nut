@@ -3,7 +3,7 @@ foreach (script in [
 	"legend_cured_rations_blueprint"
 ])
 {
-	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/food/" + script, function ( q ) {
+	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/food/" + script, function ( q ) {
 	
 		q.create = @(__original) function()
 		{
@@ -22,7 +22,7 @@ foreach (script in [
 	"legend_pudding_blueprint",
 ])
 {
-	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/mod_legend/food/" + script, function ( q ) {
+	::Mod_Sellswords.HooksMod.hook("scripts/crafting/blueprints/food/" + script, function ( q ) {
 	
 		q.create = @(__original) function()
 		{

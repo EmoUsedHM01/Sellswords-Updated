@@ -44,7 +44,7 @@ this.crGuardsman_pol <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_rebound"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_rebound"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
 
 		if (::Is_PTR_Exist)

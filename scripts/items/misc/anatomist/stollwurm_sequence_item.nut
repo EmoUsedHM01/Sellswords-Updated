@@ -103,7 +103,7 @@ this.stollwurm_sequence_item <- this.inherit("scripts/items/misc/anatomist/anato
 			"trait.asthmatic",
 			"trait.clubfooted",
 			"trait.night_blind",
-			"trait.frail"
+			"trait.legend_frail"
 		];
 
 		foreach (traitID in traitsToRemove)

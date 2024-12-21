@@ -6,7 +6,7 @@
 ::Const.Perks.AgileTree.Tree[3] = [::Const.Perks.PerkDefs.PTRDynamicDuo];
 ::Const.Perks.AgileTree.Tree[4] = [::Const.Perks.PerkDefs.Footwork];
 ::Const.Perks.AgileTree.Tree[5] = [::Const.Perks.PerkDefs.PTRFreshAndFurious];
-::Const.Perks.AgileTree.Tree[6] = [::Const.Perks.PerkDefs.Rebound];
+::Const.Perks.AgileTree.Tree[6] = [::Const.Perks.PerkDefs.LegendRebound];
 
 // calm tree
 
@@ -56,7 +56,7 @@
 ::Const.Perks.IndestructibleTree.Tree[3] = [];
 ::Const.Perks.IndestructibleTree.Tree[4] = [::Const.Perks.PerkDefs.LegendSecondWind];
 ::Const.Perks.IndestructibleTree.Tree[5] = [::Const.Perks.PerkDefs.crPerseverance];
-::Const.Perks.IndestructibleTree.Tree[6] = [::Const.Perks.PerkDefs.LastStand];
+::Const.Perks.IndestructibleTree.Tree[6] = [::Const.Perks.PerkDefs.LegendLastStand];
 
 // intelligent tree
 
@@ -71,7 +71,7 @@
 // large tree
 
 ::Const.Perks.LargeTree.Tree[0] = [::Const.Perks.PerkDefs.Colossus];
-::Const.Perks.LargeTree.Tree[1] = [::Const.Perks.PerkDefs.Rebound];
+::Const.Perks.LargeTree.Tree[1] = [::Const.Perks.PerkDefs.LegendRebound];
 ::Const.Perks.LargeTree.Tree[2] = [::Const.Perks.PerkDefs.crAudaciouscharge];
 ::Const.Perks.LargeTree.Tree[3] = [];
 ::Const.Perks.LargeTree.Tree[4] = [::Const.Perks.PerkDefs.SunderingStrikes];
@@ -114,7 +114,7 @@
 ::Const.Perks.ViciousTree.Tree[1] = [::Const.Perks.PerkDefs.CoupDeGrace];
 ::Const.Perks.ViciousTree.Tree[2] = [::Const.Perks.PerkDefs.LegendDebilitate];
 ::Const.Perks.ViciousTree.Tree[3] = [];
-::Const.Perks.ViciousTree.Tree[4] = [::Const.Perks.PerkDefs.Vengeance];
+::Const.Perks.ViciousTree.Tree[4] = [::Const.Perks.PerkDefs.LegendVengeance];
 ::Const.Perks.ViciousTree.Tree[5] = [::Const.Perks.PerkDefs.Berserk];
 ::Const.Perks.ViciousTree.Tree[6] = [::Const.Perks.PerkDefs.Fearsome];
 

@@ -8,14 +8,14 @@
 		this.m.DailyCost = 35;
 	}
 
-	q.getTooltip <- function()
+	q.getTooltip = @() function()
 	{
 		local ret = [
-			{
-				id = 1,
-				type = "title",
-				text = this.getName()
-			},
+//			{
+//				id = 1,
+//				type = "title",
+//				text = this.getName()
+//			},
 			{
 				id = 2,
 				type = "description",

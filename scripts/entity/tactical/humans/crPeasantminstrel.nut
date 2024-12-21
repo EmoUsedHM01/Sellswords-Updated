@@ -66,7 +66,7 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_freedom_of_movement"));										
 					if (dc >= 145)
 					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_vengeance"));					
+						this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_vengeance"));
 						b.MeleeSkill += 2;	
 						b.Initiative += 2;						
 						if (dc >= 180)
@@ -98,7 +98,7 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 		r = this.Math.rand(1, 100);
 		if (r == 1)
 		{
-		this.m.Items.equip(this.new("scripts/items/weapons/named/named_lute"));
+		this.m.Items.equip(this.new("scripts/items/weapons/named/legend_named_lute"));
 		}
 		else
 		{
@@ -227,7 +227,7 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 			return false;
 		}
 
-		this.m.Items.equip(this.new("scripts/items/weapons/named/named_lute"));
+		this.m.Items.equip(this.new("scripts/items/weapons/named/legend_named_lute"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([
 			[1, "peasant_champion_helmet_light"]

@@ -34,9 +34,9 @@ this.necro_embalmbed_priest <- this.inherit("scripts/skills/backgrounds/characte
 			"trait.hate_greenskins",
 			"trait.iron_lungs",
 			"trait.loyal",
-			"trait.fear_nobles",
-			"trait.hate_nobles",
-			"trait.seductive"
+			"trait.legend_fear_nobles",
+			"trait.legend_hate_nobles",
+			"trait.legend_seductive"
 		];
 
 		this.m.ExcludedTalents = [

@@ -40,7 +40,7 @@ this.necro_lorekeeper_scenario <- this.inherit("scripts/scenarios/world/starting
 		bro.getTalents()[this.Const.Attributes.Bravery] = 3;
 		bro.getSkills().add(this.new("scripts/skills/traits/bright_trait"));
 		bro.getSkills().add(this.new("scripts/skills/traits/mad_trait"));
-		bro.getSkills().add(this.new("scripts/skills/traits/necromancer_trait"));
+		bro.getSkills().add(this.new("scripts/skills/traits/legend_necromancer_trait"));
 		bro.getSkills().add(this.new("scripts/skills/traits/player_character_trait"));
 		bro.getSkills().add(this.new("scripts/skills/traits/legend_fleshless_trait"));
 		bro.getSkills().add(this.new("scripts/skills/perks/perk_legend_possession"));
@@ -67,7 +67,7 @@ this.necro_lorekeeper_scenario <- this.inherit("scripts/scenarios/world/starting
 
 		::World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
 		::World.Assets.getStash().add(this.new("scripts/items/supplies/preserved_mead_item"));
-		::World.Assets.getStash().add(this.new("scripts/items/spawns/skeleton_item"));
+		::World.Assets.getStash().add(this.new("scripts/items/spawns/legend_skeleton_item"));
 		::World.Assets.getStash().add(this.new("scripts/items/weapons/necro_lorekeeper_book"));
 		::World.Assets.m.Medicine = ::World.Assets.m.Medicine + 15;
 		::World.Assets.addMoralReputation(-30);

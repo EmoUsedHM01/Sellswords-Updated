@@ -806,10 +806,10 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		this.m.StarWeights = background.buildAttributes(null, null);
 		background.buildDescription();
 		
-		local inTraining = this.new("scripts/skills/traits/intensive_training_trait");
+		local inTraining = this.new("scripts/skills/traits/legend_intensive_training_trait");
 		local maxTraits = 0;
 
-		if (!this.getSkills().hasSkill("trait.intensive_training_trait"))
+		if (!this.getSkills().hasSkill("trait.legend_intensive_training_trait"))
 			this.m.Skills.add(inTraining);
 
 		if (_addTraits)
@@ -939,7 +939,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		this.m.Skills.add(this.new("scripts/skills/special/no_ammo_warning"));
 		this.m.Skills.add(this.new("scripts/skills/effects/battle_standard_effect"));
 		this.m.Skills.add(this.new("scripts/skills/actives/break_ally_free_skill"));
-		this.m.Skills.add(this.new("scripts/skills/effects/realm_of_nightmares_effect"));
+		this.m.Skills.add(this.new("scripts/skills/effects/legend_realm_of_nightmares_effect"));
 		this.m.Skills.add(this.new("scripts/skills/special/legend_horserider_skill"));
 		this.m.Skills.add(this.new("scripts/skills/effects/legend_veteran_levels_effect"));
 
@@ -1066,7 +1066,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		this.m.Flags.add("skeleton");
 		this.m.Skills.add(this.new("scripts/skills/racial/skeleton_racial"));
 		this.m.Skills.add(this.new("scripts/skills/traits/legend_fleshless_trait"));
-		this.m.Skills.add(this.new("scripts/skills/actives/legend_demon_hound_bite"));
+		this.m.Skills.add(this.new("scripts/skills/actives/legend_demon_hound_bite_skill"));
 	}
 
 	function setBansheeAttributes()

@@ -96,7 +96,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 		if("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));		
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_rebound"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_rebound"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_footwork"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_berserk"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));

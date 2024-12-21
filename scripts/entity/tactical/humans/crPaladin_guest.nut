@@ -55,7 +55,7 @@ this.crPaladin_guest <- this.inherit("scripts/entity/tactical/player", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));													
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_return_favor"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_return_favor"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_clarity"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
@@ -66,7 +66,7 @@ this.crPaladin_guest <- this.inherit("scripts/entity/tactical/player", {
 		this.m.Skills.add(this.new("scripts/skills/actives/legend_prayer_of_life_skill"));
 		this.m.Skills.add(this.new("scripts/skills/actives/legend_prayer_of_faith_skill"));	
 		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_sprint"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_sprint"));
 
 		if (::Is_PTR_Exist)
 		{

@@ -126,7 +126,7 @@
 	return _chance;
 });
 
-::Const.Perks.SpecialTrees.addSpecialPerk(10, ::Const.Perks.PerkDefs.Slaughterer, 7, "Enjoys frightful slaugter for pleasure.", function( _player, _chance ) {
+::Const.Perks.SpecialTrees.addSpecialPerk(10, ::Const.Perks.PerkDefs.LegendSlaughterer, 7, "Enjoys frightful slaugter for pleasure.", function( _player, _chance ) {
 	if (!_player.getBackground().hasPerkGroup(::Const.Perks.ViciousTree) && !_player.getBackground().hasPerkGroup(::Const.Perks.UnstoppableTree))
 	{
 		return 0;

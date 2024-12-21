@@ -57,7 +57,7 @@
 			this.Const.Perks.PerkDefs.PTRWeaponMaster			
 		]);
 		::Mod_Sellswords.HookHelper.addPerksToCustomPerkTree(5, this.m.CustomPerkTree, [
-			this.Const.Perks.PerkDefs.DoubleStrike,
+			this.Const.Perks.PerkDefs.LegendDoubleStrike,
 			this.Const.Perks.PerkDefs.crClarity			
 		]);
 		::Mod_Sellswords.HookHelper.addPerksToCustomPerkTree(6, this.m.CustomPerkTree, [
@@ -66,7 +66,7 @@
 			this.Const.Perks.PerkDefs.PTRSweepingStrikes
 		]);
 		::Mod_Sellswords.HookHelper.addPerksToCustomPerkTree(7, this.m.CustomPerkTree, [
-			this.Const.Perks.PerkDefs.Rebound,
+			this.Const.Perks.PerkDefs.LegendRebound,
 			this.Const.Perks.PerkDefs.PerfectFocus,
 			this.Const.Perks.PerkDefs.PTRManOfSteel			
 		]);

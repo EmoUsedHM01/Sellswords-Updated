@@ -39,7 +39,7 @@ this.named_fan_axe <- this.inherit("scripts/items/weapons/named/named_weapon", {
 		this.addSkill(this.new("scripts/skills/actives/split_man"));
 		local strike_skill = this.new("scripts/skills/actives/strike_skill");
 		strike_skill.setApplyAxeMastery(true);
-		this.addSkill(strike_skill);		
+		this.addSkill(strike_skill);
 		this.addSkill(this.new("scripts/skills/actives/round_swing"));		
 	}
 

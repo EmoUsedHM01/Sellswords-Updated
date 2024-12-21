@@ -211,7 +211,7 @@ this.crHonoraryknight <- this.inherit("scripts/entity/tactical/human", {
 
 			shield.setFaction(banner);
 			this.m.Items.equip(shield);
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_return_favor"));		
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_return_favor"));
 
 			if (::Is_PTR_Exist)
 			{	

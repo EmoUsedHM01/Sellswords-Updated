@@ -46,7 +46,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		talents[this.Const.Attributes.MeleeSkill] = 3;
 		talents[this.Const.Attributes.MeleeDefense] = 2;
 		talents[this.Const.Attributes.Initiative] = 1;
-		bros[0].getSkills().add(this.new("scripts/skills/traits/firm_trait"));
+		bros[0].getSkills().add(this.new("scripts/skills/traits/legend_firm_trait"));
 		bros[0].getSkills().add(this.new("scripts/skills/traits/dexterous_trait"));
 		bros[0].getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
 		bros[0].addLightInjury();
@@ -68,7 +68,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		talents[this.Const.Attributes.Hitpoints] = 2;
 		talents[this.Const.Attributes.Initiative] = 2;
 		bros[1].getSkills().add(this.new("scripts/skills/traits/brute_trait"));
-		bros[1].getSkills().add(this.new("scripts/skills/traits/pugilist_trait"));
+		bros[1].getSkills().add(this.new("scripts/skills/traits/legend_pugilist_trait"));
 		bros[1].getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
 		bros[1].addLightInjury();
 		bros[1].setStartValuesEx([

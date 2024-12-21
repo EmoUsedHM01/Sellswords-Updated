@@ -17,7 +17,7 @@ this.perk_summon_zombie <- this.inherit("scripts/skills/skill", {
 	function onUnlocked()
 	{
 		local stash = this.World.Assets.getStash();
-		stash.add(this.new("scripts/items/spawns/zombie_item"));
+		stash.add(this.new("scripts/items/spawns/legend_zombie_item"));
 	}
 
 	function onAdded()

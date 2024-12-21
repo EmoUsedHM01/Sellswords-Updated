@@ -110,7 +110,7 @@
 						this.logInfo("Rolling for corpse: " + rand + " vs " + zombieSalvage)
 						if (rand <= zombieSalvage)
 						{
-							local zloot = this.new("scripts/items/spawns/zombie_item");
+							local zloot = this.new("scripts/items/spawns/legend_zombie_item");
 							loot.push(zloot);
 						}
 					}
@@ -121,10 +121,10 @@
 					if (tile.Properties.get("Corpse").isHuman == 1 || tile.Properties.get("Corpse").isHuman == 2)
 					{
 						local rand = this.Math.rand(1.0, 100.0);
-						this.logInfo("Rolling for corpse: " + rand + " vs " + zombieSalvage)
+						this.logInfo("Rolling for corpse: " + rand + " vs " + zombieSalvage);
 						if (rand <= zombieSalvage)
 						{
-							local zloot = this.new("scripts/items/spawns/skeleton_item");
+							local zloot = this.new("scripts/items/spawns/legend_skeleton_item");
 							loot.push(zloot);
 						}
 					}

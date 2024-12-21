@@ -13,7 +13,7 @@
 
 // Both the "require" and "conflictWith" functions have an adaptive number of parameters, so you can add as many as you want
 // Add which mods are needed to run this one
-::Mod_Sellswords.HooksMod.require("mod_msu >= 1.2.6", "mod_modern_hooks >= 0.4.0", "mod_legends>= 18.1.0");
+::Mod_Sellswords.HooksMod.require("mod_msu >= 1.2.6", "mod_modern_hooks >= 0.5.4", "mod_legends>= 19.0.0");
 
 // Use this to list which mods may causes conflicts
 ::Mod_Sellswords.HooksMod.conflictWith("mod_ROTU", "mod_fantasybro", "modMoreArrows", "mod_background_perks");
