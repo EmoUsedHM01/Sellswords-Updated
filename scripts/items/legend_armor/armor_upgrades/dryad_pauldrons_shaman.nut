@@ -46,7 +46,7 @@ this.dryad_pauldrons_shaman <- this.inherit("scripts/items/legend_armor/legend_a
 		return result;
 	}
 	
-	function onArmorTooltip( _result )
+function onArmorTooltip( _result )
 	{
 		_result.push({
 			id = 6,
@@ -55,28 +55,4 @@ this.dryad_pauldrons_shaman <- this.inherit("scripts/items/legend_armor/legend_a
 			text = "Repairs [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] armour each turn"
 		});
 	}
-
-	function onTurnStart()
-	{
-		local actor = this.getContainer().getActor();
-		local body = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Body);
-		local bodyMissing = body.getArmorMax() - body.getArmor();
-		local bodyAdded = this.Math.min(bodyMissing, 5);
-
-		if (bodyAdded <= 0)
-		{
-			return;
-		}
-
-		body.setArmor(body.getArmor() + bodyAdded);
-		actor.setDirty(true);
-
-		if (!actor.isHiddenToPlayer())
-		{
-			this.Tactical.spawnIconEffect("status_effect_79", actor.getTile(), this.Const.Tactical.Settings.SkillIconOffsetX, this.Const.Tactical.Settings.SkillIconOffsetY, this.Const.Tactical.Settings.SkillIconScale, this.Const.Tactical.Settings.SkillIconFadeInDuration, this.Const.Tactical.Settings.SkillIconStayDuration, this.Const.Tactical.Settings.SkillIconFadeOutDuration, this.Const.Tactical.Settings.SkillIconMovement);
-			this.Sound.play("sounds/enemies/dlc2/schrat_idle_05.wav", this.Const.Sound.Volume.RacialEffect * 2.0, actor.getPos());
-			this.Tactical.EventLog.log(this.Const.UI.getColorized(this.m.Name, "#1e468f") + " repaired for " + bodyAdded + " points");
-		}
-	}
-	
 });
