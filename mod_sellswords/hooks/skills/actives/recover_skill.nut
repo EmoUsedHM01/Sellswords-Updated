@@ -29,30 +29,19 @@
 		];
 		return ret;
 	};
+
 	q.getActionPointCost = @( __original ) function ()
 	{
 		local actor = this.getContainer().getActor();
 		if (!this.getContainer().hasSkill("perk.crbeforethestorm"))
-		{
 			return actor.getActionPoints();
-		}	
-		else
-		{
-			return this.Math.max(0, actor.getActionPoints() - 1);
-		}
+		return this.Math.max(0, actor.getActionPoints() - 1);
 	}
 
-	q.onBeforeUse = @( __original ) function ( _user, _targetTile )
-	{
-		if (!this.getContainer().hasSkill("perk.crbeforethestorm"))
-		{
-			this.m.AP = _user.getActionPoints();
-		}	
-		else
-		{
-			this.m.AP = this.Math.max(0, _user.getActionPoints() - 1);
-		}			
-	}		
+	q.use = @( __original ) function (_targetTile, _forFree = false) {
+		this.m.AP = this.getActionPointCost();
+		__original(_targetTile, _forFree);
+	}
 
 	q.onUse = @( __original ) function ( _user, _targetTile )
 	{
