@@ -39,7 +39,7 @@
 		}
 	}
 
-	q.onTargetMissed <- function(  _skill, _targetEntity )
+	q.onTargetMissed = @() function(  _skill, _targetEntity )
 	{
 		if (!this.isGarbage() && _skill.isAttack())
 		{
