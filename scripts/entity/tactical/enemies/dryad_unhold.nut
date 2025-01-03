@@ -1,4 +1,4 @@
-this.dryad_unhold <- this.inherit("scripts/entity/tactical/actor", {
+this.dryad_unhold <- this.inherit("scripts/entity/tactical/dryad_summon_actor", {
 	m = {
 		Variant = 1,
 		BonusArmor = 160,
@@ -133,28 +133,6 @@ this.dryad_unhold <- this.inherit("scripts/entity/tactical/actor", {
 	function getName()
 	{
 		return this.m.Name;
-	}
-
-	function onFactionChanged()
-	{
-		this.actor.onFactionChanged();
-		local flip = this.isAlliedWithPlayer();
-		this.getSprite("body").setHorizontalFlipping(flip);
-		this.getSprite("injury").setHorizontalFlipping(flip);
-
-		if (!this.Tactical.State.isScenarioMode())
-		{
-			local f = this.World.FactionManager.getFaction(this.getFaction());
-
-			if (f != null)
-			{
-				this.getSprite("socket").setBrush(f.getTacticalBase());
-			}
-		}
-		else
-		{
-			this.getSprite("socket").setBrush(this.Const.FactionBase[this.getFaction()]);
-		}
 	}
 
 	function onActorKilled( _actor, _tile, _skill )
