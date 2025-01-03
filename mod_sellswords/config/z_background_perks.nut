@@ -208,7 +208,7 @@ setupBackground("scripts/skills/backgrounds/manhunter_background", ["scripts/ski
 
 setupBackground("scripts/skills/backgrounds/mason_background", ["scripts/skills/perks/perk_crPerseverance"], [{def = ::Const.Perks.PerkDefs.crPerseverance, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/messenger_background", ["scripts/skills/perks/perk_legend_lookout"], [{def = ::Const.Strings.PerkDescription.LegendLookout, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/messenger_background", ["scripts/skills/perks/perk_legend_lookout"], [{def = ::Const.Strings.PerkDefs.LegendLookout, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/militia_background", ["scripts/skills/perks/perk_legend_specialist_militia_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistMilitiaSkill, level = 0, optional = false}]);
 
@@ -235,7 +235,7 @@ setupBackground("scripts/skills/backgrounds/peddler_background", ["scripts/skill
 
 setupBackground("scripts/skills/backgrounds/pimp_background", ["scripts/skills/perks/perk_legend_barter_convincing"], [{def = ::Const.Perks.PerkDefs.LegendBarterConvincing, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/poacher_background", ["scripts/skills/perks/perk_legend_lookout"], [{def = ::Const.Strings.PerkDescription.LegendLookout, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/poacher_background", ["scripts/skills/perks/perk_legend_lookout"], [{def = ::Const.Strings.PerkDefs.LegendLookout, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/raider_background", ["scripts/skills/perks/perk_legend_bloodbath"], [{def = ::Const.Perks.PerkDefs.LegendBloodbath, level = 0, optional = false}]);
 
