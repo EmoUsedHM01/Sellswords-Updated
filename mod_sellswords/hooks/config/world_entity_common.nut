@@ -311,7 +311,7 @@
 
 ::Const.World.Common.buildDynamicTroopList = function( _template, _resources)
 {
-	//this.logInfo("*DynamicTroopList : template = " + _template.Name + " : resources = " + _resources)
+//	::logInfo("*DynamicTroopList : template = " + _template.Name + " : resources = " + _resources)
 	local credits = _resources;
 	if ("MinR" in _template)
 	{
@@ -365,12 +365,14 @@
 	{
 		credits = this.Const.World.Common.dynamicSelectTroop(_template.creFixed, _resources, scale, troopMap, credits)
 	}
-	
+
 	if ("Troops" in _template && _template.Troops.len() > 0)
 	{
-		while (credits > 0)
+		local tries = 200;
+		while (credits > 0 && tries > 0)
 		{
-			credits = this.Const.World.Common.dynamicSelectTroop(_template.Troops, _resources, scale, troopMap, credits)
+			credits = this.Const.World.Common.dynamicSelectTroop(_template.Troops, _resources, scale, troopMap, credits);
+			tries--;
 		}
 	}
 

@@ -865,7 +865,7 @@ gt.Const.World.Spawn.BanditBoss <- {
 		{
 			MinR = 500,
 			Weight = 1,
-			Type = this.Const.World.Spawn.Troops.BanditVeteran.BanditWarlord,
+			Type = this.Const.World.Spawn.Troops.BanditWarlord,
 			Cost = 100,
 			Roll = true
 		}
@@ -1044,7 +1044,7 @@ gt.Const.World.Spawn.BanditArmy <- {
 	Body = "figure_bandit_01",
 	Fixed = [
 		{
-			Type = this.Const.World.Spawn.Troops.BanditVeteran.BanditWarlord,
+			Type = this.Const.World.Spawn.Troops.BanditWarlord,
 			Weight = 100,
 			Cost = 10
 		}

@@ -15,6 +15,7 @@
 ...\mod_sellswords\hooks\ai\tactical\behaviors\ai_throw_bomb.nut
 ...\mod_sellswords\hooks\ai\tactical\behaviors\ai_warcry.nut
 ...\mod_sellswords\hooks\config\strings.nut
+...\mod_sellswords\hooks\config\world_entity_common.nut
 ...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
 ...\mod_sellswords\hooks\contracts\contracts\legend_deliver_money_contract.nut
 ...\mod_sellswords\hooks\crafting\blueprints\mod_legend\accessories\legend_dog_blueprint.nut
@@ -94,6 +95,7 @@
 ...\mod_sellswords\hooks\skills\actives\legend_leap.nut -> legend_leap_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_mark_target.nut -> legend_mark_target_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_piercing_bolt.nut -> legend_piercing_bolt_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_prepare_knockback_skill.nut.nut
 ...\mod_sellswords\hooks\skills\actives\legend_puncture_parry_dagger.nut -> legend_puncture_parry_dagger_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_redback_puncture.nut -> legend_redback_puncture_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_safeguard.nut -> legend_safeguard_skill.nut
@@ -103,6 +105,7 @@
 ...\mod_sellswords\hooks\skills\actives\legend_unleash_bear.nut -> legend_unleash_bear_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_cleave.nut -> legend_voulge_cleave_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_decapitate.nut -> legend_voulge_decapitate_skill.nut
+...\mod_sellswords\hooks\skills\actives\recover_skill.nut
 ...\mod_sellswords\hooks\skills\actives\sprint_skill_3.nut -> mod_sellswords\hooks\skills\actives\legend_sprint_skill_3.nut
 ...\mod_sellswords\hooks\skills\actives\sprint_skill_5.nut -> mod_sellswords\hooks\skills\actives\legend_sprint_skill_5.nut
 ...\mod_sellswords\hooks\skills\actives\zombie_bite.nut
@@ -110,6 +113,7 @@
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 ...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
 ...\mod_sellswords\hooks\skills\backgrounds\wildwoman_background.nut
+...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
 ...\mod_sellswords\hooks\skills\effects\disintegrating_effect.nut -> legend_disintegrating_effect.nul
 ...\mod_sellswords\hooks\skills\effects\legend_zombie_poison.nut -> legend_zombie_poison_effect.nut
 ...\mod_sellswords\hooks\skills\effects\return_favor_effect.nut -> mod_sellswords\hooks\skills\effects\legend_return_favor_effect.nut
@@ -126,6 +130,8 @@
 ...\mod_sellswords\hooks\skills\racial\mummy_racial.nut -> mod_sellswords\hooks\skills\racial\legend_mummy_racial.nut
 ...\mod_sellswords\hooks\skills\traits\necromancer_trait.nut -> legend_necromancer_trait.nut
 ...\mod_sellswords\hooks\states\world_state.nut
+...\mod_sellswords\hooks\hooks_drink_skills.nut
+...\mod_sellswords\hooks\hooks_enemies.nut
 ...\mod_sellswords\hooks_ptr\config\perks_tree_special.nut
 ...\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
 ...\mod_sellswords\hooks_ptr\skills\backgrounds\legend_lonewolf_background.nut
