@@ -47,7 +47,7 @@
 	"Rygar III",
 	"Chiru of Hanguk",
 	"Grenik de Slav"
-]
+];
 
 ::Const.Strings.crBaronNames <- [
 	"Lord Charles",
@@ -62,7 +62,7 @@
 	"Lord Philippe",
 	"Lord Jean",
 	"Lord NapoleonIer"
-]
+];
 
 ::Const.Strings.crBlacksmithNames <- [
 	"Muradin",
@@ -72,7 +72,7 @@
 	"Thane",
 	"Baelgun",
 	"Grim"
-]
+];
 
 ::Const.Strings.crBlacksmithTitles <- [
 	"Bronzebeard",
@@ -82,7 +82,7 @@
 	"Stonehearth",
 	"Hammerfall",
 	"Thunderbrew "
-]
+];
 
 ::Const.Strings.crPriestNames <- [
 	"Muradin",
@@ -92,7 +92,7 @@
 	"Thane",
 	"Baelgun",
 	"Grim"
-]
+];
 
 ::Const.Strings.crDesperadoNames <- [
 	"Foltest",
@@ -116,7 +116,7 @@
 	"Boarische Hiasl",
 	"Hans Kohlhase",
 	"Mathias Kneibl"
-]
+];
 
 ::Const.Strings.crDesperadoTitles <- [
 	"the Knight Slayer",
@@ -138,7 +138,7 @@
 	"the Vengeance Incarnate",
 	"the Leper",
 	"the Outlaw"
-]
+];
 
 ::Const.Strings.crHashshashinNames <- [
 	"Abul Nuqoud",
@@ -149,7 +149,7 @@
 	"Suleiman",
 	"Manuel",
 	"Yusuf"
-]
+];
 
 ::Const.Strings.crHashshashinTitles <- [
 	"Ibn-La Ahad",
@@ -158,11 +158,11 @@
 	"ad-Din Sinan",
 	"the Lionheart",
 	"Hastings",
-	"Savonarola"
+	"Savonarola",
 	"Kaczmarek",
 	"Barleti",
 	"Tazim"
-]
+];
 
 ::Const.Strings.crBarbarianChampionNames <- [
 	"Harald",
@@ -181,7 +181,7 @@
 	"Sorli",
 	"Stakar",
 	"Authulf"
-]
+];
 
 ::Const.Strings.crBarbarianChampionTitles <- [
 	"Bluetooth",
@@ -195,7 +195,7 @@
 	"the Raven Cut",
 	"the Menace",
 	"the Giantslayer"
-]
+];
 
 ::Const.Strings.FemaleKnightNames <- [
 	"Dame Jean",
@@ -214,7 +214,7 @@
 	"Dame Senomy",
 	"Dame Willow",
 	"Dame Liz"
-]
+];
 
 ::Const.Strings.LightSwordsmanNames <- [
 	"Johannes Liechtenauer",
@@ -231,7 +231,7 @@
 	"Angelo Viggiani",
 	"George Silver",
 	"Henry de Sainct-Didier"
-]
+];
 
 ::Const.Strings.SergeantTitles <- [
 	"the Defender of the Weak",
@@ -244,7 +244,7 @@
 	"the Law and Order",
 	"the Vim and Vigor",
 	"the Lawbringer"
-]
+];
 
 ::Const.Strings.SellswordsNames <- [
 	"William III",
@@ -361,7 +361,7 @@
 	"the Foul",
 	"the Decrepit",
 	"the Shadowlord"
-]
+];
 
 ::Const.Strings.crBerserkerTitles <- [
 	"Fleshrender",
@@ -377,7 +377,7 @@
 	"Fierce Adamantite Ravager",
 	"the Skullcrusher",
 	"the Thunderstorm"
-]
+];
 
 ::Const.Strings.SlayerNames <- [
 	"the Lindwurm Hunter",
@@ -392,4 +392,4 @@
 	"the Hunter",
 	"the Orc Slayer",
 	"the Dragon Slayer"
-]
+];

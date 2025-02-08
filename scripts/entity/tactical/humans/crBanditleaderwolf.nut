@@ -228,7 +228,7 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 				[1, "light_scale_armor"]
 			]);		
 			
-			armor.setUpgrade(this.new("scripts/items/legend_armor/armor_upgrades/legend_armor_white_wolf_pelt_upgrade"))			
+			armor.setUpgrade(this.new("scripts/items/legend_armor/armor_upgrades/legend_armor_white_wolf_pelt_upgrade"));
 
 			this.m.Items.equip(armor);
 
@@ -242,7 +242,7 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 				[1, "flat_top_with_mail"],
 				[1, "padded_nasal_helmet"],
 				[1, "bascinet_with_mail"]
-			])
+			]);
 			this.m.Items.equip(helm);
 			
 			local mainhandItem = this.getMainhandItem();
@@ -294,7 +294,7 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 				]);
 			}
 
-			this.m.Items.equip(this.Const.World.Common.pickArmor(armor))
+			this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
 		}
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Head) == null)
@@ -310,7 +310,7 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 				[1, "padded_nasal_helmet"],
 				[1, "bascinet_with_mail"],
 				[1, "red_bandit_leader_helmet"]
-			])
+			]);
 			if (item != null)
 			{
 				this.m.Items.equip(item);

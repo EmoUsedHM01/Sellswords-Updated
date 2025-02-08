@@ -3,7 +3,7 @@
 	local ws_create = o.create;
 	o.create = function()
 	{
-		ws_create()
+		ws_create();
 
 		this.m.BaseBonus = 35;
 	}

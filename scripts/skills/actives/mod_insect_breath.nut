@@ -67,7 +67,7 @@ this.mod_insect_breath <- this.inherit("scripts/skills/skill", {
 			effect.m.TurnsLeft = this.Math.max(1, 7 + target.getCurrentProperties().NegativeStatusEffectDuration);
 		else
 		{
-			local insect = this.new("scripts/skills/effects/insect_swarm_effect")
+			local insect = this.new("scripts/skills/effects/insect_swarm_effect");
 			target.getSkills().add(insect);
 			insect.m.TurnsLeft = this.Math.max(1, 7 + target.getCurrentProperties().NegativeStatusEffectDuration);
 		}

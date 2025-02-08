@@ -2,7 +2,7 @@
 	local ws_create = o.create;
 	o.create = function()
 	{
-		ws_create()
+		ws_create();
 
 		this.m.PerkGroupMultipliers = [
 			[0.1, this.Const.Perks.OrganisedTree],

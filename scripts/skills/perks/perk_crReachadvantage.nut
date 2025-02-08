@@ -134,7 +134,7 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 		local actor = this.getContainer().getActor().get();
 
 		if (!::MSU.isKindOf(actor, "player"))
-			this.m.Container.removeByID("perk.crReachadvantage")
+			this.m.Container.removeByID("perk.crReachadvantage");
 
 		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 

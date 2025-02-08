@@ -201,7 +201,7 @@
 				Cloth = [					
 					[
 						1,
-						"cloth/legend_southern_robe" //25
+						"cloth/legend_southern_robe", //25
 						6
 					]		
 				],
@@ -221,7 +221,7 @@
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_shoulder_cloth"
+						"tabard/legend_southern_shoulder_cloth",
 						7
 					]				
 				],			
@@ -254,7 +254,7 @@
 				Plate = [
 					[
 						1,
-						"plate/legend_southern_plate_full" //75
+						"plate/legend_southern_plate_full", //75
 						2
 					]					
 				],					
@@ -412,7 +412,7 @@
 				Cloth = [					
 					[
 						1,
-						"cloth/legend_southern_robe" //25
+						"cloth/legend_southern_robe", //25
 						6
 					]		
 				],
@@ -796,7 +796,7 @@
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_shoulder_cloth"
+						"tabard/legend_southern_shoulder_cloth",
 						8
 					]				
 				],			
@@ -831,7 +831,7 @@
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_shoulder_cloth"
+						"tabard/legend_southern_shoulder_cloth",
 						8
 					]				
 				],			

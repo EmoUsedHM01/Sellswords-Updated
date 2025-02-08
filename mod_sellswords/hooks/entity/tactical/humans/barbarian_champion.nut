@@ -67,8 +67,8 @@
 			local weapons = [
 				"weapons/barbarians/crbarbarian_hammer",
 				"weapons/barbarians/crbarbarian_mace",	
-				"weapons/barbarians/twinaxes_t2"	
-				"weapons/barbarians/twincleavers_t2"	
+				"weapons/barbarians/twinaxes_t2",
+				"weapons/barbarians/twincleavers_t2",
 				"weapons/barbarians/rusty_warblade",
 				"weapons/barbarians/heavy_rusty_axe"
 			];

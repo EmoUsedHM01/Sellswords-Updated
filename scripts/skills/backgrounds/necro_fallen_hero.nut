@@ -184,7 +184,7 @@ this.necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character_bac
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_zombie_fallen_hero"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_zombie_fallen_hero"));
 		
 		this.character_background.onAdded();
 	}

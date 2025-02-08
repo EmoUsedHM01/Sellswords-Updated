@@ -20,7 +20,7 @@ this.kriegsgeist_castle_enter_event <- ::inherit("scripts/events/event", {
 						return "B";
 					}
 				}
-				{
+				,{
 					Text = "Aye, let\'s not disturb what rests here just yet.",
 					function getResult( _event )
 					{

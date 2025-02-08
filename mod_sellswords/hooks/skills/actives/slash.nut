@@ -6,7 +6,7 @@
 	{
 		if (_skill == this)
 		{
-			__original(_skill, _targetEntity, _properties)
+			__original(_skill, _targetEntity, _properties);
 			
 			if (this.m.isBunt)
 			{

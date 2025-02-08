@@ -132,8 +132,8 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 				{
 					local helm = this.Const.World.Common.pickHelmet([
 						[1, "peasant_helmet_early"]
-					])
-					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"))						
+					]);
+					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"));
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -152,8 +152,8 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_early"],
 					[2, "peasant_helmet_mid"]					
 					
-				])
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"))						
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}	
@@ -171,8 +171,8 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_late"],
 					[2, "peasant_helmet_mid"]					
 					
-				])
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"))						
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -195,8 +195,8 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_mid"],				
 					[1, "peasant_helmet_late"],
 					[1, "peasant_helmet_late_light"]					
-				])	
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"))					
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -213,8 +213,8 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_late"],
 					[2, "peasant_helmet_late_light"]										
-				])
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"))					
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_feathered_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}	
@@ -231,7 +231,7 @@ this.crPeasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([
 			[1, "peasant_champion_helmet_light"]
-		]))
+		]));
 		
 		this.m.ActionPoints = 16;
 		this.m.BaseProperties.ActionPoints = 16;

@@ -190,7 +190,7 @@ this.necro_embalmbed_priest <- this.inherit("scripts/skills/backgrounds/characte
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_miasma"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_miasma"));
 		
 		this.character_background.onAdded();
 	}

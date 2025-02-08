@@ -1,5 +1,5 @@
 // load the hook helper
-::include("mod_sellswords/hook_helper.nut")
+::include("mod_sellswords/hook_helper.nut");
 // all folders below must be loaded in that order
 
 // load the config folder which contains new Const added by this mod 

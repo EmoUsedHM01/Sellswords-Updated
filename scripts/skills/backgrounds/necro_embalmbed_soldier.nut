@@ -196,7 +196,7 @@ this.necro_embalmbed_soldier <- this.inherit("scripts/skills/backgrounds/charact
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_fearsome"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_fearsome"));
 		
 		this.character_background.onAdded();
 	}
@@ -204,7 +204,7 @@ this.necro_embalmbed_soldier <- this.inherit("scripts/skills/backgrounds/charact
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.Fearsome, 0, false)
+		this.addPerk(::Const.Perks.PerkDefs.Fearsome, 0, false);
 	}
 
 	function buildAttributes(_tag = null, _attrs = null)

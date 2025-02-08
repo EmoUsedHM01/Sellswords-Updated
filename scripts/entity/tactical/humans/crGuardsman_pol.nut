@@ -168,17 +168,17 @@ this.crGuardsman_pol <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[
 					1,
-					"crGuardsman_armor_ichi"
+					"crGuardsman_armor_ichi",
 					variant
 				],	
 				[
 					1,
-					"crGuardsman_armor_ni"
+					"crGuardsman_armor_ni",
 					variant
 				],
 				[
 					1,
-					"crGuardsman_armor_sann"
+					"crGuardsman_armor_sann",
 					variant
 				]
 			]));
@@ -232,7 +232,7 @@ this.crGuardsman_pol <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[
 					1,
-					"crGuardsman_armor_light"
+					"crGuardsman_armor_light",
 					variant
 				]
 			]));

@@ -47,7 +47,7 @@ this.crSellswordveteran_Polearm <- this.inherit("scripts/entity/tactical/human",
 			[1, "perk_crRavager", 1],
 			[1, "perk_crIronsideweak", 1],
 			[1, "perk_crBattlerhaposdy", 1]			
-		]
+		];
 
 		if (::Is_PTR_Exist)
 		{
@@ -206,7 +206,7 @@ this.crSellswordveteran_Polearm <- this.inherit("scripts/entity/tactical/human",
 					"weapons/crpolemace",	
 					"weapons/crswordlance",
 					"weapons/crswordlance",										
-				]											
+				];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));							
 		}
 		

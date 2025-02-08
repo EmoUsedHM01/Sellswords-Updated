@@ -2,7 +2,7 @@
 	local ws_create = o.create;
 	o.create = function()
 	{
-		ws_create()
+		ws_create();
 
 		this.m.PerkGroupMultipliers = [
 			[0.1, this.Const.Perks.OrganisedTree],
@@ -16,12 +16,6 @@
 		];
 
 		this.m.PerkTreeDynamic = {
-			Profession = [
-				::MSU.Class.WeightedContainer([
-					[5, ::Const.Perks.KnightProfessionTree],
-					[95, ::Const.Perks.NoTree],					
-				])
-			],		
 			Profession = [
 				::MSU.Class.WeightedContainer([
 					[20, ::Const.Perks.RaiderProfessionTree],

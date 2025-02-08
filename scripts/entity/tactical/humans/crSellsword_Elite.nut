@@ -229,7 +229,7 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 				1,
 				"sellsword_helmet_champion"
 			]
-		]))
+		]));
 		this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 50;
 		this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 50;		
 		this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 50;

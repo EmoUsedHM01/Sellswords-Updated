@@ -228,7 +228,7 @@ this.crBarbarianChampionhigh <- this.inherit("scripts/entity/tactical/human", {
 				[1, "cr_barb_chosen_ni"]				
 		]);	
 		
-		armor.setUpgrade(this.new("scripts/items/legend_armor/armor_upgrades/legend_direwolf_pelt_upgrade"))
+		armor.setUpgrade(this.new("scripts/items/legend_armor/armor_upgrades/legend_direwolf_pelt_upgrade"));
 		
 		this.m.Items.equip(armor);
 

@@ -161,8 +161,8 @@
 				{
 					local helm = this.Const.World.Common.pickHelmet([
 						[1, "peasant_helmet_early"]
-					])	
-					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"))							
+					]);
+					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -181,8 +181,8 @@
 					[1, "peasant_helmet_early"],
 					[2, "peasant_helmet_mid"]					
 					
-				])	
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"))						
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}	
@@ -200,8 +200,8 @@
 					[1, "peasant_helmet_late"],
 					[2, "peasant_helmet_mid"]					
 					
-				])
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"))					
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -222,8 +222,8 @@
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_late"]					
 					
-				])	
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"))					
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -240,8 +240,8 @@
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_verylate"]					
 					
-				])	
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"))					
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}			

@@ -2382,14 +2382,6 @@ if (!("Spawn" in ::Const.World))
 	crrFixed = [
 		{
 			Weight = 100,
-			MinR = 400,
-			Type = this.Const.World.Spawn.Troops.crSlaveowner,
-			Cost = 40
-		}
-	],
-	crrFixed = [
-		{
-			Weight = 100,
 			MinR = 500,
 			Type = this.Const.World.Spawn.Troops.crSlaveowner,
 			Cost = 40

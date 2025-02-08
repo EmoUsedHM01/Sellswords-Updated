@@ -92,7 +92,7 @@ this.purge_infection_contract <- this.inherit("scripts/contracts/contract", {
 			function start()
 			{
 				this.Contract.m.BulletpointsObjectives = [
-					"Purge the scourge at " + this.Flags.get("DestinationName") + " near " + this.Flags.get("SettlementName")
+					"Purge the scourge at " + this.Flags.get("DestinationName") + " near " + this.Flags.get("SettlementName"),
 					"Do not let any necromancers escape"
 				];
 

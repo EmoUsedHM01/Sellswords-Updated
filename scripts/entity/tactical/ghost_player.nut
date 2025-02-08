@@ -78,24 +78,24 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 	function onDamageReceived( _attacker, _skill, _hitInfo )
 	{
 		local ret = this.actor.onDamageReceived(_attacker, _skill, _hitInfo);
-		
+
 		if (this.isDying() || this.m.UndeadType != this.Const.Necro.UndeadType.DemonHound)
 			return ret;
-		
+
 		if (this.Tactical.TurnSequenceBar.getActiveEntity() == null || this.Tactical.TurnSequenceBar.getActiveEntity().getID() != this.getID())
 			return ret;
-		
+
 		local result = {
 			TargetTile = this.getTile(),
 			Destinations = []
 		};
-		
+
 		this.Tactical.queryTilesInRange(this.getTile(), 2, 6, false, [], this.onQueryTiles, result);
-		
+
 		if (result.Destinations.len() == 0)
 			return ret;
-		
-		local targetTile = result.Destinations[this.Math.rand(0, result.Destinations.len() - 1)]
+
+		local targetTile = result.Destinations[this.Math.rand(0, result.Destinations.len() - 1)];
 		local tag = {
 			User = this,
 			TargetTile = targetTile,
@@ -105,7 +105,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 			OnTeleportStart = this.onTeleportStart,
 			IgnoreColors = false
 		};
-		
+
 		if (this.getTile().IsVisibleForPlayer)
 		{
 			local effect = {
@@ -395,7 +395,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		else
 			_tag.OnFadeIn(_tag);
 	}
-	
+
 	function onFadeIn( _tag )
 	{
 		if (!_tag.IgnoreColors)
@@ -409,12 +409,12 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 			}
 		}
 	}
-	
+
 	function onFadeDone( _tag )
 	{
 		_tag.User.restoreSpriteColors();
 	}
-	
+
 	function isReallyKilled( _fatalityType )
 	{
 		if (this.m.UndeadType != this.Const.Necro.UndeadType.DemonHound)
@@ -667,7 +667,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 				]
 			};
 			break;
-		
+
 		default:
 			effect = {
 				Delay = 0,
@@ -805,7 +805,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 
 		this.m.StarWeights = background.buildAttributes(null, null);
 		background.buildDescription();
-		
+
 		local inTraining = this.new("scripts/skills/traits/legend_intensive_training_trait");
 		local maxTraits = 0;
 
@@ -827,7 +827,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 			}
 
 			pickTraits( traits, maxTraits );
-			
+
 			for( local i = 1; i < traits.len(); i = ++i )
 			{
 				this.m.Skills.add(traits[i]);
@@ -843,7 +843,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		this.getFlags().set("max_lives", 2);
 		this.setUndeadAppearance();
 		this.setUndeadAttributes();
-		background.buildDescription(true);			
+		background.buildDescription(true);
 
 		if (_addTraits)
 		{
@@ -867,7 +867,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 
 		this.m.Skills.update();
 	}
-	
+
 	function onInit()
 	{
 		this.actor.onInit();
@@ -883,20 +883,20 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		b.FatigueEffectMult = 0.0;
 		this.m.ActionPointCosts = this.Const.SameMovementAPCost;
 		this.m.FatigueCosts = this.Const.DefaultMovementFatigueCost;
-		
+
 		local app = this.getItems().getAppearance();
 		app.Quiver = this.Const.Items.Default.PlayerQuiver;
-		
+
 		this.addSprite("background");
 		this.addSprite("socket").setBrush("bust_base_player");
 		this.addSprite("quiver");
-		this.addSprite("fog")
+		this.addSprite("fog");
 
 		local body = this.addSprite("body");
 		body.varySaturation(0.25);
 		body.varyColor(0.2, 0.2, 0.2);
 
-		this.addSprite("injury")
+		this.addSprite("injury");
 
 		local injury = this.addSprite("injury_body");
 		injury.Visible = false;
@@ -917,11 +917,11 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		blur_2.varyColor(0.2, 0.2, 0.2);
 
 		foreach (a in this.Const.CharacterSprites.Helmets)
-			this.addSprite(a)
+			this.addSprite(a);
 
 		this.addSprite("accessory");
 		this.addSprite("accessory_special");
-		
+
 		local body_blood = this.addSprite("body_blood");
 		body_blood.Visible = false;
 		local body_dirt = this.addSprite("dirt");
@@ -929,7 +929,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		this.addDefaultStatusSprites();
 		this.getSprite("status_rooted").Scale = 0.55;
 		this.setSpriteOffset("status_rooted", this.createVec(-5, -5));
-		
+
 		this.m.Skills.add(this.new("scripts/skills/actives/wake_ally_skill"));
 		this.m.Skills.add(this.new("scripts/skills/special/double_grip"));
 		this.m.Skills.add(this.new("scripts/skills/effects/captain_effect"));
@@ -973,9 +973,9 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 			local blur_2 = this.getSprite("blur_2");
 			blur_2.setBrush("bust_demon_hound_spirit_0" + _spirit);
 			break;
-		
+
 		case this.Const.Necro.UndeadType.Banshee:
-			local fog = this.getSprite("fog")
+			local fog = this.getSprite("fog");
 			fog.setBrush("bust_ghost_fog_02");
 			local body = this.getSprite("body");
 			body.setBrush("bust_banshee_01");
@@ -988,7 +988,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 			break;
 
 		default:
-			local fog = this.getSprite("fog")
+			local fog = this.getSprite("fog");
 			fog.setBrush("bust_ghost_fog_02");
 			local body = this.addSprite("body");
 			body.setBrush("bust_ghost_01");
@@ -999,7 +999,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 			local blur_2 = this.addSprite("blur_2");
 			blur_2.setBrush("bust_ghost_01");
 		}
-		
+
 		this.m.BodySpriteName = this.getSprite("body").getBrush().Name;
 		this.setDirty(true);
 	}
@@ -1011,15 +1011,15 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		case this.Const.Necro.UndeadType.DemonHound:
 			this.setDemonHoundAttributes();
 			break;
-			
+
 		case this.Const.Necro.UndeadType.Banshee:
 			this.setBansheeAttributes();
 			break;
-			
+
 		default:
 			this.setGhostAttributes();
 		}
-		
+
 		if (this.m.BodySpriteName != "")
 		{
 			local app = this.getItems().getAppearance();
@@ -1256,7 +1256,7 @@ this.ghost_player <- this.inherit("scripts/entity/tactical/undead_player", {
 		}
 		else
 		{
-			AttributesLevelUp = 
+			AttributesLevelUp =
 				[{Min = 3,Max = 5}, // Hitpoints
 					{Min = 3,Max = 4}, // Bravery
 						{Min = 3,Max = 5}, // Fatigue

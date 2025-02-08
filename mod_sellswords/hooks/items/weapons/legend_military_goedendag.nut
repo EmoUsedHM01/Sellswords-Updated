@@ -4,7 +4,7 @@
 	{
 		__original();
 
-		this.m.Variants = [2]
+		this.m.Variants = [2];
 		this.m.Variant = 2;
 		this.updateVariant();
 		this.m.Value = 3200;

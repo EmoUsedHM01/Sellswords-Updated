@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		this.zombie.create();
-		this.m.Name = "Raised Wiederganger"
+		this.m.Name = "Raised Wiederganger";
 		this.m.ResurrectWithScript = "";
 		this.m.IsSummoned = true;
 		this.m.IsActingImmediately = true;

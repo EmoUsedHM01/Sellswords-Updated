@@ -163,7 +163,7 @@ this.crPeasantkiller <- this.inherit("scripts/entity/tactical/human", {
 				{
 					local helm = this.Const.World.Common.pickHelmet([
 						[1, "peasant_helmet_early"]
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -182,7 +182,7 @@ this.crPeasantkiller <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_early"],
 					[2, "peasant_helmet_mid"]					
 					
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}	
@@ -200,7 +200,7 @@ this.crPeasantkiller <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_late"],
 					[2, "peasant_helmet_mid"]					
 					
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -223,7 +223,7 @@ this.crPeasantkiller <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_mid"],				
 					[1, "peasant_helmet_late"],
 					[1, "peasant_helmet_late_light"]					
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -240,7 +240,7 @@ this.crPeasantkiller <- this.inherit("scripts/entity/tactical/human", {
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_late"],
 					[2, "peasant_helmet_late_light"]										
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}	

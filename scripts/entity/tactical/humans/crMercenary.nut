@@ -63,7 +63,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 			[2, "perk_crBruiser", 1],
 			[2, "perk_crRavager", 1],
 			[2, "perk_crDiscipline", 1],			
-		]
+		];
 
 		if (::Is_PTR_Exist)
 		{
@@ -74,7 +74,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 				[3, "perk_ptr_personal_armor", 1],
 				[1, "perk_ptr_unstoppable", 2],	
 				[1, "perk_ptr_survival_instinct", 2],	
-			])
+			]);
 
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_skirmisher"));
 		}
@@ -237,7 +237,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 					"weapons/military_pick",
 					"weapons/legend_ranged_flail",
 					"weapons/polehammer",
-					"weapons/three_headed_flail"
+					"weapons/three_headed_flail",
 					"weapons/legend_halberd",
 					"weapons/legend_military_voulge",
 					"weapons/warbrand",
@@ -263,7 +263,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 			else if(dc <= 150)
 			{
 				weapons = [			
-					"weapons/three_headed_flail"
+					"weapons/three_headed_flail",
 					"weapons/legend_halberd",
 					"weapons/legend_military_voulge",
 					"weapons/warbrand",
@@ -289,7 +289,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 			else if(dc > 150)
 			{
 				weapons = [			
-					"weapons/three_headed_flail"
+					"weapons/three_headed_flail",
 					"weapons/legend_halberd",
 					"weapons/legend_military_voulge",
 					"weapons/warbrand",
@@ -409,7 +409,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 						[4, "crmercenary_helmet_verylow"],		//50-100					
 						[1, "crmercenary_helmet_low"],			//100
 						[1, "crmercenary_helmet_mid"],			//130											
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -433,7 +433,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 						[1, "crmercenary_helmet_verylow"],		//50-100					
 						[2, "crmercenary_helmet_low"],			//100
 						[1, "crmercenary_helmet_mid"],			//130											
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -457,7 +457,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 						[4, "crmercenary_helmet_mid"],			//130					
 						[1, "crmercenary_helmet_late"],			//180
 						[2, "crmercenary_helmet_barbute"],		//160						
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -480,7 +480,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 						[2, "crmercenary_helmet_mid"],			//130					
 						[3, "crmercenary_helmet_late"],			//180
 						[4, "crmercenary_helmet_barbute"],		//160						
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -504,7 +504,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 						[3, "crmercenary_helmet_barbute"],		//160
 						[1, "crmercenary_helmet_kettle"],		//230
 						[1, "crmercenary_helmet_heavy"], 		//210						
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -527,7 +527,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 						[1, "crmercenary_helmet_barbute"],		//160
 						[1, "crmercenary_helmet_kettle"],		//230
 						[2, "crmercenary_helmet_heavy"], 		//210						
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}

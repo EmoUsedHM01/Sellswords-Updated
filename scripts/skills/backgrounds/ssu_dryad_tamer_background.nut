@@ -159,8 +159,8 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_doghandling"))
-		this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"))
+		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_doghandling"));
+		this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"));
 	}
 
 	function buildPerkTree()

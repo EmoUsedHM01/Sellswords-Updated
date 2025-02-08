@@ -83,7 +83,7 @@ this.crSellsword_Tank <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_pattern_recognition"));;
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_the_rush_of_battle"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_cover_ally"))	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_cover_ally"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_line_breaker"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_cover_ally"));

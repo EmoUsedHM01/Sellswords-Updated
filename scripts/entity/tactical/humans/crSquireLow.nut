@@ -1,4 +1,4 @@
-this.crsquireLow <- this.inherit("scripts/entity/tactical/human", {
+this.crSquireLow <- this.inherit("scripts/entity/tactical/human", {
 	m = {},
 	function create()
 	{

@@ -84,7 +84,7 @@
 			local weapons = [
 				"weapons/greenskins/orc_axe",
 				"weapons/greenskins/orc_cleaver",
-				"weapons/greenskins/orc_flail_2h"
+				"weapons/greenskins/orc_flail_2h",
 				"weapons/greenskins/orc_axe_2h",
 				"weapons/greenskins/legend_limb_lopper",
 				"weapons/greenskins/legend_man_mangler",

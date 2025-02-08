@@ -130,7 +130,7 @@ this.crGuardsman <- this.inherit("scripts/entity/tactical/human", {
 		if (rr <= 6)
 		{
 
-			local rrr = this.Math.rand(1, 10)
+			local rrr = this.Math.rand(1, 10);
 			if (rrr <= 7)
 			{
 				r = this.Math.rand(1, 2);
@@ -236,7 +236,7 @@ this.crGuardsman <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (rr > 6)
 		{		
-			local rrr= this.Math.rand(1, 10)
+			local rrr= this.Math.rand(1, 10);
 			if (rrr <= 7)
 			{
 				this.m.Items.equip(this.new("scripts/items/weapons/oriental/heavy_southern_mace"));

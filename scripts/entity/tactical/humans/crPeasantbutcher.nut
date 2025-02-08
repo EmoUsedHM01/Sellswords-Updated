@@ -177,7 +177,7 @@ this.crPeasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 				{
 					local helm = this.Const.World.Common.pickHelmet([
 						[1, "peasant_helmet_early"]
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -196,7 +196,7 @@ this.crPeasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_early"],
 					[2, "peasant_helmet_mid"]					
 					
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}	
@@ -214,7 +214,7 @@ this.crPeasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_late"],
 					[2, "peasant_helmet_mid"]					
 					
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -235,7 +235,7 @@ this.crPeasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_late"]					
 					
-				])				
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -252,7 +252,7 @@ this.crPeasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_late"],					
 					[2, "peasant_helmet_verylate"]							
-				])				
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}		
@@ -271,7 +271,7 @@ this.crPeasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([
 			[1, "legend_champion_butcher_helmet"]
-		]))
+		]));
 
 	}
 

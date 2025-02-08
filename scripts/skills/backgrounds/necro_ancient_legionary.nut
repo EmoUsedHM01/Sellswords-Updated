@@ -181,7 +181,7 @@ this.necro_ancient_legionary <- this.inherit("scripts/skills/backgrounds/charact
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_reach_advantage"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_reach_advantage"));
 		
 		this.character_background.onAdded();
 	}

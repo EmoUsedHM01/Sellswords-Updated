@@ -207,7 +207,7 @@ this.crOrcPillager <- this.inherit("scripts/entity/tactical/actor", {
 	function onFactionChanged()
 	{
 		this.actor.onFactionChanged();
-		local flip = !this.isAlliedWithPlayer()
+		local flip = !this.isAlliedWithPlayer();
 
 		foreach (a in this.Const.CharacterSprites.Helmets)
 		{
@@ -259,7 +259,7 @@ this.crOrcPillager <- this.inherit("scripts/entity/tactical/actor", {
 		local v2 = -6;
 		foreach (a in this.Const.CharacterSprites.Helmets)
 		{
-			this.addSprite(a)
+			this.addSprite(a);
 			this.setSpriteOffset(a, this.createVec(v2, v));
 		}
 

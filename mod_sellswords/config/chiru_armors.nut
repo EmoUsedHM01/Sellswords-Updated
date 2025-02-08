@@ -6166,7 +6166,7 @@
 				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200					
 			],
 			Plate = [
-				[1, "plate/legend_southern_leather_jacket" 5],// 30,-3,110						
+				[1, "plate/legend_southern_leather_jacket", 5],// 30,-3,110
 			],
 			Cloak = [],
 			Tabard = [

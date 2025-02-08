@@ -6,7 +6,7 @@ this.perk_crDiscipline <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "perk.crDiscipline";
 		this.m.Name = this.Const.Strings.PerkName.crDiscipline;
-		this.m.Description = this.Const.Strings.PerkDescription.crDiscipline
+		this.m.Description = this.Const.Strings.PerkDescription.crDiscipline;
 		this.m.Icon = "ui/perks/crDiscipline.png";
 		this.m.IconMini = "crDiscipline_mini";
 		this.m.Type = this.Const.SkillType.Perk | this.Const.SkillType.StatusEffect;

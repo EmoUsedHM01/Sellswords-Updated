@@ -177,7 +177,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 
 	function onAdded()
 	{
-		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_barter_greed"))
+		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_barter_greed"));
 
 		this.character_background.onAdded();
 		local actor = this.getContainer().getActor();

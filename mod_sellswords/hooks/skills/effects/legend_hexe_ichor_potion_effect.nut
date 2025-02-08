@@ -52,7 +52,7 @@
 					type = "text",
 					icon = "ui/icons/action_points.png",
 					text = "Action Point Cost is [color=" + this.Const.UI.Color.PositiveValue + "]halved[/color]"
-				}				
+				},
 				{
 					id = 10,
 					type = "text",

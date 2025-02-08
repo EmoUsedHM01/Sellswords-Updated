@@ -4,7 +4,7 @@
 	local ws_create = o.create;
 	o.create = function()
 	{
-		ws_create()
+		ws_create();
 
 		this.m.BaseChance = 40;
 		this.m.Type = this.Const.SkillType.Perk | this.Const.SkillType.StatusEffect;

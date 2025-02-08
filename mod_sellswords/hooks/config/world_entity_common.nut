@@ -3,20 +3,20 @@
 	local candidates = [];
 	local T = [];
 	local totalWeight = 0;
-	local dateToSkip = 0
+	local dateToSkip = 0;
 	switch (this.World.Assets.getCombatDifficulty())
 	{
 		case this.Const.Difficulty.Easy:
 			dateToSkip = 80;
 			break;
 		case this.Const.Difficulty.Normal:
-			dateToSkip = 60
+			dateToSkip = 60;
 			break;
 		case this.Const.Difficulty.Hard:
-			dateToSkip = 40
+			dateToSkip = 40;
 			break;
 		case this.Const.Difficulty.Legendary:
-			dateToSkip = 20
+			dateToSkip = 20;
 			break;
 	}
 	dateToSkip = 240;
@@ -53,7 +53,7 @@
 			}
 		}
 
-		local w = 0
+		local w = 0;
 		if (typeof(t.Weight) == "function")
 		{
 			w = t.Weight(_scale)
@@ -65,7 +65,7 @@
 
 		if (w == 0)
 		{
-			T.push(t)
+			T.push(t);
 			continue
 		}
 		totalWeight += w;
@@ -118,7 +118,7 @@
 				}
 				else
 				{
-					local chance = 1.0 / (1.0 + this.Math.pow(_map[key].Num, 0.5)) * 100
+					local chance = 1.0 / (1.0 + this.Math.pow(_map[key].Num, 0.5)) * 100;
 					if (this.Math.rand(1, 100) > chance)
 					{
 						continue;
@@ -182,14 +182,14 @@
 					weight = troop.MaxGuardsWeight;
 				}
 
-				local r = this.Math.rand(0, 100)
+				local r = this.Math.rand(0, 100);
 
 				if (weight < r && i >= minCount)
 				{
 					continue;
 				}
 
-				_credits = this.Const.World.Common.dynamicSelectTroop(troop.Guards, _resources, _scale, _map, _credits)
+				_credits = this.Const.World.Common.dynamicSelectTroop(troop.Guards, _resources, _scale, _map, _credits);
 
 				if (_credits < 0)
 				{
@@ -211,7 +211,7 @@
 		local points = troop.SortedTypes[0].Cost;
 		if (troop.SortedTypes.len() > 1)
 		{
-			local meanScaled = troop.MinMean + _scale * (troop.MaxMean - troop.MinMean)
+			local meanScaled = troop.MinMean + _scale * (troop.MaxMean - troop.MinMean);
 			points = this.Math.max(points, this.Const.LegendMod.BoxMuller.BoxMuller(meanScaled, troop.Deviation));
 			//this.logInfo(cat + " Mean " + meanScaled + " : Deviation " + troops.Deviation + " : Points " + points)
 		}
@@ -269,7 +269,7 @@
 				}
 				else
 				{
-					local chance = 1.0 / (1.0 + this.Math.pow(_map[key].Num, 0.5)) * 100
+					local chance = 1.0 / (1.0 + this.Math.pow(_map[key].Num, 0.5)) * 100;
 					if (this.Math.rand(1, 100) > chance)
 					{
 						continue;
@@ -287,7 +287,7 @@
 				}
 				else
 				{
-					local chance = 1.0 / (1.0 + this.Math.pow(_map[key].Num, 0.5)) * 100
+					local chance = 1.0 / (1.0 + this.Math.pow(_map[key].Num, 0.5)) * 100;
 					if (this.Math.rand(1, 100) > chance)
 					{
 						continue;
@@ -296,7 +296,7 @@
 			}
 
 			_credits -= troop.SortedTypes[i].Types[index].Cost;
-			_map[key].Num += 1
+			_map[key].Num += 1;
 
 			if ("Guards" in troop.SortedTypes[i].Types[index])
 			{
@@ -376,7 +376,7 @@
 		}
 	}
 
-	local T = []
+	local T = [];
 	foreach ( k, v in troopMap)
 	{
 		T.push(v)

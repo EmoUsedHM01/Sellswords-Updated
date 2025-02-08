@@ -114,8 +114,8 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_roots"))
-		this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"))
+		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_roots"));
+		this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"));
 	}
 
 	function buildPerkTree()
@@ -133,7 +133,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
 		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
 		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 0, false)
+		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 0, false);
 		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
 
 		if (::Is_PTR_Exist)
@@ -142,8 +142,8 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 			this.addPerkGroup(::Const.Perks.OneHandedTree.Tree);
 			this.addPerkGroup(::Const.Perks.TwoHandedTree.Tree);
 
-			this.addPerk(::Const.Perks.PerkDefs.PTRRisingStar, 4, false)
-			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false)
+			this.addPerk(::Const.Perks.PerkDefs.PTRRisingStar, 4, false);
+			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false);
 		}
 		else
 		{
@@ -151,7 +151,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 			this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
 		}
 
-		this.addPerk(::Const.Perks.PerkDefs.LegendBattleheart, 3, false)
+		this.addPerk(::Const.Perks.PerkDefs.LegendBattleheart, 3, false);
 	}
 
 	function onChangeAttributes()

@@ -66,7 +66,7 @@ this.crSellswordveteran_Tank <- this.inherit("scripts/entity/tactical/human", {
 			[2, "perk_nine_lives", 2],			
 			[2, "perk_crBlocknormal", 1],
 			[2, "perk_crIronsideweak", 1],		
-		]
+		];
 
 		if (::Is_PTR_Exist)
 		{
@@ -85,7 +85,7 @@ this.crSellswordveteran_Tank <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_the_rush_of_battle"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_phalanx"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_cover_ally"))	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_cover_ally"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_line_breaker"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_cover_ally"));
 		}

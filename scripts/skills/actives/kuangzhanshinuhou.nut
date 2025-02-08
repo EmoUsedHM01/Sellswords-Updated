@@ -31,7 +31,7 @@ this.kuangzhanshinuhou <- this.inherit("scripts/skills/skill", {
 
 	function onUse( _user, _targetTile )
 	{
-		this.m.Skillcharge = this.m.Skillcharge - 1
+		this.m.Skillcharge = this.m.Skillcharge - 1;
 		this.m.Container.add(this.new("scripts/skills/effects/kuangzhanshinuhou_effect"));
 		for( local i = 0; i < this.Const.Tactical.MortarImpactParticles.len(); i = ++i )
 		{

@@ -25,14 +25,14 @@ this.crGoblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 		this.getSprite("head").setBrush("head_kobold_0" + this.Math.rand(1, 5));			
 		this.addDefaultStatusSprites();
 		local parts = [
-			"body" "tattoo_body" "injury_body"
-			"armor" "surcoat" "armor_upgrade_back" "armor_upgrade_front"
-			"head" "closed_eyes" "eye_rings" "tattoo_head" "beard" "beard_top" "hair" "injury"
-			"helmet" "helmet_damage"
-			"body_blood" "accessory" "accessory_special"
-			"permanent_injury_1" "permanent_injury_2" "permanent_injury_3" "permanent_injury_4"
-			"bandage_1" "bandage_2" "bandage_3"
-			"background" "quiver" "shaft" "dirt"
+			"body", "tattoo_body", "injury_body",
+			"armor", "surcoat", "armor_upgrade_back", "armor_upgrade_front",
+			"head", "closed_eyes", "eye_rings", "tattoo_head", "beard", "beard_top", "hair", "injury",
+			"helmet", "helmet_damage",
+			"body_blood", "accessory", "accessory_special",
+			"permanent_injury_1", "permanent_injury_2", "permanent_injury_3", "permanent_injury_4",
+			"bandage_1", "bandage_2", "bandage_3",
+			"background", "quiver", "shaft", "dirt"
 		];
 		foreach (part in parts) {		
 			if (this.hasSprite(part)) this.getSprite(part).Scale *= 1.15;

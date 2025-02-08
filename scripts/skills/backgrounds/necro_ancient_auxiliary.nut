@@ -179,7 +179,7 @@ this.necro_ancient_auxiliary <- this.inherit("scripts/skills/backgrounds/charact
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_shield_expert"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_shield_expert"));
 		
 		this.character_background.onAdded();
 	}

@@ -44,7 +44,7 @@
 
 	if ((_tile != null && _killer == null) || (_killer != null && _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals))
 	{
-		local count = 0.0
+		local count = 0.0;
 		local roster = ::World.getPlayerRoster().getAll();
 		foreach( i, bro in roster )
 		{
@@ -59,7 +59,7 @@
 			count *= 2;
 		
 		local rand = this.Math.rand(1.0, 100.0);
-		this.logInfo("Rolling for potion: " + rand + " vs " + chance * count)
+		this.logInfo("Rolling for potion: " + rand + " vs " + chance * count);
 
 		if (rand <= chance * count)
 		{

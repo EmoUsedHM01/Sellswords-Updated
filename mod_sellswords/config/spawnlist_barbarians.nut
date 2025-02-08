@@ -193,7 +193,6 @@ gt.Const.World.Spawn.BarbarianHunters <- {
 	VisibilityMult = 1.0,
 	VisionMult = 1.0,
 	Body = "figure_player_05",
-	Fixed = [],
 	MinR = 56,
 	MaxR = 300,
 	Fixed = [

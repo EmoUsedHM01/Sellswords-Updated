@@ -139,15 +139,15 @@ this.necro_lorekeeper <- this.inherit("scripts/skills/backgrounds/character_back
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/effects/lorekeeper_skull_spawn_effect"))
+			this.m.Container.add(this.new("scripts/skills/effects/lorekeeper_skull_spawn_effect"));
 		
 		this.character_background.onAdded();
 	}
-	
+
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		
+
 		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
 		this.addPerkGroup(::Const.Perks.BasicNecroMagicTree.Tree);
 		this.addPerkGroup(::Const.Perks.ValaRuneMagicTree.Tree);
@@ -199,12 +199,12 @@ this.necro_lorekeeper <- this.inherit("scripts/skills/backgrounds/character_back
 		};
 		return c;
 	}
-	
+
 	function onAddEquipment()
 	{
 		local stash = this.World.Assets.getStash();
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.Const.World.Common.pickArmor([ 
+		items.equip(this.Const.World.Common.pickArmor([
 			[
 				1, "ancient/ancient_lich_attire"
 			]

@@ -9,7 +9,7 @@ this.cr_delay_debuff_effect <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "effects.cr_delay_debuff";
 		this.m.Name = "Delay";
-		this.m.Description = "Time may be needed so this character can regain the initiative by going on the offense. This time is often necessary to set the conditions logistically for the offensive."
+		this.m.Description = "Time may be needed so this character can regain the initiative by going on the offense. This time is often necessary to set the conditions logistically for the offensive.";
 		this.m.Icon = "ui/perks/ptr_dynamic_duo.png";
 		this.m.IconMini = "ptr_dynamic_duo_mini";
 		this.m.Type = this.Const.SkillType.StatusEffect;

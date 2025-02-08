@@ -36,7 +36,7 @@
 				"weapons/militia_spear",
 				"weapons/boar_spear",
 				"weapons/falchion",
-				"weapons/shortsword"
+				"weapons/shortsword",
 				"weapons/legend_militia_glaive",
 				"weapons/legend_glaive",
 				"weapons/legend_infantry_axe",

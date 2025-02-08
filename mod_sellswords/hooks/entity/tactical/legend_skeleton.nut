@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		this.skeleton.create();
-		this.m.Name = "Raised Skeleton"
+		this.m.Name = "Raised Skeleton";
 		this.m.ResurrectWithScript = "";
 		this.m.IsSummoned = true;
 		this.m.IsActingImmediately = true;

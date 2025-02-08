@@ -206,7 +206,7 @@ this.crHashshashin_High <- this.inherit("scripts/entity/tactical/human", {
 			[1, "hashshashin_armor_high"],				
 		]);	
 		
-		armor.setUpgrade(this.new("scripts/items/legend_armor/armor_upgrades/legend_hyena_fur_upgrade"))
+		armor.setUpgrade(this.new("scripts/items/legend_armor/armor_upgrades/legend_hyena_fur_upgrade"));
 		
 		this.m.Items.equip(armor);		
 

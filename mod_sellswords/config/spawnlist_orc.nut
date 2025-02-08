@@ -357,7 +357,6 @@ gt.Const.World.Spawn.OrcDefenders <-
 				},
 				{
 					Type = this.Const.World.Spawn.Troops.OrcWarrior,
-					MinR = 300,
 					MinR = 0.25 * 1115,
 					Cost = 40
 				}

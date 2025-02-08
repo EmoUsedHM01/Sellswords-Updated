@@ -21,7 +21,7 @@
 					],
 					[
 						1,
-						"helm/legend_helmet_basinet" //80
+						"helm/legend_helmet_basinet", //80
 						7
 					],
 					[
@@ -101,7 +101,7 @@
 					],
 					[
 						1,
-						"helm/legend_helmet_carthaginian" //105						
+						"helm/legend_helmet_carthaginian", //105
 						3
 					],					
 					[
@@ -176,12 +176,12 @@
 				Helms = [ 
 					[
 						1,
-						"helm/legend_helmet_conic_helm" //110
+						"helm/legend_helmet_conic_helm", //110
 						1
 					],
 					[
 						1,
-						"helm/legend_helmet_nordic_helm_low" //110
+						"helm/legend_helmet_nordic_helm_low", //110
 						1
 					]
 				],
@@ -214,14 +214,14 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_nordic_helm_high" //135
+						"helm/legend_helmet_nordic_helm_high", //135
 						1
 					]
 				],
 				Tops = [
 					[
 						1,
-						"top/legend_helmet_southern_faceplate_bearded" //70
+						"top/legend_helmet_southern_faceplate_bearded", //70
 						2
 					]			
 				],
@@ -252,12 +252,12 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_conic_helm" //110
+						"helm/legend_helmet_conic_helm", //110
 						1
 					],
 					[
 						1,
-						"helm/legend_helmet_barbute" //75
+						"helm/legend_helmet_barbute", //75
 						6
 					]
 				],
@@ -290,7 +290,7 @@
 				Helms = [ 
 					[
 						1,
-						"helm/legend_helmet_conic_helm" //110
+						"helm/legend_helmet_conic_helm", //110
 						1
 					]
 				],
@@ -323,14 +323,14 @@
 				Helms = [					
 					[
 						1,
-						"helm/legend_helmet_southern_helmet_nasal" //150
+						"helm/legend_helmet_southern_helmet_nasal", //150
 						1
 					]
 				],
 				Tops = [
 					[
 						1,
-						"top/legend_helmet_southern_faceplate_bearded" //70
+						"top/legend_helmet_southern_faceplate_bearded", //70
 						2
 					]			
 				],
@@ -491,12 +491,12 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_kettle_helm_low" //70
+						"helm/legend_helmet_kettle_helm_low", //70
 						1
 					],
 					[
 						1,
-						"helm/legend_helmet_kettle_helm_med" //95
+						"helm/legend_helmet_kettle_helm_med", //95
 						1
 					]
 				],
@@ -519,12 +519,12 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_kettle_helm_med" //95
+						"helm/legend_helmet_kettle_helm_med", //95
 						1
 					],
 					[
 						1,
-						"helm/legend_helmet_kettle_helm" //115
+						"helm/legend_helmet_kettle_helm", //115
 						1
 					]
 				],
@@ -552,12 +552,12 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_kettle_helmt" //115
+						"helm/legend_helmet_kettle_helmt", //115
 						1
 					],
 					[
 						2,
-						"helm/legend_helmet_kettle_helm_high" //125
+						"helm/legend_helmet_kettle_helm_high", //125
 						1
 					]
 				],
@@ -585,17 +585,17 @@
 				Helms = [					
 					[
 						1,
-						"helm/legend_helmet_basinet" //80
+						"helm/legend_helmet_basinet", //80
 						7
 					],
 					[
 						1,
-						"helm/legend_helmet_flat_top_helm_polished" //100
+						"helm/legend_helmet_flat_top_helm_polished", //100
 						1
 					],
 					[
 						1,
-						"helm/legend_helmet_flat_top_helm" //85
+						"helm/legend_helmet_flat_top_helm", //85
 						1
 					]
 				],
@@ -627,7 +627,7 @@
 					],
 					[
 						1,
-						"helm/legend_helmet_flat_top_helm_polished" //100
+						"helm/legend_helmet_flat_top_helm_polished", //100
 						1
 					]
 				],
@@ -655,12 +655,12 @@
 				Helms = [					
 					[
 						1,
-						"helm/legend_helmet_flat_top_face_plate" //120
+						"helm/legend_helmet_flat_top_face_plate", //120
 						1
 					],
 					[
 						1,
-						"helm/legend_helmet_flat_top_helm_polished" //100
+						"helm/legend_helmet_flat_top_helm_polished", //100
 						1
 					],					
 				],
@@ -692,19 +692,19 @@
 					],
 					[
 						1,
-						"helm/legend_helmet_flat_top_helm_polished" //100
+						"helm/legend_helmet_flat_top_helm_polished", //100
 						1
 					],
 					[
 						1,
-						"helm/legend_helmet_flat_top_face_plate" //120
+						"helm/legend_helmet_flat_top_face_plate", //120
 						1
 					]
 				],
 				Tops = [	
 					[
 						1,
-						"top/legend_helmet_faceplate_flat" //40
+						"top/legend_helmet_faceplate_flat", //40
 						1
 					],
 					[
@@ -801,7 +801,7 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_conic_helm"
+						"helm/legend_helmet_conic_helm",
 						1
 					],
 					[
@@ -813,12 +813,12 @@
 				Vanity = [
 					[
 						1,
-						"vanity/legend_helmet_southern_turban_full"
+						"vanity/legend_helmet_southern_turban_full",
 						2
 					],	
 					[
 						1,
-						"vanity/legend_helmet_southern_helm_tailed"
+						"vanity/legend_helmet_southern_helm_tailed",
 						5
 					],	
 				],	
@@ -847,7 +847,7 @@
 					],
 					[
 						1,
-						"helm/legend_helmet_great_helm"
+						"helm/legend_helmet_great_helm",
 						1
 					]
 				],
@@ -889,7 +889,7 @@
 					],
 					[
 						1,
-						"helm/legend_helmet_legend_armet"
+						"helm/legend_helmet_legend_armet",
 						1
 					],
 					[
@@ -904,7 +904,7 @@
 				Tops = [	
 					[
 						1,
-						"top/legend_helmet_faceplate_flat"
+						"top/legend_helmet_faceplate_flat",
 						1
 					],
 					[
@@ -942,7 +942,7 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_basinet" //80
+						"helm/legend_helmet_basinet", //80
 						7
 					],
 					[
@@ -987,7 +987,7 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_enclave_kettle" //145
+						"helm/legend_helmet_enclave_kettle", //145
 						1
 					],
 					[
@@ -1032,7 +1032,7 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_basinet" //80
+						"helm/legend_helmet_basinet", //80
 						7
 					],
 					[
@@ -1248,7 +1248,7 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_barbute" //75
+						"helm/legend_helmet_barbute", //75
 						6
 					]
 				],
@@ -1319,7 +1319,7 @@
 				Tops = [
 					[
 						1,
-						"top/legend_helmet_southern_faceplate_bearded" //70
+						"top/legend_helmet_southern_faceplate_bearded", //70
 						1
 					]			
 				],
@@ -1406,7 +1406,7 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_barbute"  //75 
+						"helm/legend_helmet_barbute",  //75
 						6
 					],
 					[

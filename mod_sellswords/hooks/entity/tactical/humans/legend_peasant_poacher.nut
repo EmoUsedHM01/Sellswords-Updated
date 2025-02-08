@@ -182,7 +182,7 @@
 				{
 					local helm = this.Const.World.Common.pickHelmet([
 						[1, "hood"]
-					])					
+					]);
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -199,7 +199,7 @@
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_early"]					
 					
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}	
@@ -217,7 +217,7 @@
 					[2, "peasant_helmet_early"],
 					[1, "peasant_helmet_mid"]					
 					
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -236,7 +236,7 @@
 					[2, "peasant_ranged_mid"],
 					[1, "peasant_ranged_late"]					
 					
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}	
@@ -253,7 +253,7 @@
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_ranged_mid"],
 					[3, "peasant_ranged_late"]						
-				])						
+				]);
 				this.m.Items.equip(helm);				
 			}
 		}							

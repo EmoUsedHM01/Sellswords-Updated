@@ -135,7 +135,7 @@
 
 ::Const.LegendMod.FavoriteSkeleton.push(this.Const.EntityType.crSkeleton);
 
-local OrignalGetFavoriteEnemyValue = ::Const.LegendMod.GetFavoriteEnemyValue
+local OrignalGetFavoriteEnemyValue = ::Const.LegendMod.GetFavoriteEnemyValue;
 ::Const.LegendMod.GetFavoriteEnemyValue = function ( _type )
 {
 	switch(_type)

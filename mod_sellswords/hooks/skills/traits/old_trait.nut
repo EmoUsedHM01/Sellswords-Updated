@@ -9,7 +9,7 @@
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
 			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] Melee Damage"
-		})
+		});
 
 		return ret;
 	}

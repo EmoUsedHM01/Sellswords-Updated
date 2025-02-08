@@ -29,7 +29,7 @@ this.salad_blueprint <- this.inherit("scripts/crafting/legend_food_blueprint", {
 			{
 				Scripts = ["scripts/skills/perks/perk_legend_camp_cook"]
 			}
-		]
+		];
 		this.initSkills(skills);		
 
 	}

@@ -53,7 +53,7 @@
 	{
 		// Cap the count at 7
 		if (this.m.Count >= 7)
-			this.m.Count = 7
+			this.m.Count = 7;
 
 		if (this.getContainer().hasSkill("perk.crresilient"))
 		{

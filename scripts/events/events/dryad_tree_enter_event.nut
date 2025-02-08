@@ -346,7 +346,7 @@ this.dryad_tree_enter_event <- ::inherit("scripts/events/event", {
 	{
 		local f = ::World.FactionManager.getFactionOfType(::Const.FactionType.Beasts).getID();
 		_properties.CombatID = "Yggdrasil";
-		_properties.TerrainTemplate == "tactical.forest"
+		_properties.TerrainTemplate == "tactical.forest";
 		_properties.LocationTemplate.OwnedByFaction = ::Const.Faction.Player;
 		_properties.LocationTemplate.CutDownTrees = false;
 		_properties.LocationTemplate.AdditionalRadius = 4;

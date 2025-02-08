@@ -56,7 +56,7 @@ this.perk_ghost_vanish <- this.inherit("scripts/skills/skill", {
 				}
 				else if (d <= 2)
 				{
-					lessDangerousTiles.push(tile)
+					lessDangerousTiles.push(tile);
 					isValid = false;
 					break;
 				}

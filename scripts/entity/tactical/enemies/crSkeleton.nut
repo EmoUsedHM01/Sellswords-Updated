@@ -168,7 +168,7 @@ this.crSkeleton <- this.inherit("scripts/entity/tactical/skeleton", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_devastating_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"))
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
 
 		if (::Is_PTR_Exist)
 		{

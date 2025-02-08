@@ -24,7 +24,7 @@ this.perk_crhitpoints <- this.inherit("scripts/skills/skill", {
 	{
 		local ini = this.getContainer().getActor().getInitiative();	
 		local currentPercent = this.getContainer().getActor().getHitpointsPct();
-		currentPercent  = this.Math.floor((1 - this.m.cof * (1 - currentPercent)) * 100)
+		currentPercent  = this.Math.floor((1 - this.m.cof * (1 - currentPercent)) * 100);
 		local tooltip = this.skill.getTooltip();		
 
 		tooltip.push({

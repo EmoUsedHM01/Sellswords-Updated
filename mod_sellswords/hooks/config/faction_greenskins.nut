@@ -13,7 +13,7 @@
 ::Const.Tactical.Actor.OrcWarlord.RangedDefense = 10;
 ::Const.Tactical.Actor.OrcWarlord.Initiative = 135;
 ::Const.Tactical.Actor.OrcWarlord.FatigueRecoveryRate = 35;
-::Const.Tactical.Actor.OrcWarlord.DamageTotalMult = 1.4
+::Const.Tactical.Actor.OrcWarlord.DamageTotalMult = 1.4;
 
 ::Const.Tactical.Actor.GoblinAmbusher.XP = 375;
 ::Const.Tactical.Actor.GoblinAmbusher.Hitpoints = 60;

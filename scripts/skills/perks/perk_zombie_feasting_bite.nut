@@ -16,7 +16,7 @@ this.perk_zombie_feasting_bite <- this.inherit("scripts/skills/skill", {
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		if (_skill == null || _damageInflictedHitpoints <= 0)
-			return
+			return;
 
 		if (_skill.getID() != "actives.zombie_bite")
 			return;
@@ -27,7 +27,7 @@ this.perk_zombie_feasting_bite <- this.inherit("scripts/skills/skill", {
 			return;
 
 		local mult = this.Math.rand(33, 50) * 0.01;
-		local heals = this.Math.min(actor.getHitpointsMax() - actor.getHitpoints(), this.Math.round(_damageInflictedHitpoints * mult))
+		local heals = this.Math.min(actor.getHitpointsMax() - actor.getHitpoints(), this.Math.round(_damageInflictedHitpoints * mult));
 
 		if (!actor.isHiddenToPlayer())
 		{

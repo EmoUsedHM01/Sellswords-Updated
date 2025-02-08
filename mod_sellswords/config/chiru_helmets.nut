@@ -483,7 +483,7 @@
 				Helms = [
 					[
 						1,
-						"helm/legend_helmet_legend_armet_01_named"
+						"helm/legend_helmet_legend_armet_01_named",
 						3
 					]
 				],
@@ -4359,7 +4359,7 @@
 					[1, "helm/legend_helmet_flat_top_face_plate"]//120,-9,900,-2	ss120,-7,900
 				],
 				Tops = [
-					[1, "top/legend_helmet_faceplate_flat" 1],//35,-2,300,-1		ss40,-2,350,-1				
+					[1, "top/legend_helmet_faceplate_flat", 1],//35,-2,300,-1		ss40,-2,350,-1
 				],
 				Vanity = [
 					[1, "vanity/cr_adorned_closed_flat_top_with_mail_vanity"],//10,0,100			

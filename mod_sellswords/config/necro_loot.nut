@@ -93,7 +93,7 @@
 					if (tile.Properties.get("Corpse").CorpseName == "A Wolf" || tile.Properties.get("Corpse").CorpseName == "A Direwolf" || tile.Properties.get("Corpse").CorpseName == "Wardog" || tile.Properties.get("Corpse").CorpseName == "Warhound")
 					{
 						local rand = this.Math.rand(1.0, 100.0);
-						this.logInfo("Rolling for corpse: " + rand + " vs " + zombieSalvage)
+						this.logInfo("Rolling for corpse: " + rand + " vs " + zombieSalvage);
 						if (rand <= zombieSalvage)
 						{
 							local zloot = this.new("scripts/items/spawns/zombie_dog");
@@ -107,7 +107,7 @@
 					if (tile.Properties.get("Corpse").isHuman == 1 || tile.Properties.get("Corpse").isHuman == 2)
 					{
 						local rand = this.Math.rand(1.0, 100.0);
-						this.logInfo("Rolling for corpse: " + rand + " vs " + zombieSalvage)
+						this.logInfo("Rolling for corpse: " + rand + " vs " + zombieSalvage);
 						if (rand <= zombieSalvage)
 						{
 							local zloot = this.new("scripts/items/spawns/legend_zombie_item");

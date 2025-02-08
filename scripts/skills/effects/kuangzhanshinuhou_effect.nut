@@ -64,7 +64,7 @@ this.kuangzhanshinuhou_effect <- this.inherit("scripts/skills/skill", {
 
 	function onTurnEnd()
 	{
-		this.m.TurnsLeft = this.m.TurnsLeft - 1
+		this.m.TurnsLeft = this.m.TurnsLeft - 1;
 		if (this.m.TurnsLeft <= 0)
 		{
 			this.removeSelf();

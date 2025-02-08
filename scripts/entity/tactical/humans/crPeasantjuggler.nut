@@ -144,8 +144,8 @@ this.crPeasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 				{
 					local helm = this.Const.World.Common.pickHelmet([
 						[1, "peasant_helmet_early"]
-					])
-					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"))						
+					]);
+					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"));
 					this.m.Items.equip(helm);				
 				}
 			}
@@ -164,8 +164,8 @@ this.crPeasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_early"],
 					[2, "peasant_helmet_mid"]					
 					
-				])
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"))						
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}	
@@ -183,8 +183,8 @@ this.crPeasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 					[1, "peasant_helmet_late"],
 					[2, "peasant_helmet_mid"]					
 					
-				])
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"))						
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -205,8 +205,8 @@ this.crPeasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_late"]					
 					
-				])
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"))					
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}
@@ -223,8 +223,8 @@ this.crPeasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 				local helm = this.Const.World.Common.pickHelmet([
 					[1, "peasant_helmet_late"],					
 					[2, "peasant_helmet_verylate"]							
-				])	
-				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"))					
+				]);
+				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"));
 				this.m.Items.equip(helm);				
 			}
 		}		

@@ -1,7 +1,7 @@
 ::mods_hookExactClass("skills/perks/perk_ptr_swordmaster_blade_dancer", function ( o )
 {
-	o.m.Count <- 0,
-	o.m.FatigueCostIncreasePerCount <- 15		
+	o.m.Count <- 0;
+	o.m.FatigueCostIncreasePerCount <- 15;
 	o.onAnySkillExecuted <- function ( _skill, _targetTile, _targetEntity, _forFree )
 	{
 		if (_skill.getID() == "actives.slash" || _skill.getID() == "actives.legend_great_slash")
@@ -14,7 +14,7 @@
 		if (!this.isEnabled()) return;
 
 		local weapon = this.getContainer().getActor().getMainhandItem();
-		local spearwall = this.getContainer().getSkillByID("actives.spearwall")
+		local spearwall = this.getContainer().getSkillByID("actives.spearwall");
 		if (spearwall != null)
 		{
 			return;
@@ -29,7 +29,7 @@
 			}
 		}		
 
-		local kataStep = this.getContainer().getSkillByID("actives.ptr_kata_step")
+		local kataStep = this.getContainer().getSkillByID("actives.ptr_kata_step");
 		if (kataStep != null)
 		{
 			kataStep.m.ActionPointCost = ::Math.max(0, kataStep.m.ActionPointCost - 2);

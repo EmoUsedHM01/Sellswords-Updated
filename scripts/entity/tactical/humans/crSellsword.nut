@@ -76,7 +76,7 @@ this.crSellsword <- this.inherit("scripts/entity/tactical/human", {
 			[1, "perk_crDiscipline", 1],
 			[1, "perk_crAnchor", 1],
 			[1, "perk_crBattlerhaposdy", 1],			
-		]
+		];
 
 		if (::Is_PTR_Exist)
 		{

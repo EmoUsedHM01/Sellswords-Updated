@@ -207,7 +207,7 @@ this.necro_zombie <- this.inherit("scripts/skills/backgrounds/character_backgrou
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_colossus"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_colossus"));
 		
 		this.character_background.onAdded();
 	}
@@ -215,7 +215,7 @@ this.necro_zombie <- this.inherit("scripts/skills/backgrounds/character_backgrou
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.Colossus, 0, false)
+		this.addPerk(::Const.Perks.PerkDefs.Colossus, 0, false);
 		//this.removePerk(::Const.Perks.PerkDefs.ZombieFallenHero);
 	}
 	

@@ -250,7 +250,7 @@ this.crSellswordveteran <- this.inherit("scripts/entity/tactical/human", {
 					"weapons/barbarians/heavy_rusty_axe",	
 					"weapons/barbarians/rusty_warblade",
 					"weapons/spontoon03",						
-				]
+				];
 				this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));	
 
 				if (::Is_PTR_Exist)

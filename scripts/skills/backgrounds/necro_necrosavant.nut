@@ -100,7 +100,7 @@ this.necro_necrosavant <- this.inherit("scripts/skills/backgrounds/character_bac
 				this.Const.Perks.VampireMagicTree
 			],
 			Magic = []
-		}
+		};
 	}
 
 	function getTooltip()
@@ -172,7 +172,7 @@ this.necro_necrosavant <- this.inherit("scripts/skills/backgrounds/character_bac
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_darkflight"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_darkflight"));
 		
 		this.character_background.onAdded();
 	}
@@ -180,7 +180,7 @@ this.necro_necrosavant <- this.inherit("scripts/skills/backgrounds/character_bac
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.LegendDarkflight, 0, false)
+		this.addPerk(::Const.Perks.PerkDefs.LegendDarkflight, 0, false);
 	}
 	
 	function onAddEquipment()

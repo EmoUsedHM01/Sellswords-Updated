@@ -226,7 +226,7 @@ this.crDesperado_High <- this.inherit("scripts/entity/tactical/human", {
 				[1, "crhedgeknight_armor"]				
 		]);	
 		
-		armor.setUpgrade(this.new("scripts/items/legend_armor/armor_upgrades/legend_additional_padding_upgrade"))
+		armor.setUpgrade(this.new("scripts/items/legend_armor/armor_upgrades/legend_additional_padding_upgrade"));
 		
 		this.m.Items.equip(armor);		
 

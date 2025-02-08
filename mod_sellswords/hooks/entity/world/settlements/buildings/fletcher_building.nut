@@ -15,7 +15,6 @@
 			},
 			{
 				R = 50,
-				R = 0,
 				P = 1.0,
 				S = "ammo/quiver_of_bleeding_arrows"
 			},
@@ -28,7 +27,7 @@
 				R = 50,
 				P = 1.0,
 				S = "ammo/quiver_of_fire_bolts"
-			}
+			},
 			{
 				R = 50,
 				P = 1.0,

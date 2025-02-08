@@ -64,7 +64,7 @@
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
 				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Defenses for ten turns"
-			}			
+			},
 			{
 				id = 11,
 				type = "text",

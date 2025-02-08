@@ -194,7 +194,7 @@ this.necro_embalmbed_slave <- this.inherit("scripts/skills/backgrounds/character
 	function onAdded()
 	{
 		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_nine_lives"))
+			this.m.Container.add(this.new("scripts/skills/perks/perk_nine_lives"));
 		
 		this.character_background.onAdded();
 	}
