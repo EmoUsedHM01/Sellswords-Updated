@@ -283,8 +283,16 @@
 ...\scripts\skills\perks\perk_summon_skeleton.nut
 ...\scripts\skills\perks\perk_summon_zombie.nut
 ...\scripts\states\world_state.nut
-
 Renamings for legends 19.0.0 - Breaky
+
+...\mod_sellswords\config\z_background_perks.nut
+Fixed bad strings
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
+Updated to new Legend perk names
+
+...\mod_sellswords\config\necro_loot.nut
+Fixed a null param getting pushed when it shouldn't be
 
 ----------------------------------------------------------------------------------------------------------------------------
 
