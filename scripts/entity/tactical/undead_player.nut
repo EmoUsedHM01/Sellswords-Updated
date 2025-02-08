@@ -435,7 +435,7 @@ this.undead_player <- this.inherit("scripts/entity/tactical/player", {
 				killedBy = killedBy + (" by " + _killer.getKilledName());
 			}
 
-			this.World.Statistics.addFallen(this, killedBy);
+			::Legends.addFallen(this, killedBy);
 		}
 	}
 

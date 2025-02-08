@@ -35,7 +35,7 @@
 	{
 		_actor.getItems().transferToStash(this.World.Assets.getStash());
 		_actor.getSkills().onDeath(this.Const.FatalityType.None);
-		this.World.Statistics.addFallen(_actor, "Their mutations went out of control.");
+		::Legends.addFallen(_actor, "Their mutations went out of control.");
 		this.World.getPlayerRoster().remove(_actor);
 	}
 };
