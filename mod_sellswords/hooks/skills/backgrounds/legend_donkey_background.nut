@@ -50,7 +50,7 @@
 				this.Const.Perks.PerkDefs.Rotation,
 				this.Const.Perks.PerkDefs.LegendPacifist,				
 				this.Const.Perks.PerkDefs.Taunt,
-				this.Const.Perks.PerkDefs.Sprint
+				this.Const.Perks.PerkDefs.LegendSprint
 			],
 			[
 				this.Const.Perks.PerkDefs.LegendEfficientPacking,
