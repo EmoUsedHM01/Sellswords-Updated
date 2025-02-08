@@ -311,7 +311,7 @@
 
 ::Const.World.Common.buildDynamicTroopList = function( _template, _resources)
 {
-//	::logInfo("*DynamicTroopList : template = " + _template.Name + " : resources = " + _resources)
+//	::logInfo("*DynamicTroopList : template = " + _template.Name + " : resources = " + _resources);
 	local credits = _resources;
 	if ("MinR" in _template)
 	{
@@ -384,10 +384,10 @@
 
 
 	//TESTING
-	// foreach (t in T)
-	// {
-	// 	this.logInfo(t.Type.Script + " : " + t.Num)
-	// }
+//	 foreach (t in T)
+//	 {
+//	 	::logInfo(t.Type.Script + " : " + t.Num)
+//	 }
 
 	return {
 		MovementSpeedMult = _template.MovementSpeedMult,
@@ -396,4 +396,85 @@
 		Body = _template.Body,
 		Troops = T
 	}
+}
+
+
+// TODO this is ugly hack and should be removed when legends figures it out - chopeks
+function onCostCompare( _t1, _t2 )
+{
+	if (_t1.Cost < _t2.Cost)
+		return -1;
+	else if (_t1.Cost > _t2.Cost)
+		return 1;
+	return 0;
+}
+
+foreach(k, v in this.Const.World.Spawn)
+{
+	if (k == "Troops" || k == "Unit" || k == "TroopsMap")
+	{
+		continue;
+	}
+
+	if (typeof(v) != "table")
+	{
+		continue;
+	}
+
+	//this.logInfo("Calculating costs for " + k)
+	foreach (i, _t in v.Troops)
+	{
+		local costMap = {}
+		foreach (tt in _t.Types) {
+			if (!(tt.Cost in costMap)) {
+				costMap[tt.Cost] <- []
+			}
+			costMap[tt.Cost].append(tt)
+		}
+
+		_t.SortedTypes <- [];
+
+		foreach (k,v in costMap) {
+			_t.SortedTypes.append({
+				Cost = k,
+				Types = v
+			})
+		}
+
+		if (_t.SortedTypes.len() == 1)
+		{
+			continue;
+		}
+
+		_t.SortedTypes.sort(this.onCostCompare);
+
+		//v.Troops[i].SortedTypes.sort(this.onCostCompare)
+
+		local mean = 0;
+		local variance = 0;
+		local deviation = 0;
+
+		foreach (o in v.Troops[i].SortedTypes)
+		{
+			mean += o.Cost;
+		}
+		mean = (mean * 1.0) / ( v.Troops[i].SortedTypes.len() * 1.0);
+
+		foreach (o in v.Troops[i].SortedTypes)
+		{
+			local d = o.Cost - mean;
+			variance += (d * d);
+		}
+		variance = (variance * 1.0) / ( v.Troops[i].SortedTypes.len() * 1.0);
+		deviation = this.Math.pow(variance, 0.5);
+
+
+		v.Troops[i].Mean <- mean;
+		v.Troops[i].Variance <- variance;
+		v.Troops[i].Deviation <- deviation;
+		v.Troops[i].MinMean <- v.Troops[i].SortedTypes[0].Cost - deviation;
+		v.Troops[i].MaxMean <-  v.Troops[i].Types[v.Troops[i].SortedTypes.len() - 1].Cost + deviation;
+		//this.logInfo(" mean  " + mean + " variance " + variance + " deviation " + deviation + " min " + v.Troops[i].MinMean + " max " + v.Troops[i].MaxMean)
+	}
+
 }
