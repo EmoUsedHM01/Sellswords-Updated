@@ -1,6 +1,14 @@
 8.3.1 changes
 
-...\
+...\mod_sellswords\hooks\config\world_entity_common.nut
+Temporary spawn fix until Legends gets updated - Chopeks
+
+...\mod_sellswords\config\sequence_logic.nut
+...\scripts\entity\tactical\undead_player.nut
+Updated nomenclature to the new Legends systems - Chopeks
+
+...\mod_sellswords\config\z_spawnlist_chiruunit.nut
+Removed duplicate entry - Chopeks
 
 ----------------------------------------------------------------------------------------------------------------------------
 
