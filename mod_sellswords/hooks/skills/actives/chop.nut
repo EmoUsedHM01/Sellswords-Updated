@@ -32,8 +32,10 @@
 		return ret;
 	}
 
-	q.isHidden <- function()
+	q.isHidden = @( __original ) function()
 	{
+		__original();
+
 		//local off = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local shield = 1;
 		if (this.getContainer().hasSkill("actives.shieldwall") || this.getContainer().hasSkill("actives.legend_fortify_skill"))

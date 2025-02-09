@@ -1,6 +1,10 @@
 8.3.2 changes
 
-...\
+...\mod_sellswords\hooks\skills\actives\chop.nut
+...\mod_sellswords\hooks\skills\actives\split_man.nut
+...\mod_sellswords\hooks\skills\effects\legend_coordinating_volleys.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
+Updated function calls to reflect new Legends changes
 
 ----------------------------------------------------------------------------------------------------------------------------
 

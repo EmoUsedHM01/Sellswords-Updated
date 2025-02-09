@@ -9,8 +9,10 @@
 		this.m.crcriticalbonus = 0.5;
 	}
 
-	q.isHidden <- function()
+	q.isHidden = @( __original ) function()
 	{
+		__original();
+
 		local shield = 1;
 		if (this.getContainer().hasSkill("actives.shieldwall") || this.getContainer().hasSkill("actives.legend_fortify_skill"))
 		{
