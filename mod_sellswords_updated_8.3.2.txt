@@ -6,6 +6,9 @@
 ...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
 Updated function calls to reflect new Legends changes
 
+...\mod_sellswords\hooks\skills\actives\recover_skill.nut
+Updated the Use function to match the new Legends variables
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.1 changes

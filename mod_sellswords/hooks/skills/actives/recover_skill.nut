@@ -7,4 +7,5 @@
 			return __original();
 		return this.Math.max(0, actor.getActionPoints() - 1);
 	}
+
 });
