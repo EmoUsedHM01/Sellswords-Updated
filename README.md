@@ -363,20 +363,20 @@ Bring to your allies the gentle touch of the forest! Unlocks an active skill to 
 
 
 **Credits:**
-A massive thanks to Abysscrane, Necro, Chiru, Barcode, Breaky, Rygar and Grenik for their collaborative effort in making this build possible. This project couldn't have reached its current state without their contributions.
-Chiru: For his blessing to update and build upon his fantastic mod.
-Abyss and Grenik: For providing access to a dedicated group of testers, helping to iron out most issues.
-Necro: For initially compartmentalizing the mod and offering a solid base structure to clean the hooks and ensure compatibility for future builds.
-Breaky: For assistance in further development since release
-Rygar: For help on the expanded tooltips and bug squashing
+- A massive thanks to Abysscrane, Necro, Chiru, Barcode, Breaky, Rygar and Grenik for their collaborative effort in making this build possible. This project couldn't have reached its current state without their contributions.
+- Chiru: For his blessing to update and build upon his fantastic mod.
+- Abyss and Grenik: For providing access to a dedicated group of testers, helping to iron out most issues.
+- Necro: For initially compartmentalizing the mod and offering a solid base structure to clean the hooks and ensure compatibility for future builds.
+- Breaky: For assistance in further development since release
+- Rygar: For help on the expanded tooltips and bug squashing
 
 **Required Mods:**
-Legends Mod
-MSU
-Modern Hooks (different from "mod hooks")
+- Legends Mod
+- MSU
+- Modern Hooks (different from "mod hooks")
 
 **Incompatibilities:**
-Fantasy Brothers (use Rise of the Usurper RotU if you want both)
-Rise of the Usurper (SSU is built into RotU)
-Starting Perks by Background Updated (Concept already built in)
-While PTR is currently compatible, there are several bugs associated with it that cannot be fixed from the SSU side. Use at your own risk!
+- Fantasy Brothers (use Rise of the Usurper RotU if you want both)
+- Rise of the Usurper (SSU is built into RotU)
+- Starting Perks by Background Updated (Concept already built in)
+- PTR is only compatible with Legends 18.2.7 and SSU 8.2.9, we aren't interested in supporting old versions or other mods
