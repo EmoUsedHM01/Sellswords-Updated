@@ -1,6 +1,10 @@
 8.3.3 changes
 
-...\
+...\mod_sellswords\config\z_background_perks.nut
+Updated the two buggy background perks - Breaky
+
+...\mod_sellswords\hooks\skills\effects/stunned_effect.nut
+Update stunned effect in accordance to the steel brow changes - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
