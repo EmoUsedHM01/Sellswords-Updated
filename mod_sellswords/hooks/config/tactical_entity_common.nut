@@ -61,7 +61,7 @@
 		this.updateAchievement("BurnThemAll", 1, 1);
 };
 
-::Const.Tactical.Common.onApplyHolyFlame = function( _tile, _entity )
+::Const.Tactical.Common.onApplyHolyFlame = function( _tile, _entity, _killer = null )
 {
 	local sounds = [
 		"sounds/combat/fire_01.wav",
@@ -77,6 +77,9 @@
 		return;
 
 	local faction = _entity.getFaction();
+	local actor = _entity;
+	if (::Legends.Mod.ModSettings.getSetting("BleedKiller").getValue() && ::MSU.isNull(_killer) && _killer.getID() != _entity.getID() && _killer.isAlive() && _killer.isPlacedOnMap())
+		actor = _killer;
 
 	if (_entity.getFlags().has("undead") && !_entity.getFlags().has("ghost"))
 	{
@@ -91,7 +94,7 @@
 			hitInfo.BodyPart = this.Const.BodyPart.Body;
 			hitInfo.BodyDamageMult = 1.0;
 			hitInfo.FatalityChanceMult = 0.0;
-			_tile.getEntity().onDamageReceived(_entity, null, hitInfo);
+			_tile.getEntity().onDamageReceived(actor, null, hitInfo);
 		}
 		else
 		{
@@ -115,7 +118,7 @@
 			hitInfo.BodyPart = this.Const.BodyPart.Body;
 			hitInfo.BodyDamageMult = 1.0;
 			hitInfo.FatalityChanceMult = 0.0;
-			_tile.getEntity().onDamageReceived(_entity, null, hitInfo);
+			_tile.getEntity().onDamageReceived(actor, null, hitInfo);
 		}
 
 		return;
@@ -135,7 +138,7 @@
 			hitInfo.BodyPart = this.Const.BodyPart.Body;
 			hitInfo.BodyDamageMult = 1.0;
 			hitInfo.FatalityChanceMult = 0.0;
-			_tile.getEntity().onDamageReceived(_entity, null, hitInfo);
+			_tile.getEntity().onDamageReceived(actor, null, hitInfo);
 		}
 		else
 			_entity.getSkills().add(this.new("scripts/skills/effects/legend_sanctified_effect"));
