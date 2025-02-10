@@ -152,7 +152,7 @@ setupBackground("scripts/skills/backgrounds/legend_lurker_background", ["scripts
 // Cultist stuff
 setupBackground("scripts/skills/backgrounds/legend_magister_background", ["scripts/skills/perks/perk_legend_specialist_cult_armor"], [{def = ::Const.Perks.PerkDefs.LegendSpecCultArmor, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_inventor_background", ["scripts/skills/perks/legend_inventor_anatomy"], [{def = ::Const.Perks.PerkDefs.LegendInventorAnatomy, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_inventor_background", ["scripts/skills/perks/perk_legend_inventor_anatomy"], [{def = ::Const.Perks.PerkDefs.LegendInventorAnatomy, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_ironmonger_background", ["scripts/skills/perks/perk_legend_tools_spares"], [{def = ::Const.Perks.PerkDefs.LegendToolsSpares, level = 0, optional = false}]);
 	
@@ -192,9 +192,9 @@ setupBackground("scripts/skills/backgrounds/legend_shieldmaiden_background", ["s
 	
 setupBackground("scripts/skills/backgrounds/legend_taxidermist_background", ["scripts/skills/perks/perk_bags_and_belts"], [{def = ::Const.Perks.PerkDefs.BagsAndBelts, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_trader_background", ["scripts/skills/perks/legends/perk_legend_off_book_deal"], [{def = ::Const.Perks.PerkDefs.LegendOffBookDeal, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_trader_background", ["scripts/skills/perks/perk_legend_off_book_deal"], [{def = ::Const.Perks.PerkDefs.LegendOffBookDeal, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_trader_commander_background", ["scripts/skills/perks/legends/perk_legend_off_book_deal"], [{def = ::Const.Perks.PerkDefs.LegendOffBookDeal, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_trader_commander_background", ["scripts/skills/perks/perk_legend_off_book_deal"], [{def = ::Const.Perks.PerkDefs.LegendOffBookDeal, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_vala_background", ["scripts/skills/perks/perk_legend_vala_warden"], [{def = ::Const.Perks.PerkDefs.LegendValaWarden, level = 0, optional = false}]);
 	
