@@ -1,5 +1,5 @@
 **Introduction:**
-Welcome to the overhaul/rework that is Sellswords Updated (SSU). This mod is a comprehensive overhaul and update of Chiru's original Sellswords mod. It includes full translations, updated graphics and brushes, new content, and complete compatibility with various large content-based submods like Accessory Companions, Magic Concepts, and PTR.
+Welcome to the overhaul/rework that is Sellswords Updated (SSU). This mod is a comprehensive overhaul and update of Chiru's original Sellswords mod. It includes full translations, updated graphics and brushes, new content, and enhanced compatibility with other mods.
 If you're looking for latest builds or other info, check the pinned messages in the [Legends Discord SSU submod channel](https://discord.com/channels/547043336465154049/1156535917276844083)
 
 **New to Sellswords?**
