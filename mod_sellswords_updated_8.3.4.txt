@@ -6,8 +6,11 @@ Update tooltip if you have Grandslam - Breaky
 ...\scripts\skills\backgrounds\necro_skeledog.nut
 Fix a typo - Breaky
 
-...mod_sellswords\hooks\config\tactical_entity_common.nut
+...\mod_sellswords\hooks\config\tactical_entity_common.nut
 Fix holy flame not working - Breaky
+
+...\scripts\entity\world\locations\crbandit_camp_location.nut
+Fixed treasure list to use correct scripts
 
 ----------------------------------------------------------------------------------------------------------------------------
 
