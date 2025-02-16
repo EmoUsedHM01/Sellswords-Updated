@@ -1,5 +1,11 @@
 8.3.5 changes
 
+...\mod_sellswords\hooks\config\tactical_entity_common.nut
+Should be not actor null here - Breaky
+
+...\mod_sellswords\hooks\skills\perks/perk_duelist.nut
+Check for null weapon should be first - Breaky 
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.4 changes

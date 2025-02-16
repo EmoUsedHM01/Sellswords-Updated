@@ -25,13 +25,13 @@
 		local weapon = this.getContainer().getActor().getMainhandItem();
 		if (this.getContainer().hasSkill("perk.crGrandslam"))
 		{	
-			if (weapon.isItemType(this.Const.Items.ItemType.RangedWeapon) && !weapon.isWeaponType(this.Const.Items.WeaponType.Throwing))
-			{
-				return bonus;
-			}
 			if (weapon == null)
 			{
 				bonus += 0.5
+			}
+			else if (weapon.isItemType(this.Const.Items.ItemType.RangedWeapon) && !weapon.isWeaponType(this.Const.Items.WeaponType.Throwing))
+			{
+				return bonus;
 			}
 			else if (weapon.isItemType(this.Const.Items.ItemType.OneHanded))
 			{

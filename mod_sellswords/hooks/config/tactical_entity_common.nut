@@ -78,7 +78,7 @@
 
 	local faction = _entity.getFaction();
 	local actor = _entity;
-	if (::Legends.Mod.ModSettings.getSetting("BleedKiller").getValue() && ::MSU.isNull(_killer) && _killer.getID() != _entity.getID() && _killer.isAlive() && _killer.isPlacedOnMap())
+	if (::Legends.Mod.ModSettings.getSetting("BleedKiller").getValue() && !::MSU.isNull(_killer) && _killer.getID() != _entity.getID() && _killer.isAlive() && _killer.isPlacedOnMap())
 		actor = _killer;
 
 	if (_entity.getFlags().has("undead") && !_entity.getFlags().has("ghost"))
