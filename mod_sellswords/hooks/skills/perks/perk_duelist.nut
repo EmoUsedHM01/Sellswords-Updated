@@ -19,7 +19,7 @@
 		_properties.DamageDirectAdd += 0.2;
 	}
 
-	q.bonus = @(__original) function()
+	q.getBonus = @(__original) function()
 	{
 		local bonus = __original();
 		local weapon = this.getContainer().getActor().getMainhandItem();
