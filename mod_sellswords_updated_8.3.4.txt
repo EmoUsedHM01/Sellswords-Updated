@@ -12,6 +12,12 @@ Fix holy flame not working - Breaky
 ...\scripts\entity\world\locations\crbandit_camp_location.nut
 Fixed treasure list to use correct scripts
 
+...\mod_sellswords\hooks\skills\actives\legend_piercing_bolt_skill.nut
+Refactor this to avoid crashes - Breaky
+
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+Fix this not applying killer - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.3 changes
