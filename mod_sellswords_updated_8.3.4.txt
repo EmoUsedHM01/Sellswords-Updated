@@ -18,6 +18,9 @@ Refactor this to avoid crashes - Breaky
 ...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
 Fix this not applying killer - Breaky
 
+...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
+Remove the unactivated tooltips that legends adds - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.3 changes

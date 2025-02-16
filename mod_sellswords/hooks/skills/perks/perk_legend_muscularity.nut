@@ -1,9 +1,5 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_muscularity", function ( q ) {
 
-	q.onUpdate = @( __original ) function ( _properties )
-	{
-	}
-
 	q.onAnySkillUsed = @(__original) function ( _skill, _targetEntity, _properties )
 	{
 		local item = _skill.getItem();
@@ -58,4 +54,7 @@
 		}
 	}
 
+	q.getUnactivatedPerkTooltipHints = @(__original) function()
+	{
+	}
 });
