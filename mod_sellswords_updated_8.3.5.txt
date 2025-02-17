@@ -4,7 +4,10 @@
 Should be not actor null here - Breaky
 
 ...\mod_sellswords\hooks\skills\perks/perk_duelist.nut
-Check for null weapon should be first - Breaky 
+Check for null weapon should be first - Breaky
+
+...\mod_sellswords\config\strings.nut
+Updated Reach Advantage tooltip
 
 ----------------------------------------------------------------------------------------------------------------------------
 
