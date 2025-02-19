@@ -8,6 +8,9 @@ Remove instances of mark target to use legends instead - Breaky
 ...\mod_sellswords\hooks\skills\perks\perk_duelist.nut
 Duelist got double bonuses from grandslam - Breaky
 
+...\mod_sellswords\config\ammo_types.nut
+Deleted as it's not needed and creates mod incompatibilities - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.5 changes
