@@ -26,6 +26,10 @@ Add masterwork items to be droppable from legendary locations - Breaky
 ...\scripts\entity\tactical\enemies\crOrcWarlock.nut
 These fellas will now drop masterwork items - Breaky
 
+...\scripts\skills\effects\cr_smackdown_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_knockback_prepared_effect.nut
+https://github.com/EmoUsedHM01/Sellswords-Updated/pull/13
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
