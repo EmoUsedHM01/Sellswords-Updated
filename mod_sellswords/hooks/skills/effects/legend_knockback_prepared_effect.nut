@@ -4,16 +4,21 @@
 	{
 		--this.m.AttacksLeft;
 		if (this.m.AttacksLeft <= 0)
+		{
 			this.removeSelf();
-
-		if (_skill != this)
-			return;
+		}
 
 		if (!_targetEntity.isAlive())
+		{
 			return;
+		}
 
-		_targetEntity.getSkills().getSkillByID("effects.legend_baffled");
-		_targetEntity.getSkills().getSkillByID("effects.cr_smackdown");
+		// refresh the effects
+		_targetEntity.getSkills().removeByID("effects.legend_baffled");
+		_targetEntity.getSkills().removeByID("effects.cr_smackdown");
+
+		_targetEntity.getSkills().add(this.new("scripts/skills/effects/legend_baffled_effect"));
+		_targetEntity.getSkills().add(this.new("scripts/skills/effects/cr_smackdown_effect"));
 	}
 
 });
