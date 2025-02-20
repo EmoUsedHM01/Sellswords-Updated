@@ -5,7 +5,7 @@ this.cr_clarity_skill <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.cr_clarity";
-		this.m.Name = "Clarify";
+		this.m.Name = "Clarity";
 		this.m.Description = "A well honed mind can perceive more in each instant, making time appear slower in key instants of need.";
 		this.m.Icon = "skills/crClarity_skill.png";
 		this.m.IconDisabled = "skills/crClarity_skill_bw.png";
@@ -47,19 +47,25 @@ this.cr_clarity_skill <- this.inherit("scripts/skills/skill", {
 	
 	function isUsable()
 	{
-		return this.skill.isUsable() && !this.getContainer().hasSkill("effects.cr_clarity");
+		local testSkill = this.new("scripts/skills/effects/cr_clarity_effect");
+		local actor = this.getContainer().getActor();
+		local canApply = testSkill.canApplyEffectTo(actor);
+
+		return this.skill.isUsable() && canApply && hasNoActiveEffect();
 	}
 
 	function onUse( _user, _targetTile )
 	{
-		if (!this.getContainer().hasSkill("effects.cr_clarity"))
+		if (hasNoActiveEffect())
 		{
 			this.m.Container.add(this.new("scripts/skills/effects/cr_clarity_effect"));
 			return true;
 		}
 
 		return false;
-	}	
+	}
 
+	function hasNoActiveEffect() {
+		return !this.getContainer().hasSkill("effects.cr_clarity");
+	}
 });
-
