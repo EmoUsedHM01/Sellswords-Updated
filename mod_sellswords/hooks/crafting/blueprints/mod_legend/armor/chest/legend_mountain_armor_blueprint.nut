@@ -17,13 +17,12 @@
 				Num = 2
 			},
 			{
-				Script = "scripts/items/misc/unhold_hide_item",
-				Num = 2
+				Script = "scripts/items/misc/legend_masterwork_metal",
+				Num = 1
 			},
 			{
-				Script = "scripts/items/legend_armor/plate/legend_armor_plate_chest",
-				Num = 1,
-				LegendsArmor = true
+				Script = "scripts/items/misc/legend_masterwork_tools",
+				Num = 1
 			}
 		]);
 	}

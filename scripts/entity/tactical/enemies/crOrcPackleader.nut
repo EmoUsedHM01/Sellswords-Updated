@@ -196,6 +196,27 @@ this.crOrcPackleader <- this.inherit("scripts/entity/tactical/actor", {
 			corpse.IsHeadAttached = _fatalityType != this.Const.FatalityType.Decapitated;
 			_tile.Properties.set("Corpse", corpse);
 			this.Tactical.Entities.addCorpse(_tile);
+
+			if (_killer == null || _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals)
+			{
+				if (this.Math.rand(1, 100) <= 1)
+				{
+					local loot = this.new("scripts/items/misc/legend_masterwork_fabric");
+					loot.drop(_tile);
+				}
+
+				if (this.Math.rand(1, 100) <= 3)
+				{
+					local loot = this.new("scripts/items/misc/legend_masterwork_metal");
+					loot.drop(_tile);
+				}
+
+				if (this.Math.rand(1, 100) <= 1)
+				{
+					local loot = this.new("scripts/items/misc/legend_masterwork_tools");
+					loot.drop(_tile);
+				}
+			}
 		}
 
 		this.getItems().dropAll(_tile, _killer, flip);

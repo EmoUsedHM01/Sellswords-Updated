@@ -215,6 +215,40 @@ this.crDeathknight <- this.inherit("scripts/entity/tactical/enemies/zombie", {
 		}
 	}
 
+	function onDeath( _killer, _skill, _tile, _fatalityType )
+	{
+		if (!this.Tactical.State.isScenarioMode() && _killer != null && _killer.isPlayerControlled())
+		{
+			this.updateAchievement("RestlessDead", 1, 1);
+		}
+
+		if (_tile != null)
+		{
+			if (_killer == null || _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals)
+			{
+				if (this.Math.rand(1, 100) <= 4) //5%
+				{
+					local loot = this.new("scripts/items/misc/legend_masterwork_fabric");
+					loot.drop(_tile);
+				}
+
+				if (this.Math.rand(1, 100) <= 5) //4%
+				{
+					local loot = this.new("scripts/items/misc/legend_masterwork_metal");
+					loot.drop(_tile);
+				}
+
+				if (this.Math.rand(1, 100) <= 3) //3%
+				{
+					local loot = this.new("scripts/items/misc/legend_masterwork_tools");
+					loot.drop(_tile);
+				}
+			}
+		}
+
+		this.zombie.onDeath(_killer, _skill, _tile, _fatalityType);
+	}
+
 	function makeMiniboss()
 	{
 		if (!this.actor.makeMiniboss())

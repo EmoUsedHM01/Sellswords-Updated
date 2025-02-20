@@ -7,17 +7,22 @@
 		this.m.PreviewCraftable = this.new("scripts/items/legend_armor/plate/cr_skin_armor");
 		this.m.PreviewComponents.clear();
 
-		this.init([
+		local ingredients = [
 			{
 				Script = "scripts/items/misc/legend_skin_ghoul_skin_item",
-				Num = 4
+				Num = 5
 			},
 			{
-				Script = "scripts/items/legend_armor/chain/legend_armor_hauberk",
-				Num = 1,
-				LegendsArmor = true
+				Script = "scripts/items/misc/legend_masterwork_fabric",
+				Num = 1
+			},
+			{
+				Script = "scripts/items/misc/legend_masterwork_tools",
+				Num = 1
 			}
-		]);
+		];
+
+	    this.init(ingredients);
 	}
 
 	q.onCraft = @(__original) function( _stash )

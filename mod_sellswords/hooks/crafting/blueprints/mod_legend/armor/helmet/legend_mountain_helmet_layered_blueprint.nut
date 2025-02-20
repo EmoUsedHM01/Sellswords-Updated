@@ -7,7 +7,7 @@
 		this.m.PreviewCraftable = this.new("scripts/items/legend_helmets/helm/cr_mountain_helmet");
 		this.m.PreviewComponents.clear();
 
-		this.init([
+		local ingredients = [
 			{
 				Script = "scripts/items/misc/legend_rock_unhold_bones_item",
 				Num = 1
@@ -17,14 +17,15 @@
 				Num = 1
 			},
 			{
-				Script = "scripts/items/misc/unhold_hide_item",
-				Num = 2
+				Script = "scripts/items/misc/legend_masterwork_metal",
+				Num = 1
 			},
 			{
-				Script = "scripts/items/legend_helmets/helm/legend_helmet_great_helm",
+				Script = "scripts/items/misc/legend_masterwork_tools",
 				Num = 1
 			}
-		]);
+		];
+		this.init(ingredients);
 	}
 
 	q.onCraft = @(__original) function( _stash )

@@ -13,9 +13,8 @@
 				Num = 3
 			},
 			{
-				Script = "scripts/items/legend_armor/plate/legend_armor_scale_coat",
-				Num = 1,
-				LegendsArmor = true
+				Script = "scripts/items/misc/legend_masterwork_tools",
+				Num = 1
 			}
 		]);
 	}
