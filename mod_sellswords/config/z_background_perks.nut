@@ -68,7 +68,7 @@ setupBackground("scripts/skills/backgrounds/daytaler_background", ["scripts/skil
 setupBackground("scripts/skills/backgrounds/deserter_background", ["scripts/skills/perks/perk_legend_back_to_basics"], [{def = ::Const.Perks.PerkDefs.LegendBackToBasics, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/disowned_noble_background", ["scripts/skills/perks/perk_legend_assured_conquest"], [{def = ::Const.Perks.PerkDefs.LegendAssuredConquest, level = 0, optional = false}]);
-
+s
 setupBackground("scripts/skills/backgrounds/eunuch_background", ["scripts/skills/perks/perk_legend_helpful"], [{def = ::Const.Perks.PerkDefs.LegendHelpful, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/farmhand_background", ["scripts/skills/perks/perk_legend_specialist_pitchfork_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistPitchforkSkill, level = 0, optional = false}]);

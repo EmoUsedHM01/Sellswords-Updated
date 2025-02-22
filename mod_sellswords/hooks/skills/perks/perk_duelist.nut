@@ -8,7 +8,7 @@
 			if (weapon == null)
 			{
 				bonus += 0.5;
-				return;
+				return bonus;
 			}
 			else if (weapon.isItemType(this.Const.Items.ItemType.RangedWeapon) && !weapon.isWeaponType(this.Const.Items.WeaponType.Throwing))
 			{
@@ -17,7 +17,7 @@
 			else if (weapon.isItemType(this.Const.Items.ItemType.OneHanded))
 			{
 				bonus += 0.1;
-				return;
+				return bonus;
 			}
 			bonus += 0.2;
 		}

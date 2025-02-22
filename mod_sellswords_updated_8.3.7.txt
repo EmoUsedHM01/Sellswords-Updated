@@ -1,5 +1,8 @@
 8.3.7 changes
 
+...\mod_sellswords\hooks\skills\perks\perk_duelist.nut
+Fix duelist and grandslam interraction - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.6 changes
