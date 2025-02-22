@@ -1,3 +1,12 @@
+8.3.8 changes
+
+...\mod_sellswords\hooks\skills/backgrounds\adventurous_noble_background.nut
+...\mod_sellswords\hooks\skills/backgrounds\disowned_noble_background.nut
+...\mod_sellswords\config\z_background_perks.nut
+Fix background perks and  - Breaky
+
+----------------------------------------------------------------------------------------------------------------------------
+
 8.3.7 changes
 
 ...\mod_sellswords\hooks\skills\perks\perk_duelist.nut
