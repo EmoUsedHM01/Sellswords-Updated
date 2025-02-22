@@ -23,8 +23,6 @@ function setupBackground(classPath, perkScripts, perkDefs)
 }
 
 // Define each background using the helper function
-setupBackground("scripts/skills/backgrounds/adventurous_noble_background", ["scripts/skills/perks/perk_duelist"], [{def = ::Const.Perks.PerkDefs.Duelist, level = 0, optional = false}]);
-
 setupBackground("scripts/skills/backgrounds/anatomist_background", ["scripts/skills/perks/perk_legend_debilitate"], [{def = ::Const.Perks.PerkDefs.LegendDebilitate, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/apprentice_background", ["scripts/skills/perks/perk_student"], [{def = ::Const.Perks.PerkDefs.Student, level = 0, optional = false}]);
@@ -67,8 +65,6 @@ setupBackground("scripts/skills/backgrounds/daytaler_background", ["scripts/skil
 
 setupBackground("scripts/skills/backgrounds/deserter_background", ["scripts/skills/perks/perk_legend_back_to_basics"], [{def = ::Const.Perks.PerkDefs.LegendBackToBasics, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/disowned_noble_background", ["scripts/skills/perks/perk_legend_assured_conquest"], [{def = ::Const.Perks.PerkDefs.LegendAssuredConquest, level = 0, optional = false}]);
-s
 setupBackground("scripts/skills/backgrounds/eunuch_background", ["scripts/skills/perks/perk_legend_helpful"], [{def = ::Const.Perks.PerkDefs.LegendHelpful, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/farmhand_background", ["scripts/skills/perks/perk_legend_specialist_pitchfork_skill"], [{def = ::Const.Perks.PerkDefs.LegendSpecialistPitchforkSkill, level = 0, optional = false}]);
