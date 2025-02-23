@@ -318,6 +318,9 @@ else
 ::Const.Strings.PerkDescription.LegendChainLightning = "Unleash an arcing barrage of lightning!\n\n[color=#4f1800][u]Active:[/u][/color]\n• Unlocks 'Chain Lightning' skill which inflicts damage to up to 3 enemies, dealing [color=" + this.Const.UI.Color.DamageValue + "]15-30[/color] damage which ignores armor.\n\n• Requires a mystic staff.\n\n• Costs [color=" + this.Const.UI.Color.NegativeValue + "]7[/color] AP and [color=" + this.Const.UI.Color.NegativeValue + "]50[/color] Fatigue.\n• If you have the \'Staff Mastery\' perk, reduce the AP cost by 2 and the base fatigue cost by [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color].";
 ::Const.Perks.PerkDefObjects[::Const.Perks.PerkDefs.LegendChainLightning].Tooltip = ::Const.Strings.PerkDescription.LegendChainLightning;
 
+::Const.Strings.PerkDescription.LegendHoldTheLine = "'DON'T LET THEM BREAK THROUGH!'\n\n[color=#4f1800][u]Active:[/u][/color]\n• Unlocks the [color=#400080]Hold the Line[/color] skill which allows you to direct your troops to stand their ground, granting [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Defense and Resolve to all allies within four tiles for one turn.\n\n• Costs [color=" + this.Const.UI.Color.NegativeValue + "]5[/color] AP and [color=" + this.Const.UI.Color.NegativeValue + "]20[/color] Fatigue.";
+::Const.Perks.PerkDefObjects[::Const.Perks.PerkDefs.LegendHoldTheLine].Tooltip = ::Const.Strings.PerkDescription.LegendHoldTheLine;
+
 
 local poleWeaponStrings = [
 	"SpecAxe",

@@ -1,3 +1,13 @@
+8.3.9 changes
+
+...\mod_sellswords\config\strings.nut
+Update grand slam tooltip to be clearer - Breaky
+
+...\mod_sellswords\hooks\config\strings.nut
+Update hold the line tooltip so it reflects the ssu changes - Breaky
+
+----------------------------------------------------------------------------------------------------------------------------
+
 8.3.8 changes
 
 ...\mod_sellswords\hooks\skills/backgrounds\adventurous_noble_background.nut
