@@ -6,6 +6,13 @@ Update grand slam tooltip to be clearer - Breaky
 ...\mod_sellswords\hooks\config\strings.nut
 Update hold the line tooltip so it reflects the ssu changes - Breaky
 
+...\scripts\skills\effects\cr_redback_potion_effect.nut
+Added new perma effect for redback sequence as legends perk was removed - chopeks
+
+...\mod_sellswords\config\sequence_logic.nut
+...\scripts\items\misc\anatomists\redback_sequence_item.nut
+Changed removed legends web perk to new redback potion effect that grants same - chopeks
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.8 changes

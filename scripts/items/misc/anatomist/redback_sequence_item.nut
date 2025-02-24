@@ -107,8 +107,8 @@ this.redback_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomi
 		if (_actor.getSkills().getSkillByID("effects.webknecht_potion") == null)
 			_actor.getSkills().add(this.new("scripts/skills/effects/webknecht_potion_effect"));
 
-		if (_actor.getSkills().getSkillByID("perk.perk_legend_item_web_skill") == null)
-			_actor.getSkills().add(this.new("scripts/skills/perks/perk_legend_item_web_skill"));
+		if (_actor.getSkills().getSkillByID("effects.cr_redback_potion") == null)
+			_actor.getSkills().add(this.new("scripts/skills/effects/cr_redback_potion_effect"));
 
 
 		this.Sound.play("sounds/enemies/dlc2/giant_spider_death_0" + this.Math.rand(1, 8) + ".wav", this.Const.Sound.Volume.Inventory);

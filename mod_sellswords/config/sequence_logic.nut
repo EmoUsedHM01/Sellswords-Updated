@@ -155,7 +155,7 @@
 	if (complete)
 	{
 		_actor.getFlags().add("spider_r");
-		_actor.getSkills().add(this.new("scripts/skills/perks/perk_legend_item_web_skill"));
+		_actor.getSkills().add(this.new("scripts/skills/effects/cr_redback_potion_effect"));
 		_actor.getSkills().add(this.new("scripts/skills/perks/perk_nimble"));
 	}
 };
