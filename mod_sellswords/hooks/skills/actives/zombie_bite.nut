@@ -34,6 +34,7 @@
 	
 	q.onAfterUpdate = @(__original) function( _properties )
 	{
+		__original( _properties );
 		if (this.getContainer().hasSkill("perk.zombie_feasting_bite")) this.m.ActionPointCost -= 1;
 	}
 
