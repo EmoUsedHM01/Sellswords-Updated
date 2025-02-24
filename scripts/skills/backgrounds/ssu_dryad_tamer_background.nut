@@ -66,9 +66,7 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 				this.Const.Perks.IndestructibleTree
 			],
 			Enemy = [],
-			Class = [
-				this.Const.Perks.HoundmasterClassTree
-			],
+			Class = [],
 			Magic = []
 		};
 
@@ -159,14 +157,14 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_doghandling"));
+		this.m.Container.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"));
 	}
 
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.LegendDogHandling, 0, false)
+		this.addPerk(::Const.Perks.PerkDefs.Pathfinder, 0, false)
 	}
 
 	function onChangeAttributes()
