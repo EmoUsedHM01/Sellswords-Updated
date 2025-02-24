@@ -16,6 +16,9 @@ Changed removed legends web perk to new redback potion effect that grants same -
 ...\mod_sellswords\hooks\skills\actives\legend_raise_undead_skill.nut
 Hooked the Legends version of Raise Undead to match the vanilla skill
 
+...\mod_sellswords\hooks\config\world_entity_common.nut
+Removed temporary spawning fix, we handle that properly in legends now - chopeks
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.8 changes
