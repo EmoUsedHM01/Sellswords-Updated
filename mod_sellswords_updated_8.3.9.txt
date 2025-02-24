@@ -13,7 +13,7 @@ Added new perma effect for redback sequence as legends perk was removed - chopek
 ...\scripts\items\misc\anatomists\redback_sequence_item.nut
 Changed removed legends web perk to new redback potion effect that grants same - chopeks
 
-..\mod_sellswords\hooks\skills\actives\legend_raise_undead_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_raise_undead_skill.nut
 Hooked the Legends version of Raise Undead to match the vanilla skill
 
 ----------------------------------------------------------------------------------------------------------------------------
