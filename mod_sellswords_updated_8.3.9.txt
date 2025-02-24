@@ -19,6 +19,9 @@ Hooked the Legends version of Raise Undead to match the vanilla skill
 ...\scripts\skills\backgrounds\ssu_dryad_tamer_background.nut
 Removed all the Dog tree perks from Dryad Tamer
 
+...\mod_sellswords\hooks\config\world_entity_common.nut
+Removed temporary spawning fix, we handle that properly in legends now - chopeks
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.8 changes
