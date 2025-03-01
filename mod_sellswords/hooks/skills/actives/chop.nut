@@ -1,5 +1,4 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/chop", function ( q ) {
-	q.m.orc <- false;
 	q.m.infantry <- false;
 
 	q.getTooltip = @( __original ) function()
@@ -34,15 +33,13 @@
 
 	q.isHidden = @( __original ) function()
 	{
-		__original();
-
 		//local off = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local shield = 1;
 		if (this.getContainer().hasSkill("actives.shieldwall") || this.getContainer().hasSkill("actives.legend_fortify_skill"))
 		{
 			shield = 0;
 		}
-		return this.m.orc == true && shield == 0;
+		return this.m.isOrcWeapon == true && shield == 0;
 	}
 
 	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )

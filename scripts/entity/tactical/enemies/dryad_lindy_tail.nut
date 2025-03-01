@@ -225,7 +225,7 @@ this.dryad_lindy_tail <- this.inherit("scripts/entity/tactical/actor", {
 			this.getTile().addVisibilityForFaction(this.Const.Faction.Player);
 		}
 
-		local p = this.m.Body.m.Skills.buildPropertiesForBeingHit(_attacker, _skill, _hitInfo.BodyPart);
+		local p = this.m.Body.m.Skills.buildPropertiesForBeingHit(_attacker, _skill, _hitInfo);
 		_hitInfo.DamageRegular *= p.DamageReceivedRegularMult * p.DamageReceivedTotalMult;
 		_hitInfo.DamageArmor *= p.DamageReceivedArmorMult * p.DamageReceivedTotalMult;
 		local armor = 0;

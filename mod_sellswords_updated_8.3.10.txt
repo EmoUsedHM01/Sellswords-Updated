@@ -3,6 +3,18 @@
 ...\mod_sellswords\hooks\skills\actives\zombie_bite.nut
 Call original on #onAfterUpdate so the aoo logic from legends can be followed - Breaky
 
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+Make sure #onMovementInZoneOfControl and #onAttackOfOpportunity these call the original instead of fully overwriting it because of the reach advantage logic - Breaky
+
+...\scripts\entity\tactical\enemies\dryad_lindy_tail.nut
+Fix Forest Avatar becoming immortal - Breaky
+
+...\scripts\items\weapons\named\cr_named_orc_axe_infantry.nut
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_meat_hacker.nut
+...\mod_sellswords\hooks\skills\actives\chop.nut
+...\mod_sellswords\hooks\skills\actives\split_man.nut
+Fix these so the split man/chop logic doesn't invert itself due to legends changes - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.9 changes
@@ -33,8 +45,8 @@ Removed temporary spawning fix, we handle that properly in legends now - chopeks
 
 8.3.8 changes
 
-...\mod_sellswords\hooks\skills/backgrounds\adventurous_noble_background.nut
-...\mod_sellswords\hooks\skills/backgrounds\disowned_noble_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\adventurous_noble_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\disowned_noble_background.nut
 ...\mod_sellswords\config\z_background_perks.nut
 Fix background perks and  - Breaky
 

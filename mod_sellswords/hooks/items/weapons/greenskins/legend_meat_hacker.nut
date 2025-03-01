@@ -24,7 +24,7 @@
 		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.split_man", function(_skill) {
 			_skill.m.DirectDamageMult = this.m.DirectDamageMult;		
 			_skill.m.ActionPointCost = 5;
-			_skill.m.orc = true;
+			_skill.m.IsOrcWeapon = true;
 			_skill.m.infantry = 1;
 		});
 
@@ -36,7 +36,7 @@
 		local skill = this.new("scripts/skills/actives/chop");
 		skill.m.DirectDamageMult = this.m.DirectDamageMult;	
 		skill.m.infantry = true;			
-		skill.m.orc = true;
+		skill.m.IsOrcWeapon = true;
 		this.addSkill(skill);
 	}
 });

@@ -39,13 +39,13 @@ this.cr_named_orc_axe_infantry <- this.inherit("scripts/items/weapons/named/name
 		skill = this.new("scripts/skills/actives/split_man");
 		skill.m.DirectDamageMult = this.m.DirectDamageMult;		
 		skill.m.ActionPointCost = 5;
-		skill.m.orc = true;
+		skill.m.IsOrcWeapon = true;
 		skill.m.infantry = 1;
 		this.addSkill(skill);
 		skill = this.new("scripts/skills/actives/chop");
 		skill.m.DirectDamageMult = this.m.DirectDamageMult;	
 		skill.m.infantry = true;			
-		skill.m.orc = true;
+		skill.m.IsOrcWeapon = true;
 		this.addSkill(skill);		
 		skill = this.new("scripts/skills/actives/split_shield");
 		skill.m.ActionPointCost = 6;		

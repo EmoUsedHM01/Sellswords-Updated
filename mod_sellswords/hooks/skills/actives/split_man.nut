@@ -2,7 +2,6 @@
 
 	q.m.crcriticalbonus <- 0.5;
 	q.m.infantry <- 0;
-	q.m.orc <- false;
 
 	q.resetcrcriticalbonus <- function()
 	{
@@ -11,14 +10,12 @@
 
 	q.isHidden = @( __original ) function()
 	{
-		__original();
-
 		local shield = 1;
 		if (this.getContainer().hasSkill("actives.shieldwall") || this.getContainer().hasSkill("actives.legend_fortify_skill"))
 		{
 			shield = 0;
 		}
-		return this.m.orc == true && shield == 1;
+		return this.m.isOrcWeapon == true && shield == 1;
 	}	
 
 	q.onUse = @( __original ) function( _user, _targetTile )
