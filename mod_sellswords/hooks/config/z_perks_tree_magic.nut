@@ -32,25 +32,7 @@
 	]
 };
 
-// Making all the trees appear in alphabetical order because it's nice
-::Const.Perks.MagicTrees.Tree = [
-	::Const.Perks.AssassinMagicTree,
-	::Const.Perks.BasicNecroMagicTree,
-	::Const.Perks.BerserkerMagicTree,
-	::Const.Perks.CaptainMagicTree,
-	::Const.Perks.ConjurationMagicTree,
-	::Const.Perks.DruidMagicTree,
+::Const.Perks.MagicTrees.Tree.extend([
 	::Const.Perks.DryadShamanTree,
-	::Const.Perks.DryadTamerTree,
-	::Const.Perks.EvocationMagicTree,
-	::Const.Perks.IllusionistMagicTree,
-	::Const.Perks.PhilosophyMagicTree,
-	::Const.Perks.RangerHuntMagicTree,
-	::Const.Perks.SkeletonMagicTree,
-	::Const.Perks.TransmutationMagicTree,
-	::Const.Perks.ValaChantMagicTree,
-	::Const.Perks.ValaTranceMagicTree,
-	::Const.Perks.VampireMagicTree,
-	::Const.Perks.WarlockMagicTree,
-	::Const.Perks.ZombieMagicTree
-];
+	::Const.Perks.DryadTamerTree
+]);

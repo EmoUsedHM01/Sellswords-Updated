@@ -15,6 +15,10 @@ Fix Forest Avatar becoming immortal - Breaky
 ...\mod_sellswords\hooks\skills\actives\split_man.nut
 Fix these so the split man/chop logic doesn't invert itself due to legends changes - Breaky
 
+...\mod_sellswords\hooks\config\z_perks_tree_magic.nut
+...\mod_sellswords\hooks\config\z_perks_tree_class.nut
+Do not overwrite perk tree lists, extend them instead - chopeks
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.9 changes
