@@ -15,7 +15,7 @@
 		{
 			shield = 0;
 		}
-		return this.m.isOrcWeapon == true && shield == 1;
+		return this.m.IsOrcWeapon == true && shield == 1;
 	}	
 
 	q.onUse = @( __original ) function( _user, _targetTile )
