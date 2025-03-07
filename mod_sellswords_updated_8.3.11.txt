@@ -1,5 +1,11 @@
 8.3.11 changes
 
+...\mod_sellswords\hooks\skills\actives\legend_unleash_animal_skill.nut
+Some renamings - Breaky
+
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+Revert my hook since it seems to causse crashes - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.10 changes
