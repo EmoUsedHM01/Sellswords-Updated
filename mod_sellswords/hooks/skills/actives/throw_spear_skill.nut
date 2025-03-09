@@ -4,13 +4,12 @@
 	{
 		if (_skill == this)
 		{
-			_properties.RangedSkill += 20;
-			_properties.HitChanceAdditionalWithEachTile -= 10;
-
+			_properties.RangedSkill += this.m.AdditionalAccuracy;
 			if (_properties.IsSpecializedInSpearThrust)
 			{
-				_properties.HitChanceAdditionalWithEachTile += 10;
+				this.m.AdditionalHitChance += 10;
 			}
+			_properties.HitChanceAdditionalWithEachTile += this.m.AdditionalHitChance;
 
 			if (_targetEntity != null)
 			{
