@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_unleash_animal_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/unleash_wardog", function ( q ) {
 	q.addAnimalSkills = @( __original ) function ( entity )
 	{
 		local houndeffect = this.new("scripts/skills/effects/cr_houndmaster_effect");
