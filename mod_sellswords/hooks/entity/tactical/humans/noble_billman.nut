@@ -42,7 +42,7 @@
 		local weapons = [
 			"weapons/billhook",
 			"weapons/pike",
-			"weapons/legend_voulge"
+			"weapons/legend_battle_glaive"
 		];
 
 		if (this.Const.DLC.Unhold)

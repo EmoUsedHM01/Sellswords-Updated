@@ -28,7 +28,7 @@
 			list.extend({
 				R = 40,
 				P = 1.0,
-				S = "weapon/heavy_mining_pick"
+				S = "weapons/heavy_mining_pick"
 			});
 		}
 

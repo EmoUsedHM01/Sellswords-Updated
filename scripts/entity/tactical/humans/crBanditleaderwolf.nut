@@ -165,7 +165,7 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 				"weapons/noble_sword",
 				"weapons/fighting_axe",
 				"weapons/warhammer",
-				"weapons/legend_glaive",
+				"weapons/legend_battle_glaive",
 				"weapons/fighting_spear",
 				"weapons/winged_mace",
 				"weapons/arming_sword",

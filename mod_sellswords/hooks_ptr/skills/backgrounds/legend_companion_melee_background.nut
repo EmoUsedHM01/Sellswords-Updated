@@ -147,7 +147,7 @@
 			else if (pr <= 100)
 			{
 				::Mod_Sellswords.HookHelper.addPerkTreesToCustomPerkTree(this.m.CustomPerkTree, [
-					this.Const.Perks.FistsClassTree
+					this.Const.Perks.FistsTree
 				]);
 			}
 		}

@@ -87,9 +87,9 @@ this.crBarbarianBillman <- this.inherit("scripts/entity/tactical/human", {
 
 		local weapons = [
 			"weapons/billhook",
-			"weapons/legend_voulge",
+			"weapons/legend_battle_glaive",
 			"weapons/longaxe",
-			"weapons/longaxe",			
+			"weapons/longaxe",
 		];
 
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));	

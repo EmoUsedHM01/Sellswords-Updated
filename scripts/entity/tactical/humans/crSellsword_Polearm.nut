@@ -160,7 +160,7 @@ this.crSellsword_Polearm <- this.inherit("scripts/entity/tactical/human", {
 			{
 				weapons = [
 					"weapons/legend_halberd",
-					"weapons/legend_military_voulge",
+					"weapons/legend_battle_glaive",
 					"weapons/crlongaxe",
 					"weapons/crpolehammer",			
 				]

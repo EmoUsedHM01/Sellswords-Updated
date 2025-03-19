@@ -29,7 +29,7 @@ this.crRetiredsoldier <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_militia_damage"));
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistMilitia);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crDiscipline"));
 
 		if (::Is_PTR_Exist)

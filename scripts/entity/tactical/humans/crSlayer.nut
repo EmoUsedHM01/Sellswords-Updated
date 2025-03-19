@@ -71,7 +71,7 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 		if (dc >= 80)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_fist"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_unarmed"));
 			
 			if (::Is_PTR_Exist)
 				this.m.Skills.add(this.new("scripts/skills/racial/ptr_orc_racial"));

@@ -20,7 +20,7 @@
 ::Const.Perks.HoundmasterClassTree.Tree[1] = [::Const.Perks.PerkDefs.LegendSummonHound];
 
 // adding rebalanced punchy mode back to unarmed
-::Const.Perks.FistsClassTree.Tree[6] = [::Const.Perks.PerkDefs.LegendUnarmedTraining];
+::Const.Perks.FistsTree.Tree[6] = [::Const.Perks.PerkDefs.LegendUnarmedTraining];
 
 // Making all the trees appear in alphabetical order because it's nice
 ::Const.Perks.ClassTrees.Tree.extend([

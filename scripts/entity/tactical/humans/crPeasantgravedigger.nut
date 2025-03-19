@@ -31,8 +31,8 @@ this.crPeasantgravedigger <- this.inherit("scripts/entity/tactical/human", {
 		local dirt = this.getSprite("dirt");
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_shovel_damage"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistGravedigger);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendSmackdown);
 		this.getSprite("socket").setBrush("bust_base_militia");
 
 		if (::Is_PTR_Exist)
@@ -45,7 +45,7 @@ this.crPeasantgravedigger <- this.inherit("scripts/entity/tactical/human", {
 		{
 			this.m.Hitpoints = b.Hitpoints * 1.4;		
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));			
+			::Legends.Perks.grant(this, ::Legends.Perk.LegendLastStand);
 			
 			if (::Is_PTR_Exist)
 			{

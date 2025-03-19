@@ -64,7 +64,7 @@ if (find != null) ::Const.Perks.AssassinProfessionTree.Tree[6].remove(find);
 	::Const.Perks.CultistProfessionTree,	
 	::Const.Perks.DiggerProfessionTree,	
 	::Const.Perks.FarmerProfessionTree,	
-	::Const.Perks.FistsClassTree,	
+	::Const.Perks.FistsTree,
 	::Const.Perks.HolyManProfessionTree,	
 	::Const.Perks.HunterProfessionTree,	
 	::Const.Perks.JugglerProfessionTree,

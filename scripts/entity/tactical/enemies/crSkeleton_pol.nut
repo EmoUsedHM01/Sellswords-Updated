@@ -58,8 +58,8 @@ this.crSkeleton_pol <- this.inherit("scripts/entity/tactical/skeleton", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_slaughter"));	
-			
+			::Legends.Perks.grant(this, ::Legends.Perk.LegendSlaughterer);
+
 			this.m.BaseProperties.DamageTotalMult = 1.15;
 			this.m.BaseProperties.DamageReceivedArmorMult = 0.9;			
 		}

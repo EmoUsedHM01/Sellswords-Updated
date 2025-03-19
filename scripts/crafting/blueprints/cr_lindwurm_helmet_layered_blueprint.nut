@@ -39,7 +39,7 @@ this.cr_lindwurm_helmet_layered_blueprint <- this.inherit("scripts/crafting/blue
 		}
 		else
 		{
-			_stash.add(this.new("scripts/items/legend_helmets/helm/cr_lindwurm_helmet.nut"));
+			_stash.add(this.new("scripts/items/legend_helmets/helm/cr_lindwurm_helmet"));
 		}
 	}
 

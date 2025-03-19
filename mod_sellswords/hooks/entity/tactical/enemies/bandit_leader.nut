@@ -79,7 +79,7 @@
 				"weapons/noble_sword",
 				"weapons/fighting_axe",
 				"weapons/warhammer",
-				"weapons/legend_glaive",
+				"weapons/legend_battle_glaive",
 				"weapons/fighting_spear",
 				"weapons/winged_mace",
 				"weapons/arming_sword",
@@ -90,11 +90,11 @@
 			{
 				weapons.extend([
 					"weapons/greatsword",
-					"weapons/ssu_kriegsmesser",					
+					"weapons/ssu_kriegsmesser",
 					"weapons/greataxe",
 					"weapons/legend_swordstaff",
 					"weapons/warbrand",
-					"weapons/spontoon03",						
+					"weapons/spontoon03",
 				]);
 			}
 

@@ -36,14 +36,16 @@ this.named_staff <- this.inherit("scripts/items/weapons/named/named_weapon", {
 	function onEquip()
 	{
 		this.named_weapon.onEquip();
-		local s = this.new("scripts/skills/actives/legend_staff_bash_skill");
-		s.m.Icon = "skills/staff_bash_mystic.png";
-		s.m.IconDisabled = "skills/staff_bash_mystic_bw.png";
-		this.addSkill(s);
-		local t = this.new("scripts/skills/actives/legend_staff_knock_out_skill");
-		t.m.Icon = "skills/staff_knock_out_mystic.png";
-		t.m.IconDisabled = "skills/staff_knock_out_mystic_bw.png";
-		this.addSkill(t);
+		::Legends.Actives.grant(this, ::Legends.Active.Bash, function (_skill) {
+			_skill.m.Icon = "skills/staff_bash_mystic.png";
+			_skill.m.IconDisabled = "skills/staff_bash_mystic_bw.png";
+			_skill.m.IsStaffBash = true;
+		}.bindenv(this));
+		::Legends.Actives.grant(this, ::Legends.Active.KnockOut, function (_skill) {
+			_skill.m.Icon = "skills/staff_knock_out_mystic.png";
+			_skill.m.IconDisabled = "skills/staff_knock_out_mystic_bw.png";
+			_skill.m.IsStaffKnockOut = true;
+		}.bindenv(this));
 		this.addSkill(this.new("scripts/skills/actives/crstaff_sweep"));
 	}
 

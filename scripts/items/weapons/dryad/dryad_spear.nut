@@ -41,7 +41,9 @@ this.dryad_spear <- this.inherit("scripts/items/weapons/weapon", {
 	function onEquip()
 	{
 		this.weapon.onEquip();
-		this.addSkill(this.new("scripts/skills/actives/legend_glaive_slash_skill"));
+		::Legends.Actives.grant(this, ::Legends.Active.Slash, function (_skill) {
+			_skill.m.IsStaffSlash = true;
+		}.bindenv(this));
 		this.addSkill(this.new("scripts/skills/actives/spearwall"));
 	}
 

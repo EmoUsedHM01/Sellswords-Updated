@@ -100,7 +100,7 @@ this.crZombieBillman <- this.inherit("scripts/entity/tactical/enemies/zombie", {
 		local weapons = [
 			"weapons/billhook",
 			"weapons/pike",
-			"weapons/legend_voulge"
+			"weapons/legend_militia_glaive"
 		];
 
 		if (this.Const.DLC.Unhold)

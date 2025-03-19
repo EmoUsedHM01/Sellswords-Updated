@@ -124,7 +124,7 @@ this.crNomadZweihander <- this.inherit("scripts/entity/tactical/human", {
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local weapons = [
 			"weapons/named/named_bardiche",	
-			"weapons/named/named_two_handed_scimitare",				
+			"weapons/named/named_two_handed_scimitar",
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	

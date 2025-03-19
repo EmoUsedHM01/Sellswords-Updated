@@ -102,7 +102,7 @@ this.demon_alp_sequence_item <- this.inherit("scripts/items/misc/anatomist/anato
 			_actor.getSkills().add(this.new("scripts/skills/effects/player_levitate"));
 
 		if (_actor.getSkills().getSkillByID("perk.legend_item_horrify") == null)
-			_actor.getSkills().add(this.new("scripts/skills/perks/perk_legend_item_horrify"));
+			_actor.getSkills().add(this.new("scripts/skills/perks/perk_legend_horrify"));
 
 		this.Sound.play("sounds/enemies/dlc2/alp_death_0" + this.Math.rand(1, 5) + ".wav", this.Const.Sound.Volume.Inventory);
 		this.Sound.play("sounds/enemies/dlc2/alp_idle_0" + this.Math.rand(1, 9) + ".wav", this.Const.Sound.Volume.Inventory);

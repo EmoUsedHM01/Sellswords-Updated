@@ -213,7 +213,7 @@ this.crSellsword <- this.inherit("scripts/entity/tactical/human", {
 			{
 				weapons = [
 					"weapons/ancient/legend_great_khopesh",
-					"weapons/ancient/legend_khopesh",
+					"weapons/ancient/legend_brass_khopesh",
 					"weapons/ancient/legend_fan_axe",						
 				]
 			}

@@ -80,7 +80,7 @@ this.crBillman_guest <- this.inherit("scripts/entity/tactical/player", {
 		local weapons = [
 			"weapons/billhook",
 			"weapons/pike",
-			"weapons/legend_voulge"
+			"weapons/legend_battle_glaive"
 		];
 
 		if (this.Const.DLC.Unhold)

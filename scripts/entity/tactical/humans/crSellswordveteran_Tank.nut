@@ -391,7 +391,7 @@ this.crSellswordveteran_Tank <- this.inherit("scripts/entity/tactical/human", {
 				"weapons/named/named_flail",
 				"weapons/named/named_goblin_falchion",				
 				"weapons/named/named_goblin_spear",
-				"weapons/named/named_heavy_southern_mace",
+				"weapons/named/legend_named_heavy_southern_mace",
 				"weapons/named/named_khopesh",
 				"weapons/named/named_mace",					
 				"weapons/named/named_orc_axe",	
