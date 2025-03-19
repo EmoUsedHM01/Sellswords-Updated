@@ -3,6 +3,15 @@
 ...\mod_sellswords\hooks\skills\actives\throw_spear_skill.nut
 Fix the tooltip hitchance issues - Breaky
 
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+
+...\scripts\entity\tactical\enemies\crOrcPackleader.nut
+...\scripts\entity\tactical\enemies\crOrcPillager.nut
+...\scripts\entity\tactical\enemies\crOrcVanguard.nut
+Updated messed up weapon names in orcs loot table - chopeks
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.11 changes
