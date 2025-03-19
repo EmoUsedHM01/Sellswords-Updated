@@ -469,8 +469,8 @@ this.crOrcPillager <- this.inherit("scripts/entity/tactical/actor", {
 		
 		local weapons = [
 			"weapons/named/named_orc_cleaver",
-			"weapons/named/named_orc_axe_2h",
-			"weapons/named/named_orc_flail_2h",
+			"weapons/named/legend_named_orc_axe_2h",
+			"weapons/named/legend_named_orc_flail_2h",
 			"weapons/named/named_orc_axe"
 		];			
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));		

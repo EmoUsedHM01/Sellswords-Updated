@@ -126,8 +126,8 @@
 		this.getSprite("miniboss").setBrush("bust_miniboss_greenskins");
 
 		local weapons = [
-			"weapons/named/named_orc_axe_2h",
-			"weapons/named/named_orc_flail_2h",
+			"weapons/named/legend_named_orc_axe_2h",
+			"weapons/named/legend_named_orc_flail_2h",
 			"weapons/named/cr_named_orc_hammer_2h",
 			"weapons/named/cr_named_orc_mace_2h"
 		];
