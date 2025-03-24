@@ -63,7 +63,7 @@
 ::Const.EntityType.crPeasantminstrel <-
 	::Const.EntityType.addNew("minstrel_orientation", "Minstrel", "Minstrels");
 ::Const.EntityType.crPeasantjuggler <-
-	::Const.EntityType.addNew("", "Juggler", "Jugglers", "ss13");
+	::Const.EntityType.addNew("ss13", "Juggler", "Jugglers");
 ::Const.EntityType.crBanditleaderwolf <-
 	::Const.EntityType.addNew("bandit_leader_orientation", "Disguised Bandit Leader", "Disguised Bandit Leaders");
 ::Const.EntityType.crDesperado_High <-
