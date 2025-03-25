@@ -12,6 +12,9 @@ Fix the tooltip hitchance issues - Breaky
 ...\scripts\entity\tactical\enemies\crOrcVanguard.nut
 Updated messed up weapon names in orcs loot table - chopeks
 
+...\scripts\skills\effects\phantom_strike_effect.nut
+Change onAnySkillUsed to onAnySkillExecuted so it doesn't trigger on hover - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.3.11 changes

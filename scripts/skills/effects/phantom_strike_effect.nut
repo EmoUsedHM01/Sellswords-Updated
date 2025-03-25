@@ -41,7 +41,7 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 		this.m.PhantomStacks = this.Math.max(0, this.m.PhantomStacks - 1);
 	}
 
-	function onAnySkillUsed( _skill, _targetEntity, _properties )
+	function onAnySkillExecuted( _skill, _targetTile, _targetEntity, _forFree )
 	{
 		local actor = this.getContainer().getActor();
 		local ammo = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
@@ -77,7 +77,7 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 				prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
 				prop.RangedAttackBlockedChanceMult *= 0;
 				this.m.Name = "Phantom Strike";
-				this.spawnAttackEffect(_targetEntity.getTile(), this.Const.Tactical.AttackEffectChop);
+				this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectChop);
 				this.attackEntity(actor, _targetEntity);
 				this.m.ProjectileType = this.Const.ProjectileType.Arrow;
 			}
