@@ -2,6 +2,7 @@ this.quiver_of_freezing_bolts <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
+		this.ammo.create();
 		this.m.ID = "ammo.bolts";
 		this.m.Name = "Quiver of Freezing bolts";
 		this.m.Description = "A quiver of bolts, the heads of which are tipped by the Ebonice of the North.\nIt will chill targets for up to two turns, reducing their action points by 3 and initiative by 30.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";

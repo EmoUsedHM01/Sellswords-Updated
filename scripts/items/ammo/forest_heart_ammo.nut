@@ -2,6 +2,7 @@ this.forest_heart_ammo <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
+		this.ammo.create();
 		this.m.ID = "ammo.heart";
 		this.m.Name = "Heart of the Forest";
 		this.m.Description = "The life and soul of the forest, used for casting Dryad magic. Is automatically refilled after each battle if you have enough ammunition.";

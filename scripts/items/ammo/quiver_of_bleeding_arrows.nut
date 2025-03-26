@@ -2,6 +2,7 @@ this.quiver_of_bleeding_arrows <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
+		this.ammo.create();
 		this.m.ID = "ammo.arrows";
 		this.m.Name = "Quiver of Serrated Arrows";
 		this.m.Description = "A quiver of arrows, with arrowheads made of sharp serrated metal.\nIt will cause targets to gain a stacking bleed debuff, causing 10 damage per stack for 2 turns.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";

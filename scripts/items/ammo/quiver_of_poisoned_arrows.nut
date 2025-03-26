@@ -2,6 +2,7 @@ this.quiver_of_poisoned_arrows <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
+		this.ammo.create();
 		this.m.ID = "ammo.arrows";
 		this.m.Name = "Quiver of Poisoned Arrows";
 		this.m.Description = "A quiver of arrows, taken from the corpse of a dead Goblin.\nIt contains a liquid filling the bottom of the quiver to quickly apply the Goblin\'s poison to inserted arrows, the poison lasts for 3 turns.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";
