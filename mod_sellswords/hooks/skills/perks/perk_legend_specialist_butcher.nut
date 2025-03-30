@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_butcher_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_butcher", function ( q ) {
 
 	q.onUpdate = @( __original ) function( _properties )
 	{

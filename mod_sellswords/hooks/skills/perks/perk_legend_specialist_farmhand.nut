@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_militia_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_farmhand", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{
@@ -14,18 +14,17 @@
 		local item = this.getContainer().getActor().getMainhandItem();
 		if (item != null)
 		{
-			if (item.getID() == "weapon.militia_spear" || item.getID() == "weapon.legend_wooden_spear" || item.getID() == "weapon.ancient_spear")
+			if (item.getID() == "weapon.pitchfork" || item.getID() == "weapon.legend_wooden_pitchfork"  || item.getID() == "weapon.legend_hoe"  || item.getID() == "weapon.legend_scythe"  || item.getID() == "weapon.wooden_flail")
 			{
 				_properties.MeleeSkill += 12;
+				_properties.DamageArmorMult += 0.25;
 			}
-			else if (item.getID() == "weapon.boar_spear")
-			{
-				_properties.MeleeSkill += 6 * dc + 6;
-			}			
-			else if (item.isWeaponType(this.Const.Items.WeaponType.Spear))
+			else if (this.Const.Items.WeaponType.Polearm)
 			{
 				_properties.MeleeSkill += 12 * dc;
+				_properties.DamageArmorMult += 0.25 * dc;
 			}
 		}
 	}
+
 });

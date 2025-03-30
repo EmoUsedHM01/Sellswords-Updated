@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_shovel_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_herbalist", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{
@@ -10,17 +10,19 @@
 		}
 	
 		dc = this.Math.floor(dc / 7);
-		dc = 0.01 * this.Math.min(5 * dc + 25, 100);
+		dc = 0.01 * this.Math.min(5 * dc + 35, 100);
 		local item = this.getContainer().getActor().getMainhandItem();
 		if (item != null)
 		{
-			if (item.getID() == "weapon.legend_shovel" || item.getID() == "weapon.legend_named_shovel")
+			if (item.getID() == "weapon.sickle" || item.getID() == "weapon.legend_named_sickle" || item.getID() == "weapon.goblin_notched_blade")
 			{
 				_properties.MeleeSkill += 12;
+				_properties.DamageDirectMult += 0.25;
 			}
-			else if (item.isWeaponType(this.Const.Items.WeaponType.Mace) && item.isItemType(this.Const.Items.ItemType.TwoHanded))
+			else if (item.isWeaponType(this.Const.Items.WeaponType.Sword))
 			{
 				_properties.MeleeSkill += 12 * dc;
+				_properties.DamageDirectMult += 0.25 * dc;
 			}
 		}
 	}

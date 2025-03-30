@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_sickle_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_woodsman", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{
@@ -14,15 +14,13 @@
 		local item = this.getContainer().getActor().getMainhandItem();
 		if (item != null)
 		{
-			if (item.getID() == "weapon.sickle" || item.getID() == "weapon.legend_named_sickle" || item.getID() == "weapon.goblin_notched_blade")
+			if (item.getID() == "weapon.woodcutters_axe" || item.getID() == "weapon.legend_saw")
 			{
 				_properties.MeleeSkill += 12;
-				_properties.DamageDirectMult += 0.25;
 			}
-			else if (item.isWeaponType(this.Const.Items.WeaponType.Sword))
+			else if (item.isWeaponType(this.Const.Items.WeaponType.Axe))
 			{
 				_properties.MeleeSkill += 12 * dc;
-				_properties.DamageDirectMult += 0.25 * dc;
 			}
 		}
 	}

@@ -87,37 +87,4 @@
 		}
 		return result;
 	}
-
-	q.isAmountShown <- function ()
-	{
-		return true;
-	}
-
-	q.getAmountString <- function ()
-	{
-		return this.m.Ammo + "/" + this.m.AmmoMax;
-	}
-
-	q.setAmmo <- function ( _a )
-	{
-		this.weapon.setAmmo( _a );
-
-		if (this.m.Ammo > 0)
-		{
-			this.m.Name = "Acid Flask";
-			this.m.IconLarge = "tools/acid_flask_01.png";
-			this.m.Icon = "tools/acid_flask_01_70x70.png";
-			this.m.ShowArmamentIcon = true;
-		}
-		else
-		{
-			this.m.Name = "Acid Flask (Used)";
-			this.m.IconLarge = "tools/acid_flask_01.png";
-			this.m.Icon = "tools/acid_flask_01_70x70.png";
-			this.m.ShowArmamentIcon = false;
-		}
-
-		this.updateAppearance();
-	}
-
 });

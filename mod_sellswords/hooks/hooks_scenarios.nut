@@ -1,14 +1,14 @@
 foreach (script in [
-	"legend_random_party_scenario",
-	"legend_random_solo_scenario",
-	"legends_berserker_scenario",
-	"mage_legends_mage_scenario",
-	"legends_assassin_scenario",
-	"legends_party_scenario",
-	"trader_scenario",
+	"scripts/scenarios/world/legend_random_party_scenario",
+	"scripts/scenarios/world/legend_random_solo_scenario",
+	"scripts/scenarios/world/legends_berserker_scenario",
+	"scripts/scenarios/world/legends_mage_scenario",
+	"scripts/scenarios/world/legends_assassin_scenario",
+	"scripts/scenarios/world/legends_party_scenario",
+	"scripts/scenarios/world/trader_scenario",
 ])
 {
-	::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/" + script, function ( q ) {
+	::Mod_Sellswords.HooksMod.hook(script, function ( q ) {
 
 		q.create = @( __original ) function ()
 		{
@@ -19,18 +19,18 @@ foreach (script in [
 }
 
 foreach (script in [
-	"southern_quickstart_scenario",
-	"legends_necro_scenario",
-	"legends_noble_scenario",
-	"beast_hunters_scenario",
-	"early_access_scenario",
-	"manhunters_scenario",
-	"gladiators_scenario",
-	"cultists_scenario",
-	"tutorial_scenario",
+	"scripts/scenarios/world/southern_quickstart_scenario",
+	"scripts/scenarios/world/legends_necro_scenario",
+	"scripts/scenarios/world/legends_noble_scenario",
+	"scripts/scenarios/world/beast_hunters_scenario",
+	"scripts/scenarios/world/early_access_scenario",
+	"scripts/scenarios/world/manhunters_scenario",
+	"scripts/scenarios/world/gladiators_scenario",
+	"scripts/scenarios/world/cultists_scenario",
+	"scripts/scenarios/world/tutorial_scenario",
 ])
 {
-	::Mod_Sellswords.HooksMod.hook("scripts/scenarios/world/" + script, function ( q ) {
+	::Mod_Sellswords.HooksMod.hook(script, function ( q ) {
 
 		q.create = @( __original ) function ()
 		{

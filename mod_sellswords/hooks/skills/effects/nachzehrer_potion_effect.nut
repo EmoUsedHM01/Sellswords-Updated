@@ -50,7 +50,7 @@
 		return ret;
 	}
 
-	q.onUpdate <- function(_properties)
+	q.onUpdate = @() function(_properties)
 	{
 		if (this.getContainer().getActor().getFlags().has("ghoul_s"))
 			_properties.Initiative += 20;

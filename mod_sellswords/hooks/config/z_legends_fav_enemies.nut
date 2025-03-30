@@ -113,7 +113,7 @@
 ]);
 
 ::Const.LegendMod.FavoriteSoutherners.extend([
-	this.Const.EntityType.SatoManhunterVeteran,
+	this.Const.EntityType.LegendManhunterVeteran,
 	this.Const.EntityType.Gladiator,
 	this.Const.EntityType.PeasantSouthern,
 	this.Const.EntityType.crConscript,

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_shortbow_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_poacher", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{
