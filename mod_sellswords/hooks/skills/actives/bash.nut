@@ -41,7 +41,7 @@
 			__original(_skill, _targetEntity, _properties);
 
 			if (!this.m.IsStaffBash)
-				return ret;
+				return;
 
 			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInStaves)
 			{
