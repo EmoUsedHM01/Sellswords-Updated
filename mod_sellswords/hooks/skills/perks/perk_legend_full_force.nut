@@ -69,13 +69,13 @@
 		if (modifiers.crfat >= 50)
 		{
 			_properties.FatigueReceivedPerHitMult *= 0.334;
-			_properties.FatigueLossOnBeingMissed *= 0.334;
+			_properties.FatigueLossOnAnyAttackMult *= 0.334;
 		}
 
 		if (modifiers.crfat >= 65)
 		{
 			_properties.FatigueReceivedPerHitMult *= 0.1;
-			_properties.FatigueLossOnBeingMissed *= 0.1;
+			_properties.FatigueLossOnAnyAttackMult *= 0.1;
 		}
 
 		if (modifiers.crfat >= 80)
