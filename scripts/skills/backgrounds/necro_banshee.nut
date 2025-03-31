@@ -202,7 +202,7 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 			this.m.PerkTreeDynamic = {
 				Weapon = [
 					this.Const.Perks.PolearmTree,
-					this.Const.Perks.GreatSwordTree
+					this.Const.Perks.TwoHandedTree
 				],
 				Defense = [
 					this.Const.Perks.HeavyArmorTree
