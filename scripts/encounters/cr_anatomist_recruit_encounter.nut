@@ -1,7 +1,6 @@
 this.cr_anatomist_recruit_encounter <- this.inherit("scripts/events/event", {
 	m = {
 		Dude = null,
-		Town = null
 	},
 
 	function create() {
@@ -15,7 +14,7 @@ this.cr_anatomist_recruit_encounter <- this.inherit("scripts/events/event", {
 	{
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_184.png[/img]{Your company arrives at %townname% after a long and grueling journey. Seeking respite for mind and feet, you and your men head towards the local tavern, hoping for a warm meal and perhaps some news or a new contract. As the night wears on and the ale flows freely, your attention is drawn to a peculiar figure seated alone in the corner, surrounded by books and scrolls.\n\nThe %person_anatomist% is meticulously scribbling notes, occasionally pausing to take a sip from %their_anatomist% mug. %Their_anatomist% attire, though travel-worn, hints at a scholarly background. The strange collection of vials and anatomical diagrams laid out before %them_anatomist% further piques your curiosity. You approach %them_anatomist%, and %they_anatomist% looks up, eyes gleaming with a mixture of enthusiasm and exhaustion.%SPEECH_ON%Ah, a sellsword company, I presume? A fortunate encounter, indeed! You see, I am %anatomist%, an Anatomist, a seeker of knowledge in the realm of flesh and bone. My research requires specimens—fresh ones—and your line of work, well, it seems to provide ample opportunity for that, does it not?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_184.png[/img]{Your company arrives at %settlement% after a long and grueling journey. Seeking respite for mind and feet, you and your men head towards the local tavern, hoping for a warm meal and perhaps some news or a new contract. As the night wears on and the ale flows freely, your attention is drawn to a peculiar figure seated alone in the corner, surrounded by books and scrolls.\n\nThe %person_anatomist% is meticulously scribbling notes, occasionally pausing to take a sip from %their_anatomist% mug. %Their_anatomist% attire, though travel-worn, hints at a scholarly background. The strange collection of vials and anatomical diagrams laid out before %them_anatomist% further piques your curiosity. You approach %them_anatomist%, and %they_anatomist% looks up, eyes gleaming with a mixture of enthusiasm and exhaustion.%SPEECH_ON%Ah, a sellsword company, I presume? A fortunate encounter, indeed! You see, I am %anatomist%, an Anatomist, a seeker of knowledge in the realm of flesh and bone. My research requires specimens—fresh ones—and your line of work, well, it seems to provide ample opportunity for that, does it not?%SPEECH_OFF%}",
 			Banner = "",
 			Characters = [],
 			Options = [
@@ -124,10 +123,10 @@ this.cr_anatomist_recruit_encounter <- this.inherit("scripts/events/event", {
 			return false;
 
 		if (this.World.Assets.getBusinessReputation() < 1000)
-			return;
+			return false;
 
 		if (this.World.getPlayerRoster().getSize() >= this.World.Assets.getBrothersMax())
-			return;
+			return false;
 
 		return !isOnCooldown();
 	}
@@ -142,17 +141,12 @@ this.cr_anatomist_recruit_encounter <- this.inherit("scripts/events/event", {
 			"anatomist",
 			this.m.Dude.getNameOnly()
 		]);
-		_vars.push([
-			"townname",
-			this.m.Town.getName()
-		]);
 		::Const.LegendMod.extendVarsWithPronouns(_vars, this.m.Dude.getGender(), "anatomist");
 	}
 
 	function onClear()
 	{
 		this.m.Dude = null;
-		this.m.Town = null;
 	}
 
 });
