@@ -2,7 +2,7 @@
 
 	q.onRemoved <- function ()
 	{
-		this.m.Container.removeByID(::Legends.Active.Debilitate);
+		::Legends.Actives.remove(this.m.Container, ::Legends.Active.Debilitate);
 	}
 
 });
