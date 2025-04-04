@@ -51,7 +51,7 @@ else
 
 ::Const.Strings.PerkName.LegendSlaughterer = "Slaughterer";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSlaughterer].Name = ::Const.Strings.PerkName.LegendSlaughterer;
-::Const.Strings.PerkDescription.LegendSlaughterer = "A gruesome display, enemies are more likely to lose morale when they witness their allies get split in two.\n\n[color=#4f1800][u]Passive:[/u][/color]\n• Melee kills are always fatalities.\n\n• Fatalaties have a [color=" + this.Const.UI.Color.NegativeValue + "]-15[/color] penalty to enemy Resolve checks.";
+::Const.Strings.PerkDescription.LegendSlaughterer = "A gruesome display, enemies are more likely to lose morale when they witness their allies get split in two.\n\n[color=" + ::Const.UI.Color.Passive + "][u]Passive:[/u][/color]\n• Melee kills are always fatalities.\n\n• Fatalaties have a [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] penalty to enemy Resolve checks.\n\n• Having the \'Bloodthirsty\' trait allows you to trigger an additional positive morale check when killing an enemy.";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSlaughterer].Tooltip = ::Const.Strings.PerkDescription.LegendSlaughterer;
 	
 ::Const.Strings.PerkDescription.LegendCheerOn = "[color=" + this.Const.UI.Color.NegativeValue + "][u]Requires:[/u] Instrument or Banner[/color]\nUse your way with song to cheer on an ally!\n\n[color=#4f1800][u]Active:[/u][/color]\n• Unlocks the [color=" + ::Const.UI.Color.Skill + "]Cheer On[/color] skill which grants [color=" + ::Const.UI.Color.PositiveValue + "]+2[/color] Action Points to an adjacent ally.\n\n• Costs [color=" + ::Const.UI.Color.NegativeValue + "]3[/color] AP and [color=" + ::Const.UI.Color.NegativeValue + "]10[/color] Fatigue.";
