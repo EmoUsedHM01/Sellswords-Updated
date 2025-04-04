@@ -72,14 +72,14 @@
 		if (mainhand.isWeaponType(this.Const.Items.WeaponType.Dagger)) {
 			if (bro.getSkills().hasPerk(::Legends.Perk.SpecDagger))
 			{
-				text += "\n• [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 3) + "[/color] per AP for 3 AP or less"
+				text += "\n• At most [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 3) + "[/color] (3 AP or less)"
 			} else
 			{
-				text += "\n• [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 4) + "[/color] per AP for 4 AP or less"
+				text += "\n• At most [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 4) + "[/color] (4 AP or less)"
 			}
 		} else {
-			text += "\n• [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 5) + "[/color] per AP for 5 AP or less"
-			text += "\n• [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 6) + "[/color] per AP for 6 AP or more"
+			text += "\n• At most [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 5) + "[/color] (5 AP or less)"
+			text += "\n• At least [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 6) + "[/color] (6 AP or more)"
 		}
 
 		return [
