@@ -1,6 +1,9 @@
 ::Const.Strings.PerkDescription.LegendAthlete <- "You're a well-rounded athlete!\n\n[color=" + ::Const.UI.Color.Active + "][u]Active:[/u][/color]\n• Unlocks the [color=" + ::Const.UI.Color.Skill + "]Sprint[/color] skill which allows you to quickly cover four tiles in a straight line.\n\n• Does not work across rough terrain or through enemy zones of control.\n\n• Costs [color=" + this.Const.UI.Color.NegativeValue + "]5[/color] AP and [color=" + this.Const.UI.Color.NegativeValue + "]25[/color] Fatigue \n\n• Additionally, unlock the [color=" + ::Const.UI.Color.Skill + "]Climb[/color] skill which allows you to climb sheer cliffs up to five levels of height in one action.\n\n• Does not trigger attacks of opportunity.\n\n• Costs [color=" + this.Const.UI.Color.NegativeValue + "]3[/color] AP and [color=" + this.Const.UI.Color.NegativeValue + "]20[/color] Fatigue.\n\n• Picking the perk will also add [color=" + ::Const.UI.Color.Perk + "]Furinkazan[/color] to your perk map, which reduces the cost of [color=" + ::Const.UI.Color.Skill + "]Sprint[/color] and [color=" + ::Const.UI.Color.Skill + "]Climb[/color].";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendAthlete].Tooltip = ::Const.Strings.PerkDescription.LegendAthlete;
 
+::Const.Strings.PerkDescription.LegendSmashingShields <- "Some folks take joy in the simple pleasures of destroying shields.\n\n[color=#4f1800][u]Passive:[/u][/color]\n• Grants an additional [color=" + this.Const.UI.Color.PositiveValue + "]+100%[/color] damage to shields when using [color=#400080]Split Shield[/color] or a Throwing Spear.\n• If the shield is destroyed, gain [color=" + this.Const.UI.Color.PositiveValue + "]4[/color] additional AP and any damage above the max durability of the target\'s shield will hit the target.";
+
+
 ::Const.Strings.PerkDescription.LegendSmashingShields = "\'If you can\'t get around it, try smashing through. It works!\'\n\n[color=" + ::Const.UI.Color.Passive + "][u]Passive:[/u][/color]\n• Abilities targeting Shields do [color=" + ::Const.UI.Color.PositiveValue + "]100%[/color] increased damage.\n\n• If a Shield is destroyed by [color=" + ::Const.UI.Color.Skill + "]Split Shield[/color], recover [color=" + ::Const.UI.Color.PositiveValue + "]4[/color] Action Points and [color=" + ::Const.UI.Color.PositiveValue + "]50%[/color] of the Fatigue cost.";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSmashingShields].Tooltip = ::Const.Strings.PerkDescription.LegendSmashingShields;
 
@@ -308,6 +311,6 @@ local poleWeaponStrings = [
 foreach (s in poleWeaponStrings)
 {
 	::Const.Strings.PerkDescription[s] = ::MSU.String.replace(::Const.Strings.PerkDescription[s], "no longer has a penalty", "has a reduced penalty");
-::Const.Strings.PerkDescription[s] = ::MSU.String.replace(::Const.Strings.PerkDescription[s], "no longer have a penalty", "have a reduced penalty");
-::Const.Perks.PerkDefObjects[::Legends.Perk[s]].Tooltip = ::Const.Strings.PerkDescription[s];
+	::Const.Strings.PerkDescription[s] = ::MSU.String.replace(::Const.Strings.PerkDescription[s], "no longer have a penalty", "have a reduced penalty");
+	::Const.Perks.PerkDefObjects[::Legends.Perk[s]].Tooltip = ::Const.Strings.PerkDescription[s];
 }
