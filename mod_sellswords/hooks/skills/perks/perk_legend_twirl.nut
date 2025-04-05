@@ -2,8 +2,7 @@
 
 	q.onAdded <- function()
 	{
-		if (!::Legends.Actives.has(this, ::Legends.Active.Rotation))
-			::Legends.Actives.grant(this, ::Legends.Active.Rotation)
+		::Legends.Actives.grant(this, ::Legends.Active.Rotation)
 
 		local addPerk = function ( _perk, _row = 0 )
 		{
