@@ -18,19 +18,6 @@
 			text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + this.Const.Combat.FatigueReceivedPerHit * fatigueMultiplier + "[/color] extra fatigue on hit"
 		});
 
-		foreach( bg in this.m.Backgrounds )
-		{
-			if (actor.getSkills().hasSkill(bg))
-			{
-				ret.push({
-					id = 7,
-					type = "text",
-					icon = "ui/icons/regular_damage.png",
-					text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] damage from background"
-				});
-				break;
-			}
-		}
 		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInFists)
 		{
 			ret.push({

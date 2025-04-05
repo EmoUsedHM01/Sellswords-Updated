@@ -137,24 +137,16 @@
 			});
 		}
 
-		if (this.m.Backgrounds.find(actor.getBackground()) != null)
-		{
-			ret.push({
-				id = 7,
-				type = "text",
-				icon = "ui/icons/regular_damage.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] Damage (from background)"
-			});
-		}
-
 		return ret;
-	}		
+	}
+			
 	q.isUsable = @( __original ) function ()
 	{
 		local mainhand = this.m.Container.getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
 		local offhand = this.m.Container.getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		return (mainhand == null || this.getContainer().hasSkill("effects.disarmed")) && this.skill.isUsable();
-	}		
+	}
+
 	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
 		if (_skill != this)
