@@ -4,11 +4,11 @@
 	{
 		local actor = this.getContainer().getActor();
 
-		if (_skill.getID() == "actives.hand_to_hand" || _skill.getID() == "actives.legend_unarmed_lunge")
+		if (_skill.getID() == ::Legends.Actives.getID(::Legends.Active.HandToHand) || _skill.getID() == ::Legends.Actives.getID(::Legends.Active.LegendUnarmedLunge))
 		{
 			if (_properties.IsSpecializedInFists)
 				_properties.DamageArmorMult *= 1.2;
-			if (this.getContainer().hasSkill("perk.sundering_strikes"))
+			if (::Legends.Actives.has(this, ::Legends.Perk.SunderingStrikes))
 				_properties.DamageArmorMult *= 1.2;
 
 			local damage = (actor.getInitiative() + actor.getHitpoints()) / 25;
@@ -28,7 +28,7 @@
 			_properties.DamageRegularMax += this.Math.floor(damage);
 		}
 
-		if (_skill.getID() == "actives.legend_choke")
+		if (_skill.getID() == ::Legends.Actives.getID(::Legends.Active.LegendChoke))
 		{
 			_properties.DamageTotalMult *= 1.5;
 			_properties.MeleeSkill += 10;

@@ -14,10 +14,10 @@
 		}
 
 		// refresh the effects
-		_targetEntity.getSkills().removeByID("effects.legend_baffled");
+		::Legends.Effects.remove(_targetEntity, ::Legends.Active.Baffled);
 		_targetEntity.getSkills().removeByID("effects.cr_smackdown");
 
-		_targetEntity.getSkills().add(this.new("scripts/skills/effects/legend_baffled_effect"));
+		::Legends.Effects.grant(_targetEntity, ::Legends.Active.Baffled);
 		_targetEntity.getSkills().add(this.new("scripts/skills/effects/cr_smackdown_effect"));
 	}
 

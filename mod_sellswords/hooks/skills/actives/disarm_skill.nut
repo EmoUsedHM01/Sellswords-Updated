@@ -2,29 +2,21 @@
 
 	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )
 	{
-		if (_targetEntity == null)
-		{
-			return;
-		}
 		if (_skill == this)
 		{
 			_skill.resetField("HitChanceBonus");
-			if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers)
+			this.m.HitChanceBonus += this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers ? 10 : 0;
+
+			if (_targetEntity != null && _targetEntity.getType() == this.Const.EntityType.OrcWarlord)
 			{
-				_properties.MeleeSkill -= 20;
+				this.m.HitChanceBonus -= 40;
 			}
-			else
-			{
-				_properties.MeleeSkill -= 10;
-			}
-			if (_targetEntity.getType() == this.Const.EntityType.OrcWarlord)
-			{
-				_properties.MeleeSkill -= 40;
-			}				
+			_properties.MeleeSkill += this.m.HitChanceBonus;		
 			_properties.DamageTotalMult = 0.0;
 			_properties.HitChanceMult[this.Const.BodyPart.Head] = 0.0;
 		}
 	}
+
 	q.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
 	{
 		if (_skill.getID() != "actives.disarm")
