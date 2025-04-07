@@ -125,6 +125,7 @@
 .../scripts/entity/tactical/humans/crRetiredsoldier.nut
 .../scripts/entity/tactical/humans/crSellsword.nut
 .../scripts/entity/tactical/humans/crSellsword_Polearm.nut
+.../scripts/entity/tactical/humans/crSellsword_Tank.nut
 .../scripts/entity/tactical/humans/crSellsword_Ranger.nut
 .../scripts/entity/tactical/humans/crSellswordveteran.nut
 .../scripts/entity/tactical/humans/crSellswordveteran_Polearm.nut

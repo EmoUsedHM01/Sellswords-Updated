@@ -52,28 +52,28 @@ this.crSellsword_Tank <- this.inherit("scripts/entity/tactical/human", {
 		}
 		
 		local perkpool = [
-			[2, ["perk_crippling_strikes", "perk_coup_de_grace"], 2],
-			[1, "perk_legend_muscularity", 1],		
-			[1, "perk_fearsome", 2],
-			[1, "perk_legend_alert", 1],					
-			[2, "perk_legend_assured_conquest", 1],				
-			[2, "perk_legend_onslaught", 1],			
-			[4, "perk_steadfast", 1],
-			[1, "perk_lone_wolf", 1],
-			[2, "perk_anticipation", 1],
-			[8, "perk_colossus", 1],
-			[4, "perk_stalwart", 1],
-			[3, "perk_legend_last_stand", 1],
-			[3, "perk_nine_lives", 2],			
-			[4, "perk_legend_second_wind", 1],
-			[2, "perk_crBlocknormal", 1],
-			[1, "perk_crDiscipline", 1],
-			[1, "perk_crAnchor", 1],			
+			[2, [::Legends.Perk.CripplingStrikes, ::Legends.Perk.CoupDeGrace], 2],
+			[1, ::Legends.Perk.LegendMuscularity, 1],
+			[1, ::Legends.Perk.Fearsome, 2],
+			[1, ::Legends.Perk.LegendAlert, 1],
+			[2, ::Legends.Perk.LegendAssuredConquest, 1],
+			[2, ::Legends.Perk.LegendOnslaught, 1],
+			[4, ::Legends.Perk.Steadfast, 1],
+			[1, ::Legends.Perk.LoneWolf, 1],
+			[2, ::Legends.Perk.Anticipation, 1],
+			[8, ::Legends.Perk.Colossus, 1],
+			[4, ::Legends.Perk.Stalwart, 1],
+			[3, ::Legends.Perk.LegendLastStand, 1],
+			[3, ::Legends.Perk.NineLives, 2],
+			[4, ::Legends.Perk.LegendSecondWind, 1],
+			[2, ::Legends.Perk.crBlocknormal, 1],
+			[1, ::Legends.Perk.crDiscipline, 1],
+			[1, ::Legends.Perk.crAnchor, 1],
 		];
 
 		if (::Is_PTR_Exist)
 		{
-			perkpool.extend([
+			perkpool.extend([ // todo strings are not supported anymore, so is ptr...
 				[1, "perk_ptr_primal_fear", 1],								
 				//[1, "perk_ptr_fresh_and_furious", 2],
 				[4, "perk_ptr_fruits_of_labor", 1],	
@@ -93,7 +93,7 @@ this.crSellsword_Tank <- this.inherit("scripts/entity/tactical/human", {
 		perkpool = this.Const.World.Common.pickPerks(perkpool, 10);
 		foreach(perk in perkpool)
 		{
-			this.m.Skills.add(perk);	
+			::Legends.Perks.grant(this, perk);
 		}
 		
 		if (this.Math.rand(1, 100) <= 35)

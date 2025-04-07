@@ -57,20 +57,20 @@ this.crSellswordveteran_Tank <- this.inherit("scripts/entity/tactical/human", {
 		}
 		
 		local perkpool = [
-			[2, ["perk_crippling_strikes", "perk_coup_de_grace"], 2],			
-			[1, "perk_fearsome", 2],
-			[2, ["perk_legend_alert","perk_legend_onslaught"], 2],
-			[2, ["perk_stalwart", "perk_steadfast"], 2],
-			[1, ["perk_lone_wolf", "perk_anticipation"], 2],			
-			[1, "perk_head_hunter", 1],													
-			[2, "perk_nine_lives", 2],			
-			[2, "perk_crBlocknormal", 1],
-			[2, "perk_crIronsideweak", 1],		
+			[2, [::Legends.Perk.CripplingStrikes, ::Legends.Perk.CoupDeGrace], 2],
+			[1, ::Legends.Perk.Fearsome, 2],
+			[2, [::Legends.Perk.LegendAlert, ::Legends.Perk.LegendOnslaught], 2],
+			[2, [::Legends.Perk.Stalwart, ::Legends.Perk.Steadfast], 2],
+			[1, [::Legends.Perk.LoneWolf, ::Legends.Perk.Anticipation], 2],
+			[1, ::Legends.Perk.HeadHunter, 1],
+			[2, ::Legends.Perk.NineLives, 2],
+			[2, ::Legends.Perk.crBlocknormal, 1],
+			[2, ::Legends.Perk.crIronsideweak, 1],
 		];
 
 		if (::Is_PTR_Exist)
 		{
-			perkpool.extend([
+			perkpool.extend([ // todo strings are not supported anymore, so is ptr...
 				[1, ["perk_ptr_menacing", "perk_ptr_bully"], 2],
 				[1, "perk_ptr_primal_fear", 1],			
 				[1, "perk_ptr_vigorous_assault", 2],						
@@ -93,7 +93,7 @@ this.crSellswordveteran_Tank <- this.inherit("scripts/entity/tactical/human", {
 		perkpool = this.Const.World.Common.pickPerks(perkpool, 10);
 		foreach(perk in perkpool)
 		{
-			this.m.Skills.add(perk);	
+			::Legends.Perks.grant(this, perk);
 		}		
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_quick_hands"));		
