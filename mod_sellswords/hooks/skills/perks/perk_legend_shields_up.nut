@@ -11,15 +11,15 @@
 
 			if (offhand_ally != null && offhand_ally.isItemType(this.Const.Items.ItemType.Shield))
 			{
-				if (!ally.getSkills().hasSkill("effects.shieldwall") && ally.getSkills().hasSkill("actives.shieldwall"))
+				if (!::Legends.Effects.has(ally, ::Legends.Effect.Shieldwall) && ::Legends.Actives.has(ally, ::Legends.Active.Shieldwall))
 				{
-					ally.getSkills().add(this.new("scripts/skills/effects/shieldwall_effect"));
+					::Legends.Effects.grant(ally, ::Legends.Effect.Shieldwall);
 					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(ally) + " uses Shieldwall due to the Shields Up perk");
 				}
-				else if (!ally.getSkills().hasSkill("effects.legend_fortify") && ally.getSkills().hasSkill("actives.legend_fortify_skill"))
+				else if (!::Legends.Effects.has(ally, ::Legends.Effect.LegendFortify) && ::Legends.Actives.has(ally, ::Legends.Active.LegendFortify))
 				{
-					ally.getSkills().add(this.new("scripts/skills/effects/legend_fortify_effect"));
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(ally) + " uses Shieldwall due to the Shields Up perk");
+					::Legends.Effects.grant(ally, ::Legends.Effect.LegendFortify);
+					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(ally) + " uses Fortify due to the Shields Up perk");
 				}
 			}
 		}
