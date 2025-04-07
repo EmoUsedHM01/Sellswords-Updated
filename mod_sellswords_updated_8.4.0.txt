@@ -2,8 +2,11 @@
 
 .../mod_sellswords/config/a_sellswords_global.nut
 .../mod_sellswords/config/chiru_helmets.nut
+.../mod_sellswords/config/factions.nut
 .../mod_sellswords/config/necro_loot.nut
 .../mod_sellswords/config/z_background_perks.nut
+.../mod_sellswords/hooks/config/faction_traits.nut
+.../mod_sellswords/hooks/config/factions.nut
 .../mod_sellswords/hooks/config/strings.nut
 .../mod_sellswords/hooks/config/z_legends_fav_enemies.nut
 .../mod_sellswords/hooks/config/z_perks_tree_class.nut
@@ -32,8 +35,11 @@
 .../mod_sellswords/hooks/items/weapons/legend_voulge.nut
 .../mod_sellswords/hooks/items/weapons/named/legend_named_voulge.nut
 .../mod_sellswords/hooks/skills/actives/bash.nut
+.../mod_sellswords/hooks/skills/actives/disarm_skill.nut
+.../mod_sellswords/hooks/skills/actives/hand_to_hand.nut
 .../mod_sellswords/hooks/skills/actives/knock_out.nut
 .../mod_sellswords/hooks/skills/actives/legend_chain_hook.nut
+.../mod_sellswords/hooks/skills/actives/legend_choke_skill.nut
 .../mod_sellswords/hooks/skills/actives/legend_great_slash.nut
 .../mod_sellswords/hooks/skills/actives/legend_scythe_cleave_skill.nut
 .../mod_sellswords/hooks/skills/actives/legend_staff_knock_out_skill.nut
@@ -48,10 +54,18 @@
 .../mod_sellswords/hooks/skills/actives/unleash_wolf.nut
 .../mod_sellswords/hooks/skills/backgrounds/character_background.nut
 .../mod_sellswords/hooks/skills/backgrounds/legend_crusader_background.nut
+.../mod_sellswords/hooks/skills/effects/legend_knockback_prepared_effect.nut
 .../mod_sellswords/hooks/skills/effects/nachzehrer_potion_effect.nut
+.../mod_sellswords/hooks/skills/perks/perk_debilitate.nut
+.../mod_sellswords/hooks/skills/perks/perk_legend_athlete.nut
+.../mod_sellswords/hooks/skills/perks/perk_legend_blend_in.nut
 .../mod_sellswords/hooks/skills/perks/perk_legend_full_force.nut
 .../mod_sellswords/hooks/skills/perks/perk_legend_mastery_unarmed.nut
+.../mod_sellswords/hooks/skills/perks/perk_legend_muscularity.nut
+.../mod_sellswords/hooks/skills/perks/perk_legend_net_casting.nut
+.../mod_sellswords/hooks/skills/perks/perk_legend_shields_up.nut
 .../mod_sellswords/hooks/skills/perks/perk_legend_slaughter.nut
+.../mod_sellswords/hooks/skills/perks/perk_legend_smackdown.nut
 .../mod_sellswords/hooks/skills/perks/perk_legend_specialist_blacksmith.nut
 .../mod_sellswords/hooks/skills/perks/perk_legend_specialist_butcher.nut
 .../mod_sellswords/hooks/skills/perks/perk_legend_specialist_butcher_damage.nut
@@ -74,12 +88,15 @@
 .../mod_sellswords/hooks/skills/perks/perk_legend_specialist_sickle_damage.nut
 .../mod_sellswords/hooks/skills/perks/perk_legend_specialist_woodaxe_damage.nut
 .../mod_sellswords/hooks/skills/perks/perk_legend_specialist_woodsman.nut
+.../mod_sellswords/hooks/skills/perks/perk_legend_twirl.nut
+.../mod_sellswords/hooks/skills/perks/perk_legend_unarmed_training.nut
+.../mod_sellswords/hooks/ui/screens/tooltip/tooltip_events.nut
 .../mod_sellswords/hooks_ptr/config/perks_tree_profession.nut
 .../mod_sellswords/hooks_ptr/skills/backgrounds/brawler_background.nut
 .../mod_sellswords/hooks_ptr/skills/backgrounds/legend_companion_melee_background.nut
 .../mod_sellswords/hooks_ptr/skills/perks/perk_ptr_dynamic_duo.nut
 .../mod_sellswords/hooks_ptr/skills/perks/perk_ptr_swordmaster_blade_dancer.nut
-.../mod_sellswords_updated_8.3.11.txt
+.../scripts/!mods_preload/mod_sellswords.nut
 .../scripts/crafting/blueprints/cr_lindwurm_helmet_layered_blueprint.nut
 .../scripts/encounters/cr_anatomist_recruit_encounter.nut
 .../scripts/entity/tactical/enemies/crDeathknight.nut
@@ -132,8 +149,13 @@
 .../scripts/items/weapons/named/cr_named_orc_sword_2h.nut
 .../scripts/items/weapons/named/named_staff.nut
 .../scripts/scenarios/world/sellswords_scenario.nut
+.../scripts/skills/backgrounds/necro_ancient_honour_guard.nut
+.../scripts/skills/backgrounds/necro_ancient_legionary.nut
 .../scripts/skills/backgrounds/necro_banshee.nut
 .../scripts/skills/backgrounds/necro_embalmbed_soldier.nut
+.../scripts/skills/backgrounds/necro_fallen_hero.nut
+.../scripts/skills/backgrounds/necro_ghost.nut
+.../scripts/skills/backgrounds/ssu_dryad_warrior_background.nut
 .../scripts/skills/effects/phantom_strike_effect.nut
 v19.1 legends changes - chopeks, Breaky, Celestial
 
