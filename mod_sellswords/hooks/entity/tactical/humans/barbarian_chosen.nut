@@ -190,9 +190,9 @@
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local weapons = [
-			"weapons/named/named_canpodajian",
-			"weapons/named/named_canpodajian2",
-			"weapons/named/named_fangxuezhe",
+			"weapons/named/named_broken_sword",
+			"weapons/named/named_broken_cleaver",
+			"weapons/named/named_broken_axe",
 			"weapons/named/named_skullhammer",
 			"weapons/named/named_two_handed_spiked_mace",
 			"weapons/named/named_rusty_warblade",
@@ -200,7 +200,7 @@
 			"weapons/named/named_skullhammer",
 			"weapons/named/named_two_handed_spiked_mace",
 			"weapons/named/named_rusty_warblade",
-			"weapons/named/named_heavy_rusty_axe"				
+			"weapons/named/named_heavy_rusty_axe"
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		

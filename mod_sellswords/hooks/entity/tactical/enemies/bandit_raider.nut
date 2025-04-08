@@ -226,7 +226,7 @@
 			}
 			else if (r == 11)
 			{
-				this.m.Items.equip(this.new("scripts/items/weapons/legend_glaive"));
+				this.m.Items.equip(this.new("scripts/items/weapons/legend_battle_glaive"));
 
 				if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 				{

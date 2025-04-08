@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_staff_bash_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/bash", function ( q ) {
 
 	q.m.BonusPerNegativeStatusEffect <- 0.33;
 	q.m.Effects <- [
@@ -11,7 +11,8 @@
 	q.create = @(__original) function()
 	{
 		__original();
-
+		if (!this.m.IsStaffBash)
+			return;
 		this.m.DirectDamageMult = 0.95;
 	}
 
@@ -19,8 +20,10 @@
 	{
 		local ret = __original();
 
-		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInStaves)
-		{
+		if (!this.m.IsStaffBash)
+			return ret;
+
+		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInStaves) {
 			ret.push({
 				id = 6,
 				type = "text",
@@ -28,7 +31,6 @@
 				text = "For each negative effect your target has, deal [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] more damage"
 			});
 		}
-
 		return ret;
 	}
 
@@ -37,6 +39,9 @@
 		if (_skill == this)
 		{
 			__original(_skill, _targetEntity, _properties);
+
+			if (!this.m.IsStaffBash)
+				return;
 
 			if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInStaves)
 			{

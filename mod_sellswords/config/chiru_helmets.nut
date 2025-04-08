@@ -2098,12 +2098,12 @@
 					[9, ""],	
 					[1, "helm/legend_helmet_norman_helm"], //50, -3, -1					
 				],
-				Tops = [
+				Tops = [],
+				Vanity = [
 					[3, "top/legend_helmet_hood_cloth_round"],
 					[3, "top/legend_helmet_hood_cloth_square"], 
-					[3, "top/legend_helmet_hood_cloth_wide"], //5, 0				
-				],
-				Vanity = []
+					[3, "top/legend_helmet_hood_cloth_wide"], //5, 0
+				]
 			}
 		]
 	},	
@@ -2336,12 +2336,13 @@
 					[1, "helm/legend_helmet_norman_helm"], //50, -3, -1					
 				],
 				Tops = [
+					[1, "top/legend_helmet_nose_plate"]	//15, -1				
+				],
+				Vanity = [
 					[3, "top/legend_helmet_hood_cloth_round"],
 					[3, "top/legend_helmet_hood_cloth_square"], 
 					[3, "top/legend_helmet_hood_cloth_wide"], //5, 0
-					[1, "top/legend_helmet_nose_plate"]	//15, -1				
-				],
-				Vanity = []
+				]
 			}
 		]
 	},	
@@ -2361,12 +2362,13 @@
 					[1, "helm/legend_helmet_norman_helm"], //50, -3, -1					
 				],
 				Tops = [
+					[1, "top/legend_helmet_nose_plate"]	//15, -1				
+				],
+				Vanity = [
 					[3, "top/legend_helmet_hood_cloth_round"],
 					[3, "top/legend_helmet_hood_cloth_square"], 
 					[3, "top/legend_helmet_hood_cloth_wide"], //5, 0
-					[1, "top/legend_helmet_nose_plate"]	//15, -1				
-				],
-				Vanity = []
+				]
 			}
 		]
 	},		
@@ -2385,12 +2387,13 @@
 					[1, "helm/legend_helmet_norman_helm"], //50, -3, -1					
 				],
 				Tops = [
+					[1, "top/legend_helmet_nose_plate"]	//15, -1				
+				],
+				Vanity = [
 					[3, "top/legend_helmet_hood_cloth_round"],
 					[3, "top/legend_helmet_hood_cloth_square"], 
 					[3, "top/legend_helmet_hood_cloth_wide"], //5, 0
-					[1, "top/legend_helmet_nose_plate"]	//15, -1				
-				],
-				Vanity = []
+				]
 			}
 		]
 	},	
@@ -2409,12 +2412,13 @@
 					[2, "helm/legend_helmet_norman_helm"], //50, -3, -1					
 				],
 				Tops = [
+					[2, "top/legend_helmet_nose_plate"]	//15, -1				
+				],
+				Vanity = [
 					[1, "top/legend_helmet_hood_cloth_round"],
 					[1, "top/legend_helmet_hood_cloth_square"], 
 					[1, "top/legend_helmet_hood_cloth_wide"], //5, 0
-					[2, "top/legend_helmet_nose_plate"]	//15, -1				
-				],
-				Vanity = []
+				]
 			}
 		]
 	},	
@@ -2435,13 +2439,14 @@
 					[1, "helm/legend_helmet_kettle_helm_low"],//75,-5,250,-1					
 				],
 				Tops = [
-					[1, "top/legend_helmet_hood_cloth_round"],
-					[1, "top/legend_helmet_hood_cloth_square"], 
-					[1, "top/legend_helmet_hood_cloth_wide"], //5, 0
 					[3, "top/legend_helmet_nose_plate"],	//15, -1
 					[1, "top/legend_helmet_chain_attachment"],//25,-1,250					
 				],
-				Vanity = []
+				Vanity = [
+					[1, "top/legend_helmet_hood_cloth_round"],
+					[1, "top/legend_helmet_hood_cloth_square"], 
+					[1, "top/legend_helmet_hood_cloth_wide"], //5, 0
+				]
 			}
 		]
 	},	
@@ -2483,12 +2488,13 @@
 					[4, "helm/legend_helmet_norman_helm"], //50, -3, -1						
 					[1, "helm/legend_helmet_horsetail"],//60,-3,200,-1				
 				],
-				Tops = [
+				Tops = [		
+				],
+				Vanity = [
 					[1, "top/legend_helmet_hood_cloth_round"],
 					[1, "top/legend_helmet_hood_cloth_square"], 
-					[1, "top/legend_helmet_hood_cloth_wide"], //5, 0				
-				],
-				Vanity = []
+					[1, "top/legend_helmet_hood_cloth_wide"], //5, 0		
+				]
 			}
 		]
 	},	

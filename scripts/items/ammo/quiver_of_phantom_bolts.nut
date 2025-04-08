@@ -2,6 +2,7 @@ this.quiver_of_phantom_bolts <- this.inherit("scripts/items/ammo/ammo", {
 	m = {},
 	function create()
 	{
+		this.ammo.create();
 		this.m.ID = "ammo.bolts";
 		this.m.Name = "Quiver of Phantom Bolts";
 		this.m.Description = "A quiver of quietly humming ghostly bolts. You can't see these translucent bolts clearly, with them constantly flickering in and out of your vision as you gaze upon them. What you can clearly see however is the power that they contain.\nFires 2 additional phantom bolts, their damage is based on how many consecutive hits you've performed.\nEach ammo refilled costs thrice as much compared to conventional ammunition.\nIs automatically refilled after each battle if you have enough ammunition.";

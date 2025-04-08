@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_pitchfork_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_miner", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{
@@ -14,17 +14,14 @@
 		local item = this.getContainer().getActor().getMainhandItem();
 		if (item != null)
 		{
-			if (item.getID() == "weapon.pitchfork" || item.getID() == "weapon.legend_wooden_pitchfork"  || item.getID() == "weapon.legend_hoe"  || item.getID() == "weapon.legend_scythe"  || item.getID() == "weapon.wooden_flail")
+			if (item.getID() == "weapon.pickaxe" || item.getID() == "weapon.heavy_mining_pick")
 			{
 				_properties.MeleeSkill += 12;
-				_properties.DamageArmorMult += 0.25;
 			}
-			else if (this.Const.Items.WeaponType.Polearm)
+			else if (item.isWeaponType(this.Const.Items.WeaponType.Hammer) && item.isItemType(this.Const.Items.ItemType.TwoHanded))
 			{
 				_properties.MeleeSkill += 12 * dc;
-				_properties.DamageArmorMult += 0.25 * dc;
 			}
 		}
 	}
-
 });

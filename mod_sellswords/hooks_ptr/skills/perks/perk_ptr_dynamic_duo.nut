@@ -21,7 +21,7 @@
 
 	o.onUpdate = function(_properties) {}
 
-	o.onMovementFinished = function(_tile) {}
+	o.onMovementFinished = function() {}
 	
 	o.onAfterUpdate = function(_properties) {}
 

@@ -50,11 +50,10 @@ this.crSkeleton <- this.inherit("scripts/entity/tactical/skeleton", {
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_personal_armor"));
 			}
-						
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));			
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_slaughter"));
+			::Legends.Perks.grant(this, ::Legends.Perk.ShieldExpert);
+			::Legends.Perks.grant(this, ::Legends.Perk.BattleForged);
+			::Legends.Perks.grant(this, ::Legends.Perk.HoldOut);
+			::Legends.Perks.grant(this, ::Legends.Perk.LegendSlaughterer);
 			this.m.BaseProperties.DamageTotalMult = 1.1;
 			this.m.BaseProperties.DamageReceivedArmorMult = 0.85;			
 		}
@@ -162,7 +161,7 @@ this.crSkeleton <- this.inherit("scripts/entity/tactical/skeleton", {
 		local weapons = [
 			"weapons/named/named_khopesh",
 			"weapons/named/named_crypt_cleaver",			
-			"weapons/named/named_legend_great_khopesh",			
+			"weapons/named/legend_named_great_khopesh",
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_devastating_strikes"));

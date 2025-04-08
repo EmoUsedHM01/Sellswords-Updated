@@ -92,7 +92,7 @@ this.necro_ancient_legionary <- this.inherit("scripts/skills/backgrounds/charact
 			Weapon = [
 				this.Const.Perks.ShieldTree,
 				this.Const.Perks.SpearTree,
-				this.Const.Perks.GreatSwordTree,
+				this.Const.Perks.TwoHandedTree,
 				this.Const.Perks.SwordTree
 			],
 			Defense = [

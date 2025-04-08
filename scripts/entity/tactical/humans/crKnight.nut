@@ -104,10 +104,10 @@ this.crKnight <- this.inherit("scripts/entity/tactical/human", {
 					this.m.BaseProperties.MeleeSkill += 2;			
 					this.m.BaseProperties.MeleeDefense += 2;			
 					this.m.BaseProperties.RangedDefense += 2;
-					this.m.Skills.removeByID("perk.legend_return_favor");
-					local returnFavor = this.new("scripts/skills/effects/return_favor_effect");
-					returnFavor.onTurnStart = function() {}; // overwrite the original function which removes it
-					this.m.Skills.add(returnFavor);						
+					::Legends.Perks.remove(this, ::Legends.Perk.LegendReturnFavor);
+					::Legends.Perks.grant(this, ::Legends.Perk.LegendReturnFavor, function (_perk) {
+						_perk.onTurnStart = function() {}; // overwrite the original function which removes it
+					}.bindenv(this));
 					if (dc >= 180)
 					{
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_crTotalcover"));			

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_shortbow_damage", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_poacher", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{
@@ -10,19 +10,19 @@
 		}
 	
 		dc = this.Math.floor(dc / 7);
-		dc = 0.01 * this.Math.min(5 * dc + 35, 100);
+		dc = 0.01 * this.Math.min(5 * dc + 25, 100);
 		local item = this.getContainer().getActor().getMainhandItem();
 		if (item != null)
 		{
 			if (item.getID() == "weapon.short_bow" || item.getID() == "weapon.wonky_bow" || item.getID() == "weapon.goblin_bow" || item.getID() == "weapon.goblin_heavy_bow" || item.getID() == "weapon.composite_bow")
 			{
-				_properties.DamageRegularMin += 6;
-				_properties.DamageRegularMax += 16;
-			}			
+				_properties.RangedSkill += 12;
+				_properties.DamageDirectMult += 0.25;
+			}
 			else if (item.isWeaponType(this.Const.Items.WeaponType.Bow))
 			{
-				_properties.DamageRegularMin += 6 * dc;
-				_properties.DamageRegularMax += 16 * dc;
+				_properties.RangedSkill += 12 * dc;
+				_properties.DamageDirectMult += 0.25 * dc;
 			}
 		}
 	}

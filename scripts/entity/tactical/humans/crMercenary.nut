@@ -42,32 +42,32 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 		dc = this.Math.max(playerstrength, this.Math.floor(dc/10));
 		dc = this.Math.min(dc, 20);
 		local perkpool = [
-			[4, "perk_backstabber", 1],
-			[4, "perk_fast_adaption", 1],
-			[2, ["perk_legend_alert", "perk_relentless"], 2],
-			[2, "perk_anticipation", 1],
-			[8, "perk_colossus", 1],
-			[2, "perk_stalwart", 1],
-			[2, "perk_underdog", 2],
-			[1, "perk_head_hunter", 1],
-			[2, "perk_nimble", 3],
-			[2, "perk_steel_brow", 1],
-			[4, ["perk_crippling_strikes", "perk_coup_de_grace"], 2],
-			[2, "perk_legend_muscularity", 1],	
-			[3, "perk_legend_lithe", 2],	
-			[1, "perk_legend_assured_conquest", 1],	
-			[3, "perk_fearsome", 2],
-			[3, "perk_steadfast", 1],			
-			[2, "perk_crBlocknormal", 1],
-			[2, "perk_crTrumpcard", 1],
-			[2, "perk_crBruiser", 1],
-			[2, "perk_crRavager", 1],
-			[2, "perk_crDiscipline", 1],			
+			[4, ::Legends.Perk.Backstabber, 1],
+			[4, ::Legends.Perk.FastAdaption, 1],
+			[2, [::Legends.Perk.LegendAlert, ::Legends.Perk.Relentless], 2],
+			[2, ::Legends.Perk.Anticipation, 1],
+			[8, ::Legends.Perk.Colossus, 1],
+			[2, ::Legends.Perk.Stalwart, 1],
+			[2, ::Legends.Perk.Underdog, 2],
+			[1, ::Legends.Perk.HeadHunter, 1],
+			[2, ::Legends.Perk.Nimble, 3],
+			[2, ::Legends.Perk.SteelBrow, 1],
+			[4, [::Legends.Perk.CripplingStrikes, ::Legends.Perk.CoupDeGrace], 2],
+			[2, ::Legends.Perk.LegendMuscularity, 1],
+			[3, ::Legends.Perk.LegendLithe, 2],
+			[1, ::Legends.Perk.LegendAssuredConquest, 1],
+			[3, ::Legends.Perk.Fearsome, 2],
+			[3, ::Legends.Perk.Steadfast, 1],
+			[2, ::Legends.Perk.crBlocknormal, 1],
+			[2, ::Legends.Perk.crTrumpcard, 1],
+			[2, ::Legends.Perk.crBruiser, 1],
+			[2, ::Legends.Perk.crRavager, 1],
+			[2, ::Legends.Perk.crDiscipline, 1],
 		];
 
 		if (::Is_PTR_Exist)
 		{
-			perkpool.extend([
+			perkpool.extend([ // todo strings are not supported anymore, so is ptr...
 				//[3, "perk_ptr_fresh_and_furious", 2],				
 				[4, ["perk_ptr_menacing", "perk_ptr_bully"], 2],
 				[3, "perk_ptr_vigorous_assault", 1],		
@@ -82,8 +82,8 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 		perkpool = this.Const.World.Common.pickPerks(perkpool, dc);
 		foreach(perk in perkpool)
 		{
-			this.m.Skills.add(perk);	
-		}	
+			::Legends.Perks.grant(this, perk);
+		}
 		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_quick_hands"));
@@ -207,8 +207,8 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 					"weapons/warbrand",
 					"weapons/hand_axe",
 					"weapons/boar_spear",
-					"weapons/legend_glaive",
-					"weapons/legend_glaive",
+					"weapons/legend_battle_glaive",
+					"weapons/legend_battle_glaive",
 					"weapons/morning_star",
 					"weapons/falchion",
 					"weapons/scimitar",						
@@ -228,8 +228,6 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 					"weapons/warbrand",
 					"weapons/hand_axe",
 					"weapons/boar_spear",
-					"weapons/legend_glaive",
-					"weapons/legend_glaive",
 					"weapons/morning_star",
 					"weapons/falchion",
 					"weapons/arming_sword",
@@ -239,13 +237,14 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 					"weapons/polehammer",
 					"weapons/three_headed_flail",
 					"weapons/legend_halberd",
-					"weapons/legend_military_voulge",
+					"weapons/legend_swordstaff",
 					"weapons/warbrand",
 					"weapons/longsword",
 					"weapons/legend_longsword",
 					"weapons/greataxe",					
 					"weapons/bardiche",
-					"weapons/legend_battle_glaive",					
+					"weapons/legend_battle_glaive",
+					"weapons/legend_battle_glaive",
 					"weapons/scimitar",	
 					"weapons/fighting_axe",					
 					"weapons/fighting_spear",				
@@ -265,7 +264,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 				weapons = [			
 					"weapons/three_headed_flail",
 					"weapons/legend_halberd",
-					"weapons/legend_military_voulge",
+					"weapons/legend_swordstaff",
 					"weapons/warbrand",
 					"weapons/longsword",
 					"weapons/legend_longsword",
@@ -291,13 +290,13 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 				weapons = [			
 					"weapons/three_headed_flail",
 					"weapons/legend_halberd",
-					"weapons/legend_military_voulge",
+					"weapons/legend_swordstaff",
 					"weapons/warbrand",
 					"weapons/longsword",
 					"weapons/legend_longsword",
 					"weapons/greataxe",					
 					"weapons/bardiche",
-					"weapons/legend_battle_glaive",					
+					"weapons/legend_battle_glaive",
 					"weapons/shamshir",	
 					"weapons/fighting_axe",					
 					"weapons/fighting_spear",				

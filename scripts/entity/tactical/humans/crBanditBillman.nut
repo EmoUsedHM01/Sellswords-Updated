@@ -81,7 +81,7 @@ this.crBanditBillman <- this.inherit("scripts/entity/tactical/human", {
 		local weapons = [
 			"weapons/billhook",
 			"weapons/pike",
-			"weapons/legend_voulge"
+			"weapons/legend_battle_glaive"
 		];
 
 		if (this.Const.DLC.Unhold)

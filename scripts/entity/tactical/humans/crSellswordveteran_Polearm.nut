@@ -35,18 +35,18 @@ this.crSellswordveteran_Polearm <- this.inherit("scripts/entity/tactical/human",
 		this.getSprite("socket").setBrush("bust_base_militia");
 
 		local perkpool = [
-			[2, ["perk_legend_muscularity", "perk_crGrandslam"], 2],				
-			[3, "perk_fearsome", 2],
-			[2, ["perk_legend_alert","perk_legend_onslaught"], 2],
-			[2, ["perk_colossus", "perk_steadfast"], 1],
-			[1, ["perk_lone_wolf", "perk_anticipation"], 1],	
-			[2, "perk_nine_lives", 2],			
-			[2, "perk_crBlocknormal", 1],
-			[2, "perk_crTrumpcard", 1],
-			[1, "perk_crBruiser", 1],
-			[1, "perk_crRavager", 1],
-			[1, "perk_crIronsideweak", 1],
-			[1, "perk_crBattlerhaposdy", 1]			
+			[2, [::Legends.Perk.LegendMuscularity, ::Legends.Perk.crGrandslam], 2],
+			[3, ::Legends.Perk.Fearsome, 2],
+			[2, [::Legends.Perk.LegendAlert, ::Legends.Perk.LegendOnslaught], 2],
+			[2, [::Legends.Perk.Colossus, ::Legends.Perk.Steadfast], 1],
+			[1, [::Legends.Perk.LoneWolf, ::Legends.Perk.Anticipation], 1],
+			[2, ::Legends.Perk.NineLives, 2],
+			[2, ::Legends.Perk.crBlocknormal, 1],
+			[2, ::Legends.Perk.crTrumpcard, 1],
+			[1, ::Legends.Perk.crBruiser, 1],
+			[1, ::Legends.Perk.crRavager, 1],
+			[1, ::Legends.Perk.crIronsideweak, 1],
+			[1, ::Legends.Perk.crBattlerhaposdy, 1]
 		];
 
 		if (::Is_PTR_Exist)
@@ -54,7 +54,7 @@ this.crSellswordveteran_Polearm <- this.inherit("scripts/entity/tactical/human",
 			this.m.Skills.addPerkTree(this.Const.Perks.ThrowingTree);
 			this.m.Skills.addPerkTree(this.Const.Perks.PolearmTree, 7);
 
-			perkpool.extend([
+			perkpool.extend([ // todo strings are not supported anymore, so is ptr...
 				[1, ["perk_ptr_menacing", "perk_ptr_bully"], 2],
 				[1, "perk_ptr_primal_fear", 1],			
 				[3, "perk_ptr_vigorous_assault", 2],						
@@ -70,7 +70,7 @@ this.crSellswordveteran_Polearm <- this.inherit("scripts/entity/tactical/human",
 		perkpool = this.Const.World.Common.pickPerks(perkpool, 11);
 		foreach(perk in perkpool)
 		{
-			this.m.Skills.add(perk);	
+			::Legends.Perks.grant(this, perk);
 		}
 
 		if (this.Math.rand(1, 100) <= 50)
@@ -200,7 +200,7 @@ this.crSellswordveteran_Polearm <- this.inherit("scripts/entity/tactical/human",
 					"weapons/legend_halberd",
 					"weapons/legend_halberd",					
 					"weapons/legend_swordstaff",
-					"weapons/legend_military_voulge",
+					"weapons/legend_battle_glaive",
 					"weapons/crlongaxe",
 					"weapons/crpolehammer",
 					"weapons/crpolemace",	

@@ -15,7 +15,7 @@
 
 		this.m.PerkTreeDynamic = {
 			Class = [
-				::Const.Perks.FistsClassTree
+				::Const.Perks.FistsTree
 			]
 		};
 	}

@@ -50,7 +50,7 @@
 			"weapons/legend_halberd",
 			"weapons/legend_halberd",				
 			"weapons/crpolehammer",
-			"weapons/legend_military_voulge"				
+			"weapons/legend_battle_glaive"
 		];
 
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));

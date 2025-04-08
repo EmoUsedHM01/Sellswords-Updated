@@ -35,27 +35,27 @@ this.crSellsword_Polearm <- this.inherit("scripts/entity/tactical/human", {
 		this.getSprite("socket").setBrush("bust_base_militia");
 
 		local perkpool = [
-			[4, ["perk_crippling_strikes", "perk_coup_de_grace"], 2],
-			[2, "perk_legend_muscularity", 1],		
-			[3, "perk_fearsome", 2],	
-			[1, "perk_legend_alert", 2],
-			[1, "perk_head_hunter", 1],	
-			[1, "perk_legend_assured_conquest", 1],				
-			[2, "perk_legend_onslaught", 1],			
-			[2, "perk_steel_brow", 1],
-			[2, "perk_anticipation", 1],
-			[6, "perk_colossus", 1],
-			[8, "perk_underdog", 1],			
-			[2, "perk_legend_last_stand", 1],
-			[2, "perk_nine_lives", 2],			
-			[1, "perk_legend_second_wind", 1],
-			[2, "perk_crBlocknormal", 1],
-			[2, "perk_crTrumpcard", 1],
-			[1, "perk_crBruiser", 1],
-			[1, "perk_crRavager", 1],
-			[1, "perk_crDiscipline", 1],
-			[1, "perk_crAnchor", 1],
-			[1, "perk_crBattlerhaposdy", 1],	
+			[4, [::Legends.Perk.CripplingStrikes, ::Legends.Perk.CoupDeGrace], 2],
+			[2, ::Legends.Perk.LegendMuscularity, 1],
+			[3, ::Legends.Perk.Fearsome, 2],
+			[1, ::Legends.Perk.LegendAlert, 2],
+			[1, ::Legends.Perk.HeadHunter, 1],
+			[1, ::Legends.Perk.LegendAssuredConquest, 1],
+			[2, ::Legends.Perk.LegendOnslaught, 1],
+			[2, ::Legends.Perk.SteelBrow, 1],
+			[2, ::Legends.Perk.Anticipation, 1],
+			[6, ::Legends.Perk.Colossus, 1],
+			[8, ::Legends.Perk.Underdog, 1],
+			[2, ::Legends.Perk.LegendLastStand, 1],
+			[2, ::Legends.Perk.NineLives, 2],
+			[1, ::Legends.Perk.LegendSecondWind, 1],
+			[2, ::Legends.Perk.crBlocknormal, 1],
+			[2, ::Legends.Perk.crTrumpcard, 1],
+			[1, ::Legends.Perk.crBruiser, 1],
+			[1, ::Legends.Perk.crRavager, 1],
+			[1, ::Legends.Perk.crDiscipline, 1],
+			[1, ::Legends.Perk.crAnchor, 1],
+			[1, ::Legends.Perk.crBattlerhaposdy, 1],
 		];
 
 		if (::Is_PTR_Exist)
@@ -63,7 +63,7 @@ this.crSellsword_Polearm <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.addPerkTree(this.Const.Perks.ThrowingTree);
 			this.m.Skills.addPerkTree(this.Const.Perks.PolearmTree, 7);
 
-			perkpool.extend([
+			perkpool.extend([ // todo strings are not supported anymore, so is ptr...
 				[4, "perk_ptr_unstoppable", 2],	
 				[4, ["perk_ptr_menacing", "perk_ptr_bully"], 2],
 				[3, "perk_ptr_vigorous_assault", 2],						
@@ -80,7 +80,7 @@ this.crSellsword_Polearm <- this.inherit("scripts/entity/tactical/human", {
 		perkpool = this.Const.World.Common.pickPerks(perkpool, 6);
 		foreach(perk in perkpool)
 		{
-			this.m.Skills.add(perk);	
+			::Legends.Perks.grant(this, perk);
 		}
 		
 		if (this.Math.rand(1, 100) <= 35)
@@ -160,7 +160,7 @@ this.crSellsword_Polearm <- this.inherit("scripts/entity/tactical/human", {
 			{
 				weapons = [
 					"weapons/legend_halberd",
-					"weapons/legend_military_voulge",
+					"weapons/legend_battle_glaive",
 					"weapons/crlongaxe",
 					"weapons/crpolehammer",			
 				]

@@ -148,7 +148,7 @@ this.crSellsword_Ranger <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_bolts"));
 				break;
 			case 9:
-				this.m.Items.equip(this.new("scripts/items/weapons/goblin_crossbow"));
+				this.m.Items.equip(this.new("scripts/items/weapons/greenskins/goblin_crossbow"));
 				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_bolts"));
 				break;
 			default:

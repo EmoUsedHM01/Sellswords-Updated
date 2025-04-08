@@ -157,60 +157,60 @@
 				switch (true)
 				{
 					// attach new perks based on perk tree here
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendSmallTarget:
-						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryCloth);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendSmallTarget:
+						this.m.CustomPerkTree[3].push(::Legends.Perk.ArmorMasteryCloth);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Nimble:
-						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryLight);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.Nimble:
+						this.m.CustomPerkTree[3].push(::Legends.Perk.ArmorMasteryLight);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendLithe:
-						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryMedium);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendLithe:
+						this.m.CustomPerkTree[3].push(::Legends.Perk.ArmorMasteryMedium);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.BattleForged:
-						this.m.CustomPerkTree[3].push(this.Const.Perks.PerkDefs.ArmorMasteryHeavy);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.BattleForged:
+						this.m.CustomPerkTree[3].push(::Legends.Perk.ArmorMasteryHeavy);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendMuscularity:
-						this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crAudaciouscharge);
-						this.m.CustomPerkTree[6].push(this.Const.Perks.PerkDefs.crGrandslam);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendMuscularity:
+						this.m.CustomPerkTree[2].push(::Legends.Perk.crAudaciouscharge);
+						this.m.CustomPerkTree[6].push(::Legends.Perk.crGrandslam);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendSpecFists:
-						this.m.CustomPerkTree[6].push(this.Const.Perks.PerkDefs.LegendUnarmedTraining);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendSpecUnarmed:
+						this.m.CustomPerkTree[6].push(::Legends.Perk.LegendUnarmedTraining);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecAxe:
-						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crHackSPM);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.SpecAxe:
+						this.m.CustomPerkTree[5].push(::Legends.Perk.crHackSPM);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecBow:
-						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crParthianshot);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.SpecBow:
+						this.m.CustomPerkTree[4].push(::Legends.Perk.crParthianshot);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecPolearm:
-						this.m.CustomPerkTree[0].push(this.Const.Perks.PerkDefs.crretrofithooks);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.SpecPolearm:
+						this.m.CustomPerkTree[0].push(::Legends.Perk.crretrofithooks);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.SpecDagger:
-						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crFoB);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.SpecDagger:
+						this.m.CustomPerkTree[4].push(::Legends.Perk.crFoB);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.NineLives:
-						this.m.CustomPerkTree[2].push(this.Const.Perks.PerkDefs.crresilient);
-						this.m.CustomPerkTree[4].push(this.Const.Perks.PerkDefs.crPerseverance);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.NineLives:
+						this.m.CustomPerkTree[2].push(::Legends.Perk.crresilient);
+						this.m.CustomPerkTree[4].push(::Legends.Perk.crPerseverance);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendRebound:
-						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crbeforethestorm);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendRebound:
+						this.m.CustomPerkTree[5].push(::Legends.Perk.crbeforethestorm);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.Footwork:
-						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crBackswing);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.Footwork:
+						this.m.CustomPerkTree[1].push(::Legends.Perk.crBackswing);
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendBackToBasics:
-						this.m.CustomPerkTree[1].push(this.Const.Perks.PerkDefs.crAnchor);
-						this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crBattlerhaposdy);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendBackToBasics:
+						this.m.CustomPerkTree[1].push(::Legends.Perk.crAnchor);
+						this.m.CustomPerkTree[5].push(::Legends.Perk.crBattlerhaposdy);
 						continue;
 					// replace perks here
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.HoldOut:
-						this.m.CustomPerkTree[i][j] = this.Const.Perks.PerkDefs.crresilient;
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.HoldOut:
+						this.m.CustomPerkTree[i][j] = ::Legends.Perk.crresilient;
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.ReachAdvantage:
-						this.m.CustomPerkTree[i][j] = this.Const.Perks.PerkDefs.crReachadvantage;
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.ReachAdvantage:
+						this.m.CustomPerkTree[i][j] = ::Legends.Perk.crReachadvantage;
 						continue;
-					case this.m.CustomPerkTree[i][j] == this.Const.Perks.PerkDefs.LegendClarity:
-						this.m.CustomPerkTree[i][j] = this.Const.Perks.PerkDefs.crClarity;
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendClarity:
+						this.m.CustomPerkTree[i][j] = ::Legends.Perk.crClarity;
 						continue;
 				}
 			}

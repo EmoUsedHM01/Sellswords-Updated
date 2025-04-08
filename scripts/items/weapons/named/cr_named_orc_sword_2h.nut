@@ -40,7 +40,7 @@ this.cr_named_orc_sword_2h <- this.inherit("scripts/items/weapons/named/named_we
 		local skillToAdd = this.new("scripts/skills/actives/overhead_strike");
 		skillToAdd.setStunChance(this.m.StunChance);
 		this.addSkill(skillToAdd);		
-		skillToAdd = this.new("scripts/skills/actives/legend_great_slash");
+		skillToAdd = this.new("scripts/skills/actives/slash");
 		skillToAdd.m.isBunt = true;			
 		skillToAdd.m.Name = "Great Bunt";		
 		skillToAdd.m.Icon = "skills/active_bunt.png";

@@ -12,6 +12,11 @@ this.crDeathknight <- this.inherit("scripts/entity/tactical/enemies/zombie", {
 		this.m.ResurrectionValue = 5.0;
 		this.m.ResurrectionChance = 100;
 		this.m.ResurrectWithScript = "scripts/entity/tactical/enemies/crDeathknight";
+		this.m.OnDeathLootTable.extend([
+			[5, "scripts/items/misc/legend_masterwork_fabric"],
+			[4, "scripts/items/misc/legend_masterwork_metal"],
+			[3, "scripts/items/misc/legend_masterwork_tools"]
+		]);
 	}
 
 	function onDamageReceived( _attacker, _skill, _hitInfo )
@@ -221,31 +226,6 @@ this.crDeathknight <- this.inherit("scripts/entity/tactical/enemies/zombie", {
 		{
 			this.updateAchievement("RestlessDead", 1, 1);
 		}
-
-		if (_tile != null)
-		{
-			if (_killer == null || _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals)
-			{
-				if (this.Math.rand(1, 100) <= 4) //5%
-				{
-					local loot = this.new("scripts/items/misc/legend_masterwork_fabric");
-					loot.drop(_tile);
-				}
-
-				if (this.Math.rand(1, 100) <= 5) //4%
-				{
-					local loot = this.new("scripts/items/misc/legend_masterwork_metal");
-					loot.drop(_tile);
-				}
-
-				if (this.Math.rand(1, 100) <= 3) //3%
-				{
-					local loot = this.new("scripts/items/misc/legend_masterwork_tools");
-					loot.drop(_tile);
-				}
-			}
-		}
-
 		this.zombie.onDeath(_killer, _skill, _tile, _fatalityType);
 	}
 

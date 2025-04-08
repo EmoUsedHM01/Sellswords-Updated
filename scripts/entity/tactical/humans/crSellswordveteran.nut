@@ -57,27 +57,27 @@ this.crSellswordveteran <- this.inherit("scripts/entity/tactical/human", {
 		}
 				
 		local perkpool = [
-			[4, ["perk_crippling_strikes", "perk_coup_de_grace"], 2],
-			[2, ["perk_legend_muscularity", "perk_crGrandslam"], 2],				
-			[3, "perk_fearsome", 2],
-			[2, ["perk_legend_alert","perk_legend_onslaught"], 2],
-			[2, ["perk_steel_brow", "perk_stalwart"], 2],	
-			[2, ["perk_colossus", "perk_steadfast"], 2],
-			[2, ["perk_lone_wolf", "perk_anticipation"], 2],			
-			[1, "perk_head_hunter", 1],													
-			[2, "perk_legend_last_stand", 1],
-			[2, "perk_nine_lives", 2],			
-			[2, "perk_crBlocknormal", 1],
-			[2, "perk_crTrumpcard", 1],
-			[1, "perk_crBruiser", 1],
-			[1, "perk_crRavager", 1],
-			[1, "perk_crIronsideweak", 1],
-			[1, "perk_crBattlerhaposdy", 1]			
+			[4, [::Legends.Perk.CripplingStrikes, ::Legends.Perk.CoupDeGrace], 2],
+			[2, [::Legends.Perk.LegendMuscularity, ::Legends.Perk.crGrandslam], 2],
+			[3, ::Legends.Perk.Fearsome, 2],
+			[2, [::Legends.Perk.LegendAlert, ::Legends.Perk.LegendOnslaught], 2],
+			[2, [::Legends.Perk.SteelBrow, ::Legends.Perk.Stalwart], 2],
+			[2, [::Legends.Perk.Colossus, ::Legends.Perk.Steadfast], 2],
+			[2, [::Legends.Perk.LoneWolf, ::Legends.Perk.Anticipation], 2],
+			[1, ::Legends.Perk.HeadHunter, 1],
+			[2, ::Legends.Perk.LegendLastStand, 1],
+			[2, ::Legends.Perk.NineLives, 2],
+			[2, ::Legends.Perk.crBlocknormal, 1],
+			[2, ::Legends.Perk.crTrumpcard, 1],
+			[1, ::Legends.Perk.crBruiser, 1],
+			[1, ::Legends.Perk.crRavager, 1],
+			[1, ::Legends.Perk.crIronsideweak, 1],
+			[1, ::Legends.Perk.crBattlerhaposdy, 1]
 		];
 
 		if (::Is_PTR_Exist)
 		{
-			perkpool.extend([
+			perkpool.extend([ // todo strings are not supported anymore, so is ptr...
 				[1, "perk_ptr_primal_fear", 1],			
 				[3, "perk_ptr_vigorous_assault", 2],						
 				//[4, "perk_ptr_fresh_and_furious", 2],
@@ -97,7 +97,7 @@ this.crSellswordveteran <- this.inherit("scripts/entity/tactical/human", {
 		perkpool = this.Const.World.Common.pickPerks(perkpool, 16);
 		foreach(perk in perkpool)
 		{
-			this.m.Skills.add(perk);	
+			::Legends.Perks.grant(this, perk);
 		}			
 		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_quick_hands"));		
@@ -419,16 +419,16 @@ this.crSellswordveteran <- this.inherit("scripts/entity/tactical/human", {
 					"weapons/named/named_bardiche",
 					"weapons/named/named_greataxe",
 					"weapons/named/named_heavy_rusty_axe",
-					"weapons/named/named_legend_great_khopesh",							
-					"weapons/named/named_orc_axe_2h",
-					"weapons/named/named_orc_flail_2h",
+					"weapons/named/legend_named_great_khopesh",
+					"weapons/named/legend_named_orc_axe_2h",
+					"weapons/named/legend_named_orc_flail_2h",
 					"weapons/named/named_rusty_warblade",
 					"weapons/named/named_skullhammer",
 					"weapons/named/named_two_handed_flail",
 					"weapons/named/named_two_handed_hammer",
 					"weapons/named/named_two_handed_mace",
-					"weapons/named/named_two_handed_scimitar",				
-					"weapons/named/named_two_handed_spiked_mace",					
+					"weapons/named/named_two_handed_scimitar",
+					"weapons/named/named_two_handed_spiked_mace",
 				];
 
 				if (::Is_PTR_Exist)
@@ -448,7 +448,7 @@ this.crSellswordveteran <- this.inherit("scripts/entity/tactical/human", {
 					"weapons/named/named_flail",
 					"weapons/named/named_goblin_falchion",				
 					"weapons/named/named_goblin_spear",
-					"weapons/named/named_heavy_southern_mace",
+					"weapons/named/legend_named_heavy_southern_mace",
 					"weapons/named/named_khopesh",
 					"weapons/named/named_mace",					
 					"weapons/named/named_orc_axe",	

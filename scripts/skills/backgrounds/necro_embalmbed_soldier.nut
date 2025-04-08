@@ -90,7 +90,7 @@ this.necro_embalmbed_soldier <- this.inherit("scripts/skills/backgrounds/charact
 		];
 		this.m.PerkTreeDynamic = {
 			Weapon = [
-				this.Const.Perks.GreatSwordTree,
+				this.Const.Perks.TwoHandedTree,
 				this.Const.Perks.PolearmTree,
 				this.Const.Perks.AxeTree,
 				this.Const.Perks.MaceTree,
@@ -217,7 +217,7 @@ this.necro_embalmbed_soldier <- this.inherit("scripts/skills/backgrounds/charact
 		local items = this.getContainer().getActor().getItems();
 		local weapons = [
 			"weapons/ancient/legend_kopis",
-			"weapons/ancient/legend_khopesh",
+			"weapons/ancient/legend_brass_khopesh",
 			"weapons/ancient/legend_fan_axe",
 			"weapons/ancient/rhomphaia"
 		];

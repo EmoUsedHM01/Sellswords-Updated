@@ -36,8 +36,13 @@ this.cr_orc_staff <- this.inherit("scripts/items/weapons/weapon", {
 	function onEquip()
 	{
 		this.weapon.onEquip();
-		this.addSkill(this.new("scripts/skills/actives/legend_staff_bash_skill"));
-		this.addSkill(this.new("scripts/skills/actives/legend_staff_knock_out_skill"));
+		::Legends.Actives.grant(this, ::Legends.Active.Bash, function (_skill) {
+			_skill.m.IsStaffBash = true;
+		}.bindenv(this));
+		::Legends.Actives.grant(this, ::Legends.Active.KnockOut, function (_skill) {
+			_skill.m.IsStaffKnockOut = true;
+		}.bindenv(this));
+
 		this.addSkill(this.new("scripts/skills/actives/crstaff_sweep"));
 
 		local skill = this.new("scripts/skills/actives/split_shield");

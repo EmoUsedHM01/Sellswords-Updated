@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_voulge_cleave_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_scythe_cleave_skill", function ( q ) {
 
 	q.getTooltip = @( __original ) function()
 	{

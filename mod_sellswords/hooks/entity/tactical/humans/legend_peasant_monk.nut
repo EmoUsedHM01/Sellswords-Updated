@@ -12,7 +12,7 @@
 		local dirt = this.getSprite("dirt");
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_staff_skill"));
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistSelfdefense);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_staff_stun"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_push_the_advantage"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rally_the_troops"));

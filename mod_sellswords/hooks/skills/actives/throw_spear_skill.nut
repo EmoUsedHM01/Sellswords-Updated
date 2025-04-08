@@ -11,6 +11,7 @@
 			}
 			_properties.HitChanceAdditionalWithEachTile += this.m.AdditionalHitChance;
 
+
 			if (_targetEntity != null)
 			{
 				local shield = _targetEntity.getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
@@ -27,7 +28,7 @@
 				weapon.m.ShieldDamage *= 2;
 
 			if (this.getContainer().hasSkill("perk.legend_smashing_shields"))
-				weapon.m.ShieldDamage *= 2
+				weapon.m.ShieldDamage *= 2;
 		}
 	}
 });

@@ -1,16 +1,20 @@
-this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
+this.cr_anatomist_recruit_encounter <- this.inherit("scripts/events/event", {
 	m = {
 		Dude = null,
-		Town = null
 	},
-	function create()
-	{
-		this.m.ID = "event.anatomist_recruit";
-		this.m.Title = "Along the way...";
+
+	function create() {
+		this.createScreens();
+		this.m.Type = "encounter.cr_anatomist_recruit_encounter";
+		this.m.Name = "Anatomist";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
+	}
+
+	function createScreens()
+	{
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_184.png[/img]{Your company arrives at %townname% after a long and grueling journey. Seeking respite for mind and feet, you and your men head towards the local tavern, hoping for a warm meal and perhaps some news or a new contract. As the night wears on and the ale flows freely, your attention is drawn to a peculiar figure seated alone in the corner, surrounded by books and scrolls.\n\nThe %person_anatomist% is meticulously scribbling notes, occasionally pausing to take a sip from %their_anatomist% mug. %Their_anatomist% attire, though travel-worn, hints at a scholarly background. The strange collection of vials and anatomical diagrams laid out before %them_anatomist% further piques your curiosity. You approach %them_anatomist%, and %they_anatomist% looks up, eyes gleaming with a mixture of enthusiasm and exhaustion.%SPEECH_ON%Ah, a sellsword company, I presume? A fortunate encounter, indeed! You see, I am %anatomist%, an Anatomist, a seeker of knowledge in the realm of flesh and bone. My research requires specimens—fresh ones—and your line of work, well, it seems to provide ample opportunity for that, does it not?%SPEECH_OFF%}",
+			Text = "[img]gfx/ui/events/event_184.png[/img]{Your company arrives at %settlement% after a long and grueling journey. Seeking respite for mind and feet, you and your men head towards the local tavern, hoping for a warm meal and perhaps some news or a new contract. As the night wears on and the ale flows freely, your attention is drawn to a peculiar figure seated alone in the corner, surrounded by books and scrolls.\n\nThe %person_anatomist% is meticulously scribbling notes, occasionally pausing to take a sip from %their_anatomist% mug. %Their_anatomist% attire, though travel-worn, hints at a scholarly background. The strange collection of vials and anatomical diagrams laid out before %them_anatomist% further piques your curiosity. You approach %them_anatomist%, and %they_anatomist% looks up, eyes gleaming with a mixture of enthusiasm and exhaustion.%SPEECH_ON%Ah, a sellsword company, I presume? A fortunate encounter, indeed! You see, I am %anatomist%, an Anatomist, a seeker of knowledge in the realm of flesh and bone. My research requires specimens—fresh ones—and your line of work, well, it seems to provide ample opportunity for that, does it not?%SPEECH_OFF%}",
 			Banner = "",
 			Characters = [],
 			Options = [
@@ -113,40 +117,18 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 		});
 	}
 
-	function onUpdateScore()
+	function isValid (_settlement)
 	{
-		if (!this.Const.DLC.Paladins)
-			return;
+		if (!_settlement.hasBuilding("building.tavern"))
+			return false;
 
 		if (this.World.Assets.getBusinessReputation() < 1000)
-			return;
+			return false;
 
 		if (this.World.getPlayerRoster().getSize() >= this.World.Assets.getBrothersMax())
-			return;
+			return false;
 
-		local towns = this.World.EntityManager.getSettlements();
-		local nearTown = false;
-		local town;
-		local playerTile = this.World.State.getPlayer().getTile();
-
-		foreach( t in towns )
-		{
-			if (t.isSouthern() || t.isMilitary())
-				continue;
-
-			if (t.getTile().getDistanceTo(playerTile) <= 3 && t.isAlliedWithPlayer())
-			{
-				nearTown = true;
-				town = t;
-				break;
-			}
-		}
-
-		if (!nearTown)
-			return;
-
-		this.m.Town = town;
-		this.m.Score = 7;
+		return !isOnCooldown();
 	}
 
 	function onPrepare()
@@ -159,17 +141,12 @@ this.anatomist_recruit_event <- this.inherit("scripts/events/event", {
 			"anatomist",
 			this.m.Dude.getNameOnly()
 		]);
-		_vars.push([
-			"townname",
-			this.m.Town.getName()
-		]);
 		::Const.LegendMod.extendVarsWithPronouns(_vars, this.m.Dude.getGender(), "anatomist");
 	}
 
 	function onClear()
 	{
 		this.m.Dude = null;
-		this.m.Town = null;
 	}
 
 });

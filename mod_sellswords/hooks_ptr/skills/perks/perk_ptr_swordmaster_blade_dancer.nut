@@ -4,7 +4,7 @@
 	o.m.FatigueCostIncreasePerCount <- 15;
 	o.onAnySkillExecuted <- function ( _skill, _targetTile, _targetEntity, _forFree )
 	{
-		if (_skill.getID() == "actives.slash" || _skill.getID() == "actives.legend_great_slash")
+		if (_skill.getID() == "actives.slash")
 		{
 			this.m.Count++;
 		}

@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_sickle_damage", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_specialist_herbalist", function ( q ) {
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{
@@ -16,13 +16,13 @@
 		{
 			if (item.getID() == "weapon.sickle" || item.getID() == "weapon.legend_named_sickle" || item.getID() == "weapon.goblin_notched_blade")
 			{
-				_properties.DamageRegularMin += 6;
-				_properties.DamageRegularMax += 16;
+				_properties.MeleeSkill += 12;
+				_properties.DamageDirectMult += 0.25;
 			}
 			else if (item.isWeaponType(this.Const.Items.WeaponType.Sword))
 			{
-				_properties.DamageRegularMin += 6 * dc;
-				_properties.DamageRegularMax += 16 * dc;
+				_properties.MeleeSkill += 12 * dc;
+				_properties.DamageDirectMult += 0.25 * dc;
 			}
 		}
 	}

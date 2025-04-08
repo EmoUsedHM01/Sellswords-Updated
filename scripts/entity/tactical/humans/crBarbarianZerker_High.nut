@@ -71,7 +71,7 @@ this.crBarbarianZerker_High <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_fist"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_unarmed"));
 
 		if (::Is_PTR_Exist)
 		{

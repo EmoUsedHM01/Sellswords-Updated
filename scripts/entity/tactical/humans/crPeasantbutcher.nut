@@ -32,11 +32,10 @@ this.crPeasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
 		this.getSprite("socket").setBrush("bust_base_militia");
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_bloodbath"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_butcher_skill"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_specialist_butcher_damage"));		
-		this.m.Skills.add(this.new("scripts/skills/actives/legend_prepare_bleed_skill"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_cleaver"));
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendBloodbath);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistButcher);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendPrepareBleed);
+		::Legends.Perks.grant(this, ::Legends.Perk.SpecCleaver);
 
 		if (::Is_PTR_Exist)
 		{
@@ -49,10 +48,11 @@ this.crPeasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 
 		if("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
-			this.m.Hitpoints = b.Hitpoints * 1.4;		
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lacerate"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_slaughter"));
-			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
+			this.m.Hitpoints = b.Hitpoints * 1.4;
+
+			::Legends.Perks.grant(this, ::Legends.Perk.LegendLacerate);
+			::Legends.Perks.grant(this, ::Legends.Perk.LegendSlaughterer);
+			::Legends.Traits.grant(this, ::Legends.Trait.Fearless);
 
 			if (::Is_PTR_Exist)
 			{

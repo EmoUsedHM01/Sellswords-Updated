@@ -1,5 +1,5 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_slaughter", function ( q ) {
-
+	// todo
 	q.getBleeders <- function()
 	{
 		if (!("Entities" in this.Tactical))
