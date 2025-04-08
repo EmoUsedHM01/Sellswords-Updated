@@ -1,3 +1,10 @@
+8.4.1 changes
+
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+switch to new legends hook for damage
+
+----------------------------------------------------------------------------------------------------------------------------
+
 8.4.0 changes
 
 .../mod_sellswords/config/a_sellswords_global.nut
