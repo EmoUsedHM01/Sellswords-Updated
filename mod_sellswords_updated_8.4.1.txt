@@ -1,7 +1,12 @@
 8.4.1 changes
 
 ...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
-switch to new legends hook for damage
+switch to new legends hook for damage - Breaky
+...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
+Replace reach advantage in the two handed tree - Breaky
+...\scripts\skills\actives\zcr_charge.nut
+Fix a bug preventing the stun effects from occuring - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

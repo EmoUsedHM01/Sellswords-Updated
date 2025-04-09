@@ -8,6 +8,8 @@
 ::Const.Perks.PolearmTree.Tree[0] = [::Const.Perks.PerkDefs.crretrofithooks];
 ::Const.Perks.PolearmTree.Tree[4] = [::Const.Perks.PerkDefs.crReachadvantage];
 
+::Const.Perks.TwoHandedTree.Tree[4] = [::Const.Perks.PerkDefs.crReachadvantage];
+
 // Bow tree
 ::Const.Perks.BowTree.Tree[4] = [::Const.Perks.PerkDefs.crParthianshot];
 

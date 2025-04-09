@@ -256,8 +256,10 @@ this.zcr_charge <- this.inherit("scripts/skills/skill", {
 			_tag.Skill.m.IsCharging = false;	
 
 			if (!victim.isAlive() || victim.isDying())
+			{
 				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_entity) + " charges and tramples " + this.Const.UI.getColorizedEntityName(victim));	
 				return;
+			}
 
 			if (_tag.Skill.m.SoundOnHit.len() != 0)
 				this.Sound.play(_tag.Skill.m.SoundOnHit[this.Math.rand(0, _tag.Skill.m.SoundOnHit.len() - 1)], this.Const.Sound.Volume.Skill, victim.getPos());
