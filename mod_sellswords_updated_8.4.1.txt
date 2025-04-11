@@ -6,7 +6,17 @@ switch to new legends hook for damage - Breaky
 Replace reach advantage in the two handed tree - Breaky
 ...\scripts\skills\actives\zcr_charge.nut
 Fix a bug preventing the stun effects from occuring - Breaky
-
+...\mod_sellswords\config\spawnlist_bandits.nut
+...\mod_sellswords\config\spawnlist_barbarians.nut
+...\mod_sellswords\config\spawnlist_dryad.nut
+...\mod_sellswords\config\spawnlist_goblins.nut
+...\mod_sellswords\config\spawnlist_greenskin_invasion.nut
+...\mod_sellswords\config\spawnlist_nobles.nut
+...\mod_sellswords\config\spawnlist_nomads.nut
+...\mod_sellswords\config\spawnlist_orc.nut
+...\mod_sellswords\config\spawnlist_southern.nut
+...\mod_sellswords\config\spawnlist_zombies.nut
+Fixed spawn lists, also Stronghold should work properly with SSU now
 
 ----------------------------------------------------------------------------------------------------------------------------
 

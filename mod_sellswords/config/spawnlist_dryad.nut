@@ -1,13 +1,3 @@
-if (!("World" in ::Const))
-{
-	::Const.World <- {};
-}
-
-if (!("Spawn" in ::Const.World))
-{
-	::Const.World.Spawn <- {};
-}
-
 ::Const.World.Spawn.Dryads <- {
 	Name = "Dryads",
 	IsDynamic = true,
