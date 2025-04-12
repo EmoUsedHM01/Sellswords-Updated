@@ -19,6 +19,11 @@ Fix a bug preventing the stun effects from occuring - Breaky
 Fixed spawn lists, also Stronghold should work properly with SSU now - chopeks
 ...\mod_sellswords\config\y_perk_defs.nut
 Fixed null when applying LegendStrengthInNumbers perk - chopeks
+...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+Add back backstabber where relevant - Breaky
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+Fix bleeding effect - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
