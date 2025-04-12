@@ -2,7 +2,7 @@
 ::Const.Perks.AxeTree.Tree[5] = [::Const.Perks.PerkDefs.crHackSPM];
 
 // Dagger tree
-::Const.Perks.DaggerTree.Tree[4] = [::Const.Perks.PerkDefs.crFoB];
+::Const.Perks.DaggerTree.Tree[4] = [::Const.Perks.PerkDefs.crFoB, ::Const.Perks.PerkDefs.Backstabber];
 
 // Polearm tree
 ::Const.Perks.PolearmTree.Tree[0] = [::Const.Perks.PerkDefs.crretrofithooks];

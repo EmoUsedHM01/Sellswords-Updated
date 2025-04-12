@@ -33,7 +33,7 @@
 ::Const.Perks.DeviousTree.Tree[2] = [::Const.Perks.PerkDefs.LegendEvasion]; // Swaps LegendBlendIn
 //::Const.Perks.DeviousTree.Tree[3] = [];
 ::Const.Perks.DeviousTree.Tree[4] = []; // Swaps LegendEvasion
-::Const.Perks.DeviousTree.Tree[5] = [::Const.Perks.PerkDefs.LegendDoubleStrike]; // No swap
+::Const.Perks.DeviousTree.Tree[5] = [::Const.Perks.PerkDefs.LegendDoubleStrike, ::Const.Perks.PerkDefs.Backstabber]; // No swap
 ::Const.Perks.DeviousTree.Tree[6] = [::Const.Perks.PerkDefs.LegendMindOverBody]; // No swap
 
 // Fast tree
