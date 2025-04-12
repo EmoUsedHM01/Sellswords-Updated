@@ -1,5 +1,3 @@
-::Legends.Perk.LegendStrengthInNumbers <- null;
-
 local perkDefObjects = [];
 
 ::Legends.Perk.crBackswing <- null;

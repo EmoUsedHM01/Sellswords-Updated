@@ -16,7 +16,9 @@ Fix a bug preventing the stun effects from occuring - Breaky
 ...\mod_sellswords\config\spawnlist_orc.nut
 ...\mod_sellswords\config\spawnlist_southern.nut
 ...\mod_sellswords\config\spawnlist_zombies.nut
-Fixed spawn lists, also Stronghold should work properly with SSU now
+Fixed spawn lists, also Stronghold should work properly with SSU now - chopeks
+...\mod_sellswords\config\y_perk_defs.nut
+Fixed null when applying LegendStrengthInNumbers perk - chopeks
 
 ----------------------------------------------------------------------------------------------------------------------------
 
