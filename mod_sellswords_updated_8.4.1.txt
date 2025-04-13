@@ -6,7 +6,6 @@ Fix knockback prepared effect - Breaky
 Rename to carnage - Breaky
 ...\mod_sellswords\hooks\skills\actives\legend_root_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_decapitate_skill.nut
-Remove these because of duplicated features - Breaky
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_blacksmith.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_butcher.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_cultist.nut
@@ -19,8 +18,6 @@ Remove these because of duplicated features - Breaky
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_prisoner.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_woodsman.nut
 Remove these because of duplicated features - Breaky
-
-
 
 ----------------------------------------------------------------------------------------------------------------------------
 
