@@ -1,3 +1,10 @@
+8.4.2 changes
+
+...\mod_sellswords\hooks\skills\effects\legend_knockback_prepared_effect.nut
+Fix knockback prepared effect - Breaky
+
+----------------------------------------------------------------------------------------------------------------------------
+
 8.4.1 changes
 
 ...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
