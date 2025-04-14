@@ -1,9 +1,17 @@
+8.4.3 changes
+
+...
+
+----------------------------------------------------------------------------------------------------------------------------
+
 8.4.2 changes
 
 ...\mod_sellswords\hooks\skills\effects\legend_knockback_prepared_effect.nut
 Fix knockback prepared effect - Breaky
+
 ...\mod_sellswords\hooks\skills\perks\perk_legend_slaughter.nut
 Rename to carnage - Breaky
+
 ...\mod_sellswords\hooks\skills\actives\legend_root_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_voulge_decapitate_skill.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_blacksmith.nut
@@ -18,6 +26,7 @@ Rename to carnage - Breaky
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_prisoner.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_specialist_woodsman.nut
 Remove these because of duplicated features - Breaky
+
 ...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
 ...\mod_sellswords\hooks\skills\effects\legend_bleed_prepared_effect.nut
 ...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
@@ -29,15 +38,18 @@ Remove these because of duplicated features - Breaky
 ...\scripts\skills\perks\perk_crBattlerhaposdy.nut
 ...\scripts\skills\perks\perk_crTrumpcard.nut
 Check if entity is attackable for these skills - Breaky
+
 ...\mod_sellswords\hooks\items\misc\anatomist\anatomist_potion_item.nut
 Make the anatomist potions sellable - Breaky
+
 ...\mod_sellswords\hooks\skills\actives\split_shield.nut
 Remove the doubled ap recovery on shield destroyed - Breaky
+
 ...\mod_sellswords\hooks\skills\actives\throw_net.nut
 Fix throw net in accordance to legends changes - Breaky
+
 ...\mod_sellswords\hooks\skills\actives\throw_spear_skill.nut
 Simplify the throw spear hook - Breaky
-
 
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -45,10 +57,13 @@ Simplify the throw spear hook - Breaky
 
 ...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
 switch to new legends hook for damage - Breaky
+
 ...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
 Replace reach advantage in the two handed tree - Breaky
+
 ...\scripts\skills\actives\zcr_charge.nut
 Fix a bug preventing the stun effects from occuring - Breaky
+
 ...\mod_sellswords\config\spawnlist_bandits.nut
 ...\mod_sellswords\config\spawnlist_barbarians.nut
 ...\mod_sellswords\config\spawnlist_dryad.nut
@@ -60,11 +75,14 @@ Fix a bug preventing the stun effects from occuring - Breaky
 ...\mod_sellswords\config\spawnlist_southern.nut
 ...\mod_sellswords\config\spawnlist_zombies.nut
 Fixed spawn lists, also Stronghold should work properly with SSU now - chopeks
+
 ...\mod_sellswords\config\y_perk_defs.nut
 Fixed null when applying LegendStrengthInNumbers perk - chopeks
+
 ...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
 ...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
 Add back backstabber where relevant - Breaky
+
 ...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
 Fix bleeding effect - Breaky
 
@@ -231,6 +249,8 @@ Fix bleeding effect - Breaky
 .../scripts/skills/backgrounds/ssu_dryad_warrior_background.nut
 .../scripts/skills/effects/phantom_strike_effect.nut
 v19.1 legends changes - chopeks, Breaky, Celestial
+
+----------------------------------------------------------------------------------------------------------------------------
 
 8.3.12 changes
 

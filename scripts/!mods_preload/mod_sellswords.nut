@@ -1,7 +1,7 @@
 ::Mod_Sellswords <- {
 	ID = "mod_sellswords",
 	Name = "Sellswords Updated",
-	Version = "8.4.2",
+	Version = "8.4.3",
 	EnableEnemySS = true,
 	KeepSpawningEnemySS = false,
 	SellswordStrengthMultiplier = 100,
