@@ -29,7 +29,8 @@ Remove these because of duplicated features - Breaky
 ...\scripts\skills\perks\perk_crBattlerhaposdy.nut
 ...\scripts\skills\perks\perk_crTrumpcard.nut
 Check if entity is attackable for these skills - Breaky
-
+...\mod_sellswords\hooks\items\misc\anatomist\anatomist_potion_item.nut
+make the anatomist potions sellable - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 

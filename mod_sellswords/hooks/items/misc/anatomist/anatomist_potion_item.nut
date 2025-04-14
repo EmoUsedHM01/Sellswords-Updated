@@ -1,5 +1,11 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/items/misc/anatomist/anatomist_potion_item", function ( q ) {
 
+	q.create = @(__original) function()
+	{
+		__original();
+		this.m.IsSellable = true;
+	}
+
 	q.onUse = @(__original) function( _actor, _item = null )
 	{
 		// Apply sickness per mutation
