@@ -49,6 +49,12 @@
 
 	q.onTargetMissed = @(__original) function(  _skill, _targetEntity )
 	{
+		if (_targetEntity == null)
+			return;
+
+		if (_targetEntity.isAttackable())
+			return;
+			
 		if (!this.isGarbage() && _skill.isAttack())
 		{
 			if (this.Time.getFrame() != this.m.Frame)

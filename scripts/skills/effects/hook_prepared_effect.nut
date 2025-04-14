@@ -66,6 +66,12 @@ this.hook_prepared_effect <- this.inherit("scripts/skills/skill", {
 
 	function onTargetMissed( _skill, _targetEntity )
 	{
+		if (_targetEntity == null)
+			return;
+
+		if (_targetEntity.isAttackable())
+			return;
+			
 		local weapon = this.getContainer().getActor().getMainhandItem();
 		if (weapon == null || weapon.getRangeMax() < 1)
 		{

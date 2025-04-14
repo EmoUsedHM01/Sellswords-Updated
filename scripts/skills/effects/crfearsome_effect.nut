@@ -43,6 +43,12 @@ this.crfearsome_effect <- this.inherit("scripts/skills/skill", {
 
 	function onTargetMissed( _skill, _targetEntity )
 	{
+		if (_targetEntity == null)
+			return;
+
+		if (_targetEntity.isAttackable())
+			return;
+			
 		this.removeSelf();
 	}
 

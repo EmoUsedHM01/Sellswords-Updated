@@ -78,6 +78,12 @@ this.kuangzhanshinuhou_effect <- this.inherit("scripts/skills/skill", {
 
 	function onTargetMissed( _skill, _targetEntity )
 	{
+		if (_targetEntity == null)
+			return;
+
+		if (_targetEntity.isAttackable())
+			return;
+			
 		this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.Actor, this.getContainer().getActor().getPos(), this.Math.rand(100, 115) * 0.01 * this.getContainer().getActor().getSoundPitch());
 	}
 

@@ -86,6 +86,12 @@ this.perk_crBattlerhaposdy <- this.inherit("scripts/skills/skill", {
 
 	function onTargetMissed( _skill, _targetEntity )
 	{
+		if (_targetEntity == null)
+			return;
+
+		if (_targetEntity.isAttackable())
+			return;
+			
 		if (_skill.isAttack() && !_targetEntity.isAlliedWith(this.getContainer().getActor()))
 		{
 			this.m.Stacks = this.Math.floor(this.m.Stacks / 2);

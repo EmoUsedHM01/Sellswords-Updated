@@ -126,7 +126,13 @@ this.perk_crTrumpcard <- this.inherit("scripts/skills/skill", {
 
 	function onTargetMissed( _skill, _targetEntity )
 	{
-		if (_targetEntity != null && _skill != null && !_skill.isRanged() && _skill.isAttack())
+		if (_targetEntity == null)
+			return;
+
+		if (_targetEntity.isAttackable())
+			return;
+			
+		if (_skill != null && !_skill.isRanged() && _skill.isAttack())
 		{
 			local opponentEntry = this.getOpponentEntry(_targetEntity.getID());
 			if (opponentEntry == null)
