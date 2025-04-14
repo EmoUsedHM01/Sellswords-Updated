@@ -24,11 +24,6 @@
 			local sms = this.getContainer().getSkillByID("actives.split_shield");
 			local fatrefund = sms.m.FatigueCost;
 			_user.setFatigue(this.Math.max(0, _user.getFatigue() - 0.5 * fatrefund));
-			if(!::Is_PTR_Exist)
-			{
-				_user.setActionPoints(this.Math.min(_user.getActionPointsMax(), _user.getActionPoints() + 4));
-				this.spawnIcon("perk_legend_smashing_shields", _user.getTile());
-			}
 		}
 
 		return ret;

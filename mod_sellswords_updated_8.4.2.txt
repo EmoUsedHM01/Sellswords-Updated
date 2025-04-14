@@ -30,7 +30,14 @@ Remove these because of duplicated features - Breaky
 ...\scripts\skills\perks\perk_crTrumpcard.nut
 Check if entity is attackable for these skills - Breaky
 ...\mod_sellswords\hooks\items\misc\anatomist\anatomist_potion_item.nut
-make the anatomist potions sellable - Breaky
+Make the anatomist potions sellable - Breaky
+...\mod_sellswords\hooks\skills\actives\split_shield.nut
+Remove the doubled ap recovery on shield destroyed - Breaky
+...\mod_sellswords\hooks\skills\actives\throw_net.nut
+Fix throw net in accordance to legends changes - Breaky
+...\mod_sellswords\hooks\skills\actives\throw_spear_skill.nut
+Simplify the throw spear hook - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
