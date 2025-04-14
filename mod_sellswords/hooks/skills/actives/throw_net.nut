@@ -32,7 +32,7 @@
 			rd *= 0.75;
 		}
 
-		if (rd > this.getHitchance(_targetTile.getEntity()) || crrd || escapeartist))
+		if (rd > this.getHitchance(_targetTile.getEntity()) || crrd || escapeartist)
 		{
 			local isPlayer = ::MSU.isKindOf(_user, "player");
 			local net = _user.getItems().getItemAtSlot(::Const.ItemSlot.Offhand);
