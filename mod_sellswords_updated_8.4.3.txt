@@ -1,6 +1,16 @@
 8.4.3 changes
 
-...
+...\mod_sellswords\hooks\skills\effects\debilitating_attack_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_bleed_prepared_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_graze_prepared_effect.nut
+...\mod_sellswords\hooks\skills\perks\perk_fast_adaption.nut
+...\scripts\skills\effects\crfearsome_effect.nut
+...\scripts\skills\effects\hook_prepared_effect.nut
+...\scripts\skills\effects\kuangzhanshinuhou_effect.nut
+...\scripts\skills\perks\perk_crBackswing.nut
+...\scripts\skills\perks\perk_crBattlerhaposdy.nut
+...\scripts\skills\perks\perk_crTrumpcard.nut
+fixed isAttackable check for these skills - chopeks
 
 ----------------------------------------------------------------------------------------------------------------------------
 

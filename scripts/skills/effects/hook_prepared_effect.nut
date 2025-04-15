@@ -69,7 +69,7 @@ this.hook_prepared_effect <- this.inherit("scripts/skills/skill", {
 		if (_targetEntity == null)
 			return;
 
-		if (_targetEntity.isAttackable())
+		if (!_targetEntity.isAttackable())
 			return;
 			
 		local weapon = this.getContainer().getActor().getMainhandItem();

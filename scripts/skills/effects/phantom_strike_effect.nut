@@ -135,7 +135,7 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 		if (_targetEntity == null)
 			return;
 
-		if (_targetEntity.isAttackable())
+		if (!_targetEntity.isAttackable())
 			return;
 		this.m.skillCount = this.Const.SkillCounter;
 		this.m.LastTargetID = _targetEntity.getID();

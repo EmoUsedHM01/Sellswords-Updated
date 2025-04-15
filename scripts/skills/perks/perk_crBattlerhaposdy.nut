@@ -89,7 +89,7 @@ this.perk_crBattlerhaposdy <- this.inherit("scripts/skills/skill", {
 		if (_targetEntity == null)
 			return;
 
-		if (_targetEntity.isAttackable())
+		if (!_targetEntity.isAttackable())
 			return;
 			
 		if (_skill.isAttack() && !_targetEntity.isAlliedWith(this.getContainer().getActor()))

@@ -54,7 +54,10 @@
 
 	q.onTargetMissed = @(__original) function(  _skill, _targetEntity )
 	{
-		if (_targetEntity.isAttackable())
+		if (_targetEntity == null)
+			return;
+
+		if (!_targetEntity.isAttackable())
 			return;
 			
 		if (!this.isGarbage() && _skill.isAttack())

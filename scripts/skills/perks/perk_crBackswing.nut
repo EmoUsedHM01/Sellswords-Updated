@@ -21,7 +21,7 @@ this.perk_crBackswing <- this.inherit("scripts/skills/skill", {
 		if (_targetEntity == null)
 			return;
 
-		if (_targetEntity.isAttackable())
+		if (!_targetEntity.isAttackable())
 			return;
 			
 		if (_skill.m.ActionPointCost >= 2 && !this.m.IsSpent)

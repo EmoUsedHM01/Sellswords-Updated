@@ -52,7 +52,7 @@
 		if (_targetEntity == null)
 			return;
 
-		if (_targetEntity.isAttackable())
+		if (!_targetEntity.isAttackable())
 			return;
 			
 		if (!this.isGarbage() && _skill.isAttack())

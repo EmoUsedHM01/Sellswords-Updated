@@ -44,7 +44,7 @@ this.perk_crmeleeskill <- this.inherit("scripts/skills/skill", {
 		if (_targetEntity == null)
 			return;
 
-		if (_targetEntity.isAttackable())
+		if (!_targetEntity.isAttackable())
 			return;
 		
 		if(!_targetEntity.isAlive() || _targetEntity.isDying())

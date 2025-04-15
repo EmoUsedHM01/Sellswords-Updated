@@ -129,7 +129,7 @@ this.perk_crTrumpcard <- this.inherit("scripts/skills/skill", {
 		if (_targetEntity == null)
 			return;
 
-		if (_targetEntity.isAttackable())
+		if (!_targetEntity.isAttackable())
 			return;
 			
 		if (_skill != null && !_skill.isRanged() && _skill.isAttack())
