@@ -175,6 +175,8 @@ setupBackground("scripts/skills/backgrounds/legend_noble_shield", ["scripts/skil
 setupBackground("scripts/skills/backgrounds/legend_peddler_commander_background", ["scripts/skills/perks/perk_legend_barter_trustworthy"], [{def = ::Legends.Perk.LegendBarterTrustworthy, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_pilgrim_background", ["scripts/skills/perks/perk_legend_prayer_of_faith"], [{def = ::Legends.Perk.LegendPrayerOfFaith, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/legend_gladiator_prizefighter_background", ["scripts/skills/perks/perk_battle_flow"], [{def = ::Legends.Perk.BattleFlow, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_qiyan_background", ["scripts/skills/perks/perk_legend_barter_convincing"], [{def = ::Legends.Perk.LegendBarterConvincing, level = 0, optional = false}]);
 	
