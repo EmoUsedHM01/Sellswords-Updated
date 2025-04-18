@@ -1,5 +1,8 @@
 8.4.3 changes
 
+...\mod_sellswords\hooks\factions\actions\send_citystate_army_action.nut
+fixed crash in holy war southern action - chopeks
+
 ...\mod_sellswords\hooks\skills\effects\legend_knockback_prepared_effect.nut
 fixed wrong const in knockback - chopeks
 

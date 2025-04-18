@@ -13,7 +13,7 @@
 
 			potential_origins.push({
 				D = s,
-				P = s.getResources()
+				P = ::Math.max(1, s.getResources())
 			});
 		}
 
