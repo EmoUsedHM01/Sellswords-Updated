@@ -1244,8 +1244,7 @@ this.legend_tournament_enter_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in this.World.getPlayerRoster().getAll() )
 		{
-			if (bro.getSkills().hasSkill("trait.arena_veteran"))
-			{
+			if (::Legends.Traits.has(bro, ::Legends.Trait.LegendArenaVeteran) || ::Legends.Traits.has(bro, ::Legends.Trait.LegendArenaChampion) || ::Legends.Traits.has(bro, ::Legends.Trait.LegendArenaInvictus)) {
 				candidate_veteran.push(bro);
 			}
 		}
