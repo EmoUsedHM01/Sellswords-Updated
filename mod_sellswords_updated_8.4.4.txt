@@ -1,5 +1,17 @@
 8.4.4 changes
 
+...\mod_sellswords\mod_sellswords\config\z_background_perks.nut
+added starting perk to gladiator prizefighther - Maher
+
+...\mod_sellswords\mod_sellswords\hooks\skills\perks\perk_coup_de_grace.nut
+removed coup de grace changes in favor of legends changes - chopeks
+
+...\mod_sellswords\mod_sellswords\hooks\config\strings.nut
+tooltip fixes - Celestial
+
+...\mod_sellswords\scripts\events\events\legend_tournament_enter_event.nut
+fixed tournament check - chopeks
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.3 changes
