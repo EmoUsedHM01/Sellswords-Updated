@@ -12,6 +12,11 @@ tooltip fixes - Celestial
 ...\mod_sellswords\scripts\events\events\legend_tournament_enter_event.nut
 fixed tournament check - chopeks
 
+...\mod_sellswords\hooks\skills\actives\strike_skill.nut
+Fix the specialist bonuses for strike - Breaky
+...\mod_sellswords\hooks\skills\actives\throw_spear_skill.nut
+Fix throw spear hitting with the power of the sun - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.3 changes
