@@ -6,7 +6,7 @@
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 120)
 		{
 			this.m.BaseProperties.RangedSkill += 5;	
-			//this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));				
+			//this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));				
 		}		
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{

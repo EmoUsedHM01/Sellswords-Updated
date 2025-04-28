@@ -113,7 +113,7 @@ this.crImmortal <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_balance"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_unarmed"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_flow"));

@@ -285,7 +285,7 @@ this.dryad_wolf <- this.inherit("scripts/entity/tactical/actor", {
 		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_composure"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_poison_immunity"));
 

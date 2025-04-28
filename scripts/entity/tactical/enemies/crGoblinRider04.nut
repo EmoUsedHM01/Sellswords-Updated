@@ -121,7 +121,7 @@ this.crGoblinRider04 <- this.inherit("scripts/entity/tactical/goblin", {
 		wolf_bite.m.ActionPointCost = 0;
 		this.m.Skills.add(wolf_bite);
 		
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBattlerhaposdy"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));

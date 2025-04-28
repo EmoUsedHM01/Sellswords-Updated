@@ -60,7 +60,7 @@ this.crZombieswordmaster <- this.inherit("scripts/entity/tactical/enemies/zombie
 		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_poison_immunity"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)

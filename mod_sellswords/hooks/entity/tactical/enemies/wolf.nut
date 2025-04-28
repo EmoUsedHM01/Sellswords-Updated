@@ -3,7 +3,7 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));	

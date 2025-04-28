@@ -23,7 +23,7 @@
 
 			if (dc >= 120)
 			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_crIronsideweak"));
 
 				if (dc >= 160)

@@ -78,7 +78,7 @@ this.crSellsword_Lieutenant <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));	
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));				
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_fortified_mind"));			
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mind_over_body"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));			

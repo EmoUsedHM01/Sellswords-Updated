@@ -26,7 +26,7 @@ this.crGoblinRider00 <- this.inherit("scripts/entity/tactical/goblin", {
 		this.getSprite("head").setBrush("bust_goblin_01_head_0" + this.Math.rand(1, 3));
 		this.addDefaultStatusSprites();
 				
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBattlerhaposdy"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));

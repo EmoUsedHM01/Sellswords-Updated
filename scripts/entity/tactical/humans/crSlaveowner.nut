@@ -61,7 +61,7 @@ this.crSlaveowner <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/actives/crwhip"));
 		this.m.Skills.add(this.new("scripts/skills/actives/throw_dirt_skill"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
 				
 		if (this.World.getTime().Days >= 60)

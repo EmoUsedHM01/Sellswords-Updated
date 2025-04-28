@@ -121,7 +121,7 @@ this.crSellsword_Tank <- this.inherit("scripts/entity/tactical/human", {
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));			
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));			
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));			
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/traits/iron_jaw_trait"));
 

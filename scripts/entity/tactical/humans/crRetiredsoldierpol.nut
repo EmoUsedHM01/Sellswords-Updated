@@ -27,7 +27,7 @@ this.crRetiredsoldierpol <- this.inherit("scripts/entity/tactical/human", {
 		this.getSprite("socket").setBrush("bust_base_militia");
 		this.getSprite("accessory_special").setBrush("bust_militia_band_01");
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 
 		if (::Is_PTR_Exist)
 		{

@@ -37,7 +37,7 @@ this.crGuardsman_pol <- this.inherit("scripts/entity/tactical/human", {
 		this.setAppearance();
 		this.getSprite("socket").setBrush("bust_base_southern");
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));							
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));							
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));

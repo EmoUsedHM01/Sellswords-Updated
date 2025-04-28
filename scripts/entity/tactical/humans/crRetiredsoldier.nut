@@ -53,7 +53,7 @@ this.crRetiredsoldier <- this.inherit("scripts/entity/tactical/human", {
 		
 		if (this.World.getTime().Days >= 50)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));		
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));		
 
 			if (this.World.getTime().Days >= 80)
 			{

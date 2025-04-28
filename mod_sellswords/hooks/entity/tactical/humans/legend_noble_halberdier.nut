@@ -9,7 +9,7 @@
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));	
 			if (this.World.getTime().Days >= 180)
 			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));					
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));					
 			}
 		}			
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)

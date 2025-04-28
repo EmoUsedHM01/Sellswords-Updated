@@ -103,7 +103,7 @@ this.crSellsword_Polearm <- this.inherit("scripts/entity/tactical/human", {
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));			
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));			
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 
 			if (::Is_PTR_Exist && this.Math.rand(1, 100) <= 0.25 * this.World.getTime().Days)

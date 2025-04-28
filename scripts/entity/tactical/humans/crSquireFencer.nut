@@ -51,7 +51,7 @@ this.crSquireFencer <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));			
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_alert"));			
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 
 			if (::Is_PTR_Exist)

@@ -72,7 +72,7 @@ this.crGoblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 			{
 				b.MeleeDefense += 5;
 				b.RangedDefense += 5;
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
 
 				if (dc >= 120)
 				{

@@ -80,7 +80,7 @@ this.crBarbarianChampionhigh <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_balance"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));			
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));		
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 
 		if (::Is_PTR_Exist)
