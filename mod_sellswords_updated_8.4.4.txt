@@ -74,6 +74,9 @@ Fix throw spear hitting with the power of the sun - Breaky
 ...\scripts\entity\tactical\humans\crSquire_normal.nut
 Reintroduce strenght in numbers to these enemies to account for the backstabber change - Breaky
 
+...\mod_sellswords\config\chiru_helmets.nut
+Fix the hoods and add 1 more to the list - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
