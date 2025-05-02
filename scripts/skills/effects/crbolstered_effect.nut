@@ -87,7 +87,7 @@ this.crbolstered_effect <- this.inherit("scripts/skills/skill", {
 				local crallyPerk = ally.getSkills().getSkillByID("perk.crGuardian");
 				if (crallyPerk != null && crallyPerk.isInEffect())
 				{
-					allyDefense = this.Math.max(0, ally.getCurrentProperties().getMeleeDefense());
+					allyDefense += this.Math.max(0, ally.getCurrentProperties().getMeleeDefense());
 					allyDefense += this.Math.max(0, ally.getCurrentProperties().getRangedDefense());
 				}			
 			}
