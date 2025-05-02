@@ -41,7 +41,7 @@
 			],
 			[
 				1,
-				"named_legend_great_khopesh"
+				"legend_named_great_khopesh"
 			],
 			[
 				1,

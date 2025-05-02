@@ -77,6 +77,12 @@ Reintroduce strenght in numbers to these enemies to account for the backstabber 
 ...\mod_sellswords\config\chiru_helmets.nut
 Fix the hoods and add 1 more to the list - Breaky
 
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_heavy.nut
+Fix wrongly referenced named great khopesh - Breaky
+
+...\scripts/skills\effects\crbolstered_effect.nut
+Fix a bug with guardian where the mdef isn't increased like it should - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
