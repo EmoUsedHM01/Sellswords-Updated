@@ -1,5 +1,5 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/throw_spear_skill", function( q ) {
-	o.onUse = @(__original) function ( _user, _targetTile )
+	q.onUse = @(__original) function ( _user, _targetTile )
 	{
 		local targetEntity = _targetTile.getEntity();
 		this.consumeAmmo();
@@ -38,7 +38,7 @@
 	{
 		__original(_properties);
 		local weapon = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
-		if (this.getContainer().hasPerk(::Legends.Perk.LegendSmashingShields);
+		if (this.getContainer().hasPerk(::Legends.Perk.LegendSmashingShields))
 			weapon.m.ShieldDamage *= 2;
 	}
 });
