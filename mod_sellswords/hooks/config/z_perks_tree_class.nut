@@ -21,6 +21,7 @@
 
 // adding rebalanced punchy mode back to unarmed
 ::Const.Perks.FistsTree.Tree[6] = [::Const.Perks.PerkDefs.LegendUnarmedTraining];
+::Const.Perks.BeastClassTree.Tree[4] = [::Const.Perks.PerkDefs.LegendEscapeArtist];
 
 // Making all the trees appear in alphabetical order because it's nice
 ::Const.Perks.ClassTrees.Tree.extend([

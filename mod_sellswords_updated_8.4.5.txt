@@ -1,5 +1,12 @@
 8.4.5 changes
 
+...\mod_sellswords\hooks\config\strings.nut
+Fix a specialist weapon perk tooltip - Breaky
+
+...\mod_sellswords\hooks\config\z_perks_tree_class.nut
+...\mod_sellswords\hooks\states\world_state.nut
+Add back escape artist - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.4 changes
