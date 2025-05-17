@@ -1,11 +1,15 @@
 this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
-	m = {},
+	m = {
+		OriginalValue = null,
+		OriginalDescription = null
+	},
 	function create()
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.acid_flask_02";
 		this.m.Name = "Stollwurm's Acid Flask";
 		this.m.Description = "A flask filled with the concentrate of a Stollwurm\'s acidic blood. It is highly corrosive to many materials and burns through armor quickly and is more robust than normal acid flasks. Can be thrown at short ranges. If the company has Alchemy Tools, this item is refilled after each battle, consuming 30 ammunition per use.";
+		this.m.OriginalDescription = this.m.Description;
 		this.m.IconLarge = "tools/acid_flask_02.png";
 		this.m.Icon = "tools/acid_flask_02_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Offhand;
@@ -14,6 +18,7 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.ShowArmamentIcon = true;
 		this.m.ArmamentIcon = "icon_acid_flask_02";
 		this.m.Value = 3400;
+		this.m.OriginalValue = this.m.Value;
 		this.m.Ammo = 1;
 		this.m.AmmoMax = 1;
 		this.m.AmmoCost = 30;
@@ -107,6 +112,13 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 		this.Sound.play("sounds/bottle_01.wav", this.Const.Sound.Volume.Inventory);
 	}
 
+	function consumeAmmo()
+	{
+		this.m.AmmoCost = 0;
+		this.weapon.consumeAmmo(); // to prevent scavenger retinue from recover ammo part
+		this.m.AmmoCost = 30;
+	}
+
 	function isAmountShown()
 	{
 		return true;
@@ -115,6 +127,11 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 	function getAmountString()
 	{
 		return this.m.Ammo + "/" + this.m.AmmoMax;
+	}
+
+	function getAmmo() // prevent item from being refilled without the retinue
+	{
+		return m.Ammo == 0 && !this.World.Retinue.hasFollower("follower.alchemist") ? m.AmmoMax + 1 : m.Ammo;
 	}
 
 	function setAmmo( _a )
@@ -127,6 +144,8 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 			this.m.IconLarge = "tools/acid_flask_02.png";
 			this.m.Icon = "tools/acid_flask_02_70x70.png";
 			this.m.ShowArmamentIcon = true;
+			this.m.Description = this.m.OriginalDescription;
+			this.m.Value = m.OriginalValue;
 		}
 		else
 		{
@@ -134,9 +153,31 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 			this.m.IconLarge = "tools/acid_flask_02.png";
 			this.m.Icon = "tools/acid_flask_02_70x70.png";
 			this.m.ShowArmamentIcon = false;
+			this.m.Description = "A spent and shattered flask. If the company has \"Alchemy Tools\", this item is refilled after each battle, consuming 30 ammunition per use.";
+			this.m.Value = 0;
 		}
 
 		this.updateAppearance();
+	}
+
+	function onPutIntoBag ()
+	{
+		local skill = ::Legends.Actives.get(this, ::Legends.Active.LegendLaunchAcidFlask);
+		if (skill != null)
+			skill.setItem(this);
+	}
+
+	function onSlingUpdateProperties ()
+	{
+		this.onPutIntoBag();
+	}
+
+	function onRemovedFromBag()
+	{
+		this.item.onRemovedFromBag();
+		local skill = ::Legends.Actives.get(this, ::Legends.Active.LegendLaunchAcidFlask);
+		if (skill != null)
+			skill.setItem(null);
 	}
 
 	function onEquip()
