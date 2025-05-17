@@ -16,6 +16,9 @@ Add back escape artist - Breaky
 ...\scripts\items\tools\acid_flask_item_02.nut
 Update/remove these so they use the legends system - Breaky
 
+...\scripts\skills\perks\perk_crBackswing.nut
+Maybe fix follow up - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

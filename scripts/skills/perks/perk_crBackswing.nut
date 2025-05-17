@@ -37,19 +37,21 @@ this.perk_crBackswing <- this.inherit("scripts/skills/skill", {
 	
 	function onAnySkillUsed( _skill, _targetEntity, _properties )
 	{
-		if (!this.m.IsInforce)
-		{
-			return;
-		}
-		
-		if (_skill.isAttack())
+		if (this.m.IsInforce && _skill.isAttack())
 		{
 			_properties.DamageTotalMult *= 0.85;
 			_properties.MeleeSkill *= 0.85;
-			_properties.RangedSkill *= 0.85;	
+			_properties.RangedSkill *= 0.85;
+		}
+	}
+
+	function onTargetHit ( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
+	{
+		if (_skill.isAttack() && this.m.IsInforce)
+		{
 			this.m.IsInforce = false;
 		}
-	}	
+	}
 
 	function onTurnStart()
 	{
