@@ -376,7 +376,6 @@ Bring to your allies the gentle touch of the forest! Unlocks an active skill to 
 - Modern Hooks (different from "mod hooks")
 
 **Incompatibilities:**
-- Fantasy Brothers (use Rise of the Usurper RotU if you want both)
-- Rise of the Usurper (SSU is built into RotU)
+- Fantasy Brothers
 - Starting Perks by Background Updated (Concept already built in)
 - PTR is only compatible with Legends 18.2.7 and SSU 8.2.9, we aren't interested in supporting old versions or other mods
