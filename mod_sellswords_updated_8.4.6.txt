@@ -5,6 +5,9 @@
 ...\mod_sellswords\hooks\skills\actives\legend_scythe_cleave_skill.nut
 Fix these to default to legends tooltips and hitchance bonuses - Breaky
 
+...\scripts\scenarios\world\sellswords_scenario.nut
+Fix the sellswords scenario not having 25 bros in roster at max roster size - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

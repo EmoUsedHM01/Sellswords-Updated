@@ -9,6 +9,8 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		this.m.Difficulty = 1;
 		this.m.Order = 710;
 		this.m.IsFixedLook = true;
+		this.m.StartingRosterTier = this.Const.Roster.getTierForSize(3);
+		// this.m.RosterTierMax = this.Const.Roster.getTierForSize(25);
 		this.m.StartingBusinessReputation = 900;
 		this.setRosterReputationTiers(this.Const.Roster.createReputationTiers(this.m.StartingBusinessReputation));
 	}
