@@ -7,19 +7,14 @@
 		this.m.Description = "A quiver of bolts with broad tips, designed for tearing through flesh, but is easily stopped by armour.\nIs automatically refilled after each battle if you have enough ammunition.\nGrants [color=" + ::Const.UI.Color.PositiveValue + "]+30%[/color] Damage to Hitpoints but [color=" + ::Const.UI.Color.NegativeValue + "]-10%[/color] Armour Piercing and Armour Damage";
 	}
 
-	q.onUpdateProperties = @(__original) function( _properties )
+	q.onAnySkillUsed = @(__original) function ( _skill, _targetEntity, _properties )
 	{
-		this.ammo.onUpdateProperties(_properties);
-		local actor = this.getContainer().getActor();
-		local item = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
-
-		if (item == null || !item.isWeaponType(this.Const.Items.WeaponType.Crossbow))
+		local item = _skill.getItem();
+		if (_skill.isAttack() && item != null && item.isItemType(this.Const.Items.ItemType.Weapon) && item.isWeaponType(this.Const.Items.WeaponType.Crossbow))
 		{
-			return;
+			_properties.DamageDirectMult *= 0.9;
+			_properties.DamageArmorMult *= 0.9;
+			_properties.RangedDamageMult *= 1.3;
 		}
-		
-		_properties.DamageDirectMult *= 0.9;
-		_properties.DamageArmorMult *= 0.9;
-		_properties.RangedDamageMult *= 1.3;
 	}
 });

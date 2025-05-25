@@ -8,6 +8,25 @@ Fix these to default to legends tooltips and hitchance bonuses - Breaky
 ...\scripts\scenarios\world\sellswords_scenario.nut
 Fix the sellswords scenario not having 25 bros in roster at max roster size - Breaky
 
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_armor_piercing_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_broad_head_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_broad_head_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_armor_piercing_bolts.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_broad_head_arrows.nut
+...\mod_sellswords\hooks\items\ammo\legend_large_broad_head_bolts.nut
+Specialized bolts and arrows bonuses and debuffs were applied twice after a legends change - Breaky
+
+...\scripts\items\weapons\legend_heavy_goedendag.nut
+...\scripts\items\weapons\named\named_fan_axe.nut
+...\scripts\items\weapons\special\ssu_legendary_spear.nut
+...\scripts\items\weapons\spontoon01.nut
+...\scripts\items\weapons\spontoon02.nut
+...\scripts\items\weapons\spontoon03.nut
+...\scripts\items\weapons\ssu_kriegsmesser.nut
+Remove `IsAgainstShields` property where I found it to improve ai - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

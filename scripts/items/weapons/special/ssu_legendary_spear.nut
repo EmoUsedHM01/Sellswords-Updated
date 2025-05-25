@@ -12,7 +12,6 @@ this.ssu_legendary_spear <- ::inherit("scripts/items/weapons/weapon", {
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
 		this.m.Categories = "Spear, Polearm, Two-Handed";
 		this.m.ItemType = this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded | ::Const.Items.ItemType.Legendary;
-		this.m.IsAgainstShields = false;
 		this.m.IsAoE = true;
 		this.m.AddGenericSkill = true;
 		this.m.ShowQuiver = false;
