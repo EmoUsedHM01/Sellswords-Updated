@@ -27,6 +27,8 @@ Specialized bolts and arrows bonuses and debuffs were applied twice after a lege
 ...\scripts\items\weapons\ssu_kriegsmesser.nut
 Remove `IsAgainstShields` property where I found it to improve ai - Breaky
 
+...\mod_sellswords\hooks\skills\actives\throw_spear_skill.nut
+Rework this for legends changes - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
