@@ -3,7 +3,7 @@
 	{
 		local damage = __original(_target);
 
-		if (targetEntity.getCurrentProperties().IsSpecializedInShields && this.getContainer().getItem().getCurrentProperties().IsSpecializedInThrowing)
+		if (_target.getCurrentProperties().IsSpecializedInShields && this.getContainer().getActor().getCurrentProperties().IsSpecializedInThrowing)
 			damage *= 2.00;
 
 		return this.Math.floor(damage);

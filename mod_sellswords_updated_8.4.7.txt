@@ -1,5 +1,8 @@
 8.4.7 changes
 
+...\mod_sellswords\hooks\skills\actives\throw_spear_skill.nut
+Fix throw spear again - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.6 changes
