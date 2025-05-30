@@ -1,5 +1,4 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/entity/world/settlements/buildings/alchemist_building", function( q ) {
-
 	q.fillStash = @( __original ) function(_list, _stash, _priceMult, _allowDamagedEquipment = false)
 	{
 		_list.extend([
@@ -50,7 +49,7 @@
 			}
 		]);
 
-		__original( _list, _stash, _priceMult, _allowDamagedEquipment = false );
+		__original(_list, _stash, _priceMult, _allowDamagedEquipment);
 	}
 
 });

@@ -80,7 +80,7 @@
 			}
 		]);
 
-		__original( _list, _stash, _priceMult, _allowDamagedEquipment = true );
+		__original(_list, _stash, _priceMult, _allowDamagedEquipment);
 	}
 
 });

@@ -1,5 +1,14 @@
 8.4.7 changes
 
+...\mod_sellswords\entity\world\settlements\buildings\alchemist_building.nut
+...\mod_sellswords\entity\world\settlements\buildings\armorsmith_building.nut
+...\mod_sellswords\entity\world\settlements\buildings\fletcher_building.nut
+...\mod_sellswords\entity\world\settlements\buildings\marketplace_building.nut
+...\mod_sellswords\entity\world\settlements\buildings\marketplace_oriental_building.nut
+...\mod_sellswords\entity\world\settlements\buildings\weaponsmith_building.nut
+...\mod_sellswords\entity\world\settlements\buildings\weaponsmith_oriental_building.nut
+Fixed shops selling stuff they shouldn't - chopeks
+
 ...\mod_sellswords\hooks\skills\actives\throw_spear_skill.nut
 Fix throw spear again - Breaky
 
