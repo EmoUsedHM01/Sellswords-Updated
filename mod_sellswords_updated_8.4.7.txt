@@ -12,6 +12,10 @@ Fixed shops selling stuff they shouldn't - chopeks
 ...\mod_sellswords\hooks\skills\actives\throw_spear_skill.nut
 Fix throw spear again - Breaky
 
+...\mod_sellswords\hooks\skills\perks\perk_legend_evasion.nut
+Properly add furinkazan after taking evasion - Breaky
+
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.6 changes

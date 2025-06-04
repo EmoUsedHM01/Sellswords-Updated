@@ -4,10 +4,13 @@
 	{
 		__original();
 
+		if (!this.m.IsNew)
+			return;
+
 		local addPerk = function ( _perk, _row = 0 )
 		{
-			local actor = this.getContainer().getActor().get();
-			if (::MSU.isKindOf(actor, "player"))
+			local actor = this.getContainer().getActor();
+			if (!actor.isPlayerControlled())
 				return;
 
 			local bg = actor.getBackground();
@@ -33,7 +36,6 @@
 
 			row = hasRow ? this.Math.max(0, this.Math.min(row, 6)) : _row;
 			bg.addPerk(_perk, row);
-			this.m.PerksAdded.push(_perk);
 		}
 
 		if (!this.getContainer().hasSkill("perk.crFurinkazan") && ::MSU.isKindOf(this.getContainer().getActor(), "player") && !::MSU.isNull(this.getContainer().getActor().getBackground()))
