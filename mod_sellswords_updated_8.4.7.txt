@@ -15,6 +15,10 @@ Fix throw spear again - Breaky
 ...\mod_sellswords\hooks\skills\perks\perk_legend_evasion.nut
 Properly add furinkazan after taking evasion - Breaky
 
+...\scripts\items\weapons\named\named_northern_sling.nut
+...\scripts\items\weapons\named\named_sling.nut
+Fix the 2 named slings missing sling bomb skills since we accidentally double them - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

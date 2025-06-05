@@ -34,7 +34,21 @@ this.named_sling <- this.inherit("scripts/items/weapons/named/named_weapon", {
 	function onEquip()
 	{
 		this.named_weapon.onEquip();
-		this.addSkill(this.new("scripts/skills/actives/sling_stone_skill"));
+		::Legends.Actives.grant(this, ::Legends.Active.LegendSlingHeavyStone);
+		::Legends.Actives.grant(this, ::Legends.Active.LegendSlingstaffBash);
+		::Legends.Actives.grant(this, ::Legends.Active.LegendLaunchAcidFlask);
+		::Legends.Actives.grant(this, ::Legends.Active.LegendLaunchDazeBomb);
+		::Legends.Actives.grant(this, ::Legends.Active.LegendLaunchFireBomb);
+		::Legends.Actives.grant(this, ::Legends.Active.LegendLaunchHolyWater);
+		::Legends.Actives.grant(this, ::Legends.Active.LegendLaunchSmokeBomb);
+	}
+
+	function onUpdateProperties (_properties)
+	{
+		this.weapon.onUpdateProperties(_properties);
+		foreach (item in this.getContainer().getActor().getItems().getAllItemsAtSlot(this.Const.ItemSlot.Bag)) {
+			item.onSlingUpdateProperties();
+		}
 	}
 
 });
