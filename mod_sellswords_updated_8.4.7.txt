@@ -19,6 +19,9 @@ Properly add furinkazan after taking evasion - Breaky
 ...\scripts\items\weapons\named\named_sling.nut
 Fix the 2 named slings missing sling bomb skills since we accidentally double them - Breaky
 
+...\mod_sellswords\hooks\ui\screens\world\modules\camp_screen\camp_painter_dialog_module.nut
+Deleted to use the new legends system - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
