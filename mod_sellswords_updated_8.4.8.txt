@@ -1,3 +1,9 @@
+8.4.8
+
+...\scripts\!mods_preload\mod_sellswords.nut
+...\mod_sellswords\config\necro_perk_trees.nut
+Fixed SSU calling ::Const.Perks.updatePerkGroupTooltips() and breaking other mods - chopeks
+
 8.4.7 changes
 
 ...\mod_sellswords\entity\world\settlements\buildings\alchemist_building.nut

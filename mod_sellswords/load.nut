@@ -33,9 +33,6 @@ if (::Is_BR_Exist)
 		::mods_registerJS("mod_ptr_and_nggh_breditor_add_on.js");
 }
 
-// update the perk tooltips
-::Const.Perks.updatePerkGroupTooltips();
-
 // update new armor sets
 ::Const.LegendMod.Armors <- {};
 foreach( i, v in ::Const.LegendMod.ArmorObjs )

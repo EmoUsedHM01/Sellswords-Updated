@@ -112,5 +112,3 @@
 		::Const.Perks.GhostClassTree
 	],
 };
-
-::Const.Perks.updatePerkGroupTooltips();
