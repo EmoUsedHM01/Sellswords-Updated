@@ -28,6 +28,9 @@ Fix the 2 named slings missing sling bomb skills since we accidentally double th
 ...\mod_sellswords\hooks\ui\screens\world\modules\camp_screen\camp_painter_dialog_module.nut
 Deleted to use the new legends system - Breaky
 
+...\mod_sellswords\hooks\skills\effects\spider_poison_effect.nut
+Fix spider poison ignoring holy flame - Celestial
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
