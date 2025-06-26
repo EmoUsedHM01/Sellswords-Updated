@@ -23,7 +23,7 @@
 			hitInfo.BodyPart = this.Const.BodyPart.Body;
 			hitInfo.BodyDamageMult = 1.0;
 			hitInfo.FatalityChanceMult = 0.0;
-			this.getContainer().getActor().onDamageReceived(this.getContainer().getActor(), this, hitInfo);
+			this.getContainer().getActor().onDamageReceived(this.getAttacker(), this, hitInfo);
 		}
 	}
 
