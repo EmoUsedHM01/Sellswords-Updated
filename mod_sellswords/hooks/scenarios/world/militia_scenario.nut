@@ -15,4 +15,12 @@
 		}
 	}
 
+	q.equipAdditional = @(__original) function (_brothers)
+	{
+		foreach (bro in _brothers)
+		{
+			::Legends.Traits.grant(bro, ::Legends.Trait.LegendHateNobles);
+		}
+	}
+
 });

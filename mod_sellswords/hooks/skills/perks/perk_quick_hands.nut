@@ -22,7 +22,7 @@
 		if (twoHandedItemsCount == 2)
 			return null;
 
-		return getItemActionCost(_items);
+		return __original(_items);
 	}
 
 });

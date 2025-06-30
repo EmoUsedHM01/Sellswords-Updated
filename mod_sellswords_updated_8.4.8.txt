@@ -4,6 +4,18 @@
 ...\mod_sellswords\config\necro_perk_trees.nut
 Fixed SSU calling ::Const.Perks.updatePerkGroupTooltips() and breaking other mods - chopeks
 
+...\mod_sellswords\hooks\skills\effects\spider_poison_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_redback_spider_poison_effect.nut
+Fix spider poison ignoring holy flame - Celestial
+
+...\mod_sellswords\hooks\skills\perks\perk_quick_hands.nut
+Fix potential hook error in quick hands - Breaky
+
+...\mod_sellswords\hooks\scenarios\world\militia_scenario.nut
+Remove the extra arband brush on hires in militia scenario - Breaky
+
+----------------------------------------------------------------------------------------------------------------------------
+
 8.4.7 changes
 
 ...\mod_sellswords\entity\world\settlements\buildings\alchemist_building.nut
@@ -27,10 +39,6 @@ Fix the 2 named slings missing sling bomb skills since we accidentally double th
 
 ...\mod_sellswords\hooks\ui\screens\world\modules\camp_screen\camp_painter_dialog_module.nut
 Deleted to use the new legends system - Breaky
-
-...\mod_sellswords\hooks\skills\effects\spider_poison_effect.nut
-Fix spider poison ignoring holy flame - Celestial
-
 
 ----------------------------------------------------------------------------------------------------------------------------
 
