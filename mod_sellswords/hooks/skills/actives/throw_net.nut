@@ -53,7 +53,7 @@
 
 			if (net.drop(_targetTile))
 				::Tactical.Entities.addNetTiles(_targetTile);
-			targetEntity.onMissed(this.getContainer().getActor(), this);
+			targetEntity.onMissed(_user, this);
 			if (this.m.SoundOnMiss.len() != 0)
 			{
 				this.Sound.play(this.m.SoundOnMiss[this.Math.rand(0, this.m.SoundOnMiss.len() - 1)], this.Const.Sound.Volume.Skill, targetEntity.getPos());

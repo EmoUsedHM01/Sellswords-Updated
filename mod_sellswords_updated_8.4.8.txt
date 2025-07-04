@@ -14,6 +14,9 @@ Fix potential hook error in quick hands - Breaky
 ...\mod_sellswords\hooks\scenarios\world\militia_scenario.nut
 Remove the extra arband brush on hires in militia scenario - Breaky
 
+...\mod_sellswords/hooks/skills/actives/throw_net.nut
+Fix throw net hang - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.7 changes
