@@ -1,3 +1,10 @@
+**Looking for the download link?**
+
+https://github.com/EmoUsedHM01/Sellswords-Updated/releases
+
+![image](https://github.com/user-attachments/assets/49ab3638-3ba4-4590-82d3-327f9fcc1224)
+
+
 **Introduction:**
 Welcome to the overhaul/rework that is Sellswords Updated (SSU). This mod is a comprehensive overhaul and update of Chiru's original Sellswords mod. It includes full translations, updated graphics and brushes, new content, and enhanced compatibility with other mods.
 If you're looking for latest builds or other info, check the pinned messages in the [Legends Discord SSU submod channel](https://discord.com/channels/547043336465154049/1156535917276844083)
