@@ -1,4 +1,8 @@
-8.4.8
+8.4.9 changes
+
+----------------------------------------------------------------------------------------------------------------------------
+
+8.4.8 changes
 
 ...\scripts\!mods_preload\mod_sellswords.nut
 ...\mod_sellswords\config\necro_perk_trees.nut
