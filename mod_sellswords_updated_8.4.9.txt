@@ -1,5 +1,8 @@
 8.4.9 changes
 
+...\mod_sellswords\hooks\ambitions\defeat_mercenaries_ambition.nut
+Maybe fix the defeat mercenaries ambition - Breaky
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.8 changes
