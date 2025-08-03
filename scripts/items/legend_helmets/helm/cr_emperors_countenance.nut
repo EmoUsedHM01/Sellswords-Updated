@@ -57,7 +57,7 @@ this.cr_emperors_countenance <- this.inherit("scripts/items/legend_helmets/legen
 
 	function onDamageReceived( _damage, _fatalityType, _attacker )
 	{
-		this.helmet.onDamageReceived(_damage, _fatalityType, _attacker);
+		this.legend_helmet_upgrade.onDamageReceived(_damage, _fatalityType, _attacker);
 
 		if (_attacker != null && _attacker.isAlive() && _attacker.getHitpoints() > 0 && _attacker.getID() != this.getContainer().getActor().getID() && _attacker.getTile().getDistanceTo(this.getContainer().getActor().getTile()) == 1 && !_attacker.getCurrentProperties().IsImmuneToDamageReflection)
 		{
