@@ -1,4 +1,4 @@
-this.cr_anatomist_recruit_encounter <- this.inherit("scripts/events/event", {
+this.cr_anatomist_recruit_encounter <- this.inherit("scripts/encounters/encounter", {
 	m = {
 		Dude = null,
 	},

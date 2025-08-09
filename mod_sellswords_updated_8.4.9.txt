@@ -1,7 +1,9 @@
 8.4.9 changes
 
 ...\mod_sellswords\hooks\ambitions\defeat_mercenaries_ambition.nut
-Maybe fix the defeat mercenaries ambition - Breaky
+Fix the defeat mercenaries ambition - Breaky
+...\scripts\encounters\cr_anatomist_recruit_encounter.nut
+Fix anatomist recruit encounter - Breaky
 
 ----------------------------------------------------------------------------------------------------------------------------
 
