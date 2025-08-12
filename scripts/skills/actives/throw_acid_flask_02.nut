@@ -168,6 +168,8 @@ this.throw_acid_flask_02 <- this.inherit("scripts/skills/skill", {
 			User = _user,
 			TargetTile = _targetTile
 		});
+
+		this.m.Item.drop(_targetTile);
 	}
 
 	function onApplyAcid( _data )

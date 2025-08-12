@@ -2,8 +2,18 @@
 
 ...\mod_sellswords\hooks\ambitions\defeat_mercenaries_ambition.nut
 Fix the defeat mercenaries ambition - Breaky
+
 ...\scripts\encounters\cr_anatomist_recruit_encounter.nut
 Fix anatomist recruit encounter - Breaky
+
+...\mod_sellswords\hooks\skills\actives\throw_acid_flask.nut
+...\mod_sellswords\hooks\skills\actives\throw_daze_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_fire_bomb_skill.nut
+...\mod_sellswords\hooks\skills\actives\throw_holy_water.nut
+...\mod_sellswords\hooks\skills\actives\throw_smoke_bomb_skill.nut
+...\scripts\skills\actives\throw_acid_flask_02.nut
+Fix bomb skills - Breaky
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
