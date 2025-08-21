@@ -9,7 +9,7 @@ this.cr_clarity_effect <- this.inherit("scripts/skills/skill", {
 		this.m.Icon = "ui/perks/crClarity.png";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.IsActive = false;
-		this.m.IsStacking = false;		
+		this.m.IsStacking = false;
 		this.m.IsHidden = false;
 		this.m.IsRemovedAfterBattle = true;
 	}	
@@ -17,14 +17,10 @@ this.cr_clarity_effect <- this.inherit("scripts/skills/skill", {
 	function onUpdate( _properties )
 	{
 		local actor = this.getContainer().getActor();
-		local maxFat = actor.getFatigueMax();
-		local currentFat = this.Math.max(actor.getFatigue() - 15, 0);
-		local ratio = currentFat / maxFat;		
-
-		if (ratio > 0.5 || actor.getSkills().hasSkill("effects.dazed") || actor.getSkills().hasSkill("effects.drunk") || actor.getSkills().hasSkill("effects.taunted") || actor.getSkills().hasSkill("effects.hangover") || actor.getSkills().hasSkill("effects.staggered") || actor.getSkills().hasSkill("effects.horrified") || actor.getSkills().hasSkill("injury.severe_concussion") || this.getContainer().getActor().getMoraleState() < this.Const.MoraleState.Wavering)
+		if (!canApplyEffectTo(actor))
 		{
 			return;
-		}	
+		}
 		if (this.m.TurnsLeft == 2)
 		{
 			_properties.ActionPoints += 2;
@@ -32,40 +28,67 @@ this.cr_clarity_effect <- this.inherit("scripts/skills/skill", {
 		else if (this.m.TurnsLeft == 1)
 		{
 			_properties.ActionPoints += 1;
-		}	
+		}
 	}
 
 	function isHidden()
 	{
 		local actor = this.getContainer().getActor();
-		local maxFat = actor.getFatigueMax();
-		local currentFat = this.Math.max(actor.getFatigue() - 15, 0);
-		local ratio = currentFat / maxFat;		
-		return (this.m.TurnsLeft == 3 || ratio > 0.5 || actor.getSkills().hasSkill("effects.dazed") || actor.getSkills().hasSkill("effects.drunk") || actor.getSkills().hasSkill("effects.taunted") || actor.getSkills().hasSkill("effects.hangover") || actor.getSkills().hasSkill("effects.staggered") || actor.getSkills().hasSkill("effects.horrified") || actor.getSkills().hasSkill("injury.severe_concussion") || this.getContainer().getActor().getMoraleState() < this.Const.MoraleState.Wavering);
-	}	
-	
+		return (!canApplyEffectTo(actor));
+	}
+
+	function canApplyEffectTo(_actor) {
+		return (actorHasEnoughFatigue(_actor) && actorHasClearHead(_actor));
+	}
+
+	function actorHasEnoughFatigue( _actor )
+	{
+		local maxFat = _actor.getFatigueMax();
+		local fatigueRecovery = 15; // Should be real value with perks
+		local currentFat = this.Math.max(_actor.getFatigue() - fatigueRecovery, 0);
+		local usedFatRatio = currentFat / maxFat;
+
+		return (usedFatRatio <= 0.5);
+	}
+
+	function actorHasClearHead( _actor )
+	{
+		local s = _actor.getSkills();
+		local m = _actor.getMoraleState();
+
+		local invalidEffect = (s.hasSkill("effects.dazed") ||
+		s.hasSkill("effects.drunk") ||
+		s.hasSkill("effects.taunted") ||
+		s.hasSkill("effects.hangover") ||
+		s.hasSkill("effects.staggered") ||
+		s.hasSkill("effects.horrified") ||
+		s.hasSkill("injury.severe_concussion") ||
+		m < this.Const.MoraleState.Wavering);
+
+		return (invalidEffect ==  false);
+	}
+
 	function getTooltip()
 	{
 		local tooltip = this.skill.getTooltip();
+		local explanation = "";
 
-		if (this.m.TurnsLeft == 2)
+		if (this.m.TurnsLeft == 3)
 		{
-			tooltip.push({
-				id = 10,
-				type = "text",
-				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 2 + "[/color] Action Points"
-			});
+			explanation = "Will activate [color=" +
+			this.Const.UI.Color.PositiveValue + "]Next Turn[/color], unless affected by a [color=" +
+			this.Const.UI.Color.Status + "]Negative[/color] status effect";
+		} else {
+			explanation = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.TurnsLeft + "[/color] Action Points";
 		}
-		else if (this.m.TurnsLeft == 1)
-		{
-			tooltip.push({
-				id = 10,
-				type = "text",
-				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 1 + "[/color] Action Point"
-			});		
-		}						
+
+		tooltip.push({
+			id = 10,
+			type = "text",
+			icon = "ui/icons/action_points.png",
+			text = explanation
+		});
+
 		return tooltip;
 	}	
 	
