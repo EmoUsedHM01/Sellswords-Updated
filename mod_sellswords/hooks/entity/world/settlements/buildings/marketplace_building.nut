@@ -23,13 +23,26 @@
 			]);
 		}
 
-		if (this.m.Settlement.hasAttachedLocation("attached_location.gem_mine_location") || this.m.Settlement.hasAttachedLocation("attached_location.gold_mine_location"))
+		local miningLocations = [
+			"attached_location.gem_mine",
+			"attached_location.gold_mine",
+			"attached_location.salt_mine",
+			"attached_location.surface_copper_vein",
+			"attached_location.surface_iron_vein"
+		];
+
+		foreach (id in miningLocations)
 		{
-			list.extend({
-				R = 40,
-				P = 1.0,
-				S = "weapons/heavy_mining_pick"
-			});
+			if (this.m.Settlement.hasAttachedLocation(id))
+			{
+				_list.extend([
+					{
+						R = 40,
+						P = 1.0,
+						S = "weapons/heavy_mining_pick"
+					}
+				]);
+			}
 		}
 
 		_list.extend([
