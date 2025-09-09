@@ -1,3 +1,10 @@
+8.4.10 changes
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
+Fixed 2h mining picks not spawning in towns with miner locations
+
+----------------------------------------------------------------------------------------------------------------------------
+
 8.4.9 changes
 
 ...\mod_sellswords\hooks\ambitions\defeat_mercenaries_ambition.nut
@@ -13,7 +20,6 @@ Fix anatomist recruit encounter - Breaky
 ...\mod_sellswords\hooks\skills\actives\throw_smoke_bomb_skill.nut
 ...\scripts\skills\actives\throw_acid_flask_02.nut
 Fix bomb skills - Breaky
-
 
 ----------------------------------------------------------------------------------------------------------------------------
 
