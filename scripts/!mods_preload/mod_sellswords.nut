@@ -19,7 +19,7 @@
 ::Mod_Sellswords.HooksMod.conflictWith("mod_ROTU", "mod_fantasybro", "modMoreArrows", "mod_background_perks");
 
 // Like above you can add as many parameters as you need to in order to determine the queue of the mods before adding the parameters that run the callback function
-::Mod_Sellswords.HooksMod.queue(">mod_msu", ">mod_legends", ">mod_legends_PTR", ">mod_breditor", "<mod_AC", "<mod_nggh_magic_concept", "<mod_world_editor_legends", function()
+::Mod_Sellswords.HooksMod.queue(">mod_msu", ">mod_legends", ">mod_legends_PTR", ">mod_breditor", "<mod_ACU", "<mod_nggh_magic_concept", "<mod_world_editor_legends", function()
 {
 	// Define mod class of this mod
 	::Mod_Sellswords.Mod <- ::MSU.Class.Mod(::Mod_Sellswords.ID, ::Mod_Sellswords.Version, ::Mod_Sellswords.Name);
