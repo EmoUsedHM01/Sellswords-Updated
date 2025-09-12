@@ -4,6 +4,7 @@
 	{
 		local ret = __original();
 		ret.Special <- clone this.Const.Perks.SpecialTrees.Tree;
+		ret.Undead <- clone this.Const.Perks.UndeadTrees.Tree;
 
 		if (::Is_MC_Exist)
 		{
