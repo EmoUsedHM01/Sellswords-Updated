@@ -3,6 +3,15 @@
 ...\mod_sellswords\hooks\entity\world\settlements\buildings\marketplace_building.nut
 Fixed 2h mining picks not spawning in towns with miner locations
 
+...\mod_sellswords\hooks\skills\effects\legend_redback_spider_poison_effect.nut
+Fixed Redback Poison dealing 1 damage
+
+...\mod_sellswords\hooks_breditor\scripts\ssu_breditor_patch.nut
+Added missing Undead trees
+
+...\scripts\!mods_preload\mod_sellswords.nut
+Changed AC to ACU in loadorder
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.9 changes
