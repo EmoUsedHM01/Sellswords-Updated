@@ -1,5 +1,7 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/legend_redback_spider_poison_effect", function ( q ) {
 
+	q.m.Damage = 10;
+
 	q.applyDamage = @(__original) function()
 	{
 		if (this.m.LastRoundApplied != this.Time.getRound())
