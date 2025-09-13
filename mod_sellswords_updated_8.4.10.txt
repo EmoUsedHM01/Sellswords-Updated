@@ -12,6 +12,9 @@ Added missing Undead trees
 ...\scripts\!mods_preload\mod_sellswords.nut
 Changed AC to ACU in loadorder
 
+...\mod_sellswords\config\a_sellswords_character_names.nut
+Added couple more names
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.9 changes

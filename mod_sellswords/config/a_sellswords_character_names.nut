@@ -41,12 +41,14 @@
 	"Robert de Vere",
 	"John de Warenne",
 	"Abyss de Cranes",
-	"Emo of Cutter",
+	"Emo the Dark",
 	"Breaky de Devo",
 	"Son von Satan",
 	"Rygar III",
 	"Chiru of Hanguk",
-	"Grenik de Slav"
+	"Grenik de Slav",
+	"Abyss von Crane",
+	"Luft the Rat"
 ];
 
 ::Const.Strings.crBaronNames <- [
