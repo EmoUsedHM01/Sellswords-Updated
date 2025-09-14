@@ -15,6 +15,11 @@ Changed AC to ACU in loadorder
 ...\mod_sellswords\config\a_sellswords_character_names.nut
 Added couple more names
 
+
+...\mod_sellswords\hooks\skills\actives\legend_drums_of_life_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_drums_of_war_skill.nut
+Removed bard skill hooks since they've been updated now
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.9 changes
