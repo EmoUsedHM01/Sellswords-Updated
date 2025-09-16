@@ -15,10 +15,15 @@ Changed AC to ACU in loadorder
 ...\mod_sellswords\config\a_sellswords_character_names.nut
 Added couple more names
 
-
 ...\mod_sellswords\hooks\skills\actives\legend_drums_of_life_skill.nut
 ...\mod_sellswords\hooks\skills\actives\legend_drums_of_war_skill.nut
 Removed bard skill hooks since they've been updated now
+
+...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut
+Added 50% less chance to hit allies on attack deviation
+
+...\scripts\skills\actives\serrated_axe.nut
+Added Hack formula and fixed tooltip
 
 ----------------------------------------------------------------------------------------------------------------------------
 
