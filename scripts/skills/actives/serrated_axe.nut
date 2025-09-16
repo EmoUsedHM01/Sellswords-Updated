@@ -15,7 +15,7 @@ this.serrated_axe <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "actives.serrated_axe";
 		this.m.Name = "Execute";
-		this.m.Description = "Use the serrated teeth to slash at an enemy mercilessly, leaving the victim bleeding profusely. Bleed damage is affected by Cleaver Mastery.";
+		this.m.Description = "Use the serrated teeth to slash at an enemy mercilessly, leaving the victim bleeding profusely. Bleed damage is affected by Axe Mastery.";
 		this.m.KilledString = "Ripped to shreds";
 		this.m.Icon = "skills/active_37.png";
 		this.m.IconDisabled = "skills/active_37_sw.png";
@@ -55,7 +55,7 @@ this.serrated_axe <- this.inherit("scripts/skills/skill", {
 	{
 		local ret = this.getDefaultTooltip();
 		local ret = this.getDefaultTooltip();
-		local dmg = this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers ? 10 : 5;
+		local dmg = this.getContainer().getActor().getCurrentProperties().IsSpecializedInAxes ? 10 : 5;
 		ret.push({
 			id = 8,
 			type = "text",
@@ -131,19 +131,17 @@ this.serrated_axe <- this.inherit("scripts/skills/skill", {
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )
-	{		
-		if (_targetEntity == null)
-		{
-			return;
-		}
-		
+	{
 		local bleedCount = _targetEntity.getSkills().getAllSkillsByID("effects.bleeding").len();	
 
+		if (this.getContainer().hasSkill("perk.crHackSPM"))
+			_properties.DamageAgainstMult[this.Const.BodyPart.Head] += 0.5;
+
+		if (_targetEntity == null)
+			return;
+
 		if (_skill == this)
-		{
 			_properties.DamageTotalMult *= this.Math.minf(1 + 0.15 * bleedCount, 2.5);
-		}		
 	}
 
 });
-
