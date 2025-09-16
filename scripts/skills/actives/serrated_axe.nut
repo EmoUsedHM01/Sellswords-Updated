@@ -132,13 +132,12 @@ this.serrated_axe <- this.inherit("scripts/skills/skill", {
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )
 	{
-		local bleedCount = _targetEntity.getSkills().getAllSkillsByID("effects.bleeding").len();	
-
 		if (this.getContainer().hasSkill("perk.crHackSPM"))
 			_properties.DamageAgainstMult[this.Const.BodyPart.Head] += 0.5;
 
 		if (_targetEntity == null)
 			return;
+		local bleedCount = _targetEntity.getSkills().getAllSkillsByID("effects.bleeding").len();
 
 		if (_skill == this)
 			_properties.DamageTotalMult *= this.Math.minf(1 + 0.15 * bleedCount, 2.5);
