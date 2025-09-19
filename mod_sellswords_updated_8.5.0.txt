@@ -54,6 +54,17 @@ Removed Unarmed Training
 ...\mod_sellswords\config\z_background_perks.nut
 Removed references to Full Force and Unarmed Training from config files
 
+...\mod_sellswords\hooks_ptr\*
+Removed all PTR hooks going forward
+
+...\scripts\skills\backgrounds\ssu_dryad_warrior_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_shaman_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_grunt_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
+...\scripts\skills\backgrounds\necro_lorekeeper.nut
+...\scripts\skills\backgrounds\necro_embalmbed_priest.nut
+Removed all references to StaffTree
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.10 changes
