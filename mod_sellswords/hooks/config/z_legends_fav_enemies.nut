@@ -5,13 +5,13 @@
 
 ::Const.LegendMod.FavoriteDirewolf.extend([
 	this.Const.EntityType.Wolf,
-	this.Const.EntityType.GoblinWolfrider,
-	this.Const.EntityType.KoboldWolfrider,
+	// this.Const.EntityType.GoblinWolfrider,
+	// this.Const.EntityType.KoboldWolfrider,
 ]);
 
 ::Const.LegendMod.FavoriteGoblin.extend([
-	this.Const.EntityType.KoboldWolfrider,
-	this.Const.EntityType.KoboldFighter,
+	// this.Const.EntityType.KoboldWolfrider,
+	// this.Const.EntityType.KoboldFighter,
 	this.Const.EntityType.crGoblinwarrior	
 ]);
 

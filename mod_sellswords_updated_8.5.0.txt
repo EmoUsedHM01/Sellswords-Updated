@@ -1,7 +1,58 @@
 8.5.0 changes
 
-.../skibidi
-toilet
+...\mod_sellswords\hooks\skills\perks\perk_legend_full_force.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_queen.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_elite.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_boss.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy_bodyguard.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_betrayer.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_boss.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_madman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\officer.nut
+...\scripts\entity\tactical\enemies\crConqueror.nut
+...\scripts\entity\tactical\enemies\crDeathknight.nut
+...\scripts\entity\tactical\enemies\crFallenbetrayer.nut
+...\scripts\entity\tactical\enemies\crOrcPackleader.nut
+...\scripts\entity\tactical\enemies\dryad_enemy_boss.nut
+...\scripts\entity\tactical\humans\crBarbarianKing.nut
+...\scripts\entity\tactical\humans\crBaron.nut
+...\scripts\entity\tactical\humans\crBaron02.nut
+...\scripts\entity\tactical\humans\crDesperado.nut
+...\scripts\entity\tactical\humans\crDesperado_High.nut
+...\scripts\entity\tactical\humans\crHedgeKnight.nut
+...\scripts\entity\tactical\humans\crImmortal.nut
+...\scripts\entity\tactical\humans\crKnight.nut
+...\scripts\entity\tactical\humans\crKnight_guest.nut
+...\scripts\entity\tactical\humans\crKnightcommander.nut
+...\scripts\entity\tactical\humans\crLindwurm_slayer.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSellsword_Elite.nut
+...\scripts\entity\tactical\humans\crSellsword_Tank.nut
+...\scripts\entity\tactical\humans\crSlayer.nut
+Removed Full Force from various entities
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
+Removed Unarmed Training
+
+...\mod_sellswords\hooks\config\z_perks_tree_defense.nut
+...\mod_sellswords\hooks\config\z_perks_tree_class.nut
+...\mod_sellswords\hooks\config\z_legends_fav_enemies.nut
+...\mod_sellswords\hooks\config\strings.nut
+...\mod_sellswords\config\z_background_perks.nut
+Removed references to Full Force and Unarmed Training from config files
 
 ----------------------------------------------------------------------------------------------------------------------------
 

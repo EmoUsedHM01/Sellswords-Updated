@@ -4,7 +4,6 @@
 
 // heavy armor tree
 ::Const.Perks.HeavyArmorTree.Tree[3] = [::Const.Perks.PerkDefs.ArmorMasteryHeavy];
-::Const.Perks.HeavyArmorTree.Tree[6] = [::Const.Perks.PerkDefs.LegendFullForce];
 
 // medium armor tree
 ::Const.Perks.MediumArmorTree.Tree[1] = [::Const.Perks.PerkDefs.LegendBalance];

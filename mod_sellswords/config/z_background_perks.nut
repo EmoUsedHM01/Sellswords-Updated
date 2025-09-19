@@ -43,7 +43,7 @@ setupBackground("scripts/skills/backgrounds/belly_dancer_background", ["scripts/
 
 setupBackground("scripts/skills/backgrounds/bowyer_background", ["scripts/skills/perks/perk_legend_specialist_poacher"], [{def = ::Legends.Perk.LegendSpecialistPoacher, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/brawler_background", ["scripts/skills/perks/perk_legend_grapple"], [{def = ::Legends.Perk.LegendGrapple, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/brawler_background", ["scripts/skills/perks/perk_legend_grappler"], [{def = ::Legends.Perk.LegendGrappler, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/butcher_background", ["scripts/skills/perks/perk_legend_specialist_butcher"], [{def = ::Legends.Perk.LegendSpecialistButcher, level = 0, optional = false}]);
 
