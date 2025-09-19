@@ -25,6 +25,13 @@ Added 50% less chance to hit allies on attack deviation
 ...\scripts\skills\actives\serrated_axe.nut
 Added Hack formula and fixed tooltip
 
+...\brushes\chiru_equipment.brush
+...\gfx\chiru_equipment.png
+...\gfx\ui\items\legend_helmets\inventory_hyena_helm_01.png
+...\scripts\crafting\blueprints\hyena_helmet_layered_blueprint.nut
+...\scripts\items\legend_helmets\vanity\hyena_helm.nut
+Added new Hyena Fur Helmet
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.9 changes
