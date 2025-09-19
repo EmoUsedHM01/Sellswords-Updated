@@ -95,8 +95,6 @@ setupBackground("scripts/skills/backgrounds/killer_on_the_run_background", ["scr
 	
 setupBackground("scripts/skills/backgrounds/legend_alchemist_background", ["scripts/skills/perks/perk_legend_potion_brewer"], [{def = ::Legends.Perk.LegendPotionBrewer, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_assassin_background", ["scripts/skills/perks/perk_legend_opportunist"], [{def = ::Legends.Perk.LegendOpportunist, level = 0, optional = false}]);
-	
 setupBackground("scripts/skills/backgrounds/legend_assassin_commander_background", ["scripts/skills/perks/perk_legend_opportunist"], [{def = ::Legends.Perk.LegendOpportunist, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_beggar_commander_background", ["scripts/skills/perks/perk_legend_blend_in"], [{def = ::Legends.Perk.LegendBlendIn, level = 0, optional = false}]);
