@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/legend_named_flail", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/legend_named_ranged_flail", function ( q ) {
 
 	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
 		local baseWeapon = ::new("scripts/items/weapons/crranged_flail");

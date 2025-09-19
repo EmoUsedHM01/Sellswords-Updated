@@ -287,7 +287,7 @@ this.crSellswordveteran_Polearm <- this.inherit("scripts/entity/tactical/human",
 			local weapons = [
 				"weapons/named/named_billhook",
 				"weapons/named/named_billhook",				
-				"weapons/named/legend_named_flail",				
+				"weapons/named/legend_named_ranged_flail",				
 				"weapons/named/named_bladed_pike",
 				"weapons/named/named_longaxe",
 				"weapons/named/named_spetum",
