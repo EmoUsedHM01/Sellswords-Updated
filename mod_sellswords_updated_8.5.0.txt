@@ -65,6 +65,13 @@ Removed all PTR hooks going forward
 ...\scripts\skills\backgrounds\necro_embalmbed_priest.nut
 Removed all references to StaffTree
 
+...\mod_sellswords\hooks\items\weapons\named\legend_named_flail.nut -> *\legend_named_ranged_flail.nut
+...\scripts\entity\tactical\humans\crSellswordveteran_Polearm.nut
+Replaced legend_named_flail with legend_named_ranged_flail
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_tumble.nut
+Deleted Tumble hook (skill is completely different now)
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.10 changes
