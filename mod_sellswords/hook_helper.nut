@@ -373,10 +373,6 @@
 		{
 			trees.push(::Const.Perks.SwordTree);
 		}
-		if (weapon.isWeaponType(::Const.Items.WeaponType.Staff))
-		{
-			trees.push(::Const.Perks.StaffTree);
-		}
 		if (weapon.isWeaponType(::Const.Items.WeaponType.Throwing))
 		{
 			trees.push(::Const.Perks.ThrowingTree);

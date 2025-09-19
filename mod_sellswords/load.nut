@@ -10,11 +10,6 @@ foreach (file in ::IO.enumerateFiles("mod_sellswords/config"))
 foreach (file in ::IO.enumerateFiles("mod_sellswords/hooks"))
 	::include(file);
 
-// load all hooks related to ptr 
-if (::Is_PTR_Exist)
-	foreach (file in ::IO.enumerateFiles("mod_sellswords/hooks_ptr"))
-		::include(file);
-
 // load all hooks related to breditor
 if (::Is_BR_Exist)
 {
