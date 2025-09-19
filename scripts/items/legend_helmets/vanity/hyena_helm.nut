@@ -36,5 +36,27 @@ this.hyena_helm <- this.inherit("scripts/items/legend_helmets/legend_helmet_upgr
 		this.m.OverlayIcon = this.m.Icon;
 		this.m.OverlayIconLarge = this.m.OverlayIcon;
 	}
+
+	function getTooltip()
+	{
+		local result = this.legend_helmet_upgrade.getTooltip();
+		result.push({
+			id = 6,
+			type = "text",
+			icon = "ui/icons/initiative.png",
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative"
+		});
+		return result;
+	}
+	
+	function onArmorTooltip( _result )
+	{
+		_result.push({
+			id = 6,
+			type = "text",
+			icon = "ui/icons/initiative.png",
+			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative"
+		});
+	}
 	
 });

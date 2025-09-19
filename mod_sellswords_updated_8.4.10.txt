@@ -28,6 +28,7 @@ Added Hack formula and fixed tooltip
 ...\brushes\chiru_equipment.brush
 ...\gfx\chiru_equipment.png
 ...\gfx\ui\items\legend_helmets\inventory_hyena_helm_01.png
+...\mod_sellswords\hooks\items\legend_armor\legend_helmet_upgrade.nut
 ...\scripts\crafting\blueprints\hyena_helmet_layered_blueprint.nut
 ...\scripts\items\legend_helmets\vanity\hyena_helm.nut
 Added new Hyena Fur Helmet
