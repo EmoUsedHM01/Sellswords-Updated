@@ -56,7 +56,6 @@ this.ssu_dryad_shaman_background <- ::inherit("scripts/skills/backgrounds/charac
 			Weapon = [
 				this.Const.Perks.HammerTree,
 				this.Const.Perks.MaceTree,
-				this.Const.Perks.StaffTree,
 				this.Const.Perks.DryadShamanTree
 			],
 			Defense = [
@@ -88,9 +87,7 @@ this.ssu_dryad_shaman_background <- ::inherit("scripts/skills/backgrounds/charac
 				Class = [
 					::Const.Perks.DryadShamanTree
 				],
-				Weapon = [
-					::Const.Perks.StaffTree
-				]
+				Weapon = []
 			};
 		}
 	}

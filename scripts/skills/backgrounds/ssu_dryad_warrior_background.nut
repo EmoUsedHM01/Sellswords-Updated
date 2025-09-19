@@ -119,7 +119,6 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 				[0.5, ::Const.Perks.DaggerTree],
 				[0, ::Const.Perks.SlingTree],
 				[0.16, ::Const.Perks.SpearTree],
-				[0.25, ::Const.Perks.StaffTree],
 				[0.25, ::Const.Perks.ThrowingTree]
 			];
 

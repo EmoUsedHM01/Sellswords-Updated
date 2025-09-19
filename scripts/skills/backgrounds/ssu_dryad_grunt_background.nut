@@ -61,7 +61,6 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 			Weapon = [
 				this.Const.Perks.DaggerTree,
 				this.Const.Perks.MaceTree,
-				this.Const.Perks.StaffTree,
 				this.Const.Perks.ThrowingTree
 			],
 			Defense = [

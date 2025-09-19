@@ -148,7 +148,6 @@ this.necro_lorekeeper <- this.inherit("scripts/skills/backgrounds/character_back
 	{
 		this.character_background.buildPerkTree();
 
-		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
 		this.addPerkGroup(::Const.Perks.BasicNecroMagicTree.Tree);
 		this.addPerkGroup(::Const.Perks.ValaRuneMagicTree.Tree);
 		this.addPerkGroup(::Const.Perks.PhilosophyMagicTree.Tree);

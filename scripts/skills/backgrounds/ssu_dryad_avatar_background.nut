@@ -121,8 +121,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 	function buildPerkTree()
 	{
 		this.character_background.buildPerkTree();
-		
-		this.addPerkGroup(::Const.Perks.StaffTree.Tree);
+
 		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
 		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
 		this.addPerkGroup(::Const.Perks.DryadShamanTree.Tree);

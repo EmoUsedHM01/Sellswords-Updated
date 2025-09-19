@@ -90,7 +90,6 @@ this.necro_embalmbed_priest <- this.inherit("scripts/skills/backgrounds/characte
 		this.m.PerkTreeDynamic = {
 			Weapon = [
 				this.Const.Perks.SwordTree,
-				this.Const.Perks.StaffTree,
 				this.Const.Perks.WarlockMagicTree
 			],
 			Defense = [
