@@ -34,7 +34,6 @@ this.crConqueror <- this.inherit("scripts/entity/tactical/skeleton", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_battleheart"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_berserk"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_poison_immunity"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));

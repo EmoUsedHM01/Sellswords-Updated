@@ -75,8 +75,7 @@ this.crDesperado_High <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));					
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	

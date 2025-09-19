@@ -5,7 +5,6 @@
 		__original();
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_adrenalin"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		local dc = this.World.getTime().Days;
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");
 		dc = this.Math.max(dc, 3 * mn);

@@ -83,8 +83,7 @@ this.crDesperado <- this.inherit("scripts/entity/tactical/human", {
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{				
-			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));				
+			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));		
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));				
 			this.m.Skills.add(this.new("scripts/skills/traits/iron_jaw_trait"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));	

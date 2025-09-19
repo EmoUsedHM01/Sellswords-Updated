@@ -90,7 +90,6 @@ this.crFallenbetrayer <- this.inherit("scripts/entity/tactical/enemies/zombie", 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_poison_immunity"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));			
 
 		local dc = this.World.getTime().Days;
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");	

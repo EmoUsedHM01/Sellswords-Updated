@@ -50,8 +50,7 @@ this.crSlayer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
 		this.m.Skills.add(this.new("scripts/skills/actives/barbarian_fury_skill"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_adrenalin"));
 		

@@ -540,8 +540,7 @@ this.crSellsword <- this.inherit("scripts/entity/tactical/human", {
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));	
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_savage_strength"));		
 			}
-			
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));			
+				
 			this.m.Skills.add(this.new("scripts/skills/traits/iron_jaw_trait"));			
 		}
 		else if (v <= 100)				 //barbarian

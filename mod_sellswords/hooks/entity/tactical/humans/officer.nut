@@ -3,7 +3,6 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 120)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));	

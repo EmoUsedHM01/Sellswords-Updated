@@ -290,8 +290,7 @@ this.crOrcPackleader <- this.inherit("scripts/entity/tactical/actor", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.Skills.add(this.new("scripts/skills/effects/captain_effect"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));			
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));	
 		
 		if (::Is_PTR_Exist)
 		{

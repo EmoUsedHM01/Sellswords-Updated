@@ -30,8 +30,7 @@
 					}		
 				}
 			}
-		}			
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
+		}
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{

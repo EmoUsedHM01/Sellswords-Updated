@@ -81,7 +81,6 @@ this.crHedgeKnight <- this.inherit("scripts/entity/tactical/human", {
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_feint"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_bloody_harvest"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));

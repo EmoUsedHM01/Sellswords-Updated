@@ -446,8 +446,7 @@ this.crSellsword_Tank <- this.inherit("scripts/entity/tactical/human", {
 					[1, "sellsword_helmet_barb"],			//350,-23		  					
 				]));
 			}
-			
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));			
+				
 			this.m.Skills.add(this.new("scripts/skills/traits/iron_jaw_trait"));
 
 			if (::Is_PTR_Exist)

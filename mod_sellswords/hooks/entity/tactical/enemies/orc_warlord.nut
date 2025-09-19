@@ -4,7 +4,6 @@
 	{
 		__original();
 
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));
 
 		if (::Is_PTR_Exist)

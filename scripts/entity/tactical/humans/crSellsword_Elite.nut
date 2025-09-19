@@ -56,7 +56,6 @@ this.crSellsword_Elite <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_berserk"));		
 		
 		if (::Is_PTR_Exist)

@@ -75,7 +75,6 @@ this.crBarbarianKing <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_captain"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rally_the_troops"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 
 		if (::Is_PTR_Exist)
 		{

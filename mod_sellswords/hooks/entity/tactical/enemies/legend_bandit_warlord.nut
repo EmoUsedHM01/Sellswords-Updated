@@ -4,8 +4,7 @@
 	{
 		__original();
 		this.m.Skills.removeByID("perk.hold_out");	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));				
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlocknormal"));	
 

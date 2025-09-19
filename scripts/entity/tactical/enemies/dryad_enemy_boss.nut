@@ -48,7 +48,6 @@ this.dryad_enemy_boss <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 
 		if (::Is_PTR_Exist)

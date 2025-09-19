@@ -4,8 +4,6 @@
 	{
 		__original();
 
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_full_force"));
-
 		if (::Is_PTR_Exist)
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bulwark"));
 
