@@ -75,6 +75,9 @@ Deleted Tumble hook (skill is completely different now)
 ...\mod_sellswords\hooks\skills\effects\legend_evasion_effect.nut
 Deleted Evasion's effect hook (skill is completely different now)
 
+...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
+Fixed the Donkey background hooking onUpdate
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.10 changes
