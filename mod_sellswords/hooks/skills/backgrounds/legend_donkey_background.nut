@@ -93,9 +93,9 @@
 		this.m.Container.add(this.new("scripts/skills/actives/knock_back"));
 	}
 
-	q.onUpdate <- function( _properties )
+	q.onUpdate = @(__original) function(_properties)
 	{
-		this.character_background.onUpdate(_properties);
+		__original(_properties);
 		_properties.XPGainMult *= 1.5;
 	}
 });
