@@ -8,6 +8,9 @@
 		local actor = this.getContainer().getActor();
 		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
 
+		if (actor.getCurrentProperties().IsImmuneToBleeding)
+	  		this.removeSelf();
+
 		if (this.getContainer().getActor().getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 50 || crrd)
 		{
 			if (!this.getContainer().getActor().isHiddenToPlayer())
