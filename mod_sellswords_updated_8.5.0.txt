@@ -90,6 +90,9 @@ Edited CustomPerkTree values
 ...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
 Edited hook to match 19.2 logic
 
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+Added a check for bleed-immune targets so they don't actually bleed
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.10 changes
