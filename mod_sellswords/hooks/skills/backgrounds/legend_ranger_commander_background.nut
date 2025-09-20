@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.CustomPerkTree[6].push(this.Const.Perks.PerkDefs.crrangedskill);
+		this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crrangedskill);
 	}
 
 });
