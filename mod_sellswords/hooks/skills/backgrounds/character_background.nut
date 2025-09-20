@@ -173,9 +173,6 @@
 						this.m.CustomPerkTree[2].push(::Legends.Perk.crAudaciouscharge);
 						this.m.CustomPerkTree[6].push(::Legends.Perk.crGrandslam);
 						continue;
-					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendSpecUnarmed:
-						this.m.CustomPerkTree[6].push(::Legends.Perk.LegendUnarmedTraining);
-						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.SpecAxe:
 						this.m.CustomPerkTree[5].push(::Legends.Perk.crHackSPM);
 						continue;
