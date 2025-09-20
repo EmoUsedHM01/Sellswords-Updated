@@ -157,7 +157,7 @@
 				switch (true)
 				{
 					// attach new perks based on perk tree here
-					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendSmallTarget:
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendFashionable:
 						this.m.CustomPerkTree[3].push(::Legends.Perk.ArmorMasteryCloth);
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.Nimble:
