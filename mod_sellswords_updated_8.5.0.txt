@@ -64,6 +64,7 @@ Removed all PTR hooks going forward
 ...\scripts\skills\backgrounds\necro_lorekeeper.nut
 ...\scripts\skills\backgrounds\necro_embalmbed_priest.nut
 Removed all references to StaffTree
+Swapped ChefClassTree to ChefProfessionTree
 
 ...\mod_sellswords\hooks\items\weapons\named\legend_named_flail.nut -> *\legend_named_ranged_flail.nut
 ...\scripts\entity\tactical\humans\crSellswordveteran_Polearm.nut
@@ -80,6 +81,11 @@ Fixed the Donkey background hooking onUpdate
 
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 Swapped Cloth Armour Mastery to check for Fashionable now Small Target was removed
+Removed LegendUnarmedTraining references
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_commander_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_background.nut
+Edited CustomPerkTree values
 
 ----------------------------------------------------------------------------------------------------------------------------
 
