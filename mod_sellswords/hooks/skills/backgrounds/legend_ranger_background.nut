@@ -1,9 +1,11 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/backgrounds/legend_ranger_background", function ( q ) {
 
-	q.create = @(__original) function()
+	q.onAdded = @(__original) function()
 	{
 		__original();
-		this.m.CustomPerkTree[5].push(this.Const.Perks.PerkDefs.crrangedskill);
+
+		if (this.m.IsNew)
+			this.m.Container.add(this.new("scripts/skills/perks/perk_crrangedskill"));
 	}
 
 });
