@@ -75,7 +75,7 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 			],
 			Enemy = [],
 			Class = [
-				this.Const.Perks.ChefClassTree
+				this.Const.Perks.ChefProfessionTree
 			],
 			Magic = []
 		};
