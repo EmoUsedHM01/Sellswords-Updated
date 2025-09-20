@@ -78,6 +78,9 @@ Deleted Evasion's effect hook (skill is completely different now)
 ...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
 Fixed the Donkey background hooking onUpdate
 
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+Swapped Cloth Armour Mastery to check for Fashionable now Small Target was removed
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.10 changes
