@@ -1,14 +1,8 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_balance", function ( q ) {
 
+	q.m.BonusMin <- 0;
+	q.m.BonusMax = 10;
 	q.m.Minus <- 0;
-
-	q.create = @(__original) function()
-	{
-		__original();
-		this.m.Description = "%name% gains increased defense and endurance by balancing their armor and mobility.";		
-		this.m.BonusMin = 0;
-		this.m.BonusMax = 10;
-	}
 
 	q.getTooltip = @(__original) function()
 	{
@@ -96,19 +90,6 @@
 			bonus = 0;
 
 		return this.Math.max(this.m.BonusMin, bonus);
-	}
-
-	if (!(::Is_PTR_Exist))
-	{
-		q.getInitiativeBonus <- function()
-		{
-			return this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]) * -1 * 0.3;
-		}
-
-		q.onUpdate <- function( _properties )
-		{
-			_properties.FatigueToInitiativeRate *= 0.7;		
-		}
 	}
 
 	q.onAfterUpdate = @(__original) function( _properties )

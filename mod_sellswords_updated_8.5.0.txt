@@ -87,6 +87,9 @@ Removed LegendUnarmedTraining references
 ...\mod_sellswords\hooks\skills\backgrounds\legend_ranger_background.nut
 Edited CustomPerkTree values
 
+...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
+Edited hook to match 19.2 logic
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 8.4.10 changes
