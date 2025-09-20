@@ -68,7 +68,9 @@ this.ssu_dryad_shaman_background <- ::inherit("scripts/skills/backgrounds/charac
 			],
 			Enemy = [],
 			Class = [],
-			Magic = []
+			Magic = [
+				this.Const.Perks.StavesMagicTree
+			]
 		};
 
 		if (::Is_PTR_Exist)

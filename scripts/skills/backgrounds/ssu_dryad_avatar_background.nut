@@ -124,6 +124,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 
 		this.addPerkGroup(::Const.Perks.HammerTree.Tree);
 		this.addPerkGroup(::Const.Perks.CleaverTree.Tree);
+		this.addPerkGroup(::Const.Perks.StavesMagicTree.Tree);
 		this.addPerkGroup(::Const.Perks.DryadShamanTree.Tree);
 		this.addPerkGroup(::Const.Perks.DryadTamerTree.Tree);
 		this.addPerkGroup(::Const.Perks.MediumArmorTree.Tree);

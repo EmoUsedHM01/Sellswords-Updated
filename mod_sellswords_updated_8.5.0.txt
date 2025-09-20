@@ -63,7 +63,7 @@ Removed all PTR hooks going forward
 ...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
 ...\scripts\skills\backgrounds\necro_lorekeeper.nut
 ...\scripts\skills\backgrounds\necro_embalmbed_priest.nut
-Removed all references to StaffTree
+Changed all references from StaffTree to StavesMagicTree
 Swapped ChefClassTree to ChefProfessionTree
 
 ...\mod_sellswords\hooks\items\weapons\named\legend_named_flail.nut -> *\legend_named_ranged_flail.nut

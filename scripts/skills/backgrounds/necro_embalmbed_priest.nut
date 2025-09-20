@@ -106,7 +106,9 @@ this.necro_embalmbed_priest <- this.inherit("scripts/skills/backgrounds/characte
 			Class = [
 				this.Const.Perks.MummyClassTree
 			],
-			Magic = []
+			Magic = [
+				this.Const.Perks.StavesMagicTree
+			]
 		}
 	}
 

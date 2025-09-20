@@ -151,6 +151,7 @@ this.necro_lorekeeper <- this.inherit("scripts/skills/backgrounds/character_back
 		this.addPerkGroup(::Const.Perks.BasicNecroMagicTree.Tree);
 		this.addPerkGroup(::Const.Perks.ValaRuneMagicTree.Tree);
 		this.addPerkGroup(::Const.Perks.PhilosophyMagicTree.Tree);
+		this.addPerkGroup(::Const.Perks.StavesMagicTree.Tree);
 		this.addPerkGroup(::Const.Perks.ClothArmorTree.Tree);
 		this.addPerkGroup(::Const.Perks.LightArmorTree.Tree);
 		this.addPerkGroup(::Const.Perks.AgileTree.Tree);
