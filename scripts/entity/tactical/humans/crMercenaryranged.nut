@@ -55,7 +55,7 @@ this.crMercenaryranged <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_lone_wolf"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lookout"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_berserk"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_close_combat_archer"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_point_blank"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 		}
 

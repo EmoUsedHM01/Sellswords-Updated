@@ -91,7 +91,7 @@ this.crMercenary <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_quick_hands"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_close_combat_archer"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_point_blank"));
 		
 		if("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{

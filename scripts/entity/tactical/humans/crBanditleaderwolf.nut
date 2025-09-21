@@ -65,7 +65,7 @@ this.crBanditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_close_combat_archer"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_point_blank"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_shields_up"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rally_the_troops"));

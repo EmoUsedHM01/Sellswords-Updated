@@ -44,6 +44,17 @@
 ...\scripts\entity\tactical\humans\crSlayer.nut
 Removed Full Force from various entities
 
+...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
+...\scripts\entity\tactical\enemies\crZombieArbalester.nut
+...\scripts\entity\tactical\humans\crArbalester_guest.nut
+...\scripts\entity\tactical\humans\crBanditArbalester.nut
+...\scripts\entity\tactical\humans\crBanditleaderwolf.nut
+...\scripts\entity\tactical\humans\crBarbarianArbalester.nut
+...\scripts\entity\tactical\humans\crMercenary.nut
+...\scripts\entity\tactical\humans\crMercenaryranged.nut
+...\scripts\entity\tactical\humans\crNomadArbalester.nut
+Replaced CCA with Point Blank
+
 ...\mod_sellswords\hooks\skills\perks\perk_legend_unarmed_training.nut
 Removed Unarmed Training
 
