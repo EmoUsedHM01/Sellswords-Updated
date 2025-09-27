@@ -180,7 +180,7 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 		bro.getBaseProperties().DailyWageMult *= 1.2;
 		bro.getSkills().update();
 
-		if (bro.getBackground().getID() == "background.slave" || bro.getBackground().getID() == "background.legend_donkey_background")
+		if (bro.getBackground().getID() == "background.slave" || bro.getBackground().getID() == "background.legend_donkey")
 		{
 			bro.getBaseProperties().DailyWageMult *= 0.0;
 			bro.getSkills().update();

@@ -1,5 +1,14 @@
 8.5.0 changes
 
+...\mod_sellswords\scripts\skills\actives\crcleave.nut
+...\mod_sellswords\scripts\skills\actives\serrated_axe.nut
+...\mod_sellswords\scripts\skills\actives\twincleavers_1.nut
+...\mod_sellswords\scripts\scenarios\sellswords_scenario.nut
+...\mod_sellswords\scripts\events\events\legend_tournament_enter_event.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
+...\mod_sellswords\config\necro_loot.nut
+bg fixes, arena fix, lindy tail fix
+
 ...\mod_sellswords\hooks\skills\perks\perk_legend_full_force.nut
 ...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
 ...\mod_sellswords\hooks\entity\tactical\enemies\legend_bandit_warlord.nut

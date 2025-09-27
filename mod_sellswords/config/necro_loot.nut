@@ -30,7 +30,7 @@
 
 			switch(bro.getBackground().getID())
 			{
-			case "background.vazl_cannibal":
+			case "background.legend_cannibal":
 				CannibalsInRoster = CannibalsInRoster + 1;
 				break;
 			case "background.gravedigger":

@@ -4,7 +4,6 @@
 	{
 		__original();
 
-		this.m.ID = "background.legend_donkey_background";
 		this.m.DailyCost = 1;
 		this.m.BackgroundType = this.Const.BackgroundType.Lowborn | this.Const.BackgroundType.Untalented | this.Const.BackgroundType.Stabled;
 		this.m.Modifiers.Terrain = [
