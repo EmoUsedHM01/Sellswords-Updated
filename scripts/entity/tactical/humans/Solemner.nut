@@ -87,7 +87,7 @@ this.Solemner <- this.inherit("scripts/entity/tactical/human", {
 						{
 							b.MeleeSkill += 5;		
 							b.Initiative += 2;							
-							this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
+							this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 							this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));								
 							if (dc >= 200)
 							{

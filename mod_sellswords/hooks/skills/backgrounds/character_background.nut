@@ -196,7 +196,6 @@
 						this.m.CustomPerkTree[1].push(::Legends.Perk.crBackswing);
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendBackToBasics:
-						this.m.CustomPerkTree[1].push(::Legends.Perk.crAnchor);
 						this.m.CustomPerkTree[5].push(::Legends.Perk.crBattlerhaposdy);
 						continue;
 					// replace perks here

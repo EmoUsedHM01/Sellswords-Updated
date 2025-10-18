@@ -69,7 +69,7 @@ this.crInfantry <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));									
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));				
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crDiscipline"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_return_favor"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_clarity"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crTotalcover"));

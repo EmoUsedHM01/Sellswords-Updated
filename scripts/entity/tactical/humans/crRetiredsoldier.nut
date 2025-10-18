@@ -45,7 +45,7 @@ this.crRetiredsoldier <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));		
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));			
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));														
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));	
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_clarity"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));

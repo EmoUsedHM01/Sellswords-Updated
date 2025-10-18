@@ -237,7 +237,7 @@ this.crBaron <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_battleheart"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));
 		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 		this.m.Skills.removeByID("perk.underdog");
 
 		if (::Is_PTR_Exist)

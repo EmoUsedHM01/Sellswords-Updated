@@ -68,7 +68,7 @@ this.crSellsword_Tank <- this.inherit("scripts/entity/tactical/human", {
 			[4, ::Legends.Perk.LegendSecondWind, 1],
 			[2, ::Legends.Perk.crBlocknormal, 1],
 			[1, ::Legends.Perk.crDiscipline, 1],
-			[1, ::Legends.Perk.crAnchor, 1],
+			[1,::Legends.Perk.LegendAnchor, 1],
 		];
 
 		if (::Is_PTR_Exist)

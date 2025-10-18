@@ -76,7 +76,7 @@ foreach(script in [
 				}
 
 				if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 100)
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 			}
 		}
 	});

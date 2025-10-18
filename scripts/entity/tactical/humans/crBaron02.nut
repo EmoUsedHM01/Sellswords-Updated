@@ -141,7 +141,7 @@ this.crBaron02 <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/effects/dodge_effect"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));
 		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 
 		if (::Is_PTR_Exist)
 		{

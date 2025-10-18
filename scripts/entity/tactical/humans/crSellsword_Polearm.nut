@@ -54,7 +54,7 @@ this.crSellsword_Polearm <- this.inherit("scripts/entity/tactical/human", {
 			[1, ::Legends.Perk.crBruiser, 1],
 			[1, ::Legends.Perk.crRavager, 1],
 			[1, ::Legends.Perk.crDiscipline, 1],
-			[1, ::Legends.Perk.crAnchor, 1],
+			[1,::Legends.Perk.LegendAnchor, 1],
 			[1, ::Legends.Perk.crBattlerhaposdy, 1],
 		];
 

@@ -4,7 +4,7 @@
 	{
 		__original();
 		this.m.Skills.removeByID("perk.ptr_survival_instinct");
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;

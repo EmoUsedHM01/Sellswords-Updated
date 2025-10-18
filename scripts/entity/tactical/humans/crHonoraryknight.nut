@@ -73,7 +73,7 @@ this.crHonoraryknight <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));			
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_crDiscipline"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crAnchor"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 			
 			if (::Is_PTR_Exist)
 			{
