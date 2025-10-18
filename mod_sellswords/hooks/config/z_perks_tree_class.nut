@@ -7,7 +7,7 @@
 	SelfWeightMultiplier = 0.33,
 	Tree = [
 		[],
-		[::Const.Perks.PerkDefs.crAnchor],
+		[], // ::Const.Perks.PerkDefs.crAnchor
 		[],
 		[],
 		[::Const.Perks.PerkDefs.crBlocknormal],
