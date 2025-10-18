@@ -217,7 +217,7 @@ this.necro_embalmbed_slave <- this.inherit("scripts/skills/backgrounds/character
 			"weapons/ancient/broken_ancient_sword",
 			"weapons/ancient/ancient_spear",
 			"weapons/ancient/ancient_sword",
-			"weapons/legend_sling"
+			"weapons/legend_dilapitated_sling"
 		];
 		items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 
