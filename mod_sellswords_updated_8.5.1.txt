@@ -1,6 +1,25 @@
 8.5.1 changes
 
-...\
+...\mod_sellswords\hooks\scenarios\world\cultists_scenario.nut
+replace sling - Breaky
+...\mod_sellswords\hooks\entity\tactical\humans\militia_veteran.nut
+...\mod_sellswords\hooks\hooks_humans\nut
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+...\scripts\entity\tactical\humans\Solemner.nut
+...\scripts\entity\tactical\humans\crBaron.nut
+...\scripts\entity\tactical\humans\crBaron02.nut
+...\scripts\entity\tactical\humans\crHonoraryknight.nut
+...\scripts\entity\tactical\humans\crInfantry.nut
+...\scripts\entity\tactical\humans\crRetiredsoldier.nut
+...\scripts\entity\tactical\humans\crSellsword.nut
+...\scripts\entity\tactical\humans\crSellsword_Polearm.nut
+...\scripts\entity\tactical\humans\crSellsword_Tank.nut
+Replace anchor
+...\scripts\entity\tactical\undead_player.nut
+Remove a vamp lord hairdo - Breaky
+...\scripts\encounters\events\cr_anatomist_recruit_encounter.nut
+Hide the anatomist encounter name - Breaky 
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

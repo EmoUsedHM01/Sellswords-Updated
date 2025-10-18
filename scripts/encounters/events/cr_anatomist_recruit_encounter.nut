@@ -6,7 +6,7 @@ this.cr_anatomist_recruit_encounter <- this.inherit("scripts/encounters/encounte
 	function create() {
 		this.createScreens();
 		this.m.Type = "encounter.cr_anatomist_recruit";
-		this.m.Name = "Anatomist";
+		this.m.Name = ::Const.Strings.randomCityEncounterName();
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 	}
 
