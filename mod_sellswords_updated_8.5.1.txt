@@ -1,7 +1,9 @@
 8.5.1 changes
 
+...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut
+fixed bullseye hook - chopeks
 ...\mod_sellswords\hooks\skills\actives\legend_prepare_knockback_skill.nut
-removed knockback hook, legends does the same now, it was also renamed to wind up
+removed knockback hook, legends does the same now, it was also renamed to wind up - chopeks
 ...\mod_sellswords\config\a_sellswords_global.nut
 fixed gobbo warrior orientation icon - chopeks
 ...\mod_sellswords\hooks\factions\actions\send_military_army_action.nut
