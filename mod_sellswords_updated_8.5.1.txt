@@ -1,5 +1,7 @@
 8.5.1 changes
 
+...\mod_sellswords\hooks\factions\actions\send_military_army_action.nut
+fixed null crash in action - chopeks
 ...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
 fixed gobbo warrior - Tiyne
 ...\mod_sellswords\config\strings.nut
