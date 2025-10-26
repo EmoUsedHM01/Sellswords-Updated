@@ -1,5 +1,10 @@
 8.5.1 changes
 
+...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
+fixed gobbo warrior - Tiyne
+...\mod_sellswords\config\strings.nut
+...\mod_sellswords\hooks\config\strings.nut
+gave tooltips spa treatment - chopeks
 ...\mod_sellswords\hooks\scenarios\world\cultists_scenario.nut
 replace sling - Breaky
 ...\mod_sellswords\hooks\entity\tactical\humans\militia_veteran.nut

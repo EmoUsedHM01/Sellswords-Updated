@@ -22,8 +22,7 @@ this.crGoblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 		this.m.CurrentProperties = clone b;
 		this.m.ActionPointCosts = this.Const.DefaultMovementAPCost;
 		this.m.FatigueCosts = this.Const.DefaultMovementFatigueCost;
-		// this.getSprite("head").setBrush("head_kobold_0" + this.Math.rand(1, 5));		
-		this.getSprite("head").setBrush("bust_goblin_01_head_0" + this.Math.rand(1, 3));			
+		this.getSprite("head").setBrush("bust_goblin_01_head_0" + this.Math.rand(1, 3));
 		this.addDefaultStatusSprites();
 		local parts = [
 			"body", "tattoo_body", "injury_body",
