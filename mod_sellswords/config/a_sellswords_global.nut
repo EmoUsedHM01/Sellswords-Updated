@@ -121,7 +121,7 @@
 ::Const.EntityType.crSkeleton_pol <-
 	::Const.EntityType.addNew("skeleton_05_orientation", "Ancient Praetoriani", "Ancient Praetorianus");
 ::Const.EntityType.crGoblinwarrior <-
-	::Const.EntityType.addNew("kobold_fighter_orientation", "Goblin Warrior", "Goblin Warriors");
+	::Const.EntityType.addNew("goblin_berserker_orientation", "Goblin Warrior", "Goblin Warriors");
 ::Const.EntityType.crKnight_guest <-
 	::Const.EntityType.addNew("knight_orientation", "Knight", "Knights");
 ::Const.EntityType.crSquire_guest <-

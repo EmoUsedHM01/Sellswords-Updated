@@ -1,5 +1,7 @@
 8.5.1 changes
 
+...\mod_sellswords\config\a_sellswords_global.nut
+fixed gobbo warrior orientation icon
 ...\mod_sellswords\hooks\factions\actions\send_military_army_action.nut
 fixed null crash in action - chopeks
 ...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
