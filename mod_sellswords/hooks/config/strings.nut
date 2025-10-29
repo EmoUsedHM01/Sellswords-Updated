@@ -1,4 +1,4 @@
-::Const.Strings.PerkDescription.LegendAthlete = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendAthlete = ::Legends.tooltip(@"
 You're a well-rounded athlete!
 
 [color=%active%][u]Active:[/u][/color]
@@ -18,7 +18,7 @@ You're a well-rounded athlete!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendAthlete].Tooltip = ::Const.Strings.PerkDescription.LegendAthlete;
 
-// ::Const.Strings.PerkDescription.LegendSmashingShields = ::Legend.tooltip(@"
+// ::Const.Strings.PerkDescription.LegendSmashingShields = ::Legends.tooltip(@"
 //'If you can't get around it, try smashing through. It works!'
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -28,7 +28,7 @@ You're a well-rounded athlete!
 //");
 // ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSmashingShields].Tooltip = ::Const.Strings.PerkDescription.LegendSmashingShields;
 
-::Const.Strings.PerkDescription.LegendSmackdown = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendSmackdown = ::Legends.tooltip(@"
 Use your size and strength to bully your way into a prime position.
 
 [color=%passive%][u]Passive:[/u][/color] 
@@ -48,7 +48,7 @@ Use your size and strength to bully your way into a prime position.
 
 if (::Is_PTR_Exist)
 {
-	::Const.Strings.PerkDescription.LegendSpecStaffStun = ::Legend.tooltip(@"
+	::Const.Strings.PerkDescription.LegendSpecStaffStun = ::Legends.tooltip(@"
 Master the movements required to spin your staff in a great flourish so that it lands with additional force.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -61,7 +61,7 @@ Master the movements required to spin your staff in a great flourish so that it 
 }
 else
 {
-	::Const.Strings.PerkDescription.LegendSpecStaffStun = ::Legend.tooltip(@"
+	::Const.Strings.PerkDescription.LegendSpecStaffStun = ::Legends.tooltip(@"
 Master the movements required to spin your staff in a great flourish so that it lands with additional force.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -73,7 +73,7 @@ Master the movements required to spin your staff in a great flourish so that it 
 
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecStaffStun].Tooltip = ::Const.Strings.PerkDescription.LegendSpecStaffStun;
 
-::Const.Strings.PerkDescription.LegendTumble = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendTumble = ::Legends.tooltip(@"
 Make use of your acrobatic skill to improve your movements.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -85,7 +85,7 @@ Make use of your acrobatic skill to improve your movements.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendTumble].Tooltip = ::Const.Strings.PerkDescription.LegendTumble;
 
-::Const.Strings.PerkDescription.LegendLastStand = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendLastStand = ::Legends.tooltip(@"
 'This is the hill that you will NOT die on!'
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -97,7 +97,7 @@ Make use of your acrobatic skill to improve your movements.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendLastStand].Tooltip = ::Const.Strings.PerkDescription.LegendLastStand;
 
-::Const.Strings.PerkDescription.Indomitable = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Indomitable = ::Legends.tooltip(@"
 'Mountains cannot be moved, nor taken down!'
 
 [color=%passive%][u]Active:[/u][/color]
@@ -108,7 +108,7 @@ Make use of your acrobatic skill to improve your movements.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Indomitable].Tooltip = ::Const.Strings.PerkDescription.Indomitable;
 
-::Const.Strings.PerkDescription.LegendTwirl = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendTwirl = ::Legends.tooltip(@"
 Practice in physical movement with a partner has given the ability to take the lead and move someone's body in a twirling movement.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -120,7 +120,7 @@ Practice in physical movement with a partner has given the ability to take the l
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendTwirl].Tooltip = ::Const.Strings.PerkDescription.LegendTwirl;
 
-::Const.Strings.PerkDescription.QuickHands = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.QuickHands = ::Legends.tooltip(@"
 Looking for this?
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -130,7 +130,7 @@ Looking for this?
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.QuickHands].Tooltip = ::Const.Strings.PerkDescription.QuickHands;
 
-::Const.Strings.PerkDescription.LegendMuscularity = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendMuscularity = ::Legends.tooltip(@"
 [color=%negative%][u]Requires:[/u] Melee or Throwing Weapon Attack[/color]
 Put your full weight into every blow!
 
@@ -145,7 +145,7 @@ Put your full weight into every blow!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendMuscularity].Tooltip = ::Const.Strings.PerkDescription.LegendMuscularity;
 
-::Const.Strings.PerkDescription.Overwhelm = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Overwhelm = ::Legends.tooltip(@"
 Learn to take advantage of your initiative and prevent the enemy from attacking effectively by overwhelming them with your attacks!
 
 [color=%passive%][u]Active/Passive:[/u][/color]
@@ -159,7 +159,7 @@ Learn to take advantage of your initiative and prevent the enemy from attacking 
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Overwhelm].Tooltip = ::Const.Strings.PerkDescription.Overwhelm;
 
-::Const.Strings.PerkDescription.LegendBattleheart = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendBattleheart = ::Legends.tooltip(@"
 Wade into the thick of battle, dodging blades from behind and above, aware of all around you at the heart of the battle.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -171,7 +171,7 @@ Wade into the thick of battle, dodging blades from behind and above, aware of al
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendBattleheart].Tooltip = ::Const.Strings.PerkDescription.LegendBattleheart;
 
-::Const.Strings.PerkDescription.Underdog = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Underdog = ::Legends.tooltip(@"
 I'm used to it.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -181,7 +181,7 @@ I'm used to it.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Underdog].Tooltip = ::Const.Strings.PerkDescription.Underdog;
 
-::Const.Strings.PerkDescription.SunderingStrikes = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.SunderingStrikes = ::Legends.tooltip(@"
 Learn how to strike best at your targets' Armor to destroy it as fast as possible.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -193,7 +193,7 @@ Learn how to strike best at your targets' Armor to destroy it as fast as possibl
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.SunderingStrikes].Tooltip = ::Const.Strings.PerkDescription.SunderingStrikes;
 
-::Const.Strings.PerkDescription.LegendShieldsUp = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendShieldsUp = ::Legends.tooltip(@"
 Drilling your troops in a shieldwall prepares their reaction time to avoid early deaths on the battlefield.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -203,7 +203,7 @@ Drilling your troops in a shieldwall prepares their reaction time to avoid early
 
 ::Const.Strings.PerkName.LegendSlaughterer = "Slaughterer";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSlaughterer].Name = ::Const.Strings.PerkName.LegendSlaughterer;
-::Const.Strings.PerkDescription.LegendSlaughterer = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendSlaughterer = ::Legends.tooltip(@"
 A gruesome display, enemies are more likely to lose morale when they witness their allies get split in two.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -215,7 +215,7 @@ A gruesome display, enemies are more likely to lose morale when they witness the
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSlaughterer].Tooltip = ::Const.Strings.PerkDescription.LegendSlaughterer;
 
-::Const.Strings.PerkDescription.LegendCheerOn = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendCheerOn = ::Legends.tooltip(@"
 [color=%negative%][u]Requires:[/u] Instrument or Banner[/color]
 Use your way with song to cheer on an ally!
 
@@ -226,114 +226,114 @@ Use your way with song to cheer on an ally!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendCheerOn].Tooltip = ::Const.Strings.PerkDescription.LegendCheerOn;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul = ::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul = ::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul += "\n\n" + ::Legends.tooltip(@"
 
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyGhoul].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyHexen = ::Const.Strings.PerkDescription.LegendFavouredEnemyHexen += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyHexen = ::Const.Strings.PerkDescription.LegendFavouredEnemyHexen += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyHexen].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyHexen;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyAlps = ::Const.Strings.PerkDescription.LegendFavouredEnemyAlps += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyAlps = ::Const.Strings.PerkDescription.LegendFavouredEnemyAlps += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyAlps].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyAlps;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold = ::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold = ::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyUnhold].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm = ::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm = ::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyLindwurm].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf = ::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf = ::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyDirewolf].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySpider = ::Const.Strings.PerkDescription.LegendFavouredEnemySpider += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySpider = ::Const.Strings.PerkDescription.LegendFavouredEnemySpider += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySpider].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySpider;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySchrat = ::Const.Strings.PerkDescription.LegendFavouredEnemySchrat += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySchrat = ::Const.Strings.PerkDescription.LegendFavouredEnemySchrat += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySchrat].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySchrat;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyOrk = ::Const.Strings.PerkDescription.LegendFavouredEnemyOrk += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyOrk = ::Const.Strings.PerkDescription.LegendFavouredEnemyOrk += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyOrk].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyOrk;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin = ::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin = ::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyGoblin].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyVampire = ::Const.Strings.PerkDescription.LegendFavouredEnemyVampire += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyVampire = ::Const.Strings.PerkDescription.LegendFavouredEnemyVampire += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyVampire].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyVampire;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton = ::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton = ::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySkeleton].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyZombie = ::Const.Strings.PerkDescription.LegendFavouredEnemyZombie += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyZombie = ::Const.Strings.PerkDescription.LegendFavouredEnemyZombie += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyZombie].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyZombie;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyNoble = ::Const.Strings.PerkDescription.LegendFavouredEnemyNoble += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyNoble = ::Const.Strings.PerkDescription.LegendFavouredEnemyNoble += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyNoble].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyNoble;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyBandit = ::Const.Strings.PerkDescription.LegendFavouredEnemyBandit += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyBandit = ::Const.Strings.PerkDescription.LegendFavouredEnemyBandit += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyBandit].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyBandit;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian = ::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian = ::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyBarbarian].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster = ::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster = ::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySwordmaster].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary = ::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary = ::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyMercenary].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan = ::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan = ::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyCaravan].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner = ::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner = ::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySoutherner].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyNomad = ::Const.Strings.PerkDescription.LegendFavouredEnemyNomad += "\n\n" + ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyNomad = ::Const.Strings.PerkDescription.LegendFavouredEnemyNomad += "\n\n" + ::Legends.tooltip(@"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyNomad].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyNomad;
 
 // Need to overwrite this directly because weird
-::Const.Strings.PerkDescription.LegendFavouredEnemyArcher = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyArcher = ::Legends.tooltip(@"
 Many claim to be the greatest shot in the land, but none have outshot you yet.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -365,7 +365,7 @@ Many claim to be the greatest shot in the land, but none have outshot you yet.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyArcher].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyArcher;
 
-::Const.Strings.PerkDescription.LegendInTheZone = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendInTheZone = ::Legends.tooltip(@"
 Use your Armor's blend of protection and mobility to punish your foes mistakes!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -379,7 +379,7 @@ Use your Armor's blend of protection and mobility to punish your foes mistakes!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendInTheZone].Tooltip = ::Const.Strings.PerkDescription.LegendInTheZone;
 
-::Const.Strings.PerkDescription.LegendRebound = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendRebound = ::Legends.tooltip(@"
 Surpass your limits!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -389,7 +389,7 @@ Surpass your limits!
 
 ::Const.Strings.PerkName.LegendPiercingShot = "Piercing Shot";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPiercingShot].Name = ::Const.Strings.PerkName.LegendPiercingShot;
-::Const.Strings.PerkDescription.LegendPiercingShot = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendPiercingShot = ::Legends.tooltip(@"
 [color=%negative%][u]Requires:[/u] Crossbow [/color]
 Launch a shot so powerful it can hit two targets in a straight line.
 
@@ -402,7 +402,7 @@ Launch a shot so powerful it can hit two targets in a straight line.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPiercingShot].Tooltip = ::Const.Strings.PerkDescription.LegendPiercingShot;
 
-::Const.Strings.PerkDescription.FastAdaption = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.FastAdaption = ::Legends.tooltip(@"
 Adapt to your opponent's moves!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -412,7 +412,7 @@ Adapt to your opponent's moves!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.FastAdaption].Tooltip = ::Const.Strings.PerkDescription.FastAdaption;
 
-::Const.Strings.PerkDescription.Fearsome = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Fearsome = ::Legends.tooltip(@"
 Make them scatter and flee!
 
 [color=#4f1800][u]Passive:[/u][/color]
@@ -422,7 +422,7 @@ Make them scatter and flee!
 ");
 
 
-::Const.Strings.PerkDescription.Fearsome = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Fearsome = ::Legends.tooltip(@"
 Make them scatter and flee!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -434,7 +434,7 @@ Make them scatter and flee!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Fearsome].Tooltip = ::Const.Strings.PerkDescription.Fearsome;
 
-::Const.Strings.PerkDescription.Adrenaline = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Adrenaline = ::Legends.tooltip(@"
 Seize the initiative!
 
 [color=%active%][u]Active:[/u][/color]
@@ -446,7 +446,7 @@ Seize the initiative!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Adrenaline].Tooltip = ::Const.Strings.PerkDescription.Adrenaline;
 
-::Const.Strings.PerkDescription.ReachAdvantage = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.ReachAdvantage = ::Legends.tooltip(@"
 Learn to use the superior reach of large weapons to keep the enemy from getting close enough to land a good hit.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -456,7 +456,7 @@ Learn to use the superior reach of large weapons to keep the enemy from getting 
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.ReachAdvantage].Tooltip = ::Const.Strings.PerkDescription.ReachAdvantage;
 
-::Const.Strings.PerkDescription.Footwork = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Footwork = ::Legends.tooltip(@"
 Work those feet!
 
 [color=%passive%][u]Active:[/u][/color]
@@ -470,7 +470,7 @@ Work those feet!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Footwork].Tooltip = ::Const.Strings.PerkDescription.Footwork;
 
-::Const.Strings.PerkDescription.Rotation = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Rotation = ::Legends.tooltip(@"
 Just like dancing with your nan when you were young.
 
 [color=%active%][u]Active:[/u][/color]
@@ -482,7 +482,7 @@ Just like dancing with your nan when you were young.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Rotation].Tooltip = ::Const.Strings.PerkDescription.Rotation;
 
-::Const.Strings.PerkDescription.LegendEvasion = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendEvasion = ::Legends.tooltip(@"
 'Excuse me'
 
 [color=%active%][u]Active:[/u][/color]
@@ -494,7 +494,7 @@ Just like dancing with your nan when you were young.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendEvasion].Tooltip = ::Const.Strings.PerkDescription.LegendEvasion;
 
-::Const.Strings.PerkDescription.LegendChoke = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendChoke = ::Legends.tooltip(@"
 Once an opponent is fatigued, it may be easier to choke them out than to fight through their Armor.
 
 [color=%active%][u]Active:[/u][/color]
@@ -516,7 +516,7 @@ Once an opponent is fatigued, it may be easier to choke them out than to fight t
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendChoke].Tooltip = ::Const.Strings.PerkDescription.LegendChoke;
 
-::Const.Strings.PerkDescription.LegendSpecUnarmed = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendSpecUnarmed = ::Legends.tooltip(@"
 Master the martial arts of unarmed combat.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -534,7 +534,7 @@ Master the martial arts of unarmed combat.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecUnarmed].Tooltip = ::Const.Strings.PerkDescription.LegendSpecUnarmed;
 
-::Const.Strings.PerkDescription.HoldOut = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.HoldOut = ::Legends.tooltip(@"
 Keep it together!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -548,7 +548,7 @@ Keep it together!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.HoldOut].Tooltip = ::Const.Strings.PerkDescription.HoldOut;
 
-::Const.Strings.PerkDescription.LegendBarterGreed = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendBarterGreed = ::Legends.tooltip(@"
 This character is keen to guard the horde of gold the company has accumulated — and intends to protect it with their life.
 
 [color=#4f1800][u]Passive:[/u][/color]
@@ -563,7 +563,7 @@ This character is keen to guard the horde of gold the company has accumulated �
 ");
 
 
-::Const.Strings.PerkDescription.LegendBarterGreed = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendBarterGreed = ::Legends.tooltip(@"
 Lust for gold and self interest can be a double edged sword, an immediate benefit in one place, may come at the expense of others. 
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -579,7 +579,7 @@ Lust for gold and self interest can be a double edged sword, an immediate benefi
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendBarterGreed].Tooltip = ::Const.Strings.PerkDescription.LegendBarterGreed;
 
-::Const.Strings.PerkDescription.LegendBalance = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendBalance = ::Legends.tooltip(@"
 Gain increased defense by balancing your Armor's weight and mobility.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -593,7 +593,7 @@ Gain increased defense by balancing your Armor's weight and mobility.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendBalance].Tooltip = ::Const.Strings.PerkDescription.LegendBalance;
 
-::Const.Strings.PerkDescription.LegendLithe = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendLithe = ::Legends.tooltip(@"
 Specialize in Medium Armour! Not as nimble as some but more lithe than others!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -603,7 +603,7 @@ Specialize in Medium Armour! Not as nimble as some but more lithe than others!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendLithe].Tooltip = ::Const.Strings.PerkDescription.LegendLithe;
 
-::Const.Strings.PerkDescription.Nimble = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Nimble = ::Legends.tooltip(@"
 Specialize in Light Armour! By nimbly dodging or deflecting blows, convert any hits to glancing hits.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -619,7 +619,7 @@ Specialize in Light Armour! By nimbly dodging or deflecting blows, convert any h
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Nimble].Tooltip = ::Const.Strings.PerkDescription.Nimble;
 
-::Const.Strings.PerkDescription.SpecThrowing = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.SpecThrowing = ::Legends.tooltip(@"
 Master throwing weapons to wound or kill the enemy before they even get close.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -631,7 +631,7 @@ Master throwing weapons to wound or kill the enemy before they even get close.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.SpecThrowing].Tooltip = ::Const.Strings.PerkDescription.SpecThrowing;
 
-::Const.Strings.PerkDescription.SpecFlail = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.SpecFlail = ::Legends.tooltip(@"
 Master the flail and circumvent your opponent's defenses.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -645,7 +645,7 @@ Master the flail and circumvent your opponent's defenses.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.SpecFlail].Tooltip = ::Const.Strings.PerkDescription.SpecFlail;
 
-// ::Const.Strings.PerkDescription.LegendSpecialistButcher = ::Legend.tooltip(@"
+// ::Const.Strings.PerkDescription.LegendSpecialistButcher = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -657,7 +657,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 // ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistButcher].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistButcher;
 
-//::Const.Strings.PerkDescription.LegendSpecialistHammerSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistHammerSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -669,7 +669,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistHammerSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistHammerSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistKnifeSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistKnifeSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -681,7 +681,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistKnifeSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistKnifeSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistMilitiaSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistMilitiaSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -693,7 +693,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistMilitiaSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistMilitiaSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistPickaxeSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistPickaxeSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -705,7 +705,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistPickaxeSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistPickaxeSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistPitchforkSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistPitchforkSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -717,7 +717,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistPitchforkSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistPitchforkSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistShortbowSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistShortbowSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -729,7 +729,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistShortbowSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistShortbowSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistShovelSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistShovelSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -741,7 +741,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistShovelSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistShovelSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistWoodaxeSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistWoodaxeSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -753,7 +753,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistWoodaxeSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistWoodaxeSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistSickleSkill = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistSickleSkill = ::Legends.tooltip(@"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -765,7 +765,7 @@ Master the flail and circumvent your opponent's defenses.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistSickleSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistSickleSkill;
 
-::Const.Strings.PerkDescription.Bullseye = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Bullseye = ::Legends.tooltip(@"
 Nailed it!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -777,7 +777,7 @@ Nailed it!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Bullseye].Tooltip = ::Const.Strings.PerkDescription.Bullseye;
 
-::Const.Strings.PerkDescription.LegendLookout = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendLookout = ::Legends.tooltip(@"
 Learn to find your enemies before they find you.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -789,7 +789,7 @@ Learn to find your enemies before they find you.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendLookout].Tooltip = ::Const.Strings.PerkDescription.LegendLookout;
 
-::Const.Strings.PerkDescription.LegendNetRepair = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendNetRepair = ::Legends.tooltip(@"
 Many years spent repairing and packing nets allows you to create nets and wield them more effectively.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -801,7 +801,7 @@ Many years spent repairing and packing nets allows you to create nets and wield 
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendNetRepair].Tooltip = ::Const.Strings.PerkDescription.LegendNetRepair;
 
-::Const.Strings.PerkDescription.LegendNetCasting = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendNetCasting = ::Legends.tooltip(@"
 Always keep a net handy!
 
 [color=%passive%][u]Active:[/u][/color]
@@ -815,7 +815,7 @@ Always keep a net handy!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendNetCasting].Tooltip = ::Const.Strings.PerkDescription.LegendNetCasting;
 
-::Const.Strings.PerkDescription.LegendMasteryNets = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendMasteryNets = ::Legends.tooltip(@"
 You've learned advanced net throwing techniques.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -834,7 +834,7 @@ You've learned advanced net throwing techniques.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendMasteryNets].Tooltip = ::Const.Strings.PerkDescription.LegendMasteryNets;
 
-::Const.Strings.PerkDescription.LegendEscapeArtist = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendEscapeArtist = ::Legends.tooltip(@"
 Others see it as magic, but your deft hands know better.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -848,7 +848,7 @@ Others see it as magic, but your deft hands know better.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendEscapeArtist].Tooltip = ::Const.Strings.PerkDescription.LegendEscapeArtist;
 
-::Const.Strings.PerkDescription.LegendPackleader = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendPackleader = ::Legends.tooltip(@"
 Dogs can instinctively identify a pack leader, and your knowledge of their habits allows you to become that leader.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -860,7 +860,7 @@ Dogs can instinctively identify a pack leader, and your knowledge of their habit
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPackleader].Tooltip = ::Const.Strings.PerkDescription.LegendPackleader;
 
-::Const.Strings.PerkDescription.LegendDogBreeder = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendDogBreeder = ::Legends.tooltip(@"
 Intimate knowledge of dog care and conditions required for breeding allows you to successfully breed dogs.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -872,7 +872,7 @@ Intimate knowledge of dog care and conditions required for breeding allows you t
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDogBreeder].Tooltip = ::Const.Strings.PerkDescription.LegendDogBreeder;
 
-::Const.Strings.PerkDescription.LegendDogHandling = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendDogHandling = ::Legends.tooltip(@"
 You have mastered the art of training dogs. In the heat of battle your hounds will respond and react to your commands.
 
 [color=%active%][u]Active:[/u][/color]
@@ -884,7 +884,7 @@ You have mastered the art of training dogs. In the heat of battle your hounds wi
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDogHandling].Tooltip = ::Const.Strings.PerkDescription.LegendDogHandling;
 
-::Const.Strings.PerkDescription.LegendDogWhisperer = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendDogWhisperer = ::Legends.tooltip(@"
 You have a way with dogs, the bond you form with them imbues each dog with more confidence and strength, knowing that you are there gives them strength.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -892,7 +892,7 @@ You have a way with dogs, the bond you form with them imbues each dog with more 
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDogWhisperer].Tooltip = ::Const.Strings.PerkDescription.LegendDogWhisperer;
 
-::Const.Strings.PerkDescription.LegendDogMaster = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendDogMaster = ::Legends.tooltip(@"
 Your way with animals extends so far you can turn away dogs that would otherwise do you harm.
 
 [color=%active%][u]Active:[/u][/color]
@@ -906,7 +906,7 @@ Your way with animals extends so far you can turn away dogs that would otherwise
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDogMaster].Tooltip = ::Const.Strings.PerkDescription.LegendDogMaster;
 
-::Const.Strings.PerkDescription.LegendFieldTreats = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFieldTreats = ::Legends.tooltip(@"
 Make liberal use of alcohol and food to motivate your mercenaries.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -918,7 +918,7 @@ Make liberal use of alcohol and food to motivate your mercenaries.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFieldTreats].Tooltip = ::Const.Strings.PerkDescription.LegendFieldTreats;
 
-::Const.Strings.PerkDescription.LegendFieldTriage = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFieldTriage = ::Legends.tooltip(@"
 Spend medicine to heal an ally mid-battle.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -930,7 +930,7 @@ Spend medicine to heal an ally mid-battle.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFieldTriage].Tooltip = ::Const.Strings.PerkDescription.LegendFieldTriage;
 
-::Const.Strings.PerkDescription.LegendFieldRepairs = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendFieldRepairs = ::Legends.tooltip(@"
 Spend tools to repair an allies Armor on the battlefield.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -942,7 +942,7 @@ Spend tools to repair an allies Armor on the battlefield.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFieldRepairs].Tooltip = ::Const.Strings.PerkDescription.LegendFieldRepairs;
 
-::Const.Strings.PerkDescription.LegendSpecBandage = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendSpecBandage = ::Legends.tooltip(@"
 Master the art of bandaging mid-combat, using any cloth available.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -954,7 +954,7 @@ Master the art of bandaging mid-combat, using any cloth available.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecBandage].Tooltip = ::Const.Strings.PerkDescription.LegendSpecBandage;
 
-//::Const.Strings.PerkDescription.LegendDrumsOfWar = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendDrumsOfWar = ::Legends.tooltip(@"
 //[color=%negative%][u]Requires:[/u] Instrument[/color]
 //Learn powerful rhythms that drive your allies on.
 //
@@ -965,7 +965,7 @@ Master the art of bandaging mid-combat, using any cloth available.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDrumsOfWar].Tooltip = ::Const.Strings.PerkDescription.LegendDrumsOfWar;
 
-//::Const.Strings.PerkDescription.LegendDrumsOfLife = ::Legend.tooltip(@"
+//::Const.Strings.PerkDescription.LegendDrumsOfLife = ::Legends.tooltip(@"
 //[color=%negative%][u]Requires:[/u] Instrument or Unarmed[/color]
 //Learn powerful rhythms that drive your allies on.
 //
@@ -976,7 +976,7 @@ Master the art of bandaging mid-combat, using any cloth available.
 //");
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDrumsOfLife].Tooltip = ::Const.Strings.PerkDescription.LegendDrumsOfLife;
 
-::Const.Strings.PerkDescription.LegendThrowSand = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendThrowSand = ::Legends.tooltip(@"
 It's hard to fight with sand in your eyes.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -988,7 +988,7 @@ It's hard to fight with sand in your eyes.
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendThrowSand].Tooltip = ::Const.Strings.PerkDescription.LegendThrowSand;
 
-::Const.Strings.PerkDescription.LegendDebilitate = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendDebilitate = ::Legends.tooltip(@"
 Ankles, hands, elbows and knees, you've learned how to fight dirty to secure victory.
 
 [color=%active%][u]Active:[/u][/color]
@@ -998,7 +998,7 @@ Ankles, hands, elbows and knees, you've learned how to fight dirty to secure vic
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDebilitate].Tooltip = ::Const.Strings.PerkDescription.LegendDebilitate;
 
-::Const.Strings.PerkDescription.Duelist = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.Duelist = ::Legends.tooltip(@"
 Become one with your weapon and go for the weak spots!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -1012,7 +1012,7 @@ Become one with your weapon and go for the weak spots!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Duelist].Tooltip = ::Const.Strings.PerkDescription.Duelist;
 
-::Const.Strings.PerkDescription.LegendConservation = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendConservation = ::Legends.tooltip(@"
 Conduct profane rituals meant to stave off the passage of time, further preserving the means of your craft.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -1020,7 +1020,7 @@ Conduct profane rituals meant to stave off the passage of time, further preservi
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendConservation].Tooltip = ::Const.Strings.PerkDescription.LegendConservation;
 
-::Const.Strings.PerkDescription.LegendChainLightning = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendChainLightning = ::Legends.tooltip(@"
 Unleash an arcing barrage of lightning!
 
 [color=%active%][u]Active:[/u][/color]
@@ -1033,7 +1033,7 @@ Unleash an arcing barrage of lightning!
 ");
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendChainLightning].Tooltip = ::Const.Strings.PerkDescription.LegendChainLightning;
 
-::Const.Strings.PerkDescription.LegendHoldTheLine = ::Legend.tooltip(@"
+::Const.Strings.PerkDescription.LegendHoldTheLine = ::Legends.tooltip(@"
 'DON'T LET THEM BREAK THROUGH!'
 
 [color=%active%][u]Active:[/u][/color]
