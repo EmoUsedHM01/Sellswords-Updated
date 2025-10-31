@@ -54,25 +54,4 @@ this.dryad_helm_shaman <- this.inherit("scripts/items/legend_helmets/legend_helm
 		});
 	}
 
-	function onTurnStart()
-	{
-		local actor = this.getContainer().getActor();
-		local head = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Head);
-		local headMissing = head.getArmorMax() - head.getArmor();
-		local headAdded = this.Math.min(headMissing, 10);
-
-		if (headAdded <= 0)
-			return;
-
-		head.setArmor(head.getArmor() + headAdded);
-		actor.setDirty(true);
-
-		if (!actor.isHiddenToPlayer())
-		{
-			this.Tactical.spawnIconEffect("status_effect_79", actor.getTile(), this.Const.Tactical.Settings.SkillIconOffsetX, this.Const.Tactical.Settings.SkillIconOffsetY, this.Const.Tactical.Settings.SkillIconScale, this.Const.Tactical.Settings.SkillIconFadeInDuration, this.Const.Tactical.Settings.SkillIconStayDuration, this.Const.Tactical.Settings.SkillIconFadeOutDuration, this.Const.Tactical.Settings.SkillIconMovement);
-			this.Sound.play("sounds/enemies/dlc2/schrat_idle_05.wav", this.Const.Sound.Volume.RacialEffect * 2.0, actor.getPos());
-			this.Tactical.EventLog.log(this.Const.UI.getColorized(this.m.Name, "#1e468f") + " repaired for " + headAdded + " points");
-		}
-	}
-
 });
