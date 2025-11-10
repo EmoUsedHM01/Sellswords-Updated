@@ -18,19 +18,19 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/asset_food.png",
-				text = "You have [color=" + this.Const.UI.Color.PositiveValue + "]" + this.World.Assets.getFood() + "[/color] food."
+				text = "You have [color=%positive%]" + this.World.Assets.getFood() + "[/color] food."
 			},
 			{
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Spend [color=" + this.Const.UI.Color.NegativeValue + "]-20[/color] food to raise moral state of adjacent ally from wavering to steady."
+				text = "Spend [color=%negative%]-20[/color] food to raise moral state of adjacent ally from wavering to steady."
 			},
 			{
 				id = 9,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "reduces current fatigue by [color=" + this.Const.UI.Color.PositiveValue + "]-15%[/color]."
+				text = "reduces current fatigue by [color=%positive%]-15%[/color]."
 			}
 		]);	
 		return ret;
@@ -83,7 +83,7 @@
 		local a = _targetTile.getEntity();
 		this.m.Treated.push(a.getID());	
 		a.setFatigue(this.Math.max(0, a.getFatigue() * 0.85));		
-		return ws_onUse(_user, _targetTile);
+		return __original(_user, _targetTile);
 	}
 	
 	q.onCombatFinished <- function()

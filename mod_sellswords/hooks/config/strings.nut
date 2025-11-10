@@ -1,4 +1,4 @@
-::Const.Strings.PerkDescription.LegendAthlete = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendAthlete = @"
 You're a well-rounded athlete!
 
 [color=%active%][u]Active:[/u][/color]
@@ -15,20 +15,20 @@ You're a well-rounded athlete!
 • Costs [color=%negative%]3[/color] AP and [color=%negative%]20[/color] Fatigue.
 
 • Picking the perk will also add [color=%perk%]Furinkazan[/color] to your perk map, which reduces the cost of [color=%skill%]Sprint[/color] and [color=%skill%]Climb[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendAthlete].Tooltip = ::Const.Strings.PerkDescription.LegendAthlete;
 
-// ::Const.Strings.PerkDescription.LegendSmashingShields = ::Legends.tooltip(@"
+// ::Const.Strings.PerkDescription.LegendSmashingShields = @"
 //'If you can't get around it, try smashing through. It works!'
 //
 //[color=%passive%][u]Passive:[/u][/color]
 //• Abilities targeting Shields do [color=%positive%]100%[/color] increased damage.
 //
 //• If a Shield is destroyed by [color=%skill%]Split Shield[/color], recover [color=%positive%]4[/color] Action Points and [color=%positive%]50%[/color] of the Fatigue cost.
-//");
+//";
 // ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSmashingShields].Tooltip = ::Const.Strings.PerkDescription.LegendSmashingShields;
 
-::Const.Strings.PerkDescription.LegendSmackdown = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendSmackdown = @"
 Use your size and strength to bully your way into a prime position.
 
 [color=%passive%][u]Passive:[/u][/color] 
@@ -43,12 +43,12 @@ Use your size and strength to bully your way into a prime position.
 • Costs [color=%negative%]2[/color] AP and [color=%negative%]10[/color] Fatigue.
 
 • AP cost is reduced to [color=%negative%]1[/color] if wielding a Two-Handed Melee weapon. Works only with melee weapons, unarmed attacks and one handed slings. With one handed slings it will grant the [color=%skill%]Prepare Bullet[/color] effect.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSmackdown].Tooltip = ::Const.Strings.PerkDescription.LegendSmackdown;
 
 if (::Is_PTR_Exist)
 {
-	::Const.Strings.PerkDescription.LegendSpecStaffStun = ::Legends.tooltip(@"
+	::Const.Strings.PerkDescription.LegendSpecStaffStun = @"
 Master the movements required to spin your staff in a great flourish so that it lands with additional force.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -57,23 +57,23 @@ Master the movements required to spin your staff in a great flourish so that it 
 • Staff Sweep now applies [color=%status%]Dazed[/color].
 
 • [color=%skill%]Whack a' Smack[/color] gains [color=%positive%]+10%[/color] chance to hit.
-");
+";
 }
 else
 {
-	::Const.Strings.PerkDescription.LegendSpecStaffStun = ::Legends.tooltip(@"
+	::Const.Strings.PerkDescription.LegendSpecStaffStun = @"
 Master the movements required to spin your staff in a great flourish so that it lands with additional force.
 
 [color=%passive%][u]Passive:[/u][/color]
 • Any strike with a Staff or Sling-Staff that would normally [color=%status%]Daze[/color], also [color=%status%]Stuns[/color] and [color=%status%]Staggers[/color]. This does not apply to AoE attacks.
 
 • Staff Sweep now applies [color=%status%]Dazed[/color].
-");
+";
 }
 
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecStaffStun].Tooltip = ::Const.Strings.PerkDescription.LegendSpecStaffStun;
 
-::Const.Strings.PerkDescription.LegendTumble = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendTumble = @"
 Make use of your acrobatic skill to improve your movements.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -82,10 +82,10 @@ Make use of your acrobatic skill to improve your movements.
 • The Action Point cost of all these skills, except [color=%skill%]Lunge[/color], is reduced by [color=%negative%]1[/color] and that of [color=%skill%]Leap[/color] is reduced by [color=%negative%]3[/color].
 
 • This is an upgraded version of [color=%perk%]Furinkazan[/color] and is not stackable.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendTumble].Tooltip = ::Const.Strings.PerkDescription.LegendTumble;
 
-::Const.Strings.PerkDescription.LegendLastStand = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendLastStand = @"
 'This is the hill that you will NOT die on!'
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -94,10 +94,10 @@ Make use of your acrobatic skill to improve your movements.
 • Gain [color=%positive%]+1[/color] additional Action Points for every [color=%negative%]20%[/color] of missing Hitpoints.
 
 • When below [color=%negative%]44%[/color] Hitpoints this character becomes immune to the effects of subsequent injuries, and moral is no longer affected by health loss.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendLastStand].Tooltip = ::Const.Strings.PerkDescription.LegendLastStand;
 
-::Const.Strings.PerkDescription.Indomitable = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Indomitable = @"
 'Mountains cannot be moved, nor taken down!'
 
 [color=%passive%][u]Active:[/u][/color]
@@ -105,10 +105,10 @@ Make use of your acrobatic skill to improve your movements.
 
 • Base Resolve is [color=%positive%]doubled[/color] until the effect ends.
 • Costs [color=%negative%]5[/color] AP and [color=%negative%]25[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Indomitable].Tooltip = ::Const.Strings.PerkDescription.Indomitable;
 
-::Const.Strings.PerkDescription.LegendTwirl = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendTwirl = @"
 Practice in physical movement with a partner has given the ability to take the lead and move someone's body in a twirling movement.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -117,20 +117,20 @@ Practice in physical movement with a partner has given the ability to take the l
 • Picking the perk will also add [color=%perk%]Furinkazan[/color] to your perk map, which reduces the cost of [color=%skill%]Rotation[/color].
 
 • Costs [color=%negative%]3[/color] AP and [color=%negative%]25[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendTwirl].Tooltip = ::Const.Strings.PerkDescription.LegendTwirl;
 
-::Const.Strings.PerkDescription.QuickHands = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.QuickHands = @"
 Looking for this?
 
 [color=%passive%][u]Passive:[/u][/color]
 • Swapping an item in battle becomes a free action with no Action Point cost, once every turn.
 
 • Does not work when swapping a Shield or between Two-Handed Melee Weapons.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.QuickHands].Tooltip = ::Const.Strings.PerkDescription.QuickHands;
 
-::Const.Strings.PerkDescription.LegendMuscularity = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendMuscularity = @"
 [color=%negative%][u]Requires:[/u] Melee or Throwing Weapon Attack[/color]
 Put your full weight into every blow!
 
@@ -142,10 +142,10 @@ Put your full weight into every blow!
 • The factor is reduced to [color=%negative%]60%[/color] for weapons that have a range of more than one tile and [color=%negative%]80%[/color] for Daggers and Goblin Swords.
 
 • The bonus damage cannot be higher than [color=%positive%]40[/color] for attacks with a base Action cost of 5 or less and [color=%positive%]60[/color] for attacks with base AP cost of 6 or more.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendMuscularity].Tooltip = ::Const.Strings.PerkDescription.LegendMuscularity;
 
-::Const.Strings.PerkDescription.Overwhelm = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Overwhelm = @"
 Learn to take advantage of your initiative and prevent the enemy from attacking effectively by overwhelming them with your attacks!
 
 [color=%passive%][u]Active/Passive:[/u][/color]
@@ -156,10 +156,10 @@ Learn to take advantage of your initiative and prevent the enemy from attacking 
 • Additionally, unlocks the [color=%skill%]Quick Feint[/color] skill which allows you to apply [color=%status%]Overwhelmed[/color] to 4 adjacent targets, and can be used every other turn.
 
 • Costs [color=%negative%]1[/color] AP and [color=%negative%]5[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Overwhelm].Tooltip = ::Const.Strings.PerkDescription.Overwhelm;
 
-::Const.Strings.PerkDescription.LegendBattleheart = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendBattleheart = @"
 Wade into the thick of battle, dodging blades from behind and above, aware of all around you at the heart of the battle.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -168,20 +168,20 @@ Wade into the thick of battle, dodging blades from behind and above, aware of al
 • Upgraded version of [color=%perk%]Underdog[/color], immune to [color=%perk%]Backstabber[/color].
 
 • Also prevents moral checks upon enemies entering your Zone of Control.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendBattleheart].Tooltip = ::Const.Strings.PerkDescription.LegendBattleheart;
 
-::Const.Strings.PerkDescription.Underdog = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Underdog = @"
 I'm used to it.
 
 [color=%passive%][u]Passive:[/u][/color]
 • The defense malus due to being surrounded by opponents is reduced by [color=%negative%]5[/color].
 
 • If an attacker has the [color=%perk%]Strength In Numbers[/color] perk, the effect of that perk is negated, and the normal defense malus due to being surrounded is applied instead.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Underdog].Tooltip = ::Const.Strings.PerkDescription.Underdog;
 
-::Const.Strings.PerkDescription.SunderingStrikes = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.SunderingStrikes = @"
 Learn how to strike best at your targets' Armor to destroy it as fast as possible.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -190,20 +190,20 @@ Learn how to strike best at your targets' Armor to destroy it as fast as possibl
 • The bonus is increased to [color=%positive%]30%[/color] for Two-Handed Weapons.
 
 • When unarmed, effectiveness against Armor is increased by [color=%positive%]20%[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.SunderingStrikes].Tooltip = ::Const.Strings.PerkDescription.SunderingStrikes;
 
-::Const.Strings.PerkDescription.LegendShieldsUp = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendShieldsUp = @"
 Drilling your troops in a shieldwall prepares their reaction time to avoid early deaths on the battlefield.
 
 [color=%passive%][u]Passive:[/u][/color]
 • Taking this perk ensures every mercenary with a shield will use [color=%skill%]Shieldwall[/color] or [color=%skill%]Fortify[/color] before the start of each battle.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendShieldsUp].Tooltip = ::Const.Strings.PerkDescription.LegendSlaughterer;
 
 ::Const.Strings.PerkName.LegendSlaughterer = "Slaughterer";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSlaughterer].Name = ::Const.Strings.PerkName.LegendSlaughterer;
-::Const.Strings.PerkDescription.LegendSlaughterer = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendSlaughterer = @"
 A gruesome display, enemies are more likely to lose morale when they witness their allies get split in two.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -212,10 +212,10 @@ A gruesome display, enemies are more likely to lose morale when they witness the
 • Fatalaties have a [color=%negative%]-10[/color] penalty to enemy Resolve checks.
 
 • Having the 'Bloodthirsty' trait allows you to trigger an additional positive morale check when killing an enemy.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSlaughterer].Tooltip = ::Const.Strings.PerkDescription.LegendSlaughterer;
 
-::Const.Strings.PerkDescription.LegendCheerOn = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendCheerOn = @"
 [color=%negative%][u]Requires:[/u] Instrument or Banner[/color]
 Use your way with song to cheer on an ally!
 
@@ -223,117 +223,117 @@ Use your way with song to cheer on an ally!
 • Unlocks the [color=%skill%]Cheer On[/color] skill which grants [color=%positive%]+2[/color] Action Points to an adjacent ally.
 
 • Costs [color=%negative%]3[/color] AP and [color=%negative%]10[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendCheerOn].Tooltip = ::Const.Strings.PerkDescription.LegendCheerOn;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul = ::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul = ::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul += "\n\n" + @"
 
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyGhoul].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyHexen = ::Const.Strings.PerkDescription.LegendFavouredEnemyHexen += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyHexen = ::Const.Strings.PerkDescription.LegendFavouredEnemyHexen += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyHexen].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyHexen;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyAlps = ::Const.Strings.PerkDescription.LegendFavouredEnemyAlps += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyAlps = ::Const.Strings.PerkDescription.LegendFavouredEnemyAlps += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyAlps].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyAlps;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold = ::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold = ::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyUnhold].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm = ::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm = ::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyLindwurm].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf = ::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf = ::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyDirewolf].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySpider = ::Const.Strings.PerkDescription.LegendFavouredEnemySpider += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySpider = ::Const.Strings.PerkDescription.LegendFavouredEnemySpider += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySpider].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySpider;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySchrat = ::Const.Strings.PerkDescription.LegendFavouredEnemySchrat += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySchrat = ::Const.Strings.PerkDescription.LegendFavouredEnemySchrat += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySchrat].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySchrat;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyOrk = ::Const.Strings.PerkDescription.LegendFavouredEnemyOrk += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyOrk = ::Const.Strings.PerkDescription.LegendFavouredEnemyOrk += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyOrk].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyOrk;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin = ::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin = ::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyGoblin].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyVampire = ::Const.Strings.PerkDescription.LegendFavouredEnemyVampire += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyVampire = ::Const.Strings.PerkDescription.LegendFavouredEnemyVampire += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyVampire].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyVampire;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton = ::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton = ::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySkeleton].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyZombie = ::Const.Strings.PerkDescription.LegendFavouredEnemyZombie += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyZombie = ::Const.Strings.PerkDescription.LegendFavouredEnemyZombie += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyZombie].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyZombie;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyNoble = ::Const.Strings.PerkDescription.LegendFavouredEnemyNoble += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyNoble = ::Const.Strings.PerkDescription.LegendFavouredEnemyNoble += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyNoble].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyNoble;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyBandit = ::Const.Strings.PerkDescription.LegendFavouredEnemyBandit += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyBandit = ::Const.Strings.PerkDescription.LegendFavouredEnemyBandit += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyBandit].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyBandit;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian = ::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian = ::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyBarbarian].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster = ::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster = ::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySwordmaster].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary = ::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary = ::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyMercenary].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan = ::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan = ::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyCaravan].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner = ::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner = ::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySoutherner].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyNomad = ::Const.Strings.PerkDescription.LegendFavouredEnemyNomad += "\n\n" + ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyNomad = ::Const.Strings.PerkDescription.LegendFavouredEnemyNomad += "\n\n" + @"
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyNomad].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyNomad;
 
 // Need to overwrite this directly because weird
-::Const.Strings.PerkDescription.LegendFavouredEnemyArcher = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFavouredEnemyArcher = @"
 Many claim to be the greatest shot in the land, but none have outshot you yet.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -362,10 +362,10 @@ Many claim to be the greatest shot in the land, but none have outshot you yet.
 • Total bonus capped at 25%.
 
 • When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyArcher].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyArcher;
 
-::Const.Strings.PerkDescription.LegendInTheZone = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendInTheZone = @"
 Use your Armor's blend of protection and mobility to punish your foes mistakes!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -376,20 +376,20 @@ Use your Armor's blend of protection and mobility to punish your foes mistakes!
 • When engaged in Melee, the Melee Damage bonus is doubled, up to a maximum of [color=%positive%]20%[/color], and the Melee Skill bonus is converted into Melee Defense instead.
 
 • If your Initiative is higher than twice your combined body and head Armor's penalty to Maximum Fatigue, you start the battle with stacks equal to your Armor's weight above 15.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendInTheZone].Tooltip = ::Const.Strings.PerkDescription.LegendInTheZone;
 
-::Const.Strings.PerkDescription.LegendRebound = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendRebound = @"
 Surpass your limits!
 
 [color=%passive%][u]Passive:[/u][/color]
 • Fatigue regeneration is increased by [color=%positive%]+5[/color] while over 75% fatigued.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendRebound].Tooltip = ::Const.Strings.PerkDescription.LegendRebound;
 
 ::Const.Strings.PerkName.LegendPiercingShot = "Piercing Shot";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPiercingShot].Name = ::Const.Strings.PerkName.LegendPiercingShot;
-::Const.Strings.PerkDescription.LegendPiercingShot = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendPiercingShot = @"
 [color=%negative%][u]Requires:[/u] Crossbow [/color]
 Launch a shot so powerful it can hit two targets in a straight line.
 
@@ -399,30 +399,30 @@ Launch a shot so powerful it can hit two targets in a straight line.
 • Additionally, Handgonnes gain [color=%positive%]+1[/color] range.
 
 • Costs [color=%negative%]5[/color] AP and [color=%negative%]20[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPiercingShot].Tooltip = ::Const.Strings.PerkDescription.LegendPiercingShot;
 
-::Const.Strings.PerkDescription.FastAdaption = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.FastAdaption = @"
 Adapt to your opponent's moves!
 
 [color=%passive%][u]Passive:[/u][/color]
 • Gain an additional stacking [color=%positive%]+20%[/color] chance to hit with each attack that misses an opponent.
 
 • Upon landing a hit, the character will also recover 1 Action Point for every stack up to a maximum of 3 and the bonus will be reset. The refund cannot exceed the maximum Action Points.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.FastAdaption].Tooltip = ::Const.Strings.PerkDescription.FastAdaption;
 
-::Const.Strings.PerkDescription.Fearsome = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Fearsome = @"
 Make them scatter and flee!
 
 [color=#4f1800][u]Passive:[/u][/color]
 • Any attack that inflicts at least [color=%positive%]1[/color] point of damage to Hitpoints triggers a morale check for the opponent with a penalty equal to [color=%negative%]20%[/color] of your current Resolve.
 
 [color=%negative%]Does not trigger multiple times from the same attacker on the same target in one attack.[/color]
-");
+";
 
 
-::Const.Strings.PerkDescription.Fearsome = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Fearsome = @"
 Make them scatter and flee!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -431,10 +431,10 @@ Make them scatter and flee!
 • A kill [color=%positive%]triples[/color] this effect for your next attack, but if you miss the effect will be wasted.
 
 •[color=%negative%] Does not trigger multiple times from the same attacker on the same target from a single attack[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Fearsome].Tooltip = ::Const.Strings.PerkDescription.Fearsome;
 
-::Const.Strings.PerkDescription.Adrenaline = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Adrenaline = @"
 Seize the initiative!
 
 [color=%active%][u]Active:[/u][/color]
@@ -443,20 +443,20 @@ Seize the initiative!
 • Additionally adds [color=%perk%]Irresistible Impulse[/color] to your perk map, which grants additional benefits when using [color=%skill%]Adrenaline[/color].
 
 • Costs [color=%negative%]1[/color] AP and [color=%negative%]20[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Adrenaline].Tooltip = ::Const.Strings.PerkDescription.Adrenaline;
 
-::Const.Strings.PerkDescription.ReachAdvantage = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.ReachAdvantage = @"
 Learn to use the superior reach of large weapons to keep the enemy from getting close enough to land a good hit.
 
 [color=%passive%][u]Passive:[/u][/color]
 • When hitting an enemy, gain [color=%positive%]+100%[/color] of your Melee Skill as Melee Defense against them until waiting or ending your turn.
 
 • Also, attempt to prevent them from approaching your Zone of Control with an attack of opportunity until next turn with a damage reduction of [color=%negative%]20%[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.ReachAdvantage].Tooltip = ::Const.Strings.PerkDescription.ReachAdvantage;
 
-::Const.Strings.PerkDescription.Footwork = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Footwork = @"
 Work those feet!
 
 [color=%passive%][u]Active:[/u][/color]
@@ -467,10 +467,10 @@ Work those feet!
 • Picking the perk will also add [color=%perk%]Furinkazan[/color] to your perk map, which reduces the cost of [color=%skill%]Footwork[/color].
 
 • Costs [color=%negative%]3[/color] AP and [color=%negative%]10[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Footwork].Tooltip = ::Const.Strings.PerkDescription.Footwork;
 
-::Const.Strings.PerkDescription.Rotation = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Rotation = @"
 Just like dancing with your nan when you were young.
 
 [color=%active%][u]Active:[/u][/color]
@@ -479,10 +479,10 @@ Just like dancing with your nan when you were young.
 • Picking this perk will also add [color=%perk%]Furinkazan[/color] to your perk map, which reduces the cost of [color=%skill%]Rotation[/color]
 
 • Costs [color=%negative%]3[/color] AP and [color=%negative%]25[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Rotation].Tooltip = ::Const.Strings.PerkDescription.Rotation;
 
-::Const.Strings.PerkDescription.LegendEvasion = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendEvasion = @"
 'Excuse me'
 
 [color=%active%][u]Active:[/u][/color]
@@ -491,10 +491,10 @@ Just like dancing with your nan when you were young.
 • Picking this perk will also add [color=%perk%]Furinkazan[/color] to your perk map, which reduces the cost of [color=%skill%]Evasion[/color]
 
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]30[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendEvasion].Tooltip = ::Const.Strings.PerkDescription.LegendEvasion;
 
-::Const.Strings.PerkDescription.LegendChoke = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendChoke = @"
 Once an opponent is fatigued, it may be easier to choke them out than to fight through their Armor.
 
 [color=%active%][u]Active:[/u][/color]
@@ -513,10 +513,10 @@ Once an opponent is fatigued, it may be easier to choke them out than to fight t
 • If your target is [color=%status%]Grappled[/color], damage is increased by [color=%positive%]50%[/color].
 
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]20[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendChoke].Tooltip = ::Const.Strings.PerkDescription.LegendChoke;
 
-::Const.Strings.PerkDescription.LegendSpecUnarmed = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendSpecUnarmed = @"
 Master the martial arts of unarmed combat.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -531,10 +531,10 @@ Master the martial arts of unarmed combat.
 • [color=%skill%]Grapple[/color] now has a [color=%positive%]100%[/color] chance to [color=%status%]Disarm[/color] on hit and the hit chance is increased by [color=%positive%]+10%[/color].
 
 • [color=%skill%]Tackle[/color] gains [color=%positive%]+10%[/color] chance to hit.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecUnarmed].Tooltip = ::Const.Strings.PerkDescription.LegendSpecUnarmed;
 
-::Const.Strings.PerkDescription.HoldOut = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.HoldOut = @"
 Keep it together!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -545,10 +545,10 @@ Keep it together!
 • Grants a [color=%negative%]25%[/color] reduction to the effect of all negative statuses.
 
 • Raises the chance to survive being struck down and not killed from [color=%negative%]33%[/color] to [color=%positive%]66%[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.HoldOut].Tooltip = ::Const.Strings.PerkDescription.HoldOut;
 
-::Const.Strings.PerkDescription.LegendBarterGreed = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendBarterGreed = @"
 This character is keen to guard the horde of gold the company has accumulated — and intends to protect it with their life.
 
 [color=#4f1800][u]Passive:[/u][/color]
@@ -560,10 +560,10 @@ This character is keen to guard the horde of gold the company has accumulated �
 • The Bonus gained from Crowns above 80000 is reduced by [color=%negative%]20%[/color].
 
 • Additionally, your global Barter is divided by [color=%negative%](1 + Brothers with this perk)[/color] at all times.
-");
+";
 
 
-::Const.Strings.PerkDescription.LegendBarterGreed = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendBarterGreed = @"
 Lust for gold and self interest can be a double edged sword, an immediate benefit in one place, may come at the expense of others. 
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -576,10 +576,10 @@ Lust for gold and self interest can be a double edged sword, an immediate benefi
 • This bonus will cap at [color=%positive%]+20[/color].
 
 • Your global Barter is divided by [color=%negative%](1 + Brothers with this perk)[/color] at all times.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendBarterGreed].Tooltip = ::Const.Strings.PerkDescription.LegendBarterGreed;
 
-::Const.Strings.PerkDescription.LegendBalance = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendBalance = @"
 Gain increased defense by balancing your Armor's weight and mobility.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -590,20 +590,20 @@ Gain increased defense by balancing your Armor's weight and mobility.
 • Gain a third of the converted Melee Defense bonus back as Ranged Defense.
 
 • The penalty to Initiative from your accumulated Fatigue is also reduced by [color=%positive%]30%[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendBalance].Tooltip = ::Const.Strings.PerkDescription.LegendBalance;
 
-::Const.Strings.PerkDescription.LegendLithe = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendLithe = @"
 Specialize in Medium Armour! Not as nimble as some but more lithe than others!
 
 [color=%passive%][u]Passive:[/u][/color]
 • Damage to Hitpoints and Armor are reduced by [color=%positive%]25%[/color] when the total penalty to Maximum Fatigue from head and body Armor is between [color=%negative%]25[/color] and [color=%negative%]35[/color].
 
 • Outside this range, the bonus drops exponentially.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendLithe].Tooltip = ::Const.Strings.PerkDescription.LegendLithe;
 
-::Const.Strings.PerkDescription.Nimble = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Nimble = @"
 Specialize in Light Armour! By nimbly dodging or deflecting blows, convert any hits to glancing hits.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -616,10 +616,10 @@ Specialize in Light Armour! By nimbly dodging or deflecting blows, convert any h
 • [color=%perk%]Brawny[/color] does not affect this perk.
 
 • Does not affect damage from mental attacks or status effects.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Nimble].Tooltip = ::Const.Strings.PerkDescription.Nimble;
 
-::Const.Strings.PerkDescription.SpecThrowing = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.SpecThrowing = @"
 Master throwing weapons to wound or kill the enemy before they even get close.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -628,10 +628,10 @@ Master throwing weapons to wound or kill the enemy before they even get close.
 • Gain [color=%positive%]20%[/color] of your Ranged Skill as additional Armor penetration and [color=%positive%]25%[/color] of your Melee Skill as additional Armor effectiveness when attacking at a distance of three tiles or less.
 
 • Throwing Spear now ignores the damage reduction from [color=%perk%]Shield Expert[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.SpecThrowing].Tooltip = ::Const.Strings.PerkDescription.SpecThrowing;
 
-::Const.Strings.PerkDescription.SpecFlail = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.SpecFlail = @"
 Master the flail and circumvent your opponent's defenses.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -642,10 +642,10 @@ Master the flail and circumvent your opponent's defenses.
 • [color=%skill%]Pound[/color] ignores an additional [color=%positive%]10%[/color] of Armor on hits to the head.
 
 • [color=%skill%]Thresh[/color] gains [color=%positive%]+5%[/color] chance to hit.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.SpecFlail].Tooltip = ::Const.Strings.PerkDescription.SpecFlail;
 
-// ::Const.Strings.PerkDescription.LegendSpecialistButcher = ::Legends.tooltip(@"
+// ::Const.Strings.PerkDescription.LegendSpecialistButcher = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -654,10 +654,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this skill applies to One-Handed Cleavers, except Whips.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 // ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistButcher].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistButcher;
 
-//::Const.Strings.PerkDescription.LegendSpecialistHammerSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistHammerSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -666,10 +666,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this skill applies to other One-Handed Hammers.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistHammerSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistHammerSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistKnifeSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistKnifeSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -678,10 +678,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this skill applies to other Daggers.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistKnifeSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistKnifeSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistMilitiaSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistMilitiaSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -690,10 +690,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this skill applies to other spears.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistMilitiaSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistMilitiaSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistPickaxeSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistPickaxeSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -702,10 +702,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this skill applies to other Two-Handed Hammers..
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistPickaxeSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistPickaxeSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistPitchforkSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistPitchforkSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -714,10 +714,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this perk applies to other Polearms and Banners.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistPitchforkSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistPitchforkSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistShortbowSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistShortbowSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -726,10 +726,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this skill applies to other Bows.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistShortbowSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistShortbowSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistShovelSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistShovelSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -738,10 +738,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this bonus Melee Skill applies to Two-Handed Maces.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistShovelSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistShovelSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistWoodaxeSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistWoodaxeSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -750,10 +750,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this bonus Melee Skill applies to other Axes.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistWoodaxeSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistWoodaxeSkill;
 //
-//::Const.Strings.PerkDescription.LegendSpecialistSickleSkill = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendSpecialistSickleSkill = @"
 //After years of relentless training, you have achieved mastery over your weapon.
 //
 //[color=%passive%][u]Passive:[/u][/color]
@@ -762,10 +762,10 @@ Master the flail and circumvent your opponent's defenses.
 //• [color=%negative%]25%[/color] of this skill applies to one handed swords.
 //
 //• This percentage will grow from time with the company, rising by [color=%positive%]5%[/color] each week until you hit 100%.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecialistSickleSkill].Tooltip = ::Const.Strings.PerkDescription.LegendSpecialistSickleSkill;
 
-::Const.Strings.PerkDescription.Bullseye = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Bullseye = @"
 Nailed it!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -774,10 +774,10 @@ Nailed it!
 • Unlocks the [color=%skill%]Mark Target[/color] skill.
 
 • Costs [color=%negative%]2[/color] AP and [color=%negative%]15[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Bullseye].Tooltip = ::Const.Strings.PerkDescription.Bullseye;
 
-::Const.Strings.PerkDescription.LegendLookout = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendLookout = @"
 Learn to find your enemies before they find you.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -786,10 +786,10 @@ Learn to find your enemies before they find you.
 • Will pause the game when an enemy party is discovered nearby while travelling, allowing the party to avoid ambushes.
 
 • While on duty in the scout tent they grant [color=%positive%]+10%[/color] scouting.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendLookout].Tooltip = ::Const.Strings.PerkDescription.LegendLookout;
 
-::Const.Strings.PerkDescription.LegendNetRepair = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendNetRepair = @"
 Many years spent repairing and packing nets allows you to create nets and wield them more effectively.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -798,10 +798,10 @@ Many years spent repairing and packing nets allows you to create nets and wield 
 • Grants [color=%positive%]+10[/color] Melee Defense while holding a net and reduces the AP cost of throwing nets to [color=%negative%]3[/color].
 
 • Ignore the weight of nets, both when equipped and in your bag.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendNetRepair].Tooltip = ::Const.Strings.PerkDescription.LegendNetRepair;
 
-::Const.Strings.PerkDescription.LegendNetCasting = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendNetCasting = @"
 Always keep a net handy!
 
 [color=%passive%][u]Active:[/u][/color]
@@ -812,10 +812,10 @@ Always keep a net handy!
 • Allows you to swap nets to and from your bag for no AP.
 
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]25[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendNetCasting].Tooltip = ::Const.Strings.PerkDescription.LegendNetCasting;
 
-::Const.Strings.PerkDescription.LegendMasteryNets = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendMasteryNets = @"
 You've learned advanced net throwing techniques.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -831,10 +831,10 @@ You've learned advanced net throwing techniques.
 
 • If the target is killed before breaking free:
 - All nets have a [color=%positive%]100%[/color] chance to be reusable.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendMasteryNets].Tooltip = ::Const.Strings.PerkDescription.LegendMasteryNets;
 
-::Const.Strings.PerkDescription.LegendEscapeArtist = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendEscapeArtist = @"
 Others see it as magic, but your deft hands know better.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -845,10 +845,10 @@ Others see it as magic, but your deft hands know better.
 • Grants a baseline [color=%positive%]95%[/color] chance to break yourself free from [color=%status%]Rooting[/color] effects, such as Nets and Webs.
 
 • Reduces the Action Point cost of breaking yourself and your allies free by [color=%negative%]1[/color] and the Fatigue cost by [color=%negative%]70%[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendEscapeArtist].Tooltip = ::Const.Strings.PerkDescription.LegendEscapeArtist;
 
-::Const.Strings.PerkDescription.LegendPackleader = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendPackleader = @"
 Dogs can instinctively identify a pack leader, and your knowledge of their habits allows you to become that leader.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -857,10 +857,10 @@ Dogs can instinctively identify a pack leader, and your knowledge of their habit
 • Grants each dog you unleash the [color=%perk%]Assured Conquest[/color] perk.
 
 • Increases the total Armor of unleashed dogs by [color=%positive%]100%[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPackleader].Tooltip = ::Const.Strings.PerkDescription.LegendPackleader;
 
-::Const.Strings.PerkDescription.LegendDogBreeder = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendDogBreeder = @"
 Intimate knowledge of dog care and conditions required for breeding allows you to successfully breed dogs.
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -869,10 +869,10 @@ Intimate knowledge of dog care and conditions required for breeding allows you t
 • Grants each dog you unleash the [color=%perk%]Fast Adaption[/color] and [color=%perk%]Backswing[/color] perks.
 
 • Increases the Melee Skill of unleashed dogs by [color=%positive%]5[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDogBreeder].Tooltip = ::Const.Strings.PerkDescription.LegendDogBreeder;
 
-::Const.Strings.PerkDescription.LegendDogHandling = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendDogHandling = @"
 You have mastered the art of training dogs. In the heat of battle your hounds will respond and react to your commands.
 
 [color=%active%][u]Active:[/u][/color]
@@ -881,18 +881,18 @@ You have mastered the art of training dogs. In the heat of battle your hounds wi
 • Grants each dog you unleash the [color=%perk%]Overwhelm[/color] perk.
 
 • Increases the Melee Defense of unleashed dogs by [color=%positive%]5[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDogHandling].Tooltip = ::Const.Strings.PerkDescription.LegendDogHandling;
 
-::Const.Strings.PerkDescription.LegendDogWhisperer = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendDogWhisperer = @"
 You have a way with dogs, the bond you form with them imbues each dog with more confidence and strength, knowing that you are there gives them strength.
 
 [color=%passive%][u]Passive:[/u][/color]
 • Grants each dog you unleash the [color=%perk%]Colossus[/color], [color=%perk%]Fortified Mind[/color], [color=%perk%]Underdog[/color], and [color=%perk%]Clarity[/color] perks.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDogWhisperer].Tooltip = ::Const.Strings.PerkDescription.LegendDogWhisperer;
 
-::Const.Strings.PerkDescription.LegendDogMaster = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendDogMaster = @"
 Your way with animals extends so far you can turn away dogs that would otherwise do you harm.
 
 [color=%active%][u]Active:[/u][/color]
@@ -903,10 +903,10 @@ Your way with animals extends so far you can turn away dogs that would otherwise
 • Additionally, grant each dog you unleash the [color=%perk%]Dodge[/color] perk.
 
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]15[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDogMaster].Tooltip = ::Const.Strings.PerkDescription.LegendDogMaster;
 
-::Const.Strings.PerkDescription.LegendFieldTreats = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFieldTreats = @"
 Make liberal use of alcohol and food to motivate your mercenaries.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -915,10 +915,10 @@ Make liberal use of alcohol and food to motivate your mercenaries.
 • Cannot be applied to someone who has already been treated this combat.
 
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]15[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFieldTreats].Tooltip = ::Const.Strings.PerkDescription.LegendFieldTreats;
 
-::Const.Strings.PerkDescription.LegendFieldTriage = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFieldTriage = @"
 Spend medicine to heal an ally mid-battle.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -927,10 +927,10 @@ Spend medicine to heal an ally mid-battle.
 • Heals at a rate of [color=%negative%]3[/color] medicine for every [color=%positive%]4[/color] Hitpoints.
 
 • Costs [color=%negative%]6[/color] AP and [color=%negative%]16[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFieldTriage].Tooltip = ::Const.Strings.PerkDescription.LegendFieldTriage;
 
-::Const.Strings.PerkDescription.LegendFieldRepairs = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendFieldRepairs = @"
 Spend tools to repair an allies Armor on the battlefield.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -939,10 +939,10 @@ Spend tools to repair an allies Armor on the battlefield.
 • Repairs Armor at a rate of [color=%negative%]3[/color] tools for every [color=%positive%]10[/color] Armor
 
 • Costs [color=%negative%]6[/color] AP and [color=%negative%]16[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFieldRepairs].Tooltip = ::Const.Strings.PerkDescription.LegendFieldRepairs;
 
-::Const.Strings.PerkDescription.LegendSpecBandage = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendSpecBandage = @"
 Master the art of bandaging mid-combat, using any cloth available.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -951,10 +951,10 @@ Master the art of bandaging mid-combat, using any cloth available.
 • Can bandage while in a zone of control, and adds [color=%positive%]+5[/color] Hitpoints on the target's following turn.
 
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]10[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecBandage].Tooltip = ::Const.Strings.PerkDescription.LegendSpecBandage;
 
-//::Const.Strings.PerkDescription.LegendDrumsOfWar = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendDrumsOfWar = @"
 //[color=%negative%][u]Requires:[/u] Instrument[/color]
 //Learn powerful rhythms that drive your allies on.
 //
@@ -962,10 +962,10 @@ Master the art of bandaging mid-combat, using any cloth available.
 //• Unlocks the [color=%skill%]War Chant[/color] skill which restores [color=%positive%]+4[/color] Fatigue to every ally within eight tiles.
 //
 //• Costs [color=%negative%]8[/color] AP and [color=%negative%]30[/color] Fatigue.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDrumsOfWar].Tooltip = ::Const.Strings.PerkDescription.LegendDrumsOfWar;
 
-//::Const.Strings.PerkDescription.LegendDrumsOfLife = ::Legends.tooltip(@"
+//::Const.Strings.PerkDescription.LegendDrumsOfLife = @"
 //[color=%negative%][u]Requires:[/u] Instrument or Unarmed[/color]
 //Learn powerful rhythms that drive your allies on.
 //
@@ -973,10 +973,10 @@ Master the art of bandaging mid-combat, using any cloth available.
 //• Unlocks the [color=%skill%]Drums of Life[/color] skill which restores [color=%positive%]+8[/color] health to every ally within eight tiles.
 //
 //• Costs [color=%negative%]8[/color] AP and [color=%negative%]30[/color] Fatigue.
-//");
+//";
 //::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDrumsOfLife].Tooltip = ::Const.Strings.PerkDescription.LegendDrumsOfLife;
 
-::Const.Strings.PerkDescription.LegendThrowSand = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendThrowSand = @"
 It's hard to fight with sand in your eyes.
 
 [color=%passive%][u]Active:[/u][/color]
@@ -985,20 +985,20 @@ It's hard to fight with sand in your eyes.
 • [color=%status%]Distracted[/color] enemies have [color=%negative%]-35%[/color] Initiative and deal [color=%negative%]-35%[/color] Damage.
 
 • Costs [color=%negative%]3[/color] AP and [color=%negative%]5[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendThrowSand].Tooltip = ::Const.Strings.PerkDescription.LegendThrowSand;
 
-::Const.Strings.PerkDescription.LegendDebilitate = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendDebilitate = @"
 Ankles, hands, elbows and knees, you've learned how to fight dirty to secure victory.
 
 [color=%active%][u]Active:[/u][/color]
 • Unlocks the [color=%skill%]Debilitate[/color] skill which primes your next attack to [color=%status%]Cripple[/color] a target for three turns, reducing their ability to inflict damage by [color=%negative%]-25%[/color] and increasing the damage they take by [color=%positive%]+15%[/color].
 
 • Costs [color=%negative%]2[/color] AP and [color=%negative%]15[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDebilitate].Tooltip = ::Const.Strings.PerkDescription.LegendDebilitate;
 
-::Const.Strings.PerkDescription.Duelist = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.Duelist = @"
 Become one with your weapon and go for the weak spots!
 
 [color=%passive%][u]Passive:[/u][/color]
@@ -1009,18 +1009,18 @@ Become one with your weapon and go for the weak spots!
 • An extra [color=%positive%]+20%[/color] of damage ignores armor when using Two Handed or Throwing Weapons and having the [color=%perk%]Grandslam[/color] perk, but will reduce Armor Penetration by [color=%negative%]10%[/color] for One Handed weapons.
 
 • Having [color=%perk%]Grandslam[/color] also increases Armor penetration and damage by [color=%positive%]50%[/color] when Unarmed.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Duelist].Tooltip = ::Const.Strings.PerkDescription.Duelist;
 
-::Const.Strings.PerkDescription.LegendConservation = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendConservation = @"
 Conduct profane rituals meant to stave off the passage of time, further preserving the means of your craft.
 
 [color=%passive%][u]Passive:[/u][/color]
 • Reduces the daily medicine cost of maintaining Human Corpses, Bones, and other Carrion by [color=%negative%]50%[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendConservation].Tooltip = ::Const.Strings.PerkDescription.LegendConservation;
 
-::Const.Strings.PerkDescription.LegendChainLightning = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendChainLightning = @"
 Unleash an arcing barrage of lightning!
 
 [color=%active%][u]Active:[/u][/color]
@@ -1030,17 +1030,17 @@ Unleash an arcing barrage of lightning!
 
 • Costs [color=%negative%]7[/color] AP and [color=%negative%]50[/color] Fatigue.
 • If you have the 'Staff Mastery' perk, reduce the AP cost by 2 and the base fatigue cost by [color=%negative%]25%[/color].
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendChainLightning].Tooltip = ::Const.Strings.PerkDescription.LegendChainLightning;
 
-::Const.Strings.PerkDescription.LegendHoldTheLine = ::Legends.tooltip(@"
+::Const.Strings.PerkDescription.LegendHoldTheLine = @"
 'DON'T LET THEM BREAK THROUGH!'
 
 [color=%active%][u]Active:[/u][/color]
 • Unlocks the [color=#400080]Hold the Line[/color] skill which allows you to direct your troops to stand their ground, granting [color=%positive%]+10[/color] Defense and Resolve to all allies within four tiles for one turn.
 
 • Costs [color=%negative%]5[/color] AP and [color=%negative%]20[/color] Fatigue.
-");
+";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendHoldTheLine].Tooltip = ::Const.Strings.PerkDescription.LegendHoldTheLine;
 
 
