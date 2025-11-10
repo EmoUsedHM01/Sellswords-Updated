@@ -1,5 +1,9 @@
 8.5.1 changes
 
+...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut
+fixed field treats - chopeks
+...\mod_sellswords\hooks\skills\actives\legend_field_treats_skill.nut
+fixed field treats - chopeks
 ...\mod_sellswords\hooks\crafting\blueprints\legend_lindwurm_armor_blueprint.nut
 fixed wrong lindy armor bp hook - chopeks
 ...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut

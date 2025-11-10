@@ -5,7 +5,7 @@
 		_properties.RangedAttackBlockedChanceMult *= 0.44;
 	}
 
-	q.onAnySkillUsed = function(_skill, _targetEntity, _properties)
+	q.onAnySkillUsed =  @() function(_skill, _targetEntity, _properties)
 	{
 		if (_skill.isAttack() && _targetEntity != null && _targetEntity.getID() != this.getContainer().getActor().getID() && _targetEntity.getFaction() == this.getContainer().getActor().getFaction())
 		{
