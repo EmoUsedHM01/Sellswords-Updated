@@ -132,12 +132,12 @@
 		}
 	}
 
-	q.makeMiniboss <- function()
+	q.makeMiniboss = function()
 	{
 		if (!this.actor.makeMiniboss())
 			return false;
 
-		this.getSprite("miniboss").setBrush("bust_miniboss");
+		this.getSprite("miniboss").setBrush("bust_miniboss_greenskins");
 		
 		local weapons = [
 			"weapons/named/named_orc_cleaver",
@@ -148,13 +148,16 @@
 			"weapons/named/cr_named_orc_sword_2h",
 			"weapons/named/cr_named_orc_axe_infantry"
 		];
-
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_nimble"));
-		this.m.Skills.removeByID("perk.colossus");
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
-		this.m.Skills.add(this.new("scripts/skills/effects/berserker_mushrooms_effect"));
+
+		::Legends.Perks.remove(this, ::Legends.Perk.Colossus);
+		::Legends.Perks.grant(this, ::Legends.Perk.Nimble);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendAssuredConquest);
+		::Legends.Perks.grant(this, ::Legends.Perk.CripplingStrikes);
+		::Legends.Perks.grant(this, ::Legends.Effect.BerserkerMushrooms);
+		if (::Legends.isLegendaryDifficulty()) {
+			::Legends.Perks.grant(this, ::Legends.Perk.LegendUberNimble);
+		}
 		return true;
 	}
 

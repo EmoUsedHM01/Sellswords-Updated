@@ -1,5 +1,8 @@
 8.5.1 changes
 
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
+fixed orc berserker hook - chopeks
+
 ...\mod_sellswords\hooks\skills\perks\perk_debilitate.nut
 removed debilitate hook, not needed at all - chopeks
 
