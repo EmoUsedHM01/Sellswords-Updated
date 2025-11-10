@@ -1,26 +1,40 @@
 8.5.1 changes
 
+...\mod_sellswords\hooks\skills\effects\legend_drums_of_life_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_drums_of_war_effect.nut
+removed songs changes, legends does it better anyway - chopeks
+
 ...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut
 fixed field treats - chopeks
+
 ...\mod_sellswords\hooks\skills\actives\legend_field_treats_skill.nut
 fixed field treats - chopeks
+
 ...\mod_sellswords\hooks\crafting\blueprints\legend_lindwurm_armor_blueprint.nut
 fixed wrong lindy armor bp hook - chopeks
+
 ...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut
 fixed bullseye hook - chopeks
+
 ...\mod_sellswords\hooks\skills\actives\legend_prepare_knockback_skill.nut
 removed knockback hook, legends does the same now, it was also renamed to wind up - chopeks
+
 ...\mod_sellswords\config\a_sellswords_global.nut
 fixed gobbo warrior orientation icon - chopeks
+
 ...\mod_sellswords\hooks\factions\actions\send_military_army_action.nut
 fixed null crash in action - chopeks
+
 ...\scripts\entity\tactical\enemies\crGoblinwarrior.nut
 fixed gobbo warrior - Tiyne
+
 ...\mod_sellswords\config\strings.nut
 ...\mod_sellswords\hooks\config\strings.nut
 gave tooltips spa treatment - chopeks
+
 ...\mod_sellswords\hooks\scenarios\world\cultists_scenario.nut
 replace sling - Breaky
+
 ...\mod_sellswords\hooks\entity\tactical\humans\militia_veteran.nut
 ...\mod_sellswords\hooks\hooks_humans\nut
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
@@ -34,8 +48,10 @@ replace sling - Breaky
 ...\scripts\entity\tactical\humans\crSellsword_Polearm.nut
 ...\scripts\entity\tactical\humans\crSellsword_Tank.nut
 Replace anchor
+
 ...\scripts\entity\tactical\undead_player.nut
 Remove a vamp lord hairdo - Breaky
+
 ...\scripts\encounters\events\cr_anatomist_recruit_encounter.nut
 Hide the anatomist encounter name - Breaky 
 

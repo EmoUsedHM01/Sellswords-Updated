@@ -954,28 +954,6 @@ Master the art of bandaging mid-combat, using any cloth available.
 ";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecBandage].Tooltip = ::Const.Strings.PerkDescription.LegendSpecBandage;
 
-//::Const.Strings.PerkDescription.LegendDrumsOfWar = @"
-//[color=%negative%][u]Requires:[/u] Instrument[/color]
-//Learn powerful rhythms that drive your allies on.
-//
-//[color=%passive%][u]Active:[/u][/color]
-//• Unlocks the [color=%skill%]War Chant[/color] skill which restores [color=%positive%]+4[/color] Fatigue to every ally within eight tiles.
-//
-//• Costs [color=%negative%]8[/color] AP and [color=%negative%]30[/color] Fatigue.
-//";
-//::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDrumsOfWar].Tooltip = ::Const.Strings.PerkDescription.LegendDrumsOfWar;
-
-//::Const.Strings.PerkDescription.LegendDrumsOfLife = @"
-//[color=%negative%][u]Requires:[/u] Instrument or Unarmed[/color]
-//Learn powerful rhythms that drive your allies on.
-//
-//[color=%passive%][u]Active:[/u][/color]
-//• Unlocks the [color=%skill%]Drums of Life[/color] skill which restores [color=%positive%]+8[/color] health to every ally within eight tiles.
-//
-//• Costs [color=%negative%]8[/color] AP and [color=%negative%]30[/color] Fatigue.
-//";
-//::Const.Perks.PerkDefObjects[::Legends.Perk.LegendDrumsOfLife].Tooltip = ::Const.Strings.PerkDescription.LegendDrumsOfLife;
-
 ::Const.Strings.PerkDescription.LegendThrowSand = @"
 It's hard to fight with sand in your eyes.
 
