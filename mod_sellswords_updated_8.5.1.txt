@@ -1,5 +1,8 @@
 8.5.1 changes
 
+...\mod_sellswords\hooks\skills\perks\perk_debilitate.nut
+removed debilitate hook, not needed at all - chopeks
+
 ...\mod_sellswords\hooks\skills\effects\legend_drums_of_life_effect.nut
 ...\mod_sellswords\hooks\skills\effects\legend_drums_of_war_effect.nut
 removed songs changes, legends does it better anyway - chopeks
