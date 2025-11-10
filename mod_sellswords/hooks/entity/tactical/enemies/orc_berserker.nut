@@ -132,7 +132,7 @@
 		}
 	}
 
-	q.makeMiniboss = function()
+	q.makeMiniboss = @() function()
 	{
 		if (!this.actor.makeMiniboss())
 			return false;
