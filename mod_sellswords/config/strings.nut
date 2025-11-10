@@ -69,7 +69,7 @@ Master the art of movement!
 Being massive has its pros and cons.
 
 [color=%passive%][u]Passive:[/u][/color]
-• The [color=%status%]Double Grip[/color] effect now increases damage by [color=%positive%]50%[/color].
+• The [color=%status%]Double Grip[/color] effect now increases damage by extra [color=%positive%]25%[/color].
 
 • Increases Armor penetration and damage by [color=%positive%]50%[/color] when Unarmed.
 

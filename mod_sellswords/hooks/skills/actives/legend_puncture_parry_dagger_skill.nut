@@ -142,13 +142,13 @@
 
 			if (this.canDoubleGrip())
 			{
-				if (this.getContainer().hasSkill("perk.crGrandslam"))
+				if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam))
 				{
-					_properties.DamageTotalMult /= 1.5;
+					_properties.DamageTotalMult /= 1.25;
 				}
 				else
 				{
-					_properties.DamageTotalMult /= 1.25;
+					_properties.DamageTotalMult /= 1.0;
 				}
 			}
 		}			

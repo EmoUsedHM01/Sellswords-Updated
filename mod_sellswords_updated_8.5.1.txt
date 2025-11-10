@@ -1,5 +1,15 @@
 8.5.1 changes
 
+...\mod_sellswords\hooks\skills\special\double_grip.nut
+...\mod_sellswords\hooks\skills\actives\legend_puncture_parry_dagger_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_redback_puncture_skill.nut
+...\mod_sellswords\hooks\skills\actives\puncture.nut
+...\mod_sellswords\hooks\skills\perks\perk_duelist.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
+...\mod_sellswords\hooks\skills\effects\riposte_effect.nut
+...\mod_sellswords\config\strings.nut
+fixed grand slam granting pen instead damage - chopeks
+
 ...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
 fixed orc berserker hook - chopeks
 

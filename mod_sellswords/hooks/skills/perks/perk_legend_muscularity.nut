@@ -23,7 +23,7 @@
 	{
 		local hp = this.getContainer().getActor().getHitpoints();
 
-		if (this.getContainer().hasSkill("perk.crGrandslam"))
+		if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam))
 		{
 			hp = hp * 3;
 		}

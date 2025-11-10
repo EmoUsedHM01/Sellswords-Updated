@@ -2,31 +2,20 @@
 
 	q.getTooltip = @(__original) function ()
 	{
-		local cof = 25;
-
-		if (this.getContainer().hasSkill("perk.crGrandslam"))
-		{
-			cof = cof + 25;
+		local cof = 0;
+		if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam)) {
+			cof += 25;
 		}
 
-		local ret = [
-			{
-				id = 1,
-				type = "title",
-				text = this.getName()
-			},
-			{
-				id = 2,
-				type = "description",
-				text = this.getDescription()
-			}
-		];
-		ret.push({
-			id = 11,
-			type = "text",
-			icon = "ui/icons/regular_damage.png",
-			text = "+[color=%positive%]" + cof + "%[/color] Damage"
-		});
+		local ret = __original();
+		if (cof > 0) {
+			ret.push({
+				id = 11,
+				type = "text",
+				icon = "ui/icons/regular_damage.png",
+				text = "+[color=%positive%]" + cof + "%[/color] Damage"
+			});
+		}
 		return ret;
 	};
 
@@ -34,9 +23,9 @@
 	{
 		if (this.canDoubleGrip())
 		{
-			local cof = 1.25;
+			local cof = 1.0;
 
-			if (this.getContainer().hasSkill("perk.crGrandslam"))
+			if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam))
 			{
 				cof = cof + 0.25;
 			}
