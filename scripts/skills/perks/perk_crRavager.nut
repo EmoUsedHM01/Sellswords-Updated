@@ -38,7 +38,7 @@ this.perk_crRavager <- this.inherit("scripts/skills/skill", {
 		{
 			_tooltip.push({
 				icon = "ui/tooltips/positive.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.chance + "%[/color]" + this.getName()
+				text = "[color=%positive%]" + this.m.chance + "%[/color]" + this.getName()
 			});
 		}
 	}	

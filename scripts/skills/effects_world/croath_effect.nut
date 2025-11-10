@@ -32,19 +32,19 @@ this.croath_effect <- this.inherit("scripts/skills/injury/injury", {
 				id = 13,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] Initiative"
+				text = "[color=%positive%]+15%[/color] Initiative"
 			},
 			{
 				id = 13,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] Resolve"
+				text = "[color=%positive%]+15%[/color] Resolve"
 			},			
 			{
 				id = 13,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] damage"
+				text = "[color=%positive%]+5%[/color] damage"
 			}			
 		];
 		this.addTooltipHint(ret);

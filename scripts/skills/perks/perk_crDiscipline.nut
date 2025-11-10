@@ -30,13 +30,13 @@ this.perk_crDiscipline <- this.inherit("scripts/skills/skill", {
 					id = 10,
 					type = "text",
 					icon = "ui/icons/melee_defense.png",
-					text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 10 + "[/color] Melee Defense"
+					text = "[color=%positive%]+" + 10 + "[/color] Melee Defense"
 				},
 				{
 					id = 10,
 					type = "text",
 					icon = "ui/icons/ranged_defense.png",
-					text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 5 + "[/color] Ranged Defense"
+					text = "[color=%positive%]+" + 5 + "[/color] Ranged Defense"
 				}
 			]
 		);

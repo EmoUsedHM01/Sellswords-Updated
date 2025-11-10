@@ -9,7 +9,7 @@
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]2" + "[/color] tiles"
+			text = "Has a range of [color=%positive%]2" + "[/color] tiles"
 		});
 
 		if (this.m.ApplyAxeMastery)
@@ -20,7 +20,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/hitchance.png",
-					text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] chance to hit targets directly adjacent"
+					text = "Has [color=%negative%]-15%[/color] chance to hit targets directly adjacent"
 				});
 			}
 			if (this.getContainer().hasSkill("perk.crHackSPM"))
@@ -30,7 +30,7 @@
 						id = 6,
 						type = "text",
 						icon = "ui/icons/special.png",
-						text = "Do a free extra attack with [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] damage(not regarded as critical strikes) on a hit"
+						text = "Do a free extra attack with [color=%positive%]25%[/color] damage(not regarded as critical strikes) on a hit"
 					}
 				]);	
 			}
@@ -41,7 +41,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] chance to hit"
+				text = "Has [color=%positive%]+5%[/color] chance to hit"
 			});
 
 			if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInPolearms)
@@ -50,7 +50,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/hitchance.png",
-					text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
+					text = "Has [color=%negative%]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
 				});
 			}
 		}

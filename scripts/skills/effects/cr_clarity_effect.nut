@@ -54,7 +54,7 @@ this.cr_clarity_effect <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 2 + "[/color] Action Points"
+				text = "[color=%positive%]+" + 2 + "[/color] Action Points"
 			});
 		}
 		else if (this.m.TurnsLeft == 1)
@@ -63,7 +63,7 @@ this.cr_clarity_effect <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 1 + "[/color] Action Point"
+				text = "[color=%positive%]+" + 1 + "[/color] Action Point"
 			});		
 		}						
 		return tooltip;

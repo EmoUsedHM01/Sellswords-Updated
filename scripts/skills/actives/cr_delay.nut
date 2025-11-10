@@ -56,7 +56,7 @@ this.cr_delay <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used while rooted[/color]"
+				text = "[color=%negative%]Can not be used while rooted[/color]"
 			});
 		}
 

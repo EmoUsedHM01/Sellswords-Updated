@@ -35,7 +35,7 @@ this.cr_skin_armor <- this.inherit("scripts/items/legend_armor/legend_armor_upgr
 			id = 6,
 			type = "text",
 			icon = "ui/icons/health.png",
-			text = "Heals [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] of the hitpoints of the wearer each turn"
+			text = "Heals [color=%positive%]10%[/color] of the hitpoints of the wearer each turn"
 		});
 	}	
 

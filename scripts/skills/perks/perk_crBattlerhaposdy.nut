@@ -38,13 +38,13 @@ this.perk_crBattlerhaposdy <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getSkillBonus() + "[/color] Melee Skill and Ranged Skill"
+			text = "[color=%positive%]+" + this.getSkillBonus() + "[/color] Melee Skill and Ranged Skill"
 		});
 		tooltip.push({
 			id = 10,
 			type = "text",
 			icon = "ui/icons/initiative.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getSkillBonus() + "[/color] Initiative"
+			text = "[color=%positive%]+" + this.getSkillBonus() + "[/color] Initiative"
 		});		
 
 		local APBonus = this.getAPBonus();
@@ -54,7 +54,7 @@ this.perk_crBattlerhaposdy <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + APBonus + "[/color] Action Point(s)"
+				text = "[color=%positive%]+" + APBonus + "[/color] Action Point(s)"
 			});
 		}
 

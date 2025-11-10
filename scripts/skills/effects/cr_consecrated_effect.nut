@@ -23,7 +23,7 @@ this.cr_consecrated_effect <- this.inherit("scripts/skills/skill", {
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Loses any immunity to injuries for [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.TurnsLeft + "[/color] more turns."
+			text = "Loses any immunity to injuries for [color=%negative%]" + this.m.TurnsLeft + "[/color] more turns."
 		});
 		return ret;
 	}

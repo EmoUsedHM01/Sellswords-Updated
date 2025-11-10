@@ -36,7 +36,7 @@ this.crorcbehemoth_potion_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "The Fatigue cost of the Adrenaline skill is reduced by [color=" + this.Const.UI.Color.PositiveValue + "]60%[/color]"
+				text = "The Fatigue cost of the Adrenaline skill is reduced by [color=%positive%]60%[/color]"
 			},
 			{
 				id = 12,

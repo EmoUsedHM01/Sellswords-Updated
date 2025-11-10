@@ -59,13 +59,13 @@ this.direwolf_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatom
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Elasticized Sinew: Attacks that miss have [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of their Fatigue cost refunded" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Fatigue."
+			text = "Elasticized Sinew: Attacks that miss have [color=%positive%]50%[/color] of their Fatigue cost refunded" + "\n[color=%positive%]+10[/color] Fatigue."
 		});
 		result.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Adrenaline Gland: Gain additional flat damage based on missing Hitpoints.\n[color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of missing Hitpoints on Legendary, and [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] on other difficulties."
+			text = "Adrenaline Gland: Gain additional flat damage based on missing Hitpoints.\n[color=%positive%]50%[/color] of missing Hitpoints on Legendary, and [color=%positive%]25%[/color] on other difficulties."
 		});
 
 		result.push({

@@ -59,19 +59,19 @@ this.orc_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Shock Absorbant Wrists: Attacks do [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] additional damage."
+			text = "Shock Absorbant Wrists: Attacks do [color=%positive%]+10%[/color] additional damage."
 		});
 		result.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Sensory Redundancy: [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects." + "\nGrants [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints."
+			text = "Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects." + "\nGrants [color=%positive%]+10[/color] Hitpoints."
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Colossus: Hitpoints are increased by [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color], which also reduces the chance to sustain debilitating injuries when being hit."
+			text = "Colossus: Hitpoints are increased by [color=%positive%]25%[/color], which also reduces the chance to sustain debilitating injuries when being hit."
 		});
 		result.push({
 			id = 15,

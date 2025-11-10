@@ -58,7 +58,7 @@ this.necro_zombie_potion <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Zombify: Your flesh rots and decays, granting unnatural vitality but a constant hunger for flesh. Transforms the user into a [color=" + this.Const.UI.Color.NegativeValue + "]ZOMBIE[/color]."
+			text = "Zombify: Your flesh rots and decays, granting unnatural vitality but a constant hunger for flesh. Transforms the user into a [color=%negative%]ZOMBIE[/color]."
 		});
 		result.push({
 			id = 65,

@@ -44,7 +44,7 @@ this.hyena_helm <- this.inherit("scripts/items/legend_helmets/legend_helmet_upgr
 			id = 6,
 			type = "text",
 			icon = "ui/icons/initiative.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative"
+			text = "[color=%positive%]+10[/color] Initiative"
 		});
 		return result;
 	}
@@ -55,7 +55,7 @@ this.hyena_helm <- this.inherit("scripts/items/legend_helmets/legend_helmet_upgr
 			id = 6,
 			type = "text",
 			icon = "ui/icons/initiative.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative"
+			text = "[color=%positive%]+10[/color] Initiative"
 		});
 	}
 	

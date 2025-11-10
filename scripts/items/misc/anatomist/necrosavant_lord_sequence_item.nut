@@ -53,7 +53,7 @@ this.necrosavant_lord_sequence_item <- this.inherit("scripts/items/misc/anatomis
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Necrosavant Lord: Improves effects of parasitic blood to 25%."+ "\n[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Hitpoints." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee Skill."
+			text = "Necrosavant Lord: Improves effects of parasitic blood to 25%."+ "\n[color=%positive%]+20[/color] Hitpoints." + "\n[color=%positive%]+10[/color] Melee Skill."
 		});
 		result.push({
 			id = 12,
@@ -65,7 +65,7 @@ this.necrosavant_lord_sequence_item <- this.inherit("scripts/items/misc/anatomis
 			id = 13,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Synapse Blockage: Morale cannot be reduced below Steady\n" + "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Resolve."
+			text = "Synapse Blockage: Morale cannot be reduced below Steady\n" + "[color=%positive%]+10[/color] Resolve."
 		});
 		result.push({
 			id = 14,

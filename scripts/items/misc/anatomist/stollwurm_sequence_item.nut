@@ -52,7 +52,7 @@ this.stollwurm_sequence_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Sensory Redundancy: [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects"
+			text = "Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects"
 		});
 		result.push({
 			id = 12,

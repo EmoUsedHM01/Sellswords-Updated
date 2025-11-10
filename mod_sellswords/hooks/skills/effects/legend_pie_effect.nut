@@ -3,7 +3,7 @@
 
 	q.getDescription = @(__original) function()
 	{
-		return "Thanks to eating food, this character regains Health, Fatigue, Resolve and Initiative for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.TurnsLeft + "[/color] turn(s). ";
+		return "Thanks to eating food, this character regains Health, Fatigue, Resolve and Initiative for [color=%positive%]" + this.m.TurnsLeft + "[/color] turn(s). ";
 	}
 
 	q.getTooltip = @(__original) function()
@@ -46,25 +46,25 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "On self, will recovers fatigue by [color=" + this.Const.UI.Color.PositiveValue + "]" + crate + "[/color] per turn for ten turns"
+				text = "On self, will recovers fatigue by [color=%positive%]" + crate + "[/color] per turn for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Initiative for ten turns"
+				text = "On self, will increase [color=%positive%]" + rate + "[/color] Initiative for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Melee Skill for ten turns"
+				text = "On self, will increase [color=%positive%]" + rate + "[/color] Melee Skill for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Ranged Skill for ten turns"
+				text = "On self, will increase [color=%positive%]" + rate + "[/color] Ranged Skill for ten turns"
 			}
 		];
 		return ret;

@@ -55,13 +55,13 @@ this.ssu_bone_cleaver_swing <- this.inherit("scripts/skills/skill", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Will make two separate strikes for [color=" + this.Const.UI.Color.NegativeValue + "]65%[/color] of the weapon\'s damage each"
+			text = "Will make two separate strikes for [color=%negative%]65%[/color] of the weapon\'s damage each"
 		});
 		ret.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts additional stacking [color=" + this.Const.UI.Color.DamageValue + "]" + dmg + "[/color] bleeding damage per turn."
+			text = "Inflicts additional stacking [color=%damage%]" + dmg + "[/color] bleeding damage per turn."
 		});
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers)
@@ -70,7 +70,7 @@ this.ssu_bone_cleaver_swing <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] chance to hit"
+				text = "Has [color=%negative%]-5%[/color] chance to hit"
 			});
 		}
 		else
@@ -79,7 +79,7 @@ this.ssu_bone_cleaver_swing <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] chance to hit"
+				text = "Has [color=%positive%]+5%[/color] chance to hit"
 			});
 		}
 

@@ -100,7 +100,7 @@ this.summon_dryad_snake <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] charges left"
+				text = "Has [color=%positive%]" + ammo + "[/color] charges left"
 			});
 		}
 		else
@@ -109,7 +109,7 @@ this.summon_dryad_snake <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Needs a heart filled with power equipped[/color]"
+				text = "[color=%negative%]Needs a heart filled with power equipped[/color]"
 			});
 		}
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
@@ -118,7 +118,7 @@ this.summon_dryad_snake <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=%negative%]Can not be used because this character is engaged in melee[/color]"
 			});
 		}
 		return ret;

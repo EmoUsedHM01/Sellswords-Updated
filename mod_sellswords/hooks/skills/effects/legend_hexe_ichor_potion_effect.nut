@@ -29,7 +29,7 @@
 				id = 10,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]+" + this.getMalus() + "%[/color] Fatigue built"
+				text = "[color=%negative%]+" + this.getMalus() + "%[/color] Fatigue built"
 			});
 		}
 
@@ -40,7 +40,7 @@
 					id = 10,
 					type = "text",
 					icon = "ui/icons/warning.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]This character has lost focus due to switching to a ranged weapon[/color]"
+					text = "[color=%negative%]This character has lost focus due to switching to a ranged weapon[/color]"
 				}
 			]);
 		}
@@ -51,13 +51,13 @@
 					id = 10,
 					type = "text",
 					icon = "ui/icons/action_points.png",
-					text = "Action Point Cost is [color=" + this.Const.UI.Color.PositiveValue + "]halved[/color]"
+					text = "Action Point Cost is [color=%positive%]halved[/color]"
 				},
 				{
 					id = 10,
 					type = "text",
 					icon = "ui/icons/warning.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]Will be lost upon switching to a ranged weapon[/color]"
+					text = "[color=%negative%]Will be lost upon switching to a ranged weapon[/color]"
 				}
 			]);
 		}

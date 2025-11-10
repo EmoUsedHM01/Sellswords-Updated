@@ -30,7 +30,7 @@ this.crbonebreaker_effect <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/health.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 8 + "%[/color] Max Hitpoints"
+			text = "[color=%negative%]-" + this.m.Count * 8 + "%[/color] Max Hitpoints"
 		});		
 
 		return tooltip;

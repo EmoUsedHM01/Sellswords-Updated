@@ -19,7 +19,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Not affected by nighttime penalties" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Vision."
+				text = "Not affected by nighttime penalties" + "\n[color=%positive%]+1[/color] Vision."
 			},
 			{
 				id = 12,

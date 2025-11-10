@@ -27,7 +27,7 @@
 		{
 			_tooltip.push({
 				icon = "ui/tooltips/negative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]40%[/color] A formidable Orc Warlord"
+				text = "[color=%negative%]40%[/color] A formidable Orc Warlord"
 			});				
 		}	
 	}		

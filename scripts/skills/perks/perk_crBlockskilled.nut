@@ -39,7 +39,7 @@ this.perk_crBlockskilled <- this.inherit("scripts/skills/skill", {
 		
 		if (bonus >= 10)
 		{
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + " blocks the attack reducing [color=" + this.Const.UI.Color.NegativeValue + "]" + bonus + "%[/color] damage!");
+			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + " blocks the attack reducing [color=%negative%]" + bonus + "%[/color] damage!");
 		}
 	}
 

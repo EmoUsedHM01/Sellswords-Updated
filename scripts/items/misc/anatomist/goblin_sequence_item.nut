@@ -59,13 +59,13 @@ this.goblin_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reactive Leg Muscles: The AP cost of Rotation and Footwork is reduced to [color=" + this.Const.UI.Color.PositiveValue + "]2[/color] and the Fatigue costs are reduced by [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]. Does not stack with other reductions." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative"
+			text = "Reactive Leg Muscles: The AP cost of Rotation and Footwork is reduced to [color=%positive%]2[/color] and the Fatigue costs are reduced by [color=%positive%]50%[/color]. Does not stack with other reductions." + "\n[color=%positive%]+10[/color] Initiative"
 		});
 		result.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Mutated Cornea: An additional [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] of damage ignores armor when using bows or crossbows\n" + "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Skill"  + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Defense"
+			text = "Mutated Cornea: An additional [color=%positive%]5%[/color] of damage ignores armor when using bows or crossbows\n" + "[color=%positive%]+10[/color] Ranged Skill"  + "\n[color=%positive%]+10[/color] Ranged Defense"
 		});
 		result.push({
 			id = 14,

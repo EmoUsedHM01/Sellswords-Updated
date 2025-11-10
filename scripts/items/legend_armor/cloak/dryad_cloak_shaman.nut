@@ -40,7 +40,7 @@ this.dryad_cloak_shaman <- this.inherit("scripts/items/legend_armor/legend_armor
 			id = 6,
 			type = "text",
 			icon = "ui/icons/repair_item.png",
-			text = "Repairs [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] armour each turn"
+			text = "Repairs [color=%positive%]5[/color] armour each turn"
 		});
 		return result;
 	}
@@ -51,7 +51,7 @@ this.dryad_cloak_shaman <- this.inherit("scripts/items/legend_armor/legend_armor
 			id = 6,
 			type = "text",
 			icon = "ui/icons/repair_item.png",
-			text = "Repairs [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] armour each turn"
+			text = "Repairs [color=%positive%]5[/color] armour each turn"
 		});
 	}
 

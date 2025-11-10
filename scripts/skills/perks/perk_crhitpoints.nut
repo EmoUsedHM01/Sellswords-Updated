@@ -31,7 +31,7 @@ this.perk_crhitpoints <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Receives only [color=" + this.Const.UI.Color.PositiveValue + "]" + currentPercent + "%[/color] of any damage"
+			text = "Receives only [color=%positive%]" + currentPercent + "%[/color] of any damage"
 		});
 
 		return tooltip;

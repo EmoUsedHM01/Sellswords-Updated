@@ -37,7 +37,7 @@ this.cr_pack <- this.inherit("scripts/items/item", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Grants the user [color=" + this.Const.UI.Color.PositiveValue + "]+2[/color] bag slots"
+			text = "Grants the user [color=%positive%]+2[/color] bag slots"
 		});
 		result.push({
 			id = 11,

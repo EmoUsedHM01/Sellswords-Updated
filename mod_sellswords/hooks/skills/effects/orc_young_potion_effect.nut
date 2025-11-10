@@ -34,7 +34,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "Attacks do [color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] additional damage"
+				text = "Attacks do [color=%positive%]+20%[/color] additional damage"
 			});
 		}
 		else
@@ -43,7 +43,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "Attacks do [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] additional damage"
+				text = "Attacks do [color=%positive%]+10%[/color] additional damage"
 			});
 		}
 		

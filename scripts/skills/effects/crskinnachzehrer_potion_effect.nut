@@ -36,7 +36,7 @@ this.crskinnachzehrer_potion_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Lowers the threshold to inflict injuries by [color=" + this.Const.UI.Color.NegativeValue + "]40%[/color] for both melee and ranged attacks"
+				text = "Lowers the threshold to inflict injuries by [color=%negative%]40%[/color] for both melee and ranged attacks"
 			},
 			{
 				id = 12,

@@ -17,7 +17,7 @@
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text =  "[color=" + this.Const.UI.Color.PositiveValue + "]10[/color] defense and resolve to all allies within [color=" + this.Const.UI.Color.PositiveValue + "]4[/color] tiles for one turn"
+			text =  "[color=%positive%]10[/color] defense and resolve to all allies within [color=%positive%]4[/color] tiles for one turn"
 		});
 
 		return ret;

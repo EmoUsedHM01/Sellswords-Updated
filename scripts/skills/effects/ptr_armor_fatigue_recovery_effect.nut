@@ -20,7 +20,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 	function getName()
 	{
 		local idt = this.Math.floor(this.m.Afterwait);
-		return this.m.Name + "[color=" + this.Const.UI.Color.NegativeValue + "] (" + (this.getCrweight() * (-1)) + "[/color]" + "  [color=" + this.Const.UI.Color.PositiveValue + "]" + idt +"[/color]" + "[color=" + this.Const.UI.Color.NegativeValue + "])[/color]";
+		return this.m.Name + "[color=%negative%] (" + (this.getCrweight() * (-1)) + "[/color]" + "  [color=%positive%]" + idt +"[/color]" + "[color=%negative%])[/color]";
 	}
 
 	function isHidden()
@@ -52,7 +52,7 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 				id = 15,
 				type = "text",
 				icon = "ui/icons/direct_damage.png",
-				text = "Reduces all damage that ignores armor by [color=" + this.Const.UI.Color.PositiveValue + "]" + dr + "%[/color]."
+				text = "Reduces all damage that ignores armor by [color=%positive%]" + dr + "%[/color]."
 			}
 		];
 		if (fc != 0)
@@ -61,31 +61,31 @@ this.ptr_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + fc + "[/color] Fatigue Recovery per turn."
+				text = "[color=%negative%]-" + fc + "[/color] Fatigue Recovery per turn."
 			});
 			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" +  fc + "[/color] Melee Skill."
+				text = "[color=%negative%]-" +  fc + "[/color] Melee Skill."
 			});
 			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" +  (3 * fc) + "[/color] Ranged Skill."
+				text = "[color=%negative%]-" +  (3 * fc) + "[/color] Ranged Skill."
 			});
 			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + fc + "[/color] Melee Defense."
+				text = "[color=%negative%]-" + fc + "[/color] Melee Defense."
 			});
 			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + (3 * fc) + "[/color] Ranged Defense."
+				text = "[color=%negative%]-" + (3 * fc) + "[/color] Ranged Defense."
 			});
 		}
 		return ret;

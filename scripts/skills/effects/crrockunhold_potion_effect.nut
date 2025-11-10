@@ -36,7 +36,7 @@ this.crrockunhold_potion_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "Head and Body armor is increased by [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color]"
+				text = "Head and Body armor is increased by [color=%positive%]15%[/color]"
 			},
 			{
 				id = 12,

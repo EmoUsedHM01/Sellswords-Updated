@@ -17,31 +17,31 @@
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.min(20, this.getBonus() * 0.0006) + "[/color] Melee Skill"
+				text = "[color=%positive%]+" + this.Math.min(20, this.getBonus() * 0.0006) + "[/color] Melee Skill"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.min(20, this.getBonus() * 0.0006) + "[/color] Ranged Skill"
+				text = "[color=%positive%]+" + this.Math.min(20, this.getBonus() * 0.0006) + "[/color] Ranged Skill"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.min(20, this.getBonus() * 0.0004) + "[/color] Melee Defense"
+				text = "[color=%positive%]+" + this.Math.min(20, this.getBonus() * 0.0004) + "[/color] Melee Defense"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.min(20, this.getBonus() * 0.0004) + "[/color] Ranged Defense"
+				text = "[color=%positive%]+" + this.Math.min(20, this.getBonus() * 0.0004) + "[/color] Ranged Defense"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.min(20, this.getBonus() * 0.0008) + "[/color] Resolve"
+				text = "[color=%positive%]+" + this.Math.min(20, this.getBonus() * 0.0008) + "[/color] Resolve"
 			}
 		];
 	}

@@ -19,7 +19,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "An additional [color=" + this.Const.UI.Color.PositiveValue + "]5%[/color] of damage ignores armor when using bows or crossbows." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Skill."  + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Defense."
+				text = "An additional [color=%positive%]5%[/color] of damage ignores armor when using bows or crossbows." + "\n[color=%positive%]+10[/color] Ranged Skill."  + "\n[color=%positive%]+10[/color] Ranged Defense."
 			},
 			{
 				id = 12,

@@ -19,7 +19,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Morale cannot be reduced below Steady\n" + "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Resolve."
+				text = "Morale cannot be reduced below Steady\n" + "[color=%positive%]+10[/color] Resolve."
 			},
 			{
 				id = 12,

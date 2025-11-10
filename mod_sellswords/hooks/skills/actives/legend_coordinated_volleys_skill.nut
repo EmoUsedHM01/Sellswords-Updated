@@ -8,13 +8,13 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]10[/color] ranged attack to all allies within [color=" + this.Const.UI.Color.PositiveValue + "]4[/color] tiles for one turn"
+				text = "[color=%positive%]10[/color] ranged attack to all allies within [color=%positive%]4[/color] tiles for one turn"
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "The penalty to blocked ranged attack hitchance is reduced by [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]"
+				text = "The penalty to blocked ranged attack hitchance is reduced by [color=%positive%]20%[/color]"
 			}
 		]);
 		return tooltip;

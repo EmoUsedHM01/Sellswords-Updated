@@ -51,13 +51,13 @@ this.ssu_legendary_hammer <- ::inherit("scripts/items/weapons/weapon", {
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts the [color=" + this.Const.UI.Color.PositiveValue + "]Rooted[/color] status effect on hit."
+			text = "Inflicts the [color=%positive%]Rooted[/color] status effect on hit."
 		});
 		result.push({
 			id = 9,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Slowly repairs [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] durability per turn."
+			text = "Slowly repairs [color=%positive%]+10[/color] durability per turn."
 		});
 
 		return result;

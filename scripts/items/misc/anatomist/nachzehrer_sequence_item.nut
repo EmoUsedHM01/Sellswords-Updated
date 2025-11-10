@@ -52,13 +52,13 @@ this.nachzehrer_sequence_item <- this.inherit("scripts/items/misc/anatomist/anat
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Rapid Tissue Growth: Reduces the time it takes to heal from any injury by one day, down to a mininum of one day.\nGrants [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative."
+			text = "Rapid Tissue Growth: Reduces the time it takes to heal from any injury by one day, down to a mininum of one day.\nGrants [color=%positive%]+10[/color] Initiative."
 		});
 		result.push({
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Gruesome Feast: Taste of the forbidden flesh. Devour a recently departed corpse to gain strength and restore your own health by [color=" + this.Const.UI.Color.PositiveValue + "]50[/color] "
+			text = "Gruesome Feast: Taste of the forbidden flesh. Devour a recently departed corpse to gain strength and restore your own health by [color=%positive%]50[/color] "
 		});
 		result.push({
 			id = 13,

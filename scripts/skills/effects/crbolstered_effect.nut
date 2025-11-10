@@ -35,19 +35,19 @@ this.crbolstered_effect <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.crBonus + "[/color] Initiative"
+				text = "[color=%positive%]+" + this.m.crBonus + "[/color] Initiative"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.crBonus + "[/color] Melee Defense"
+				text = "[color=%positive%]+" + this.m.crBonus + "[/color] Melee Defense"
 			},
 			{
 				id = 13,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.crBonus + "[/color] Ranged Defense"
+				text = "[color=%positive%]+" + this.m.crBonus + "[/color] Ranged Defense"
 			}
 		];
 	}

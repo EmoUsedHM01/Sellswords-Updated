@@ -19,7 +19,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Reduces the Fatigue cost of the \'Shieldwall\' skill by [color=" + this.Const.UI.Color.PositiveValue + "]" + 100 * (1 - this.Const.Combat.WeaponSpecFatigueMult) + "%[/color]" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee Defense." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Fatigue."
+				text = "Reduces the Fatigue cost of the \'Shieldwall\' skill by [color=%positive%]" + 100 * (1 - this.Const.Combat.WeaponSpecFatigueMult) + "%[/color]" + "\n[color=%positive%]+10[/color] Melee Defense." + "\n[color=%positive%]+10[/color] Fatigue."
 			},
 			{
 				id = 12,

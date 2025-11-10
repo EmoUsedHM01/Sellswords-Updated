@@ -17,7 +17,7 @@
 		{
 			if (tooltip.id != 6 || tooltip.icon != "ui/icons/hitchance.png") continue;
 
-			tooltip.text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] chance to hit";
+			tooltip.text = "Has [color=%positive%]+30%[/color] chance to hit";
 			break;
 		}
 		

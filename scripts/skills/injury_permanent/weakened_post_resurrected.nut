@@ -40,7 +40,7 @@ this.weakened_post_resurrected <- this.inherit("scripts/skills/injury_permanent/
 	
 	function getDescription()
 	{
-		return this.m.Description + ". Have been resurrected [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.ResurrectedTimes + "[/color] time" + (this.m.ResurrectedTimes > 1 ? "s." : "."); 
+		return this.m.Description + ". Have been resurrected [color=%negative%]" + this.m.ResurrectedTimes + "[/color] time" + (this.m.ResurrectedTimes > 1 ? "s." : ".");
 	}
 
 	function getTooltip()
@@ -69,7 +69,7 @@ this.weakened_post_resurrected <- this.inherit("scripts/skills/injury_permanent/
 					id = 7 + i,
 					type = "text",
 					icon = "ui/icons/" + data.Icon + ".png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + (value * 5) + "%[/color] " + data.Name
+					text = "[color=%negative%]-" + (value * 5) + "%[/color] " + data.Name
 				});
 			}
 

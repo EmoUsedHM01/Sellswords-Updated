@@ -35,7 +35,7 @@ this.legend_heartwood_sap_effect <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Only receive [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of any damage"
+				text = "Only receive [color=%positive%]50%[/color] of any damage"
 			},
 			{
 				id = 6,
@@ -53,7 +53,7 @@ this.legend_heartwood_sap_effect <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Skills build [color=" + this.Const.UI.Color.NegativeValue + "]+" + 100 + "%[/color] Fatigue"
+				text = "Skills build [color=%negative%]+" + 100 + "%[/color] Fatigue"
 			}		
 		];
 	}

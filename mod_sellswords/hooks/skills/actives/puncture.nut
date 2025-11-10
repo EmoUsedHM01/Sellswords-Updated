@@ -76,13 +76,13 @@
 			local modarmor = this.Math.min(35, (targetArmor - 125) / 5);
 			_tooltip.push({
 				icon = "ui/tooltips/negative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + modarmor + "%[/color] Firm armor"
+				text = "[color=%negative%]" + modarmor + "%[/color] Firm armor"
 			});				
 		}	
 		local modvigor = this.Math.floor((1.0 - targetEntity.getFatiguePct()) * 50);			
 		_tooltip.push({
 			icon = "ui/tooltips/negative.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + modvigor + "%[/color] Fresh and energetic"
+			text = "[color=%negative%]" + modvigor + "%[/color] Fresh and energetic"
 		});	
 		local mod = 0;
 		if (targetEntity.getSkills().hasSkill("effects.legend_dazed"))
@@ -117,7 +117,7 @@
 		{
 			_tooltip.push({
 				icon = "ui/tooltips/positive.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mod + "%[/color] Negative status"
+				text = "[color=%positive%]" + mod + "%[/color] Negative status"
 			});	
 		}
 	}		
@@ -167,7 +167,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Hit chance determined by your target's fatigue, remaining body armor and negative status like stunned, netted, grappled, etc. [color=" + this.Const.UI.Color.NegativeValue + "]-50%[/color] hitchance if they are fresh and [color=" + this.Const.UI.Color.NegativeValue + "]-0%[/color] if they are exhausted. Also has [color=" + this.Const.UI.Color.NegativeValue + "]-1%[/color] chance to hit for every 5 points of Body Armor durability the target has above 125, up to a maximum of [color=" + this.Const.UI.Color.NegativeValue + "]-35%[/color]. While negative status can provide you a total of [color=" + this.Const.UI.Color.PositiveValue + "]+175%[/color] bonus."
+				text = "Hit chance determined by your target's fatigue, remaining body armor and negative status like stunned, netted, grappled, etc. [color=%negative%]-50%[/color] hitchance if they are fresh and [color=%negative%]-0%[/color] if they are exhausted. Also has [color=%negative%]-1%[/color] chance to hit for every 5 points of Body Armor durability the target has above 125, up to a maximum of [color=%negative%]-35%[/color]. While negative status can provide you a total of [color=%positive%]+175%[/color] bonus."
 			},
 			{
 				id = 8,

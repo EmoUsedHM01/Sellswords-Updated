@@ -75,25 +75,25 @@ this.acid_flask_item_02 <- this.inherit("scripts/items/weapons/weapon", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.RangeMax + "[/color] tiles"
+			text = "Range of [color=%positive%]" + this.m.RangeMax + "[/color] tiles"
 		},
 		{
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces the target\'s armor by [color=" + this.Const.UI.Color.DamageValue + "]25%[/color] each turn for 3 turns"
+			text = "Reduces the target\'s armor by [color=%damage%]25%[/color] each turn for 3 turns"
 		},
 		{
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has a [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] chance to hit bystanders at the same or lower height level as well"
+			text = "Has a [color=%damage%]33%[/color] chance to hit bystanders at the same or lower height level as well"
 		},
 		{
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Lasts for at least [color=" + this.Const.UI.Color.PositiveValue + "]" + 2 + "[/color] turns"
+			text = "Lasts for at least [color=%positive%]" + 2 + "[/color] turns"
 		}]);
 		if (!this.World.Retinue.hasFollower("follower.alchemist"))
 		{

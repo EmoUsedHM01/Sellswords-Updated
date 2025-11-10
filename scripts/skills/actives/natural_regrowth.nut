@@ -35,13 +35,13 @@ this.natural_regrowth <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.MaxRange + "[/color], can only target damaged units."
+			text = "Has a range of [color=%positive%]" + this.m.MaxRange + "[/color], can only target damaged units."
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/health.png",
-			text = "You can heal up to [color=" + this.Const.UI.Color.PositiveValue + "]60[/color] hitpoints."
+			text = "You can heal up to [color=%positive%]60[/color] hitpoints."
 		});
 		if (ammo > 0)
 		{
@@ -49,7 +49,7 @@ this.natural_regrowth <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] charges left"
+				text = "Has [color=%positive%]" + ammo + "[/color] charges left"
 			});
 		}
 		else
@@ -58,7 +58,7 @@ this.natural_regrowth <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Needs a heart filled with power equipped[/color]"
+				text = "[color=%negative%]Needs a heart filled with power equipped[/color]"
 			});
 		}
 		if (this.Tactical.isActive() && this.getContainer().getActor().getTile().hasZoneOfControlOtherThan(this.getContainer().getActor().getAlliedFactions()))
@@ -67,7 +67,7 @@ this.natural_regrowth <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=%negative%]Can not be used because this character is engaged in melee[/color]"
 			});
 		}
 		return ret;

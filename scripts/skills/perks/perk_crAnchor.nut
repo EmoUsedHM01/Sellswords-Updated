@@ -31,7 +31,7 @@ this.perk_crAnchor <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getBonus() + "[/color] Melee Skill and Melee Defense"
+			text = "[color=%positive%]+" + this.getBonus() + "[/color] Melee Skill and Melee Defense"
 		});
 
 		return tooltip;

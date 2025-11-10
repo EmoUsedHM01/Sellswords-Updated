@@ -53,7 +53,7 @@ this.necrosavant_sequence_item <- this.inherit("scripts/items/misc/anatomist/ana
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Parasitic Blood: Heal [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] of hitpoint damage inflicted on adjacent enemies that have blood" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Skill."
+			text = "Parasitic Blood: Heal [color=%positive%]15%[/color] of hitpoint damage inflicted on adjacent enemies that have blood" + "\n[color=%positive%]+10[/color] Hitpoints." + "\n[color=%positive%]+5[/color] Melee Skill."
 		});
 		result.push({
 			id = 12,

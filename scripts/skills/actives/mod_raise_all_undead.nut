@@ -42,7 +42,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has an [color=" + this.Const.UI.Color.PositiveValue + "]unlimited[/color] range."
+			text = "Has an [color=%positive%]unlimited[/color] range."
 		});
 		ret.push({
 			id = 8,
@@ -54,7 +54,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 			id = 9,
 			type = "text",
 			icon = "ui/tooltips/warning.png",
-			text = "[color=" + ::Const.UI.Color.NegativeValue + "]Can only be used once per battle.[/color]"
+			text = "[color=%negative%]Can only be used once per battle.[/color]"
 		});
 
 		if (this.m.IsSpent)
@@ -63,7 +63,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + ::Const.UI.Color.NegativeValue + "]Has been spent[/color]."
+				text = "[color=%negative%]Has been spent[/color]."
 			});
 
 			return ret;
@@ -79,7 +79,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 					id = 11,
 					type = "text",
 					icon = "ui/icons/kills.png",
-					text = "There is [color=" + ::Const.UI.Color.PositiveValue + "]" + count + "[/color] corpse available for resurrection"
+					text = "There is [color=%positive%]" + count + "[/color] corpse available for resurrection"
 				});
 			}
 			else if (count >= 2)
@@ -88,7 +88,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 					id = 12,
 					type = "text",
 					icon = "ui/icons/kills.png",
-					text = "There are [color=" + ::Const.UI.Color.PositiveValue + "]" + count + "[/color] corpses available for resurrection"
+					text = "There are [color=%positive%]" + count + "[/color] corpses available for resurrection"
 				});
 			}
 			else
@@ -97,7 +97,7 @@ this.mod_raise_all_undead <- ::inherit("scripts/skills/skill", {
 					id = 13,
 					type = "text",
 					icon = "ui/tooltips/warning.png",
-					text = "[color=" + ::Const.UI.Color.NegativeValue + "]There is currently no suitable corpse on the map[/color]"
+					text = "[color=%negative%]There is currently no suitable corpse on the map[/color]"
 				});
 			}
 		}

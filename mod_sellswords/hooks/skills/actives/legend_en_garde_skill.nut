@@ -15,7 +15,7 @@
 		}
 		_tooltip.push({
 			icon = "ui/tooltips/positive.png",				
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + 20 + "%[/color] Counter attack"
+			text = "[color=%positive%]" + 20 + "%[/color] Counter attack"
 		});				
 	}
 	
@@ -26,13 +26,13 @@
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "] -10 [/color] melee and ranged defense"
+			text = "Inflicts [color=%damage%] -10 [/color] melee and ranged defense"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Using [color=" + this.Const.UI.Color.DamageValue + "] 120% [/color] melee skill"
+			text = "Using [color=%damage%] 120% [/color] melee skill"
 		});			
 		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInDaggers)
 		{
@@ -40,7 +40,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] chance to parry on a hit thanks to Dagger Mastery"
+				text = "Has a [color=%positive%]100%[/color] chance to parry on a hit thanks to Dagger Mastery"
 			});
 		}
 		else
@@ -49,7 +49,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.StunChance + "%[/color] chance to parry on a hit due to not having Dagger Mastery"
+				text = "Has a [color=%positive%]" + this.m.StunChance + "%[/color] chance to parry on a hit due to not having Dagger Mastery"
 			});
 		}
 

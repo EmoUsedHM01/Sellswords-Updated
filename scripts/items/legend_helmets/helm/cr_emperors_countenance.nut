@@ -51,7 +51,7 @@ this.cr_emperors_countenance <- this.inherit("scripts/items/legend_helmets/legen
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reflects [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] of damage taken in melee back to the attacker"
+			text = "Reflects [color=%positive%]25%[/color] of damage taken in melee back to the attacker"
 		});
 	}
 

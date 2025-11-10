@@ -30,7 +30,7 @@ this.perk_armor_mastery_light <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Builds up only [color=" + this.Const.UI.Color.PositiveValue + "]" + fm + "%[/color] fatigue"
+				text = "Builds up only [color=%positive%]" + fm + "%[/color] fatigue"
 			});
 		}
 		else
@@ -39,7 +39,7 @@ this.perk_armor_mastery_light <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]This character\'s body and head armor are too heavy[/color]"
+				text = "[color=%negative%]This character\'s body and head armor are too heavy[/color]"
 			});
 		}
 

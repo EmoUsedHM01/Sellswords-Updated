@@ -102,7 +102,7 @@ this.necro_lorekeeper <- this.inherit("scripts/skills/backgrounds/character_back
 				id = 10,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] Experience Gain"
+				text = "[color=%positive%]+25%[/color] Experience Gain"
 			},
 			{
 				id = 11,
@@ -114,13 +114,13 @@ this.necro_lorekeeper <- this.inherit("scripts/skills/backgrounds/character_back
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Summon Screaming Skulls at the start of each turn. The amount summoned is equal to [color=" + ::Const.UI.Color.PositiveValue + "]25%[/color] of your level."
+				text = "Summon Screaming Skulls at the start of each turn. The amount summoned is equal to [color=%positive%]25%[/color] of your level."
 			},
 			{
 				id = 13,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The Screaming Skulls gain Hitpoints equal to the Lorekeeper\'s Resolve and deal damage on death equal to [color=" + ::Const.UI.Color.PositiveValue + "]60-80%[/color] of their current Hitpoints."
+				text = "The Screaming Skulls gain Hitpoints equal to the Lorekeeper\'s Resolve and deal damage on death equal to [color=%positive%]60-80%[/color] of their current Hitpoints."
 			}
 		];
 		

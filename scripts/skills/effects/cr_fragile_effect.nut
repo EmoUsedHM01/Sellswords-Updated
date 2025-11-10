@@ -21,19 +21,19 @@ this.cr_fragile_effect <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color] Melee Defense"
+			text = "[color=%negative%]-20%[/color] Melee Defense"
 		});
 		tooltip.push({
 			id = 10,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color] Ranged Defense"
+			text = "[color=%negative%]-20%[/color] Ranged Defense"
 		});
 		tooltip.push({
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]-20%[/color] Resolve"
+			text = "[color=%negative%]-20%[/color] Resolve"
 		});		
 
 		return tooltip;

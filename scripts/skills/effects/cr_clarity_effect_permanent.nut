@@ -32,7 +32,7 @@ this.cr_clarity_effect_permanent <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/action_points.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 1 + "[/color] Action Point"
+			text = "[color=%positive%]+" + 1 + "[/color] Action Point"
 		});		
 	}			
 });

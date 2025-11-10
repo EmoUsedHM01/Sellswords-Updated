@@ -13,7 +13,7 @@
 			local modarmor = this.Math.min(35, (targetArmor - 125) / 5);
 			_tooltip.push({
 				icon = "ui/tooltips/negative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + modarmor + "%[/color] Firm armor"
+				text = "[color=%negative%]" + modarmor + "%[/color] Firm armor"
 			});				
 		}	
 	}				

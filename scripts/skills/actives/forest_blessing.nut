@@ -35,37 +35,37 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.MaxRange + "[/color], can only target damaged units."
+			text = "Has a range of [color=%positive%]" + this.m.MaxRange + "[/color], can only target damaged units."
 		});
 		ret.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+25%[/color] Damage"
+			text = "[color=%positive%]+25%[/color] Damage"
 		});
 		ret.push({
 			id = 9,
 			type = "text",
 			icon = "ui/icons/melee_skill.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Melee Skill"
+			text = "[color=%positive%]+15[/color] Melee Skill"
 		});
 		ret.push({
 			id = 10,
 			type = "text",
 			icon = "ui/icons/ranged_skill.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Ranged Skill"
+			text = "[color=%positive%]+15[/color] Ranged Skill"
 		});
 		ret.push({
 			id = 11,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Melee Defense"
+			text = "[color=%positive%]+15[/color] Melee Defense"
 		});
 		ret.push({
 			id = 12,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Ranged Defense"
+			text = "[color=%positive%]+15[/color] Ranged Defense"
 		});
 
 		if (ammo > 0)
@@ -74,7 +74,7 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] charges left"
+				text = "Has [color=%positive%]" + ammo + "[/color] charges left"
 			});
 		}
 		else
@@ -83,7 +83,7 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Needs a heart filled with power equipped[/color]"
+				text = "[color=%negative%]Needs a heart filled with power equipped[/color]"
 			});
 		}
 
@@ -93,7 +93,7 @@ this.forest_blessing <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=%negative%]Can not be used because this character is engaged in melee[/color]"
 			});
 		}
 

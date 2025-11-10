@@ -31,25 +31,25 @@
 				id = 9,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Unable to move[/color]"
+				text = "[color=%negative%]Unable to move[/color]"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + debuff + "%[/color] Melee Defense"
+				text = "[color=%negative%]-" + debuff + "%[/color] Melee Defense"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + debuff + "%[/color] Ranged Defense"
+				text = "[color=%negative%]-" + debuff + "%[/color] Ranged Defense"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + debuff + "%[/color] Initiative"
+				text = "[color=%negative%]-" + debuff + "%[/color] Initiative"
 			}
 		];
 	}

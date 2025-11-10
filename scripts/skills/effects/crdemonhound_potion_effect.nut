@@ -36,7 +36,7 @@ this.crdemonhound_potion_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+3[/color] Fatigue Recovery per turn"
+				text = "[color=%positive%]+3[/color] Fatigue Recovery per turn"
 			},
 			{
 				id = 12,

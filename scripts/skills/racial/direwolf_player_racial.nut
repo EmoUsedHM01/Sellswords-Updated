@@ -69,7 +69,7 @@ this.direwolf_player_racial <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Attacks do [color=" + this.Const.UI.Color.NegativeValue + "]" + additionalDamage + "[/color] more damage"
+				text = "Attacks do [color=%negative%]" + additionalDamage + "[/color] more damage"
 			}
 			
 		];
@@ -80,31 +80,31 @@ this.direwolf_player_racial <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + 10 + "[/color] Hitpoints"
+				text = "+[color=%positive%]" + 10 + "[/color] Hitpoints"
 			});
 			ret.push({
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + 10 + "[/color] Fatigue"
+				text = "+[color=%positive%]" + 10 + "[/color] Fatigue"
 			});
 			ret.push({
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + 10 + "[/color] Initiative"
+				text = "+[color=%positive%]" + 10 + "[/color] Initiative"
 			});
 			ret.push({
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + 5 + "[/color] Melee Skill"
+				text = "+[color=%positive%]" + 5 + "[/color] Melee Skill"
 			});
 			ret.push({
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + 5 + "[/color] Melee Defense"
+				text = "+[color=%positive%]" + 5 + "[/color] Melee Defense"
 			});
 		}
 		

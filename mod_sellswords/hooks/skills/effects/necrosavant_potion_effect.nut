@@ -23,7 +23,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Heal [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] of hitpoint damage inflicted on adjacent enemies that have blood" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+30[/color] Hitpoints." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee Skill."
+				text = "Heal [color=%positive%]25%[/color] of hitpoint damage inflicted on adjacent enemies that have blood" + "\n[color=%positive%]+30[/color] Hitpoints." + "\n[color=%positive%]+10[/color] Melee Skill."
 			});
 		}
 		else
@@ -32,7 +32,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Heal [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] of hitpoint damage inflicted on adjacent enemies that have blood" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Skill."
+				text = "Heal [color=%positive%]15%[/color] of hitpoint damage inflicted on adjacent enemies that have blood" + "\n[color=%positive%]+10[/color] Hitpoints." + "\n[color=%positive%]+5[/color] Melee Skill."
 			});
 		}
 		

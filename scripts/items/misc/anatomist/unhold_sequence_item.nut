@@ -53,13 +53,13 @@ this.unhold_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomis
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Accelerated... Growths?: Heals [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] Hitpoints each turn. Cannot heal if poisoned."
+			text = "Accelerated... Growths?: Heals [color=%positive%]5[/color] Hitpoints each turn. Cannot heal if poisoned."
 		});
 		result.push({
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Thick Skull: The threshold to sustain injuries from getting hit is increased by [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color]." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints."
+			text = "Thick Skull: The threshold to sustain injuries from getting hit is increased by [color=%positive%]33%[/color]." + "\n[color=%positive%]+10[/color] Hitpoints."
 		});
 		result.push({
 			id = 13,

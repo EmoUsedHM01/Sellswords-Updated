@@ -51,19 +51,19 @@ this.throw_acid_flask_focus_02 <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces the target\'s armor by [color=" + this.Const.UI.Color.DamageValue + "]37.5%[/color] each turn for 3 turns."
+			text = "Reduces the target\'s armor by [color=%damage%]37.5%[/color] each turn for 3 turns."
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color] tiles"
+			text = "Has a range of [color=%positive%]" + this.getMaxRange() + "[/color] tiles"
 		});	
 		ret.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Lasts for at least [color=" + this.Const.UI.Color.PositiveValue + "]" + 2 + "[/color] turns"
+			text = "Lasts for at least [color=%positive%]" + 2 + "[/color] turns"
 		});		
 		return ret;
 	}

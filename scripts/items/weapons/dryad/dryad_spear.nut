@@ -33,7 +33,7 @@ this.dryad_spear <- this.inherit("scripts/items/weapons/weapon", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Slowly repairs [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] durability each turn."
+			text = "Slowly repairs [color=%positive%]5[/color] durability each turn."
 		});
 		return result;
 	}

@@ -33,7 +33,7 @@ this.ssu_ap_potion_item <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Action Point.\nPermanently."
+			text = "Gain [color=%positive%]+1[/color] Action Point.\nPermanently."
 		});
 		result.push({
 			id = 66,

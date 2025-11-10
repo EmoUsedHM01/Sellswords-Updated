@@ -59,13 +59,13 @@ this.webknecht_sequence_item <- this.inherit("scripts/items/misc/anatomist/anato
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins." + "\nGrants [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Initiative and [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Skill."
+			text = "Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins." + "\nGrants [color=%positive%]+15[/color] Initiative and [color=%positive%]+5[/color] Melee Skill."
 		});
 		result.push({
 			id = 13,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Enhanced Eye Rods: Not affected by nighttime penalties." + "\nGrants [color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Vision."
+			text = "Enhanced Eye Rods: Not affected by nighttime penalties." + "\nGrants [color=%positive%]+1[/color] Vision."
 		});
 		result.push({
 			id = 14,

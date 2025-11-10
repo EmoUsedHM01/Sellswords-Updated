@@ -8,7 +8,7 @@
 		{
 			if (tooltip.id == 10) continue;
 
-			tooltip.text = "[color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Ranged Defense";
+			tooltip.text = "[color=%negative%]-5[/color] Ranged Defense";
 			break;
 		}
 

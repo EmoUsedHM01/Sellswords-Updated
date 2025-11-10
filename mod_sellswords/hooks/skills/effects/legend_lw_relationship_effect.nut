@@ -24,37 +24,37 @@
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.Level + "[/color] Melee Skill"
+				text = "[color=%positive%]+" + this.m.Level + "[/color] Melee Skill"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.Level + "[/color] Ranged Skill"
+				text = "[color=%positive%]+" + this.m.Level + "[/color] Ranged Skill"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.Level + "[/color] Melee Defense"
+				text = "[color=%positive%]+" + this.m.Level + "[/color] Melee Defense"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.Level + "[/color] Ranged Defense"
+				text = "[color=%positive%]+" + this.m.Level + "[/color] Ranged Defense"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + (this.m.Level * 2) + "[/color] Initiative"
+				text = "[color=%positive%]+" + (this.m.Level * 2) + "[/color] Initiative"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(0.34 * this.m.Level) + "[/color] Fatigue Recovery"
+				text = "[color=%positive%]+" + this.Math.floor(0.34 * this.m.Level) + "[/color] Fatigue Recovery"
 			}
 		];
 	}

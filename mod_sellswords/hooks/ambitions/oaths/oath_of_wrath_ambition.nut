@@ -3,6 +3,6 @@
 	q.create = @( __original ) function()
 	{
 		__original();
-		this.m.OathBurdenText = "Your men have [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee Defense and [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Ranged Defense.";
+		this.m.OathBurdenText = "Your men have [color=%negative%]-5[/color] Melee Defense and [color=%negative%]-5[/color] Ranged Defense.";
 	}
 });

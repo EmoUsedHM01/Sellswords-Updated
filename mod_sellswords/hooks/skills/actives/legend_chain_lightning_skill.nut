@@ -17,7 +17,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]15[/color] - [color=" + this.Const.UI.Color.DamageValue + "]30[/color] Armor ignoring damage and chains between up to three additional adjacent targets on hit"
+				text = "Inflicts [color=%damage%]15[/color] - [color=%damage%]30[/color] Armor ignoring damage and chains between up to three additional adjacent targets on hit"
 			}
 		]);
 		return ret;

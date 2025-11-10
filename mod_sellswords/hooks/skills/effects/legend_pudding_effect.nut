@@ -13,7 +13,7 @@
 
 	q.getDescription = @(__original) function()
 	{
-		return "Thanks to eating food, this character regains Health, Resolve and Defenses for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.TurnsLeft + "[/color] turn(s). ";
+		return "Thanks to eating food, this character regains Health, Resolve and Defenses for [color=%positive%]" + this.m.TurnsLeft + "[/color] turn(s). ";
 	}
 
 	q.getTooltip = @(__original) function()
@@ -56,25 +56,25 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "On self, will restore [color=" + this.Const.UI.Color.PositiveValue + "]" + crate + "[/color] Health per turn for ten turns"
+				text = "On self, will restore [color=%positive%]" + crate + "[/color] Health per turn for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Resolve for ten turns"
+				text = "On self, will increase [color=%positive%]" + rate + "[/color] Resolve for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Melee Defenses for ten turns"
+				text = "On self, will increase [color=%positive%]" + rate + "[/color] Melee Defenses for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Ranged Defenses for ten turns"
+				text = "On self, will increase [color=%positive%]" + rate + "[/color] Ranged Defenses for ten turns"
 			}			
 		];
 		return ret;

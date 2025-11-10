@@ -43,7 +43,7 @@ this.crnecrosavantlord_potion_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Ignore Zone of Control(ZOC) if hitpoints are below [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color]"
+				text = "Ignore Zone of Control(ZOC) if hitpoints are below [color=%negative%]50%[/color]"
 			},
 			{
 				id = 12,

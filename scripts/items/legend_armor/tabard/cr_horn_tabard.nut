@@ -31,7 +31,7 @@ this.cr_horn_tabard <- this.inherit("scripts/items/legend_armor/legend_armor_tab
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Reduces any melee damage to the body by [color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color]"
+			text = "Reduces any melee damage to the body by [color=%negative%]-10%[/color]"
 		});
 	}
 

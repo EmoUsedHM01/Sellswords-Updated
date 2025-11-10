@@ -117,7 +117,7 @@ this.mod_summon_zombie_dog <- this.inherit("scripts/skills/actives/legend_spawn_
 		for (local i = 0; i < this.m.Casts; ++i)
 		{
 			actor.checkMorale(-1, 0, this.Const.MoraleCheckType.MentalAttack);
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " suffered [color=" + this.Const.UI.Color.NegativeValue + "]backlash[/color] from the summoning ritual");
+			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " suffered [color=%negative%]backlash[/color] from the summoning ritual");
 		}
 		
 		this.Sound.play("sounds/enemies/horrific_scream_01.wav", this.Const.Sound.Volume.RacialEffect * 0.5, actor.getPos());

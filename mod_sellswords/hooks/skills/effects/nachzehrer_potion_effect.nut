@@ -28,7 +28,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+20[/color] Initiative."
+				text = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day." + "\n[color=%positive%]+20[/color] Initiative."
 			});
 		}
 		else
@@ -37,7 +37,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative."
+				text = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day." + "\n[color=%positive%]+10[/color] Initiative."
 			});
 		}
 		

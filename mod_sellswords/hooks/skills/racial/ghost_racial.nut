@@ -25,7 +25,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is always [color=" + this.Const.UI.Color.PositiveValue + "]Levitating[/color]"
+				text = "Is always [color=%positive%]Levitating[/color]"
 			},
 			{
 				id = 7,

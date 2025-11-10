@@ -15,7 +15,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + bonus + "[/color] Melee Defense"
+				text = "[color=%positive%]+" + bonus + "[/color] Melee Defense"
 			});
 			if ((10 - bonus) >= 0)
 			{
@@ -23,7 +23,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/ranged_defense.png",
-					text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + (10 - bonus) + "[/color] Ranged Defense"
+					text = "[color=%positive%]+" + (10 - bonus) + "[/color] Ranged Defense"
 				});
 			}
 			else
@@ -32,7 +32,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/ranged_defense.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + (10 - bonus - this.m.Minus) + "[/color] Ranged Defense"
+					text = "[color=%negative%]-" + (10 - bonus - this.m.Minus) + "[/color] Ranged Defense"
 				});
 			}
 		}
@@ -58,7 +58,7 @@
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "The penalty to Initiative from built-up Fatigue is reduced by [color=" + this.Const.UI.Color.PositiveValue + "]30%[/color]"
+			text = "The penalty to Initiative from built-up Fatigue is reduced by [color=%positive%]30%[/color]"
 		});
 
 		return tooltip;

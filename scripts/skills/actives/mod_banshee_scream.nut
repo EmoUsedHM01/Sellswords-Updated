@@ -42,25 +42,25 @@ this.mod_banshee_scream <- this.inherit("scripts/skills/skill", {
 				id = 4,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max + "[/color] damage that ignores armor"
+				text = "Inflicts [color=%damage%]" + damage_regular_min + "[/color] - [color=%damage%]" + damage_regular_max + "[/color] damage that ignores armor"
 			},
 			{
 				id = 5,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color] tiles"
+				text = "Has a range of [color=%positive%]" + this.getMaxRange() + "[/color] tiles"
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Damage is reduced by target\'s [color=" + this.Const.UI.Color.NegativeValue + "]Resolve[/color]"
+				text = "Damage is reduced by target\'s [color=%negative%]Resolve[/color]"
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a chance to inflict [color=" + this.Const.UI.Color.NegativeValue + "]Horrified[/color] effect"
+				text = "Has a chance to inflict [color=%negative%]Horrified[/color] effect"
 			}
 		]);
 

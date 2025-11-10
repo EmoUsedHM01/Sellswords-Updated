@@ -8,7 +8,7 @@
 		{
 			if (tooltip.id == 11) continue;
 
-			tooltip.text = "Is not paid any wage. And the threshold to sustain injuries on getting hit is increased by [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]";
+			tooltip.text = "Is not paid any wage. And the threshold to sustain injuries on getting hit is increased by [color=%positive%]20%[/color]";
 			break;
 		}
 

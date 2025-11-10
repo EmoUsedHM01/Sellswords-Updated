@@ -13,7 +13,7 @@
 
 	q.getDescription = @(__original) function()
 	{
-		return "Thanks to eating food, this character regains Health, Fatigue, Resolve and Initiative for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.TurnsLeft + "[/color] turn(s). ";
+		return "Thanks to eating food, this character regains Health, Fatigue, Resolve and Initiative for [color=%positive%]" + this.m.TurnsLeft + "[/color] turn(s). ";
 	}
 
 	q.getTooltip = @(__original) function()
@@ -55,25 +55,25 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "On self, will restore [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Health per turn for ten turns"
+				text = "On self, will restore [color=%positive%]" + rate + "[/color] Health per turn for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "On self, recovers fatigue by [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] per turn for ten turns"
+				text = "On self, recovers fatigue by [color=%positive%]" + rate + "[/color] per turn for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Resolve for ten turns"
+				text = "On self, will increase [color=%positive%]" + rate + "[/color] Resolve for ten turns"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "On self, will increase [color=" + this.Const.UI.Color.PositiveValue + "]" + rate + "[/color] Initiative for ten turns"
+				text = "On self, will increase [color=%positive%]" + rate + "[/color] Initiative for ten turns"
 			}
 		];
 		return ret;

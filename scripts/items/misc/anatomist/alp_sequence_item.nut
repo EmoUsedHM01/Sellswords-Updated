@@ -53,13 +53,13 @@ this.alp_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatomist_p
 			id = 13,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Enhanced Eye Rods: Not affected by nighttime penalties" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Vision"
+			text = "Enhanced Eye Rods: Not affected by nighttime penalties" + "\n[color=%positive%]+1[/color] Vision"
 		});
 		result.push({
 			id = 14,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "This character takes between [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] and [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] less damage from piercing attacks, such as those from bows or spears" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints"  
+			text = "This character takes between [color=%positive%]25%[/color] and [color=%positive%]50%[/color] less damage from piercing attacks, such as those from bows or spears" + "\n[color=%positive%]+10[/color] Hitpoints"
 		});
 		result.push({
 			id = 15,

@@ -67,13 +67,13 @@
 			modarmor = this.Math.min(35, (targetArmor - 125) / 5);
 			_tooltip.push({
 				icon = "ui/tooltips/negative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + modarmor + "%[/color] Firm armor"
+				text = "[color=%negative%]" + modarmor + "%[/color] Firm armor"
 			});				
 		}	
 		local modvigor = this.Math.floor((1.0 - targetEntity.getFatiguePct()) * 50);			
 		_tooltip.push({
 			icon = "ui/tooltips/negative.png",
-			text = "[color=" + this.Const.UI.Color.NegativeValue + "]" + modvigor + "%[/color] Fresh and energetic"
+			text = "[color=%negative%]" + modvigor + "%[/color] Fresh and energetic"
 		});	
 		local mod = 0;
 		if (targetEntity.getSkills().hasSkill("effects.legend_dazed"))
@@ -108,7 +108,7 @@
 		{
 			_tooltip.push({
 				icon = "ui/tooltips/positive.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]" + mod + "%[/color] Negative status"
+				text = "[color=%positive%]" + mod + "%[/color] Negative status"
 			});	
 		}
 	}

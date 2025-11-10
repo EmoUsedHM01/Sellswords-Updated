@@ -29,19 +29,19 @@ this.ptr_exhausted_effect_severe <- this.inherit("scripts/skills/skill", {
 					id = 10,
 					type = "text",
 					icon = "ui/icons/damage_dealt.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.DamageReductionPercentage * var + "%[/color] Damage inflicted"
+					text = "[color=%negative%]-" + this.m.DamageReductionPercentage * var + "%[/color] Damage inflicted"
 				},
 				{
 					id = 10,
 					type = "text",
 					icon = "ui/icons/fatigue.png",
-					text = "Skills build [color=" + this.Const.UI.Color.NegativeValue + "]+" + this.m.FatigueBuiltIncrease * var + "%[/color] Fatigue"
+					text = "Skills build [color=%negative%]+" + this.m.FatigueBuiltIncrease * var + "%[/color] Fatigue"
 				},
 				{
 					id = 10,
 					type = "text",
 					icon = "ui/icons/special.png",
-					text = "Will start the turn with [color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.StartingAPMalus * var + "%[/color] Action Points"
+					text = "Will start the turn with [color=%negative%]-" + this.m.StartingAPMalus * var + "%[/color] Action Points"
 				},
 			]
 		);

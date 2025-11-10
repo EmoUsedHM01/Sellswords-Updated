@@ -14,7 +14,7 @@
 			id = 11,
 			type = "text",
 			icon = "ui/icons/days_wounded.png",
-			text = "Restores up to [color=" + this.Const.UI.Color.PositiveValue + "]75%[/color] of missing health and heal wounds"
+			text = "Restores up to [color=%positive%]75%[/color] of missing health and heal wounds"
 		});
 		return result;
 	}	

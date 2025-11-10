@@ -3,7 +3,7 @@
 	q.create = @( __original ) function()
 	{
 		__original();
-		this.m.OathBoonText = "You can take up to [color=" + this.Const.UI.Color.PositiveValue + "]18[/color] men into battle.";
+		this.m.OathBoonText = "You can take up to [color=%positive%]18[/color] men into battle.";
 	}
 
 	q.onUpdateScore = @( __original ) function()

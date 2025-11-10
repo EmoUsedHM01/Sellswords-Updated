@@ -3,7 +3,7 @@
 	q.create = @( __original ) function()
 	{
 		__original();
-		this.m.OathBurdenText = "You can only take up to [color=" + this.Const.UI.Color.NegativeValue + "]14[/color] men into battle.";
+		this.m.OathBurdenText = "You can only take up to [color=%negative%]14[/color] men into battle.";
 	}
 	q.onUpdateScore = @( __original) function()
 	{

@@ -61,7 +61,7 @@ this.mod_ghost_possessed_effect <- this.inherit("scripts/skills/skill", {
 
 	function getDescription()
 	{
-		return "This character has been possessed, and no longer has any control over their actions and is a puppet that has no choice but to obey a master. Wears off in [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.TurnsLeft + "[/color] turn(s).";
+		return "This character has been possessed, and no longer has any control over their actions and is a puppet that has no choice but to obey a master. Wears off in [color=%negative%]" + this.m.TurnsLeft + "[/color] turn(s).";
 	}
 
 	function addTurns( _t )

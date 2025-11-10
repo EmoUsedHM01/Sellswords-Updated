@@ -8,7 +8,7 @@
 		{
 			if (tooltip.id == 12) continue;
 
-			tooltip.text = "The \'Shield Wall\' shield skill has grants an additional [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee Defense and [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Defense.";
+			tooltip.text = "The \'Shield Wall\' shield skill has grants an additional [color=%positive%]+10[/color] Melee Defense and [color=%positive%]+10[/color] Ranged Defense.";
 			break;
 		}
 

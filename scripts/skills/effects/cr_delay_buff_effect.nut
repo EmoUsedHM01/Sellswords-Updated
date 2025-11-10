@@ -27,28 +27,28 @@ this.cr_delay_buff_effect <- this.inherit("scripts/skills/skill", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/melee_skill.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.MeleeSkillminus + "[/color] Melee Skill"
+			text = "[color=%positive%]+" + this.m.MeleeSkillminus + "[/color] Melee Skill"
 		});
 
 		tooltip.push({
 			id = 10,
 			type = "text",
 			icon = "ui/icons/ranged_skill.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.RangedSkillminus + "[/color] Ranged Skill"
+			text = "[color=%positive%]+" + this.m.RangedSkillminus + "[/color] Ranged Skill"
 		});		
 
 		tooltip.push({
 			id = 10,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.MeleeDefenseminus + "[/color] Melee Defense"
+			text = "[color=%positive%]+" + this.m.MeleeDefenseminus + "[/color] Melee Defense"
 		});
 
 		tooltip.push({
 			id = 10,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.RangedDefenseminus + "[/color] Ranged Defense"
+			text = "[color=%positive%]+" + this.m.RangedDefenseminus + "[/color] Ranged Defense"
 		});
 
 		return tooltip;

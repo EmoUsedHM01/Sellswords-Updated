@@ -80,7 +80,7 @@ this.crdecapitate <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_regular_max * 2 + "[/color] damage depending on how wounded the target already is, of which [color=" + this.Const.UI.Color.DamageValue + "]0[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_direct_max + "[/color] can ignore armor"
+			text = "Inflicts [color=%damage%]" + damage_regular_min + "[/color] - [color=%damage%]" + damage_regular_max * 2 + "[/color] damage depending on how wounded the target already is, of which [color=%damage%]0[/color] - [color=%damage%]" + damage_direct_max + "[/color] can ignore armor"
 		});
 
 		if (damage_Armor_max > 0)
@@ -89,7 +89,7 @@ this.crdecapitate <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/icons/armor_damage.png",
-				text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_min + "[/color] - [color=" + this.Const.UI.Color.DamageValue + "]" + damage_Armor_max + "[/color] damage to armor"
+				text = "Inflicts [color=%damage%]" + damage_Armor_min + "[/color] - [color=%damage%]" + damage_Armor_max + "[/color] damage to armor"
 			});
 		}
 		
@@ -97,7 +97,7 @@ this.crdecapitate <- this.inherit("scripts/skills/skill", {
 			id = 4,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Deal [color=" + this.Const.UI.Color.DamageValue + "]20%[/color] more damage per level of difference between your and your target\'s Morale as long as your Morale is higher than that of your target."
+			text = "Deal [color=%damage%]20%[/color] more damage per level of difference between your and your target\'s Morale as long as your Morale is higher than that of your target."
 		});		
 
 		return ret;

@@ -22,7 +22,7 @@ this.acid_effect_strong <- this.inherit("scripts/skills/skill", {
 
 	function getDescription()
 	{
-		return "This character\'s armor has been sprayed with a Stollwurm\'s acidic blood, which is now slowly eating away at it for another [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.TurnsLeft + "[/color] turn(s).";
+		return "This character\'s armor has been sprayed with a Stollwurm\'s acidic blood, which is now slowly eating away at it for another [color=%negative%]" + this.m.TurnsLeft + "[/color] turn(s).";
 	}
 
 	function getTooltip()
@@ -46,7 +46,7 @@ this.acid_effect_strong <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/armor_head.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] of head armor is lost each turn"
+				text = "[color=%negative%]25%[/color] of head armor is lost each turn"
 			});
 		}
 
@@ -56,7 +56,7 @@ this.acid_effect_strong <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] of body armor is lost each turn"
+				text = "[color=%negative%]25%[/color] of body armor is lost each turn"
 			});
 		}
 

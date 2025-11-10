@@ -25,7 +25,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Heals [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] Hitpoints each turn. Cannot heal if poisoned."
+				text = "Heals [color=%positive%]10[/color] Hitpoints each turn. Cannot heal if poisoned."
 			});
 		}
 		else
@@ -34,7 +34,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Heals [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] Hitpoints each turn. Cannot heal if poisoned."
+				text = "Heals [color=%positive%]5[/color] Hitpoints each turn. Cannot heal if poisoned."
 			});
 		}
 
@@ -44,7 +44,7 @@
 				id = 12,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "Heals [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] head and body armor each turn.  Cannot heal if poisoned."
+				text = "Heals [color=%positive%]20[/color] head and body armor each turn.  Cannot heal if poisoned."
 			});
 		}
 		

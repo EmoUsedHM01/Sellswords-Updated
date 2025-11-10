@@ -65,7 +65,7 @@
 			{
 				if (v.Script != "")
 				{
-					this.Tactical.EventLog.log("The framed beggar learned [color=" + this.Const.UI.Color.NegativeValue + "]" + perk.getName() + "[/color] from " + _targetEntity.getName());
+					this.Tactical.EventLog.log("The framed beggar learned [color=%negative%]" + perk.getName() + "[/color] from " + _targetEntity.getName());
 					actor.getSkills().add(this.new(v.Script));
 					local rowToAddPerk = 0;
 					local length = actor.getBackground().getPerkTree()[0].len();

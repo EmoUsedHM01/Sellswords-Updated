@@ -28,13 +28,13 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Only receive [color=" + this.Const.UI.Color.PositiveValue + "]" + (100 - 50 * smc) + "%[/color] of any damage"
+				text = "Only receive [color=%positive%]" + (100 - 50 * smc) + "%[/color] of any damage"
 			},				
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Base Resolve will be increased by [color=" + this.Const.UI.Color.PositiveValue + "]" + 100 * smc + "%[/color]"
+				text = "Base Resolve will be increased by [color=%positive%]" + 100 * smc + "%[/color]"
 			},				
 			{
 				id = 6,

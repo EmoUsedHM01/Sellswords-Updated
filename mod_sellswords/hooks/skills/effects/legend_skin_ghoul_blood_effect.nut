@@ -35,7 +35,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+ " + healthAdded + "[/color] this turn"
+				text = "[color=%positive%]+ " + healthAdded + "[/color] this turn"
 			},
 			{
 				id = 11,

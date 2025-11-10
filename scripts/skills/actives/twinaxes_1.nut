@@ -56,13 +56,13 @@ this.twinaxes_1 <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Will make [color=" + this.Const.UI.Color.PositiveValue + "]" + hc + "[/color] separate strikes for [color=" + this.Const.UI.Color.PositiveValue + "]" + hd + "%[/color] of the weapon\'s damage each"
+				text = "Will make [color=%positive%]" + hc + "[/color] separate strikes for [color=%positive%]" + hd + "%[/color] of the weapon\'s damage each"
 			},
 			{
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Inflicts additional [color=" + this.Const.UI.Color.PositiveValue + "]35%[/color] damage on a hit to the head"
+				text = "Inflicts additional [color=%positive%]35%[/color] damage on a hit to the head"
 			}			
 		]);
 		return ret;

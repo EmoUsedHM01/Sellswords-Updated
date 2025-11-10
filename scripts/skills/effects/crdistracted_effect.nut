@@ -18,7 +18,7 @@ this.crdistracted_effect <- this.inherit("scripts/skills/skill", {
 	
 	function getDescription()
 	{
-		return "This character was on the receiving end of a dirty trick. Distracted for [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.Count + "[/color] stack(s), they are slower to react and have a harder time landing clean strikes.";
+		return "This character was on the receiving end of a dirty trick. Distracted for [color=%negative%]" + this.m.Count + "[/color] stack(s), they are slower to react and have a harder time landing clean strikes.";
 	}	
 
 	function getName()
@@ -50,13 +50,13 @@ this.crdistracted_effect <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.ValidStack + "%[/color] Damage"
+				text = "[color=%negative%]-" + this.m.ValidStack + "%[/color] Damage"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.ValidStack + "%[/color] Initiative"
+				text = "[color=%negative%]-" + this.m.ValidStack + "%[/color] Initiative"
 			}
 		];
 	}

@@ -52,19 +52,19 @@ this.rock_unhold_sequence_item <- this.inherit("scripts/items/misc/anatomist/ana
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Hyper-Accelerated Growths: Heals [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] Hitpoints each turn. Cannot heal if poisoned."
+			text = "Hyper-Accelerated Growths: Heals [color=%positive%]10[/color] Hitpoints each turn. Cannot heal if poisoned."
 		});
 		result.push({
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Thick Skinned: Heals [color=" + this.Const.UI.Color.PositiveValue + "]20[/color] head and body armor each turn.  Cannot heal if poisoned."
+			text = "Thick Skinned: Heals [color=%positive%]20[/color] head and body armor each turn.  Cannot heal if poisoned."
 		});
 		result.push({
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Sensory Redundancy: [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints."
+			text = "Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects" + "\n[color=%positive%]+10[/color] Hitpoints."
 		});
 		result.push({
 			id = 65,

@@ -16,7 +16,7 @@
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has an additional [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] chance to hit the head"
+			text = "Has an additional [color=%positive%]15%[/color] chance to hit the head"
 		});
 			
 		if (this.getContainer().hasSkill("perk.zombie_infectious_bite"))

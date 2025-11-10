@@ -52,13 +52,13 @@ this.skin_ghoul_sequence_item <- this.inherit("scripts/items/misc/anatomist/anat
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Hyperactive Cell Growth: Heals [color=" + this.Const.UI.Color.PositiveValue + "]5[/color] hitpoints each turn. Cannot heal if poisoned."
+			text = "Hyperactive Cell Growth: Heals [color=%positive%]5[/color] hitpoints each turn. Cannot heal if poisoned."
 		});
 		result.push({
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Subdermal Clotting: Damage received from the Bleeding status effect is reduced by [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color].\nGrants [color=" + this.Const.UI.Color.NegativeValue + "]+10[/color] Hitpoints."
+			text = "Subdermal Clotting: Damage received from the Bleeding status effect is reduced by [color=%negative%]50%[/color].\nGrants [color=%negative%]+10[/color] Hitpoints."
 		});
 		result.push({
 			id = 13,

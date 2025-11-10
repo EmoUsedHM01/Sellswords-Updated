@@ -10,7 +10,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.NegativeValue + "]100%[/color] chance to stun and daze target on a hit to the head if not immunue and always staggers the target"
+				text = "Has a [color=%negative%]100%[/color] chance to stun and daze target on a hit to the head if not immunue and always staggers the target"
 			});	
 		}
 		else
@@ -19,7 +19,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.NegativeValue + "]100%[/color] chance to daze a target on a hit to the head and always staggers the target"
+				text = "Has a [color=%negative%]100%[/color] chance to daze a target on a hit to the head and always staggers the target"
 			});	
 		}
 
@@ -29,7 +29,7 @@
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=%negative%]Can not be used because this character is engaged in melee[/color]"
 			});
 		}
 

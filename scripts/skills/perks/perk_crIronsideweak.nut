@@ -16,7 +16,7 @@ this.perk_crIronsideweak <- this.inherit("scripts/skills/skill", {
 	function getDescription()
 	{
 		local bonus = this.getBonus();
-		return "This character gains [color=" + this.Const.UI.Color.PositiveValue + "]" + bonus + "%[/color] damage reduction because of adjacent opponents.";
+		return "This character gains [color=%positive%]" + bonus + "%[/color] damage reduction because of adjacent opponents.";
 	}
 	
 	function getBonus()

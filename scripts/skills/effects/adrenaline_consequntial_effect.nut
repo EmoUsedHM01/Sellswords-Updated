@@ -38,25 +38,25 @@ this.adrenaline_consequntial_effect <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "] +5 [/color] Melee Skill"
+				text = "[color=%positive%] +5 [/color] Melee Skill"
 			},			
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "] +5% [/color] Damage"
+				text = "[color=%positive%] +5% [/color] Damage"
 			},			
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]6[/color] Fatigue Recovery"
+				text = "[color=%positive%]6[/color] Fatigue Recovery"
 			},			
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Makes enemies [color=" + this.Const.UI.Color.PositiveValue + "]25%[/color] more likely to target you"
+				text = "Makes enemies [color=%positive%]25%[/color] more likely to target you"
 			}
 
 		];

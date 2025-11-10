@@ -29,7 +29,7 @@ this.ptr_fresh_and_furious_effect <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_dealt.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + this.getBonus() + "%[/color] Damage Dealt"
+				text = "[color=%positive%]+" + this.getBonus() + "%[/color] Damage Dealt"
 			}
 		);
 

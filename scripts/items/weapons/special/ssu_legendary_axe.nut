@@ -45,13 +45,13 @@ this.ssu_legendary_axe <- ::inherit("scripts/items/weapons/weapon", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts the [color=" + this.Const.UI.Color.PositiveValue + "]Chilled[/color] status effect on hit."
+			text = "Inflicts the [color=%positive%]Chilled[/color] status effect on hit."
 		});
 		result.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts the [color=" + this.Const.UI.Color.PositiveValue + "]Staggered[/color] status effect on hit."
+			text = "Inflicts the [color=%positive%]Staggered[/color] status effect on hit."
 		});
 		
 		return result;

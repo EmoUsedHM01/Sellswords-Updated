@@ -34,7 +34,7 @@ this.cr_goblin_axe <- this.inherit("scripts/items/weapons/weapon", {
 			id = 10,
 			type = "text",
 			icon = "ui/icons/action_points.png",
-			text = "Melee attacks cost [color=" + this.Const.UI.Color.PositiveValue + "]-1[/color] Action Point"
+			text = "Melee attacks cost [color=%positive%]-1[/color] Action Point"
 		});
 		return ret;
 	}	

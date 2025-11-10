@@ -34,7 +34,7 @@
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-25%[/color] Experience Gain"
+					text = "[color=%negative%]-25%[/color] Experience Gain"
 				});
 			}
 			else if (_background.getID() == "background.apprentice")
@@ -48,7 +48,7 @@
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] Experience Gain"
+					text = "[color=%positive%]+5%[/color] Experience Gain"
 				});
 			}
 			else
@@ -57,7 +57,7 @@
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=" + this.Const.UI.Color.NegativeValue + "]-10%[/color] Experience Gain"
+					text = "[color=%negative%]-10%[/color] Experience Gain"
 				});
 			}
 		}
@@ -67,7 +67,7 @@
 				id = 16,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] Experience Gain"
+				text = "[color=%positive%]+10%[/color] Experience Gain"
 			});
 			_tooltip.push({
 				id = 17,

@@ -46,13 +46,13 @@ this.canpodajian_01 <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] chance to stun on a hit"
+			text = "Has a [color=%positive%]50%[/color] chance to stun on a hit"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] chance to staggered on a hit"
+			text = "Has a [color=%positive%]50%[/color] chance to staggered on a hit"
 		});
 		return ret;
 	}

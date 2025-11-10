@@ -8,7 +8,7 @@
 		{
 			if (tooltip.id == 10) continue;
 
-			tooltip.text = "Starts combat at Confident morale if permitted by mood. When you are at Confident morale, gain [color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] resolve.";
+			tooltip.text = "Starts combat at Confident morale if permitted by mood. When you are at Confident morale, gain [color=%positive%]+20%[/color] resolve.";
 			break;
 		}
 

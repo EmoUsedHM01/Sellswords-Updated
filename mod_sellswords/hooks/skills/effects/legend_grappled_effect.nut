@@ -17,13 +17,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-15[/color] Fatigue recovered per turn"
+				text = "[color=%negative%]-15[/color] Fatigue recovered per turn"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-40%[/color] Maximum Fatigue"
+				text = "[color=%negative%]-40%[/color] Maximum Fatigue"
 			}
 		];
 	}	

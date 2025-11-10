@@ -22,7 +22,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Has a range of [color=" + this.Const.UI.Color.PositiveValue + "]" + this.getMaxRange() + "[/color] tiles."
+				text = "Has a range of [color=%positive%]" + this.getMaxRange() + "[/color] tiles."
 			},
 			{
 				id = 10,
@@ -34,7 +34,7 @@
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Grants;\n[color=" + this.Const.UI.Color.PositiveValue + "]12[/color] AP\n[color=" + this.Const.UI.Color.PositiveValue + "]+50[/color] Initiative\n[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Melee Skill\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee Defense\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Ranged Defense\nOnly takes [color=" + this.Const.UI.Color.NegativeValue + "]75%[/color] damage from attacks."
+				text = "Grants;\n[color=%positive%]12[/color] AP\n[color=%positive%]+50[/color] Initiative\n[color=%positive%]+15[/color] Melee Skill\n[color=%positive%]+10[/color] Melee Defense\n[color=%positive%]+10[/color] Ranged Defense\nOnly takes [color=%negative%]75%[/color] damage from attacks."
 			}
 		];
 	}

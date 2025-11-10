@@ -55,7 +55,7 @@ this.jab <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+10%[/color] chance to hit"
+				text = "Has [color=%positive%]+10%[/color] chance to hit"
 			});
 		}
 

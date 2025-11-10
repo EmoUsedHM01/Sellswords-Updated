@@ -18,7 +18,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Weapons with extra Fatigue build-up on skills have this penalty reduced by [color=" + ::Const.UI.Color.PositiveValue + "]-3[/color]"
+				text = "Weapons with extra Fatigue build-up on skills have this penalty reduced by [color=%positive%]-3[/color]"
 			});
 		}
 		

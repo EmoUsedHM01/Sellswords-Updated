@@ -16,7 +16,7 @@
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts an additional [color=" + this.Const.UI.Color.DamageValue + "]15%[/color] damage that ignores armor to up to three targets"
+			text = "Inflicts an additional [color=%damage%]15%[/color] damage that ignores armor to up to three targets"
 		});
 		return result;
 	}		

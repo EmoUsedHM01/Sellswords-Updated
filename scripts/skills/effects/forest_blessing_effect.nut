@@ -15,7 +15,7 @@ this.forest_blessing_effect <- this.inherit("scripts/skills/skill", {
 
 	function getDescription()
 	{
-		return "You have been blessed with power for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.TurnsLeft + "[/color] more turn(s).";
+		return "You have been blessed with power for [color=%positive%]" + this.m.TurnsLeft + "[/color] more turn(s).";
 	}
 
 	function onUpdate( _properties )

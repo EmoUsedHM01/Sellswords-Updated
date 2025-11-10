@@ -8,7 +8,7 @@
 		{
 			if (tooltip.id == 11) continue;
 
-			tooltip.text = "Will not flee in battle. while all attributes debuff cause by low morale will be [color=" + this.Const.UI.Color.PositiveValue + "]halved[/color]";
+			tooltip.text = "Will not flee in battle. while all attributes debuff cause by low morale will be [color=%positive%]halved[/color]";
 			break;
 		}
 

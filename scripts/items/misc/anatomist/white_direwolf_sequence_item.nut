@@ -53,7 +53,7 @@ this.white_direwolf_sequence_item <- this.inherit("scripts/items/misc/anatomist/
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "White Wolf: Improves the qualities of the direwolf." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Fatigue" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Initiative" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Attack" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Defense"
+			text = "White Wolf: Improves the qualities of the direwolf." + "\n[color=%positive%]+10[/color] Hitpoints" + "\n[color=%positive%]+10[/color] Fatigue" + "\n[color=%positive%]+10[/color] Initiative" + "\n[color=%positive%]+5[/color] Melee Attack" + "\n[color=%positive%]+5[/color] Melee Defense"
 		});
 		result.push({
 			id = 12,

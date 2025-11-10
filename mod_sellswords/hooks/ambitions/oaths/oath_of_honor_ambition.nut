@@ -3,6 +3,6 @@
 	q.create = @( __original ) function()
 	{
 		__original();
-		this.m.OathBoonText = "Your men start battle at Confident morale. When you are at Confident morale, gain [color=" + this.Const.UI.Color.PositiveValue + "]+20%[/color] resolve.";
+		this.m.OathBoonText = "Your men start battle at Confident morale. When you are at Confident morale, gain [color=%positive%]+20%[/color] resolve.";
 	}
 });

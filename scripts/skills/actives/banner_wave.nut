@@ -49,7 +49,7 @@ this.banner_wave <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Grants all allied units within 8 tiles [color=" + this.Const.UI.Color.PositiveValue + "]1[/color] additional Action Point for their next turn."
+				text = "Grants all allied units within 8 tiles [color=%positive%]1[/color] additional Action Point for their next turn."
 			}
 		];
 		
@@ -59,7 +59,7 @@ this.banner_wave <- this.inherit("scripts/skills/skill", {
 				id = 5,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not be used because this character is engaged in melee[/color]"
+				text = "[color=%negative%]Can not be used because this character is engaged in melee[/color]"
 			});
 		}
 		

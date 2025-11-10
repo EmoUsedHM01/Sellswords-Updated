@@ -18,7 +18,7 @@ this.phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 
 	function getDescription()
 	{
-		return "This charater has accumulated [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.PhantomStacks + "[/color] charges for Phantom Strike";
+		return "This charater has accumulated [color=%positive%]" + this.m.PhantomStacks + "[/color] charges for Phantom Strike";
 	}
 
 	function addPhantom( _r )

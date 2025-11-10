@@ -19,7 +19,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character accumulates no Fatigue from enemy attacks, whether they hit or miss\n" + "[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints."
+				text = "This character accumulates no Fatigue from enemy attacks, whether they hit or miss\n" + "[color=%positive%]+10[/color] Hitpoints."
 			},
 			{
 				id = 12,

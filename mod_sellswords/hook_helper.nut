@@ -12,7 +12,7 @@
 				{
 					if ("icon" in tooltip && tooltip.icon != "ui/tooltips/warning.png") continue;
 
-					tooltip.text = "[color=" + ::Const.UI.Color.NegativeValue + "]AP cost is doubled because this character is engaged in melee[/color]";
+					tooltip.text = "[color=%negative%]AP cost is doubled because this character is engaged in melee[/color]";
 					break;
 				}
 

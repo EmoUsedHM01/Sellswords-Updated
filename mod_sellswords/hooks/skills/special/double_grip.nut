@@ -25,7 +25,7 @@
 			id = 11,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + cof + "%[/color] Damage"
+			text = "+[color=%positive%]" + cof + "%[/color] Damage"
 		});
 		return ret;
 	};

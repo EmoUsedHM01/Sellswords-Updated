@@ -36,7 +36,7 @@ this.crfallenbetrayer_potion_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Fatigue damage inflicted from successful hits is increased by [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color]"
+				text = "Fatigue damage inflicted from successful hits is increased by [color=%positive%]50%[/color]"
 			},
 			{
 				id = 12,

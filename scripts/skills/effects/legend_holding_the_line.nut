@@ -30,19 +30,19 @@ this.legend_holding_the_line <- this.inherit("scripts/skills/effects/legend_comm
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 10 + "[/color] Melee Defense"
+				text = "[color=%positive%]+" + 10 + "[/color] Melee Defense"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 10 + "[/color] Ranged Defense"
+				text = "[color=%positive%]+" + 10 + "[/color] Ranged Defense"
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 10 + "[/color] Resolve"
+				text = "[color=%positive%]+" + 10 + "[/color] Resolve"
 			}
 		];
 		return ret;

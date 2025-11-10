@@ -60,13 +60,13 @@ this.serrated_axe <- this.inherit("scripts/skills/skill", {
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts additional stacking [color=" + this.Const.UI.Color.DamageValue + "]" + dmg + "[/color] bleeding damage per turn, for 2 turns"
+			text = "Inflicts additional stacking [color=%damage%]" + dmg + "[/color] bleeding damage per turn, for 2 turns"
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Deal [color=" + this.Const.UI.Color.DamageValue + "]15%[/color] more damage per stack against bleeding targets."
+			text = "Deal [color=%damage%]15%[/color] more damage per stack against bleeding targets."
 		});		
 		return ret;
 	}

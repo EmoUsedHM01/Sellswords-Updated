@@ -46,13 +46,13 @@ this.crFoB_effect <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The threshold to receive injury is lowerd by [color=" + this.Const.UI.Color.NegativeValue + "]" + this.m.Count * 7 + "%[/color]"
+				text = "The threshold to receive injury is lowerd by [color=%negative%]" + this.m.Count * 7 + "%[/color]"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + this.m.Count * 7 + "%[/color] Resolve"
+				text = "[color=%negative%]-" + this.m.Count * 7 + "%[/color] Resolve"
 			}
 		];
 	}

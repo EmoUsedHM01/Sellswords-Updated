@@ -17,7 +17,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Your melee and ranged defense are increased by [color=" + this.Const.UI.Color.PositiveValue + "]" + bonus + "[/color]."
+				text = "Your melee and ranged defense are increased by [color=%positive%]" + bonus + "[/color]."
 			});
 			
 			if (currentPercent < 0.33)
@@ -37,7 +37,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Action Points are increased by [color=" + this.Const.UI.Color.PositiveValue + "]" + actionPoints + "[/color]."
+				text = "Action Points are increased by [color=%positive%]" + actionPoints + "[/color]."
 			});
 		}
 

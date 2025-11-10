@@ -51,7 +51,7 @@ this.cr_knightly_fullhelm <- this.inherit("scripts/items/legend_helmets/legend_h
 			id = 6,
 			type = "text",
 			icon = "ui/icons/health.png",
-			text = "User deals [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] more damage to Goblins"
+			text = "User deals [color=%positive%]20%[/color] more damage to Goblins"
 		});
 	}
 	

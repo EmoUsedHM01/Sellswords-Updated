@@ -17,13 +17,13 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-35%[/color] Melee Defense"
+				text = "[color=%negative%]-35%[/color] Melee Defense"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-35%[/color] Ranged Defense"
+				text = "[color=%negative%]-35%[/color] Ranged Defense"
 			}
 		];
 	}		

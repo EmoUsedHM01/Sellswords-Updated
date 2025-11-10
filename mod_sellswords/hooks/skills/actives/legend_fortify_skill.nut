@@ -27,19 +27,19 @@
 			id = 4,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "Grants [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getMeleeDefense() * mult) + "[/color] Melee Defense for one turn"
+			text = "Grants [color=%positive%]+" + this.Math.floor(item.getMeleeDefense() * mult) + "[/color] Melee Defense for one turn"
 		});
 		tooltip.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "Grants [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.Math.floor(item.getRangedDefense() * mult) + "[/color] Ranged Defense for one turn"
+			text = "Grants [color=%positive%]+" + this.Math.floor(item.getRangedDefense() * mult) + "[/color] Ranged Defense for one turn"
 		});
 		tooltip.push({
 			id = 12,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "Grants an additional [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Defense against all attacks."
+			text = "Grants an additional [color=%positive%]+5[/color] Defense against all attacks."
 		});
 
 		if (dr < 100)
@@ -48,7 +48,7 @@
 				id = 13,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Only receive [color=" + this.Const.UI.Color.PositiveValue + "]" + dr + "%[/color] of any damage"
+				text = "Only receive [color=%positive%]" + dr + "%[/color] of any damage"
 			});
 		}
 

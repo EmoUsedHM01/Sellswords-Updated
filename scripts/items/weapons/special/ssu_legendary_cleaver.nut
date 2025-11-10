@@ -43,7 +43,7 @@ this.ssu_legendary_cleaver <- ::inherit("scripts/items/weapons/weapon", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When [color=" + this.Const.UI.Color.NegativeValue + "]Bloodied[/color], grants the user [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color] additional damage dealt and recieved."
+			text = "When [color=%negative%]Bloodied[/color], grants the user [color=%positive%]20%[/color] additional damage dealt and recieved."
 		});
 		result.push({
 			id = 8,

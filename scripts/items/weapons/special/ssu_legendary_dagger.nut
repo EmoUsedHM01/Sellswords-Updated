@@ -38,7 +38,7 @@ this.ssu_legendary_dagger <- this.inherit("scripts/items/weapons/weapon", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts the [color=" + this.Const.UI.Color.PositiveValue + "]Withered[/color] status effect on hit."
+			text = "Inflicts the [color=%positive%]Withered[/color] status effect on hit."
 		});
 		result.push({
 			id = 8,

@@ -9,7 +9,7 @@ if (!(::Is_PTR_Exist))
 		this.Perks.push({
 			Perk = _perk,
 			Chance = _chance,
-			Desc = "[color=" + ::Const.UI.Color.NegativeValue + "]" + _desc + "[/color]"
+			Desc = "[color=%negative%]" + _desc + "[/color]"
 			Func = _func != null ? _func : @(a, b) _chance,
 			Row = _tier - 1
 		});

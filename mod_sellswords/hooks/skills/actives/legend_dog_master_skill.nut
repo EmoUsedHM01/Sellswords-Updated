@@ -17,7 +17,7 @@
 			id = 7,
 			type = "text",
 			icon = "ui/icons/asset_medicine.png",
-			text = "You have [color=" + ::Const.UI.Color.PositiveValue + "]" + ::World.Assets.getMedicine() + "[/color] medicine."
+			text = "You have [color=%positive%]" + ::World.Assets.getMedicine() + "[/color] medicine."
 		});
 
 		return ret;

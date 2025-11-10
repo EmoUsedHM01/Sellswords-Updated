@@ -50,7 +50,7 @@ this.dryad_helm_warrior <- this.inherit("scripts/items/legend_helmets/legend_hel
 			id = 6,
 			type = "text",
 			icon = "ui/icons/repair_item.png",
-			text = "Repairs [color=" + this.Const.UI.Color.PositiveValue + "]10[/color] armour each turn"
+			text = "Repairs [color=%positive%]10[/color] armour each turn"
 		});
 	}
 

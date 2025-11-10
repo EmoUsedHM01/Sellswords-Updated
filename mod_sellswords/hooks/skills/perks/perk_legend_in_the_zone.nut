@@ -23,7 +23,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/melee_skill.png",
-					text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + crbonus + "%[/color] Melee Skill"
+					text = "+[color=%positive%]" + crbonus + "%[/color] Melee Skill"
 				});
 			}
 
@@ -33,7 +33,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/melee_defense.png",
-					text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + 0.5 * bonus + "%[/color] Melee Defense"
+					text = "+[color=%positive%]" + 0.5 * bonus + "%[/color] Melee Defense"
 				});
 			}
 
@@ -41,7 +41,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "+[color=" + this.Const.UI.Color.PositiveValue + "]" + bonus + "%[/color] Melee Damage"
+				text = "+[color=%positive%]" + bonus + "%[/color] Melee Damage"
 			});
 		}
 
@@ -51,7 +51,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/warning.png",
-				text = "Melee Damage bonus [color=" + this.Const.UI.Color.NegativeValue + "]halved[/color] due to not being engaged in melee"
+				text = "Melee Damage bonus [color=%negative%]halved[/color] due to not being engaged in melee"
 			});
 		}
 

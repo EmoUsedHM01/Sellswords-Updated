@@ -57,7 +57,7 @@ this.perk_crReachadvantage <- this.inherit("scripts/skills/skill", {
 					id = 10,
 					type = "text",
 					icon = "ui/orientation/" + opponent.getOverlayImage() + ".png",
-					text = "Gains [color=" + this.Const.UI.Color.PositiveValue + "]+" + mk + "[/color] melee defense against " + opponent.getName()
+					text = "Gains [color=%positive%]+" + mk + "[/color] melee defense against " + opponent.getName()
 				}
 			);
 		}

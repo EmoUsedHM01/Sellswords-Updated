@@ -47,13 +47,13 @@ this.crstamina_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Gain [color=" + this.Const.UI.Color.PositiveValue + "]+" + this.m.time + "[/color] action point"
+				text = "Gain [color=%positive%]+" + this.m.time + "[/color] action point"
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Will gain [color=" + this.Const.UI.Color.PositiveValue + "]1[/color] more action point and cost [color=" + this.Const.UI.Color.NegativeValue + "]5[/color] more fatigue each time you use it."
+				text = "Will gain [color=%positive%]1[/color] more action point and cost [color=%negative%]5[/color] more fatigue each time you use it."
 			}			
 			
 		];

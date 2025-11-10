@@ -45,7 +45,7 @@ this.mod_insect_breath <- this.inherit("scripts/skills/skill", {
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can only be used once per battle[/color]"
+				text = "[color=%negative%]Can only be used once per battle[/color]"
 			});
 		}
 

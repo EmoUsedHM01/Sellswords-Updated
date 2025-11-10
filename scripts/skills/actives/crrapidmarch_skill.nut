@@ -48,7 +48,7 @@ this.crrapidmarch_skill <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Grant a nearby ally \'Rapid March\' effect, reduced his Action Point cost for movement by [color=" + this.Const.UI.Color.PositiveValue + "]1[/color] for each tile, but the Fatigue cost is doubled."
+				text = "Grant a nearby ally \'Rapid March\' effect, reduced his Action Point cost for movement by [color=%positive%]1[/color] for each tile, but the Fatigue cost is doubled."
 			}
 		];
 		return ret;

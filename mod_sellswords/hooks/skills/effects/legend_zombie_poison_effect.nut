@@ -40,19 +40,19 @@
 				id = 10,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + 1 * remaining + "[/color] Action Points"
+				text = "[color=%negative%]-" + 1 * remaining + "[/color] Action Points"
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + 1 * remaining + "[/color] Vision"
+				text = "[color=%negative%]-" + 1 * remaining + "[/color] Vision"
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]-" + seriouslevel * remaining + "[/color] Initiative"
+				text = "[color=%negative%]-" + seriouslevel * remaining + "[/color] Initiative"
 			}
 		];
 	}

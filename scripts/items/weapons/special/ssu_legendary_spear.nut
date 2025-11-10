@@ -46,7 +46,7 @@ this.ssu_legendary_spear <- ::inherit("scripts/items/weapons/weapon", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Attacks from this weapon [color=" + this.Const.UI.Color.NegativeValue + "]ignore[/color] armor."
+			text = "Attacks from this weapon [color=%negative%]ignore[/color] armor."
 		});
 
 		return result;

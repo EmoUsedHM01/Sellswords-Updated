@@ -47,7 +47,7 @@ this.ssu_legendary_sword <- ::inherit("scripts/items/weapons/weapon", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts an additional [color=" + this.Const.UI.Color.PositiveValue + "]15%[/color] damage that ignores armor, and chains, on up to three targets."
+			text = "Inflicts an additional [color=%positive%]15%[/color] damage that ignores armor, and chains, on up to three targets."
 		});
 		
 		return result;

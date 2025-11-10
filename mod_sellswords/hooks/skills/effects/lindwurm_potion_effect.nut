@@ -29,7 +29,7 @@
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character has the blood of Dragons coursing through them." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+30[/color] Hitpoints." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+30%[/color] additional damage with attacks."
+				text = "This character has the blood of Dragons coursing through them." + "\n[color=%positive%]+30[/color] Hitpoints." + "\n[color=%positive%]+30%[/color] additional damage with attacks."
 			});
 		}
 		else
@@ -38,7 +38,7 @@
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character has the blood of Dragons coursing through them." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Hitpoints." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] additional damage with attacks."
+				text = "This character has the blood of Dragons coursing through them." + "\n[color=%positive%]+15[/color] Hitpoints." + "\n[color=%positive%]+15%[/color] additional damage with attacks."
 			});
 		}
 

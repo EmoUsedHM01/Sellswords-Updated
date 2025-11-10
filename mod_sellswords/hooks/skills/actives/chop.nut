@@ -22,7 +22,7 @@
 			}
 			else
 			{
-				tooltip.text = "Inflicts additional [color=" + this.Const.UI.Color.PositiveValue + "]" + cd + "%[/color] damage on a hit to the head";
+				tooltip.text = "Inflicts additional [color=%positive%]" + cd + "%[/color] damage on a hit to the head";
 			}
 
 			break;

@@ -51,7 +51,7 @@ this.perk_crTiC <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 5 * count + "[/color] Melee Skill"
+				text = "[color=%positive%]+" + 5 * count + "[/color] Melee Skill"
 			});
 		}
 		if (InjuriesNum > 0)
@@ -60,13 +60,13 @@ this.perk_crTiC <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 5 * InjuriesNum + "[/color] Melee Defense"
+				text = "[color=%positive%]+" + 5 * InjuriesNum + "[/color] Melee Defense"
 			});
 			tooltip.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 5 * InjuriesNum + "[/color] Ranged Defense"
+				text = "[color=%positive%]+" + 5 * InjuriesNum + "[/color] Ranged Defense"
 			});			
 		}		
 		if (currentHPPercent > 0)
@@ -75,7 +75,7 @@ this.perk_crTiC <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 5 * currentHPPercent + "[/color] Resolve"
+				text = "[color=%positive%]+" + 5 * currentHPPercent + "[/color] Resolve"
 			});
 		}
 		if (currentFATPercent > 0)
@@ -84,7 +84,7 @@ this.perk_crTiC <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 5 * currentFATPercent + "[/color] Initiative"
+				text = "[color=%positive%]+" + 5 * currentFATPercent + "[/color] Initiative"
 			});
 		}
 		if (InjuriesNum >= 1 && count >= 1 && currentHPPercent >= 1 && currentFATPercent >= 1)
@@ -93,13 +93,13 @@ this.perk_crTiC <- this.inherit("scripts/skills/skill", {
 				id = 10,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 15 + "%[/color] Damage"
+				text = "[color=%positive%]+" + 15 + "%[/color] Damage"
 			});
 			tooltip.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/sturdiness.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + 15 + "%[/color] Damage reduction"
+				text = "[color=%positive%]+" + 15 + "%[/color] Damage reduction"
 			});			
 		}		
 		

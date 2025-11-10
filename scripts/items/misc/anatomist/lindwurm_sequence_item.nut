@@ -52,7 +52,7 @@ this.lindwurm_sequence_item <- this.inherit("scripts/items/misc/anatomist/anatom
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Descendant of Dragons: Perfects your physique, removing any negative physical traits and adding positive ones.\nGrants [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Hitpoints and makes all attacks deal [color=" + this.Const.UI.Color.PositiveValue + "]+15%[/color] more damage."
+			text = "Descendant of Dragons: Perfects your physique, removing any negative physical traits and adding positive ones.\nGrants [color=%positive%]+15[/color] Hitpoints and makes all attacks deal [color=%positive%]+15%[/color] more damage."
 		});
 		result.push({
 			id = 12,

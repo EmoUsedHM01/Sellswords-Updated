@@ -10,13 +10,13 @@
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=" + this.Const.UI.Color.PositiveValue + "]+1[/color] Resolve per ally wearing a militia armband or sergeant\'s sash."
+			text = "[color=%positive%]+1[/color] Resolve per ally wearing a militia armband or sergeant\'s sash."
 		});
 		ret.push({
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Current bonus: [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.ResolveBonus + "[/color]"
+			text = "Current bonus: [color=%positive%]" + this.m.ResolveBonus + "[/color]"
 		});
 
 		return ret;

@@ -19,7 +19,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Attacks that miss have [color=" + this.Const.UI.Color.PositiveValue + "]50%[/color] of their Fatigue cost refunded" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Fatigue."
+				text = "Attacks that miss have [color=%positive%]50%[/color] of their Fatigue cost refunded" + "\n[color=%positive%]+10[/color] Fatigue."
 			},
 			{
 				id = 12,

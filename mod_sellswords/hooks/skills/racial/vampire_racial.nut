@@ -46,7 +46,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Always has [color=" + this.Const.UI.Color.NegativeValue + "]0%[/color] chance to survive being struck down."
+				text = "Always has [color=%negative%]0%[/color] chance to survive being struck down."
 			}
 		];
 	}

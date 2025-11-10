@@ -7,7 +7,7 @@
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Applies Safeguard to someone, increasing their defenses by [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color]"
+			text = "Applies Safeguard to someone, increasing their defenses by [color=%positive%]+15[/color]"
 		});
 		return ret;
 	}

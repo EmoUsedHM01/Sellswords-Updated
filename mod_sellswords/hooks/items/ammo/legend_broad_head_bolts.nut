@@ -4,7 +4,7 @@
 	{
 		__original();
 
-		this.m.Description = "A quiver of bolts with broad tips, designed for tearing through flesh, but is easily stopped by armour.\nIs automatically refilled after each battle if you have enough ammunition.\nGrants [color=" + ::Const.UI.Color.PositiveValue + "]+30%[/color] Damage to Hitpoints but [color=" + ::Const.UI.Color.NegativeValue + "]-10%[/color] Armour Piercing and Armour Damage";
+		this.m.Description = "A quiver of bolts with broad tips, designed for tearing through flesh, but is easily stopped by armour.\nIs automatically refilled after each battle if you have enough ammunition.\nGrants [color=%positive%]+30%[/color] Damage to Hitpoints but [color=%negative%]-10%[/color] Armour Piercing and Armour Damage";
 	}
 
 	q.onAnySkillUsed = @(__original) function ( _skill, _targetEntity, _properties )

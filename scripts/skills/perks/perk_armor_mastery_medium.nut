@@ -24,13 +24,13 @@ this.perk_armor_mastery_medium <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "additional [color=" + this.Const.UI.Color.PositiveValue + "]+" + bonus + "[/color] Fatigue Recovery"
+				text = "additional [color=%positive%]+" + bonus + "[/color] Fatigue Recovery"
 			});
 			tooltip.push({
 				id = 6,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=" + this.Const.UI.Color.PositiveValue + "]+" + bonus + "[/color] Ranged Defense"
+				text = "[color=%positive%]+" + bonus + "[/color] Ranged Defense"
 			});
 		}
 		else if (this.getContainer().getActor().getBodyItem() == null)

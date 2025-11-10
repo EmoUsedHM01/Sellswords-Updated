@@ -19,7 +19,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Damage received from the Bleeding status effect is reduced by [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color]." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints."
+				text = "Damage received from the Bleeding status effect is reduced by [color=%negative%]50%[/color]." + "\n[color=%positive%]+10[/color] Hitpoints."
 			},
 			{
 				id = 12,

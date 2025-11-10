@@ -25,7 +25,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Using orc weapons no longer imposes additional fatigue costs" + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Fatigue."
+				text = "Using orc weapons no longer imposes additional fatigue costs" + "\n[color=%positive%]+10[/color] Fatigue."
 			},
 			{
 				id = 12,

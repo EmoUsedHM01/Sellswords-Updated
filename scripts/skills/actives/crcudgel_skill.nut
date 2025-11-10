@@ -48,7 +48,7 @@ this.crcudgel_skill <- this.inherit("scripts/skills/skill", {
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]100%[/color] more damage against armor and ignores additional [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] armor, but [color=" + this.Const.UI.Color.DamageValue + "]33%[/color] less to hitpoints."
+			text = "Inflicts [color=%damage%]100%[/color] more damage against armor and ignores additional [color=%damage%]33%[/color] armor, but [color=%damage%]33%[/color] less to hitpoints."
 		});
 		return ret;
 	}

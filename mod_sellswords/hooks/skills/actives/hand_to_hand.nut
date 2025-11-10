@@ -15,7 +15,7 @@
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts [color=" + this.Const.UI.Color.DamageValue + "]" + this.Const.Combat.FatigueReceivedPerHit * fatigueMultiplier + "[/color] extra fatigue on hit"
+			text = "Inflicts [color=%damage%]" + this.Const.Combat.FatigueReceivedPerHit * fatigueMultiplier + "[/color] extra fatigue on hit"
 		});
 
 		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInFists)
@@ -24,7 +24,7 @@
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]10%[/color] additional chance to hit"
+				text = "Has a [color=%positive%]10%[/color] additional chance to hit"
 			});
 		}
 

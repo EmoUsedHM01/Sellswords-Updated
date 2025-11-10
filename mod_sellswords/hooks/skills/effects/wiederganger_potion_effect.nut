@@ -19,7 +19,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The threshold to sustain injuries on getting hit is increased by [color=" + this.Const.UI.Color.PositiveValue + "]33%[/color]." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Hitpoints."
+				text = "The threshold to sustain injuries on getting hit is increased by [color=%positive%]33%[/color]." + "\n[color=%positive%]+10[/color] Hitpoints."
 			},
 			{
 				id = 12,

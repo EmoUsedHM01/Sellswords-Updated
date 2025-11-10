@@ -58,7 +58,7 @@ this.necro_skeleton_potion <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Skeletise: Your flesh sloughs off until there\'s nothing left but bone. Transforms the user into a [color=" + this.Const.UI.Color.NegativeValue + "]SKELETON[/color]."
+			text = "Skeletise: Your flesh sloughs off until there\'s nothing left but bone. Transforms the user into a [color=%negative%]SKELETON[/color]."
 		});
 		result.push({
 			id = 65,

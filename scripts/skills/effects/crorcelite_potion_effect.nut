@@ -36,7 +36,7 @@ this.crorcelite_potion_effect <- this.inherit("scripts/skills/skill", {
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "The penalty to Maximum Fatigue and Initiative from equipped items in your head, body, mainhand and offhand slots is reduced by [color=" + this.Const.UI.Color.PositiveValue + "]20%[/color]"
+				text = "The penalty to Maximum Fatigue and Initiative from equipped items in your head, body, mainhand and offhand slots is reduced by [color=%positive%]20%[/color]"
 			},
 			{
 				id = 12,

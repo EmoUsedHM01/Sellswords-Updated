@@ -26,7 +26,7 @@ this.perk_crinitiative <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Use [color=" + this.Const.UI.Color.PositiveValue + "]" + ini + "[/color] Initiative for determining turn order"
+			text = "Use [color=%positive%]" + ini + "[/color] Initiative for determining turn order"
 		});
 
 		return tooltip;

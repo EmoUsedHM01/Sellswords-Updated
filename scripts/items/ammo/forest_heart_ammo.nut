@@ -65,7 +65,7 @@ this.forest_heart_ammo <- this.inherit("scripts/items/ammo/ammo", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Contains enough power for [color=" + this.Const.UI.Color.PositiveValue + "]" + this.m.Ammo + "[/color] uses"
+				text = "Contains enough power for [color=%positive%]" + this.m.Ammo + "[/color] uses"
 			});
 		}
 		else
@@ -74,7 +74,7 @@ this.forest_heart_ammo <- this.inherit("scripts/items/ammo/ammo", {
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]Is dull and useless[/color]"
+				text = "[color=%negative%]Is dull and useless[/color]"
 			});
 		}
 

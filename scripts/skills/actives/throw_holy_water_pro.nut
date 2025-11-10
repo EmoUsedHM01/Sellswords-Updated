@@ -58,13 +58,13 @@ this.throw_holy_water_pro <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "Inflicts at least [color=" + this.Const.UI.Color.DamageValue + "]20[/color] damage to hitpoints for [color=" + this.Const.UI.Color.DamageValue + "]3[/color] turns, all of which ignores armor"
+			text = "Inflicts at least [color=%damage%]20[/color] damage to hitpoints for [color=%damage%]3[/color] turns, all of which ignores armor"
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has a [color=" + this.Const.UI.Color.DamageValue + "]50%[/color] chance to hit bystanders at the same or lower height level as well."
+			text = "Has a [color=%damage%]50%[/color] chance to hit bystanders at the same or lower height level as well."
 		});
 		ret.push({
 			id = 6,
@@ -79,7 +79,7 @@ this.throw_holy_water_pro <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/ammo.png",
-				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]" + ammo + "[/color] bottle of holy water left"
+				text = "Has [color=%positive%]" + ammo + "[/color] bottle of holy water left"
 			});
 		}
 		else
@@ -88,7 +88,7 @@ this.throw_holy_water_pro <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=" + this.Const.UI.Color.NegativeValue + "]No bottles of holy water left[/color]"
+				text = "[color=%negative%]No bottles of holy water left[/color]"
 			});
 		}
 		

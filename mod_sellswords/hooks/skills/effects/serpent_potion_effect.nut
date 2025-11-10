@@ -34,7 +34,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Piercing or cutting attacks poison the target with Redback venom." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+30[/color] Initiative." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Melee Skill."
+				text = "Piercing or cutting attacks poison the target with Redback venom." + "\n[color=%positive%]+30[/color] Initiative." + "\n[color=%positive%]+15[/color] Melee Skill."
 			});
 		}
 		else
@@ -43,7 +43,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Piercing or cutting attacks poison the target." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Initiative." + "\n[color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee Skill."
+				text = "Piercing or cutting attacks poison the target." + "\n[color=%positive%]+15[/color] Initiative." + "\n[color=%positive%]+5[/color] Melee Skill."
 			});
 		}
 		

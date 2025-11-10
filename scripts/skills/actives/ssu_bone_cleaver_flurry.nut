@@ -51,7 +51,7 @@ this.ssu_bone_cleaver_flurry <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Will make five separate strikes for [color=" + this.Const.UI.Color.NegativeValue + "]50%[/color] of the weapon\'s damage each."
+				text = "Will make five separate strikes for [color=%negative%]50%[/color] of the weapon\'s damage each."
 			},
 			{
 				id = 8,
@@ -64,7 +64,7 @@ this.ssu_bone_cleaver_flurry <- this.inherit("scripts/skills/skill", {
 			id = 9,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts additional stacking [color=" + this.Const.UI.Color.DamageValue + "]" + dmg + "[/color] bleeding damage per turn."
+			text = "Inflicts additional stacking [color=%damage%]" + dmg + "[/color] bleeding damage per turn."
 		});
 
 		return ret;
