@@ -42,7 +42,7 @@ this.dryad_spear <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.onEquip();
 		::Legends.Actives.grant(this, ::Legends.Active.Slash, function (_skill) {
-			_skill.m.IsStaffSlash = true;
+			_skill.m.IsGreatSlash = true;
 		}.bindenv(this));
 		this.addSkill(this.new("scripts/skills/actives/spearwall"));
 	}
