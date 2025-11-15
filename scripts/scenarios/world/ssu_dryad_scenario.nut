@@ -44,7 +44,6 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		bros[0].getBackground().m.RawDescription = "%name% has only ever known the heartwoods, the world of man is strange and disgusting.";
 		bros[0].getSkills().add(this.new("scripts/skills/traits/player_character_trait"));
 		bros[0].getSkills().add(this.new("scripts/skills/perks/perk_pathfinder"));
-		bros[0].getSprite("socket").setBrush("bust_base_dryad");
 		this.World.Assets.m.Money = this.World.Assets.m.Money * 0.5;
 		bros[0].getFlags().set("IsPlayerCharacter", true);
 		bros[0].setPlaceInFormation(3);

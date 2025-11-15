@@ -1,4 +1,4 @@
-this.dryad_lindy <- this.inherit("scripts/entity/tactical/actor", {
+this.dryad_lindy <- this.inherit("scripts/entity/tactical/dryad_summon_actor", {
 	m = {
 		Size = 1.2,
 		DistortTargetA = null,
@@ -265,31 +265,6 @@ this.dryad_lindy <- this.inherit("scripts/entity/tactical/actor", {
 		if (this.m.Tail != null && !this.m.Tail.isNull() && this.m.Tail.isAlive())
 		{
 			this.m.Tail.setMoraleState(this.getMoraleState());
-		}
-	}
-
-	function onFactionChanged()
-	{
-		this.actor.onFactionChanged();
-		local flip = this.isAlliedWithPlayer();
-		this.getSprite("body").setHorizontalFlipping(flip);
-		this.getSprite("head").setHorizontalFlipping(flip);
-		this.getSprite("legs_front").setHorizontalFlipping(flip);
-		this.getSprite("legs_back").setHorizontalFlipping(flip);
-		this.getSprite("injury").setHorizontalFlipping(flip);
-
-		if (!this.Tactical.State.isScenarioMode())
-		{
-			local f = this.World.FactionManager.getFaction(this.getFaction());
-
-			if (f != null)
-			{
-				this.getSprite("socket").setBrush(f.getTacticalBase());
-			}
-		}
-		else
-		{
-			this.getSprite("socket").setBrush(this.Const.FactionBase[this.getFaction()]);
 		}
 	}
 
