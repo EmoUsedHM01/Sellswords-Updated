@@ -1,3 +1,12 @@
+8.5.2 changes
+
+...\mod_sellswords\mod_sellswords\hooks_ptr\config\z_perks_tree_traits.nut
+...\mod_sellswords\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+reverted wrong file deleted - chopeks
+
+...\mod_sellswords\scripts\items\weapons\dryad\dryad_spear.nut
+fixed dryad spear crashing towns - chopeks
+
 8.5.1 changes
 
 ...\mod_sellswords\hooks\skills\special\double_grip.nut
