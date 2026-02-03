@@ -60,7 +60,7 @@
 	local settingSellswordsPerk = page.addEnumSetting(
 		"SellswordsPerk",
 		"Student",
-		["Back to Basics", "Backstabber", "Berserker", "Dodge", "Escape Artist", "Footwork", "Fortified Mind", "Mind Over Body", "Nine Lives", "Pathfinder", "Quick Hands", "Rotation", "Steel Brow", "Student", "Thrives in Chaos", "Underdog"],
+		["Back to Basics", "Backstabber", "Berserker", "Dodge", "Escape Artist", "Fortified Mind", "Mind Over Body", "Nine Lives", "Pathfinder", "Quick Hands", "Steel Brow", "Student", "Tactical Maneuvers", "Thrives in Chaos", "Underdog"],
 		"Sellsword Scenario Perk",
 		"Choose a company perk to be added when you recruit a bro for the Sellswords Scenario.\n\nStudent by default."
 	);
