@@ -591,22 +591,6 @@ Specialize in Medium Armour! Not as nimble as some but more lithe than others!
 ";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendLithe].Tooltip = ::Const.Strings.PerkDescription.LegendLithe;
 
-::Const.Strings.PerkDescription.Nimble = @"
-Specialize in Light Armour! By nimbly dodging or deflecting blows, convert any hits to glancing hits.
-
-[color=%passive%][u]Passive:[/u][/color]
-• Damage to Hitpoints is reduced by up to [color=%negative%]60%[/color] and damage to Armor is reduced by [color=%negative%]half[/color] of that amount.
-
-• This bonus drops exponentially when wearing head and body Armor with a total penalty to Maximum Fatigue above 15.
-
-• Provides [color=%positive%]+10%[/color] extra injury threshold.
-
-• [color=%perk%]Brawny[/color] does not affect this perk.
-
-• Does not affect damage from mental attacks or status effects.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.Nimble].Tooltip = ::Const.Strings.PerkDescription.Nimble;
-
 ::Const.Strings.PerkDescription.SpecThrowing = @"
 Master throwing weapons to wound or kill the enemy before they even get close.
 
