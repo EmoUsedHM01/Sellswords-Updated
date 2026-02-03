@@ -216,9 +216,6 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			case "Escape Artist":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendEscapeArtist);
 				return;
-			case "Footwork":
-				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Footwork);
-				return;
 			case "Fortified Mind":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.FortifiedMind);
 				return;
@@ -234,9 +231,6 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 			case "Quick Hands":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.QuickHands);
 				return;
-			case "Rotation":
-				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Rotation);
-				return;
 			case "Steel Brow":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.SteelBrow);
 				return;
@@ -245,6 +239,9 @@ this.sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_scena
 				return;
 			case "Thrives in Chaos":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.crTiC);
+				return;
+			case "Tactical Maneuvers":
+				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.LegendTacticalManeuvers);
 				return;
 			case "Underdog":
 				this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.Underdog);
