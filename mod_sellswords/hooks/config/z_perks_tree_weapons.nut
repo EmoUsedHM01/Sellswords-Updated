@@ -14,4 +14,4 @@
 ::Const.Perks.BowTree.Tree[4] = [::Const.Perks.PerkDefs.crParthianshot];
 
 // Throwing tree
-::Const.Perks.ThrowingTree.Tree[0] = [::Const.Perks.PerkDefs.crHybridization];
+::Const.Perks.ThrowingTree.Tree[2] = [::Const.Perks.PerkDefs.LegendVersatile];

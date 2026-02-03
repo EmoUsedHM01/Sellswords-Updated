@@ -60,8 +60,6 @@ Master the art of movement!
 
 [color=%passive%][u]Passive:[/u][/color]
 • Reduce the Action Point cost of [color=%skill%]Rotation[/color], [color=%skill%]Footwork[/color], [color=%skill%]Evasion[/color], [color=%skill%]Sprint[/color], [color=%skill%]Climb[/color], and [color=%skill%]Audacious Charge[/color] by [color=%negative%]1[/color] and reduce Fatigue costs by [color=%negative%]50%[/color]
-
-• Does not stack with [color=%perk%]Tumble[/color].
 ";
 
 ::Const.Strings.PerkName.crGrandslam <- "Grand Slam";

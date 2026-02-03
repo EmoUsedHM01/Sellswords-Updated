@@ -2,7 +2,7 @@
 
 	q.onAfterUpdate = @( __original ) function ( _properties )
 	{		
-		local frkz = this.getContainer().hasSkill("perk.crFurinkazan") && !this.getContainer().hasSkill("perk.legend_tumble");
+		local frkz = this.getContainer().hasSkill("perk.crFurinkazan");
 		this.m.FatigueCostMult = _properties.IsFleetfooted || frkz ? 0.5 : 1.0;
 
 		if (this.getContainer().getActor().getSkills().hasSkill("perk.legend_backflip"))
