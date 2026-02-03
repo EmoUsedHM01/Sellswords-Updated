@@ -73,18 +73,6 @@ Master the movements required to spin your staff in a great flourish so that it 
 
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecStaffStun].Tooltip = ::Const.Strings.PerkDescription.LegendSpecStaffStun;
 
-::Const.Strings.PerkDescription.LegendTumble = @"
-Make use of your acrobatic skill to improve your movements.
-
-[color=%passive%][u]Passive:[/u][/color]
-• Reduces the Fatigue Cost of [color=%skill%]Lunge[/color], [color=%skill%]Footwork[/color], [color=%skill%]Leap[/color], [color=%skill%]Sprint[/color], [color=%skill%]Evasion[/color], and [color=%skill%]Audacious Charge[/color] by [color=%negative%]50%[/color].
-
-• The Action Point cost of all these skills, except [color=%skill%]Lunge[/color], is reduced by [color=%negative%]1[/color] and that of [color=%skill%]Leap[/color] is reduced by [color=%negative%]3[/color].
-
-• This is an upgraded version of [color=%perk%]Furinkazan[/color] and is not stackable.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendTumble].Tooltip = ::Const.Strings.PerkDescription.LegendTumble;
-
 ::Const.Strings.PerkDescription.LegendLastStand = @"
 'This is the hill that you will NOT die on!'
 
