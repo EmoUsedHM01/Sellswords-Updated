@@ -952,13 +952,15 @@ Ankles, hands, elbows and knees, you've learned how to fight dirty to secure vic
 Become one with your weapon and go for the weak spots!
 
 [color=%passive%][u]Passive:[/u][/color]
-• When wielding a one handed weapon and your off hand is empty or you're holding an offhand throwable item, an extra [color=%positive%]+25%[/color] of damage ignores armor.
+• When holding a Buckler, Mummy Shield or Parrying Dagger in your offhand an extra [color=%positive%]+25%[/color] of damage ignores armor on Melee Attacks.
 
-• Bucklers and parrying daggers gain half of this bonus.
+• Having [color=%perk%]Grandslam[/color] perk also provides [color=%positive%]+20%[/color] additional Armor penetration for Two Handed weapons and [color=%positive%]+10%[/color] for One Handed weapons and Throwing Weapons.
 
-• An extra [color=%positive%]+20%[/color] of damage ignores armor when using Two Handed or Throwing Weapons and having the [color=%perk%]Grandslam[/color] perk, but will reduce Armor Penetration by [color=%negative%]10%[/color] for One Handed weapons.
+• Having [color=%perk%]Grandslam[/color] perk also increases Armor penetration by [color=%positive%]50%[/color] when Unarmed.
 
-• Having [color=%perk%]Grandslam[/color] also increases Armor penetration and damage by [color=%positive%]50%[/color] when Unarmed.
+• Having [color=%perk%]Grandslam[/color] perk also increases Damage by [color=%positive%]50%[/color] with both hands free.
+
+[color=%passive%][u]Active:[/u][/color] Unlocks the [color=%skill%]Flourish[/color] skill, which will increase fatigue cost by [color=%positive%]50%[/color] and as long as you are faster than your target grants a chance on each attack to ignore armor completely based on the initiative difference between you and your target. As long as you are faster than the target, any attack that inflicts at least [color=%positive%]1[/color] point of damage to Hitpoints triggers a morale check for the opponent with a penalty equal to [color=%negative%]20%[/color] of the Initiative difference between you and the target.
 ";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Duelist].Tooltip = ::Const.Strings.PerkDescription.Duelist;
 

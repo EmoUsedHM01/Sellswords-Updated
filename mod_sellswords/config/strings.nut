@@ -69,8 +69,6 @@ Being massive has its pros and cons.
 [color=%passive%][u]Passive:[/u][/color]
 • The [color=%status%]Double Grip[/color] effect now increases damage by extra [color=%positive%]25%[/color].
 
-• Increases Armor penetration and damage by [color=%positive%]50%[/color] when Unarmed.
-
 • The [color=%perk%]Muscularity[/color] perk has its damage effect [color=%positive%]tripled[/color].
 
 • Fatigue cost of all skills is increased by [color=%negative%]8%[/color] of your Hitpoints
@@ -83,7 +81,11 @@ Being massive has its pros and cons.
 
 • The [color=%skill%]Riposte[/color] skill has an additional [color=%negative%]-15%[/color] hit chance.
 
-• The [color=%perk%]Duelist[/color] perk now additionally provides [color=%positive%]+20%[/color] additional Armor penetration Two Handed weapons and [color=%positive%]+10%[/color] for One Handed weapons and Throwing Weapons.
+• The [color=%perk%]Duelist[/color] perk now additionally provides [color=%positive%]+20%[/color] additional Armor penetration for Two Handed weapons and [color=%positive%]+10%[/color] for One Handed weapons and Throwing Weapons.
+
+• The [color=%perk%]Duelist[/color] perk now additionally increases Armor penetration by [color=%positive%]50%[/color] when Unarmed.
+
+• The [color=%perk%]Duelist[/color] perk now additionally increases Damage by [color=%positive%]50%[/color] with both hands free.
 ";
 
 ::Const.Strings.PerkName.ArmorMasteryCloth <- "Cloth Armor Mastery";
