@@ -25,10 +25,5 @@
 
 			bg.addPerk(_perk, _row);
 		};
-
-		if (!this.getContainer().hasSkill("perk.legend_tumble"))
-		{
-			addPerk(this.Const.Perks.PerkDefs.LegendTumble, 6);				
-		}
 	};
 });

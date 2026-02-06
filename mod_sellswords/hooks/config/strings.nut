@@ -73,6 +73,20 @@ Master the movements required to spin your staff in a great flourish so that it 
 
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecStaffStun].Tooltip = ::Const.Strings.PerkDescription.LegendSpecStaffStun;
 
+::Const.Strings.PerkDescription.LegendFreedomOfMovement = @"
+A skilled mercenary has unimpeded movement regardless of armor.
+
+[color=%passive%][u]Passive:[/u][/color]
+• Reduces Fatigue cost of [color=%skill%]Climb[/color], [color=%skill%]Lunge[/color], [color=%skill%]Footwork[/color], [color=%skill%]Rotation[/color], [color=%skill%]Leap[/color], [color=%skill%]Quick Step[/color], [color=%skill%]Evasion[/color], [color=%skill%]Tumble[/color] and [color=%skill%]Audacious Charge[/color] by [color=%negative%]50%[/color].
+
+• The Action Point cost of [color=%skill%]Audacious Charge[/color], [color=%skill%]Climb[/color], [color=%skill%]Footwork[/color] and [color=%skill%]Rotation[/color] is reduced by [color=%negative%]1[/color], [color=%skill%]Leap[/color] by [color=%negative%]3[/color] and [color=%skill%]Evasion[/color] by [color=%negative%]2[/color].
+
+• Picking this perk will also add [color=%perk%]Tactical Maneuvers[/color] and [color=%perk%]Quick Step[/color] to your perk tree.
+
+• This is an upgraded version of [color=%perk%]Furinkazan[/color] and is not stackable.
+";
+::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFreedomOfMovement].Tooltip = ::Const.Strings.PerkDescription.LegendFreedomOfMovement;
+
 ::Const.Strings.PerkDescription.LegendLastStand = @"
 'This is the hill that you will NOT die on!'
 
