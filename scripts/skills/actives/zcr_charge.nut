@@ -289,7 +289,7 @@ this.zcr_charge <- this.inherit("scripts/skills/skill", {
 
 	function onAfterUpdate( _properties )
 	{
-		local frkz = this.getContainer().hasSkill("perk.crFurinkazan");
+		local frkz = this.getContainer().hasSkill("perk.crFurinkazan") && !this.getContainer().hasSkill("perk.legend_freedom_of_movement");
 		this.m.FatigueCostMult = _properties.IsFleetfooted || frkz ? 0.5 : 1.0;
 
 		if (this.getContainer().getActor().getSkills().hasSkill("effects.goblin_grunt_potion") || frkz)
