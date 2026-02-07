@@ -160,7 +160,7 @@ setupBackground("scripts/skills/backgrounds/legend_muladi_background", ["scripts
 	
 setupBackground("scripts/skills/backgrounds/legend_nightwatch_background", ["scripts/skills/perks/perk_legend_night_raider"], [{def = ::Legends.Perk.LegendNightRaider, level = 0, optional = false}]);
 	
-setupBackground("scripts/skills/backgrounds/legend_noble_2h", ["scripts/skills/perks/perk_legend_forceful_swing"], [{def = ::Legends.Perk.LegendForcefulSwing, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_noble_2h", ["scripts/skills/perks/perk_legend_bloody_harvest"], [{def = ::Legends.Perk.LegendBloodyHarvest, level = 0, optional = false}]);
 	
 setupBackground("scripts/skills/backgrounds/legend_noble_background", ["scripts/skills/perks/perk_legend_assured_conquest"], [{def = ::Legends.Perk.LegendAssuredConquest, level = 0, optional = false}]);
 	
@@ -210,10 +210,7 @@ setupBackground("scripts/skills/backgrounds/miller_background", ["scripts/skills
 
 setupBackground("scripts/skills/backgrounds/miner_background", ["scripts/skills/perks/perk_legend_specialist_miner"], [{def = ::Legends.Perk.LegendSpecialistMiner, level = 0, optional = false}]);
 
-if (::mods_getRegisteredMod("mod_specialist_skills_rework") != null)
-	setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_daze"], [{def = ::Legends.Perk.LegendDaze, level = 0, optional = false}]);
-else
-	setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_minnesanger"], [{def = ::Legends.Perk.LegendMinnesanger, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_minnesanger"], [{def = ::Legends.Perk.LegendMinnesanger, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/monk_background", ["scripts/skills/perks/perk_legend_holyflame"], [{def = ::Legends.Perk.LegendHolyFlame, level = 0, optional = false}]);
 

@@ -29,7 +29,6 @@
 		talents[this.Const.Attributes.MeleeDefense] = 1;
 		talents[this.Const.Attributes.Fatigue] = 1;	
 		talents[this.Const.Attributes.Bravery] = 2;				
-		this.addScenarioPerk(bros[0].getBackground(), this.Const.Perks.PerkDefs.Rotation);
 		this.addScenarioPerk(bros[0].getBackground(), this.Const.Perks.PerkDefs.RallyTheTroops);
 		bros[0].getSkills().add(this.new("scripts/skills/traits/drunkard_trait"));
 		bros[0].getSkills().add(this.new("scripts/skills/traits/legend_noble_killer_trait"));
@@ -63,7 +62,6 @@
 		bros[1].getSkills().add(this.new("scripts/skills/traits/optimist_trait"));
 		bros[1].getSkills().add(this.new("scripts/skills/traits/determined_trait"));
 		bros[1].getSkills().add(this.new("scripts/skills/traits/greedy_trait"));
-		this.addScenarioPerk(bros[1].getBackground(), this.Const.Perks.PerkDefs.Rotation);
 		bros[1].setPlaceInFormation(3);
 		//bros[1].setVeteranPerks(2);
 		bros[2].setStartValuesEx([
@@ -81,7 +79,6 @@
 		bros[2].getSkills().add(this.new("scripts/skills/traits/huge_trait"));
 		bros[2].getSkills().add(this.new("scripts/skills/traits/fat_trait"));
 		bros[2].getSkills().add(this.new("scripts/skills/traits/gluttonous_trait"));
-		this.addScenarioPerk(bros[2].getBackground(), this.Const.Perks.PerkDefs.Rotation);
 		bros[2].setPlaceInFormation(4);
 		//bros[2].setVeteranPerks(2);
 		bros[3].setStartValuesEx([
@@ -113,7 +110,6 @@
 		bros[3].getSkills().add(this.new("scripts/skills/traits/legend_pragmatic_trait"));
 		bros[3].getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
 		bros[3].getSkills().add(this.new("scripts/skills/traits/legend_slack_trait"));
-		this.addScenarioPerk(bros[3].getBackground(), this.Const.Perks.PerkDefs.Rotation);
 		bros[3].setPlaceInFormation(5);
 		//bros[3].setVeteranPerks(2);
 		bros[4].setStartValuesEx([
@@ -131,7 +127,6 @@
 		bros[4].getSkills().add(this.new("scripts/skills/traits/loyal_trait"));
 		bros[4].getSkills().add(this.new("scripts/skills/traits/lucky_trait"));
 		bros[4].getSkills().add(this.new("scripts/skills/traits/survivor_trait"));
-		this.addScenarioPerk(bros[4].getBackground(), this.Const.Perks.PerkDefs.Rotation);
 		bros[4].setPlaceInFormation(12);
 		//bros[4].setVeteranPerks(2);
 		local items = bros[4].getItems();
@@ -163,7 +158,6 @@
 		bros[5].getSkills().add(this.new("scripts/skills/traits/legend_sureshot_trait"));
 		bros[5].getSkills().add(this.new("scripts/skills/traits/teamplayer_trait"));
 		bros[5].getSkills().add(this.new("scripts/skills/traits/legend_predictable_trait"));
-		this.addScenarioPerk(bros[5].getBackground(), this.Const.Perks.PerkDefs.Rotation);
 
 		if (bros[5].getBaseProperties().RangedSkill <= 60)
 		{
