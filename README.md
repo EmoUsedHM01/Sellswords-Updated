@@ -1,9 +1,12 @@
 **Looking for the download link?**
-
-https://github.com/EmoUsedHM01/Sellswords-Updated/releases
+[Get it here](https://github.com/EmoUsedHM01/Sellswords-Updated/releases)
 
 ![image](https://github.com/user-attachments/assets/49ab3638-3ba4-4590-82d3-327f9fcc1224)
 
+**Installation**
+Drop inside the mod inside your data folder (usually something like `C:/Program Files (x86)/Steam/steamapps/common/Battle Brothers/data` or `C:/Program Files (x86)/GOG Galaxy/Games/Battle Brothers/data`). Never unpack/unzip your mods. No mod will ever require you to unzip it to play.
+
+**WARNING** SSU currently only works with version 19.2.51 of Legends - you can download it [here](https://github.com/Battle-Brothers-Legends/Legends-public/releases/tag/19.2.51). Download both the mod and the assets files as per [Legends Installation Instructions](https://github.com/Battle-Brothers-Legends/Legends-public/wiki/Installation-Guide).
 
 **Introduction:**
 Welcome to the overhaul/rework that is Sellswords Updated (SSU). This mod is a comprehensive overhaul and update of Chiru's original Sellswords mod. It includes full translations, updated graphics and brushes, new content, and enhanced compatibility with other mods.
