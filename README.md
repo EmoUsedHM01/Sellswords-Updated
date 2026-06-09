@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/49ab3638-3ba4-4590-82d3-327f9fcc1224)
 
 **Installation**
-Drop inside the mod inside your data folder (usually something like `C:/Program Files (x86)/Steam/steamapps/common/Battle Brothers/data` or `C:/Program Files (x86)/GOG Galaxy/Games/Battle Brothers/data`). Never unpack/unzip your mods. No mod will ever require you to unzip it to play.
+Drop the mod inside your data folder (usually something like `C:/Program Files (x86)/Steam/steamapps/common/Battle Brothers/data` or `C:/Program Files (x86)/GOG Galaxy/Games/Battle Brothers/data`). Never unpack/unzip your mods. No mod will ever require you to unzip it to play.
 
 **WARNING** SSU currently only works with version 19.2.51 of Legends - you can download it [here](https://github.com/Battle-Brothers-Legends/Legends-public/releases/tag/19.2.51). Download both the mod and the assets files as per [Legends Installation Instructions](https://github.com/Battle-Brothers-Legends/Legends-public/wiki/Installation-Guide).
 
