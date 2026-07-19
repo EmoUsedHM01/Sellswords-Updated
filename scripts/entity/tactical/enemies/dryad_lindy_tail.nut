@@ -1,4 +1,4 @@
-this.dryad_lindy_tail <- this.inherit("scripts/entity/tactical/actor", {
+this.dryad_lindy_tail <- this.inherit("scripts/entity/tactical/dryad_summon_actor", {
 	m = {
 		Body = null,
 		Name = "Avatar tail"
@@ -462,30 +462,6 @@ this.dryad_lindy_tail <- this.inherit("scripts/entity/tactical/actor", {
 		{
 			this.m.Body.kill(_killer, _skill, _fatalityType, _silent);
 			this.m.Body = null;
-		}
-	}
-
-	function onFactionChanged()
-	{
-		this.actor.onFactionChanged();
-		local flip = this.isAlliedWithPlayer();
-		this.getSprite("body").setHorizontalFlipping(flip);
-		this.getSprite("body_blood").setHorizontalFlipping(flip);
-		this.getSprite("head").setHorizontalFlipping(flip);
-		this.getSprite("injury").setHorizontalFlipping(flip);
-
-		if (!this.Tactical.State.isScenarioMode())
-		{
-			local f = this.World.FactionManager.getFaction(this.getFaction());
-
-			if (f != null)
-			{
-				this.getSprite("socket").setBrush(f.getTacticalBase());
-			}
-		}
-		else
-		{
-			this.getSprite("socket").setBrush(this.Const.FactionBase[this.getFaction()]);
 		}
 	}
 

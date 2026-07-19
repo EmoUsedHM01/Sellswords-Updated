@@ -1,4 +1,4 @@
-this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/character_background", {
+this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/ssu_base_dryad_background", {
 	m = {
 		PerkGroupMultipliers = []
 	},
@@ -68,12 +68,6 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		];
 	}
 
-	function getTooltip()
-	{
-		local ret = this.character_background.getTooltip();
-		return ret;
-	}
-
 	function onAddEquipment()
 	{
 		local items = this.getContainer().getActor().getItems();
@@ -91,23 +85,6 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 				"dryad_helmet_shaman"
 			]
 		]));
-	}
-
-	function setupUpdateInjuryLayer()
-	{
-		local actor = this.getContainer().getActor().get();
-
-		// Will always die, no survival chance when downed
-		actor.isReallyKilled = function( _fatalityType )
-		{
-			return true;
-		}
-	}
-
-	function onUpdate( _properties )
-	{
-		_properties.IsImmuneToBleeding = true;
-		_properties.IsImmuneToPoison = true;
 	}
 
 	function onAdded()
@@ -192,70 +169,4 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		};
 		return att;
 	}
-
-	function onCombatStarted()
-	{
-		local actor = this.getContainer().getActor();
-		local dryad = this.getContainer().hasSkill("racial.dryad");
-
-		if ( dryad )
-		{
-			actor.m.Sound[::Const.Sound.ActorEvent.NoDamageReceived] = [
-				"sounds/ambience/terrain/forest_branch_crack_00.wav",
-				"sounds/ambience/terrain/forest_branch_crack_01.wav",
-				"sounds/ambience/terrain/forest_branch_crack_02.wav",
-				"sounds/ambience/terrain/forest_branch_crack_03.wav",
-				"sounds/ambience/terrain/forest_branch_crack_04.wav",
-				"sounds/ambience/terrain/forest_branch_crack_05.wav"
-			];
-			actor.m.Sound[::Const.Sound.ActorEvent.DamageReceived] = [
-				"sounds/enemies/dlc2/schrat_hurt_shield_down_01.wav",
-				"sounds/enemies/dlc2/schrat_hurt_shield_down_02.wav",
-				"sounds/enemies/dlc2/schrat_hurt_shield_down_03.wav",
-				"sounds/enemies/dlc2/schrat_hurt_shield_down_04.wav",
-				"sounds/enemies/dlc2/schrat_hurt_shield_down_05.wav",
-				"sounds/enemies/dlc2/schrat_hurt_shield_down_06.wav"
-			];
-			actor.m.Sound[::Const.Sound.ActorEvent.Death] = [
-				"sounds/enemies/dlc2/schrat_death_01.wav",
-				"sounds/enemies/dlc2/schrat_death_02.wav",
-				"sounds/enemies/dlc2/schrat_death_03.wav",
-				"sounds/enemies/dlc2/schrat_death_04.wav",
-				"sounds/enemies/dlc2/schrat_death_05.wav",
-				"sounds/enemies/dlc2/schrat_death_06.wav"
-			];
-			actor.m.Sound[::Const.Sound.ActorEvent.Fatigue] = [
-				"sounds/enemies/dlc2/schrat_idle_05.wav",
-				"sounds/enemies/dlc2/schrat_idle_06.wav",
-				"sounds/enemies/dlc2/schrat_idle_07.wav",
-				"sounds/enemies/dlc2/schrat_idle_08.wav",
-				"sounds/enemies/dlc2/schrat_idle_09.wav"
-			];
-			actor.m.Sound[::Const.Sound.ActorEvent.Flee] = [
-				"sounds/enemies/dlc2/schrat_idle_01.wav",
-				"sounds/enemies/dlc2/schrat_idle_02.wav",
-				"sounds/enemies/dlc2/schrat_idle_03.wav",
-				"sounds/enemies/dlc2/schrat_idle_04.wav"
-			];
-			actor.m.Sound[::Const.Sound.ActorEvent.Other1] = [
-				"sounds/enemies/dlc2/schrat_idle_01.wav",
-				"sounds/enemies/dlc2/schrat_idle_02.wav",
-				"sounds/enemies/dlc2/schrat_idle_03.wav",
-				"sounds/enemies/dlc2/schrat_idle_04.wav",
-				"sounds/enemies/dlc2/schrat_idle_05.wav",
-				"sounds/enemies/dlc2/schrat_idle_06.wav",
-				"sounds/enemies/dlc2/schrat_idle_07.wav",
-				"sounds/enemies/dlc2/schrat_idle_08.wav",
-				"sounds/enemies/dlc2/schrat_idle_09.wav"
-			];
-			
-			actor.m.SoundPitch = ::Math.rand(95, 105) * 0.01;
-			actor.m.SoundVolume[::Const.Sound.ActorEvent.Idle] = 2.0;
-			actor.m.SoundVolume[::Const.Sound.ActorEvent.Fatigue] = 5.0;
-			actor.m.SoundVolume[::Const.Sound.ActorEvent.Other1] = 2.5;
-			
-			return;
-		}
-	}
-
 });
