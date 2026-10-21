@@ -9,7 +9,7 @@ this.necro_human_body_blueprint <- this.inherit("scripts/crafting/blueprint", {
 		this.m.Cost = 150;
 		local ingredients = [
 			{
-				Script = "scripts/items/legend_armor/cloth/legend_padded_surcoat",
+				Script = "scripts/items/legend_armor/cloth/legend_armor_gambeson",
 				Num = 1,
 				LegendsArmor = true
 			},

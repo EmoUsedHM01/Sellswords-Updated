@@ -20,7 +20,6 @@ this.cr_helmet_orc_packleader_heavy_helm <- this.inherit("scripts/items/legend_h
 		this.m.ConditionMax = 320;
 		this.m.StaminaModifier = -36;
 		this.m.Vision = -3;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = false;
 		this.m.ItemType = this.m.ItemType;

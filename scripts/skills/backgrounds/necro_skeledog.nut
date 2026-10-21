@@ -132,7 +132,9 @@ this.necro_skeledog <- this.inherit("scripts/skills/backgrounds/character_backgr
 					this.Const.Perks.MartyrTree,
 					this.Const.Perks.TrainedTree
 				],
-				Enemy = [],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 				Class = [
 					this.Const.Perks.SkeletonClassTree
 				],

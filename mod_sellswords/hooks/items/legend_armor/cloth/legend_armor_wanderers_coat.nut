@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/legend_armor/cloth/wanderers_coat", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/legend_armor/cloth/legend_armor_wanderers_coat", function ( q ) {
 
 	q.create = @(__original) function()
 	{

@@ -73,12 +73,8 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 				::MSU.Class.WeightedContainer([
 					[60, ::Const.Perks.RaiderProfessionTree],
 					[25, ::Const.Perks.SoldierProfessionTree],
-					[15, ::Const.Perks.NoTree]
+					[15, ::Const.Perks.HunterProfessionTree]
 				])
-			];
-			this.m.PerkTreeDynamic.Styles <- [
-				::Const.Perks.OneHandedTree,
-				::Const.Perks.TwoHandedTree
 			];
 
 			this.m.PerkGroupMultipliers.extend([
@@ -220,27 +216,13 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 		}
 
 		local enemyPerks = [
-			::Const.Perks.PerkDefs.LegendFavouredEnemyAlps,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyDirewolf,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyGhoul,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyHexen,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyLindwurm,
-			::Const.Perks.PerkDefs.LegendFavouredEnemySpider,
-			::Const.Perks.PerkDefs.LegendFavouredEnemySchrat,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyUnhold,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyBandit,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyBarbarian,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyCaravan,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyMercenary,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyNoble,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyNomad,
-			::Const.Perks.PerkDefs.LegendFavouredEnemySoutherner,
-			::Const.Perks.PerkDefs.LegendFavouredEnemySwordmaster,
-			::Const.Perks.PerkDefs.LegendFavouredEnemySkeleton,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyVampire,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyZombie,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyGoblin,
-			::Const.Perks.PerkDefs.LegendFavouredEnemyOrk
+			::Const.Perks.PerkDefs.LegendFavouredBeast,
+			::Const.Perks.PerkDefs.LegendFavouredCivilization,
+			::Const.Perks.PerkDefs.LegendFavouredGreenskin,
+			::Const.Perks.PerkDefs.LegendFavouredOccult,
+			::Const.Perks.PerkDefs.LegendFavouredOutlaw,
+			::Const.Perks.PerkDefs.LegendFavouredSwordmaster,
+			::Const.Perks.PerkDefs.LegendFavouredUndead
 		];
 
 		// Randomly pick three unique enemy trees
@@ -253,6 +235,7 @@ this.crsellsword_background <- this.inherit("scripts/skills/backgrounds/characte
 
 		addPerk(::Const.Perks.PerkDefs.LegendBarterGreed, 0, false);
 	}
+
 
 	function onAddEquipment()
 	{

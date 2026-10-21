@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/items/legend_armor/cloth/legend_tunic_noble", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/items/legend_armor/cloth/legend_armor_tunic_noble", function ( q ) {
 
 	q.create = @(__original) function()
 	{

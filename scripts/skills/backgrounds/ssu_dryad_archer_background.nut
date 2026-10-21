@@ -71,10 +71,8 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 				this.Const.Perks.DeviousTree
 			],
 			Enemy = [
-				this.Const.Perks.DirewolfTree,
-				this.Const.Perks.SpiderTree,
-				this.Const.Perks.SchratTree,
-				this.Const.Perks.ArcherTree
+				this.Const.Perks.BeastTree,
+				this.Const.Perks.OccultTree
 			],
 			Class = [],
 			Magic = []
@@ -90,9 +88,6 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 			this.m.PerkTreeDynamic = {
 				Profession = [
 					::Const.Perks.HunterProfessionTree
-				],
-				Enemy = [
-					::Const.Perks.ArchersTree
 				],
 				Traits = [
 					::Const.Perks.AgileTree

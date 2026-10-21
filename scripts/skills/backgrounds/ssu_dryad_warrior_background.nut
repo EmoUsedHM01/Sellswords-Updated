@@ -77,7 +77,6 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 		];
 		this.m.PerkTreeDynamic = {
 			Weapon = [
-				this.Const.Perks.TwoHandedTree,
 				this.Const.Perks.PolearmTree,
 				this.Const.Perks.AxeTree,
 				this.Const.Perks.MaceTree,
@@ -132,10 +131,6 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 				],
 				Defense = [
 					::Const.Perks.HeavyArmorTree
-				],
-				Styles = [
-					::Const.Perks.OneHandedTree,
-					::Const.Perks.TwoHandedTree
 				],
 				Enemy = [
 					::Const.Perks.SwordmastersTree

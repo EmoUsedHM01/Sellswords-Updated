@@ -1203,7 +1203,7 @@ if (!("Spawn" in ::Const.World))
 				},
 				{
 					MinR = 420,
-					Type = this.Const.World.Spawn.Troops.BanditVeteran,
+					Type = this.Const.World.Spawn.Troops.BanditMarauder,
 					Cost = 30
 				}
 			]
@@ -1525,7 +1525,7 @@ if (!("Spawn" in ::Const.World))
 				},
 				{
 					MinR = 420,
-					Type = this.Const.World.Spawn.Troops.BanditVeteran,
+					Type = this.Const.World.Spawn.Troops.BanditMarauder,
 					Cost = 30
 				}
 			]
@@ -2505,7 +2505,7 @@ if (!("Spawn" in ::Const.World))
 			Types = [
 				{
 					MinR = 420,
-					Type = this.Const.World.Spawn.Troops.BanditVeteran,
+					Type = this.Const.World.Spawn.Troops.BanditMarauder,
 					Cost = 30
 				}
 			]

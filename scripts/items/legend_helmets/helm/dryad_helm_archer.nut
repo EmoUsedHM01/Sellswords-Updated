@@ -20,7 +20,6 @@ this.dryad_helm_archer <- this.inherit("scripts/items/legend_helmets/legend_helm
 		this.m.ConditionMax = 70;
 		this.m.StaminaModifier = -6;
 		this.m.Vision = -0;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 	}

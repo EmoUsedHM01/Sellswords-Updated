@@ -73,6 +73,18 @@ Master the movements required to spin your staff in a great flourish so that it 
 
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecStaffStun].Tooltip = ::Const.Strings.PerkDescription.LegendSpecStaffStun;
 
+::Const.Strings.PerkDescription.LegendTumble = @"
+Make use of your acrobatic skill to improve your movements.
+
+[color=%passive%][u]Passive:[/u][/color]
+• Reduces the Fatigue Cost of [color=%skill%]Lunge[/color], [color=%skill%]Footwork[/color], [color=%skill%]Leap[/color], [color=%skill%]Sprint[/color], [color=%skill%]Evasion[/color], and [color=%skill%]Audacious Charge[/color] by [color=%negative%]50%[/color].
+
+• The Action Point cost of all these skills, except [color=%skill%]Lunge[/color], is reduced by [color=%negative%]1[/color] and that of [color=%skill%]Leap[/color] is reduced by [color=%negative%]3[/color].
+
+• This is an upgraded version of [color=%perk%]Furinkazan[/color] and is not stackable.
+";
+::Const.Perks.PerkDefObjects[::Legends.Perk.LegendTumble].Tooltip = ::Const.Strings.PerkDescription.LegendTumble;
+
 ::Const.Strings.PerkDescription.LegendLastStand = @"
 'This is the hill that you will NOT die on!'
 
@@ -214,145 +226,6 @@ Use your way with song to cheer on an ally!
 ";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendCheerOn].Tooltip = ::Const.Strings.PerkDescription.LegendCheerOn;
 
-::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul = ::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul += "\n\n" + @"
-
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyGhoul].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyGhoul;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyHexen = ::Const.Strings.PerkDescription.LegendFavouredEnemyHexen += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyHexen].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyHexen;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyAlps = ::Const.Strings.PerkDescription.LegendFavouredEnemyAlps += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyAlps].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyAlps;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold = ::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyUnhold].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyUnhold;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm = ::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyLindwurm].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyLindwurm;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf = ::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyDirewolf].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyDirewolf;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemySpider = ::Const.Strings.PerkDescription.LegendFavouredEnemySpider += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySpider].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySpider;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemySchrat = ::Const.Strings.PerkDescription.LegendFavouredEnemySchrat += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySchrat].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySchrat;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyOrk = ::Const.Strings.PerkDescription.LegendFavouredEnemyOrk += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyOrk].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyOrk;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin = ::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyGoblin].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyGoblin;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyVampire = ::Const.Strings.PerkDescription.LegendFavouredEnemyVampire += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyVampire].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyVampire;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton = ::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySkeleton].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySkeleton;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyZombie = ::Const.Strings.PerkDescription.LegendFavouredEnemyZombie += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyZombie].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyZombie;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyNoble = ::Const.Strings.PerkDescription.LegendFavouredEnemyNoble += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyNoble].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyNoble;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyBandit = ::Const.Strings.PerkDescription.LegendFavouredEnemyBandit += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyBandit].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyBandit;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian = ::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyBarbarian].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyBarbarian;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster = ::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySwordmaster].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySwordmaster;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary = ::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyMercenary].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyMercenary;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan = ::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyCaravan].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyCaravan;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner = ::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemySoutherner].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemySoutherner;
-
-::Const.Strings.PerkDescription.LegendFavouredEnemyNomad = ::Const.Strings.PerkDescription.LegendFavouredEnemyNomad += "\n\n" + @"
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyNomad].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyNomad;
-
-// Need to overwrite this directly because weird
-::Const.Strings.PerkDescription.LegendFavouredEnemyArcher = @"
-Many claim to be the greatest shot in the land, but none have outshot you yet.
-
-[color=%passive%][u]Passive:[/u][/color]
-• Grants [color=%positive%]+5%[/color] base bonus to melee skill, ranged skill, and maximum damage while fighting archer archetypes.
-
-• Additionally, this bonus increases the more archer archetypes you kill and counts all kills made previously with this character retroactively.
-
-• Increase per kill:
-  - Master Archer | [color=%positive%]+0.5%[/color]
-  - Bandit Marksman | [color=%positive%]+0.125%[/color]
-  - Rabble Poacher | [color=%positive%]+0.025%[/color]
-  - Bandit Poacher | [color=%positive%]+0.0625%[/color]
-  - Militia Marksman | [color=%positive%]+0.05%[/color]
-  - Arbalist | [color=%positive%]+0.25%[/color]
-  - Slinger | [color=%positive%]+0.0125%[/color]
-  - Goblin Ambusher | [color=%positive%]+0.0125%[/color]
-  - Nomad Slinger | [color=%positive%]+0.0125%[/color]
-  - Nomad Marksman | [color=%positive%]+0.25%[/color]
-  - Gunner | [color=%positive%]+0.25%[/color]
-  - Desert Stalker | [color=%positive%]+0.5%[/color]
-
-• Also increases spawn rate of archer archetype champions.
-
-• Reduces the penalty for attacking targets behind cover by [color=%negative%]33%[/color].
-
-• Total bonus capped at 25%.
-
-• When this character reaches a bonus of [color=%positive%]15%[/color], the perk point spent is refunded.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendFavouredEnemyArcher].Tooltip = ::Const.Strings.PerkDescription.LegendFavouredEnemyArcher;
-
 ::Const.Strings.PerkDescription.LegendInTheZone = @"
 Use your Armor's blend of protection and mobility to punish your foes mistakes!
 
@@ -374,21 +247,6 @@ Surpass your limits!
 • Fatigue regeneration is increased by [color=%positive%]+5[/color] while over 75% fatigued.
 ";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendRebound].Tooltip = ::Const.Strings.PerkDescription.LegendRebound;
-
-::Const.Strings.PerkName.LegendPiercingShot = "Piercing Shot";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPiercingShot].Name = ::Const.Strings.PerkName.LegendPiercingShot;
-::Const.Strings.PerkDescription.LegendPiercingShot = @"
-[color=%negative%][u]Requires:[/u] Crossbow [/color]
-Launch a shot so powerful it can hit two targets in a straight line.
-
-[color=%passive%][u]Active/Passive:[/u][/color]
-• Unlocks the [color=%skill%]Piercing Bolt[/color] skill which allows you to fire a powerful shot that can pass through your target, dealing [color=%negative%]50%[/color] damage to the enemy behind them.
-
-• Additionally, Handgonnes gain [color=%positive%]+1[/color] range.
-
-• Costs [color=%negative%]5[/color] AP and [color=%negative%]20[/color] Fatigue.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendPiercingShot].Tooltip = ::Const.Strings.PerkDescription.LegendPiercingShot;
 
 ::Const.Strings.PerkDescription.FastAdaption = @"
 Adapt to your opponent's moves!
@@ -482,44 +340,6 @@ Just like dancing with your nan when you were young.
 ";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendEvasion].Tooltip = ::Const.Strings.PerkDescription.LegendEvasion;
 
-::Const.Strings.PerkDescription.LegendChoke = @"
-Once an opponent is fatigued, it may be easier to choke them out than to fight through their Armor.
-
-[color=%active%][u]Active:[/u][/color]
-• Unlocks the [color=%skill%]Choke[/color] skill when both hands are free.
-
-• [color=%status%]Choked[/color] enemies have their Fatigue Recovery reduced by [color=%negative%]15[/color].
-
-• Damage inflicted is equal to the sum of your current Initiative divided by 4 and current Hitpoints divided by 5.
-
-• Hit chance determined by your target's Fatigue, [color=%negative%]0%[/color] if they are fresh and [color=%positive%]100%[/color] if they are exhausted.
-
-• For every point of your targets body Armor that exceeds 125, a penalty is applied to hit chance, up to a maximum of [color=%negative%]35%[/color].
-
-• Hit chance is increased by [color=%positive%]+10%[/color] if your target is [color=%status%]Dazed[/color] or [color=%status%]Parried[/color], [color=%positive%]+15%[/color] if they are [color=%status%]Stunned[/color] or [color=%status%]Netted[/color], and [color=%positive%]+20%[/color] if they are [color=%status%]Grappled[/color] or [color=%status%]Sleeping[/color].
-
-• If your target is [color=%status%]Grappled[/color], damage is increased by [color=%positive%]50%[/color].
-
-• Costs [color=%negative%]4[/color] AP and [color=%negative%]20[/color] Fatigue.
-";
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendChoke].Tooltip = ::Const.Strings.PerkDescription.LegendChoke;
-
-::Const.Strings.PerkDescription.LegendSpecUnarmed = @"
-Master the martial arts of unarmed combat.
-
-[color=%passive%][u]Passive:[/u][/color]
-• Reduces the Fatigue costs of [color=%skill%]Hand to Hand[/color], [color=%skill%]Kick[/color], [color=%skill%]Grapple[/color], and [color=%skill%]Tackle[/color] by [color=%negative%]25%[/color].
-
-• Lowers AP cost for [color=%skill%]Hand to Hand[/color] by [color=%negative%]1[/color] and increases Fatigue inflicted by [color=%positive%]5[/color].
-
-• [color=%skill%]Kick[/color] has its [color=%status%]Daze[/color] chance increased to [color=%positive%]50%[/color] and hit chance increased by [color=%positive%]15%[/color].
-
-• [color=%skill%]Choke[/color] damage is increased by [color=%positive%]+50%[/color] when target is already [color=%status%]Choked[/color] or [color=%skill%]Grappled[/color].
-
-• [color=%skill%]Grapple[/color] now has a [color=%positive%]100%[/color] chance to [color=%status%]Disarm[/color] on hit and the hit chance is increased by [color=%positive%]+10%[/color].
-
-• [color=%skill%]Tackle[/color] gains [color=%positive%]+10%[/color] chance to hit.
-";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendSpecUnarmed].Tooltip = ::Const.Strings.PerkDescription.LegendSpecUnarmed;
 
 ::Const.Strings.PerkDescription.HoldOut = @"
@@ -590,6 +410,22 @@ Specialize in Medium Armour! Not as nimble as some but more lithe than others!
 • Outside this range, the bonus drops exponentially.
 ";
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendLithe].Tooltip = ::Const.Strings.PerkDescription.LegendLithe;
+
+::Const.Strings.PerkDescription.Nimble = @"
+Specialize in Light Armour! By nimbly dodging or deflecting blows, convert any hits to glancing hits.
+
+[color=%passive%][u]Passive:[/u][/color]
+• Damage to Hitpoints is reduced by up to [color=%negative%]60%[/color] and damage to Armor is reduced by [color=%negative%]half[/color] of that amount.
+
+• This bonus drops exponentially when wearing head and body Armor with a total penalty to Maximum Fatigue above 15.
+
+• Provides [color=%positive%]+10%[/color] extra injury threshold.
+
+• [color=%perk%]Brawny[/color] does not affect this perk.
+
+• Does not affect damage from mental attacks or status effects.
+";
+::Const.Perks.PerkDefObjects[::Legends.Perk.Nimble].Tooltip = ::Const.Strings.PerkDescription.Nimble;
 
 ::Const.Strings.PerkDescription.SpecThrowing = @"
 Master throwing weapons to wound or kill the enemy before they even get close.

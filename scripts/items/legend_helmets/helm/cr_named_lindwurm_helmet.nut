@@ -26,7 +26,6 @@ this.cr_named_lindwurm_helmet <- this.inherit("scripts/items/legend_helmets/lege
 		this.m.ConditionMax = 140;
 		this.m.StaminaModifier = -10;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.m.IsDroppedAsLoot = true;

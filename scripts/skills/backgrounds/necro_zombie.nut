@@ -130,7 +130,9 @@ this.necro_zombie <- this.inherit("scripts/skills/backgrounds/character_backgrou
 				this.Const.Perks.LargeTree,
 				this.Const.Perks.IndestructibleTree
 			],
-			Enemy = [],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 			Class = [
 				this.Const.Perks.ZombieClassTree
 			],

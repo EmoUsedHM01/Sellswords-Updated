@@ -3,7 +3,7 @@
 	Script = "",
 	Sets = [{
 		Cloth = [
-			[1, "cloth/legend_apron"]
+			[1, "cloth/legend_armor_apron"]
 		],
 		Chain = [
 		],
@@ -26,28 +26,24 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150	
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150	
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000	
 			],
 			Plate = [					
-				[1, "plate/legend_heavy_iron_armor"],// 120,-18,1000
-				[1, "plate/legend_thick_plated_barbarian_armor"],// 155,-26,1500					
+				[1, "plate/legend_armor_heavy_iron_armor"],// 120,-18,1000
+				[1, "plate/legend_armor_thick_plated_barbarian_armor"],// 155,-26,1500					
 			],
-			Cloak = [],
+			Cloak = [ 
+				[3, ""],
+				[1, "cloak/legend_direwolf_pelt_cloak"],				
+			],
 			Tabard = [],
 			Attachments = [
-				[
-					4,
-					"armor_upgrades/legend_barbarian_horn_upgrade"
-				],
-				[
-					2,
-					"armor_upgrades/legend_direwolf_pelt_upgrade"
-				],
+				[4, "armor_upgrades/legend_barbarian_horn_upgrade"],
 				[
 					2,
 					"armor_upgrades/legend_metal_plating_upgrade"
@@ -60,16 +56,16 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150	
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150	
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000	
 			],
 			Plate = [					
-				[1, "plate/legend_heavy_iron_armor"],// 120,-18,1000
-				[1, "plate/legend_thick_plated_barbarian_armor"],// 155,-26,1500					
+				[1, "plate/legend_armor_heavy_iron_armor"],// 120,-18,1000
+				[1, "plate/legend_armor_thick_plated_barbarian_armor"],// 155,-26,1500					
 			],
 			Cloak = [
 				[1, "cloak/legend_unhold_fur_cloak"],// 25,-2,1000				
@@ -82,25 +78,25 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150	
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150	
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000	
 			],
 			Plate = [					
-				[1, "plate/legend_heavy_iron_armor"],// 120,-18,1000
-				[1, "plate/legend_thick_plated_barbarian_armor"],// 155,-26,1500					
+				[1, "plate/legend_armor_heavy_iron_armor"],// 120,-18,1000
+				[1, "plate/legend_armor_thick_plated_barbarian_armor"],// 155,-26,1500					
 			],
-			Cloak = [],
+			Cloak = [ 
+				[3, ""],
+				[1, "cloak/legend_direwolf_pelt_cloak"],				
+			],
 			Tabard = [
 				[1, "tabard/cr_horn_tabard"],// 5,0,200				
 			],
-			Attachments = [
-				[2, ""],			
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0
-			]
+			Attachments = []
 		}			
 	]
 },	
@@ -110,27 +106,26 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150	
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150	
 			],
 			Chain = [	
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
-				[1, "chain/legend_southern_mail"],// 100,-13,1400
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400
 			],
 			Plate = [
-				[1, "plate/legend_hide_and_bone_armor"],// 80,-11,350
-				[1, "plate/legend_rugged_scale_armor"],// 95,-15,700										
+				[1, "plate/legend_armor_hide_and_bone_armor"],// 80,-11,350
+				[1, "plate/legend_armor_rugged_scale_armor"],// 95,-15,700										
 			],
-			Cloak = [],
+			Cloak = [ 
+				[3, ""],
+				[1, "cloak/legend_direwolf_pelt_cloak"],				
+			],
 			Tabard = [],
 			Attachments = [
 				[
 					4,
 					"armor_upgrades/legend_barbarian_horn_upgrade"
-				],
-				[
-					2,
-					"armor_upgrades/legend_direwolf_pelt_upgrade"
 				],
 				[
 					2,
@@ -144,16 +139,16 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150	
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150	
 			],
 			Chain = [	
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
-				[1, "chain/legend_southern_mail"],// 100,-13,1400
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400
 			],
 			Plate = [
-				[1, "plate/legend_hide_and_bone_armor"],// 80,-11,350
-				[1, "plate/legend_rugged_scale_armor"],// 95,-15,700										
+				[1, "plate/legend_armor_hide_and_bone_armor"],// 80,-11,350
+				[1, "plate/legend_armor_rugged_scale_armor"],// 95,-15,700										
 			],
 			Cloak = [
 				[1, "cloak/legend_unhold_fur_cloak"],// 25,-2,1000				
@@ -172,14 +167,14 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000	
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
-				[1, "chain/legend_southern_mail"],// 100,-13,1400					
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400					
 			],
 			Plate = [
 				[1, "plate/legend_armor_plate_ancient_scale"],// 105,-17,1000				
@@ -198,13 +193,13 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
 			],
 			Chain = [
-				[1, "chain/legend_southern_mail"],// 100,-13,1400
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000						
 			],
@@ -231,7 +226,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_noble_surcoat"],// 55,-6,300  ss60,-5,400
+				[1, "cloth/legend_armor_southern_noble_aketon"],// 55,-6,300  ss60,-5,400
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500
@@ -250,7 +245,7 @@
 				],
 				[
 					3,
-					"cloak/legend_shoulder_cloth",
+					"cloak/legend_armor_shoulder_cloth",
 				]
 			],
 			Tabard = [],
@@ -261,8 +256,7 @@
 				[1, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2
 				[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 85,-6
 				[1, "armor_upgrades/legend_light_padding_replacement_upgrade"],// 					
-				[1, "armor_upgrades/legend_additional_padding_upgrade"],// 
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
+				[1, "armor_upgrades/legend_additional_padding_upgrade"],// 		
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//   					
 			]
 		}
@@ -274,7 +268,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_noble_surcoat"],// 55,-6,300  ss60,-5,400
+				[1, "cloth/legend_armor_southern_noble_aketon"],// 55,-6,300  ss60,-5,400
 			],
 			Chain = [
 				[
@@ -283,7 +277,7 @@
 				],
 				[
 					1,
-					"chain/legend_southern_mail"
+					"chain/legend_armor_southern_mail"
 				],
 				[
 					1,
@@ -305,7 +299,7 @@
 				],
 				[
 					2,
-					"plate/legend_southern_plate"
+					"plate/legend_armor_southern_plate"
 				],
 				[
 					2,
@@ -313,18 +307,18 @@
 				]
 			],
 			Cloak = [
-				[4, "cloak/legend_southern_scarf_wrap"],// 15,-1,150
-				[2, "cloak/legend_noble_shawl"],// 10,0,250
+				[4, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150
+				[2, "cloak/legend_armor_noble_shawl"],// 10,0,250
 				[1, "cloak/legend_serpent_skin_cloak"],// 25,-2,800					
 			],
 			Tabard = [
 				[
 					2,
-					"tabard/legend_southern_tabard"
+					"tabard/legend_armor_southern_tabard"
 				],
 				[
 					1,
-					"tabard/legend_southern_overcloth",
+					"tabard/legend_armor_southern_overcloth",
 				]				
 			],
 			Attachments = [
@@ -334,7 +328,7 @@
 				],
 				[
 					2,
-					"armor_upgrades/legend_hyena_fur_upgrade"
+					"cloak/legend_hyena_fur_cloak"
 				],
 				[
 					1,
@@ -358,9 +352,9 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250				
@@ -388,9 +382,9 @@
 	Sets = [
 		{
 			Cloth = [				
-				[0, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[0, "cloth/legend_padded_surcoat_plain"],// 55,-6,150
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500						
+				[0, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[0, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500						
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750
@@ -415,7 +409,7 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250				
@@ -424,13 +418,13 @@
 				[1, "plate/legend_armor_scale"],// 100,-12,2250									
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150				
+				[1, "cloak/legend_direwolf_pelt_cloak"],
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150				
 			],
 			Tabard = [],
 			Attachments = [
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],// 
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0					
+				[1, "cloak/legend_hyena_fur_cloak"],//					
 			]
 		}
 	]
@@ -441,7 +435,7 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750				
@@ -450,7 +444,7 @@
 				[1, "plate/legend_armor_leather_noble"],// 65,-6,1500								
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150				
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150				
 			],
 			Tabard = [],
 			Attachments = [
@@ -465,16 +459,16 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50				
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50				
 			],
 			Plate = [
 				[1, "plate/legend_armor_scale_coat"],// 120,-15,2500								
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150				
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150				
 			],
 			Tabard = [],
 			Attachments = [
@@ -489,10 +483,10 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_southern_noble_surcoat"],// 55,-6,300  ss60,-5,400					
+				[1, "cloth/legend_armor_southern_noble_aketon"],// 55,-6,300  ss60,-5,400					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50				
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50				
 			],
 			Plate = [
 				[1, "plate/legend_armor_scale"],// 100,-12,2250								
@@ -516,23 +510,23 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50				
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50				
 			],
 			Plate = [
-				[1, "plate/legend_southern_padded"],// 65,-7,400								
+				[1, "plate/legend_armor_southern_padded"],// 65,-7,400								
 			],
 			Cloak = [
-				[1, "cloak/legend_shoulder_cloth"],// 5,0,50
-				[1, "cloak/legend_southern_scarf"],// 5,0,100					
+				[1, "cloak/legend_direwolf_pelt_cloak"],
+				[1, "cloak/legend_armor_shoulder_cloth"],// 5,0,50
+				[1, "cloak/legend_armor_southern_scarf"],// 5,0,100					
 			],
 			Tabard = [],
 			Attachments = [
 				[1, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 5,0,50					
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0				
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0			
 			]
 		}
 	]
@@ -543,16 +537,16 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
-				[1, "chain/legend_southern_cloth"],// 30,-2,50				
+				[1, "chain/legend_armor_southern_cloth"],// 30,-2,50				
 			],
 			Plate = [
-				[1, "plate/legend_southern_arm_guards"],// 30,-2,300								
+				[1, "plate/legend_armor_southern_arm_guards"],// 30,-2,300								
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150					
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150					
 			],
 			Tabard = [],
 			Attachments = [
@@ -567,21 +561,21 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
-				[1, "chain/legend_southern_padded_chest"],// 45,-4,325				
+				[1, "chain/legend_armor_southern_padded_chest"],// 45,-4,325				
 			],
 			Plate = [
-				[1, "plate/legend_southern_arm_guards"],// 30,-2,300								
+				[1, "plate/legend_armor_southern_arm_guards"],// 30,-2,300								
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150					
+				[1, "cloak/legend_direwolf_pelt_cloak"],
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150					
 			],
 			Tabard = [],
 			Attachments = [
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0				
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0			
 			]
 		}
 	]
@@ -592,12 +586,12 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble_named"],// 40_50,-2_-0,1500					
+				[1, "cloth/legend_armor_tunic_noble_named"],// 40_50,-2_-0,1500					
 			],
 			Chain = [
 				[
 					1,
-					"chain/legend_southern_cloth"
+					"chain/legend_armor_southern_cloth"
 				]
 			],
 			Plate = [
@@ -627,13 +621,13 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_tunic_noble_named"
+					"cloth/legend_armor_tunic_noble_named"
 				]
 			],
 			Chain = [
 				[
 					1,
-					"chain/legend_southern_cloth"
+					"chain/legend_armor_southern_cloth"
 				]
 			],
 			Plate = [
@@ -663,17 +657,17 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				]
 			],
 			Chain = [
 				[
 					2,
-					"chain/legend_southern_padded_chest"
+					"chain/legend_armor_southern_padded_chest"
 				],
 				[
 					2,
-					"chain/legend_southern_cloth"
+					"chain/legend_armor_southern_cloth"
 				],					
 				[
 					1,
@@ -683,7 +677,7 @@
 			Plate = [
 				[
 					2,
-					"plate/legend_southern_padded"
+					"plate/legend_armor_southern_padded"
 				],
 				[
 					4,
@@ -701,39 +695,35 @@
 			Cloak = [
 				[
 					2,
-					"cloak/legend_southern_scarf"
+					"cloak/legend_armor_southern_scarf"
 				],
 				[
 					3,
-					"cloak/legend_shoulder_cloth",
+					"cloak/legend_armor_shoulder_cloth",
 				]
 			],
 			Tabard = [
 				[
 					1,
-					"tabard/legend_noble_tabard"
+					"tabard/legend_armor_tabard_noble"
 				],
 				[
 					1,
-					"tabard/legend_common_tabard"
+					"tabard/legend_armor_tabard"
 				],
 				[
 					1,
-					"tabard/legend_southern_tabard"
+					"tabard/legend_armor_southern_tabard"
 				]					
 			],
 			Attachments = [
 				[
 					2,
-					"armor_upgrades/legend_hyena_fur_upgrade"
+					"cloak/legend_hyena_fur_cloak"
 				],
 				[
 					4,
 					"armor_upgrades/legend_light_gladiator_upgrade"
-				],
-				[
-					2,
-					"armor_upgrades/legend_direwolf_pelt_upgrade"
 				],
 				[
 					1,
@@ -749,12 +739,12 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500
 			],
 			Chain = [
 				[
 					2,
-					"chain/legend_southern_padded_chest"
+					"chain/legend_armor_southern_padded_chest"
 				],
 				[
 					1,
@@ -762,43 +752,43 @@
 				],
 				[
 					1,
-					"chain/legend_southern_cloth"
+					"chain/legend_armor_southern_cloth"
 				],						
 			],
 			Plate = [
-				[3, "plate/legend_southern_arm_guards"],// 30,-2,300
+				[3, "plate/legend_armor_southern_arm_guards"],// 30,-2,300
 				[1, "plate/legend_armor_leather_noble"],// 65,-6,1500					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf"],// 5,0,100
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150
-				[1, "cloak/legend_armor_cloak_common"],// 10,-1,100
-				[1, "cloak/legend_shoulder_cloth"],// 5,0,50
+				[1, "cloak/legend_armor_southern_scarf"],// 5,0,100
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150
+				[1, "cloak/legend_armor_cloak"],// 10,-1,100
+				[1, "cloak/legend_armor_shoulder_cloth"],// 5,0,50
 				[1, "cloak/legend_unhold_fur_cloak"],// 25,-2,1000					
 			],
 			Tabard = [
 				[
 					1,
-					"tabard/legend_southern_wide_belt"
+					"tabard/legend_armor_southern_wide_belt"
 				],
 				[
 					1,
-					"tabard/legend_southern_wrap_left"
+					"tabard/legend_armor_southern_wrap_left"
 				],
 				[
 					1,
-					"tabard/legend_southern_wrap_right"
+					"tabard/legend_armor_southern_wrap_right"
 				],
 				[
 					1,
-					"tabard/legend_southern_overcloth"
+					"tabard/legend_armor_southern_overcloth"
 				]					
 			],
 			Attachments = [
 				[2, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 30,-2,250
 				[1, "armor_upgrades/legend_leather_neckguard_upgrade"],// 10,-2,250	
 				[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 45,-2
-				[4, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0					
+				[4, "cloak/legend_hyena_fur_cloak"],//	   15,0					
 			]
 		}
 	]
@@ -811,7 +801,7 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				]
 			],
 			Chain = [
@@ -840,7 +830,7 @@
 			Cloak = [
 				[
 					1,
-					"cloak/legend_southern_scarf"
+					"cloak/legend_armor_southern_scarf"
 				],					
 			],
 			Tabard = [],
@@ -856,11 +846,11 @@
 			Cloth = [
 				[
 					2,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				],
 				[
 					1,
-					"cloth/legend_padded_surcoat"
+					"cloth/legend_armor_quilted_aketon"
 				]					
 			],
 			Chain = [
@@ -902,15 +892,15 @@
 			Cloak = [
 				[
 					1,
-					"cloak/legend_southern_scarf_wrap"
+					"cloak/legend_armor_southern_scarf_wrap"
 				],
 				[
 					2,
-					"cloak/legend_southern_scarf"
+					"cloak/legend_armor_southern_scarf"
 				],					
 				[
 					1,
-					"cloak/legend_armor_cloak_common"
+					"cloak/legend_armor_cloak"
 				]					
 			],
 			Tabard = [],
@@ -926,11 +916,11 @@
 			Cloth = [
 				[
 					4,
-					"cloth/legend_tunic_noble_named"
+					"cloth/legend_armor_tunic_noble_named"
 				],
 				[
 					1,
-					"cloth/legend_gambeson_named"
+					"cloth/legend_armor_gambeson_named"
 				]					
 			],
 			Chain = [
@@ -960,7 +950,7 @@
 				],
 				[
 					1,
-					"cloak/legend_noble_shawl"
+					"cloak/legend_armor_noble_shawl"
 				]										
 			],
 			Tabard = [
@@ -981,11 +971,11 @@
 			Cloth = [
 				[
 					2,
-					"cloth/legend_tunic_noble_named"
+					"cloth/legend_armor_tunic_noble_named"
 				],
 				[
 					3,
-					"cloth/legend_gambeson_named"
+					"cloth/legend_armor_gambeson_named"
 				]					
 			],
 			Chain = [
@@ -1025,9 +1015,9 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250
-				[1, "cloth/legend_gambeson_wolf"],// 70,-9,300
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson_wolf"],// 70,-9,300
 			],
 			Chain = [
 				[
@@ -1036,7 +1026,7 @@
 				],
 				[
 					1,
-					"chain/legend_southern_mail"
+					"chain/legend_armor_southern_mail"
 				],
 				[
 					1,
@@ -1072,22 +1062,22 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_sackcloth"
+					"cloth/legend_armor_sackcloth"
 				],
 				[
 					1,
-					"cloth/legend_sackcloth_patched"
+					"cloth/legend_armor_sackcloth_patched"
 				]
 			],
 			Chain = [],
 			Plate = [
 				[
 					1,
-					"plate/legend_hide_and_bone_armor"
+					"plate/legend_armor_hide_and_bone_armor"
 				],
 				[
 					1,
-					"plate/legend_scrap_metal_armor"
+					"plate/legend_armor_scrap_metal_armor"
 				]					
 			],
 			Cloak = [],
@@ -1104,15 +1094,15 @@
 			Cloth = [
 				[
 					2,
-					"cloth/legend_gambeson"
+					"cloth/legend_armor_gambeson"
 				],
 				[
 					1,
-					"cloth/legend_padded_surcoat"
+					"cloth/legend_armor_quilted_aketon"
 				],
 				[
 					1,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				]
 			],
 			Chain = [
@@ -1170,7 +1160,7 @@
 				],
 				[
 					1,
-					"cloak/legend_armor_cloak_common"
+					"cloak/legend_armor_cloak"
 				]
 			],
 			Tabard = [],
@@ -1193,8 +1183,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800
@@ -1225,8 +1215,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -1253,11 +1243,11 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-				[0, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+				[0, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[0, "chain/legend_armor_basic_mail"],// 85,-12,800
@@ -1285,8 +1275,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800
@@ -1320,8 +1310,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150				
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [
 				[2, "chain/legend_armor_hauberk"],// 95,-11,1750
@@ -1351,11 +1341,11 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-				[0, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+				[0, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1383,9 +1373,9 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-				[0, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+				[0, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
@@ -1407,7 +1397,7 @@
 	Sets = [
 		{
 			Cloth = [					
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1434,8 +1424,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1460,9 +1450,9 @@
 	Sets = [
 		{
 			Cloth = [					
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1475,7 +1465,7 @@
 				[1, "plate/legend_armor_plate_krastenbrust"],// 170,-26,5000  ss205,-30,5000					
 			],
 			Cloak = [
-				[1, "cloak/legend_armor_cloak_common"],// 10,-1,100
+				[1, "cloak/legend_armor_cloak"],// 10,-1,100
 				[3, ""],					
 			],
 			Tabard = [],
@@ -1495,9 +1485,9 @@
 	Sets = [
 		{
 			Cloth = [					
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1509,7 +1499,7 @@
 				[1, "plate/legend_armor_plate_krastenbrust"],// 170,-26,5000  ss205,-30,5000					
 			],
 			Cloak = [
-				[1, "cloak/legend_armor_cloak_common"],// 10,-1,100
+				[1, "cloak/legend_armor_cloak"],// 10,-1,100
 				[2, ""],					
 			],
 			Tabard = [],
@@ -1527,8 +1517,8 @@
 	Sets = [
 		{
 			Cloth = [					
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1540,7 +1530,7 @@
 			],
 			Cloak = [
 				[1, "cloak/legend_armor_cloak_heavy"],// 30,-4,500					
-				[1, "cloak/legend_armor_cloak_common"],// 10,-1,100
+				[1, "cloak/legend_armor_cloak"],// 10,-1,100
 				[1, ""],					
 			],
 			Tabard = [],
@@ -1556,8 +1546,8 @@
 	Sets = [
 		{
 			Cloth = [					
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1566,7 +1556,7 @@
 				[1, "plate/legend_armor_plate_full"],// 160,-22,4000  ss180,-26,4500									
 			],
 			Cloak = [
-				[1, "cloak/legend_armor_cloak_common"],// 10,-1,100										
+				[1, "cloak/legend_armor_cloak"],// 10,-1,100										
 			],
 			Tabard = [],
 			Attachments = [
@@ -1583,8 +1573,8 @@
 	Sets = [
 		{
 			Cloth = [					
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1610,7 +1600,7 @@
 	Sets = [
 		{
 			Cloth = [					
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1621,7 +1611,7 @@
 				[1, "plate/legend_armor_plate_full_greaves"],// 170,-22,5000  ss260,-38,7500					
 			],
 			Cloak = [
-				[1, "cloak/legend_armor_cloak_common"],// 10,-1,100
+				[1, "cloak/legend_armor_cloak"],// 10,-1,100
 				[1, "cloak/legend_armor_cloak_heavy"],// 30,-4,500				
 			],
 			Tabard = [],
@@ -1638,7 +1628,7 @@
 	Sets = [
 		{
 			Cloth = [					
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -1664,7 +1654,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250
@@ -1689,15 +1679,15 @@
 			Cloth = [
 				[
 					2,
-					"cloth/legend_gambeson"
+					"cloth/legend_armor_gambeson"
 				],
 				[
 					1,
-					"cloth/legend_padded_surcoat"
+					"cloth/legend_armor_quilted_aketon"
 				],
 				[
 					1,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				]
 			],
 			Chain = [
@@ -1755,7 +1745,7 @@
 				],
 				[
 					1,
-					"cloak/legend_armor_cloak_common"
+					"cloak/legend_armor_cloak"
 				]
 			],
 			Tabard = [],
@@ -1780,15 +1770,15 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson"
+					"cloth/legend_armor_gambeson"
 				],
 				[
 					1,
-					"cloth/legend_padded_surcoat"
+					"cloth/legend_armor_quilted_aketon"
 				],
 				[
 					2,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				]
 			],
 			Chain = [
@@ -1842,7 +1832,7 @@
 				],
 				[
 					1,
-					"cloak/legend_armor_cloak_common"
+					"cloak/legend_armor_cloak"
 				]
 			],
 			Tabard = [],
@@ -1864,15 +1854,15 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson"
+					"cloth/legend_armor_gambeson"
 				],
 				[
 					1,
-					"cloth/legend_padded_surcoat"
+					"cloth/legend_armor_quilted_aketon"
 				],
 				[
 					2,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				]
 			],
 			Chain = [
@@ -1890,7 +1880,7 @@
 				[1, "plate/legend_armor_scale_coat_named"],// 130_160,-14_-10,5000
 				[1, "plate/cr_named_lindwurm_armor"],// 175_190,-20_-18,10000					
 				[1, "plate/legend_armor_leather_lamellar_heavy_named"],// 180_200,-23_-19,7500   	ss185_210,-24_-21,12000 					
-				[1, "plate/legend_southern_named_plates"],// 210_230,-26_-23,9000					
+				[1, "plate/legend_armor_southern_named_plates"],// 210_230,-26_-23,9000					
 				[1, "plate/cr_named_heraldic_mail"],// 215_245,-25_-22,10000
 				[1, "plate/cr_named_sellswords_armor"],// 235_260,-28_-24,12000					
 				[1, "plate/cr_named_plated_mail_hauberk"],// 240_260,-29_-26,14000 						
@@ -1902,7 +1892,7 @@
 				],
 				[
 					1,
-					"cloak/legend_armor_cloak_common"
+					"cloak/legend_armor_cloak"
 				]
 			],
 			Tabard = [],
@@ -1924,11 +1914,11 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_named"
+					"cloth/legend_armor_gambeson_named"
 				],
 				[
 					1,
-					"cloth/legend_tunic_noble_named"
+					"cloth/legend_armor_tunic_noble_named"
 				]
 			],
 			Chain = [
@@ -2012,51 +2002,50 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_ancient_cloth"
+					"cloth/legend_armor_ancient_cloth"
 				],
 				[
 					1,
-					"cloth/legend_ancient_cloth_restored"
+					"cloth/legend_armor_ancient_cloth_restored"
 				],
 				[
 					1,
-					"cloth/legend_sackcloth"
+					"cloth/legend_armor_sackcloth"
 				],
 				[
 					1,
-					"cloth/legend_sackcloth_patched"
+					"cloth/legend_armor_sackcloth_patched"
 				],
 				[
 					1,
-					"cloth/legend_sackcloth_tattered"
+					"cloth/legend_armor_sackcloth_tattered"
 				]
 			],
 			Chain = [],
 			Plate = [
 				[
 					1,
-					"plate/legend_scrap_metal_armor"
+					"plate/legend_armor_scrap_metal_armor"
 				],
 				[
 					1,
-					"plate/legend_rugged_scale_armor"
+					"plate/legend_armor_rugged_scale_armor"
 				],
 				[
 					1,
-					"plate/legend_reinforced_animal_hide_armor"
+					"plate/legend_armor_reinforced_animal_hide_armor"
 				],
 				[
 					1,
-					"plate/legend_hide_and_bone_armor"
+					"plate/legend_armor_hide_and_bone_armor"
 				]					
 			],
-			Cloak = [],
+			Cloak = [ 
+				[3, ""],
+				[1, "cloak/legend_direwolf_pelt_cloak"],				
+			],
 			Tabard = [],
-			Attachments = [
-				[
-					1,
-					"armor_upgrades/legend_direwolf_pelt_upgrade"
-				]					
+			Attachments = [				
 			]
 		}
 	]
@@ -2067,12 +2056,12 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_sackcloth_tattered"], // 5				
-				[1, "cloth/legend_sackcloth"], // 10
-				[2, "cloth/legend_sackcloth_patched"], // 15
-				[2, "cloth/legend_tunic"], // 20	
-				[2, "cloth/legend_dark_tunic"], // 35
-				[1, "cloth/legend_thick_tunic"] // 30					
+				[1, "cloth/legend_armor_sackcloth_tattered"], // 5				
+				[1, "cloth/legend_armor_sackcloth"], // 10
+				[2, "cloth/legend_armor_sackcloth_patched"], // 15
+				[2, "cloth/legend_armor_tunic"], // 20	
+				[2, "cloth/legend_armor_dark_tunic"], // 35
+				[1, "cloth/legend_armor_thick_tunic"] // 30					
 			],
 			Chain = [
 				[1, "chain/legend_armor_rusty_mail_shirt"], // 20	
@@ -2102,12 +2091,12 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_sackcloth_tattered"], // 5				
-				[1, "cloth/legend_sackcloth"], // 10
-				[2, "cloth/legend_sackcloth_patched"], // 15
-				[2, "cloth/legend_tunic"], // 20	
-				[2, "cloth/legend_dark_tunic"], // 35
-				[1, "cloth/legend_thick_tunic"] // 30					
+				[1, "cloth/legend_armor_sackcloth_tattered"], // 5				
+				[1, "cloth/legend_armor_sackcloth"], // 10
+				[2, "cloth/legend_armor_sackcloth_patched"], // 15
+				[2, "cloth/legend_armor_tunic"], // 20	
+				[2, "cloth/legend_armor_dark_tunic"], // 35
+				[1, "cloth/legend_armor_thick_tunic"] // 30					
 			],
 			Chain = [
 				[1, "chain/legend_armor_rusty_mail_shirt"], // 20	
@@ -2143,11 +2132,11 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				],
 				[
 					3,
-					"cloth/legend_padded_surcoat"  //55
+					"cloth/legend_armor_quilted_aketon"  //55
 				]
 			],
 			Chain = [
@@ -2184,11 +2173,11 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				],
 				[
 					3,
-					"cloth/legend_padded_surcoat"  //55
+					"cloth/legend_armor_quilted_aketon"  //55
 				]
 			],
 			Chain = [
@@ -2219,11 +2208,11 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_tunic"],// 20,-1,25
-				[1, "cloth/legend_tunic_wrap"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_thin"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_deep"],// 20,-1,25
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_tunic"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_wrap"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_thin"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_deep"],// 20,-1,25
 			],
 			Chain = [
 				[3, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -2248,11 +2237,11 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				],
 				[
 					3,
-					"cloth/legend_padded_surcoat"  //55
+					"cloth/legend_armor_quilted_aketon"  //55
 				]
 			],
 			Chain = [
@@ -2278,11 +2267,11 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_tunic"],// 20,-1,25
-				[1, "cloth/legend_tunic_wrap"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_thin"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_deep"],// 20,-1,25
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_tunic"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_wrap"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_thin"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_deep"],// 20,-1,25
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250
@@ -2303,10 +2292,10 @@
 	Sets = [
 		{
 			Cloth = [
-				[2, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[2, "cloth/legend_padded_surcoat_plain"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_ancient_double_mail"],// 80,-14,750				
@@ -2328,7 +2317,7 @@
 				[4, "plate/legend_armor_scale_coat"],// 120,-15,2500					
 			],
 			Cloak = [
-				[2, "cloak/legend_armor_cloak_common"],// 10,-1,100
+				[2, "cloak/legend_armor_cloak"],// 10,-1,100
 				[1, "cloak/legend_armor_cloak_heavy"],// 30,-4,500				
 			],
 			Tabard = [],
@@ -2363,28 +2352,28 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_tunic"],// 25,-1,50				
-				[0, "cloth/legend_southern_gambeson"],// 65,-8,250
-				[0, "cloth/legend_southern_split_gambeson"],// 65,-8,250			
+				[1, "cloth/legend_armor_southern_tunic"],// 25,-1,50				
+				[0, "cloth/legend_armor_southern_gambeson"],// 65,-8,250
+				[0, "cloth/legend_armor_southern_split_gambeson"],// 65,-8,250			
 			],
 			Chain = [
-				[0, "chain/legend_southern_padded_chest"],// 45,-4,325
-				[1, "chain/legend_southern_mail"],// 100,-13,1400
+				[0, "chain/legend_armor_southern_padded_chest"],// 45,-4,325
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400
 				[0, "chain/legend_armor_short_mail"],// 60,-8,500
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750					
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_lamellar_reinforced"],// 55,-7,350
-				[0, "plate/legend_southern_plate_full"],// 75,-12,750
-				[0, "plate/legend_southern_scale"],// 70,-10,300
-				[0, "plate/legend_southern_padded"],// 65,-7,400					
+				[0, "plate/legend_armor_southern_plate_full"],// 75,-12,750
+				[0, "plate/legend_armor_southern_scale"],// 70,-10,300
+				[0, "plate/legend_armor_southern_padded"],// 65,-7,400					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf",1],// 5,0,100
-				[4, "cloak/legend_southern_scarf_wrap",1],// 15,-1,150			
+				[1, "cloak/legend_armor_southern_scarf",1],// 5,0,100
+				[4, "cloak/legend_armor_southern_scarf_wrap",1],// 15,-1,150			
 			],
 			Tabard = [
-				[1, "tabard/legend_southern_tabard",1],// 5,0,200				
+				[1, "tabard/legend_armor_southern_tabard",1],// 5,0,200				
 			],
 			Attachments = [
 				[
@@ -2417,28 +2406,28 @@
 	Sets = [
 		{
 			Cloth = [
-				[0, "cloth/legend_southern_tunic"],// 25,-1,50				
-				[1, "cloth/legend_southern_gambeson"],// 65,-8,250
-				[1, "cloth/legend_southern_split_gambeson"],// 65,-8,250			
+				[0, "cloth/legend_armor_southern_tunic"],// 25,-1,50				
+				[1, "cloth/legend_armor_southern_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_southern_split_gambeson"],// 65,-8,250			
 			],
 			Chain = [
-				[1, "chain/legend_southern_padded_chest"],// 45,-4,325
-				[0, "chain/legend_southern_mail"],// 100,-13,1400
+				[1, "chain/legend_armor_southern_padded_chest"],// 45,-4,325
+				[0, "chain/legend_armor_southern_mail"],// 100,-13,1400
 				[0, "chain/legend_armor_short_mail"],// 60,-8,500
 				[0, "chain/legend_armor_reinforced_mail"],// 110,-15,1750					
 			],
 			Plate = [
 				[0, "plate/legend_armor_leather_lamellar_reinforced"],// 55,-7,350
-				[1, "plate/legend_southern_plate_full"],// 75,-12,750
-				[1, "plate/legend_southern_scale"],// 70,-10,300
-				[0, "plate/legend_southern_padded"],// 65,-7,400					
+				[1, "plate/legend_armor_southern_plate_full"],// 75,-12,750
+				[1, "plate/legend_armor_southern_scale"],// 70,-10,300
+				[0, "plate/legend_armor_southern_padded"],// 65,-7,400					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf",1],// 5,0,100
-				[4, "cloak/legend_southern_scarf_wrap",1],// 15,-1,150			
+				[1, "cloak/legend_armor_southern_scarf",1],// 5,0,100
+				[4, "cloak/legend_armor_southern_scarf_wrap",1],// 15,-1,150			
 			],
 			Tabard = [
-				[1, "tabard/legend_southern_tabard",1],// 5,0,200				
+				[1, "tabard/legend_armor_southern_tabard",1],// 5,0,200				
 			],
 			Attachments = [
 				[
@@ -2471,28 +2460,28 @@
 	Sets = [
 		{
 			Cloth = [
-				[0, "cloth/legend_southern_tunic"],// 25,-1,50				
-				[1, "cloth/legend_southern_gambeson"],// 65,-8,250
-				[1, "cloth/legend_southern_split_gambeson"],// 65,-8,250			
+				[0, "cloth/legend_armor_southern_tunic"],// 25,-1,50				
+				[1, "cloth/legend_armor_southern_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_southern_split_gambeson"],// 65,-8,250			
 			],
 			Chain = [
-				[0, "chain/legend_southern_padded_chest"],// 45,-4,325
-				[0, "chain/legend_southern_mail"],// 100,-13,1400
+				[0, "chain/legend_armor_southern_padded_chest"],// 45,-4,325
+				[0, "chain/legend_armor_southern_mail"],// 100,-13,1400
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500
 				[0, "chain/legend_armor_reinforced_mail"],// 110,-15,1750					
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_lamellar_reinforced"],// 55,-7,350
-				[0, "plate/legend_southern_plate_full"],// 75,-12,750
-				[1, "plate/legend_southern_scale"],// 70,-10,300
-				[0, "plate/legend_southern_padded"],// 65,-7,400					
+				[0, "plate/legend_armor_southern_plate_full"],// 75,-12,750
+				[1, "plate/legend_armor_southern_scale"],// 70,-10,300
+				[0, "plate/legend_armor_southern_padded"],// 65,-7,400					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf",1],// 5,0,100
-				[4, "cloak/legend_southern_scarf_wrap",1],// 15,-1,150			
+				[1, "cloak/legend_armor_southern_scarf",1],// 5,0,100
+				[4, "cloak/legend_armor_southern_scarf_wrap",1],// 15,-1,150			
 			],
 			Tabard = [
-				[1, "tabard/legend_southern_tabard",1],// 5,0,200				
+				[1, "tabard/legend_armor_southern_tabard",1],// 5,0,200				
 			],
 			Attachments = [
 				[
@@ -2525,20 +2514,20 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_tunic"],// 25,-1,50							
+				[1, "cloth/legend_armor_southern_tunic"],// 25,-1,50							
 			],
 			Chain = [
-				[1, "chain/legend_southern_cloth"],// 30,-2,50					
+				[1, "chain/legend_armor_southern_cloth"],// 30,-2,50					
 			],
 			Plate = [
-				[1, "plate/legend_southern_padded"],// 65,-7,400					
+				[1, "plate/legend_armor_southern_padded"],// 65,-7,400					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf",1],// 5,0,100
-				[4, "cloak/legend_southern_scarf_wrap",1],// 15,-1,150			
+				[1, "cloak/legend_armor_southern_scarf",1],// 5,0,100
+				[4, "cloak/legend_armor_southern_scarf_wrap",1],// 15,-1,150			
 			],
 			Tabard = [
-				[1, "tabard/legend_southern_tabard",1],// 5,0,200				
+				[1, "tabard/legend_armor_southern_tabard",1],// 5,0,200				
 			],
 			Attachments = [
 				[
@@ -2571,8 +2560,8 @@
 	Sets = [
 		{																				//~245 -30
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150						
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150						
 			],
 			Chain = [
 				[0, "chain/legend_armor_ancient_double_mail"],// 80,-14,750
@@ -2621,8 +2610,8 @@
 		},
 		{																	//~225 -30
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150						
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150						
 			],
 			Chain = [
 				[0, "chain/legend_armor_ancient_double_mail"],// 80,-14,750
@@ -2668,8 +2657,8 @@
 		},
 		{																 //~225 -29
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150						
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150						
 			],
 			Chain = [
 				[0, "chain/legend_armor_ancient_double_mail"],// 80,-14,750
@@ -2715,8 +2704,8 @@
 		},
 		{																	//~225 -29
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150						
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150						
 			],
 			Chain = [
 				[1, "chain/legend_armor_ancient_double_mail"],// 80,-14,750
@@ -2758,8 +2747,8 @@
 		},
 		{															//~235 -31
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150						
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150						
 			],
 			Chain = [
 				[0, "chain/legend_armor_ancient_double_mail"],// 80,-14,750
@@ -2808,11 +2797,11 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				],
 				[
 					3,
-					"cloth/legend_padded_surcoat"  //55
+					"cloth/legend_armor_quilted_aketon"  //55
 				]
 			],
 			Chain = [				
@@ -2826,8 +2815,8 @@
 				]					
 			],
 			Plate = [				
-				[1, "plate/legend_heavy_iron_armor"], // 120
-				[1, "plate/legend_thick_plated_barbarian_armor"], // 155			
+				[1, "plate/legend_armor_heavy_iron_armor"], // 120
+				[1, "plate/legend_armor_thick_plated_barbarian_armor"], // 155			
 			],
 			Cloak = [],
 			Tabard = [],
@@ -2843,11 +2832,11 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				],
 				[
 					3,
-					"cloth/legend_padded_surcoat"  //55
+					"cloth/legend_armor_quilted_aketon"  //55
 				]
 			],
 			Chain = [									
@@ -2861,7 +2850,7 @@
 				]
 			],
 			Plate = [
-				[1, "plate/legend_rugged_scale_armor"] // 95							
+				[1, "plate/legend_armor_rugged_scale_armor"] // 95							
 			],
 			Cloak = [],
 			Tabard = [],
@@ -2877,7 +2866,7 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				]
 			],
 			Chain = [
@@ -2901,7 +2890,7 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				]
 			],
 			Chain = [
@@ -2931,8 +2920,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800
@@ -2955,10 +2944,10 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
 			],
 			Chain = [					
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375					
@@ -2979,8 +2968,8 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250					
@@ -3006,10 +2995,10 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
 			],
 			Chain = [					
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375					
@@ -3036,10 +3025,10 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
 			],
 			Chain = [					
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500					
@@ -3068,10 +3057,10 @@
 	Sets = [
 		{
 			Cloth = [	
-				[2, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[2, "cloth/legend_padded_surcoat_plain"],// 55,-6,150				
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250				
@@ -3089,10 +3078,10 @@
 	Sets = [
 		{
 			Cloth = [	
-				[2, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[2, "cloth/legend_padded_surcoat_plain"],// 55,-6,150				
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375				
@@ -3110,10 +3099,10 @@
 	Sets = [
 		{
 			Cloth = [	
-				[2, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[2, "cloth/legend_padded_surcoat_plain"],// 55,-6,150				
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375				
@@ -3135,10 +3124,10 @@
 	Sets = [
 		{
 			Cloth = [	
-				[1, "cloth/legend_tunic"],// 20,-1,25
-				[1, "cloth/legend_tunic_wrap"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_thin"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_deep"],// 20,-1,25								
+				[1, "cloth/legend_armor_tunic"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_wrap"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_thin"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_deep"],// 20,-1,25								
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250				
@@ -3147,7 +3136,7 @@
 				[1, "plate/legend_armor_leather_jacket"],// 25,-3,75				
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150				
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150				
 			],
 			Tabard = [],
 			Attachments = [
@@ -3163,10 +3152,10 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic"],// 20,-1,25
-				[1, "cloth/legend_tunic_wrap"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_thin"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_deep"],// 20,-1,25				
+				[1, "cloth/legend_armor_tunic"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_wrap"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_thin"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_deep"],// 20,-1,25				
 			],
 			Chain = [
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500					
@@ -3188,8 +3177,8 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150				
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500					
@@ -3208,7 +3197,7 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500				
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500				
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000						
@@ -3230,7 +3219,7 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500				
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500				
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
@@ -3251,10 +3240,10 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500				
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500				
 			],
 			Chain = [
-				[1, "chain/legend_southern_padded_chest"],// 45,-4,325					
+				[1, "chain/legend_armor_southern_padded_chest"],// 45,-4,325					
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_noble"],// 65,-6,1500					
@@ -3274,8 +3263,8 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250
@@ -3296,10 +3285,10 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150				
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750
@@ -3325,8 +3314,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500
@@ -3356,8 +3345,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -3379,8 +3368,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
@@ -3400,8 +3389,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -3421,8 +3410,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -3447,8 +3436,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
@@ -3473,8 +3462,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -3498,8 +3487,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [					
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
@@ -3527,8 +3516,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [					
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750
@@ -3553,8 +3542,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150									
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150									
 			],
 			Chain = [					
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750
@@ -3580,8 +3569,8 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [],
 			Plate = [
@@ -3599,8 +3588,8 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [					
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -3619,8 +3608,8 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [					
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500									
@@ -3640,8 +3629,8 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150				
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [					
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250						
@@ -3662,8 +3651,8 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150				
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [					
 				[2, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -3688,11 +3677,11 @@
 			Cloth = [
 				[
 					3,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				],
 				[
 					1,
-					"cloth/legend_padded_surcoat"  //55
+					"cloth/legend_armor_quilted_aketon"  //55
 				]
 			],
 			Chain = [
@@ -3735,11 +3724,11 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_gambeson_plain"  //65
+					"cloth/legend_armor_gambeson"  //65
 				],
 				[
 					3,
-					"cloth/legend_padded_surcoat"  //55
+					"cloth/legend_armor_quilted_aketon"  //55
 				]
 			],
 			Chain = [
@@ -3776,13 +3765,13 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson_wolf"],// 70,-9,300
+				[1, "cloth/legend_armor_gambeson_wolf"],// 70,-9,300
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000
 			],
 			Plate = [
-				[1, "plate/legend_heavy_iron_armor"],// 120,-18,1000										
+				[1, "plate/legend_armor_heavy_iron_armor"],// 120,-18,1000										
 			],
 			Cloak = [],
 			Tabard = [],
@@ -3798,16 +3787,16 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gladiator_harness"],// 40,-4,150	
+				[1, "cloth/legend_armor_gladiator_harness"],// 40,-4,150	
 			],
 			Chain = [
-				[1, "chain/legend_southern_mail"],// 100,-13,1400
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400
 			],
 			Plate = [
-				[1, "plate/legend_southern_scale"],// 70,-10,300										
+				[1, "plate/legend_armor_southern_scale"],// 70,-10,300										
 			],
 			Cloak = [
-				[1, "cloak/legend_animal_pelt"],// 15,-2,250				
+				[1, "cloak/legend_armor_animal_pelt"],// 15,-2,250				
 			],
 			Tabard = [],
 			Attachments = []
@@ -3820,10 +3809,10 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_wrap"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_thin"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_deep"],// 20,-1,25
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
+				[1, "cloth/legend_armor_tunic_wrap"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_thin"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_deep"],// 20,-1,25
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
 			],
 			Chain = [
 				[3, "chain/legend_armor_reinforced_worn_mail"],// 105,-17,1250
@@ -3842,9 +3831,9 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_dark_tunic"],// 35,-4,50	
-				[4, "cloth/legend_padded_surcoat"],// 55,-6,150
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50	
+				[4, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
 			],
 			Chain = [
 				[3, ""],// 
@@ -3866,11 +3855,11 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_wrap"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_thin"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_deep"],// 20,-1,25				
-				[2, "cloth/legend_thick_tunic"],// 30,-3,40
-				[2, "cloth/legend_dark_tunic"],// 35,-4,50	
+				[1, "cloth/legend_armor_tunic_wrap"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_thin"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_deep"],// 20,-1,25				
+				[2, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[2, "cloth/legend_armor_dark_tunic"],// 35,-4,50	
 			],
 			Chain = [
 				[2, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200
@@ -3881,8 +3870,8 @@
 			Plate = [
 				[4, "plate/legend_armor_scale_coat_rotten"],// 60,-9,600 
 				[2, "plate/cr_leather_lamellar_harness_heavy_rotten"],// 90,-14,900 											
-				[1, "plate/legend_rugged_scale_armor"],// 95,-15,700
-				[1, "plate/legend_armor_plate_chest_rotten"],// 100,-16,1250			
+				[1, "plate/legend_armor_rugged_scale_armor"],// 95,-15,700
+				[1, "plate/legend_armo_rottenr_plate_chest"],// 100,-16,1250			
 			],
 			Cloak = [],
 			Tabard = [],
@@ -3896,18 +3885,18 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_wrap"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_thin"],// 20,-1,25
-				[1, "cloth/legend_tunic_collar_deep"],// 20,-1,25				
-				[2, "cloth/legend_thick_tunic"],// 30,-3,40
-				[2, "cloth/legend_dark_tunic"],// 35,-4,50	
+				[1, "cloth/legend_armor_tunic_wrap"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_thin"],// 20,-1,25
+				[1, "cloth/legend_armor_tunic_collar_deep"],// 20,-1,25				
+				[2, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[2, "cloth/legend_armor_dark_tunic"],// 35,-4,50	
 			],
 			Chain = [
 				[2, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200		
 				[4, "chain/legend_armor_reinforced_worn_mail_shirt"],// 65,-11,350
 			],
 			Plate = [ 					
-				[3, "plate/legend_armor_plate_chest_rotten"],// 100,-16,1250  ss140,-24,1750	  5.83
+				[3, "plate/legend_armo_rottenr_plate_chest"],// 100,-16,1250  ss140,-24,1750	  5.83
 				[1, "plate/cr_leather_lamellar_heavy_rotten"],//170,-30,2250	  5.67					
 			],
 			Cloak = [],
@@ -3922,16 +3911,16 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[2, "cloth/legend_dark_tunic"],// 35,-4,50	
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[2, "cloth/legend_armor_dark_tunic"],// 35,-4,50	
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
 			],
 			Chain = [			
 				[2, "chain/legend_armor_reinforced_worn_mail"],// 105,-17,1250
 				[1, "chain/legend_armor_reinforced_worn_mail_shirt"],// 65,-11,350
 			],
 			Plate = [					
-				[3, "plate/legend_armor_plate_chest_rotten"],// 100,-16,1250  ss140,-24,1750	  5.83	
+				[3, "plate/legend_armo_rottenr_plate_chest"],// 100,-16,1250  ss140,-24,1750	  5.83	
 				[1, "plate/cr_leather_lamellar_heavy_rotten"],//170,-30,2250	  5.67									
 			],
 			Cloak = [],
@@ -3946,32 +3935,32 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35
-				[3, "cloth/legend_southern_gambeson"],// 65,-8,250
-				[3, "cloth/legend_southern_split_gambeson"],// 65,-8,250
-				[1, "cloth/legend_southern_tunic"],// 25,-1,50
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[3, "cloth/legend_armor_southern_gambeson"],// 65,-8,250
+				[3, "cloth/legend_armor_southern_split_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_southern_tunic"],// 25,-1,50
 			],
 			Chain = [
 				[2, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200
 				[2, "chain/legend_armor_mail_shirt"],// 50,-6,375
-				[1, "chain/legend_southern_padded_chest"],// 45,-4,325			
+				[1, "chain/legend_armor_southern_padded_chest"],// 45,-4,325			
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_jacket"],// 25,-3,75
 				[1, "plate/legend_armor_leather_jacket_simple"],// 15,-2,30			
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf"],// 5,0
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1					
+				[1, "cloak/legend_armor_southern_scarf"],// 5,0
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1					
 			],
 			Tabard = [
-				[1, "tabard/legend_southern_overcloth"],
-				[5, "tabard/legend_southern_shoulder_cloth"],
-				[1, "tabard/legend_southern_tabard"],
-				[5, "tabard/legend_southern_wide_belt"],
-				[1, "tabard/legend_southern_wrap"],
-				[1, "tabard/legend_southern_wrap_left"], //5~2
-				[1, "tabard/legend_southern_wrap_right"],						
+				[1, "tabard/legend_armor_southern_overcloth"],
+				[5, "tabard/legend_armor_southern_shoulder_cloth"],
+				[1, "tabard/legend_armor_southern_tabard"],
+				[5, "tabard/legend_armor_southern_wide_belt"],
+				[1, "tabard/legend_armor_southern_wrap"],
+				[1, "tabard/legend_armor_southern_wrap_left"], //5~2
+				[1, "tabard/legend_armor_southern_wrap_right"],						
 			],
 			Attachments = []
 		}
@@ -3983,18 +3972,18 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150
-				[1, "cloth/legend_ancient_cloth_restored"],// 35,-4,40
-				[2, "cloth/legend_southern_tunic"],// 25,-1,50					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_ancient_cloth_restored"],// 35,-4,40
+				[2, "cloth/legend_armor_southern_tunic"],// 25,-1,50					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50				
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50				
 			],
 			Plate = [],
 			Cloak = [		
-				[1, "cloak/legend_sash"],// 3,0,150
-				[1, "cloak/legend_southern_scarf"],// 5,0,100				
+				[1, "cloak/legend_armor_sash"],// 3,0,150
+				[1, "cloak/legend_armor_southern_scarf"],// 5,0,100				
 			],
 			Tabard = [],
 			Attachments = []
@@ -4007,14 +3996,14 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35
-				[1, "cloth/legend_southern_tunic"],// 25,-1,50					
-				[2, "cloth/legend_southern_gambeson"],// 65,-8,250
-				[4, "cloth/legend_southern_split_gambeson"],// 65,-8,250						
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[1, "cloth/legend_armor_southern_tunic"],// 25,-1,50					
+				[2, "cloth/legend_armor_southern_gambeson"],// 65,-8,250
+				[4, "cloth/legend_armor_southern_split_gambeson"],// 65,-8,250						
 			],
 			Chain = [],
 			Plate = [
-				[1, "plate/legend_southern_leather_jacket"],// 30,-3,110					
+				[1, "plate/legend_armor_southern_leather_jacket"],// 30,-3,110					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4028,15 +4017,15 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35
-				[3, "cloth/legend_southern_tunic"],// 25,-1,50						
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[3, "cloth/legend_armor_southern_tunic"],// 25,-1,50						
 			],
 			Chain = [],
 			Plate = [
-				[1, "plate/legend_southern_leather_plates"],// 50,-5,200					
+				[1, "plate/legend_armor_southern_leather_plates"],// 50,-5,200					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150				
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150				
 			],
 			Tabard = [],
 			Attachments = []
@@ -4049,13 +4038,13 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_gambeson"],// 65,-8,250						
+				[1, "cloth/legend_armor_southern_gambeson"],// 65,-8,250						
 			],
 			Chain = [
-				[1, "chain/legend_southern_cloth"],// 30,-2,50				
+				[1, "chain/legend_armor_southern_cloth"],// 30,-2,50				
 			],
 			Plate = [
-				[1, "plate/legend_southern_leather_jacket"],// 30,-3,110					
+				[1, "plate/legend_armor_southern_leather_jacket"],// 30,-3,110					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4069,17 +4058,17 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35
-				[3, "cloth/legend_southern_tunic"],// 25,-1,50						
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[3, "cloth/legend_armor_southern_tunic"],// 25,-1,50						
 			],
 			Chain = [
-				[1, "chain/legend_southern_cloth"],// 30,-2,50				
+				[1, "chain/legend_armor_southern_cloth"],// 30,-2,50				
 			],
 			Plate = [
-				[1, "plate/legend_southern_leather_plates"],// 50,-5,200					
+				[1, "plate/legend_armor_southern_leather_plates"],// 50,-5,200					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150				
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150				
 			],
 			Tabard = [],
 			Attachments = []
@@ -4092,8 +4081,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35
-				[3, "cloth/legend_southern_tunic"],// 25,-1,50						
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[3, "cloth/legend_armor_southern_tunic"],// 25,-1,50						
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -4102,8 +4091,8 @@
 			Plate = [],
 			Cloak = [
 				[2, ""],		
-				[1, "cloak/legend_sash"],// 3,0,150
-				[1, "cloak/legend_southern_scarf"],// 5,0,100				
+				[1, "cloak/legend_armor_sash"],// 3,0,150
+				[1, "cloak/legend_armor_southern_scarf"],// 5,0,100				
 			],
 			Tabard = [],
 			Attachments = [
@@ -4119,18 +4108,18 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_gambeson"],// 65,-8,250
-				[1, "cloth/legend_southern_split_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gladiator_harness"],// 40,-4,150						
+				[1, "cloth/legend_armor_southern_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_southern_split_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gladiator_harness"],// 40,-4,150						
 			],
 			Chain = [],
 			Plate = [
-				[1, "plate/legend_southern_scale"],// 70,-10,300				
+				[1, "plate/legend_armor_southern_scale"],// 70,-10,300				
 			],
 			Cloak = [
 				[2, ""],		
-				[1, "cloak/legend_sash"],// 3,0,150
-				[1, "cloak/legend_southern_scarf"],// 5,0,100				
+				[1, "cloak/legend_armor_sash"],// 3,0,150
+				[1, "cloak/legend_armor_southern_scarf"],// 5,0,100				
 			],
 			Tabard = [],
 			Attachments = []
@@ -4143,8 +4132,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35
-				[3, "cloth/legend_southern_tunic"],// 25,-1,50						
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[3, "cloth/legend_armor_southern_tunic"],// 25,-1,50						
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -4152,12 +4141,12 @@
 			],
 			Plate = [
 				[3, ""],
-				[1, "plate/legend_southern_arm_guards"],// 30,-2,300					
+				[1, "plate/legend_armor_southern_arm_guards"],// 30,-2,300					
 			],
 			Cloak = [
-				[1, "tabard/legend_southern_wrap_right"],// 2,0,50
-				[1, "tabard/legend_southern_wrap_left"],// 2,0,50
-				[1, "tabard/legend_southern_wide_belt"],// 2,0,50				
+				[1, "tabard/legend_armor_southern_wrap_right"],// 2,0,50
+				[1, "tabard/legend_armor_southern_wrap_left"],// 2,0,50
+				[1, "tabard/legend_armor_southern_wide_belt"],// 2,0,50				
 			],
 			Tabard = [],
 			Attachments = [
@@ -4173,8 +4162,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_gambeson"],// 65,-8,250
-				[1, "cloth/legend_southern_split_gambeson"],// 65,-8,250						
+				[1, "cloth/legend_armor_southern_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_southern_split_gambeson"],// 65,-8,250						
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -4182,7 +4171,7 @@
 			],
 			Plate = [
 				[3, ""],
-				[1, "plate/legend_southern_arm_guards"],// 30,-2,300					
+				[1, "plate/legend_armor_southern_arm_guards"],// 30,-2,300					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4199,23 +4188,23 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_gambeson"],// 65,-8,250
-				[1, "cloth/legend_southern_split_gambeson"],// 65,-8,250					
+				[1, "cloth/legend_armor_southern_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_southern_split_gambeson"],// 65,-8,250					
 			],
 			Chain = [
-				[1, "chain/legend_southern_cloth"],// 30,-2,50				
+				[1, "chain/legend_armor_southern_cloth"],// 30,-2,50				
 			],
 			Plate = [
-				[1, "plate/legend_southern_scale"],// 70,-10,300				
+				[1, "plate/legend_armor_southern_scale"],// 70,-10,300				
 			],
 			Cloak = [
 				[1, ""],		
-				[2, "cloak/legend_southern_scarf_wrap"],// 15,-1,150
-				[1, "cloak/legend_southern_scarf"],// 5,0,100				
+				[2, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150
+				[1, "cloak/legend_armor_southern_scarf"],// 5,0,100				
 			],
 			Tabard = [
 				[1, ""],	
-				[1, "tabard/legend_southern_tabard"],// 5,0,200					
+				[1, "tabard/legend_armor_southern_tabard"],// 5,0,200					
 			],
 			Attachments = []
 		}
@@ -4227,18 +4216,18 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35
-				[3, "cloth/legend_southern_tunic"],// 25,-1,50						
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[3, "cloth/legend_armor_southern_tunic"],// 25,-1,50						
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375				
 			],
 			Plate = [
-				[1, "plate/legend_southern_leather_scale"],// 155,-26,1500  ss110,-16,1500		  6.88					
+				[1, "plate/legend_armor_southern_leather_scale"],// 155,-26,1500  ss110,-16,1500		  6.88					
 			],
 			Cloak = [],
 			Tabard = [
-				[1, "tabard/legend_southern_tabard"],// 5,0,200					
+				[1, "tabard/legend_armor_southern_tabard"],// 5,0,200					
 			],
 			Attachments = []
 		}
@@ -4250,13 +4239,13 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gladiator_harness"],// 40,-4,150						
+				[1, "cloth/legend_armor_gladiator_harness"],// 40,-4,150						
 			],
 			Chain = [
-				[1, "chain/legend_southern_mail"],// 100,-13,1400				
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400				
 			],
 			Plate = [
-				[1, "plate/legend_southern_padded"],// 65,-7,400			
+				[1, "plate/legend_armor_southern_padded"],// 65,-7,400			
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4272,13 +4261,13 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gladiator_harness"],// 40,-4,150						
+				[1, "cloth/legend_armor_gladiator_harness"],// 40,-4,150						
 			],
 			Chain = [
-				[1, "chain/legend_southern_mail"],// 100,-13,1400				
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400				
 			],
 			Plate = [
-				[1, "plate/legend_southern_plate"],// 155,-26,1500		ss135,-20,1750		  6.75				
+				[1, "plate/legend_armor_southern_plate"],// 155,-26,1500		ss135,-20,1750		  6.75				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4292,13 +4281,13 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gladiator_harness"],// 40,-4,150						
+				[1, "cloth/legend_armor_gladiator_harness"],// 40,-4,150						
 			],
 			Chain = [
-				[1, "chain/legend_southern_mail"],// 100,-13,1400				
+				[1, "chain/legend_armor_southern_mail"],// 100,-13,1400				
 			],
 			Plate = [
-				[1, "plate/legend_southern_plate_full"],// 75,-12,750				
+				[1, "plate/legend_armor_southern_plate_full"],// 75,-12,750				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4314,13 +4303,13 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500						
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500						
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500				
 			],
 			Plate = [
-				[1, "plate/legend_southern_named_golden_plates"],// 200,-36,5600   ss155,-21,3600	  7.38				
+				[1, "plate/legend_armor_southern_named_golden_plates"],// 200,-36,5600   ss155,-21,3600	  7.38				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -4334,7 +4323,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "named/legend_named_plated_fur_armor"],// 140, -14				
+				[1, "named/legend_armor_named_plated_fur_armor"],// 140, -14				
 			],
 			Chain = [],
 			Plate = [],
@@ -4350,7 +4339,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "named/legend_named_skull_and_chain_armor"],// 190, -24				
+				[1, "named/legend_armor_named_skull_and_chain_armor"],// 190, -24				
 			],
 			Chain = [],
 			Plate = [],
@@ -4384,7 +4373,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375			
@@ -4404,7 +4393,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250			
@@ -4426,7 +4415,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750
@@ -4449,10 +4438,10 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50			
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50			
 			],
 			Plate = [
 				[1, "plate/cr_named_noble_mail_armor"],// 115_130,-10_-8,4000				
@@ -4462,7 +4451,7 @@
 			Attachments = [
 				[1, "armor_upgrades/legend_leather_neckguard_upgrade"],// 10,-2,100	
 				[1, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 30,-2,250				
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0				
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0				
 			]
 		}			
 	]
@@ -4473,7 +4462,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/cr_armor_hauberk_sleevless_named"],// 110_130,-11_-9,3500						
@@ -4486,13 +4475,12 @@
 				[1, "cloak/legend_armor_cloak_heavy"],// 30,-4,500				
 			],
 			Tabard = [
-				[1, "tabard/legend_common_tabard"],// 5,0,200	
+				[1, "tabard/legend_armor_tabard"],// 5,0,200	
 				[1, ""],					
 			],
-			Attachments = [										
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
+			Attachments = [											
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0					
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0					
 			]
 		}
 	]
@@ -4503,7 +4491,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
@@ -4512,11 +4500,11 @@
 				[1, "plate/legend_armor_scale_coat_named"],// 130_160,-14_-10,5000					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150
-				[2, "cloak/legend_armor_cloak_common"],// 10,-1,100					
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150
+				[2, "cloak/legend_armor_cloak"],// 10,-1,100					
 			],
 			Tabard = [
-				[1, "tabard/legend_common_tabard"],// 5,0,200	
+				[1, "tabard/legend_armor_tabard"],// 5,0,200	
 				[1, ""],					
 			],
 			Attachments = [										
@@ -4531,24 +4519,24 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50					
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50					
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_lamellar_heavy_named"],// 175_195,-23_-19,7500 					
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150
-				[2, "cloak/legend_armor_cloak_common"],// 10,-1,100					
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150
+				[2, "cloak/legend_armor_cloak"],// 10,-1,100					
 			],
 			Tabard = [
-				[1, "tabard/legend_common_tabard"],// 5,0,200	
+				[1, "tabard/legend_armor_tabard"],// 5,0,200	
 				[1, ""],					
 			],
-			Attachments = [										
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
+			Attachments = [
+				[1, ""],											
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  					
 			]
 		}
@@ -4560,7 +4548,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson_named"],// 75_90,-6_-4,1500					
+				[1, "cloth/legend_armor_gambeson_named"],// 75_90,-6_-4,1500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
@@ -4569,18 +4557,17 @@
 				[1, "plate/legend_armor_scale_shirt"],// 85,-10,1750						
 			],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150
-				[2, "cloak/legend_armor_cloak_common"],// 10,-1,100					
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150
+				[2, "cloak/legend_armor_cloak"],// 10,-1,100					
 			],
 			Tabard = [
-				[1, "tabard/legend_common_tabard"],// 5,0,200	
+				[1, "tabard/legend_armor_tabard"],// 5,0,200	
 				[1, ""],					
 			],
 			Attachments = [										
-				[2, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
+				[2, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2		
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  
-				[1, "armor_upgrades/legend_hyena_fur_upgrade"],//	   15,0					
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0					
 			]
 		}
 	]
@@ -4591,40 +4578,38 @@
 	Sets = [
 		{
 			Cloth = [
-				[3, "cloth/legend_southern_tunic"],// 25,-1,50					
+				[3, "cloth/legend_armor_southern_tunic"],// 25,-1,50					
 			],
 			Chain = [						
 				[1, "chain/legend_armor_hauberk_full_named"],// 125_150,-13_-9,5000	 ss130_160,-14_-12							
 			],
 			Plate = [],
 			Cloak = [
-				[1, "cloak/legend_shoulder_cloth"],// 5,0,50				
+				[1, "cloak/legend_armor_shoulder_cloth"],// 5,0,50				
 			],
 			Tabard = [
-				[1, "tabard/legend_common_tabard"],// 5,0,200						
+				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
-			Attachments = [										
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
-				[2, "armor_upgrades/legend_hyena_fur_upgrade"],//  			15,0		
+			Attachments = [											
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0		
 			]
 		},
 		{
 			Cloth = [
-				[3, "cloth/legend_southern_tunic"],// 25,-1,50					
+				[3, "cloth/legend_armor_southern_tunic"],// 25,-1,50					
 			],
 			Chain = [						
 				[1, "chain/cr_armor_hauberk_sleevless_named"],// 110_130,-11_-9,3500							
 			],
 			Plate = [],
 			Cloak = [
-				[1, "cloak/legend_southern_scarf_wrap"],// 15,-1,150				
+				[1, "cloak/legend_armor_southern_scarf_wrap"],// 15,-1,150				
 			],
 			Tabard = [
-				[1, "tabard/legend_common_tabard"],// 5,0,200						
+				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
-			Attachments = [										
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
-				[2, "armor_upgrades/legend_hyena_fur_upgrade"],//  			15,0		
+			Attachments = [											
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0		
 			]
 		}			
 	]
@@ -4635,24 +4620,24 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50						
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50						
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_brigandine_named"],// 80_100,-7_-5,2500				
 			],
 			Cloak = [
-				[1, "cloak/legend_shoulder_cloth"],// 5,0,50				
+				[1, "cloak/legend_direwolf_pelt_cloak"],
+				[1, "cloak/legend_armor_shoulder_cloth"],// 5,0,50				
 			],
 			Tabard = [
 				[1, ""],// 				
-				[1, "tabard/legend_common_tabard"],// 5,0,200						
+				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
-			Attachments = [										
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
-				[2, "armor_upgrades/legend_hyena_fur_upgrade"],//  			15,0		
+			Attachments = [											
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0		
 			]
 		}
 	]
@@ -4663,20 +4648,20 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50						
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50						
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_jacket_named"],// 55_75,-4_-3,1500			
 			],
 			Cloak = [
-				[1, "cloak/legend_shoulder_cloth"],// 5,0,50				
+				[1, "cloak/legend_armor_shoulder_cloth"],// 5,0,50				
 			],
 			Tabard = [
 				[1, ""],// 				
-				[1, "tabard/legend_common_tabard"],// 5,0,200						
+				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
 			Attachments = [										
 				[1, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2		
@@ -4690,24 +4675,24 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_noble_surcoat"],// 55,-6,300  ss60,-5,400					
+				[1, "cloth/legend_armor_southern_noble_aketon"],// 55,-6,300  ss60,-5,400					
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50						
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50						
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_studded_jacket_named"],// 35_45,-2_-1,750			
 			],
 			Cloak = [
-				[1, "cloak/legend_shoulder_cloth"],// 5,0,50				
+				[1, "cloak/legend_direwolf_pelt_cloak"],
+				[1, "cloak/legend_armor_shoulder_cloth"],// 5,0,50				
 			],
 			Tabard = [
 				[1, ""],// 				
-				[1, "tabard/legend_common_tabard"],// 5,0,200						
+				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
-			Attachments = [	
-				[2, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
-				[2, "armor_upgrades/legend_hyena_fur_upgrade"],//  			15,0					
+			Attachments = [			
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0					
 				[1, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2		
 			]
 		}
@@ -4719,24 +4704,24 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble_named"],// 40_50,-2_-0,1500						
+				[1, "cloth/legend_armor_tunic_noble_named"],// 40_50,-2_-0,1500						
 			],
 			Chain = [
-				[5, "chain/legend_southern_cloth"],// 30,-2,50						
+				[5, "chain/legend_armor_southern_cloth"],// 30,-2,50						
 			],
 			Plate = [
 				[1, "plate/legend_armor_leather_noble"],// 65,-6,1500			
 			],
 			Cloak = [
-				[1, "cloak/legend_shoulder_cloth"],// 5,0,50				
+				[1, "cloak/legend_direwolf_pelt_cloak"],
+				[1, "cloak/legend_armor_shoulder_cloth"],// 5,0,50				
 			],
 			Tabard = [
 				[1, ""],// 				
-				[1, "tabard/legend_common_tabard"],// 5,0,200						
+				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
-			Attachments = [	
-				[2, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0			
-				[2, "armor_upgrades/legend_hyena_fur_upgrade"],//  			15,0					
+			Attachments = [			
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0					
 				[1, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2		
 			]
 		}
@@ -4748,7 +4733,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson_named"],// 75_90,-6_-4,1500						
+				[1, "cloth/legend_armor_gambeson_named"],// 75_90,-6_-4,1500						
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500						
@@ -4766,7 +4751,7 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson_named"],// 75_90,-6_-4,1500						
+				[1, "cloth/legend_armor_gambeson_named"],// 75_90,-6_-4,1500						
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500						
@@ -4792,7 +4777,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_noble_surcoat"],// 55,-6,300  ss60,-5,400						
+				[1, "cloth/legend_armor_southern_noble_aketon"],// 55,-6,300  ss60,-5,400						
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full_named"],// 125_150,-13_-9,5000						
@@ -4810,7 +4795,7 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_noble_surcoat"],// 55,-6,300  ss60,-5,400						
+				[1, "cloth/legend_armor_southern_noble_aketon"],// 55,-6,300  ss60,-5,400						
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full_named"],// 125_150,-13_-9,5000						
@@ -4836,13 +4821,13 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_noble_surcoat"],// 55,-6,300  ss60,-5,400						
+				[1, "cloth/legend_armor_southern_noble_aketon"],// 55,-6,300  ss60,-5,400						
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500							
 			],
 			Plate = [  					
-				[1, "plate/legend_southern_named_plates"],// 210_230,-26_-23,9000 
+				[1, "plate/legend_armor_southern_named_plates"],// 210_230,-26_-23,9000 
 				[1, "plate/cr_named_heraldic_mail"],// 215_245,-25_-22	   10000
 				[1, "plate/cr_named_sellswords_armor"],// 235_260,-28_-24,12000					
 				[1, "plate/cr_named_plated_mail_hauberk"],// 240_260,-29_-26,14000 				
@@ -4857,13 +4842,13 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_noble_surcoat"],// 55,-6,300  ss60,-5,400						
+				[1, "cloth/legend_armor_southern_noble_aketon"],// 55,-6,300  ss60,-5,400						
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500							
 			],
 			Plate = [  					
-				[1, "plate/legend_southern_named_plates"],// 210_230,-26_-23,9000 
+				[1, "plate/legend_armor_southern_named_plates"],// 210_230,-26_-23,9000 
 				[1, "plate/cr_named_heraldic_mail"],// 215_245,-25_-22	   10000
 				[1, "plate/cr_named_sellswords_armor"],// 235_260,-28_-24,12000					
 				[1, "plate/cr_named_plated_mail_hauberk"],// 240_260,-29_-26,14000					
@@ -4886,14 +4871,17 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "named/legend_named_plated_fur_armor"],// 140, -14				
+				[1, "named/legend_armor_named_plated_fur_armor"],// 140, -14				
 			],
 			Chain = [],
 			Plate = [],
-			Cloak = [],
+			Cloak = [ 
+				[1, ""],
+				[1, "cloak/legend_direwolf_pelt_cloak"],				
+			],
 			Tabard = [],
 			Attachments = [
-				[2, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0
+				[1, ""],
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  					
 			]
 		}
@@ -4905,14 +4893,17 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "named/legend_named_skull_and_chain_armor"],// 190, -24				
+				[1, "named/legend_armor_named_skull_and_chain_armor"],// 190, -24				
 			],
 			Chain = [],
 			Plate = [],
-			Cloak = [],
+			Cloak = [ 
+				[1, ""],
+				[1, "cloak/legend_direwolf_pelt_cloak"],				
+			],
 			Tabard = [],
 			Attachments = [
-				[2, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0
+				[1, ""],
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],// 				
 			]
 		}
@@ -4928,10 +4919,13 @@
 			],
 			Chain = [],
 			Plate = [],
-			Cloak = [],
+			Cloak = [ 
+				[1, ""],
+				[1, "cloak/legend_direwolf_pelt_cloak"],				
+			],
 			Tabard = [],
 			Attachments = [
-				[1, "armor_upgrades/legend_direwolf_pelt_upgrade"],// 		10,0
+				[1, ""],// 		10,0
 				[2, "armor_upgrades/legend_bone_platings_upgrade"],// 				
 			]
 		}
@@ -4943,7 +4937,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_ancient_cloth_restored"],// 35,-4,40					
+				[1, "cloth/legend_armor_ancient_cloth_restored"],// 35,-4,40					
 			],
 			Chain = [
 				[1, "chain/legend_armor_ancient_double_mail"],// 80,-14,750			
@@ -4964,8 +4958,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [],
 			Plate = [],
@@ -4981,8 +4975,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [],
 			Plate = [
@@ -4994,7 +4988,7 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_rusty_mail_shirt"],// 20,-4,125				
@@ -5012,10 +5006,10 @@
 	Sets = [
 		{
 			Cloth = [
-				[2, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[2, "cloth/legend_padded_surcoat_plain"],// 55,-6,150	
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[2, "cloth/legend_armor_quilted_aketon"],// 55,-6,150	
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -5034,7 +5028,7 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [],
 			Plate = [
@@ -5053,7 +5047,7 @@
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250					
@@ -5078,9 +5072,9 @@
 	Sets = [
 		{
 			Cloth = [
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375					
@@ -5102,9 +5096,9 @@
 		},
 		{
 			Cloth = [
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750				
@@ -5123,9 +5117,9 @@
 		},
 		{
 			Cloth = [
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
@@ -5146,12 +5140,12 @@
 		},
 		{
 			Cloth = [
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
-				[1, "chain/legend_southern_cloth"],// 30,-2,50					
+				[1, "chain/legend_armor_southern_cloth"],// 30,-2,50					
 			],
 			Plate = [
 				[2, "plate/legend_armor_leather_riveted_light"],// 80,-11,700
@@ -5170,9 +5164,9 @@
 		},
 		{
 			Cloth = [
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375					
@@ -5199,9 +5193,9 @@
 	Sets = [
 		{
 			Cloth = [
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375					
@@ -5226,9 +5220,9 @@
 		},
 		{
 			Cloth = [
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[4, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -5262,7 +5256,7 @@
 	Sets = [
 		{
 			Cloth = [							   //150,-19
-				[1, "cloth/legend_gambeson_wolf"],// 70,-9,300					
+				[1, "cloth/legend_armor_gambeson_wolf"],// 70,-9,300					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -5274,9 +5268,9 @@
 		},
 		{
 			Cloth = [					//185,-22
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -5291,7 +5285,7 @@
 		},
 		{
 			Cloth = [					//185,-22
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150				
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500					
@@ -5313,7 +5307,7 @@
 	Sets = [
 		{
 			Cloth = [							   //210,-27
-				[1, "cloth/legend_gambeson_wolf"],// 70,-9,300					
+				[1, "cloth/legend_armor_gambeson_wolf"],// 70,-9,300					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750					
@@ -5327,9 +5321,9 @@
 		},
 		{
 			Cloth = [					//220,-27
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -5345,7 +5339,7 @@
 		},
 		{
 			Cloth = [					//235,-28
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150				
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500					
@@ -5361,7 +5355,7 @@
 		},
 		{
 			Cloth = [					//225,-28
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150				
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800					
@@ -5375,7 +5369,7 @@
 		},
 		{
 			Cloth = [					//220,-27
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150				
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500
@@ -5398,9 +5392,9 @@
 	Sets = [
 		{
 			Cloth = [					//270,-34
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250					
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750					
@@ -5416,9 +5410,9 @@
 		},
 		{
 			Cloth = [					//265,-33
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800					
@@ -5434,7 +5428,7 @@
 		},
 		{
 			Cloth = [					//265,-34
-				[1, "cloth/legend_gambeson_wolf"],// 70,-9,300				
+				[1, "cloth/legend_armor_gambeson_wolf"],// 70,-9,300				
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750					
@@ -5448,9 +5442,9 @@
 		},
 		{
 			Cloth = [					//265,-32
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
@@ -5466,9 +5460,9 @@
 		},
 		{
 			Cloth = [					//270,-35
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800					
@@ -5484,7 +5478,7 @@
 		},
 		{
 			Cloth = [					//265,-35
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800					
@@ -5500,9 +5494,9 @@
 		},
 		{
 			Cloth = [					//280,-39
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800					
@@ -5522,8 +5516,8 @@
 	Sets = [
 		{
 			Cloth = [					//285,-35
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
@@ -5539,7 +5533,7 @@
 		},
 		{
 			Cloth = [					//300,-37
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -5555,8 +5549,8 @@
 		},
 		{
 			Cloth = [					//292,-35
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500					
@@ -5566,7 +5560,7 @@
 			],
 			Cloak = [],
 			Tabard = [
-				[1, "tabard/legend_southern_wrap_left"],// 2,0,50				
+				[1, "tabard/legend_armor_southern_wrap_left"],// 2,0,50				
 			],
 			Attachments = [
 				[1, "armor_upgrades/legend_double_mail_upgrade"],// 45,-5,500					
@@ -5574,9 +5568,9 @@
 		},			
 		{
 			Cloth = [					//290,-38
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
@@ -5590,9 +5584,9 @@
 		},	
 		{
 			Cloth = [					//295,-38
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
@@ -5606,9 +5600,9 @@
 		},	
 		{
 			Cloth = [					//297,-37
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750					
@@ -5618,14 +5612,14 @@
 			],
 			Cloak = [],
 			Tabard = [
-				[1, "tabard/legend_southern_wrap_left"],// 2,0,50				
+				[1, "tabard/legend_armor_southern_wrap_left"],// 2,0,50				
 			],
 			Attachments = []
 		},	
 		{
 			Cloth = [					//275,-35
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750					
@@ -5639,9 +5633,9 @@
 		},
 		{
 			Cloth = [					//290,-37
-				[3, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_gambeson"],// 65,-8,250
-				[1, "cloth/legend_gambeson_plain"],// 65,-8,250				
+				[3, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750						
@@ -5661,10 +5655,10 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_sackcloth"],// 10,-0,15
-				[1, "cloth/legend_sackcloth_patched"],// 15,-1,25
-				[2, "cloth/legend_thick_tunic"],// 30,-3,40
-				[2, "cloth/legend_dark_tunic"],// 35,-4,50					
+				[1, "cloth/legend_armor_sackcloth"],// 10,-0,15
+				[1, "cloth/legend_armor_sackcloth_patched"],// 15,-1,25
+				[2, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[2, "cloth/legend_armor_dark_tunic"],// 35,-4,50					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250					
@@ -5673,7 +5667,7 @@
 				[1, "chain/legend_armor_reinforced_worn_mail_shirt"],// 65,-11,350					
 			],
 			Plate = [
-				[1, "plate/legend_thick_furs_armor"],// 10,-1,15				
+				[1, "plate/legend_armor_thick_furs_armor"],// 10,-1,15				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5687,8 +5681,8 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375				
@@ -5696,8 +5690,8 @@
 				[1, "chain/legend_armor_reinforced_worn_mail_shirt"],// 65,-11,350					
 			],
 			Plate = [
-				[1, "plate/legend_reinforced_animal_hide_armor"],// 55,-9,150
-				[1, "plate/legend_scrap_metal_armor"],// 65,-10,250				
+				[1, "plate/legend_armor_reinforced_animal_hide_armor"],// 55,-9,150
+				[1, "plate/legend_armor_scrap_metal_armor"],// 65,-10,250				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5711,8 +5705,8 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250					
@@ -5720,7 +5714,7 @@
 				[2, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200				
 			],
 			Plate = [
-				[1, "plate/legend_animal_hide_armor"],// 30,-4,100				
+				[1, "plate/legend_armor_animal_hide_armor"],// 30,-4,100				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5728,8 +5722,8 @@
 		},
 		{
 			Cloth = [							   
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_worn_mail_shirt"],// 65,-11,350					
@@ -5737,7 +5731,7 @@
 				[2, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200				
 			],
 			Plate = [
-				[1, "plate/legend_thick_furs_armor"],// 10,-1,15				
+				[1, "plate/legend_armor_thick_furs_armor"],// 10,-1,15				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5745,14 +5739,14 @@
 		},
 		{
 			Cloth = [							   
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250				
 			],
 			Plate = [
-				[1, "plate/legend_reinforced_animal_hide_armor"],// 55,-9,150				
+				[1, "plate/legend_armor_reinforced_animal_hide_armor"],// 55,-9,150				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5766,8 +5760,8 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -5775,8 +5769,8 @@
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800					
 			],
 			Plate = [
-				[1, "plate/legend_hide_and_bone_armor"],// 80,-11,350					
-				[1, "plate/legend_rugged_scale_armor"],// 95,-15,700				
+				[1, "plate/legend_armor_hide_and_bone_armor"],// 80,-11,350					
+				[1, "plate/legend_armor_rugged_scale_armor"],// 95,-15,700				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5790,15 +5784,15 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40
-				[1, "cloth/legend_dark_tunic"],// 35,-4,50					
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40
+				[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50					
 			],
 			Chain = [
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500
 				[1, "chain/legend_armor_basic_mail"],// 85,-12,800					
 			],
 			Plate = [
-				[1, "plate/legend_heavy_iron_armor"],// 120,-18,1000				
+				[1, "plate/legend_armor_heavy_iron_armor"],// 120,-18,1000				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5812,8 +5806,8 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_ancient_cloth"],// 30,-5,20
-				[1, "cloth/legend_ancient_cloth_restored"],// 35,-4,40					
+				[1, "cloth/legend_armor_ancient_cloth"],// 30,-5,20
+				[1, "cloth/legend_armor_ancient_cloth_restored"],// 35,-4,40					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250
@@ -5821,7 +5815,7 @@
 				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200					
 			],
 			Plate = [
-				[1, "plate/legend_rugged_scale_armor"],// 95,-15,700				
+				[1, "plate/legend_armor_rugged_scale_armor"],// 95,-15,700				
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5835,8 +5829,8 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_ancient_cloth"],// 30,-5,20
-				[1, "cloth/legend_ancient_cloth_restored"],// 35,-4,40					
+				[1, "cloth/legend_armor_ancient_cloth"],// 30,-5,20
+				[1, "cloth/legend_armor_ancient_cloth_restored"],// 35,-4,40					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250
@@ -5844,7 +5838,7 @@
 				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200					
 			],
 			Plate = [
-				[1, "plate/legend_heavy_iron_armor"],// 120,-18,1000					
+				[1, "plate/legend_armor_heavy_iron_armor"],// 120,-18,1000					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5858,14 +5852,14 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_sackcloth_patched"],// 15,-1,25					
+				[1, "cloth/legend_armor_sackcloth_patched"],// 15,-1,25					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500				
 			],
 			Plate = [
-				[1, "plate/legend_heavy_iron_armor"],// 120,-18,1000					
+				[1, "plate/legend_armor_heavy_iron_armor"],// 120,-18,1000					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5879,8 +5873,8 @@
 	Sets = [
 		{
 			Cloth = [							   
-				[1, "cloth/legend_ancient_cloth"],// 30,-5,20
-				[1, "cloth/legend_ancient_cloth_restored"],// 35,-4,40					
+				[1, "cloth/legend_armor_ancient_cloth"],// 30,-5,20
+				[1, "cloth/legend_armor_ancient_cloth_restored"],// 35,-4,40					
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250
@@ -5888,7 +5882,7 @@
 				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200					
 			],
 			Plate = [
-				[1, "plate/legend_thick_plated_barbarian_armor"],// 155,-26,1500			 5.96						
+				[1, "plate/legend_armor_thick_plated_barbarian_armor"],// 155,-26,1500			 5.96						
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5902,7 +5896,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500					
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500					
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750				
@@ -5927,8 +5921,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750				
@@ -5950,8 +5944,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-				[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -5972,7 +5966,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_ancient_cloth"],// 30,-5,20				
+				[1, "cloth/legend_armor_ancient_cloth"],// 30,-5,20				
 			],
 			Chain = [
 				[1, "chain/legend_armor_ancient_double_mail"],// 80,-14,750				
@@ -5994,7 +5988,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_sackcloth"],// 10,-0,15				
+				[1, "cloth/legend_armor_sackcloth"],// 10,-0,15				
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200				
@@ -6014,7 +6008,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_dark_tunic"],// 35,-4,50				
+				[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50				
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk_full"],// 115,-14,2500				
@@ -6034,7 +6028,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65, -8 ,250				
+				[1, "cloth/legend_armor_gambeson"],// 65, -8 ,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_basic_mail"],// 85, -12, 800				
@@ -6054,7 +6048,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],				
+				[1, "cloth/legend_armor_quilted_aketon"],				
 			],
 			Chain = [],
 			Plate = [
@@ -6074,7 +6068,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_gambeson"],// 65,-8,250				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250				
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail"],// 110,-15,1750				
@@ -6096,7 +6090,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500			
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500			
 			],
 			Chain = [
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375				
@@ -6116,7 +6110,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_tunic_noble"],// 40,-2,500			
+				[1, "cloth/legend_armor_tunic_noble"],// 40,-2,500			
 			],
 			Chain = [
 				[1, "chain/legend_armor_reinforced_mail_shirt"],// 80,-10,1000					
@@ -6138,7 +6132,7 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150			
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150			
 			],
 			Chain = [
 				[1, "chain/legend_armor_hauberk"],// 95,-11,1750				
@@ -6158,26 +6152,26 @@
 	Sets = [
 		{
 			Cloth = [
-				[3, "cloth/legend_southern_robe"],// 25,-1,35
-				[1, "cloth/legend_tunic"],// 20,-1,25					
+				[3, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[1, "cloth/legend_armor_tunic"],// 20,-1,25					
 			],
 			Chain = [
 				[1, "chain/legend_armor_ancient_mail"],// 35,-6,300
 				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200					
 			],
 			Plate = [
-				[1, "plate/legend_southern_leather_jacket", 5],// 30,-3,110
+				[1, "plate/legend_armor_southern_leather_jacket", 5],// 30,-3,110
 			],
 			Cloak = [],
 			Tabard = [
-				[1, "tabard/legend_southern_wrap_left"],// 2,0,50				
+				[1, "tabard/legend_armor_southern_wrap_left"],// 2,0,50				
 			],
 			Attachments = []
 		},
 		{
 			Cloth = [
-				[3, "cloth/legend_southern_robe"],// 25,-1,35
-				[1, "cloth/legend_tunic"],// 20,-1,25					
+				[3, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[1, "cloth/legend_armor_tunic"],// 20,-1,25					
 			],
 			Chain = [
 				[1, "chain/legend_armor_rusty_mail_shirt"],// 20,-4,125	
@@ -6188,8 +6182,8 @@
 			],
 			Cloak = [],
 			Tabard = [
-				[2, "tabard/legend_southern_wrap_left"],// 2,0,50					
-				[1, "tabard/legend_southern_wrap"],// 5,0,100					
+				[2, "tabard/legend_armor_southern_wrap_left"],// 2,0,50					
+				[1, "tabard/legend_armor_southern_wrap"],// 5,0,100					
 			],
 			Attachments = []
 		}			
@@ -6201,8 +6195,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[3, "cloth/legend_southern_robe"],// 25,-1,35
-				[1, "cloth/legend_tunic"],// 20,-1,25					
+				[3, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[1, "cloth/legend_armor_tunic"],// 20,-1,25					
 			],
 			Chain = [
 				[2, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250					
@@ -6213,8 +6207,8 @@
 			],
 			Cloak = [],
 			Tabard = [
-				[2, "tabard/legend_southern_wrap_left"],// 2,0,50
-				[1,"tabard/legend_southern_overcloth"],// 10,-1,150					
+				[2, "tabard/legend_armor_southern_wrap_left"],// 2,0,50
+				[1,"tabard/legend_armor_southern_overcloth"],// 10,-1,150					
 			],
 			Attachments = []
 		}			
@@ -6226,8 +6220,8 @@
 	Sets = [
 		{
 			Cloth = [
-				[3, "cloth/legend_southern_robe"],// 25,-1,35
-				[1, "cloth/legend_tunic"],// 20,-1,25					
+				[3, "cloth/legend_armor_southern_robe"],// 25,-1,35
+				[1, "cloth/legend_armor_tunic"],// 20,-1,25					
 			],
 			Chain = [					
 				[2, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -6235,11 +6229,11 @@
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
 			],
 			Plate = [
-				[1, "plate/legend_southern_arm_guards"],// 30,-2,300						
+				[1, "plate/legend_armor_southern_arm_guards"],// 30,-2,300						
 			],
 			Cloak = [],
 			Tabard = [
-				[1,"tabard/legend_southern_overcloth"],// 10,-1,150				
+				[1,"tabard/legend_armor_southern_overcloth"],// 10,-1,150				
 			],
 			Attachments = []
 		}			
@@ -6251,33 +6245,33 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35					
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35					
 			],
 			Chain = [										
 				[1, "chain/legend_armor_hauberk_sleevless"],// 65,-7,1250					
 			],
 			Plate = [
-				[1, "plate/legend_southern_arm_guards"],// 30,-2,300						
+				[1, "plate/legend_armor_southern_arm_guards"],// 30,-2,300						
 			],
 			Cloak = [],
 			Tabard = [
-				[1,"tabard/legend_southern_overcloth"],// 10,-1,150				
+				[1,"tabard/legend_armor_southern_overcloth"],// 10,-1,150				
 			],
 			Attachments = []
 		},
 		{
 			Cloth = [
-				[1, "cloth/legend_southern_robe"],// 25,-1,35					
+				[1, "cloth/legend_armor_southern_robe"],// 25,-1,35					
 			],
 			Chain = [										
-				[1, "chain/legend_southern_cloth"],// 30,-2,50					
+				[1, "chain/legend_armor_southern_cloth"],// 30,-2,50					
 			],
 			Plate = [
-				[1, "plate/legend_southern_padded"],// 65,-7,400						
+				[1, "plate/legend_armor_southern_padded"],// 65,-7,400						
 			],
 			Cloak = [],
 			Tabard = [
-				[1,"tabard/legend_southern_overcloth"],// 10,-1,150				
+				[1,"tabard/legend_armor_southern_overcloth"],// 10,-1,150				
 			],
 			Attachments = []
 		}			
@@ -6289,14 +6283,14 @@
 	Sets = [
 		{
 			Cloth = [
-				[2, "cloth/legend_sackcloth"],// 10,-0,15
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40									
+				[2, "cloth/legend_armor_sackcloth"],// 10,-0,15
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40									
 			],
 			Chain = [				
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375					
 			],
 			Plate = [				
-				[1, "plate/legend_heavy_iron_armor"], // 120			
+				[1, "plate/legend_armor_heavy_iron_armor"], // 120			
 			],
 			Cloak = [],
 			Tabard = [],
@@ -6312,14 +6306,14 @@
 	Sets = [
 		{
 			Cloth = [
-				[1, "cloth/legend_thick_tunic"],// 30,-3,40										
+				[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40										
 			],
 			Chain = [				
 				[2, "chain/legend_armor_mail_shirt"],// 50,-6,375
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500					
 			],
 			Plate = [				
-				[1, "plate/legend_thick_plated_barbarian_armor"], // 155			
+				[1, "plate/legend_armor_thick_plated_barbarian_armor"], // 155			
 			],
 			Cloak = [],
 			Tabard = [],
@@ -6335,15 +6329,15 @@
 	Sets = [
 		{
 			Cloth = [				
-				[1, "cloth/legend_padded_surcoat"],// 55,-6,150				
-				[1, "cloth/legend_gambeson"],// 65,-8,250					
+				[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150				
+				[1, "cloth/legend_armor_gambeson"],// 65,-8,250					
 			],
 			Chain = [				
 				[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
 				[1, "chain/legend_armor_short_mail"],// 60,-8,500					
 			],
 			Plate = [				
-				[1, "plate/legend_thick_plated_barbarian_armor"], // 155			
+				[1, "plate/legend_armor_thick_plated_barbarian_armor"], // 155			
 			],
 			Cloak = [],
 			Tabard = [],
@@ -6361,15 +6355,15 @@
 			Cloth = [
 				[
 					1,
-					"cloth/legend_thick_tunic"
+					"cloth/legend_armor_thick_tunic"
 				],
 				[
 					1,
-					"cloth/legend_padded_surcoat_plain"
+					"cloth/legend_armor_quilted_aketon"
 				],
 				[
 					1,
-					"cloth/legend_dark_tunic"
+					"cloth/legend_armor_dark_tunic"
 				]
 			],
 			Chain = [
@@ -6440,15 +6434,15 @@
 			Cloth = [
 				[
 					2,
-					"cloth/legend_gambeson"
+					"cloth/legend_armor_gambeson"
 				],
 				[
 					7,
-					"cloth/legend_padded_surcoat_plain"
+					"cloth/legend_armor_quilted_aketon"
 				],
 				[
 					1,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				]
 			],
 			Chain = [
@@ -6510,15 +6504,15 @@
 			Cloth = [
 				[
 					2,
-					"cloth/legend_gambeson"
+					"cloth/legend_armor_gambeson"
 				],
 				[
 					7,
-					"cloth/legend_padded_surcoat_plain"
+					"cloth/legend_armor_quilted_aketon"
 				],
 				[
 					1,
-					"cloth/legend_tunic_noble"
+					"cloth/legend_armor_tunic_noble"
 				]
 			],
 			Chain = [

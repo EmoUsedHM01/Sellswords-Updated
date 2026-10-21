@@ -107,7 +107,9 @@ this.necro_embalmbed_slave <- this.inherit("scripts/skills/backgrounds/character
 				this.Const.Perks.OrganisedTree,
 				this.Const.Perks.FitTree
 			],
-			Enemy = [],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 			Class = [
 				this.Const.Perks.MummyClassTree
 			],
@@ -225,12 +227,12 @@ this.necro_embalmbed_slave <- this.inherit("scripts/skills/backgrounds/character
 			if (this.Math.rand(1, 100) <= 66)
 				items.equip(this.new("scripts/items/shields/ancient/legend_mummy_shield"));
 
-		items.equip(this.new("scripts/items/legend_armor/cloth/legend_bandages"));
+		items.equip(this.new("scripts/items/legend_armor/cloth/legend_armor_bandages"));
 		
 		local item = this.Const.World.Common.pickHelmet([
 			[
 				2,
-				"ancient/legend_mummy_bandages"
+				"hood/legend_mummy_bandage"
 			],
 			[
 				2,

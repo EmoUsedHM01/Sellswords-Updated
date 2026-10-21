@@ -4,8 +4,8 @@
 	"legend_armor/plate/legend_armor_leather_lamellar_heavy_named",
 	"legend_armor/plate/legend_armor_leather_brigandine_named",
 	"legend_armor/plate/legend_armor_scale_coat_named",
-	"legend_armor/plate/legend_southern_named_golden_plates",
-	"legend_armor/plate/legend_southern_named_plates"
+	"legend_armor/plate/legend_armor_southern_named_golden_plates",
+	"legend_armor/plate/legend_armor_southern_named_plates"
 ];
 ::Const.Items.NamedArmors.push("armor/crnamed_armor_assorted_heavy");
 ::Const.Items.NamedArmors.push("armor/crnamed_armor_assorted_others");

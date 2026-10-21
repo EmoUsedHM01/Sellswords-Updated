@@ -90,7 +90,6 @@ this.necro_ancient_honour_guard <- this.inherit("scripts/skills/backgrounds/char
 		];
 		this.m.PerkTreeDynamic = {
 			Weapon = [
-				this.Const.Perks.TwoHandedTree,
 				this.Const.Perks.PolearmTree,
 				this.Const.Perks.AxeTree,
 				this.Const.Perks.MaceTree,
@@ -108,8 +107,7 @@ this.necro_ancient_honour_guard <- this.inherit("scripts/skills/backgrounds/char
 				this.Const.Perks.TrainedTree
 			],
 			Enemy = [
-				this.Const.Perks.CivilizationTree,
-				this.Const.Perks.SwordmastersTree
+				this.Const.Perks.CivilizationTree
 			],
 			Class = [
 				this.Const.Perks.SkeletonClassTree

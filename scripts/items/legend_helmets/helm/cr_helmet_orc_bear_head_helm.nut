@@ -20,7 +20,6 @@ this.cr_helmet_orc_bear_head_helm <- this.inherit("scripts/items/legend_helmets/
 		this.m.ConditionMax = 115;
 		this.m.StaminaModifier = -12;
 		this.m.Vision = -1;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = false;
 		this.m.ItemType = this.m.ItemType;

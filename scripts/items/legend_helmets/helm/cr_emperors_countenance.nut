@@ -20,7 +20,6 @@ this.cr_emperors_countenance <- this.inherit("scripts/items/legend_helmets/legen
 		this.m.ConditionMax = 300;
 		this.m.StaminaModifier = -18;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.m.ItemType = this.m.ItemType | this.Const.Items.ItemType.Legendary;

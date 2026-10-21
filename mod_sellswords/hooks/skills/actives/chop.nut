@@ -39,7 +39,6 @@
 		{
 			shield = 0;
 		}
-		return this.m.IsOrcWeapon == true && shield == 0;
 	}
 
 	q.onAnySkillUsed = @( __original ) function( _skill, _targetEntity, _properties )

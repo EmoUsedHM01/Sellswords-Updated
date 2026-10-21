@@ -41,7 +41,7 @@
 				Tops = [					
 				],
 				Vanity = [
-					[2, "vanity/legend_helmet_faction_decayed_helmet"],//10,0,100
+					[2, "vanity/legend_helmet_rotten_faction_helmet"],//10,0,100
 					[1, "vanity/legend_helmet_metal_bird"],//10,0,100
 					[1, "vanity/legend_helmet_sack"],//10,0,100					
 				]
@@ -303,7 +303,7 @@
 				],
 				Helms = [
 					[1, "helm/legend_helmet_deep_sallet"],//100,-5,1000,-1
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1					
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1					
 				],
 				Tops = [
 					[1, "top/legend_helmet_chain_attachment"],//25,-1,250
@@ -784,10 +784,10 @@
 					]					
 				],
 				Vanity = [
-					[1, "vanity_lower/legend_helmet_back_crest"],//10,0,100
-					[1, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10
-					[1, "vanity_lower/legend_helmet_wings"],//10,0,100						
+					[1, "vanity/legend_helmet_back_crest"],//10,0,100
+					[1, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10
+					[1, "vanity/legend_helmet_wings"],//10,0,100						
 				]
 			}
 		]
@@ -825,11 +825,11 @@
 					[1, "vanity/legend_helmet_noble_hat"],//10,0,100
 					[1, "vanity/legend_helmet_noble_hood"],//10,0,100
 					[3, "vanity/legend_helmet_crown"],//10,0,100
-					[1, "vanity_lower/legend_helmet_back_crest"],//10,0,100
-					[1, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10
-					[1, "vanity_lower/legend_helmet_wings"],//10,0,100	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100					
+					[1, "vanity/legend_helmet_back_crest"],//10,0,100
+					[1, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10
+					[1, "vanity/legend_helmet_wings"],//10,0,100	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100					
 				]
 			}
 		]
@@ -880,7 +880,7 @@
 					],
 					[
 						4,
-						"helm/legend_helmet_flat_top_helm_polished"
+						"helm/legend_helmet_flat_top_helm"
 					],
 					[
 						1,
@@ -1300,9 +1300,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100					
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100					
 				]
 			}
 		]
@@ -1330,9 +1330,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100					
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100					
 				]
 			}
 		]
@@ -1346,7 +1346,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325
 				],
 				Helms = [	
-					[1, "helm/legend_helmet_enclave_venitian_bascinet"],//180,-14,300,-2   ss285,-22,4000,-2 				
+					[1, "helm/legend_helmet_enclave_peaked_bascinet"],//180,-14,300,-2   ss285,-22,4000,-2 				
 				],
 				Tops = [
 					[1, "top/legend_helmet_faceplate_curved"],//35,-2,300,-1
@@ -1364,9 +1364,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100					
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100					
 				]
 			}
 		]
@@ -1380,7 +1380,7 @@
 					[1, "hood/legend_helmet_enclave_bevor"],// 95,-7,750	ss120,-8,1000
 				],
 				Helms = [	
-					[1, "helm/legend_helmet_enclave_venitian_bascinet"],//180,-14,300,-2   ss285,-22,4000,-2 				
+					[1, "helm/legend_helmet_enclave_peaked_bascinet"],//180,-14,300,-2   ss285,-22,4000,-2 				
 				],
 				Tops = [
 					[1, "top/legend_helmet_faceplate_curved"],//35,-2,300,-1
@@ -1398,9 +1398,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100					
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100					
 				]
 			}
 		]
@@ -1435,9 +1435,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100					
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100					
 				]
 			}
 		]
@@ -1463,9 +1463,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1490,9 +1490,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1518,9 +1518,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1545,9 +1545,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1562,10 +1562,10 @@
 					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss90,-5,600
 				],
 				Helms = [
-					[1, "helm/legend_helmet_enclave_venitian_bascinet"],//180,-14,300,-2   ss285,-22,4000,-2  				
+					[1, "helm/legend_helmet_enclave_peaked_bascinet"],//180,-14,300,-2   ss285,-22,4000,-2  				
 				],
 				Tops = [
-					[1, "top/legend_helmet_enclave_venitian_bascinet_visor"],//45,-3,500,-1		ss85,-6,1200,-3			
+					[1, "top/legend_helmet_enclave_peaked_bascinet_visor"],//45,-3,500,-1		ss85,-6,1200,-3			
 				],
 				Vanity = [
 					[10, ""],			
@@ -1573,9 +1573,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1589,10 +1589,10 @@
 					[1, "hood/legend_helmet_enclave_bevor"],// 95,-7,750	ss130,-8,1000
 				],
 				Helms = [
-					[1, "helm/legend_helmet_enclave_venitian_bascinet"],//180,-14,300,-2   ss285,-22,4000,-2  					
+					[1, "helm/legend_helmet_enclave_peaked_bascinet"],//180,-14,300,-2   ss285,-22,4000,-2  					
 				],
 				Tops = [
-					[1, "top/legend_helmet_enclave_venitian_bascinet_visor"],//45,-3,500,-1		ss85,-6,1200,-3			
+					[1, "top/legend_helmet_enclave_peaked_bascinet_visor"],//45,-3,500,-1		ss85,-6,1200,-3			
 				],
 				Vanity = [
 					[10, ""],			
@@ -1600,9 +1600,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1632,9 +1632,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1662,9 +1662,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1694,9 +1694,9 @@
 					[6, "vanity/legend_helmet_plait"],//10,0,100
 					[4, "vanity/legend_helmet_ponytail"],//10,0,10
 					[3, "vanity/legend_helmet_top_feather"],//10,0,100
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100
-					[1, "vanity_lower/legend_helmet_feather_crest"],//10,0,10	
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100						
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100
+					[1, "vanity/legend_helmet_feather_crest"],//10,0,10	
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100						
 				]
 			}
 		]
@@ -1802,7 +1802,7 @@
 					],
 					[
 						2,
-						"helm/legend_helmet_enclave_venitian_bascinet"
+						"helm/legend_helmet_enclave_peaked_bascinet"
 					],
 					[
 						2,
@@ -1870,7 +1870,7 @@
 					],
 					[
 						1,
-						"vanity_lower/legend_helmet_back_feathers"
+						"vanity/legend_helmet_back_feathers"
 					]
 				]
 			}
@@ -1906,7 +1906,7 @@
 					],
 					[
 						2,
-						"helm/legend_helmet_enclave_venitian_bascinet"
+						"helm/legend_helmet_enclave_peaked_bascinet"
 					],
 					[
 						2,
@@ -1962,7 +1962,7 @@
 					],
 					[
 						1,
-						"vanity_lower/legend_helmet_back_feathers"
+						"vanity/legend_helmet_back_feathers"
 					]
 				]
 			}
@@ -2074,7 +2074,7 @@
 					],
 					[
 						1,
-						"vanity_lower/legend_helmet_back_feathers"
+						"vanity/legend_helmet_back_feathers"
 					]
 				]
 			}
@@ -2125,11 +2125,11 @@
 				Vanity = [
 					[
 						2,
-						"vanity_lower/legend_helmet_orc_tail"
+						"vanity/legend_helmet_orc_tail"
 					],
 					[
 						1,
-						"vanity_lower/legend_helmet_knotted_tail"
+						"vanity/legend_helmet_knotted_tail"
 					]				
 				]
 			}
@@ -2152,11 +2152,11 @@
 				Vanity = [
 					[
 						2,
-						"vanity_lower/legend_helmet_orc_tail"
+						"vanity/legend_helmet_orc_tail"
 					],
 					[
 						1,
-						"vanity_lower/legend_helmet_knotted_tail"
+						"vanity/legend_helmet_knotted_tail"
 					]				
 				]
 			}
@@ -2619,7 +2619,7 @@
 					[2, "helm/legend_helmet_flat_top_helm"],//85,-5,325,-1
 					[2, "helm/legend_helmet_scale_helm"],//75,-5,725,-1					
 					[2, "helm/legend_helmet_rondel_helm"],//85,-6,775,-1
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1
 					[1, "helm/legend_helmet_barbute"],//75,-3,1250,-2						
 				],
 				Tops = [
@@ -2780,7 +2780,7 @@
 				],
 				Helms = [
 					[1, "helm/legend_helmet_barbute"],//75,-3,1250,-2									
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1
 					[1, "helm/legend_helmet_kettle_helm_med"],//95,-7,500,-1
 					[1, "helm/legend_helmet_kettle_helm"],//115,-8,750,-2					
 				],
@@ -2891,7 +2891,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325					
 				],
 				Helms = [
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1
 					[1, "helm/legend_helmet_flat_top_helm"],//85,-5,325,-1
 					[2, "helm/legend_helmet_rondel_helm"],//85,-6,775,-1						
 				],
@@ -2913,7 +2913,7 @@
 				],
 				Helms = [
 					[2, "helm/legend_helmet_deep_sallet"],//100,-5,1000,-1
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1				
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1				
 				],
 				Tops = [					
 					[1, "top/legend_helmet_faceplate_long"],//35,-3,180,-1		ss45,-3,450,0					
@@ -2955,7 +2955,7 @@
 				],
 				Helms = [
 					[1, "helm/legend_helmet_deep_sallet"],//100,-5,1000,-1
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1					
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1					
 				],
 				Tops = [					
 					[1, "top/legend_helmet_faceplate_long"],//35,-3,180,-1		ss45,-3,450,0					
@@ -2978,7 +2978,7 @@
 				],
 				Helms = [
 					[1, "helm/legend_helmet_deep_sallet"],//100,-5,1000,-1
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1					
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1					
 				],
 				Tops = [					
 					[1, "top/legend_helmet_faceplate_long"],//35,-3,180,-1		ss45,-3,450,0					
@@ -3018,7 +3018,7 @@
 				Helms = [	
 					[1, "helm/legend_helmet_flat_top_face_plate"],//120,-9,900,-2	ss120,-7,900
 					[1, "helm/legend_helmet_flat_top_helm"],//85,-5,325,-1
-					[2, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1					
+					[2, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1					
 				],
 				Tops = [
 					[1, "top/legend_helmet_faceplate_curved"],//35,-2,300,-1
@@ -3035,7 +3035,7 @@
 					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss100,-6,600					
 				],
 				Helms = [	
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1					
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1					
 				],
 				Tops = [
 					[3, "top/legend_helmet_faceplate_curved"],//35,-2,300,-1
@@ -3068,7 +3068,7 @@
 					],
 					[
 						2,
-						"helm/legend_helmet_enclave_venitian_bascinet"
+						"helm/legend_helmet_enclave_peaked_bascinet"
 					],
 					[
 						2,
@@ -3115,7 +3115,7 @@
 					],
 					[
 						1,
-						"vanity_lower/legend_helmet_back_feathers"
+						"vanity/legend_helmet_back_feathers"
 					]
 				]
 			}
@@ -3250,7 +3250,7 @@
 					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss100,-6,600					
 				],
 				Helms = [
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1
 					[2, "helm/legend_helmet_flat_top_face_plate"],//120,-9,900,-2	ss120,-7,900
 					[2, "helm/legend_helmet_flat_top_helm"],//85,-5,325,-1					
 				],
@@ -3851,7 +3851,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325			
 				],
 				Helms = [
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1
 					[1, "helm/legend_helmet_deep_sallet"],//100,-5,1000,-1					
 				],
 				Tops = [
@@ -3877,7 +3877,7 @@
 				],
 				Tops = [],
 				Vanity = [
-					[1, "vanity_lower/legend_helmet_back_crest", 1], // 10, 0, 100
+					[1, "vanity/legend_helmet_back_crest", 1], // 10, 0, 100
 				]
 			}
 		]
@@ -4014,7 +4014,7 @@
 				Helms = [
 					[2, "helm/legend_helmet_flat_top_helm"],//85,-5,325,-1
 					[1, "helm/legend_helmet_flat_top_helm_low"],//70,-4,225,-1
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1					
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1					
 				],
 				Tops = [],
 				Vanity = [
@@ -4101,7 +4101,7 @@
 				],
 				Helms = [
 					[1, "helm/legend_helmet_flat_top_helm"],//85,-5,325,-1
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1					
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1					
 				],
 				Tops = [],
 				Vanity = []
@@ -4178,7 +4178,7 @@
 				],
 				Helms = [
 					[1, "helm/legend_helmet_barbute"],//75,-3,1250,-2					
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1					
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1					
 				],
 				Tops = [],
 				Vanity = [
@@ -4242,9 +4242,9 @@
 				],
 				Helms = [
 					[2, "helm/legend_helmet_deep_sallet"],//100,-5,1000,-1				
-					[4, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1
+					[4, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1
 					[2, "helm/legend_helmet_flat_top_face_plate"],//120,-9,900,-2	ss120,-7,900					
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1
 					[1, "helm/legend_helmet_enclave_kettle"],//145,-10,1250,-2					
 				],
 				Tops = [
@@ -4289,7 +4289,7 @@
 					[1, "helm/legend_helmet_norman_helm"],//50,-3,150,-1
 					[1, "helm/legend_helmet_flat_top_helm_low"],//70,-4,225,-1
 					[1, "helm/legend_helmet_kettle_helm_low"],//75,-5,250,-1					
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1					
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1					
 				],
 				Tops = [],
 				Vanity = [
@@ -4310,7 +4310,7 @@
 				Helms = [
 					[1, "helm/legend_helmet_flat_top_helm"],//85,-5,325,-1
 					[1, "helm/legend_helmet_kettle_helm_med"],//95,-7,500,-1					
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1					
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1					
 				],
 				Tops = [],
 				Vanity = [
@@ -4329,7 +4329,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325					
 				],
 				Helms = [
-					[1, "helm/legend_helmet_flat_top_helm_polished"],//100,-5,550,-1
+					[1, "helm/legend_helmet_flat_top_helm"],//100,-5,550,-1
 					[1, "helm/legend_helmet_kettle_helm_high"],//125,-9,850,-1										
 				],
 				Tops = [
@@ -4407,14 +4407,14 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325					
 				],
 				Helms = [
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1			ss90,-5,900					
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1			ss90,-5,900					
 				],
 				Tops = [
 					[1, "top/legend_helmet_faceplate_raised"],//500,-3,800,0	named----   ss45_55,-2,0,900				
 				],
 				Vanity = [
-					[3, "vanity_lower/legend_helmet_back_feathers"],//10,0,100				
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100					
+					[3, "vanity/legend_helmet_back_feathers"],//10,0,100				
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100					
 				]
 			}			
 		]
@@ -4432,7 +4432,7 @@
 				],
 				Tops = [],
 				Vanity = [
-					[1, "vanity_lower/legend_helmet_top_plume"],//10,0,100					
+					[1, "vanity/legend_helmet_top_plume"],//10,0,100					
 				]
 			}			
 		]
@@ -4554,7 +4554,7 @@
 				],
 				Tops = [],
 				Vanity = [
-					[1, "vanity/legend_helmet_faction_decayed_helmet"],//10,0,100
+					[1, "vanity/legend_helmet_rotten_faction_helmet"],//10,0,100
 					[1, "vanity/legend_helmet_sack"],//10,0,100
 					[1, "vanity/cr_death_knight_vanity"],//10,0,100	
 					[1, ""],					
@@ -4569,7 +4569,7 @@
 				],
 				Tops = [],
 				Vanity = [
-					[1, "vanity/legend_helmet_faction_decayed_helmet"],//10,0,100
+					[1, "vanity/legend_helmet_rotten_faction_helmet"],//10,0,100
 					[1, "vanity/legend_helmet_sack"],//10,0,100
 					[1, "vanity/cr_death_knight_vanity"],//10,0,100	
 					[1, ""],					
@@ -4803,7 +4803,7 @@
 					],
 					[
 						1,
-						"helm/legend_helmet_flat_top_helm_polished"
+						"helm/legend_helmet_flat_top_helm"
 					],					
 					[
 						1,
@@ -4811,7 +4811,7 @@
 					],
 					[
 						4,
-						"helm/legend_helmet_basinet"
+						"helm/legend_helmet_bascinet"
 					]
 				],
 				Tops = [
@@ -5079,7 +5079,7 @@
 					[1, "hood/legend_helmet_chain_hood"],// 75,-4,300	ss80,-4,325					
 				],
 				Helms = [
-					[1, "helm/legend_helmet_basinet"],//80,-5,1250,-1						
+					[1, "helm/legend_helmet_bascinet"],//80,-5,1250,-1						
 				],
 				Tops = [
 					[1, "top/legend_helmet_faceplate_snub_nose"],//45,-3,500,-1		ss50,-3,550,-1
@@ -5231,7 +5231,7 @@
 				Tops = [],
 				Vanity = [
 					[3, ""],//10,0,100
-					[2, "vanity_lower/legend_helmet_knotted_tail"],//10,0,100
+					[2, "vanity/legend_helmet_knotted_tail"],//10,0,100
 					[1, "vanity/legend_helmet_impaled_head"],//10,0,100					
 				]
 			}			

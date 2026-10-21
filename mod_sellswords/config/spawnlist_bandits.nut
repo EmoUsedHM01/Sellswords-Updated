@@ -26,7 +26,7 @@
 			},
 			{
 				MinR = 420,
-				Type = this.Const.World.Spawn.Troops.BanditVeteran,
+				Type = this.Const.World.Spawn.Troops.BanditMarauder,
 				Cost = 30
 			}
 		]
@@ -169,7 +169,7 @@
 			},
 			{
 				MinR = 420,
-				Type = this.Const.World.Spawn.Troops.BanditVeteran,
+				Type = this.Const.World.Spawn.Troops.BanditMarauder,
 				Cost = 30
 			}
 		]
@@ -360,7 +360,7 @@
 			},
 			{
 				MinR = 420,
-				Type = this.Const.World.Spawn.Troops.BanditVeteran,
+				Type = this.Const.World.Spawn.Troops.BanditMarauder,
 				Cost = 30
 			}
 		]
@@ -612,7 +612,7 @@
 			},
 			{
 				MinR = 420,
-				Type = this.Const.World.Spawn.Troops.BanditVeteran,
+				Type = this.Const.World.Spawn.Troops.BanditMarauder,
 				Cost = 30
 			}
 		]
@@ -827,7 +827,7 @@
 	{
 		MinR = 500,
 		Weight = 1,
-		Type = this.Const.World.Spawn.Troops.BanditWarlord,
+		Type = this.Const.World.Spawn.Troops.LegendRobberBaron,
 		Cost = 100,
 		Roll = true
 	}
@@ -894,7 +894,7 @@
 			},
 			{
 				MinR = 420,
-				Type = this.Const.World.Spawn.Troops.BanditVeteran,
+				Type = this.Const.World.Spawn.Troops.BanditMarauder,
 				Cost = 30
 			}
 		]
@@ -1007,7 +1007,7 @@
 	Body = "figure_bandit_01",
 	Fixed = [
 		{
-			Type = this.Const.World.Spawn.Troops.BanditWarlord,
+			Type = this.Const.World.Spawn.Troops.LegendRobberBaron,
 			Weight = 100,
 			Cost = 10
 		}
@@ -1072,7 +1072,7 @@
 				},
 				{
 					MinR = 420,
-					Type = this.Const.World.Spawn.Troops.BanditVeteran,
+					Type = this.Const.World.Spawn.Troops.BanditMarauder,
 					Cost = 30
 				}
 			]

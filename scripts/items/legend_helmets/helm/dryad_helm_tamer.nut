@@ -20,7 +20,6 @@ this.dryad_helm_tamer <- this.inherit("scripts/items/legend_helmets/legend_helme
 		this.m.ConditionMax = 100;
 		this.m.StaminaModifier = -10;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 	}

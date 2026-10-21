@@ -27,7 +27,6 @@ this.cr_named_red_and_gold_band_helmet <- this.inherit("scripts/items/legend_hel
 		this.m.ConditionMax = 165;
 		this.m.StaminaModifier = -10;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.randomizeValues();

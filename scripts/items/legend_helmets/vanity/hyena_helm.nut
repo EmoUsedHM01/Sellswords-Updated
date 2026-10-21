@@ -19,7 +19,6 @@ this.hyena_helm <- this.inherit("scripts/items/legend_helmets/legend_helmet_upgr
 		this.m.StaminaModifier = 0;
 		this.m.InitiativeModifier = 10;
 		this.m.Vision = 0;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.m.ItemType = this.m.ItemType;

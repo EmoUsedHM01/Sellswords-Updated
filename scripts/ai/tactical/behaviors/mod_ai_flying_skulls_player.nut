@@ -150,7 +150,6 @@ this.mod_ai_flying_skulls_player <- ::inherit("scripts/ai/tactical/behavior", {
 					local skull = ::Tactical.spawnEntity("scripts/entity/tactical/enemies/flying_skull", _tag.Tile.Coords.X, _tag.Tile.Coords.Y);
 					skull.getFlags().set("Source", _tag.User.getID());
 					skull.setFaction(faction);
-					skull.addMoreHP(_entity);
 					skull.getTile().addVisibilityForFaction(this.Const.Faction.Player);
 				}.bindenv(this), tag, 200, ::Const.Tactical.Settings.CameraNextEventDelay + 50);
 

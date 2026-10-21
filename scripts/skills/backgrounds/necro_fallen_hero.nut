@@ -86,7 +86,6 @@ this.necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character_bac
 			];
 		this.m.PerkTreeDynamic = {
 			Weapon = [
-				this.Const.Perks.TwoHandedTree,
 				this.Const.Perks.PolearmTree,
 				this.Const.Perks.AxeTree,
 				this.Const.Perks.MaceTree,
@@ -106,7 +105,7 @@ this.necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character_bac
 				this.Const.Perks.FitTree
 			],
 			Enemy = [
-				this.Const.Perks.SwordmastersTree
+				this.Const.Perks.CivilizationTree
 			],
 			Class = [
 				this.Const.Perks.ZombieClassTree

@@ -7,7 +7,6 @@ this.cr_mountain_helmet <- this.inherit("scripts/items/legend_helmets/legend_hel
 		this.m.Description = "A helmet crafted from the skin and skull of a mighty rock unhold, the beast may be dead, but it continues to mend itself even after death";
 		this.m.Name = "Helmet of the Mountain";
 		this.m.IsDroppedAsLoot = true;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.m.Variants = [

@@ -95,7 +95,9 @@ this.necro_necrosavant <- this.inherit("scripts/skills/backgrounds/character_bac
 				this.Const.Perks.FastTree,
 				this.Const.Perks.ViciousTree
 			],
-			Enemy = [],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 			Class = [
 				this.Const.Perks.VampireMagicTree
 			],

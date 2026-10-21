@@ -21,7 +21,6 @@ this.cr_helmet_orc_bone_helm <- this.inherit("scripts/items/legend_helmets/legen
 		this.m.ConditionMax = 150;
 		this.m.StaminaModifier = -16;
 		this.m.Vision = -1;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = false;
 		this.m.ItemType = this.m.ItemType;

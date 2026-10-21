@@ -4,7 +4,7 @@
 		Script = "",
 		Sets = [{
 			Cloth = [
-				[1, "cloth/legend_bandages"]
+				[1, "cloth/legend_armor_bandages"]
 			],
 			Chain = [
 			],
@@ -24,7 +24,7 @@
 		Script = "",
 		Sets = [{
 			Cloth = [
-				[1, "cloth/legend_bandages"]
+				[1, "cloth/legend_armor_bandages"]
 			],
 			Chain = [
 			],
@@ -47,7 +47,7 @@ local lich_armor = {
 	Script = "",
 	Sets = [{
 		Cloth = [
-			[1, "cloth/legend_bandages"]
+			[1, "cloth/legend_armor_bandages"]
 		],
 		Chain = [
 		],
@@ -68,7 +68,7 @@ local lich_helmet = {
 	Script = "",
 	Sets = [{
 		Hoods = [
-			[1, "hood/legend_helmet_mummy_bandage"]
+			[1, "hood/legend_mummy_bandage"]
 		],
 		Helms = [
 		],

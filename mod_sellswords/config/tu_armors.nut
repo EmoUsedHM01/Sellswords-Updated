@@ -6,11 +6,11 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],
 					[
 						1,
-						"cloth/legend_tunic" //20
+						"cloth/legend_armor_tunic" //20
 					]					
 				],
 				Chain = [
@@ -36,7 +36,7 @@
 				Cloak = [
 					[
 						1,
-						"cloak/legend_armor_cloak_common"//10
+						"cloak/legend_armor_cloak"//10
 					]				
 				],
 				Tabard = [],
@@ -52,39 +52,39 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]					
 				],
 				Chain = [
 					[
 						1,
-						"chain/legend_southern_padded_chest" //45
+						"chain/legend_armor_southern_padded_chest" //45
 					],
 					[
 						1,
-						"chain/legend_southern_cloth" //30
+						"chain/legend_armor_southern_cloth" //30
 					]					
 				],
 				Plate = [
 					[
 						1,
-						"plate/legend_southern_strips"//40
+						"plate/legend_armor_southern_strips"//40
 					],
 					[
 						1,
-						"plate/legend_southern_padded"//65
+						"plate/legend_armor_southern_padded"//65
 					]
 				],					
 				Cloak = [
 					[
 						1,
-						"cloak/legend_armor_cloak_common"//10
+						"cloak/legend_armor_cloak"//10
 					]				
 				],
 				Tabard = [
 					[
 						1,
-						"tabard/legend_common_tabard"
+						"tabard/legend_armor_tabard"
 					]				
 				],			
 				Attachments = []								
@@ -99,13 +99,13 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]					
 				],
 				Chain = [					
 					[
 						1,
-						"chain/legend_southern_cloth" //30
+						"chain/legend_armor_southern_cloth" //30
 					]					
 				],
 				Plate = [
@@ -117,19 +117,19 @@
 				Cloak = [
 					[
 						1,
-						"cloak/legend_armor_cloak_common" //10
+						"cloak/legend_armor_cloak" //10
 					]				
 				],
 				Tabard = [
 					[
 						1,
-						"tabard/legend_noble_tabard"
+						"tabard/legend_armor_tabard_noble"
 					]				
 				],			
 				Attachments = [
 					[
 						1,
-						"armor_upgrades/legend_hyena_fur_upgrade"
+						"cloak/legend_hyena_fur_cloak"
 					],
 					[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 85,-6							
 				]								
@@ -144,7 +144,7 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_tunic_noble"//40
+						"cloth/legend_armor_tunic_noble"//40
 					]			
 				],
 				Chain = [					
@@ -170,19 +170,19 @@
 				Cloak = [
 					[
 						1,
-						"cloak/legend_armor_cloak_common"
+						"cloak/legend_armor_cloak"
 					]				
 				],
 				Tabard = [
 					[
 						1,
-						"tabard/legend_common_tabard"
+						"tabard/legend_armor_tabard"
 					]				
 				],			
 				Attachments = [
 					[
 						1,
-						"armor_upgrades/legend_hyena_fur_upgrade"
+						"cloak/legend_hyena_fur_cloak"
 					],
 					[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 85,-6
 					[
@@ -201,27 +201,27 @@
 				Cloth = [					
 					[
 						1,
-						"cloth/legend_southern_robe", //25
+						"cloth/legend_armor_southern_robe", //25
 						6
 					]		
 				],
 				Chain = [					
 					[
 						1,										
-						"chain/legend_southern_padded_chest" //30
+						"chain/legend_armor_southern_padded_chest" //30
 					]					
 				],
 				Plate = [
 					[
 						1,
-						"plate/legend_southern_arm_guards" //30
+						"plate/legend_armor_southern_arm_guards" //30
 					]					
 				],					
 				Cloak = [],				  			
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_shoulder_cloth",
+						"tabard/legend_armor_southern_shoulder_cloth",
 						7
 					]				
 				],			
@@ -242,19 +242,19 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_southern_split_gambeson" //65
+						"cloth/legend_armor_southern_split_gambeson" //65
 					]					
 				],
 				Chain = [					
 					[
 						1,										
-						"chain/legend_southern_padded_chest" //45
+						"chain/legend_armor_southern_padded_chest" //45
 					]					
 				],
 				Plate = [
 					[
 						1,
-						"plate/legend_southern_plate_full", //75
+						"plate/legend_armor_southern_plate_full", //75
 						2
 					]					
 				],					
@@ -262,7 +262,7 @@
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_overcloth"						
+						"tabard/legend_armor_southern_overcloth"						
 					]				
 				],			
 				Attachments = [
@@ -282,13 +282,13 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_southern_split_gambeson" //65
+						"cloth/legend_armor_southern_split_gambeson" //65
 					]					
 				],
 				Chain = [					
 					[
 						1,										
-						"chain/legend_southern_mail" //100
+						"chain/legend_armor_southern_mail" //100
 					]					
 				],
 				Plate = [
@@ -305,7 +305,7 @@
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_overcloth"						
+						"tabard/legend_armor_southern_overcloth"						
 					]				
 				],			
 				Attachments = [
@@ -325,13 +325,13 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_southern_noble_surcoat" //600
+						"cloth/legend_armor_southern_noble_surcoat" //600
 					]					
 				],
 				Chain = [					
 					[
 						1,										
-						"chain/legend_southern_mail" //100
+						"chain/legend_armor_southern_mail" //100
 					]					
 				],
 				Plate = [
@@ -341,7 +341,7 @@
 					],
 					[
 						1,
-						"plate/legend_southern_plate",// 155,-26,1500
+						"plate/legend_armor_southern_plate",// 155,-26,1500
 						2
 					],					
 				],					
@@ -349,7 +349,7 @@
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_overcloth"						
+						"tabard/legend_armor_southern_overcloth"						
 					]				
 				],			
 				Attachments = [
@@ -369,7 +369,7 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_southern_noble_surcoat" //60
+						"cloth/legend_armor_southern_noble_surcoat" //60
 					]					
 				],
 				Chain = [					
@@ -392,7 +392,7 @@
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_overcloth"						
+						"tabard/legend_armor_southern_overcloth"						
 					]				
 				],			
 				Attachments = [
@@ -412,27 +412,27 @@
 				Cloth = [					
 					[
 						1,
-						"cloth/legend_southern_robe", //25
+						"cloth/legend_armor_southern_robe", //25
 						6
 					]		
 				],
 				Chain = [					
 					[
 						1,
-						"chain/legend_southern_cloth" //45
+						"chain/legend_armor_southern_cloth" //45
 					]					
 				],
 				Plate = [
 					[
 						1,
-						"plate/legend_southern_strips" //40
+						"plate/legend_armor_southern_strips" //40
 					]				
 				],					
 				Cloak = [],				  			
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_overcloth"					
+						"tabard/legend_armor_southern_overcloth"					
 					]				
 				],			
 				Attachments = [
@@ -452,11 +452,11 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],
 					[
 						1,
-						"cloth/legend_gambeson" //65
+						"cloth/legend_armor_gambeson" //65
 					]	
 				],
 				Chain = [					
@@ -493,11 +493,11 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],	
 					[
 						1,
-						"cloth/legend_gambeson" //65
+						"cloth/legend_armor_gambeson" //65
 					]	
 				],
 				Chain = [
@@ -539,7 +539,7 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]					
 				],
 				Chain = [
@@ -589,7 +589,7 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]					
 				],
 				Chain = [					
@@ -640,19 +640,19 @@
 				Cloth = [
 					[
 						1,
-						"cloth/cloth/legend_tunic" //20
+						"cloth/cloth/legend_armor_tunic" //20
 					],
 					[
 						1,
-						"cloth/cloth/legend_tunic_wrap" //20
+						"cloth/cloth/legend_armor_tunic_wrap" //20
 					],
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],	
 					[
 						1,
-						"cloth/legend_gambeson" //65
+						"cloth/legend_armor_gambeson" //65
 					]
 				],
 				Chain = [
@@ -698,7 +698,7 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]
 				],
 				Chain = [
@@ -732,7 +732,7 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]
 				],
 				Chain = [
@@ -753,13 +753,13 @@
 				],
 				Cloak = [ 
 						1,
-						"cloak/legend_armor_cloak_common"
+						"cloak/legend_armor_cloak"
 					]					
 				Tabard = [],
 				Attachments = [
 					[
 						1,
-						"armor_upgrades/legend_unhold_fur_upgrade"
+						"cloak/legend_unhold_fur_cloak"
 					],
 					[
 						1,
@@ -777,26 +777,26 @@
 				Cloth = [					
 					[
 						1,
-						"cloth/legend_southern_robe" 	//25					
+						"cloth/legend_armor_southern_robe" 	//25					
 					]		
 				],
 				Chain = [					
 					[
 						1,										
-						"chain/legend_southern_padded_chest" //30
+						"chain/legend_armor_southern_padded_chest" //30
 					]					
 				],
 				Plate = [
 					[
 						1,
-						"plate/legend_southern_arm_guards" //30
+						"plate/legend_armor_southern_arm_guards" //30
 					]					
 				],					
 				Cloak = [],				  			
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_shoulder_cloth",
+						"tabard/legend_armor_southern_shoulder_cloth",
 						8
 					]				
 				],			
@@ -812,26 +812,26 @@
 				Cloth = [					
 					[
 						1,
-						"cloth/legend_southern_robe" //25	 					
+						"cloth/legend_armor_southern_robe" //25	 					
 					]		
 				],
 				Chain = [					
 					[
 						1,
-						"chain/legend_southern_cloth" //45
+						"chain/legend_armor_southern_cloth" //45
 					]					
 				],
 				Plate = [
 					[
 						1,
-						"plate/legend_southern_strips" //40
+						"plate/legend_armor_southern_strips" //40
 					]				
 				],						
 				Cloak = [],				  			
 				Tabard = [
 					[
 						1,
-						"tabard/legend_southern_shoulder_cloth",
+						"tabard/legend_armor_southern_shoulder_cloth",
 						8
 					]				
 				],			
@@ -847,19 +847,19 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],
 					[
 						1,
-						"cloth/legend_gambeson" //65
+						"cloth/legend_armor_gambeson" //65
 					],
 					[
 						1,
-						"cloth/legend_robes" //20
+						"cloth/legend_armor_robes" //20
 					],
 					[
 						1,
-						"cloth/legend_tunic" //20
+						"cloth/legend_armor_tunic" //20
 					]
 					
 				],
@@ -911,10 +911,10 @@
 		Sets = [
 			{
 				Cloth = [
-					[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-					[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-					[1, "cloth/legend_gambeson"],// 65,-8,250
-					[1, "cloth/legend_gambeson_plain"],// 65,-8,250
+					[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+					[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+					[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+					[1, "cloth/legend_armor_gambeson"],// 65,-8,250
 				],
 				Chain = [
 					[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250					
@@ -932,10 +932,10 @@
 			},
 			{
 				Cloth = [
-					[1, "cloth/legend_padded_surcoat"],// 55,-6,150
-					[1, "cloth/legend_padded_surcoat_plain"],// 55,-6,150					
-					[1, "cloth/legend_gambeson"],// 65,-8,250
-					[1, "cloth/legend_gambeson_plain"],// 65,-8,250
+					[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150
+					[1, "cloth/legend_armor_quilted_aketon"],// 55,-6,150					
+					[1, "cloth/legend_armor_gambeson"],// 65,-8,250
+					[1, "cloth/legend_armor_gambeson"],// 65,-8,250
 				],
 				Chain = [					
 					[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -952,8 +952,8 @@
 			},
 			{
 				Cloth = [
-					[1, "cloth/legend_dark_tunic"],// 35,-4,50
-					[1, "cloth/legend_thick_tunic"],// 30,-3,40					
+					[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50
+					[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40					
 				],
 				Chain = [
 					[1, "chain/legend_armor_mail_shirt_simple"],// 25,-3,250					
@@ -970,8 +970,8 @@
 			},
 			{
 				Cloth = [
-					[1, "cloth/legend_dark_tunic"],// 35,-4,50
-					[1, "cloth/legend_thick_tunic"],// 30,-3,40					
+					[1, "cloth/legend_armor_dark_tunic"],// 35,-4,50
+					[1, "cloth/legend_armor_thick_tunic"],// 30,-3,40					
 				],
 				Chain = [
 					[1, "chain/legend_armor_mail_shirt"],// 50,-6,375
@@ -996,11 +996,11 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],	
 					[
 						1,
-						"cloth/legend_gambeson" //65
+						"cloth/legend_armor_gambeson" //65
 					]					
 				],
 				Chain = [
@@ -1053,11 +1053,11 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],	
 					[
 						1,
-						"cloth/legend_gambeson" //65
+						"cloth/legend_armor_gambeson" //65
 					]				
 				],
 				Chain = [																	
@@ -1106,11 +1106,11 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],	
 					[
 						1,
-						"cloth/legend_gambeson" //65
+						"cloth/legend_armor_gambeson" //65
 					]					
 				],
 				Chain = [
@@ -1159,11 +1159,11 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_padded_surcoat" //55
+						"cloth/legend_armor_quilted_aketon" //55
 					],	
 					[
 						1,
-						"cloth/legend_gambeson" //65
+						"cloth/legend_armor_gambeson" //65
 					]					
 				],
 				Chain = [
@@ -1216,7 +1216,7 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_gambeson_wolf" //70
+						"cloth/legend_armor_gambeson_wolf" //70
 					],								
 				],
 				Chain = [																	
@@ -1261,7 +1261,7 @@
 				Cloth = [					
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]					
 				],
 				Chain = [
@@ -1303,7 +1303,7 @@
 				Cloak = [
 					[
 						1,
-						"cloak/legend_armor_cloak_common"
+						"cloak/legend_armor_cloak"
 					]				
 				],									
 				Tabard = [],								
@@ -1319,7 +1319,7 @@
 				Cloth = [					
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]					
 				],
 				Chain = [																	
@@ -1333,7 +1333,7 @@
 					],
 					[
 						1,
-						"chain/chain/legend_armor_reinforced_mail" //110
+						"chain/legend_armor_reinforced_mail" //110
 					]						
 				],
 				Plate = [															
@@ -1361,7 +1361,7 @@
 				Cloak = [
 					[
 						1,
-						"cloak/legend_armor_cloak_common"
+						"cloak/legend_armor_cloak"
 					]				
 				],									
 				Tabard = [],								
@@ -1382,7 +1382,7 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_southern_noble_surcoat" //60
+						"cloth/legend_armor_southern_noble_aketon" //60
 					]					
 				],
 				Chain = [					
@@ -1394,7 +1394,7 @@
 				Plate = [
 					[
 						1,
-						"plate/legend_southern_named_golden_plates"	//200	 				
+						"plate/legend_armor_southern_named_golden_plates"	//200	 				
 					]								
 				],					
 				Cloak = [],				  			
@@ -1402,7 +1402,7 @@
 				Attachments = [
 					[
 						1,
-						"armor_upgrades/legend_unhold_fur_upgrade"
+						"cloak/legend_unhold_fur_cloak"
 					]					
 				]								
 			}
@@ -1416,13 +1416,13 @@
 				Cloth = [
 					[
 						1,
-						"cloth/legend_tunic_noble" //40
+						"cloth/legend_armor_tunic_noble" //40
 					]					
 				],
 				Chain = [					
 					[
 						1,
-						"chain/legend_southern_cloth" //30
+						"chain/legend_armor_southern_cloth" //30
 					]					
 				],
 				Plate = [
@@ -1434,23 +1434,23 @@
 				Cloak = [
 					[
 						1,
-						"cloak/legend_armor_cloak_common" //10
+						"cloak/legend_armor_cloak" //10
 					]				
 				],
 				Tabard = [
 					[
 						1,
-						"tabard/legend_noble_tabard"
+						"tabard/legend_armor_tabard_noble"
 					]				
 				],			
 				Attachments = [
 					[
 						1,
-						"armor_upgrades/legend_hyena_fur_upgrade"
+						"cloak/legend_hyena_fur_cloak"
 					],
 					[
 						1,
-						"armor_upgrades/legend_unhold_fur_upgrade"
+						"cloak/legend_unhold_fur_cloak"
 					]					
 				]	
 			}

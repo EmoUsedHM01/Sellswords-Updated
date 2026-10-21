@@ -202,7 +202,6 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 			this.m.PerkTreeDynamic = {
 				Weapon = [
 					this.Const.Perks.PolearmTree,
-					this.Const.Perks.TwoHandedTree
 				],
 				Defense = [
 					this.Const.Perks.HeavyArmorTree
@@ -211,9 +210,9 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 					this.Const.Perks.SturdyTree,
 					this.Const.Perks.LargeTree
 				],
-				Enemy = [
-					this.Const.Perks.CivilizationTree
-				],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 				Class = [
 					this.Const.Perks.GhostClassTree
 				],
@@ -235,9 +234,9 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 					this.Const.Perks.FitTree,
 					this.Const.Perks.ViciousTree
 				],
-				Enemy = [
-					this.Const.Perks.CivilizationTree
-				],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 				Class = [
 					this.Const.Perks.GhostClassTree
 				],
@@ -259,9 +258,9 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 					this.Const.Perks.IndestructibleTree,
 					this.Const.Perks.CalmTree
 				],
-				Enemy = [
-					this.Const.Perks.CivilizationTree
-				],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 				Class = [
 					this.Const.Perks.GhostClassTree
 				],
@@ -282,9 +281,9 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 					this.Const.Perks.ViciousTree,
 					this.Const.Perks.FastTree
 				],
-				Enemy = [
-					this.Const.Perks.CivilizationTree
-				],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 				Class = [
 					this.Const.Perks.GhostClassTree
 				],
@@ -306,9 +305,9 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 					this.Const.Perks.FitTree,
 					this.Const.Perks.FastTree
 				],
-				Enemy = [
-					this.Const.Perks.CivilizationTree
-				],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 				Class = [
 					this.Const.Perks.GhostClassTree
 				],
@@ -330,9 +329,9 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 					this.Const.Perks.InspirationalTree,
 					this.Const.Perks.DeviousTree
 				],
-				Enemy = [
-					this.Const.Perks.CivilizationTree
-				],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 				Class = [
 					this.Const.Perks.GhostClassTree
 				],
@@ -353,9 +352,9 @@ this.necro_banshee <- this.inherit("scripts/skills/backgrounds/character_backgro
 					this.Const.Perks.LargeTree,
 					this.Const.Perks.IndestructibleTree
 				],
-				Enemy = [
-					this.Const.Perks.CivilizationTree
-				],
+			Enemy = [
+				this.Const.Perks.CivilizationTree
+			],
 				Class = [
 					this.Const.Perks.GhostClassTree
 				],

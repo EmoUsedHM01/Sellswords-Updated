@@ -93,9 +93,6 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 						[10, ::Const.Perks.RandomTree]
 					])
 				],
-				Enemy = [
-					::Const.Perks.CivilizationTree
-				],
 				Class = [
 					::Const.Perks.DryadTamerTree
 				],

@@ -26,7 +26,6 @@ this.cr_named_mask <- this.inherit("scripts/items/legend_helmets/legend_named_he
 		this.m.ConditionMax = 60;
 		this.m.StaminaModifier = -4;
 		this.m.Vision = -1;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = false;
 		this.m.HideBeard = true;
 		this.m.ItemType = this.m.ItemType;

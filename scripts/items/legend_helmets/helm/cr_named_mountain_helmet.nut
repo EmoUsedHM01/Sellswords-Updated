@@ -14,7 +14,6 @@ this.cr_named_mountain_helmet <- this.inherit("scripts/items/legend_helmets/lege
 			"Mountain Mask"
 		];
 		this.m.IsDroppedAsLoot = true;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.m.Variants = [

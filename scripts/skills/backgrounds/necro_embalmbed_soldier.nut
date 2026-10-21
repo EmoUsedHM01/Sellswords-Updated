@@ -90,7 +90,6 @@ this.necro_embalmbed_soldier <- this.inherit("scripts/skills/backgrounds/charact
 		];
 		this.m.PerkTreeDynamic = {
 			Weapon = [
-				this.Const.Perks.TwoHandedTree,
 				this.Const.Perks.PolearmTree,
 				this.Const.Perks.AxeTree,
 				this.Const.Perks.MaceTree,

@@ -25,7 +25,6 @@ this.cr_named_steppe_helmet_with_mail <- this.inherit("scripts/items/legend_helm
 		this.m.ConditionMax = 165;
 		this.m.StaminaModifier = -10;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.randomizeValues();

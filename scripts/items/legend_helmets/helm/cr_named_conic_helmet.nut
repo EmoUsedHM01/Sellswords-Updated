@@ -26,7 +26,6 @@ this.cr_named_conic_helmet <- this.inherit("scripts/items/legend_helmets/legend_
 		this.m.ConditionMax = 165;
 		this.m.StaminaModifier = -10;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.randomizeValues();
