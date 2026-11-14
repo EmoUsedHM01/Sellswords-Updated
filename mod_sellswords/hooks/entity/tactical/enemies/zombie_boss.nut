@@ -5,32 +5,14 @@
 		__original();
 		this.m.BaseProperties.IsAffectedByInjuries = true;
 		this.m.Skills.removeByID("perk.hold_out");	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));
 
-		if (::Is_PTR_Exist)
-		{
-			local maulerPerk = this.new("scripts/skills/perks/perk_ptr_mauler");
-			maulerPerk.m.IsForceEnabled = true;
-			this.m.Skills.add(maulerPerk);
-
-			this.m.Skills.addPerkTree(this.Const.Perks.OneHandedTree);
-			local intimidatePerk = this.new("scripts/skills/perks/perk_ptr_intimidate");
-			intimidatePerk.m.IsForceEnabled = true;
-			this.m.Skills.add(intimidatePerk);
-		}
-
-		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));
+		this.m.Skills.add(this.new("scripts/skills/effects/ssu_clarity_effect_permanent"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
-
-			if (::Is_PTR_Exist)
-			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_personal_armor"));
-			}
 
 			local dc = this.World.getTime().Days;
 			local dca = this.Math.floor(dc/50) + this.Math.floor(dc/100) + this.Math.floor(dc/150) + this.Math.floor(dc/200);

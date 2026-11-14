@@ -135,10 +135,10 @@
 						}
 						if (dc >= 150)
 						{							
-							party = enemyNobleHouse.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getName() + " Company", true, this.Const.World.Spawn.Nobleenhanced, (this.Math.rand(120, 135) + this.Flags.get("Wave") * 10 + (this.Flags.get("IsAlliedReinforcements") ? 50 : 0)) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+							party = enemyNobleHouse.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getName() + " Company", true, this.Const.World.Spawn.SsuNobleenhanced, (this.Math.rand(120, 135) + this.Flags.get("Wave") * 10 + (this.Flags.get("IsAlliedReinforcements") ? 50 : 0)) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 						}						
 						party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + enemyNobleHouse.getBannerString());
-						party.setDescription("Professional soldiers in service to local lords.");
+						party.setDescription(::Mod_Sellswords.Strings.hold_chokepoint_contract.Description1);
 						party.getLoot().Money = this.Math.rand(50, 200);
 						party.getLoot().ArmorParts = this.Math.rand(0, 25);
 						party.getLoot().Medicine = this.Math.rand(0, 3);
@@ -261,10 +261,10 @@
 		}
 		else if (dc >= 150)
 		{			
-			party = cityState.spawnEntity(tiles[0].Tile, "Regiment of " + cityState.getNameOnly(), true, this.Const.World.Spawn.Southernenhanced, this.Math.rand(135, 175) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+			party = cityState.spawnEntity(tiles[0].Tile, "Regiment of " + cityState.getNameOnly(), true, this.Const.World.Spawn.SsuSouthernenhanced, this.Math.rand(135, 175) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		}		
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + cityState.getBannerString());
-		party.setDescription("Conscripted soldiers loyal to their city state.");
+		party.setDescription(::Mod_Sellswords.Strings.hold_chokepoint_contract.Description2);
 		party.getLoot().Money = this.Math.rand(100, 300);
 		party.getLoot().ArmorParts = this.Math.rand(10, 35);
 		party.getLoot().Medicine = this.Math.rand(5, 15);

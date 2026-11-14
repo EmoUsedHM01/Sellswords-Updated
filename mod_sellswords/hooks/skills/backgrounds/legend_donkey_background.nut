@@ -38,8 +38,7 @@
 			],
 			[
 				this.Const.Perks.PerkDefs.Dodge,
-				this.Const.Perks.PerkDefs.crresilient,
-				this.Const.Perks.PerkDefs.LegendComposure,
+				this.Const.Perks.PerkDefs.SsuResilient,
 				this.Const.Perks.PerkDefs.LegendAlert,
 				this.Const.Perks.PerkDefs.Relentless,
 				this.Const.Perks.PerkDefs.SteelBrow
@@ -48,13 +47,10 @@
 				this.Const.Perks.PerkDefs.Anticipation,
 				this.Const.Perks.PerkDefs.Rotation,
 				this.Const.Perks.PerkDefs.LegendPacifist,				
-				this.Const.Perks.PerkDefs.Taunt,
-				this.Const.Perks.PerkDefs.LegendSprint
+				this.Const.Perks.PerkDefs.Taunt
 			],
 			[
 				this.Const.Perks.PerkDefs.LegendEfficientPacking,
-				this.Const.Perks.PerkDefs.LegendAmmoBinding,
-				this.Const.Perks.PerkDefs.LegendMedPackages,
 				this.Const.Perks.PerkDefs.LegendToolsDrawers
 			],
 			[
@@ -73,10 +69,7 @@
 			],
 			[
 				this.Const.Perks.PerkDefs.Fearsome,
-				this.Const.Perks.PerkDefs.Stalwart,
-				this.Const.Perks.PerkDefs.LegendAmmoBundles,
-				this.Const.Perks.PerkDefs.LegendMedIngredients,
-				this.Const.Perks.PerkDefs.LegendToolsSpares
+				this.Const.Perks.PerkDefs.Stalwart
 			],
 			[],
 			[],

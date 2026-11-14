@@ -50,7 +50,7 @@
 					this.List.insert(0, {
 						id = 10,
 						icon = "ui/icons/special.png",
-						text = "The company gained renown"
+						text = ::Mod_Sellswords.Strings.ambition_fulfilled_event.Tooltip1
 					});
 
 					if (isOath && bonusAchieved)
@@ -58,13 +58,13 @@
 						this.List.insert(1, {
 							id = 10,
 							icon = "ui/icons/special.png",
-							text = "You went above and beyond in fulfilling the Oath"
+							text = ::Mod_Sellswords.Strings.ambition_fulfilled_event.Tooltip2
 						});
 						local brothers = this.World.getPlayerRoster().getAll();
 
 						foreach( bro in brothers )
 						{
-							bro.getSkills().add(this.new("scripts/skills/effects_world/croath_effect"));
+							bro.getSkills().add(this.new("scripts/skills/effects_world/ssu_oath_effect"));
 						}						
 					}					
 				}
@@ -86,7 +86,7 @@
 
 				if (isOath)
 				{
-					_event.m.Title = active.getOathName() + " Fulfilled";
+					_event.m.Title = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ambition_fulfilled_event.Title, active.getOathName());
 				}
 			}
 		}
@@ -126,7 +126,6 @@
 
 			if (bro.getHitpoints() <= lowest_hitpoints)
 			{
-				//lowest_hitpoints = bro.getHireTime();
 				//added by bigmap
 				lowest_hitpoints = bro.getHitpoints();
 				lowest_hitpoints_bro = bro;

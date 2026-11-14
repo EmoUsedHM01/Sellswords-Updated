@@ -25,7 +25,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Heals [color=%positive%]10[/color] Hitpoints each turn. Cannot heal if poisoned."
+				text = ::Mod_Sellswords.Strings.unhold_potion_effect.Tooltip1
 			});
 		}
 		else
@@ -34,7 +34,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Heals [color=%positive%]5[/color] Hitpoints each turn. Cannot heal if poisoned."
+				text = ::Mod_Sellswords.Strings.unhold_potion_effect.Tooltip2
 			});
 		}
 
@@ -44,7 +44,7 @@
 				id = 12,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "Heals [color=%positive%]20[/color] head and body armor each turn.  Cannot heal if poisoned."
+				text = ::Mod_Sellswords.Strings.unhold_potion_effect.Tooltip3
 			});
 		}
 		
@@ -52,7 +52,7 @@
 			id = 13,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+			text = ::Mod_Sellswords.Strings.unhold_potion_effect.Tooltip4
 		});
 		return ret;
 	}
@@ -108,7 +108,7 @@
 				if (this.m.SoundOnUse.len() != 0)
 					this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.RacialEffect * 1.25, actor.getPos());
 
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + "\'s Hyperactive Cell Growth mutation regenerated " + health_added + " hitpoints");
+				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.unhold_potion_effect.Log1, this.Const.UI.getColorizedEntityName(actor), health_added));
 			}
 		}
 
@@ -138,10 +138,10 @@
 						this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.RacialEffect * 1.25, actor.getPos());
 
 					if (head_added > 0)
-						this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + "\'s Hyperactive Cell Growth mutation regenerated " + head_added + " points of head armor");
+						this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.unhold_potion_effect.Log2, this.Const.UI.getColorizedEntityName(actor), head_added));
 
 					if (body_added > 0)
-						this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + "\'s Hyperactive Cell Growth mutation regenerated " + body_added + " points of body armor");
+						this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.unhold_potion_effect.Log3, this.Const.UI.getColorizedEntityName(actor), body_added));
 				}
 			}
 		}

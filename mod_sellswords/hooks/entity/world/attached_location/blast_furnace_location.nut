@@ -10,27 +10,27 @@
 				{
 					R = 30,
 					P = 1.0,
-					S = "armor/crknight_armor"
+					S = "armor/ssu_knight_armor"
 				},
 				{
 					R = 30,
 					P = 1.0,
-					S = "armor/crhedgeknight_armor"
+					S = "armor/ssu_hedgeknight_armor"
 				},
 				{
 					R = 25,
 					P = 1.0,
-					S = "helmets/crknight_helmet"
+					S = "helmets/ssu_knight_helmet"
 				},
 				{
 					R = 25,
 					P = 1.0,
-					S = "helmets/crhedgeknight_helmet"
+					S = "helmets/ssu_hedgeknight_helmet"
 				},
 				{
 					R = 85,
 					P = 1.0,
-					S = "helmets/cr_lion_helm"
+					S = "helmets/ssu_lion_helm"
 				}
 			]);
 		}

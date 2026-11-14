@@ -9,7 +9,7 @@
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=%positive%]2" + "[/color] tiles"
+			text = ::Mod_Sellswords.Strings.strike_skill.Tooltip1
 		});
 
 		if (this.m.ApplyAxeMastery)
@@ -20,17 +20,17 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/hitchance.png",
-					text = "Has [color=%negative%]-15%[/color] chance to hit targets directly adjacent"
+					text = ::Mod_Sellswords.Strings.strike_skill.Tooltip2
 				});
 			}
-			if (this.getContainer().hasSkill("perk.crHackSPM"))
+			if (this.getContainer().hasSkill("perk.ssu_hack_spm"))
 			{
 				ret.extend([
 					{
 						id = 6,
 						type = "text",
 						icon = "ui/icons/special.png",
-						text = "Do a free extra attack with [color=%positive%]25%[/color] damage(not regarded as critical strikes) on a hit"
+						text = ::Mod_Sellswords.Strings.strike_skill.Tooltip3
 					}
 				]);	
 			}
@@ -41,7 +41,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=%positive%]+5%[/color] chance to hit"
+				text = ::Mod_Sellswords.Strings.strike_skill.Tooltip4
 			});
 
 			if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInPolearms)
@@ -50,7 +50,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/hitchance.png",
-					text = "Has [color=%negative%]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
+					text = ::Mod_Sellswords.Strings.strike_skill.Tooltip5
 				});
 			}
 		}
@@ -65,13 +65,13 @@
 		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
 
 		local actor = this.getContainer().getActor().get();
-		if (actor.getSkills().getSkillByID("perk.crGrandslam"))
+		if (actor.getSkills().getSkillByID("perk.ssu_grandslam"))
 			this.m.ActionPointCost += 1;
 	}
 
 	q.onUse = @(__original) function( _user, _targetTile )
 	{
-		if (!this.m.ApplyAxeMastery || !this.getContainer().hasSkill("perk.crHackSPM"))
+		if (!this.m.ApplyAxeMastery || !this.getContainer().hasSkill("perk.ssu_hack_spm"))
 		{
 			this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectSplitShield);
 			return this.attackEntity(_user, _targetTile.getEntity());
@@ -108,7 +108,6 @@
 	{
 		if (_skill == this)
 		{
-			//this.m.ApplyBonusToBodyPart = _bodyPart;
 			this.m.ApplyBonusToBodyPart = _bodyPart == this.Const.BodyPart.Body ? this.Const.BodyPart.Head : this.Const.BodyPart.Body;
 		}
 	}

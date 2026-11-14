@@ -8,17 +8,12 @@
 			{
 				R = 80,
 				P = 2.1,
-				S = "supplies/banquet_item"
+				S = "supplies/ssu_banquet_item"
 			},
 			{
 				R = 60,
 				P = 2.1,
 				S = "supplies/cured_rations_item"
-			},
-			{
-				R = 50,
-				P = 1.0,
-				S = "misc/cr_pack"
 			}
 			]);
 		}

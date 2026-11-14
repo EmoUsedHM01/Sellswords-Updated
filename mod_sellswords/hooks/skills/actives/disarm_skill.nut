@@ -27,7 +27,7 @@
 		{
 			_tooltip.push({
 				icon = "ui/tooltips/negative.png",
-				text = "[color=%negative%]40%[/color] A formidable Orc Warlord"
+				text = ::Mod_Sellswords.Strings.disarm_skill.Tooltip
 			});				
 		}	
 	}		

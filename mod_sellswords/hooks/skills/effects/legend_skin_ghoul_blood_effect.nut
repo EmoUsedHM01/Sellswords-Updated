@@ -35,13 +35,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "[color=%positive%]+ " + healthAdded + "[/color] this turn"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_skin_ghoul_blood_effect.Tooltip1, healthAdded)
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "cure all fresh injuries"
+				text = ::Mod_Sellswords.Strings.legend_skin_ghoul_blood_effect.Tooltip2
 			}
 		];
 		return ret;
@@ -89,7 +89,7 @@
 			if (this.m.SoundOnUse.len() != 0)
 				this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.RacialEffect * 1.25, actor.getPos());
 
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " heals for " + healthAdded + " points");
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_skin_ghoul_blood_effect.Log, this.Const.UI.getColorizedEntityName(actor), healthAdded));
 		}
 	}
 

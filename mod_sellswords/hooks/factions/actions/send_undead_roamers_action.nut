@@ -33,7 +33,7 @@
 
 		local party = this.getFaction().spawnEntity(settlement.getTile(), "Undead", false, settlement.getRoamerSpawnList(),  this.Math.min(settlement.getResources(), rand));
 		party.getSprite("banner").setBrush(settlement.getBanner());
-		party.setDescription("Something seems wrong.");
+		party.setDescription(::Mod_Sellswords.Strings.send_undead_roamers_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Undead);
 		party.setSlowerAtNight(false);
 		party.setUsingGlobalVision(false);

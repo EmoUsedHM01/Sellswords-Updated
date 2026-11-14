@@ -19,9 +19,9 @@
 
 		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.slash", function(_skill) {
 			_skill.m.isBunt = true;			
-			_skill.m.Name = "Bunt";		
-			_skill.m.Icon = "skills/active_bunt.png";
-			_skill.m.IconDisabled = "skills/active_bunt_sw.png";		
+			_skill.m.Name = ::Mod_Sellswords.Strings.legend_named_longsword.Name;		
+			_skill.m.Icon = "skills/ssu_active_bunt.png";
+			_skill.m.IconDisabled = "skills/ssu_active_bunt_sw.png";		
 			_skill.m.Overlay = "active_1";
 			_skill.m.FatigueCost = 13;	
 			_skill.m.DirectDamageMult = this.m.DirectDamageMult;	

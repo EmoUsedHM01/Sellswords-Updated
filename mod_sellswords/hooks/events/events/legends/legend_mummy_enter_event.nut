@@ -10,7 +10,7 @@
 
 			screen.start = function( _event )
 			{
-				_event.m.Title = "After the battle...";
+				_event.m.Title = ::Mod_Sellswords.Strings.legend_mummy_enter_event.Title;
 
 				if (this.World.State.getLastLocation() != null)
 				{
@@ -23,7 +23,7 @@
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + item.getName()
+					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_mummy_enter_event.Tooltip, item.getName())
 				});
 				this.World.Flags.set("IsMastabaDefeated", true);
 			}

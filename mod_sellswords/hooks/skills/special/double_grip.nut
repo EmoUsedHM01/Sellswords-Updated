@@ -3,7 +3,7 @@
 	q.getTooltip = @(__original) function ()
 	{
 		local cof = 0;
-		if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam)) {
+		if (::Legends.Perks.has(this, ::Legends.Perk.SsuGrandslam)) {
 			cof += 25;
 		}
 
@@ -13,7 +13,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "+[color=%positive%]" + cof + "%[/color] Damage"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.double_grip.Tooltip, cof)
 			});
 		}
 		return ret;
@@ -25,7 +25,7 @@
 		{
 			local cof = 1.0;
 
-			if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam))
+			if (::Legends.Perks.has(this, ::Legends.Perk.SsuGrandslam))
 			{
 				cof = cof + 0.25;
 			}

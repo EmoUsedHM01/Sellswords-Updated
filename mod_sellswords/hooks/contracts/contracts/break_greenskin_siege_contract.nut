@@ -48,10 +48,10 @@
 				}
 				else if (dc >= 150)
 				{						
-					party = faction.spawnEntity(this.Contract.getHome().getTile(), this.Contract.getHome().getName() + " Company", true, this.Const.World.Spawn.Nobleenhanced, (95 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+					party = faction.spawnEntity(this.Contract.getHome().getTile(), this.Contract.getHome().getName() + " Company", true, this.Const.World.Spawn.SsuNobleenhanced, (95 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				}				
 				party.getSprite("banner").setBrush(faction.getBannerSmall());
-				party.setDescription("Professional soldiers in service to local lords.");
+				party.setDescription(::Mod_Sellswords.Strings.break_greenskin_siege_contract.Description1);
 				this.Contract.m.Troops = this.WeakTableRef(party);
 				party.getLoot().Money = this.Math.rand(50, 200);
 				party.getLoot().ArmorParts = this.Math.rand(0, 25);
@@ -167,10 +167,10 @@
 			}
 			if (dc >= 150)
 			{	
-				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(tile, "Siege Engines", false, this.Const.World.Spawn.GreenskinHordeenhanced, this.Math.rand(120, 150) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).spawnEntity(tile, "Siege Engines", false, this.Const.World.Spawn.SsuGreenskinHordeenhanced, this.Math.rand(120, 150) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 			}			
 			this.m.UnitsSpawned.push(party.getID());
-			party.setDescription("A horde of greenskins and their siege engines.");
+			party.setDescription(::Mod_Sellswords.Strings.break_greenskin_siege_contract.Description2);
 			local numSiegeUnits = this.Math.rand(3, 4);
 
 			for( local j = 0; j < numSiegeUnits; j = ++j )
@@ -257,10 +257,10 @@
 			}
 			else if (dc >= 150)
 			{	
-				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(tile, "Greenskin Horde", false, this.Const.World.Spawn.GreenskinHordeenhanced, this.Math.rand(105, 130) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(tile, "Greenskin Horde", false, this.Const.World.Spawn.SsuGreenskinHordeenhanced, this.Math.rand(105, 130) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 			}			
 			this.m.UnitsSpawned.push(party.getID());
-			party.setDescription("A horde of greenskins marching to war.");
+			party.setDescription(::Mod_Sellswords.Strings.break_greenskin_siege_contract.Description3);
 			party.getLoot().ArmorParts = this.Math.rand(0, 15);
 			party.getLoot().Ammo = this.Math.rand(0, 10);
 			party.addToInventory("supplies/strange_meat_item");

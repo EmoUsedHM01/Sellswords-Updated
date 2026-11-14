@@ -3,13 +3,13 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_trumpcard"));
 		local dc = this.World.getTime().Days;
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");
 		dc = this.Math.max(dc, 3 * mn);	
 		if (dc >= 120)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBattlerhaposdy"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_battlerhaposdy"));
 		}
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -37,18 +37,12 @@
 			"weapons/named/named_shamshir",			
 			"weapons/named/named_qatal_dagger",
 			"weapons/named/named_qatal_dagger",			
-			"weapons/named/named_katar"
+			"weapons/named/ssu_named_katar"
 		];
 
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));					
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_battleheart"));
 		this.m.Skills.removeByID("perk.underdog");
-			
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_unstoppable"));
-			this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));
-		}
 
 		return true;
 	}

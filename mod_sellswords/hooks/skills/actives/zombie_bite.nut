@@ -5,7 +5,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "A vicious bite. Will revive humanoid enemies as allied Wiedergangers if dealt as a killing blow.";
+		this.m.Description = ::Mod_Sellswords.Strings.zombie_bite.Description;
 	}
 
 	q.getTooltip = @(__original) function()
@@ -16,16 +16,16 @@
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has an additional [color=%positive%]15%[/color] chance to hit the head"
+			text = ::Mod_Sellswords.Strings.zombie_bite.Tooltip1
 		});
 			
-		if (this.getContainer().hasSkill("perk.zombie_infectious_bite"))
+		if (this.getContainer().hasSkill("perk.ssu_necro_zombie_infectious"))
 		{
 			ret.push({
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Can poison on hit"
+				text = ::Mod_Sellswords.Strings.zombie_bite.Tooltip2
 			});
 		}
 
@@ -35,7 +35,7 @@
 	q.onAfterUpdate = @(__original) function( _properties )
 	{
 		__original( _properties );
-		if (this.getContainer().hasSkill("perk.zombie_feasting_bite")) this.m.ActionPointCost -= 1;
+		if (this.getContainer().hasSkill("perk.ssu_necro_zombie_feasting")) this.m.ActionPointCost -= 1;
 	}
 
 	q.isHidden = @(__original) function()
@@ -57,7 +57,7 @@
 		local success = this.attackEntity(_user, _targetTile.getEntity());
 		local isPlayer = _user.isPlayerControlled();
 		local isEnemy = !isPlayer && ("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary;
-		local isSpecialized = this.getContainer().hasSkill("perk.zombie_infectious_bite");
+		local isSpecialized = this.getContainer().hasSkill("perk.ssu_necro_zombie_infectious");
 
 		if (success)
 		{

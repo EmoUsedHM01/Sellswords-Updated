@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "Feast on a corpse to regain health and cure injuries. Will daze and disgust any non-mutated ally within four tiles.";
+		this.m.Description = ::Mod_Sellswords.Strings.legend_gruesome_feast_skill.Description;
 		this.m.ActionPointCost = 6;
 		this.m.FatigueCost = 25;
 	}
@@ -24,7 +24,7 @@
 			}
 
 			if (_user.isDiscovered() && (!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer))
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " feasts on a corpse");
+				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_gruesome_feast_skill.Log, this.Const.UI.getColorizedEntityName(_user)));
 		}
 
 		if (!_user.isHiddenToPlayer())
@@ -55,7 +55,7 @@
 			if (a.getFaction() != _user.getFaction()) continue;
 			if (_user.getFlags().getAsInt("SequencesUsed") > 0) continue;
 
-			a.getSkills().add(this.new("scripts/skills/effects/legend_dazed_effect"));
+			a.getSkills().add(this.new("scripts/skills/effects/dazed_effect"));
 			a.worsenMood(2.0, "Witnessed someone eat a corpse");
 		}
 

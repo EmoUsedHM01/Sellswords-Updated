@@ -12,7 +12,7 @@
 			mult = mult * 1.25;
 		}
 
-		if (this.getContainer().hasSkill("perk.crTotalcover"))
+		if (this.getContainer().hasSkill("perk.ssu_totalcover"))
 		{
 			dr = dr - 20;
 		}
@@ -32,13 +32,13 @@
 			id = 4,
 			type = "text",
 			icon = "ui/icons/melee_defense.png",
-			text = "Grants [color=%positive%]+" + this.Math.floor(item.getMeleeDefense() * mult + proficiencyBonus) + "[/color] Melee Defense for one turn"
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.shieldwall.Tooltip1, this.Math.floor(item.getMeleeDefense() * mult + proficiencyBonus))
 		});
 		tooltip.push({
 			id = 5,
 			type = "text",
 			icon = "ui/icons/ranged_defense.png",
-			text = "Grants [color=%positive%]+" + this.Math.floor(item.getRangedDefense() * mult + proficiencyBonus) + "[/color] Ranged Defense for one turn"
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.shieldwall.Tooltip2, this.Math.floor(item.getRangedDefense() * mult + proficiencyBonus))
 		});
 
 		if (dr < 100)
@@ -47,7 +47,7 @@
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Only receive [color=%positive%]" + dr + "%[/color] of any damage"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.shieldwall.Tooltip3, dr)
 			});
 		}
 

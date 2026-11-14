@@ -57,7 +57,7 @@
 					}
 					else if (dc >= 150)
 					{						
-						this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.UndeadScourgeenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.SsuUndeadScourgeenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					}					
 				}
 
@@ -117,7 +117,7 @@
 					}
 					else if (dc >= 150)
 					{								
-						this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.UndeadScourgeenhanced, (130 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.SsuUndeadScourgeenhanced, (130 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					}						
 					this.Contract.getActiveState().start();
 					this.World.Contracts.updateActiveContract();
@@ -166,7 +166,7 @@
 					}
 					else if (dc >= 150)
 					{								
-						this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.UndeadScourgeenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.SsuUndeadScourgeenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					}						
 					this.Contract.m.Destination.setLootScaleBasedOnResources(130 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 
@@ -194,11 +194,11 @@
 					dc = this.Math.min(dc, 300);	
 					if (dc < 150)
 					{								
-						party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, this.Flags.get("NemesisNameC"), false, this.Const.World.Spawn.MercenariesLOW, 120 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, this.Flags.get("NemesisNameC"), false, this.Const.World.Spawn.SsuMercenariesLOW, 120 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					}
 					else if (dc >= 150)
 					{								
-						party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, this.Flags.get("NemesisNameC"), false, this.Const.World.Spawn.MercenariesLOW, 135 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, this.Flags.get("NemesisNameC"), false, this.Const.World.Spawn.SsuMercenariesLOW, 135 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					}						
 					party.setFootprintType(this.Const.World.FootprintsType.Mercenaries);
 					local n = 0;
@@ -298,7 +298,7 @@
 					}
 					else if (dc >= 150)
 					{						
-						this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.UndeadScourgeenhanced, (105 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						this.Contract.addUnitsToEntity(this.Contract.m.Destination, this.Const.World.Spawn.SsuUndeadScourgeenhanced, (105 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					}				
 					this.Contract.getActiveState().start();
 					this.World.Contracts.updateActiveContract();

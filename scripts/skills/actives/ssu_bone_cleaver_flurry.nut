@@ -3,8 +3,8 @@ this.ssu_bone_cleaver_flurry <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.ssu_bone_cleaver_flurry";
-		this.m.Name = "Mince";
-		this.m.Description = "A continuous flurry of blows so oppressive that it will send anything that survives reeling.";	
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_bone_cleaver_flurry.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_bone_cleaver_flurry.Description;	
 		this.m.KilledString = "Cleaved";
 		this.m.Icon = "skills/active_182.png";
 		this.m.IconDisabled = "skills/active_182_sw.png";
@@ -51,20 +51,20 @@ this.ssu_bone_cleaver_flurry <- this.inherit("scripts/skills/skill", {
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Will make five separate strikes for [color=%negative%]50%[/color] of the weapon\'s damage each."
+				text = ::Mod_Sellswords.Strings.ssu_bone_cleaver_flurry.Tooltip1
 			},
 			{
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a higher than normal chance to cause fatalities."
+				text = ::Mod_Sellswords.Strings.ssu_bone_cleaver_flurry.Tooltip2
 			}
 		]);
 		ret.push({
 			id = 9,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts additional stacking [color=%damage%]" + dmg + "[/color] bleeding damage per turn."
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_bone_cleaver_flurry.Tooltip3, dmg)
 		});
 
 		return ret;

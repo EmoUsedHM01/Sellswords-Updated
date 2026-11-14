@@ -5,7 +5,7 @@
 		__original();
 		this.m.BaseProperties.IsAffectedByInjuries = true;				
 		this.m.Skills.removeByID("perk.hold_out");	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));			
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));			
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -40,7 +40,7 @@
 			{
 				weapons.extend([
 					"weapons/longsword",
-					"weapons/legend_longsword",
+					"weapons/longsword",
 					"weapons/greataxe",
 					"weapons/legend_ranged_flail",
 				]);
@@ -68,11 +68,11 @@
 		local aList = [
 			[
 				3,
-				"cr_zombieknight_armor_ichi"
+				"ssu_zombieknight_armor_ichi"
 			],
 			[
 				1,
-				"cr_zombieknight_armor_ni"
+				"ssu_zombieknight_armor_ni"
 			]
 		];
 		local armor = this.Const.World.Common.pickArmor(aList);

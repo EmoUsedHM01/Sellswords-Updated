@@ -41,7 +41,7 @@
 		{
 			local id = perk.getID();
 
-			if (id == "perk.stalwart" || id == "perk.legend_composure" || id == "perk.battering_ram" || id == "perk.crGrandslam")
+			if (id == "perk.stalwart" || id == "perk.legend_composure" || id == "perk.battering_ram" || id == "perk.ssu_grandslam")
 			{
 				continue;
 			}
@@ -65,7 +65,7 @@
 			{
 				if (v.Script != "")
 				{
-					this.Tactical.EventLog.log("The framed beggar learned [color=%negative%]" + perk.getName() + "[/color] from " + _targetEntity.getName());
+					this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_beggar_commander_op_background.Log, perk.getName(), _targetEntity.getName()));
 					actor.getSkills().add(this.new(v.Script));
 					local rowToAddPerk = 0;
 					local length = actor.getBackground().getPerkTree()[0].len();

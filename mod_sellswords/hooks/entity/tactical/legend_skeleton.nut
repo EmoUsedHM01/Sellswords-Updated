@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		this.skeleton.create();
-		this.m.Name = "Raised Skeleton";
+		this.m.Name = ::Mod_Sellswords.Strings.legend_skeleton.Name;
 		this.m.ResurrectWithScript = "";
 		this.m.IsSummoned = true;
 		this.m.IsActingImmediately = true;

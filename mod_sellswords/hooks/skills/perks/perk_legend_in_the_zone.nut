@@ -23,7 +23,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/melee_skill.png",
-					text = "+[color=%positive%]" + crbonus + "%[/color] Melee Skill"
+					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_in_the_zone.Tooltip1, crbonus)
 				});
 			}
 
@@ -33,7 +33,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/melee_defense.png",
-					text = "+[color=%positive%]" + 0.5 * bonus + "%[/color] Melee Defense"
+					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_in_the_zone.Tooltip2, 0.5 * bonus)
 				});
 			}
 
@@ -41,7 +41,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "+[color=%positive%]" + bonus + "%[/color] Melee Damage"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_in_the_zone.Tooltip3, bonus)
 			});
 		}
 
@@ -51,7 +51,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/warning.png",
-				text = "Melee Damage bonus [color=%negative%]halved[/color] due to not being engaged in melee"
+				text = ::Mod_Sellswords.Strings.perk_legend_in_the_zone.Tooltip4
 			});
 		}
 

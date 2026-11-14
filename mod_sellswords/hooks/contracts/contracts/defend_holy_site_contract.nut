@@ -52,10 +52,10 @@
 						}
 						else if (dc >= 150)
 						{						
-							party = cityState.spawnEntity(this.Contract.m.Destination.getTile(), "Regiment of " + cityState.getNameOnly(), true, this.Const.World.Spawn.Southernenhanced, this.Math.rand(90 + 0.1 * dc, 135 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+							party = cityState.spawnEntity(this.Contract.m.Destination.getTile(), "Regiment of " + cityState.getNameOnly(), true, this.Const.World.Spawn.SsuSouthernenhanced, this.Math.rand(90 + 0.1 * dc, 135 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 						}					
 						party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + cityState.getBannerString());
-						party.setDescription("Conscripted soldiers loyal to their city state.");
+						party.setDescription(::Mod_Sellswords.Strings.defend_holy_site_contract.Description1);
 						party.getLoot().Money = this.Math.rand(100, 300);
 						party.getLoot().ArmorParts = this.Math.rand(10, 35);
 						party.getLoot().Medicine = this.Math.rand(5, 15);
@@ -133,7 +133,7 @@
 						}
 						else if (dc >= 150)
 						{						
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Southernenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuSouthernenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
 						}						
 						p.EnemyBanners = [
 							this.World.FactionManager.getFaction(this.Flags.get("EnemyID")).getPartyBanner()
@@ -208,7 +208,7 @@
 								}
 								else if (dc >= 150)
 								{
-									this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, 65 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
+									this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, 65 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
 								}							
 								p.AllyBanners.push(this.World.FactionManager.getFaction(this.Contract.getFaction()).getPartyBanner());
 							}
@@ -314,7 +314,7 @@
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + item.getName()
+						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.defend_holy_site_contract.Tooltip1, item.getName())
 					});
 				}
 
@@ -323,7 +323,7 @@
 				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_supplies.png",
-					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Tools and Supplies."
+					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.defend_holy_site_contract.Tooltip2, this.Const.UI.Color.PositiveEventValue, amount)
 				});
 			}
 		}
@@ -414,10 +414,10 @@
 		}
 		else if (dc >= 150)
 		{
-			party = f.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly() + " Company", true, this.Const.World.Spawn.Nobleenhanced, this.Math.rand(90 + 0.1 * dc, 135 + 0.15 * dc) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+			party = f.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly() + " Company", true, this.Const.World.Spawn.SsuNobleenhanced, this.Math.rand(90 + 0.1 * dc, 135 + 0.15 * dc) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		}		
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-		party.setDescription("Professional soldiers in service to local lords.");
+		party.setDescription(::Mod_Sellswords.Strings.defend_holy_site_contract.Description2);
 		party.getLoot().Money = this.Math.rand(50, 200);
 		party.getLoot().ArmorParts = this.Math.rand(0, 25);
 		party.getLoot().Medicine = this.Math.rand(0, 3);
@@ -529,10 +529,10 @@
 		}
 		if (dc >= 150)
 		{
-			party = f.spawnEntity(tiles[0].Tile, "Regiment of " + candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly(), true, this.Const.World.Spawn.Southernenhanced, (this.m.Flags.get("IsEnemyLuredAway") ? 155 : 190) * this.getScaledDifficultyMult());
+			party = f.spawnEntity(tiles[0].Tile, "Regiment of " + candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly(), true, this.Const.World.Spawn.SsuSouthernenhanced, (this.m.Flags.get("IsEnemyLuredAway") ? 155 : 190) * this.getScaledDifficultyMult());
 		}		
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-		party.setDescription("Conscripted soldiers loyal to their city state.");
+		party.setDescription(::Mod_Sellswords.Strings.defend_holy_site_contract.Description1);
 		party.setAttackableByAI(false);
 		party.setAlwaysAttackPlayer(true);
 		party.getLoot().Money = this.Math.rand(100, 300);

@@ -49,7 +49,7 @@
 		local weapons = [
 			"weapons/legend_halberd",
 			"weapons/legend_halberd",				
-			"weapons/crpolehammer",
+			"weapons/ssu_polehammer",
 			"weapons/legend_battle_glaive"
 		];
 

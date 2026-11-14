@@ -3,11 +3,6 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_eyes_up"));
-		}
 				
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{

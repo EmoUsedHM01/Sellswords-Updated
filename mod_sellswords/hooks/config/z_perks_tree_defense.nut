@@ -1,18 +1,15 @@
 // shield tree
-::Const.Perks.ShieldTree.Tree[5] = [::Const.Perks.PerkDefs.crTotalcover];
-::Const.Perks.ShieldTree.Tree[6] = [::Const.Perks.PerkDefs.crGuardian];
+::Const.Perks.ShieldTree.Tree[5].push(::Const.Perks.PerkDefs.SsuTotalcover);
+::Const.Perks.ShieldTree.Tree[6].push(::Const.Perks.PerkDefs.SsuGuardian);
 
 // heavy armor tree
-::Const.Perks.HeavyArmorTree.Tree[3] = [::Const.Perks.PerkDefs.ArmorMasteryHeavy];
+::Const.Perks.HeavyArmorTree.Tree[3].push(::Const.Perks.PerkDefs.SsuArmorMasteryHeavy);
 
 // medium armor tree
-::Const.Perks.MediumArmorTree.Tree[1] = [::Const.Perks.PerkDefs.LegendBalance];
-::Const.Perks.MediumArmorTree.Tree[2] = [::Const.Perks.PerkDefs.LegendPerfectFit];
-::Const.Perks.MediumArmorTree.Tree[3] = [::Const.Perks.PerkDefs.ArmorMasteryMedium];
-::Const.Perks.MediumArmorTree.Tree[6] = [::Const.Perks.PerkDefs.LegendInTheZone];
+::Const.Perks.MediumArmorTree.Tree[3].push(::Const.Perks.PerkDefs.SsuArmorMasteryMedium);
 
 // light armor tree
-::Const.Perks.LightArmorTree.Tree[3] = [::Const.Perks.PerkDefs.ArmorMasteryLight];
+::Const.Perks.LightArmorTree.Tree[3].push(::Const.Perks.PerkDefs.SsuArmorMasteryLight);
 
 // cloth armor tree
-::Const.Perks.ClothArmorTree.Tree[3] = [::Const.Perks.PerkDefs.ArmorMasteryCloth];
+::Const.Perks.ClothArmorTree.Tree[3].push(::Const.Perks.PerkDefs.SsuArmorMasteryCloth);

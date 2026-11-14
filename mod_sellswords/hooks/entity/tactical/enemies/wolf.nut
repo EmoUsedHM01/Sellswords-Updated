@@ -8,11 +8,6 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));	
 
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bear_down"));
-		}
-
 		local b = this.getBaseProperties();
 		b.MeleeSkill += 10;
 		local c = this.getCurrentProperties();

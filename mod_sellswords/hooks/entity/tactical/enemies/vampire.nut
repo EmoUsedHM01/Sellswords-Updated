@@ -6,9 +6,6 @@
 
 		this.m.BaseProperties.IsAffectedByInjuries = true;
 
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/effects/ptr_undead_injury_receiver_effect"));
-
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -38,9 +35,6 @@
 		::Legends.Perks.grant(this, ::Legends.Perk.Dodge);
 		::Legends.Perks.grant(this, ::Legends.Perk.LegendSlaughterer);
 
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_tempo"));
-
 		return true;
 	}
 
@@ -48,7 +42,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 2.5;
-		local item = "scripts/items/misc/anatomist/necrosavant_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_necro_necrosavant_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

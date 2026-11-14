@@ -16,13 +16,6 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smashing_shields"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_axe"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));
-		
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_fruits_of_labor"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_formidable_approach"));
-		}
 
 		this.getSprite("socket").setBrush("bust_base_militia");
 
@@ -31,17 +24,10 @@
 			this.m.Hitpoints = b.Hitpoints * 1.4;
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_bloody_harvest"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crSignaturemove"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_signaturemove"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_footwork"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
-
-			if (::Is_PTR_Exist)
-			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bloody_harvest"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_heft"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_dismemberment"));		
-			}
 		}		
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 40)
 		{
@@ -133,7 +119,6 @@
 				this.m.Items.equip(this.new("scripts/items/weapons/legend_infantry_axe"));
 			}
 		}
-		//this.m.Skills.addTreeOfEquippedWeapon(4);
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 4);	
 		
 		if (dc <= 25)
@@ -150,7 +135,7 @@
 				if (this.Math.rand(1, 100) <= 50)
 				{
 					local helm = this.Const.World.Common.pickHelmet([
-						[1, "peasant_helmet_early"]
+						[1, "ssu_peasant_helmet_early"]
 					]);
 					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
 					this.m.Items.equip(helm);				
@@ -160,16 +145,16 @@
 		else if (dc <= 40)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[4, "cr_peasant_armor"],
-				[1, "cr_peasant_armor_mid"]
+				[4, "ssu_peasant_armor"],
+				[1, "ssu_peasant_armor_mid"]
 			]));
 
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = this.Const.World.Common.pickHelmet([
-					[1, "peasant_helmet_early"],
-					[2, "peasant_helmet_mid"]					
+					[1, "ssu_peasant_helmet_early"],
+					[2, "ssu_peasant_helmet_mid"]					
 
 				]);
 				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
@@ -179,16 +164,16 @@
 		else if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_peasant_armor_late"],
-				[4, "cr_peasant_armor_mid"]
+				[1, "ssu_peasant_armor_late"],
+				[4, "ssu_peasant_armor_mid"]
 			]));
 
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = this.Const.World.Common.pickHelmet([
-					[1, "peasant_helmet_late"],
-					[2, "peasant_helmet_mid"]					
+					[1, "ssu_peasant_helmet_late"],
+					[2, "ssu_peasant_helmet_mid"]					
 					
 				]);
 				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
@@ -198,7 +183,7 @@
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[5, "cr_peasant_armor_late"],
+				[5, "ssu_peasant_armor_late"],
 				[1, "ragged_surcoat"],
 				[1, "padded_leather"],
 				[1, "worn_mail_shirt"],
@@ -210,7 +195,7 @@
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = this.Const.World.Common.pickHelmet([
-					[1, "peasant_helmet_late"]					
+					[1, "ssu_peasant_helmet_late"]					
 					
 				]);
 				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
@@ -220,16 +205,16 @@
 		else if (dc > 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_peasant_armor_late"],
-				[1, "cr_peasant_armor_verylate"]				
+				[1, "ssu_peasant_armor_late"],
+				[1, "ssu_peasant_armor_verylate"]				
 			]));
 
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = this.Const.World.Common.pickHelmet([
-					[1, "peasant_helmet_late"],					
-					[2, "peasant_helmet_verylate"]							
+					[1, "ssu_peasant_helmet_late"],					
+					[2, "ssu_peasant_helmet_verylate"]							
 				]);
 				helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
 				this.m.Items.equip(helm);				

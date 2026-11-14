@@ -7,7 +7,7 @@
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Applies Safeguard to someone, increasing their defenses by [color=%positive%]+15[/color]"
+			text = ::Mod_Sellswords.Strings.legend_safeguard_skill.Tooltip
 		});
 		return ret;
 	}

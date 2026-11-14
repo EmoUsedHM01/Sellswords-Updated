@@ -3,7 +3,7 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBruiser"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_bruiser"));
 
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 80)
 		{
@@ -64,10 +64,10 @@
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
 			local weapons = [
-				"weapons/barbarians/crbarbarian_hammer",
-				"weapons/barbarians/crbarbarian_mace",	
-				"weapons/barbarians/twinaxes_t2",
-				"weapons/barbarians/twincleavers_t2",
+				"weapons/barbarians/ssu_barbarian_hammer",
+				"weapons/barbarians/ssu_barbarian_mace",	
+				"weapons/barbarians/ssu_twinaxes_t2",
+				"weapons/barbarians/ssu_twincleavers_t2",
 				"weapons/barbarians/rusty_warblade",
 				"weapons/barbarians/heavy_rusty_axe"
 			];
@@ -90,21 +90,21 @@
 		local armor = [
 			[
 				33,
-				"crbarbarian_rugged_scale_armor"
+				"ssu_barbarian_rugged_scale_armor"
 			],
 			[
 				34,
-				"crbarbarian_heavy_iron_armor"
+				"ssu_barbarian_heavy_iron_armor"
 			],
 			[
 				33,
-				"crbarbarian_thick_plated_barbarian_armor"
+				"ssu_barbarian_thick_plated_barbarian_armor"
 			]
 		];
 
 		armor.push([
 			5,
-			"crbarbarian_reinforced_heavy_iron_armor"
+			"ssu_barbarian_reinforced_heavy_iron_armor"
 		]);
 
 		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
@@ -144,22 +144,16 @@
 		else if (r == 2)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crbarbarian_champion_fur"],
-				[1, "crbarbarian_champion_skull"],
+				[1, "ssu_barbarian_champion_fur"],
+				[1, "ssu_barbarian_champion_skull"],
 			]));
 		}
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crbarbarian_champion_skull"],
-				[1, "crbarbarian_champion_spiked"],
+				[1, "ssu_barbarian_champion_skull"],
+				[1, "ssu_barbarian_champion_spiked"],
 			]));
-		}
-
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_vengeful_spite"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));
 		}
 
 		return true;

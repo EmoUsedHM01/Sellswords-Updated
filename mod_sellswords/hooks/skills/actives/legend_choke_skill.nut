@@ -9,7 +9,7 @@
 
 		local mod = 0;
 
-		if (_targetEntity.getSkills().hasSkill("effects.legend_dazed"))
+		if (_targetEntity.getSkills().hasSkill("effects.dazed"))
 		{
 			mod = mod + 10;
 		}
@@ -67,16 +67,16 @@
 			modarmor = this.Math.min(35, (targetArmor - 125) / 5);
 			_tooltip.push({
 				icon = "ui/tooltips/negative.png",
-				text = "[color=%negative%]" + modarmor + "%[/color] Firm armor"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_choke_skill.Tooltip1, modarmor)
 			});				
 		}	
 		local modvigor = this.Math.floor((1.0 - targetEntity.getFatiguePct()) * 50);			
 		_tooltip.push({
 			icon = "ui/tooltips/negative.png",
-			text = "[color=%negative%]" + modvigor + "%[/color] Fresh and energetic"
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_choke_skill.Tooltip2, modvigor)
 		});	
 		local mod = 0;
-		if (targetEntity.getSkills().hasSkill("effects.legend_dazed"))
+		if (targetEntity.getSkills().hasSkill("effects.dazed"))
 		{
 			mod = mod + 10;
 		}
@@ -108,7 +108,7 @@
 		{
 			_tooltip.push({
 				icon = "ui/tooltips/positive.png",
-				text = "[color=%positive%]" + mod + "%[/color] Negative status"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_choke_skill.Tooltip3, mod)
 			});	
 		}
 	}
@@ -123,7 +123,7 @@
 				id = 5,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "Damage halved due to holding something in your off hand"
+				text = ::Mod_Sellswords.Strings.legend_choke_skill.Tooltip4
 			});
 		}
 
@@ -133,7 +133,7 @@
 				id = 5,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "This skill is not useable due to holding something in your main hand"
+				text = ::Mod_Sellswords.Strings.legend_choke_skill.Tooltip5
 			});
 		}
 
@@ -156,7 +156,6 @@
 
 		local chance = this.getHitChance(_targetEntity);
 		local actor = this.getContainer().getActor();
-		//local average = this.Math.max(50, actor.getInitiative() + actor.getHitpoints() - 25) / 5;
 		local average = actor.getInitiative() / 4 + actor.getHitpoints() / 5;			
 
 		if (actor.getOffhandItem() != null)

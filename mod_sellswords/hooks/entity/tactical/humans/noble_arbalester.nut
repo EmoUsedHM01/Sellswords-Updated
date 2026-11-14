@@ -6,9 +6,6 @@
 
 		local dc = this.World.getTime().Days;
 
-		if (::Is_PTR_Exist && 0.5 * dc > this.Math.rand(1, 100) && dc >= 120)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_eyes_up"));
-
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -52,13 +49,13 @@
 		local r = this.Math.rand(1, 10);
 		switch (r) {
 			case 1:
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_bolts"));
+				this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_fire_bolts"));
 				break;
 			case 2:
 				this.m.Items.equip(this.new("scripts/items/ammo/legend_armor_piercing_bolts"));
 				break;
 			case 3:
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_bolts"));
+				this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_bleeding_bolts"));
 				break;
 			default:
 				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bolts"));
@@ -88,29 +85,29 @@
 		else if (dc <= 130)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_early"]
+				[3, "ssu_arbalester_armor_early"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crbillman_helmet_low"]
+				[1, "ssu_billman_helmet_low"]
 			]));
 		}
 		else if (dc <= 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_mid"]
+				[3, "ssu_arbalester_armor_mid"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crbillman_helmet_early"]
+				[1, "ssu_billman_helmet_early"]
 			]));
 		}
 		else if (dc > 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_late"]
+				[3, "ssu_arbalester_armor_late"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[2, "crbillman_helmet_mid_chain"],
-				[2, "crbillman_helmet_mid"]
+				[2, "ssu_billman_helmet_mid_chain"],
+				[2, "ssu_billman_helmet_mid"]
 			]));
 		}
 	}

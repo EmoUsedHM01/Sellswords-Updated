@@ -100,10 +100,10 @@
 		}
 		if (dc >= 150)
 		{
-			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(myTile, "Greenskin Horde", false, this.Const.World.Spawn.GreenskinHordeenhanced, rand * this.getScaledDifficultyMult());
+			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Orcs).spawnEntity(myTile, "Greenskin Horde", false, this.Const.World.Spawn.SsuGreenskinHordeenhanced, rand * this.getScaledDifficultyMult());
 		}		
 		party.getSprite("banner").setBrush(nearestOrcs.getBanner());
-		party.setDescription("A horde of greenskins marching to war.");
+		party.setDescription(::Mod_Sellswords.Strings.send_greenskin_army_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 		party.getFlags().set("IsRandomlySpawned", true);
 		party.getLoot().ArmorParts = this.Math.rand(0, 10);

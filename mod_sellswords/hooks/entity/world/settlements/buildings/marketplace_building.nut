@@ -8,17 +8,12 @@
 				{
 					R = 80,
 					P = 2.1,
-					S = "supplies/banquet_item"
+					S = "supplies/ssu_banquet_item"
 				},
 				{
 					R = 60,
 					P = 2.1,
 					S = "supplies/cured_rations_item"
-				},
-				{
-					R = 50,
-					P = 1.0,
-					S = "misc/cr_pack"
 				}
 			]);
 		}
@@ -39,7 +34,7 @@
 					{
 						R = 40,
 						P = 1.0,
-						S = "weapons/heavy_mining_pick"
+						S = "weapons/ssu_heavy_mining_pick"
 					}
 				]);
 			}
@@ -49,47 +44,47 @@
 			{
 				R = 70,
 				P = 1.0,
-				S = "ammo/quiver_of_fire_arrows"
+				S = "ammo/ssu_quiver_of_fire_arrows"
 			},
 			{
 				R = 70,
 				P = 1.0,
-				S = "ammo/quiver_of_freezing_arrows"
+				S = "ammo/ssu_quiver_of_freezing_arrows"
 			},
 			{
 				R = 70,
 				P = 1.0,
-				S = "ammo/quiver_of_bleeding_arrows"
+				S = "ammo/ssu_quiver_of_bleeding_arrows"
 			},
 			{
 				R = 70,
 				P = 1.0,
-				S = "ammo/quiver_of_poisoned_arrows"
+				S = "ammo/ssu_quiver_of_poisoned_arrows"
 			},
 			{
 				R = 70,
 				P = 1.0,
-				S = "ammo/quiver_of_fire_bolts"
+				S = "ammo/ssu_quiver_of_fire_bolts"
 			},
 			{
 				R = 70,
 				P = 1.0,
-				S = "ammo/quiver_of_freezing_bolts"
+				S = "ammo/ssu_quiver_of_freezing_bolts"
 			},
 			{
 				R = 70,
 				P = 1.0,
-				S = "ammo/quiver_of_bleeding_bolts"
+				S = "ammo/ssu_quiver_of_bleeding_bolts"
 			},
 			{
 				R = 70,
 				P = 1.0,
-				S = "ammo/quiver_of_poisoned_bolts"
+				S = "ammo/ssu_quiver_of_poisoned_bolts"
 			},
 			{
 				R = 25,
 				P = 1.0,
-				S = "accessory/militia_armband_item"
+				S = "accessory/ssu_militia_armband_item"
 			}
 		]);
 

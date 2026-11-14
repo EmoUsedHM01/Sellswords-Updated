@@ -36,7 +36,7 @@
 					this.List.push({
 						id = 16,
 						icon = "ui/icons/bravery.png",
-						text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] for ALL attributes"
+						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.oathtakers_all_oaths_complete_event.Tooltip, bro.getName(), this.Const.UI.Color.PositiveEventValue)
 					});
 				}
 			}

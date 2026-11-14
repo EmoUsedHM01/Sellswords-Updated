@@ -2,10 +2,10 @@ this.ssu_ap_potion_item <- this.inherit("scripts/items/item", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "misc.gain_ap_potion";
-		this.m.Name = "Elixir of Potency";
-		this.m.Description = "Few people have heard about this legendary potion, and fewer still would be capable enough to craft it.\nCreated from using the rarest of ingredients, it pushes the abilities of any who imbibe to their upmost limits.";
-		this.m.Icon = "consumables/vial_red_01.png";
+		this.m.ID = "misc.ssu_gain_ap_potion";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_ap_potion_item.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_ap_potion_item.Description;
+		this.m.Icon = "consumables/ssu_vial_red_01.png";
 		this.m.SlotType = this.Const.ItemSlot.None;
 		this.m.ItemType = this.Const.Items.ItemType.Usable;
 		this.m.IsDroppedAsLoot = true;
@@ -33,7 +33,7 @@ this.ssu_ap_potion_item <- this.inherit("scripts/items/item", {
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Gain [color=%positive%]+1[/color] Action Point.\nPermanently."
+			text = ::Mod_Sellswords.Strings.ssu_ap_potion_item.Tooltip1
 		});
 		result.push({
 			id = 66,
@@ -62,7 +62,7 @@ this.ssu_ap_potion_item <- this.inherit("scripts/items/item", {
 		result.push({
 			id = 65,
 			type = "text",
-			text = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process."
+			text = ::Mod_Sellswords.Strings.ssu_ap_potion_item.Tooltip2
 		});
 		return result;
 	}

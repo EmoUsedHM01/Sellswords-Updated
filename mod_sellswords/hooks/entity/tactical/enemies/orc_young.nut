@@ -6,7 +6,6 @@
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 120)
 		{
 			this.m.BaseProperties.RangedSkill += 5;	
-			//this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));				
 		}		
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -52,9 +51,9 @@
 				else if (r == 4)
 					weapon = this.new("scripts/items/weapons/greenskins/legend_skullsmasher");
 				else if (r == 5)
-					weapon = this.new("scripts/items/weapons/greenskins/cr_orc_spear");
+					weapon = this.new("scripts/items/weapons/greenskins/ssu_orc_spear");
 				else
-					weapon = this.new("scripts/items/weapons/greenskins/cr_orc_mace");
+					weapon = this.new("scripts/items/weapons/greenskins/ssu_orc_mace");
 			}
 		}
 		else
@@ -153,7 +152,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 1.25;
-		local item = "scripts/items/misc/anatomist/orc_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_orc_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

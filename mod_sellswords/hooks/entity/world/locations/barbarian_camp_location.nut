@@ -7,11 +7,11 @@
 		local r = this.Math.rand(1, 100);
 		if (r <= 15)
 		{
-			this.setDefenderSpawnList(this.Const.World.Spawn.BabarianChosens);
+			this.setDefenderSpawnList(this.Const.World.Spawn.SsuBabarianChosens);
 		}
 		else if (r <= 30)
 		{
-			this.setDefenderSpawnList(this.Const.World.Spawn.BabarianBerserkers);
+			this.setDefenderSpawnList(this.Const.World.Spawn.SsuBabarianBerserkers);
 		}
 		else if (r > 30)
 		{

@@ -47,36 +47,35 @@
 			"weapons/legend_swordstaff",
 			"weapons/legend_infantry_axe",
 			"weapons/legend_military_goedendag",
-			"weapons/legend_heavy_goedendag"				
+			"weapons/ssu_heavy_goedendag"				
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
-		//this.m.Skills.addTreeOfEquippedWeapon();
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);	
 		if (dc <= 80)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crsergeant_armor_early"],
-				[1, "crsergeant_armor_medium"]					
+				[3, "ssu_sergeant_armor_early"],
+				[1, "ssu_sergeant_armor_medium"]					
 			]));
 		}
 		else if (dc <= 130)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crsergeant_armor_early"], 
-				[2, "crsergeant_armor_medium"] 					
+				[1, "ssu_sergeant_armor_early"], 
+				[2, "ssu_sergeant_armor_medium"] 					
 			]));
 		}			
 		else if (dc <= 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crsergeant_armor_medium"], 				
-				[2, "crsergeant_armor_late"]   				
+				[1, "ssu_sergeant_armor_medium"], 				
+				[2, "ssu_sergeant_armor_late"]   				
 			]));
 		}	
 		else if (dc > 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crsergeant_armor_scale"],										
+				[1, "ssu_sergeant_armor_scale"],										
 			]));
 		}
 	}
@@ -87,11 +86,6 @@
 			return false;
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
-
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.addPerkTree(this.Const.Perks.TwoHandedTree);	
-		}
 				
 		this.m.Items.equip(this.new("scripts/items/weapons/named/legend_named_infantry_axe"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));			

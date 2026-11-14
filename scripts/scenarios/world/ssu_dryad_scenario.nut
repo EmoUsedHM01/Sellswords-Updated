@@ -3,8 +3,8 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 	function create()
 	{
 		this.m.ID = "scenario.ssu_dryad";
-		this.m.Name = "Dryad";
-		this.m.Description = "[p=c][img]gfx/ui/events/legend_heartwood.png[/img][/p][p]The Dryads of the wild woods are wary of humans, prefering the company of the fauna and flora that surrounds them. \n\n[color=#bcad8c]Woodborne:[/color] Can cast Dryad magic, summoning woodland beings and imbuing allies with power.\n[color=#bcad8c]Heart of the Forest:[/color] Start the game with a Forest Heart, use this to attune yourself to that of the Greenwoods.\n[color=#bcad8c]Solitary:[/color] The Dryad hates nearly all humans, refusing to recruit anybody except wildlings, herbalists, beast tamers and other practictioners of wild magic.\n[color=#bcad8c]Avatar:[/color] If your Dryad dies, its game over.[/p]";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_dryad_scenario.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_dryad_scenario.Description;
 		this.m.Difficulty = 2;
 		this.m.Order = 712;
 		this.m.IsFixedLook = true;
@@ -41,10 +41,10 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		bros[0].setStartValuesEx([
 			"ssu_dryad_avatar_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "%name% has only ever known the heartwoods, the world of man is strange and disgusting.";
+		bros[0].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.ssu_dryad_scenario.RawDescription;
 		bros[0].getSkills().add(this.new("scripts/skills/traits/player_character_trait"));
 		bros[0].getSkills().add(this.new("scripts/skills/perks/perk_pathfinder"));
-		bros[0].getSprite("socket").setBrush("bust_base_dryad");
+		bros[0].getSprite("socket").setBrush("ssu_bust_base_dryad");
 		this.World.Assets.m.Money = this.World.Assets.m.Money * 0.5;
 		bros[0].getFlags().set("IsPlayerCharacter", true);
 		bros[0].setPlaceInFormation(3);
@@ -172,7 +172,7 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 
 	function updateLook()
 	{
-		::World.State.getPlayer().getSprite("body").setBrush("figure_player_1032");
+		::World.State.getPlayer().getSprite("body").setBrush("ssu_figure_player_1032");
 	}
 
 	function getMovementSpeedMult()

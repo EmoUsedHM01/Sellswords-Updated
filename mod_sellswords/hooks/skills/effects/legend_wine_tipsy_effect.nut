@@ -12,7 +12,7 @@
 	
 	q.getDescription = @(__original) function()
 	{
-		return "After imbibing wine, this character has [color=%positive%]+15%[/color] damage, damage reduction and  [color=%positive%]+30%[/color] Resolve. At the expense of [color=%negative%]-10%[/color] initiative and hitchance for [color=%negative%]" + this.m.TurnsLeft + "[/color] turn(s).";
+		return ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_wine_tipsy_effect.Text, this.m.TurnsLeft);
 	}
 	
 	q.getTooltip = @(__original) function()
@@ -32,37 +32,37 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/regular_damage.png",
-				text = "[color=%positive%]+15%[/color] Damage"
+				text = ::Mod_Sellswords.Strings.legend_wine_tipsy_effect.Tooltip1
 			},	
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/sturdiness.png",
-				text = "[color=%positive%]+15%[/color] Damage Reduction"
+				text = ::Mod_Sellswords.Strings.legend_wine_tipsy_effect.Tooltip2
 			},			
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "[color=%positive%]+30%[/color] Resolve"
+				text = ::Mod_Sellswords.Strings.legend_wine_tipsy_effect.Tooltip3
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=%negative%]-10%[/color] Melee Skill"
+				text = ::Mod_Sellswords.Strings.legend_wine_tipsy_effect.Tooltip4
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=%negative%]-10%[/color] Ranged Skill"
+				text = ::Mod_Sellswords.Strings.legend_wine_tipsy_effect.Tooltip5
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%negative%]-10%[/color] Initiative"
+				text = ::Mod_Sellswords.Strings.legend_wine_tipsy_effect.Tooltip6
 			}
 		];
 	}

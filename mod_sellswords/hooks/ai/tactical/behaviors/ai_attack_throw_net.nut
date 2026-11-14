@@ -3,7 +3,7 @@
 	q.m.PossibleSkills.extend([
 		"actives.throw_human_holy_water",
 		"actives.throw_acid_flask",
-		"actives.throw_net_free"
+		"actives.ssu_throw_net_free"
 	])
 
 });

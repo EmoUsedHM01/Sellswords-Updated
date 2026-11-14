@@ -4,13 +4,13 @@ this.ssu_legendary_hammer <- ::inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.ssu_legendary_hammer";
-		this.m.Name = "[color=#679d5e]Nature\'s Judgement[/color]";
-		this.m.Description = "One of the seven legendary weapons,\n[color=#679d5e]Nature\'s Judgement[/color] is forged from the heartwood of the oldest living tree in the forest and imbued with the essence of nature itself.\nIts construction is entwined with living roots and mystical runes that glow with green light. The sheer force its blows can bring will shatter flesh and steel alike.";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_legendary_hammer.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_legendary_hammer.Description;
 		this.m.IconLarge = "weapons/melee/ssu_earth_hammer.png"; 
 		this.m.Icon = "weapons/melee/ssu_earth_hammer_70x70.png";
 		this.m.SlotType = ::Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
-		this.m.Categories = "Hammer, Two-Handed";
+		this.m.Categories = ::Mod_Sellswords.Strings.ssu_legendary_hammer.Categories;
 		this.m.ItemType = ::Const.Items.ItemType.Weapon | ::Const.Items.ItemType.MeleeWeapon | ::Const.Items.ItemType.TwoHanded | ::Const.Items.ItemType.Legendary;
 		this.m.IsAgainstShields = true;
 		this.m.IsAoE = true;
@@ -38,26 +38,26 @@ this.ssu_legendary_hammer <- ::inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 6,
 			type = "text",
-			icon = "ui/icons/legendary_weapon.png",
-			text = "One of the seven [color=#456ca0]Legendary[/color] weapons."
+			icon = "ui/icons/ssu_legendary_weapon.png",
+			text = ::Mod_Sellswords.Strings.ssu_legendary_hammer.Tooltip1
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When swung, this weapon unleashes a powerful shockwave to all enemies in adjacent tiles to the target."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_hammer.Tooltip2
 		});
 		result.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts the [color=%positive%]Rooted[/color] status effect on hit."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_hammer.Tooltip3
 		});
 		result.push({
 			id = 9,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Slowly repairs [color=%positive%]+10[/color] durability per turn."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_hammer.Tooltip4
 		});
 
 		return result;
@@ -70,7 +70,7 @@ this.ssu_legendary_hammer <- ::inherit("scripts/items/weapons/weapon", {
 		this.weapon.onEquip();
 		local skill;
 
-		skill = this.new("scripts/skills/actives/earth_hammer_smite_skill");
+		skill = this.new("scripts/skills/actives/ssu_earth_hammer_smite_skill");
 		this.addSkill(skill);
 
 		skill = this.new("scripts/skills/actives/shatter_skill");

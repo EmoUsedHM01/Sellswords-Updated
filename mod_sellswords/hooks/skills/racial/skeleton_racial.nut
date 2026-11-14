@@ -3,8 +3,8 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Name = "Resistant to Ranged Attacks";
-		this.m.Description = "Ranged, Slashing and Piercing attacks are not very effective against this character.";
+		this.m.Name = ::Mod_Sellswords.Strings.skeleton_racial.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.skeleton_racial.Description;
 		this.m.Icon = "ui/perks/perk_32.png";
 		this.m.IconMini = "perk_32_mini";
 		this.m.IsHidden = true;

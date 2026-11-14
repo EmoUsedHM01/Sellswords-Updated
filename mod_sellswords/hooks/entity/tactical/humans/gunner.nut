@@ -45,57 +45,57 @@
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[1, "oriental/padded_vest"],		  
-				[0, "gunner_mid_light_armor"],	   //90 
-				[0, "gunner_late_armor"],	   //115 					
+				[0, "ssu_gunner_mid_light_armor"],	   //90 
+				[0, "ssu_gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
 				[1, "oriental/gunner_hat"],		  
-				[0, "gunner_helmet"],							
+				[0, "ssu_gunner_helmet"],							
 			]));
 		}
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[1, "oriental/padded_vest"],		  
-				[1, "gunner_mid_light_armor"],	   //90 
-				[0, "gunner_late_armor"],	   //115 					
+				[1, "ssu_gunner_mid_light_armor"],	   //90 
+				[0, "ssu_gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
 				[1, "oriental/gunner_hat"],		  
-				[0, "gunner_helmet"],							
+				[0, "ssu_gunner_helmet"],							
 			]));
 		}			
 		else if (dc <= 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[1, "oriental/padded_vest"],		  
-				[2, "gunner_mid_light_armor"],	   //90 
-				[1, "gunner_late_armor"],	   //115 					
+				[2, "ssu_gunner_mid_light_armor"],	   //90 
+				[1, "ssu_gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
 				[1, "oriental/gunner_hat"],		  
-				[1, "gunner_helmet"],							
+				[1, "ssu_gunner_helmet"],							
 			]));
 		}	
 		else if (dc <= 150)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([		 
-				[1, "gunner_mid_light_armor"],	   //90 
-				[1, "gunner_late_armor"],	   //115 					
+				[1, "ssu_gunner_mid_light_armor"],	   //90 
+				[1, "ssu_gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
 				[1, "oriental/gunner_hat"],		  
-				[2, "gunner_helmet"],							
+				[2, "ssu_gunner_helmet"],							
 			]));
 		}
 		else if (dc > 150)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([		 
-				[1, "gunner_mid_light_armor"],	   //90 
-				[3, "gunner_late_armor"],	   //115 					
+				[1, "ssu_gunner_mid_light_armor"],	   //90 
+				[3, "ssu_gunner_late_armor"],	   //115 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([					   
-				[1, "gunner_helmet"],							
+				[1, "ssu_gunner_helmet"],							
 			]));
 		}				
 	}
@@ -111,13 +111,6 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_ballistics"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_hair_splitter"));
-
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_small_target"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_marksmanship"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_primal_fear"));
-		}
 
 		return true;
 	}

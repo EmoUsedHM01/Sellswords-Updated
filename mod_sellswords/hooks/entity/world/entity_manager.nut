@@ -49,7 +49,7 @@
 			local start = candidates[this.Math.rand(0, candidates.len() - 1)];
 			local party = this.World.spawnEntity("scripts/entity/world/party", start.getTile().Coords);
 			party.setPos(this.createVec(party.getPos().X - 50, party.getPos().Y - 50));
-			party.setDescription("A free mercenary company travelling the lands and lending their swords to the highest bidder.");
+			party.setDescription(::Mod_Sellswords.Strings.entity_manager.Description);
 			party.setFootprintType(this.Const.World.FootprintsType.Mercenaries);
 			party.getFlags().set("IsMercenaries", true);
 
@@ -63,7 +63,7 @@
 			}
 
 			local r = this.Math.min(500 + this.World.getTime().Days, 200 + 2 * this.World.getTime().Days);
-			this.Const.World.Common.assignTroops(party, this.Const.World.Spawn.MercenariesHIGH, this.Math.rand(r * 0.8, r * 1.2));
+			this.Const.World.Common.assignTroops(party, this.Const.World.Spawn.SsuMercenariesHIGH, this.Math.rand(r * 0.8, r * 1.2));
 			party.getLoot().Money = this.Math.rand(300, 600);
 			party.getLoot().ArmorParts = this.Math.rand(0, 25);
 			party.getLoot().Medicine = this.Math.rand(0, 10);
@@ -301,7 +301,7 @@
 			local r = this.Math.min(500 + this.World.getTime().Days, 200 + 2 * this.World.getTime().Days);
 			r = r * ::Mod_Sellswords.SellswordStrengthMultiplier * 0.01;
 
-			this.Const.World.Common.assignTroops(party, this.Const.World.Spawn.BountyHunterChasers, this.Math.rand(r * 0.8, r * 1.2));
+			this.Const.World.Common.assignTroops(party, this.Const.World.Spawn.SsuBountyHunterChasers, this.Math.rand(r * 0.8, r * 1.2));
 
 			party.getLoot().Money = this.Math.rand(300, 600);
 			party.getLoot().ArmorParts = this.Math.rand(0, 25);

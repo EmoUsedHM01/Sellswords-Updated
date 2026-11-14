@@ -7,17 +7,12 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));	
-		}
-
 		local dc = this.World.getTime().Days;	
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");
 		dc = this.Math.max(dc, 3 * mn);			
 		if (0.3 * dc > this.Math.rand(1, 100) && dc >= 120)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_trumpcard"));
 		}			
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -51,7 +46,6 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_nimble"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
-		//this.m.Skills.addTreeOfEquippedWeapon();
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 		return true;
 	}

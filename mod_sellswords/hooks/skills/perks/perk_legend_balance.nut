@@ -15,7 +15,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=%positive%]+" + bonus + "[/color] Melee Defense"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_balance.Tooltip1, bonus)
 			});
 			if ((10 - bonus) >= 0)
 			{
@@ -23,7 +23,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/ranged_defense.png",
-					text = "[color=%positive%]+" + (10 - bonus) + "[/color] Ranged Defense"
+					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_balance.Tooltip2, (10 - bonus))
 				});
 			}
 			else
@@ -32,7 +32,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/ranged_defense.png",
-					text = "[color=%negative%]-" + (10 - bonus - this.m.Minus) + "[/color] Ranged Defense"
+					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_balance.Tooltip3, (10 - bonus - this.m.Minus))
 				});
 			}
 		}
@@ -42,7 +42,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "This character is not wearing any body armor and hence receives no bonus from this perk"
+				text = ::Mod_Sellswords.Strings.perk_legend_balance.Tooltip4
 			});
 		}
 		else
@@ -51,14 +51,14 @@
 				id = 6,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "This character\'s armor is too heavy or their Initiative is too low to receive any bonus from this perk"
+				text = ::Mod_Sellswords.Strings.perk_legend_balance.Tooltip5
 			});
 		}
 		tooltip.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "The penalty to Initiative from built-up Fatigue is reduced by [color=%positive%]30%[/color]"
+			text = ::Mod_Sellswords.Strings.perk_legend_balance.Tooltip6
 		});
 
 		return tooltip;

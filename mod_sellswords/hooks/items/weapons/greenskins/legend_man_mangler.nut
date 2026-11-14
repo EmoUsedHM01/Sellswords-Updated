@@ -20,10 +20,10 @@
 		skillToAdd.setStunChance(this.m.StunChance);
 		this.addSkill(skillToAdd);		
 		skillToAdd = this.new("scripts/skills/actives/slash");
-		skillToAdd.m.Name = "Great Bunt";		
+		skillToAdd.m.Name = ::Mod_Sellswords.Strings.legend_man_mangler.Name;		
 		skillToAdd.m.isBunt = true;			
-		skillToAdd.m.Icon = "skills/active_bunt.png";
-		skillToAdd.m.IconDisabled = "skills/active_bunt_sw.png";		
+		skillToAdd.m.Icon = "skills/ssu_active_bunt.png";
+		skillToAdd.m.IconDisabled = "skills/ssu_active_bunt_sw.png";		
 		skillToAdd.m.Overlay = "active_1";
 		skillToAdd.m.FatigueCost = 13;	
 		skillToAdd.m.DirectDamageMult = this.m.DirectDamageMult;		

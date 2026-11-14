@@ -47,7 +47,7 @@
 				{
 					R = 60,
 					P = 2.1,
-					S = "supplies/salad_item"
+					S = "supplies/ssu_salad_item"
 				},
 				{
 					R = 70 * raritymod,

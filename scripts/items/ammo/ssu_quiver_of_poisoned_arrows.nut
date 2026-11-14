@@ -1,0 +1,96 @@
+this.ssu_quiver_of_poisoned_arrows <- this.inherit("scripts/items/ammo/ammo", {
+	m = {},
+	function create()
+	{
+		this.ammo.create();
+		this.m.ID = "ammo.arrows";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_quiver_of_poisoned_arrows.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_quiver_of_poisoned_arrows.Description;
+		this.m.Icon = "ammo/ssu_quiver_poison.png";
+		this.m.IconEmpty = "ammo/ssu_quiver_poison_empty.png";
+		this.m.SlotType = this.Const.ItemSlot.Ammo;
+		this.m.ItemType = this.Const.Items.ItemType.Ammo;
+		this.m.AmmoType = this.Const.Items.AmmoType.Arrows;
+		this.m.ShowOnCharacter = true;
+		this.m.ShowQuiver = true;
+		this.m.Sprite = "bust_quiver_01";
+		this.m.Value = 2000;
+		this.m.Ammo = 5;
+		this.m.AmmoMax = 5;
+		this.m.AmmoCost = 3;
+		this.m.IsDroppedAsLoot = true;
+	}
+
+	function getTooltip()
+	{
+		local result = [
+			{
+				id = 1,
+				type = "title",
+				text = this.getName()
+			},
+			{
+				id = 2,
+				type = "description",
+				text = this.getDescription()
+			}
+		];
+
+		if (this.getIconLarge() != null)
+		{
+			result.push({
+				id = 3,
+				type = "image",
+				image = this.getIconLarge(),
+				isLarge = true
+			});
+		}
+		else
+		{
+			result.push({
+				id = 3,
+				type = "image",
+				image = this.getIcon()
+			});
+		}
+
+		result.push({
+			id = 66,
+			type = "text",
+			text = this.getValueString()
+		});
+
+		if (this.m.Ammo != 0)
+		{
+			result.push({
+				id = 6,
+				type = "text",
+				icon = "ui/icons/ammo.png",
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_quiver_of_poisoned_arrows.Tooltip1, this.m.Ammo)
+			});
+		}
+		else
+		{
+			result.push({
+				id = 6,
+				type = "text",
+				icon = "ui/tooltips/warning.png",
+				text = ::Mod_Sellswords.Strings.ssu_quiver_of_poisoned_arrows.Tooltip2
+			});
+		}
+
+		return result;
+	}
+
+	function onEquip()
+	{
+		this.ammo.onEquip();
+		this.getContainer().getActor().getSkills().add(this.new("scripts/skills/effects/ssu_poisoned_arrows_effect"));
+	}
+
+	function onUnequip()
+	{
+		this.ammo.onUnequip();
+		this.getContainer().getActor().getSkills().removeByID("effects.ssu_poisoned_arrows");
+	}
+});

@@ -28,7 +28,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "For each negative effect your target has, deal [color=%positive%]33%[/color] more damage"
+				text = ::Mod_Sellswords.Strings.knock_out.Tooltip
 			});
 		}
 
@@ -59,16 +59,8 @@
 					target.getSkills().add(this.new("scripts/skills/effects/stunned_effect"));					
 					if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 					{
-						this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has stunned " + this.Const.UI.getColorizedEntityName(target) + " for one turn");
+						this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.knock_out.Log, this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(target)));
 					}
-				}
-				if (_user.getSkills().hasSkill("perk.ptr_push_it"))
-				{
-					target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));					
-					if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
-					{
-						this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has staggered " + this.Const.UI.getColorizedEntityName(target) + " for one turn");
-					}					
 				}
 			}
 		}

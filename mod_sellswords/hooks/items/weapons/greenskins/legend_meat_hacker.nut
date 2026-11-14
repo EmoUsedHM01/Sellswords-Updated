@@ -4,7 +4,7 @@
 	{
 		__original();
 
-		this.m.Description = "A long shard of sharpened rock firmly wedged into a massive bone. Not well suited for human hands.";
+		this.m.Description = ::Mod_Sellswords.Strings.legend_meat_hacker.Description;
 		this.m.IsDoubleGrippable = true;		
 		this.m.IsAoE = false;
 

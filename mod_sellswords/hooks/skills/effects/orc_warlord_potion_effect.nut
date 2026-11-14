@@ -5,7 +5,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Name = "Improved Limbic System";
+		this.m.Name = ::Mod_Sellswords.Strings.orc_warlord_potion_effect.Name;
 	}
 
 	q.getTooltip = @(__original) function()
@@ -25,13 +25,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Using orc weapons no longer imposes additional fatigue costs" + "\n[color=%positive%]+10[/color] Fatigue."
+				text = ::Mod_Sellswords.Strings.orc_warlord_potion_effect.Tooltip1
 			},
 			{
 				id = 12,
 				type = "hint",
 				icon = "ui/tooltips/warning.png",
-				text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+				text = ::Mod_Sellswords.Strings.orc_warlord_potion_effect.Tooltip2
 			}
 		];
 		return ret;

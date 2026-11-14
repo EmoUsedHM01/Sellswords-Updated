@@ -3,7 +3,7 @@
 	q.getActionPointCost = @( __original ) function ()
 	{
 		local actor = this.getContainer().getActor();
-		if (!this.getContainer().hasSkill("perk.crbeforethestorm"))
+		if (!this.getContainer().hasSkill("perk.ssu_beforethestorm"))
 			return __original();
 		return this.Math.max(0, actor.getActionPoints() - 1);
 	}

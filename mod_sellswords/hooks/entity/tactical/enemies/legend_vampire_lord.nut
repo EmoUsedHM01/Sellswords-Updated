@@ -5,10 +5,7 @@
 		__original();
 
 		this.m.BaseProperties.IsAffectedByInjuries = true;
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
-
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/effects/ptr_undead_injury_receiver_effect"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_trumpcard"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -28,7 +25,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 5;
-		local item = "scripts/items/misc/anatomist/necrosavant_lord_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_necro_necrosavant_lord_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

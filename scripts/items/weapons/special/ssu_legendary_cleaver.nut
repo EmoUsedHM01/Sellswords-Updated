@@ -4,13 +4,13 @@ this.ssu_legendary_cleaver <- ::inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.ssu_legendary_cleaver";
-		this.m.Name = "[color=#456ca0]Bloodfang Twinblades[/color]";
-		this.m.Description = "One of the seven legendary weapons,\n[color=#456ca0]Bloodfang Twinblades[/color] gleam with a sinister light, their edges serrated like the fangs they were crafted from.\nIndividually, they are lifeless, but when united, they pulse with a thirst for blood, their true power unleashed in a symphony of blood, bone, and steel.\nThe blades can cut through the toughest armor, leaving behind wounds that never fully heal.";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_legendary_cleaver.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_legendary_cleaver.Description;
 		this.m.IconLarge = "weapons/melee/ssu_bone_cleaver.png";
 		this.m.Icon = "weapons/melee/ssu_bone_cleaver_70x70.png";
 		this.m.SlotType = ::Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
-		this.m.Categories = "Cleaver, Two-Handed";
+		this.m.Categories = ::Mod_Sellswords.Strings.ssu_legendary_cleaver.Categories;
 		this.m.ItemType = ::Const.Items.ItemType.Weapon | ::Const.Items.ItemType.MeleeWeapon | ::Const.Items.ItemType.TwoHanded | ::Const.Items.ItemType.Legendary;
 		this.m.IsAoE = true;
 		this.m.AddGenericSkill = true;
@@ -36,26 +36,26 @@ this.ssu_legendary_cleaver <- ::inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 6,
 			type = "text",
-			icon = "ui/icons/legendary_weapon.png",
-			text = "One of the seven [color=#456ca0]Legendary[/color] weapons."
+			icon = "ui/icons/ssu_legendary_weapon.png",
+			text = ::Mod_Sellswords.Strings.ssu_legendary_cleaver.Tooltip1
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When [color=%negative%]Bloodied[/color], grants the user [color=%positive%]20%[/color] additional damage dealt and recieved."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_cleaver.Tooltip2
 		});
 		result.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When attacking enemies that bleed, heals the player equal to the damage inflicted."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_cleaver.Tooltip3
 		});
 		result.push({
 			id = 9,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Bleeds inflicted with this weapon are permanent."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_cleaver.Tooltip4
 		});
 		
 		return result;

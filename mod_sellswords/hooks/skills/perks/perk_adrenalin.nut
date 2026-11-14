@@ -38,8 +38,8 @@
 			bg.addPerk(_perk, row);
 		}
 
-		if (!this.getContainer().hasSkill("perk.crirresistibleimpulse")&& ::MSU.isKindOf(this.getContainer().getActor(), "player") && !::MSU.isNull(this.getContainer().getActor().getBackground()))
-			addPerk(this.Const.Perks.PerkDefs.crirresistibleimpulse, 2);
+		if (!this.getContainer().hasSkill("perk.ssu_irresistibleimpulse")&& ::MSU.isKindOf(this.getContainer().getActor(), "player") && !::MSU.isNull(this.getContainer().getActor().getBackground()))
+			addPerk(this.Const.Perks.PerkDefs.SsuIrresistibleimpulse, 2);
 	}
 
 });

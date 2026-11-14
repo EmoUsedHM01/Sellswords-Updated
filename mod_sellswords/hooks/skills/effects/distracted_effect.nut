@@ -5,13 +5,13 @@
 		local actor = this.getContainer().getActor();
 		local statusResisted = actor.getCurrentProperties().IsResistantToAnyStatuses ? this.Math.rand(1, 100) <= 50 : false;
 		statusResisted = statusResisted || actor.getCurrentProperties().IsResistantToPhysicalStatuses ? this.Math.rand(1, 100) <= 33 : false;
-		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
+		local crrd = this.getContainer().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
 
 		if (statusResisted || crrd)
 		{
 			if (!actor.isHiddenToPlayer())
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " regained his focus thanks to his unnatural physiology");
+				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.distracted_effect.Log, this.Const.UI.getColorizedEntityName(actor)));
 			}
 
 			this.removeSelf();
@@ -25,7 +25,7 @@
 	q.onUpdate = @(__original) function( _properties )
 	{
 		local actor = this.getContainer().getActor();
-		if (this.getContainer().hasSkill("perk.crresilient"))
+		if (this.getContainer().hasSkill("perk.ssu_resilient"))
 		{
 			_properties.DamageTotalMult *= 0.74;
 			_properties.InitiativeMult *= 0.74;

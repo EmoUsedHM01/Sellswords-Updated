@@ -5,12 +5,12 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Name = "Shock Absorbant Wrists";
+		this.m.Name = ::Mod_Sellswords.Strings.orc_young_potion_effect.Name;
 	}
 
 	q.getDescription = @(__original) function()
 	{
-		return "This character\'s wrists have mutated in such a way that the they dampen the initial shock of opposing forces. In more practical terms, this lets them hit harder. They can also make some pretty outlandish shadow puppets.";
+		return ::Mod_Sellswords.Strings.orc_young_potion_effect.Text;
 	}
 
 	q.getTooltip = @(__original) function()
@@ -34,7 +34,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "Attacks do [color=%positive%]+20%[/color] additional damage"
+				text = ::Mod_Sellswords.Strings.orc_young_potion_effect.Tooltip1
 			});
 		}
 		else
@@ -43,7 +43,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "Attacks do [color=%positive%]+10%[/color] additional damage"
+				text = ::Mod_Sellswords.Strings.orc_young_potion_effect.Tooltip2
 			});
 		}
 		
@@ -51,7 +51,7 @@
 			id = 12,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+			text = ::Mod_Sellswords.Strings.orc_young_potion_effect.Tooltip3
 		});
 
 		return ret;

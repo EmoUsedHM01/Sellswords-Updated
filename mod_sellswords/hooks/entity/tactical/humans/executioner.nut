@@ -3,8 +3,8 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_armor_mastery_heavy"));	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crDiscipline"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_armor_mastery_heavy"));	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_discipline"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -47,7 +47,7 @@
 				"weapons/oriental/two_handed_scimitar",
 				"weapons/oriental/two_handed_scimitar",
 				"weapons/two_handed_hammer",
-				"weapons/spontoon03",					
+				"weapons/ssu_spontoon03",					
 			];
 
 			if (this.Const.DLC.Unhold)
@@ -89,7 +89,7 @@
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = [
-					[2, "cr_executioner_helmet_early"],
+					[2, "ssu_executioner_helmet_early"],
 					[4, "oriental/southern_helmet_with_coif"],
 					[4, "oriental/turban_helmet"]					
 				];
@@ -102,10 +102,10 @@
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = [
-					[3, "cr_executioner_helmet_early"],
+					[3, "ssu_executioner_helmet_early"],
 					[3, "oriental/southern_helmet_with_coif"],
 					[3, "oriental/turban_helmet"],	
-					[1, "cr_executioner_helmet_late"]						
+					[1, "ssu_executioner_helmet_late"]						
 				];
 
 				this.m.Items.equip(this.Const.World.Common.pickHelmet(helm));
@@ -116,7 +116,7 @@
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = [
-					[4, "cr_executioner_helmet_late"],
+					[4, "ssu_executioner_helmet_late"],
 					[3, "oriental/southern_helmet_with_coif"],
 					[3, "oriental/turban_helmet"],					
 				];

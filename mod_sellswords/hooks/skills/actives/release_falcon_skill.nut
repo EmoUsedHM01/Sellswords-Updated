@@ -6,7 +6,7 @@
 	{
 		__original();
 
-		this.m.Description = "Release your falcon to gain vision of the surrounding 12 tiles for the duration of the current round. Can be used every other turn.";
+		this.m.Description = ::Mod_Sellswords.Strings.release_falcon_skill.Description;
 		this.m.ActionPointCost = 6;
 	}
 
@@ -18,7 +18,7 @@
 			id = 7,
 			type = "text",
 			icon = "ui/icons/asset_medicine.png",
-			text = "You have [color=%positive%]" + ::World.Assets.getMedicine() + "[/color] medicine."
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.release_falcon_skill.Tooltip, ::World.Assets.getMedicine())
 		});
 
 		return ret;

@@ -22,11 +22,11 @@
 				}
 				else if (dc >= 150)
 				{
-					party = this.World.FactionManager.getFaction(nearest_orcs.getFaction()).spawnEntity(tile, "Greenskin Horde", false, this.Const.World.Spawn.GreenskinHordeenhanced, (100 + dc * 0.15) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+					party = this.World.FactionManager.getFaction(nearest_orcs.getFaction()).spawnEntity(tile, "Greenskin Horde", false, this.Const.World.Spawn.SsuGreenskinHordeenhanced, (100 + dc * 0.15) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				}				
 				party.getSprite("banner").setBrush(nearest_orcs.getBanner());
 				party.getSprite("body").setBrush("figure_orc_05");
-				party.setDescription("A horde of greenskins led by a fearsome orc warlord.");
+				party.setDescription(::Mod_Sellswords.Strings.confront_warlord_contract.Description);
 				party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 				this.Contract.m.UnitsSpawned.push(party);
 				local hasWarlord = false;

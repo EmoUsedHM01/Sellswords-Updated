@@ -5,12 +5,12 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Name = "Schrat Symbiosis";
+		this.m.Name = ::Mod_Sellswords.Strings.schrat_potion_effect.Name;
 	}
 
 	q.getDescription = @(__original) function()
 	{
-		return "With the proper concoction, and implanting the heart of schrat into the body, the test subject can form a symbiosis with the heart, gaining the abilities and properties of a Schrat.";
+		return ::Mod_Sellswords.Strings.schrat_potion_effect.Text;
 	}
 
 	q.getTooltip = @(__original) function()
@@ -30,7 +30,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/armor_body.png",
-				text = "Greatly reduces any form of piercing damage, but you take 100% more burning damage."
+				text = ::Mod_Sellswords.Strings.schrat_potion_effect.Tooltip1
 			}
 		];
 
@@ -40,7 +40,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "When taking damage more than or equal to 15% of your health, birth a minature schrat from your blood and surroundings to help you in combat."
+				text = ::Mod_Sellswords.Strings.schrat_potion_effect.Tooltip2
 			});
 		}
 
@@ -48,23 +48,19 @@
 			id = 12,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Immune to being knocked back or grabbed."
+			text = ::Mod_Sellswords.Strings.schrat_potion_effect.Tooltip3
 		});
 		ret.push({
 			id = 13,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+			text = ::Mod_Sellswords.Strings.schrat_potion_effect.Tooltip4
 		});
 
 		return ret;
 	}
 
 	
-	q.onUpdate = @(__original) function(_properties)
-	{
-		_properties.IsImmuneToKnockBackAndGrab = true;		
-	}
 
 	q.onBeforeDamageReceived <- function( _attacker, _skill, _hitInfo, _properties )
 	{

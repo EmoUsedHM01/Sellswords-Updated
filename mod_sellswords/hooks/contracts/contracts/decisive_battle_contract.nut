@@ -56,23 +56,23 @@
 					if (dc < 150)
 					{					
 						eparty = e.spawnEntity(tile, "Noble Army", false, this.Const.World.Spawn.Noble, enemyStrength * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-						this.Contract.addUnitsToEntity(eparty, this.Const.World.Spawn.MercenariesLOW, 60 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());					
+						this.Contract.addUnitsToEntity(eparty, this.Const.World.Spawn.SsuMercenariesLOW, 60 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());					
 					}
 					else if (dc <= 300)
 					{					
-						eparty = e.spawnEntity(tile, "Noble Army", false, this.Const.World.Spawn.Nobleenhanced, (enemyStrength + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-						this.Contract.addUnitsToEntity(eparty, this.Const.World.Spawn.MercenariesLOW, (60 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());					
+						eparty = e.spawnEntity(tile, "Noble Army", false, this.Const.World.Spawn.SsuNobleenhanced, (enemyStrength + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						this.Contract.addUnitsToEntity(eparty, this.Const.World.Spawn.SsuMercenariesLOW, (60 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());					
 					}
 					else
 					{					
-						eparty = e.spawnEntity(tile, "Noble Army", false, this.Const.World.Spawn.Nobleenhanced, (enemyStrength + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-						this.Contract.addUnitsToEntity(eparty, this.Const.World.Spawn.MercenariesHIGH, 60 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());					
+						eparty = e.spawnEntity(tile, "Noble Army", false, this.Const.World.Spawn.SsuNobleenhanced, (enemyStrength + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						this.Contract.addUnitsToEntity(eparty, this.Const.World.Spawn.SsuMercenariesHIGH, 60 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());					
 					}					
 					eparty.getSprite("body").setBrush(eparty.getSprite("body").getBrush().Name + "_" + this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).getBannerString());				
-					eparty.setDescription("Professional soldiers in service to local lords.");						
+					eparty.setDescription(::Mod_Sellswords.Strings.decisive_battle_contract.Description1);						
 					eparty.getSprite("banner").setBrush(this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).getBannerSmall());
 					this.Const.World.Common.addTroop(eparty, {
-							Type = this.Const.World.Spawn.Troops.crKnightcommander
+							Type = this.Const.World.Spawn.Troops.SsuKnightcommander
 						}, true, 100);					
 					eparty.getFlags().add("ContractEnemy");					
 					this.Contract.m.UnitsSpawned.push(eparty.getID());					
@@ -84,13 +84,13 @@
 					}
 					else
 					{
-						fparty = f.spawnEntity(tile, "Noble Army", false, this.Const.World.Spawn.Nobleenhanced, (allyStrength + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						fparty = f.spawnEntity(tile, "Noble Army", false, this.Const.World.Spawn.SsuNobleenhanced, (allyStrength + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					}	
 					this.Const.World.Common.addTroop(fparty, {
-							Type = this.Const.World.Spawn.Troops.crKnightcommander
+							Type = this.Const.World.Spawn.Troops.SsuKnightcommander
 						}, true, 0);					
 					fparty.getSprite("body").setBrush(fparty.getSprite("body").getBrush().Name + "_" + this.World.FactionManager.getFaction(this.Contract.getFaction()).getBannerString());
-					fparty.setDescription("Professional soldiers in service to local lords.");					
+					fparty.setDescription(::Mod_Sellswords.Strings.decisive_battle_contract.Description1);					
 					fparty.getSprite("banner").setBrush(this.World.FactionManager.getFaction(this.Contract.getFaction()).getBannerSmall());	
 					fparty.getFlags().add("ContractAlly");						
 															
@@ -140,10 +140,10 @@
 					}
 					else if (dc >= 150)
 					{
-						party = this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).spawnEntity(tile, "Scouts", false, this.Const.World.Spawn.Nobleenhanced, (50 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+						party = this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).spawnEntity(tile, "Scouts", false, this.Const.World.Spawn.SsuNobleenhanced, (50 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 					}				
 					party.getSprite("banner").setBrush(this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).getBannerSmall());
-					party.setDescription("Professional soldiers in service to local lords.");
+					party.setDescription(::Mod_Sellswords.Strings.decisive_battle_contract.Description1);
 					party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 					this.Contract.m.UnitsSpawned.push(party);
 					party.getLoot().Money = this.Math.rand(50, 100);
@@ -215,7 +215,7 @@
 								this.Const.PlayerBanners[n - 1],
 								"banner_noble_11"
 							];
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.MercenariesLOW, 100 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Const.Faction.Enemy);
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuMercenariesLOW, 100 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Const.Faction.Enemy);
 							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.PeasantsArmed, 40 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Const.Faction.Enemy);
 							this.World.Contracts.startScriptedCombat(p, false, true, true);
 							return 0;
@@ -247,7 +247,7 @@
 					party.setVisibleInFogOfWar(true);
 					party.setImportant(true);
 					party.setDiscovered(true);
-					party.setDescription("A caravan with armed escorts transporting provisions, supplies and equipment between settlements.");
+					party.setDescription(::Mod_Sellswords.Strings.decisive_battle_contract.Description2);
 					party.setFootprintType(this.Const.World.FootprintsType.Caravan);
 					party.setAttackableByAI(false);
 					party.getFlags().add("ContractSupplies");

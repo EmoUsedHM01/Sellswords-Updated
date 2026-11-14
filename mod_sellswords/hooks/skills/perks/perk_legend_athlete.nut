@@ -2,11 +2,7 @@
 
 	q.onAdded = @( __original ) function ()
 	{
-		if (!this.m.Container.hasSkill("actives.legend_climb"))
-			this.m.Container.add(this.new("scripts/skills/actives/legend_climb_skill"));
-
-		if (!this.m.Container.hasSkill("actives.legend_sprint"))
-			this.m.Container.add(this.new("scripts/skills/actives/legend_sprint_skill_5"));
+		__original();
 
 		if (!this.m.IsNew)
 			return;
@@ -42,24 +38,8 @@
 			bg.addPerk(_perk, row);
 		}
 
-		if (!this.getContainer().hasSkill("perk.crFurinkazan") && ::MSU.isKindOf(this.getContainer().getActor(), "player") && !::MSU.isNull(this.getContainer().getActor().getBackground()))
-			addPerk(this.Const.Perks.PerkDefs.crFurinkazan, 5);
-	}
-
-	q.onRemoved = @( __original ) function()
-	{
-		this.m.Container.removeByID("actives.legend_climb");
-		this.m.Container.removeByID("actives.legend_sprint");
-	}
-
-	q.onSerialize <- function ( _out )
-	{
-		this.skill.onSerialize(_out);
-	}
-
-	q.onDeserialize <- function ( _in )
-	{
-		this.skill.onDeserialize(_in);
+		if (!this.getContainer().hasSkill("perk.ssu_furinkazan") && ::MSU.isKindOf(this.getContainer().getActor(), "player") && !::MSU.isNull(this.getContainer().getActor().getBackground()))
+			addPerk(this.Const.Perks.PerkDefs.SsuFurinkazan, 5);
 	}
 
 });

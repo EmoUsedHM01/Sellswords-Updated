@@ -12,14 +12,6 @@
 	q.onEquip = @(__original) function()
 	{
 		__original();
-		if (::Is_PTR_Exist)
-		{
-			return
-		}
-		
-		else
-		{
-			this.addSkill(this.new("scripts/skills/actives/crstaff_sweep"));
-		}
+		this.addSkill(this.new("scripts/skills/actives/ssu_staff_sweep"));
 	}
 });	

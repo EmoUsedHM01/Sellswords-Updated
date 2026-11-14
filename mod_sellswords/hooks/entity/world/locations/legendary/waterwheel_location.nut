@@ -7,21 +7,21 @@
 		for( local i = 0; i < 4; ++i )
 		{
 			this.Const.World.Common.addTroop(this, {
-				Type = this.Const.World.Spawn.Troops.crFallenbetrayer
+				Type = this.Const.World.Spawn.Troops.SsuFallenbetrayer
 			}, false, 100);
 		}
 
 		for( local i = 0; i < 4; ++i )
 		{
 			this.Const.World.Common.addTroop(this, {
-				Type = this.Const.World.Spawn.Troops.crZombieswordmaster
+				Type = this.Const.World.Spawn.Troops.SsuZombieswordmaster
 			}, false, 33);
 		}
 
 		for( local i = 0; i < 1; ++i )
 		{
 			this.Const.World.Common.addTroop(this, {
-				Type = this.Const.World.Spawn.Troops.crDeathknight
+				Type = this.Const.World.Spawn.Troops.SsuDeathknight
 			}, false, 100);
 		}	
 	}

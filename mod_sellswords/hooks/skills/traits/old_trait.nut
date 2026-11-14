@@ -8,7 +8,7 @@
 			id = 10,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "[color=%negative%]-15%[/color] Melee Damage"
+			text = ::Mod_Sellswords.Strings.old_trait.Tooltip
 		});
 
 		return ret;

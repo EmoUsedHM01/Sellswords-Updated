@@ -10,7 +10,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=%negative%]100%[/color] chance to stun and daze target on a hit to the head if not immunue and always staggers the target"
+				text = ::Mod_Sellswords.Strings.legend_sling_heavy_stone_skill.Tooltip1
 			});	
 		}
 		else
@@ -19,7 +19,7 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=%negative%]100%[/color] chance to daze a target on a hit to the head and always staggers the target"
+				text = ::Mod_Sellswords.Strings.legend_sling_heavy_stone_skill.Tooltip2
 			});	
 		}
 
@@ -29,7 +29,7 @@
 				id = 9,
 				type = "text",
 				icon = "ui/tooltips/warning.png",
-				text = "[color=%negative%]Can not be used because this character is engaged in melee[/color]"
+				text = ::Mod_Sellswords.Strings.legend_sling_heavy_stone_skill.Tooltip3
 			});
 		}
 
@@ -54,7 +54,7 @@
 						_targetEntity.getSkills().add(this.new("scripts/skills/effects/stunned_effect"));
 				
 				if (!user.isHiddenToPlayer() && targetTile.IsVisibleForPlayer)
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(user) + " struck a hit that leaves " + this.Const.UI.getColorizedEntityName(_targetEntity) + " dazed");
+					this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_sling_heavy_stone_skill.Log, this.Const.UI.getColorizedEntityName(user), this.Const.UI.getColorizedEntityName(_targetEntity)));
 			}
 		}
 	}

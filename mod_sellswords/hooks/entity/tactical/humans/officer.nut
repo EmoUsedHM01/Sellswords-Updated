@@ -5,7 +5,7 @@
 		__original();
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 120)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_honorheritage"));	
 		}			
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -58,56 +58,56 @@
 			if (dc <= 75)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
-					[3, "crnomad_officer_leather"],	  //210,-24
-					[1, "crnomad_officer_plate_patched"],   //270,-35					
-					[1, "crnomad_officer_plate"], 			 //275,-35
-					[0, "crnomad_officer_plate_full"],	 //310,-37					
+					[3, "ssu_nomad_officer_leather"],	  //210,-24
+					[1, "ssu_nomad_officer_plate_patched"],   //270,-35					
+					[1, "ssu_nomad_officer_plate"], 			 //275,-35
+					[0, "ssu_nomad_officer_plate_full"],	 //310,-37					
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
 					[1, "oriental/southern_helmet_with_coif"], 
 					[2, "oriental/heavy_lamellar_helmet"], 
 					[1, "oriental/turban_helmet"], 
-					[0, "cr_officer_helmet_late_lamellar"],			//265,-15
-					[0, "cr_officer_helmet_late"],			//295,-17									
+					[0, "ssu_officer_helmet_late_lamellar"],			//265,-15
+					[0, "ssu_officer_helmet_late"],			//295,-17									
 				]));
 			}
 			else if (dc <= 125)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
-					[1, "crnomad_officer_leather"],	  //210,-24
-					[1, "crnomad_officer_plate_patched"],   //270,-35					
-					[1, "crnomad_officer_plate"], 			 //275,-35
-					[1, "crnomad_officer_plate_full"],	 //310,-37					
+					[1, "ssu_nomad_officer_leather"],	  //210,-24
+					[1, "ssu_nomad_officer_plate_patched"],   //270,-35					
+					[1, "ssu_nomad_officer_plate"], 			 //275,-35
+					[1, "ssu_nomad_officer_plate_full"],	 //310,-37					
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
 					[1, "oriental/southern_helmet_with_coif"], 
 					[2, "oriental/heavy_lamellar_helmet"], 
 					[2, "oriental/turban_helmet"], 
-					[0, "cr_officer_helmet_late"],			//295,-17			
+					[0, "ssu_officer_helmet_late"],			//295,-17			
 				]));
 			}
 			else if (dc > 125)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
-					[1, "crnomad_officer_plate_patched"],   //270,-35					
-					[1, "crnomad_officer_plate"], 			 //275,-35
-					[2, "crnomad_officer_plate_full"],	 //310,-37					
+					[1, "ssu_nomad_officer_plate_patched"],   //270,-35					
+					[1, "ssu_nomad_officer_plate"], 			 //275,-35
+					[2, "ssu_nomad_officer_plate_full"],	 //310,-37					
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
 					[1, "oriental/heavy_lamellar_helmet"], 
 					[1, "oriental/turban_helmet"], 
-					[2, "cr_officer_helmet_late_lamellar"],			//265,-15					
-					[2, "cr_officer_helmet_late"],			//295,-17			
+					[2, "ssu_officer_helmet_late_lamellar"],			//265,-15					
+					[2, "ssu_officer_helmet_late"],			//295,-17			
 				]));
 			}
 		}
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crleopard_armor"],			// 225,-29 					
+				[1, "ssu_leopard_armor"],			// 225,-29 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crfeathered_helmet"],	   // 210,-9 ~ 220,-10 					
+				[1, "ssu_feathered_helmet"],	   // 210,-9 ~ 220,-10 					
 			]));
 			this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 50;
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 50;		

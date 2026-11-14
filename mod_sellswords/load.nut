@@ -1,3 +1,6 @@
+// load every text first so the rest of the mod can read it
+::include("mod_sellswords/strings.nut");
+
 // load the hook helper
 ::include("mod_sellswords/hook_helper.nut");
 // all folders below must be loaded in that order
@@ -17,15 +20,6 @@ if (::Is_BR_Exist)
 		::include(file);
 
 	::mods_registerJS("mod_ssu_breditor_add_on.js");
-
-	if (::Is_MC_Exist)
-		::mods_registerJS("mod_nggh_breditor_add_on.js");
-
-	if (::Is_PTR_Exist)
-		::mods_registerJS("mod_ptr_breditor_add_on.js");
-
-	if (::Is_PTR_Exist && ::Is_MC_Exist)
-		::mods_registerJS("mod_ptr_and_nggh_breditor_add_on.js");
 }
 
 // update new armor sets

@@ -4,7 +4,7 @@
 	{
 		__original();
 		this.m.RosterTierMax = this.Const.Roster.getTierForSize(27);
-		this.m.Description = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Constant conflict between city states and nomads makes for good business. The bulk of your outfit are captives, forced to fight to earn their freedom, and their ranks grow after each battle.\n\n[color=#bcad8c]Army of Captives:[/color] Start with two manhunters and four indebted. Take up to 16 men into battle at once. Having equal or fewer indebted than non-indebted will make your men dissatisfied.\n[color=#bcad8c]Overseers:[/color] All non-indebted can whip indebted in combat to reset their morale and buff their stats.\n[color=#bcad8c]Captives:[/color] Indebted earn 10% more experience, are capped at level 8, and will die if struck down. However, they are 50% cheaper to buy in towns.[/p]";
+		this.m.Description = ::Mod_Sellswords.Strings.manhunters_scenario.Description;
 	}
 
 	q.onUnlockPerk = @(__original) function( _bro, _perkID )
@@ -34,7 +34,7 @@
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=%negative%]-25%[/color] Experience Gain"
+					text = ::Mod_Sellswords.Strings.manhunters_scenario.Tooltip1
 				});
 			}
 			else if (_background.getID() == "background.apprentice")
@@ -48,7 +48,7 @@
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=%positive%]+5%[/color] Experience Gain"
+					text = ::Mod_Sellswords.Strings.manhunters_scenario.Tooltip2
 				});
 			}
 			else
@@ -57,7 +57,7 @@
 					id = 16,
 					type = "text",
 					icon = "ui/icons/xp_received.png",
-					text = "[color=%negative%]-10%[/color] Experience Gain"
+					text = ::Mod_Sellswords.Strings.manhunters_scenario.Tooltip3
 				});
 			}
 		}
@@ -67,19 +67,19 @@
 				id = 16,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "[color=%positive%]+10%[/color] Experience Gain"
+				text = ::Mod_Sellswords.Strings.manhunters_scenario.Tooltip4
 			});
 			_tooltip.push({
 				id = 17,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "Limited to character level 10"
+				text = ::Mod_Sellswords.Strings.manhunters_scenario.Tooltip5
 			});
 			_tooltip.push({
 				id = 18,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Is permanently dead if struck down and will not survive with a permanent injury"
+				text = ::Mod_Sellswords.Strings.manhunters_scenario.Tooltip6
 			});
 		}
 	}

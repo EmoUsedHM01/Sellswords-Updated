@@ -17,7 +17,7 @@
 			id = 7,
 			type = "text",
 			icon = "ui/icons/asset_medicine.png",
-			text = "You have [color=%positive%]" + ::World.Assets.getMedicine() + "[/color] medicine."
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_cheer_on_skill.Tooltip, ::World.Assets.getMedicine())
 		});
 
 		return ret;

@@ -3,7 +3,7 @@
 	q.onAddBehaviors = @(__original) function()
 	{
 		__original();
-		this.addBehavior(this.new("scripts/ai/tactical/behaviors/ai_gruesome_feast_sequence"));
+		this.addBehavior(this.new("scripts/ai/tactical/behaviors/ssu_ai_gruesome_feast_sequence"));
 		this.addBehavior(this.new("scripts/ai/tactical/behaviors/ai_darkflight"));
 	}
 

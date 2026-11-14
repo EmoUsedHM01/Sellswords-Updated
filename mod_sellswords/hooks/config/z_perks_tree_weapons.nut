@@ -1,17 +1,12 @@
 // Axe tree
-::Const.Perks.AxeTree.Tree[5] = [::Const.Perks.PerkDefs.crHackSPM];
+::Const.Perks.AxeTree.Tree[5].push(::Const.Perks.PerkDefs.SsuHackSpm);
 
 // Dagger tree
-::Const.Perks.DaggerTree.Tree[4] = [::Const.Perks.PerkDefs.crFoB, ::Const.Perks.PerkDefs.Backstabber];
+::Const.Perks.DaggerTree.Tree[4].push(::Const.Perks.PerkDefs.SsuFob);
 
-// Polearm tree
-::Const.Perks.PolearmTree.Tree[0] = [::Const.Perks.PerkDefs.crretrofithooks];
-::Const.Perks.PolearmTree.Tree[4] = [::Const.Perks.PerkDefs.crReachadvantage];
-
-::Const.Perks.TwoHandedTree.Tree[4] = [::Const.Perks.PerkDefs.crReachadvantage];
+// Polearm tree, the SSU Reach Advantage takes the place of the vanilla one
+::Const.Perks.PolearmTree.Tree[0].push(::Const.Perks.PerkDefs.SsuRetrofithooks);
+::Mod_Sellswords.HookHelper.replacePerkInTree(::Const.Perks.PolearmTree, ::Const.Perks.PerkDefs.ReachAdvantage, ::Const.Perks.PerkDefs.SsuReachadvantage);
 
 // Bow tree
-::Const.Perks.BowTree.Tree[4] = [::Const.Perks.PerkDefs.crParthianshot];
-
-// Throwing tree
-::Const.Perks.ThrowingTree.Tree[2] = [::Const.Perks.PerkDefs.LegendVersatile];
+::Const.Perks.BowTree.Tree[4].push(::Const.Perks.PerkDefs.SsuParthianshot);

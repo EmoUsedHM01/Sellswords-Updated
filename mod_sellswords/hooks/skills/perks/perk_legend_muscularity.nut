@@ -23,7 +23,7 @@
 	{
 		local hp = this.getContainer().getActor().getHitpoints();
 
-		if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam))
+		if (::Legends.Perks.has(this, ::Legends.Perk.SsuGrandslam))
 		{
 			hp = hp * 3;
 		}
@@ -40,15 +40,7 @@
 
 		if (_actionPointCost <= 3 && _item != null && _item.isItemType(this.Const.Items.ItemType.Weapon) && _item.isWeaponType(this.Const.Items.WeaponType.Sword))
 		{
-			if (!this.getContainer().hasSkill("perk.ptr_two_for_one"))
-			{
-				hp = hp * 0.8;
-			}
-
-			if (this.getContainer().hasSkill("perk.ptr_two_for_one") && _actionPointCost <= 2)
-			{
-				hp = hp * 0.8;
-			}
+			hp = hp * 0.8;
 
 			if (_item.isWeaponType(this.Const.Items.WeaponType.Dagger))
 			{
@@ -59,40 +51,4 @@
 		return _actionPointCost <= 5 ? this.Math.min(40, this.Math.floor(_actionPointCost * hp * 0.015)) : this.Math.min(60, this.Math.floor(_actionPointCost * hp * 0.02));
 	}
 
-	q.getUnactivatedPerkTooltipHints = @(__original) function()
-	{
-		local bro = this.getContainer().getActor();
-		local mainhand = bro.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand);
-		if (mainhand == null || !(
-			mainhand.isItemType(::Const.Items.ItemType.MeleeWeapon) ||
-			mainhand.isItemType(::Const.Items.ItemType.TwoHanded) ||
-			(mainhand.isItemType(::Const.Items.ItemType.Weapon) && mainhand.isWeaponType(::Const.Items.WeaponType.Throwing)))
-		)
-		{
-			return [];
-		}
-
-		local text = "Bonus damage based on current Hitpoints and equipped Weapon:";
-		if (mainhand.isWeaponType(this.Const.Items.WeaponType.Dagger)) {
-			if (bro.getSkills().hasPerk(::Legends.Perk.SpecDagger))
-			{
-				text += "\n• At most [color=%positive%]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 3) + "[/color] (3 AP or less)";
-			} else
-			{
-				text += "\n• At most [color=%positive%]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 4) + "[/color] (4 AP or less)";
-			}
-		} else {
-			text += "\n• At most [color=%positive%]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 5) + "[/color] (5 AP or less)";
-			text += "\n• At least [color=%positive%]" + this.getBonusDamage(mainhand, mainhand.getRangeMax(), 6) + "[/color] (6 AP or more)";
-		}
-
-		return [
-			{
-				id = 3,
-				type = "hint",
-				icon = "ui/icons/damage_dealt.png",
-				text = text
-			}
-		];
-	}
 });

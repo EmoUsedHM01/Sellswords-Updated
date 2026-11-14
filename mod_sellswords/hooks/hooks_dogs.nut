@@ -20,11 +20,6 @@ foreach(script in [
 					this.m.BaseProperties.MeleeDefense += 2;
 					this.m.BaseProperties.Hitpoints += 5;
 
-					if (::Is_PTR_Exist)
-					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));	
-					}		
-
 					if (this.World.getTime().Days >= 150)
 					{										
 						this.m.BaseProperties.MeleeSkill += 3;			
@@ -32,10 +27,6 @@ foreach(script in [
 						this.m.BaseProperties.Bravery += 5;
 						if (this.World.getTime().Days >= 200)
 						{
-							if (::Is_PTR_Exist)
-							{
-								this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_pattern_recognition"));	
-							}		
 							
 							this.m.BaseProperties.Hitpoints += 5;													
 						}		

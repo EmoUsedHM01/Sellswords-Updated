@@ -36,7 +36,7 @@
 		local rolled = this.Math.rand(1, 100);
 
 		if (rolled <= toHit) {
-			this.Tactical.EventLog.logEx(::Const.UI.getColorizedEntityName(_user) + " breaks free (Chance: " + toHit + ", Rolled: " + rolled + ")");
+			this.Tactical.EventLog.logEx(::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_escape_artist.Log1, ::Const.UI.getColorizedEntityName(_user), toHit, rolled));
 
 			local soundFiles = [
 				"sounds/combat/break_free_net_01.wav",
@@ -81,7 +81,7 @@
 		} 
 		else 
 		{
-			this.Tactical.EventLog.logEx(::Const.UI.getColorizedEntityName(_user) + " fails to break free (Chance: " + toHit + ", Rolled: " + rolled + ")");
+			this.Tactical.EventLog.logEx(::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_escape_artist.Log2, ::Const.UI.getColorizedEntityName(_user), toHit, rolled));
 
 			if (this.m.SoundOnMiss.len() != 0)
 				this.Sound.play(this.m.SoundOnMiss[this.Math.rand(0, this.m.SoundOnMiss.len() - 1)], ::Const.Sound.Volume.Skill, _user.getTile().Pos);

@@ -6,12 +6,12 @@
 			{
 				R = 90,
 				P = 1.0,
-				S = "legend_armor/cloth/legend_knightly_robe"
+				S = "legend_armor/cloth/legend_armor_knightly_robe"
 			},
 			{
 				R = 60,
 				P = 1.0,
-				S = "legend_armor/cloth/wanderers_coat"
+				S = "legend_armor/cloth/legend_armor_wanderers_coat"
 			},
 			{
 				R = 70,
@@ -31,7 +31,7 @@
 			{
 				R = 95,
 				P = 1.0,
-				S = "legend_helmets/helm/cr_knightly_fullhelm"
+				S = "legend_helmets/helm/ssu_knightly_fullhelm"
 			}
 		]);
 

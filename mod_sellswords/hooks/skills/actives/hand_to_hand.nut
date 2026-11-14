@@ -15,7 +15,7 @@
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts [color=%damage%]" + this.Const.Combat.FatigueReceivedPerHit * fatigueMultiplier + "[/color] extra fatigue on hit"
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.hand_to_hand.Tooltip1, this.Const.Combat.FatigueReceivedPerHit * fatigueMultiplier)
 		});
 
 		if (this.getContainer().getActor().getCurrentProperties().IsSpecializedInFists)
@@ -24,7 +24,7 @@
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Has a [color=%positive%]10%[/color] additional chance to hit"
+				text = ::Mod_Sellswords.Strings.hand_to_hand.Tooltip2
 			});
 		}
 

@@ -4,7 +4,7 @@
 	{
 		__original();
 		this.m.BaseProperties.IsAffectedByInjuries = true;
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));			
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_ravager"));			
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;

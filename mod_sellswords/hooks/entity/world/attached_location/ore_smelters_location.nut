@@ -10,22 +10,22 @@
 				{
 					R = 60,
 					P = 1.0,
-					S = "weapons/spontoon03"
+					S = "weapons/ssu_spontoon03"
 				},
 				{
 					R = 80,
 					P = 1.0,
-					S = "weapons/crpolehammer"
+					S = "weapons/ssu_polehammer"
 				},
 				{
 					R = 80,
 					P = 1.0,
-					S = "weapons/crlongaxe"
+					S = "weapons/ssu_longaxe"
 				},
 				{
 					R = 88,
 					P = 1.0,
-					S = "weapons/crranged_flail"
+					S = "weapons/ssu_ranged_flail"
 				}
 			]);
 		}

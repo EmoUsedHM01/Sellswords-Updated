@@ -5,47 +5,47 @@
 			{
 				R = 50,
 				P = 1.0,
-				S = "weapons/advancedfirelance"
+				S = "weapons/ssu_advancedfirelance"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "misc/anatomist/alp_sequence_item"
+				S = "misc/anatomist/ssu_alp_sequence_item"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "misc/anatomist/direwolf_sequence_item"
+				S = "misc/anatomist/ssu_direwolf_sequence_item"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "misc/anatomist/goblin_sequence_item"
+				S = "misc/anatomist/ssu_goblin_sequence_item"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "misc/anatomist/nachzehrer_sequence_item"
+				S = "misc/anatomist/ssu_nachzehrer_sequence_item"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "misc/anatomist/orc_sequence_item"
+				S = "misc/anatomist/ssu_orc_sequence_item"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "misc/anatomist/serpent_sequence_item"
+				S = "misc/anatomist/ssu_serpent_sequence_item"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "misc/anatomist/unhold_sequence_item"
+				S = "misc/anatomist/ssu_unhold_sequence_item"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "misc/anatomist/webknecht_sequence_item"
+				S = "misc/anatomist/ssu_webknecht_sequence_item"
 			}
 		]);
 

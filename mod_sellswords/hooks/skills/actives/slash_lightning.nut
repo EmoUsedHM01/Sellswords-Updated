@@ -8,13 +8,13 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Inflicts an additional [color=%damage%]15%[/color] damage that ignores armor to up to three targets"
+				text = ::Mod_Sellswords.Strings.slash_lightning.Tooltip1
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=%positive%]+" + this.m.HitChanceBonus + "%[/color] chance to hit"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.slash_lightning.Tooltip2, this.m.HitChanceBonus)
 			}
 		]);
 		return ret;

@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "[p=c][img]gfx/ui/events/event_41.png[/img][/p]You are running a small trading caravan and have most of your crowns invested into trading goods. But the roads have become dangerous - brigands and greenskins lay in ambush, and there are rumors of even worse things out there.\n\n [color=#bcad8c]Trader:[/color] Get better prices for buying and selling.\n[color=#bcad8c]Not a Warrior:[/color] Start with no renown, and gain renown at half the normal rate. Every non-combat recruit gains the Pacifist perk. \n[color=#bcad8c]Bribery:[/color] Pay off human enemies instead of fighting them. Combat backgrounds cost more to hire, peddlers and donkeys cost less.";
+		this.m.Description = ::Mod_Sellswords.Strings.trader_scenario.Description;
 		this.m.Difficulty = 2;
 	}
 
@@ -45,8 +45,7 @@
 			"caravan_hand_background"
 		]);
 		bros[1].setPlaceInFormation(5);
-		//bros[1].setVeteranPerks(2);
-		bros[1].getBackground().m.RawDescription = "You found %name% being thrown out of a pub and at first glance thought that was little more than a drunken miscreant. But you watched as off three would-be muggers were soon on the ground. They still managed to take off with a coin purse in the end, sure, but they could not truly defeat %name%. Impressed, you took the newly-impoverished fighter on as a caravan hand.";
+		bros[1].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.trader_scenario.RawDescription;
 		bros[1].m.Talents = [];
 		local talents = bros[1].getTalents();
 		talents.resize(this.Const.Attributes.COUNT, 0);

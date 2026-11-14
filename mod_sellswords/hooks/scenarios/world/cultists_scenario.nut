@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul awaits. You lead a small flock devoted to the elder god, and it is time to spread the word. Find more followers, acquire riches, and please Davkul with sacrifices.\n\n[color=#bcad8c]Cultists:[/color] Start with a group of five cultists. Encounter fanatical special cultists in towns.\n[color=#bcad8c]Sacrifices:[/color] Davkul will occasionally demand sacrifices from you, but also bestow boons upon those loyal to him. Davkul will not sacrifice his chosen elite. Cultists cost 25% less to buy and maintain.\n[color=#c90000]Let the Blood Flow:[/color] All cultists gain bonus melee skill and the [color=#008060]True Believer[/color] perk.[/p]";		
+		this.m.Description = ::Mod_Sellswords.Strings.cultists_scenario.Description;		
 	}	
 	q.onSpawnAssets = @(__original) function()
 	{
@@ -34,7 +34,7 @@
 		bros[0].setStartValuesEx([
 			"legend_magister_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "When %name% joined, the cultist warmly called you captain, saying \"tis a proper manner to pursue the path into the Black from whence we came\".";
+		bros[0].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.cultists_scenario.RawDescription1;
 		bros[0].getSkills().add(this.new("scripts/skills/perks/perk_rally_the_troops"));
 		this.addScenarioPerk(bros[0].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
 		bros[0].setPlaceInFormation(2);
@@ -45,7 +45,7 @@
 		bros[1].setStartValuesEx([
 			"legend_husk_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "%name% found you upon the road, stating with certainty you were a mercenary captain. You wore but ordinary cloth at that moment, but %name% said that by Davkul\'s darkness you had an aura of wanted Black about you.";
+		bros[1].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.cultists_scenario.RawDescription2;
 		this.addScenarioPerk(bros[1].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
 		bros[1].getBaseProperties().MeleeSkill += 10;
 		bros[1].setPlaceInFormation(3);
@@ -56,7 +56,7 @@
 		bros[2].setStartValuesEx([
 			"cultist_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "A quiet figure, %name% has shadows beneath the fingerprints, running like the brine beneath a pallid shore. When you exchanged a handshake, it was as though you could hear the hissing of your sanity.";
+		bros[2].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.cultists_scenario.RawDescription3;
 		this.addScenarioPerk(bros[2].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
 		bros[2].getBaseProperties().MeleeSkill += 10;
 		bros[2].setPlaceInFormation(4);
@@ -81,7 +81,7 @@
 		bros[3].setStartValuesEx([
 			"cultist_background"
 		]);
-		bros[3].getBackground().m.RawDescription = "%name% banded with you outside a tavern. The first time you saw the cultist, there were scars running up %name%\'s arms and across veins that could not be survived. But each morning it appears as though the scars move, slowly creeping in one direction: toward the forehead.";
+		bros[3].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.cultists_scenario.RawDescription4;
 		this.addScenarioPerk(bros[3].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
 		bros[3].setPlaceInFormation(5);
 		bros[3].setVeteranPerks(2);
@@ -106,14 +106,14 @@
 		bros[4].setStartValuesEx([
 			"legend_lurker_background"
 		]);
-		bros[4].getBackground().m.RawDescription = "%name% banded with you outside a tavern. The first time you saw the cultist, there were scars running up %name%\'s arms and across veins that could not be survived. But each morning it appears as though the scars move, slowly creeping in one direction: toward the forehead.";
+		bros[4].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.cultists_scenario.RawDescription4;
 		this.addScenarioPerk(bros[4].getBackground(), this.Const.Perks.PerkDefs.LegendTrueBeliever);
 		bros[4].setPlaceInFormation(6);
 		bros[4].setVeteranPerks(2);
 		bros[4].getBaseProperties().MeleeSkill += 10;
 		local items = bros[4].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
-		items.equip(this.new("scripts/items/weapons/legend_dilapitated_sling"));
+		items.equip(this.new("scripts/items/weapons/legend_dilapidated_sling"));
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
 		this.World.Assets.getStash().add(this.new("scripts/items/supplies/ground_grains_item"));
 		this.World.Assets.m.Money = this.World.Assets.m.Money + 300;

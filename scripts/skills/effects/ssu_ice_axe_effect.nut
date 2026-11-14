@@ -34,7 +34,7 @@ this.ssu_ice_axe_effect <- this.inherit("scripts/skills/skill", {
 			return;
 
 		if (!_targetEntity.isHiddenToPlayer())
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is chilled");
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_ice_axe_effect.Log, this.Const.UI.getColorizedEntityName(_targetEntity)));
 
 		local chilled = _targetEntity.getSkills().getSkillByID("effects.chilled");
 

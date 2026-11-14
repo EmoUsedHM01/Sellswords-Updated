@@ -5,21 +5,15 @@
 		__original();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_unstoppable"));
-		}
-
 		local dc = this.World.getTime().Days;			
 		local blk = this.Math.rand(1, 100);
 
 		if (dc > 180 && blk >= 80)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockmaster"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blockmaster"));
 		else if(dc > 140 && blk >= 60)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockskilled"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blockskilled"));
 		else if(dc > 100 && blk >= 40)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlocknormal"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blocknormal"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -62,8 +56,8 @@
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Offhand))
 			{
 				weapons.extend([
-					"weapons/crswordlance",
-					"weapons/crswordlance"						
+					"weapons/ssu_swordlance",
+					"weapons/ssu_swordlance"						
 				]);
 			}
 
@@ -112,11 +106,6 @@
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_perfect_fit"));
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));
-
-				if (::Is_PTR_Exist)
-				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_pattern_recognition"));
-				}					
 			}
 		}
 

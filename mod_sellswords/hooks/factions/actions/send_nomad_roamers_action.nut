@@ -29,7 +29,7 @@
 			party = this.getFaction().spawnEntity(settlement.getTile(), "Manhunters", false, this.Const.World.Spawn.Manhunters, this.Math.min(settlement.getResources(), this.Math.rand(100, 160)));
 		}		
 		party.getSprite("banner").setBrush(settlement.getBanner());
-		party.setDescription("A band of nomads scouting the area.");
+		party.setDescription(::Mod_Sellswords.Strings.send_nomad_roamers_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Nomads);
 		party.getFlags().set("IsRandomlySpawned", true);
 		party.getLoot().Money = this.Math.rand(0, 100);

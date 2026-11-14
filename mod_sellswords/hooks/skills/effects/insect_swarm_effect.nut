@@ -3,13 +3,13 @@
 	q.onAdded = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
-		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
+		local crrd = this.getContainer().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
 
 		if (this.getContainer().getActor().getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 50 || crrd)
 		{
 			if (!this.getContainer().getActor().isHiddenToPlayer())
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + " repels insects with his unnatural physiology");
+				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.insect_swarm_effect.Log, this.Const.UI.getColorizedEntityName(this.getContainer().getActor())));
 			}
 
 			this.removeSelf();
@@ -41,7 +41,7 @@
 
 	q.onUpdate = @(__original) function( _properties )
 	{
-		if (this.getContainer().hasSkill("perk.crresilient"))
+		if (this.getContainer().hasSkill("perk.ssu_resilient"))
 		{
 			_properties.MeleeSkillMult *= 0.63;
 			_properties.RangedSkillMult *= 0.63;

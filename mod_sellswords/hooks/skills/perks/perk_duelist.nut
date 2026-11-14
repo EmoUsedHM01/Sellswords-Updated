@@ -3,7 +3,7 @@
 	{
 		local bonus = __original();
 		local weapon = this.getContainer().getActor().getMainhandItem();
-		if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam))
+		if (::Legends.Perks.has(this, ::Legends.Perk.SsuGrandslam))
 		{	
 			if (weapon == null)
 			{

@@ -50,7 +50,7 @@
 			party = this.getFaction().spawnEntity(settlement.getTile(), "Barbarians", false, this.Const.World.Spawn.Barbarians, this.Math.min(settlement.getResources(), rand));
 		}
 		party.getSprite("banner").setBrush(settlement.getBanner());
-		party.setDescription("A band of barbarians out to hunt game.");
+		party.setDescription(::Mod_Sellswords.Strings.send_barbarian_roamers_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Barbarians);
 		party.getFlags().set("IsRandomlySpawned", true);
 		party.getLoot().ArmorParts = this.Math.rand(0, 5);

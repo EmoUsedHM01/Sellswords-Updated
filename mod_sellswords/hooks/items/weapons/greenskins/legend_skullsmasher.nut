@@ -7,11 +7,4 @@
 		this.m.IsDoubleGrippable = true;
 		this.m.ShieldDamage = 0;
 	}
-
-	q.onEquip = @(__original) function()
-	{
-		__original();
-
-		this.addSkill(this.new("scripts/skills/actives/legend_harvest_rock_skill"));
-	}
 });

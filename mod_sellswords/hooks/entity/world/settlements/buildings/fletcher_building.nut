@@ -6,42 +6,42 @@
 			{
 				R = 50,
 				P = 1.0,
-				S = "ammo/quiver_of_fire_arrows"
+				S = "ammo/ssu_quiver_of_fire_arrows"
 			},
 			{
 				R = 50,
 				P = 1.0,
-				S = "ammo/quiver_of_freezing_arrows"
+				S = "ammo/ssu_quiver_of_freezing_arrows"
 			},
 			{
 				R = 50,
 				P = 1.0,
-				S = "ammo/quiver_of_bleeding_arrows"
+				S = "ammo/ssu_quiver_of_bleeding_arrows"
 			},
 			{
 				R = 50,
 				P = 1.0,
-				S = "ammo/quiver_of_poisoned_arrows"
+				S = "ammo/ssu_quiver_of_poisoned_arrows"
 			},
 			{
 				R = 50,
 				P = 1.0,
-				S = "ammo/quiver_of_fire_bolts"
+				S = "ammo/ssu_quiver_of_fire_bolts"
 			},
 			{
 				R = 50,
 				P = 1.0,
-				S = "ammo/quiver_of_freezing_bolts"
+				S = "ammo/ssu_quiver_of_freezing_bolts"
 			},
 			{
 				R = 50,
 				P = 1.0,
-				S = "ammo/quiver_of_bleeding_bolts"
+				S = "ammo/ssu_quiver_of_bleeding_bolts"
 			},
 			{
 				R = 50,
 				P = 1.0,
-				S = "ammo/quiver_of_poisoned_bolts"
+				S = "ammo/ssu_quiver_of_poisoned_bolts"
 			}
 		]);
 

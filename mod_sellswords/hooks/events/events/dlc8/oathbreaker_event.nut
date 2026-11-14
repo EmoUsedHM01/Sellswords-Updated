@@ -26,12 +26,12 @@
 					this.List.push({
 						id = 10,
 						icon = "ui/items/" + item.getIcon(),
-						text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.oathbreaker_event.Tooltip1, this.Const.Strings.getArticle(item.getName()), item.getName())
 					});
 					item = this.Const.World.Common.pickArmor([
 						[
 							1,
-							"adorned_heavy_mail_hauberk_armor"
+							"ssu_adorned_heavy_mail_hauberk_armor"
 						]
 					]);				
 					item.setArmor(item.getArmorMax() / 3 - 1);
@@ -39,12 +39,12 @@
 					this.List.push({
 						id = 10,
 						icon = "ui/items/armor/icon_body_armor_109.png",
-						text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.oathbreaker_event.Tooltip1, this.Const.Strings.getArticle(item.getName()), item.getName())
 					});
 					item = this.Const.World.Common.pickHelmet([
 						[
 							1,
-							"adorned_full_helm_helmet"
+							"ssu_adorned_full_helm_helmet"
 						]
 					]);					
 					item.setArmor(item.getArmorMax() / 3 - 1);
@@ -52,13 +52,13 @@
 					this.List.push({
 						id = 10,
 						icon = "ui/items/helmets/inventory_helmet_239.png",
-						text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.oathbreaker_event.Tooltip1, this.Const.Strings.getArticle(item.getName()), item.getName())
 					});
 					this.World.Assets.addMoney(-9000);
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]9,000[/color] Crowns"
+						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.oathbreaker_event.Tooltip2, this.Const.UI.Color.NegativeEventValue)
 					});
 				}
 				break;
@@ -71,8 +71,8 @@
 					_event.m.Dude.setStartValuesEx([
 						"paladin_background"
 					]);
-					_event.m.Dude.setTitle("the Oathbreaker");
-					_event.m.Dude.getBackground().m.RawDescription = "Like many men, %name% was found in squalor. Ale on his lips, grime in his ears, piss and shit at least somewhere on his person. But he was an Oathtaker at heart, and by the providence of Young Anselm it was certainly no ordinary circumstance which brought him back into the faith. Of course, he\'ll still yet pair beer with belief, but now and again one must allow a man his vices, particularly if said man shares an interest in slaying Oathbringers.";
+					_event.m.Dude.setTitle(::Mod_Sellswords.Strings.oathbreaker_event.Title);
+					_event.m.Dude.getBackground().m.RawDescription = ::Mod_Sellswords.Strings.oathbreaker_event.RawDescription;
 					_event.m.Dude.getBackground().buildDescription(true);
 					_event.m.Dude.m.PerkPoints = 0;
 					_event.m.Dude.m.LevelUps = 0;
@@ -115,7 +115,7 @@
 					item = this.Const.World.Common.pickArmor([
 						[
 							1,
-							"adorned_heavy_mail_hauberk_armor"
+							"ssu_adorned_heavy_mail_hauberk_armor"
 						]
 					]);				
 					item.setArmor(item.getArmorMax() / 3 - 1);
@@ -123,7 +123,7 @@
 					item = this.Const.World.Common.pickHelmet([
 						[
 							1,
-							"adorned_full_helm_helmet"
+							"ssu_adorned_full_helm_helmet"
 						]
 					]);	
 					item.setArmor(item.getArmorMax() / 3 - 1);

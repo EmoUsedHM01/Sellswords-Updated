@@ -6,25 +6,16 @@
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 120)
 		{
 			this.m.BaseProperties.Initiative += 3;	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBattlerhaposdy"));
-
-			if (::Is_PTR_Exist)
-			{
-				this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));
-			}
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_battlerhaposdy"));
 			
 			if (this.World.getTime().Days >= 160)
 			{
-				if (::Is_PTR_Exist)
-				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_through_the_gaps"));
-				}
 
 				this.m.BaseProperties.Initiative += 3;	
 				if (this.World.getTime().Days >= 200)
 				{
 					this.m.BaseProperties.Initiative += 4;	
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_crFoB"));												
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_fob"));												
 				}					
 			}
 		}
@@ -67,86 +58,85 @@
 
 		if (r <= 1)
 		{
-			this.m.Items.equip(this.new("scripts/items/weapons/legend_estoc"));
+			this.m.Items.equip(this.new("scripts/items/weapons/estoc"));
 		}
 		else if (r == 2)
 		{
 			this.m.Items.equip(this.new("scripts/items/weapons/fencing_sword"));
 		}
-		//this.m.Skills.addTreeOfEquippedWeapon();	
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);		
 		
 		if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarmor_hauberk_fencer_early"],		   //100,-11
-				[1, "crarmor_hauberk_fencer_mid"],	   //120,-13 					
+				[3, "ssu_armor_hauberk_fencer_early"],		   //100,-11
+				[1, "ssu_armor_hauberk_fencer_mid"],	   //120,-13 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[3, "crbillman_helmet_low"],			//~30
-				[1, "crbillman_helmet_early"],			   //~85,-5 						
+				[3, "ssu_billman_helmet_low"],			//~30
+				[1, "ssu_billman_helmet_early"],			   //~85,-5 						
 			]));
 		}
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_fencer_early"],		   //100,-11
-				[3, "crarmor_hauberk_fencer_mid"],	   //120,-13 					
+				[1, "ssu_armor_hauberk_fencer_early"],		   //100,-11
+				[3, "ssu_armor_hauberk_fencer_mid"],	   //120,-13 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crbillman_helmet_early"],			   //~85,-5 
-				[0, "crfencer_helmet_early"],			//~100,-5
-				[0, "crfencer_helmet_mid"],		   //~130,-7					
-				[0, "crfencer_helmet_late"],			   //~160,-6 						
+				[1, "ssu_billman_helmet_early"],			   //~85,-5 
+				[0, "ssu_fencer_helmet_early"],			//~100,-5
+				[0, "ssu_fencer_helmet_mid"],		   //~130,-7					
+				[0, "ssu_fencer_helmet_late"],			   //~160,-6 						
 			]));
 		}			
 		else if (dc <= 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_fencer_mid"],	   //120,-13 
-				[1, "crarmor_hauberk_fencer_late"],	 //130,-13
-				[0, "crarmor_hauberk_fencer_late_patched"],	   //155,-13  
-				[0, "crarmor_leather"],	 //155,-12 					
+				[1, "ssu_armor_hauberk_fencer_mid"],	   //120,-13 
+				[1, "ssu_armor_hauberk_fencer_late"],	 //130,-13
+				[0, "ssu_armor_hauberk_fencer_late_patched"],	   //155,-13  
+				[0, "ssu_armor_leather"],	 //155,-12 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crbillman_helmet_early"],			   //~85,-5 
-				[1, "crfencer_helmet_early"],			//~100,-5
-				[0, "crfencer_helmet_mid"],		   //~130,-7					
-				[0, "crfencer_helmet_late"],			   //~160,-6 						
+				[1, "ssu_billman_helmet_early"],			   //~85,-5 
+				[1, "ssu_fencer_helmet_early"],			//~100,-5
+				[0, "ssu_fencer_helmet_mid"],		   //~130,-7					
+				[0, "ssu_fencer_helmet_late"],			   //~160,-6 						
 			]));
 		}	
 		else if (dc <= 150)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_fencer_late"],	 //130,-13
-				[1, "crarmor_hauberk_fencer_late_patched"],	   //155,-13  
-				[0, "crarmor_leather"],	 //155,-12 					
+				[1, "ssu_armor_hauberk_fencer_late"],	 //130,-13
+				[1, "ssu_armor_hauberk_fencer_late_patched"],	   //155,-13  
+				[0, "ssu_armor_leather"],	 //155,-12 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crfencer_helmet_early"],			//~100,-5
-				[2, "crfencer_helmet_mid"],		   //~130,-7					
-				[0, "crfencer_helmet_late"],			   //~160,-6 						
+				[1, "ssu_fencer_helmet_early"],			//~100,-5
+				[2, "ssu_fencer_helmet_mid"],		   //~130,-7					
+				[0, "ssu_fencer_helmet_late"],			   //~160,-6 						
 			]));
 		}
 		else if (dc <= 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "crarmor_hauberk_fencer_late_patched"],	   //155,-13  
-				[1, "crarmor_leather"],	 //155,-12 					
+				[2, "ssu_armor_hauberk_fencer_late_patched"],	   //155,-13  
+				[1, "ssu_armor_leather"],	 //155,-12 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crfencer_helmet_mid"],		   //~130,-7					
-				[1, "crfencer_helmet_late"],			   //~160,-6 						
+				[1, "ssu_fencer_helmet_mid"],		   //~130,-7					
+				[1, "ssu_fencer_helmet_late"],			   //~160,-6 						
 			]));
 		}
 		else if (dc > 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarmor_hauberk_fencer_late_patched"],	   //155,-13  
-				[2, "crarmor_leather"],	 //155,-12 					
+				[1, "ssu_armor_hauberk_fencer_late_patched"],	   //155,-13  
+				[2, "ssu_armor_leather"],	 //155,-12 					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([								
-				[1, "crfencer_helmet_late"],			   //~160,-6 						
+				[1, "ssu_fencer_helmet_late"],			   //~160,-6 						
 			]));
 		}			
 	}
@@ -165,7 +155,7 @@
 
 			if (rr <= 1)
 			{
-				this.m.Items.equip(this.new("scripts/items/weapons/named/legend_named_estoc"));
+				this.m.Items.equip(this.new("scripts/items/weapons/named/named_estoc"));
 			}
 			else if (rr == 2)
 			{
@@ -175,11 +165,11 @@
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([ 
-				[1, "crnamed_leather_jacket"],	 		//155,-12 used by fencers 				
+				[1, "ssu_named_leather_jacket"],	 		//155,-12 used by fencers 				
 			]));
 		}
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([ 
-			[1, "crfencer_helmet_champion"],	 		//170,-9 				
+			[1, "ssu_fencer_helmet_champion"],	 		//170,-9 				
 		]));			
 		this.m.BaseProperties.Initiative += 10;				
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));

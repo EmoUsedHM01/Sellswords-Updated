@@ -3,13 +3,13 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "Throws dirt or sand to distract the enemy. Reduces inititive and damage output of the target by 35% for one turn. Wild Nomad used sand-attack!";
+		this.m.Description = ::Mod_Sellswords.Strings.throw_dirt_skill.Description;
 		this.m.Icon = "skills/active_215.png";
 		this.m.IconDisabled = "skills/active_215_sw.png";
 		this.m.IsUsingHitchance = false;
 	};
 	
-	q.getTooltip <- function()
+	q.getTooltip = @(__original) function()
 	{
 		local ret = [
 			{
@@ -31,7 +31,7 @@
 				id = 4,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Throws dirt or sand at the face of the target, temporarily blinding them"
+				text = ::Mod_Sellswords.Strings.throw_dirt_skill.Tooltip
 			}
 		];
 		return ret;
@@ -160,7 +160,7 @@
 
 		if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
 		{
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " throws dirt in " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + "\'s face to distract them");
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.throw_dirt_skill.Log, this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(_targetTile.getEntity())));
 		}
 
 		return true;

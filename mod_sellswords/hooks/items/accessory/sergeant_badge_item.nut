@@ -10,13 +10,13 @@
 			id = 10,
 			type = "text",
 			icon = "ui/icons/bravery.png",
-			text = "[color=%positive%]+1[/color] Resolve per ally wearing a militia armband or sergeant\'s sash."
+			text = ::Mod_Sellswords.Strings.sergeant_badge_item.Tooltip1
 		});
 		ret.push({
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Current bonus: [color=%positive%]" + this.m.ResolveBonus + "[/color]"
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.sergeant_badge_item.Tooltip2, this.m.ResolveBonus)
 		});
 
 		return ret;
@@ -31,7 +31,7 @@
 		{
 			local itemAtSlot = bro.getItems().getItemAtSlot(this.Const.ItemSlot.Accessory);
 
-			if (itemAtSlot != null && (itemAtSlot.m.ID == "accessory.militia_armband" || itemAtSlot.m.ID == "accessory.sergeant_badge"))
+			if (itemAtSlot != null && (itemAtSlot.m.ID == "accessory.ssu_militia_armband" || itemAtSlot.m.ID == "accessory.sergeant_badge"))
 				this.m.ResolveBonus += 1;
 		}
 	}

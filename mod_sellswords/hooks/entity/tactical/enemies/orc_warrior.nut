@@ -4,9 +4,6 @@
 	{
 		__original();
 
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bulwark"));
-
 		this.m.BaseProperties.Initiative += 10;
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days <= 90)
 		{
@@ -23,9 +20,6 @@
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 10;
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 
-			if (::Is_PTR_Exist)
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bully"));
-
 			if (this.World.getTime().Days >= 120)
 			{
 				if (this.World.getTime().Days >= 160)
@@ -34,7 +28,7 @@
 					this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 20;
 					this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 20;
 					this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 20;
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_crBruiser"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_bruiser"));
 					if (this.World.getTime().Days >= 200)
 					{
 						this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 20;
@@ -73,7 +67,7 @@
 				"weapons/greenskins/legend_skullsmasher",
 				"weapons/greenskins/legend_skin_flayer",
 				"weapons/greenskins/legend_skullsmasher",
-				"weapons/greenskins/cr_orc_mace"
+				"weapons/greenskins/ssu_orc_mace"
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
@@ -86,7 +80,6 @@
 		else
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 
-		this.m.Skills.removeByID("perk.ptr_kata");
 
 		local helmet;
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");				
@@ -156,7 +149,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 1.25;
-		local item = "scripts/items/misc/anatomist/orc_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_orc_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

@@ -69,11 +69,6 @@ foreach(script in [
 
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 			{
-				if (::Is_PTR_Exist)
-				{
-					this.m.Skills.removeByID("perk.ptr_fresh_and_furious");
-					this.m.Skills.add(this.new("scripts/skills/effects/ptr_fresh_and_furious_effect"));
-				}
 
 				if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 100)
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));

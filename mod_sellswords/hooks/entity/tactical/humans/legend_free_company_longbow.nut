@@ -5,11 +5,6 @@
 		__original();
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
-
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
-		}
 			
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{

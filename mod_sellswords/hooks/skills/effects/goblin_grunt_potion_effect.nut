@@ -19,19 +19,19 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The Action Point costs of the Rotation and Footwork skills are reduced by [color=%positive%]1[/color]. Does not stack with other reductions."
+				text = ::Mod_Sellswords.Strings.goblin_grunt_potion_effect.Tooltip1
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "The Fatigue costs of the Rotation and Footwork skills are reduced by [color=%positive%]50%[/color]. Does not stack with other reductions." + "\n[color=%positive%]+10[/color] Initiative."
+				text = ::Mod_Sellswords.Strings.goblin_grunt_potion_effect.Tooltip2
 			},
 			{
 				id = 12,
 				type = "hint",
 				icon = "ui/tooltips/warning.png",
-				text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+				text = ::Mod_Sellswords.Strings.goblin_grunt_potion_effect.Tooltip3
 			}
 		];
 		return ret;

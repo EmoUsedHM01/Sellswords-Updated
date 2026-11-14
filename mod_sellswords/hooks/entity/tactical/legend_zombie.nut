@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		this.zombie.create();
-		this.m.Name = "Raised Wiederganger";
+		this.m.Name = ::Mod_Sellswords.Strings.legend_zombie.Name;
 		this.m.ResurrectWithScript = "";
 		this.m.IsSummoned = true;
 		this.m.IsActingImmediately = true;

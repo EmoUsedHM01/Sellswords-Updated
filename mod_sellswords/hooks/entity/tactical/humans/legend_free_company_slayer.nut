@@ -6,12 +6,6 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));	
 
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_pattern_recognition"));
-		}
-
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;

@@ -3,9 +3,9 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Name = "Curse of the Mummy";
-		this.m.Description = "Curse the attacker upon death, making them recieve 10% more damage from all sources.";
-		this.m.Icon = "skills/icon_mummy_curse.png";
+		this.m.Name = ::Mod_Sellswords.Strings.legend_mummy_racial.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.legend_mummy_racial.Description;
+		this.m.Icon = "skills/legend_curse_of_the_mummy_effect.png";
 		this.m.IconMini = "mini_icon_mummy_curse";
 		this.m.Overlay = "mummy_curse";
 	}
@@ -41,7 +41,7 @@
 				id = 3
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Curse the attacker on death"
+				text = ::Mod_Sellswords.Strings.legend_mummy_racial.Tooltip
 			}
 		];
 	}

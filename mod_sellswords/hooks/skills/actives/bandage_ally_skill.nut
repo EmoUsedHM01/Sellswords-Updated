@@ -4,13 +4,12 @@
 	{
 		__original();
 
-		this.m.Description = "Save yourself or another character from bleeding to death by applying pressure and provisional bandaging to any such wound. Heals 5 hitpoints instantly and 5 hitpoints next turn if user has Bandage Mastery. Neither the character using this skill nor the patient may be engaged in melee, unless the character using this skill has Bandage Mastery.";
+		this.m.Description = ::Mod_Sellswords.Strings.bandage_ally_skill.Description;
 		this.m.ActionPointCost = 4;
 		this.m.FatigueCost = 10;
 	}
 	
 	
-	//local onVerifyTarget = o.onVerifyTarget;
 	q.onVerifyTarget = @( __original ) function( _originTile, _targetTile )
 	{
 		if (!this.skill.onVerifyTarget(_originTile, _targetTile))
@@ -72,7 +71,7 @@
 		target.setHitpoints(this.Math.min(target.getHitpointsMax(), target.getHitpoints() + 5));
 		
 		if (this.m.Container.hasSkill("perk.legend_mastery_bandage"))
-			target.getSkills().add(this.new("scripts/skills/effects/cr_bandage_effect"));
+			target.getSkills().add(this.new("scripts/skills/effects/ssu_bandage_effect"));
 		
 		return __original( _user, _targetTile );
 	}

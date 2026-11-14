@@ -17,7 +17,7 @@
 					_event.m.Dude.setStartValuesEx([
 						"lindwurm_slayer_background"
 					]);
-					_event.m.Dude.getBackground().m.RawDescription = "{%name% is a supposedly famous monster hunter with a particular talent for slaying lindwurms. He says he is the son of Dirk the Dragonslayer, the monster hunter who ostensibly slew the last living dragon.}";
+					_event.m.Dude.getBackground().m.RawDescription = ::Mod_Sellswords.Strings.lindwurm_slayer_event.RawDescription;
 					_event.m.Dude.getBackground().buildDescription(true);
 
 					if (_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand) != null)
@@ -45,14 +45,14 @@
 					item = this.Const.World.Common.pickHelmet([
 						[
 							1,
-							"crlindwurm_slayer_helmet"
+							"ssu_lindwurm_slayer_helmet"
 						]
 					]);
 					_event.m.Dude.getItems().equip(item);
 					item = this.Const.World.Common.pickArmor([
 						[
 							1,
-							"crlindwurm_slayer_armor"
+							"ssu_lindwurm_slayer_armor"
 						]
 					]);
 					_event.m.Dude.getItems().equip(item);
@@ -69,7 +69,7 @@
 					_event.m.Dude.setStartValuesEx([
 						"lindwurm_slayer_background"
 					]);
-					_event.m.Dude.getBackground().m.RawDescription = "{%name% is a supposedly famous monster hunter with a particular talent for slaying lindwurms. He says he is the son of Dirk the Dragonslayer, the monster hunter who ostensibly slew the last living dragon.}";
+					_event.m.Dude.getBackground().m.RawDescription = ::Mod_Sellswords.Strings.lindwurm_slayer_event.RawDescription;
 					_event.m.Dude.getBackground().buildDescription(true);
 
 					if (_event.m.Dude.getItems().getItemAtSlot(this.Const.ItemSlot.Mainhand) != null)
@@ -97,14 +97,14 @@
 					item = this.Const.World.Common.pickHelmet([
 						[
 							1,
-							"crlindwurm_slayer_helmet"
+							"ssu_lindwurm_slayer_helmet"
 						]
 					]);
 					_event.m.Dude.getItems().equip(item);
 					item = this.Const.World.Common.pickArmor([
 						[
 							1,
-							"crlindwurm_slayer_armor"
+							"ssu_lindwurm_slayer_armor"
 						]
 					]);
 					_event.m.Dude.getItems().equip(item);

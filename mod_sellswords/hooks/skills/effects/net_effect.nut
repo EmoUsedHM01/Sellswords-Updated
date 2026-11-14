@@ -31,25 +31,25 @@
 				id = 9,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=%negative%]Unable to move[/color]"
+				text = ::Mod_Sellswords.Strings.net_effect.Tooltip1
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
-				text = "[color=%negative%]-" + debuff + "%[/color] Melee Defense"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.net_effect.Tooltip2, debuff)
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
-				text = "[color=%negative%]-" + debuff + "%[/color] Ranged Defense"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.net_effect.Tooltip3, debuff)
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%negative%]-" + debuff + "%[/color] Initiative"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.net_effect.Tooltip4, debuff)
 			}
 		];
 	}

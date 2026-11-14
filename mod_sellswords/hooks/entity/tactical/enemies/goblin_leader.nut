@@ -12,10 +12,7 @@
 		dc = this.Math.max(dc, 3 * mn);
 
 		if (0.66 * dc > this.Math.rand(1, 100) && dc >= 80)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
-
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_eyes_up"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_trumpcard"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -35,7 +32,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 5;
-		local item = "scripts/items/misc/anatomist/goblin_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_goblin_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

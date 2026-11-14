@@ -35,8 +35,8 @@
 			bg.addPerk(_perk, row);
 		}
 
-		if (!this.getContainer().hasSkill("perk.crFurinkazan") && ::MSU.isKindOf(this.getContainer().getActor(), "player") && !::MSU.isNull(this.getContainer().getActor().getBackground()))
-			addPerk(this.Const.Perks.PerkDefs.crFurinkazan, 5);
+		if (!this.getContainer().hasSkill("perk.ssu_furinkazan") && ::MSU.isKindOf(this.getContainer().getActor(), "player") && !::MSU.isNull(this.getContainer().getActor().getBackground()))
+			addPerk(this.Const.Perks.PerkDefs.SsuFurinkazan, 5);
 	}
 
 	q.onRemoved <- function()

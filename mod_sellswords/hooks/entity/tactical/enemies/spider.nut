@@ -4,7 +4,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 1.25;
-		local item = "scripts/items/misc/anatomist/webknecht_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_webknecht_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

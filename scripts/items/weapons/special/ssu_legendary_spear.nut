@@ -4,13 +4,13 @@ this.ssu_legendary_spear <- ::inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.ssu_legendary_spear";
-		this.m.Name = "[color=#456ca0]Specter\'s Requiem[/color]";
-		this.m.Description = "One of the seven legendary weapons,\n[color=#456ca0]Specter\'s Requiem[/color] emits a low, mournful wail that echoes through the air when swung, freezing the blood of any nearby foes. Said to be wielded by a forgotten warrior cursed to eternal unrest, this weapon can phase through armor and shields, leaving only ghostly wounds that fester in the soul of those unfortunate enough to face against the wielder.";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_legendary_spear.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_legendary_spear.Description;
 		this.m.IconLarge = "weapons/melee/ssu_ghost_spear.png";
 		this.m.Icon = "weapons/melee/ssu_ghost_spear_70x70.png";
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
-		this.m.Categories = "Spear, Polearm, Two-Handed";
+		this.m.Categories = ::Mod_Sellswords.Strings.ssu_legendary_spear.Categories;
 		this.m.ItemType = this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded | ::Const.Items.ItemType.Legendary;
 		this.m.IsAoE = true;
 		this.m.AddGenericSkill = true;
@@ -39,14 +39,14 @@ this.ssu_legendary_spear <- ::inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 6,
 			type = "text",
-			icon = "ui/icons/legendary_weapon.png",
-			text = "One of the seven [color=#456ca0]Legendary[/color] weapons."
+			icon = "ui/icons/ssu_legendary_weapon.png",
+			text = ::Mod_Sellswords.Strings.ssu_legendary_spear.Tooltip1
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Attacks from this weapon [color=%negative%]ignore[/color] armor."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_spear.Tooltip2
 		});
 
 		return result;
@@ -58,7 +58,7 @@ this.ssu_legendary_spear <- ::inherit("scripts/items/weapons/weapon", {
 
 		this.addSkill(this.new("scripts/skills/actives/ssu_ghost_spear_strike"));
 
-		local skill = this.new("scripts/skills/actives/jab");
+		local skill = this.new("scripts/skills/actives/ssu_jab");
 		skill.m.Icon = "skills/ssu_ghost_spear_jab.png";
 		skill.m.IconDisabled = "skills/ssu_ghost_spear_jab_sw.png";
 		skill.m.Overlay = "ssu_ghost_spear_jab";
@@ -76,7 +76,7 @@ this.ssu_legendary_spear <- ::inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.onUpdateProperties(_properties);
 
-		if (this.getContainer().getActor().getSkills().getSkillByID("racial.ghost_boss"))
+		if (this.getContainer().getActor().getSkills().getSkillByID("racial.ssu_necro_ghost_boss"))
 			this.m.ArmamentIcon = "ssu_ghost_spear_boss";
 		else
 			this.m.ArmamentIcon = "ssu_ghost_spear";

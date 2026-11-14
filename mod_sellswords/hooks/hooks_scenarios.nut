@@ -1,8 +1,7 @@
 foreach (script in [
-	"scripts/scenarios/world/legend_random_party_scenario",
-	"scripts/scenarios/world/legend_random_solo_scenario",
+	"scripts/scenarios/world/legends_random_party_scenario",
+	"scripts/scenarios/world/legends_random_solo_scenario",
 	"scripts/scenarios/world/legends_berserker_scenario",
-	"scripts/scenarios/world/legends_mage_scenario",
 	"scripts/scenarios/world/legends_assassin_scenario",
 	"scripts/scenarios/world/legends_party_scenario",
 	"scripts/scenarios/world/trader_scenario",

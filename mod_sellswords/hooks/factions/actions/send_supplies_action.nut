@@ -8,12 +8,12 @@
 
 		if (r > 85)
 		{
-			spawnParty = this.Const.World.Spawn.MercenariesLOW;
+			spawnParty = this.Const.World.Spawn.SsuMercenariesLOW;
 			z = 1; 
 		}
 		else if (r > 75)
 		{
-			spawnParty = this.Const.World.Spawn.NobleCaravanwithSellswords;
+			spawnParty = this.Const.World.Spawn.SsuNobleCaravanwithSellswords;
 			z = 3;
 		}		
 		else if (r > 50)
@@ -31,7 +31,7 @@
 		party.getSprite("body").setBrush(this.Const.World.Spawn.NobleCaravan.Body);
 		party.getSprite("base").Visible = false;
 		party.setMirrored(true);
-		party.setDescription("A caravan with armed escorts transporting provisions, supplies and equipment between settlements.");
+		party.setDescription(::Mod_Sellswords.Strings.send_supplies_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Caravan);
 		party.getFlags().set("IsCaravan", true);
 		party.getFlags().set("IsRandomlySpawned", true);

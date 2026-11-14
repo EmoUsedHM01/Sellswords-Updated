@@ -14,7 +14,7 @@
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "This character will gather all his physical strength and willpower to become indomitable for three turns"
+			text = ::Mod_Sellswords.Strings.legend_heartwood_sap_flask_item.Tooltip
 		});
 		return result;
 	}

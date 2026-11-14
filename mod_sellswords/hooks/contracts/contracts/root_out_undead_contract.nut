@@ -25,7 +25,7 @@
 				}
 				else if (dc >= 150)
 				{								
-					party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, "Necromancers", false, this.Const.World.Spawn.UndeadScourgeenhanced, (90 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+					party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, "Necromancers", false, this.Const.World.Spawn.SsuUndeadScourgeenhanced, (90 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				}						
 				party.getSprite("banner").setBrush(banner);
 				party.setFootprintType(this.Const.World.FootprintsType.Undead);

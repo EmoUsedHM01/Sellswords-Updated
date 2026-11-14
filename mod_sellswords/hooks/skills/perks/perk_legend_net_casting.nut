@@ -2,12 +2,12 @@
 
 	q.onAdded <- function ()
 	{
-		this.m.Container.add(this.new("scripts/skills/actives/throw_net_free"));
+		this.m.Container.add(this.new("scripts/skills/actives/ssu_throw_net_free"));
 	}
 
 	q.onRemoved <- function ()
 	{
-		this.m.Container.removeByID("actives.throw_net_free");
+		this.m.Container.removeByID("actives.ssu_throw_net_free");
 	}
 
 });

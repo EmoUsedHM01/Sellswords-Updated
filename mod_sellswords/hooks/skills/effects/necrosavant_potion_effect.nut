@@ -23,7 +23,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Heal [color=%positive%]25%[/color] of hitpoint damage inflicted on adjacent enemies that have blood" + "\n[color=%positive%]+30[/color] Hitpoints." + "\n[color=%positive%]+10[/color] Melee Skill."
+				text = ::Mod_Sellswords.Strings.necrosavant_potion_effect.Tooltip1
 			});
 		}
 		else
@@ -32,7 +32,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/health.png",
-				text = "Heal [color=%positive%]15%[/color] of hitpoint damage inflicted on adjacent enemies that have blood" + "\n[color=%positive%]+10[/color] Hitpoints." + "\n[color=%positive%]+5[/color] Melee Skill."
+				text = ::Mod_Sellswords.Strings.necrosavant_potion_effect.Tooltip2
 			});
 		}
 		
@@ -40,7 +40,7 @@
 			id = 12,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+			text = ::Mod_Sellswords.Strings.necrosavant_potion_effect.Tooltip3
 		});
 		return ret;
 	}
@@ -76,7 +76,7 @@
 				this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.RacialEffect, actor.getPos());
 			}
 
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " heals for " + this.Math.min(actor.getHitpointsMax() - actor.getHitpoints(), hitpointsHealed) + " points");
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.necrosavant_potion_effect.Log, this.Const.UI.getColorizedEntityName(actor), this.Math.min(actor.getHitpointsMax() - actor.getHitpoints(), hitpointsHealed)));
 		}
 
 		actor.setHitpoints(this.Math.min(actor.getHitpointsMax(), actor.getHitpoints() + hitpointsHealed));

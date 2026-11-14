@@ -91,7 +91,7 @@ foreach(script in [
 		q.onInit = @( __original ) function()
 		{
 			__original();			
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBattlerhaposdy"));		
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_battlerhaposdy"));		
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
 				local dc = this.World.getTime().Days;
@@ -120,7 +120,7 @@ foreach(script in [
 		{
 			__original();
 			this.m.Skills.removeByID("perk.hold_out");	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));				
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));				
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
 				local dc = this.World.getTime().Days;
@@ -147,7 +147,7 @@ foreach(script in [
 		q.onInit = @( __original ) function()
 		{
 			__original();
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_trumpcard"));
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
 				local dc = this.World.getTime().Days;

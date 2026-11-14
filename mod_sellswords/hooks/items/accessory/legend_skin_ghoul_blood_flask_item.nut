@@ -14,7 +14,7 @@
 			id = 11,
 			type = "text",
 			icon = "ui/icons/days_wounded.png",
-			text = "Restores up to [color=%positive%]75%[/color] of missing health and heal wounds"
+			text = ::Mod_Sellswords.Strings.legend_skin_ghoul_blood_flask_item.Tooltip
 		});
 		return result;
 	}	

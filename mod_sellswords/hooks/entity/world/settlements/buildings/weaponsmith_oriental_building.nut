@@ -6,37 +6,32 @@
 			{
 				R = 80,
 				P = 1.0,
-				S = "weapons/spontoon01"
+				S = "weapons/ssu_spontoon01"
 			},
 			{
 				R = 85,
 				P = 1.0,
-				S = "weapons/spontoon02"
+				S = "weapons/ssu_spontoon02"
 			},
 			{
 				R = 90,
 				P = 1.0,
-				S = "weapons/spontoon03"
+				S = "weapons/ssu_spontoon03"
 			},
 			{
 				R = 99,
 				P = 2.0,
-				S = "weapons/named/named_spontoon"
+				S = "weapons/named/ssu_named_spontoon"
 			},
 			{
 				R = 90,
 				P = 1.0,
-				S = "weapons/crpolemace"
+				S = "weapons/ssu_polemace"
 			},
 			{
 				R = 90,
 				P = 1.0,
-				S = "weapons/crswordlance"
-			},
-			{
-				R = 98,
-				P = 2.0,
-				S = "weapons/named/named_sling"
+				S = "weapons/ssu_swordlance"
 			}
 		]);
 

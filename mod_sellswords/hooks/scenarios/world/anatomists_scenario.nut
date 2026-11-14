@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Fueled by an unquenchable thirst for knowledge, the Anatomists have spent years dissecting the exotic and the alien. With social mores dogging their research, however, they\'ve decided to form a mercenary company to acquire new source of fresh specimens.\n\n[color=#bcad8c]Advanced Researchers:[/color] Start with three elite Anatomists and high funds. Doubles the Anatomist drop chance for potions.\n[color=#bcad8c]Fresh Specimens:[/color] Characters come with the \'Resilient\' perk, which allows you to withstand mutations from up to two sequences.[/p]";
+		this.m.Description = ::Mod_Sellswords.Strings.anatomists_scenario.Description;
 	}
 
 	q.onSpawnAssets = @(__original) function()
@@ -23,7 +23,7 @@
 		bros[0].setStartValuesEx([
 			"anatomist_background"
 		]);
-		bros[0].getBackground().m.RawDescription = "{Captain? Is it alright if I call you captain? Ah, of course it is. What? No, we were not calling you by another name. Yers is a smooth costard, good sir, and we would not be of such derring-do to refer to you as a sellsword who is as ordinary as any of our coetaneous clodpolls, or state that we were in some sense importuning commerce by conducting business with a man of your particular skills. No sir, we would not. We are not children of perdition, sir.}";
+		bros[0].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.anatomists_scenario.RawDescription1;
 		bros[0].setPlaceInFormation(3);
 		bros[0].setVeteranPerks(2);
 		bros[0].m.Talents = [];
@@ -32,16 +32,16 @@
 		talents[this.Const.Attributes.Bravery] = 1;
 		talents[this.Const.Attributes.RangedSkill] = 2;
 		talents[this.Const.Attributes.RangedDefense] = 2;
-		bros[0].getBackground().addPerk(this.Const.Perks.PerkDefs.crresilient, 2, false);
-		bros[0].getSkills().add(this.new("scripts/skills/perks/perk_crresilient"));
+		bros[0].getBackground().addPerk(this.Const.Perks.PerkDefs.SsuResilient, 2, false);
+		bros[0].getSkills().add(this.new("scripts/skills/perks/perk_ssu_resilient"));
 		local items = bros[0].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Body));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Head));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Offhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Ammo));
-		local armor = this.new("scripts/items/legend_armor/cloth/legend_tunic");
-		local plate = this.new("scripts/items/legend_armor/plate/undertakers_apron");
+		local armor = this.new("scripts/items/legend_armor/cloth/legend_armor_tunic");
+		local plate = this.new("scripts/items/legend_armor/plate/legend_armor_apron_undertakers");
 		armor.setUpgrade(plate);
 		items.equip(armor);
 		local hood = this.new("scripts/items/legend_helmets/hood/legend_helmet_cloth_scarf");
@@ -55,7 +55,7 @@
 		bros[1].setStartValuesEx([
 			"anatomist_background"
 		]);
-		bros[1].getBackground().m.RawDescription = "{Despite others\' hesitancies, I\'ve no qualms calling you a javel, sir. You are, after all, a javel. A scapegrace. Some sellsword or another, yes? I think only a man who trucks cowardice would avoid calling you what you are. That someone disrespects your intelligence, thinking you yourself know not yourself. Even I see that in you accepting who you are, you are quite a good specimen. I mean, sellsword.}";
+		bros[1].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.anatomists_scenario.RawDescription2;
 		bros[1].setPlaceInFormation(4);
 		bros[1].setVeteranPerks(2);
 		bros[1].m.Talents = [];
@@ -64,15 +64,15 @@
 		talents[this.Const.Attributes.Hitpoints] = 2;
 		talents[this.Const.Attributes.Initiative] = 3;
 		talents[this.Const.Attributes.MeleeSkill] = 1;
-		bros[1].getBackground().addPerk(this.Const.Perks.PerkDefs.crresilient, 2, false);
-		bros[1].getSkills().add(this.new("scripts/skills/perks/perk_crresilient"));
+		bros[1].getBackground().addPerk(this.Const.Perks.PerkDefs.SsuResilient, 2, false);
+		bros[1].getSkills().add(this.new("scripts/skills/perks/perk_ssu_resilient"));
 		items = bros[1].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Body));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Head));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Offhand));
-		local armor = this.new("scripts/items/legend_armor/cloth/wanderers_coat");
-		local cloak = this.new("scripts/items/legend_armor/cloak/legend_religious_scarf");
+		local armor = this.new("scripts/items/legend_armor/cloth/legend_armor_wanderers_coat");
+		local cloak = this.new("scripts/items/legend_armor/cloak/legend_armor_religious_scarf");
 		armor.setUpgrade(cloak);
 		items.equip(armor);
 		local hood = this.new("scripts/items/legend_helmets/hood/legend_helmet_beak_hood");
@@ -85,7 +85,7 @@
 		bros[2].setStartValuesEx([
 			"anatomist_background"
 		]);
-		bros[2].getBackground().m.RawDescription = "{Though our quotidian dialogues are no doubt drollery, beneath the banausic surface I must admit I feel a touch of serotinous savagery lurking within you, coming to the fore as if my words be fire. Even our most desultory talks has me on edge, the way you stare at me with such hateful eyes. Well, know this, bounty hunter, I am no casuist, I speak in earnest. You are too fine a specimen-I mean captain to be lofting some sapskull\'s brickbats at. Understand?}";
+		bros[2].getBackground().m.RawDescription = ::Mod_Sellswords.Strings.anatomists_scenario.RawDescription3;
 		bros[2].setPlaceInFormation(5);
 		bros[2].setVeteranPerks(2);
 		bros[2].m.Talents = [];
@@ -94,15 +94,15 @@
 		talents[this.Const.Attributes.Bravery] = 2;
 		talents[this.Const.Attributes.MeleeDefense] = 3;
 		talents[this.Const.Attributes.RangedDefense] = 3;
-		bros[2].getBackground().addPerk(this.Const.Perks.PerkDefs.crresilient, 2, false);
-		bros[2].getSkills().add(this.new("scripts/skills/perks/perk_crresilient"));
+		bros[2].getBackground().addPerk(this.Const.Perks.PerkDefs.SsuResilient, 2, false);
+		bros[2].getSkills().add(this.new("scripts/skills/perks/perk_ssu_resilient"));
 		items = bros[2].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Body));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Head));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Mainhand));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Offhand));
-		local armor = this.new("scripts/items/legend_armor/cloth/anatomist_robe");
-		local cloak = this.new("scripts/items/legend_armor/cloak/anatomist_hood");
+		local armor = this.new("scripts/items/legend_armor/cloth/legend_armor_robes_anatomist");
+		local cloak = this.new("scripts/items/legend_armor/cloak/legend_armor_anatomist_hood");
 		armor.setUpgrade(cloak);
 		items.equip(armor);
 		local hood = this.new("scripts/items/legend_helmets/hood/legend_helmet_full_mask");
@@ -135,7 +135,7 @@
 
 	q.onBuildPerkTree <- function(_background)
 	{
-		this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.crresilient);
+		this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.SsuResilient);
 	}
 
 });

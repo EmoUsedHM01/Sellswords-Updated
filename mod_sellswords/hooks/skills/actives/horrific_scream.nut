@@ -3,9 +3,9 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "Let out a piercing, unworldly sound that is sure to distress anyone unfortunate enough to hear it.";
-		this.m.Icon = "skills/active_41.png";
-		this.m.IconDisabled = "skills/active_41_sw.png";
+		this.m.Description = ::Mod_Sellswords.Strings.horrific_scream.Description;
+		this.m.Icon = "skills/ssu_active_41.png";
+		this.m.IconDisabled = "skills/ssu_active_41_sw.png";
 		this.m.Order = this.Const.SkillOrder.UtilityTargeted;
 	}
 	
@@ -16,7 +16,7 @@
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=%positive%]" + this.getMaxRange() + "[/color] tiles"
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.horrific_scream.Tooltip, this.getMaxRange())
 		});
 		return ret;
 	}

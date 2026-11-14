@@ -1,0 +1,53 @@
+this.ssu_orc_staff <- this.inherit("scripts/items/weapons/weapon", {
+	m = {},
+	function create()
+	{
+		this.weapon.create();
+		this.m.ID = "weapon.ssu_orc_staff";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_orc_staff.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_orc_staff.Description;
+		this.m.IconLarge = "weapons/melee/ssu_bone_staff_70x140.png";
+		this.m.Icon = "weapons/melee/ssu_bone_staff_70x70.png";
+		this.m.WeaponType = this.Const.Items.WeaponType.Staff | this.Const.Items.WeaponType.MagicStaff;
+		this.m.SlotType = this.Const.ItemSlot.Mainhand;
+		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
+		this.m.ItemType = this.Const.Items.ItemType.Weapon | this.Const.Items.ItemType.MeleeWeapon | this.Const.Items.ItemType.TwoHanded;
+		this.m.IsAgainstShields = true;
+		this.m.IsAoE = true;
+		this.m.AddGenericSkill = true;
+		this.m.ShowQuiver = false;
+		this.m.ShowArmamentIcon = true;
+		this.m.ArmamentIcon = "ssu_orc_staff";
+		this.m.Value = 2800;
+		this.m.ShieldDamage = 48;
+		this.m.Condition = 72.0;
+		this.m.ConditionMax = 72.0;
+		this.m.StaminaModifier = -16;
+		this.m.RangeMin = 1;
+		this.m.RangeMax = 2;
+		this.m.RangeIdeal = 2;
+		this.m.RegularDamage = 45;
+		this.m.RegularDamageMax = 65;
+		this.m.ArmorDamageMult = 1.6;
+		this.m.DirectDamageMult = 0.35;
+		this.m.IsDroppedAsLoot = true;
+	}
+
+	function onEquip()
+	{
+		this.weapon.onEquip();
+		::Legends.Actives.grant(this, ::Legends.Active.Bash, function (_skill) {
+			_skill.m.IsStaffBash = true;
+		}.bindenv(this));
+		::Legends.Actives.grant(this, ::Legends.Active.KnockOut, function (_skill) {
+			_skill.m.IsStaffKnockOut = true;
+		}.bindenv(this));
+
+		this.addSkill(this.new("scripts/skills/actives/ssu_staff_sweep"));
+
+		local skill = this.new("scripts/skills/actives/split_shield");
+		skill.setFatigueCost(skill.getFatigueCostRaw() + 5);
+		this.addSkill(skill);
+	}
+
+});

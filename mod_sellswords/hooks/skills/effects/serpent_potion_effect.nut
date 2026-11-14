@@ -5,12 +5,12 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Name = "Venom Glands";
+		this.m.Name = ::Mod_Sellswords.Strings.serpent_potion_effect.Name;
 	}
 
 	q.getDescription = @(__original) function()
 	{
-		return "This character has developed venom glands that allow them to produce poison strong enough to kill any man. Sadly they do not have the fangs of a snake or spider to deliver this venom and have to resort using piercing or cutting weapons to apply it.";
+		return ::Mod_Sellswords.Strings.serpent_potion_effect.Text;
 	}
 
 	q.getTooltip = @(__original) function()
@@ -34,7 +34,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Piercing or cutting attacks poison the target with Redback venom." + "\n[color=%positive%]+30[/color] Initiative." + "\n[color=%positive%]+15[/color] Melee Skill."
+				text = ::Mod_Sellswords.Strings.serpent_potion_effect.Tooltip1
 			});
 		}
 		else
@@ -43,7 +43,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Piercing or cutting attacks poison the target." + "\n[color=%positive%]+15[/color] Initiative." + "\n[color=%positive%]+5[/color] Melee Skill."
+				text = ::Mod_Sellswords.Strings.serpent_potion_effect.Tooltip2
 			});
 		}
 		
@@ -51,7 +51,7 @@
 			id = 12,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+			text = ::Mod_Sellswords.Strings.serpent_potion_effect.Tooltip3
 		});
 
 		return ret;
@@ -92,7 +92,7 @@
 			if (this.m.SoundOnUse.len() != 0)
 				this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.RacialEffect * 1.5, _targetEntity.getPos());
 			
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is poisoned");
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.serpent_potion_effect.Log, this.Const.UI.getColorizedEntityName(_targetEntity)));
 		}
 
 		this.spawnIcon("status_effect_54", _targetEntity.getTile());

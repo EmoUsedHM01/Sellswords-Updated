@@ -87,7 +87,7 @@
 			],
 			[
 				6,
-				"cr_cutthroat_helmet"
+				"ssu_cutthroat_helmet"
 			]				
 		];
 		this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));

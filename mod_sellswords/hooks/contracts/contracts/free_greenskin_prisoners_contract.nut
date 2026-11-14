@@ -39,10 +39,10 @@
 						}
 						else if (dc >= 150)
 						{
-							party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, "Greenskin Horde", false, this.Const.World.Spawn.GreenskinHordeenhanced, (105 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+							party = this.World.FactionManager.getFaction(camp.getFaction()).spawnEntity(tile, "Greenskin Horde", false, this.Const.World.Spawn.SsuGreenskinHordeenhanced, (105 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 						}							
 						party.getSprite("banner").setBrush(camp.getBanner());
-						party.setDescription("A horde of greenskins marching to war.");
+						party.setDescription(::Mod_Sellswords.Strings.free_greenskin_prisoners_contract.Description);
 						party.setFootprintType(this.Const.World.FootprintsType.Orcs);
 						this.Contract.m.UnitsSpawned.push(party);
 						party.getLoot().ArmorParts = this.Math.rand(0, 25);
@@ -94,7 +94,7 @@
 							}
 							else if (dc >= 150)
 							{
-								this.Contract.addUnitsToEntity(camp, this.Const.World.Spawn.GreenskinHordeenhanced, (105 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+								this.Contract.addUnitsToEntity(camp, this.Const.World.Spawn.SsuGreenskinHordeenhanced, (105 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 							}								
 						}
 					}
@@ -139,7 +139,7 @@
 					}
 					else if (dc >= 150)
 					{
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.GreenskinHordeenhanced, (90 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).getID());
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuGreenskinHordeenhanced, (90 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.World.FactionManager.getFactionOfType(this.Const.FactionType.Goblins).getID());
 					}						
 					this.World.Contracts.startScriptedCombat(p, false, true, true);
 					return 0;

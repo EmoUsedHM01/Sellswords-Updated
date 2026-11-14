@@ -17,7 +17,7 @@
 		{
 			if (tooltip.id != 6 || tooltip.icon != "ui/icons/hitchance.png") continue;
 
-			tooltip.text = "Has [color=%positive%]+30%[/color] chance to hit";
+			tooltip.text = ::Mod_Sellswords.Strings.ignite_firelance_skill.Tooltip;
 			break;
 		}
 		
@@ -33,13 +33,6 @@
 			_properties.RangedSkill -= 10;
 			_properties.DamageRegularMax += 10;
 			_properties.DamageArmorMult -= 0.2;
-
-			if (this.getContainer().hasSkill("perk.ptr_muscle_memory"))
-			{
-				_properties.DamageRegularMin += 10;
-				_properties.DamageRegularMax += 15;	
-				_properties.DamageArmorMult += 0.3;				
-			}	
 		}
 	}
 

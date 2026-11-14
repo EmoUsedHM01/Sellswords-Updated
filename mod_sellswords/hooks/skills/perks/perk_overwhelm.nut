@@ -2,13 +2,13 @@
 
 	q.onAdded <- function ()
 	{
-		if (!this.m.Container.hasSkill("actives.cr_overwhelm_attack") && this.getContainer().getActor().isPlayerControlled())
-			this.m.Container.add(this.new("scripts/skills/actives/cr_overwhelm_attack"));
+		if (!this.m.Container.hasSkill("actives.ssu_overwhelm_attack") && this.getContainer().getActor().isPlayerControlled())
+			this.m.Container.add(this.new("scripts/skills/actives/ssu_overwhelm_attack"));
 	}
 
 	q.onRemoved <- function ()
 	{
-		this.m.Container.removeByID("actives.cr_overwhelm_attack");
+		this.m.Container.removeByID("actives.ssu_overwhelm_attack");
 	}
 
 });

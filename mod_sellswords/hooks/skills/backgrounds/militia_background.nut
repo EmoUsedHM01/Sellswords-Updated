@@ -4,7 +4,7 @@
 	{
 		__original();
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.new("scripts/items/accessory/militia_armband_item"));
+		items.equip(this.new("scripts/items/accessory/ssu_militia_armband_item"));
 	}
 
 });

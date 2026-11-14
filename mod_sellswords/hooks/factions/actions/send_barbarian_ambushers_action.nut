@@ -66,7 +66,7 @@
 		
 		if (z > 90 - 0.25 * dc)
 		{
-			party = this.getFaction().spawnEntity(settlement.getTile(), "Barbarians Hunters", false, this.Const.World.Spawn.Barbhunters, this.Math.rand(60, 90) * this.getScaledDifficultyMult() * mult);
+			party = this.getFaction().spawnEntity(settlement.getTile(), "Barbarians Hunters", false, this.Const.World.Spawn.SsuBarbhunters, this.Math.rand(60, 90) * this.getScaledDifficultyMult() * mult);
 		}				
 		else if (z > 0.5 * dc)
 		{
@@ -74,10 +74,10 @@
 		}
 		else if (z > 0)		
 		{
-			party = this.getFaction().spawnEntity(settlement.getTile(), "Barbarians Berserkers", false, this.Const.World.Spawn.BabarianBerserkers, (this.Math.rand(60, 90) + dc * 2) * this.getScaledDifficultyMult() * mult);
+			party = this.getFaction().spawnEntity(settlement.getTile(), "Barbarians Berserkers", false, this.Const.World.Spawn.SsuBabarianBerserkers, (this.Math.rand(60, 90) + dc * 2) * this.getScaledDifficultyMult() * mult);
 		}	
 		party.getSprite("banner").setBrush(settlement.getBanner());
-		party.setDescription("A warband of barbarian tribals.");
+		party.setDescription(::Mod_Sellswords.Strings.send_barbarian_ambushers_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Barbarians);
 		party.getFlags().set("IsRandomlySpawned", true);
 		party.getLoot().Money = this.Math.rand(0, 50);

@@ -4,9 +4,9 @@
 	{
 		__original();
 
-		this.m.IconLarge = "weapons/melee/orc_hammer_2h_low.png";
-		this.m.Icon = "weapons/melee/orc_hammer_2h_low_70x70.png";
-		this.m.ArmamentIcon = "cr_orc_hammer_2h_low";
+		this.m.IconLarge = "weapons/melee/ssu_orc_hammer_2h_low.png";
+		this.m.Icon = "weapons/melee/ssu_orc_hammer_2h_low_70x70.png";
+		this.m.ArmamentIcon = "ssu_orc_hammer_2h_low";
 
 		this.m.ShieldDamage = 38;
 		this.m.Condition = 72.0;

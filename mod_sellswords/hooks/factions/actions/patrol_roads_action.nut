@@ -19,9 +19,9 @@
 		dc = this.Math.min(dc, 250);
 		if (z > 83)
 		{		
-			party = this.getFaction().spawnEntity(waypoints[0].getTile(), waypoints[0].getName() + " Noble man-at-arms", true, this.Const.World.Spawn.Noblewithbaron, this.Math.rand(180 + 0.4 * dc, 375) * this.getReputationToDifficultyLightMult());
+			party = this.getFaction().spawnEntity(waypoints[0].getTile(), waypoints[0].getName() + " Noble man-at-arms", true, this.Const.World.Spawn.SsuNoblewithbaron, this.Math.rand(180 + 0.4 * dc, 375) * this.getReputationToDifficultyLightMult());
 			party.getSprite("body").setBrush("figure_player_noble");
-			party.setDescription("Soldiers typically well-versed in the use of arms and served as a fully armoured heavy cavalryman.");
+			party.setDescription(::Mod_Sellswords.Strings.patrol_roads_action.Description1);
 			party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 			party.getFlags().set("IsRandomlySpawned", true);
 			party.getLoot().Money = this.Math.rand(500, 2000);
@@ -35,7 +35,7 @@
 		{		
 			party = this.getFaction().spawnEntity(waypoints[0].getTile(), waypoints[0].getName() + " Company", true, this.Const.World.Spawn.Noble, this.Math.rand(120 + 0.4 * dc, 250) * this.getReputationToDifficultyLightMult());
 			party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + _faction.getBannerString());
-			party.setDescription("Professional soldiers in service to local lords.");
+			party.setDescription(::Mod_Sellswords.Strings.patrol_roads_action.Description2);
 			party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 			party.getFlags().set("IsRandomlySpawned", true);
 			party.getLoot().Money = this.Math.rand(50, 200);

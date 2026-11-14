@@ -6,8 +6,8 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 	{
 		this.character_background.create();
 		this.m.ID = "background.ssu_dryad_avatar";
-		this.m.Icon = "ui/backgrounds/dryad_avatar_background.png";
-		this.m.Name = "Dryad Avatar";
+		this.m.Icon = "ui/backgrounds/ssu_dryad_avatar_background.png";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_dryad_avatar_background.Name;
 		this.m.HiringCost = 999999;
 		this.m.DailyCost = 0;
 		this.m.Excluded = [
@@ -16,9 +16,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 			"trait.cocky"
 		];
 		this.m.Names = this.Const.Strings.DryadNames;
-		this.m.Titles = [
-			"the Dryad"
-		];
+		this.m.Titles = ::Mod_Sellswords.Strings.ssu_dryad_avatar_background.Titles;
 		this.m.Faces = ::Const.Dryad.Head;
 		this.m.Bodies = ::Const.Dryad.Body;
 		this.m.Hairs = null;
@@ -77,18 +75,18 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 	function onAddEquipment()
 	{
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.new("scripts/items/weapons/dryad/dryad_cleaver"));
-		items.equip(this.new("scripts/items/ammo/forest_heart_ammo"));
+		items.equip(this.new("scripts/items/weapons/dryad/ssu_dryad_cleaver"));
+		items.equip(this.new("scripts/items/ammo/ssu_dryad_forest_heart_ammo"));
 		items.equip(this.Const.World.Common.pickArmor([
 			[
 				1,
-				"dryad_armour_shaman"
+				"ssu_dryad_armour_shaman"
 			]
 		]));
 		items.equip(this.Const.World.Common.pickHelmet([
 			[
 				1,
-				"dryad_helmet_shaman"
+				"ssu_dryad_helmet_shaman"
 			]
 		]));
 	}
@@ -115,7 +113,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
 		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_roots"));
-		this.m.Container.add(this.new("scripts/skills/racial/dryad_racial"));
+		this.m.Container.add(this.new("scripts/skills/racial/ssu_dryad_racial"));
 	}
 
 	function buildPerkTree()
@@ -133,23 +131,9 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.addPerkGroup(::Const.Perks.CalmTree.Tree);
 		this.addPerkGroup(::Const.Perks.SturdyTree.Tree);
 		this.addPerkGroup(::Const.Perks.IntelligentTree.Tree);
-		this.addPerk(::Const.Perks.PerkDefs.LegendGatherer, 0, false);
-		this.addPerkGroup(::Const.Perks.OutlandersTree.Tree);
 
-		if (::Is_PTR_Exist)
-		{
-			this.addPerkGroup(::Const.Perks.ResilientTree.Tree);
-			this.addPerkGroup(::Const.Perks.OneHandedTree.Tree);
-			this.addPerkGroup(::Const.Perks.TwoHandedTree.Tree);
-
-			this.addPerk(::Const.Perks.PerkDefs.PTRRisingStar, 4, false);
-			this.addPerk(::Const.Perks.PerkDefs.PTRManOfSteel, 5, false);
-		}
-		else
-		{
-			this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
-			this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
-		}
+		this.addPerkGroup(::Const.Perks.IndestructibleTree.Tree);
+		this.addPerkGroup(::Const.Perks.MartyrTree.Tree);
 
 		this.addPerk(::Const.Perks.PerkDefs.LegendBattleheart, 3, false);
 	}
@@ -196,7 +180,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 	function onCombatStarted()
 	{
 		local actor = this.getContainer().getActor();
-		local dryad = this.getContainer().hasSkill("racial.dryad");
+		local dryad = this.getContainer().hasSkill("racial.ssu_dryad_");
 
 		if ( dryad )
 		{

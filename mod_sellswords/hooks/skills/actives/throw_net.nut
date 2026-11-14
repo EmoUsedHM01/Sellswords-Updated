@@ -19,7 +19,7 @@
 	{
 		local targetEntity = _targetTile.getEntity();
 		local rd = this.Math.rand(1, 100);
-		local crrd = targetEntity.getSkills().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= targetEntity.getBaseProperties().RangedDefense : false;
+		local crrd = targetEntity.getSkills().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= targetEntity.getBaseProperties().RangedDefense : false;
 		local escapeartist = targetEntity.getSkills().hasSkill("perk.legend_escape_artist") ? this.Math.rand(1, 100) <= targetEntity.getBaseProperties().RangedDefense : false;		
 		local isMiss = false;
 		if (_user.getSkills().hasSkill("perk.legend_net_casting"))

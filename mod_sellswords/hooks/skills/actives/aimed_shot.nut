@@ -16,7 +16,7 @@
 		local ammo = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Ammo);
 		if (ammo.m.Name == "Quiver of Phantom Arrows")
 		{
-			local skill = this.getContainer().getActor().getSkills().getSkillByID("effects.phantom_strike");
+			local skill = this.getContainer().getActor().getSkills().getSkillByID("effects.ssu_phantom_strike");
 			local stacks = skill.m.PhantomStacks;
 			skill.m.skillCount = this.Const.SkillCounter;
 			this.m.IsDoingAttackMove = false;
@@ -30,10 +30,10 @@
 					local prop = _user.getCurrentProperties();
 					prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
 					prop.RangedAttackBlockedChanceMult *= 0;
-					this.m.Name ="Phantom Strike";
+					this.m.Name =::Mod_Sellswords.Strings.aimed_shot.Name1;
 					this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectChop);
 					this.attackEntity(_user, target);
-					this.m.Name ="Aimed Shot";
+					this.m.Name =::Mod_Sellswords.Strings.aimed_shot.Name2;
 					this.m.ProjectileType = this.Const.ProjectileType.Arrow;
 				}
 			}.bindenv(this), this);
@@ -47,10 +47,10 @@
 					local prop = _user.getCurrentProperties();
 					prop.DamageTotalMult *= (0.1*(stacks)+ 0.3);
 					prop.RangedAttackBlockedChanceMult *= 0;
-					this.m.Name ="Phantom Strike";
+					this.m.Name =::Mod_Sellswords.Strings.aimed_shot.Name1;
 					this.spawnAttackEffect(_targetTile, this.Const.Tactical.AttackEffectChop);
 					this.attackEntity(_user, target);
-					this.m.Name ="Aimed Shot";
+					this.m.Name =::Mod_Sellswords.Strings.aimed_shot.Name2;
 					this.m.ProjectileType = this.Const.ProjectileType.Arrow;
 				}
 				this.getContainer().setBusy(false);
@@ -67,10 +67,7 @@
 			_properties.RangedSkill += this.m.AdditionalAccuracy;
 			_properties.HitChanceAdditionalWithEachTile += this.m.AdditionalHitChance;
 
-			if (this.getContainer().hasSkill("perk.ptr_target_practice"))
-				_properties.DamageRegularMult *= 1.15;
-			else
-				_properties.DamageRegularMult *= 1.1;
+			_properties.DamageRegularMult *= 1.1;
 		}
 	}
 

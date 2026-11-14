@@ -87,12 +87,6 @@
 				if (bro.getSkills().hasSkill("perk.student"))
 					perkcount = perkcount - 1;
 
-				if (bro.getSkills().hasSkill("perk.ptr_rising_star"))
-					perkcount = perkcount - 2;
-
-				if (bro.getSkills().hasSkill("perk.ptr_professional"))
-					perkcount = perkcount - 4;
-
 				if (brolevel < 11)
 				{
 					crattributecount = crattributecount * this.Math.max(1, (bro.getBaseProperties().MeleeSkill - 67 - 3 * brolevel) / 3);
@@ -147,13 +141,13 @@
 			local gearvalue = mainhandvalue + offhandvalue + bodyvalue + headvalue;
 			local gearvaluecount = 0.1 * this.pow(dc / 10, 2.4000001) + 2;
 
-			if (this.World.Assets.getOrigin().getID() == "scenario.gladiators" || this.World.Assets.getOrigin().getID() == "scenario.lone_wolf" || this.World.Assets.getOrigin().getID() == "scenario.lone_wolf_easy")
+			if (this.World.Assets.getOrigin().getID() == "scenario.gladiators" || this.World.Assets.getOrigin().getID() == "scenario.lone_wolf" || this.World.Assets.getOrigin().getID() == "scenario.ssu_lone_wolf_easy")
 				gearvalue = this.Math.max(gearvalue - 5, 0.5);
 
 			if (this.World.Assets.getOrigin().getID() == "scenario.legend_risen_legion")
 				gearvalue = this.Math.max(gearvalue - 4, 0.5);
 
-			if (this.World.Assets.getOrigin().getID() == "scenario.legends_noble" || this.World.Assets.getOrigin().getID() == "scenario.legends_party" || this.World.Assets.getOrigin().getID() == "scenario.sellswords" || this.World.Assets.getOrigin().getID() == "scenario.trader")
+			if (this.World.Assets.getOrigin().getID() == "scenario.legends_noble" || this.World.Assets.getOrigin().getID() == "scenario.legends_party" || this.World.Assets.getOrigin().getID() == "scenario.ssu_sellswords" || this.World.Assets.getOrigin().getID() == "scenario.trader")
 				gearvalue = this.Math.max(gearvalue - 3, 0.5);
 
 			gearvaluecount = this.Math.max(1, gearvalue - gearvaluecount + 1) * this.Math.max(1, gearvalue / gearvaluecount);

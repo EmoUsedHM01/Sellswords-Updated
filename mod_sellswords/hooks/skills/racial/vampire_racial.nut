@@ -4,9 +4,9 @@
 	{
 		__original();
 		
-		this.m.Name = "Bloodthirsty Curse";
-		this.m.Description = "Strikes against enemy hitpoints restore your health by an amount equal to the damage dealt.";
-		this.m.Icon = "ui/racial/racial_vampire.png";
+		this.m.Name = ::Mod_Sellswords.Strings.vampire_racial.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.vampire_racial.Description;
+		this.m.Icon = "ui/racial/ssu_racial_vampire.png";
 		this.m.Type = this.Const.SkillType.Racial | this.Const.SkillType.StatusEffect;
 		this.m.IsHidden = false;
 	}
@@ -28,25 +28,25 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "Strikes against enemy hitpoints restore your health by an amount equal to the damage dealt."
+				text = ::Mod_Sellswords.Strings.vampire_racial.Tooltip1
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/miniboss.png",
-				text = "Immune to bleeding, poison and stuns."
+				text = ::Mod_Sellswords.Strings.vampire_racial.Tooltip2
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Not effected by fatigue, but needs fatigue to equip items."
+				text = ::Mod_Sellswords.Strings.vampire_racial.Tooltip3
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Always has [color=%negative%]0%[/color] chance to survive being struck down."
+				text = ::Mod_Sellswords.Strings.vampire_racial.Tooltip4
 			}
 		];
 	}

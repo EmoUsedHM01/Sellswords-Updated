@@ -44,7 +44,7 @@
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 
 			if (this.World.getTime().Days >= 120)
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_ravager"));
 		}
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
@@ -90,7 +90,7 @@
 				"weapons/greenskins/legend_man_mangler",
 				"weapons/greenskins/legend_bough",
 				"weapons/greenskins/legend_skullbreaker",
-				"weapons/greenskins/cr_orc_sword"
+				"weapons/greenskins/ssu_orc_sword"
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
@@ -127,7 +127,6 @@
 		local weapon = this.getMainhandItem();
 		if (weapon != null && weapon.isWeaponType(this.Const.Items.WeaponType.Sword))
 		{
-			this.m.Skills.removeByID("perk.ptr_kata");
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 		}
 	}
@@ -144,9 +143,9 @@
 			"weapons/named/named_orc_axe",
 			"weapons/named/legend_named_orc_axe_2h",
 			"weapons/named/legend_named_orc_flail_2h",
-			"weapons/named/cr_named_orc_sword_1h",
-			"weapons/named/cr_named_orc_sword_2h",
-			"weapons/named/cr_named_orc_axe_infantry"
+			"weapons/named/ssu_named_orc_sword_1h",
+			"weapons/named/ssu_named_orc_sword_2h",
+			"weapons/named/ssu_named_orc_axe_infantry"
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 
@@ -156,7 +155,7 @@
 		::Legends.Perks.grant(this, ::Legends.Perk.CripplingStrikes);
 		::Legends.Perks.grant(this, ::Legends.Effect.BerserkerMushrooms);
 		if (::Legends.isLegendaryDifficulty()) {
-			::Legends.Perks.grant(this, ::Legends.Perk.LegendUberNimble);
+			::Legends.Perks.grant(this, ::Legends.Perk.Nimble);
 		}
 		return true;
 	}
@@ -165,7 +164,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 1.25;
-		local item = "scripts/items/misc/anatomist/orc_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_orc_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

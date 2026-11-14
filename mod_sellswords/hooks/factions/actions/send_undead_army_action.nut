@@ -100,10 +100,10 @@
 		}
 		if (dc >= 150)
 		{
-			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).spawnEntity(myTile, "Undead", false, this.Const.World.Spawn.UndeadScourgeenhanced, rand * this.getScaledDifficultyMult());
+			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).spawnEntity(myTile, "Undead", false, this.Const.World.Spawn.SsuUndeadScourgeenhanced, rand * this.getScaledDifficultyMult());
 		}		
 		party.getSprite("banner").setBrush(nearestUndead.getBanner());
-		party.setDescription("A legion of walking dead, back to claim from the living what was once theirs.");
+		party.setDescription(::Mod_Sellswords.Strings.send_undead_army_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Undead);
 		party.setSlowerAtNight(false);
 		party.setUsingGlobalVision(false);

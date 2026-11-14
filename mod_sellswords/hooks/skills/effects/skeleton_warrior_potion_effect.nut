@@ -19,13 +19,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Reduces the Fatigue cost of the \'Shieldwall\' skill by [color=%positive%]" + 100 * (1 - this.Const.Combat.WeaponSpecFatigueMult) + "%[/color]" + "\n[color=%positive%]+10[/color] Melee Defense." + "\n[color=%positive%]+10[/color] Fatigue."
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.skeleton_warrior_potion_effect.Tooltip1, 100 * (1 - this.Const.Combat.WeaponSpecFatigueMult))
 			},
 			{
 				id = 12,
 				type = "hint",
 				icon = "ui/tooltips/warning.png",
-				text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+				text = ::Mod_Sellswords.Strings.skeleton_warrior_potion_effect.Tooltip2
 			}
 		];
 		return ret;

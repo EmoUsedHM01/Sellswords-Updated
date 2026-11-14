@@ -10,7 +10,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=%negative%]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
+				text = ::Mod_Sellswords.Strings.legend_halberd_smite_skill.Tooltip
 			});
 		}	
 

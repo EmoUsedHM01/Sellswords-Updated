@@ -11,7 +11,7 @@
 		{
 			local items = bro.getItems();
 			items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Accessory));
-			items.equip(this.new("scripts/items/accessory/militia_armband_item"));
+			items.equip(this.new("scripts/items/accessory/ssu_militia_armband_item"));
 		}
 	}
 

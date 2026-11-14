@@ -19,13 +19,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character takes between [color=%positive%]25%[/color] and [color=%positive%]50%[/color] less damage from piercing attacks, such as those from bows or spears." + "\n[color=%positive%]+10[/color] Hitpoints."
+				text = ::Mod_Sellswords.Strings.honor_guard_potion_effect.Tooltip1
 			},
 			{
 				id = 12,
 				type = "hint",
 				icon = "ui/tooltips/warning.png",
-				text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+				text = ::Mod_Sellswords.Strings.honor_guard_potion_effect.Tooltip2
 			}
 		];
 		return ret;

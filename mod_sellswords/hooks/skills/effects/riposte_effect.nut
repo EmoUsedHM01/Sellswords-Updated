@@ -19,7 +19,7 @@
 				_properties.MeleeSkill -= 10;
 			}
 
-			if (::Legends.Perks.has(this, ::Legends.Perk.crGrandslam))
+			if (::Legends.Perks.has(this, ::Legends.Perk.SsuGrandslam))
 			{
 				_properties.MeleeSkill -= 15;
 			}

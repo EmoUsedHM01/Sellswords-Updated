@@ -23,7 +23,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects" + "\n[color=%positive%]+20[/color] Hitpoints."
+				text = ::Mod_Sellswords.Strings.orc_warrior_potion_effect.Tooltip1
 			});
 		}
 		else
@@ -32,7 +32,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "[color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects" + "\n[color=%positive%]+10[/color] Hitpoints."
+				text = ::Mod_Sellswords.Strings.orc_warrior_potion_effect.Tooltip2
 			});
 		}
 		
@@ -40,7 +40,7 @@
 			id = 12,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+			text = ::Mod_Sellswords.Strings.orc_warrior_potion_effect.Tooltip3
 		});
 
 		return ret;

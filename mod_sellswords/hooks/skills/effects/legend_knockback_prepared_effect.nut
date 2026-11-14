@@ -15,10 +15,10 @@
 
 		// refresh the effects
 		::Legends.Effects.remove(_targetEntity, ::Legends.Effect.LegendBaffled);
-		_targetEntity.getSkills().removeByID("effects.cr_smackdown");
+		_targetEntity.getSkills().removeByID("effects.ssu_smackdown");
 
 		::Legends.Effects.grant(_targetEntity, ::Legends.Effect.LegendBaffled);
-		_targetEntity.getSkills().add(this.new("scripts/skills/effects/cr_smackdown_effect"));
+		_targetEntity.getSkills().add(this.new("scripts/skills/effects/ssu_smackdown_effect"));
 	}
 
 });

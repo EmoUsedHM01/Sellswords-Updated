@@ -8,13 +8,13 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=%positive%]10[/color] ranged attack to all allies within [color=%positive%]4[/color] tiles for one turn"
+				text = ::Mod_Sellswords.Strings.legend_coordinated_volleys_skill.Tooltip1
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "The penalty to blocked ranged attack hitchance is reduced by [color=%positive%]20%[/color]"
+				text = ::Mod_Sellswords.Strings.legend_coordinated_volleys_skill.Tooltip2
 			}
 		]);
 		return tooltip;

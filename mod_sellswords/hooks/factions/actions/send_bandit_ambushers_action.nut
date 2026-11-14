@@ -68,11 +68,11 @@
 		}
 		else if (z > 0)		
 		{
-			party = this.getFaction().spawnEntity(settlement.getTile(), "Desperados", false, this.Const.World.Spawn.Desperados, (this.Math.rand(60, 90) + dc * 2) * this.getScaledDifficultyMult() * mult);
+			party = this.getFaction().spawnEntity(settlement.getTile(), "Desperados", false, this.Const.World.Spawn.SsuDesperados, (this.Math.rand(60, 90) + dc * 2) * this.getScaledDifficultyMult() * mult);
 		}		
 		
 		party.getSprite("banner").setBrush(settlement.getBanner());
-		party.setDescription("A rough and tough band of brigands preying on the weak.");
+		party.setDescription(::Mod_Sellswords.Strings.send_bandit_ambushers_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Brigands);
 		party.getFlags().set("IsRandomlySpawned", true);
 		party.getLoot().Money = this.Math.rand(50, 200);

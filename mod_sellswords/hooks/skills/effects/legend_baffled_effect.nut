@@ -2,7 +2,7 @@
 
 	q.onAdded = @(__original) function()
 	{
-		if (this.getContainer().hasSkill("effects.crbear_potion") || this.getContainer().getActor().getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 25 || this.getContainer().hasSkill("perk.crrangeddefense") && this.Math.rand(1, 100) <= this.getContainer().getActor().getBaseProperties().RangedDefense)
+		if (this.getContainer().getActor().getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 25 || this.getContainer().hasSkill("perk.ssu_rangeddefense") && this.Math.rand(1, 100) <= this.getContainer().getActor().getBaseProperties().RangedDefense)
 		{
 			this.removeSelf();
 		}
@@ -15,7 +15,7 @@
 	q.onUpdate = @(__original) function( _properties )
 	{
 		local actor = this.getContainer().getActor();
-		if (this.getContainer().hasSkill("perk.crresilient"))
+		if (this.getContainer().hasSkill("perk.ssu_resilient"))
 		{
 			_properties.DamageTotalMult *= 0.89;
 			_properties.InitiativeMult *= 0.89;

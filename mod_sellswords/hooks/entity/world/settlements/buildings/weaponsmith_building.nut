@@ -6,42 +6,42 @@
 			{
 				R = 80,
 				P = 1.0,
-				S = "weapons/spontoon01"
+				S = "weapons/ssu_spontoon01"
 			},
 			{
 				R = 85,
 				P = 1.0,
-				S = "weapons/spontoon02"
+				S = "weapons/ssu_spontoon02"
 			},
 			{
 				R = 90,
 				P = 1.0,
-				S = "weapons/spontoon03"
+				S = "weapons/ssu_spontoon03"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "weapons/crpolehammer"
+				S = "weapons/ssu_polehammer"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "weapons/crlongaxe"
+				S = "weapons/ssu_longaxe"
 			},
 			{
 				R = 95,
 				P = 1.0,
-				S = "weapons/crranged_flail"
+				S = "weapons/ssu_ranged_flail"
 			},
 			{
 				R = 97,
 				P = 2.0,
-				S = "weapons/named/cr_named_goedendag"
+				S = "weapons/named/ssu_named_goedendag"
 			},
 			{
 				R = 98,
 				P = 2.0,
-				S = "weapons/named/named_northern_sling"
+				S = "weapons/named/legend_named_northern_sling"
 			}
 		]);
 

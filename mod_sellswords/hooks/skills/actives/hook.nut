@@ -6,33 +6,33 @@
 		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
 
 		local actor = this.getContainer().getActor().get();
-		if (actor.getSkills().getSkillByID("perk.crGrandslam"))
+		if (actor.getSkills().getSkillByID("perk.ssu_grandslam"))
 			this.m.ActionPointCost += 1;
 
-		this.m.FatigueCostMult *= this.getContainer().hasSkill("perk.crretrofithooks") ? 0.8 : 1.0;
+		this.m.FatigueCostMult *= this.getContainer().hasSkill("perk.ssu_retrofithooks") ? 0.8 : 1.0;
 	}
 
 	q.getTooltip = @( __original ) function ()
 	{
 		local ret = this.getDefaultUtilityTooltip();
-		local bonus = this.getContainer().hasSkill("perk.crretrofithooks") ? 20 : 10;
+		local bonus = this.getContainer().hasSkill("perk.ssu_retrofithooks") ? 20 : 10;
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=%positive%]2[/color] tiles"
+			text = ::Mod_Sellswords.Strings.hook.Tooltip1
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Has a [color=%positive%]100%[/color] chance to stagger on a hit"
+			text = ::Mod_Sellswords.Strings.hook.Tooltip2
 		});
 		ret.push({
 			id = 6,
 			type = "text",
 			icon = "ui/icons/hitchance.png",
-			text = "Has [color=%positive%]" + bonus + "%[/color] chance to hit"
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.hook.Tooltip3, bonus)
 		});
 		return ret;
 	}
@@ -43,7 +43,7 @@
 		{
 			_properties.MeleeSkill += 10;
 
-			if (this.getContainer().hasSkill("perk.crretrofithooks"))
+			if (this.getContainer().hasSkill("perk.ssu_retrofithooks"))
 				_properties.MeleeSkill += 10;
 		}
 	}

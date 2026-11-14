@@ -2,13 +2,13 @@
 
 	q.onAdded = @(__original) function()
 	{
-		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= this.getContainer().getActor().getBaseProperties().RangedDefense : false;
+		local crrd = this.getContainer().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= this.getContainer().getActor().getBaseProperties().RangedDefense : false;
 
 		if (this.getContainer().getActor().getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 50 || crrd)
 		{
 			if (!this.getContainer().getActor().isHiddenToPlayer())
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + " quickly recovers from being disarmed thanks to his unnatural physiology");
+				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.disarmed_effect.Log, this.Const.UI.getColorizedEntityName(this.getContainer().getActor())));
 			}
 
 			this.removeSelf();

@@ -3,7 +3,7 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBruiser"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_bruiser"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;

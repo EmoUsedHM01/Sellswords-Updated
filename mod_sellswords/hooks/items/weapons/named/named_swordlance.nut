@@ -1,7 +1,7 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/items/weapons/named/named_swordlance", function ( q ) {
 
 	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(q, function() {
-		local baseWeapon = ::new("scripts/items/weapons/crswordlance");
+		local baseWeapon = ::new("scripts/items/weapons/ssu_swordlance");
 		this.m.Condition = baseWeapon.m.Condition;
 		this.m.ConditionMax = baseWeapon.m.ConditionMax;
 		this.m.RegularDamage = baseWeapon.m.RegularDamage;

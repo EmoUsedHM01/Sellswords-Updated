@@ -31,7 +31,7 @@
 
 		if (success && this.m.ApplyBonusToBodyPart != -1 && !_targetTile.IsEmpty && targetEntity.isAlive())
 		{
-			if (this.getContainer().hasSkill("perk.crHackSPM"))
+			if (this.getContainer().hasSkill("perk.ssu_hack_spm"))
 			{
 				this.m.crcriticalbonus = 1;
 			}		

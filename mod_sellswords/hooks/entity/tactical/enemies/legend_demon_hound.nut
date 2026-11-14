@@ -7,7 +7,7 @@
 		this.m.ActionPointCosts = this.Const.LegendFlightMovementAPCost;
 		this.m.FatigueCosts = this.Const.LegendFlightMovementFatigueCost;
 
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_trumpcard"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -40,8 +40,6 @@
 		do
 		{
 			targetTile = result.Destinations[this.Math.rand(0, result.Destinations.len() - 1)];
-			//this.logInfo("tilelevel: " + this.getTile().Level);
-			//this.logInfo("destinationlevel: " + targetTile.Level);			
 			if (targetTile.Level - this.getTile().Level > 1)
 			{
 			}

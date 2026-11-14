@@ -15,19 +15,19 @@
 			}
 		];
 
-		if (this.getContainer().hasSkill("perk.crresilient"))
+		if (this.getContainer().hasSkill("perk.ssu_resilient"))
 		{
 			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=%negative%]-" + this.m.Count * 3.75 + "%[/color] Melee Skill"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip1, this.m.Count * 3.75)
 			});
 			ret.push({
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=%negative%]-" + this.m.Count * 3.75 + "%[/color] Ranged Skill"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip2, this.m.Count * 3.75)
 			});
 		}
 		else
@@ -36,13 +36,13 @@
 				id = 10,
 				type = "text",
 				icon = "ui/icons/melee_skill.png",
-				text = "[color=%negative%]-" + this.m.Count * 5 + "%[/color] Melee Skill"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip1, this.m.Count * 5)
 			});
 			ret.push({
 				id = 11,
 				type = "text",
 				icon = "ui/icons/ranged_skill.png",
-				text = "[color=%negative%]-" + this.m.Count * 5 + "%[/color] Ranged Skill"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip2, this.m.Count * 5)
 			});
 		}
 
@@ -55,7 +55,7 @@
 		if (this.m.Count >= 7)
 			this.m.Count = 7;
 
-		if (this.getContainer().hasSkill("perk.crresilient"))
+		if (this.getContainer().hasSkill("perk.ssu_resilient"))
 		{
 			_properties.MeleeSkillMult = this.Math.maxf(0.0, _properties.MeleeSkillMult - 0.075 * this.m.Count);
 			_properties.RangedSkillMult = this.Math.maxf(0.0, _properties.RangedSkillMult - 0.075 * this.m.Count);

@@ -26,7 +26,6 @@
 		else
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 
-		this.m.Skills.removeByID("perk.ptr_kata");
 
 		local helmet;
 		helmet = [
@@ -92,7 +91,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 1.25;
-		local item = "scripts/items/misc/anatomist/orc_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_orc_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

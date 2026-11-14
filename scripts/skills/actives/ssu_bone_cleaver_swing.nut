@@ -3,8 +3,8 @@ this.ssu_bone_cleaver_swing <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.ssu_bone_cleaver_swing";
-		this.m.Name = "Swing";
-		this.m.Description = "Swinging the weapons in a wide arc that hits three adjacent tiles in counter-clockwise order. Be careful around your own men unless you want to relieve your payroll!";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_bone_cleaver_swing.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_bone_cleaver_swing.Description;
 		this.m.Icon = "skills/active_06.png";
 		this.m.IconDisabled = "skills/active_06_sw.png";
 		this.m.Overlay = "active_06";
@@ -49,19 +49,19 @@ this.ssu_bone_cleaver_swing <- this.inherit("scripts/skills/skill", {
 			id = 6,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Can hit up to 3 targets"
+			text = ::Mod_Sellswords.Strings.ssu_bone_cleaver_swing.Tooltip1
 		});
 		ret.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Will make two separate strikes for [color=%negative%]65%[/color] of the weapon\'s damage each"
+			text = ::Mod_Sellswords.Strings.ssu_bone_cleaver_swing.Tooltip2
 		});
 		ret.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts additional stacking [color=%damage%]" + dmg + "[/color] bleeding damage per turn."
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_bone_cleaver_swing.Tooltip3, dmg)
 		});
 
 		if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInCleavers)
@@ -70,7 +70,7 @@ this.ssu_bone_cleaver_swing <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=%negative%]-5%[/color] chance to hit"
+				text = ::Mod_Sellswords.Strings.ssu_bone_cleaver_swing.Tooltip4
 			});
 		}
 		else
@@ -79,7 +79,7 @@ this.ssu_bone_cleaver_swing <- this.inherit("scripts/skills/skill", {
 				id = 8,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=%positive%]+5%[/color] chance to hit"
+				text = ::Mod_Sellswords.Strings.ssu_bone_cleaver_swing.Tooltip5
 			});
 		}
 
@@ -194,7 +194,7 @@ this.ssu_bone_cleaver_swing <- this.inherit("scripts/skills/skill", {
 		}
 
 		if (!_targetEntity.isHiddenToPlayer())
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is bleeding");
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_bone_cleaver_swing.Log, this.Const.UI.getColorizedEntityName(_targetEntity)));
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )

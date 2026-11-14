@@ -19,13 +19,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character accumulates no Fatigue from enemy attacks, whether they hit or miss\n" + "[color=%positive%]+10[/color] Hitpoints."
+				text = ::Mod_Sellswords.Strings.fallen_hero_potion_effect.Tooltip1
 			},
 			{
 				id = 12,
 				type = "hint",
 				icon = "ui/tooltips/warning.png",
-				text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+				text = ::Mod_Sellswords.Strings.fallen_hero_potion_effect.Tooltip2
 			}
 		];
 		return ret;

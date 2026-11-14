@@ -4,13 +4,13 @@ this.ssu_legendary_axe <- ::inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.ssu_legendary_axe";
-		this.m.Name = "[color=#456ca0]Winter\'s Touch, the Ijirok\'s Remembrance[/color]";
-		this.m.Description = "One of the seven legendary weapons,\n[color=#456ca0]Winter\'s Touch[/color] is the embodiment of death\'s cold embrace.\nCreated from the frozen lake of the Hunting Grounds, the bitterly cold ice this blade has growing from it never seems to melt.";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_legendary_axe.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_legendary_axe.Description;
 		this.m.IconLarge = "weapons/melee/ssu_ice_axe.png"; 
 		this.m.Icon = "weapons/melee/ssu_ice_axe_70x70.png";
 		this.m.SlotType = ::Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
-		this.m.Categories = "Axe, Two-Handed";
+		this.m.Categories = ::Mod_Sellswords.Strings.ssu_legendary_axe.Categories;
 		this.m.ItemType = ::Const.Items.ItemType.Weapon | ::Const.Items.ItemType.MeleeWeapon | ::Const.Items.ItemType.TwoHanded | ::Const.Items.ItemType.Legendary;
 		this.m.IsAgainstShields = true;
 		this.m.IsAoE = true;
@@ -38,20 +38,20 @@ this.ssu_legendary_axe <- ::inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 6,
 			type = "text",
-			icon = "ui/icons/legendary_weapon.png",
-			text = "One of the seven [color=#456ca0]Legendary[/color] weapons."
+			icon = "ui/icons/ssu_legendary_weapon.png",
+			text = ::Mod_Sellswords.Strings.ssu_legendary_axe.Tooltip1
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts the [color=%positive%]Chilled[/color] status effect on hit."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_axe.Tooltip2
 		});
 		result.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts the [color=%positive%]Staggered[/color] status effect on hit."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_axe.Tooltip3
 		});
 		
 		return result;

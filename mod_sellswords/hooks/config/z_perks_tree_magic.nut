@@ -3,13 +3,13 @@
 	Descriptions = [
 		"healing the soul"
 	],
-	Name = "Dryad Shaman",
+	Name = ::Mod_Sellswords.Strings.z_perks_tree_magic.Name1,
 	Tree = [
 		[::Const.Perks.PerkDefs.LegendWither],
 		[::Const.Perks.PerkDefs.LegendRoots],
-		[::Const.Perks.PerkDefs.DryadForestBlessing],
+		[::Const.Perks.PerkDefs.SsuDryadForestBlessing],
 		[],
-		[::Const.Perks.PerkDefs.LegendInsects, ::Const.Perks.PerkDefs.DryadNaturalRegrowth],
+		[::Const.Perks.PerkDefs.LegendInsectSwarm, ::Const.Perks.PerkDefs.SsuDryadNaturalRegrowth],
 		[],
 		[]
 	]
@@ -20,15 +20,15 @@
 	Descriptions = [
 		"taming wildlife"
 	],
-	Name = "Dryad Tamer",
+	Name = ::Mod_Sellswords.Strings.z_perks_tree_magic.Name2,
 	Tree = [
 		[],
-		[::Const.Perks.PerkDefs.DryadSummonWolf],
-		[::Const.Perks.PerkDefs.DryadSummonSnake],
+		[::Const.Perks.PerkDefs.SsuDryadSummonWolf],
+		[::Const.Perks.PerkDefs.SsuDryadSummonSnake],
 		[],
 		[],
 		[],
-		[::Const.Perks.PerkDefs.DryadSummonUnhold]
+		[::Const.Perks.PerkDefs.SsuDryadSummonUnhold]
 	]
 };
 

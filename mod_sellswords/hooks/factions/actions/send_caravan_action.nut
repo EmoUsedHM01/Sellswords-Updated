@@ -29,7 +29,7 @@
 		{
 			if (z > 75)
 			{
-				party = _faction.spawnEntity(this.m.Start.getTile(), "Trading Convoy", false, this.Const.World.Spawn.CaravanSouthernwithSellswords, 50 + this.m.Start.getResources() * (80 + dc) * 0.01 + 7 * dc);			
+				party = _faction.spawnEntity(this.m.Start.getTile(), "Trading Convoy", false, this.Const.World.Spawn.SsuCaravanSouthernwithSellswords, 50 + this.m.Start.getResources() * (80 + dc) * 0.01 + 7 * dc);			
 				y = 2 + 0.03 * dc;
 			}
 			else if (z > 0)
@@ -42,7 +42,7 @@
 		{
 			if (z > 75)
 			{
-				party = _faction.spawnEntity(this.m.Start.getTile(), "Trading Convoy", false, this.Const.World.Spawn.CaravanwithSellswords, 50 + this.m.Start.getResources() * (60 + dc) * 0.01 + 7 * dc);
+				party = _faction.spawnEntity(this.m.Start.getTile(), "Trading Convoy", false, this.Const.World.Spawn.SsuCaravanwithSellswords, 50 + this.m.Start.getResources() * (60 + dc) * 0.01 + 7 * dc);
 				y = 2 + 0.03 * dc;
 			}
 			else if (z > 60)
@@ -60,7 +60,7 @@
 		party.getSprite("banner").Visible = false;
 		party.getSprite("base").Visible = false;
 		party.setMirrored(true);
-		party.setDescription("A trading caravan from " + this.m.Start.getName() + " that is transporting all manner of goods between settlements.");
+		party.setDescription(::Mod_Sellswords.text(::Mod_Sellswords.Strings.send_caravan_action.Description, this.m.Start.getName()));
 		party.setFootprintType(this.Const.World.FootprintsType.Caravan);
 		party.getFlags().set("IsCaravan", true);
 		party.getFlags().set("IsRandomlySpawned", true);

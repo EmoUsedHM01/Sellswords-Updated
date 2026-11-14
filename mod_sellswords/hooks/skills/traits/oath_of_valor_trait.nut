@@ -8,7 +8,7 @@
 		{
 			if (tooltip.id == 11) continue;
 
-			tooltip.text = "Will not flee in battle. while all attributes debuff cause by low morale will be [color=%positive%]halved[/color]";
+			tooltip.text = ::Mod_Sellswords.Strings.oath_of_valor_trait.Tooltip;
 			break;
 		}
 

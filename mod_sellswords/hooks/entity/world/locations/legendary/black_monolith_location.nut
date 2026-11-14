@@ -2,7 +2,7 @@
 
 	q.onSpawned = @(__original) function()
 	{
-		this.m.Name = "Black Monolith";
+		this.m.Name = ::Mod_Sellswords.Strings.black_monolith_location.Name;
 		this.location.onSpawned();
 
 		for( local i = 0; i < 6; ++i )
@@ -98,7 +98,7 @@
 		_lootTable.push(this.Const.World.Common.pickArmor([
 			[
 				1,
-				"cremperors_armor"
+				"ssu_emperors_armor"
 			]
 		]));
 	}

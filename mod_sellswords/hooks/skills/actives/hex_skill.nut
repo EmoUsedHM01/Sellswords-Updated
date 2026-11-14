@@ -5,13 +5,13 @@
 		local _targetTile = _tag.TargetTile;
 		local _user = _tag.User;
 		local target = _targetTile.getEntity();
-		local crrd = target.getSkills().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= target.getBaseProperties().RangedDefense : false;
+		local crrd = target.getSkills().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= target.getBaseProperties().RangedDefense : false;
 
 		if (target.getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 50 || crrd)
 		{
 			if (!_user.isHiddenToPlayer() && !target.isHiddenToPlayer())
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " resists being hexed thanks to his unnatural physiology");
+				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.hex_skill.Log1, this.Const.UI.getColorizedEntityName(target)));
 			}
 
 			return false;
@@ -19,7 +19,7 @@
 
 		if (!_user.isHiddenToPlayer() || _targetTile.IsVisibleForPlayer)
 		{
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " hexes " + this.Const.UI.getColorizedEntityName(target));
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.hex_skill.Log2, this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(target)));
 
 			if (this.m.SoundOnHit.len() != 0)
 			{

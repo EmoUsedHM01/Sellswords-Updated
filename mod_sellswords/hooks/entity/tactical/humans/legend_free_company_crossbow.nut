@@ -6,9 +6,6 @@
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
 
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
-
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -31,10 +28,10 @@
 		local r = this.Math.rand(1, 10);
 		switch (r) {
 			case 1:
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_bolts"));
+				this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_fire_bolts"));
 				break;
 			case 2:
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_bolts"));
+				this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_bleeding_bolts"));
 				break;
 			default:
 				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bolts"));

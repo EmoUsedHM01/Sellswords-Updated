@@ -17,13 +17,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=%negative%]-15[/color] Fatigue recovered per turn"
+				text = ::Mod_Sellswords.Strings.legend_grappled_effect.Tooltip1
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "[color=%negative%]-40%[/color] Maximum Fatigue"
+				text = ::Mod_Sellswords.Strings.legend_grappled_effect.Tooltip2
 			}
 		];
 	}	
@@ -31,7 +31,6 @@
 	{
 		local actor = this.getContainer().getActor();
 		_properties.StaminaMult *= 0.6;
-		//_properties.MeleeDefense *= 0.5;
 		_properties.FatigueRecoveryRate -= 15;
 
 		if (!actor.hasSprite("status_stunned") && !this.getContainer().hasSkill("effects.stunned"))

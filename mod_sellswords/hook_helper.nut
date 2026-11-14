@@ -293,6 +293,52 @@
 		}
 	},
 
+	// gives an unleashed animal the SSU bonuses from its handler's perks and professions
+	addHoundBonuses = function ( _actor, _entity )
+	{
+		local houndeffect = ::new("scripts/skills/effects/ssu_houndmaster_effect");
+
+		if (::Legends.Perks.has(_actor, ::Legends.Perk.LegendDogWhisperer))
+		{
+			_entity.getSkills().add(::new("scripts/skills/effects/ssu_clarity_effect_permanent"));
+		}
+
+		if (::Legends.Professions.has(_actor, ::Legends.Profession.LegendDogBreeder))
+		{
+			::Legends.Perks.grant(_entity, ::Legends.Perk.FastAdaption);
+			::Legends.Perks.grant(_entity, ::Legends.Perk.SsuBackswing);
+			houndeffect.m.dogbreeder = true;
+		}
+
+		if (::Legends.Perks.has(_actor, ::Legends.Perk.LegendDogHandling))
+		{
+			::Legends.Perks.grant(_entity, ::Legends.Perk.Overwhelm);
+			houndeffect.m.doghandling = true;
+		}
+
+		if (::Legends.Perks.has(_actor, ::Legends.Perk.LegendPackLeader))
+		{
+			::Legends.Perks.grant(_entity, ::Legends.Perk.LegendAssuredConquest);
+			houndeffect.m.packleader = true;
+		}
+
+		_entity.getSkills().add(houndeffect);
+	},
+
+	// swaps a perk for another one wherever it sits in a perk tree
+	replacePerkInTree = function ( _tree, _old, _new )
+	{
+		foreach( tier in _tree.Tree )
+		{
+			local i = tier.find(_old);
+
+			if (i != null)
+			{
+				tier[i] = _new;
+			}
+		}
+	},
+
 	clearCustomPerkTree = function ( _customPerkTree )
 	{
 		if (_customPerkTree == null)
@@ -313,7 +359,6 @@
 		return _customPerkTree;
 	}
 
-	// ::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 7);
 	addTreeOfEquippedWeapon = function( _actor, _maxTier = 7 )
 	{
 		local weapon = _actor.getMainhandItem();

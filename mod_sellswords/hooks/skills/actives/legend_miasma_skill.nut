@@ -3,8 +3,8 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "Release a dense cloud of noxious gas that only effects living beings";
-		this.m.Icon = "skills/active_101.png";
+		this.m.Description = ::Mod_Sellswords.Strings.legend_miasma_skill.Description;
+		this.m.Icon = "skills/ssu_active_101.png";
 		this.m.IconDisabled = "skills/active_101_sw.png";
 		this.m.Order = this.Const.SkillOrder.UtilityTargeted + 3;
 		this.m.IsTargeted = true;
@@ -38,19 +38,19 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Has a range of [color=%positive%]" + this.getMaxRange() + "[/color] tiles"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_miasma_skill.Tooltip1, this.getMaxRange())
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "Deals 5-10 damage directly to hitpoints to any living units that end their turn in the miasma"
+				text = ::Mod_Sellswords.Strings.legend_miasma_skill.Tooltip2
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/damage_received.png",
-				text = "Lasts for four turns. While the damage can't stack, you reset the duration if you overlap the tiles with subsequent casts"
+				text = ::Mod_Sellswords.Strings.legend_miasma_skill.Tooltip3
 			}
 		];
 	}

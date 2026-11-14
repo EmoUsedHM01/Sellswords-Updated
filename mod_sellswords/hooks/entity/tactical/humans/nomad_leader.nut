@@ -77,7 +77,7 @@
 				weapons.extend([
 					"weapons/oriental/two_handed_scimitar",
 					"weapons/oriental/two_handed_scimitar",
-					"weapons/spontoon03"						
+					"weapons/ssu_spontoon03"						
 				]);
 			}
 
@@ -122,27 +122,27 @@
 			if (dc <= 80)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[3, "nomadleader_early_helmet"],
-					[2, "nomadleader_proto_helmet"],						
-					[1, "nomadleader_mid_helmet"],
-					[0, "nomadleader_late_helmet"]					
+					[3, "ssu_nomadleader_early_helmet"],
+					[2, "ssu_nomadleader_proto_helmet"],						
+					[1, "ssu_nomadleader_mid_helmet"],
+					[0, "ssu_nomadleader_late_helmet"]					
 				]));
 			}
 			else if (dc <= 120)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[1, "nomadleader_early_helmet"],
-					[1, "nomadleader_proto_helmet"],						
-					[4, "nomadleader_mid_helmet"],
-					[2, "nomadleader_late_helmet"]
+					[1, "ssu_nomadleader_early_helmet"],
+					[1, "ssu_nomadleader_proto_helmet"],						
+					[4, "ssu_nomadleader_mid_helmet"],
+					[2, "ssu_nomadleader_late_helmet"]
 				]));
 			}				
 			else if (dc > 120)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[0, "nomadleader_early_helmet"],
-					[1, "nomadleader_mid_helmet"],
-					[3, "nomadleader_late_helmet"]
+					[0, "ssu_nomadleader_early_helmet"],
+					[1, "ssu_nomadleader_mid_helmet"],
+					[3, "ssu_nomadleader_late_helmet"]
 				]));
 			}
 			
@@ -183,10 +183,10 @@
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crleopard_armor"],			// 225,-29				
+				[1, "ssu_leopard_armor"],			// 225,-29				
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
-				[1, "crfeathered_helmet"],	   // 210,-9 ~ 220,-10  					
+				[1, "ssu_feathered_helmet"],	   // 210,-9 ~ 220,-10  					
 			]));			
 		}
 	}
@@ -210,7 +210,7 @@
 			}
 			else
 			{
-				this.m.Items.equip(this.new("scripts/items/weapons/named/named_spontoon"));
+				this.m.Items.equip(this.new("scripts/items/weapons/named/ssu_named_spontoon"));
 			}			
 		}
 		else if (r == 2)

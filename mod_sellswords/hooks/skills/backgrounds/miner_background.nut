@@ -3,7 +3,7 @@
 	q.onAddEquipment = @(__original) function()
 	{
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.new("scripts/items/weapons/heavy_mining_pick"));
+		items.equip(this.new("scripts/items/weapons/ssu_heavy_mining_pick"));
 		items.equip(this.Const.World.Common.pickArmor([
 			[
 				1,

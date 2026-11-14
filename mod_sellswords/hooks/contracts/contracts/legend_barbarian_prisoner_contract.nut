@@ -42,12 +42,12 @@
 				this.Contract.m.BarbCamp.setDiscovered(false);
 				this.Contract.m.BarbCamp.clearTroops();
 				this.Contract.m.BarbCamp.getLoot().clear();
-				this.Contract.addUnitsToEntity(this.Contract.m.BarbCamp, this.Const.World.Spawn.BarbariansArmy, 200 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+				this.Contract.addUnitsToEntity(this.Contract.m.BarbCamp, this.Const.World.Spawn.SsuBarbariansArmy, 200 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				this.Contract.m.BarbCamp.setResources(this.Math.min(this.Contract.m.BarbCamp.getResources(), 200 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult()));
 				this.Contract.m.BarbCamp.setLootScaleBasedOnResources(200 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				this.Contract.m.BarbCamp.updateStrength();
 				local party;
-				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians).spawnEntity(this.Contract.m.BarbCamp.getTile(), "Barbarian Retaliation", false, this.Const.World.Spawn.BarbariansArmy, 200 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians).spawnEntity(this.Contract.m.BarbCamp.getTile(), "Barbarian Retaliation", false, this.Const.World.Spawn.SsuBarbariansArmy, 200 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				party.getSprite("banner").setBrush(this.Contract.m.BarbCamp.getBanner());
 				party.setAttackableByAI(false);
 				this.Contract.m.BarbRetal = this.WeakTableRef(party);
@@ -57,7 +57,7 @@
 				c.addOrder(intercept);
 				c.getBehavior(this.Const.World.AI.Behavior.ID.Flee).setEnabled(false);
 				c.getBehavior(this.Const.World.AI.Behavior.ID.Attack).setEnabled(true);
-				party.setDescription("These savages would like to have their buddy back.");
+				party.setDescription(::Mod_Sellswords.Strings.legend_barbarian_prisoner_contract.Description);
 				party.setMovementSpeed(this.Const.World.MovementSettings.Speed * 1.4);
 				party.getLoot().Money = this.Math.rand(150, 500);
 				party.getLoot().ArmorParts = this.Math.rand(0, 20);

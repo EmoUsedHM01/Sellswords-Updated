@@ -6,8 +6,8 @@
 		local actor = this.getContainer().getActor();
 		local statusResisted = actor.getCurrentProperties().IsResistantToAnyStatuses ? this.Math.rand(1, 100) <= 50 : false;
 		statusResisted = statusResisted || actor.getCurrentProperties().IsResistantToPhysicalStatuses ? this.Math.rand(1, 100) <= 33 : false;
-		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
-		local crini = this.getContainer().hasSkill("perk.crinitiative");
+		local crrd = this.getContainer().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
+		local crini = this.getContainer().hasSkill("perk.ssu_initiative");
 
 		if (!actor.isPlacedOnMap() || ("State" in this.Tactical) && this.Tactical.State.isBattleEnded())
 		{
@@ -18,7 +18,7 @@
 		{
 			if (!actor.isHiddenToPlayer())
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " shook off being staggered thanks to his unnatural physiology");
+				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.staggered_effect.Log, this.Const.UI.getColorizedEntityName(actor)));
 			}
 
 			this.removeSelf();
@@ -32,7 +32,7 @@
 
 	q.onUpdate = @(__original) function( _properties )
 	{
-		if (this.getContainer().hasSkill("perk.crresilient"))
+		if (this.getContainer().hasSkill("perk.ssu_resilient"))
 		{
 			_properties.InitiativeMult *= 0.63;
 		}

@@ -6,9 +6,6 @@
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_eyes_up"));
-
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -48,16 +45,16 @@
 		local r = this.Math.rand(1, 10);
 		switch (r) {
 			case 1:
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_fire_arrows"));
+				this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_fire_arrows"));
 				break;
 			case 2:
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_freezing_arrows"));
+				this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_freezing_arrows"));
 				break;
 			case 3:
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_bleeding_arrows"));
+				this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_bleeding_arrows"));
 				break;
 			case 4:
-				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_poisoned_arrows"));
+				this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_poisoned_arrows"));
 				break;
 			default:
 				this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
@@ -92,42 +89,42 @@
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_early"]
+				[3, "ssu_arbalester_armor_early"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crbillman_helmet_low"]
+				[1, "ssu_billman_helmet_low"]
 			]));
 		}
 		else if (dc <= 120)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_mid"]
+				[3, "ssu_arbalester_armor_mid"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crbillman_helmet_early"]
+				[1, "ssu_billman_helmet_early"]
 			]));
 		}
 		else if (dc <= 150)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "crarbalester_armor_late"],
-				[1, "crmasterarcher_armor"]
+				[2, "ssu_arbalester_armor_late"],
+				[1, "ssu_masterarcher_armor"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crbillman_helmet_mid_chain"],
-				[1, "crbillman_helmet_mid"]
+				[1, "ssu_billman_helmet_mid_chain"],
+				[1, "ssu_billman_helmet_mid"]
 			]));
 		}
 		else if (dc > 150)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crarbalester_armor_late"],
-				[3, "crmasterarcher_armor"]
+				[1, "ssu_arbalester_armor_late"],
+				[3, "ssu_masterarcher_armor"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[4, "crmasterarcher_helmet"],
-				[1, "crbillman_helmet_mid"],
-				[1, "crbillman_helmet_mid_chain"]
+				[4, "ssu_masterarcher_helmet"],
+				[1, "ssu_billman_helmet_mid"],
+				[1, "ssu_billman_helmet_mid_chain"]
 			]));
 		}
 
@@ -142,7 +139,7 @@
 		this.m.Items.equip(this.new("scripts/items/weapons/named/named_warbow"));
 
 		this.m.Items.unequip(this.m.Items.getItemAtSlot(this.Const.ItemSlot.Ammo));
-		this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_phantom_arrows"));
+		this.m.Items.equip(this.new("scripts/items/ammo/ssu_quiver_of_phantom_arrows"));
 	}
 
 });

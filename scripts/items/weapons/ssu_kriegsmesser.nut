@@ -6,10 +6,10 @@ this.ssu_kriegsmesser <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.ssu_kriegsmesser";
-		this.m.Name = "Kriegsmesser";
-		this.m.Description = "Messer are characterized by their single-edged blades. The blade is certainly brutally efficient in cutting, but the simple design has also a subtlety that is easily overlooked.";
-		this.m.IconLarge = "weapons/melee/cr_kreigsmesser.png";
-		this.m.Icon = "weapons/melee/cr_kreigsmesser_70x70.png";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_kriegsmesser.Name1;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_kriegsmesser.Description;
+		this.m.IconLarge = "weapons/melee/ssu_kreigsmesser.png";
+		this.m.Icon = "weapons/melee/ssu_kreigsmesser_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Sword;
 		this.m.SlotType = this.Const.ItemSlot.Mainhand;
 		this.m.BlockedSlotType = this.Const.ItemSlot.Offhand;
@@ -38,9 +38,9 @@ this.ssu_kriegsmesser <- this.inherit("scripts/items/weapons/weapon", {
 		this.addSkill(skillToAdd);
 		local skill = this.new("scripts/skills/actives/slash");
 		skill.m.isBunt = true;
-		skill.m.Name = "Bunt";
-		skill.m.Icon = "skills/active_bunt.png";
-		skill.m.IconDisabled = "skills/active_bunt_sw.png";
+		skill.m.Name = ::Mod_Sellswords.Strings.ssu_kriegsmesser.Name2;
+		skill.m.Icon = "skills/ssu_active_bunt.png";
+		skill.m.IconDisabled = "skills/ssu_active_bunt_sw.png";
 		skill.m.FatigueCost = 13;
 		skill.m.DirectDamageMult = this.m.DirectDamageMult;
 		this.addSkill(skill);

@@ -17,13 +17,13 @@
 				local party;
 				if (cr <= 33)
 				{
-					party = f.spawnEntity(nearest_base.getTile(), "Barbarian King", false, this.Const.World.Spawn.BabarianChosenswithKing, 125 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+					party = f.spawnEntity(nearest_base.getTile(), "Barbarian King", false, this.Const.World.Spawn.SsuBabarianChosenswithKing, 125 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				}
 				else if (cr > 33)
 				{
-					party = f.spawnEntity(nearest_base.getTile(), "Barbarian King", false, this.Const.World.Spawn.BarbarianswithKing, 125 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+					party = f.spawnEntity(nearest_base.getTile(), "Barbarian King", false, this.Const.World.Spawn.SsuBarbarianswithKing, 125 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 				}				
-				party.setDescription("A mighty warhost of barbarian tribes, united by a self-proclaimed barbarian king.");
+				party.setDescription(::Mod_Sellswords.Strings.tutorial_contract.Description);
 				party.getSprite("body").setBrush("figure_wildman_04");
 				party.setVisibilityMult(2.0);
 				this.Contract.addUnitsToEntity(party, this.Const.World.Spawn.BarbarianKing, 100);

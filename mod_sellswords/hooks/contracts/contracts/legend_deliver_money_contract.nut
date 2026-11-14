@@ -188,7 +188,7 @@
 					p.Music = this.Const.Music.NobleTracks;
 					p.PlayerDeploymentType = this.Const.Tactical.DeploymentType.Line;
 					p.EnemyDeploymentType = this.Const.Tactical.DeploymentType.Line;
-					this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.MercenariesLOW, 130 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).getID());
+					this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuMercenariesLOW, 130 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).getID());
 					this.World.Contracts.startScriptedCombat(p, false, true, true);
 					return 0;
 				}
@@ -202,7 +202,7 @@
 					p.Music = this.Const.Music.NobleTracks;
 					p.PlayerDeploymentType = this.Const.Tactical.DeploymentType.Line;
 					p.EnemyDeploymentType = this.Const.Tactical.DeploymentType.Line;
-					this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.MercenariesLOW, 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).getID());
+					this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuMercenariesLOW, 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).getID());
 					this.World.Contracts.startScriptedCombat(p, false, true, true);
 					return 0;
 				}
@@ -216,7 +216,7 @@
 					this.List.push({
 						id = 10,
 						icon = "ui/icons/asset_money.png",
-						text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Crowns and [color=" + this.Const.UI.Color.PositiveEventValue + "]" + xpGained + "[/color] Experience"
+						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_deliver_money_contract.Tooltip, this.Const.UI.Color.PositiveEventValue, this.Contract.m.Payment.getOnCompletion(), this.Const.UI.Color.PositiveEventValue, xpGained)
 					});
 				}
 

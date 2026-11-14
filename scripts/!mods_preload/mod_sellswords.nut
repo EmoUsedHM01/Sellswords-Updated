@@ -1,7 +1,7 @@
 ::Mod_Sellswords <- {
 	ID = "mod_sellswords",
 	Name = "Sellswords Updated",
-	Version = "8.5.2",
+	Version = "9.0.0",
 	EnableEnemySS = true,
 	KeepSpawningEnemySS = false,
 	SellswordStrengthMultiplier = 100,
@@ -13,13 +13,13 @@
 
 // Both the "require" and "conflictWith" functions have an adaptive number of parameters, so you can add as many as you want
 // Add which mods are needed to run this one
-::Mod_Sellswords.HooksMod.require("mod_msu >= 1.2.6", "mod_modern_hooks >= 0.5.4", "mod_legends>= 19.0.0");
+::Mod_Sellswords.HooksMod.require("mod_msu >= 1.9.0", "mod_modern_hooks >= 0.5.4", "mod_legends >= 19.5.0-alpha1");
 
 // Use this to list which mods may causes conflicts
 ::Mod_Sellswords.HooksMod.conflictWith("mod_ROTU", "mod_fantasybro", "modMoreArrows", "mod_background_perks");
 
 // Like above you can add as many parameters as you need to in order to determine the queue of the mods before adding the parameters that run the callback function
-::Mod_Sellswords.HooksMod.queue(">mod_msu", ">mod_legends", ">mod_legends_PTR", ">mod_breditor", "<mod_ACU", "<mod_nggh_magic_concept", "<mod_world_editor_legends", function()
+::Mod_Sellswords.HooksMod.queue(">mod_msu", ">mod_legends", ">mod_breditor", "<mod_ACU", "<mod_world_editor_legends", function()
 {
 	// Define mod class of this mod
 	::Mod_Sellswords.Mod <- ::MSU.Class.Mod(::Mod_Sellswords.ID, ::Mod_Sellswords.Version, ::Mod_Sellswords.Name);
@@ -30,9 +30,7 @@
 	::Mod_Sellswords.Mod.Registry.setUpdateSource(::MSU.System.Registry.ModSourceDomain.GitHub);
 
 	// Add NexusMods mod source
-	// ::Mod_Sellswords.Mod.Registry.addModSource(::MSU.System.Registry.ModSourceDomain.NexusMods, "https://www.nexusmods.com/battlebrothers/mods/");
 	// But the NexusMods api is closed so don't actually
-	//::Mod_Sellswords.Mod.Registry.setUpdateSource(::MSU.System.Registry.ModSourceDomain.NexusMods);
 
 	// MSU config page
 	local page = ::Mod_Sellswords.Mod.ModSettings.addPage("General");
@@ -83,10 +81,9 @@
 	settingSellswordsPerk.addCallback(function(_value) { ::Mod_Sellswords.SellswordsPerk = _value; });
 
 	// Important objects for compatibility purposes
-	if (!("Is_PTR_Exist" in this.getroottable())) ::Is_PTR_Exist <- ::mods_getRegisteredMod("mod_legends_PTR") != null;
 	if (!("Is_AC_Exist" in this.getroottable())) ::Is_AC_Exist <- ::mods_getRegisteredMod("mod_ACU") != null;
-	if (!("Is_MC_Exist" in this.getroottable())) ::Is_MC_Exist <- ::mods_getRegisteredMod("mod_nggh_magic_concept") != null;
-	if (!("Is_BR_Exist" in this.getroottable())) ::Is_BR_Exist <- ::mods_getRegisteredMod("mod_breditor") != null;
+	// The Legends build of breditor registers under a versioned id, so check for its screen script instead
+	if (!("Is_BR_Exist" in this.getroottable())) ::Is_BR_Exist <- ::IO.enumerateFiles("scripts/ui/screens/world/").find("scripts/ui/screens/world/world_breditor_screen") != null;
 
 	// Load hook files
 	::include("mod_sellswords/load.nut");

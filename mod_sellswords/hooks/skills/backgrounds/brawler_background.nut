@@ -45,7 +45,7 @@
 			id = 12,
 			type = "text",
 			icon = "ui/icons/regular_damage.png",
-			text = "[color=%positive%]+15%[/color] Damage when unarmed"
+			text = ::Mod_Sellswords.Strings.brawler_background.Tooltip
 		});
 		return ret;
 	}

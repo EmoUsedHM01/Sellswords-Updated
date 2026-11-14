@@ -29,7 +29,7 @@ this.ssu_earth_hammer_effect <- this.inherit("scripts/skills/skill", {
 			return;
 
 		if (!_targetEntity.isHiddenToPlayer())
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_targetEntity) + " is rooted");
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_earth_hammer_effect.Log, this.Const.UI.getColorizedEntityName(_targetEntity)));
 
 		_targetEntity.getSkills().add(this.new("scripts/skills/effects/rooted_effect"));
 		local breakFree = this.new("scripts/skills/actives/break_free_skill");

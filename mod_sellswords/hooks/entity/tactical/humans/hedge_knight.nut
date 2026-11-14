@@ -5,24 +5,18 @@
 		__original();
 
 		this.m.Skills.removeByID("perk.hold_out");
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_armor_mastery_heavy"));
-
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.removeByID("perk.ptr_vigorous_assault");
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_formidable_approach"));
-		}
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_armor_mastery_heavy"));
 
 		local dc = this.World.getTime().Days;
 		local blk = this.Math.rand(1, 100);
 
 		if (dc > 220 && blk >= 90)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockmaster"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blockmaster"));
 		else if(dc > 180 && blk >= 75)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockskilled"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blockskilled"));
 		else if(dc > 140 && blk >= 60)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlocknormal"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blocknormal"));
 
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 80)
 		{
@@ -31,20 +25,13 @@
 
 			if (this.World.getTime().Days >= 120)
 			{
-				if (::Is_PTR_Exist)
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_vigorous_assault"));
 
 				this.m.BaseProperties.Stamina += 5;
 
 				if (this.World.getTime().Days >= 150)
 				{
-					if (::Is_PTR_Exist)
-					{	
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_sweeping_strikes"));
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_wears_it_well"));
-					}
 
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_honorheritage"));
 					this.m.BaseProperties.MeleeSkill += 2;
 					this.m.BaseProperties.MeleeDefense += 2;
 					this.m.BaseProperties.RangedDefense += 2;
@@ -58,8 +45,6 @@
 
 						if (this.World.getTime().Days >= 210)
 						{	
-							if (::Is_PTR_Exist)
-								this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));
 
 							this.m.BaseProperties.MeleeDefense += 3;
 							this.m.BaseProperties.RangedDefense += 3;
@@ -123,118 +108,118 @@
 		if (dc <= 80)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_scale_early"],
-				[2, "cr_plate_scale_early_patched"],
-				[1, "cr_plate_full_early_low"],
-				[2, "cr_plate_scale_early_patched_low"]
+				[1, "ssu_plate_scale_early"],
+				[2, "ssu_plate_scale_early_patched"],
+				[1, "ssu_plate_full_early_low"],
+				[2, "ssu_plate_scale_early_patched_low"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crknight_helmet_early_unadorned"],
-				[2, "cr_enclave_kettle"],
-				[2, "cr_hedgeknight_low"]
+				[1, "ssu_knight_helmet_early_unadorned"],
+				[2, "ssu_enclave_kettle"],
+				[2, "ssu_hedgeknight_low"]
 			]));
 		}
 		else if (dc <= 110)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_scale_early"],
-				[1, "cr_plate_scale_early_patched"],
-				[1, "cr_plate_full_early"],
-				[1, "cr_plate_full_early_low"]
+				[1, "ssu_plate_scale_early"],
+				[1, "ssu_plate_scale_early_patched"],
+				[1, "ssu_plate_full_early"],
+				[1, "ssu_plate_full_early_low"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[2, "crknight_helmet_early_unadorned"],
-				[1, "crknight_helmet_early_decorative"],
-				[1, "cr_enclave_kettle"],
-				[1, "cr_hedgeknight_low"]
+				[2, "ssu_knight_helmet_early_unadorned"],
+				[1, "ssu_knight_helmet_early_decorative"],
+				[1, "ssu_enclave_kettle"],
+				[1, "ssu_hedgeknight_low"]
 			]));
 		}
 		else if (dc <= 140)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "cr_plate_scale_early"],
-				[1, "cr_plate_scale_early_patched"],
-				[3, "cr_plate_full_early"],
-				[1, "cr_plate_scale_mid"],
-				[1, "cr_plate_full_mid"]
+				[2, "ssu_plate_scale_early"],
+				[1, "ssu_plate_scale_early_patched"],
+				[3, "ssu_plate_full_early"],
+				[1, "ssu_plate_scale_mid"],
+				[1, "ssu_plate_full_mid"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crknight_helmet_early_unadorned"],
-				[1, "crknight_helmet_early_decorative"],
-				[1, "crknight_helmet_mid_bread"],
-				[1, "crknight_helmet_mid_decorative"],
-				[1, "crknight_helmet_mid_unadorned"],
-				[1, "cr_enclave_armet"]
+				[1, "ssu_knight_helmet_early_unadorned"],
+				[1, "ssu_knight_helmet_early_decorative"],
+				[1, "ssu_knight_helmet_mid_bread"],
+				[1, "ssu_knight_helmet_mid_decorative"],
+				[1, "ssu_knight_helmet_mid_unadorned"],
+				[1, "ssu_enclave_armet"]
 			]));
 		}
 		else if (dc <= 170)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_scale_mid"],
-				[1, "cr_plate_full_mid"],
-				[1, "cr_plate_full_mid_reinforced"]
+				[1, "ssu_plate_scale_mid"],
+				[1, "ssu_plate_full_mid"],
+				[1, "ssu_plate_full_mid_reinforced"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[2, "crknight_helmet_mid_bread"],
-				[2, "crknight_helmet_mid_decorative"],
-				[1, "crknight_helmet_mid_unadorned"],
-				[1, "cr_enclave_armet"],
-				[1, "crknight_helmet_mid_bascinet_faceplate"]
+				[2, "ssu_knight_helmet_mid_bread"],
+				[2, "ssu_knight_helmet_mid_decorative"],
+				[1, "ssu_knight_helmet_mid_unadorned"],
+				[1, "ssu_enclave_armet"],
+				[1, "ssu_knight_helmet_mid_bascinet_faceplate"]
 			]));
 		}
 		else if (dc <= 200)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_mid"],
-				[1, "cr_plate_full_mid_reinforced"],
-				[1, "cr_plate_full_late"]
+				[1, "ssu_plate_full_mid"],
+				[1, "ssu_plate_full_mid_reinforced"],
+				[1, "ssu_plate_full_late"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "crknight_helmet_mid_bread"],
-				[1, "cr_enclave_armet"],
-				[1, "crknight_helmet_mid_bascinet_faceplate"]
+				[1, "ssu_knight_helmet_mid_bread"],
+				[1, "ssu_enclave_armet"],
+				[1, "ssu_knight_helmet_mid_bascinet_faceplate"]
 			]));
 		}
 		else if (dc <= 230)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_late"],
-				[1, "cr_plate_full_heavy"]
+				[1, "ssu_plate_full_late"],
+				[1, "ssu_plate_full_heavy"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "cr_enclave_great_bascinet"],
-				[1, "cr_enclave_armet_late"],
-				[1, "crknight_helmet_late_mixed"],
-				[1, "crknight_helmet_late_mixed_patched"]
+				[1, "ssu_enclave_great_bascinet"],
+				[1, "ssu_enclave_armet_late"],
+				[1, "ssu_knight_helmet_late_mixed"],
+				[1, "ssu_knight_helmet_late_mixed_patched"]
 			]));
 		}
 		else if (dc <= 260)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_hedgeknight_midlate"],
-				[1, "cr_plate_full_heavy"],
-				[1, "cr_plate_full_knight"]
+				[1, "ssu_plate_full_hedgeknight_midlate"],
+				[1, "ssu_plate_full_heavy"],
+				[1, "ssu_plate_full_knight"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[2, "cr_enclave_great_bascinet_late"],
-				[3, "cr_enclave_venitian_bascinet"],
-				[1, "cr_enclave_great_bascinet"],
-				[1, "crknight_helmet_late_mixed"],
-				[1, "crknight_helmet_late_mixed_patched"],
-				[1, "crknight_helmet_late_enclave_ichi"]
+				[2, "ssu_enclave_great_bascinet_late"],
+				[3, "ssu_enclave_venitian_bascinet"],
+				[1, "ssu_enclave_great_bascinet"],
+				[1, "ssu_knight_helmet_late_mixed"],
+				[1, "ssu_knight_helmet_late_mixed_patched"],
+				[1, "ssu_knight_helmet_late_enclave_ichi"]
 			]));
 		}
 		else if (dc > 260)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_plate_full_heavy_late"],
-				[2, "cr_plate_full_hedgeknight"]
+				[1, "ssu_plate_full_heavy_late"],
+				[2, "ssu_plate_full_hedgeknight"]
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
-				[1, "cr_enclave_great_helm"],
-				[1, "cr_enclave_great_bascinet_late"],
-				[1, "crknight_helmet_late_enclave_ni"],
-				[1, "crknight_helmet_late_enclave_sann"]
+				[1, "ssu_enclave_great_helm"],
+				[1, "ssu_enclave_great_bascinet_late"],
+				[1, "ssu_knight_helmet_late_enclave_ni"],
+				[1, "ssu_knight_helmet_late_enclave_sann"]
 			]));
 		}
 	}
@@ -278,16 +263,13 @@
 		else if (r == 3)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_named_full_armor_cloth"],
-				[1, "cr_named_full_armor_chain"],
-				[1, "cr_named_full_armor_plate"]
+				[1, "ssu_named_full_armor_cloth"],
+				[1, "ssu_named_full_armor_chain"],
+				[1, "ssu_named_full_armor_plate"]
 			]));
 		}
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
-
-		if (::Is_PTR_Exist)
-			this.m.Skills.addPerkTree(this.Const.Perks.OneHandedTree);
 
 		return true;
 	}

@@ -6,7 +6,7 @@
 	{
 		__original();
 
-		this.m.Description = "Raise a corpse back to life as an undead, faithfully follows your bidding.";
+		this.m.Description = ::Mod_Sellswords.Strings.raise_undead.Description;
 		this.m.IconDisabled = "skills/active_26_sw.png";
 		this.m.MaxRange = 9;
 	}
@@ -33,13 +33,13 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "Has a range of [color=%positive%]" + this.getMaxRange() + "[/color] tiles."
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.raise_undead.Tooltip1, this.getMaxRange())
 			},
 			{
 				id = 10,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Raises a suitable corpse as a Wiederganger, lasts until the end of combat."
+				text = ::Mod_Sellswords.Strings.raise_undead.Tooltip2
 			}
 		];
 	}

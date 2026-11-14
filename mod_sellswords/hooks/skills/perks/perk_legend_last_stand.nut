@@ -1,7 +1,6 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_last_stand", function ( q ) {
 
-	if (!(::Is_PTR_Exist))
-		q.m.IsSpent <- false;
+	q.m.IsSpent <- false;
 
 	q.getTooltip = @( __original ) function()
 	{
@@ -17,7 +16,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Your melee and ranged defense are increased by [color=%positive%]" + bonus + "[/color]."
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_last_stand.Tooltip1, bonus)
 			});
 			
 			if (currentPercent < 0.33)
@@ -26,7 +25,7 @@
 					id = 6,
 					type = "text",
 					icon = "ui/icons/special.png",
-					text = "Immune to the effects of fresh injuries, and not upset by health losses."
+					text = ::Mod_Sellswords.Strings.perk_legend_last_stand.Tooltip2
 				});
 			}
 		}
@@ -37,7 +36,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Action Points are increased by [color=%positive%]" + actionPoints + "[/color]."
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_last_stand.Tooltip3, actionPoints)
 			});
 		}
 
@@ -71,13 +70,10 @@
 		_properties.ActionPoints += this.Math.floor(missingHealthPercent / 0.20);		
 	}
 
-	if (!(::Is_PTR_Exist))
+	q.onCombatFinished <- function()
 	{
-		q.onCombatFinished <- function()
-		{
-			this.skill.onCombatFinished();
-			this.m.IsSpent = false;
-		}
+		this.skill.onCombatFinished();
+		this.m.IsSpent = false;
 	}
 
 });

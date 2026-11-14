@@ -14,7 +14,7 @@
 			{
 				if (!_user.isHiddenToPlayer() && !target.isHiddenToPlayer())
 				{
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " can not be charmed");
+					this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.charm_skill.Log1, this.Const.UI.getColorizedEntityName(target)));
 				}
 
 				return false;
@@ -24,7 +24,7 @@
 			{
 				if (!_user.isHiddenToPlayer() && !target.isHiddenToPlayer())
 				{
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " resists being charmed thanks to his resolve");
+					this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.charm_skill.Log2, this.Const.UI.getColorizedEntityName(target)));
 				}
 
 				return false;
@@ -34,19 +34,19 @@
 			{
 				if (!_user.isHiddenToPlayer() && !target.isHiddenToPlayer())
 				{
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " resists being charmed thanks to his resolve");
+					this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.charm_skill.Log2, this.Const.UI.getColorizedEntityName(target)));
 				}
 
 				return false;
 			}
 
-			local crrd = target.getSkills().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= target.getBaseProperties().RangedDefense : false;
+			local crrd = target.getSkills().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= target.getBaseProperties().RangedDefense : false;
 
 			if (target.getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 50 || crrd)
 			{
 				if (!_user.isHiddenToPlayer() && !target.isHiddenToPlayer())
 				{
-					this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " resists being charmed thanks to his unnatural physiology");
+					this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.charm_skill.Log3, this.Const.UI.getColorizedEntityName(target)));
 				}
 
 				return false;
@@ -60,7 +60,7 @@
 
 			if (!_user.isHiddenToPlayer() && !target.isHiddenToPlayer())
 			{
-				this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " is charmed");
+				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.charm_skill.Log4, this.Const.UI.getColorizedEntityName(target)));
 			}
 
 			_user.setCharming(true);

@@ -16,7 +16,7 @@
 			ret.push({
 				id = 4,
 				type = "text",
-				text = "Can be used in recipes 4 times"
+				text = ::Mod_Sellswords.Strings.legend_cooking_spices_trade_item.Tooltip1
 			});	
 		}
 		else
@@ -24,7 +24,7 @@
 			ret.push({
 				id = 4,
 				type = "text",
-				text = "Uses remaining: " + this.m.Uses + "/4"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_cooking_spices_trade_item.Tooltip2, this.m.Uses)
 			});
 		}
 

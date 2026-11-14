@@ -3,7 +3,7 @@
 	q.onAdded = @(__original) function()
 	{
 		local actor = this.getContainer().getActor();
-		local crrd = this.getContainer().hasSkill("perk.crrangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
+		local crrd = this.getContainer().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
 
 		if (crrd)
 		{
@@ -24,7 +24,7 @@
 	{
 		local nsed = this.getContainer().getActor().getCurrentProperties().NegativeStatusEffectDuration;
 		local remaining = 10 - (this.m.TurnsLeft - nsed);
-		local seriouslevel = this.getContainer().hasSkill("perk.crresilient") ? 7.5 : 10;			
+		local seriouslevel = this.getContainer().hasSkill("perk.ssu_resilient") ? 7.5 : 10;			
 		return [
 			{
 				id = 1,
@@ -40,26 +40,26 @@
 				id = 10,
 				type = "text",
 				icon = "ui/icons/action_points.png",
-				text = "[color=%negative%]-" + 1 * remaining + "[/color] Action Points"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_zombie_poison_effect.Tooltip1, 1 * remaining)
 			},
 			{
 				id = 11,
 				type = "text",
 				icon = "ui/icons/vision.png",
-				text = "[color=%negative%]-" + 1 * remaining + "[/color] Vision"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_zombie_poison_effect.Tooltip2, 1 * remaining)
 			},
 			{
 				id = 12,
 				type = "text",
 				icon = "ui/icons/initiative.png",
-				text = "[color=%negative%]-" + seriouslevel * remaining + "[/color] Initiative"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_zombie_poison_effect.Tooltip3, seriouslevel * remaining)
 			}
 		];
 	}
 
 	q.onUpdate = @(__original) function( _properties )
 	{
-		local seriouslevel = this.getContainer().hasSkill("perk.crresilient") ? 7.5 : 10;		
+		local seriouslevel = this.getContainer().hasSkill("perk.ssu_resilient") ? 7.5 : 10;		
 		local nsed = this.getContainer().getActor().getCurrentProperties().NegativeStatusEffectDuration;
 		local AP = this.Math.max(1, 1 * (10 - (this.m.TurnsLeft - nsed)));
 		local Init = this.Math.max(1, seriouslevel * (10 - (this.m.TurnsLeft - nsed)));

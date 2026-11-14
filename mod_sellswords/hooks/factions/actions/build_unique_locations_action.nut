@@ -54,7 +54,7 @@
 			local tile = this.getTileToSpawnLocation(this.Const.Factions.BuildCampTries * 100, disallowedTerrain, 30, 1000, 1001, distanceToOthers, distanceToOthers);
 
 			if (tile != null)
-				camp = this.World.spawnLocation("scripts/entity/world/locations/crss_camp_location", tile.Coords);
+				camp = this.World.spawnLocation("scripts/entity/world/locations/ssu_ss_camp_location", tile.Coords);
 
 			if (camp != null)
 			{
@@ -88,7 +88,7 @@
 			local tile = this.getTileToSpawnLocation(this.Const.Factions.BuildCampTries * 100, disallowedTerrain, 30, 1000, 1001, distanceToOthers, distanceToOthers);
 
 			if (tile != null)
-				camp = this.World.spawnLocation("scripts/entity/world/locations/crorc_fortress_location", tile.Coords);
+				camp = this.World.spawnLocation("scripts/entity/world/locations/ssu_orc_fortress_location", tile.Coords);
 
 			if (camp != null)
 			{
@@ -123,7 +123,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/kriegsgeist_location", tile.Coords);
+				camp = this.World.spawnLocation("scripts/entity/world/locations/ssu_necro_kriegsgeist_location", tile.Coords);
 			}
 
 			if (camp != null)
@@ -153,7 +153,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/dryad_tree_location", tile.Coords);
+				camp = this.World.spawnLocation("scripts/entity/world/locations/ssu_dryad_tree_location", tile.Coords);
 			}
 
 			if (camp != null)

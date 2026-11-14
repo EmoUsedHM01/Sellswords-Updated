@@ -4,7 +4,7 @@
 	{
 		__original();
 
-		this.m.Description = "This character\'s guard is down while safeguarding";
+		this.m.Description = ::Mod_Sellswords.Strings.legend_safeguarding_effect.Description;
 	}
 
 	q.onUpdate = @(__original) function( _properties )

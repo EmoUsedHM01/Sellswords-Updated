@@ -13,7 +13,7 @@
 			id = 13,
 			type = "text",
 			icon = "ui/icons/campfire.png",
-			text = "Davkul sees this one as spent goods without any value and will never ask you to sacrifice them."
+			text = ::Mod_Sellswords.Strings.legend_husk_background.Tooltip
 		});
 		return ret;
 	}

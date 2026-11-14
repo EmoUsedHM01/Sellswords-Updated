@@ -3,7 +3,7 @@
 	q.onAddBehaviors = @(__original) function()
 	{
 		__original();
-		this.addBehavior(this.new("scripts/ai/tactical/behaviors/ai_dryad_summon"));
+		this.addBehavior(this.new("scripts/ai/tactical/behaviors/ssu_dryad_ai_summon"));
 	}
 
 });

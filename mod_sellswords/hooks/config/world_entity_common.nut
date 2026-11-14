@@ -24,9 +24,6 @@
 	//Go through each Item in the spawn list (which are structures defining enemies)
 	foreach (t in _list)
 	{
-		// foreach (k,v in t) {
-		//  	this.logInfo("K " + k + ": " +v)
-		// }
 		//Don't pick if resources are greater than threshold
 		if ("MaxR" in t && _resources > t.MaxR)
 		{
@@ -213,7 +210,6 @@
 		{
 			local meanScaled = troop.MinMean + _scale * (troop.MaxMean - troop.MinMean);
 			points = this.Math.max(points, this.Const.LegendMod.BoxMuller.BoxMuller(meanScaled, troop.Deviation));
-			//this.logInfo(cat + " Mean " + meanScaled + " : Deviation " + troops.Deviation + " : Points " + points)
 		}
 
 		//Always purchase the most expensive unit we can
@@ -311,7 +307,6 @@
 
 ::Const.World.Common.buildDynamicTroopList = function( _template, _resources)
 {
-//	::logInfo("*DynamicTroopList : template = " + _template.Name + " : resources = " + _resources);
 	local credits = _resources;
 	if ("MinR" in _template)
 	{
@@ -326,19 +321,19 @@
 		credits = this.Const.World.Common.dynamicSelectTroop(_template.Fixed, _resources, scale, troopMap, credits)
 	}
 	
-	if ("crFixed" in _template)
+	if ("SsuFixed" in _template)
 	{
-		credits = this.Const.World.Common.dynamicSelectTroop(_template.crFixed, _resources, scale, troopMap, credits)
+		credits = this.Const.World.Common.dynamicSelectTroop(_template.SsuFixed, _resources, scale, troopMap, credits)
 	}
 	
-	if ("crrFixed" in _template)
+	if ("SsuFixed2" in _template)
 	{
-		credits = this.Const.World.Common.dynamicSelectTroop(_template.crrFixed, _resources, scale, troopMap, credits)
+		credits = this.Const.World.Common.dynamicSelectTroop(_template.SsuFixed2, _resources, scale, troopMap, credits)
 	}	
 	
-	if ("crrrFixed" in _template)
+	if ("SsuFixed3" in _template)
 	{
-		credits = this.Const.World.Common.dynamicSelectTroop(_template.crrrFixed, _resources, scale, troopMap, credits)
+		credits = this.Const.World.Common.dynamicSelectTroop(_template.SsuFixed3, _resources, scale, troopMap, credits)
 	}
 	
 	if ("craFixed" in _template)
@@ -384,10 +379,6 @@
 
 
 	//TESTING
-//	 foreach (t in T)
-//	 {
-//	 	::logInfo(t.Type.Script + " : " + t.Num)
-//	 }
 
 	return {
 		MovementSpeedMult = _template.MovementSpeedMult,

@@ -8,7 +8,7 @@
 		{
 			if (tooltip.id == 11) continue;
 
-			tooltip.text = "Is not paid any wage. And the threshold to sustain injuries on getting hit is increased by [color=%positive%]20%[/color]";
+			tooltip.text = ::Mod_Sellswords.Strings.oath_of_sacrifice_trait.Tooltip;
 			break;
 		}
 

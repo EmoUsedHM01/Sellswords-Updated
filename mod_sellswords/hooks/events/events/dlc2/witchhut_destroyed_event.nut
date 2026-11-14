@@ -16,7 +16,7 @@
 				this.List.push({
 					id = 10,
 					icon = "ui/items/" + item.getIcon(),
-					text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
+					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.witchhut_destroyed_event.Tooltip, this.Const.Strings.getArticle(item.getName()), item.getName())
 				});
 			}
 		}

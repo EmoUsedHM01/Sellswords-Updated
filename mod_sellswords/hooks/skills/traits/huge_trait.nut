@@ -9,7 +9,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Weapons with extra Fatigue build-up on skills have no penalty for this character"
+				text = ::Mod_Sellswords.Strings.huge_trait.Tooltip1
 			});
 		}
 		else
@@ -18,7 +18,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Weapons with extra Fatigue build-up on skills have this penalty reduced by [color=%positive%]-3[/color]"
+				text = ::Mod_Sellswords.Strings.huge_trait.Tooltip2
 			});
 		}
 		
@@ -33,24 +33,21 @@
 			_properties.IsProficientWithHeavyWeapons = true;
 	}
 
-	if (!(::Is_PTR_Exist))
+	q.onRemoved <- function()
 	{
-		q.onRemoved <- function()
-		{
-			this.getContainer().getActor().getCurrentProperties().IsProficientWithHeavyWeapons = false;
-		}
+		this.getContainer().getActor().getCurrentProperties().IsProficientWithHeavyWeapons = false;
+	}
 
-		q.onAfterUpdate <- function ( _properties )
-		{
-			if (_properties.IsProficientWithHeavyWeapons)
-				return;
+	q.onAfterUpdate <- function ( _properties )
+	{
+		if (_properties.IsProficientWithHeavyWeapons)
+			return;
 
-			local weapon = this.getContainer().getActor().getMainhandItem();
+		local weapon = this.getContainer().getActor().getMainhandItem();
 
-			if (weapon != null && weapon.m.FatigueOnSkillUse > 0)
-				foreach (skill in weapon.getSkills())
-					skill.m.FatigueCost -= ::Math.min(3, weapon.m.FatigueOnSkillUse);
-		}
+		if (weapon != null && weapon.m.FatigueOnSkillUse > 0)
+			foreach (skill in weapon.getSkills())
+				skill.m.FatigueCost -= ::Math.min(3, weapon.m.FatigueOnSkillUse);
 	}
 
 });

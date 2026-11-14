@@ -14,8 +14,8 @@ this.ssu_bone_cleaver_slash <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.ssu_bone_cleaver_slash";
-		this.m.Name = "Rend Flesh";
-		this.m.Description = "A brute force cleaving attack that can inflict devastating bleeding wounds, provided no armour is absorbing the blow.";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_bone_cleaver_slash.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_bone_cleaver_slash.Description;
 		this.m.KilledString = "Rent";
 		this.m.Icon = "skills/active_19.png";
 		this.m.IconDisabled = "skills/active_19_sw.png";
@@ -66,7 +66,7 @@ this.ssu_bone_cleaver_slash <- this.inherit("scripts/skills/skill", {
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts additional stacking [color=%damage%]" + dmg + "[/color] bleeding damage per turn."
+			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_bone_cleaver_slash.Tooltip, dmg)
 		});		
 		return ret;
 	}

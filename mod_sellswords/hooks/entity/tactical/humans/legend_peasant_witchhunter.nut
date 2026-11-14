@@ -7,40 +7,19 @@
 		this.m.BaseProperties.Hitpoints -= 20;	
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 40)
 		{
-			if (::Is_PTR_Exist)
-			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_through_the_ranks"));	
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_fluid_weapon"));	
-			}
 
 			if (this.World.getTime().Days >= 70)
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_nimble"));
-
-				if (::Is_PTR_Exist)
-				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_primal_fear"));		
-				}
 
 				if (this.World.getTime().Days >= 100)
 				{
 					this.m.BaseProperties.Hitpoints += 10;	
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));						
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_freedom_of_movement"));
-
-					if (::Is_PTR_Exist)
-					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_concussive_strikes"));
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_tempo"));
-					}
 												
 					if (this.World.getTime().Days >= 130)
 					{
-						if (::Is_PTR_Exist)
-						{
-							this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_muscle_memory"));	
-							this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_small_target"));
-						}
 						
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_head_hunter"));							
 						this.m.BaseProperties.RangedSkill += 2;	
@@ -152,7 +131,7 @@
 				if (this.Math.rand(1, 100) <= 50)
 				{
 					local helm = this.Const.World.Common.pickHelmet([
-						[1, "peasant_helmet_early"]	
+						[1, "ssu_peasant_helmet_early"]	
 					]);
 					this.m.Items.equip(helm);
 				}
@@ -161,15 +140,15 @@
 		else if (dc <= 40)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "cr_peasant_armor"]
+				[1, "ssu_peasant_armor"]
 			]));
 
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = this.Const.World.Common.pickHelmet([
-					[2, "peasant_helmet_early"],					
-					[1, "peasant_helmet_mid"]						
+					[2, "ssu_peasant_helmet_early"],					
+					[1, "ssu_peasant_helmet_mid"]						
 				]);
 				this.m.Items.equip(helm);				
 			}
@@ -177,16 +156,16 @@
 		else if (dc <= 60)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "cr_peasant_armor_mid"],
-				[1, "cr_peasant_armor_ranged"]
+				[2, "ssu_peasant_armor_mid"],
+				[1, "ssu_peasant_armor_ranged"]
 			]));
 
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = this.Const.World.Common.pickHelmet([
-					[1, "peasant_helmet_early"],
-					[2, "peasant_helmet_mid"]					
+					[1, "ssu_peasant_helmet_early"],
+					[2, "ssu_peasant_helmet_mid"]					
 					
 				]);
 				this.m.Items.equip(helm);				
@@ -195,17 +174,17 @@
 		else if (dc <= 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[2, "cr_peasant_armor_mid"],
-				[1, "cr_peasant_armor_late"],
-				[1, "cr_peasant_armor_ranged"]						
+				[2, "ssu_peasant_armor_mid"],
+				[1, "ssu_peasant_armor_late"],
+				[1, "ssu_peasant_armor_ranged"]						
 			]));
 
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = this.Const.World.Common.pickHelmet([
-					[2, "peasant_ranged_mid"],
-					[1, "peasant_ranged_late"]					
+					[2, "ssu_peasant_ranged_mid"],
+					[1, "ssu_peasant_ranged_late"]					
 					
 				]);
 				this.m.Items.equip(helm);				
@@ -214,16 +193,16 @@
 		else if (dc > 90)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "cr_peasant_armor_ranged"],
-					[2, "cr_peasant_armor_late"]					
+					[1, "ssu_peasant_armor_ranged"],
+					[2, "ssu_peasant_armor_late"]					
 			]));
 
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
 				local helm = this.Const.World.Common.pickHelmet([
-					[1, "peasant_ranged_mid"],
-					[3, "peasant_ranged_late"]						
+					[1, "ssu_peasant_ranged_mid"],
+					[3, "ssu_peasant_ranged_late"]						
 				]);
 				this.m.Items.equip(helm);				
 			}

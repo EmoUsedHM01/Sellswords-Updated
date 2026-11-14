@@ -3,7 +3,6 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		this.m.Skills.removeByID("perk.ptr_survival_instinct");
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_anchor"));
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -41,7 +40,7 @@
 				"weapons/legend_infantry_axe",
 				"weapons/legend_two_handed_club",
 				"weapons/two_handed_mace",
-				"weapons/spontoon01",						
+				"weapons/ssu_spontoon01",						
 			];
 
 			if (this.Const.DLC.Unhold)

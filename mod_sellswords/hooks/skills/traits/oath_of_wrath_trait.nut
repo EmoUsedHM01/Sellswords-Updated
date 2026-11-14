@@ -8,7 +8,7 @@
 		{
 			if (tooltip.id == 10) continue;
 
-			tooltip.text = "[color=%negative%]-5[/color] Ranged Defense";
+			tooltip.text = ::Mod_Sellswords.Strings.oath_of_wrath_trait.Tooltip;
 			break;
 		}
 

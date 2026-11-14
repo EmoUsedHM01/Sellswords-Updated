@@ -4,7 +4,7 @@
 
 	q.getDescription = @(__original) function()
 	{
-		return "This character\'s body has mutated to regrow skin and muscle tissue much more quickly than normal and they gain the speed of nachzehrer. Deep injuries heal much faster than normal as a result. They also seem to have developed a hunger for fresh meat, but that\'s probably unrelated.";
+		return ::Mod_Sellswords.Strings.nachzehrer_potion_effect.Text;
 	}
 
 	q.getTooltip = @(__original) function()
@@ -28,7 +28,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day." + "\n[color=%positive%]+20[/color] Initiative."
+				text = ::Mod_Sellswords.Strings.nachzehrer_potion_effect.Tooltip1
 			});
 		}
 		else
@@ -37,7 +37,7 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/days_wounded.png",
-				text = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day." + "\n[color=%positive%]+10[/color] Initiative."
+				text = ::Mod_Sellswords.Strings.nachzehrer_potion_effect.Tooltip2
 			});
 		}
 		
@@ -45,7 +45,7 @@
 			id = 12,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+			text = ::Mod_Sellswords.Strings.nachzehrer_potion_effect.Tooltip3
 		});
 		return ret;
 	}

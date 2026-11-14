@@ -3,8 +3,8 @@ this.ssu_ghost_spear_strike <- this.inherit("scripts/skills/skill", {
 	function create()
 	{
 		this.m.ID = "actives.ssu_ghost_spear_strike";
-		this.m.Name = "Wailing Strike";
-		this.m.Description = "A slow overhead strike performed with full force. Due to the nature of the weapon used, it strikes directly at the soul of the enemy.";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_ghost_spear_strike.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_ghost_spear_strike.Description;
 		this.m.KilledString = "Chopped";
 		this.m.Icon = "skills/ssu_ghost_spear_strike.png";
 		this.m.IconDisabled = "skills/ssu_ghost_spear_strike_sw.png";
@@ -50,7 +50,7 @@ this.ssu_ghost_spear_strike <- this.inherit("scripts/skills/skill", {
 				id = 6,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = "Has [color=%negative%]-15%[/color] chance to hit targets directly adjacent because the weapon is too unwieldy"
+				text = ::Mod_Sellswords.Strings.ssu_ghost_spear_strike.Tooltip1
 			});
 		}
 
@@ -58,7 +58,7 @@ this.ssu_ghost_spear_strike <- this.inherit("scripts/skills/skill", {
 			id = 7,
 			type = "text",
 			icon = "ui/icons/vision.png",
-			text = "Has a range of [color=%positive%]2" + "[/color] tiles"
+			text = ::Mod_Sellswords.Strings.ssu_ghost_spear_strike.Tooltip2
 		});
 
 		return ret;

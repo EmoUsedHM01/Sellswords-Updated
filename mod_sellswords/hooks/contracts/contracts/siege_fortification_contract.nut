@@ -48,7 +48,7 @@
 						}
 						else if (dc >= 150)
 						{
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (95 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (95 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
 						}					
 						p.Entities.push({
 							ID = this.Const.EntityType.Knight,
@@ -97,7 +97,7 @@
 						}
 						else if (dc >= 150)
 						{				
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (75 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (75 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
 						}					
 						foreach( id in this.Contract.m.UnitsSpawned )
 						{
@@ -151,7 +151,7 @@
 					}
 					if (dc >= 150)
 					{							
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (95 + 0.15 * dc)* this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (95 + 0.15 * dc)* this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
 					}						
 					this.World.Contracts.startScriptedCombat(p, false, true, true);
 					return 0;
@@ -186,7 +186,7 @@
 					}
 					if (dc >= 150)
 					{							
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (75 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (75 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
 					}						
 					p.Entities.push({
 						ID = this.Const.EntityType.Knight,
@@ -205,7 +205,7 @@
 					}
 					if (dc >= 150)
 					{							
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (175 + 0.25 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (175 + 0.25 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
 					}						
 					p.Entities.push({
 						ID = this.Const.EntityType.Knight,
@@ -245,7 +245,7 @@
 					}
 					if (dc >= 150)
 					{							
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (105 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (105 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
 					}						
 					this.World.Contracts.startScriptedCombat(p, false, true, true);
 					return 0;
@@ -276,7 +276,7 @@
 					}
 					if (dc >= 150)
 					{							
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (75 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (75 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
 					}						
 					this.World.Contracts.startScriptedCombat(p, false, true, true);
 					return 0;
@@ -321,7 +321,7 @@
 					}
 					if (dc >= 150)
 					{							
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (80 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (80 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
 					}						
 					p.Entities.push({
 						ID = this.Const.EntityType.Knight,
@@ -339,7 +339,7 @@
 					}
 					if (dc >= 150)
 					{							
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (175 + 0.25 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (175 + 0.25 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.m.Origin.getOwner().getID());
 					}						
 					p.Entities.push({
 						ID = this.Const.EntityType.Knight,
@@ -398,11 +398,11 @@
 		}
 		if (dc >= 150)
 		{			
-			party = enemyFaction.spawnEntity(tile, this.m.Origin.getOwner().getName() + " Army", true, this.Const.World.Spawn.Nobleenhanced, (175 + 0.25 * dc) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+			party = enemyFaction.spawnEntity(tile, this.m.Origin.getOwner().getName() + " Army", true, this.Const.World.Spawn.SsuNobleenhanced, (175 + 0.25 * dc) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		}		
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + enemyFaction.getBannerString());
 		party.getSprite("banner").setBrush(enemyFaction.getBannerSmall());
-		party.setDescription("Professional soldiers in service to local lords.");
+		party.setDescription(::Mod_Sellswords.Strings.siege_fortification_contract.Description1);
 		party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 		party.getLoot().Money = this.Math.rand(100, 300);
 		party.getLoot().ArmorParts = this.Math.rand(10, 35);
@@ -484,7 +484,7 @@
 		}		
 		party.getSprite("base").Visible = false;
 		party.setMirrored(true);
-		party.setDescription("A caravan with armed escorts transporting provisions, supplies and equipment between settlements.");
+		party.setDescription(::Mod_Sellswords.Strings.siege_fortification_contract.Description2);
 		party.addToInventory("supplies/ground_grains_item");
 		party.addToInventory("supplies/ground_grains_item");
 		party.addToInventory("supplies/ground_grains_item");
@@ -582,9 +582,9 @@
 			}
 			else if (dc >= 150)
 			{					
-				party = f.spawnEntity(tile, castles[this.Math.rand(0, castles.len() - 1)].getName() + " Company", true, this.Const.World.Spawn.Nobleenhanced, castles[this.Math.rand(0, castles.len() - 1)].getResources());
+				party = f.spawnEntity(tile, castles[this.Math.rand(0, castles.len() - 1)].getName() + " Company", true, this.Const.World.Spawn.SsuNobleenhanced, castles[this.Math.rand(0, castles.len() - 1)].getResources());
 			}			
-			party.setDescription("Professional soldiers in service to local lords.");
+			party.setDescription(::Mod_Sellswords.Strings.siege_fortification_contract.Description1);
 			party.setVisibilityMult(2.5);
 
 			if (i == 0)

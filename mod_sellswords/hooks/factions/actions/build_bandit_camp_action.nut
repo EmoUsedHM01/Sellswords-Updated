@@ -30,7 +30,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/crbandit_camp_location", tile.Coords);
+				camp = this.World.spawnLocation("scripts/entity/world/locations/ssu_bandit_camp_location", tile.Coords);
 			}
 		}
 		else if (r <= 50 - 0.5 * dc)
@@ -54,7 +54,7 @@
 
 			if (tile != null)
 			{
-				camp = this.World.spawnLocation("scripts/entity/world/locations/crbandit_ruins_location", tile.Coords);
+				camp = this.World.spawnLocation("scripts/entity/world/locations/ssu_bandit_ruins_location", tile.Coords);
 			}
 		}
 		else if (r <= 100)

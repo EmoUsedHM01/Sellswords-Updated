@@ -4,7 +4,7 @@
 	{
 		local modification = 1;
 
-		if (this.getContainer().getActor().getSkills().getSkillByID("effects.crfearsome"))
+		if (this.getContainer().getActor().getSkills().getSkillByID("effects.ssu_fearsome"))
 			modification = 3;
 
 		_properties.ThreatOnHit += this.Math.min(modification * 20, this.Math.max(0, modification * _properties.getBravery() * 0.2));
@@ -36,22 +36,22 @@
 		if (_damageInflictedHitpoints >= 1 && _damageInflictedHitpoints < this.Const.Morale.OnHitMinDamage)
 			_targetEntity.checkMorale(-1, this.Const.Morale.OnHitBaseDifficulty * (1.0 - _targetEntity.getHitpoints() / _targetEntity.getHitpointsMax()) - this.getContainer().getActor().getCurrentProperties().ThreatOnHit);
 
-		local effect = this.getContainer().getActor().getSkills().getSkillByID("effects.crfearsome");
+		local effect = this.getContainer().getActor().getSkills().getSkillByID("effects.ssu_fearsome");
 
 		if (effect != null)
-			this.getContainer().getActor().getSkills().removeByID("effects.crfearsome");
+			this.getContainer().getActor().getSkills().removeByID("effects.ssu_fearsome");
 	}
 
 	q.onTargetKilled <- function ( _targetEntity, _skill )
 	{
 		if (!_targetEntity.isAlliedWith(this.getContainer().getActor()))
 		{
-			local effect = this.getContainer().getActor().getSkills().getSkillByID("effects.crfearsome");
+			local effect = this.getContainer().getActor().getSkills().getSkillByID("effects.ssu_fearsome");
 
 			if (effect != null)
 				return;
 			else
-				this.getContainer().add(this.new("scripts/skills/effects/crfearsome_effect"));
+				this.getContainer().add(this.new("scripts/skills/effects/ssu_fearsome_effect"));
 		}
 	}
 

@@ -47,12 +47,12 @@
 		}
 		if (dc >= 150)
 		{	
-			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).spawnEntity(tile, "Undead Horde", false, this.Const.World.Spawn.UndeadScourgeenhanced, (90 + this.m.Flags.get("Wave") * 15) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+			party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Undead).spawnEntity(tile, "Undead Horde", false, this.Const.World.Spawn.SsuUndeadScourgeenhanced, (90 + this.m.Flags.get("Wave") * 15) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		}		
 		this.m.UnitsSpawned.push(party.getID());
 		party.getLoot().ArmorParts = this.Math.rand(0, 15);
 		party.getSprite("banner").setBrush(undeadBase.getBanner());
-		party.setDescription("A legion of walking dead, back to claim from the living what was once theirs.");
+		party.setDescription(::Mod_Sellswords.Strings.last_stand_contract.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Undead);
 		party.setSlowerAtNight(false);
 		party.setUsingGlobalVision(false);
@@ -93,7 +93,7 @@
 		this.m.UnitsSpawned.push(party.getID());
 		party.getLoot().ArmorParts = this.Math.rand(0, 15);
 		party.getSprite("banner").setBrush(undeadBase.getBanner());
-		party.setDescription("A legion of walking dead, back to claim from the living what was once theirs.");
+		party.setDescription(::Mod_Sellswords.Strings.last_stand_contract.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Undead);
 		party.setSlowerAtNight(false);
 		party.setUsingGlobalVision(false);

@@ -109,10 +109,10 @@
 			}
 			else if (dc >= 150)
 			{
-				party = _faction.spawnEntity(spawnpoints[i], "Regiment of " + _faction.getNameOnly(), true, this.Const.World.Spawn.Southernenhanced, this.Math.rand(80 + 0.1 * dc, 135) * this.getScaledDifficultyMult());
+				party = _faction.spawnEntity(spawnpoints[i], "Regiment of " + _faction.getNameOnly(), true, this.Const.World.Spawn.SsuSouthernenhanced, this.Math.rand(80 + 0.1 * dc, 135) * this.getScaledDifficultyMult());
 			}			
 			party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + _faction.getBannerString());
-			party.setDescription("Conscripted soldiers loyal to their city state.");
+			party.setDescription(::Mod_Sellswords.Strings.send_citystate_army_action.Description);
 			party.setFootprintType(this.Const.World.FootprintsType.CityState);
 			party.getFlags().set("IsRandomlySpawned", true);
 			party.getLoot().Money = this.Math.rand(100, 300);

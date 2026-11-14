@@ -11,7 +11,6 @@
 			if (this.m.isBunt)
 			{
 				_properties.DamageTotalMult *= 0.8;
-				//_properties.DamageDirectAdd += 0.05;				
 			}						
 		}
 	}

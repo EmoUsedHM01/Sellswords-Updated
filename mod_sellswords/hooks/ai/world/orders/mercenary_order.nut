@@ -20,7 +20,7 @@
 		_entity.clearTroops();
 		local brush = _entity.getSprite("body").getBrush().Name;
 		local r = this.Math.min(500 +  this.World.getTime().Days, 200 + 2 * this.World.getTime().Days);		
-		this.Const.World.Common.assignTroops(_entity, this.Const.World.Spawn.MercenariesHIGH, this.Math.rand(r * 0.8, r * 1.2));
+		this.Const.World.Common.assignTroops(_entity, this.Const.World.Spawn.SsuMercenariesHIGH, this.Math.rand(r * 0.8, r * 1.2));
 		_entity.getSprite("body").setBrush(brush);
 
 		if (this.m.TargetSettlement.getFactions().len() == 1)

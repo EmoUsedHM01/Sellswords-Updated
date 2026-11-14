@@ -68,7 +68,7 @@
 								}
 								else if (dc >= 150)
 								{
-									this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.Nobleenhanced, this.Math.rand(115, 150) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+									this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.SsuNobleenhanced, this.Math.rand(115, 150) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 								}							
 							}
 							else
@@ -79,11 +79,11 @@
 								{
 									if (dc < 150)
 									{							
-									this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.MercenariesLOW, this.Math.rand(90, 110) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+									this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.SsuMercenariesLOW, this.Math.rand(90, 110) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 									}
 									else if (dc >= 150)
 									{							
-									this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.MercenariesLOW, this.Math.rand(110, 140) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+									this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.SsuMercenariesLOW, this.Math.rand(110, 140) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 									}								
 								}
 								else
@@ -94,7 +94,7 @@
 									}
 									else if (dc >= 150)
 									{
-										this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.Nobleenhanced, this.Math.rand(95, 125) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+										this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.SsuNobleenhanced, this.Math.rand(95, 125) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 									}	
 								}
 							}
@@ -118,11 +118,11 @@
 							{
 								if (dc < 150)
 								{							
-								this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.MercenariesLOW, this.Math.rand(80, 110) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+								this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.SsuMercenariesLOW, this.Math.rand(80, 110) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 								}
 								else if (dc >= 150)
 								{							
-								this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.MercenariesLOW, this.Math.rand(100, 140) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+								this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.SsuMercenariesLOW, this.Math.rand(100, 140) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 								}
 							}
 							else if (r <= 30)
@@ -134,7 +134,7 @@
 								}
 								else if (dc >= 150)
 								{
-									this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.Nobleenhanced, this.Math.rand(100, 125) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+									this.Contract.addUnitsToEntity(obj, this.Const.World.Spawn.SsuNobleenhanced, this.Math.rand(100, 125) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 								}
 							}
 							else if (r <= 70)
@@ -168,7 +168,7 @@
 					{
 						if (this.Math.rand(1,100) <= 33)
 						{
-							party = f.spawnEntity(origin.getTile(), origin.getName() + " Noble man-at-arms", true, this.Const.World.Spawn.Noblewithbaron, 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+							party = f.spawnEntity(origin.getTile(), origin.getName() + " Noble man-at-arms", true, this.Const.World.Spawn.SsuNoblewithbaron, 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 							party.getSprite("body").setBrush("figure_player_noble");					
 						}
 						else
@@ -181,16 +181,16 @@
 					{
 						if (this.Math.rand(1,100) <= 50)
 						{
-							party = f.spawnEntity(origin.getTile(), origin.getName() + " Noble man-at-arms", true, this.Const.World.Spawn.Noblewithbaron, (150 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+							party = f.spawnEntity(origin.getTile(), origin.getName() + " Noble man-at-arms", true, this.Const.World.Spawn.SsuNoblewithbaron, (150 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 							party.getSprite("body").setBrush("figure_player_noble");					
 						}
 						else
 						{
-							party = f.spawnEntity(origin.getTile(), origin.getName() + " Company", true, this.Const.World.Spawn.Nobleenhanced, (175 + 0.25 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+							party = f.spawnEntity(origin.getTile(), origin.getName() + " Company", true, this.Const.World.Spawn.SsuNobleenhanced, (175 + 0.25 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
 							party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());					
 						}
 					}				
-					party.setDescription("Professional soldiers in service to local lords.");
+					party.setDescription(::Mod_Sellswords.Strings.privateering_contract.Description);
 					this.Contract.m.UnitsSpawned.push(party.getID());
 					party.getLoot().Money = this.Math.rand(50, 200);
 					party.getLoot().ArmorParts = this.Math.rand(0, 25);

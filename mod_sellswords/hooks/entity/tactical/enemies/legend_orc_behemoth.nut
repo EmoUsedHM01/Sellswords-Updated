@@ -15,13 +15,13 @@
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 10;
 			this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 10;
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 10;
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBruiser"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_bruiser"));
 			this.m.BaseProperties.MeleeSkill += 3;
 
 			if (dc >= 120)
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_crIronsideweak"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_ironsideweak"));
 				this.m.BaseProperties.MeleeSkill += 2;
 
 				if (dc >= 160)
@@ -34,9 +34,6 @@
 					if (dc >= 200)
 					{
 						this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));
-
-						if (::Is_PTR_Exist)
-							this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_wears_it_well"));
 
 						if (dc >= 250)
 						{
@@ -73,14 +70,13 @@
 				"weapons/greenskins/legend_bough",
 				"weapons/greenskins/orc_flail_2h",
 				"weapons/greenskins/legend_skullbreaker",
-				"weapons/greenskins/cr_orc_sword"
+				"weapons/greenskins/ssu_orc_sword"
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 
-		this.m.Skills.removeByID("perk.ptr_kata");
 		local helmet;
 		helmet = [
 			[1, "greenskins/legend_orc_behemoth_helmet"]
@@ -127,8 +123,8 @@
 		local weapons = [
 			"weapons/named/legend_named_orc_axe_2h",
 			"weapons/named/legend_named_orc_flail_2h",
-			"weapons/named/cr_named_orc_hammer_2h",
-			"weapons/named/cr_named_orc_mace_2h"
+			"weapons/named/ssu_named_orc_hammer_2h",
+			"weapons/named/ssu_named_orc_mace_2h"
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 
@@ -143,7 +139,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 2.5;
-		local item = "scripts/items/misc/anatomist/orc_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_orc_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

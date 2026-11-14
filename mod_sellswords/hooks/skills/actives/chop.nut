@@ -11,18 +11,18 @@
 
 			local cd = 50;
 
-			if (this.getContainer().hasSkill("perk.crHackSPM"))
+			if (this.getContainer().hasSkill("perk.ssu_hack_spm"))
 			{
 				cd += 50;
 			}
 
 			if (this.m.infantry)
 			{
-				tooltip.text = "Always hits the body.";
+				tooltip.text = ::Mod_Sellswords.Strings.chop.Tooltip1;
 			}
 			else
 			{
-				tooltip.text = "Inflicts additional [color=%positive%]" + cd + "%[/color] damage on a hit to the head";
+				tooltip.text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.chop.Tooltip2, cd);
 			}
 
 			break;
@@ -33,7 +33,6 @@
 
 	q.isHidden = @( __original ) function()
 	{
-		//local off = this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand);
 		local shield = 1;
 		if (this.getContainer().hasSkill("actives.shieldwall") || this.getContainer().hasSkill("actives.legend_fortify_skill"))
 		{
@@ -48,7 +47,7 @@
 
 		if (_skill == this)
 		{
-			if (this.getContainer().hasSkill("perk.crHackSPM"))
+			if (this.getContainer().hasSkill("perk.ssu_hack_spm"))
 			{
 				_properties.DamageAgainstMult[this.Const.BodyPart.Head] += 0.5;
 			}

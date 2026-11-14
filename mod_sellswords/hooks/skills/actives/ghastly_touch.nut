@@ -3,9 +3,9 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "A touch of something that doesn\'t belong to the living world. Quickly drain away any piece of life or sanity your victim has.";
+		this.m.Description = ::Mod_Sellswords.Strings.ghastly_touch.Description;
 		this.m.KilledString = "Frightened to death";
-		this.m.Icon = "skills/active_42.png";
+		this.m.Icon = "skills/ssu_active_42.png";
 		this.m.IconDisabled = "skills/active_42_sw.png";
 	}
 	
@@ -16,7 +16,7 @@
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Completely ignores armor"
+			text = ::Mod_Sellswords.Strings.ghastly_touch.Tooltip
 		});
 		return ret;
 	}
@@ -37,7 +37,7 @@
 	
 	q.onAfterUpdate = @(__original) function( _properties )
 	{
-		if (this.getContainer().hasSkill("perk.ghost_ghastly_touch")) this.m.ActionPointCost -= 1;
+		if (this.getContainer().hasSkill("perk.ssu_necro_ghost_ghastly_touch")) this.m.ActionPointCost -= 1;
 	}
 	
 	q.onAnySkillUsed = @(__original) function( _skill, _targetEntity, _properties )

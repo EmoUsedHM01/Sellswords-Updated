@@ -5,7 +5,7 @@
 		__original();
 		if (this.World.getTime().Days >= 120)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crTrumpcard"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_trumpcard"));
 		}
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -43,11 +43,11 @@
 			{
 				weapons.extend([
 					"weapons/oriental/two_handed_scimitar",
-					"weapons/crswordlance",
-					"weapons/crpolemace",
+					"weapons/ssu_swordlance",
+					"weapons/ssu_polemace",
 					"weapons/two_handed_hammer",
 					"weapons/greataxe",
-					"weapons/crranged_flail"
+					"weapons/ssu_ranged_flail"
 				]);
 			}
 

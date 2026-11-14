@@ -5,8 +5,8 @@
 		if (!this.m.IsVisited && this.m.OnEnter != null)
 		{
 			this.m.IsVisited = true;
-			if (this.World.Assets.getOrigin().getID() == "scenario.necro_lorekeeper")
-				this.World.Events.fire("event.location.sunken_library_necro");
+			if (this.World.Assets.getOrigin().getID() == "scenario.ssu_necro_lorekeeper")
+				this.World.Events.fire("event.location.ssu_necro_sunken_library");
 			else
 				this.World.Events.fire(this.m.OnEnter);
 			return false;

@@ -45,8 +45,8 @@
 						}
 						else if (dc >= 150)
 						{						
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Southernenhanced, (60 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (175 + 0.25 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuSouthernenhanced, (60 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (175 + 0.25 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
 						}						
 						p.AllyBanners = [
 							this.World.Assets.getBanner(),
@@ -81,7 +81,7 @@
 						}
 						else if (dc >= 150)
 						{						
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
 						}						
 						p.AllyBanners = [
 							this.World.Assets.getBanner()
@@ -117,7 +117,7 @@
 						}
 						else if (dc >= 150)
 						{							
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, ((115 + 0.15 * dc) + (this.Flags.get("MercenariesAsAllies") ? 30 : 0)) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, ((115 + 0.15 * dc) + (this.Flags.get("MercenariesAsAllies") ? 30 : 0)) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
 						}						
 						p.AllyBanners = [
 							this.World.Assets.getBanner()
@@ -128,12 +128,12 @@
 
 						if (this.Flags.get("MercenariesAsAllies"))
 						{
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.MercenariesLOW, (40 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuMercenariesLOW, (40 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getFaction());
 							p.AllyBanners.push(this.Flags.get("MercenaryBanner"));
 						}
 						else
 						{
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.MercenariesLOW, (40 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuMercenariesLOW, (40 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
 							p.EnemyBanners.push(this.Flags.get("MercenaryBanner"));
 						}
 
@@ -178,7 +178,7 @@
 						}
 						else if (dc >= 150)
 						{							
-							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
+							this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (115 + 0.15 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
 						}
 						p.AllyBanners = [
 							this.World.Assets.getBanner()
@@ -212,7 +212,7 @@
 					}
 					else if (dc >= 150)
 					{						
-						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.Nobleenhanced, (this.Flags.get("IsCounterAttack") ? 130 : 150) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
+						this.Const.World.Common.addUnitsToCombat(p.Entities, this.Const.World.Spawn.SsuNobleenhanced, (this.Flags.get("IsCounterAttack") ? 130 : 150) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Flags.get("EnemyID"));
 					}					
 					p.AllyBanners = [
 						this.World.Assets.getBanner()
@@ -310,10 +310,10 @@
 		}
 		else if (dc >= 150)		
 		{			
-			party = f.spawnEntity(tiles[0].Tile, "Regiment of " + candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly(), true, this.Const.World.Spawn.Southernenhanced, (145 + 0.25 * dc) * this.getDifficultyMult() * this.getScaledDifficultyMult());
+			party = f.spawnEntity(tiles[0].Tile, "Regiment of " + candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly(), true, this.Const.World.Spawn.SsuSouthernenhanced, (145 + 0.25 * dc) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		}		
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-		party.setDescription("Conscripted soldiers loyal to their city state.");
+		party.setDescription(::Mod_Sellswords.Strings.conquer_holy_site_southern_contract.Description1);
 		party.getLoot().Money = this.Math.rand(100, 300);
 		party.getLoot().ArmorParts = this.Math.rand(10, 35);
 		party.getLoot().Medicine = this.Math.rand(5, 15);
@@ -434,7 +434,7 @@
 
 		local party = f.spawnEntity(tiles[0].Tile, candidates[this.Math.rand(0, candidates.len() - 1)].getNameOnly() + " Company", true, this.Const.World.Spawn.Noble, this.Math.rand(100, 140) * this.getDifficultyMult() * this.getScaledDifficultyMult());
 		party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + f.getBannerString());
-		party.setDescription("Professional soldiers in service to local lords.");
+		party.setDescription(::Mod_Sellswords.Strings.conquer_holy_site_southern_contract.Description2);
 		party.setAttackableByAI(false);
 		party.setAlwaysAttackPlayer(true);
 		party.getLoot().Money = this.Math.rand(100, 300);

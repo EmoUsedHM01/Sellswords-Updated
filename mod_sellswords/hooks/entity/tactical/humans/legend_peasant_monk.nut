@@ -12,21 +12,12 @@
 		local dirt = this.getSprite("dirt");
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
-		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistSelfdefense);
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_staff_stun"));
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendDeflection);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendStaffSpins);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendMasteryMagicStaff);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_push_the_advantage"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rally_the_troops"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_staves"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));
-
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));
-
-			local inspiringPresencePerk = this.new("scripts/skills/perks/perk_inspiring_presence");
-			inspiringPresencePerk.m.IsForceEnabled = true;
-			this.m.Skills.add(inspiringPresencePerk);
-		}
 
 		this.getSprite("socket").setBrush("bust_base_militia");
 		

@@ -19,13 +19,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "An additional [color=%positive%]5%[/color] of damage ignores armor when using bows or crossbows." + "\n[color=%positive%]+10[/color] Ranged Skill."  + "\n[color=%positive%]+10[/color] Ranged Defense."
+				text = ::Mod_Sellswords.Strings.goblin_overseer_potion_effect.Tooltip1
 			},
 			{
 				id = 12,
 				type = "hint",
 				icon = "ui/tooltips/warning.png",
-				text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+				text = ::Mod_Sellswords.Strings.goblin_overseer_potion_effect.Tooltip2
 			}
 		];
 		return ret;

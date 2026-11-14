@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Icon = "ui/traits/necro_fleshless.png";
+		this.m.Icon = "ui/traits/ssu_necro_fleshless.png";
 	}
 
 	q.onApplyAppearance = @(__original) function()
@@ -16,7 +16,7 @@
 		if (actor.getBackground() == null)
 			return;
 
-		if (actor.getBackground().getID() == "background.mummy" || actor.getBackground().getID() == "background.demon_hound")
+		if (actor.getBackground().getID() == "background.ssu_necro_mummy" || actor.getBackground().getID() == "background.ssu_necro_demon_hound")
 			return;
 
 		if (actor.getFlags().has("human"))

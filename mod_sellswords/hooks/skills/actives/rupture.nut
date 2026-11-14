@@ -4,7 +4,7 @@
 	{
 		__original(_properties);
 		local actor = this.getContainer().getActor().get();
-		if (actor.getSkills().getSkillByID("perk.crGrandslam"))
+		if (actor.getSkills().getSkillByID("perk.ssu_grandslam"))
 			this.m.ActionPointCost += 1;
 	}
 

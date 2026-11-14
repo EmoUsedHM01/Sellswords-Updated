@@ -6,7 +6,7 @@
 		this.m.ActionPointCost = _properties.IsSpecializedInPolearms ? 5 : 6;
 
 		local actor = this.getContainer().getActor().get();
-		if (actor.getSkills().getSkillByID("perk.crGrandslam"))
+		if (actor.getSkills().getSkillByID("perk.ssu_grandslam"))
 			this.m.ActionPointCost += 1;
 	}
 
@@ -28,14 +28,7 @@
 					target.getSkills().add(this.new("scripts/skills/effects/stunned_effect"));
 
 					if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
-						this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has stunned " + this.Const.UI.getColorizedEntityName(target) + " for one turn");
-				}
-				if (_user.getSkills().hasSkill("perk.ptr_push_it"))
-				{
-					target.getSkills().add(this.new("scripts/skills/effects/staggered_effect"));
-
-					if (!_user.isHiddenToPlayer() && _targetTile.IsVisibleForPlayer)
-						this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " has staggered " + this.Const.UI.getColorizedEntityName(target) + " for one turn");
+						this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.knock_over_skill.Log, this.Const.UI.getColorizedEntityName(_user), this.Const.UI.getColorizedEntityName(target)));
 				}
 			}
 		}

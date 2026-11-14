@@ -96,7 +96,7 @@
 		player.riseFromGround();
 
 		if (!player.isHiddenToPlayer())
-			this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(entity) + " has risen from the dead");
+			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.tactical_entity_manager.Log, this.Const.UI.getColorizedEntityName(entity)));
 
 		return player;
 	}

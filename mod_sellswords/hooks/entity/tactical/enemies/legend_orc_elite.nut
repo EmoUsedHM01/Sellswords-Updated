@@ -5,11 +5,8 @@
 		__original();
 
 		this.m.Skills.removeByID("perk.hold_out");
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
-
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bulwark"));
 
 		this.m.BaseProperties.Initiative += 10;
 		local dc = this.World.getTime().Days;
@@ -19,17 +16,12 @@
 		{
 			this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 20;
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 20;
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crIronsideweak"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_ravager"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_ironsideweak"));
 			if (dc >= 120)
 			{
-				if (::Is_PTR_Exist)
-				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_pattern_recognition"));
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));
-				}
 
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_crTotalcover"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_totalcover"));
 				if (dc >= 160)
 				{
 					this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 30;
@@ -40,8 +32,6 @@
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 					if (dc >= 200)
 					{
-						if (::Is_PTR_Exist)
-							this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_wears_it_well"));
 
 						if (dc >= 240)
 						{
@@ -73,7 +63,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 1.25;
-		local item = "scripts/items/misc/anatomist/orc_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_orc_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

@@ -30,7 +30,7 @@
 		_lootTable.push(this.Const.World.Common.pickHelmet([
 			[
 				1,
-				"cremperors_helmet"
+				"ssu_emperors_helmet"
 			]
 		]));
 	}

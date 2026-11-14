@@ -8,7 +8,7 @@ while (::Const.FactionBase.len() <= ::Const.Faction.COUNT)
 while (::Const.FactionAlliance.len() <= ::Const.Faction.COUNT)
 	::Const.FactionAlliance.push([]);
 
-::Const.FactionBase[::Const.Faction.Dryads] = "bust_base_dryad";
+::Const.FactionBase[::Const.Faction.Dryads] = "ssu_bust_base_dryad";
 ::Const.FactionAlliance[::Const.Faction.Dryads] = [
 	::Const.Faction.Dryads  // hostile to everyone except same faction?
 ];

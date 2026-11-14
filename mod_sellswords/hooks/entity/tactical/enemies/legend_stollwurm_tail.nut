@@ -10,17 +10,9 @@
 		this.m.BaseProperties.IsImmuneToDisarm = true;			
 		this.m.BaseProperties.MeleeSkill += 5;			
 		this.m.Skills.removeByID("perk.hold_out");	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));	//resilient	
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));	//resilient	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));	
-		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));
-
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.addPerkTree(this.Const.Perks.HammerTree, 4);
-			local faPerk = this.new("scripts/skills/perks/perk_ptr_formidable_approach");
-			faPerk.m.IsForceEnabled = true;
-			this.m.Skills.add(faPerk);
-		}			
+		this.m.Skills.add(this.new("scripts/skills/effects/ssu_clarity_effect_permanent"));
 		
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{

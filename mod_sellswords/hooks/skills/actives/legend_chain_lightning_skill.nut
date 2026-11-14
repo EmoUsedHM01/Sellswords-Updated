@@ -3,7 +3,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "Unleash a powerful bolt of lightning that arcs between multiple enemies, dealing damage to each one in its path. Requires a Mystic Staff.";
+		this.m.Description = ::Mod_Sellswords.Strings.legend_chain_lightning_skill.Description;
 		this.m.DirectDamageMult = 1.0;
 		this.m.ActionPointCost = 7;
 		this.m.FatigueCost = 30;
@@ -17,7 +17,7 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Inflicts [color=%damage%]15[/color] - [color=%damage%]30[/color] Armor ignoring damage and chains between up to three additional adjacent targets on hit"
+				text = ::Mod_Sellswords.Strings.legend_chain_lightning_skill.Tooltip
 			}
 		]);
 		return ret;

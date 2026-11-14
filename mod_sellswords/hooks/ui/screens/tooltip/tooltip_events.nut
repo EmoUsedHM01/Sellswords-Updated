@@ -10,12 +10,12 @@
 				{
 					id = 1,
 					type = "title",
-					text = "Experience"
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip1
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "Characters gain experience as they or their allies slay enemies in battles. If a character has accumulated sufficient experience, they\'ll level up and be able to increase attributes and pick a perk that grants a unique bonus.\n\nBeyond the 11th character level, main characters gain a perk every two levels, and supporting characters gain a perk every five levels."
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip2
 				}
 			];
 
@@ -24,29 +24,29 @@
 				{
 					id = 1,
 					type = "title",
-					text = "Level"
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip3
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "The character\'s level measures experience in battle. Characters rise in levels as they gain experience and are able to increase their attributes and gain perks that make them better at the mercenary profession.\n\nBeyond the 11th character level, main characters gain a perk every two levels, and supporting characters gain a perk every five levels."
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip4
 				}
 			];
 
 		case "character-screen.left-panel-header-module.Reserves":
-			local text = "This character is currently in the fighting line. Click to toggle character into reserves status. (Hotkey \'S\', \'A\' and \'D\' to cycle bros)";
+			local text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip5;
 			local entity = _entityId != null ? this.Tactical.getEntityByID(_entityId) : null;
 
 			if (entity != null && entity.isInReserves())
 			{
-				text = "This character is currently in reserves. Click to toggle character into the fighting line. While in reserves, character will eat and drink more supplies, and only participate in combat if company is under attack. (Hotkey \'S\', \'A\' and \'D\' to cycle bros)";
+				text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip6;
 			}
 
 			return [
 				{
 					id = 1,
 					type = "title",
-					text = "Reserves/Fighting Status"
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip7
 				},
 				{
 					id = 2,
@@ -60,12 +60,12 @@
 				{
 					id = 1,
 					type = "title",
-					text = "Arena"
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip8
 				},
 				{
 					id = 2,
 					type = "description",
-					text = "The arena offers an opportunity to earn gold and fame in fights that are to the death, and in front of crowds that cheer for the most gruesome manner in which lives are dispatched."
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip9
 				}
 			];
 
@@ -75,7 +75,7 @@
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "No more matches take place here today. Come back tomorrow!"
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip10
 				});
 			}
 
@@ -85,7 +85,7 @@
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "You cannot fight in the arena while contracted to do other work"
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip11
 				});
 			}
 
@@ -95,7 +95,7 @@
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "You need at least 5 empty inventory slots to fight in the ongoing tournament"
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip12
 				});
 			}
 
@@ -105,7 +105,7 @@
 					id = 3,
 					type = "hint",
 					icon = "ui/tooltips/warning.png",
-					text = "You need at least 3 empty inventory slots to fight in the arena"
+					text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip13
 				});
 			}
 
@@ -122,7 +122,7 @@
 							id = 3,
 							type = "hint",
 							icon = "ui/icons/icon_contract_swords.png",
-							text = "Available fights: " + availableArenaFights + "/" + maximumFights
+							text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.tooltip_events.Tooltip14, availableArenaFights, maximumFights)
 						});
 					}
 					if (availableArenaFights < maximumFights)
@@ -131,7 +131,7 @@
 							id = 3,
 							type = "hint",
 							icon = "ui/icons/action_points.png",
-							text = "New fight in "
+							text = ::Mod_Sellswords.Strings.tooltip_events.Tooltip15
 						}
 						if(arenaBuilding.getDaysUntilNextFight() > 0)
 						{

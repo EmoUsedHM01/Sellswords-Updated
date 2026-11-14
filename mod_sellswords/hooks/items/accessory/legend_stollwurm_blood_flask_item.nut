@@ -14,7 +14,7 @@
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "damaging adjacent attackers whenever they deal hitpoint damage or receive hitpoint damage."
+			text = ::Mod_Sellswords.Strings.legend_stollwurm_blood_flask_item.Tooltip
 		});
 		return result;
 	}

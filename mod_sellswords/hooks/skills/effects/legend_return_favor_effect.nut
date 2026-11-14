@@ -20,7 +20,7 @@
 					_attacker.getSkills().add(effect);
 					if (!actor.isHiddenToPlayer() && _attacker.getTile().IsVisibleForPlayer)
 					{
-						::Tactical.EventLog.log(::Const.UI.getColorizedEntityName(actor) + " has stunned " + this.Const.UI.getColorizedEntityName(_attacker) + " for one turn");
+						::Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_return_favor_effect.Log1, ::Const.UI.getColorizedEntityName(actor), this.Const.UI.getColorizedEntityName(_attacker)));
 					}
 				}
 				else if (r <= 50 && !_attacker.getCurrentProperties().IsImmuneToStun)
@@ -28,7 +28,7 @@
 					_attacker.getSkills().add(::new("scripts/skills/effects/dazed_effect"));
 					if (!actor.isHiddenToPlayer() && _attacker.getTile().IsVisibleForPlayer)
 					{
-						::Tactical.EventLog.log(::Const.UI.getColorizedEntityName(actor) + " has dazed " + this.Const.UI.getColorizedEntityName(_attacker) + " for one turn");
+						::Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_return_favor_effect.Log2, ::Const.UI.getColorizedEntityName(actor), this.Const.UI.getColorizedEntityName(_attacker)));
 					}
 				}
 				else if (r <= 75)
@@ -36,7 +36,7 @@
 					_attacker.getSkills().add(::new("scripts/skills/effects/staggered_effect"));
 					if (!actor.isHiddenToPlayer() && _attacker.getTile().IsVisibleForPlayer)
 					{
-						::Tactical.EventLog.log(::Const.UI.getColorizedEntityName(actor) + " has staggered " + this.Const.UI.getColorizedEntityName(_attacker) + " for one turn");
+						::Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.legend_return_favor_effect.Log3, ::Const.UI.getColorizedEntityName(actor), this.Const.UI.getColorizedEntityName(_attacker)));
 					}
 				}
 			}

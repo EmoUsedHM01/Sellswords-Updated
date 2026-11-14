@@ -59,14 +59,14 @@
 		}	
 		else if (z > 0.33 * dc)			
 		{		
-			party = this.getFaction().spawnEntity(settlement.getTile(), "Hashshashins", false, this.Const.World.Spawn.Hashshashins, (this.Math.rand(50, 60) + dc * 2.5) * this.getReputationToDifficultyLightMult());
+			party = this.getFaction().spawnEntity(settlement.getTile(), "Hashshashins", false, this.Const.World.Spawn.SsuHashshashins, (this.Math.rand(50, 60) + dc * 2.5) * this.getReputationToDifficultyLightMult());
 		}	
 		else if (z > 0)			
 		{		
 			party = this.getFaction().spawnEntity(settlement.getTile(), "Manhunters", false, this.Const.World.Spawn.Manhunters, this.Math.rand(80, 135) * this.getReputationToDifficultyLightMult());
 		}		
 		party.getSprite("banner").setBrush(settlement.getBanner());
-		party.setDescription("A band of desert raiders preying on anyone trying to cross the seas of sand.");
+		party.setDescription(::Mod_Sellswords.Strings.send_nomad_ambushers_action.Description);
 		party.setFootprintType(this.Const.World.FootprintsType.Nomads);
 		party.getFlags().set("IsRandomlySpawned", true);
 		party.getLoot().Money = this.Math.rand(50, 200);

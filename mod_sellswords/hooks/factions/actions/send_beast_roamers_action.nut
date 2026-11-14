@@ -39,9 +39,9 @@
 			if (::Legends.Mod.ModSettings.getSetting("DistanceScaling").getValue())
 				distanceToNextSettlement = distanceToNextSettlement * 2;
 
-			local party = _action.getFaction().spawnEntity(tile, "Dryads", false, this.Const.World.Spawn.Dryads, this.Math.rand(80, 120) * _action.getScaledDifficultyMult() * this.Math.maxf(0.7, this.Math.minf(1.5, distanceToNextSettlement / 14.0)));
+			local party = _action.getFaction().spawnEntity(tile, "Dryads", false, this.Const.World.Spawn.SsuDryads, this.Math.rand(80, 120) * _action.getScaledDifficultyMult() * this.Math.maxf(0.7, this.Math.minf(1.5, distanceToNextSettlement / 14.0)));
 			party.getSprite("banner").setBrush("banner_beasts_01");
-			party.setDescription("A group of Dryads, a blend between tree and man, patrolling the woods to protect their ancient groves.");
+			party.setDescription(::Mod_Sellswords.Strings.send_beast_roamers_action.Description);
 			party.setFootprintType(this.Const.World.FootprintsType.Schrats);
 			party.setSlowerAtNight(false);
 			party.setUsingGlobalVision(false);

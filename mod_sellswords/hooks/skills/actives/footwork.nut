@@ -6,7 +6,7 @@
 		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]) * -1;
 		this.m.FatigueCost = ::Math.min(20, this.m.FatigueCost + fat);
 		
-		local frkz = this.getContainer().hasSkill("perk.crFurinkazan");
+		local frkz = this.getContainer().hasSkill("perk.ssu_furinkazan");
 		this.m.FatigueCostMult = _properties.IsFleetfooted || frkz ? 0.5 : 1.0;
 
 		if (this.getContainer().getActor().getSkills().hasSkill("effects.goblin_grunt_potion") || frkz)
@@ -40,9 +40,9 @@
 			bg.addPerk(_perk, _row);
 		};
 
-		if (!this.getContainer().hasSkill("perk.crFurinkazan"))
+		if (!this.getContainer().hasSkill("perk.ssu_furinkazan"))
 		{
-			addPerk(this.Const.Perks.PerkDefs.crFurinkazan, 5);
+			addPerk(this.Const.Perks.PerkDefs.SsuFurinkazan, 5);
 		}
 	};
 });

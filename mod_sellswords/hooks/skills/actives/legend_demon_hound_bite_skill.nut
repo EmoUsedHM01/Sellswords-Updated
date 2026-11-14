@@ -3,8 +3,8 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "Tear an enemy assunder with your cursed teeth. A bite can drain the stamina of your victim for 3 turns.";
-		this.m.IconDisabled = "skills/demon_hound_bite_sw.png";
+		this.m.Description = ::Mod_Sellswords.Strings.legend_demon_hound_bite_skill.Description;
+		this.m.IconDisabled = "skills/legend_demon_hound_bite_bw.png";
 		this.m.SoundOnHitHitpoints = [
 			"sounds/enemies/werewolf_claw_hit_01.wav",
 			"sounds/enemies/werewolf_claw_hit_02.wav",

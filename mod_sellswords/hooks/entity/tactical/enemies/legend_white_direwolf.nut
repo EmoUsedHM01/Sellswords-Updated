@@ -4,7 +4,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 5;
-		local item = "scripts/items/misc/anatomist/white_direwolf_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_white_direwolf_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

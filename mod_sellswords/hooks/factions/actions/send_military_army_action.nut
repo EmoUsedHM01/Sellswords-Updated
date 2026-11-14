@@ -127,10 +127,10 @@
 			}	
 			if (dc >= 150)
 			{		
-				party = this.getFaction().spawnEntity(spawnpoints[i], origin.getName() + " Company", true, this.Const.World.Spawn.Nobleenhanced, this.Math.rand(80 + 0.1 * dc, 135) * this.getScaledDifficultyMult());
+				party = this.getFaction().spawnEntity(spawnpoints[i], origin.getName() + " Company", true, this.Const.World.Spawn.SsuNobleenhanced, this.Math.rand(80 + 0.1 * dc, 135) * this.getScaledDifficultyMult());
 			}				
 			party.getSprite("body").setBrush(party.getSprite("body").getBrush().Name + "_" + _faction.getBannerString());
-			party.setDescription("Professional soldiers in service to local lords.");
+			party.setDescription(::Mod_Sellswords.Strings.send_military_army_action.Description);
 			party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 			party.getFlags().set("IsRandomlySpawned", true);
 			party.getLoot().Money = this.Math.rand(50, 200);

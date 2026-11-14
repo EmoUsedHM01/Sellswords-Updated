@@ -1,0 +1,248 @@
+::Const.LegendMod.ArmorObjs.extend([
+	{
+	ID = "ssu_dryad_armour_warrior", // -40, 380
+	Script = "",
+	Sets = [
+		{
+			Cloth = [
+				[1, "cloth/ssu_dryad_cloth"]
+			],
+			Chain = [
+				[7, "chain/ssu_dryad_chain_warrior"],
+				[1, "chain/ssu_dryad_chain_grunt"],
+				[1, "chain/ssu_dryad_chain_tamer"],
+				[1, ""]
+			],
+			Plate = [
+				[7, "plate/ssu_dryad_plate_warrior"],
+				[1, "plate/ssu_dryad_plate_grunt"],
+				[1, "plate/ssu_dryad_plate_tamer"]
+			],
+			Cloak = [
+				[7, "cloak/ssu_dryad_cloak_warrior"],
+				[1, "cloak/ssu_dryad_cloak_grunt"],
+				[1, "cloak/ssu_dryad_cloak_tamer"],
+				[1, ""]
+			],
+			Tabard = [
+			],
+			Attachments =[
+				[7, "armor_upgrades/ssu_dryad_pauldrons_warrior"],
+				[1, ""]
+			]
+		}]
+	},
+	{
+	ID = "ssu_dryad_armour_grunt", // -27, 255
+	Script = "",
+	Sets = [
+		{
+			Cloth = [
+				[1, "cloth/ssu_dryad_cloth"]
+			],
+			Chain = [
+				[5, "chain/ssu_dryad_chain_grunt"],
+				[1, "chain/ssu_dryad_chain_tamer"],
+				[1, "chain/ssu_dryad_chain_shaman"],
+				[1, ""]
+			],
+			Plate = [
+				[5, "plate/ssu_dryad_plate_grunt"],
+				[1, "plate/ssu_dryad_plate_tamer"],
+				[1, "plate/ssu_dryad_plate_shaman"]
+			],
+			Cloak = [
+				[5, "cloak/ssu_dryad_cloak_grunt"],
+				[1, "cloak/ssu_dryad_cloak_tamer"],
+				[1, "cloak/ssu_dryad_cloak_shaman"],
+				[1, ""]
+			],
+			Tabard = [
+			],
+			Attachments =[
+				[5, "armor_upgrades/ssu_dryad_pauldrons_grunt"],
+				[1, ""]
+			]
+		}]
+	},
+	{
+	ID = "ssu_dryad_armour_tamer", // -21, 200
+	Script = "",
+	Sets = [
+		{
+			Cloth = [
+				[1, "cloth/ssu_dryad_cloth"]
+			],
+			Chain = [
+				[5, "chain/ssu_dryad_chain_tamer"],
+				[1, "chain/ssu_dryad_chain_shaman"],
+				[1, "chain/ssu_dryad_chain_archer"],
+				[1, ""]
+			],
+			Plate = [
+				[5, "plate/ssu_dryad_plate_tamer"],
+				[1, "plate/ssu_dryad_plate_shaman"],
+				[1, "plate/ssu_dryad_plate_archer"]
+			],
+			Cloak = [
+				[5, "cloak/ssu_dryad_cloak_tamer"],
+				[1, "cloak/ssu_dryad_cloak_shaman"],
+				[1, "cloak/ssu_dryad_cloak_archer"],
+				[1, ""]
+			],
+			Tabard = [
+			],
+			Attachments =[
+				[5, "armor_upgrades/ssu_dryad_pauldrons_tamer"],
+				[1, ""]
+			]
+		}]
+	},
+	{
+	ID = "ssu_dryad_armour_shaman", // -16, 175
+	Script = "",
+	Sets = [
+		{
+			Cloth = [
+				[1, "cloth/ssu_dryad_cloth"]
+			],
+			Chain = [
+				[1, ""]
+			],
+			Plate = [
+				[5, "plate/ssu_dryad_plate_shaman"],
+				[1, "plate/ssu_dryad_plate_tamer"],
+				[1, "plate/ssu_dryad_plate_archer"]
+			],
+			Cloak = [
+				[5, "cloak/ssu_dryad_cloak_shaman"],
+				[1, "cloak/ssu_dryad_cloak_tamer"],
+				[1, "cloak/ssu_dryad_cloak_archer"],
+				[1, ""]
+			],
+			Tabard = [
+			],
+			Attachments =[
+				[5, "armor_upgrades/ssu_dryad_pauldrons_shaman"],
+				[1, ""]
+			]
+		}]
+	},
+	{
+	ID = "ssu_dryad_armour_archer", // -13, 145
+	Script = "",
+	Sets = [
+		{
+			Cloth = [
+				[1, "cloth/ssu_dryad_cloth"]
+			],
+			Chain = [
+				[1, "chain/ssu_dryad_chain_archer"],
+				[1, "chain/ssu_dryad_chain_tamer"],
+				[1, "chain/ssu_dryad_chain_shaman"],
+				[1, ""]
+			],
+			Plate = [
+				[1, "plate/ssu_dryad_plate_archer"],
+				[1, "plate/ssu_dryad_plate_tamer"],
+				[1, "plate/ssu_dryad_plate_shaman"]
+			],
+			Cloak = [
+				[5, "cloak/ssu_dryad_cloak_archer"],
+				[1, "cloak/ssu_dryad_cloak_tamer"],
+				[1, "cloak/ssu_dryad_cloak_shaman"],
+				[1, ""]
+			],
+			Tabard = [
+			],
+			Attachments =[
+				[5, "armor_upgrades/ssu_dryad_pauldrons_archer"],
+				[1, ""]
+			]
+		}]
+	}
+]);
+
+::Const.LegendMod.HelmObjs.extend([
+	{
+		ID = "ssu_dryad_helmet_warrior", // -22, 220
+		Script = "",
+		Sets = [
+			{
+				Hoods = [
+					[1, "hood/ssu_dryad_horns"]
+				],
+				Helms = [
+					[1, "helm/ssu_dryad_helm_warrior"]
+				],
+				Tops = [],
+				Vanity = []
+			}
+		]
+	},
+	{
+		ID = "ssu_dryad_helmet_grunt", // -4, 60
+		Script = "",
+		Sets = [
+			{
+				Hoods = [
+					[1, "hood/ssu_dryad_horns"]
+				],
+				Helms = [],
+				Tops = [],
+				Vanity = [
+					[4, ""],
+					[1, "vanity/ssu_dryad_mask"]
+				]
+			}
+		]
+	},
+	{
+		ID = "ssu_dryad_helmet_tamer", // -14, 160
+		Script = "",
+		Sets = [
+			{
+				Hoods = [
+					[1, "hood/ssu_dryad_horns"]
+				],
+				Helms = [
+					[1, "helm/ssu_dryad_helm_tamer"]
+				],
+				Tops = [],
+				Vanity = []
+			}
+		]
+	},
+	{
+		ID = "ssu_dryad_helmet_shaman", // -12, 140
+		Script = "",
+		Sets = [
+			{
+				Hoods = [
+					[1, "hood/ssu_dryad_horns"]
+				],
+				Helms = [
+					[1, "helm/ssu_dryad_helm_shaman"]
+				],
+				Tops = [],
+				Vanity = []
+			}
+		]
+	},
+	{
+		ID = "ssu_dryad_helmet_archer", // -10, 110
+		Script = "",
+		Sets = [
+			{
+				Hoods = [
+					[1, "hood/ssu_dryad_horns"]
+				],
+				Helms = [
+					[1, "helm/ssu_dryad_helm_archer"]
+				],
+				Tops = [],
+				Vanity = []
+			}
+		]
+	}
+]);

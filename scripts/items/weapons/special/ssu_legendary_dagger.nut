@@ -4,8 +4,8 @@ this.ssu_legendary_dagger <- this.inherit("scripts/items/weapons/weapon", {
 	{
 		this.weapon.create();
 		this.m.ID = "weapon.ssu_legendary_dagger";
-		this.m.Name = "[color=#456ca0]Obsidian Dagger[/color]";
-		this.m.Description = "One of the seven legendary weapons,\nthe [color=#456ca0]Obsidian Dagger[/color] was given to you by a witch after tempering it with your blood.\nReflections in its glass seem to move on their own, but this is clearly a trick of the eye.\nVery curiously, however, blood never seems to dry if it rests upon the obsidian.";
+		this.m.Name = ::Mod_Sellswords.Strings.ssu_legendary_dagger.Name;
+		this.m.Description = ::Mod_Sellswords.Strings.ssu_legendary_dagger.Description;
 		this.m.IconLarge = "weapons/melee/obsidian_dagger_01.png";
 		this.m.Icon = "weapons/melee/obsidian_dagger_70x70.png";
 		this.m.WeaponType = this.Const.Items.WeaponType.Dagger;
@@ -31,26 +31,26 @@ this.ssu_legendary_dagger <- this.inherit("scripts/items/weapons/weapon", {
 		result.push({
 			id = 6,
 			type = "text",
-			icon = "ui/icons/legendary_weapon.png",
-			text = "One of the seven [color=#456ca0]Legendary[/color] weapons."
+			icon = "ui/icons/ssu_legendary_weapon.png",
+			text = ::Mod_Sellswords.Strings.ssu_legendary_dagger.Tooltip1
 		});
 		result.push({
 			id = 7,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Inflicts the [color=%positive%]Withered[/color] status effect on hit."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_dagger.Tooltip2
 		});
 		result.push({
 			id = 8,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "When attacking enemies that bleed, heals the player equal to the damage inflicted."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_dagger.Tooltip3
 		});
 		result.push({
 			id = 9,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "Resurrects any human killed with it as a Wiederganger fighting for you."
+			text = ::Mod_Sellswords.Strings.ssu_legendary_dagger.Tooltip4
 		});
 
 		return result;

@@ -19,38 +19,32 @@
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
 
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_unstoppable"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_survival_instinct"));
-		}
-
 		local dc = this.World.getTime().Days;
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");
 		dc = this.Math.max(dc, 3 * mn);
 		local blk = this.Math.rand(1, 100);
 
 		if (dc > 180 && blk >= 80)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockmaster"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blockmaster"));
 		else if(dc > 140 && blk >= 60)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlockskilled"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blockskilled"));
 		else if(dc > 100 && blk >= 40)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crBlocknormal"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_blocknormal"));
 
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 75)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_double_strike"));	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_flux"));	
 			this.m.BaseProperties.Initiative += 3;
 
 			if (this.World.getTime().Days >= 100)
 			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_crFoB"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_fob"));
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_perfect_fit"));
 
 				if (this.World.getTime().Days >= 125)
 				{
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_crSignaturemove"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_signaturemove"));
 					this.m.BaseProperties.MeleeSkill += 2;
 					this.m.BaseProperties.MeleeDefense += 2;
 					this.m.BaseProperties.RangedDefense += 2;
@@ -99,7 +93,7 @@
 			local weapons = [
 				"weapons/noble_sword",
 				"weapons/noble_sword",					
-				"weapons/legend_estoc"
+				"weapons/estoc"
 			];
 
 			if (this.Const.DLC.Wildmen || this.Const.DLC.Desert)
@@ -121,59 +115,59 @@
 			if (dc <= 80)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[3, "swordmaster_early_armor"],
-					[1, "swordmaster_mid_armor"],
-					[0, "swordmaster_late_light_armor"],
-					[0, "swordmaster_late_medium_armor"]						
+					[3, "ssu_swordmaster_early_armor"],
+					[1, "ssu_swordmaster_mid_armor"],
+					[0, "ssu_swordmaster_late_light_armor"],
+					[0, "ssu_swordmaster_late_medium_armor"]						
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[3, "swordmaster_early_helmet"],
-					[1, "swordmaster_mid_light_helmet"],
-					[0, "swordmaster_late_medium_helmet"]						
+					[3, "ssu_swordmaster_early_helmet"],
+					[1, "ssu_swordmaster_mid_light_helmet"],
+					[0, "ssu_swordmaster_late_medium_helmet"]						
 				]));
 			}
 			else if (dc <= 115)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[1, "swordmaster_early_armor"],
-					[2, "swordmaster_mid_armor"],
-					[0, "swordmaster_late_light_armor"],
-					[0, "swordmaster_late_medium_armor"]
+					[1, "ssu_swordmaster_early_armor"],
+					[2, "ssu_swordmaster_mid_armor"],
+					[0, "ssu_swordmaster_late_light_armor"],
+					[0, "ssu_swordmaster_late_medium_armor"]
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[1, "swordmaster_early_helmet"],
-					[2, "swordmaster_mid_light_helmet"],
-					[0, "swordmaster_late_medium_helmet"]	
+					[1, "ssu_swordmaster_early_helmet"],
+					[2, "ssu_swordmaster_mid_light_helmet"],
+					[0, "ssu_swordmaster_late_medium_helmet"]	
 				]));
 			}
 			else if (dc <= 150)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[0, "swordmaster_early_armor"],
-					[2, "swordmaster_mid_armor"],
-					[1, "swordmaster_late_light_armor"],
-					[1, "swordmaster_late_medium_armor"]
+					[0, "ssu_swordmaster_early_armor"],
+					[2, "ssu_swordmaster_mid_armor"],
+					[1, "ssu_swordmaster_late_light_armor"],
+					[1, "ssu_swordmaster_late_medium_armor"]
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[2, "swordmaster_early_helmet"],
-					[3, "swordmaster_mid_light_helmet"],
-					[1, "swordmaster_late_medium_helmet"],
-					[1, "crfeathered_helmet"],			   	// 210,-9 ~ 220,-10							
+					[2, "ssu_swordmaster_early_helmet"],
+					[3, "ssu_swordmaster_mid_light_helmet"],
+					[1, "ssu_swordmaster_late_medium_helmet"],
+					[1, "ssu_feathered_helmet"],			   	// 210,-9 ~ 220,-10							
 				]));
 			}				
 			else if (dc > 150)
 			{
 				this.m.Items.equip(this.Const.World.Common.pickArmor([
-					[0, "swordmaster_early_armor"],
-					[0, "swordmaster_mid_armor"],
-					[1, "swordmaster_late_light_armor"],
-					[1, "swordmaster_late_medium_armor"]
+					[0, "ssu_swordmaster_early_armor"],
+					[0, "ssu_swordmaster_mid_armor"],
+					[1, "ssu_swordmaster_late_light_armor"],
+					[1, "ssu_swordmaster_late_medium_armor"]
 				]));
 				this.m.Items.equip(this.Const.World.Common.pickHelmet([
-					[0, "swordmaster_early_helmet"],
-					[0, "swordmaster_mid_light_helmet"],
-					[1, "swordmaster_late_medium_helmet"],
-					[1, "crfeathered_helmet"],			   	// 210,-9 ~ 220,-10						
+					[0, "ssu_swordmaster_early_helmet"],
+					[0, "ssu_swordmaster_mid_light_helmet"],
+					[1, "ssu_swordmaster_late_medium_helmet"],
+					[1, "ssu_feathered_helmet"],			   	// 210,-9 ~ 220,-10						
 				]));
 			}			
 		}
@@ -229,7 +223,7 @@
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local weapons = [
 			"weapons/named/named_sword",
-			"weapons/named/legend_named_estoc"
+			"weapons/named/named_estoc"
 		];
 
 		if (this.Const.DLC.Wildmen || this.Const.DLC.Desert)
@@ -247,7 +241,7 @@
 		else
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[1, "crnamed_noble_mail_armor"],		   				
+				[1, "ssu_named_noble_mail_armor"],		   				
 			]));				
 		}
 

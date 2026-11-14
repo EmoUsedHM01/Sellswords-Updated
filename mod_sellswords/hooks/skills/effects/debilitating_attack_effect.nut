@@ -7,7 +7,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "This character has a debilitating attack prepared. Hitting a target will temporarily reduce their ability to inflict damage and increase damage recieved for three turns. Effect removes itself on turn end after a succesful hit or after 3 attacks. Works on Attacks of Opportunity";
+		this.m.Description = ::Mod_Sellswords.Strings.debilitating_attack_effect.Description;
 	}
 
 	q.onAdded <- function()

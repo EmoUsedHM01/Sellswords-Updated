@@ -3,8 +3,8 @@
 	q.onInit = @(__original) function()
 	{
 		__original();
-		this.getSkills().add(this.new("scripts/skills/effects/crbolstered_effect"));
-		this.getSkills().add(this.new("scripts/skills/effects/ptr_armor_fatigue_recovery_effect"));
+		this.getSkills().add(this.new("scripts/skills/effects/ssu_bolstered_effect"));
+		this.getSkills().add(this.new("scripts/skills/effects/ssu_armor_fatigue_recovery_effect"));
 	}
 
 	q.onOtherActorDeath = @(__original) function ( _killer, _victim, _skill )
@@ -142,7 +142,7 @@
 		if (this.m.MoraleState == this.Const.MoraleState.Fleeing || this.getCurrentProperties().IsStunned)
 			return false;
 
-		local reachadvantage = this.m.Skills.getSkillByID("perk.crReachadvantage");
+		local reachadvantage = this.m.Skills.getSkillByID("perk.ssu_reachadvantage");
 		local spearwall = false;	
 		if (reachadvantage != null && reachadvantage.m.Opponents.find(_entity.getID()) != null)
 			spearwall = true;  //if true, attack when entering ZOC
@@ -172,7 +172,7 @@
 		if (this.m.MoraleState == this.Const.MoraleState.Fleeing || this.getCurrentProperties().IsStunned)
 			return false;
 
-		local reachadvantage = this.m.Skills.getSkillByID("perk.crReachadvantage");
+		local reachadvantage = this.m.Skills.getSkillByID("perk.ssu_reachadvantage");
 		local spearwall = false;
 		if (reachadvantage != null && reachadvantage.m.Opponents.find(_entity.getID()) != null)
 			spearwall = true;  //if true, attack when entering ZOC

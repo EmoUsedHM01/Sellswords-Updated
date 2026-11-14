@@ -4,10 +4,7 @@
 	{
 		__original();
 
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));
-
-		if (::Is_PTR_Exist)
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bulwark"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_honorheritage"));
 
 		this.m.BaseProperties.Initiative += 15;
 		local dc = this.World.getTime().Days;
@@ -23,7 +20,7 @@
 			if (dc >= 120)
 			{
 				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_crIronsideweak"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_ironsideweak"));
 
 				if (dc >= 160)
 				{
@@ -32,11 +29,8 @@
 					this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 20;
 					this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 20;
 
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_crRavager"));
+					this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_ravager"));
 					this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));
-
-					if (::Is_PTR_Exist)
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));
 
 					if (dc >= 200)
 					{
@@ -75,7 +69,7 @@
 				"weapons/greenskins/orc_axe_2h",
 				"weapons/greenskins/legend_limb_lopper",
 				"weapons/greenskins/legend_man_mangler",
-				"weapons/greenskins/cr_orc_sword"
+				"weapons/greenskins/ssu_orc_sword"
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
@@ -105,7 +99,6 @@
 		}
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
-		this.m.Skills.removeByID("perk.ptr_kata");
 	}
 
 	q.makeMiniboss = @( __original ) function ()
@@ -119,8 +112,8 @@
 			"weapons/named/named_orc_axe",
 			"weapons/named/legend_named_orc_axe_2h",
 			"weapons/named/legend_named_orc_axe_2h",
-			"weapons/named/cr_named_orc_sword_1h",
-			"weapons/named/cr_named_orc_sword_2h"
+			"weapons/named/ssu_named_orc_sword_1h",
+			"weapons/named/ssu_named_orc_sword_2h"
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
@@ -131,7 +124,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 5;
-		local item = "scripts/items/misc/anatomist/orc_warlord_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_orc_warlord_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

@@ -9,24 +9,10 @@
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_know_their_weakness"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_the_rush_of_battle"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bulwark"));
-		}
-
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));
-
-			if (::Is_PTR_Exist)
-			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_man_of_steel"));	
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_exude_confidence"));				
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_personal_armor"));
-			}		
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_honorheritage"));
 		}
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
@@ -101,30 +87,30 @@
 		this.m.Items.equip(this.Const.World.Common.pickArmor([
 			[
 				1,
-				"adorned_mail_shirt_armor_heavy"
+				"ssu_adorned_mail_shirt_armor_heavy"
 			],
 			[
 				2,
-				"adorned_warriors_armor_armor_heavy"
+				"ssu_adorned_warriors_armor_armor_heavy"
 			],
 			[
 				4,
-				"adorned_heavy_mail_hauberk_armor"
+				"ssu_adorned_heavy_mail_hauberk_armor"
 			]
 		]));
 		this.m.Items.equip(this.Const.World.Common.pickHelmet([
 			[
 				4,
-				"adorned_closed_flat_top_with_mail_helmet"
+				"ssu_adorned_closed_flat_top_with_mail_helmet"
 			],
 			[
 				8,
-				"adorned_full_helm_helmet"
+				"ssu_adorned_full_helm_helmet"
 			],
-			[1, "crknight_helmet_mid_bread"],			//350,-23						350,10/16
-			[1, "crknight_helmet_mid_decorative"],		 //335,-22
-			[1, "crknight_helmet_mid_unadorned"],			//325 -21
-			[1, "cr_enclave_armet"],			   //355,-24  			
+			[1, "ssu_knight_helmet_mid_bread"],			//350,-23						350,10/16
+			[1, "ssu_knight_helmet_mid_decorative"],		 //335,-22
+			[1, "ssu_knight_helmet_mid_unadorned"],			//325 -21
+			[1, "ssu_enclave_armet"],			   //355,-24  			
 		]));		
 
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);

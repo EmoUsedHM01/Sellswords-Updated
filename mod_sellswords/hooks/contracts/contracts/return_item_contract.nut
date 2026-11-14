@@ -69,8 +69,8 @@
 				local party;
 				local crstrength = this.World.State.getPlayer().getStrength();
 				crstrength = this.Math.min(5 * crstrength, 80);
-				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(tile, "Thieves", false, this.Const.World.Spawn.crthieves, crstrength * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-				party.setDescription("A group of thieves and bandits.");
+				party = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Bandits).spawnEntity(tile, "Thieves", false, this.Const.World.Spawn.Ssucrthieves, crstrength * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
+				party.setDescription(::Mod_Sellswords.Strings.return_item_contract.Description);
 				party.setFootprintType(this.Const.World.FootprintsType.Brigands);
 				party.setAttackableByAI(false);
 				party.getController().getBehavior(this.Const.World.AI.Behavior.ID.Attack).setEnabled(false);

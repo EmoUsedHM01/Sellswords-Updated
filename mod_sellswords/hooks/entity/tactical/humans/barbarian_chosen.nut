@@ -4,9 +4,9 @@
 	{
 		__original();
 		this.m.Skills.removeByID("perk.hold_out");	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crBruiser"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crIronsideweak"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_bruiser"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_ironsideweak"));
 
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 80)
 		{
@@ -14,7 +14,7 @@
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Head] += 10;
 			this.m.BaseProperties.Armor[this.Const.BodyPart.Body] += 10;
 			this.m.BaseProperties.ArmorMax[this.Const.BodyPart.Body] += 10;	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_crHonorheritage"));	
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_honorheritage"));	
 
 			if (this.World.getTime().Days >= 160)
 			{
@@ -73,10 +73,10 @@
 				"weapons/barbarians/heavy_rusty_axe",
 				"weapons/barbarians/rusty_warblade",
 				"weapons/barbarians/heavy_rusty_axe",
-				"weapons/barbarians/crbarbarian_hammer",
-				"weapons/barbarians/crbarbarian_mace",
-				"weapons/barbarians/twinaxes_t1",
-				"weapons/barbarians/twincleavers_t1"
+				"weapons/barbarians/ssu_barbarian_hammer",
+				"weapons/barbarians/ssu_barbarian_mace",
+				"weapons/barbarians/ssu_twinaxes_t1",
+				"weapons/barbarians/ssu_twincleavers_t1"
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
@@ -189,9 +189,9 @@
 
 		this.getSprite("miniboss").setBrush("bust_miniboss");
 		local weapons = [
-			"weapons/named/named_broken_sword",
-			"weapons/named/named_broken_cleaver",
-			"weapons/named/named_broken_axe",
+			"weapons/named/legend_named_rusty_greatsword",
+			"weapons/named/legend_named_rusty_warcleaver",
+			"weapons/named/legend_named_rusty_serrated_axe",
 			"weapons/named/named_skullhammer",
 			"weapons/named/named_two_handed_spiked_mace",
 			"weapons/named/named_rusty_warblade",
@@ -221,7 +221,7 @@
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
 				[
 					1,
-					"crbarbarian_champion_bronze"
+					"ssu_barbarian_champion_bronze"
 				]
 			]));
 		}
@@ -230,7 +230,7 @@
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([
 				[
 					1,
-					"crbarbarian_champion_heavy"
+					"ssu_barbarian_champion_heavy"
 				]
 			]));
 		}

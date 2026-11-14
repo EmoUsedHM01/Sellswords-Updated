@@ -83,7 +83,7 @@
 
 	if (_entity.getFlags().has("undead") && !_entity.getFlags().has("ghost"))
 	{
-		local consecrate = _entity.getSkills().getSkillByID("effects.cr_consecrated");
+		local consecrate = _entity.getSkills().getSkillByID("effects.ssu_consecrated");
 
 		if (consecrate != null)
 		{
@@ -99,7 +99,7 @@
 		else
 		{
 			local flags = _entity.getFlags();
-			local consecrated = this.new("scripts/skills/effects/cr_consecrated_effect");
+			local consecrated = this.new("scripts/skills/effects/ssu_consecrated_effect");
 
 			if (flags.has("zombie_minion"))
 			{

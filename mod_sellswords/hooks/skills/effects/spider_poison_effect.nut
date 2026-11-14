@@ -16,7 +16,7 @@
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 				hitInfo.DamageRegular = 2 * this.m.Damage;
 
-			if (this.getContainer().hasSkill("perk.crresilient"))
+			if (this.getContainer().hasSkill("perk.ssu_resilient"))
 				hitInfo.DamageRegular * 0.75;
 
 			hitInfo.DamageDirect = 1.0;

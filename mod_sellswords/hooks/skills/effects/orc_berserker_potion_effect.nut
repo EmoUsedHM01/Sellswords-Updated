@@ -5,7 +5,7 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Name = "Hyperactive Glands";
+		this.m.Name = ::Mod_Sellswords.Strings.orc_berserker_potion_effect.Name;
 	}
 	
 	q.getTooltip = @(__original) function()
@@ -25,13 +25,13 @@
 				id = 11,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character gains two stacks of Rage each time they take hitpoint damage, and loses one stack at the end of each turn."
+				text = ::Mod_Sellswords.Strings.orc_berserker_potion_effect.Tooltip1
 			},
 			{
 				id = 12,
 				type = "hint",
 				icon = "ui/tooltips/warning.png",
-				text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+				text = ::Mod_Sellswords.Strings.orc_berserker_potion_effect.Tooltip2
 			}
 		];
 		return ret;

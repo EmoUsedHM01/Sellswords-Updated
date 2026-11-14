@@ -3,8 +3,8 @@
 	q.create = @(__original) function()
 	{
 		__original();
-		this.m.Description = "This character doesn\'t have a corporeal form, making it extremely hard to land a hit.";
-		this.m.Icon = "ui/racial/racial_ghost.png";
+		this.m.Description = ::Mod_Sellswords.Strings.ghost_racial.Description;
+		this.m.Icon = "ui/racial/ssu_racial_ghost.png";
 		this.m.IconMini = "racial_ghost_mini"
 	}
 	
@@ -25,31 +25,31 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Is always [color=%positive%]Levitating[/color]"
+				text = ::Mod_Sellswords.Strings.ghost_racial.Tooltip1
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/miniboss.png",
-				text = "Immune to bleeding, poison and most types of injuries."
+				text = ::Mod_Sellswords.Strings.ghost_racial.Tooltip2
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/fatigue.png",
-				text = "Not effected by fatigue, but needs fatigue to equip items."
+				text = ::Mod_Sellswords.Strings.ghost_racial.Tooltip3
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/morale.png",
-				text = "Not affected by morale or allies fleeing and dying."
+				text = ::Mod_Sellswords.Strings.ghost_racial.Tooltip4
 			},
 			{
 				id = 7,
 				type = "text",
 				icon = "ui/icons/xp_received.png",
-				text = "Experience is gained at 50% normal rate."
+				text = ::Mod_Sellswords.Strings.ghost_racial.Tooltip5
 			}
 		];
 	}

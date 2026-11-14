@@ -29,25 +29,25 @@
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Only receive [color=%positive%]" + (100 - 50 * smc) + "%[/color] of any damage"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.indomitable.Tooltip1, (100 - 50 * smc))
 			},				
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/bravery.png",
-				text = "Base Resolve will be increased by [color=%positive%]" + 100 * smc + "%[/color]"
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.indomitable.Tooltip2, 100 * smc)
 			},				
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Become immune to being stunned"
+				text = ::Mod_Sellswords.Strings.indomitable.Tooltip3
 			},
 			{
 				id = 6,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "Become immune to being knocked back or grabbed"
+				text = ::Mod_Sellswords.Strings.indomitable.Tooltip4
 			}
 		];
 	};

@@ -7,24 +7,9 @@
 		{
 			this.m.BaseProperties.RangedSkill += 5;
 
-			if (::Is_PTR_Exist)
-			{
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_ranged_supremacy"));			
-			}
-
 			if (this.World.getTime().Days >= 130)
 			{
 				this.m.BaseProperties.RangedSkill += 5;
-
-				if (::Is_PTR_Exist)
-				{
-					this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_eyes_up"));
-					
-					if (this.World.getTime().Days >= 180)
-					{
-						this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_marksmanship"));
-					}	
-				}
 			}							
 		}
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
@@ -93,29 +78,29 @@
 		else if (dc <= 130)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_early"],					
+				[3, "ssu_arbalester_armor_early"],					
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
-				[1, "crbillman_helmet_low"],			   //~30 					
+				[1, "ssu_billman_helmet_low"],			   //~30 					
 			]));
 		}			
 		else if (dc <= 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_mid"],   				
+				[3, "ssu_arbalester_armor_mid"],   				
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
-				[1, "crbillman_helmet_early"],			  //~85		  				
+				[1, "ssu_billman_helmet_early"],			  //~85		  				
 			]));
 		}	
 		else if (dc > 180)
 		{
 			this.m.Items.equip(this.Const.World.Common.pickArmor([
-				[3, "crarbalester_armor_late"],   				
+				[3, "ssu_arbalester_armor_late"],   				
 			]));
 			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				  	
-				[2, "crbillman_helmet_mid_chain"],			   //~115  	
-				[2, "crbillman_helmet_mid"],			  //~110								
+				[2, "ssu_billman_helmet_mid_chain"],			   //~115  	
+				[2, "ssu_billman_helmet_mid"],			  //~110								
 			]));
 		}			
 	}

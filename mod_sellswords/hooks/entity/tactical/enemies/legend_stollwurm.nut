@@ -10,32 +10,9 @@
 		this.m.BaseProperties.IsImmuneToDisarm = true;
 		this.m.BaseProperties.MeleeSkill += 5;
 		this.m.Skills.removeByID("perk.hold_out");
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_crresilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
-		this.m.Skills.add(this.new("scripts/skills/effects/cr_clarity_effect_permanent"));
-
-		if (::Is_PTR_Exist)
-		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_bully"));
-			this.m.Skills.addPerkTree(this.Const.Perks.AxeTree);
-			this.m.Skills.getSkillByID("perk.ptr_cull").m.IsForceEnabled = true;
-
-			local softMetalPerk = this.new("scripts/skills/perks/perk_ptr_soft_metal");
-			softMetalPerk.m.IsForceEnabled = true;
-			this.m.Skills.add(softMetalPerk);
-
-			local dentArmorPerk = this.new("scripts/skills/perks/perk_ptr_dent_armor");
-			dentArmorPerk.m.IsForceEnabled = true;
-			dentArmorPerk.m.IsForceTwoHanded = true;
-			this.m.Skills.add(dentArmorPerk);
-		}
-
-		if (::Is_PTR_Exist && ("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
-		{	
-			local maulerPerk = this.new("scripts/skills/perks/perk_ptr_mauler");
-			maulerPerk.m.IsForceEnabled = true;
-			this.m.Skills.add(maulerPerk);
-		}
+		this.m.Skills.add(this.new("scripts/skills/effects/ssu_clarity_effect_permanent"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
@@ -55,7 +32,7 @@
 	{
 		__original(_killer, _skill, _tile, _fatalityType);
 		local chance = 5.0;
-		local item = "scripts/items/misc/anatomist/stollwurm_sequence_item";
+		local item = "scripts/items/misc/anatomist/ssu_stollwurm_sequence_item";
 		::Mod_Sellswords.doPotionDrop(_killer, _skill, _tile, _fatalityType, chance, item);
 	}
 

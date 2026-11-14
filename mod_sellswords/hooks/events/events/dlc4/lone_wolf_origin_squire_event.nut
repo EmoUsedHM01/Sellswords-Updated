@@ -2,7 +2,7 @@
 {
 	q.onUpdateScore = @(__original) function()
 	{
-		if (this.World.Assets.getOrigin().getID() != "scenario.lone_wolf" && this.World.Assets.getOrigin().getID() != "scenario.lone_wolf_easy")
+		if (this.World.Assets.getOrigin().getID() != "scenario.lone_wolf" && this.World.Assets.getOrigin().getID() != "scenario.ssu_lone_wolf_easy")
 		{
 			return;
 		}

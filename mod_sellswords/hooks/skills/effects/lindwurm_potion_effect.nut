@@ -20,7 +20,7 @@
 			id = 11,
 			type = "text",
 			icon = "ui/icons/special.png",
-			text = "This character\'s blood burns with acid, damaging adjacent attackers whenever they deal hitpoint damage."
+			text = ::Mod_Sellswords.Strings.lindwurm_potion_effect.Tooltip1
 		});
 
 		if (this.getContainer().getActor().getFlags().has("wurm_s"))
@@ -29,7 +29,7 @@
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character has the blood of Dragons coursing through them." + "\n[color=%positive%]+30[/color] Hitpoints." + "\n[color=%positive%]+30%[/color] additional damage with attacks."
+				text = ::Mod_Sellswords.Strings.lindwurm_potion_effect.Tooltip2
 			});
 		}
 		else
@@ -38,7 +38,7 @@
 				id = 12,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = "This character has the blood of Dragons coursing through them." + "\n[color=%positive%]+15[/color] Hitpoints." + "\n[color=%positive%]+15%[/color] additional damage with attacks."
+				text = ::Mod_Sellswords.Strings.lindwurm_potion_effect.Tooltip3
 			});
 		}
 
@@ -46,7 +46,7 @@
 			id = 13,
 			type = "hint",
 			icon = "ui/tooltips/warning.png",
-			text = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
+			text = ::Mod_Sellswords.Strings.lindwurm_potion_effect.Tooltip4
 		});
 
 		return ret;

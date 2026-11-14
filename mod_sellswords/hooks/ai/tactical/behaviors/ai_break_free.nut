@@ -79,7 +79,6 @@
 				}				
 			}			
 		}
-		//this.logInfo("score: " + score);
 			
 		score = score * this.getFatigueScoreMult(this.m.Skill);
 
