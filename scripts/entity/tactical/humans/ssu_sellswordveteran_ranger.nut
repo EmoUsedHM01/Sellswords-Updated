@@ -152,14 +152,14 @@ this.ssu_sellswordveteran_ranger <- this.inherit("scripts/entity/tactical/human"
 			this.m.Items.addToBag(this.new("scripts/items/weapons/winged_mace"));
 		}		
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_sellsword_armor_ranged"
 			]
 		]));
 
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_sellsword_helmet_ranged"
@@ -198,7 +198,7 @@ this.ssu_sellswordveteran_ranger <- this.inherit("scripts/entity/tactical/human"
 		}
 		this.m.Items.addToBag(this.new("scripts/items/accessory/poison_item"));		
 
-		local armor = this.Const.World.Common.pickArmor([
+		local armor = ::Legends.Items.pickArmor([
 			[1, "ssu_sellsword_named_armor_light_chain"],			//180,-12
 			[1, "ssu_sellsword_named_armor_light_plate_01"],			//180,-10 
 			[1, "ssu_sellsword_named_armor_light_plate_02"],			//185,-10

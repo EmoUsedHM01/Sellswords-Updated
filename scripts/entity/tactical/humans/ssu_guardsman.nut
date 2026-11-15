@@ -163,7 +163,7 @@ this.ssu_guardsman <- this.inherit("scripts/entity/tactical/human", {
 				}			
 			}
 						
-			local armor = this.Const.World.Common.pickArmor([
+			local armor = ::Legends.Items.pickArmor([
 				[
 					1,
 					"ssu_guardsman_armor_light"
@@ -174,7 +174,7 @@ this.ssu_guardsman <- this.inherit("scripts/entity/tactical/human", {
 
 			local helmet;
 
-			helmet = this.Const.World.Common.pickHelmet([
+			helmet = ::Legends.Items.pickHelmet([
 				[
 					1,
 					"ssu_guardsman_helmet_light"
@@ -226,7 +226,7 @@ this.ssu_guardsman <- this.inherit("scripts/entity/tactical/human", {
 				}			
 			}		
 
-			local armor = this.Const.World.Common.pickArmor([
+			local armor = ::Legends.Items.pickArmor([
 				[
 					1,
 					"ssu_guardsman_armor_ichi",
@@ -248,7 +248,7 @@ this.ssu_guardsman <- this.inherit("scripts/entity/tactical/human", {
 
 			local helmet;
 
-			helmet = this.Const.World.Common.pickHelmet([
+			helmet = ::Legends.Items.pickHelmet([
 				[
 					2,
 					"ssu_guardsman_helmet"

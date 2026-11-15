@@ -19,13 +19,13 @@
 				hitInfo.DamageRegular = 2 * this.m.Damage;
 
 			if (this.getContainer().hasSkill("perk.ssu_resilient"))
-				hitInfo.DamageRegular * 0.75;
+				hitInfo.DamageRegular *= 0.75;
 
 			hitInfo.DamageDirect = 1.0;
 			hitInfo.BodyPart = this.Const.BodyPart.Body;
 			hitInfo.BodyDamageMult = 1.0;
 			hitInfo.FatalityChanceMult = 0.0;
-			this.getContainer().getActor().onDamageReceived(this.getAttacker(), this, hitInfo);
+			this.getContainer().getActor().onDamageReceived(this.getEffectOwner(), this, hitInfo);
 		}
 	}
 

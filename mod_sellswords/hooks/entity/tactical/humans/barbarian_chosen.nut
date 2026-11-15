@@ -126,7 +126,7 @@
 				]
 			];
 
-			foreach( item in this.Const.World.Common.pickOutfit(outfits, armor, helmet) )
+			foreach( item in ::Legends.Items.pickOutfit(outfits, armor, helmet) )
 			{
 				this.m.Items.equip(item);
 			}
@@ -156,7 +156,7 @@
 				"barbarian_chosen_armor_01"
 			]);
 
-			this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
+			this.m.Items.equip(::Legends.Items.pickArmor(armor));
 		}
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
@@ -179,7 +179,7 @@
 					"barbarian_chosen_helmet_02"
 				]
 			];
-			this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));
+			this.m.Items.equip(::Legends.Items.pickHelmet(helmet));
 		}
 	}	
 	q.makeMiniboss = @( __original ) function()
@@ -218,7 +218,7 @@
 		}
 		if (rr == 1 || rr >= 3)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[
 					1,
 					"ssu_barbarian_champion_bronze"
@@ -227,7 +227,7 @@
 		}
 		if (rr == 2 || rr >= 3)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[
 					1,
 					"ssu_barbarian_champion_heavy"

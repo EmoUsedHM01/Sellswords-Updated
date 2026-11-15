@@ -195,7 +195,7 @@ this.ssu_barbarian_championhigh <- this.inherit("scripts/entity/tactical/human",
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
 
-		local armor = this.Const.World.Common.pickArmor([
+		local armor = ::Legends.Items.pickArmor([
 				[1, "ssu_barb_chosen_ichi"],
 				[1, "ssu_barb_chosen_ni"]				
 		]);	
@@ -206,7 +206,7 @@ this.ssu_barbarian_championhigh <- this.inherit("scripts/entity/tactical/human",
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_barb_chosen_ichi"],
 				[1, "ssu_barb_chosen_ni"]
 			]));

@@ -114,13 +114,13 @@
 		{
 			if (dc <= 80)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[3, "ssu_swordmaster_early_armor"],
 					[1, "ssu_swordmaster_mid_armor"],
 					[0, "ssu_swordmaster_late_light_armor"],
 					[0, "ssu_swordmaster_late_medium_armor"]						
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[3, "ssu_swordmaster_early_helmet"],
 					[1, "ssu_swordmaster_mid_light_helmet"],
 					[0, "ssu_swordmaster_late_medium_helmet"]						
@@ -128,13 +128,13 @@
 			}
 			else if (dc <= 115)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_swordmaster_early_armor"],
 					[2, "ssu_swordmaster_mid_armor"],
 					[0, "ssu_swordmaster_late_light_armor"],
 					[0, "ssu_swordmaster_late_medium_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_swordmaster_early_helmet"],
 					[2, "ssu_swordmaster_mid_light_helmet"],
 					[0, "ssu_swordmaster_late_medium_helmet"]	
@@ -142,13 +142,13 @@
 			}
 			else if (dc <= 150)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[0, "ssu_swordmaster_early_armor"],
 					[2, "ssu_swordmaster_mid_armor"],
 					[1, "ssu_swordmaster_late_light_armor"],
 					[1, "ssu_swordmaster_late_medium_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[2, "ssu_swordmaster_early_helmet"],
 					[3, "ssu_swordmaster_mid_light_helmet"],
 					[1, "ssu_swordmaster_late_medium_helmet"],
@@ -157,13 +157,13 @@
 			}				
 			else if (dc > 150)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[0, "ssu_swordmaster_early_armor"],
 					[0, "ssu_swordmaster_mid_armor"],
 					[1, "ssu_swordmaster_late_light_armor"],
 					[1, "ssu_swordmaster_late_medium_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[0, "ssu_swordmaster_early_helmet"],
 					[0, "ssu_swordmaster_mid_light_helmet"],
 					[1, "ssu_swordmaster_late_medium_helmet"],
@@ -173,7 +173,7 @@
 		}
 		else if (r == 3)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[
 					1,
 					"footman_armor"
@@ -189,7 +189,7 @@
 			]));
 			if (this.Math.rand(1, 100) <= 90)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[
 						3,
 						"nasal_helmet"
@@ -240,7 +240,7 @@
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_named_noble_mail_armor"],		   				
 			]));				
 		}

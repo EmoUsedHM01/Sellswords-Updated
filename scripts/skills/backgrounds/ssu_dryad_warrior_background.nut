@@ -116,13 +116,13 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 	{
 		local items = this.getContainer().getActor().getItems();
 		items.equip(this.new("scripts/items/weapons/dryad/ssu_dryad_flail"));
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_dryad_armour_warrior"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_dryad_helmet_warrior"

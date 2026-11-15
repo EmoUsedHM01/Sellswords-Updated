@@ -1,5 +1,6 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/chop", function ( q ) {
 	q.m.infantry <- false;
+	q.m.IsOrcWeapon <- false;
 
 	q.getTooltip = @( __original ) function()
 	{

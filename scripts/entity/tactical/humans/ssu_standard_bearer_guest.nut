@@ -80,13 +80,13 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 		local helmet;
 		if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_light"],		 				
 			]));
 			
 			if (banner <= 4)
 			{				
-				helmet = this.Const.World.Common.pickHelmet([
+				helmet = ::Legends.Items.pickHelmet([
 					[1, "kettle_hat"], 
 					[1, "padded_kettle_hat"], 
 					[0, "kettle_hat_with_mail"], 
@@ -95,7 +95,7 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 			}
 			else if (banner <= 7)
 			{				
-				helmet = this.Const.World.Common.pickHelmet([					
+				helmet = ::Legends.Items.pickHelmet([					
 					[1, "flat_top_helmet"], 
 					[1, "padded_flat_top_helmet"], 
 					[0, "flat_top_with_mail"], 
@@ -104,7 +104,7 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 			}
 			else
 			{				
-				helmet = this.Const.World.Common.pickHelmet([ 					
+				helmet = ::Legends.Items.pickHelmet([ 					
 					[1, "nasal_helmet"], 
 					[1, "padded_nasal_helmet"], 
 					[0, "nasal_helmet_with_mail"], 
@@ -114,14 +114,14 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 		}
 		else if (dc <= 130)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_armor_hauberk_light"],   				
 				[1, "ssu_armor_hauberk_medium"], 
 				[1, "ssu_armor_hauberk_medium_patched"], 					
 			]));
 			if (banner <= 4)
 			{				
-				helmet = this.Const.World.Common.pickHelmet([
+				helmet = ::Legends.Items.pickHelmet([
 					[2, "padded_kettle_hat"], 
 					[1, "kettle_hat_with_mail"], 
 					[0, "kettle_hat_with_closed_mail"], 										
@@ -129,7 +129,7 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 			}
 			else if (banner <= 7)
 			{				
-				helmet = this.Const.World.Common.pickHelmet([					
+				helmet = ::Legends.Items.pickHelmet([					
 					[2, "padded_flat_top_helmet"], 
 					[1, "flat_top_with_mail"], 
 					[0, "closed_flat_top_helmet"], 										
@@ -137,7 +137,7 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 			}
 			else
 			{				
-				helmet = this.Const.World.Common.pickHelmet([ 					
+				helmet = ::Legends.Items.pickHelmet([ 					
 					[2, "padded_nasal_helmet"], 
 					[1, "nasal_helmet_with_mail"], 
 					[0, "nasal_helmet_with_closed_mail"],					
@@ -146,14 +146,14 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 		}			
 		else if (dc <= 180)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_medium"], 
 				[1, "ssu_armor_hauberk_medium_patched"], 				
 				[1, "ssu_armor_hauberk_late"],   				
 			]));
 			if (banner <= 4)
 			{				
-				helmet = this.Const.World.Common.pickHelmet([
+				helmet = ::Legends.Items.pickHelmet([
 					[1, "padded_kettle_hat"], 
 					[2, "kettle_hat_with_mail"], 
 					[1, "kettle_hat_with_closed_mail"], 										
@@ -161,7 +161,7 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 			}
 			else if (banner <= 7)
 			{				
-				helmet = this.Const.World.Common.pickHelmet([					
+				helmet = ::Legends.Items.pickHelmet([					
 					[1, "padded_flat_top_helmet"], 
 					[2, "flat_top_with_mail"], 
 					[1, "closed_flat_top_helmet"], 										
@@ -169,7 +169,7 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 			}
 			else
 			{				
-				helmet = this.Const.World.Common.pickHelmet([ 					
+				helmet = ::Legends.Items.pickHelmet([ 					
 					[1, "padded_nasal_helmet"], 
 					[2, "nasal_helmet_with_mail"], 
 					[1, "nasal_helmet_with_closed_mail"],					
@@ -178,26 +178,26 @@ this.ssu_standard_bearer_guest <- this.inherit("scripts/entity/tactical/player",
 		}	
 		else if (dc > 180)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_late"],					
 			]));
 			if (banner <= 4)
 			{				
-				helmet = this.Const.World.Common.pickHelmet([
+				helmet = ::Legends.Items.pickHelmet([
 					[1, "kettle_hat_with_mail"], 
 					[2, "kettle_hat_with_closed_mail"], 										
 				]);
 			}
 			else if (banner <= 7)
 			{				
-				helmet = this.Const.World.Common.pickHelmet([					
+				helmet = ::Legends.Items.pickHelmet([					
 					[1, "flat_top_with_mail"], 
 					[2, "closed_flat_top_helmet"], 										
 				]);
 			}
 			else
 			{				
-				helmet = this.Const.World.Common.pickHelmet([ 					
+				helmet = ::Legends.Items.pickHelmet([ 					
 					[1, "nasal_helmet_with_mail"], 
 					[2, "nasal_helmet_with_closed_mail"],					
 				]);

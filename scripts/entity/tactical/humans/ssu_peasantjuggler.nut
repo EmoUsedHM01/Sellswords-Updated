@@ -107,7 +107,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 		dc = this.Math.max(dc, mn * 4);	
 		if (dc <= 25)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "sackcloth"],
 				[9, "linen_tunic"]
 			]));
@@ -117,7 +117,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 50)
 				{
-					local helm = this.Const.World.Common.pickHelmet([
+					local helm = ::Legends.Items.pickHelmet([
 						[1, "ssu_peasant_helmet_early"]
 					]);
 					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_jester_hat"));
@@ -127,7 +127,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 40)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[4, "ssu_peasant_armor"],
 				[1, "ssu_peasant_armor_mid"]
 			]));
@@ -135,7 +135,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_early"],
 					[2, "ssu_peasant_helmet_mid"]					
 					
@@ -146,7 +146,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_peasant_armor_late"],
 				[4, "ssu_peasant_armor_mid"]
 			]));
@@ -154,7 +154,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"],
 					[2, "ssu_peasant_helmet_mid"]					
 					
@@ -165,7 +165,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[5, "ssu_peasant_armor_late"],
 				[1, "ragged_surcoat"],
 				[1, "padded_leather"],
@@ -177,7 +177,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"]					
 					
 				]);
@@ -187,7 +187,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc > 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_peasant_armor_late"],
 				[1, "ssu_peasant_armor_verylate"]				
 			]));
@@ -195,7 +195,7 @@ this.ssu_peasantjuggler <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"],					
 					[2, "ssu_peasant_helmet_verylate"]							
 				]);

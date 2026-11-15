@@ -81,14 +81,14 @@ this.ssu_nomad_billman <- this.inherit("scripts/entity/tactical/human", {
 
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));	
 		
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "ssu_nomad_armor_early_ichi"],   //95,-11  55,-4
 			[1, "ssu_nomad_armor_early_cloth"],   //90,-8 60,-3					
 			[1, "ssu_nomad_armor_early_ni"],  	//80,-6			
 			[1, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 			[1, "ssu_nomad_armor_mid_sann"],  	 //105,-11								
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([		
+		this.m.Items.equip(::Legends.Items.pickHelmet([		
 			[1, "oriental/leather_head_wrap"], 
 			[1, "ssu_cutthroat_helmet"],  		//50
 			[1, "citrene_nomad_cutthroat_helmet_01"], 					

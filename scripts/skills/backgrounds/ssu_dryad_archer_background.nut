@@ -29,7 +29,7 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
 		this.m.Modifiers.Ammo = ::Const.LegendMod.ResourceModifiers.Ammo[2];
-		this.m.Modifiers.Hunting = ::Const.LegendMod.ResourceModifiers.Hunting[2];
+		this.m.Modifiers.Cooking = ::Const.LegendMod.ResourceModifiers.Cooking[2];
 		this.m.Modifiers.Scout = ::Const.LegendMod.ResourceModifiers.Scout[3];
 		this.m.Modifiers.Gathering = ::Const.LegendMod.ResourceModifiers.Gather[1];
 		this.m.Modifiers.Terrain = [
@@ -93,13 +93,13 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 		local items = this.getContainer().getActor().getItems();
 		items.equip(this.new("scripts/items/weapons/dryad/ssu_dryad_bow"));
 		items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_dryad_armour_archer"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_dryad_helmet_archer"

@@ -64,8 +64,6 @@
 
 ::Const.Perks.PerkDefObjects[::Legends.Perk.Bullseye].Tooltip = ::Const.Strings.PerkDescription.Bullseye;
 
-::Const.Perks.PerkDefObjects[::Legends.Perk.LegendNetRepair].Tooltip = ::Const.Strings.PerkDescription.LegendNetRepair;
-
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendNetCasting].Tooltip = ::Const.Strings.PerkDescription.LegendNetCasting;
 
 ::Const.Perks.PerkDefObjects[::Legends.Perk.LegendMasteryNets].Tooltip = ::Const.Strings.PerkDescription.LegendMasteryNets;

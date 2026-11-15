@@ -133,13 +133,13 @@ this.ssu_hashshashin_low <- this.inherit("scripts/entity/tactical/human", {
 		
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[3, "ssu_hashshashin_armor_low"], 		
 			[1, "ssu_hashshashin_armor_low_reinforced"], 
 			[0, "ssu_hashshashin_armor_medium"],	
 			[0, "ssu_hashshashin_armor_high"],				
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([					
+		this.m.Items.equip(::Legends.Items.pickHelmet([					
 			[3, "ssu_hashshashin_helmet_low"], 		
 			[1, "ssu_hashshashin_helmet_low_reinforced"], 
 			[0, "ssu_hashshashin_helmet_medium"],	

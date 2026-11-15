@@ -65,7 +65,7 @@
 			this.m.Items.equip(this.new("scripts/items/shields/wooden_shield"));
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "leather_tunic"],
 			[1, "gambeson"],
 			[1, "padded_leather"],
@@ -76,7 +76,7 @@
 
 		if (this.Math.rand(1, 100) <= 75)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "hood"],
 				[1, "aketon_cap"],
 				[1, "full_leather_cap"]

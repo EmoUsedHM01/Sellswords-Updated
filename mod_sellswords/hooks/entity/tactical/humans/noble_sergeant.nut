@@ -53,28 +53,28 @@
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);	
 		if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_sergeant_armor_early"],
 				[1, "ssu_sergeant_armor_medium"]					
 			]));
 		}
 		else if (dc <= 130)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sergeant_armor_early"], 
 				[2, "ssu_sergeant_armor_medium"] 					
 			]));
 		}			
 		else if (dc <= 180)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sergeant_armor_medium"], 				
 				[2, "ssu_sergeant_armor_late"]   				
 			]));
 		}	
 		else if (dc > 180)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sergeant_armor_scale"],										
 			]));
 		}

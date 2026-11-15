@@ -82,7 +82,7 @@ this.ssu_throw_net_free <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.FatigueCostMult = _properties.IsSpecializedInNets ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 
-		if (this.getContainer().getActor().getSkills().hasSkill("perk.legend_net_repair"))
+		if (this.getContainer().getActor().getSkills().hasSkill("perk.legend_mastery_nets"))
 		{
 			this.m.ActionPointCost = 3;		
 		}
@@ -127,7 +127,7 @@ this.ssu_throw_net_free <- this.inherit("scripts/skills/skill", {
 			rd *= 0.5;
 		}
 
-		if (_user.getSkills().hasSkill("perk.legend_net_repair"))
+		if (_user.getSkills().hasSkill("perk.legend_mastery_nets"))
 		{
 			rd *= 0.75;
 		}

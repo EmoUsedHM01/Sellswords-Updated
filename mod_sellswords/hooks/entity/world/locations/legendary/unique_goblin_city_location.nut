@@ -27,7 +27,7 @@
 			"misc/legend_masterwork_fabric",
 			"misc/legend_masterwork_tools"
 		], _lootTable);
-		_lootTable.push(this.Const.World.Common.pickHelmet([
+		_lootTable.push(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_emperors_helmet"

@@ -20,7 +20,6 @@ this.ssu_adorned_full_helm <- this.inherit("scripts/items/legend_helmets/legend_
 		this.m.ConditionMax = 210;
 		this.m.StaminaModifier = -14;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 	}

@@ -101,7 +101,7 @@ this.ssu_nomad_footman <- this.inherit("scripts/entity/tactical/human", {
 		];
 		this.m.Items.equip(this.new("scripts/items/" + shields[this.Math.rand(0, shields.len() - 1)]));
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "ssu_nomad_armor_mid_ichi"],  	 //125,-11				
 			[1, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 			[1, "ssu_nomad_armor_mid_sann"],  	 //105,-11
@@ -110,7 +110,7 @@ this.ssu_nomad_footman <- this.inherit("scripts/entity/tactical/human", {
 			[3, "ssu_nomad_armor_mid_plate"],  	  //150,-16
 			[2, "ssu_nomad_armor_mid_plate_heavy"],  	 //170,-20				
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([			 					
+		this.m.Items.equip(::Legends.Items.pickHelmet([			 					
 			[1, "theamson_nomad_outlaw_helmet"],  	 
 			[1, "oriental/nomad_reinforced_helmet"],  	 					  	  									
 		]));

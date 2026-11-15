@@ -20,7 +20,6 @@ this.ssu_southern_wrap_vanity <- this.inherit("scripts/items/legend_helmets/lege
 		this.m.ConditionMax = 10;
 		this.m.StaminaModifier = 0;
 		this.m.Vision = 0;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = false;
 		this.m.HideBeard = false;
 		this.m.ItemType = this.m.ItemType;

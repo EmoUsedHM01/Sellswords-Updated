@@ -382,7 +382,7 @@ this.ssu_orc_packleader <- this.inherit("scripts/entity/tactical/actor", {
 					"greenskins/ssu_orc_packleader_heavy_armor"
 				]
 			];
-			local item = this.Const.World.Common.pickArmor(armor);
+			local item = ::Legends.Items.pickArmor(armor);
 			this.m.Items.equip(item);
 		}
 		

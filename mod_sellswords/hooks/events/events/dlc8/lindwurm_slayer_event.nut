@@ -42,14 +42,14 @@
 
 					_event.m.Dude.getItems().equip(this.new("scripts/items/weapons/fighting_spear"));
 					_event.m.Dude.getItems().equip(this.new("scripts/items/shields/special/craftable_lindwurm_shield"));
-					item = this.Const.World.Common.pickHelmet([
+					item = ::Legends.Items.pickHelmet([
 						[
 							1,
 							"ssu_lindwurm_slayer_helmet"
 						]
 					]);
 					_event.m.Dude.getItems().equip(item);
-					item = this.Const.World.Common.pickArmor([
+					item = ::Legends.Items.pickArmor([
 						[
 							1,
 							"ssu_lindwurm_slayer_armor"
@@ -94,14 +94,14 @@
 
 					_event.m.Dude.getItems().equip(this.new("scripts/items/weapons/fighting_spear"));
 					_event.m.Dude.getItems().equip(this.new("scripts/items/shields/special/craftable_lindwurm_shield"));
-					item = this.Const.World.Common.pickHelmet([
+					item = ::Legends.Items.pickHelmet([
 						[
 							1,
 							"ssu_lindwurm_slayer_helmet"
 						]
 					]);
 					_event.m.Dude.getItems().equip(item);
-					item = this.Const.World.Common.pickArmor([
+					item = ::Legends.Items.pickArmor([
 						[
 							1,
 							"ssu_lindwurm_slayer_armor"

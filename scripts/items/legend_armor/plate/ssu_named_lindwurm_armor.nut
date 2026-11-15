@@ -1,5 +1,10 @@
 this.ssu_named_lindwurm_armor <- this.inherit("scripts/items/legend_armor/legend_named_armor_upgrade", {
-	m = {},
+	m = {
+		Potential = {
+			Condition = { min = 143, max = 162 },
+			StaminaModifier = { min = 11, max = 8 }
+		}
+	},
 	function create()
 	{
 		this.legend_named_armor_upgrade.create();
@@ -25,9 +30,6 @@ this.ssu_named_lindwurm_armor <- this.inherit("scripts/items/legend_armor/legend
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.Value = 6000;
-		this.m.Condition = 130;
-		this.m.ConditionMax = 130;
-		this.m.StaminaModifier = -14;
 		this.randomizeValues();
 	}
 

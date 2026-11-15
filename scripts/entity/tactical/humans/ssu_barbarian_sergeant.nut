@@ -113,7 +113,7 @@ this.ssu_barbarian_sergeant <- this.inherit("scripts/entity/tactical/human", {
 		];
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 			
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "ssu_barbsergeant_armor"],		  				
 		]));
 			

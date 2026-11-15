@@ -220,13 +220,13 @@ this.ssu_necro_embalmbed_soldier <- this.inherit("scripts/skills/backgrounds/cha
 		if (items.getItemAtSlot(this.Const.ItemSlot.Offhand) == null)
 			items.equip(this.new("scripts/items/shields/ancient/legend_mummy_tower_shield"));
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"necro/embalmbed_soldier_chest"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ancient/legend_mummy_headband"

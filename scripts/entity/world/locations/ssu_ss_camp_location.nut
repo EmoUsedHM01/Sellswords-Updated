@@ -312,13 +312,13 @@ this.ssu_ss_camp_location <- this.inherit("scripts/entity/world/location", {
 			"loot/valuable_furs_item",
 			"loot/white_pearls_item"
 		], _lootTable);
-		_lootTable.push(this.Const.World.Common.pickArmor([
+		_lootTable.push(::Legends.Items.pickArmor([
 			[
 				1,
 				"legendary/legend_mountain_armor"
 			]
 		]));
-		_lootTable.push(this.Const.World.Common.pickHelmet([
+		_lootTable.push(::Legends.Items.pickHelmet([
 			[
 				1,
 				"legendary/legend_mountain_helmet"

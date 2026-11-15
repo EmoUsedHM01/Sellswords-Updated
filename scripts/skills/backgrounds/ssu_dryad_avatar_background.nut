@@ -31,7 +31,7 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.m.Modifiers.Injury = ::Const.LegendMod.ResourceModifiers.Injury[2];
 		this.m.Modifiers.MedConsumption = ::Const.LegendMod.ResourceModifiers.MedConsumption[2];
 		this.m.Modifiers.Stash = ::Const.LegendMod.ResourceModifiers.Stash[0];
-		this.m.Modifiers.Hunting = ::Const.LegendMod.ResourceModifiers.Hunting[2];
+		this.m.Modifiers.Cooking = ::Const.LegendMod.ResourceModifiers.Cooking[2];
 		this.m.Modifiers.Scout = ::Const.LegendMod.ResourceModifiers.Scout[2];
 		this.m.Modifiers.Gathering = ::Const.LegendMod.ResourceModifiers.Gather[3];
 		this.m.Modifiers.Terrain = [
@@ -77,13 +77,13 @@ this.ssu_dryad_avatar_background <- ::inherit("scripts/skills/backgrounds/charac
 		local items = this.getContainer().getActor().getItems();
 		items.equip(this.new("scripts/items/weapons/dryad/ssu_dryad_cleaver"));
 		items.equip(this.new("scripts/items/ammo/ssu_dryad_forest_heart_ammo"));
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_dryad_armour_shaman"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_dryad_helmet_shaman"

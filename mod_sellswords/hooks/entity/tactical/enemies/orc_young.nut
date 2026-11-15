@@ -112,7 +112,7 @@
 			];
 		}			
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));
 		local helmet;
 		helmet = [
 			[1, "greenskins/orc_young_light_helmet"],
@@ -145,7 +145,7 @@
 			];
 		}			
 
-		this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));			
+		this.m.Items.equip(::Legends.Items.pickHelmet(helmet));			
 	}
 
 	q.onDeath = @(__original) function(_killer, _skill, _tile, _fatalityType)

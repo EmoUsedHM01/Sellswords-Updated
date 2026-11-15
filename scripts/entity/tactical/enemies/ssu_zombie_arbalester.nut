@@ -122,11 +122,11 @@ this.ssu_zombie_arbalester <- this.inherit("scripts/entity/tactical/enemies/zomb
 		
 		if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "padded_surcoat"],	
 				[1, "gambeson"],						
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[2, "mail_coif"],			   
 				[1, "aketon_cap"],  
 				[1, "open_leather_cap"], 
@@ -136,28 +136,28 @@ this.ssu_zombie_arbalester <- this.inherit("scripts/entity/tactical/enemies/zomb
 		}
 		else if (dc <= 130)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_arbalester_armor_early"],					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				
 				[1, "ssu_billman_helmet_low"],			   //~30 					
 			]));
 		}			
 		else if (dc <= 180)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_arbalester_armor_mid"],   				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				
 				[1, "ssu_billman_helmet_early"],			  //~85		  				
 			]));
 		}	
 		else if (dc > 180)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_arbalester_armor_late"],   				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				  	
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				  	
 				[2, "ssu_billman_helmet_mid_chain"],			   //~115  	
 				[2, "ssu_billman_helmet_mid"],			  //~110								
 			]));

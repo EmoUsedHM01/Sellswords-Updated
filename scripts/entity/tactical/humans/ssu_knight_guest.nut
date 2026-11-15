@@ -196,12 +196,12 @@ this.ssu_knight_guest <- this.inherit("scripts/entity/tactical/player", {
 	
 		if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_scale_mid"],	  //315,-40							 320
 				[1, "ssu_plate_full_mid"],		   //320,-41
 				[1, "ssu_plate_full_mid_reinforced"],	 //335,-43					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[2, "ssu_knight_helmet_mid_bread"],			//350,-23						350,10/16
 				[2, "ssu_knight_helmet_mid_decorative"],		 //335,-22
 				[1, "ssu_knight_helmet_mid_unadorned"],			//325 -21
@@ -214,12 +214,12 @@ this.ssu_knight_guest <- this.inherit("scripts/entity/tactical/player", {
 		}	
 		else if (dc <= 110)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_mid"],		   //320,-41					340
 				[2, "ssu_plate_full_mid_reinforced"],	 //335,-43
 				[1, "ssu_plate_full_late"],	   //370,-50					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_knight_helmet_mid_bread"],			//350,-23			   370,8/12				 				
 				[2, "ssu_knight_faction_helm_enclave_armet",banner],  //355,-24 
 				[1, "ssu_enclave_armet"],			   //355,-24  	
@@ -231,11 +231,11 @@ this.ssu_knight_guest <- this.inherit("scripts/entity/tactical/player", {
 		}	
 		else if (dc <= 140)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_late"],	   //370,-50				 375
 				[1, "ssu_plate_full_heavy"],	   //380,-49					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([	   					 	
+			this.m.Items.equip(::Legends.Items.pickHelmet([	   					 	
 				[3, "ssu_knight_faction_helm_enclave_great_bascinet",banner],  //415,-29		  410,6/10
 				[1, "ssu_enclave_great_bascinet"],			   //415,-29	
 				[1, "ssu_enclave_armet_late"],			   //400,-28
@@ -246,12 +246,12 @@ this.ssu_knight_guest <- this.inherit("scripts/entity/tactical/player", {
 		}	
 		else if (dc <= 170)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_late"],	   //370,-50			 
 				[2, "ssu_plate_full_heavy"],	   //380,-49		  380
 				[1, "ssu_plate_full_knight"]		 //430,-56						
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
+			this.m.Items.equip(::Legends.Items.pickHelmet([					
 				[2, "ssu_enclave_great_bascinet_late"],			   //465,-32			 		  440,9/18
 				[5, "ssu_knight_faction_helm_enclave_venitian_bascinet",banner],   //460,-33
 				[3, "ssu_enclave_venitian_bascinet"],			   //460,-33	
@@ -265,12 +265,12 @@ this.ssu_knight_guest <- this.inherit("scripts/entity/tactical/player", {
 		}
 		else if (dc <= 200)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_heavy_late"],	   //435,-57		 410
 				[1, "ssu_plate_full_heavy"],	   //380,-49
 				[1, "ssu_plate_full_knight"]		 //430,-56						
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([												
+			this.m.Items.equip(::Legends.Items.pickHelmet([												
 				[4, "ssu_knight_faction_helm_enclave_great_helm",banner],	//475,-36	   480,4/8
 				[1, "ssu_enclave_great_helm"],				//475,-36						
 				[1, "ssu_enclave_great_bascinet_late"],			  //465,-32
@@ -280,11 +280,11 @@ this.ssu_knight_guest <- this.inherit("scripts/entity/tactical/player", {
 		}
 		else if (dc > 200)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_plate_full_knight_late"],		//465,-58		  450
 				[1, "ssu_plate_full_knight"]		 //430,-56						
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([						
+			this.m.Items.equip(::Legends.Items.pickHelmet([						
 				[1, "ssu_enclave_venitian_bascinet_late"],			   //490,-31				   500,4/8			
 				[4, "ssu_knight_faction_helm_enclave_great_helm_late",banner],	//515
 				[1, "ssu_enclave_great_helm"],				//475,-36	

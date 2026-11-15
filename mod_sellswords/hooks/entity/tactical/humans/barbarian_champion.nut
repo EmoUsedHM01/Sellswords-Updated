@@ -107,11 +107,11 @@
 			"ssu_barbarian_reinforced_heavy_iron_armor"
 		]);
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[
 					1,
 					"barbarians/crude_faceguard_helmet"
@@ -143,14 +143,14 @@
 		}
 		else if (r == 2)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_barbarian_champion_fur"],
 				[1, "ssu_barbarian_champion_skull"],
 			]));
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_barbarian_champion_skull"],
 				[1, "ssu_barbarian_champion_spiked"],
 			]));

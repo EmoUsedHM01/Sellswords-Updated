@@ -26,7 +26,7 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Ranger;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
-		this.m.Modifiers.Hunting = ::Const.LegendMod.ResourceModifiers.Hunting[3];
+		this.m.Modifiers.Cooking = ::Const.LegendMod.ResourceModifiers.Cooking[3];
 		this.m.Modifiers.Scout = ::Const.LegendMod.ResourceModifiers.Scout[1];
 		this.m.Modifiers.Gathering = ::Const.LegendMod.ResourceModifiers.Gather[1];
 		this.m.Modifiers.Terrain = [
@@ -87,13 +87,13 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 		local items = this.getContainer().getActor().getItems();
 		items.equip(this.new("scripts/items/weapons/dryad/ssu_dryad_cleaver"));
 		items.equip(this.new("scripts/items/ammo/ssu_dryad_forest_heart_ammo"));
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_dryad_armour_tamer"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_dryad_helmet_tamer"

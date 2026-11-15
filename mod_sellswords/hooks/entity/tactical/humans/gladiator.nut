@@ -87,7 +87,7 @@
 			this.m.Items.equip(this.new("scripts/items/" + offhand[this.Math.rand(0, offhand.len() - 1)]));
 		}
 
-		local armor = this.Const.World.Common.pickArmor([
+		local armor = ::Legends.Items.pickArmor([
 			[
 				1,
 				"oriental/gladiator_harness"
@@ -104,7 +104,7 @@
 		}
 
 		this.m.Items.equip(armor);
-		local helm = this.Const.World.Common.pickHelmet([
+		local helm = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"oriental/gladiator_helmet",

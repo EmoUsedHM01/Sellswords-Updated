@@ -353,14 +353,14 @@ this.ssu_goblin_rider01 <- this.inherit("scripts/entity/tactical/goblin", {
 		
 		this.m.Items.equip(this.new("scripts/items/shields/greenskins/goblin_heavy_shield"));		
 
-		local item = this.Const.World.Common.pickArmor([
+		local item = ::Legends.Items.pickArmor([
 			[
 				1,
 				"greenskins/goblin_heavy_armor"
 			]
 		]);
 		this.m.Items.equip(item);
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				25,
 				"greenskins/goblin_heavy_helmet"

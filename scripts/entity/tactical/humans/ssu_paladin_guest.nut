@@ -96,38 +96,38 @@ this.ssu_paladin_guest <- this.inherit("scripts/entity/tactical/player", {
 			
 		if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_footman_armor_early"],		   // 160
 				[1, "ssu_footman_armor_mid_plate"],	   //185
 				[1, "ssu_footman_armor_mid_patched"],	 // 185				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				
 				[1, "ssu_footman_helmet_mid"],			   //~150  	
 				[1, "ssu_footman_helmet_mid_reinforced"],			   //~175 					
 			]));
 		}	
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_footman_armor_mid_chain"],	 // 185
 				[1, "ssu_footman_armor_mid_plate"],	   //185
 				[1, "ssu_footman_armor_mid_patched"],	 // 185				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				  	
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				  	
 				[1, "ssu_footman_helmet_mid_reinforced"],			   //~175 
 				[1, "ssu_footman_helmet_late_kettle"],			  //~200 					
 			]));
 		}
 		else if (dc <= 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_footman_armor_mid_chain"],	 // 185
 				[1, "ssu_footman_armor_mid_plate"],	   //185
 				[1, "ssu_footman_armor_mid_patched"],	 // 185
 				[2, "ssu_footman_armor_late_ichi"],	  // 195
 				[2, "ssu_footman_armor_late_ni"],	  // 200					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				 	
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				 	
 				[1, "ssu_footman_helmet_mid_reinforced"],			   //~175 
 				[1, "ssu_footman_helmet_late"],			   //~175  	
 				[1, "ssu_footman_helmet_late_heavy"],			   //~200					
@@ -135,11 +135,11 @@ this.ssu_paladin_guest <- this.inherit("scripts/entity/tactical/player", {
 		}
 		else if (dc > 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_footman_armor_late_ichi"],	  // 195
 				[1, "ssu_footman_armor_late_ni"],	  // 200					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				
 				[1, "ssu_footman_helmet_late_heavy"],			   //~200					
 			]));
 		}

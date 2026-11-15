@@ -102,36 +102,36 @@ this.ssu_zombie_billman <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));				
 		if (dc <= 50)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_billman_armor_low"],	 // 110
 				[1, "ssu_billman_armor_early"],		// 110				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[2, "ssu_billman_helmet_low"],			   //~30
 				[1, "ssu_billman_helmet_early"],			   //~85   					
 			]));
 		}
 		else if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_billman_armor_low"],	 // 110
 				[3, "ssu_billman_armor_early"],		// 110	
 				[1, "ssu_billman_armor_mid"],	 // 140
 				[1, "ssu_billman_armor_mid_mixed"],	   // 130					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				
 				[1, "ssu_billman_helmet_early"],			   //~85 					
 			]));
 		}			
 		else if (dc <= 100)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_billman_armor_low"],	 // 110
 				[1, "ssu_billman_armor_early"],		// 110	
 				[2, "ssu_billman_armor_mid"],	 // 140
 				[2, "ssu_billman_armor_mid_mixed"],	   // 130				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				
 				[1, "ssu_billman_helmet_early"],			   //~85 
 				[2, "ssu_billman_helmet_mid_chain"],			   //~115  	
 				[2, "ssu_billman_helmet_mid"],			  //~110					
@@ -139,11 +139,11 @@ this.ssu_zombie_billman <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		}	
 		else if (dc <= 125)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_billman_armor_mid"],	 // 140
 				[1, "ssu_billman_armor_mid_mixed"],	   // 130				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				  	
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				  	
 				[2, "ssu_billman_helmet_mid_chain"],			   //~115  	
 				[2, "ssu_billman_helmet_mid"],			  //~110
 				[1, "ssu_billman_helmet_late_chain"],			   //~140 
@@ -152,12 +152,12 @@ this.ssu_zombie_billman <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		}
 		else if (dc <= 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_billman_armor_mid"],	 // 140
 				[1, "ssu_billman_armor_mid_mixed"],	   // 130
 				[2, "ssu_billman_armor_late"],	  // 150					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				 	
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				 	
 				[1, "ssu_billman_helmet_mid_chain"],			   //~115  	
 				[1, "ssu_billman_helmet_mid"],			  //~110
 				[3, "ssu_billman_helmet_late_chain"],			   //~140 
@@ -167,10 +167,10 @@ this.ssu_zombie_billman <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		}
 		else if (dc > 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_billman_armor_late"],	  // 150					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([											  				
+			this.m.Items.equip(::Legends.Items.pickHelmet([											  				
 				[1, "ssu_billman_helmet_late_chain"],			   //~140 
 				[1, "ssu_footman_helmet_late"],			   //~140  	
 				[4, "ssu_billman_helmet_heavy"],			  //~160					

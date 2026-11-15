@@ -55,7 +55,7 @@
 
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "seedmaster_noble_armor"],
 			[1, "citreneking_noble_armor"],
 		]));
@@ -66,7 +66,7 @@
 
 			if (banner <= 4)
 			{
-				helmet = this.Const.World.Common.pickHelmet([
+				helmet = ::Legends.Items.pickHelmet([
 					[1, "legend_enclave_vanilla_kettle_sallet_01"],
 					[1, "legend_enclave_vanilla_kettle_sallet_03"],
 					[2, "heavy_noble_house_helmet_00"]
@@ -74,7 +74,7 @@
 			}
 			else if (banner <= 7)
 			{
-				helmet = this.Const.World.Common.pickHelmet([
+				helmet = ::Legends.Items.pickHelmet([
 					[1, "legend_enclave_vanilla_kettle_sallet_02"],
 					[1, "legend_enclave_vanilla_kettle_sallet_03"],
 					[2, "heavy_noble_house_helmet_00"]
@@ -82,7 +82,7 @@
 			}
 			else
 			{
-				helmet = this.Const.World.Common.pickHelmet([
+				helmet = ::Legends.Items.pickHelmet([
 					[1, "legend_enclave_vanilla_kettle_sallet_01"],
 					[1, "legend_enclave_vanilla_kettle_sallet_02"],
 					[2, "heavy_noble_house_helmet_00"]
@@ -97,7 +97,7 @@
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[2, "aketon_cap"],
 				[1, "full_aketon_cap"]
 			]))

@@ -203,7 +203,7 @@ this.ssu_banditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Body) && this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 		{
-			local armor = this.Const.World.Common.pickArmor([
+			local armor = ::Legends.Items.pickArmor([
 				[1, "coat_of_plates"],
 				[1, "coat_of_scales"],
 				[1, "heavy_lamellar_armor"],
@@ -220,7 +220,7 @@ this.ssu_banditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 
 			this.m.Items.equip(armor);
 
-			local helm = this.Const.World.Common.pickHelmet([
+			local helm = ::Legends.Items.pickHelmet([
 				[1, "closed_mail_coif"],
 				[1, "padded_kettle_hat"],
 				[1, "kettle_hat_with_closed_mail"],
@@ -271,12 +271,12 @@ this.ssu_banditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 				]);
 			}
 
-			this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
+			this.m.Items.equip(::Legends.Items.pickArmor(armor));
 		}
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Head) == null)
 		{
-			local item = this.Const.World.Common.pickHelmet([
+			local item = ::Legends.Items.pickHelmet([
 				[1, "closed_mail_coif"],
 				[1, "padded_kettle_hat"],
 				[1, "kettle_hat_with_closed_mail"],
@@ -322,14 +322,14 @@ this.ssu_banditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 		else if (r == 3)
 		{
 			local named = this.Const.Items.NamedArmors;
-			local weightName = this.Const.World.Common.convNameToList(named);
-			this.m.Items.equip(this.Const.World.Common.pickArmor(weightName));
+			local weightName = ::Legends.Items.convNameToList(named);
+			this.m.Items.equip(::Legends.Items.pickArmor(weightName));
 		}
 		else
 		{
 			local named = this.Const.Items.NamedHelmets;
-			local weightName = this.Const.World.Common.convNameToList(named);
-			this.m.Items.equip(this.Const.World.Common.pickHelmet(weightName));
+			local weightName = ::Legends.Items.convNameToList(named);
+			this.m.Items.equip(::Legends.Items.pickHelmet(weightName));
 		}
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));

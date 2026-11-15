@@ -31,15 +31,4 @@ this.perk_ssu_ravager <- this.inherit("scripts/skills/skill", {
 		_properties.RangedSkill += 0.5 * this.m.chance;	
 	}
 	
-	function onGetHitFactors( _skill, _targetTile, _tooltip )
-	{
-		local targetEntity = _targetTile.getEntity();
-		if (targetEntity != null && _skill.isAttack() && this.m.chance > 0)
-		{
-			_tooltip.push({
-				icon = "ui/tooltips/positive.png",
-				text = "[color=%positive%]" + this.m.chance + "%[/color]" + this.getName()
-			});
-		}
-	}	
 });

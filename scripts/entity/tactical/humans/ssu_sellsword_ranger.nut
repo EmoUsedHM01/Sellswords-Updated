@@ -167,14 +167,14 @@ this.ssu_sellsword_ranger <- this.inherit("scripts/entity/tactical/human", {
 		];
 		this.m.Items.addToBag(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_sellsword_armor_ranged"
 			]
 		]));
 
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_sellsword_helmet_ranged"

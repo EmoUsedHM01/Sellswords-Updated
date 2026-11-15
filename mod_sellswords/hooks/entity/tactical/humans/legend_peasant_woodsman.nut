@@ -123,7 +123,7 @@
 		
 		if (dc <= 25)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "sackcloth"],
 				[1, "thick_tunic"],
 				[8, "linen_tunic"]
@@ -134,7 +134,7 @@
 			{
 				if (this.Math.rand(1, 100) <= 50)
 				{
-					local helm = this.Const.World.Common.pickHelmet([
+					local helm = ::Legends.Items.pickHelmet([
 						[1, "ssu_peasant_helmet_early"]
 					]);
 					helm.setUpgrade(this.new("scripts/items/legend_helmets/vanity/legend_helmet_straw_hat"));
@@ -144,7 +144,7 @@
 		}
 		else if (dc <= 40)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[4, "ssu_peasant_armor"],
 				[1, "ssu_peasant_armor_mid"]
 			]));
@@ -152,7 +152,7 @@
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_early"],
 					[2, "ssu_peasant_helmet_mid"]					
 
@@ -163,7 +163,7 @@
 		}	
 		else if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_peasant_armor_late"],
 				[4, "ssu_peasant_armor_mid"]
 			]));
@@ -171,7 +171,7 @@
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"],
 					[2, "ssu_peasant_helmet_mid"]					
 					
@@ -182,7 +182,7 @@
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[5, "ssu_peasant_armor_late"],
 				[1, "ragged_surcoat"],
 				[1, "padded_leather"],
@@ -194,7 +194,7 @@
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"]					
 					
 				]);
@@ -204,7 +204,7 @@
 		}
 		else if (dc > 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_peasant_armor_late"],
 				[1, "ssu_peasant_armor_verylate"]				
 			]));
@@ -212,7 +212,7 @@
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"],					
 					[2, "ssu_peasant_helmet_verylate"]							
 				]);

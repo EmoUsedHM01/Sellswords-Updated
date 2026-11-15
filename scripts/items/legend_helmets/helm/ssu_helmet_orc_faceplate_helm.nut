@@ -20,7 +20,6 @@ this.ssu_helmet_orc_faceplate_helm <- this.inherit("scripts/items/legend_helmets
 		this.m.ConditionMax = 185;
 		this.m.StaminaModifier = -20;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = false;
 		this.m.ItemType = this.m.ItemType;

@@ -91,7 +91,7 @@ this.ssu_necro_skeledog <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Stash = this.Const.LegendMod.ResourceModifiers.Stash[1];
-		this.m.Modifiers.Hunting = this.Const.LegendMod.ResourceModifiers.Hunting[3];
+		this.m.Modifiers.Cooking = this.Const.LegendMod.ResourceModifiers.Cooking[3];
 		this.m.Modifiers.Scout = this.Const.LegendMod.ResourceModifiers.Scout[3];
 		this.m.Modifiers.Terrain = [
 			0.0, // ?

@@ -362,7 +362,7 @@ this.ssu_orc_grunt <- this.inherit("scripts/entity/tactical/actor", {
 		}
 		this.m.Items.equip(this.new("scripts/items/shields/greenskins/orc_light_shield"));
 		this.m.Items.addToBag(this.new("scripts/items/weapons/greenskins/orc_javelin"));		
-		local item = this.Const.World.Common.pickArmor([
+		local item = ::Legends.Items.pickArmor([
 			[
 				1,
 				"greenskins/ssu_orc_grunt_light_armor"

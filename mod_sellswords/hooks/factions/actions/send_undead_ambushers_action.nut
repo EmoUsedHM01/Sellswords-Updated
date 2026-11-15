@@ -6,7 +6,7 @@
 
 		foreach( s in _faction.getSettlements() )
 		{
-			if (s.getLastSpawnTime() + this.m.timeBetweenSpawnsPerSettlement > this.Time.getVirtualTimeF() || s.getFlags().get("isContractLocation")) //use to prevent patrols on camps that are marked by contracts.
+			if (s.getLastSpawnTime() + this.getTimeBetweenSpawns() > this.Time.getVirtualTimeF() || s.getFlags().get("isContractLocation")) //use to prevent patrols on camps that are marked by contracts.
 			{
 				continue;
 			}

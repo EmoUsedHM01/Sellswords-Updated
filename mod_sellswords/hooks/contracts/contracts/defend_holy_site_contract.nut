@@ -262,7 +262,7 @@
 						break;
 
 					case 5:
-						item = this.Const.World.Common.pickArmor([
+						item = ::Legends.Items.pickArmor([
 							[
 								1,
 								"ancient/ancient_mail"
@@ -301,7 +301,7 @@
 								"oriental/spiked_skull_cap_with_mail"
 							]
 						];
-						item = this.Const.World.Common.pickHelmet(helmet);
+						item = ::Legends.Items.pickHelmet(helmet);
 						break;
 					}
 

@@ -11,7 +11,7 @@
 				continue;
 			}
 
-			if (s.getLastSpawnTime() + this.m.timeBetweenSpawnsPerSettlement > this.Time.getVirtualTimeF() || s.getFlags().get("isContractLocation")) //use to prevent patrols on camps that are marked by contracts.
+			if (s.getLastSpawnTime() + this.getTimeBetweenSpawns() > this.Time.getVirtualTimeF() || s.getFlags().get("isContractLocation")) //use to prevent patrols on camps that are marked by contracts.
 			{
 				continue;
 			}
@@ -38,7 +38,7 @@
 			local mult = this.World.FactionManager.isCivilWar() ? 1.2 : 1.0;
 		}
 		
-		if (::Legends.Mod.ModSettings.getSetting("DistanceScaling").getValue() && distanceToNextSettlement > 14)
+		if (distanceToNextSettlement > 14)
 		{
 			mult *= distanceToNextSettlement / 14;
 		}

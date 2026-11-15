@@ -121,7 +121,7 @@ this.ssu_necro_sunken_library_event <- this.inherit("scripts/events/event", {
 					icon = "ui/items/" + item.getIcon(),
 					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_necro_sunken_library_event.Tooltip, this.Const.Strings.getArticle(item.getName()), item.getName())
 				});
-				item = this.Const.World.Common.pickArmor([
+				item = ::Legends.Items.pickArmor([
 					[
 						1,
 						"ancient/ancient_plated_mail_hauberk"
@@ -133,7 +133,7 @@ this.ssu_necro_sunken_library_event <- this.inherit("scripts/events/event", {
 					icon = "ui/items/" + item.getIcon(),
 					text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_necro_sunken_library_event.Tooltip, this.Const.Strings.getArticle(item.getName()), item.getName())
 				});
-				item = this.Const.World.Common.pickHelmet([
+				item = ::Legends.Items.pickHelmet([
 					[
 						1,
 						"ancient/ancient_honorguard_helmet"

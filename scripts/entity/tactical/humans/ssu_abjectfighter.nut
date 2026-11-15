@@ -126,7 +126,7 @@ this.ssu_abjectfighter <- this.inherit("scripts/entity/tactical/human", {
 
 		if (this.Math.rand(1, 100) <= 66)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[
 					1,
 					"sackcloth"
@@ -148,7 +148,7 @@ this.ssu_abjectfighter <- this.inherit("scripts/entity/tactical/human", {
 				""
 			]
 		];
-		this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));
+		this.m.Items.equip(::Legends.Items.pickHelmet(helmet));
 	}
 
 });

@@ -451,7 +451,7 @@ this.ssu_orc_vanguard <- this.inherit("scripts/entity/tactical/actor", {
 		else
 			this.m.Items.equip(this.new("scripts/items/weapons/greenskins/legend_man_mangler"));
 
-		local item = this.Const.World.Common.pickArmor([
+		local item = ::Legends.Items.pickArmor([
 			[
 				1,
 				"greenskins/ssu_orc_berserker_light_armor"
@@ -462,7 +462,7 @@ this.ssu_orc_vanguard <- this.inherit("scripts/entity/tactical/actor", {
 			]
 		]);
 		this.m.Items.equip(item);
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"greenskins/orc_berserker_helmet"

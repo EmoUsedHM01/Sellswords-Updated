@@ -237,8 +237,8 @@ this.ssu_sellsword_background <- this.inherit("scripts/skills/backgrounds/charac
 
 		local r = this.Math.rand(0, equipmentSets.len() - 1);
 		local selectedSet = equipmentSets[r];
-		items.equip(this.Const.World.Common.pickArmor([[ 1, selectedSet.armor ]]));
-		items.equip(this.Const.World.Common.pickHelmet([[ 1, selectedSet.helmet ]]));
+		items.equip(::Legends.Items.pickArmor([[ 1, selectedSet.armor ]]));
+		items.equip(::Legends.Items.pickHelmet([[ 1, selectedSet.helmet ]]));
 	}
 
 });

@@ -84,7 +84,7 @@
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_adorned_mail_shirt_armor_heavy"
@@ -98,7 +98,7 @@
 				"ssu_adorned_heavy_mail_hauberk_armor"
 			]
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[
 				4,
 				"ssu_adorned_closed_flat_top_with_mail_helmet"

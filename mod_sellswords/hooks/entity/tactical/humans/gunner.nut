@@ -43,58 +43,58 @@
 		
 		if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "oriental/padded_vest"],		  
 				[0, "ssu_gunner_mid_light_armor"],	   //90 
 				[0, "ssu_gunner_late_armor"],	   //115 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "oriental/gunner_hat"],		  
 				[0, "ssu_gunner_helmet"],							
 			]));
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "oriental/padded_vest"],		  
 				[1, "ssu_gunner_mid_light_armor"],	   //90 
 				[0, "ssu_gunner_late_armor"],	   //115 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "oriental/gunner_hat"],		  
 				[0, "ssu_gunner_helmet"],							
 			]));
 		}			
 		else if (dc <= 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "oriental/padded_vest"],		  
 				[2, "ssu_gunner_mid_light_armor"],	   //90 
 				[1, "ssu_gunner_late_armor"],	   //115 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "oriental/gunner_hat"],		  
 				[1, "ssu_gunner_helmet"],							
 			]));
 		}	
 		else if (dc <= 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([		 
+			this.m.Items.equip(::Legends.Items.pickArmor([		 
 				[1, "ssu_gunner_mid_light_armor"],	   //90 
 				[1, "ssu_gunner_late_armor"],	   //115 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "oriental/gunner_hat"],		  
 				[2, "ssu_gunner_helmet"],							
 			]));
 		}
 		else if (dc > 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([		 
+			this.m.Items.equip(::Legends.Items.pickArmor([		 
 				[1, "ssu_gunner_mid_light_armor"],	   //90 
 				[3, "ssu_gunner_late_armor"],	   //115 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([					   
+			this.m.Items.equip(::Legends.Items.pickHelmet([					   
 				[1, "ssu_gunner_helmet"],							
 			]));
 		}				

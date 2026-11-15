@@ -88,7 +88,7 @@ this.ssu_necro_zombie <- this.inherit("scripts/skills/backgrounds/character_back
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Stash = this.Const.LegendMod.ResourceModifiers.Stash[1];
-		this.m.Modifiers.Hunting = this.Const.LegendMod.ResourceModifiers.Hunting[1];
+		this.m.Modifiers.Cooking = this.Const.LegendMod.ResourceModifiers.Cooking[1];
 		this.m.Modifiers.Scout = this.Const.LegendMod.ResourceModifiers.Scout[1];
 		this.m.Modifiers.Terrain = [
 				0.0, // ?
@@ -235,7 +235,7 @@ this.ssu_necro_zombie <- this.inherit("scripts/skills/backgrounds/character_back
 			if (this.Math.rand(1, 100) <= 66)
 				items.equip(this.new("scripts/items/shields/wooden_shield_old"));
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				4,
 				"leather_tunic"
@@ -273,7 +273,7 @@ this.ssu_necro_zombie <- this.inherit("scripts/skills/backgrounds/character_back
 				"cultist_leather_robe"
 			]
 		]));
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				67,
 				""

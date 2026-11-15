@@ -169,7 +169,7 @@
 						if (this.Math.rand(1,100) <= 33)
 						{
 							party = f.spawnEntity(origin.getTile(), origin.getName() + " Noble man-at-arms", true, this.Const.World.Spawn.SsuNoblewithbaron, 150 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-							party.getSprite("body").setBrush("figure_player_noble");					
+							party.getSprite("body").setBrush("figure_player_legends_noble");					
 						}
 						else
 						{
@@ -182,7 +182,7 @@
 						if (this.Math.rand(1,100) <= 50)
 						{
 							party = f.spawnEntity(origin.getTile(), origin.getName() + " Noble man-at-arms", true, this.Const.World.Spawn.SsuNoblewithbaron, (150 + 0.1 * dc) * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult());
-							party.getSprite("body").setBrush("figure_player_noble");					
+							party.getSprite("body").setBrush("figure_player_legends_noble");					
 						}
 						else
 						{

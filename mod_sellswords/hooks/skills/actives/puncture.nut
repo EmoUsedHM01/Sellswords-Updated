@@ -63,64 +63,6 @@
 		local chance = (1.0 - _targetEntity.getFatiguePct()) * 50;
 		return mod - this.Math.round(chance);
 	};
-	q.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
-	{
-		if (_skill.getID() != "actives.puncture")
-		{
-			return;
-		}		
-		local targetEntity = _targetTile.getEntity();
-		local targetArmor = targetEntity.getArmor(this.Const.BodyPart.Body);
-		if (targetArmor > 125)
-		{
-			local modarmor = this.Math.min(35, (targetArmor - 125) / 5);
-			_tooltip.push({
-				icon = "ui/tooltips/negative.png",
-				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.puncture.Tooltip1, modarmor)
-			});				
-		}	
-		local modvigor = this.Math.floor((1.0 - targetEntity.getFatiguePct()) * 50);			
-		_tooltip.push({
-			icon = "ui/tooltips/negative.png",
-			text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.puncture.Tooltip2, modvigor)
-		});	
-		local mod = 0;
-		if (targetEntity.getSkills().hasSkill("effects.dazed"))
-		{
-			mod = mod + 10;
-		}
-		if (targetEntity.getSkills().hasSkill("effects.legend_parried"))
-		{
-			mod = mod + 10;
-		}
-		if (targetEntity.getSkills().hasSkill("effects.legend_grappled"))
-		{
-			mod = mod + 30;
-		}
-		if (targetEntity.getSkills().hasSkill("effects.stunned"))
-		{
-			mod = mod + 20;
-		}
-		if (targetEntity.getSkills().hasSkill("effects.sleeping"))
-		{
-			mod = mod + 30;
-		}
-		if (targetEntity.getSkills().hasSkill("effects.net"))
-		{
-			mod = mod + 25;
-		}
-		if (targetEntity.getMoraleState() == this.Const.MoraleState.Fleeing)
-		{
-			mod = mod + 50;
-		}	
-		if (mod > 0)
-		{
-			_tooltip.push({
-				icon = "ui/tooltips/positive.png",
-				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.puncture.Tooltip3, mod)
-			});	
-		}
-	}		
 	q.onAnySkillUsed = @( __original) function ( _skill, _targetEntity, _properties )
 	{
 		if (_skill == this)
@@ -167,13 +109,13 @@
 				id = 7,
 				type = "text",
 				icon = "ui/icons/hitchance.png",
-				text = ::Mod_Sellswords.Strings.puncture.Tooltip4
+				text = ::Mod_Sellswords.Strings.puncture.Tooltip1
 			},
 			{
 				id = 8,
 				type = "text",
 				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.puncture.Tooltip5
+				text = ::Mod_Sellswords.Strings.puncture.Tooltip2
 			}
 		]);
 		return ret;

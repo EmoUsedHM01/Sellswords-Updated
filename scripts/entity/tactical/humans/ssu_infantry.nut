@@ -142,7 +142,7 @@ this.ssu_infantry <- this.inherit("scripts/entity/tactical/human", {
 
 		shield.setFaction(banner);
 		this.m.Items.equip(shield);
-		local armor = this.Const.World.Common.pickArmor([
+		local armor = ::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_infantry_armor"
@@ -153,7 +153,7 @@ this.ssu_infantry <- this.inherit("scripts/entity/tactical/human", {
 
 		local helmet;
 
-		helmet = this.Const.World.Common.pickHelmet([
+		helmet = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_infantry_helmet"

@@ -57,9 +57,9 @@ this.ssu_explore_treasures_contract <- this.inherit("scripts/contracts/contract"
 			item = this.new("scripts/items/" + items[this.Math.rand(0, items.len() - 1)]);
 		}
 		else if (idx == 2)
-			item = this.Const.World.Common.pickHelmet(this.Const.World.Common.convNameToList(this.Const.Items.NamedHelmets));
+			item = ::Legends.Items.pickHelmet(::Legends.Items.convNameToList(this.Const.Items.NamedHelmets));
 		else if (idx == 3)
-			item = this.Const.World.Common.pickArmor(this.Const.World.Common.convNameToList(this.Const.Items.NamedArmors));
+			item = ::Legends.Items.pickArmor(::Legends.Items.convNameToList(this.Const.Items.NamedArmors));
 
 		local cnh;
 

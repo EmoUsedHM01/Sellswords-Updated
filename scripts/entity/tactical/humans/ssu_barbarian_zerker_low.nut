@@ -158,7 +158,7 @@ this.ssu_barbarian_zerker_low <- this.inherit("scripts/entity/tactical/human", {
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 		}
 		
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_barb_berserker_helm"
@@ -172,7 +172,7 @@ this.ssu_barbarian_zerker_low <- this.inherit("scripts/entity/tactical/human", {
 			]
 		];
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));		
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));		
    }
    
 	function makeMiniboss()

@@ -16,7 +16,7 @@
 			items.equip(this.new("scripts/items/weapons/two_handed_wooden_hammer"));
 		}
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"oriental/thick_nomad_robe"
@@ -30,7 +30,7 @@
 				"oriental/leather_nomad_robe"
 			]
 		]));
-		local helm = this.Const.World.Common.pickHelmet([
+		local helm = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"oriental/leather_head_wrap"

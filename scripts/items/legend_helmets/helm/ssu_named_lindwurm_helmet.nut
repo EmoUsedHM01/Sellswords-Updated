@@ -1,5 +1,11 @@
 this.ssu_named_lindwurm_helmet <- this.inherit("scripts/items/legend_helmets/legend_named_helmet_upgrade", {
-	m = {},
+	m = {
+		Potential = {
+			Condition = { min = 168, max = 189 },
+			StaminaModifier = { min = 8, max = 8 },
+			Vision = { min = 2, max = 2 }
+		}
+	},
 	function create()
 	{
 		this.legend_named_helmet_upgrade.create();
@@ -22,11 +28,6 @@ this.ssu_named_lindwurm_helmet <- this.inherit("scripts/items/legend_helmets/leg
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.Value = 5000;
-		this.m.Condition = 140;
-		this.m.ConditionMax = 140;
-		this.m.StaminaModifier = -10;
-		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.m.IsDroppedAsLoot = true;

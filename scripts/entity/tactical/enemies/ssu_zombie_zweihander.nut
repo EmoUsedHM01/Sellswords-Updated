@@ -102,22 +102,22 @@ this.ssu_zombie_zweihander <- this.inherit("scripts/entity/tactical/enemies/zomb
 
 		if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_medium_patched"],	//170,-20 
 				[1, "ssu_armor_hauberk_medium"],			//170,-20 				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_greatsword_helmet_early"],		//~165,-10					
 			]));
 		}
 		else if (dc <= 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_medium_patched"],	//170,-20 
 				[1, "ssu_armor_hauberk_medium"],			//170,-20 
 				[2, "ssu_armor_hauberk_late"],	 		//200,-24  				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_greatsword_helmet_early"],		//~165,-10
 				[1, "ssu_greatsword_helmet_mid"],		 	//~210,-11
 				[1, "ssu_greatsword_helmet_mid_low"],		//~205,-12				
@@ -125,12 +125,12 @@ this.ssu_zombie_zweihander <- this.inherit("scripts/entity/tactical/enemies/zomb
 		}				
 		else if (dc <= 160)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[4, "ssu_armor_hauberk_late"],	 		//200,-24 
 				[1, "ssu_armor_scale_ichi"],				//250,-29
 				[1, "ssu_armor_scale_ni"],				//240,-29 				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_greatsword_helmet_mid"],		 	//~210,-11
 				[1, "ssu_greatsword_helmet_mid_low"],		//~205,-12
 				[3, "ssu_greatsword_helmet_late"],		//~225,-12
@@ -139,27 +139,27 @@ this.ssu_zombie_zweihander <- this.inherit("scripts/entity/tactical/enemies/zomb
 		}
 		else if (dc <= 200)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([ 
+			this.m.Items.equip(::Legends.Items.pickArmor([ 
 				[8, "ssu_armor_hauberk_late"],	 		//200,-24 
 				[2, "ssu_armor_scale_ichi"],				//250,-29
 				[2, "ssu_armor_scale_ni"],				//240,-29
 				[1, "ssu_armor_scale_ichi_patched"],		//265,-32				
 				[1, "ssu_armor_scale_ni_patched"],		//275,-32 				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_greatsword_helmet_heavy"],		//~270,-16					
 			]));
 		}
 		else if (dc > 200)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([ 
+			this.m.Items.equip(::Legends.Items.pickArmor([ 
 				[2, "ssu_armor_hauberk_late"],	 		//200,-24 
 				[1, "ssu_armor_scale_ichi"],				//250,-29
 				[1, "ssu_armor_scale_ni"],				//240,-29
 				[1, "ssu_armor_scale_ichi_patched"],		//265,-32				
 				[1, "ssu_armor_scale_ni_patched"],		//275,-32 				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_greatsword_helmet_heavy"],		//~270,-16					
 			]));
 		}			

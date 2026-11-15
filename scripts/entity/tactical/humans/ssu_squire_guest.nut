@@ -134,7 +134,7 @@ this.ssu_squire_guest <- this.inherit("scripts/entity/tactical/player", {
 		}
 
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_squire_armor"
@@ -150,7 +150,7 @@ this.ssu_squire_guest <- this.inherit("scripts/entity/tactical/player", {
 				]
 			];
 
-			local item = this.Const.World.Common.pickHelmet(helm);
+			local item = ::Legends.Items.pickHelmet(helm);
 
 			if (item != null)
 			{

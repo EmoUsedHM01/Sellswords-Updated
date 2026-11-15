@@ -110,14 +110,14 @@ this.ssu_nomad_scavenger <- this.inherit("scripts/entity/tactical/human", {
 		local matchnumber = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");								
 		if (matchnumber <= 16)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_nomad_armor_mid_ichi"],  	 //125,-11				
 				[2, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 				[2, "ssu_nomad_armor_mid_sann"],  	 //105,-11
 				[1, "ssu_nomad_armor_mid_plate_low"],  	  //130,-16						
 				[1, "ssu_nomad_armor_mid_chain"],  	  //150,-16			
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([		
+			this.m.Items.equip(::Legends.Items.pickHelmet([		
 				[1, "citrene_nomad_cutthroat_helmet_01"], 					
 				[1, "oriental/nomad_light_helmet"],  	 					
 				[1, "theamson_nomad_outlaw_helmet"],  					
@@ -125,7 +125,7 @@ this.ssu_nomad_scavenger <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (matchnumber <= 22)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_nomad_armor_mid_ichi"],  	 //125,-11				
 				[1, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 				[1, "ssu_nomad_armor_mid_sann"],  	 //105,-11				
@@ -133,7 +133,7 @@ this.ssu_nomad_scavenger <- this.inherit("scripts/entity/tactical/human", {
 				[1, "ssu_nomad_armor_mid_plate"],  	  //150,-16	
 				[1, "ssu_nomad_armor_mid_plate_low"],  	  //130,-16						
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([							
+			this.m.Items.equip(::Legends.Items.pickHelmet([							
 				[1, "oriental/nomad_light_helmet"],  	 					
 				[1, "theamson_nomad_outlaw_helmet"],  	 
 				[1, "oriental/nomad_reinforced_helmet"], 
@@ -142,7 +142,7 @@ this.ssu_nomad_scavenger <- this.inherit("scripts/entity/tactical/human", {
 		}			
 		else if (matchnumber <= 28)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_nomad_armor_mid_ichi"],  	 //125,-11				
 				[1, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 				[1, "ssu_nomad_armor_mid_sann"],  	 //105,-11
@@ -151,7 +151,7 @@ this.ssu_nomad_scavenger <- this.inherit("scripts/entity/tactical/human", {
 				[3, "ssu_nomad_armor_mid_plate"],  	  //150,-16
 				[2, "ssu_nomad_armor_mid_plate_heavy"],  	 //170,-20				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([			 					
+			this.m.Items.equip(::Legends.Items.pickHelmet([			 					
 				[1, "theamson_nomad_outlaw_helmet"],  	 
 				[1, "oriental/nomad_reinforced_helmet"],  
 				[1, "ssu_nomadleader_proto_helmet"],					
@@ -159,13 +159,13 @@ this.ssu_nomad_scavenger <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (matchnumber > 28)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([					
+			this.m.Items.equip(::Legends.Items.pickArmor([					
 				[2, "ssu_nomad_armor_mid_chain"],  	  //150,-16
 				[2, "ssu_nomad_armor_mid_plate"],  	  //150,-16
 				[1, "ssu_nomad_armor_mid_plate_heavy"],  	 //170,-20
 				[1, "ssu_nomad_armor_late"],  	//185,-25					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([			 					
+			this.m.Items.equip(::Legends.Items.pickHelmet([			 					
 				[1, "theamson_nomad_outlaw_helmet"],  	 
 				[2, "oriental/nomad_reinforced_helmet"], 
 				[1, "ssu_nomadleader_proto_helmet"],					

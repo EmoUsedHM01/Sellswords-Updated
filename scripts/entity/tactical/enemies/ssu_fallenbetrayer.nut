@@ -219,7 +219,7 @@ this.ssu_fallenbetrayer <- this.inherit("scripts/entity/tactical/enemies/zombie"
 				"ssu_zombieknight_armor_ni"
 			]
 		];
-		local armor = this.Const.World.Common.pickArmor(aList);
+		local armor = ::Legends.Items.pickArmor(aList);
 
 		if (this.Math.rand(1, 100) <= 33)
 		{
@@ -248,7 +248,7 @@ this.ssu_fallenbetrayer <- this.inherit("scripts/entity/tactical/enemies/zombie"
 					"decayed_great_helm"
 				]
 			];
-			local h = this.Const.World.Common.pickHelmet(helmet);
+			local h = ::Legends.Items.pickHelmet(helmet);
 
 			if (this.Math.rand(1, 100) <= 33)
 			{

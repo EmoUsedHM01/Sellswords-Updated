@@ -36,7 +36,7 @@ setupBackground("scripts/skills/backgrounds/barbarian_background", ["scripts/ski
 
 setupBackground("scripts/skills/backgrounds/bastard_background", ["scripts/skills/perks/perk_underdog"], [{def = ::Legends.Perk.Underdog, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/beast_hunter_background", ["scripts/skills/perks/perk_legend_net_repair"], [{def = ::Legends.Perk.LegendNetRepair, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/beast_hunter_background", ["scripts/skills/perks/perk_legend_mastery_nets"], [{def = ::Legends.Perk.LegendMasteryNets, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/beggar_background", ["scripts/skills/perks/perk_underdog"], [{def = ::Legends.Perk.Underdog, level = 0, optional = false}]);
 
@@ -154,7 +154,7 @@ setupBackground("scripts/skills/backgrounds/legend_foot_soldier_background", ["s
 
 setupBackground("scripts/skills/backgrounds/legend_gladiator_prizefighter_background", ["scripts/skills/perks/perk_battle_flow"], [{def = ::Legends.Perk.BattleFlow, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/legend_guild_master_background", ["scripts/skills/perks/perk_legend_net_repair"], [{def = ::Legends.Perk.LegendNetRepair, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_guild_master_background", ["scripts/skills/perks/perk_legend_mastery_nets"], [{def = ::Legends.Perk.LegendMasteryNets, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/legend_herbalist_background", ["scripts/skills/perks/perk_legend_specialist_herbalist"], [{def = ::Legends.Perk.LegendSpecialistHerbalist, level = 0, optional = false}]);
 

@@ -366,23 +366,23 @@ this.ssu_necro_ghost <- this.inherit("scripts/skills/backgrounds/character_backg
 			break;
 
 		case 3: // butcher_background
-			this.m.Modifiers.Hunting = this.Const.LegendMod.ResourceModifiers.Hunting[1];
+			this.m.Modifiers.Cooking = this.Const.LegendMod.ResourceModifiers.Cooking[1];
 			this.m.Modifiers.Healing = this.Const.LegendMod.ResourceModifiers.Healing[1];
 			this.m.Modifiers.Injury = this.Const.LegendMod.ResourceModifiers.Injury[2];
 			this.m.Modifiers.Meds = this.Const.LegendMod.ResourceModifiers.Meds[1];
 			break;
 
 		case 4: // fisherman_background
-			this.m.Modifiers.Hunting = this.Const.LegendMod.ResourceModifiers.Hunting[1];
+			this.m.Modifiers.Cooking = this.Const.LegendMod.ResourceModifiers.Cooking[1];
 			this.m.Modifiers.Stash = this.Const.LegendMod.ResourceModifiers.Stash[1];
 			break;
 
 		case 5: // juggler_background
-			this.m.Modifiers.Barter = this.Const.LegendMod.ResourceModifiers.Barter[1];
+			this.m.Modifiers.Haggle = this.Const.LegendMod.ResourceModifiers.Haggle[1];
 			break;
 
 		case 6: // pimp_background
-			this.m.Modifiers.Barter = this.Const.LegendMod.ResourceModifiers.Barter[2];
+			this.m.Modifiers.Haggle = this.Const.LegendMod.ResourceModifiers.Haggle[2];
 			this.m.Modifiers.Stash = this.Const.LegendMod.ResourceModifiers.Stash[1];
 			this.m.Modifiers.Meds = this.Const.LegendMod.ResourceModifiers.Meds[1];
 			this.m.Modifiers.Scout = this.Const.LegendMod.ResourceModifiers.Scout[2];
@@ -395,7 +395,7 @@ this.ssu_necro_ghost <- this.inherit("scripts/skills/backgrounds/character_backg
 			this.m.Modifiers.Repair = this.Const.LegendMod.ResourceModifiers.Repair[3];
 			this.m.Modifiers.Salvage = this.Const.LegendMod.ResourceModifiers.Salvage[3];
 			this.m.Modifiers.Crafting = this.Const.LegendMod.ResourceModifiers.Crafting[2];
-			this.m.Modifiers.Barter = this.Const.LegendMod.ResourceModifiers.Barter[1];
+			this.m.Modifiers.Haggle = this.Const.LegendMod.ResourceModifiers.Haggle[1];
 			this.m.Modifiers.ToolConsumption = this.Const.LegendMod.ResourceModifiers.ToolConsumption[3];
 		}
 	}

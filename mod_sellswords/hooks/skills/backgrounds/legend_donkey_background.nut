@@ -6,27 +6,6 @@
 
 		this.m.DailyCost = 1;
 		this.m.BackgroundType = this.Const.BackgroundType.Lowborn | this.Const.BackgroundType.Untalented | this.Const.BackgroundType.Stabled;
-		this.m.Modifiers.Terrain = [
-			0.0,
-			0.0,
-			0.1,
-			0.04,
-			0.04,
-			0.04,
-			0.04,
-			0.04,
-			0.04,
-			0.04,
-			0.0,
-			0.1,
-			0.04,
-			0.06,
-			0.06,
-			0.1,
-			0.0,
-			0.04,
-			0.1
-		];
 		this.m.CustomPerkTree = [
 			[
 				this.Const.Perks.PerkDefs.Colossus,
@@ -49,10 +28,7 @@
 				this.Const.Perks.PerkDefs.LegendPacifist,				
 				this.Const.Perks.PerkDefs.Taunt
 			],
-			[
-				this.Const.Perks.PerkDefs.LegendEfficientPacking,
-				this.Const.Perks.PerkDefs.LegendToolsDrawers
-			],
+			[],
 			[
 				this.Const.Perks.PerkDefs.LoneWolf,
 				this.Const.Perks.PerkDefs.Footwork,
@@ -64,7 +40,6 @@
 				this.Const.Perks.PerkDefs.Nimble,
 				this.Const.Perks.PerkDefs.LegendRebound,
 				this.Const.Perks.PerkDefs.LegendPacifist,
-				this.Const.Perks.PerkDefs.LegendSkillfulStacking,
 				this.Const.Perks.PerkDefs.LegendMuscularity
 			],
 			[

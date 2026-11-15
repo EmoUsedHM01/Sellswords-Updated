@@ -20,7 +20,6 @@ this.ssu_death_knight_great_helm <- this.inherit("scripts/items/legend_helmets/l
 		this.m.ConditionMax = 215;
 		this.m.StaminaModifier = -17;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 	}

@@ -139,7 +139,7 @@ this.ssu_slaveowner <- this.inherit("scripts/entity/tactical/human", {
 				]
 			];
 
-			foreach( item in this.Const.World.Common.pickOutfit(outfits, armor, helmet) )
+			foreach( item in ::Legends.Items.pickOutfit(outfits, armor, helmet) )
 			{
 				this.m.Items.equip(item);
 			}
@@ -149,7 +149,7 @@ this.ssu_slaveowner <- this.inherit("scripts/entity/tactical/human", {
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Body) == null)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[
 					1,
 					"oriental/plated_nomad_mail"
@@ -187,7 +187,7 @@ this.ssu_slaveowner <- this.inherit("scripts/entity/tactical/human", {
 				"southern_knight_helmet"
 			]);
 
-			this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));
+			this.m.Items.equip(::Legends.Items.pickHelmet(helmet));
 		}
 	}
 
@@ -213,11 +213,11 @@ this.ssu_slaveowner <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (r == 3)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor(this.Const.World.Common.convNameToList(armor)));
+			this.m.Items.equip(::Legends.Items.pickArmor(::Legends.Items.convNameToList(armor)));
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet(this.Const.World.Common.convNameToList(helmets)));
+			this.m.Items.equip(::Legends.Items.pickHelmet(::Legends.Items.convNameToList(helmets)));
 		}
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));

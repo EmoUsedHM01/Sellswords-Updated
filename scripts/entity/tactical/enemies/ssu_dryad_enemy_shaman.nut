@@ -67,13 +67,13 @@ this.ssu_dryad_enemy_shaman <- this.inherit("scripts/entity/tactical/human", {
 	{
 		this.m.Items.equip(this.new("scripts/items/weapons/dryad/ssu_dryad_staff"));
 		this.m.Items.equip(this.new("scripts/items/ammo/ssu_dryad_forest_heart_ammo"));
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_dryad_armour_shaman"
 			]
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_dryad_helmet_shaman"

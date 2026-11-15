@@ -20,7 +20,6 @@ this.ssu_ijirok_helmet <- this.inherit("scripts/items/legend_helmets/legend_helm
 		this.m.ConditionMax = 220;
 		this.m.StaminaModifier = -12;
 		this.m.Vision = -1;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.m.ItemType = this.m.ItemType | this.Const.Items.ItemType.Legendary;

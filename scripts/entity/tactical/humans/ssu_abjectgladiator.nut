@@ -125,7 +125,7 @@ this.ssu_abjectgladiator <- this.inherit("scripts/entity/tactical/human", {
 			}
 		}
 
-		local armor = this.Const.World.Common.pickArmor([
+		local armor = ::Legends.Items.pickArmor([
 			[
 				1,
 				"oriental/gladiator_harness"
@@ -145,7 +145,7 @@ this.ssu_abjectgladiator <- this.inherit("scripts/entity/tactical/human", {
 		
 		if (r >= 80)
 		{
-			local helm = this.Const.World.Common.pickHelmet([
+			local helm = ::Legends.Items.pickHelmet([
 				[
 					1,
 					"oriental/gladiator_helmet",
@@ -198,11 +198,11 @@ this.ssu_abjectgladiator <- this.inherit("scripts/entity/tactical/human", {
 		{
 			if (this.Math.rand(0, 1) == 0)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor(this.Const.World.Common.convNameToList(armor)));
+				this.m.Items.equip(::Legends.Items.pickArmor(::Legends.Items.convNameToList(armor)));
 			}
 			else
 			{
-				this.m.Items.equip(this.Const.World.Common.pickHelmet(this.Const.World.Common.convNameToList(helmets)));
+				this.m.Items.equip(::Legends.Items.pickHelmet(::Legends.Items.convNameToList(helmets)));
 			}
 		}
 		

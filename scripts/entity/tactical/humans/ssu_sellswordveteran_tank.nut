@@ -268,10 +268,10 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 
 		if (this.m.Skills.hasSkill("perk.battle_forged"))
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sellsword_armor_heavy_northern"],	 //400					  
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_enclave_great_helm"],				//475,-36						
 				[1, "ssu_enclave_great_bascinet_late"],			  //465,-32
 				[2, "ssu_enclave_venitian_bascinet"],			   //460,-33				
@@ -279,13 +279,13 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 		}
 		else if (this.m.Skills.hasSkill("perk.legend_lithe"))
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sellsword_armor_medium_high_ichi"],	  	  //230,-22
 				[2, "ssu_sellsword_armor_medium_high_ni"],		  //260,-22
 				[2, "ssu_sellsword_armor_medium_high_sann"],		  //250,-22	
 				[2, "ssu_sellsword_armor_medium_high_yonn"],		   //220,-20					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[4, "ssu_sellsword_helmet_medium_high"],			   //215,-9
 				[2, "ssu_sellsword_helmet_medium_gladitor"],			   //225,-9	
 				[1, "ssu_feathered_helmet"],			   	// 210,-9 ~ 220,-10				
@@ -293,11 +293,11 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 		}
 		else if (this.m.Skills.hasSkill("perk.nimble"))				
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sellsword_armor_light_high_ichi"],	  //160,-9
 				[1, "ssu_sellsword_armor_light_high_ni"],	  //140,-9				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_sellsword_helmet_light_high"],		//170,-5				   				
 			]));
 		}		
@@ -357,7 +357,7 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 		{
 			if (this.m.Skills.hasSkill("perk.battle_forged"))
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_sellsword_named_armor_heavy_cloth"],		   					
 					[1, "ssu_sellsword_named_armor_heavy_chain"],		   	
 					[1, "ssu_sellsword_named_armor_heavy_plate"],		   	 
@@ -366,7 +366,7 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 			}
 			else if (this.m.Skills.hasSkill("perk.legend_lithe"))
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_sellsword_named_armor_medium_cloth"],		   	//255,-24				
 					[1, "ssu_sellsword_named_armor_medium_chain"],		   	//275,-24
 					[1, "ssu_sellsword_named_armor_medium_plate"],		   	//310,-24
@@ -377,7 +377,7 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 			}
 			else if (this.m.Skills.hasSkill("perk.nimble"))				
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_sellsword_named_armor_light_chain"],			//180,-12
 					[1, "ssu_sellsword_named_armor_light_plate_01"],			//180,-10 
 					[1, "ssu_sellsword_named_armor_light_plate_02"],			//185,-10
@@ -393,7 +393,7 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 		{
 			if (this.m.Skills.hasSkill("perk.legend_lithe"))		
 			{
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+				this.m.Items.equip(::Legends.Items.pickHelmet([				
 					[1, "ssu_sellsword_named_helmet_bascinet"],			//250,-9  
 					[1, "ssu_sellsword_named_helmet_italo_norman"],			//215,-8
 					[1, "ssu_sellsword_named_helmet_deep_sallet"],			//290,-13
@@ -404,14 +404,14 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 			}
 			else if (this.m.Skills.hasSkill("perk.battle_forged"))
 			{
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+				this.m.Items.equip(::Legends.Items.pickHelmet([				
 					[2, "ssu_sellsword_named_helmet_stag"],			//235,-19
 					[1, "ssu_barbarian_champion_heavy"],			//375,-24					
 				]));			
 			}			
 			else if (this.m.Skills.hasSkill("perk.nimble"))  		
 			{
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+				this.m.Items.equip(::Legends.Items.pickHelmet([				
 					[1, "ssu_sellsword_named_helmet_dentist"],			 //145,-5  
 					[1, "ssu_sellsword_named_helmet_barbute"],			//145,-4
 					[1, "ssu_sellsword_named_helmet_southern_conic"],			//150,-4								 					

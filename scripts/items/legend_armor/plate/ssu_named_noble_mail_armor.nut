@@ -1,5 +1,10 @@
 this.ssu_named_noble_mail_armor <- this.inherit("scripts/items/legend_armor/legend_named_armor_upgrade", {
-	m = {},
+	m = {
+		Potential = {
+			Condition = { min = 115, max = 130 },
+			StaminaModifier = { min = 10, max = 8 }
+		}
+	},
 	function create()
 	{
 		this.legend_named_armor_upgrade.create();
@@ -18,9 +23,6 @@ this.ssu_named_noble_mail_armor <- this.inherit("scripts/items/legend_armor/lege
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.Value = 4000;
-		this.m.Condition = 130;
-		this.m.ConditionMax = 130;
-		this.m.StaminaModifier = -14;
 		this.randomizeValues();
 	}
 
@@ -34,13 +36,6 @@ this.ssu_named_noble_mail_armor <- this.inherit("scripts/items/legend_armor/lege
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "legend_armor/ssu_icon_named_noble_mail_armor.png";
 		this.m.OverlayIconLarge = "legend_armor/ssu_inventory_named_noble_mail_armor.png";
-	}
-
-	function randomizeValues()
-	{
-		this.m.StaminaModifier = this.Math.rand(8, 10) * -1;
-		this.m.Condition = this.Math.rand(115, 130);
-		this.m.ConditionMax = this.m.Condition;
 	}
 
 });

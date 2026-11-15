@@ -93,7 +93,7 @@ this.ssu_nomad_arbalester <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Items.addToBag(this.new("scripts/items/weapons/knife"));
 		}
 		
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				2,
 				"oriental/nomad_robe"
@@ -111,7 +111,7 @@ this.ssu_nomad_arbalester <- this.inherit("scripts/entity/tactical/human", {
 				"leather_wraps"
 			]		  				
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+		this.m.Items.equip(::Legends.Items.pickHelmet([				
 			[
 				2,
 				"oriental/nomad_head_wrap"

@@ -1,4 +1,4 @@
-::Const.Tactical.Common.onApplyFire = function( _tile, _entity )
+::Const.Tactical.Common.onApplyFire = function( _tile, _entity, _killer = null )
 {
 	if (_entity.getCurrentProperties().IsImmuneToFire)
 		return;
@@ -37,30 +37,6 @@
 		this.updateAchievement("BurnThemAll", 1, 1);
 };
 
-::Const.Tactical.Common.onApplyFirefield = function( _tile, _entity )
-{
-	this.Tactical.spawnIconEffect("fire_circle", _tile, this.Const.Tactical.Settings.SkillIconOffsetX, this.Const.Tactical.Settings.SkillIconOffsetY, this.Const.Tactical.Settings.SkillIconScale, this.Const.Tactical.Settings.SkillIconFadeInDuration, this.Const.Tactical.Settings.SkillIconStayDuration, this.Const.Tactical.Settings.SkillIconFadeOutDuration, this.Const.Tactical.Settings.SkillIconMovement);
-	local sounds = [
-		"sounds/combat/fire_01.wav",
-		"sounds/combat/fire_02.wav",
-		"sounds/combat/fire_03.wav",
-		"sounds/combat/fire_04.wav",
-		"sounds/combat/fire_05.wav",
-		"sounds/combat/fire_06.wav"
-	];
-	this.Sound.play(sounds[this.Math.rand(0, sounds.len() - 1)], this.Const.Sound.Volume.Actor, _entity.getPos());
-	local hitInfo = clone this.Const.Tactical.HitInfo;
-	hitInfo.DamageRegular = this.Math.rand(15, 30);
-	hitInfo.DamageDirect = 1.0;
-	hitInfo.BodyPart = this.Const.BodyPart.Body;
-	hitInfo.BodyDamageMult = 1.0;
-	hitInfo.FatalityChanceMult = 0.0;
-	_tile.getEntity().onDamageReceived(_entity, null, hitInfo);
-
-	if ((!_entity.isAlive() || _entity.isDying()) && !_entity.isPlayerControlled() && (_tile.Properties.Effect == null || _tile.Properties.Effect.IsByPlayer))
-		this.updateAchievement("BurnThemAll", 1, 1);
-};
-
 ::Const.Tactical.Common.onApplyHolyFlame = function( _tile, _entity, _killer = null )
 {
 	local sounds = [
@@ -78,7 +54,7 @@
 
 	local faction = _entity.getFaction();
 	local actor = _entity;
-	if (::Legends.Mod.ModSettings.getSetting("BleedKiller").getValue() && !::MSU.isNull(_killer) && _killer.getID() != _entity.getID() && _killer.isAlive() && _killer.isPlacedOnMap())
+	if (!::MSU.isNull(_killer) && _killer.getID() != _entity.getID() && _killer.isAlive() && _killer.isPlacedOnMap())
 		actor = _killer;
 
 	if (_entity.getFlags().has("undead") && !_entity.getFlags().has("ghost"))

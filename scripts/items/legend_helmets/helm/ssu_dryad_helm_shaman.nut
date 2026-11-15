@@ -20,7 +20,6 @@ this.ssu_dryad_helm_shaman <- this.inherit("scripts/items/legend_helmets/legend_
 		this.m.ConditionMax = 100;
 		this.m.StaminaModifier = -8;
 		this.m.Vision = -1;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 	}

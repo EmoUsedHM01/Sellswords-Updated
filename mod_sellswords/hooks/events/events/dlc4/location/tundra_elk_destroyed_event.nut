@@ -28,7 +28,7 @@
 				}
 
 				this.World.Assets.getStash().makeEmptySlots(3);
-				local item = this.Const.World.Common.pickHelmet([
+				local item = ::Legends.Items.pickHelmet([
 					[
 						1,
 						"ssu_ijirok_helmet"
@@ -40,7 +40,7 @@
 					icon = "ui/items/helmets/inventory_helmet_198.png",
 					text = ::Mod_Sellswords.Strings.tundra_elk_destroyed_event.Tooltip2
 				});
-				item = this.Const.World.Common.pickArmor([
+				item = ::Legends.Items.pickArmor([
 					[
 						1,
 						"ssu_ijirok_armor"

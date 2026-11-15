@@ -202,7 +202,7 @@ this.ssu_necro_ancient_legionary <- this.inherit("scripts/skills/backgrounds/cha
 		else if (r == 2)
 			items.equip(this.new("scripts/items/weapons/ancient/bladed_pike"));
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ancient/ancient_scale_harness"
@@ -216,7 +216,7 @@ this.ssu_necro_ancient_legionary <- this.inherit("scripts/skills/backgrounds/cha
 				"ancient/ancient_double_layer_mail"
 			]
 		]));
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				66,
 				"ancient/ancient_legionary_helmet"

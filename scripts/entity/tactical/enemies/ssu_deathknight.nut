@@ -181,7 +181,7 @@ this.ssu_deathknight <- this.inherit("scripts/entity/tactical/enemies/zombie", {
 				"ssu_zombieknight_armor_high"
 			]
 		];
-		this.m.Items.equip(this.Const.World.Common.pickArmor(aList));
+		this.m.Items.equip(::Legends.Items.pickArmor(aList));
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Head) == null && this.Math.rand(1, 100) <= 95)
 		{
@@ -191,7 +191,7 @@ this.ssu_deathknight <- this.inherit("scripts/entity/tactical/enemies/zombie", {
 					"ssu_death_knight_helm"
 				]
 			];
-			this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));
+			this.m.Items.equip(::Legends.Items.pickHelmet(helmet));
 		}
 	}
 

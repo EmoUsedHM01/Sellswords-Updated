@@ -64,7 +64,7 @@
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"oriental/assassin_robe"
@@ -77,7 +77,7 @@
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 		{
-			local helm = this.Const.World.Common.pickHelmet([
+			local helm = ::Legends.Items.pickHelmet([
 				[
 					1,
 					"oriental/blade_dancer_head_wrap"

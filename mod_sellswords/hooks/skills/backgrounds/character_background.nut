@@ -6,15 +6,8 @@
 		local dc = this.World.getTime().Days;
 		dc = this.Math.maxf(1, dc / 20);
 
-		if (::Legends.Mod.ModSettings.getSetting("RecruitScaling").getValue())
-		{
-			actor.m.HiringCost = this.Math.floor(this.m.HiringCost + (175 + 175 / this.Math.pow(dc, 0.9)) * this.Math.pow(this.m.Level - 1, 1.25));
-		}
-		else
-		{
-			actor.m.HiringCost = this.Math.floor(this.m.HiringCost + 400 * this.Math.pow(this.m.Level - 1, 1.3));
-			dc = this.Math.max(1, dc - 3);
-		}
+		actor.m.HiringCost = this.Math.floor(this.m.HiringCost + 400 * this.Math.pow(this.m.Level - 1, 1.3));
+		dc = this.Math.max(1, dc - 3);
 
 		local items = actor.getItems().getAllItems();
 		local cost = 0;
@@ -28,7 +21,6 @@
 		actor.m.HiringCost = this.Math.ceil(actor.m.HiringCost);
 		actor.m.HiringCost *= 10;
 	}
-
 
 	q.onAdded = @(__original) function()
 	{
@@ -85,11 +77,6 @@
 
 			actor.setName(names[this.Math.rand(0, names.len() - 1)]);
 		}
-
-		local slaveverify = actor.getBackground().getID() == "background.slave" ? 4 : 17;
-		local lowbornverify = (actor.getBackground().getID() == "background.refugee" || actor.getBackground().getID() == "background.beggar" || actor.getBackground().getID() == "background.female_beggar" || actor.getBackground().getID() == "background.cripple") ? 6 : 17;
-
-		this.m.Level += this.Math.min(lowbornverify, this.Math.min(slaveverify, actor.m.Background.calculateAdditionalRecruitmentLevels()));
 
 		if (this.m.Level != 1)
 		{
@@ -174,6 +161,45 @@
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendClarity:
 						this.m.CustomPerkTree[i][j] = ::Legends.Perk.SsuClarity;
 						continue;
+				}
+			}
+		}
+	}
+
+	q.m.Modifiers <- null;
+
+	q.create = @(__original) function()
+	{
+		__original();
+
+		// SSU backgrounds have no Legends definition, so they set their camp and terrain modifiers on this table
+		this.m.Modifiers = {
+			Ammo = 0, ArmorParts = 0, Meds = 0, Stash = 0, Healing = 0.0, Injury = 0.0, Repair = 0.0, Salvage = 0.0, Crafting = 0.0,
+			Haggle = 0.0, ToolConsumption = 0.0, MedConsumption = 0.0, Cooking = 0.0, Fletching = 0.0, Scout = 0.0, Gathering = 0.0,
+			Training = 0.0, Enchanting = 0.0, Terrain = []
+		};
+	}
+
+	// adds the modifiers of SSU backgrounds the way Legends adds the ones from its background definitions
+	q.onUpdate = @(__original) function( _properties )
+	{
+		__original(_properties);
+
+		if (this.m.Modifiers == null || ::Legends.Backgrounds.findById(this.getID()) != null)
+			return;
+
+		foreach( key, value in this.m.Modifiers )
+		{
+			if (key != "Terrain")
+			{
+				_properties.Modifiers[key] += value;
+			}
+			else
+			{
+				foreach( id, bonus in value )
+				{
+					if (id in ::Const.CharacterProperties.TerrainTypes)
+						_properties.Modifiers.Terrain[::Const.CharacterProperties.TerrainTypes[id]] += bonus;
 				}
 			}
 		}

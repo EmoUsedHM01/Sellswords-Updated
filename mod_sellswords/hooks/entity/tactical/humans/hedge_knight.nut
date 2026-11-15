@@ -107,13 +107,13 @@
 
 		if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_scale_early"],
 				[2, "ssu_plate_scale_early_patched"],
 				[1, "ssu_plate_full_early_low"],
 				[2, "ssu_plate_scale_early_patched_low"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_knight_helmet_early_unadorned"],
 				[2, "ssu_enclave_kettle"],
 				[2, "ssu_hedgeknight_low"]
@@ -121,13 +121,13 @@
 		}
 		else if (dc <= 110)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_scale_early"],
 				[1, "ssu_plate_scale_early_patched"],
 				[1, "ssu_plate_full_early"],
 				[1, "ssu_plate_full_early_low"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[2, "ssu_knight_helmet_early_unadorned"],
 				[1, "ssu_knight_helmet_early_decorative"],
 				[1, "ssu_enclave_kettle"],
@@ -136,14 +136,14 @@
 		}
 		else if (dc <= 140)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_plate_scale_early"],
 				[1, "ssu_plate_scale_early_patched"],
 				[3, "ssu_plate_full_early"],
 				[1, "ssu_plate_scale_mid"],
 				[1, "ssu_plate_full_mid"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_knight_helmet_early_unadorned"],
 				[1, "ssu_knight_helmet_early_decorative"],
 				[1, "ssu_knight_helmet_mid_bread"],
@@ -154,12 +154,12 @@
 		}
 		else if (dc <= 170)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_scale_mid"],
 				[1, "ssu_plate_full_mid"],
 				[1, "ssu_plate_full_mid_reinforced"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[2, "ssu_knight_helmet_mid_bread"],
 				[2, "ssu_knight_helmet_mid_decorative"],
 				[1, "ssu_knight_helmet_mid_unadorned"],
@@ -169,12 +169,12 @@
 		}
 		else if (dc <= 200)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_mid"],
 				[1, "ssu_plate_full_mid_reinforced"],
 				[1, "ssu_plate_full_late"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_knight_helmet_mid_bread"],
 				[1, "ssu_enclave_armet"],
 				[1, "ssu_knight_helmet_mid_bascinet_faceplate"]
@@ -182,11 +182,11 @@
 		}
 		else if (dc <= 230)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_late"],
 				[1, "ssu_plate_full_heavy"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_enclave_great_bascinet"],
 				[1, "ssu_enclave_armet_late"],
 				[1, "ssu_knight_helmet_late_mixed"],
@@ -195,12 +195,12 @@
 		}
 		else if (dc <= 260)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_hedgeknight_midlate"],
 				[1, "ssu_plate_full_heavy"],
 				[1, "ssu_plate_full_knight"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[2, "ssu_enclave_great_bascinet_late"],
 				[3, "ssu_enclave_venitian_bascinet"],
 				[1, "ssu_enclave_great_bascinet"],
@@ -211,11 +211,11 @@
 		}
 		else if (dc > 260)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_heavy_late"],
 				[2, "ssu_plate_full_hedgeknight"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_enclave_great_helm"],
 				[1, "ssu_enclave_great_bascinet_late"],
 				[1, "ssu_knight_helmet_late_enclave_ni"],
@@ -262,7 +262,7 @@
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		else if (r == 3)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_named_full_armor_cloth"],
 				[1, "ssu_named_full_armor_chain"],
 				[1, "ssu_named_full_armor_plate"]

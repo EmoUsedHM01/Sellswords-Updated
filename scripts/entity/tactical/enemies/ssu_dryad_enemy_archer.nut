@@ -63,13 +63,13 @@ this.ssu_dryad_enemy_archer <- this.inherit("scripts/entity/tactical/human", {
 	{
 		this.m.Items.equip(this.new("scripts/items/weapons/dryad/ssu_dryad_bow"));
 		this.m.Items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_dryad_armour_archer"
 			]
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_dryad_helmet_archer"

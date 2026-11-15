@@ -67,7 +67,7 @@ this.ssu_necromancer <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Items.equip(this.new("scripts/items/weapons/scramasax"));
 		}
 
-		local item = this.Const.World.Common.pickArmor([
+		local item = ::Legends.Items.pickArmor([
 			[
 				1,
 				"ragged_dark_surcoat"
@@ -78,7 +78,7 @@ this.ssu_necromancer <- this.inherit("scripts/entity/tactical/human", {
 			]
 		]);
 		this.m.Items.equip(item);
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"witchhunter_hat"

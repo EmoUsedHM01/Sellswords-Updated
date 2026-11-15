@@ -139,10 +139,10 @@ this.ssu_lindwurm_slayer <- this.inherit("scripts/entity/tactical/human", {
 		
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);	
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "ssu_lindwurm_slayer_armor"],		// 280, -34
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[1, "ssu_lindwurm_slayer_helmet"],	// 215, -14
 		]));				
 	}

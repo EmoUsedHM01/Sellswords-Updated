@@ -25,7 +25,6 @@ this.ssu_dryad_mask <- this.inherit("scripts/items/legend_helmets/legend_helmet_
 		this.m.ConditionMax = 40;
 		this.m.StaminaModifier = -5;
 		this.m.Vision = 0;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.m.ItemType = this.m.ItemType;

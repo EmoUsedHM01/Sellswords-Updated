@@ -127,9 +127,9 @@ this.ssu_barbblacksmith <- this.inherit("scripts/entity/tactical/human", {
 			"barbarians/reinforced_heavy_iron_armor"
 		]);
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));
 
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_barbblacksmith_helmet"

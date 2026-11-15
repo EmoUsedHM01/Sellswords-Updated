@@ -8,7 +8,7 @@
 		talents[this.Const.Attributes.MeleeDefense] = 2;
 		talents[this.Const.Attributes.Bravery] = 2;
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ragged_surcoat"
@@ -23,7 +23,7 @@
 			]
 		]));
 		items.equip(this.new("scripts/items/weapons/woodcutters_axe"));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"hood"

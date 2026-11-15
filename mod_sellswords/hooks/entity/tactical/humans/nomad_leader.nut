@@ -121,7 +121,7 @@
 		{
 			if (dc <= 80)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[3, "ssu_nomadleader_early_helmet"],
 					[2, "ssu_nomadleader_proto_helmet"],						
 					[1, "ssu_nomadleader_mid_helmet"],
@@ -130,7 +130,7 @@
 			}
 			else if (dc <= 120)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_nomadleader_early_helmet"],
 					[1, "ssu_nomadleader_proto_helmet"],						
 					[4, "ssu_nomadleader_mid_helmet"],
@@ -139,7 +139,7 @@
 			}				
 			else if (dc > 120)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[0, "ssu_nomadleader_early_helmet"],
 					[1, "ssu_nomadleader_mid_helmet"],
 					[3, "ssu_nomadleader_late_helmet"]
@@ -148,7 +148,7 @@
 			
 			if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Body) == null)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[
 						1,
 						"oriental/plated_nomad_mail"
@@ -182,10 +182,10 @@
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_leopard_armor"],			// 225,-29				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_feathered_helmet"],	   // 210,-9 ~ 220,-10  					
 			]));			
 		}
@@ -219,11 +219,11 @@
 		}
 		else if (r == 3)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor(this.Const.World.Common.convNameToList(armor)));
+			this.m.Items.equip(::Legends.Items.pickArmor(::Legends.Items.convNameToList(armor)));
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet(this.Const.World.Common.convNameToList(helmets)));
+			this.m.Items.equip(::Legends.Items.pickHelmet(::Legends.Items.convNameToList(helmets)));
 		}
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));

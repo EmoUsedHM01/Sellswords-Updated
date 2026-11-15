@@ -17,7 +17,6 @@ this.ssu_helmet_barbarian_berserker <- this.inherit("scripts/items/legend_helmet
 		this.m.ConditionMax = 80;
 		this.m.StaminaModifier = -5;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = false;
 	}

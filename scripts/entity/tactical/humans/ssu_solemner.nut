@@ -119,33 +119,33 @@ this.ssu_solemner <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Items.equip(this.new("scripts/items/weapons/two_handed_flanged_mace"));
 			if (dc <= 120)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[2, "ssu_solemner_mid_heavy_armor"],
 					[3, "ssu_solemner_late_heavy_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[2, "ssu_solemner_mid_heavy_helmet"],
 					[3, "ssu_solemner_late_heavy_helmet"]
 				]));
 			}
 			else if (dc <= 180)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[2, "ssu_solemner_mid_heavy_armor"],
 					[3, "ssu_solemner_late_heavy_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[2, "ssu_solemner_mid_heavy_helmet"],
 					[3, "ssu_solemner_late_heavy_helmet"]
 				]));
 			}				
 			else if (dc > 180)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[2, "ssu_solemner_mid_heavy_armor"],
 					[3, "ssu_solemner_late_heavy_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[2, "ssu_solemner_mid_heavy_helmet"],
 					[3, "ssu_solemner_late_heavy_helmet"]
 				]));
@@ -162,33 +162,33 @@ this.ssu_solemner <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Items.equip(shield);				
 			if (dc <= 120)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_solemner_mid_medium_armor"],
 					[0, "ssu_solemner_late_medium_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_solemner_mid_medium_helmet"],
 					[0, "ssu_solemner_late_medium_helmet"]
 				]));
 			}
 			else if (dc <= 180)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[2, "ssu_solemner_mid_medium_armor"],
 					[1, "ssu_solemner_late_medium_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[2, "ssu_solemner_mid_medium_helmet"],
 					[1, "ssu_solemner_late_medium_helmet"]
 				]));
 			}				
 			else if (dc > 180)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_solemner_mid_medium_armor"],
 					[3, "ssu_solemner_late_medium_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_solemner_mid_medium_helmet"],
 					[3, "ssu_solemner_late_medium_helmet"]
 				]));
@@ -225,33 +225,33 @@ this.ssu_solemner <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));	
 			if (dc <= 120)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_solemner_mid_light_armor"],
 					[0, "ssu_solemner_late_light_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_solemner_mid_light_helmet"],
 					[0, "ssu_solemner_late_light_helmet"]
 				]));
 			}
 			else if (dc <= 180)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[2, "ssu_solemner_mid_light_armor"],
 					[1, "ssu_solemner_late_light_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[2, "ssu_solemner_mid_light_helmet"],
 					[1, "ssu_solemner_late_light_helmet"]
 				]));
 			}				
 			else if (dc > 180)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_solemner_mid_light_armor"],
 					[3, "ssu_solemner_late_light_armor"]
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_solemner_mid_light_helmet"],
 					[3, "ssu_solemner_late_light_helmet"]
 				]));

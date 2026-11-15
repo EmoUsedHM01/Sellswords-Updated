@@ -101,7 +101,7 @@
 					[1, "greenskins/orcbehemoth_helmet_heavy"]
 			];
 		}
-		this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));
+		this.m.Items.equip(::Legends.Items.pickHelmet(helmet));
 
 		local armor;
 		armor = [
@@ -110,7 +110,7 @@
 				"greenskins/legend_orc_behemoth_armor"
 			]
 		];
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));
 	}
 
 	q.makeMiniboss = @(__original) function ()

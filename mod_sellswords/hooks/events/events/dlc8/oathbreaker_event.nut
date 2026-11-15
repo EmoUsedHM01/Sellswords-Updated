@@ -28,7 +28,7 @@
 						icon = "ui/items/" + item.getIcon(),
 						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.oathbreaker_event.Tooltip1, this.Const.Strings.getArticle(item.getName()), item.getName())
 					});
-					item = this.Const.World.Common.pickArmor([
+					item = ::Legends.Items.pickArmor([
 						[
 							1,
 							"ssu_adorned_heavy_mail_hauberk_armor"
@@ -41,7 +41,7 @@
 						icon = "ui/items/armor/icon_body_armor_109.png",
 						text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.oathbreaker_event.Tooltip1, this.Const.Strings.getArticle(item.getName()), item.getName())
 					});
-					item = this.Const.World.Common.pickHelmet([
+					item = ::Legends.Items.pickHelmet([
 						[
 							1,
 							"ssu_adorned_full_helm_helmet"
@@ -112,7 +112,7 @@
 					local item = this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]);
 					item.setCondition(item.getConditionMax() / 3 - 1);
 					dudeItems.equip(item);
-					item = this.Const.World.Common.pickArmor([
+					item = ::Legends.Items.pickArmor([
 						[
 							1,
 							"ssu_adorned_heavy_mail_hauberk_armor"
@@ -120,7 +120,7 @@
 					]);				
 					item.setArmor(item.getArmorMax() / 3 - 1);
 					dudeItems.equip(item);
-					item = this.Const.World.Common.pickHelmet([
+					item = ::Legends.Items.pickHelmet([
 						[
 							1,
 							"ssu_adorned_full_helm_helmet"

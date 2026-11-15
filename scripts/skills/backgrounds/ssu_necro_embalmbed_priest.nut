@@ -205,13 +205,13 @@ this.ssu_necro_embalmbed_priest <- this.inherit("scripts/skills/backgrounds/char
 	{
 		local items = this.getContainer().getActor().getItems();
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"necro/embalmbed_priest_chest"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ancient/legend_mummy_crown"

@@ -1,5 +1,10 @@
 this.ssu_named_sellswords_armor <- this.inherit("scripts/items/legend_armor/legend_named_armor_upgrade", {
-	m = {},
+	m = {
+		Potential = {
+			Condition = { min = 240, max = 260 },
+			StaminaModifier = { min = 26, max = 24 }
+		}
+	},
 	function create()
 	{
 		this.legend_named_armor_upgrade.create();
@@ -18,9 +23,6 @@ this.ssu_named_sellswords_armor <- this.inherit("scripts/items/legend_armor/lege
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.Value = 13000;
-		this.m.Condition = 130;
-		this.m.ConditionMax = 130;
-		this.m.StaminaModifier = -14;
 		this.randomizeValues();
 	}
 
@@ -34,13 +36,6 @@ this.ssu_named_sellswords_armor <- this.inherit("scripts/items/legend_armor/lege
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "legend_armor/ssu_icon_named_sellswords_armor.png";
 		this.m.OverlayIconLarge = "legend_armor/ssu_inventory_named_sellswords_armor.png";		
-	}
-
-	function randomizeValues()
-	{
-		this.m.StaminaModifier = this.Math.rand(24, 26) * -1;
-		this.m.Condition = this.Math.rand(240, 260);
-		this.m.ConditionMax = this.m.Condition;
 	}
 
 });

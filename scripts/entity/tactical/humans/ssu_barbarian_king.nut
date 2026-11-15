@@ -168,10 +168,10 @@ this.ssu_barbarian_king <- this.inherit("scripts/entity/tactical/human", {
 
 		if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_barb_king_armor_early"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_barb_king_helmet_early"],
 				[1, "ssu_barb_king_helmet_mid"],
 				[1, "ssu_barb_king_helmet_late"]
@@ -179,19 +179,19 @@ this.ssu_barbarian_king <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_barb_king_armor_mid"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_barb_king_helmet_mid"]
 			]));
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_barb_king_armor_late"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_barb_king_helmet_late"]
 			]));
 		}
@@ -231,7 +231,7 @@ this.ssu_barbarian_king <- this.inherit("scripts/entity/tactical/human", {
 
 		if (rr == 1 || rr >= 3)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[
 					1,
 					"ssu_barbarian_champion_bronze"
@@ -241,7 +241,7 @@ this.ssu_barbarian_king <- this.inherit("scripts/entity/tactical/human", {
 
 		if (rr == 2 || rr >= 3)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[
 					1,
 					"ssu_barbarian_champion_heavy"

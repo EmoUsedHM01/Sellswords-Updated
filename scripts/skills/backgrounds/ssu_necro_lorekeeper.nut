@@ -201,12 +201,12 @@ this.ssu_necro_lorekeeper <- this.inherit("scripts/skills/backgrounds/character_
 	{
 		local stash = this.World.Assets.getStash();
 		local items = this.getContainer().getActor().getItems();
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1, "ancient/ancient_lich_attire"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1, "ancient/ancient_lich_headpiece"
 			]

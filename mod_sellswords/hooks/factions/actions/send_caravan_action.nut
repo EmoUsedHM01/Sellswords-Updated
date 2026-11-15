@@ -183,7 +183,7 @@
 					"supplies/wine_item"
 				]
 			];
-			local item = this.Const.World.Common.pickItem(items);
+			local item = ::Legends.Items.pickItem(items);
 			party.addToInventory(item);
 			j = ++j;
 		}

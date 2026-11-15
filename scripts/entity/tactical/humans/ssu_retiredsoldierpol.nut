@@ -87,11 +87,11 @@ this.ssu_retiredsoldierpol <- this.inherit("scripts/entity/tactical/human", {
 
 		this.m.Items.equip(this.new("scripts/items/shields/heater_shield"));
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "ssu_retiredsoldier_armor_pol"]
 		]));
 
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[1, "ssu_retiredsoldier_helmet_pol"]
 		]))
 	}

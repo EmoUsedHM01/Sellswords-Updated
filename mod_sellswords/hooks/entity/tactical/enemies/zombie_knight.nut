@@ -75,7 +75,7 @@
 				"ssu_zombieknight_armor_ni"
 			]
 		];
-		local armor = this.Const.World.Common.pickArmor(aList);
+		local armor = ::Legends.Items.pickArmor(aList);
 
 
 		if (this.Math.rand(1, 100) <= 33)
@@ -93,7 +93,7 @@
 				[3, "decayed_full_helm"],
 				[3, "decayed_great_helm"]
 			];
-			local h = this.Const.World.Common.pickHelmet(helmet);
+			local h = ::Legends.Items.pickHelmet(helmet);
 
 			if (this.Math.rand(1, 100) <= 33)
 			{

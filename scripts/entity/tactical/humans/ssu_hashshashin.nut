@@ -147,12 +147,12 @@ this.ssu_hashshashin <- this.inherit("scripts/entity/tactical/human", {
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);			
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([	
+		this.m.Items.equip(::Legends.Items.pickArmor([	
 			[1, "ssu_hashshashin_armor_low_reinforced"], 
 			[8, "ssu_hashshashin_armor_medium"],	
 			[1, "ssu_hashshashin_armor_high"],				
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([						
+		this.m.Items.equip(::Legends.Items.pickHelmet([						
 			[1, "ssu_hashshashin_helmet_low_reinforced"], 
 			[8, "ssu_hashshashin_helmet_medium"],	
 			[1, "ssu_hashshashin_helmet_high"],					
@@ -189,7 +189,7 @@ this.ssu_hashshashin <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[
 					1,
 					"named/black_leather_armor"

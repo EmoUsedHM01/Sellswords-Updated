@@ -20,7 +20,6 @@ this.ssu_dryad_helm_warrior <- this.inherit("scripts/items/legend_helmets/legend
 		this.m.ConditionMax = 180;
 		this.m.StaminaModifier = -18;
 		this.m.Vision = -3;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 	}

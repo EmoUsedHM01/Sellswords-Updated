@@ -63,12 +63,12 @@
 		dc = this.Math.max(dc, mn * 4);
 		if (dc <= 35)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_nomad_armor_early_ichi"],   //95,-11  55,-4
 				[1, "ssu_nomad_armor_early_cloth"],   //90,-8 60,-3					
 				[1, "ssu_nomad_armor_early_ni"],  	 //90,-8			
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([		
+			this.m.Items.equip(::Legends.Items.pickHelmet([		
 				[1, "oriental/nomad_leather_cap"], 
 				[1, "oriental/leather_head_wrap"], 
 				[1, "ssu_cutthroat_helmet"],  		//50 	 					  	  									
@@ -76,14 +76,14 @@
 		}
 		else if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_nomad_armor_early_ichi"],   //95,-11  55,-4
 				[1, "ssu_nomad_armor_early_cloth"],   //90,-8 60,-3					
 				[1, "ssu_nomad_armor_early_ni"],  	//80,-6			
 				[1, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 				[1, "ssu_nomad_armor_mid_sann"],  	 //105,-11								
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([		
+			this.m.Items.equip(::Legends.Items.pickHelmet([		
 				[1, "oriental/leather_head_wrap"], 
 				[1, "ssu_cutthroat_helmet"],  		//50
 				[1, "citrene_nomad_cutthroat_helmet_01"], 					
@@ -92,14 +92,14 @@
 		}			
 		else if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_nomad_armor_mid_ichi"],  	 //125,-11				
 				[2, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 				[2, "ssu_nomad_armor_mid_sann"],  	 //105,-11
 				[1, "ssu_nomad_armor_mid_plate_low"],  	  //130,-16						
 				[1, "ssu_nomad_armor_mid_chain"],  	  //150,-16			
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([		
+			this.m.Items.equip(::Legends.Items.pickHelmet([		
 				[1, "citrene_nomad_cutthroat_helmet_01"], 					
 				[1, "oriental/nomad_light_helmet"],  	 					
 				[1, "theamson_nomad_outlaw_helmet"],  					
@@ -107,7 +107,7 @@
 		}	
 		else if (dc <= 100)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_nomad_armor_mid_ichi"],  	 //125,-11				
 				[1, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 				[1, "ssu_nomad_armor_mid_sann"],  	 //105,-11				
@@ -115,7 +115,7 @@
 				[1, "ssu_nomad_armor_mid_plate"],  	  //150,-16	
 				[1, "ssu_nomad_armor_mid_plate_low"],  	  //130,-16						
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([							
+			this.m.Items.equip(::Legends.Items.pickHelmet([							
 				[1, "oriental/nomad_light_helmet"],  	 					
 				[1, "theamson_nomad_outlaw_helmet"],  	 
 				[1, "oriental/nomad_reinforced_helmet"], 
@@ -124,7 +124,7 @@
 		}			
 		else if (dc <= 140)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_nomad_armor_mid_ichi"],  	 //125,-11				
 				[1, "ssu_nomad_armor_mid_ni"],  	 //110,-8
 				[1, "ssu_nomad_armor_mid_sann"],  	 //105,-11
@@ -133,7 +133,7 @@
 				[3, "ssu_nomad_armor_mid_plate"],  	  //150,-16
 				[2, "ssu_nomad_armor_mid_plate_heavy"],  	 //170,-20				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([			 					
+			this.m.Items.equip(::Legends.Items.pickHelmet([			 					
 				[1, "theamson_nomad_outlaw_helmet"],  	 
 				[1, "oriental/nomad_reinforced_helmet"],  
 				[1, "ssu_nomadleader_proto_helmet"],					
@@ -141,13 +141,13 @@
 		}
 		else if (dc > 140)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([					
+			this.m.Items.equip(::Legends.Items.pickArmor([					
 				[2, "ssu_nomad_armor_mid_chain"],  	  //150,-16
 				[2, "ssu_nomad_armor_mid_plate"],  	  //150,-16
 				[1, "ssu_nomad_armor_mid_plate_heavy"],  	 //170,-20
 				[1, "ssu_nomad_armor_late"],  	//185,-25					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([			 					
+			this.m.Items.equip(::Legends.Items.pickHelmet([			 					
 				[1, "theamson_nomad_outlaw_helmet"],  	 
 				[2, "oriental/nomad_reinforced_helmet"], 
 				[1, "ssu_nomadleader_proto_helmet"],					

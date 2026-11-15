@@ -20,7 +20,7 @@
 		if (z > 83)
 		{		
 			party = this.getFaction().spawnEntity(waypoints[0].getTile(), waypoints[0].getName() + " Noble man-at-arms", true, this.Const.World.Spawn.SsuNoblewithbaron, this.Math.rand(180 + 0.4 * dc, 375) * this.getReputationToDifficultyLightMult());
-			party.getSprite("body").setBrush("figure_player_noble");
+			party.getSprite("body").setBrush("figure_player_legends_noble");
 			party.setDescription(::Mod_Sellswords.Strings.patrol_roads_action.Description1);
 			party.setFootprintType(this.Const.World.FootprintsType.Nobles);
 			party.getFlags().set("IsRandomlySpawned", true);

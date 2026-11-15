@@ -343,7 +343,7 @@ this.ssu_goblin_rider03 <- this.inherit("scripts/entity/tactical/goblin", {
 		this.m.Items.equip(this.new("scripts/items/weapons/legend_chain"));
 		this.m.Items.addToBag(this.new("scripts/items/weapons/greenskins/goblin_spiked_balls"));		
 
-		local item = this.Const.World.Common.pickArmor([
+		local item = ::Legends.Items.pickArmor([
 			[
 				3,
 				"greenskins/goblin_medium_armor"
@@ -354,7 +354,7 @@ this.ssu_goblin_rider03 <- this.inherit("scripts/entity/tactical/goblin", {
 			]
 		]);
 		this.m.Items.equip(item);
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				75,
 				"greenskins/goblin_light_helmet"

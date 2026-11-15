@@ -98,7 +98,7 @@
 			items.equip(this.new("scripts/items/weapons/legend_infantry_axe"));
 		}
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"tattered_sackcloth"
@@ -116,7 +116,7 @@
 				"decayed_coat_of_plates"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"cultist_hood"

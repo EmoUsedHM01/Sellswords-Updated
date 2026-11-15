@@ -20,7 +20,6 @@ this.ssu_helmet_ancient_beard_mask <- this.inherit("scripts/items/legend_helmets
 		this.m.ConditionMax = 50;
 		this.m.StaminaModifier = -3;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = false;
 		this.m.HideBeard = true;
 	}

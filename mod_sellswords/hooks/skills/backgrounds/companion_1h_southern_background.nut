@@ -10,7 +10,7 @@
 		local items = this.getContainer().getActor().getItems();
 		items.equip(this.new("scripts/items/weapons/oriental/firelance"));
 		items.equip(this.new("scripts/items/shields/oriental/southern_light_shield"));
-		local item = this.Const.World.Common.pickArmor([
+		local item = ::Legends.Items.pickArmor([
 			[
 				1,
 				"oriental/thick_nomad_robe"
@@ -25,7 +25,7 @@
 			]
 		]);
 		items.equip(item);
-		local helm = this.Const.World.Common.pickHelmet([
+		local helm = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"oriental/leather_head_wrap"

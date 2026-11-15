@@ -93,7 +93,7 @@ this.ssu_abjectgladiator02 <- this.inherit("scripts/entity/tactical/human", {
 			}
 		}
 
-		local armor = this.Const.World.Common.pickArmor([
+		local armor = ::Legends.Items.pickArmor([
 			[
 				1,
 				"oriental/gladiator_harness"
@@ -106,7 +106,7 @@ this.ssu_abjectgladiator02 <- this.inherit("scripts/entity/tactical/human", {
 		
 		if (this.Math.rand(1, 100)<= 50)
 		{
-			local helm = this.Const.World.Common.pickHelmet([
+			local helm = ::Legends.Items.pickHelmet([
 				[
 					1,
 					"oriental/gladiator_helmet",

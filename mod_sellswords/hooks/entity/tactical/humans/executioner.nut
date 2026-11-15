@@ -74,7 +74,7 @@
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Body))
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "lamellar_harness"],
 				[1, "heavy_lamellar_armor"]
 			]));
@@ -94,7 +94,7 @@
 					[4, "oriental/turban_helmet"]					
 				];
 
-				this.m.Items.equip(this.Const.World.Common.pickHelmet(helm));
+				this.m.Items.equip(::Legends.Items.pickHelmet(helm));
 			}
 		}
 		else if (dc <= 150)
@@ -108,7 +108,7 @@
 					[1, "ssu_executioner_helmet_late"]						
 				];
 
-				this.m.Items.equip(this.Const.World.Common.pickHelmet(helm));
+				this.m.Items.equip(::Legends.Items.pickHelmet(helm));
 			}
 		}			
 		else if (dc > 150)
@@ -121,7 +121,7 @@
 					[3, "oriental/turban_helmet"],					
 				];
 
-				this.m.Items.equip(this.Const.World.Common.pickHelmet(helm));
+				this.m.Items.equip(::Legends.Items.pickHelmet(helm));
 			}
 		}			
 	}

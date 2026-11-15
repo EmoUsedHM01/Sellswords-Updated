@@ -205,13 +205,13 @@ this.ssu_necro_ancient_auxiliary <- this.inherit("scripts/skills/backgrounds/cha
 			items.equip(this.new("scripts/items/weapons/ancient/ancient_spear"));
 		}
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ancient/ancient_ripped_cloth"
 			]
 		]));
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				34,
 				""

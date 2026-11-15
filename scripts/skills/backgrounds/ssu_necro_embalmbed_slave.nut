@@ -223,7 +223,7 @@ this.ssu_necro_embalmbed_slave <- this.inherit("scripts/skills/backgrounds/chara
 
 		items.equip(this.new("scripts/items/legend_armor/cloth/legend_armor_bandages"));
 		
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				2,
 				"ancient/legend_mummy_bandages"

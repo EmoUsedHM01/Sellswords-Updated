@@ -1,5 +1,10 @@
 this.ssu_armor_hauberk_sleevless_named <- this.inherit("scripts/items/legend_armor/legend_named_armor_upgrade", {
-	m = {},
+	m = {
+		Potential = {
+			Condition = { min = 105, max = 125 },
+			StaminaModifier = { min = 10, max = 8 }
+		}
+	},
 	function create()
 	{
 		this.legend_named_armor_upgrade.create();
@@ -22,19 +27,10 @@ this.ssu_armor_hauberk_sleevless_named <- this.inherit("scripts/items/legend_arm
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorLeatherImpact;
 		this.m.Value = 3500;
-		this.m.Condition = 120;
-		this.m.ConditionMax = 120;
-		this.m.StaminaModifier = -15;
 		this.m.ItemType = this.m.ItemType;
 		this.randomizeValues();
 	}
 
-	function randomizeValues()
-	{
-		this.m.StaminaModifier = this.Math.rand(8, 10) * -1;
-		this.m.Condition = this.Math.rand(105, 125);
-		this.m.ConditionMax = this.m.Condition;
-	}
 
 	function updateVariant()
 	{

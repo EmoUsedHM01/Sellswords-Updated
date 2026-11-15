@@ -111,7 +111,7 @@
 			];
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));	
+		this.m.Items.equip(::Legends.Items.pickHelmet(helmet));	
 
 		local armor;
 		armor = [
@@ -142,7 +142,7 @@
 			];
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));					
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));					
 	}
 
 	q.onDeath = @(__original) function(_killer, _skill, _tile, _fatalityType)

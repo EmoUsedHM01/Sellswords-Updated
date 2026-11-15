@@ -104,13 +104,13 @@ this.ssu_skeleton <- this.inherit("scripts/entity/tactical/skeleton", {
 					"ssu_skeleton_armor"
 				],
 			];
-			local item = this.Const.World.Common.pickArmor(armor);
+			local item = ::Legends.Items.pickArmor(armor);
 			this.m.Items.equip(item);
 		}
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 		{
-			local item = this.Const.World.Common.pickHelmet([
+			local item = ::Legends.Items.pickHelmet([
 				[
 					1,
 					"ssu_skeleton_helmet"

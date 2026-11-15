@@ -141,7 +141,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 		
 		if (dc <= 15)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "sackcloth"],
 				[1, "thick_tunic"],
 				[1, "apron"],
@@ -154,7 +154,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 50)
 				{
-					local helm = this.Const.World.Common.pickHelmet([
+					local helm = ::Legends.Items.pickHelmet([
 						[1, "ssu_peasant_helmet_early"]
 					]);
 					this.m.Items.equip(helm);				
@@ -163,7 +163,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 30)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_peasant_armor"],
 				[2, "ssu_peasant_armor_mid"]
 			]));
@@ -171,7 +171,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_early"],
 					[2, "ssu_peasant_helmet_mid"]					
 					
@@ -181,7 +181,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (dc <= 45)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_peasant_armor_late"],
 				[3, "ssu_peasant_armor_mid"]
 			]));
@@ -189,7 +189,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"],
 					[2, "ssu_peasant_helmet_mid"]					
 					
@@ -199,7 +199,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[6, "ssu_peasant_armor_late"],
 				[3, "ssu_peasant_armor_verylate"],				
 				[1, "ragged_surcoat"],
@@ -212,7 +212,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[2, "ssu_peasant_helmet_late"],
 					[1, "ssu_peasant_helmet_verylate"]					
 					
@@ -222,7 +222,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_peasant_armor_late"],
 				[2, "ssu_peasant_armor_verylate"],
 				[1, "ssu_peasant_armor_heavy"]				
@@ -231,7 +231,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"],					
 					[2, "ssu_peasant_helmet_verylate"],
 					[1, "ssu_peasant_helmet_late_heavy"]					
@@ -241,14 +241,14 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc > 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_peasant_armor_heavy"],				
 			]));
 
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late_heavy"]											
 				]);
 				this.m.Items.equip(helm);				
@@ -265,7 +265,7 @@ this.ssu_peasantblacksmith <- this.inherit("scripts/entity/tactical/human", {
 
 		this.m.Items.equip(this.new("scripts/items/weapons/legend_hammer"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[1, "ssu_peasant_champion_helmet_heavy"]
 		]))
 

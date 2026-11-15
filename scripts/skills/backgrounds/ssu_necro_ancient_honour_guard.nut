@@ -213,7 +213,7 @@ this.ssu_necro_ancient_honour_guard <- this.inherit("scripts/skills/backgrounds/
 		if (items.getItemAtSlot(this.Const.ItemSlot.Offhand) == null)
 			items.equip(this.new("scripts/items/shields/ancient/tower_shield"));
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ancient/ancient_plated_scale_hauberk"
@@ -231,7 +231,7 @@ this.ssu_necro_ancient_honour_guard <- this.inherit("scripts/skills/backgrounds/
 				"ancient/ancient_plated_mail_hauberk"
 			]
 		]));
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"ancient/ancient_honorguard_helmet"

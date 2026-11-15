@@ -300,12 +300,12 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 			local r = this.Math.rand(1, 3);	
 			if (r == 1)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_plate_scale_mid"],	  //315,-40							 320
 					[1, "ssu_plate_full_mid"],		   //320,-41
 					[1, "ssu_plate_full_mid_reinforced"],	 //335,-43	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_enclave_armet"],			   //355,-24					 340
 					[1, "ssu_knight_helmet_mid_bread"],			//350,-23 
 					[1, "ssu_knight_helmet_mid_decorative"],		 //335,-22
@@ -314,21 +314,21 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 			}
 			else if (r == 2)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_sellsword_armor_medium"],	  	  //165,-22
 					[2, "ssu_sellsword_armor_medium_chain"],		  //190,-21	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[5, "ssu_sellsword_helmet_medium"],			   	//185,-9
 					[1, "ssu_feathered_helmet"],			   	// 210,-9 ~ 220,-10					
 				]));
 			}
 			else if (r == 3)				
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_sellsword_armor_light"],	  //150,-11	 	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_sellsword_helmet_light"],	   //140,-6				   				
 				]));
 			}
@@ -337,10 +337,10 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (v <= 45)					  //zombie
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_sellsword_armor_undead"]		 //250,-30										
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_sellsword_helmet_undead"],			//235,-16					
 			]));
 			
@@ -351,32 +351,32 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 			local r = this.Math.rand(1, 3);	
 			if (r == 1)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_solemner_late_medium_armor"],	  //290,-35 						
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_solemner_late_medium_helmet"],		   			
 				]));
 			}
 			else if (r == 2)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_guardsman_armor_ichi"],		  //~200 -23
 					[1, "ssu_guardsman_armor_ni"],	  //~225 -27
 					[1, "ssu_guardsman_armor_sann"],	 //~205 -25	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[5, "ssu_guardsman_helmet"],			   //190, -10
 					[1, "ssu_feathered_helmet"],			   	// 210,-9 ~ 220,-10			  			
 				]));
 			}
 			else if (r == 3)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[2, "ssu_guardsman_armor_light"],	  //~135 -11
 					[1, "ssu_solemner_late_light_armor"],		   //120
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[2, "ssu_guardsman_helmet_light"],		   //155, -6 	   
 					[1, "ssu_solemner_late_light_helmet"],			 				
 				]));
@@ -388,10 +388,10 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (v <= 75)				   //ancient
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sellsword_armor_ancient"],		   	//250,-33				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_sellsword_helmet_ancient"],			//235,-19				 				 					
 			]));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_battleheart"));
@@ -402,20 +402,20 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 			local r = this.Math.rand(1, 3);	
 			if (r <= 2)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_sellsword_armor_light"],	  //150,-11	 	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_sellsword_helmet_light"],	   //140,-6				   				
 				]));
 			}
 			else if (r == 3)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_guardsman_armor_light"],	  //~135 -11
 					[1, "ssu_solemner_late_light_armor"],		   //120	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_guardsman_helmet_light"],		   //155, -6 	   
 					[1, "ssu_solemner_late_light_helmet"],		   			
 				]));
@@ -429,12 +429,12 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 			local r = this.Math.rand(1, 3);	
 			if (r == 1)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_plate_scale_mid"],	  //315,-40							 320
 					[1, "ssu_plate_full_mid"],		   //320,-41
 					[1, "ssu_plate_full_mid_reinforced"],	 //335,-43	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_enclave_armet"],			   //355,-24					 340
 					[1, "ssu_knight_helmet_mid_bread"],			//350,-23 
 					[1, "ssu_knight_helmet_mid_decorative"],		 //335,-22
@@ -443,19 +443,19 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 			}
 			else if (r == 2)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_solemner_late_medium_armor"],	  //290,-35 						
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_solemner_late_medium_helmet"],		   			
 				]));
 			}			
 			else if (r == 3)	 
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[1, "ssu_sellsword_armor_barb"],		   //320,-41				   				
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+				this.m.Items.equip(::Legends.Items.pickHelmet([				
 					[1, "ssu_sellsword_helmet_barb"],			//350,-23		  					
 				]));
 			}
@@ -464,11 +464,11 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (v <= 100)				 //barbarian
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sellsword_armor_barb"],				//255,-38
 				[1, "ssu_sellsword_armor_barb_medium"],		  //240,-31 				
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_sellsword_helmet_barb"],			//255,-18		  					
 			]));
 

@@ -1,20 +1,5 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/throw_net", function( q ) {
 	
-	q.onAfterUpdate = @( __original ) function( _properties )
-	{
-		this.m.FatigueCostMult = _properties.IsSpecializedInNets ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
-
-		if (_properties.IsSpecializedInNetCasting)
-		{
-			this.m.MaxRange = 5;
-		}
-		
-		if (this.getContainer().getActor().getSkills().hasSkill("perk.legend_net_repair"))
-		{
-			this.m.ActionPointCost = 3;		
-		}
-	}
-
 	q.onUse = @( __original ) function( _user, _targetTile )
 	{
 		local targetEntity = _targetTile.getEntity();
@@ -27,32 +12,15 @@
 			rd *= 0.5;
 		}
 
-		if (_user.getSkills().hasSkill("perk.legend_net_repair"))
+		if (_user.getSkills().hasSkill("perk.legend_mastery_nets"))
 		{
 			rd *= 0.75;
 		}
 
 		if (rd > this.getHitchance(_targetTile.getEntity()) || crrd || escapeartist)
 		{
-			local isPlayer = ::MSU.isKindOf(_user, "player");
-			local net = _user.getItems().getItemAtSlot(::Const.ItemSlot.Offhand);
-
-			if (net != null && net.isItemType(::Const.Items.ItemType.Net))
-			{
-				if (isPlayer)
-					net.setOwnerID(_user.getID());
-
-				if (!_targetTile.getEntity().getCurrentProperties().IsImmuneToRoot)
-				{
-					net.consumeAmmo();
-
-					if (!isPlayer) // wasn't used by player
-						net.m.IsDroppedAsLoot = false; // prevent player from looting enemy broken net
-				}
-			}
-
-			if (net.drop(_targetTile))
-				::Tactical.Entities.addNetTiles(_targetTile);
+			this.m.Item.consumeAmmo();
+			this.m.Item.drop(_targetTile);
 			targetEntity.onMissed(_user, this);
 			if (this.m.SoundOnMiss.len() != 0)
 			{
@@ -61,7 +29,7 @@
 			return false;
 		}
 
-		__original(_user, _targetTile);
+		return __original(_user, _targetTile);
 	}
 
 })

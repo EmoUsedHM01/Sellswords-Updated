@@ -1,9 +1,10 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_duelist", function ( q ) {
-	q.getBonus = @(__original) function()
+	q.getBonus = @(__original) function( _actor = null )
 	{
-		local bonus = __original();
-		local weapon = this.getContainer().getActor().getMainhandItem();
-		if (::Legends.Perks.has(this, ::Legends.Perk.SsuGrandslam))
+		local bonus = __original(_actor);
+		local actor = _actor != null ? _actor : this.getContainer().getActor();
+		local weapon = actor.getMainhandItem();
+		if (::Legends.Perks.has(actor, ::Legends.Perk.SsuGrandslam))
 		{	
 			if (weapon == null)
 			{

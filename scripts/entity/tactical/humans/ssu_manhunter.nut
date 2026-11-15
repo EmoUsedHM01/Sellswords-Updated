@@ -117,7 +117,7 @@ this.ssu_manhunter <- this.inherit("scripts/entity/tactical/human", {
 			]);
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));
 		local helmet = [
 			[
 				1,
@@ -147,7 +147,7 @@ this.ssu_manhunter <- this.inherit("scripts/entity/tactical/human", {
 			]);
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickHelmet(helmet));
+		this.m.Items.equip(::Legends.Items.pickHelmet(helmet));
 	}
 
 });

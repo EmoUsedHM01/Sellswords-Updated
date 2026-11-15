@@ -337,7 +337,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 		local dc = this.World.getTime().Days;
 		if (dc <= 25)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[4, "ssu_mercenary_armor_verylow"],	//65,-8
 				[2, "ssu_mercenary_armor_low"],		//80,-9
 				[1, "ssu_mercenary_armor_mid"],		//110,-12			
@@ -348,7 +348,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 95)
 				{
-					local helm = this.Const.World.Common.pickHelmet([
+					local helm = ::Legends.Items.pickHelmet([
 						[4, "ssu_mercenary_helmet_verylow"],		//50-100					
 						[1, "ssu_mercenary_helmet_low"],			//100
 						[1, "ssu_mercenary_helmet_mid"],			//130											
@@ -359,7 +359,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 40)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_mercenary_armor_verylow"],	//65,-8
 				[4, "ssu_mercenary_armor_low"],		//80,-9
 				[2, "ssu_mercenary_armor_mid"],		//110,-12
@@ -372,7 +372,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 95)
 				{
-					local helm = this.Const.World.Common.pickHelmet([
+					local helm = ::Legends.Items.pickHelmet([
 						[1, "ssu_mercenary_helmet_verylow"],		//50-100					
 						[2, "ssu_mercenary_helmet_low"],			//100
 						[1, "ssu_mercenary_helmet_mid"],			//130											
@@ -383,7 +383,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_mercenary_armor_low"],		//80,-9
 				[2, "ssu_mercenary_armor_mid"],		//110,-12
 				[1, "ssu_mercenary_armor_late"],		//160,-
@@ -395,7 +395,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 95)
 				{
-					local helm = this.Const.World.Common.pickHelmet([					
+					local helm = ::Legends.Items.pickHelmet([					
 						[3, "ssu_mercenary_helmet_low"],			//100
 						[4, "ssu_mercenary_helmet_mid"],			//130					
 						[1, "ssu_mercenary_helmet_late"],			//180
@@ -407,7 +407,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_mercenary_armor_mid"],		//110,-12
 				[2, "ssu_mercenary_armor_late"],		//160,-
 				[1, "ssu_mercenary_armor_heavy"],		//250				
@@ -418,7 +418,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 95)
 				{
-					local helm = this.Const.World.Common.pickHelmet([					
+					local helm = ::Legends.Items.pickHelmet([					
 						[1, "ssu_mercenary_helmet_low"],			//100
 						[2, "ssu_mercenary_helmet_mid"],			//130					
 						[3, "ssu_mercenary_helmet_late"],			//180
@@ -430,7 +430,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_mercenary_armor_mid"],		//110,-12
 				[3, "ssu_mercenary_armor_late"],		//160,-
 				[1, "ssu_mercenary_armor_heavy"],		//250				
@@ -441,7 +441,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 95)
 				{
-					local helm = this.Const.World.Common.pickHelmet([					
+					local helm = ::Legends.Items.pickHelmet([					
 						[2, "ssu_mercenary_helmet_mid"],			//130					
 						[3, "ssu_mercenary_helmet_late"],			//180
 						[3, "ssu_mercenary_helmet_barbute"],		//160
@@ -454,7 +454,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc > 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_mercenary_armor_mid"],		//110,-12
 				[4, "ssu_mercenary_armor_late"],		//160,-
 				[2, "ssu_mercenary_armor_heavy"],		//250				
@@ -465,7 +465,7 @@ this.ssu_mercenary <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 95)
 				{
-					local helm = this.Const.World.Common.pickHelmet([										
+					local helm = ::Legends.Items.pickHelmet([										
 						[1, "ssu_mercenary_helmet_late"],			//180
 						[1, "ssu_mercenary_helmet_barbute"],		//160
 						[1, "ssu_mercenary_helmet_kettle"],		//230

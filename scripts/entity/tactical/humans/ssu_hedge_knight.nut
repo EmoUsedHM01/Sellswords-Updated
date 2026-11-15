@@ -152,13 +152,13 @@ this.ssu_hedge_knight <- this.inherit("scripts/entity/tactical/human", {
 		
 		if (dc <= 80)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_scale_early"],		 //280,-35				
 				[1, "ssu_plate_scale_early_patched"],	  //275,-36
 				[1, "ssu_plate_full_early"],			//300,-40
 				[1, "ssu_plate_full_early_low"],		 //280,-35					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[2, "ssu_knight_helmet_early_unadorned"],			//255 -16	310,-21				   					
 				[1, "ssu_knight_helmet_early_decorative"],			//310,-20   280,-17	
 				[1, "ssu_enclave_kettle"],			//265,-18	
@@ -167,14 +167,14 @@ this.ssu_hedge_knight <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 100)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_plate_scale_early"],		 //280,-35				
 				[1, "ssu_plate_scale_early_patched"],	  //275,-36
 				[3, "ssu_plate_full_early"],			//300,-40
 				[1, "ssu_plate_scale_mid"],	  //315,-40
 				[1, "ssu_plate_full_mid"],		   //320,-41					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_knight_helmet_early_unadorned"],			//255 -16	310,-21				  				
 				[1, "ssu_knight_helmet_early_decorative"],			//310,-20   280,-17
 				[1, "ssu_knight_helmet_mid_bread"],			//350,-23 
@@ -185,12 +185,12 @@ this.ssu_hedge_knight <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 130)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_scale_mid"],	  //315,-40
 				[1, "ssu_plate_full_mid"],		   //320,-41
 				[1, "ssu_plate_full_mid_reinforced"],	 //335,-43					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[2, "ssu_knight_helmet_mid_bread"],			//350,-23						350
 				[2, "ssu_knight_helmet_mid_decorative"],		 //335,-22
 				[1, "ssu_knight_helmet_mid_unadorned"],			//325 -21
@@ -200,12 +200,12 @@ this.ssu_hedge_knight <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (dc <= 160)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_mid"],		   //320,-41
 				[1, "ssu_plate_full_mid_reinforced"],	 //335,-43
 				[1, "ssu_plate_full_late"],	   //370,-50					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_knight_helmet_mid_bread"],			//350,-23			   370				 				
 				[1, "ssu_enclave_armet"],			   //355,-24  	
 				[1, "ssu_knight_helmet_mid_bascinet_faceplate"],			   //385,-26 											
@@ -213,11 +213,11 @@ this.ssu_hedge_knight <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (dc <= 190)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_late"],	   //370,-50
 				[1, "ssu_plate_full_heavy"],	   //380,-49					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
+			this.m.Items.equip(::Legends.Items.pickHelmet([					
 				[1, "ssu_enclave_great_bascinet"],			   //415,-29	
 				[1, "ssu_enclave_armet_late"],			   //400,-28
 				[1, "ssu_knight_helmet_late_mixed"],				//410, min 400	
@@ -226,12 +226,12 @@ this.ssu_hedge_knight <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (dc <= 220)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_hedgeknight_midlate"],	   //405
 				[1, "ssu_plate_full_heavy"],	   //380,-49
 				[1, "ssu_plate_full_knight"]		 //415,-54						
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
+			this.m.Items.equip(::Legends.Items.pickHelmet([					
 				[2, "ssu_enclave_great_bascinet_late"],			   //465,-32			 		  440
 				[3, "ssu_enclave_venitian_bascinet"],			   //460,-33		 
 				[1, "ssu_enclave_great_bascinet"],			   //415,-29	
@@ -242,11 +242,11 @@ this.ssu_hedge_knight <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc > 220)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_heavy_late"],	   //435,-57
 				[2, "ssu_plate_full_hedgeknight"]		 //415,-54						
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
+			this.m.Items.equip(::Legends.Items.pickHelmet([					
 				[1, "ssu_enclave_great_helm"],				//475,-36						
 				[1, "ssu_enclave_great_bascinet_late"],			  //465,-32
 				[1, "ssu_knight_helmet_late_enclave_ni"],			   //460
@@ -299,7 +299,7 @@ this.ssu_hedge_knight <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (r == 3)	
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_named_full_armor_cloth"],	
 				[1, "ssu_named_full_armor_chain"],		
 				[1, "ssu_named_full_armor_plate"],					

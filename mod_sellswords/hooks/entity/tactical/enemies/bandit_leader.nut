@@ -124,22 +124,22 @@
 		dc = this.Math.max(dc, mn * 3);			
 		if (dc <= 35)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_bandit_early"],		 //180 				
 				[1, "ssu_bandit_mid"],	  	   //220					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_bandit_helmet_low"],			//125,-6				 					
 				[1, "ssu_bandit_helmet_early"],		  //170,-10					
 			]));
 		}
 		else if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_bandit_early"],		 //180 				
 				[1, "ssu_bandit_mid"],	  	   //220					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_bandit_helmet_low"],			//125,-6				 					
 				[3, "ssu_bandit_helmet_early"],		  //170,-10
 				[1, "red_bandit_leader_helmet"],	   //195					
@@ -148,12 +148,12 @@
 		}
 		else if (dc <= 85)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_bandit_early"],		 //180 				
 				[2, "ssu_bandit_mid"],	  	   //220
 				[1, "ssu_bandit_late"],		  //270 									
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				 					
+			this.m.Items.equip(::Legends.Items.pickHelmet([				 					
 				[2, "ssu_bandit_helmet_early"],		  //170,-10
 				[2, "red_bandit_leader_helmet"],	   //195					
 				[4, "ssu_bandit_helmet_mid"],			//215,-12					
@@ -162,11 +162,11 @@
 		}
 		else if (dc <= 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_bandit_late"],		  //270 				
 				[1, "ssu_bandit_heavy"],	 	   //290					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([	
+			this.m.Items.equip(::Legends.Items.pickHelmet([	
 				[1, "red_bandit_leader_helmet"],	   //195				
 				[1, "ssu_bandit_helmet_mid"],			//215,-12
 				[3, "ssu_enclave_kettle_with_chain"],   //265,-17					
@@ -176,11 +176,11 @@
 		}
 		else if (dc <= 160)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_bandit_late"],		  //270 				
 				[2, "ssu_bandit_heavy"],	 	   //290					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
+			this.m.Items.equip(::Legends.Items.pickHelmet([					
 				[1, "ssu_enclave_kettle_with_chain"],   //265,-17					
 				[1, "ssu_enclave_kettle"],			  //270,-18					
 				[1, "ssu_hedgeknight_low"],			//255,-16					
@@ -188,11 +188,11 @@
 		}
 		else if (dc > 160)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_bandit_late"],		  //270 				
 				[3, "ssu_bandit_heavy"],	 	   //290					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([					
+			this.m.Items.equip(::Legends.Items.pickHelmet([					
 				[1, "ssu_enclave_kettle_with_chain"],   //265,-17					
 				[2, "ssu_enclave_kettle"],			  //270,-18					
 				[1, "ssu_hedgeknight_low"],			//255,-16					
@@ -234,14 +234,14 @@
 		else if (r == 3)
 		{
 			local named = this.Const.Items.NamedArmors;
-			local weightName = this.Const.World.Common.convNameToList(named);
-			this.m.Items.equip(this.Const.World.Common.pickArmor(weightName));
+			local weightName = ::Legends.Items.convNameToList(named);
+			this.m.Items.equip(::Legends.Items.pickArmor(weightName));
 		}
 		else
 		{
 			local named = this.Const.Items.NamedHelmets;
-			local weightName = this.Const.World.Common.convNameToList(named);
-			this.m.Items.equip(this.Const.World.Common.pickHelmet(weightName));
+			local weightName = ::Legends.Items.convNameToList(named);
+			this.m.Items.equip(::Legends.Items.pickHelmet(weightName));
 		}
 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));

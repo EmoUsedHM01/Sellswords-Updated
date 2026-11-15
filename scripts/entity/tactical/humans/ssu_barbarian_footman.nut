@@ -96,10 +96,10 @@ this.ssu_barbarian_footman <- this.inherit("scripts/entity/tactical/human", {
 		local shield = this.new("scripts/items/shields/greenskins/orc_light_shield");
 		this.m.Items.equip(shield);
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "ssu_barbfootman_armor"],		  				
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+		this.m.Items.equip(::Legends.Items.pickHelmet([				
 			[1, "ssu_barbfootman_helmet"],									
 		]));
 		

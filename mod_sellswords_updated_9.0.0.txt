@@ -2428,6 +2428,345 @@ Every text the mod shows is now in mod_sellswords\strings.nut, which loads befor
 The name lists, perk names, perk descriptions and the 119 enemy names moved there as well and get filled in by ::Mod_Sellswords.text
 A translation mod loads after SSU, changes the entries and calls ::Mod_Sellswords.refreshStrings() to reset them
 
+...\mod_sellswords\hooks\config\tactical_entity_common.nut
+Removed the firefield override, Legends no longer has that function and it stopped the file from loading
+The fire override takes the killer argument that Legends swapped to
+
+...\mod_sellswords\hooks\skills\perks\perk_duelist.nut
+...\mod_sellswords\hooks\factions\actions\build_unique_locations_action.nut
+Both hooked functions gained an argument in Legends
+
+...\mod_sellswords\hooks\hook_food_blueprints.nut < deleted
+...\mod_sellswords\hooks\hook_utilities_blueprints.nut < deleted
+...\mod_sellswords\hooks\config\blueprints.nut
+The food and flask blueprint costs are now set in the blueprint config
+
+...\scripts\items\legend_helmets\helm\ssu_adorned_closed_flat_top_with_mail.nut
+...\scripts\items\legend_helmets\helm\ssu_adorned_full_helm.nut
+...\scripts\items\legend_helmets\helm\ssu_death_knight_great_helm.nut
+...\scripts\items\legend_helmets\helm\ssu_death_knight_great_helm_02.nut
+...\scripts\items\legend_helmets\helm\ssu_dryad_helm_archer.nut
+...\scripts\items\legend_helmets\helm\ssu_dryad_helm_shaman.nut
+...\scripts\items\legend_helmets\helm\ssu_dryad_helm_tamer.nut
+...\scripts\items\legend_helmets\helm\ssu_dryad_helm_warrior.nut
+...\scripts\items\legend_helmets\helm\ssu_emperors_countenance.nut
+...\scripts\items\legend_helmets\helm\ssu_helmet_orc_bear_head_helm.nut
+...\scripts\items\legend_helmets\helm\ssu_helmet_orc_bone_helm.nut
+...\scripts\items\legend_helmets\helm\ssu_helmet_orc_faceplate_helm.nut
+...\scripts\items\legend_helmets\helm\ssu_helmet_orc_packleader_heavy_helm.nut
+...\scripts\items\legend_helmets\helm\ssu_helmet_orc_packleader_medium_helm.nut
+...\scripts\items\legend_helmets\helm\ssu_ijirok_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_knightly_fullhelm.nut
+...\scripts\items\legend_helmets\helm\ssu_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_conic_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_nordic_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_red_and_gold_band_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_steppe_helmet_with_mail.nut
+...\scripts\items\legend_helmets\top\ssu_helmet_ancient_beard_mask.nut
+...\scripts\items\legend_helmets\top\ssu_helmet_ancient_mask.nut
+...\scripts\items\legend_helmets\top\ssu_helmet_barbarian_berserker.nut
+...\scripts\items\legend_helmets\top\ssu_named_mask.nut
+...\scripts\items\legend_helmets\vanity\ssu_adorned_closed_flat_top_with_mail_vanity.nut
+...\scripts\items\legend_helmets\vanity\ssu_adorned_heavy_vanity.nut
+...\scripts\items\legend_helmets\vanity\ssu_death_knight_vanity.nut
+...\scripts\items\legend_helmets\vanity\ssu_dryad_mask.nut
+...\scripts\items\legend_helmets\vanity\ssu_hyena_helm.nut
+...\scripts\items\legend_helmets\vanity\ssu_southern_wrap_vanity.nut
+Removed IsLowerVanity from the SSU helmet layers
+
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_tamer_background.nut
+...\scripts\skills\backgrounds\ssu_necro_banshee.nut
+...\scripts\skills\backgrounds\ssu_necro_ghost.nut
+...\scripts\skills\backgrounds\ssu_necro_skeledog.nut
+...\scripts\skills\backgrounds\ssu_necro_zombie.nut
+Barter is now Haggle and Hunting is now Cooking, matching the Legends names
+Removed recruit level scaling and its hiring cost formula cause Legends dropped it
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
+Removed the donkey terrain modifiers, the ones in the Legends modifier table are used
+
+...\mod_sellswords\hooks\config\tactical_entity_common.nut
+...\mod_sellswords\hooks\factions\actions\send_bandit_ambushers_action.nut
+...\mod_sellswords\hooks\factions\actions\send_beast_roamers_action.nut
+Legends removed the BleedKiller and DistanceScaling settings and always applies both now
+
+...\mod_sellswords\hooks\contracts\contracts\deliver_item_contract.nut
+...\mod_sellswords\hooks\contracts\contracts\legend_deliver_money_contract.nut
+Changed getBarterMult to getHaggleMult, matching Legends
+
+...\mod_sellswords\hooks\factions\actions\send_bandit_ambushers_action.nut
+...\mod_sellswords\hooks\factions\actions\send_barbarian_ambushers_action.nut
+...\mod_sellswords\hooks\factions\actions\send_undead_ambushers_action.nut
+Changed timeBetweenSpawnsPerSettlement to getTimeBetweenSpawns()
+
+...\mod_sellswords\hooks\skills\effects\legend_redback_spider_poison_effect.nut
+...\mod_sellswords\hooks\skills\effects\spider_poison_effect.nut
+Changed getAttacker to getEffectOwner, matching the Legends name
+Fixed Resilient not reducing spider poison damage, the 25% reduction was calculated but never applied
+
+...\mod_sellswords\hooks\skills\actives\chop.nut
+Added the missing IsOrcWeapon variable
+
+...\mod_sellswords\hooks\skills\actives\throw_net.nut
+A missed net now uses the Legends net ammo and drop functions, the old owner and net tile functions no longer exist
+onAfterUpdate now calls the Legends version first so spent nets are hidden, then applies the Net Repair cost
+
+...\scripts\items\legend_armor\chain\ssu_armor_hauberk_sleevless_named.nut
+...\scripts\items\legend_armor\plate\ssu_named_heraldic_mail.nut
+...\scripts\items\legend_armor\plate\ssu_named_lindwurm_armor.nut
+...\scripts\items\legend_armor\plate\ssu_named_noble_mail_armor.nut
+...\scripts\items\legend_armor\plate\ssu_named_plated_mail_hauberk.nut
+...\scripts\items\legend_armor\plate\ssu_named_sellswords_armor.nut
+...\scripts\items\legend_helmets\helm\ssu_named_conic_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_lindwurm_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_nordic_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_red_and_gold_band_helmet.nut
+...\scripts\items\legend_helmets\helm\ssu_named_steppe_helmet_with_mail.nut
+...\scripts\items\legend_helmets\top\ssu_named_mask.nut
+Legends now rolls named armour and helmet layers from a Potential table, so the SSU named layers define one with their old ranges and no longer need their own randomizeValues
+
+...\mod_sellswords\hooks\contracts\contracts\defend_holy_site_contract.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_leader.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_marauder.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_raider.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\bandit_raider_low.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_behemoth.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_robber_baron.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_berserker.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warrior_low.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_young.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\desert_devil.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gladiator.nut
+...\mod_sellswords\hooks\entity\tactical\humans\gunner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_fencer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_halberdier.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_slinger.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_farmhand.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_miner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_monk.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_poacher.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_witchhunter.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\master_archer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\militia_veteran.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_arbalester.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_billman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_footman.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_greatsword.nut
+...\mod_sellswords\hooks\entity\tactical\humans\noble_sergeant.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_cutthroat.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_outlaw.nut
+...\mod_sellswords\hooks\entity\tactical\humans\oathbringer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\officer.nut
+...\mod_sellswords\hooks\entity\tactical\humans\swordmaster.nut
+...\mod_sellswords\hooks\entity\world\locations\legendary\black_monolith_location.nut
+...\mod_sellswords\hooks\entity\world\locations\legendary\unique_goblin_city_location.nut
+...\mod_sellswords\hooks\events\events\dlc4\location\tundra_elk_destroyed_event.nut
+...\mod_sellswords\hooks\events\events\dlc8\lindwurm_slayer_event.nut
+...\mod_sellswords\hooks\events\events\dlc8\oathbreaker_event.nut
+...\mod_sellswords\hooks\factions\actions\send_caravan_action.nut
+...\mod_sellswords\hooks\factions\actions\send_supplies_action.nut
+...\mod_sellswords\hooks\scenarios\world\cultists_scenario.nut
+...\mod_sellswords\hooks\scenarios\world\legends_noble_scenario.nut
+...\mod_sellswords\hooks\skills\backgrounds\companion_1h_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\companion_1h_southern_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\companion_2h_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\companion_2h_southern_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\companion_ranged_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\companion_ranged_southern_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_husk_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\miner_background.nut
+...\scripts\contracts\contracts\ssu_explore_treasures_contract.nut
+...\scripts\entity\tactical\enemies\ssu_conqueror.nut
+...\scripts\entity\tactical\enemies\ssu_deathknight.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_archer.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_boss.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_grunt.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_shaman.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_tamer.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_warrior.nut
+...\scripts\entity\tactical\enemies\ssu_fallenbetrayer.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider00.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider01.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider02.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider03.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider04.nut
+...\scripts\entity\tactical\enemies\ssu_goblinwarrior.nut
+...\scripts\entity\tactical\enemies\ssu_necromancer.nut
+...\scripts\entity\tactical\enemies\ssu_orc_grunt.nut
+...\scripts\entity\tactical\enemies\ssu_orc_packleader.nut
+...\scripts\entity\tactical\enemies\ssu_orc_pillager.nut
+...\scripts\entity\tactical\enemies\ssu_orc_vanguard.nut
+...\scripts\entity\tactical\enemies\ssu_skeleton.nut
+...\scripts\entity\tactical\enemies\ssu_skeleton_pol.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_arbalester.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_billman.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_footman.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_zweihander.nut
+...\scripts\entity\tactical\enemies\ssu_zombieswordmaster.nut
+...\scripts\entity\tactical\humans\ssu_abjectfighter.nut
+...\scripts\entity\tactical\humans\ssu_abjectgladiator.nut
+...\scripts\entity\tactical\humans\ssu_abjectgladiator02.nut
+...\scripts\entity\tactical\humans\ssu_arbalester_guest.nut
+...\scripts\entity\tactical\humans\ssu_bandit_arbalester.nut
+...\scripts\entity\tactical\humans\ssu_bandit_billman.nut
+...\scripts\entity\tactical\humans\ssu_bandit_footman.nut
+...\scripts\entity\tactical\humans\ssu_bandit_sergeant.nut
+...\scripts\entity\tactical\humans\ssu_bandit_zweihander.nut
+...\scripts\entity\tactical\humans\ssu_banditleaderwolf.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_arbalester.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_billman.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_championhigh.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_footman.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_king.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_sergeant.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_zerker_high.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_zerker_low.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_zweihander.nut
+...\scripts\entity\tactical\humans\ssu_barbblacksmith.nut
+...\scripts\entity\tactical\humans\ssu_barbhunter.nut
+...\scripts\entity\tactical\humans\ssu_baron.nut
+...\scripts\entity\tactical\humans\ssu_baron02.nut
+...\scripts\entity\tactical\humans\ssu_billman_guest.nut
+...\scripts\entity\tactical\humans\ssu_conscript.nut
+...\scripts\entity\tactical\humans\ssu_desperado.nut
+...\scripts\entity\tactical\humans\ssu_desperado_high.nut
+...\scripts\entity\tactical\humans\ssu_desperado_low.nut
+...\scripts\entity\tactical\humans\ssu_desperado_weak.nut
+...\scripts\entity\tactical\humans\ssu_footman_guest.nut
+...\scripts\entity\tactical\humans\ssu_guardsman.nut
+...\scripts\entity\tactical\humans\ssu_guardsman_pol.nut
+...\scripts\entity\tactical\humans\ssu_hashshashin.nut
+...\scripts\entity\tactical\humans\ssu_hashshashin_high.nut
+...\scripts\entity\tactical\humans\ssu_hashshashin_low.nut
+...\scripts\entity\tactical\humans\ssu_hedge_knight.nut
+...\scripts\entity\tactical\humans\ssu_honoraryknight.nut
+...\scripts\entity\tactical\humans\ssu_immortal.nut
+...\scripts\entity\tactical\humans\ssu_infantry.nut
+...\scripts\entity\tactical\humans\ssu_knight.nut
+...\scripts\entity\tactical\humans\ssu_knight_guest.nut
+...\scripts\entity\tactical\humans\ssu_knightcommander.nut
+...\scripts\entity\tactical\humans\ssu_lindwurm_slayer.nut
+...\scripts\entity\tactical\humans\ssu_manhunter.nut
+...\scripts\entity\tactical\humans\ssu_mercenary.nut
+...\scripts\entity\tactical\humans\ssu_nomad_arbalester.nut
+...\scripts\entity\tactical\humans\ssu_nomad_billman.nut
+...\scripts\entity\tactical\humans\ssu_nomad_footman.nut
+...\scripts\entity\tactical\humans\ssu_nomad_scavenger.nut
+...\scripts\entity\tactical\humans\ssu_nomad_sergeant.nut
+...\scripts\entity\tactical\humans\ssu_nomad_zweihander.nut
+...\scripts\entity\tactical\humans\ssu_oathbringer.nut
+...\scripts\entity\tactical\humans\ssu_outlander.nut
+...\scripts\entity\tactical\humans\ssu_paladin_guest.nut
+...\scripts\entity\tactical\humans\ssu_peasantblacksmith.nut
+...\scripts\entity\tactical\humans\ssu_peasantbutcher.nut
+...\scripts\entity\tactical\humans\ssu_peasantgravedigger.nut
+...\scripts\entity\tactical\humans\ssu_peasantherbalist.nut
+...\scripts\entity\tactical\humans\ssu_peasantjuggler.nut
+...\scripts\entity\tactical\humans\ssu_peasantkiller.nut
+...\scripts\entity\tactical\humans\ssu_peasantminstrel.nut
+...\scripts\entity\tactical\humans\ssu_retiredsoldier.nut
+...\scripts\entity\tactical\humans\ssu_retiredsoldierpol.nut
+...\scripts\entity\tactical\humans\ssu_sellsword.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_banner.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_elite.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_lieutenant.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_polearm.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_ranger.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_sergeant.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_tank.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_polearm.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_ranger.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_tank.nut
+...\scripts\entity\tactical\humans\ssu_sergeant_guest.nut
+...\scripts\entity\tactical\humans\ssu_slaveowner.nut
+...\scripts\entity\tactical\humans\ssu_slayer.nut
+...\scripts\entity\tactical\humans\ssu_solemner.nut
+...\scripts\entity\tactical\humans\ssu_squire.nut
+...\scripts\entity\tactical\humans\ssu_squire_fencer.nut
+...\scripts\entity\tactical\humans\ssu_squire_guest.nut
+...\scripts\entity\tactical\humans\ssu_squire_low.nut
+...\scripts\entity\tactical\humans\ssu_squire_normal.nut
+...\scripts\entity\tactical\humans\ssu_standard_bearer_guest.nut
+...\scripts\entity\tactical\humans\ssu_warden.nut
+...\scripts\entity\tactical\humans\ssu_zweihander_guest.nut
+...\scripts\entity\tactical\ssu_necro_skeleton_high.nut
+...\scripts\entity\tactical\ssu_necro_skeleton_low.nut
+...\scripts\entity\tactical\ssu_necro_skeleton_med.nut
+...\scripts\entity\world\locations\ssu_ss_camp_location.nut
+...\scripts\events\events\dlc6\location\ssu_necro_sunken_library_event.nut
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_grunt_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_shaman_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_tamer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_warrior_background.nut
+...\scripts\skills\backgrounds\ssu_necro_ancient_auxiliary.nut
+...\scripts\skills\backgrounds\ssu_necro_ancient_honour_guard.nut
+...\scripts\skills\backgrounds\ssu_necro_ancient_legionary.nut
+...\scripts\skills\backgrounds\ssu_necro_embalmbed_priest.nut
+...\scripts\skills\backgrounds\ssu_necro_embalmbed_slave.nut
+...\scripts\skills\backgrounds\ssu_necro_embalmbed_soldier.nut
+...\scripts\skills\backgrounds\ssu_necro_fallen_hero.nut
+...\scripts\skills\backgrounds\ssu_necro_lorekeeper.nut
+...\scripts\skills\backgrounds\ssu_necro_zombie.nut
+...\scripts\skills\backgrounds\ssu_sellsword_background.nut
+Changed pickArmor, pickHelmet, pickItem, pickOutfit and convNameToList from ::Const.World.Common to ::Legends.Items (I don't want to redo it for Legends 19.6)
+
+...\mod_sellswords\config\ssu_legendary_locations.nut < new
+...\mod_sellswords\hooks\factions\actions\build_unique_locations_action.nut
+The four SSU legendary locations are now entries in the Legends legendary locations table and Legends builds them
+Fixed the locations being built twice, the old hook ran again every time Legends retried a location it could not place
+
+...\mod_sellswords\config\ssu_z_spawnlist_units.nut
+...\mod_sellswords\hooks\contracts\contracts\privateering_contract.nut
+...\mod_sellswords\hooks\factions\actions\patrol_roads_action.nut
+Changed figure_player_noble to figure_player_legends_noble and figure_player_assassin to figure_player_legends_assassin, matching the Legends sprite names
+
+...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
+Removed Efficient Packing, Tools Drawers and Skillful Stacking from the donkey perk tree, Legends turned them into professions
+
+...\scripts\entity\tactical\humans\ssu_peasantminstrel.nut
+Changed LegendEntice to LegendManipulative, the Legends perk that now gives Entice
+
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_demon_hound.nut
+Fixed the demon hound throwing an error every time it was hit, the old full copy of onDamageReceived was missing the new Legends fog effect
+The hook now only filters the teleport tiles and Legends does the rest
+
+...\mod_sellswords\strings.nut
+...\mod_sellswords\config\ssu_z_background_perks.nut
+...\mod_sellswords\hooks\config\strings.nut
+...\mod_sellswords\hooks\skills\actives\throw_net.nut
+...\scripts\skills\actives\ssu_throw_net_free.nut
+Legends turned Net Repair into a profession, removed every use of the perk
+Beast Hunter and Guild Master now get Net Mastery as their background perk
+The better net hit roll and the 3 AP Portable Net moved from Net Repair to Net Mastery
+Removed the 3 AP Throw Net hook, Legends Net Mastery now lowers the AP cost by 1 itself
+Net Mastery description now lists the AP cost and Melee Defense it gained in Legends, Net Casting no longer mentions the free bag swap Legends removed
+
+...\mod_sellswords\hooks\skills\actives\lunge_skill.nut < deleted
+...\mod_sellswords\hooks\skills\actives\disarm_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_choke_skill.nut
+...\mod_sellswords\hooks\skills\actives\puncture.nut
+...\scripts\skills\perks\perk_ssu_ravager.nut
+...\mod_sellswords\strings.nut
+Removed every onGetHitFactors and its strings, Legends no longer shows hit factors and removed the function from its own skills
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

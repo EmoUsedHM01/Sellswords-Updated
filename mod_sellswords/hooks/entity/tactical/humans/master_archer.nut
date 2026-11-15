@@ -74,11 +74,11 @@
 
 		if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "padded_surcoat"],
 				[1, "gambeson"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[2, "mail_coif"],
 				[1, "aketon_cap"],
 				[1, "open_leather_cap"],
@@ -88,40 +88,40 @@
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_arbalester_armor_early"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_billman_helmet_low"]
 			]));
 		}
 		else if (dc <= 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_arbalester_armor_mid"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_billman_helmet_early"]
 			]));
 		}
 		else if (dc <= 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_arbalester_armor_late"],
 				[1, "ssu_masterarcher_armor"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_billman_helmet_mid_chain"],
 				[1, "ssu_billman_helmet_mid"]
 			]));
 		}
 		else if (dc > 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_arbalester_armor_late"],
 				[3, "ssu_masterarcher_armor"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[4, "ssu_masterarcher_helmet"],
 				[1, "ssu_billman_helmet_mid"],
 				[1, "ssu_billman_helmet_mid_chain"]

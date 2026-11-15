@@ -57,13 +57,13 @@
 		{
 			if (dc <= 75)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
+				this.m.Items.equip(::Legends.Items.pickArmor([	   
 					[3, "ssu_nomad_officer_leather"],	  //210,-24
 					[1, "ssu_nomad_officer_plate_patched"],   //270,-35					
 					[1, "ssu_nomad_officer_plate"], 			 //275,-35
 					[0, "ssu_nomad_officer_plate_full"],	 //310,-37					
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
+				this.m.Items.equip(::Legends.Items.pickHelmet([						   					
 					[1, "oriental/southern_helmet_with_coif"], 
 					[2, "oriental/heavy_lamellar_helmet"], 
 					[1, "oriental/turban_helmet"], 
@@ -73,13 +73,13 @@
 			}
 			else if (dc <= 125)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
+				this.m.Items.equip(::Legends.Items.pickArmor([	   
 					[1, "ssu_nomad_officer_leather"],	  //210,-24
 					[1, "ssu_nomad_officer_plate_patched"],   //270,-35					
 					[1, "ssu_nomad_officer_plate"], 			 //275,-35
 					[1, "ssu_nomad_officer_plate_full"],	 //310,-37					
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
+				this.m.Items.equip(::Legends.Items.pickHelmet([						   					
 					[1, "oriental/southern_helmet_with_coif"], 
 					[2, "oriental/heavy_lamellar_helmet"], 
 					[2, "oriental/turban_helmet"], 
@@ -88,12 +88,12 @@
 			}
 			else if (dc > 125)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([	   
+				this.m.Items.equip(::Legends.Items.pickArmor([	   
 					[1, "ssu_nomad_officer_plate_patched"],   //270,-35					
 					[1, "ssu_nomad_officer_plate"], 			 //275,-35
 					[2, "ssu_nomad_officer_plate_full"],	 //310,-37					
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([						   					
+				this.m.Items.equip(::Legends.Items.pickHelmet([						   					
 					[1, "oriental/heavy_lamellar_helmet"], 
 					[1, "oriental/turban_helmet"], 
 					[2, "ssu_officer_helmet_late_lamellar"],			//265,-15					
@@ -103,10 +103,10 @@
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_leopard_armor"],			// 225,-29 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_feathered_helmet"],	   // 210,-9 ~ 220,-10 					
 			]));
 			this.m.BaseProperties.Armor[this.Const.BodyPart.Head] += 50;

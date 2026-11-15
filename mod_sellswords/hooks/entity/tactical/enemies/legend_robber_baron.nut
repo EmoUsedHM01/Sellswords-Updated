@@ -116,14 +116,14 @@
 		if (this.Math.rand(1, 100) > 50)
 		{
 			local named = this.Const.Items.NamedArmors;
-			local weightName = this.Const.World.Common.convNameToList(named);
-			this.m.Items.equip(this.Const.World.Common.pickArmor(weightName));
+			local weightName = ::Legends.Items.convNameToList(named);
+			this.m.Items.equip(::Legends.Items.pickArmor(weightName));
 		}
 		else
 		{
 			local named = this.Const.Items.NamedHelmets;
-			local weightName = this.Const.World.Common.convNameToList(named);
-			this.m.Items.equip(this.Const.World.Common.pickHelmet(weightName));
+			local weightName = ::Legends.Items.convNameToList(named);
+			this.m.Items.equip(::Legends.Items.pickHelmet(weightName));
 		}
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Body) == null)
@@ -134,7 +134,7 @@
 					"ssu_bandit_warlord_armor"
 				]
 			];
-			local item = this.Const.World.Common.pickArmor(armor);
+			local item = ::Legends.Items.pickArmor(armor);
 			this.m.Items.equip(item);
 		}
 
@@ -146,7 +146,7 @@
 					"ssu_bandit_warlord_helmet"
 				]
 			];
-			local item = this.Const.World.Common.pickHelmet(helmet);
+			local item = ::Legends.Items.pickHelmet(helmet);
 			this.m.Items.equip(item);
 		}	
 	}

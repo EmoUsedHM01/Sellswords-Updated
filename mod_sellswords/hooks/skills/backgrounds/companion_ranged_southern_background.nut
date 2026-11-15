@@ -11,7 +11,7 @@
 		items.equip(this.new("scripts/items/weapons/oriental/composite_bow"));
 		items.equip(this.new("scripts/items/ammo/quiver_of_arrows"));
 		items.addToBag(this.new("scripts/items/weapons/knife"));
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"oriental/thick_nomad_robe"
@@ -25,7 +25,7 @@
 				"oriental/leather_nomad_robe"
 			]
 		]));
-		items.equip(this.Const.World.Common.pickHelmet([
+		items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"oriental/southern_head_wrap",

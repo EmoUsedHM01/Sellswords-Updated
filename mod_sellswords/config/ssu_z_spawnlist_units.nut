@@ -159,7 +159,7 @@ if (!("Spawn" in ::Const.World))
 	MovementSpeedMult = 1.0,
 	VisibilityMult = 1.0,
 	VisionMult = 1.0,
-	Body = "figure_player_noble",
+	Body = "figure_player_legends_noble",
 	MinR = 225,
 	MaxR = 800,
 	Fixed = [
@@ -738,7 +738,7 @@ if (!("Spawn" in ::Const.World))
 	MovementSpeedMult = 1.0,
 	VisibilityMult = 1.0,
 	VisionMult = 1.0,
-	Body = "figure_player_assassin",
+	Body = "figure_player_legends_assassin",
 	Fixed = [],
 	MaxR = 600,
 	Troops = [
@@ -2640,7 +2640,7 @@ if (!("Spawn" in ::Const.World))
 	MovementSpeedMult = 1.0,
 	VisibilityMult = 1.0,
 	VisionMult = 1.0,
-	Body = "figure_player_assassin",
+	Body = "figure_player_legends_assassin",
 	Fixed = [],
 	MaxR = 600,
 	Troops = [

@@ -83,11 +83,11 @@ this.ssu_nomad_zweihander <- this.inherit("scripts/entity/tactical/human", {
 		
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);		
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "ssu_nomad_armor_late"],  
 			[1, "ssu_nomad_armor_mid_plate_heavy"],			
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+		this.m.Items.equip(::Legends.Items.pickHelmet([				
 			[3, "ssu_nomadleader_early_helmet"],
 			[1, "ssu_nomadleader_mid_helmet"],			   					
 		]));

@@ -50,14 +50,14 @@ this.ssu_conqueror <- this.inherit("scripts/entity/tactical/skeleton", {
 	{
 		this.m.Items.equip(this.new("scripts/items/weapons/named/named_crypt_cleaver"));
 			
-		local item = this.Const.World.Common.pickArmor([
+		local item = ::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_emperors_armor"
 			]
 		]);
 		this.m.Items.equip(item);
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				66,
 				"ssu_emperors_helmet"

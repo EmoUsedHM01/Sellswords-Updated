@@ -216,7 +216,7 @@ this.ssu_necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character
 				items.equip(this.new("scripts/items/shields/worn_kite_shield"));
 		}
 
-		items.equip(this.Const.World.Common.pickArmor([
+		items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"decayed_coat_of_plates"
@@ -230,7 +230,7 @@ this.ssu_necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character
 				"decayed_reinforced_mail_hauberk"
 			]
 		]));
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[
 				2,
 				"decayed_closed_flat_top_with_mail"

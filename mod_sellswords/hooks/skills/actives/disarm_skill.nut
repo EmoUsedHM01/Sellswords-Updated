@@ -17,18 +17,4 @@
 		}
 	}
 
-	q.onGetHitFactors <- function ( _skill, _targetTile, _tooltip )
-	{
-		if (_skill.getID() != "actives.disarm")
-		{
-			return;
-		}		
-		if (_targetTile.getEntity().getType() == this.Const.EntityType.OrcWarlord)
-		{
-			_tooltip.push({
-				icon = "ui/tooltips/negative.png",
-				text = ::Mod_Sellswords.Strings.disarm_skill.Tooltip
-			});				
-		}	
-	}		
 });

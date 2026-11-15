@@ -153,8 +153,8 @@ this.ssu_desperado_low <- this.inherit("scripts/entity/tactical/human", {
 					"ssu_desperado_armor_low_early"
 				]
 			];
-			this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickArmor(armor));
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[
 					1,
 					"ssu_desperado_helmet_low_early"
@@ -171,8 +171,8 @@ this.ssu_desperado_low <- this.inherit("scripts/entity/tactical/human", {
 						"ssu_desperado_armor_low_early"
 					]
 				];
-				this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickArmor(armor));
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[
 						1,
 						"ssu_desperado_helmet_low_early"
@@ -187,8 +187,8 @@ this.ssu_desperado_low <- this.inherit("scripts/entity/tactical/human", {
 						"ssu_desperado_armor_low"
 					]
 				];
-				this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickArmor(armor));
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[
 						1,
 						"ssu_desperado_helmet_low"
@@ -205,8 +205,8 @@ this.ssu_desperado_low <- this.inherit("scripts/entity/tactical/human", {
 						"ssu_desperado_armor_low"
 					]
 				];
-				this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickArmor(armor));
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[
 						1,
 						"ssu_desperado_helmet_low"

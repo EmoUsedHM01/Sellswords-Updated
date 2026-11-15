@@ -169,7 +169,7 @@ this.ssu_conscript <- this.inherit("scripts/entity/tactical/human", {
 			variant = 8;
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				2,
 				"oriental/linothorax",
@@ -195,7 +195,7 @@ this.ssu_conscript <- this.inherit("scripts/entity/tactical/human", {
 			variant = 7;
 		}
 
-		local helm = this.Const.World.Common.pickHelmet([
+		local helm = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"oriental/southern_head_wrap",

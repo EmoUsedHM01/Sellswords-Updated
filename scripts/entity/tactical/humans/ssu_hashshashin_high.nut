@@ -180,7 +180,7 @@ this.ssu_hashshashin_high <- this.inherit("scripts/entity/tactical/human", {
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);		
 		}
 		
-		local armor = this.Const.World.Common.pickArmor([	
+		local armor = ::Legends.Items.pickArmor([	
 			[1, "ssu_hashshashin_armor_high"],				
 		]);	
 		
@@ -188,7 +188,7 @@ this.ssu_hashshashin_high <- this.inherit("scripts/entity/tactical/human", {
 		
 		this.m.Items.equip(armor);		
 
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([					
+		this.m.Items.equip(::Legends.Items.pickHelmet([					
 			[1, "ssu_hashshashin_helmet_high"],					
 		]));
 		

@@ -100,7 +100,7 @@
 			}
 		}
 
-		local item = this.Const.World.Common.pickArmor([
+		local item = ::Legends.Items.pickArmor([
 			[
 				20,
 				"ragged_surcoat"
@@ -126,7 +126,7 @@
 
 		if (this.Math.rand(1, 100) <= 75)
 		{
-			local item = this.Const.World.Common.pickHelmet([
+			local item = ::Legends.Items.pickHelmet([
 				[
 					1,
 					"nasal_helmet"

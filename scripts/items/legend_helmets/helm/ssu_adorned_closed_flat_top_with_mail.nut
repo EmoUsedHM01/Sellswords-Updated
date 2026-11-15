@@ -20,7 +20,6 @@ this.ssu_adorned_closed_flat_top_with_mail <- this.inherit("scripts/items/legend
 		this.m.ConditionMax = 215;
 		this.m.StaminaModifier = -15;
 		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 	}

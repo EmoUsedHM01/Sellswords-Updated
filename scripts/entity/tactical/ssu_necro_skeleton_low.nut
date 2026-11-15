@@ -33,12 +33,12 @@ this.ssu_necro_skeleton_low <- this.inherit("scripts/entity/tactical/legend_skel
 		// 	this.m.Items.equip(this.new("scripts/items/shields/ancient/auxiliary_shield"));
 		// }
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, ::Legends.Armor.Ancient.ancient_ripped_cloth],
 			[1, ::Legends.Armor.None]
 		]));
 
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[34, ::Legends.Helmet.None],
 			[66, ::Legends.Helmet.Ancient.ancient_household_helmet]
 		]);

@@ -37,10 +37,10 @@ this.ssu_necro_skeleton_med <- this.inherit("scripts/entity/tactical/legend_skel
 				[1, "shields/ancient/coffin_shield"],
 				[1, "shields/ancient/tower_shield"],
 			];
-			this.m.Items.equip(this.Const.World.Common.pickItem(shields, "scripts/items/"))
+			this.m.Items.equip(::Legends.Items.pickItem(shields, "scripts/items/"))
 		}
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, ::Legends.Armor.Ancient.ancient_scale_harness],
 			[1, ::Legends.Armor.Ancient.ancient_breastplate],
 			[1, ::Legends.Armor.Ancient.ancient_mail],
@@ -48,7 +48,7 @@ this.ssu_necro_skeleton_med <- this.inherit("scripts/entity/tactical/legend_skel
 		]));
 
 
-		local item = this.Const.World.Common.pickHelmet([
+		local item = ::Legends.Items.pickHelmet([
 			[34, ::Legends.Helmet.None],
 			[66, ::Legends.Helmet.Ancient.ancient_household_helmet]
 		]);

@@ -164,11 +164,11 @@ this.ssu_immortal <- this.inherit("scripts/entity/tactical/human", {
 			"ssu_barbarian_reinforced_heavy_iron_armor"
 		]);
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[3, "ssu_barbarian_helmet_heavy_01"],
 				[3, "ssu_barbarian_helmet_heavy_02"],
 				[2, "ssu_barbarian_helmet_heavy_03"],
@@ -189,32 +189,32 @@ this.ssu_immortal <- this.inherit("scripts/entity/tactical/human", {
 		local r = this.Math.rand(1, 100);
 		if (r <= 15)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_barbarian_champion_fur"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_barbarian_champion_skull"]
 			]));
 		}
 		else if (r <= 30)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_barbarian_champion_skull"]
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_barbarian_champion_spiked"]
 			]));
 		}
 		else if (r <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_barbarian_champion_fur"],
 				[1, "ssu_barbarian_champion_skull"]
 			]));
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_barbarian_champion_skull"],
 				[1, "ssu_barbarian_champion_spiked"]
 			]));

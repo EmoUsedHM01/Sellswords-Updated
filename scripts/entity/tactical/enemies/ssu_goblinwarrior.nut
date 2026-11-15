@@ -113,7 +113,7 @@ this.ssu_goblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Body) == null)
 		{
-			local item = this.Const.World.Common.pickArmor([
+			local item = ::Legends.Items.pickArmor([
 				[
 					1,
 					"greenskins/goblin_heavy_armor"
@@ -124,7 +124,7 @@ this.ssu_goblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Head) == null)
 		{
-			local item = this.Const.World.Common.pickHelmet([
+			local item = ::Legends.Items.pickHelmet([
 				[
 					1,
 					"greenskins/goblin_heavy_helmet"

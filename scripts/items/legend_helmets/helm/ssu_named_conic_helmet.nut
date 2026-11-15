@@ -1,5 +1,11 @@
 this.ssu_named_conic_helmet <- this.inherit("scripts/items/legend_helmets/legend_named_helmet_upgrade", {
-	m = {},
+	m = {
+		Potential = {
+			Condition = { min = 250, max = 270 },
+			StaminaModifier = { min = 16, max = 14 },
+			Vision = { min = 2, max = 2 }
+		}
+	},
 	function create()
 	{
 		this.legend_named_helmet_upgrade.create();
@@ -22,11 +28,6 @@ this.ssu_named_conic_helmet <- this.inherit("scripts/items/legend_helmets/legend
 		this.m.ImpactSound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorChainmailImpact;
 		this.m.Value = 5000;
-		this.m.Condition = 165;
-		this.m.ConditionMax = 165;
-		this.m.StaminaModifier = -10;
-		this.m.Vision = -2;
-		this.m.IsLowerVanity = false;
 		this.m.HideHair = true;
 		this.m.HideBeard = true;
 		this.randomizeValues();
@@ -41,14 +42,6 @@ this.ssu_named_conic_helmet <- this.inherit("scripts/items/legend_helmets/legend
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = this.m.Icon;
 		this.m.OverlayIconLarge = this.m.OverlayIcon;
-	}
-
-	function randomizeValues()
-	{
-		this.m.Vision = -2;
-		this.m.StaminaModifier = this.Math.rand(14, 16) * -1;
-		this.m.Condition = this.Math.rand(250, 270);
-		this.m.ConditionMax = this.m.Condition;
 	}
 
 });

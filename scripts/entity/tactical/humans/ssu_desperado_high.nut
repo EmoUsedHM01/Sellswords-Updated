@@ -185,7 +185,7 @@ this.ssu_desperado_high <- this.inherit("scripts/entity/tactical/human", {
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_berserk"));			
 		}
 		
-		local armor = this.Const.World.Common.pickArmor([
+		local armor = ::Legends.Items.pickArmor([
 				[1, "ssu_knight_armor"],
 				[1, "ssu_hedgeknight_armor"]				
 		]);	
@@ -196,7 +196,7 @@ this.ssu_desperado_high <- this.inherit("scripts/entity/tactical/human", {
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 		{
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[
 					2,
 					"ssu_knight_helmet"

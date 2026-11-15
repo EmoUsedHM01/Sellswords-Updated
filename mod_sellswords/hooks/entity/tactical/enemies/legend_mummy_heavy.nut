@@ -47,7 +47,7 @@
 				"named_fan_axe"
 			]				
 		];
-		local weaponAdd = this.Const.World.Common.pickItem(weapons, "scripts/items/weapons/named/");
+		local weaponAdd = ::Legends.Items.pickItem(weapons, "scripts/items/weapons/named/");
 		this.m.Items.equip(weaponAdd);
 	}		
 });

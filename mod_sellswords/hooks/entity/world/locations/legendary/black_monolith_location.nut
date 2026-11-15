@@ -95,7 +95,7 @@
 			"misc/legend_masterwork_fabric",
 			"misc/legend_masterwork_tools"
 		], _lootTable);
-		_lootTable.push(this.Const.World.Common.pickArmor([
+		_lootTable.push(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_emperors_armor"

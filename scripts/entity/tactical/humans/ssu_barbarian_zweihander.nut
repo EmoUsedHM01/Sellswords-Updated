@@ -97,10 +97,10 @@ this.ssu_barbarian_zweihander <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[1, "ssu_barbgreataxe_armor"],		  				
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+		this.m.Items.equip(::Legends.Items.pickHelmet([				
 			[1, "ssu_barbgreataxe_helmet"],									
 		]));
 	}

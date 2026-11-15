@@ -147,7 +147,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		
 		if (dc <= 25)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[7, "butcher_apron"],
 				[1, "leather_wraps"]
 			]));
@@ -157,7 +157,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 			{
 				if (this.Math.rand(1, 100) <= 50)
 				{
-					local helm = this.Const.World.Common.pickHelmet([
+					local helm = ::Legends.Items.pickHelmet([
 						[1, "ssu_peasant_helmet_early"]
 					]);
 					this.m.Items.equip(helm);				
@@ -166,7 +166,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 40)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[4, "ssu_peasant_armor"],
 				[1, "ssu_peasant_armor_mid"]
 			]));
@@ -174,7 +174,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_early"],
 					[2, "ssu_peasant_helmet_mid"]					
 					
@@ -184,7 +184,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		}	
 		else if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_peasant_armor_late"],
 				[4, "ssu_peasant_armor_mid"]
 			]));
@@ -192,7 +192,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"],
 					[2, "ssu_peasant_helmet_mid"]					
 					
@@ -202,7 +202,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[5, "ssu_peasant_armor_late"],
 				[1, "ragged_surcoat"],
 				[1, "padded_leather"],
@@ -214,7 +214,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"]					
 					
 				]);
@@ -223,7 +223,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (dc > 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_peasant_armor_late"],
 				[1, "ssu_peasant_armor_verylate"]				
 			]));
@@ -231,7 +231,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 
 			if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))
 			{
-				local helm = this.Const.World.Common.pickHelmet([
+				local helm = ::Legends.Items.pickHelmet([
 					[1, "ssu_peasant_helmet_late"],					
 					[2, "ssu_peasant_helmet_verylate"]							
 				]);
@@ -250,7 +250,7 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		
 		this.m.Items.equip(this.new("scripts/items/weapons/butchers_cleaver"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_killing_frenzy"));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[1, "legend_champion_butcher_helmet"]
 		]));
 

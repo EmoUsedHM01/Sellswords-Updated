@@ -183,7 +183,7 @@ this.ssu_zombieswordmaster <- this.inherit("scripts/entity/tactical/enemies/zomb
 				"ssu_zombieswordmaster_armor_ni"
 			]
 		];
-		local armor = this.Const.World.Common.pickArmor(aList);
+		local armor = ::Legends.Items.pickArmor(aList);
 
 		if (this.Math.rand(1, 100) <= 66)
 		{
@@ -198,7 +198,7 @@ this.ssu_zombieswordmaster <- this.inherit("scripts/entity/tactical/enemies/zomb
 				"ssu_zombieswordmaster_helmet"
 			]
 		];
-		local h = this.Const.World.Common.pickHelmet(helmet);
+		local h = ::Legends.Items.pickHelmet(helmet);
 		
 		if (this.Math.rand(1, 100) <= 66)
 		{

@@ -240,7 +240,7 @@
 		local rr = this.Math.rand(1, 100);
 		if (rr >= dc)
 		{
-			local item = this.Const.World.Common.pickArmor([
+			local item = ::Legends.Items.pickArmor([
 				[
 					1,
 					"worn_mail_shirt"
@@ -262,7 +262,7 @@
 
 			if (this.Math.rand(1, 100) <= 85)
 			{
-				local item = this.Const.World.Common.pickHelmet([
+				local item = ::Legends.Items.pickHelmet([
 					[
 						1,
 						"nasal_helmet"
@@ -319,12 +319,12 @@
 		{
 			if (dc <= 80)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[3, "ssu_banditveteran_early_armor"],
 					[1, "ssu_banditveteran_midearly_armor"],
 					[0, "ssu_banditveteran_late_armor"]					
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[3, "ssu_banditveteran_early_helmet"],
 					[1, "ssu_banditveteran_mid_helmet"],
 					[0, "ssu_banditveteran_late_helmet"]					
@@ -332,13 +332,13 @@
 			}
 			else if (dc <= 135)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[3, "ssu_banditveteran_early_armor"],
 					[5, "ssu_banditveteran_midearly_armor"],
 					[2, "ssu_banditveteran_mid_armor"],						
 					[1, "ssu_banditveteran_late_armor"]	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_banditveteran_early_helmet"],
 					[4, "ssu_banditveteran_mid_helmet"],
 					[2, "ssu_banditveteran_late_helmet"],
@@ -347,12 +347,12 @@
 			}				
 			else if (dc <= 175)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[2, "ssu_banditveteran_midearly_armor"],						
 					[3, "ssu_banditveteran_mid_armor"],
 					[2, "ssu_banditveteran_late_armor"]	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[2, "ssu_banditveteran_mid_helmet"],
 					[2, "ssu_banditveteran_late_helmet"],
 					[1, "ssu_banditveteran_helmet_verylate"]						
@@ -360,12 +360,12 @@
 			}				
 			else if (dc > 175)
 			{
-				this.m.Items.equip(this.Const.World.Common.pickArmor([
+				this.m.Items.equip(::Legends.Items.pickArmor([
 					[0, "ssu_banditveteran_early_armor"],
 					[1, "ssu_banditveteran_mid_armor"],
 					[2, "ssu_banditveteran_late_armor"]	
 				]));
-				this.m.Items.equip(this.Const.World.Common.pickHelmet([
+				this.m.Items.equip(::Legends.Items.pickHelmet([
 					[1, "ssu_banditveteran_mid_helmet"],
 					[3, "ssu_banditveteran_late_helmet"],
 					[2, "ssu_banditveteran_helmet_verylate"]						

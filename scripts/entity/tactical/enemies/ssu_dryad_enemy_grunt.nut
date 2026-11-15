@@ -59,13 +59,13 @@ this.ssu_dryad_enemy_grunt <- this.inherit("scripts/entity/tactical/human", {
 	{
 		this.m.Items.equip(this.new("scripts/items/weapons/dryad/ssu_dryad_spear"));
 		this.m.Items.equip(this.new("scripts/items/shields/beasts/schrat_shield"));
-		this.m.Items.equip(this.Const.World.Common.pickArmor([
+		this.m.Items.equip(::Legends.Items.pickArmor([
 			[
 				1,
 				"ssu_dryad_armour_grunt"
 			]
 		]));
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickHelmet([
 			[
 				1,
 				"ssu_dryad_helmet_grunt"

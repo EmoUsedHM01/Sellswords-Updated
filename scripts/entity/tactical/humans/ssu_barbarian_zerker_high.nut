@@ -173,7 +173,7 @@ this.ssu_barbarian_zerker_high <- this.inherit("scripts/entity/tactical/human", 
 			]
 		];
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));		
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));		
 	}
 
 });

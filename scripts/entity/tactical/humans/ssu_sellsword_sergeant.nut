@@ -141,11 +141,11 @@ this.ssu_sellsword_sergeant <- this.inherit("scripts/entity/tactical/human", {
 		r = this.Math.rand(1, 5);
 		if (r == 1)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_sellsword_armor_medium"],	  	  //165,-22
 				[2, "ssu_sellsword_armor_medium_chain"],		  //190,-21	
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_sellsword_helmet_medium"],			   	//185,-9
 			]));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
@@ -154,11 +154,11 @@ this.ssu_sellsword_sergeant <- this.inherit("scripts/entity/tactical/human", {
 		}
 		else if (r >= 2)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_plate_full_late"],	   //370,-50				 375
 				[1, "ssu_plate_full_heavy"],	   //380,-49			 	
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([
+			this.m.Items.equip(::Legends.Items.pickHelmet([
 				[1, "ssu_knight_helmet_late_mixed"],				//410, min 400	
 				[1, "ssu_knight_helmet_late_mixed_patched"],		//405, min 390
 				[1, "ssu_enclave_armet"],			   //355,-24  	

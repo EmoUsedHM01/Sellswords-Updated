@@ -136,8 +136,8 @@ this.ssu_barbhunter <- this.inherit("scripts/entity/tactical/human", {
 			]
 		];
 
-		this.m.Items.equip(this.Const.World.Common.pickArmor(armor));
-		local item = this.Const.World.Common.pickHelmet([
+		this.m.Items.equip(::Legends.Items.pickArmor(armor));
+		local item = ::Legends.Items.pickHelmet([
 			[
 				1,
 				"barbarians/leather_headband"

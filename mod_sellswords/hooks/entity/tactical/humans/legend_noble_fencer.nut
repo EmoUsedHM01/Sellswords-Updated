@@ -68,22 +68,22 @@
 		
 		if (dc <= 60)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[3, "ssu_armor_hauberk_fencer_early"],		   //100,-11
 				[1, "ssu_armor_hauberk_fencer_mid"],	   //120,-13 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[3, "ssu_billman_helmet_low"],			//~30
 				[1, "ssu_billman_helmet_early"],			   //~85,-5 						
 			]));
 		}
 		else if (dc <= 90)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_fencer_early"],		   //100,-11
 				[3, "ssu_armor_hauberk_fencer_mid"],	   //120,-13 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_billman_helmet_early"],			   //~85,-5 
 				[0, "ssu_fencer_helmet_early"],			//~100,-5
 				[0, "ssu_fencer_helmet_mid"],		   //~130,-7					
@@ -92,13 +92,13 @@
 		}			
 		else if (dc <= 120)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_fencer_mid"],	   //120,-13 
 				[1, "ssu_armor_hauberk_fencer_late"],	 //130,-13
 				[0, "ssu_armor_hauberk_fencer_late_patched"],	   //155,-13  
 				[0, "ssu_armor_leather"],	 //155,-12 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_billman_helmet_early"],			   //~85,-5 
 				[1, "ssu_fencer_helmet_early"],			//~100,-5
 				[0, "ssu_fencer_helmet_mid"],		   //~130,-7					
@@ -107,12 +107,12 @@
 		}	
 		else if (dc <= 150)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_fencer_late"],	 //130,-13
 				[1, "ssu_armor_hauberk_fencer_late_patched"],	   //155,-13  
 				[0, "ssu_armor_leather"],	 //155,-12 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_fencer_helmet_early"],			//~100,-5
 				[2, "ssu_fencer_helmet_mid"],		   //~130,-7					
 				[0, "ssu_fencer_helmet_late"],			   //~160,-6 						
@@ -120,22 +120,22 @@
 		}
 		else if (dc <= 180)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[2, "ssu_armor_hauberk_fencer_late_patched"],	   //155,-13  
 				[1, "ssu_armor_leather"],	 //155,-12 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([				
+			this.m.Items.equip(::Legends.Items.pickHelmet([				
 				[1, "ssu_fencer_helmet_mid"],		   //~130,-7					
 				[1, "ssu_fencer_helmet_late"],			   //~160,-6 						
 			]));
 		}
 		else if (dc > 180)
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([
+			this.m.Items.equip(::Legends.Items.pickArmor([
 				[1, "ssu_armor_hauberk_fencer_late_patched"],	   //155,-13  
 				[2, "ssu_armor_leather"],	 //155,-12 					
 			]));
-			this.m.Items.equip(this.Const.World.Common.pickHelmet([								
+			this.m.Items.equip(::Legends.Items.pickHelmet([								
 				[1, "ssu_fencer_helmet_late"],			   //~160,-6 						
 			]));
 		}			
@@ -164,11 +164,11 @@
 		}
 		else
 		{
-			this.m.Items.equip(this.Const.World.Common.pickArmor([ 
+			this.m.Items.equip(::Legends.Items.pickArmor([ 
 				[1, "ssu_named_leather_jacket"],	 		//155,-12 used by fencers 				
 			]));
 		}
-		this.m.Items.equip(this.Const.World.Common.pickHelmet([ 
+		this.m.Items.equip(::Legends.Items.pickHelmet([ 
 			[1, "ssu_fencer_helmet_champion"],	 		//170,-9 				
 		]));			
 		this.m.BaseProperties.Initiative += 10;				

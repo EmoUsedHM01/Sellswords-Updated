@@ -2017,17 +2017,6 @@ Nailed it!
 • Costs [color=%negative%]2[/color] AP and [color=%negative%]15[/color] Fatigue.
 ";
 
-::Const.Strings.PerkDescription.LegendNetRepair = @"
-Many years spent repairing and packing nets allows you to create nets and wield them more effectively.
-
-[color=%passive%][u]Passive:[/u][/color]
-• Unlocks the 'Net' recipe in the crafting tent, which you can use to fix broken ones.
-
-• Grants [color=%positive%]+10[/color] Melee Defense while holding a net and reduces the AP cost of throwing nets to [color=%negative%]3[/color].
-
-• Ignore the weight of nets, both when equipped and in your bag.
-";
-
 ::Const.Strings.PerkDescription.LegendNetCasting = @"
 Always keep a net handy!
 
@@ -2036,8 +2025,6 @@ Always keep a net handy!
 
 • Increases the range of all nets by [color=%positive%]2[/color] tiles.
 
-• Allows you to swap nets to and from your bag for no AP.
-
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]25[/color] Fatigue.
 ";
 
@@ -2045,7 +2032,9 @@ Always keep a net handy!
 You've learned advanced net throwing techniques.
 
 [color=%passive%][u]Passive:[/u][/color]
-• Reduce the Fatigue cost of throwing a net by [color=%negative%]25%[/color].
+• Reduce the Fatigue cost of throwing a net by [color=%negative%]25%[/color] and the AP cost by [color=%negative%]1[/color].
+
+• Grants [color=%positive%]+10[/color] Melee Defense while holding a net.
 
 • Makes throwing other tools such as pots more effective.
 
@@ -2248,7 +2237,6 @@ Unleash an arcing barrage of lightning!
 	SpecThrowing = true,
 	SpecFlail = true,
 	Bullseye = true,
-	LegendNetRepair = true,
 	LegendNetCasting = true,
 	LegendMasteryNets = true,
 	LegendEscapeArtist = true,
@@ -2717,11 +2705,6 @@ Unleash an arcing barrage of lightning!
 	Tooltip2 = "Inflicts additional [color=%positive%]{1}%[/color] damage on a hit to the head"
 };
 
-// mod_sellswords\hooks\skills\actives\disarm_skill.nut
-::Mod_Sellswords.Strings.disarm_skill <- {
-	Tooltip = "[color=%negative%]40%[/color] A formidable Orc Warlord"
-};
-
 // mod_sellswords\hooks\skills\actives\ghastly_touch.nut
 ::Mod_Sellswords.Strings.ghastly_touch <- {
 	Description = "A touch of something that doesn\'t belong to the living world. Quickly drain away any piece of life or sanity your victim has.",
@@ -2790,11 +2773,8 @@ Unleash an arcing barrage of lightning!
 
 // mod_sellswords\hooks\skills\actives\legend_choke_skill.nut
 ::Mod_Sellswords.Strings.legend_choke_skill <- {
-	Tooltip1 = "[color=%negative%]{1}%[/color] Firm armor",
-	Tooltip2 = "[color=%negative%]{1}%[/color] Fresh and energetic",
-	Tooltip3 = "[color=%positive%]{1}%[/color] Negative status",
-	Tooltip4 = "Damage halved due to holding something in your off hand",
-	Tooltip5 = "This skill is not useable due to holding something in your main hand"
+	Tooltip1 = "Damage halved due to holding something in your off hand",
+	Tooltip2 = "This skill is not useable due to holding something in your main hand"
 };
 
 // mod_sellswords\hooks\skills\actives\legend_coordinated_volleys_skill.nut
@@ -2846,11 +2826,6 @@ Unleash an arcing barrage of lightning!
 	Log = "{1} struck a hit that leaves {2} dazed"
 };
 
-// mod_sellswords\hooks\skills\actives\lunge_skill.nut
-::Mod_Sellswords.Strings.lunge_skill <- {
-	Tooltip = "[color=%negative%]{1}%[/color] Firm armor"
-};
-
 // mod_sellswords\hooks\skills\actives\miasma_skill.nut
 ::Mod_Sellswords.Strings.miasma_skill <- {
 	Description = "Release a dense cloud of noxious gas that only effects living beings",
@@ -2861,11 +2836,8 @@ Unleash an arcing barrage of lightning!
 
 // mod_sellswords\hooks\skills\actives\puncture.nut
 ::Mod_Sellswords.Strings.puncture <- {
-	Tooltip1 = "[color=%negative%]{1}%[/color] Firm armor",
-	Tooltip2 = "[color=%negative%]{1}%[/color] Fresh and energetic",
-	Tooltip3 = "[color=%positive%]{1}%[/color] Negative status",
-	Tooltip4 = "Hit chance determined by your target's fatigue, remaining body armor and negative status like stunned, netted, grappled, etc. [color=%negative%]-50%[/color] hitchance if they are fresh and [color=%negative%]-0%[/color] if they are exhausted. Also has [color=%negative%]-1%[/color] chance to hit for every 5 points of Body Armor durability the target has above 125, up to a maximum of [color=%negative%]-35%[/color]. While negative status can provide you a total of [color=%positive%]+175%[/color] bonus.",
-	Tooltip5 = "Completely ignores armor"
+	Tooltip1 = "Hit chance determined by your target's fatigue, remaining body armor and negative status like stunned, netted, grappled, etc. [color=%negative%]-50%[/color] hitchance if they are fresh and [color=%negative%]-0%[/color] if they are exhausted. Also has [color=%negative%]-1%[/color] chance to hit for every 5 points of Body Armor durability the target has above 125, up to a maximum of [color=%negative%]-35%[/color]. While negative status can provide you a total of [color=%positive%]+175%[/color] bonus.",
+	Tooltip2 = "Completely ignores armor"
 };
 
 // mod_sellswords\hooks\skills\actives\raise_undead.nut

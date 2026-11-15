@@ -1,5 +1,10 @@
 this.ssu_named_plated_mail_hauberk <- this.inherit("scripts/items/legend_armor/legend_named_armor_upgrade", {
-	m = {},
+	m = {
+		Potential = {
+			Condition = { min = 250, max = 265 },
+			StaminaModifier = { min = 28, max = 26 }
+		}
+	},
 	function create()
 	{
 		this.legend_named_armor_upgrade.create();
@@ -21,9 +26,6 @@ this.ssu_named_plated_mail_hauberk <- this.inherit("scripts/items/legend_armor/l
 		this.m.ImpactSound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.InventorySound = this.Const.Sound.ArmorHalfplateImpact;
 		this.m.Value = 14000;
-		this.m.Condition = 130;
-		this.m.ConditionMax = 130;
-		this.m.StaminaModifier = -14;
 		this.randomizeValues();
 	}
 
@@ -37,13 +39,6 @@ this.ssu_named_plated_mail_hauberk <- this.inherit("scripts/items/legend_armor/l
 		this.m.IconLarge = this.m.Icon;
 		this.m.OverlayIcon = "legend_armor/ssu_icon_named_plated_mail_hauberk.png";
 		this.m.OverlayIconLarge = "legend_armor/ssu_inventory_named_plated_mail_hauberk.png";		
-	}
-
-	function randomizeValues()
-	{
-		this.m.StaminaModifier = this.Math.rand(26, 28) * -1;
-		this.m.Condition = this.Math.rand(250, 265);
-		this.m.ConditionMax = this.m.Condition;
 	}
 
 });
