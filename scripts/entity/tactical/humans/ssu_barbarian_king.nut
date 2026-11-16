@@ -207,8 +207,6 @@ this.ssu_barbarian_king <- this.inherit("scripts/entity/tactical/human", {
 			"weapons/named/legend_named_rusty_greatsword",
 			"weapons/named/legend_named_rusty_warcleaver",
 			"weapons/named/legend_named_rusty_serrated_axe",
-			"weapons/named/ssu_named_twinaxes",
-			"weapons/named/ssu_named_twincleavers",
 			"weapons/named/named_two_handed_spiked_mace",
 			"weapons/named/named_rusty_warblade",
 			"weapons/named/named_heavy_rusty_axe",

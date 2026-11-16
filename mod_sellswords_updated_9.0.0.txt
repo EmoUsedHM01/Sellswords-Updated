@@ -2767,6 +2767,244 @@ Net Mastery description now lists the AP cost and Melee Defense it gained in Leg
 ...\mod_sellswords\strings.nut
 Removed every onGetHitFactors and its strings, Legends no longer shows hit factors and removed the function from its own skills
 
+...\ui\mods\mod_ssu_breditor_add_on.js < deleted
+...\mod_sellswords\load.nut
+...\mod_sellswords\hooks_breditor\scripts\ssu_breditor_patch.nut
+Updated the Breditor hooks (Needs the updated Breditor)
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_throw_sand.nut < deleted
+The hook only set the perk name and description from strings, the name string no longer exists and Legends sets both from the perk def
+
+...\mod_sellswords\config\ssu_necro_perk_defs.nut
+...\scripts\skills\perks\perk_ssu_necro_ghost_soul_eater.nut
+...\scripts\skills\actives\ssu_overwhelm_attack.nut
+...\scripts\skills\effects\ssu_dryad_forest_blessing_effect.nut
+Legends renamed siphon_circle to legend_draining_touch and daze_square to legend_stupefy, updated the icon paths
+The forest blessing effect pointed at an icon that does not exist, it now uses the forest blessing perk icon
+
+...\mod_sellswords\config\ssu_dual_wield.nut < new
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+Dual wielders now hold both weapons out side by side, moved forward and tilted down like the SSU twin weapons
+
+...\mod_sellswords\hooks\entity\tactical\enemies\orc_warlord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\wolf.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_noble_halberdier.nut
+...\scripts\entity\tactical\enemies\ssu_deathknight.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_wolf.nut
+...\scripts\entity\tactical\enemies\ssu_fallenbetrayer.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider00.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider01.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider02.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider03.nut
+...\scripts\entity\tactical\enemies\ssu_goblin_rider04.nut
+...\scripts\entity\tactical\enemies\ssu_goblinwarrior.nut
+...\scripts\entity\tactical\enemies\ssu_orc_vanguard.nut
+...\scripts\entity\tactical\enemies\ssu_skeleton.nut
+...\scripts\entity\tactical\enemies\ssu_skeleton_pol.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_arbalester.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_billman.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_footman.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_zweihander.nut
+...\scripts\entity\tactical\enemies\ssu_zombieswordmaster.nut
+...\scripts\entity\tactical\humans\ssu_banditleaderwolf.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_championhigh.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_zerker_high.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_zerker_low.nut
+...\scripts\entity\tactical\humans\ssu_barbblacksmith.nut
+...\scripts\entity\tactical\humans\ssu_desperado.nut
+...\scripts\entity\tactical\humans\ssu_desperado_high.nut
+...\scripts\entity\tactical\humans\ssu_desperado_low.nut
+...\scripts\entity\tactical\humans\ssu_desperado_weak.nut
+...\scripts\entity\tactical\humans\ssu_guardsman.nut
+...\scripts\entity\tactical\humans\ssu_guardsman_pol.nut
+...\scripts\entity\tactical\humans\ssu_immortal.nut
+...\scripts\entity\tactical\humans\ssu_lindwurm_slayer.nut
+...\scripts\entity\tactical\humans\ssu_nomad_scavenger.nut
+...\scripts\entity\tactical\humans\ssu_outlander.nut
+...\scripts\entity\tactical\humans\ssu_retiredsoldier.nut
+...\scripts\entity\tactical\humans\ssu_retiredsoldierpol.nut
+...\scripts\entity\tactical\humans\ssu_sellsword.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_banner.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_elite.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_lieutenant.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_polearm.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_sergeant.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_tank.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_polearm.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_tank.nut
+...\scripts\entity\tactical\humans\ssu_slaveowner.nut
+...\scripts\entity\tactical\humans\ssu_slayer.nut
+...\scripts\entity\tactical\humans\ssu_squire.nut
+...\scripts\entity\tactical\humans\ssu_squire_fencer.nut
+...\scripts\entity\tactical\humans\ssu_squire_guest.nut
+...\scripts\entity\tactical\humans\ssu_squire_low.nut
+...\scripts\entity\tactical\humans\ssu_squire_normal.nut
+Swapped the Strength in Numbers perk to Backstabber (this was a Legends change)
+
+...\mod_sellswords\hooks\items\weapons\legend_staff_gnarled.nut < deleted
+Legends removed the gnarled staff
+
+...\scripts\skills\effects\ssu_berserker_roar_effect.nut
+Fixed the icon path of the berserker roar effect
+
+...\mod_sellswords\hooks\items\weapons\named\named_weapon.nut
+Fixed the error in the tooltip of every named weapon cause of my old hook
+
+...\scripts\items\weapons\greenskins\ssu_goblin_axe.nut < deleted
+...\mod_sellswords\strings.nut
+...\scripts\entity\tactical\enemies\ssu_goblinwarrior.nut
+Removed the Raider Axe (yoinked again)
+
+...\scripts\items\weapons\barbarians\ssu_twinaxes_t1.nut < deleted
+...\scripts\items\weapons\barbarians\ssu_twinaxes_t2.nut < deleted
+...\scripts\items\weapons\barbarians\ssu_twinaxes_t3.nut < deleted
+...\scripts\items\weapons\barbarians\ssu_twincleavers_t1.nut < deleted
+...\scripts\items\weapons\barbarians\ssu_twincleavers_t2.nut < deleted
+...\scripts\items\weapons\named\ssu_named_twinaxes.nut < deleted
+...\scripts\items\weapons\named\ssu_named_twincleavers.nut < deleted
+...\scripts\skills\actives\ssu_twinaxes_1.nut < deleted
+...\scripts\skills\actives\ssu_twinaxes_2.nut < deleted
+...\scripts\skills\actives\ssu_twincleavers_1.nut < deleted
+...\scripts\skills\actives\ssu_twincleavers_2.nut < deleted
+...\scripts\items\weapons\barbarians\ssu_war_axe.nut < new
+...\gfx\ui\items\weapons\melee\ssu_war_axe.png < new
+...\gfx\ui\items\weapons\melee\ssu_war_axe_70x70.png < new
+...\gfx\ui\items\weapons\melee\ssu_berserker_twinaxes.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twinaxes_70.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twinaxes_02.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twinaxes_02_70.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twinaxes_03.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twinaxes_03_70.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twincleavers.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twincleavers_70.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twincleavers_02.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_berserker_twincleavers_02_70.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_double_axe_01.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_double_axe_01_70.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_double_cleaver_01.png < deleted
+...\gfx\ui\items\weapons\melee\ssu_double_cleaver_01_70.png < deleted
+...\brushes\ssu_weapons.brush
+...\gfx\ssu_weapons.png
+...\mod_sellswords\config\ssu_dual_wield.nut
+...\mod_sellswords\hook_helper.nut
+...\mod_sellswords\strings.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_default.nut
+...\mod_sellswords\hooks\ai\tactical\behaviors\ai_attack_swing.nut
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_champion.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_championhigh.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_king.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_zerker_high.nut
+...\scripts\entity\tactical\humans\ssu_barbarian_zerker_low.nut
+...\scripts\entity\tactical\humans\ssu_sellsword.nut
+Removed every twin weapon and their skills, the units that had one now hold two one-handed weapons with the Legends dual wield system
+Twinned Crude Axes and Twinned Barbarian Axes are now two Crude Axes, Fiery War Axes are two of the new one-handed Fiery War Axe (ssu_war_axe), both twinned cleavers are two Blunt Cleavers
+The named twin weapons are gone, the Barbarian Champion (high) that only had those now picks two Fiery War Axes or two Blunt Cleavers
+New HookHelper.equipWeapon gives a unit its weapon, the weapons listed in ::Mod_Sellswords.DualWield.Paired get a second one for the off hand
+Fixed the bloodied sprite of ssu_icon_wildmen_089 having the same name as the clean one, so it was never used
+
+...\scripts\items\weapons\special\ssu_legendary_cleaver.nut
+...\scripts\skills\effects\ssu_bone_cleaver_effect.nut
+...\mod_sellswords\hooks\events\events\legends\legend_mummy_enter_event.nut
+...\mod_sellswords\hooks\skills\actives\legend_double_swing_skill.nut < new
+...\mod_sellswords\hooks\skills\effects\legend_dual_wielding_effect.nut < new
+...\mod_sellswords\strings.nut
+...\gfx\ui\items\weapons\melee\ssu_bone_cleaver.png
+...\gfx\ui\items\weapons\melee\ssu_bone_cleaver_70x70.png
+...\brushes\ssu_weapons.brush
+...\gfx\ssu_weapons.png
+The Bloodfang Twinblades are now two one-handed blades that are rewarded together
+A single blade is a normal cleaver with Cleave and Decapitate, it never gets the red lightning or the bloodied bonus
+With one blade in each hand they unite, which swaps the skills to Rend Flesh, Mince and Swing and brings back the healing, the bloodied bonus and the red lightning sprite
+The united skills are left out of the Legends follow-up attack and off hand penalty, and Double Swing is hidden while united
+Fixed the bloodied bonus being active all the time, and the bloodied sprite never showing, because of an assignment in the check
+
+...\gfx\ui\items\weapons\melee\ssu_bone_cleaver.png
+...\gfx\ui\items\weapons\melee\ssu_bone_cleaver_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_bone_staff_70x140.png
+...\gfx\ui\items\weapons\melee\ssu_bone_staff_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_dryad_cleaver.png
+...\gfx\ui\items\weapons\melee\ssu_dryad_cleaver_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_dryad_flail.png
+...\gfx\ui\items\weapons\melee\ssu_dryad_flail_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_dryad_spear.png
+...\gfx\ui\items\weapons\melee\ssu_dryad_spear_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_dryad_staff.png
+...\gfx\ui\items\weapons\melee\ssu_dryad_staff_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_earth_hammer.png
+...\gfx\ui\items\weapons\melee\ssu_earth_hammer_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_fan_axe_01.png
+...\gfx\ui\items\weapons\melee\ssu_fan_axe_01_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_ghost_spear.png
+...\gfx\ui\items\weapons\melee\ssu_ghost_spear_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_goedendag_03.png
+...\gfx\ui\items\weapons\melee\ssu_goedendag_03_70.png
+...\gfx\ui\items\weapons\melee\ssu_ice_axe.png
+...\gfx\ui\items\weapons\melee\ssu_ice_axe_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_kreigsmesser.png
+...\gfx\ui\items\weapons\melee\ssu_kreigsmesser_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_legend_flail_ranged_03.png
+...\gfx\ui\items\weapons\melee\ssu_legend_flail_ranged_03_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_legend_katar_02.png
+...\gfx\ui\items\weapons\melee\ssu_legend_katar_02_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_lightning_sword.png
+...\gfx\ui\items\weapons\melee\ssu_lightning_sword_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_longaxe_03.png
+...\gfx\ui\items\weapons\melee\ssu_longaxe_03_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_named_orc_1h_sword.png
+...\gfx\ui\items\weapons\melee\ssu_named_orc_1h_sword_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_named_orc_cleaver_2h.png
+...\gfx\ui\items\weapons\melee\ssu_named_orc_cleaver_2h_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_named_orc_hammer_2h.png
+...\gfx\ui\items\weapons\melee\ssu_named_orc_hammer_2h_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_named_spontoon_01.png
+...\gfx\ui\items\weapons\melee\ssu_named_spontoon_01_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_named_spontoon_02.png
+...\gfx\ui\items\weapons\melee\ssu_named_spontoon_02_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_orc_axe_named_04.png
+...\gfx\ui\items\weapons\melee\ssu_orc_axe_named_04_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_orc_hammer_2h_low.png
+...\gfx\ui\items\weapons\melee\ssu_orc_hammer_2h_low_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_orc_mace.png
+...\gfx\ui\items\weapons\melee\ssu_orc_mace_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_orc_named_mace_2h.png
+...\gfx\ui\items\weapons\melee\ssu_orc_named_mace_2h_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_orc_spear.png
+...\gfx\ui\items\weapons\melee\ssu_orc_spear_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_orc_sword.png
+...\gfx\ui\items\weapons\melee\ssu_orc_sword_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_polehammer_03.png
+...\gfx\ui\items\weapons\melee\ssu_polehammer_03_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_polemace_03.png
+...\gfx\ui\items\weapons\melee\ssu_polemace_03_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_spontoon_01.png
+...\gfx\ui\items\weapons\melee\ssu_spontoon_01_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_spontoon_02.png
+...\gfx\ui\items\weapons\melee\ssu_spontoon_02_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_spontoon_03.png
+...\gfx\ui\items\weapons\melee\ssu_spontoon_03_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_staff_01.png
+...\gfx\ui\items\weapons\melee\ssu_staff_01_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_swordlance_03.png
+...\gfx\ui\items\weapons\melee\ssu_swordlance_03_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_two_handed_miners_pick.png
+...\gfx\ui\items\weapons\melee\ssu_two_handed_miners_pick_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_war_axe.png
+...\gfx\ui\items\weapons\melee\ssu_war_axe_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_wildmen_088.png
+...\gfx\ui\items\weapons\melee\ssu_wildmen_088_70x70.png
+...\gfx\ui\items\weapons\melee\ssu_wildmen_089.png
+...\gfx\ui\items\weapons\melee\ssu_wildmen_089_70x70.png
+...\gfx\ui\items\weapons\melee\wildmen_031.png
+...\gfx\ui\items\weapons\melee\wildmen_031_70x70.png
+...\gfx\ui\items\weapons\ranged\ssu_dryad_bow.png
+...\gfx\ui\items\weapons\ranged\ssu_dryad_bow_70x70.png
+...\gfx\ui\items\weapons\ranged\ssu_firelance.png
+...\gfx\ui\items\weapons\ranged\ssu_firelance_70.png
+Cleaned up and sharpened every SSU weapon inventory icon, large and small, so they sit closer to the remade Legends weapon icons
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

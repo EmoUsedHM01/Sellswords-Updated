@@ -98,7 +98,7 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_last_stand"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_second_wind"));	
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));		
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));			
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));			
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/traits/iron_jaw_trait"));
 		}	

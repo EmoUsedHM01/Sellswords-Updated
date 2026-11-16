@@ -30,7 +30,7 @@ this.ssu_zombie_footman <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		b.MoraleEffectMult = 0.0;			
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.BaseProperties.IsImmuneToPoison = true;
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));		
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));

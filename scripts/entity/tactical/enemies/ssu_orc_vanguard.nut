@@ -349,7 +349,7 @@ this.ssu_orc_vanguard <- this.inherit("scripts/entity/tactical/actor", {
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_colossus"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));

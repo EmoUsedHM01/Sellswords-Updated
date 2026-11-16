@@ -60,7 +60,7 @@ this.ssu_lindwurm_slayer <- this.inherit("scripts/entity/tactical/human", {
 		dc = this.Math.max(dc, mn * 3);			
 		if (dc >= 80)
 		{
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_escape_artist"));
 
 			if (dc >= 120)

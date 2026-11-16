@@ -60,7 +60,7 @@ this.ssu_zombieswordmaster <- this.inherit("scripts/entity/tactical/enemies/zomb
 		this.m.Skills.add(this.new("scripts/skills/effects/ssu_clarity_effect_permanent"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.BaseProperties.IsImmuneToPoison = true;
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)

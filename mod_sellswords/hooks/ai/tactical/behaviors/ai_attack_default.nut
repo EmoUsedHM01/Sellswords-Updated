@@ -1,9 +1,6 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/ai/tactical/behaviors/ai_attack_default", function ( q ) {
 
 	q.m.PossibleSkills.extend([
-		"actives.ssu_twinaxes_1",
-		"actives.ssu_twincleavers_1",
-		"actives.ssu_twincleavers_2",
 		"actives.ssu_strike",
 		"actives.ssu_earth_hammer_smite",
 		"actives.ssu_bone_cleaver_slash",

@@ -4767,38 +4767,11 @@ Unleash an arcing barrage of lightning!
 	Categories = "Mace, Two-Handed"
 };
 
-// scripts\items\weapons\barbarians\ssu_twinaxes_t1.nut
-::Mod_Sellswords.Strings.ssu_twinaxes_t1 <- {
-	Name = "Twinned Crude Axes",
-	Description = "A unique way of northern fighting, maybe holding these two rusty axes in each hand is a good idea? It seemed effective enough when used against you.",
-	Categories = "Axe, Two-Handed"
-};
-
-// scripts\items\weapons\barbarians\ssu_twinaxes_t2.nut
-::Mod_Sellswords.Strings.ssu_twinaxes_t2 <- {
-	Name = "Twinned Barbarian Axes",
-	Description = "A unique way of northern fighting, maybe holding these two rusty axes in each hand is a good idea? It seemed effective enough when used against you.",
-	Categories = "Axe, Two-Handed"
-};
-
-// scripts\items\weapons\barbarians\ssu_twinaxes_t3.nut
-::Mod_Sellswords.Strings.ssu_twinaxes_t3 <- {
-	Name = "Fiery War Axes",
-	Description = "A unique way of northern fighting, maybe holding these two rusty axes in each hand is a good idea? It seemed effective enough when used against you.",
-	Categories = "Axe, Two-Handed"
-};
-
-// scripts\items\weapons\barbarians\ssu_twincleavers_t1.nut
-::Mod_Sellswords.Strings.ssu_twincleavers_t1 <- {
-	Name = "Twinned Crude Cleavers",
-	Description = "A unique way of northern fighting, maybe holding these two rusty cleavers in each hand is a good idea? It seemed effective enough when used against you.",
-	Categories = "Cleaver, Two-Handed"
-};
-
-// scripts\items\weapons\barbarians\ssu_twincleavers_t2.nut
-::Mod_Sellswords.Strings.ssu_twincleavers_t2 <- {
-	Name = "Twinned Barbarian Cleavers",
-	Description = "A unique way of northern fighting, maybe holding these two rusty cleavers in each hand is a good idea? It seemed effective enough when used against you."
+// scripts\items\weapons\barbarians\ssu_war_axe.nut
+::Mod_Sellswords.Strings.ssu_war_axe <- {
+	Name = "Fiery War Axe",
+	Description = "A heavy northern war axe with a blackened head. The raiders who carry these would rather have a second axe in the other hand than a shield.",
+	Categories = "Axe, One-Handed"
 };
 
 // scripts\items\weapons\dryad\ssu_dryad_bow.nut
@@ -4834,13 +4807,6 @@ Unleash an arcing barrage of lightning!
 	Name = "Dryad Staff",
 	Description = "A sturdy staff crafted by Dryads from their sacred Heartwood. When exposed to blood, the mystical properties of these staves reveal themselves.",
 	Tooltip = "Slowly repairs [color=%positive%]5[/color] durability each turn."
-};
-
-// scripts\items\weapons\greenskins\ssu_goblin_axe.nut
-::Mod_Sellswords.Strings.ssu_goblin_axe <- {
-	Name = "Raider Axe",
-	Description = "A cruel and crude axe forged en masse by goblin hordes.",
-	Tooltip = "Melee attacks cost [color=%positive%]-1[/color] Action Point"
 };
 
 // scripts\items\weapons\greenskins\ssu_orc_mace.nut
@@ -4927,20 +4893,6 @@ Unleash an arcing barrage of lightning!
 	Description = "A sturdy staff with a crystal ball on its tip, it catches the light in mysterious ways."
 };
 
-// scripts\items\weapons\named\ssu_named_twinaxes.nut
-::Mod_Sellswords.Strings.ssu_named_twinaxes <- {
-	Name = "Fang of Malice",
-	Description = "A unique way of northern fighting, maybe holding these two axes in each hand is a good idea? These masterfully crafted axes come as a set, and were apparently an heirloom of the last Barbarian King.",
-	Categories = "Axe, Two-Handed"
-};
-
-// scripts\items\weapons\named\ssu_named_twincleavers.nut
-::Mod_Sellswords.Strings.ssu_named_twincleavers <- {
-	Name = "Fury",
-	Description = "A unique way of northern fighting, maybe holding these two cleavers in each hand is a good idea? These masterfully crafted cleavers come as a set, and were apparently an heirloom of the last Barbarian King.",
-	Categories = "Cleaver, Two-Handed"
-};
-
 // scripts\items\weapons\special\ssu_legendary_axe.nut
 ::Mod_Sellswords.Strings.ssu_legendary_axe <- {
 	Name = "[color=#456ca0]Winter\'s Touch, the Ijirok\'s Remembrance[/color]",
@@ -4953,13 +4905,14 @@ Unleash an arcing barrage of lightning!
 
 // scripts\items\weapons\special\ssu_legendary_cleaver.nut
 ::Mod_Sellswords.Strings.ssu_legendary_cleaver <- {
-	Name = "[color=#456ca0]Bloodfang Twinblades[/color]",
+	Name = "[color=#456ca0]Bloodfang Twinblade[/color]",
 	Description = "One of the seven legendary weapons,\n[color=#456ca0]Bloodfang Twinblades[/color] gleam with a sinister light, their edges serrated like the fangs they were crafted from.\nIndividually, they are lifeless, but when united, they pulse with a thirst for blood, their true power unleashed in a symphony of blood, bone, and steel.\nThe blades can cut through the toughest armor, leaving behind wounds that never fully heal.",
-	Categories = "Cleaver, Two-Handed",
+	Categories = "Cleaver, One-Handed",
 	Tooltip1 = "One of the seven [color=#456ca0]Legendary[/color] weapons.",
 	Tooltip2 = "When [color=%negative%]Bloodied[/color], grants the user [color=%positive%]20%[/color] additional damage dealt and recieved.",
 	Tooltip3 = "When attacking enemies that bleed, heals the player equal to the damage inflicted.",
-	Tooltip4 = "Bleeds inflicted with this weapon are permanent."
+	Tooltip4 = "Bleeds inflicted with this weapon are permanent.",
+	Tooltip5 = "Lifeless on its own. Hold one of the two blades in each hand to unite them, which replaces their skills with [color=%positive%]Rend Flesh[/color], [color=%positive%]Mince[/color] and [color=%positive%]Swing[/color] and grants:"
 };
 
 // scripts\items\weapons\special\ssu_legendary_dagger.nut
@@ -5438,37 +5391,6 @@ Unleash an arcing barrage of lightning!
 	Tooltip1 = "Has a range of [color=%positive%]{1}[/color] tiles",
 	Tooltip2 = "Some targets can never be caught or ensnared",
 	Tooltip3 = "Can be used once per battle"
-};
-
-// scripts\skills\actives\ssu_twinaxes_1.nut
-::Mod_Sellswords.Strings.ssu_twinaxes_1 <- {
-	Name = "Hack",
-	Description = "Continuous chopping attack that bears full force on any target.",
-	Tooltip1 = "Will make [color=%positive%]{1}[/color] separate strikes for [color=%positive%]{2}%[/color] of the weapon\'s damage each",
-	Tooltip2 = "Inflicts additional [color=%positive%]35%[/color] damage on a hit to the head"
-};
-
-// scripts\skills\actives\ssu_twinaxes_2.nut
-::Mod_Sellswords.Strings.ssu_twinaxes_2 <- {
-	Name = "Swing",
-	Description = "Swinging the weapon in a wide arc that hits three adjacent tiles in counter-clockwise order. Be careful around your own men unless you want to relieve your payroll!",
-	Tooltip1 = "Can hit up to 3 targets",
-	Tooltip2 = "Has [color=%negative%]-5%[/color] chance to hit"
-};
-
-// scripts\skills\actives\ssu_twincleavers_1.nut
-::Mod_Sellswords.Strings.ssu_twincleavers_1 <- {
-	Name = "Rend Flesh",
-	Description = "A brute force cleaving attack that can inflict devastating bleeding wounds, provided no armour is absorbing the blow.",
-	Tooltip = "Inflicts additional stacking [color=%damage%]{1}[/color] bleeding damage per turn, for 2 turns"
-};
-
-// scripts\skills\actives\ssu_twincleavers_2.nut
-::Mod_Sellswords.Strings.ssu_twincleavers_2 <- {
-	Name = "Mince",
-	Description = "A continuous flurry of blows so oppressive that it will send anything that survives reeling.",
-	Tooltip1 = "Will make five separate strikes for 50% of the weapon\'s damage each",
-	Tooltip2 = "Has a higher than normal chance to cause fatalities"
 };
 
 // scripts\skills\actives\ssu_whip.nut

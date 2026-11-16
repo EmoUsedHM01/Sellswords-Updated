@@ -11,6 +11,7 @@ this.ssu_bone_cleaver_effect <- this.inherit("scripts/skills/skill", {
 		this.m.IsActive = false;
 		this.m.IsStacking = false;
 		this.m.IsHidden = true;
+		this.m.IsSerialized = false;
 	}
 
 	function getTooltip()
@@ -21,6 +22,10 @@ this.ssu_bone_cleaver_effect <- this.inherit("scripts/skills/skill", {
 	function onTargetHit( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
 	{
 		local actor = this.m.Container.getActor().get();
+
+		// only the united twinblades heal, this also stops a copy left on a character by an older save
+		if (!::Mod_Sellswords.DualWield.hasUnitedTwinblades(actor))
+			return;
 
 		if (_damageInflictedHitpoints <= 0)
 			return;

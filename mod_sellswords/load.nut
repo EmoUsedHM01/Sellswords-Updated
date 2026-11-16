@@ -18,8 +18,6 @@ if (::Is_BR_Exist)
 {
 	foreach (file in ::IO.enumerateFiles("mod_sellswords/hooks_breditor"))
 		::include(file);
-
-	::mods_registerJS("mod_ssu_breditor_add_on.js");
 }
 
 // update new armor sets

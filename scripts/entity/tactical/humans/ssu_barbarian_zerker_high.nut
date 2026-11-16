@@ -70,7 +70,7 @@ this.ssu_barbarian_zerker_high <- this.inherit("scripts/entity/tactical/human", 
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_onslaught"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_overwhelm"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_unarmed"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
@@ -150,18 +150,18 @@ this.ssu_barbarian_zerker_high <- this.inherit("scripts/entity/tactical/human", 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
 			local weapons = [
-				"weapons/barbarians/ssu_twinaxes_t2",
-				"weapons/barbarians/ssu_twinaxes_t2",
-				"weapons/barbarians/ssu_twinaxes_t3",
-				"weapons/barbarians/ssu_twinaxes_t3",
-				"weapons/barbarians/ssu_twincleavers_t1",
-				"weapons/barbarians/ssu_twincleavers_t2",
-				"weapons/barbarians/ssu_twincleavers_t2",
-				"weapons/barbarians/ssu_twincleavers_t2",
+				"weapons/barbarians/crude_axe",
+				"weapons/barbarians/crude_axe",
+				"weapons/barbarians/ssu_war_axe",
+				"weapons/barbarians/ssu_war_axe",
+				"weapons/barbarians/blunt_cleaver",
+				"weapons/barbarians/blunt_cleaver",
+				"weapons/barbarians/blunt_cleaver",
+				"weapons/barbarians/blunt_cleaver",
 				"weapons/barbarians/rusty_warblade",
 				"weapons/barbarians/heavy_rusty_axe"
 			];
-			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+			::Mod_Sellswords.HookHelper.equipWeapon(this, weapons[this.Math.rand(0, weapons.len() - 1)]);
 
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 		}

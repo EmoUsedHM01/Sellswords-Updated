@@ -105,7 +105,7 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));			
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));			
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 		}	
 		
@@ -216,11 +216,11 @@ this.ssu_sellsword <- this.inherit("scripts/entity/tactical/human", {
 				weapons = [
 					"weapons/barbarians/heavy_rusty_axe",	
 					"weapons/barbarians/rusty_warblade",
-					"weapons/barbarians/ssu_twinaxes_t1",
-					"weapons/barbarians/ssu_twincleavers_t1",					
+					"weapons/barbarians/crude_axe",
+					"weapons/barbarians/blunt_cleaver",					
 				]
 			}										
-			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));							
+			::Mod_Sellswords.HookHelper.equipWeapon(this, weapons[this.Math.rand(0, weapons.len() - 1)]);							
 		}
 		
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Offhand) == null)

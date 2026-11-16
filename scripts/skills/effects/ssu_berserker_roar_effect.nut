@@ -7,7 +7,7 @@ this.ssu_berserker_roar_effect <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "effects.ssu_berserker_roar_effect";
 		this.m.Name = "";
 		this.m.Description = "";
-		this.m.Icon = "perk_35";
+		this.m.Icon = "ui/perks/perk_35.png";
 		this.m.IconMini = "perk_36_mini";
 		this.m.Overlay = "perk_35";
 		this.m.SoundOnUse = [

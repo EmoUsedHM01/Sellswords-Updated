@@ -78,7 +78,7 @@ this.ssu_banditleaderwolf <- this.inherit("scripts/entity/tactical/human", {
 			this.m.BaseProperties.IsImmuneToStun = true;
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_relentless"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_underdog"));
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));
 			this.m.Skills.add(this.new("scripts/skills/actives/rally_the_troops"));

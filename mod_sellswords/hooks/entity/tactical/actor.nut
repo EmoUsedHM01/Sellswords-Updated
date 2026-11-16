@@ -221,4 +221,74 @@
 		this.m.PerkPoints -= flagsRemoved;
 	};
 
+	// Legends crosses the two weapons of a dual wielder, here they are held out side by side and tilted down
+	// the numbers are in mod_sellswords\config\ssu_dual_wield.nut
+	q.m.SsuDualWieldTilt <- 0; // the tilt that is on the main hand weapon right now
+
+	q.flipOffhandSprite = @(__original) function()
+	{
+		__original();
+
+		local pose = ::Mod_Sellswords.DualWield;
+		local flip = !this.isAlliedWithPlayer();
+		local forward = flip ? -pose.Forward : pose.Forward;
+		local behind = flip ? pose.Distance : -pose.Distance;
+		local offhand = this.getSprite("shield_icon");
+
+		offhand.setHorizontalFlipping(flip);
+		offhand.Rotation = -pose.Tilt;
+		this.setSpriteOffset("shield_icon", this.createVec(forward + behind, -pose.Down));
+		this.setSpriteOffset("arms_icon", this.createVec(forward, -pose.Down));
+
+		if (this.m.SsuDualWieldTilt == 0)
+		{
+			this.getSprite("arms_icon").Rotation -= pose.Tilt;
+			this.m.SsuDualWieldTilt = pose.Tilt;
+		}
+	}
+
+	q.onAppearanceChanged = @(__original) function( _appearance, _setDirty = true )
+	{
+		local posed = this.m.SsuDualWieldTilt != 0;
+
+		// vanilla reads the rotation to tell if the weapon is lowered, so the tilt comes off while it looks
+		if (posed)
+		{
+			this.getSprite("arms_icon").Rotation += this.m.SsuDualWieldTilt;
+			this.m.SsuDualWieldTilt = 0;
+		}
+
+		__original(_appearance, _setDirty);
+
+		// no longer dual wielding, Legends resets the off hand and the rest is put back here
+		if (posed && this.m.SsuDualWieldTilt == 0)
+		{
+			this.setSpriteOffset("arms_icon", this.createVec(0, 0));
+			this.getSprite("shield_icon").Rotation = 0;
+		}
+	}
+
+	q.onRender = @(__original) function()
+	{
+		local swinging = this.m.IsLoweringWeapon || this.m.IsRaisingWeapon;
+		__original();
+
+		// the vanilla lower and raise weapon animation sets the rotation itself, the tilt goes on top
+		if (swinging && this.m.SsuDualWieldTilt != 0)
+		{
+			this.getSprite("arms_icon").Rotation -= this.m.SsuDualWieldTilt;
+		}
+	}
+
+	q.resetRenderEffects = @(__original) function()
+	{
+		__original();
+		this.m.SsuDualWieldTilt = 0;
+
+		if (this.hasSprite("shield_icon"))
+		{
+			this.getSprite("shield_icon").Rotation = 0;
+		}
+	}
+
 });

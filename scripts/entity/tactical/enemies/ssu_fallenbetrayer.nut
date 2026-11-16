@@ -68,7 +68,7 @@ this.ssu_fallenbetrayer <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
 		this.m.BaseProperties.IsImmuneToPoison = true;
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 
 		local dc = this.World.getTime().Days;
 		local mn = this.World.Statistics.getFlags().getAsInt("ArenaRegularFightsWon");	

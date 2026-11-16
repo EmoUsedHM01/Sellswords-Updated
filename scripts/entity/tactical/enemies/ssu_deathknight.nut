@@ -53,7 +53,7 @@ this.ssu_deathknight <- this.inherit("scripts/entity/tactical/enemies/zombie", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));
 		this.m.BaseProperties.IsImmuneToPoison = true;
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 		
 
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 90)

@@ -80,7 +80,7 @@ this.ssu_barbarian_championhigh <- this.inherit("scripts/entity/tactical/human",
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_balance"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));			
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));		
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 
 	 	if ("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
@@ -170,11 +170,10 @@ this.ssu_barbarian_championhigh <- this.inherit("scripts/entity/tactical/human",
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
 			local weapons = [
-				"weapons/named/ssu_named_twincleavers",
-				"weapons/named/ssu_named_twinaxes",
-				
+				"weapons/barbarians/ssu_war_axe",
+				"weapons/barbarians/blunt_cleaver"
 			];
-			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+			::Mod_Sellswords.HookHelper.equipWeapon(this, weapons[this.Math.rand(0, weapons.len() - 1)]);
 			
 
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);

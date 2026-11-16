@@ -285,7 +285,7 @@ this.ssu_dryad_wolf <- this.inherit("scripts/entity/tactical/actor", {
 		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 		this.m.BaseProperties.IsImmuneToStun = true;
 		this.m.BaseProperties.IsImmuneToPoison = true;
 

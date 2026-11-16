@@ -75,10 +75,10 @@
 				"weapons/barbarians/heavy_rusty_axe",
 				"weapons/barbarians/ssu_barbarian_hammer",
 				"weapons/barbarians/ssu_barbarian_mace",
-				"weapons/barbarians/ssu_twinaxes_t1",
-				"weapons/barbarians/ssu_twincleavers_t1"
+				"weapons/barbarians/crude_axe",
+				"weapons/barbarians/blunt_cleaver"
 			];
-			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+			::Mod_Sellswords.HookHelper.equipWeapon(this, weapons[this.Math.rand(0, weapons.len() - 1)]);
 		}
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Body) && this.m.Items.hasEmptySlot(this.Const.ItemSlot.Head))

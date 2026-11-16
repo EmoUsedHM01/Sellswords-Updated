@@ -66,12 +66,12 @@
 			local weapons = [
 				"weapons/barbarians/ssu_barbarian_hammer",
 				"weapons/barbarians/ssu_barbarian_mace",	
-				"weapons/barbarians/ssu_twinaxes_t2",
-				"weapons/barbarians/ssu_twincleavers_t2",
+				"weapons/barbarians/crude_axe",
+				"weapons/barbarians/blunt_cleaver",
 				"weapons/barbarians/rusty_warblade",
 				"weapons/barbarians/heavy_rusty_axe"
 			];
-			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+			::Mod_Sellswords.HookHelper.equipWeapon(this, weapons[this.Math.rand(0, weapons.len() - 1)]);
 		}
 
 		if (this.getIdealRange() == 1 && this.Math.rand(1, 100) <= 50)

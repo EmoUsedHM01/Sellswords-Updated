@@ -6,7 +6,7 @@ this.ssu_dryad_forest_blessing_effect <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "effects.ssu_dryad_forest_blessing_effect";
 		this.m.Name = ::Mod_Sellswords.Strings.ssu_dryad_forest_blessing_effect.Name;
-		this.m.Icon = "ui/perks/perk_druid_heal.png";
+		this.m.Icon = "ui/perks/ssu_dryad_forest_blessing.png";
 		this.m.IconMini = "ssu_dryad_buff_mini";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.IsActive = false;

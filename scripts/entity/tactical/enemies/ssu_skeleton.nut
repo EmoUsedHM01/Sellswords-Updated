@@ -93,7 +93,7 @@ this.ssu_skeleton <- this.inherit("scripts/entity/tactical/skeleton", {
 		{
 			
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));			
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));			
 		}
 
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Body))
@@ -140,7 +140,7 @@ this.ssu_skeleton <- this.inherit("scripts/entity/tactical/skeleton", {
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_devastating_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
 
 		return true;

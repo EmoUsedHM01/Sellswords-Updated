@@ -5,7 +5,7 @@ this.perk_ssu_necro_ghost_soul_eater <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "perk.ssu_necro_ghost_soul_eater";
 		this.m.Name = this.Const.Strings.PerkName.SsuNecroGhostSoulEater;
 		this.m.Description = this.Const.Strings.PerkDescription.SsuNecroGhostSoulEater;
-		this.m.Icon = "ui/perks/siphon_circle.png";
+		this.m.Icon = "ui/perks/legend_draining_touch.png";
 		this.m.Type = this.Const.SkillType.Perk;
 		this.m.Order = this.Const.SkillOrder.Perk;
 		this.m.IsActive = false;

@@ -54,7 +54,7 @@ this.ssu_goblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 			{
 				b.MeleeDefense += 5;
 				b.RangedDefense += 5;
-				this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+				this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 
 				if (dc >= 120)
 				{
@@ -100,7 +100,7 @@ this.ssu_goblinwarrior <- this.inherit("scripts/entity/tactical/goblin", {
 		if (this.m.Items.getItemAtSlot(this.Const.ItemSlot.Mainhand) == null)
 		{
 			local weapons = [
-				"weapons/greenskins/ssu_goblin_axe",
+				"weapons/greenskins/legend_goblin_infantry_axe",
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}

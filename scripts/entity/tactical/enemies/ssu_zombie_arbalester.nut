@@ -30,7 +30,7 @@ this.ssu_zombie_arbalester <- this.inherit("scripts/entity/tactical/enemies/zomb
 		b.MoraleEffectMult = 0.0;
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fearsome"));
 		this.m.BaseProperties.IsImmuneToPoison = true;
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));		
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));		
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_bullseye"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_rotation"));

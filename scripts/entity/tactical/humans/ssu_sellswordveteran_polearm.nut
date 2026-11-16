@@ -78,7 +78,7 @@ this.ssu_sellswordveteran_polearm <- this.inherit("scripts/entity/tactical/human
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_battle_forged"));			
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_strength_in_numbers"));
+			this.m.Skills.add(this.new("scripts/skills/perks/perk_backstabber"));
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));				
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_nets"));			
 			this.m.Skills.add(this.new("scripts/skills/traits/fearless_trait"));

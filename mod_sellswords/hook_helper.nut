@@ -442,5 +442,16 @@
 				_actor.getSkills().add(::new(::Const.Perks.PerkDefObjects[perk].Script));
 			}
 		}
+	},
+
+	// equips the weapon, the ones listed in ::Mod_Sellswords.DualWield.Paired get a second one for the off hand
+	equipWeapon = function( _actor, _script )
+	{
+		_actor.getItems().equip(::new("scripts/items/" + _script));
+
+		if (::Mod_Sellswords.DualWield.Paired.find(_script) != null)
+		{
+			_actor.getItems().equip(::new("scripts/items/" + _script));
+		}
 	}
 }

@@ -133,8 +133,8 @@
 		Script = "scripts/skills/perks/perk_ssu_necro_ghost_soul_eater",
 		Name = this.Const.Strings.PerkName.SsuNecroGhostSoulEater,
 		Tooltip = this.Const.Strings.PerkDescription.SsuNecroGhostSoulEater,
-		Icon = "ui/perks/siphon_circle.png",
-		IconDisabled = "ui/perks/siphon_circle_bw.png"
+		Icon = "ui/perks/legend_draining_touch.png",
+		IconDisabled = "ui/perks/legend_draining_touch_bw.png"
 	},
 	
 	// Necromancer
