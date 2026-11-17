@@ -10,7 +10,7 @@ this.ssu_overwhelm_attack <- this.inherit("scripts/skills/skill", {
 		this.m.Description = ::Mod_Sellswords.Strings.ssu_overwhelm_attack.Description;
 		this.m.Icon = "skills/legend_stupefy.png";
 		this.m.IconDisabled = "skills/legend_stupefy_bw.png";
-		this.m.Overlay = "daze_square";
+		this.m.Overlay = "legend_stupefy";
 		this.m.SoundOnUse = [
 			"sounds/combat/swing_01.wav",
 			"sounds/combat/swing_02.wav",

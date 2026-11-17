@@ -9,7 +9,7 @@ this.ssu_necro_ghost_collect_fragment_skill <- ::inherit("scripts/skills/skill",
 		this.m.Description = "";
 		this.m.Icon = "";
 		this.m.IconDisabled = "";
-		this.m.Overlay = "demon_hound_bite_effect";
+		this.m.Overlay = "legend_demon_hound_bite_effect";
 		this.m.SoundOnUse = [
 			"sounds/enemies/dlc6/lich_death_01.wav"
 		];

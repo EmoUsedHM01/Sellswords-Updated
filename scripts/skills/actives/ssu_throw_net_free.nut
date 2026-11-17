@@ -105,6 +105,9 @@ this.ssu_throw_net_free <- this.inherit("scripts/skills/skill", {
 
 	function onNetSpawn( _data )
 	{
+		if (!_data.TargetEntity.isAlive() || _data.TargetEntity.isDying() || !_data.TargetEntity.hasSprite("status_rooted"))
+			return;
+
 		local rooted = _data.TargetEntity.getSprite("status_rooted");
 		rooted.setBrush("bust_net");
 		rooted.Visible = true;

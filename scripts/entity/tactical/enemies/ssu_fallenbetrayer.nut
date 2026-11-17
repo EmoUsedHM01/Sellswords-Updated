@@ -30,7 +30,7 @@ this.ssu_fallenbetrayer <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.SsuFallenbetrayer);
 		b.IsAffectedByNight = false;
-		b.IsAffectedByInjuries = true;
+		b.IsAffectedByInjuries = false;
 		b.IsImmuneToBleeding = true;
 		b.FatigueDealtPerHitMult = 1.25;
 		b.IsSpecializedInSwords = true;

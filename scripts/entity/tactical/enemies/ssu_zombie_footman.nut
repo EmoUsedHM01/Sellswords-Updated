@@ -17,7 +17,7 @@ this.ssu_zombie_footman <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.Footman);
 		b.IsAffectedByNight = false;
-		b.IsAffectedByInjuries =true;
+		b.IsAffectedByInjuries = false;
 		b.IsImmuneToBleeding = true;
 		b.FatigueDealtPerHitMult = 1.25;
 		b.IsSpecializedInSwords = true;

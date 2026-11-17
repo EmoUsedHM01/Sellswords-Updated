@@ -8,7 +8,7 @@ this.ssu_direwolf_player_racial <- this.inherit("scripts/skills/skill", {
 		this.m.Description = ::Mod_Sellswords.Strings.ssu_direwolf_player_racial.Description;
 		this.m.Icon = "ui/perks/favoured_direwolf_01.png";
 		this.m.IconMini = "";
-		this.m.Overlay = "status_effect_0";
+		this.m.Overlay = "";
 		this.m.IsRemovedAfterBattle = false;
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.Perk;

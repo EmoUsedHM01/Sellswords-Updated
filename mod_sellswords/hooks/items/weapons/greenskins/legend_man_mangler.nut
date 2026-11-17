@@ -24,7 +24,7 @@
 		skillToAdd.m.isBunt = true;			
 		skillToAdd.m.Icon = "skills/ssu_active_bunt.png";
 		skillToAdd.m.IconDisabled = "skills/ssu_active_bunt_sw.png";		
-		skillToAdd.m.Overlay = "active_1";
+		skillToAdd.m.Overlay = "active_01";
 		skillToAdd.m.FatigueCost = 13;	
 		skillToAdd.m.DirectDamageMult = this.m.DirectDamageMult;		
 		this.addSkill(skillToAdd);

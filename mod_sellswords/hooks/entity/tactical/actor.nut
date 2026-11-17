@@ -224,6 +224,26 @@
 	// Legends crosses the two weapons of a dual wielder, here they are held out side by side and tilted down
 	// the numbers are in mod_sellswords\config\ssu_dual_wield.nut
 	q.m.SsuDualWieldTilt <- 0; // the tilt that is on the main hand weapon right now
+	q.m.SsuDualWieldBase <- 0; // the rotation vanilla gave the main hand weapon, 0 or the angle of a lowered weapon
+	q.m.IsSsuDualWieldPosed <- false; // true while the weapons are in one of the two poses
+	q.m.IsSsuDualWieldInBattle <- false; // true from being placed on the battle map until the battle is over
+
+	// both of these write the whole rotation and never add to what the sprite has, so the tilt can not stack up
+	q.addSsuDualWieldTilt <- function( _tilt )
+	{
+		this.getSprite("arms_icon").Rotation = this.m.SsuDualWieldBase - _tilt;
+		this.m.SsuDualWieldTilt = _tilt;
+	}
+
+	// vanilla starts its raise weapon animation when the rotation is not exactly 0, so its own value is put back
+	q.removeSsuDualWieldTilt <- function()
+	{
+		if (this.m.SsuDualWieldTilt == 0)
+			return;
+
+		this.getSprite("arms_icon").Rotation = this.m.SsuDualWieldBase;
+		this.m.SsuDualWieldTilt = 0;
+	}
 
 	q.flipOffhandSprite = @(__original) function()
 	{
@@ -231,37 +251,47 @@
 
 		local pose = ::Mod_Sellswords.DualWield;
 		local flip = !this.isAlliedWithPlayer();
-		local forward = flip ? -pose.Forward : pose.Forward;
-		local behind = flip ? pose.Distance : -pose.Distance;
+		local facing = flip ? -1 : 1;
 		local offhand = this.getSprite("shield_icon");
 
 		offhand.setHorizontalFlipping(flip);
-		offhand.Rotation = -pose.Tilt;
-		this.setSpriteOffset("shield_icon", this.createVec(forward + behind, -pose.Down));
-		this.setSpriteOffset("arms_icon", this.createVec(forward, -pose.Down));
+		this.m.IsSsuDualWieldPosed = true;
 
-		if (this.m.SsuDualWieldTilt == 0)
+		// outside of battles only the portrait is seen, and a portrait shows where a sprite was moved to but not its tilt
+		// so there the off hand weapon just sits a little behind and below the main hand one
+		if (!this.m.IsSsuDualWieldInBattle || !this.isPlacedOnMap())
 		{
-			this.getSprite("arms_icon").Rotation -= pose.Tilt;
-			this.m.SsuDualWieldTilt = pose.Tilt;
+			this.removeSsuDualWieldTilt();
+			offhand.Rotation = 0;
+			this.setSpriteOffset("shield_icon", this.createVec(-facing * pose.PortraitDistance, -pose.PortraitDown));
+			this.setSpriteOffset("arms_icon", this.createVec(0, 0));
+			return;
 		}
+
+		offhand.Rotation = -pose.Tilt;
+		this.setSpriteOffset("shield_icon", this.createVec(facing * (pose.Forward - pose.Distance), -pose.Down));
+		this.setSpriteOffset("arms_icon", this.createVec(facing * pose.Forward, -pose.Down));
+
+		this.addSsuDualWieldTilt(pose.Tilt);
 	}
 
 	q.onAppearanceChanged = @(__original) function( _appearance, _setDirty = true )
 	{
-		local posed = this.m.SsuDualWieldTilt != 0;
+		local wasPosed = this.m.IsSsuDualWieldPosed;
 
-		// vanilla reads the rotation to tell if the weapon is lowered, so the tilt comes off while it looks
-		if (posed)
+		// vanilla reads the rotation of the weapon and the height of the shield to start its own animations
+		// so the pose comes off while it looks, Legends puts it back on if the unit is still dual wielding
+		if (wasPosed)
 		{
-			this.getSprite("arms_icon").Rotation += this.m.SsuDualWieldTilt;
-			this.m.SsuDualWieldTilt = 0;
+			this.removeSsuDualWieldTilt();
+			this.setSpriteOffset("shield_icon", this.createVec(0, 0));
+			this.m.IsSsuDualWieldPosed = false;
 		}
 
 		__original(_appearance, _setDirty);
 
 		// no longer dual wielding, Legends resets the off hand and the rest is put back here
-		if (posed && this.m.SsuDualWieldTilt == 0)
+		if (wasPosed && !this.m.IsSsuDualWieldPosed)
 		{
 			this.setSpriteOffset("arms_icon", this.createVec(0, 0));
 			this.getSprite("shield_icon").Rotation = 0;
@@ -273,22 +303,75 @@
 		local swinging = this.m.IsLoweringWeapon || this.m.IsRaisingWeapon;
 		__original();
 
-		// the vanilla lower and raise weapon animation sets the rotation itself, the tilt goes on top
-		if (swinging && this.m.SsuDualWieldTilt != 0)
+		if (!swinging)
+			return;
+
+		local rotation = this.getSprite("arms_icon").Rotation;
+		local tilted = this.m.SsuDualWieldBase - this.m.SsuDualWieldTilt;
+
+		// still the value from the last frame, so the animation did not write anything new
+		if (this.m.SsuDualWieldTilt != 0 && rotation > tilted - 0.01 && rotation < tilted + 0.01)
+			return;
+
+		// the vanilla lower and raise weapon animation writes the rotation itself, that is remembered and the tilt goes on top
+		this.m.SsuDualWieldBase = rotation > -0.01 && rotation < 0.01 ? 0 : rotation;
+
+		if (this.m.SsuDualWieldTilt != 0)
 		{
-			this.getSprite("arms_icon").Rotation -= this.m.SsuDualWieldTilt;
+			this.addSsuDualWieldTilt(this.m.SsuDualWieldTilt);
 		}
 	}
 
+	q.onPlacedOnMap = @(__original) function()
+	{
+		__original();
+
+		// a battle has its own clock, so an animation that was started on the world map would never finish here
+		this.m.IsRaisingWeapon = false;
+		this.m.IsLoweringWeapon = false;
+		this.m.IsRaisingShield = false;
+		this.m.IsLoweringShield = false;
+		this.m.SsuDualWieldBase = 0;
+
+		// the battle pose starts when the unit is put on the battle map
+		this.m.IsSsuDualWieldInBattle = true;
+
+		if (this.hasSprite("shield_icon") && ::Legends.Weapons.isDualWielding(this))
+		{
+			this.flipOffhandSprite();
+		}
+	}
+
+	// called for the player characters when a battle is over, which puts them back in the portrait pose
 	q.resetRenderEffects = @(__original) function()
 	{
 		__original();
 		this.m.SsuDualWieldTilt = 0;
+		this.m.SsuDualWieldBase = 0;
+		this.m.IsSsuDualWieldPosed = false;
+		this.m.IsSsuDualWieldInBattle = false;
 
-		if (this.hasSprite("shield_icon"))
+		if (!this.hasSprite("shield_icon"))
+			return;
+
+		this.getSprite("shield_icon").Rotation = 0;
+
+		if (::Legends.Weapons.isDualWielding(this))
 		{
-			this.getSprite("shield_icon").Rotation = 0;
+			this.flipOffhandSprite();
 		}
+	}
+
+});
+
+::Mod_Sellswords.HooksMod.hookTree("scripts/entity/tactical/actor", function ( q ) {
+
+	if (!q.contains("getLootForTile"))
+		return;
+
+	q.getLootForTile = @(__original) function ( _killer, _loot )
+	{
+		return __original(::Mod_Sellswords.AllLootDrops ? null : _killer, _loot);
 	}
 
 });

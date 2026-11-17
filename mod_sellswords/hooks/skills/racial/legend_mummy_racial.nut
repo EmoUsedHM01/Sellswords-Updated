@@ -6,8 +6,8 @@
 		this.m.Name = ::Mod_Sellswords.Strings.legend_mummy_racial.Name;
 		this.m.Description = ::Mod_Sellswords.Strings.legend_mummy_racial.Description;
 		this.m.Icon = "skills/legend_curse_of_the_mummy_effect.png";
-		this.m.IconMini = "mini_icon_mummy_curse";
-		this.m.Overlay = "mummy_curse";
+		this.m.IconMini = "legend_curse_of_the_mummy_effect_mini";
+		this.m.Overlay = "legend_curse_of_the_mummy_effect";
 	}
 	
 	q.onAdded = @(__original) function()

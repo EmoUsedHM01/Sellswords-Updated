@@ -45,7 +45,7 @@ this.ssu_named_orc_sword_2h <- this.inherit("scripts/items/weapons/named/named_w
 		skillToAdd.m.Name = ::Mod_Sellswords.Strings.ssu_named_orc_sword_2h.Name;		
 		skillToAdd.m.Icon = "skills/ssu_active_bunt.png";
 		skillToAdd.m.IconDisabled = "skills/ssu_active_bunt_sw.png";		
-		skillToAdd.m.Overlay = "active_1";
+		skillToAdd.m.Overlay = "active_01";
 		skillToAdd.m.FatigueCost = 13;	
 		skillToAdd.m.DirectDamageMult = this.m.DirectDamageMult;		
 		this.addSkill(skillToAdd);

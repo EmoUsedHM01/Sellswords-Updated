@@ -136,7 +136,7 @@ this.ssu_necro_lorekeeper_scenario <- this.inherit("scripts/scenarios/world/star
 			n.addPlayerRelation(50.0, "To whom it may concern, my nuts hang");
 
 		::World.State.m.Player = ::World.spawnEntity("scripts/entity/world/player_party", randomVillageTile.Coords.X, randomVillageTile.Coords.Y);
-		::World.Assets.updateLook();
+		this.updateLook();
 		::World.getCamera().setPos(::World.State.m.Player.getPos());
 		::Time.scheduleEvent(this.TimeUnit.Real, 1000, function ( _tag )
 		{
@@ -145,11 +145,6 @@ this.ssu_necro_lorekeeper_scenario <- this.inherit("scripts/scenarios/world/star
 			], this.Const.Music.CrossFadeTime);
 			this.World.Events.fire("event.ssu_necro_lorekeeper_intro");
 		}, null);
-	}
-
-	function updateLook()
-	{
-		::World.State.getPlayer().getSprite("body").setBrush("ssu_figure_player_lorekeeper");
 	}
 
 	function onInit()

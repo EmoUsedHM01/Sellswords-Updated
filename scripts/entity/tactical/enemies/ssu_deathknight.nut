@@ -35,7 +35,7 @@ this.ssu_deathknight <- this.inherit("scripts/entity/tactical/enemies/zombie", {
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.SsuDeathknight);
 		b.IsAffectedByNight = false;
-		b.IsAffectedByInjuries = true;
+		b.IsAffectedByInjuries = false;
 		b.IsImmuneToBleeding = true;
 		b.FatigueDealtPerHitMult = 2;
 		b.IsSpecializedInSwords = true;

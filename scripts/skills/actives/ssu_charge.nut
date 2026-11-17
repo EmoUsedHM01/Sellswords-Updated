@@ -11,7 +11,7 @@ this.ssu_charge <- this.inherit("scripts/skills/skill", {
 		this.m.Description = ::Mod_Sellswords.Strings.ssu_charge.Description;
 		this.m.Icon = "skills/ssu_charge.png";
 		this.m.IconDisabled = "skills/ssu_charge_sw.png";
-		this.m.Overlay = "horse_charge";
+		this.m.Overlay = "legend_horse_charge";
 		this.m.SoundOnUse = [
 			"sounds/combat/rage_01.wav",
 			"sounds/combat/rage_02.wav"

@@ -18,7 +18,7 @@ this.ssu_skeleton_pol <- this.inherit("scripts/entity/tactical/skeleton", {
 		b.setValues(this.Const.Tactical.Actor.SsuSkeleton);
 		b.Initiative -= 25;
 		b.IsAffectedByNight = false;
-		b.IsAffectedByInjuries = true;
+		b.IsAffectedByInjuries = false;
 		b.IsImmuneToBleeding = true;
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 50)
 		{

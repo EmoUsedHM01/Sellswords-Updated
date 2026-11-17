@@ -18,7 +18,7 @@ this.ssu_conqueror <- this.inherit("scripts/entity/tactical/skeleton", {
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.SsuConqueror);
 		b.IsAffectedByNight = false;
-		b.IsAffectedByInjuries = true;
+		b.IsAffectedByInjuries = false;
 		b.IsImmuneToBleeding = true;
 		b.IsImmuneToPoison = true;
 		b.IsImmuneToDisarm = true;

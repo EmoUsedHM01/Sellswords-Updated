@@ -18,7 +18,7 @@ this.ssu_skeleton <- this.inherit("scripts/entity/tactical/skeleton", {
 		b.setValues(this.Const.Tactical.Actor.SsuSkeleton);
 		b.MeleeDefense += 10;		
 		b.IsAffectedByNight = false;
-		b.IsAffectedByInjuries = true;
+		b.IsAffectedByInjuries = false;
 		b.IsImmuneToBleeding = true;
 		b.IsSpecializedInAxes = true;
 		b.IsSpecializedInCleavers = true;

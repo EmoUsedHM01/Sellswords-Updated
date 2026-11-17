@@ -191,7 +191,7 @@ this.ssu_orc_warlock <- this.inherit("scripts/entity/tactical/actor", {
 			_tile.Properties.set("Corpse", corpse);
 			this.Tactical.Entities.addCorpse(_tile);
 
-			if (_killer == null || _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals)
+			if (::Mod_Sellswords.AllLootDrops || _killer == null || _killer.getFaction() == this.Const.Faction.Player || _killer.getFaction() == this.Const.Faction.PlayerAnimals)
 			{
 				if (this.Math.rand(1, 100) <= 4)
 				{

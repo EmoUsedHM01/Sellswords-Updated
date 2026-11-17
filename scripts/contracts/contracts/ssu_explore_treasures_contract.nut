@@ -75,9 +75,10 @@ this.ssu_explore_treasures_contract <- this.inherit("scripts/contracts/contract"
 			if ((item.m.ItemType & this.Const.Items.ItemType.Named) != 0)
 				nameList.push(item);
 
-			foreach( i in item.getUpgrades() )
+			// getUpgrades lists for every layer slot if it is filled, the slot is the index and not the value
+			foreach( i, filled in item.getUpgrades() )
 			{
-				if (i != 1)
+				if (filled != 1)
 					continue;
 
 				local u = item.getUpgrade(i);

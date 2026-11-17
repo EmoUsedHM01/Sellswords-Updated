@@ -161,10 +161,6 @@ this.ssu_sellswordveteran_tank <- this.inherit("scripts/entity/tactical/human", 
 			{
 				this.getSprite("accessory_special").setBrush("alp_trophy");
 			}
-			else if (rt == 3)
-			{
-				this.getSprite("accessory_special").setBrush("wolfsbane_necklace");	
-			}			
 		}
 
 		if (::Mod_Sellswords.EnableHostileSequences)

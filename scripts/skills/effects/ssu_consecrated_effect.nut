@@ -10,7 +10,7 @@ this.ssu_consecrated_effect <- this.inherit("scripts/skills/skill", {
 		this.m.Description = ::Mod_Sellswords.Strings.ssu_consecrated_effect.Description;
 		this.m.Icon = "ui/perks/holyfire_circle.png";
 		this.m.IconMini = "mini_fire_circle";
-		this.m.Overlay = "fire_circle";
+		this.m.Overlay = "legend_consecrated_effect";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.IsActive = false;
 		this.m.IsRemovedAfterBattle = true;
@@ -38,7 +38,7 @@ this.ssu_consecrated_effect <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.TurnsLeft = this.Math.max(3, 2 + this.getContainer().getActor().getCurrentProperties().NegativeStatusEffectDuration);
 		this.Tactical.TurnSequenceBar.pushEntityBack(this.getContainer().getActor().getID());
-		this.spawnIcon("fire_circle", this.getContainer().getActor().getTile());
+		this.spawnIcon("legend_consecrated_effect", this.getContainer().getActor().getTile());
 	}
 
 	function onTurnEnd()
@@ -51,8 +51,6 @@ this.ssu_consecrated_effect <- this.inherit("scripts/skills/skill", {
 
 	function onUpdate( _properties )
 	{
-		_properties.IsAffectedByInjuries = true;
-		_properties.IsAffectedByFreshInjuries = true;
 		if (this.m.Skeleton)
 		{
 			_properties.ActionPoints -= 1;		

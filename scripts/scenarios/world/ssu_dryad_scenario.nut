@@ -131,7 +131,7 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 		while (1);
 
 		::World.State.m.Player = this.World.spawnEntity("scripts/entity/world/player_party", spawnTile.Coords.X, spawnTile.Coords.Y);
-		::World.Assets.updateLook();
+		this.updateLook();
 		::World.getCamera().setPos(this.World.State.m.Player.getPos());
 		::Time.scheduleEvent(this.TimeUnit.Real, 1000, function ( _tag )
 		{
@@ -168,11 +168,6 @@ this.ssu_dryad_scenario <- this.inherit("scripts/scenarios/world/starting_scenar
 	function onInit()
 	{
 		this.starting_scenario.onInit();
-	}
-
-	function updateLook()
-	{
-		::World.State.getPlayer().getSprite("body").setBrush("ssu_figure_player_1032");
 	}
 
 	function getMovementSpeedMult()

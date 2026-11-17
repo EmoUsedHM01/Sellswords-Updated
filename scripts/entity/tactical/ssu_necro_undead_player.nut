@@ -1296,7 +1296,7 @@ this.ssu_necro_undead_player <- this.inherit("scripts/entity/tactical/player", {
 				beard.setBrush("beard_" + hairColor + "_" + this.Const.Beards.ZombieOnly[this.Math.rand(0, this.Const.Beards.ZombieOnly.len() - 1)]);
 
 			local face = this.getSprite("scar_head");
-			face.setBrush("mummy_head_0" + this.Math.rand(1, 9));
+			face.setBrush("mummy_head_0" + this.Math.rand(1, 4));
 
 			local hair = this.getSprite("hair");
 			hair.Color = beard.Color;

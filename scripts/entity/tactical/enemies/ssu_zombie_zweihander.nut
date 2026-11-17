@@ -17,7 +17,7 @@ this.ssu_zombie_zweihander <- this.inherit("scripts/entity/tactical/enemies/zomb
 		local b = this.m.BaseProperties;
 		b.setValues(this.Const.Tactical.Actor.Greatsword);
 		b.IsAffectedByNight = false;
-		b.IsAffectedByInjuries =true;
+		b.IsAffectedByInjuries = false;
 		b.IsImmuneToBleeding = true;
 		b.FatigueDealtPerHitMult = 1.25;
 		b.IsSpecializedInSwords = true;

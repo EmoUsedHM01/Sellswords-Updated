@@ -6,7 +6,8 @@
 	KeepSpawningEnemySS = false,
 	SellswordStrengthMultiplier = 100,
 	EnableHostileSequences = true,
-	SellswordsPerk = "Student"
+	SellswordsPerk = "Student",
+	AllLootDrops = false
 };
 
 ::Mod_Sellswords.HooksMod <- ::Hooks.register(::Mod_Sellswords.ID, ::Mod_Sellswords.Version, ::Mod_Sellswords.Name);
@@ -62,6 +63,13 @@
 		"Sellsword Scenario Perk",
 		"Choose a company perk to be added when you recruit a bro for the Sellswords Scenario.\n\nStudent by default."
 	);
+	page.addDivider("divider_loot");
+	local settingAllLootDrops = page.addBooleanSetting(
+		"AllLootDrops",
+		false,
+		"All Loot Drops",
+		"When enabled, everything killed in a battle drops its loot as if you had killed it, no matter who made the kill. This includes beasts.\n\nDisabled by default."
+	);
 
 	// Settings for that config 
 	settingSellswordsEnable.addCallback(function(_value) {
@@ -79,6 +87,7 @@
 	settingSellswordStrengthMultiplier.addCallback(function(_value) { ::Mod_Sellswords.SellswordStrengthMultiplier = _value; });
 	settingEnableHostileSequences.addCallback(function(_value) { ::Mod_Sellswords.EnableHostileSequences = _value; });
 	settingSellswordsPerk.addCallback(function(_value) { ::Mod_Sellswords.SellswordsPerk = _value; });
+	settingAllLootDrops.addCallback(function(_value) { ::Mod_Sellswords.AllLootDrops = _value; });
 
 	// Important objects for compatibility purposes
 	if (!("Is_AC_Exist" in this.getroottable())) ::Is_AC_Exist <- ::mods_getRegisteredMod("mod_ACU") != null;

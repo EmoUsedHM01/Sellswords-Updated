@@ -32,8 +32,8 @@
 		{
 			this.m.Name = ::Mod_Sellswords.Strings.bleeding_effect.Name;
 			this.m.Icon = "ui/perks/graze_circle.png";
-			this.m.IconMini = "mini_graze_circle";
-			this.m.Overlay = "graze";
+			this.m.IconMini = "legend_grazed_effect_mini";
+			this.m.Overlay = "legend_grazed_effect";
 		}
 	}
 

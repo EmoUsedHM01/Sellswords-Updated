@@ -3005,6 +3005,86 @@ Fixed the bloodied bonus being active all the time, and the bloodied sprite neve
 ...\gfx\ui\items\weapons\ranged\ssu_firelance_70.png
 Cleaned up and sharpened every SSU weapon inventory icon, large and small, so they sit closer to the remade Legends weapon icons
 
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_mummy_queen.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_vampire_lord.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_boss.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy_bodyguard.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\skeleton_heavy_polearm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\vampire.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_betrayer.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_boss.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_knight.nut
+...\mod_sellswords\hooks\hooks_enemies.nut
+...\scripts\entity\tactical\enemies\ssu_conqueror.nut
+...\scripts\entity\tactical\enemies\ssu_deathknight.nut
+...\scripts\entity\tactical\enemies\ssu_fallenbetrayer.nut
+...\scripts\entity\tactical\enemies\ssu_skeleton.nut
+...\scripts\entity\tactical\enemies\ssu_skeleton_pol.nut
+...\scripts\entity\tactical\enemies\ssu_zombieswordmaster.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_arbalester.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_billman.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_footman.nut
+...\scripts\entity\tactical\enemies\ssu_zombie_zweihander.nut
+...\scripts\skills\effects\ssu_consecrated_effect.nut
+...\mod_sellswords\strings.nut
+Undead can no longer be given injuries
+
+...\scripts\contracts\contracts\ssu_explore_treasures_contract.nut
+Fixed the Recover Lost Treasures contract failing to open when the prize was a named helmet or armour
+
+...\mod_sellswords\config\ssu_dual_wield.nut
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+Fixed dual wielded weapons looking wrong in the portraits on the world map
+
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+Fixed the main hand weapon of a dual wielder spinning in circles for a whole battle (whoops)
+
+...\scripts\skills\actives\ssu_throw_net_free.nut
+Fixed a script error when the target of Throw Portable Net dies before the net lands on it (dualwield attack)
+The net sprites are set a moment after the throw, a target that is dead by then has no sprites left
+
+...\scripts\scenarios\world\ssu_necro_lorekeeper_scenario.nut
+...\scripts\scenarios\world\ssu_dryad_scenario.nut
+...\brushes\ssu_necro_entities.brush
+...\brushes\ssu_dryad_entities.brush
+Fixed the Lorekeeper and Dryad origins having no figure on the world map
+
+...\scripts\entity\tactical\ssu_necro_undead_player.nut
+Fixed mummies of the player asking for head brushes that do not exist
+
+...\mod_sellswords\hooks\skills\racial\legend_mummy_racial.nut
+Fixed the missing mini icon and overlay of the mummy racial
+
+...\mod_sellswords\hooks\items\weapons\greenskins\legend_man_mangler.nut
+...\mod_sellswords\hooks\items\weapons\named\legend_named_longsword.nut
+...\scripts\items\weapons\named\ssu_named_orc_sword_2h.nut
+...\scripts\skills\actives\ssu_overwhelm_attack.nut
+...\scripts\skills\actives\ssu_necro_ghost_collect_fragment_skill.nut
+...\scripts\skills\actives\ssu_charge.nut
+...\scripts\skills\effects\ssu_consecrated_effect.nut
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+Fixed overlays and mini icons that pointed at brushes which do not exist
+
+...\scripts\skills\racial\ssu_direwolf_player_racial.nut
+Removed the overlay status_effect_0
+
+...\scripts\entity\tactical\humans\ssu_sellswordveteran.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_polearm.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_tank.nut
+Removed the wolfsbane_necklace trophy from the Nimble build
+
+...\scripts\!mods_preload\mod_sellswords.nut
+...\mod_sellswords\hooks\items\item_container.nut < new
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+...\mod_sellswords\hooks\entity\tactical\legend_enraged_hyena.nut < new
+...\mod_sellswords\config\ssu_sequence_logic.nut
+...\scripts\entity\tactical\enemies\ssu_orc_packleader.nut
+...\scripts\entity\tactical\enemies\ssu_orc_warlock.nut
+Added the mod setting All Loot Drops, disabled by default
+When enabled, everything killed in a battle drops its loot as if the player had killed it, no matter who made the kill
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

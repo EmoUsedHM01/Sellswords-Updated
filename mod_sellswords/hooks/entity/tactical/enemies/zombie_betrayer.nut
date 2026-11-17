@@ -3,7 +3,6 @@
 	q.onInit = @( __original ) function()
 	{
 		__original();
-		this.m.BaseProperties.IsAffectedByInjuries = true;				
 		this.m.Skills.removeByID("perk.hold_out");	
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_armor_mastery_heavy"));				

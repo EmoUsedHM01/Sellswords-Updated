@@ -64,7 +64,6 @@ foreach(script in [
 		q.onInit = @( __original ) function()
 		{
 			__original();
-			this.m.BaseProperties.IsAffectedByInjuries = true;	
 			if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 			{
 				local dc = this.World.getTime().Days;

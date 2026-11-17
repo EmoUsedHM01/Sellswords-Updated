@@ -5643,7 +5643,7 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.ssu_consecrated_effect <- {
 	Name = "Consecrated",
 	Description = "This character is being consecrated by holy light",
-	Tooltip = "Loses any immunity to injuries for [color=%negative%]{1}[/color] more turns."
+	Tooltip = "Seared by holy light for [color=%negative%]{1}[/color] more turns. Skeletons lose [color=%negative%]1[/color] Action Point while it lasts."
 };
 
 // scripts\skills\effects\ssu_distracted_effect.nut
