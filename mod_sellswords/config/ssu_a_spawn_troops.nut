@@ -551,26 +551,6 @@
 	TitleList = null
 }
 
-::Const.World.Spawn.Troops.LegendHalberdier <-
-{
-	ID = this.Const.EntityType.LegendHalberdier,
-	Variant = 0,
-	Strength = 35,
-	Cost = 35,
-	Row = 1,
-	Script = "scripts/entity/tactical/humans/legend_noble_halberdier"
-}
-
-::Const.World.Spawn.Troops.LegendSlinger <-
-{
-	ID = this.Const.EntityType.LegendSlinger,
-	Variant = 0,
-	Strength = 35,
-	Cost = 35,
-	Row = 1,
-	Script = "scripts/entity/tactical/humans/legend_noble_slinger"
-}
-
 ::Const.World.Spawn.Troops.SsuSellswordPolearm <-
 {
 	ID = this.Const.EntityType.SsuSellsword,
@@ -686,65 +666,26 @@
 	TitleList = this.Const.Strings.BarbarianTitles
 }
 
-::Const.World.Spawn.Troops.Greatsword <-
-{
-	ID = this.Const.EntityType.Greatsword,
-	Variant = 1,
-	Strength = 30,
-	Cost = 25,
-	Row = 1,
-	Script = "scripts/entity/tactical/humans/noble_greatsword",
-	NameList = this.Const.Strings.LightSwordsmanNames,
-	TitleList = null
-}
+// units of Legends and vanilla that can be champions with SSU, everything else about them is left as it is
+::Const.World.Spawn.Troops.LegendFencer.Variant = 1;
+::Const.World.Spawn.Troops.LegendFencer.NameList <- this.Const.Strings.LightSwordsmanNames;
+::Const.World.Spawn.Troops.LegendFencer.TitleList <- null;
 
-::Const.World.Spawn.Troops.LegendFencer <-
-{
-	ID = this.Const.EntityType.LegendFencer,
-	Variant = 1,
-	Strength = 35,
-	Cost = 35,
-	Row = 0,
-	Script = "scripts/entity/tactical/humans/legend_noble_fencer",
-	NameList = this.Const.Strings.LightSwordsmanNames,
-	TitleList = null
-}
+::Const.World.Spawn.Troops.Sergeant.Variant = 1;
+::Const.World.Spawn.Troops.Sergeant.NameList <- this.Const.Strings.CharacterNames;
+::Const.World.Spawn.Troops.Sergeant.TitleList <- this.Const.Strings.SergeantTitles;
 
-::Const.World.Spawn.Troops.Sergeant <-
-{
-	ID = this.Const.EntityType.Sergeant,
-	Variant = 1,
-	Strength = 30,
-	Cost = 25,
-	Row = 0,
-	Script = "scripts/entity/tactical/humans/noble_sergeant",
-	NameList = this.Const.Strings.CharacterNames,
-	TitleList = this.Const.Strings.SergeantTitles,
-}
+::Const.World.Spawn.Troops.Gunner.Variant = 1;
+::Const.World.Spawn.Troops.Gunner.NameList <- this.Const.Strings.SouthernNames;
+::Const.World.Spawn.Troops.Gunner.TitleList <- this.Const.Strings.crHashshashinTitles;
 
-::Const.World.Spawn.Troops.Gunner <-
-{
-	ID = this.Const.EntityType.Gunner,
-	Variant = 1,
-	Strength = 20,
-	Cost = 20,
-	Row = 1,
-	Script = "scripts/entity/tactical/humans/gunner",
-	NameList = this.Const.Strings.SouthernNames,
-	TitleList = this.Const.Strings.crHashshashinTitles
-}
+::Const.World.Spawn.Troops.Assassin.Variant = 1;
+::Const.World.Spawn.Troops.Assassin.NameList <- this.Const.Strings.crHashshashinNames;
+::Const.World.Spawn.Troops.Assassin.TitleList <- this.Const.Strings.crHashshashinTitles;
 
-::Const.World.Spawn.Troops.Assassin <-
-{
-	ID = this.Const.EntityType.Assassin,
-	Variant = 1,
-	Strength = 35,
-	Cost = 35,
-	Row = 1,
-	Script = "scripts/entity/tactical/humans/assassin"
-	NameList = this.Const.Strings.crHashshashinNames,
-	TitleList = this.Const.Strings.crHashshashinTitles
-}
+::Const.World.Spawn.Troops.GoblinWolfrider.Variant = 1;
+::Const.World.Spawn.Troops.GoblinWolfrider.NameList <- this.Const.Strings.GoblinNames;
+::Const.World.Spawn.Troops.GoblinWolfrider.TitleList <- this.Const.Strings.GoblinTitles;
 
 ::Const.World.Spawn.Troops.SsuSkeleton <-
 {
@@ -768,42 +709,6 @@
 	Script = "scripts/entity/tactical/enemies/ssu_skeleton_pol",
 	NameList = this.Const.Strings.AncientDeadNames,
 	TitleList = null
-}
-
-::Const.World.Spawn.Troops.Vampire <-
-{
-	ID = this.Const.EntityType.Vampire,
-	Variant = 1,
-	Strength = 40,
-	Cost = 40,
-	Row = 2,
-	Script = "scripts/entity/tactical/enemies/vampire"
-	NameList = this.Const.Strings.EmbalmedNobleNames,
-	TitleList = this.Const.Strings.FallenHeroTitles,
-}
-
-::Const.World.Spawn.Troops.GoblinWolfrider <-
-{
-	ID = this.Const.EntityType.GoblinWolfrider,
-	Variant = 1,
-	Strength = 30,
-	Cost = 30,
-	Row = 1,
-	Script = "scripts/entity/tactical/enemies/goblin_wolfrider",
-	NameList = this.Const.Strings.GoblinNames,
-	TitleList = this.Const.Strings.GoblinTitles
-}
-
-::Const.World.Spawn.Troops.OrcBerserker <-
-{
-	ID = this.Const.EntityType.OrcBerserker,
-	Variant = 1,
-	Strength = 35,
-	Cost = 25,
-	Row = -1,
-	Script = "scripts/entity/tactical/enemies/orc_berserker",
-	NameList = this.Const.Strings.OrcWarlordNames,
-	TitleList = this.Const.Strings.GoblinTitles
 }
 
 ::Const.World.Spawn.Troops.SsuGoblinwarrior <-

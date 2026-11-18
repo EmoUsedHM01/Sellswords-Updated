@@ -1,10 +1,5 @@
-// Every text SSU shows to the player is in this file.
-// To translate or reword something, make a mod that loads after mod_sellswords, change the entries it needs
-// and call ::Mod_Sellswords.refreshStrings() so the texts that were copied at load are copied again.
-// Change the entries inside a table, do not replace the table itself.
 ::Mod_Sellswords.Strings <- {};
 
-// fills {1}, {2} and so on in a text with the given values
 ::Mod_Sellswords.text <- function ( _text, ... )
 {
 	foreach( i, value in vargv )
@@ -23,7 +18,6 @@
 	return _text;
 }
 
-// copies the perk and enemy texts into the Legends tables again
 ::Mod_Sellswords.refreshStrings <- function ()
 {
 	foreach( def in ::Const.Perks.PerkDefObjects )

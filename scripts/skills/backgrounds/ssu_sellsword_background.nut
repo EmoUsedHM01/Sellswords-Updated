@@ -148,6 +148,7 @@ this.ssu_sellsword_background <- this.inherit("scripts/skills/backgrounds/charac
 	{
 
 		this.character_background.onAdded();
+		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_battleheart"));
 		local actor = this.getContainer().getActor();
 
 		if (this.Math.rand(0, 2) == 2)

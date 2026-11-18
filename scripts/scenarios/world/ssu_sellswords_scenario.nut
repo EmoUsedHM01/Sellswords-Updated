@@ -186,10 +186,6 @@ this.ssu_sellswords_scenario <- this.inherit("scripts/scenarios/world/starting_s
 		}
 	}
 
-	function onUpdateDraftList( _list, _gender = null )
-	{
-	}
-
 	function onUpdateHiringRoster( _roster )
 	{
 		this.addBroToRoster(_roster, "sellsword_background", 8);

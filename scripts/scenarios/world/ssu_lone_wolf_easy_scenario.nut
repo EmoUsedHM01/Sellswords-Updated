@@ -133,10 +133,6 @@ this.ssu_lone_wolf_easy_scenario <- this.inherit("scripts/scenarios/world/starti
 		return false;
 	}
 
-	function onUpdateDraftList( _list, _gender = null )
-	{
-	}
-
 	function onHiredByScenario( _bro )
 	{
 		this.setupBro(_bro);

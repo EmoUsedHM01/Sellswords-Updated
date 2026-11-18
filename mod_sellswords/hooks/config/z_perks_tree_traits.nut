@@ -3,8 +3,8 @@
 // Agile tree
 ::Const.Perks.AgileTree.Tree[1].push(::Const.Perks.PerkDefs.SsuBackswing);
 
-// Calm tree, Stoic Focus takes the place of Clarity
-::Mod_Sellswords.HookHelper.replacePerkInTree(::Const.Perks.CalmTree, ::Const.Perks.PerkDefs.LegendClarity, ::Const.Perks.PerkDefs.SsuClarity);
+// Calm tree
+::Const.Perks.CalmTree.Tree[1].push(::Const.Perks.PerkDefs.SsuClarity);
 
 // Fast tree
 ::Const.Perks.FastTree.Tree[4].push(::Const.Perks.PerkDefs.SsuNavigator);

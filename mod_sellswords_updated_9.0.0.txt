@@ -3085,6 +3085,36 @@ Removed the wolfsbane_necklace trophy from the Nimble build
 Added the mod setting All Loot Drops, disabled by default
 When enabled, everything killed in a battle drops its loot as if the player had killed it, no matter who made the kill
 
+...\mod_sellswords\hooks\scenarios\world\starting_scenario.nut < new
+...\mod_sellswords\hook_helper.nut
+...\scripts\scenarios\world\ssu_sellswords_scenario.nut
+...\scripts\scenarios\world\ssu_lone_wolf_easy_scenario.nut
+The SSU Sellsword background can now be hired in every settlement that can offer regular Sellswords
+
+...\mod_sellswords\config\ssu_spawnlist_bandits.nut
+...\mod_sellswords\config\ssu_spawnlist_barbarians.nut
+...\mod_sellswords\config\ssu_spawnlist_goblins.nut
+...\mod_sellswords\config\ssu_spawnlist_greenskin_invasion.nut
+...\mod_sellswords\config\ssu_spawnlist_nobles.nut
+...\mod_sellswords\config\ssu_spawnlist_nomads.nut
+...\mod_sellswords\config\ssu_spawnlist_orc.nut
+...\mod_sellswords\config\ssu_spawnlist_southern.nut
+...\mod_sellswords\config\ssu_spawnlist_zombies.nut
+...\mod_sellswords\config\ssu_z_spawnlist_enhanced_units.nut
+...\mod_sellswords\hook_helper.nut
+...\mod_sellswords\hooks\config\world_entity_common.nut
+The spawn lists no longer replace the party lists of Legends (it's a hook now)
+
+...\mod_sellswords\hooks\config\world_entity_common.nut
+No longer replaces dynamicSelectTroop and buildDynamicTroopList of Legends (it's a hook now)
+
+...\mod_sellswords\config\ssu_a_spawn_troops.nut
+No longer replaces ten units that Legends and vanilla define (it's a hook now)
+
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+Clarity is back in the Calm tree
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

@@ -1,5 +1,0 @@
-- Legendary Glaive/Spear and Orc Mace
-
-- Krieghast working
-
-- Add hooks for status effect tooltips to take resilient into account.

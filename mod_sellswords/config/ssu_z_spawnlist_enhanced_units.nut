@@ -556,176 +556,141 @@ if (!("Spawn" in ::Const.World))
 	]
 };
 
-::Const.World.Spawn.Mercenaries <- {
-	Name = "Mercenaries",
-	IsDynamic = true,
-	MovementSpeedMult = 1.0,
-	VisibilityMult = 1.0,
-	VisionMult = 1.0,
-	Body = "figure_bandit_03",
-	MaxR = 1000,
-	MinR = 97,
-	Fixed = [
-		{
-			MinR = 750,
-			MinCount = 1,
-			MaxCount = 1,
-			Weight = 100,
-			Type = this.Const.World.Spawn.Troops.SsuSellswordBanner,
-			Cost = 20,
-			MinGuards = 1,
-			MaxGuards = 1,
-			MaxGuardsWeight = 100,
-			Guards = [
+::Const.World.Spawn.Mercenaries.SsuLeader <- [
+	{
+		MinR = 750,
+		MinCount = 1,
+		MaxCount = 1,
+		Weight = 100,
+		Type = this.Const.World.Spawn.Troops.SsuSellswordBanner,
+		Cost = 20,
+		MinGuards = 1,
+		MaxGuards = 1,
+		MaxGuardsWeight = 100,
+		Guards = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSellswordSergeant,
+				Cost = 40,
+				function Weight( scale )
 				{
-					Type = this.Const.World.Spawn.Troops.SsuSellswordSergeant,
-					Cost = 40,
-					function Weight( scale )
-					{
-						return 100;
-					}
+					return 100;
+				}
 
-				}
-			]			
-		}			
-	],	
-	Troops = [
-		{
-			Weight = 45,
-			MaxR = 650,	
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuMercenary,
-					Cost = 25,				
-				}
-			]
-		},	
-		{
-			Weight = 15,
-			MinR = 500,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSellsword,
-					Cost = 40
-				},
-				{
-					MinR = 650,					
-					Type = this.Const.World.Spawn.Troops.SsuSellswordveteran,
-					Cost = 50
-				}				
-			]
-		},
-		{
-			Weight = 5,
-			MinR = 500,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSellswordPolearm,
-					Cost = 40
-				},
-				{
-					MinR = 650,					
-					Type = this.Const.World.Spawn.Troops.SsuSellswordveteranPolearm, 
-					Cost = 50
-				}				
-			]
-		},	
-		{
-			Weight = 5,
-			MinR = 500,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSellswordTank,
-					Cost = 40
-				},
-				{
-					MinR = 650,					
-					Type = this.Const.World.Spawn.Troops.SsuSellswordveteranTank,
-					Cost = 50
-				}				
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{				
-					Type = this.Const.World.Spawn.Troops.MercenaryRanged,
-					MaxR = 650,						
-					Cost = 30
-				},
-				{				
-					Type = this.Const.World.Spawn.Troops.SsuSellswordRanger,
-					MinR = 525,						
-					Cost = 50
-				},	
-				{				
-					Type = this.Const.World.Spawn.Troops.SsuSellswordveteranRanger,
-					MinR = 700,						
-					Cost = 60
-				},				
-				{
-					Type = this.Const.World.Spawn.Troops.MasterArcher,
-					Cost = 40
-				}
-			]
-		},		
-		{
-			Weight = 2,
-			MinR = 600,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSellswordSergeant,
-					Cost = 40
-				},
-				{
-					MinR = 700,					
-					Type = this.Const.World.Spawn.Troops.SsuSellswordLieutenant,
-					Cost = 50
-				}				
-			]
-		},		
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.Wardog,
-					Cost = 5
-				}
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuHedgeKnight,
-					Cost = 40,
-					MinGuards = 1,
-					MaxGuards = 2,
-					MaxGuardsWeight = 25,
-					Guards = [
+			}
+		]
+	}
+];
+
+::Mod_Sellswords.HookHelper.addTroops(::Const.World.Spawn.Mercenaries, [
+	{
+		Weight = 45,
+		MaxR = 650,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuMercenary,
+				Cost = 25,
+			}
+		]
+	},
+	{
+		Weight = 15,
+		MinR = 500,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSellsword,
+				Cost = 40
+			},
+			{
+				MinR = 650,
+				Type = this.Const.World.Spawn.Troops.SsuSellswordveteran,
+				Cost = 50
+			}
+		]
+	},
+	{
+		Weight = 5,
+		MinR = 500,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSellswordPolearm,
+				Cost = 40
+			},
+			{
+				MinR = 650,
+				Type = this.Const.World.Spawn.Troops.SsuSellswordveteranPolearm,
+				Cost = 50
+			}
+		]
+	},
+	{
+		Weight = 5,
+		MinR = 500,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSellswordTank,
+				Cost = 40
+			},
+			{
+				MinR = 650,
+				Type = this.Const.World.Spawn.Troops.SsuSellswordveteranTank,
+				Cost = 50
+			}
+		]
+	},
+	{
+		Join = ::Const.World.Spawn.Troops.MercenaryRanged,
+		Weight = 5,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSellswordRanger,
+				MinR = 525,
+				Cost = 50
+			},
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSellswordveteranRanger,
+				MinR = 700,
+				Cost = 60
+			}
+		]
+	},
+	{
+		Weight = 2,
+		MinR = 600,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSellswordSergeant,
+				Cost = 40
+			},
+			{
+				MinR = 700,
+				Type = this.Const.World.Spawn.Troops.SsuSellswordLieutenant,
+				Cost = 50
+			}
+		]
+	},
+	{
+		Weight = 5,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuHedgeKnight,
+				Cost = 40,
+				MinGuards = 1,
+				MaxGuards = 2,
+				MaxGuardsWeight = 25,
+				Guards = [
+					{
+						Type = this.Const.World.Spawn.Troops.SsuSquireNormal,
+						Cost = 20,
+						function Weight( scale )
 						{
-							Type = this.Const.World.Spawn.Troops.SsuSquireNormal,
-							Cost = 20,
-							function Weight( scale )
-							{
-								return 100;
-							}
+							return 100;
 						}
-					]					
-				}			
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.Swordmaster,
-					Cost = 40
-				}
-			]
-		}		
-	]
-};
+					}
+				]
+			}
+		]
+	}
+]);
 
 ::Const.World.Spawn.SsuNobleenhanced <- {
 	Name = "SsuNobleenhanced",
@@ -950,677 +915,169 @@ if (!("Spawn" in ::Const.World))
 	]
 };
 
-::Const.World.Spawn.UndeadArmy <-
-{
-	Name = "UndeadArmy",
-	IsDynamic = true,
-	MovementSpeedMult = 0.9,
-	VisibilityMult = 1.0,
-	VisionMult = 1.0,
-	Body = "figure_skeleton_01",
-	MaxR = 800,
-	MinR = 52,
-	Troops = [
-		{
-			Weight = 50,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonLight,
-					Cost = 13
-				},
-				{
-					MinR = 200,
-					Type = this.Const.World.Spawn.Troops.SkeletonMedium,
-					Cost = 20
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonHeavy,
-					MinR = 400,
-					Cost = 35
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSkeleton,
-					MinR = 650,
-					Cost = 60
-				},				
-			]
-		},
-		{
-			Weight = 35,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonMediumPolearm,
-					Cost = 25
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonHeavyPolearm,
-					MinR = 380,
-					Cost = 35
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSkeletonPol,
-					MinR = 650,
-					Cost = 60
-				},					
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonGladiator,
-					MinR = 600,
-					Cost = 45
-				},			
-			]
-		},
-		{
-			Weight = 3,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonPriest,
-					Cost = 40,
-					Roll = true
-					MinGuards = 1,
-					MaxGuards = 2,
-					MaxGuardsWeight = 33,
-					Guards = [
-						{
-							Type = this.Const.World.Spawn.Troops.SkeletonHeavyBodyguard,
-							Cost = 30,
-							function Weight(scale) {
-								return 100;
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			Weight = 5
-			MinR = 150,			
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.VampireLOW,
-					Cost = 30
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.Vampire,
-					MinR = 450,
-					Cost = 50
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.LegendVampireLord,
-					MinR = 650,
-					Cost = 70,
-					Roll = true
-				}
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.LegendDemonHound,
-					Cost = 40
-				}
-			]
-		}
-	]
-};
+::Mod_Sellswords.HookHelper.addTroops(::Const.World.Spawn.UndeadArmy, [
+	{
+		Join = ::Const.World.Spawn.Troops.SkeletonLight,
+		Weight = 50,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSkeleton,
+				MinR = 650,
+				Cost = 60
+			}
+		]
+	},
+	{
+		Join = ::Const.World.Spawn.Troops.SkeletonMediumPolearm,
+		Weight = 35,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSkeletonPol,
+				MinR = 650,
+				Cost = 60
+			}
+		]
+	}
+]);
 
-::Const.World.Spawn.VampiresAndSkeletons <- {
-	Name = "VampiresAndSkeletons",
-	IsDynamic = true,
-	MovementSpeedMult = 1.0,
-	VisibilityMult = 1.0,
-	VisionMult = 1.0,
-	Body = "figure_vampire_01",
-	MaxR = 600,
-	MinR = 108,
-	Troops = [
-		{
-			Weight = 65,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonLight,
-					Cost = 13
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonMedium,
-					MinR = 200,
-					Cost = 20
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonHeavy,
-					MinR = 400,
-					Cost = 35
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSkeleton,
-					MinR = 650,
-					Cost = 60
-				},				
-			]
-		},
-		{
-			Weight = 20,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonMediumPolearm,
-					Cost = 25
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonHeavyPolearm,
-					MinR = 380,
-					Cost = 35
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSkeletonPol,
-					MinR = 650,
-					Cost = 60
-				},					
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonGladiator,
-					MinR = 600,
-					Cost = 45
-				},			
-			]
-		},		
-		{
-			Weight = 30,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.VampireLOW,
-					Cost = 30
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.Vampire,
-					MinR = 400,
-					Cost = 40
-				},
-				{
-					MinR = 600,
-					Type = this.Const.World.Spawn.Troops.LegendVampireLord,
-					Cost = 70,
-					Roll = true
-				}
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.LegendDemonHound,
-					MinR = 800,
-					Cost = 40
-				}
-			]
-		}
-	]
-};
+::Mod_Sellswords.HookHelper.addTroops(::Const.World.Spawn.VampiresAndSkeletons, [
+	{
+		Join = ::Const.World.Spawn.Troops.SkeletonLight,
+		Weight = 65,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSkeleton,
+				MinR = 650,
+				Cost = 60
+			}
+		]
+	},
+	{
+		Weight = 20,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSkeletonPol,
+				MinR = 650,
+				Cost = 60
+			}
+		]
+	}
+]);
 
-::Const.World.Spawn.Vampires <-
-{
-	Name = "Vampires",
-	IsDynamic = true,
-	MovementSpeedMult = 1.0,
-	VisibilityMult = 1.0,
-	VisionMult = 1.0,
-	Body = "figure_vampire_02",
-	MaxR = 650,
-	MinR = 40,
-	Troops = [
-		{
-			Weight = 90,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.VampireLOW,
-					Cost = 30
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.Vampire,
-					Cost = 50
-					MinR = 450,
-				}
-			]
-		},
-		{
-			Weight = 10,
-			MinR = 650,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.LegendVampireLord,
-					Cost = 70,
-					Roll = true
-				}
-			]
-		}
-	]
-};
+::Mod_Sellswords.HookHelper.addTroops(::Const.World.Spawn.Militia, [
+	{
+		Weight = 15,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuSquireLow,
+				Cost = 25,
+				Roll = true
+			}
+		]
+	},
+	{
+		Weight = 40,
+		MinR = 200,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuRetiredsoldier,
+				Cost = 20,
+			}
+		]
+	},
+	{
+		Weight = 20,
+		MinR = 200,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuRetiredsoldierpol,
+				Cost = 20,
+			}
+		]
+	},
+	{
+		Join = ::Const.World.Spawn.Troops.LegendPeasantMinstrel,
+		Weight = 10,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuPeasantbutcher,
+				Cost = 15
+			},
+			{
+				Type = this.Const.World.Spawn.Troops.SsuPeasantminstrel,
+				Cost = 15
+			},
+			{
+				Type = this.Const.World.Spawn.Troops.SsuPeasantherbalist,
+				Cost = 15
+			},
+			{
+				Type = this.Const.World.Spawn.Troops.SsuPeasantblacksmith,
+				Cost = 15
+			},
+			{
+				Type = this.Const.World.Spawn.Troops.SsuPeasantjuggler,
+				Cost = 15
+			}
+		]
+	}
+]);
 
+::Mod_Sellswords.HookHelper.addTroops(::Const.World.Spawn.Caravan, [
+	{
+		Weight = 40,
+		MinR = 200,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuRetiredsoldier,
+				Cost = 20,
+			}
+		]
+	},
+	{
+		Weight = 20,
+		MinR = 200,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuRetiredsoldierpol,
+				Cost = 20,
+			}
+		]
+	}
+]);
 
-::Const.World.Spawn.Militia <-
-{
-	Name = "Militia",
-	IsDynamic = true,
-	MovementSpeedMult = 0.899999976,
-	VisibilityMult = 1.0,
-	VisionMult = 1.0,
-	Body = "figure_militia_01",
-	MaxR = 326,
-	MinR = 60,
-	Troops = [
-		{
-			Weight = 70,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.Militia,
-					MaxR = 200,					
-					Cost = 10
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.MilitiaVeteran,
-					MaxR = 280,						
-					Cost = 12
-				}
-			]
-		},
-		{
-			Weight = 30,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.MilitiaRanged,
-					Cost = 10
-				}
-			]
-		},
-		{
-			Weight = 15,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuSquireLow,
-					Cost = 25,
-					Roll = true					
-				}
-			]
-		},		
-		{
-			Weight = 40,
-			MinR = 200,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuRetiredsoldier,
-					Cost = 20,
-				}				
-			]
-		},	
-		{
-			Weight = 20,
-			MinR = 200,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuRetiredsoldierpol,
-					Cost = 20,
-				}				
-			]
-		},			
-		{
-			Weight = 15,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.MilitiaCaptain,
-					Cost = 20,
-					Roll = true
-				}
-			]
-		},
-		{
-			Weight = 15,
-			MinR = 220,			
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.MilitiaCaptain,
-					Cost = 20,
-					Roll = true
-				}
-			]
-		},		
-		{
-			Weight = 10,
-			Types =
-			[
-				{
-					Type = this.Const.World.Spawn.Troops.SsuPeasantbutcher,
-					Cost = 15
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SsuPeasantminstrel,
-					Cost = 15
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SsuPeasantherbalist,
-					Cost = 15
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SsuPeasantblacksmith,
-					Cost = 15
-				},	
-				{
-					Type = this.Const.World.Spawn.Troops.SsuPeasantjuggler,
-					Cost = 15
-				},					
-				{
-					Type = this.Const.World.Spawn.Troops.LegendPeasantMinstrel,
-					Cost = 15,
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.LegendPeasantWoodsman,
-					Cost = 15,
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.LegendPeasantMiner,
-					Cost = 15,
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.LegendPeasantMonk,
-					Cost = 15,
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.LegendPeasantFarmhand,
-					Cost = 15,
-				}
-			]
-		},
-		{
-			Weight = 10,
-			MinR = 0.8 * 326,			
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.LegendPeasantMonk,
-					Cost = 20,
-					Roll = true					
-				}
-			]
-		}		
-	]
-};
-
-::Const.World.Spawn.Caravan <-
-{
-	Name = "Caravan",
-	IsDynamic = true,
-	MovementSpeedMult = 0.5,
-	VisibilityMult = 1.0,
-	VisionMult = 0.25,
-	Body = "cart_02",
-	MaxR = 350,
-	MinR = 30,
-	Fixed = [
-		{
-			MinCount = 1,
-			MaxCount = 3,
-			Weight = 30 //percentage chance after min count is met
-			Type = this.Const.World.Spawn.Troops.CaravanDonkey,
-			Cost = 0
-		}
-	],
-	Troops = [
-		{
-			Weight = 60,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.CaravanHand,
-					MaxR = 200,						
-					Cost = 10
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.CaravanGuard,
-					MaxR = 280,						
-					Cost = 15
-				}
-			]
-		},
-		{
-			Weight = 40,
-			MinR = 200,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuRetiredsoldier,
-					Cost = 20,
-				}				
-			]
-		},	
-		{
-			Weight = 20,
-			MinR = 200,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuRetiredsoldierpol,
-					Cost = 20,
-				}				
-			]
-		}			
-	]
-};
-
-::Const.World.Spawn.UndeadScourge <-
-{
-	Name = "UndeadScourge",
-	IsDynamic = true,
-	MovementSpeedMult = 0.9,
-	VisibilityMult = 1.0,
-	VisionMult = 1.0,
-	Body = "figure_skeleton_01",
-	MaxR = 1214,
-	MinR = 76,
-	Troops = [
-		{
-			Weight = 25,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonLight,
-					Cost = 13
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonMedium,
-					Cost = 20
-				},
-				{
-					MinR = 400
-					Type = this.Const.World.Spawn.Troops.SkeletonHeavy,
-					Cost = 35
-				}
-			]
-		},
-		{
-			MinR = 250,
-			Weight = 20,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonMediumPolearm,
-					Cost = 25
-				},
-				{
-					MinR = 400
-					Type = this.Const.World.Spawn.Troops.SkeletonHeavyPolearm,
-					Cost = 35
-				}
-			]
-		},
-		{
-			Weight = 5,
-			MinR = 600,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SkeletonPriest,
-					Cost = 40,
-					Roll = true
-					MinGuards = 1,
-					MaxGuards = 2,
-					MaxGuardsWeight = 33,
-					Guards = [
-						{
-							Type = this.Const.World.Spawn.Troops.SkeletonHeavyBodyguard,
-							Cost = 30,
-							function Weight(scale) {
-								return 100;
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			Weight = 25,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.Zombie,
-					Cost = 5
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.ZombieYeoman,
-					Cost = 12
-				},
-				{
-					MinR = 400,
-					Type = this.Const.World.Spawn.Troops.ZombieKnight,
-					Cost = 25
-				}
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuFallenbetrayer,
-					MinR = 400,					
-					Cost = 45
-				}
-			]
-		},	
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuZombieswordmaster,
-					MinR = 450,					
-					Cost = 45
-				}
-			]
-		},			
-		{
-			Weight = 5
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.VampireLOW,
-					Cost = 30
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.Vampire,
-					Cost = 40
-				},
-				{
-					MinR = 600,
-					Type = this.Const.World.Spawn.Troops.LegendVampireLord,
-					Cost = 70,
-					Roll = true
-				}
-			]
-		},
-		{
-			Weight = 5
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.Ghost,
-					Cost = 20
-				},
-				{
-					MinR = 350,
-					Type = this.Const.World.Spawn.Troops.LegendBanshee,
-					Cost = 70
-				}
-			]
-		},
-		{
-			Weight = 5
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.LegendMummyLight,
-					Cost = 23
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.LegendMummyMedium,
-					MinR = 200,
-					Cost = 30
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.LegendMummyHeavy,
-					MinR = 600,
-					Cost = 45
-				}
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.Necromancer,
-					Cost = 30,
-					Roll = true,
-					MinGuards = 1,
-					MaxGuards = 2,
-					MaxGuardsWeight = 50,
-					Guards = [
-						{
-							Type = this.Const.World.Spawn.Troops.ZombieYeomanBodyguard,
-							Cost = 12,
-							function Weight(scale) {
-								local c = 100 - (scale * 100);
-								return this.Math.max(0, c);
-							}
-						},
-						{
-							Type = this.Const.World.Spawn.Troops.ZombieKnightBodyguard,
-							Cost = 25,
-							function Weight(scale) {
-								local c = 100 - ((1.0 - scale) * 100);
-								return this.Math.min(100, c);
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.GhoulLOW,
-					Cost = 9
-				},
-				{
-					Type = this.Const.World.Spawn.Troops.Ghoul,
-					Cost = 19
-				}
-			]
-		},
-		{
-			Weight = 5,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.LegendDemonHound,
-					Cost = 20
-				}
-			]
-		},
-		{
-			Weight = 1,
-			MinR = 600,
-			Types = [
-				{
-					Type = this.Const.World.Spawn.Troops.SsuDeathknight,
-					Cost = 80
-				}
-			]
-		}		
-	]
-};
+::Mod_Sellswords.HookHelper.addTroops(::Const.World.Spawn.UndeadScourge, [
+	{
+		Weight = 5,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuFallenbetrayer,
+				MinR = 400,
+				Cost = 45
+			}
+		]
+	},
+	{
+		Weight = 5,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuZombieswordmaster,
+				MinR = 450,
+				Cost = 45
+			}
+		]
+	},
+	{
+		Weight = 1,
+		MinR = 600,
+		Types = [
+			{
+				Type = this.Const.World.Spawn.Troops.SsuDeathknight,
+				Cost = 80
+			}
+		]
+	}
+]);
 
 ::Const.World.Spawn.SsuSouthernenhanced <- {
 	Name = "SsuSouthernenhanced",

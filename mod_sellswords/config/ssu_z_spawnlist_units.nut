@@ -153,6 +153,7 @@ if (!("Spawn" in ::Const.World))
 		}		
 	]
 };
+
 ::Const.World.Spawn.SsuNoblewithbaron <- {
 	Name = "SsuNoblewithbaron",
 	IsDynamic = true,
@@ -338,6 +339,7 @@ if (!("Spawn" in ::Const.World))
 		}	
 	]
 };
+
 ::Const.World.Spawn.SsuNobleCaravanwithSellswords <- {
 	Name = "SsuNobleCaravanwithSellswords",
 	IsDynamic = true,
@@ -512,6 +514,7 @@ if (!("Spawn" in ::Const.World))
 		}			
 	]
 };
+
 ::Const.World.Spawn.SsuCaravanSouthernwithSellswords <- {
 	Name = "SsuCaravanSouthernwithSellswords",
 	IsDynamic = true,
@@ -635,6 +638,7 @@ if (!("Spawn" in ::Const.World))
 		}	
 	]
 };
+
 ::Const.World.Spawn.SsuDesperados <- {
 	Name = "SsuDesperados",
 	IsDynamic = true,
@@ -732,6 +736,7 @@ if (!("Spawn" in ::Const.World))
 		}		
 	]
 };
+
 ::Const.World.Spawn.SsuHashshashins <- {
 	Name = "SsuHashshashins",
 	IsDynamic = true,
@@ -1913,6 +1918,7 @@ if (!("Spawn" in ::Const.World))
 		}		
 	]
 };
+
 ::Const.World.Spawn.SsuNomadMilitary <- {
 	Name = "SsuNomadMilitary",
 	IsDynamic = true,

@@ -453,5 +453,86 @@
 		{
 			_actor.getItems().equip(::new("scripts/items/" + _script));
 		}
+	},
+
+	// adds SSU Sellswords to a recruit pool, half as many as it has regular Sellswords, so they are twice as rare
+	addSellswordsToDraftList = function( _list )
+	{
+		local regular = 0;
+
+		foreach (background in _list)
+		{
+			// the pool has been through here already
+			if (background == "ssu_sellsword_background")
+				return;
+
+			if (background == ::Legends.Background.Sellsword || background == "sellsword_background")
+				++regular;
+		}
+
+		// one for every two, and a coin flip for an odd one left over
+		local wanted = regular / 2;
+
+		if (regular % 2 == 1 && ::Math.rand(1, 100) <= 50)
+			++wanted;
+
+		for (; wanted > 0; --wanted)
+		{
+			_list.push("ssu_sellsword_background");
+		}
+	},
+
+	// adds SSU units to a party list of Legends without replacing anything in it
+	// a group with Join is put into the group of the list that has that unit, so its units can be picked in place of that one
+	// without Join, or if the list has no such group, the group is added on its own with its Weight
+	addTroops = function( _party, _groups )
+	{
+		foreach (group in _groups)
+		{
+			local target = null;
+
+			if ("Join" in group)
+			{
+				target = this.getTroopGroup(_party, group.Join);
+				delete group.Join;
+			}
+
+			if (target == null)
+			{
+				_party.Troops.push(group);
+				continue;
+			}
+
+			// the types of a group are kept in order of cost
+			foreach (type in group.Types)
+			{
+				local index = 0;
+
+				while (index < target.Types.len() && target.Types[index].Cost <= type.Cost)
+				{
+					++index;
+				}
+
+				target.Types.insert(index, type);
+			}
+		}
+	},
+
+	// the group of a party list that has the unit, null if there is none
+	getTroopGroup = function( _party, _unit )
+	{
+		if (_unit == null)
+			return null;
+
+		foreach (group in _party.Troops)
+		{
+			foreach (type in group.Types)
+			{
+				if (type.Type.Script == _unit.Script)
+					return group;
+			}
+		}
+
+		return null;
 	}
 }

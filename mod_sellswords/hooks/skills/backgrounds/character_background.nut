@@ -151,15 +151,15 @@
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendBackToBasics:
 						this.m.CustomPerkTree[5].push(::Legends.Perk.SsuBattlerhaposdy);
 						continue;
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendClarity:
+						this.m.CustomPerkTree[1].push(::Legends.Perk.SsuClarity);
+						continue;
 					// replace perks here
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.HoldOut:
 						this.m.CustomPerkTree[i][j] = ::Legends.Perk.SsuResilient;
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.ReachAdvantage:
 						this.m.CustomPerkTree[i][j] = ::Legends.Perk.SsuReachadvantage;
-						continue;
-					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendClarity:
-						this.m.CustomPerkTree[i][j] = ::Legends.Perk.SsuClarity;
 						continue;
 				}
 			}
