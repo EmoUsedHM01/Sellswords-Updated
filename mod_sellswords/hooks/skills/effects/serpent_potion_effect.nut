@@ -28,24 +28,12 @@
 			}
 		];
 
-		if (this.getContainer().getActor().getFlags().has("spider_r"))
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.serpent_potion_effect.Tooltip1
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.serpent_potion_effect.Tooltip2
-			});
-		}
+		ret.push({
+			id = 11,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = ::Mod_Sellswords.Strings.serpent_potion_effect.Tooltip2
+		});
 		
 		ret.push({
 			id = 12,
@@ -60,16 +48,8 @@
 	
 	q.onUpdate = @(__original) function(_properties)
 	{
-		if (this.getContainer().getActor().getFlags().has("spider_r"))
-		{
-			_properties.Initiative += 30;
-			_properties.MeleeSkill += 15;
-		}
-		else
-		{
-			_properties.Initiative += 15;
-			_properties.MeleeSkill += 5;
-		}
+		_properties.Initiative += 15;
+		_properties.MeleeSkill += 5;
 	}
 
 	q.onTargetHit <- function( _skill, _targetEntity, _bodyPart, _damageInflictedHitpoints, _damageInflictedArmor )
@@ -97,22 +77,11 @@
 
 		this.spawnIcon("status_effect_54", _targetEntity.getTile());
 
-		if (this.getContainer().getActor().getFlags().has("spider_r"))
-		{
-			local poison = _targetEntity.getSkills().getSkillByID("effects.legend_redback_spider_poison");
-			if (poison == null) 
-				_targetEntity.getSkills().add(this.new("scripts/skills/effects/legend_redback_spider_poison_effect"));
-			else 
-				poison.resetTime();
-		}
-		else
-		{
-			local poison = _targetEntity.getSkills().getSkillByID("effects.spider_poison");
-			if (poison == null) 
-				_targetEntity.getSkills().add(this.new("scripts/skills/effects/spider_poison_effect"));
-			else 
-				poison.resetTime();
-		}
+		local poison = _targetEntity.getSkills().getSkillByID("effects.spider_poison");
+		if (poison == null) 
+			_targetEntity.getSkills().add(this.new("scripts/skills/effects/spider_poison_effect"));
+		else 
+			poison.resetTime();
 	}
 
 });

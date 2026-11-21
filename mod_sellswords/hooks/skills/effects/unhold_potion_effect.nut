@@ -19,34 +19,12 @@
 			}
 		];
 
-		if (actor.getFlags().has("unhold_r") || actor.getFlags().has("ghoul_s"))
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.unhold_potion_effect.Tooltip1
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.unhold_potion_effect.Tooltip2
-			});
-		}
-
-		if (actor.getFlags().has("unhold_r"))
-		{
-			ret.push({
-				id = 12,
-				type = "text",
-				icon = "ui/icons/armor_body.png",
-				text = ::Mod_Sellswords.Strings.unhold_potion_effect.Tooltip3
-			});
-		}
+		ret.push({
+			id = 11,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = ::Mod_Sellswords.Strings.unhold_potion_effect.Tooltip2
+		});
 		
 		ret.push({
 			id = 13,
@@ -65,17 +43,6 @@
 		{
 			actor.setHitpoints(actor.getHitpointsMax());
 			
-			if (actor.getFlags().has("unhold_r"))
-			{	
-				local head = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Head);
-				local body = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Body);
-
-				if (head != null) 
-					head.setArmor(head.getArmorMax());
-
-				if (body != null) 
-					body.setArmor(body.getArmorMax());
-			}
 			actor.setDirty(true);
 		}
 	}
@@ -93,7 +60,7 @@
 		if (actor.getSkills().getSkillByID("effects.legend_RSW_poison_effect") != null) 
 			return;
 		
-		local regen_value = (actor.getFlags().has("unhold_r") || actor.getFlags().has("ghoul_s")) ? 10 : 5;
+		local regen_value = 5;
 		local health_added = this.Math.min(actor.getHitpointsMax() - actor.getHitpoints(), regen_value);
 		
 		if (health_added > 0)
@@ -109,40 +76,6 @@
 					this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.RacialEffect * 1.25, actor.getPos());
 
 				this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.unhold_potion_effect.Log1, this.Const.UI.getColorizedEntityName(actor), health_added));
-			}
-		}
-
-		if (actor.getFlags().has("unhold_r"))
-		{
-			local head = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Head);
-			local body = actor.getItems().getItemAtSlot(this.Const.ItemSlot.Body);
-			
-            local head_added = head != null ? this.Math.min(head.getArmorMax() - head.getArmor(), 20) : 0;
-			local body_added = body != null ? this.Math.min(body.getArmorMax() - body.getArmor(), 20) : 0;
-
-			if (head_added > 0 || body_added > 0)
-			{
-				if (head != null)
-					head.setArmor(head.getArmor() + head_added);
-
-				if (body != null)
-					body.setArmor(body.getArmor() + body_added);
-				
-				actor.setDirty(true);
-
-				if (!actor.isHiddenToPlayer())
-				{
-					this.spawnIcon("status_effect_79", actor.getTile());
-
-					if (this.m.SoundOnUse.len() != 0)
-						this.Sound.play(this.m.SoundOnUse[this.Math.rand(0, this.m.SoundOnUse.len() - 1)], this.Const.Sound.Volume.RacialEffect * 1.25, actor.getPos());
-
-					if (head_added > 0)
-						this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.unhold_potion_effect.Log2, this.Const.UI.getColorizedEntityName(actor), head_added));
-
-					if (body_added > 0)
-						this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.unhold_potion_effect.Log3, this.Const.UI.getColorizedEntityName(actor), body_added));
-				}
 			}
 		}
 	}

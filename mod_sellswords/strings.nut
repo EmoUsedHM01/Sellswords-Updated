@@ -1579,15 +1579,13 @@ Learn to use the superior reach of large weapons to keep the enemy from getting 
 ::Const.Strings.PerkName.SsuParthianshot <- "Parthian Shot";
 
 ::Const.Strings.PerkDescription.SsuParthianshot <- @"
-[color=%negative%][u]Requires:[/u] Bow[/color]
+[color=%negative%][u]Requires:[/u] Ranged Weapon[/color]
 Master the ancient tactic of the Parthian Shot, allowing you to make a precise ranged attack while retreating, catching your enemies off guard and striking fear into their ranks.
 
 [color=%passive%][u]Passive:[/u][/color]
 • Damage penetration and Damage to Hitpoints are increased by [color=%positive%]+2%[/color] of your remaining Action Points.
 
-• The first tile moved each turn will refund the AP and Fatigue costs.
-
-• Movement penalty costs will not be refunded.
+• The first tile moved each turn costs no Action Points and refunds its Fatigue cost, regardless of terrain, height or other movement penalties.
 ";
 
 ::Const.Strings.PerkName.SsuDryadSummonWolf <- "Call Verdant Hound";
@@ -3088,7 +3086,6 @@ Unleash an arcing barrage of lightning!
 // mod_sellswords\hooks\skills\effects\lindwurm_potion_effect.nut
 ::Mod_Sellswords.Strings.lindwurm_potion_effect <- {
 	Tooltip1 = "This character\'s blood burns with acid, damaging adjacent attackers whenever they deal hitpoint damage.",
-	Tooltip2 = "This character has the blood of Dragons coursing through them.\n[color=%positive%]+30[/color] Hitpoints.\n[color=%positive%]+30%[/color] additional damage with attacks.",
 	Tooltip3 = "This character has the blood of Dragons coursing through them.\n[color=%positive%]+15[/color] Hitpoints.\n[color=%positive%]+15%[/color] additional damage with attacks.",
 	Tooltip4 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
 };
@@ -3096,14 +3093,12 @@ Unleash an arcing barrage of lightning!
 // mod_sellswords\hooks\skills\effects\nachzehrer_potion_effect.nut
 ::Mod_Sellswords.Strings.nachzehrer_potion_effect <- {
 	Text = "This character\'s body has mutated to regrow skin and muscle tissue much more quickly than normal and they gain the speed of nachzehrer. Deep injuries heal much faster than normal as a result. They also seem to have developed a hunger for fresh meat, but that\'s probably unrelated.",
-	Tooltip1 = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day.\n[color=%positive%]+20[/color] Initiative.",
 	Tooltip2 = "Reduces the time it takes to heal from any injury by one day, down to a mininum of one day.\n[color=%positive%]+10[/color] Initiative.",
 	Tooltip3 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
 };
 
 // mod_sellswords\hooks\skills\effects\necrosavant_potion_effect.nut
 ::Mod_Sellswords.Strings.necrosavant_potion_effect <- {
-	Tooltip1 = "Heal [color=%positive%]25%[/color] of hitpoint damage inflicted on adjacent enemies that have blood\n[color=%positive%]+30[/color] Hitpoints.\n[color=%positive%]+10[/color] Melee Skill.",
 	Tooltip2 = "Heal [color=%positive%]15%[/color] of hitpoint damage inflicted on adjacent enemies that have blood\n[color=%positive%]+10[/color] Hitpoints.\n[color=%positive%]+5[/color] Melee Skill.",
 	Tooltip3 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them",
 	Log = "{1} heals for {2} points"
@@ -3133,7 +3128,6 @@ Unleash an arcing barrage of lightning!
 
 // mod_sellswords\hooks\skills\effects\orc_warrior_potion_effect.nut
 ::Mod_Sellswords.Strings.orc_warrior_potion_effect <- {
-	Tooltip1 = "[color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects\n[color=%positive%]+20[/color] Hitpoints.",
 	Tooltip2 = "[color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects\n[color=%positive%]+10[/color] Hitpoints.",
 	Tooltip3 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
 };
@@ -3142,7 +3136,6 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.orc_young_potion_effect <- {
 	Name = "Shock Absorbant Wrists",
 	Text = "This character\'s wrists have mutated in such a way that the they dampen the initial shock of opposing forces. In more practical terms, this lets them hit harder. They can also make some pretty outlandish shadow puppets.",
-	Tooltip1 = "Attacks do [color=%positive%]+20%[/color] additional damage",
 	Tooltip2 = "Attacks do [color=%positive%]+10%[/color] additional damage",
 	Tooltip3 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
 };
@@ -3158,7 +3151,6 @@ Unleash an arcing barrage of lightning!
 	Name = "Schrat Symbiosis",
 	Text = "With the proper concoction, and implanting the heart of schrat into the body, the test subject can form a symbiosis with the heart, gaining the abilities and properties of a Schrat.",
 	Tooltip1 = "Greatly reduces any form of piercing damage, but you take 100% more burning damage.",
-	Tooltip2 = "When taking damage more than or equal to 15% of your health, birth a minature schrat from your blood and surroundings to help you in combat.",
 	Tooltip3 = "Immune to being knocked back or grabbed.",
 	Tooltip4 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
 };
@@ -3167,7 +3159,6 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.serpent_potion_effect <- {
 	Name = "Venom Glands",
 	Text = "This character has developed venom glands that allow them to produce poison strong enough to kill any man. Sadly they do not have the fangs of a snake or spider to deliver this venom and have to resort using piercing or cutting weapons to apply it.",
-	Tooltip1 = "Piercing or cutting attacks poison the target with Redback venom.\n[color=%positive%]+30[/color] Initiative.\n[color=%positive%]+15[/color] Melee Skill.",
 	Tooltip2 = "Piercing or cutting attacks poison the target.\n[color=%positive%]+15[/color] Initiative.\n[color=%positive%]+5[/color] Melee Skill.",
 	Tooltip3 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them",
 	Log = "{1} is poisoned"
@@ -3202,13 +3193,9 @@ Unleash an arcing barrage of lightning!
 
 // mod_sellswords\hooks\skills\effects\unhold_potion_effect.nut
 ::Mod_Sellswords.Strings.unhold_potion_effect <- {
-	Tooltip1 = "Heals [color=%positive%]10[/color] Hitpoints each turn. Cannot heal if poisoned.",
 	Tooltip2 = "Heals [color=%positive%]5[/color] Hitpoints each turn. Cannot heal if poisoned.",
-	Tooltip3 = "Heals [color=%positive%]20[/color] head and body armor each turn.  Cannot heal if poisoned.",
 	Tooltip4 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them",
-	Log1 = "{1}\'s Hyperactive Cell Growth mutation regenerated {2} hitpoints",
-	Log2 = "{1}\'s Hyperactive Cell Growth mutation regenerated {2} points of head armor",
-	Log3 = "{1}\'s Hyperactive Cell Growth mutation regenerated {2} points of body armor"
+	Log1 = "{1}\'s Hyperactive Cell Growth mutation regenerated {2} hitpoints"
 };
 
 // mod_sellswords\hooks\skills\effects\wiederganger_potion_effect.nut
@@ -4458,236 +4445,155 @@ Unleash an arcing barrage of lightning!
 	Description = "A well craft southern wrap."
 };
 
+// scripts\items\misc\anatomist\ssu_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_sequence_item <- {
+	Use = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
+	Sickness = "Heavily mutates the body. Long periods of sickness are expected.",
+	Warning = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
+};
+
 // scripts\items\misc\anatomist\ssu_alp_sequence_item.nut
 ::Mod_Sellswords.Strings.ssu_alp_sequence_item <- {
 	Name = "Sequence: Alp\nStrain - Sleeper",
-	Description = "This draft, the result of intensive study into the so-called \'Third Eye\' of the Alp, allows whomever drinks it to see through the night as if it were day, see into the minds of others, and torment them with nightmares!\nBlurry vision and hallucinations are expected while the body acclimates.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Enhanced Eye Rods: Not affected by nighttime penalties\n[color=%positive%]+1[/color] Vision",
-	Tooltip2 = "This character takes between [color=%positive%]25%[/color] and [color=%positive%]50%[/color] less damage from piercing attacks, such as those from bows or spears\n[color=%positive%]+10[/color] Hitpoints",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
+	Description = "This draft, the result of intensive study into the so-called \'Third Eye\' of the Alp, allows whomever drinks it to see through the night as if it were day, see into the minds of others, and torment them with nightmares!\nBlurry vision and hallucinations are expected while the body acclimates.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
 };
 
 // scripts\items\misc\anatomist\ssu_demon_alp_sequence_item.nut
 ::Mod_Sellswords.Strings.ssu_demon_alp_sequence_item <- {
 	Name = "Sequence: Alp\nStrain - Demon",
-	Description = "This concoction, borne from research into the legendary Demon Alp, further improves the qualities given in the previous Strain.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Horrify: Blare out a piercing, unworldly sound that is more than likely to distress anyone unfortunate enough to hear it.",
-	Tooltip2 = "Levitate: Float above the ground.",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
+	Description = "This concoction, borne from research into the legendary Demon Alp, further improves the qualities given in the previous Strain.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_basilisk_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_basilisk_sequence_item <- {
+	Name = "Sequence: Basilisk\nStrain - Drone",
+	Description = "Anyone who has watched a Basilisk hunt knows the bird does not waste a peck, every strike goes for the eyes. This tincture, distilled from the nerves behind a Drone\'s beak, teaches the drinker\'s arm the same habit.\nA twitch of the neck and a newfound interest in shiny helmets are to be expected.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_basilisk_sentry_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_basilisk_sentry_sequence_item <- {
+	Name = "Sequence: Basilisk\nStrain - Sentry",
+	Description = "This concoction, borne from research into the Basilisk Sentry, further improves the qualities given in the previous Strain. A Sentry\'s beak goes through a helmet as easily as through bone, and now so do the drinker\'s blows.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
 };
 
 // scripts\items\misc\anatomist\ssu_direwolf_sequence_item.nut
 ::Mod_Sellswords.Strings.ssu_direwolf_sequence_item <- {
 	Name = "Sequence: Direwolf\nStrain - Alpha",
-	Description = "This humoural concoction, borne from research into the dreaded Direwolf, will turn even the clumsiest oaf into an elite, lithe warrior.\n Gain the ability to gracefully move with the tides of battle long after lesser men succumb to fatigue!\nMild akathisia after consuming is normal, if not expected.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Direwolf: This character counts as a Direwolf in skill checks.",
-	Tooltip2 = "Elasticized Sinew: Attacks that miss have [color=%positive%]50%[/color] of their Fatigue cost refunded\n[color=%positive%]+10[/color] Fatigue.",
-	Tooltip3 = "Adrenaline Gland: Gain additional flat damage based on missing Hitpoints.\n[color=%positive%]50%[/color] of missing Hitpoints on Legendary, and [color=%positive%]25%[/color] on other difficulties.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_goblin_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_goblin_sequence_item <- {
-	Name = "Sequence: Goblin\nStrain - Grubby-Fingers",
-	Description = "Equal parts terrifying and annoying, the uncanny marksmanship of goblins has long been thought unattainable by ordinary, self-respecting humans. With this wondrous concoction, however, the discerning warrior can harness some of that latent skill and obtain the celerity inherent in these greenskins.\nSome noted effects include loss of height and possible kleptomanic tendencies.\n\nUnfortunately, the anatomist says that this race is too feeble to develop a higher strain variant, so consumption of this Sequence may limit future growth.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Shrinks you.",
-	Tooltip2 = "Reactive Leg Muscles: The AP cost of Rotation and Footwork is reduced to [color=%positive%]2[/color] and the Fatigue costs are reduced by [color=%positive%]50%[/color]. Does not stack with other reductions.\n[color=%positive%]+10[/color] Initiative",
-	Tooltip3 = "Mutated Cornea: An additional [color=%positive%]5%[/color] of damage ignores armor when using bows or crossbows\n[color=%positive%]+10[/color] Ranged Skill\n[color=%positive%]+10[/color] Ranged Defense",
-	Tooltip4 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip5 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip6 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_greenwood_schrat_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_greenwood_schrat_sequence_item <- {
-	Name = "Sequence: Schrat\nStrain - Greenwood",
-	Description = "From research on the legendary Greenwood Schrat, this potion improves upon the symbiotic relationship formed in the previous strain.\nNow the imbiber can grow roots and branches out of their body to attack.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Symbiotic Seeds: When taking damage more than or equal to 15% of your health, birth a minature schrat from your blood and surroundings to help you in combat.",
-	Tooltip2 = "Bark-skin: Allows the user to grow a wooden shield from their sap-like blood.",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_lindwurm_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_lindwurm_sequence_item <- {
-	Name = "Sequence: Lindwurm\nStrain - Acidity",
-	Description = "Feel your blood boil! Or, more to the point, don\'t! With this tincture, the burning blood of a lindwurm will flow through your decidedly human veins, with the lucky subject none the wiser. Until they start bleeding, of course.\nFortunately, the Lindwurm is already a creature of exceptional lineage, and as a result, imbimbing this potion will perfect your puny physique!\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Descendant of Dragons: Perfects your physique, removing any negative physical traits and adding positive ones.\nGrants [color=%positive%]+15[/color] Hitpoints and makes all attacks deal [color=%positive%]+15%[/color] more damage.",
-	Tooltip2 = "Caustic Blood: This character\'s blood burns with acid, damaging adjacent attackers whenever they deal hitpoint damage.",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_nachzehrer_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_nachzehrer_sequence_item <- {
-	Name = "Sequence: Ghoul\nStrain - Glutton",
-	Description = "If one divorces the horror of the act from its utility, there are few phenomena more marvelous in nature than the Nachzehrer\'s ability to recover by eating the flesh of the recently deceased. No longer! Now man himself may partake in such a feast!\nThis potion also allows the drinker to gain the speed and wild frenzy of the Nachzehrer.\nDespite a few incidents in which townsfolk have run screaming from rabid, naked men devouring their family pets, the Anatomist assures you that this tincture is perfectly safe for consumption.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Rapid Tissue Growth: Reduces the time it takes to heal from any injury by one day, down to a mininum of one day.\nGrants [color=%positive%]+10[/color] Initiative.",
-	Tooltip2 = "Gruesome Feast: Taste of the forbidden flesh. Devour a recently departed corpse to gain strength and restore your own health by [color=%positive%]50[/color] ",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_necro_necrosavant_lord_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_necro_necrosavant_lord_sequence_item <- {
-	Name = "Sequence: Vampyre\nStrain - Lord",
-	Description = "This concoction, borne from research into the legendary necrosavant lord, further improves the qualities given in the sequence 9 potion, Vampire. \n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the sickness.",
-	Tooltip1 = "Necrosavant Lord: Improves effects of parasitic blood to 25%.\n[color=%positive%]+20[/color] Hitpoints.\n[color=%positive%]+10[/color] Melee Skill.",
-	Tooltip2 = "Darkflight: Disapparate from your current location and reappear up to 6 tiles away.",
-	Tooltip3 = "Synapse Blockage: Morale cannot be reduced below Steady\n[color=%positive%]+10[/color] Resolve.",
-	Tooltip4 = "Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins.",
-	Tooltip5 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip6 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip7 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_necro_necrosavant_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_necro_necrosavant_sequence_item <- {
-	Name = "Sequence: Vampyre\nStrain - Bloodletter",
-	Description = "Whoever drinks this incredible potion, produced with the ash of a Necrosavant, will find themselves in possession of the miraculous healing powers of the undead creatures!\nIt does not grant the extended lifespan associated with the abominations, however - quite the opposite, in fact. This may be considered a feature should the imbiber get a bit too comfortable drinking blood.\nConsumers have remarked effects that feel similar to immortality and their bodies regressing in age, although from the associated cost, you\'re not entirely sure if it\'s worth it.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Parasitic Blood: Heal [color=%positive%]15%[/color] of hitpoint damage inflicted on adjacent enemies that have blood\n[color=%positive%]+10[/color] Hitpoints.\n[color=%positive%]+5[/color] Melee Skill.",
-	Tooltip2 = "Nine Lives: Once per battle, upon receiving a killing blow, survive instead with a few hitpoints left and have all damage over time effects cured. Also grants a one in nine chance to survive a fatal blow with an injury.",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_orc_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_orc_sequence_item <- {
-	Name = "Sequence: Orc\nStrain - Unga-Bunga",
-	Description = "Many Generals have wished that Orcs might be cowed, for if one could control the greenskins and direct their strength with the intellect of man, they would surely control an unstoppable force.\nWith this, such fantasies are within reach!\nWhen you asked the Anatomist about side-effects, they assured you that the constant drooling and excessive violent tendencies that were reported are the norm for sellswords anyway.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Induces major growth.",
-	Tooltip2 = "Shock Absorbant Wrists: Attacks do [color=%positive%]+10%[/color] additional damage.",
-	Tooltip3 = "Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects.\nGrants [color=%positive%]+10[/color] Hitpoints.",
-	Tooltip4 = "Colossus: Hitpoints are increased by [color=%positive%]25%[/color], which also reduces the chance to sustain debilitating injuries when being hit.",
-	Tooltip5 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip6 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip7 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_orc_warlord_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_orc_warlord_sequence_item <- {
-	Name = "Sequence: Orc\nStrain - Warlord",
-	Description = "Borne from the study of the renowned Orc Warlord, this potion improves upon that of the previous strain, allowing one to wield heavy orc weapons with ease as well as letting an orc\'s rage flow through one\'s veins.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Induces major growth.",
-	Tooltip2 = "Warlord: Improves upon the effects of the strain.\n[color=%positive%]+15[/color]% Damage\n[color=%positive%]+10[/color] Hitpoints",
-	Tooltip3 = "Hyperactive Glands: This character gains two stacks of Rage each time they take hitpoint damage, and loses one stack at the end of each turn. Rage improves damage reduction and other combat stats.",
-	Tooltip4 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip5 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip6 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_redback_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_redback_sequence_item <- {
-	Name = "Sequence: Spider\nStrain - Redback",
-	Description = "It turns out that the majority of the strength that came from this genus was contained within the legendary Redback.\nWith future research into the species, this potion improves upon the poison of the previous strain, allowing the drinker to poison their enemies with Redback poison instead of the inferior Webnecht.\nThe ability to spew forth webs from your mouth sounds fine in concept, but you wonder if the addition of insects to your diet is a worthy trade-off.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Venom Glands: Piercing or cutting attacks poison the target with Redback poison.",
-	Tooltip2 = "Spider-Man: Spit webs at your foes to trap them.",
-	Tooltip3 = "Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins.\nGrants [color=%positive%]+30[/color] Initiative and [color=%positive%]+15[/color] Melee Skill.",
-	Tooltip4 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip5 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip6 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_rock_unhold_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_rock_unhold_sequence_item <- {
-	Name = "Sequence: Unhold\nStrain - Mountain",
-	Description = "From research on the legendary Rock Unhold of the mountains, this potion improves upon the previous strain, granting the drinker increased regeneration and creating natural armor on their body that regenerates.\n The Anatomist tells you that at this stage, the additional growths are impossible to remove, and if you haven\'t already, a drafted will is advised.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Hyper-Accelerated Growths: Heals [color=%positive%]10[/color] Hitpoints each turn. Cannot heal if poisoned.",
-	Tooltip2 = "Thick Skinned: Heals [color=%positive%]20[/color] head and body armor each turn.  Cannot heal if poisoned.",
-	Tooltip3 = "Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects\n[color=%positive%]+10[/color] Hitpoints.",
-	Tooltip4 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip5 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip6 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_schrat_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_schrat_sequence_item <- {
-	Name = "Sequence: Schrat\nStrain - Barkskin",
-	Description = "One of the more obscure creatures in these lands. Though this race has lost much of it\'s former glory, they are still derived from the legendary tree of wisdom.\nThis potion grants the drinker the properties of a Schrat as well as a glimpse into the machinations of their mind.\nCommon side-effects include seasonal depression, excessive thirst, and uncontrollable itching of the skin.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Grants you deep wisdom.",
-	Tooltip2 = "Wooden Carapace: Greatly reduces any form of piercing damage, but take double damage from fire.",
-	Tooltip3 = "Rooted Fundementals: Immune to being knocked back or grabbed.",
-	Tooltip4 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip5 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip6 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_serpent_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_serpent_sequence_item <- {
-	Name = "Sequence: Snake\nStrain - Ssssss",
-	Description = "A quite interesting potion, according to the anatomist who made it. Although this species currently cannot support a higher Strain, this potion confers upon the drinker the ability to produce poison from the pores of their skin, as well as various immunities to other types of poisons.\nThey also have developed the survival instinct of a snake and gain excellent pattern recognition skills.\nVarious side-effects have been documented, which include, but are not limited to; developing a forked tongue, an uncontrollable desire to sway with music, and excessive wriggling in your sleep.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Venom Glands: Piercing or Cutting attacks that connect will poison the target.",
-	Tooltip2 = "Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins.\nGrants [color=%positive%]+15[/color] Initiative and [color=%positive%]+5[/color] Melee Skill.",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_skin_ghoul_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_skin_ghoul_sequence_item <- {
-	Name = "Sequence: Ghoul\nStrain - Skin-Flayer",
-	Description = "From research on the legendary Skin Ghoul, this potion grants the drinker minor regeneration, as well as improving the properties of the previous potion.\nThe drinker seems to have gained an unusual sense for blood and every strike they make causes vicious bleeding.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Hyperactive Cell Growth: Heals [color=%positive%]5[/color] hitpoints each turn. Cannot heal if poisoned.",
-	Tooltip2 = "Subdermal Clotting: Damage received from the Bleeding status effect is reduced by [color=%negative%]50%[/color].\nGrants [color=%negative%]+10[/color] Hitpoints.",
-	Tooltip3 = "Lacerate: Lust for blood courses through your veins, and each attack rips and tears with a ferocity unmatched. Cause minor but long lasting bleeding on any target you deal direct health damage to with any weapon. This effect stacks.",
-	Tooltip4 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip5 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip6 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_stollwurm_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_stollwurm_sequence_item <- {
-	Name = "Sequence: Lindwurm\nStrain - Stoll",
-	Description = "This potion further improves upon the previous strain. In addition to further improving the physique of the drinker, they mutate organs that allow them to better take blows and negative ailments.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects",
-	Tooltip2 = "Reactive Muscle Tissue: This character accumulates no Fatigue from enemy attacks, whether they hit or miss",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_unhold_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_unhold_sequence_item <- {
-	Name = "Sequence: Unhold\nStrain - Giant",
-	Description = "This potion will grant near immortality and power to whomever drinks it! That\'s right, just like the dreaded Unhold, any lucky enough to consume this will have their wounds close mere moments after opening!\nTake it!\nQuickly!\nDon\'t think, act!\nNOTE: Any sudden lumps or otherwise unknown growths are to be removed as soon as possible. Please confer with your local Anatomist for more details.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Accelerated... Growths?: Heals [color=%positive%]5[/color] Hitpoints each turn. Cannot heal if poisoned.",
-	Tooltip2 = "Thick Skull: The threshold to sustain injuries from getting hit is increased by [color=%positive%]33%[/color].\n[color=%positive%]+10[/color] Hitpoints.",
-	Tooltip3 = "Muscularity: Put your full weight into every blow! Gain a percentage of your current Hitpoints as additional minimum and maximum damage, up to a cap of 50.",
-	Tooltip4 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip5 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip6 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
-};
-
-// scripts\items\misc\anatomist\ssu_webknecht_sequence_item.nut
-::Mod_Sellswords.Strings.ssu_webknecht_sequence_item <- {
-	Name = "Sequence: Spider\nStrain - Weaver",
-	Description = "As any experienced beast hunter could tell you, what makes the overgrown arachnids known as Webknechts truly fearsome is their vicious poison. Imbimbing this potion grants the drinker the venom glands of a Webknecht, the ability to resist various poisons, and nightvision.\nThe Anatomist remarked that it was odd that this potion only granted minor enhancements. Was he missing something? Where was the power of this species concentrated?\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "Venom Glands: Piercing or cutting attacks poison the target.",
-	Tooltip2 = "Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins.\nGrants [color=%positive%]+15[/color] Initiative and [color=%positive%]+5[/color] Melee Skill.",
-	Tooltip3 = "Enhanced Eye Rods: Not affected by nighttime penalties.\nGrants [color=%positive%]+1[/color] Vision.",
-	Tooltip4 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip5 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip6 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
+	Description = "This humoural concoction, borne from research into the dreaded Direwolf, will turn even the clumsiest oaf into an elite, lithe warrior.\n Gain the ability to gracefully move with the tides of battle long after lesser men succumb to fatigue!\nMild akathisia after consuming is normal, if not expected.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
 };
 
 // scripts\items\misc\anatomist\ssu_white_direwolf_sequence_item.nut
 ::Mod_Sellswords.Strings.ssu_white_direwolf_sequence_item <- {
 	Name = "Sequence: Direwolf\nStrain - White",
-	Description = "This concoction, borne from research into the legendary White Direwolf, further improves the qualities given in the previous variant.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects.",
-	Tooltip1 = "White Wolf: Improves the qualities of the direwolf.\n[color=%positive%]+10[/color] Hitpoints\n[color=%positive%]+10[/color] Fatigue\n[color=%positive%]+10[/color] Initiative\n[color=%positive%]+5[/color] Melee Attack\n[color=%positive%]+5[/color] Melee Defense",
-	Tooltip2 = "Howl: Let loose a howl, boosting the morale of all allied direwolves within 6 tiles.",
-	Tooltip3 = "Right-click or drag onto the currently selected character in order to drink. This item will be consumed in the process.",
-	Tooltip4 = "Heavily mutates the body. Long periods of sickness are expected.",
-	Tooltip5 = "WARNING: Aligning yourself to more than one sequence can cause serious health complications such as death."
+	Description = "This concoction, borne from research into the legendary White Direwolf, further improves the qualities given in the previous variant.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_goblin_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_goblin_sequence_item <- {
+	Name = "Sequence: Goblin\nStrain - Grubby-Fingers",
+	Description = "Equal parts terrifying and annoying, the uncanny marksmanship of goblins has long been thought unattainable by ordinary, self-respecting humans. With this wondrous concoction, however, the discerning warrior can harness some of that latent skill and obtain the celerity inherent in these greenskins.\nSome noted effects include loss of height and possible kleptomanic tendencies.\n\nUnfortunately, the anatomist says that this race is too feeble to develop a higher strain variant, so consumption of this Sequence may limit future growth.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_hyena_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_hyena_sequence_item <- {
+	Name = "Sequence: Hyena\nStrain - Scavenger",
+	Description = "The Hyenas of the south run their prey down for miles, biting and letting go and biting again until the blood loss does the rest. This draught lends the drinker their tireless gait and their knack for opening wounds that refuse to close.\nThe Anatomist insists the laughing fits will pass.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_enraged_hyena_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_enraged_hyena_sequence_item <- {
+	Name = "Sequence: Hyena\nStrain - Enraged",
+	Description = "This concoction, borne from research into the Enraged Hyena, further improves the qualities given in the previous Strain. The drinker covers ground at a frightening pace, and the wounds they leave are deeper still.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_lindwurm_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_lindwurm_sequence_item <- {
+	Name = "Sequence: Lindwurm\nStrain - Acidity",
+	Description = "Feel your blood boil! Or, more to the point, don\'t! With this tincture, the burning blood of a lindwurm will flow through your decidedly human veins, with the lucky subject none the wiser. Until they start bleeding, of course.\nFortunately, the Lindwurm is already a creature of exceptional lineage, and as a result, imbimbing this potion will perfect your puny physique!\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_stollwurm_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_stollwurm_sequence_item <- {
+	Name = "Sequence: Lindwurm\nStrain - Stoll",
+	Description = "This potion further improves upon the previous strain. In addition to further improving the physique of the drinker, they mutate organs that allow them to better take blows and negative ailments.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_nachzehrer_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_nachzehrer_sequence_item <- {
+	Name = "Sequence: Ghoul\nStrain - Glutton",
+	Description = "If one divorces the horror of the act from its utility, there are few phenomena more marvelous in nature than the Nachzehrer\'s ability to recover by eating the flesh of the recently deceased. No longer! Now man himself may partake in such a feast!\nThis potion also allows the drinker to gain the speed and wild frenzy of the Nachzehrer.\nDespite a few incidents in which townsfolk have run screaming from rabid, naked men devouring their family pets, the Anatomist assures you that this tincture is perfectly safe for consumption.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_skin_ghoul_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_skin_ghoul_sequence_item <- {
+	Name = "Sequence: Ghoul\nStrain - Skin-Flayer",
+	Description = "From research on the legendary Skin Ghoul, this potion grants the drinker minor regeneration, as well as improving the properties of the previous potion.\nThe drinker seems to have gained an unusual sense for blood and every strike they make causes vicious bleeding.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_necro_necrosavant_lord_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_necro_necrosavant_lord_sequence_item <- {
+	Name = "Sequence: Vampyre\nStrain - Lord",
+	Description = "This concoction, borne from research into the legendary necrosavant lord, further improves the qualities given in the sequence 9 potion, Vampire. \n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the sickness."
+};
+
+// scripts\items\misc\anatomist\ssu_necro_necrosavant_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_necro_necrosavant_sequence_item <- {
+	Name = "Sequence: Vampyre\nStrain - Bloodletter",
+	Description = "Whoever drinks this incredible potion, produced with the ash of a Necrosavant, will find themselves in possession of the miraculous healing powers of the undead creatures!\nIt does not grant the extended lifespan associated with the abominations, however - quite the opposite, in fact. This may be considered a feature should the imbiber get a bit too comfortable drinking blood.\nConsumers have remarked effects that feel similar to immortality and their bodies regressing in age, although from the associated cost, you\'re not entirely sure if it\'s worth it.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_orc_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_orc_sequence_item <- {
+	Name = "Sequence: Orc\nStrain - Unga-Bunga",
+	Description = "Many Generals have wished that Orcs might be cowed, for if one could control the greenskins and direct their strength with the intellect of man, they would surely control an unstoppable force.\nWith this, such fantasies are within reach!\nWhen you asked the Anatomist about side-effects, they assured you that the constant drooling and excessive violent tendencies that were reported are the norm for sellswords anyway.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_orc_warlord_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_orc_warlord_sequence_item <- {
+	Name = "Sequence: Orc\nStrain - Warlord",
+	Description = "Borne from the study of the renowned Orc Warlord, this potion improves upon that of the previous strain, allowing one to wield heavy orc weapons with ease as well as letting an orc\'s rage flow through one\'s veins.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_schrat_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_schrat_sequence_item <- {
+	Name = "Sequence: Schrat\nStrain - Barkskin",
+	Description = "One of the more obscure creatures in these lands. Though this race has lost much of it\'s former glory, they are still derived from the legendary tree of wisdom.\nThis potion grants the drinker the properties of a Schrat as well as a glimpse into the machinations of their mind.\nCommon side-effects include seasonal depression, excessive thirst, and uncontrollable itching of the skin.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_greenwood_schrat_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_greenwood_schrat_sequence_item <- {
+	Name = "Sequence: Schrat\nStrain - Greenwood",
+	Description = "From research on the legendary Greenwood Schrat, this potion improves upon the symbiotic relationship formed in the previous strain.\nNow the imbiber can grow roots and branches out of their body to attack.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_serpent_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_serpent_sequence_item <- {
+	Name = "Sequence: Snake\nStrain - Ssssss",
+	Description = "A quite interesting potion, according to the anatomist who made it. Although this species currently cannot support a higher Strain, this potion confers upon the drinker the ability to produce poison from the pores of their skin, as well as various immunities to other types of poisons.\nThey also have developed the survival instinct of a snake and gain excellent pattern recognition skills.\nVarious side-effects have been documented, which include, but are not limited to; developing a forked tongue, an uncontrollable desire to sway with music, and excessive wriggling in your sleep.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_unhold_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_unhold_sequence_item <- {
+	Name = "Sequence: Unhold\nStrain - Giant",
+	Description = "This potion will grant near immortality and power to whomever drinks it! That\'s right, just like the dreaded Unhold, any lucky enough to consume this will have their wounds close mere moments after opening!\nTake it!\nQuickly!\nDon\'t think, act!\nNOTE: Any sudden lumps or otherwise unknown growths are to be removed as soon as possible. Please confer with your local Anatomist for more details.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_rock_unhold_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_rock_unhold_sequence_item <- {
+	Name = "Sequence: Unhold\nStrain - Mountain",
+	Description = "From research on the legendary Rock Unhold of the mountains, this potion improves upon the previous strain, granting the drinker increased regeneration and creating natural armor on their body that regenerates.\n The Anatomist tells you that at this stage, the additional growths are impossible to remove, and if you haven\'t already, a drafted will is advised.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_webknecht_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_webknecht_sequence_item <- {
+	Name = "Sequence: Spider\nStrain - Weaver",
+	Description = "As any experienced beast hunter could tell you, what makes the overgrown arachnids known as Webknechts truly fearsome is their vicious poison. Imbimbing this potion grants the drinker the venom glands of a Webknecht, the ability to resist various poisons, and nightvision.\nThe Anatomist remarked that it was odd that this potion only granted minor enhancements. Was he missing something? Where was the power of this species concentrated?\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
+};
+
+// scripts\items\misc\anatomist\ssu_redback_sequence_item.nut
+::Mod_Sellswords.Strings.ssu_redback_sequence_item <- {
+	Name = "Sequence: Spider\nStrain - Redback",
+	Description = "It turns out that the majority of the strength that came from this genus was contained within the legendary Redback.\nWith future research into the species, this potion improves upon the poison of the previous strain, allowing the drinker to poison their enemies with Redback poison instead of the inferior Webnecht.\nThe ability to spew forth webs from your mouth sounds fine in concept, but you wonder if the addition of insects to your diet is a worthy trade-off.\n\nYou can drink potions of the same sequence without serious consequences, but you will still have to deal with the side-effects."
 };
 
 // scripts\items\misc\ssu_ap_potion_item.nut
@@ -5582,6 +5488,20 @@ Unleash an arcing barrage of lightning!
 	Tooltip4 = "Makes enemies [color=%positive%]25%[/color] more likely to target you"
 };
 
+// scripts\skills\effects\ssu_alp_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_alp_sequence_effect <- {
+	Name = "Sequence: Alp",
+	Description = "This character\'s eyes have mutated to see through the night as if it were day, and their skin stitches itself back together around small puncture wounds.",
+	Weak = [
+		"Enhanced Eye Rods: Not affected by nighttime penalties\n[color=%positive%]+1[/color] Vision",
+		"Subdermal Stitching: Takes [color=%positive%]25%[/color] less damage from piercing melee attacks and [color=%positive%]50%[/color] less from piercing ranged attacks\n[color=%positive%]+10[/color] Hitpoints"
+	],
+	Strong = [
+		"Levitate: Floats just above the ground, moving freely across all terrain",
+		"Horrify: Can blare out a piercing, unworldly sound that distresses anyone unfortunate enough to hear it"
+	]
+};
+
 // scripts\skills\effects\ssu_armor_fatigue_recovery_effect.nut
 ::Mod_Sellswords.Strings.ssu_armor_fatigue_recovery_effect <- {
 	Name = "Encumbrance",
@@ -5598,6 +5518,20 @@ Unleash an arcing barrage of lightning!
 // scripts\skills\effects\ssu_bandage_effect.nut
 ::Mod_Sellswords.Strings.ssu_bandage_effect <- {
 	Name = "Bandaged"
+};
+
+// scripts\skills\effects\ssu_basilisk_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_basilisk_sequence_effect <- {
+	Name = "Sequence: Basilisk",
+	Description = "This character strikes the way a Basilisk pecks: for the eyes, every time.",
+	Weak = [
+		"Pecking Order: [color=%positive%]+10%[/color] chance to hit the head",
+		"Skull Splitter: [color=%positive%]+15%[/color] damage on hits to the head"
+	],
+	Strong = [
+		"Sentry: A further [color=%positive%]+10%[/color] chance to hit the head and [color=%positive%]+15%[/color] damage on hits to the head",
+		"Piercing Beak: Hits to the head ignore an additional [color=%positive%]10%[/color] of armor"
+	]
 };
 
 // scripts\skills\effects\ssu_bleeding_arrows_effect.nut
@@ -5638,6 +5572,20 @@ Unleash an arcing barrage of lightning!
 	Name = "Consecrated",
 	Description = "This character is being consecrated by holy light",
 	Tooltip = "Seared by holy light for [color=%negative%]{1}[/color] more turns. Skeletons lose [color=%negative%]1[/color] Action Point while it lasts."
+};
+
+// scripts\skills\effects\ssu_direwolf_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_direwolf_sequence_effect <- {
+	Name = "Sequence: Direwolf",
+	Description = "This character has the sinews and the bloodlust of a Direwolf. Their muscles snap back from a wasted swing, and the closer they are to death the harder they bite.",
+	Weak = [
+		"Elasticized Sinew: Attacks that miss have [color=%positive%]50%[/color] of their Fatigue cost refunded\n[color=%positive%]+10[/color] Fatigue",
+		"Adrenaline Gland: Attacks deal additional damage equal to [color=%positive%]25%[/color] of missing Hitpoints, or [color=%positive%]50%[/color] on Legendary difficulty"
+	],
+	Strong = [
+		"White Wolf: [color=%positive%]+10[/color] Hitpoints\n[color=%positive%]+10[/color] Fatigue\n[color=%positive%]+10[/color] Initiative\n[color=%positive%]+5[/color] Melee Skill\n[color=%positive%]+5[/color] Melee Defense",
+		"Howl: Can let loose a howl that boosts the morale of all allies with the Direwolf Sequence within 6 tiles"
+	]
 };
 
 // scripts\skills\effects\ssu_distracted_effect.nut
@@ -5687,9 +5635,52 @@ Unleash an arcing barrage of lightning!
 	Log = "{1} is chilled"
 };
 
+// scripts\skills\effects\ssu_ghoul_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_ghoul_sequence_effect <- {
+	Name = "Sequence: Ghoul",
+	Description = "This character\'s body has mutated to regrow skin and muscle tissue much more quickly than normal and they gain the speed of nachzehrer. Deep injuries heal much faster than normal as a result. They also seem to have developed a hunger for fresh meat, but that\'s probably unrelated.",
+	Weak = [
+		"Rapid Tissue Growth: Injuries heal one day sooner, down to a minimum of one day\n[color=%positive%]+10[/color] Initiative",
+		"Gruesome Feast: Gains the Gruesome Feast perk"
+	],
+	Strong = [
+		"Skin-Flayer: A further [color=%positive%]+10[/color] Initiative",
+		"Hyperactive Cell Growth: Heals [color=%positive%]10[/color] Hitpoints each turn and all Hitpoints after battle. Cannot heal while poisoned",
+		"Subdermal Clotting: Takes [color=%positive%]50%[/color] less damage from Bleeding\n[color=%positive%]+10[/color] Hitpoints",
+		"Lacerate: Gains the Lacerate perk"
+	]
+};
+
+// scripts\skills\effects\ssu_goblin_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_goblin_sequence_effect <- {
+	Name = "Sequence: Goblin",
+	Description = "This character has shrunk, and gained the twitching legs and the keen eye of a Goblin in exchange.",
+	Weak = [
+		"Shrunk: Gains the Tiny trait and loses Huge",
+		"Reactive Leg Muscles: Rotation and Footwork cost [color=%positive%]2[/color] Action Points and [color=%positive%]50%[/color] less Fatigue. Does not stack with other reductions\n[color=%positive%]+10[/color] Initiative",
+		"Mutated Cornea: An additional [color=%positive%]5%[/color] of damage ignores armor with ranged attacks\n[color=%positive%]+10[/color] Ranged Skill\n[color=%positive%]+10[/color] Ranged Defense"
+	],
+	Strong = []
+};
+
 // scripts\skills\effects\ssu_houndmaster_effect.nut
 ::Mod_Sellswords.Strings.ssu_houndmaster_effect <- {
 	Name = "Well Trianed Hound"
+};
+
+// scripts\skills\effects\ssu_hyena_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_hyena_sequence_effect <- {
+	Name = "Sequence: Hyena",
+	Description = "This character lopes across the battlefield without tiring, and leaves wounds that refuse to close.",
+	Weak = [
+		"Loping Gait: Movement builds up [color=%positive%]50%[/color] less Fatigue\n[color=%positive%]+15[/color] Initiative",
+		"Tearing Bite: Attacks that deal hitpoint damage leave the target Bleeding for [color=%positive%]5[/color] damage each turn",
+		"Subdermal Clotting: Takes [color=%positive%]50%[/color] less damage from Bleeding"
+	],
+	Strong = [
+		"Enraged: A further [color=%positive%]+15[/color] Initiative. Tearing Bite bleeds for [color=%positive%]10[/color] damage each turn instead",
+		"Run Down: Moving costs [color=%positive%]1[/color] less Action Point per tile"
+	]
 };
 
 // scripts\skills\effects\ssu_ice_axe_effect.nut
@@ -5724,17 +5715,28 @@ Unleash an arcing barrage of lightning!
 	Log2 = "{1} heals for {2} points"
 };
 
+// scripts\skills\effects\ssu_orc_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_orc_sequence_effect <- {
+	Name = "Sequence: Orc",
+	Description = "This character has grown to the size of a greenskin, and hits and endures like one.",
+	Weak = [
+		"Major Growth: Gains the Huge trait and loses Tiny",
+		"Shock Absorbant Wrists: [color=%positive%]+10%[/color] damage with attacks",
+		"Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects\n[color=%positive%]+10[/color] Hitpoints",
+		"Colossus: Gains the Colossus perk"
+	],
+	Strong = [
+		"Warlord: A further [color=%positive%]+10%[/color] damage with attacks and [color=%positive%]+10[/color] Hitpoints",
+		"Improved Limbic System: Using orc weapons no longer imposes additional Fatigue costs\n[color=%positive%]+10[/color] Fatigue",
+		"Hyperactive Glands: Gains [color=%positive%]3[/color] stacks of Rage each time hitpoint damage is taken, up to [color=%positive%]15[/color], and loses one at the end of each turn. Each stack grants [color=%positive%]+1[/color] damage, Resolve and Initiative and [color=%positive%]2%[/color] less damage taken"
+	]
+};
+
 // scripts\skills\effects\ssu_phantom_strike_effect.nut
 ::Mod_Sellswords.Strings.ssu_phantom_strike_effect <- {
 	Name = "Phantom Strike",
 	Text = "This charater has accumulated [color=%positive%]{1}[/color] charges for Phantom Strike",
 	Log = "{1} has connected with a phantom strike!"
-};
-
-// scripts\skills\effects\ssu_player_levitate.nut
-::Mod_Sellswords.Strings.ssu_player_levitate <- {
-	Name = "Levitating",
-	Description = "This character is hovering just above the ground, able to move freely across all terrain"
 };
 
 // scripts\skills\effects\ssu_poisoned_arrows_effect.nut
@@ -5754,9 +5756,60 @@ Unleash an arcing barrage of lightning!
 	Text = "This character is using the superior reach of their weapon to keep nearby opponents at bay."
 };
 
+// scripts\skills\effects\ssu_schrat_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_schrat_sequence_effect <- {
+	Name = "Sequence: Schrat",
+	Description = "With the proper concoction, and implanting the heart of schrat into the body, the test subject can form a symbiosis with the heart, gaining the abilities and properties of a Schrat.",
+	Weak = [
+		"Deep Wisdom: Gains the Bright trait and loses Dumb",
+		"Wooden Carapace: Takes [color=%positive%]75%[/color] less damage from arrows and bolts and [color=%positive%]50%[/color] less from other piercing ranged attacks, but [color=%negative%]100%[/color] more burning damage",
+		"Rooted Fundamentals: Immune to being knocked back or grabbed"
+	],
+	Strong = [
+		"Symbiotic Seeds: Taking damage equal to [color=%positive%]15%[/color] of maximum Hitpoints or more births a miniature Schrat on an adjacent tile",
+		"Bark-skin: Can grow a wooden shield from sap-like blood"
+	]
+};
+
+// scripts\skills\effects\ssu_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_sequence_effect <- {
+	Warning = "Further mutations may cause this character\'s genes to spiral out of control, crippling them",
+	LogPoisoned = "{1} is poisoned",
+	LogHealed = "{1} heals for {2} points",
+	LogRage = "{1} gains rage!",
+	LogHeadArmor = "{1} regenerates {2} points of head armor",
+	LogBodyArmor = "{1} regenerates {2} points of body armor"
+};
+
+// scripts\skills\effects\ssu_serpent_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_serpent_sequence_effect <- {
+	Name = "Sequence: Snake",
+	Description = "This character has developed venom glands that allow them to produce poison strong enough to kill any man. Sadly they do not have the fangs of a snake or spider to deliver this venom and have to resort using piercing or cutting weapons to apply it.",
+	Weak = [
+		"Venom Glands: Piercing or cutting attacks poison the target\n[color=%positive%]+15[/color] Initiative\n[color=%positive%]+5[/color] Melee Skill",
+		"Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins"
+	],
+	Strong = []
+};
+
 // scripts\skills\effects\ssu_smackdown_effect.nut
 ::Mod_Sellswords.Strings.ssu_smackdown_effect <- {
 	Name = "Smacked Down"
+};
+
+// scripts\skills\effects\ssu_spider_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_spider_sequence_effect <- {
+	Name = "Sequence: Spider",
+	Description = "This character has grown the venom glands of a Webknecht, along with its indifference to poison and to the dark.",
+	Weak = [
+		"Venom Glands: Piercing or cutting attacks poison the target\n[color=%positive%]+15[/color] Initiative\n[color=%positive%]+5[/color] Melee Skill",
+		"Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins",
+		"Enhanced Eye Rods: Not affected by nighttime penalties\n[color=%positive%]+1[/color] Vision"
+	],
+	Strong = [
+		"Redback: Venom Glands poison with Redback venom instead\nA further [color=%positive%]+15[/color] Initiative and [color=%positive%]+10[/color] Melee Skill",
+		"Spider-Man: Can spit webs at foes to trap them"
+	]
 };
 
 // scripts\skills\effects\ssu_steps_guided_temp.nut
@@ -5765,10 +5818,43 @@ Unleash an arcing barrage of lightning!
 	Description = "This character has been granted pathfinder by a talented ranger"
 };
 
+// scripts\skills\effects\ssu_unhold_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_unhold_sequence_effect <- {
+	Name = "Sequence: Unhold",
+	Description = "This character\'s body grows at an unnatural pace. Wounds close within moments, and the growths that come with it are best not asked about.",
+	Weak = [
+		"Accelerated Growths: Heals [color=%positive%]5[/color] Hitpoints each turn and all Hitpoints after battle. Cannot heal while poisoned",
+		"Thick Skull: The threshold to sustain injuries on getting hit is increased by [color=%positive%]33%[/color]\n[color=%positive%]+10[/color] Hitpoints",
+		"Muscularity: Gains the Muscularity perk"
+	],
+	Strong = [
+		"Hyper-Accelerated Growths: Heals [color=%positive%]10[/color] Hitpoints each turn instead",
+		"Thick Skinned: Repairs [color=%positive%]20[/color] head and body armor each turn and all of it after battle. Cannot repair while poisoned",
+		"Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects\n[color=%positive%]+10[/color] Hitpoints"
+	]
+};
+
 // scripts\skills\effects\ssu_valor_effect.nut
 ::Mod_Sellswords.Strings.ssu_valor_effect <- {
 	Name = "Inspired",
 	Description = "I can do this for the company! This character has been inspired by just the right words, and is ready to go to his limits and beyond."
+};
+
+// scripts\skills\effects\ssu_vampire_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_vampire_sequence_effect <- {
+	Name = "Sequence: Vampyre",
+	Description = "This character\'s body takes in the blood of others and makes it its own, closing wounds as fast as it can open them in someone else.",
+	Weak = [
+		"Parasitic Blood: Heals [color=%positive%]15%[/color] of hitpoint damage inflicted on adjacent enemies that have blood\n[color=%positive%]+10[/color] Hitpoints\n[color=%positive%]+5[/color] Melee Skill",
+		"Nine Lives: Gains the Nine Lives perk",
+		"Ageless: Loses the Old trait"
+	],
+	Strong = [
+		"Necrosavant Lord: Parasitic Blood heals [color=%positive%]25%[/color] instead\nA further [color=%positive%]+20[/color] Hitpoints and [color=%positive%]+10[/color] Melee Skill",
+		"Synapse Blockage: Morale cannot fall below Steady\n[color=%positive%]+10[/color] Resolve",
+		"Mutated Circulatory System: Immune to poison effects, including those of Webknechts and Goblins",
+		"Darkflight: Gains the Darkflight perk"
+	]
 };
 
 // scripts\skills\effects\ssu_whipped_effect.nut
@@ -5781,6 +5867,21 @@ Unleash an arcing barrage of lightning!
 	Tooltip4 = "[color=%positive%]+15[/color] Initiative",
 	Tooltip5 = "[color=%positive%]+5[/color] Melee Defense",
 	Tooltip6 = "[color=%positive%]+5[/color] Ranged Defense"
+};
+
+// scripts\skills\effects\ssu_wurm_sequence_effect.nut
+::Mod_Sellswords.Strings.ssu_wurm_sequence_effect <- {
+	Name = "Sequence: Lindwurm",
+	Description = "This character has the blood of Dragons coursing through them. It has perfected their physique, and it burns whoever spills it.",
+	Weak = [
+		"Descendant of Dragons: Loses negative physical traits and gains positive ones\n[color=%positive%]+15[/color] Hitpoints\n[color=%positive%]+15%[/color] damage with attacks",
+		"Caustic Blood: Adjacent attackers are sprayed with acid whenever they deal hitpoint damage"
+	],
+	Strong = [
+		"Stoll: A further [color=%positive%]+15[/color] Hitpoints and [color=%positive%]+15%[/color] damage with attacks",
+		"Sensory Redundancy: [color=%positive%]33%[/color] chance to resist the Dazed, Staggered, Stunned, Distracted, and Withered status effects\n[color=%positive%]+10[/color] Hitpoints",
+		"Reactive Muscle Tissue: Accumulates no Fatigue from enemy attacks, whether they hit or miss\n[color=%positive%]+10[/color] Hitpoints"
+	]
 };
 
 // scripts\skills\effects_world\ssu_oath_effect.nut
@@ -5909,19 +6010,6 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.perk_ssu_trumpcard <- {
 	Tooltip1 = "Distract them",
 	Tooltip2 = "Have already distracted {1}"
-};
-
-// scripts\skills\racial\ssu_direwolf_player_racial.nut
-::Mod_Sellswords.Strings.ssu_direwolf_player_racial <- {
-	Name = "Direwolf",
-	Description = "This character counts as a Direwolf in skill checks, and gains the Direwolf racial trait which is increasing damage in proportion to missing health.",
-	Tooltip1 = "Attacks do [color=%negative%]{1}[/color] more damage",
-	Tooltip2 = "+[color=%positive%]{1}[/color] Hitpoints",
-	Tooltip3 = "+[color=%positive%]{1}[/color] Fatigue",
-	Tooltip4 = "+[color=%positive%]{1}[/color] Initiative",
-	Tooltip5 = "+[color=%positive%]{1}[/color] Melee Skill",
-	Tooltip6 = "+[color=%positive%]{1}[/color] Melee Defense",
-	Tooltip7 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them"
 };
 
 // scripts\skills\racial\ssu_necro_fallen_hero_racial.nut

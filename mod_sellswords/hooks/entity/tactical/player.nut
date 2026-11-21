@@ -39,7 +39,7 @@
 		if (_m == this.Const.MoraleState.Confident && this.m.Skills.hasSkill("trait.insecure"))
 			return;
 
-		if (this.m.Skills.hasSkill("effects.ancient_priest_potion") && _m < 3)
+		if ((this.m.Skills.hasSkill("effects.ancient_priest_potion") || this.getFlags().has("vampire_l")) && _m < 3)
 			return;
 
 		if (_m == this.Const.MoraleState.Fleeing && this.m.Skills.hasSkill("trait.oath_of_valor"))
@@ -53,7 +53,7 @@
 
 	q.checkMorale = @(__original) function( _change, _difficulty, _type = this.Const.MoraleCheckType.Default, _showIconBeforeMoraleIcon = "", _noNewLine = false )
 	{
-		if (_change < 0 && this.m.Skills.hasSkill("effects.ancient_priest_potion"))
+		if (_change < 0 && (this.m.Skills.hasSkill("effects.ancient_priest_potion") || this.getFlags().has("vampire_l")))
 		{
 			this.logInfo("Reached");
 

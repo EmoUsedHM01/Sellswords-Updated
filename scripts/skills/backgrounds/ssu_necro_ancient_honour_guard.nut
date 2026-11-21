@@ -103,9 +103,7 @@ this.ssu_necro_ancient_honour_guard <- this.inherit("scripts/skills/backgrounds/
 				this.Const.Perks.IndestructibleTree,
 				this.Const.Perks.TrainedTree
 			],
-			Enemy = [
-				this.Const.Perks.SwordmastersTree
-			],
+			Enemy = [],
 			Class = [
 				this.Const.Perks.SkeletonClassTree
 			],

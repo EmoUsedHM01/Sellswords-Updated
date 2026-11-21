@@ -27,6 +27,12 @@
 	{
 		this.m.FatigueCostMult = _properties.IsSpecializedInStaves ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
 		this.m.ActionPointCost = _properties.IsSpecializedInStaves ? 5 : 7;
+
+		// Magic Staff Mastery adds a tile of range to its spells in Legends, this hook replaces the Legends function
+		if (_properties.IsSpecializedInStaves)
+		{
+			this.m.MaxRange += 1;
+		}
 	}
 
 });

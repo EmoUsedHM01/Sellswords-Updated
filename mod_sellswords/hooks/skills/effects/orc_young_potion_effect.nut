@@ -28,24 +28,12 @@
 			}
 		];
 
-		if (this.getContainer().getActor().getFlags().has("orc_w"))
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/melee_skill.png",
-				text = ::Mod_Sellswords.Strings.orc_young_potion_effect.Tooltip1
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/melee_skill.png",
-				text = ::Mod_Sellswords.Strings.orc_young_potion_effect.Tooltip2
-			});
-		}
+		ret.push({
+			id = 11,
+			type = "text",
+			icon = "ui/icons/melee_skill.png",
+			text = ::Mod_Sellswords.Strings.orc_young_potion_effect.Tooltip2
+		});
 		
 		ret.push({
 			id = 12,
@@ -60,10 +48,7 @@
 	
 	q.onUpdate = @(__original) function(_properties)
 	{
-		if (this.getContainer().getActor().getFlags().has("orc_w"))
-			_properties.DamageTotalMult *= 1.2;
-		else
-			_properties.DamageTotalMult *= 1.1;
+		_properties.DamageTotalMult *= 1.1;
 	}
 
 });

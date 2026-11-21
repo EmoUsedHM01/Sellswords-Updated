@@ -130,7 +130,7 @@
 						this.m.CustomPerkTree[5].push(::Legends.Perk.SsuHackSpm);
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.SpecBow:
-						this.m.CustomPerkTree[4].push(::Legends.Perk.SsuParthianshot);
+						this.m.CustomPerkTree[2].push(::Legends.Perk.SsuParthianshot);
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.SpecPolearm:
 						this.m.CustomPerkTree[0].push(::Legends.Perk.SsuRetrofithooks);

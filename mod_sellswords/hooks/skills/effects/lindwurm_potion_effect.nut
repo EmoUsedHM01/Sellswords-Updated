@@ -23,24 +23,12 @@
 			text = ::Mod_Sellswords.Strings.lindwurm_potion_effect.Tooltip1
 		});
 
-		if (this.getContainer().getActor().getFlags().has("wurm_s"))
-		{
-			ret.push({
-				id = 12,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.lindwurm_potion_effect.Tooltip2
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 12,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.lindwurm_potion_effect.Tooltip3
-			});
-		}
+		ret.push({
+			id = 12,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = ::Mod_Sellswords.Strings.lindwurm_potion_effect.Tooltip3
+		});
 
 		ret.push({
 			id = 13,
@@ -54,16 +42,8 @@
 
 	q.onUpdate <- function(_properties)
 	{
-		if (this.getContainer().getActor().getFlags().has("wurm_s"))
-		{
-			_properties.Hitpoints += 30;
-			_properties.DamageTotalMult *= 1.30;
-		}
-		else
-		{
-			_properties.Hitpoints += 15;
-			_properties.DamageTotalMult *= 1.15;
-		}
+		_properties.Hitpoints += 15;
+		_properties.DamageTotalMult *= 1.15;
 	}
 
 });

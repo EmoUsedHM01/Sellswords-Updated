@@ -46,7 +46,7 @@
 				],
 				[
 					2,
-					"cloak/legend_armor_cloak_pelt_wolf_dire"
+					"cloak/legend_direwolf_pelt_cloak"
 				],
 				[
 					2,
@@ -99,7 +99,7 @@
 			],
 			Attachments = [
 				[2, ""],			
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0
 			]
 		}			
 	]
@@ -130,7 +130,7 @@
 				],
 				[
 					2,
-					"cloak/legend_armor_cloak_pelt_wolf_dire"
+					"cloak/legend_direwolf_pelt_cloak"
 				],
 				[
 					2,
@@ -262,7 +262,7 @@
 				[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 85,-6
 				[1, "armor_upgrades/legend_light_padding_replacement_upgrade"],// 					
 				[1, "armor_upgrades/legend_additional_padding_upgrade"],// 
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//   					
 			]
 		}
@@ -334,7 +334,7 @@
 				],
 				[
 					2,
-					"cloak/legend_armor_cloak_fur_hyena"
+					"cloak/legend_hyena_fur_cloak"
 				],
 				[
 					1,
@@ -429,8 +429,8 @@
 			Tabard = [],
 			Attachments = [
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],// 
-				[1, "cloak/legend_armor_cloak_fur_hyena"],//
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0					
+				[1, "cloak/legend_hyena_fur_cloak"],//
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0					
 			]
 		}
 	]
@@ -531,8 +531,8 @@
 			Tabard = [],
 			Attachments = [
 				[1, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 5,0,50					
-				[1, "cloak/legend_armor_cloak_fur_hyena"],//	   15,0
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0				
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0				
 			]
 		}
 	]
@@ -580,8 +580,8 @@
 			],
 			Tabard = [],
 			Attachments = [
-				[1, "cloak/legend_armor_cloak_fur_hyena"],//	   15,0
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0				
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0				
 			]
 		}
 	]
@@ -725,7 +725,7 @@
 			Attachments = [
 				[
 					2,
-					"cloak/legend_armor_cloak_fur_hyena"
+					"cloak/legend_hyena_fur_cloak"
 				],
 				[
 					4,
@@ -733,7 +733,7 @@
 				],
 				[
 					2,
-					"cloak/legend_armor_cloak_pelt_wolf_dire"
+					"cloak/legend_direwolf_pelt_cloak"
 				],
 				[
 					1,
@@ -798,7 +798,7 @@
 				[2, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 30,-2,250
 				[1, "armor_upgrades/legend_leather_neckguard_upgrade"],// 10,-2,250	
 				[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 45,-2
-				[4, "cloak/legend_armor_cloak_fur_hyena"],//	   15,0					
+				[4, "cloak/legend_hyena_fur_cloak"],//	   15,0					
 			]
 		}
 	]
@@ -2055,7 +2055,7 @@
 			Attachments = [
 				[
 					1,
-					"cloak/legend_armor_cloak_pelt_wolf_dire"
+					"cloak/legend_direwolf_pelt_cloak"
 				]					
 			]
 		}
@@ -4462,7 +4462,7 @@
 			Attachments = [
 				[1, "armor_upgrades/legend_leather_neckguard_upgrade"],// 10,-2,100	
 				[1, "armor_upgrades/legend_leather_shoulderguards_upgrade"],// 30,-2,250				
-				[1, "cloak/legend_armor_cloak_fur_hyena"],//	   15,0				
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0				
 			]
 		}			
 	]
@@ -4490,9 +4490,9 @@
 				[1, ""],					
 			],
 			Attachments = [										
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  
-				[1, "cloak/legend_armor_cloak_fur_hyena"],//	   15,0					
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0					
 			]
 		}
 	]
@@ -4548,7 +4548,7 @@
 				[1, ""],					
 			],
 			Attachments = [										
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  					
 			]
 		}
@@ -4578,9 +4578,9 @@
 			],
 			Attachments = [										
 				[2, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  
-				[1, "cloak/legend_armor_cloak_fur_hyena"],//	   15,0					
+				[1, "cloak/legend_hyena_fur_cloak"],//	   15,0					
 			]
 		}
 	]
@@ -4604,8 +4604,8 @@
 				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
 			Attachments = [										
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
-				[2, "cloak/legend_armor_cloak_fur_hyena"],//  			15,0		
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0		
 			]
 		},
 		{
@@ -4623,8 +4623,8 @@
 				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
 			Attachments = [										
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
-				[2, "cloak/legend_armor_cloak_fur_hyena"],//  			15,0		
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0		
 			]
 		}			
 	]
@@ -4651,8 +4651,8 @@
 				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
 			Attachments = [										
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
-				[2, "cloak/legend_armor_cloak_fur_hyena"],//  			15,0		
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0		
 			]
 		}
 	]
@@ -4706,8 +4706,8 @@
 				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
 			Attachments = [	
-				[2, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
-				[2, "cloak/legend_armor_cloak_fur_hyena"],//  			15,0					
+				[2, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0					
 				[1, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2		
 			]
 		}
@@ -4735,8 +4735,8 @@
 				[1, "tabard/legend_armor_tabard"],// 5,0,200						
 			],
 			Attachments = [	
-				[2, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0			
-				[2, "cloak/legend_armor_cloak_fur_hyena"],//  			15,0					
+				[2, "cloak/legend_direwolf_pelt_cloak"],// 		10,0			
+				[2, "cloak/legend_hyena_fur_cloak"],//  			15,0					
 				[1, "armor_upgrades/legend_heavy_gladiator_upgrade"],// 45,-2		
 			]
 		}
@@ -4893,7 +4893,7 @@
 			Cloak = [],
 			Tabard = [],
 			Attachments = [
-				[2, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0
+				[2, "cloak/legend_direwolf_pelt_cloak"],// 		10,0
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],//  					
 			]
 		}
@@ -4912,7 +4912,7 @@
 			Cloak = [],
 			Tabard = [],
 			Attachments = [
-				[2, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0
+				[2, "cloak/legend_direwolf_pelt_cloak"],// 		10,0
 				[1, "armor_upgrades/legend_bone_platings_upgrade"],// 				
 			]
 		}
@@ -4931,7 +4931,7 @@
 			Cloak = [],
 			Tabard = [],
 			Attachments = [
-				[1, "cloak/legend_armor_cloak_pelt_wolf_dire"],// 		10,0
+				[1, "cloak/legend_direwolf_pelt_cloak"],// 		10,0
 				[2, "armor_upgrades/legend_bone_platings_upgrade"],// 				
 			]
 		}

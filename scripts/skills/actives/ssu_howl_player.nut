@@ -52,7 +52,7 @@ this.ssu_howl_player <- this.inherit("scripts/skills/skill", {
 	function raiseMorale( _actor, _tag )
 	{
 		this.logInfo("Checking actor: " + _actor.getName());
-		if (_actor.getFaction() == _tag.Self.getFaction() && _actor.getFlags().has("werewolf"))
+		if (_actor.getFaction() == _tag.Self.getFaction() && _actor.getFlags().has("direwolf"))
 		{
 			_actor.setMoraleState(this.Math.min(this.Const.MoraleState.Confident, _actor.getMoraleState() + 1));
 			_tag.Skill.spawnIcon("status_effect_06", _actor.getTile());

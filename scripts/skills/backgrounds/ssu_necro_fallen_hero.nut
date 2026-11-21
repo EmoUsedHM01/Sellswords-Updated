@@ -99,9 +99,7 @@ this.ssu_necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character
 				this.Const.Perks.MartyrTree,
 				this.Const.Perks.FitTree
 			],
-			Enemy = [
-				this.Const.Perks.SwordmastersTree
-			],
+			Enemy = [],
 			Class = [
 				this.Const.Perks.ZombieClassTree
 			],

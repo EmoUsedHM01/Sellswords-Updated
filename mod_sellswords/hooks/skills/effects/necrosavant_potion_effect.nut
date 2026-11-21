@@ -17,24 +17,12 @@
 			}
 		];
 
-		if (this.getContainer().getActor().getFlags().has("vampire_l"))
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/health.png",
-				text = ::Mod_Sellswords.Strings.necrosavant_potion_effect.Tooltip1
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/health.png",
-				text = ::Mod_Sellswords.Strings.necrosavant_potion_effect.Tooltip2
-			});
-		}
+		ret.push({
+			id = 11,
+			type = "text",
+			icon = "ui/icons/health.png",
+			text = ::Mod_Sellswords.Strings.necrosavant_potion_effect.Tooltip2
+		});
 		
 		ret.push({
 			id = 12,
@@ -47,16 +35,8 @@
 
 	q.onUpdate <- function(_properties)
 	{
-		if (this.getContainer().getActor().getFlags().has("vampire_l"))
-		{
-			_properties.MeleeSkill += 15;
-			_properties.Hitpoints += 30;
-		}
-		else
-		{
-			_properties.MeleeSkill += 5;
-			_properties.Hitpoints += 10;
-		}
+		_properties.MeleeSkill += 5;
+		_properties.Hitpoints += 10;
 		
 	}
 
@@ -64,8 +44,7 @@
 	{
 		local actor = this.m.Container.getActor();
 		this.spawnIcon("status_effect_09", actor.getTile());
-		local hasMastery = this.getContainer().getActor().getFlags().has("vampire_l");
-		local lifesteal_percent = hasMastery ? 0.25 : 0.15;
+		local lifesteal_percent = 0.15;
 
 		local hitpointsHealed = this.Math.round(_damageInflictedHitpoints * lifesteal_percent);
 

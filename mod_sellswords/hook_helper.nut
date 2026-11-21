@@ -444,7 +444,7 @@
 		}
 	},
 
-	// equips the weapon, the ones listed in ::Mod_Sellswords.DualWield.Paired get a second one for the off hand
+	// equips the weapon, the ones listed in ::Mod_Sellswords.DualWield.Paired get a second one for the off hand and the Ambidextrous perk
 	equipWeapon = function( _actor, _script )
 	{
 		_actor.getItems().equip(::new("scripts/items/" + _script));
@@ -452,6 +452,13 @@
 		if (::Mod_Sellswords.DualWield.Paired.find(_script) != null)
 		{
 			_actor.getItems().equip(::new("scripts/items/" + _script));
+
+			// Ambidextrous takes a third off the weight penalty of dual wielding
+			if (::Legends.Weapons.isDualWielding(_actor))
+			{
+				::Legends.Perks.grant(_actor, ::Legends.Perk.LegendAmbidextrous);
+				_actor.getItems().updateDualWield();
+			}
 		}
 	},
 

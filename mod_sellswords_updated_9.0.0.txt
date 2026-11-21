@@ -3115,6 +3115,154 @@ No longer replaces ten units that Legends and vanilla define (it's a hook now)
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 Clarity is back in the Calm tree
 
+...\scripts\skills\effects\ssu_berserker_roar_effect.nut
+...\scripts\skills\effects\ssu_smackdown_effect.nut
+The duration is now reset when the effect is applied again while it is still active
+
+...\scripts\skills\perks\perk_ssu_meleeskill.nut
+Unpredictible Attacker now tells the AI to wait for the follow-up through the new Legends function (you're welcome)
+
+...\scripts\skills\backgrounds\ssu_necro_ancient_honour_guard.nut
+...\scripts\skills\backgrounds\ssu_necro_fallen_hero.nut
+...\scripts\skills\backgrounds\ssu_sellsword_background.nut
+Legends is removing the Enemy perk category
+
+...\mod_sellswords\hook_helper.nut
+Units that spawn with a weapon in each hand now also get the Ambidextrous perk
+
+...\mod_sellswords\hooks\skills\actives\deathblow_skill.nut < deleted
+Legends already lowers the cost of Deathblow with the mastery of the weapon it is on
+
+...\mod_sellswords\hooks\skills\actives\legend_chain_lightning_skill.nut
+Chain Lightning gets the extra tile of range that Magic Staff Mastery now gives to its spells in Legends
+
+...\mod_sellswords\config\ssu_a_global.nut
+The SSU Goblin Warrior now uses the Goblin Fiend icon
+
+...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut
+Bullseye now grants Mark Target with any weapon
+
+...\mod_sellswords\config\ssu_armors.nut
+...\mod_sellswords\config\ssu_armors_extra.nut
+The hyena fur, direwolf pelt, and unhold fur cloaks use the new script names Legends has for them
+
+...\scripts\skills\perks\perk_ssu_parthianshot.nut
+...\mod_sellswords\hooks\states\tactical_state.nut < new
+...\mod_sellswords\strings.nut
+Parthian Shot no longer refunds the first tile after the move, the tile is free from the start through the Legends free move so the path preview lets you travel the extra tile
+The free tile now also covers height and other movement penalties
+
+...\scripts\skills\perks\perk_ssu_parthianshot.nut
+...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+...\mod_sellswords\strings.nut
+Parthian Shot works with any ranged weapon instead of only bows
+Parthian Shot moved from row 5 to row 3 of the Bow tree
+
+...\scripts\skills\effects\ssu_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_alp_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_direwolf_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_ghoul_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_goblin_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_orc_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_schrat_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_serpent_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_spider_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_unhold_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_vampire_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_wurm_sequence_effect.nut < new
+...\scripts\items\misc\anatomist\ssu_sequence_item.nut < new
+...\scripts\items\misc\anatomist\ssu_alp_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_demon_alp_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_direwolf_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_goblin_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_greenwood_schrat_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_lindwurm_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_nachzehrer_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_necro_necrosavant_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_necro_necrosavant_lord_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_orc_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_orc_warlord_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_redback_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_rock_unhold_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_schrat_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_serpent_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_skin_ghoul_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_stollwurm_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_unhold_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_webknecht_sequence_item.nut
+...\scripts\items\misc\anatomist\ssu_white_direwolf_sequence_item.nut
+...\mod_sellswords\config\ssu_sequence_logic.nut
+...\scripts\skills\effects\ssu_player_levitate.nut < deleted
+...\scripts\skills\effects\ssu_redback_potion_effect.nut < deleted
+...\scripts\skills\racial\ssu_direwolf_player_racial.nut < deleted
+...\mod_sellswords\hooks\entity\tactical\player.nut
+...\mod_sellswords\hooks\skills\actives\footwork.nut
+...\mod_sellswords\hooks\skills\actives\legend_climb_skill.nut
+...\mod_sellswords\hooks\skills\actives\legend_evasion_skill.nut
+...\mod_sellswords\hooks\skills\actives\rotation.nut
+...\mod_sellswords\strings.nut
+Each Sequence is now a single effect instead of a number of separate potion effects, and the effect gains more once the stronger Strain is taken
+Taking the stronger Strain without the weaker one gives everything of both
+Sequence potions show the same lines as the effect they give
+Howl, Web and Grow Shield are no longer lost when a save is loaded, and the Demon Strain of the Alp Sequence grants Horrify as its tooltip said
+Hostile humans with a Sequence drop the potion of their own Sequence instead of always the Orc one (whoops)
+
+...\mod_sellswords\hooks\skills\effects\lindwurm_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\nachzehrer_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\necrosavant_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_warrior_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\orc_young_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\schrat_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\serpent_potion_effect.nut
+...\mod_sellswords\hooks\skills\effects\unhold_potion_effect.nut
+...\mod_sellswords\strings.nut
+The anatomist potion effects no longer change with the Strain of a Sequence, as the Sequences no longer use them
+
+...\scripts\skills\effects\ssu_basilisk_sequence_effect.nut < new
+...\scripts\skills\effects\ssu_hyena_sequence_effect.nut < new
+...\scripts\items\misc\anatomist\ssu_basilisk_sequence_item.nut < new
+...\scripts\items\misc\anatomist\ssu_basilisk_sentry_sequence_item.nut < new
+...\scripts\items\misc\anatomist\ssu_enraged_hyena_sequence_item.nut < new
+...\scripts\items\misc\anatomist\ssu_hyena_sequence_item.nut < new
+...\mod_sellswords\hooks\entity\tactical\enemies\hyena.nut < new
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_basilisk_drone.nut < new
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_basilisk_sentry.nut < new
+...\mod_sellswords\hooks\entity\tactical\legend_enraged_hyena.nut
+...\mod_sellswords\hooks\entity\world\settlements\buildings\alchemist_building.nut
+...\mod_sellswords\config\ssu_sequence_logic.nut
+...\mod_sellswords\strings.nut
+Added the Basilisk Sequence with the Drone and Sentry Strains, it raises the chance to hit the head and the damage of head hits
+Added the Hyena Sequence with the Scavenger and Enraged Strains, it gives Initiative, cheaper movement and attacks that cause bleeding
+The weaker Strains drop from Basilisk Drones and Hyenas and are sold by alchemists, the stronger ones drop from Basilisk Sentries and Enraged Hyenas
+
+...\mod_sellswords\hooks\entity\tactical\humans\desert_devil.nut
+...\mod_sellswords\hooks\entity\tactical\humans\executioner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\nomad_leader.nut
+...\scripts\entity\tactical\humans\ssu_sellsword.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_banner.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_elite.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_lieutenant.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_polearm.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_ranger.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_sergeant.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_tank.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_polearm.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_ranger.nut
+...\scripts\entity\tactical\humans\ssu_sellswordveteran_tank.nut
+...\scripts\entity\tactical\humans\ssu_slayer.nut
+...\mod_sellswords\config\ssu_sequence_logic.nut
+Hostile sellswords can roll the Basilisk and Hyena Sequences, sellsword rangers the Basilisk one, each at 3% like their other Sequences
+Desert Devils and Nomad Leaders split their 30% Snake Sequence chance evenly with the Enraged Strain of the Hyena Sequence, Executioners with the Sentry Strain of the Basilisk Sequence
+Hostile humans with the Basilisk or Hyena Sequence can drop its weaker Strain
+
+...\mod_sellswords\config\ssu_sequence_logic.nut
+...\scripts\skills\actives\ssu_howl_player.nut
+...\mod_sellswords\strings.nut
+The Direwolf Sequence uses the flags "direwolf" and "direwolf_w" instead of "werewolf" and "werewolf_w", to stay clear of lycanthropy in Legends (shhhhhh)
+Howl only reaches allies with the Direwolf Sequence
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

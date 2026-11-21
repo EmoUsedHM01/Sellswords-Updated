@@ -129,7 +129,7 @@
 				Attachments = [
 					[
 						1,
-						"cloak/legend_armor_cloak_fur_hyena"
+						"cloak/legend_hyena_fur_cloak"
 					],
 					[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 85,-6							
 				]								
@@ -182,7 +182,7 @@
 				Attachments = [
 					[
 						1,
-						"cloak/legend_armor_cloak_fur_hyena"
+						"cloak/legend_hyena_fur_cloak"
 					],
 					[1, "armor_upgrades/legend_light_gladiator_upgrade"],// 85,-6
 					[
@@ -759,7 +759,7 @@
 				Attachments = [
 					[
 						1,
-						"cloak/legend_armor_cloak_fur_unhold"
+						"cloak/legend_unhold_fur_cloak"
 					],
 					[
 						1,
@@ -1402,7 +1402,7 @@
 				Attachments = [
 					[
 						1,
-						"cloak/legend_armor_cloak_fur_unhold"
+						"cloak/legend_unhold_fur_cloak"
 					]					
 				]								
 			}
@@ -1446,11 +1446,11 @@
 				Attachments = [
 					[
 						1,
-						"cloak/legend_armor_cloak_fur_hyena"
+						"cloak/legend_hyena_fur_cloak"
 					],
 					[
 						1,
-						"cloak/legend_armor_cloak_fur_unhold"
+						"cloak/legend_unhold_fur_cloak"
 					]					
 				]	
 			}

@@ -10,7 +10,7 @@
 			this.m.MaxRange = 2;
 		}
 		
-		if (this.getContainer().getActor().getSkills().hasSkill("effects.goblin_grunt_potion") || frkz)
+		if (this.getContainer().hasSkill("effects.goblin_grunt_potion") || this.getContainer().hasSkill("effects.ssu_goblin_sequence") || frkz)
 		{
 			this.m.ActionPointCost = 2;
 		}

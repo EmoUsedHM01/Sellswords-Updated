@@ -114,6 +114,10 @@ this.ssu_sellsword_polearm <- this.inherit("scripts/entity/tactical/human", {
 				::Mod_Sellswords.add_ghoul(this.actor, false);
 			else if (roll <= 15.0)
 				::Mod_Sellswords.add_orc(this.actor, false);
+			else if (roll <= 18.0)
+				::Mod_Sellswords.add_basilisk(this.actor, false);
+			else if (roll <= 21.0)
+				::Mod_Sellswords.add_hyena(this.actor, false);
 		}
 	}
 

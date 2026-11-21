@@ -38,6 +38,11 @@ this.ssu_berserker_roar_effect <- this.inherit("scripts/skills/skill", {
 		actor.setDirty(true);
 	}
 
+	function onRefresh()
+	{
+		this.m.TurnsLeft = 3;
+	}
+
 	function onAfterUpdate( _properties )
 	{
 		if (this.m.TurnsLeft > 0)

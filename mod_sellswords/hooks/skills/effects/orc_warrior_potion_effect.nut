@@ -17,24 +17,12 @@
 			}
 		];
 
-		if (this.getContainer().getActor().getFlags().has("orc_w"))
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.orc_warrior_potion_effect.Tooltip1
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.orc_warrior_potion_effect.Tooltip2
-			});
-		}
+		ret.push({
+			id = 11,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = ::Mod_Sellswords.Strings.orc_warrior_potion_effect.Tooltip2
+		});
 		
 		ret.push({
 			id = 12,
@@ -50,10 +38,7 @@
 	q.onUpdate = @(__original) function(_properties)
 	{
 		__original(_properties);
-		if (this.getContainer().getActor().getFlags().has("orc_w"))
-			_properties.Hitpoints += 20;
-		else
-			_properties.Hitpoints += 10;
+		_properties.Hitpoints += 10;
 	}
 
 });

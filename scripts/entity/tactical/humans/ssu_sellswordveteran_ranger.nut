@@ -91,6 +91,8 @@ this.ssu_sellswordveteran_ranger <- this.inherit("scripts/entity/tactical/human"
 				::Mod_Sellswords.add_direwolf(this.actor, false);
 			else if (roll <= 15.0)
 				::Mod_Sellswords.add_goblin(this.actor, false);
+			else if (roll <= 18.0)
+				::Mod_Sellswords.add_basilisk(this.actor, false);
 		}
 	}
 

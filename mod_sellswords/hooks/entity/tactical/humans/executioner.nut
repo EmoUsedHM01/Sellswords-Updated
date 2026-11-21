@@ -21,8 +21,10 @@
 		if (::Mod_Sellswords.EnableHostileSequences)
 		{
 			local roll = this.Math.rand(1.0, 100.0);
-			if (roll <= 30.0)
+			if (roll <= 15.0)
 				::Mod_Sellswords.add_serpent(this.actor, true);
+			else if (roll <= 30.0)
+				::Mod_Sellswords.add_basilisk(this.actor, true);
 		}
 	}
 

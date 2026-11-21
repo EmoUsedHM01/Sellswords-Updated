@@ -22,7 +22,12 @@ this.ssu_smackdown_effect <- this.inherit("scripts/skills/skill", {
 
 	function onAdded()
 	{
-		this.m.TurnsLeft == 2;
+		this.m.TurnsLeft = 2;
+	}
+
+	function onRefresh()
+	{
+		this.m.TurnsLeft = 2;
 	}
 	
 	function onTurnEnd()

@@ -22,24 +22,12 @@
 			}
 		];
 		
-		if (this.getContainer().getActor().getFlags().has("ghoul_s"))
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/days_wounded.png",
-				text = ::Mod_Sellswords.Strings.nachzehrer_potion_effect.Tooltip1
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/days_wounded.png",
-				text = ::Mod_Sellswords.Strings.nachzehrer_potion_effect.Tooltip2
-			});
-		}
+		ret.push({
+			id = 11,
+			type = "text",
+			icon = "ui/icons/days_wounded.png",
+			text = ::Mod_Sellswords.Strings.nachzehrer_potion_effect.Tooltip2
+		});
 		
 		ret.push({
 			id = 12,
@@ -52,10 +40,7 @@
 
 	q.onUpdate = @() function(_properties)
 	{
-		if (this.getContainer().getActor().getFlags().has("ghoul_s"))
-			_properties.Initiative += 20;
-		else
-			_properties.Initiative += 10;
+		_properties.Initiative += 10;
 	}
 
 });

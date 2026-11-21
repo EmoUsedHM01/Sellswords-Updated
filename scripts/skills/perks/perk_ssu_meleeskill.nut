@@ -28,6 +28,10 @@ this.perk_ssu_meleeskill <- this.inherit("scripts/skills/skill", {
 			return;
 		}
 		
+		// keeps the AI from planning its next action before the follow-up is done, the same way the Legends follow-up attacks do
+		if ("delayEvaluationForFollowUp" in ::Legends.S)
+			::Legends.S.delayEvaluationForFollowUp(this.getContainer().getActor(), _skill);
+
 		local entity_skills = _targetEntity.getSkills();
 		local effect = ::new("scripts/skills/effects/ssu_meleeskill_effect");
 		effect.setSkill(this.getContainer().getActor(), _skill, _targetEntity);
@@ -53,6 +57,10 @@ this.perk_ssu_meleeskill <- this.inherit("scripts/skills/skill", {
 			return;
 		}
 		
+		// keeps the AI from planning its next action before the follow-up is done, the same way the Legends follow-up attacks do
+		if ("delayEvaluationForFollowUp" in ::Legends.S)
+			::Legends.S.delayEvaluationForFollowUp(this.getContainer().getActor(), _skill);
+
 		local entity_skills = _targetEntity.getSkills();
 		entity_skills.add(this.new("scripts/skills/effects/ssu_meleeskill_effect"));
 		entity_skills.getSkillByID("effects.ssu_meleeskill").setSkill(this.getContainer().getActor(), _skill, _targetEntity);

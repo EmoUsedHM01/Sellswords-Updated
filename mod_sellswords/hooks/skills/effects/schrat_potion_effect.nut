@@ -34,16 +34,6 @@
 			}
 		];
 
-		if (this.getContainer().getActor().getFlags().has("schrat_g"))
-		{
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.schrat_potion_effect.Tooltip2
-			});
-		}
-
 		ret.push({
 			id = 12,
 			type = "text",
@@ -92,44 +82,6 @@
 		case this.Const.Damage.DamageType.Burning:
 			_properties.DamageReceivedRegularMult *= 2;
 			break;
-		}
-	}
-
-	q.onDamageReceived <- function( _attacker, _damageHitpoints, _damageArmor )
-	{
-		if (!this.getContainer().getActor().getFlags().has("schrat_g"))
-			return;
-
-		local actor = this.getContainer().getActor().get();
-
-		if (_damageHitpoints >= actor.getHitpointsMax() * 0.15)
-		{
-			local candidates = [];
-			local myTile = actor.getTile();
-
-			for( local i = 0; i < 6; i = i )
-			{
-				if (!myTile.hasNextTile(i))
-				{
-				}
-				else
-				{
-					local nextTile = myTile.getNextTile(i);
-
-					if (nextTile.IsEmpty && this.Math.abs(myTile.Level - nextTile.Level) <= 1)
-						candidates.push(nextTile);
-				}
-
-				i = ++i;
-			}
-
-			if (candidates.len() != 0)
-			{
-				local spawnTile = candidates[this.Math.rand(0, candidates.len() - 1)];
-				local sapling = this.Tactical.spawnEntity("scripts/entity/tactical/enemies/schrat_small", spawnTile.Coords);
-				sapling.setFaction(actor.getFaction() == this.Const.Faction.Player ? this.Const.Faction.PlayerAnimals : actor.getFaction());
-				sapling.riseFromGround();
-			}
 		}
 	}
 

@@ -9,4 +9,4 @@
 ::Mod_Sellswords.HookHelper.replacePerkInTree(::Const.Perks.PolearmTree, ::Const.Perks.PerkDefs.ReachAdvantage, ::Const.Perks.PerkDefs.SsuReachadvantage);
 
 // Bow tree
-::Const.Perks.BowTree.Tree[4].push(::Const.Perks.PerkDefs.SsuParthianshot);
+::Const.Perks.BowTree.Tree[2].push(::Const.Perks.PerkDefs.SsuParthianshot);

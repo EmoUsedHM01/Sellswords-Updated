@@ -15,12 +15,22 @@
 			{
 				R = 95,
 				P = 1.0,
+				S = "misc/anatomist/ssu_basilisk_sequence_item"
+			},
+			{
+				R = 95,
+				P = 1.0,
 				S = "misc/anatomist/ssu_direwolf_sequence_item"
 			},
 			{
 				R = 95,
 				P = 1.0,
 				S = "misc/anatomist/ssu_goblin_sequence_item"
+			},
+			{
+				R = 95,
+				P = 1.0,
+				S = "misc/anatomist/ssu_hyena_sequence_item"
 			},
 			{
 				R = 95,

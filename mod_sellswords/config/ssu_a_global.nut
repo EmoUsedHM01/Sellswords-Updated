@@ -121,7 +121,7 @@
 ::Const.EntityType.SsuSkeletonPol <-
 	::Const.EntityType.addNew("skeleton_05_orientation", ::Mod_Sellswords.Strings.Entity.SsuSkeletonPol[0], ::Mod_Sellswords.Strings.Entity.SsuSkeletonPol[1]);
 ::Const.EntityType.SsuGoblinwarrior <-
-	::Const.EntityType.addNew("goblin_berserker_orientation", ::Mod_Sellswords.Strings.Entity.SsuGoblinwarrior[0], ::Mod_Sellswords.Strings.Entity.SsuGoblinwarrior[1]);
+	::Const.EntityType.addNew("goblin_fiend_orientation", ::Mod_Sellswords.Strings.Entity.SsuGoblinwarrior[0], ::Mod_Sellswords.Strings.Entity.SsuGoblinwarrior[1]);
 ::Const.EntityType.SsuKnightGuest <-
 	::Const.EntityType.addNew("knight_orientation", ::Mod_Sellswords.Strings.Entity.SsuKnightGuest[0], ::Mod_Sellswords.Strings.Entity.SsuKnightGuest[1]);
 ::Const.EntityType.SsuSquireGuest <-

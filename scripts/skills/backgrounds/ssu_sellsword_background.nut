@@ -53,7 +53,6 @@ this.ssu_sellsword_background <- this.inherit("scripts/skills/backgrounds/charac
 		this.m.Modifiers.Training = this.Const.LegendMod.ResourceModifiers.Training[3];
 
 		this.m.PerkTreeDynamicMins.Defense = 3;
-		this.m.PerkTreeDynamicMins.Enemy = 2;
 		this.m.PerkTreeDynamic = {
 			Weapon = [],
 			Defense = [
