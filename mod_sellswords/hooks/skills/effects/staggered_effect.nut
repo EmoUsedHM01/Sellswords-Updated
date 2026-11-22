@@ -32,7 +32,7 @@
 
 	q.onUpdate = @(__original) function( _properties )
 	{
-		if (this.getContainer().hasSkill("perk.ssu_resilient"))
+		if (this.getContainer().hasSkill("perk.hold_out"))
 		{
 			_properties.InitiativeMult *= 0.63;
 		}

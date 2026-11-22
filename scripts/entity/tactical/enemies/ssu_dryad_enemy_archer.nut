@@ -40,7 +40,7 @@ this.ssu_dryad_enemy_archer <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_footwork"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{

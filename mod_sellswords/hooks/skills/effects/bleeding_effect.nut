@@ -39,7 +39,7 @@
 
 	q.getDamage = @(__original) function ()
 	{
-		return __original() * (this.getContainer().getActor().getSkills().hasSkill("perk.ssu_resilient") ? 0.75 : 1.0);
+		return __original() * (this.getContainer().getActor().getSkills().hasSkill("perk.hold_out") ? 0.75 : 1.0);
 	}
 
 	q.getDescription = @(__original) function ()

@@ -299,7 +299,7 @@ this.ssu_charge <- this.inherit("scripts/skills/skill", {
 	function onAnySkillUsed( _skill, _targetEntity, _properties )
 	{
 		if (this.m.IsCharging)
-			_properties.DamageTotalMult *= 0.1;
+			_properties.DamageTotalMult *= this.getContainer().hasSkill("perk.ssu_grandslam") ? 0.75 : 0.5;
 	}
 
 	function onAnySkillExecuted( _skill, _targetTile, _targetEntity, _forFree )

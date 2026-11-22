@@ -44,7 +44,7 @@ this.ssu_fallenbetrayer <- this.inherit("scripts/entity/tactical/enemies/zombie"
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_push_the_advantage"));
 		this.m.Skills.add(this.new("scripts/skills/effects/ssu_clarity_effect_permanent"));		
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_armor_mastery_heavy"));
 		
 		if (!this.Tactical.State.isScenarioMode() && this.World.getTime().Days >= 90)

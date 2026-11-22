@@ -2,6 +2,7 @@ this.ssu_bolstered_effect <- this.inherit("scripts/skills/skill", {
 	m = {
 		crFactor = 0.08,
 		crBonus = 0,
+		BlockBonus = 0,
 		IsCombatStarted = false
 	},
 	
@@ -20,7 +21,7 @@ this.ssu_bolstered_effect <- this.inherit("scripts/skills/skill", {
 
 	function getTooltip()
 	{
-		return [
+		local ret = [
 			{
 				id = 1,
 				type = "title",
@@ -30,36 +31,53 @@ this.ssu_bolstered_effect <- this.inherit("scripts/skills/skill", {
 				id = 2,
 				type = "description",
 				text = this.getDescription()
-			},
-			{
+			}
+		];
+
+		if (this.m.crBonus > 0)
+		{
+			ret.push({
 				id = 10,
 				type = "text",
 				icon = "ui/icons/initiative.png",
 				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_bolstered_effect.Tooltip1, this.m.crBonus)
-			},
-			{
+			});
+			ret.push({
 				id = 12,
 				type = "text",
 				icon = "ui/icons/melee_defense.png",
 				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_bolstered_effect.Tooltip2, this.m.crBonus)
-			},
-			{
+			});
+			ret.push({
 				id = 13,
 				type = "text",
 				icon = "ui/icons/ranged_defense.png",
 				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_bolstered_effect.Tooltip3, this.m.crBonus)
-			}
-		];
+			});
+		}
+
+		if (this.m.BlockBonus > 0)
+		{
+			ret.push({
+				id = 14,
+				type = "text",
+				icon = "ui/icons/block.png",
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_bolstered_effect.Tooltip4, this.m.BlockBonus)
+			});
+		}
+
+		return ret;
 	}
 
 	function isHidden()
 	{
-		return this.m.crBonus == 0 || this.getContainer().getActor().getMoraleState() == this.Const.MoraleState.Ignore || this.getContainer().getActor().getMoraleState() == this.Const.MoraleState.Fleeing;
+		return (this.m.crBonus == 0 && this.m.BlockBonus == 0) || this.getContainer().getActor().getMoraleState() == this.Const.MoraleState.Ignore || this.getContainer().getActor().getMoraleState() == this.Const.MoraleState.Fleeing;
 	}
 
 	function onUpdate( _properties )
 	{
 		this.m.crBonus = 0;
+		this.m.BlockBonus = 0;
 
 		if (this.m.IsCombatStarted == false)
 		{
@@ -73,7 +91,8 @@ this.ssu_bolstered_effect <- this.inherit("scripts/skills/skill", {
 			return;
 		}
 
-		local allyDefense = 0;				
+		local allyDefense = 0;
+		local allyBlock = 0;
 		if (::Tactical.isActive())
 		{
 			local adjacentAllies = ::Tactical.Entities.getFactionActors(actor.getFaction(), actor.getTile(), 1);
@@ -89,7 +108,14 @@ this.ssu_bolstered_effect <- this.inherit("scripts/skills/skill", {
 				{
 					allyDefense += this.Math.max(0, ally.getCurrentProperties().getMeleeDefense());
 					allyDefense += this.Math.max(0, ally.getCurrentProperties().getRangedDefense());
-				}			
+				}
+
+				// Total Cover, only the highest one counts
+				local cover = ally.getSkills().getSkillByID("perk.ssu_totalcover");
+				if (cover != null && cover.isInEffect())
+				{
+					allyBlock = this.Math.max(allyBlock, cover.getSharedBlock());
+				}
 			}
 		}		
 
@@ -98,7 +124,13 @@ this.ssu_bolstered_effect <- this.inherit("scripts/skills/skill", {
 			this.m.crBonus = this.Math.floor(allyDefense * this.m.crFactor);
 			_properties.Initiative += this.m.crBonus;
 			_properties.MeleeDefense += this.m.crBonus;
-			_properties.RangedDefense += this.m.crBonus;			
+			_properties.RangedDefense += this.m.crBonus;
+		}
+
+		if (allyBlock > 0)
+		{
+			this.m.BlockBonus = allyBlock;
+			_properties.Block += allyBlock;
 		}
 	}
 

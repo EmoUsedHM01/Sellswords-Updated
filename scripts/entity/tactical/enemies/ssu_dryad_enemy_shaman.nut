@@ -44,7 +44,7 @@ this.ssu_dryad_enemy_shaman <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_brawny"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_lithe"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)
 		{

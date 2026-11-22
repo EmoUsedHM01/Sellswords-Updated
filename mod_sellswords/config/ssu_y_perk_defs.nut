@@ -175,22 +175,6 @@
 		Icon = "ui/perks/ssu_irresistibleimpulse.png",
 		IconDisabled = "ui/perks/ssu_irresistibleimpulse_bw.png"
 	},
-	SsuBeforethestorm = {
-		ID = "perk.ssu_beforethestorm",
-		Script = "scripts/skills/perks/perk_ssu_beforethestorm",
-		Name = this.Const.Strings.PerkName.SsuBeforethestorm,
-		Tooltip = this.Const.Strings.PerkDescription.SsuBeforethestorm,
-		Icon = "ui/perks/ssu_beforethestorm.png",
-		IconDisabled = "ui/perks/ssu_beforethestorm_bw.png"
-	},
-	SsuResilient = {
-		ID = "perk.ssu_resilient",
-		Script = "scripts/skills/perks/perk_ssu_resilient",
-		Name = this.Const.Strings.PerkName.SsuResilient,
-		Tooltip = this.Const.Strings.PerkDescription.SsuResilient,
-		Icon = "ui/perks/ssu_resilient.png",
-		IconDisabled = "ui/perks/ssu_resilient_bw.png"
-	},
 	SsuAudaciouscharge = {
 		ID = "perk.ssu_audaciouscharge",
 		Script = "scripts/skills/perks/perk_ssu_audaciouscharge",

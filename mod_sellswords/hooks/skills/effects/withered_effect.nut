@@ -23,7 +23,7 @@
 	q.onUpdate = @(__original) function( _properties )
 	{
 		local actor = this.getContainer().getActor();
-		if (this.getContainer().hasSkill("perk.ssu_resilient"))
+		if (this.getContainer().hasSkill("perk.hold_out"))
 		{
 			_properties.DamageTotalMult *= 1.0 - this.m.TurnsLeft * 0.075;
 			_properties.InitiativeMult *= 1.0 - this.m.TurnsLeft * 0.075;

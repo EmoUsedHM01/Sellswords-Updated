@@ -103,6 +103,18 @@
 	}
 	q.attachPerks <- function()
 	{
+		// Legends perks are only attached to trees that do not have them yet
+		local hasPerk = function( _perk )
+		{
+			foreach (row in this.m.CustomPerkTree)
+			{
+				if (row.find(_perk) != null)
+					return true;
+			}
+
+			return false;
+		}
+
 		for ( local i = 0; i < this.m.CustomPerkTree.len(); i++ )
 		{
 			for ( local j = 0; j < this.m.CustomPerkTree[i].len(); j++ )
@@ -139,11 +151,15 @@
 						this.m.CustomPerkTree[4].push(::Legends.Perk.SsuFob);
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.NineLives:
-						this.m.CustomPerkTree[2].push(::Legends.Perk.SsuResilient);
+						if (!hasPerk(::Legends.Perk.HoldOut))
+							this.m.CustomPerkTree[2].push(::Legends.Perk.HoldOut);
+
 						this.m.CustomPerkTree[4].push(::Legends.Perk.SsuPerseverance);
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendRebound:
-						this.m.CustomPerkTree[5].push(::Legends.Perk.SsuBeforethestorm);
+						if (!hasPerk(::Legends.Perk.LegendPatientHunter))
+							this.m.CustomPerkTree[5].push(::Legends.Perk.LegendPatientHunter);
+
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.Footwork:
 						this.m.CustomPerkTree[1].push(::Legends.Perk.SsuBackswing);
@@ -155,9 +171,6 @@
 						this.m.CustomPerkTree[1].push(::Legends.Perk.SsuClarity);
 						continue;
 					// replace perks here
-					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.HoldOut:
-						this.m.CustomPerkTree[i][j] = ::Legends.Perk.SsuResilient;
-						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.ReachAdvantage:
 						this.m.CustomPerkTree[i][j] = ::Legends.Perk.SsuReachadvantage;
 						continue;

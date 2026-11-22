@@ -127,7 +127,7 @@
 		if (_actor.getFlags().getAsInt("ActiveMutations") <= 2)
 			return;
 
-	if (_actor.getSkills().getSkillByID("perk.ssu_resilient"))
+	if (_actor.getSkills().getSkillByID("perk.hold_out"))
 		if (_actor.getFlags().getAsInt("ActiveMutations") <= 2)
 			return;
 

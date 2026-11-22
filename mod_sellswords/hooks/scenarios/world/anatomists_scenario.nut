@@ -32,8 +32,8 @@
 		talents[this.Const.Attributes.Bravery] = 1;
 		talents[this.Const.Attributes.RangedSkill] = 2;
 		talents[this.Const.Attributes.RangedDefense] = 2;
-		bros[0].getBackground().addPerk(this.Const.Perks.PerkDefs.SsuResilient, 2, false);
-		bros[0].getSkills().add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		bros[0].getBackground().addPerk(this.Const.Perks.PerkDefs.HoldOut, 2, false);
+		bros[0].getSkills().add(this.new("scripts/skills/perks/perk_hold_out"));
 		local items = bros[0].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Body));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Head));
@@ -64,8 +64,8 @@
 		talents[this.Const.Attributes.Hitpoints] = 2;
 		talents[this.Const.Attributes.Initiative] = 3;
 		talents[this.Const.Attributes.MeleeSkill] = 1;
-		bros[1].getBackground().addPerk(this.Const.Perks.PerkDefs.SsuResilient, 2, false);
-		bros[1].getSkills().add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		bros[1].getBackground().addPerk(this.Const.Perks.PerkDefs.HoldOut, 2, false);
+		bros[1].getSkills().add(this.new("scripts/skills/perks/perk_hold_out"));
 		items = bros[1].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Body));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Head));
@@ -94,8 +94,8 @@
 		talents[this.Const.Attributes.Bravery] = 2;
 		talents[this.Const.Attributes.MeleeDefense] = 3;
 		talents[this.Const.Attributes.RangedDefense] = 3;
-		bros[2].getBackground().addPerk(this.Const.Perks.PerkDefs.SsuResilient, 2, false);
-		bros[2].getSkills().add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		bros[2].getBackground().addPerk(this.Const.Perks.PerkDefs.HoldOut, 2, false);
+		bros[2].getSkills().add(this.new("scripts/skills/perks/perk_hold_out"));
 		items = bros[2].getItems();
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Body));
 		items.unequip(items.getItemAtSlot(this.Const.ItemSlot.Head));
@@ -135,7 +135,7 @@
 
 	q.onBuildPerkTree <- function(_background)
 	{
-		this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.SsuResilient);
+		this.addScenarioPerk(_background, this.Const.Perks.PerkDefs.HoldOut);
 	}
 
 });

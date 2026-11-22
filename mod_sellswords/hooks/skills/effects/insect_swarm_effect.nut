@@ -41,7 +41,7 @@
 
 	q.onUpdate = @(__original) function( _properties )
 	{
-		if (this.getContainer().hasSkill("perk.ssu_resilient"))
+		if (this.getContainer().hasSkill("perk.hold_out"))
 		{
 			_properties.MeleeSkillMult *= 0.63;
 			_properties.RangedSkillMult *= 0.63;

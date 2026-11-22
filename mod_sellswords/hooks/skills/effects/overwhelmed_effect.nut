@@ -15,7 +15,7 @@
 			}
 		];
 
-		if (this.getContainer().hasSkill("perk.ssu_resilient"))
+		if (this.getContainer().hasSkill("perk.hold_out"))
 		{
 			ret.push({
 				id = 10,
@@ -55,7 +55,7 @@
 		if (this.m.Count >= 7)
 			this.m.Count = 7;
 
-		if (this.getContainer().hasSkill("perk.ssu_resilient"))
+		if (this.getContainer().hasSkill("perk.hold_out"))
 		{
 			_properties.MeleeSkillMult = this.Math.maxf(0.0, _properties.MeleeSkillMult - 0.075 * this.m.Count);
 			_properties.RangedSkillMult = this.Math.maxf(0.0, _properties.RangedSkillMult - 0.075 * this.m.Count);

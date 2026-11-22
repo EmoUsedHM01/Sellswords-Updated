@@ -14,9 +14,9 @@ this.ssu_quiver_of_freezing_arrows <- this.inherit("scripts/items/ammo/ammo", {
 		this.m.ShowOnCharacter = true;
 		this.m.ShowQuiver = true;
 		this.m.Sprite = "bust_quiver_01";
-		this.m.Value = 2000;
-		this.m.Ammo = 5;
-		this.m.AmmoMax = 5;
+		this.m.Value = 1000;
+		this.m.Ammo = 10;
+		this.m.AmmoMax = 10;
 		this.m.AmmoCost = 3;
 		this.m.IsDroppedAsLoot = true;
 	}

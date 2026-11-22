@@ -3,8 +3,7 @@
 	q.onInit = @(__original) function()
 	{
 		__original();
-		this.m.Skills.removeByID("perk.hold_out");	
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));
 
 		this.m.Skills.add(this.new("scripts/skills/effects/ssu_clarity_effect_permanent"));

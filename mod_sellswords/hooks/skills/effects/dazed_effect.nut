@@ -31,7 +31,7 @@
 
 		if (!actor.getCurrentProperties().IsImmuneToDaze)
 		{
-			if (this.getContainer().hasSkill("perk.ssu_resilient"))
+			if (this.getContainer().hasSkill("perk.hold_out"))
 			{
 				_properties.DamageTotalMult *= 0.81;
 				_properties.InitiativeMult *= 0.81;

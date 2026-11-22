@@ -1129,10 +1129,15 @@ Learn to target vitals with your piercing attacks!
 ::Const.Strings.PerkName.SsuTotalcover <- "Total Cover";
 
 ::Const.Strings.PerkDescription.SsuTotalcover <- @"
-Master the art of deflecting blows with your shield, turning powerful enemy attacks into mere glancing hits.
+[color=%negative%][u]Requires:[/u] Shield[/color]
+Master the art of deflecting blows with your shield, and of holding it where it covers the ones beside you.
 
 [color=%passive%][u]Passive:[/u][/color]
-• Grants [color=%positive%]+20%[/color] damage reduction when using [color=%skill%]Shieldwall[/color], and [color=%positive%]+25%[/color] when using [color=%skill%]Fortify[/color].
+• Your Block is [color=%positive%]doubled[/color].
+
+• Adjacent allies gain [color=%positive%]50%[/color] of your Block.
+
+• If multiple users with this perk are present, only the highest bonus applies.
 ";
 
 ::Const.Strings.PerkName.SsuGuardian <- "The Guardian";
@@ -1167,6 +1172,8 @@ Being massive has its pros and cons.
 • Increases Armor penetration and damage by [color=%positive%]50%[/color] when Unarmed.
 
 • The [color=%perk%]Muscularity[/color] perk has its damage effect [color=%positive%]tripled[/color].
+
+• The free attack of [color=%skill%]Audacious Charge[/color] deals [color=%positive%]75%[/color] damage instead of [color=%positive%]50%[/color].
 
 • Fatigue cost of all skills is increased by [color=%negative%]8%[/color] of your Hitpoints
 
@@ -1355,41 +1362,13 @@ Embrace the adrenaline, and feel it course through your veins!
 • Each time you use the [color=%skill%]Adrenaline[/color] skill, gain [color=%positive%]+6[/color] Fatigue recovery, [color=%positive%]+5[/color] Melee Skill, [color=%positive%]+5%[/color] damage, and make enemies [color=%positive%]25%[/color] more likely to target you until the end of your next turn.
 ";
 
-::Const.Strings.PerkName.SsuBeforethestorm <- "Before the Storm";
-
-::Const.Strings.PerkDescription.SsuBeforethestorm <- @"
-Take a moment to prepare for what lies ahead.
-
-[color=%passive%][u]Passive:[/u][/color]
-• If you end your turn with at least [color=%negative%]1[/color] AP left, gain [color=%positive%]+1[/color] AP next turn and recover [color=%positive%]3%[/color] of your maximum Fatigue after gear.
-
-• [color=%skill%]Recover[/color] will always leave you at [color=%negative%]1[/Color] AP to trigger this effect.
-";
-
-::Const.Strings.PerkName.SsuResilient <- "Resilient";
-
-::Const.Strings.PerkDescription.SsuResilient <- @"
-Keep it together!
-
-[color=#4f1800][u]Passive:[/u][/color]
-• Any negative status effect with a finite duration (e.g., [color=%status%]Bleed[/color], [color=%status%]Charmed[/color]) has its duration reduced to [color=%negative%]1[/color] turn.
-
-• Status effects that have their effects grow weaker over several turns (e.g. [color=%status%]Goblin Poison[/color]) are at their weakest state from the start.
-
-• Grants a [color=%negative%]25%[/color] reduction to the effect of all negative status effects.
-
-• Raises the chance to survive being struck down and not killed from [color=%negative%]33%[/color] to [color=%positive%]66%[/color].
-
-• Allows the use of a second Sequence without negative effects.
-";
-
 ::Const.Strings.PerkName.SsuAudaciouscharge <- "Audacious Charge";
 
 ::Const.Strings.PerkDescription.SsuAudaciouscharge <- @"
 Charge forward with all your might!
 
 [color=%passive%][u]Active:[/u][/color]
-• Unlocks the [color=%skill%]Audacious Charge[/color] skill which allows you to Charge towards a tile up to two tiles away, [color=%status%]Stagger[/color] a random enemy adjacent to that tile, then perform a free attack against them dealing [color=%positive%]10%[/color] of your main-hand weapon damage.
+• Unlocks the [color=%skill%]Audacious Charge[/color] skill which allows you to Charge towards a tile up to two tiles away, [color=%status%]Stagger[/color] a random enemy adjacent to that tile, then perform a free attack against them dealing [color=%positive%]50%[/color] of your main-hand weapon damage, or [color=%positive%]75%[/color] with the [color=%perk%]Grand Slam[/color] perk.
 
 • If the target was already [color=%status%]Staggered[/color] or [color=%status%]Dazed[/color], inflict [color=%status%]Stun[/color].
 
@@ -1719,6 +1698,23 @@ Use your size and strength to bully your way into a prime position.
 • When below [color=%negative%]44%[/color] Hitpoints this character becomes immune to the effects of subsequent injuries, and moral is no longer affected by health loss.
 ";
 
+::Const.Strings.PerkDescription.HoldOut = @"
+Keep it together!
+
+[color=%passive%][u]Passive:[/u][/color]
+• Grants [color=%positive%]+8[/color] Hitpoints.
+
+• Any negative status effect with a finite duration (e.g., [color=%status%]Bleeding[/color], [color=%status%]Charmed[/color]) has its duration reduced to one turn.
+
+• Status effects that have their effects grow weaker over several turns (e.g., Goblin [color=%status%]Poison[/color]) are at their weakest state from the start.
+
+• Grants a [color=%negative%]25%[/color] reduction to the effect of all negative status effects.
+
+• Raises the chance to survive being struck down and not killed from [color=%negative%]33%[/color] to [color=%positive%]66%[/color].
+
+• Allows the use of a second Sequence without negative effects.
+";
+
 ::Const.Strings.PerkDescription.Indomitable = @"
 'Mountains cannot be moved, nor taken down!'
 
@@ -2002,7 +1998,9 @@ Master the flail and circumvent your opponent's defenses.
 Nailed it!
 
 [color=%passive%][u]Passive:[/u][/color]
-• The penalty to hitchance when shooting at a target you have no clear line of fire to is reduced from [color=%negative%]75%[/color] to [color=%negative%]33%[/color] for ranged weapons.
+• The penalty to hitchance when shooting at a target you have no clear line of fire to is reduced from [color=%negative%]75%[/color] to [color=%negative%]25%[/color] for any ranged weapons and [color=%skill%]Aimed Shot[/color] will not have a penalty at all.
+
+• This Character's Vision is increased by [color=%positive%]+1[/color].
 
 • Unlocks the [color=%skill%]Mark Target[/color] skill.
 
@@ -2174,8 +2172,6 @@ Unleash an arcing barrage of lightning!
 	SsuRangeddefense = true,
 	SsuRetrofithooks = true,
 	SsuIrresistibleimpulse = true,
-	SsuBeforethestorm = true,
-	SsuResilient = true,
 	SsuAudaciouscharge = true,
 	SsuBattlerhaposdy = true,
 	SsuPerseverance = true,
@@ -2239,7 +2235,8 @@ Unleash an arcing barrage of lightning!
 	Duelist = true,
 	LegendConservation = true,
 	LegendChainLightning = true,
-	LegendHoldTheLine = true
+	LegendHoldTheLine = true,
+	HoldOut = true
 };
 
 // ---------------------------------------------------------------------------
@@ -2845,13 +2842,6 @@ Unleash an arcing barrage of lightning!
 	Tooltip = "You have [color=%positive%]{1}[/color] medicine."
 };
 
-// mod_sellswords\hooks\skills\actives\shieldwall.nut
-::Mod_Sellswords.Strings.shieldwall <- {
-	Tooltip1 = "Grants [color=%positive%]+{1}[/color] Melee Defense for one turn",
-	Tooltip2 = "Grants [color=%positive%]+{1}[/color] Ranged Defense for one turn",
-	Tooltip3 = "Only receive [color=%positive%]{1}%[/color] of any damage"
-};
-
 // mod_sellswords\hooks\skills\actives\slash_lightning.nut
 ::Mod_Sellswords.Strings.slash_lightning <- {
 	Tooltip1 = "Inflicts an additional [color=%damage%]15%[/color] damage that ignores armor to up to three targets",
@@ -3162,13 +3152,6 @@ Unleash an arcing barrage of lightning!
 	Tooltip2 = "Piercing or cutting attacks poison the target.\n[color=%positive%]+15[/color] Initiative.\n[color=%positive%]+5[/color] Melee Skill.",
 	Tooltip3 = "Further mutations may cause this character\'s genes to spiral out of control, crippling them",
 	Log = "{1} is poisoned"
-};
-
-// mod_sellswords\hooks\skills\effects\shieldwall_effect.nut
-::Mod_Sellswords.Strings.shieldwall_effect <- {
-	Tooltip1 = "[color=%positive%]+{1}[/color] Melee Defense",
-	Tooltip2 = "[color=%positive%]+{1}[/color] Ranged Defense",
-	Tooltip3 = "Only receive [color=%positive%]{1}%[/color] of any damage"
 };
 
 // mod_sellswords\hooks\skills\effects\skeleton_warrior_potion_effect.nut
@@ -5543,10 +5526,11 @@ Unleash an arcing barrage of lightning!
 // scripts\skills\effects\ssu_bolstered_effect.nut
 ::Mod_Sellswords.Strings.ssu_bolstered_effect <- {
 	Name = "Bolstered",
-	Description = "This character is feeling bolstered thanks to an adjacent Guardian's support.",
+	Description = "This character is feeling bolstered thanks to the shield of an adjacent ally.",
 	Tooltip1 = "[color=%positive%]+{1}[/color] Initiative",
 	Tooltip2 = "[color=%positive%]+{1}[/color] Melee Defense",
-	Tooltip3 = "[color=%positive%]+{1}[/color] Ranged Defense"
+	Tooltip3 = "[color=%positive%]+{1}[/color] Ranged Defense",
+	Tooltip4 = "[color=%positive%]+{1}[/color] Block"
 };
 
 // scripts\skills\effects\ssu_bone_cleaver_effect.nut

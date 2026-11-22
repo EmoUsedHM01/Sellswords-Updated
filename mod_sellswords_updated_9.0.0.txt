@@ -3263,6 +3263,85 @@ Hostile humans with the Basilisk or Hyena Sequence can drop its weaker Strain
 The Direwolf Sequence uses the flags "direwolf" and "direwolf_w" instead of "werewolf" and "werewolf_w", to stay clear of lycanthropy in Legends (shhhhhh)
 Howl only reaches allies with the Direwolf Sequence
 
+...\scripts\skills\perks\perk_ssu_resilient.nut < deleted
+...\gfx\ui\perks\ssu_resilient.png < deleted
+...\gfx\ui\perks\ssu_resilient_bw.png < deleted
+...\mod_sellswords\config\ssu_y_perk_defs.nut
+...\mod_sellswords\config\ssu_sequence_logic.nut
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+...\mod_sellswords\hooks\scenarios\world\anatomists_scenario.nut
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+...\mod_sellswords\hooks\skills\backgrounds\legend_donkey_background.nut
+...\mod_sellswords\hooks\skills\effects\bleeding_effect.nut
+...\mod_sellswords\hooks\skills\effects\dazed_effect.nut
+...\mod_sellswords\hooks\skills\effects\distracted_effect.nut
+...\mod_sellswords\hooks\skills\effects\insect_swarm_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_baffled_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_redback_spider_poison_effect.nut
+...\mod_sellswords\hooks\skills\effects\legend_zombie_poison_effect.nut
+...\mod_sellswords\hooks\skills\effects\overwhelmed_effect.nut
+...\mod_sellswords\hooks\skills\effects\spider_poison_effect.nut
+...\mod_sellswords\hooks\skills\effects\staggered_effect.nut
+...\mod_sellswords\hooks\skills\effects\stunned_effect.nut
+...\mod_sellswords\hooks\skills\effects\withered_effect.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_orc_elite.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_robber_baron.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_stollwurm.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\legend_stollwurm_tail.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_betrayer.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_boss.nut
+...\mod_sellswords\hooks\entity\tactical\enemies\zombie_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\barbarian_chosen.nut
+...\mod_sellswords\hooks\entity\tactical\humans\hedge_knight.nut
+...\mod_sellswords\hooks\entity\tactical\humans\knight.nut
+...\mod_sellswords\hooks\hooks_enemies.nut
+...\scripts\entity\tactical\enemies\ssu_conqueror.nut
+...\scripts\entity\tactical\enemies\ssu_deathknight.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_archer.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_boss.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_grunt.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_shaman.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_tamer.nut
+...\scripts\entity\tactical\enemies\ssu_dryad_enemy_warrior.nut
+...\scripts\entity\tactical\enemies\ssu_fallenbetrayer.nut
+...\scripts\entity\tactical\humans\ssu_baron.nut
+...\scripts\entity\tactical\humans\ssu_baron02.nut
+...\scripts\entity\tactical\humans\ssu_hedge_knight.nut
+...\scripts\entity\tactical\humans\ssu_knight.nut
+...\scripts\entity\tactical\humans\ssu_knightcommander.nut
+...\scripts\entity\tactical\humans\ssu_sellsword_elite.nut
+...\mod_sellswords\strings.nut
+Removed the SSU Resilient perk, the Legends version of Hold Out (Resilient) is used in its place
+Hold Out keeps what the SSU perk added: negative status effects are 25% weaker and a second Sequence can be used without negative effects
+Enemies that had the SSU perk have Hold Out, and every enemy with Hold Out now gets the weaker status effects
+
+...\scripts\skills\perks\perk_ssu_beforethestorm.nut < deleted
+...\mod_sellswords\hooks\skills\actives\recover_skill.nut < deleted
+...\gfx\ui\perks\ssu_beforethestorm.png < deleted
+...\gfx\ui\perks\ssu_beforethestorm_bw.png < deleted
+...\mod_sellswords\config\ssu_y_perk_defs.nut
+...\mod_sellswords\hooks\config\z_perks_tree_traits.nut
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+...\mod_sellswords\strings.nut
+Removed Before the Storm, Patient Hunter from Legends takes its place in the Fit tree and on backgrounds with a fixed perk tree
+
+...\scripts\skills\actives\ssu_charge.nut
+...\mod_sellswords\strings.nut
+The free attack of Audacious Charge deals 50% damage instead of 10%, and 75% with Grand Slam
+
+...\scripts\skills\perks\perk_ssu_totalcover.nut
+...\scripts\skills\effects\ssu_bolstered_effect.nut
+...\mod_sellswords\hooks\skills\actives\shieldwall.nut < deleted
+...\mod_sellswords\hooks\skills\effects\shieldwall_effect.nut < deleted
+...\mod_sellswords\strings.nut
+Total Cover now doubles the Block of its user and gives adjacent allies 50% of that Block, it requires a shield
+Removed its damage reduction on Shieldwall along with the two Shieldwall hooks, whose tooltips still showed the defense values from before Legends moved Shieldwall to Block
+
+...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut
+...\mod_sellswords\strings.nut
+Bullseye hook now only adds Mark Target on top of the Legends version of the perk
+Removed the changed line of fire penalty and the halved hit chance against allies, the Legends Vision and Aimed Shot bonuses apply again
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

@@ -24,7 +24,7 @@
 	{
 		local nsed = this.getContainer().getActor().getCurrentProperties().NegativeStatusEffectDuration;
 		local remaining = 10 - (this.m.TurnsLeft - nsed);
-		local seriouslevel = this.getContainer().hasSkill("perk.ssu_resilient") ? 7.5 : 10;			
+		local seriouslevel = this.getContainer().hasSkill("perk.hold_out") ? 7.5 : 10;			
 		return [
 			{
 				id = 1,
@@ -59,7 +59,7 @@
 
 	q.onUpdate = @(__original) function( _properties )
 	{
-		local seriouslevel = this.getContainer().hasSkill("perk.ssu_resilient") ? 7.5 : 10;		
+		local seriouslevel = this.getContainer().hasSkill("perk.hold_out") ? 7.5 : 10;		
 		local nsed = this.getContainer().getActor().getCurrentProperties().NegativeStatusEffectDuration;
 		local AP = this.Math.max(1, 1 * (10 - (this.m.TurnsLeft - nsed)));
 		local Init = this.Math.max(1, seriouslevel * (10 - (this.m.TurnsLeft - nsed)));

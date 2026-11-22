@@ -2,7 +2,7 @@
 
 	q.onUpdate = @( __original ) function ( _properties )
 	{
-		_properties.RangedAttackBlockedChanceMult *= 0.44;
+		__original(_properties);
 
 		// checked here and not only once in onAdded, a bow brings its own Mark Target and takes it along when it is unequipped
 		if (!this.getContainer().hasActive(::Legends.Active.LegendMarkTarget))
@@ -20,15 +20,6 @@
 		if (skill != null && ::MSU.isNull(skill.getItem()))
 		{
 			this.getContainer().remove(skill);
-		}
-	}
-
-	q.onAnySkillUsed =  @() function(_skill, _targetEntity, _properties)
-	{
-		if (_skill.isAttack() && _targetEntity != null && _targetEntity.getID() != this.getContainer().getActor().getID() && _targetEntity.getFaction() == this.getContainer().getActor().getFaction())
-		{
-			_properties.MeleeSkillMult *= 0.5;
-			_properties.RangedSkillMult *= 0.5;
 		}
 	}
 

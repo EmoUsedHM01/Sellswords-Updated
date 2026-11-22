@@ -9,11 +9,10 @@
 // Fast tree
 ::Const.Perks.FastTree.Tree[4].push(::Const.Perks.PerkDefs.SsuNavigator);
 
-// Fit tree
-::Const.Perks.FitTree.Tree[5].push(::Const.Perks.PerkDefs.SsuBeforethestorm);
+// Fit tree, Patient Hunter is the Legends perk
+::Const.Perks.FitTree.Tree[5].push(::Const.Perks.PerkDefs.LegendPatientHunter);
 
-// Indestructible tree, Resilient takes the place of Hold Out
-::Mod_Sellswords.HookHelper.replacePerkInTree(::Const.Perks.IndestructibleTree, ::Const.Perks.PerkDefs.HoldOut, ::Const.Perks.PerkDefs.SsuResilient);
+// Indestructible tree
 ::Const.Perks.IndestructibleTree.Tree[5].push(::Const.Perks.PerkDefs.SsuPerseverance);
 
 // Large tree

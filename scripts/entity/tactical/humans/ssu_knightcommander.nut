@@ -59,7 +59,7 @@ this.ssu_knightcommander <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_mastery_shields"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_bash"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_return_favor"));
-		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_resilient"));
+		this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
 
 		local dc = this.World.getTime().Days;			
 		local blk = this.Math.rand(1, 100);
