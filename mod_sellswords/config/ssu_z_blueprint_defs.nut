@@ -117,27 +117,6 @@
 		],
 		Category = ::Legends.Profession.LegendLeatherworking
 	},
-	SsuLindwurmHelmet = {
-		ID = "blueprint.ssu_lindwurm_helmet_layered_blueprint",
-		Script = "scripts/crafting/blueprints/ssu_lindwurm_helmet_layered_blueprint",
-		ItemScript = "scripts/items/legend_helmets/helm/ssu_lindwurm_helmet",
-		Cost = 1000,
-		Ingredients = [
-			{
-				Script = "scripts/items/misc/lindwurm_scales_item",
-				Num = 2
-			},
-			{
-				Script = "scripts/items/legend_helmets/top/legend_helmet_chain_attachment",
-				Num = 1
-			},
-			{
-				Script = "scripts/items/legend_helmets/helm/legend_helmet_norman_helm",
-				Num = 1
-			}
-		],
-		Category = ::Legends.Profession.LegendMetalworking
-	},
 	SsuNecroDogBody = {
 		ID = "blueprint.ssu_necro_dog_body",
 		Script = "scripts/crafting/blueprints/ssu_necro_dog_body_blueprint",

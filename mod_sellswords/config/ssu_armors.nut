@@ -1888,7 +1888,7 @@
 			Plate = [					
 				[1, "plate/ssu_named_noble_mail_armor"],// 115_130,-10_-8,4000					
 				[1, "plate/legend_armor_scale_coat_named"],// 130_160,-14_-10,5000
-				[1, "plate/ssu_named_lindwurm_armor"],// 175_190,-20_-18,10000					
+				[1, "named/legend_lindwurm_scale_armor"],// 130,-14,3000					
 				[1, "plate/legend_armor_leather_lamellar_heavy_named"],// 180_200,-23_-19,7500   	ss185_210,-24_-21,12000 					
 				[1, "plate/legend_armor_southern_named_plate"],// 210_230,-26_-23,9000					
 				[1, "plate/ssu_named_heraldic_mail"],// 215_245,-25_-22,10000
@@ -5958,7 +5958,7 @@
 			],
 			Plate = [
 				[1, "plate/ssu_named_noble_mail_armor"],// 115_130,-10_-8,4000	
-				[1, "plate/ssu_named_lindwurm_armor"],// 175_190,-20_-18,10000					
+				[1, "named/legend_lindwurm_scale_armor"],// 130,-14,3000					
 			],
 			Cloak = [],
 			Tabard = [],
@@ -5978,7 +5978,7 @@
 				[1, "chain/legend_armor_ancient_double_mail"],// 80,-14,750				
 			],
 			Plate = [	
-				[1, "plate/ssu_emperors_armor"],// 345,-38,20000					
+				[1, "legendary/legend_emperors_armor"],// 345,-38,20000					
 			],
 			Cloak = [
 				[1, "named/legend_armor_cloak_emperors"],// 45,-3,15000				
@@ -5988,26 +5988,6 @@
 		}			
 	]
 },	
-{
-	ID = "ssu_ijirok_armor", 
-	Script = "",
-	Sets = [
-		{
-			Cloth = [
-				[1, "cloth/legend_armor_sackcloth"],// 10,-0,15				
-			],
-			Chain = [
-				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],// 45,-7,200				
-			],
-			Plate = [	
-				[1, "plate/ssu_ijirok_armor"],					
-			],
-			Cloak = [],
-			Tabard = [],
-			Attachments = []
-		}			
-	]
-},
 {
 	ID = "ssu_lindwurm_slayer_armor", 
 	Script = "",
@@ -6020,7 +6000,7 @@
 				[1, "chain/legend_armor_basic_mail"],// 85, -12, 800				
 			],
 			Plate = [	
-				[1, "plate/ssu_lindwurm_armor"],// 130, -14, 4000					
+				[1, "named/legend_lindwurm_scale_armor"],// 130,-14,3000					
 			],
 			Cloak = [],
 			Tabard = [],

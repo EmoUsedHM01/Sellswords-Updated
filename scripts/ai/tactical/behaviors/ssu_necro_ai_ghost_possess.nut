@@ -147,7 +147,7 @@ this.ssu_necro_ai_ghost_possess <- this.inherit("scripts/ai/tactical/behavior", 
 				score = score + p.getMeleeSkill() * 0.5;
 				score = score + target.getHitpoints() * 0.25;
 				score = score + (target.getArmor(this.Const.BodyPart.Body) * (p.HitChance[this.Const.BodyPart.Body] / 100.0) + target.getArmor(this.Const.BodyPart.Head) * (p.HitChance[this.Const.BodyPart.Head] / 100.0)) * 0.1;
-				score = score * p.TargetAttractionMult;
+				score = score * p.TargetAttractionMult * p.AggroMult;
 
 				if (p.IsRooted)
 				{

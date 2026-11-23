@@ -2385,9 +2385,6 @@ Unleash an arcing barrage of lightning!
 
 // mod_sellswords\hooks\events\events\dlc4\location\tundra_elk_destroyed_event.nut
 ::Mod_Sellswords.Strings.tundra_elk_destroyed_event <- {
-	Tooltip1 = "You lose {1}",
-	Tooltip2 = "You gain [color=#456ca0]Helmet of the Ijirok[/color]",
-	Tooltip3 = "You gain [color=#456ca0]Armor of the Ijirok[/color]",
 	Tooltip4 = "You gain [color=#456ca0]Winter\'s Touch[/color]"
 };
 
@@ -3312,15 +3309,7 @@ Unleash an arcing barrage of lightning!
 	Tooltip4 = "The character\'s level measures experience in battle. Characters rise in levels as they gain experience and are able to increase their attributes and gain perks that make them better at the mercenary profession.\n\nBeyond the 11th character level, main characters gain a perk every two levels, and supporting characters gain a perk every five levels.",
 	Tooltip5 = "This character is currently in the fighting line. Click to toggle character into reserves status. (Hotkey \'S\', \'A\' and \'D\' to cycle bros)",
 	Tooltip6 = "This character is currently in reserves. Click to toggle character into the fighting line. While in reserves, character will eat and drink more supplies, and only participate in combat if company is under attack. (Hotkey \'S\', \'A\' and \'D\' to cycle bros)",
-	Tooltip7 = "Reserves/Fighting Status",
-	Tooltip8 = "Arena",
-	Tooltip9 = "The arena offers an opportunity to earn gold and fame in fights that are to the death, and in front of crowds that cheer for the most gruesome manner in which lives are dispatched.",
-	Tooltip10 = "No more matches take place here today. Come back tomorrow!",
-	Tooltip11 = "You cannot fight in the arena while contracted to do other work",
-	Tooltip12 = "You need at least 5 empty inventory slots to fight in the ongoing tournament",
-	Tooltip13 = "You need at least 3 empty inventory slots to fight in the arena",
-	Tooltip14 = "Available fights: {1}/{2}",
-	Tooltip15 = "New fight in "
+	Tooltip7 = "Reserves/Fighting Status"
 };
 
 // scripts\ai\tactical\behaviors\ssu_necro_ai_spawn_ghost_fragment.nut
@@ -4039,21 +4028,6 @@ Unleash an arcing barrage of lightning!
 	Log = "{1} repaired for {2} points"
 };
 
-// scripts\items\legend_armor\plate\ssu_emperors_armor.nut
-::Mod_Sellswords.Strings.ssu_emperors_armor <- {
-	Name = "The Emperor\'s Armor",
-	Description = "A shining armor once worn by the emperor of an age long past, made from the most woundrous of materials, imbued with mystical energies. Light reflects easily off the polished armor, turning the wearer into a shimmering figure of light during the day.",
-	Tooltip = "At the start of your turn, apply the Dazed status effect to all nearby enemies"
-};
-
-// scripts\items\legend_armor\plate\ssu_ijirok_armor.nut
-::Mod_Sellswords.Strings.ssu_ijirok_armor <- {
-	Name = "Armor of the Ijirok",
-	Description = "Once a barbarian armor broken in battle, this piece has been bathed in the blood of the legendary Ijirok. Powers beyond your understanding mended it whole again, and will likewise mend any wounds of the wearer as well.",
-	Tooltip = "Heals [color=%positive%]10[/color] hitpoints of the wearer each turn",
-	Log = "{1} heals for {2} points"
-};
-
 // scripts\items\legend_armor\plate\ssu_leather_lamellar_harness_heavy_rotten.nut
 ::Mod_Sellswords.Strings.ssu_leather_lamellar_harness_heavy_rotten <- {
 	Name = "Decayed Lamellar Harness",
@@ -4066,22 +4040,9 @@ Unleash an arcing barrage of lightning!
 	Description = "A heavy lamellar armor that covers most parts of the body with thick that is worn and decayed."
 };
 
-// scripts\items\legend_armor\plate\ssu_lindwurm_armor.nut
-::Mod_Sellswords.Strings.ssu_lindwurm_armor <- {
-	Name = "Lindwurm Scaled Armour",
-	Description = "The sturdy scales of a fierce Lindwurm sewn together ontop a heavy chainmail. Not only is it a trophy to a great hunter, but it also deflects the fiercest of blows, and the shimmering scales remain untouched by any corroding Lindwurm blood.",
-	Tooltip = "Unaffected by acidic Lindwurm blood"
-};
-
 // scripts\items\legend_armor\plate\ssu_named_heraldic_mail.nut
 ::Mod_Sellswords.Strings.ssu_named_heraldic_mail <- {
 	Description = "Truly fit for a knight, this plate coat is made from the highest quality materials and boasts precious decorations and ornaments."
-};
-
-// scripts\items\legend_armor\plate\ssu_named_lindwurm_armor.nut
-::Mod_Sellswords.Strings.ssu_named_lindwurm_armor <- {
-	Description = "The sturdy scales of a fierce Lindwurm sewn together ontop a heavy chainmail. Not only is it a trophy to a great hunter, but it also deflects the fiercest of blows, and the shimmering scales remain untouched by any corroding Lindwurm blood.",
-	Tooltip = "Unaffected by acidic Lindwurm blood"
 };
 
 // scripts\items\legend_armor\plate\ssu_named_noble_mail_armor.nut
@@ -4168,13 +4129,6 @@ Unleash an arcing barrage of lightning!
 	Log = "{1} repaired for {2} points"
 };
 
-// scripts\items\legend_helmets\helm\ssu_emperors_countenance.nut
-::Mod_Sellswords.Strings.ssu_emperors_countenance <- {
-	Name = "The Emperor\'s Countenance",
-	Description = "A golden helmet and facemask, showing the visage of an emperor from an age long past, imbued with mystical energies. When you hold it into the light, it almost looks as if the face were moving and making expressions of disgust.",
-	Tooltip = "Reflects [color=%positive%]25%[/color] of damage taken in melee back to the attacker"
-};
-
 // scripts\items\legend_helmets\helm\ssu_helmet_orc_bear_head_helm.nut
 ::Mod_Sellswords.Strings.ssu_helmet_orc_bear_head_helm_helm <- {
 	Name = "Orc Bear Helm",
@@ -4205,14 +4159,6 @@ Unleash an arcing barrage of lightning!
 	Description = "An orc helm made from looted bones, patched and forged together."
 };
 
-// scripts\items\legend_helmets\helm\ssu_ijirok_helmet.nut
-::Mod_Sellswords.Strings.ssu_ijirok_helmet <- {
-	Name = "Helmet of the Ijirok",
-	Description = "Once a barbarian helmet broken in battle, this piece has been bathed in the blood of the legendary Ijirok. Powers beyond your understanding mended it whole again, and will likewise mend any wounds of the wearer as well.",
-	Tooltip = "Heals [color=%positive%]10[/color] hitpoints of the wearer each turn",
-	Log = "{1} heals for {2} points"
-};
-
 // scripts\items\legend_helmets\helm\ssu_knightly_fullhelm.nut
 ::Mod_Sellswords.Strings.ssu_knightly_fullhelm <- {
 	Name = "Greenskin Killer Fullhelm",
@@ -4220,22 +4166,9 @@ Unleash an arcing barrage of lightning!
 	Tooltip = "User deals [color=%positive%]20%[/color] more damage to Goblins"
 };
 
-// scripts\items\legend_helmets\helm\ssu_lindwurm_helmet.nut
-::Mod_Sellswords.Strings.ssu_lindwurm_helmet <- {
-	Description = "This helmet must have once belonged to a daring and skilled hunter for it is covered in the scales of a dreaded Lindwurm. Not only do the scales deflect blows and hits, but they also remain unscathed by the acidic Lindwurm blood.",
-	Name = "Lindwurm Scaled Helmet",
-	Tooltip = "Unaffected by acidic Lindwurm blood"
-};
-
 // scripts\items\legend_helmets\helm\ssu_named_conic_helmet.nut
 ::Mod_Sellswords.Strings.ssu_named_conic_helmet <- {
 	Description = "This conic helmet has often an attached faceguard attached and finely fitted scales to protect the neck."
-};
-
-// scripts\items\legend_helmets\helm\ssu_named_lindwurm_helmet.nut
-::Mod_Sellswords.Strings.ssu_named_lindwurm_helmet <- {
-	Description = "This helmet must have once belonged to a daring and skilled hunter for it is covered in the scales of a dreaded Lindwurm. Not only do the scales deflect blows and hits, but they also remain unscathed by the acidic Lindwurm blood.",
-	Tooltip = "Unaffected by acidic Lindwurm blood"
 };
 
 // scripts\items\legend_helmets\helm\ssu_named_nordic_helmet.nut

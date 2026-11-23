@@ -325,7 +325,7 @@ this.ssu_necro_ghost_possessed_effect <- this.inherit("scripts/skills/skill", {
 		}
 		else
 		{
-			_properties.TargetAttractionMult *= 0.25;
+			_properties.AggroMult *= 0.25;
 			_properties.MoraleCheckBravery[this.Const.MoraleCheckType.MentalAttack] += 25;
 			_properties.MeleeSkill -= 10;
 			_properties.RangedSkill -= 10;

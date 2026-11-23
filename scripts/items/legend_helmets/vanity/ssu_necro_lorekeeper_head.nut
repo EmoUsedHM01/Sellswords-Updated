@@ -64,7 +64,7 @@ this.ssu_necro_lorekeeper_head <- ::inherit("scripts/items/legend_helmets/legend
 		this.legend_helmet_upgrade.onUpdateProperties(_properties);
   		_properties.MoraleCheckBraveryMult[::Const.MoraleCheckType.MentalAttack] *= 2.0;
   		_properties.IsAffectedByNight = false;
-		_properties.TargetAttractionMult *= 1.2;
+		_properties.AggroMult *= 1.2;
 	}
 
 	function updateVariant()

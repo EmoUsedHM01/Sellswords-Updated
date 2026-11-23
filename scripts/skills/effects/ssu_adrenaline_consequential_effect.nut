@@ -68,7 +68,7 @@ this.ssu_adrenaline_consequential_effect <- this.inherit("scripts/skills/skill",
 		{
 			_properties.MeleeSkill += 5;
 			_properties.DamageTotalMult *= 1.05;
-			_properties.TargetAttractionMult *= 1.25;			
+			_properties.AggroMult *= 1.25;			
 		}
 	}
 

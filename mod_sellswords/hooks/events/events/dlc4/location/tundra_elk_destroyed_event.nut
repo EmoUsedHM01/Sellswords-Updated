@@ -8,51 +8,12 @@
 		{
 			if (screen.ID != "A") continue;
 
+			local start = screen.start;
 			screen.start = function( _event )
 			{
-				this.World.Flags.set("IjirokStage", 5);
-				local stash = this.World.Assets.getStash().getItems();
-
-				foreach( i, item in stash )
-				{
-					if (item != null && item.getID() == "misc.broken_ritual_armor")
-					{
-						stash[i] = null;
-						this.List.push({
-							id = 10,
-							icon = "ui/items/" + item.getIcon(),
-							text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.tundra_elk_destroyed_event.Tooltip1, item.getName())
-						});
-						break;
-					}
-				}
-
-				this.World.Assets.getStash().makeEmptySlots(3);
-				local item = ::Legends.Items.pickHelmet([
-					[
-						1,
-						"ssu_ijirok_helmet"
-					]
-				]);
-				this.World.Assets.getStash().add(item);
-				this.List.push({
-					id = 10,
-					icon = "ui/items/helmets/inventory_helmet_198.png",
-					text = ::Mod_Sellswords.Strings.tundra_elk_destroyed_event.Tooltip2
-				});
-				item = ::Legends.Items.pickArmor([
-					[
-						1,
-						"ssu_ijirok_armor"
-					]
-				]);
-				this.World.Assets.getStash().add(item);
-				this.List.push({
-					id = 10,
-					icon = "ui/items/armor/icon_body_armor_98.png",
-					text = ::Mod_Sellswords.Strings.tundra_elk_destroyed_event.Tooltip3
-				});
-				item = this.new("scripts/items/weapons/special/ssu_legendary_axe");
+				start(_event);
+				this.World.Assets.getStash().makeEmptySlots(1);
+				local item = this.new("scripts/items/weapons/special/ssu_legendary_axe");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,

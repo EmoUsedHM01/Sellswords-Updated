@@ -61,7 +61,7 @@
 		_properties.DamageReceivedTotalMult *= (1 - 0.5 * smc);
 		_properties.IsImmuneToStun = true;
 		_properties.IsImmuneToKnockBackAndGrab = true;
-		_properties.TargetAttractionMult *= 0.5;
+		_properties.AggroMult *= 0.5;
 		_properties.Bravery += this.getContainer().getActor().getBaseProperties().getBravery() * smc;
 	};
 });

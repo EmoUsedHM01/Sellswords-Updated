@@ -5,7 +5,6 @@
 	
 ::Const.Items.LegendNamedPlateLayers.push("legend_armor/plate/ssu_named_heraldic_mail");
 ::Const.Items.LegendNamedPlateLayers.push("legend_armor/plate/ssu_named_plated_mail_hauberk");
-::Const.Items.LegendNamedPlateLayers.push("legend_armor/plate/ssu_named_lindwurm_armor");
 ::Const.Items.LegendNamedPlateLayers.push("legend_armor/plate/ssu_named_sellswords_armor");
 ::Const.Items.LegendNamedPlateLayers.push("legend_armor/plate/ssu_named_noble_mail_armor");
 	
@@ -20,7 +19,6 @@
 ::Const.Items.LegendNamedArmorLayers.push("legend_armor/chain/ssu_armor_hauberk_sleevless_named");
 ::Const.Items.LegendNamedArmorLayers.push("legend_armor/plate/ssu_named_heraldic_mail");
 ::Const.Items.LegendNamedArmorLayers.push("legend_armor/plate/ssu_named_plated_mail_hauberk");
-::Const.Items.LegendNamedArmorLayers.push("legend_armor/plate/ssu_named_lindwurm_armor");
 ::Const.Items.LegendNamedArmorLayers.push("legend_armor/plate/ssu_named_sellswords_armor");
 ::Const.Items.LegendNamedArmorLayers.push("legend_armor/plate/ssu_named_noble_mail_armor");
 ::Const.Items.LegendNamedHelmetLayers.push("legend_helmets/helm/ssu_named_nordic_helmet");

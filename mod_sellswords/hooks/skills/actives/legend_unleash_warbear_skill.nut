@@ -1,4 +1,4 @@
-::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_unleash_bear_skill", function ( q ) {
+::Mod_Sellswords.HooksMod.hook("scripts/skills/actives/legend_unleash_warbear_skill", function ( q ) {
 
 	// adds the SSU hound bonuses on top of what Legends gives the bear
 	q.onUse = @( __original ) function ( _user, _targetTile )

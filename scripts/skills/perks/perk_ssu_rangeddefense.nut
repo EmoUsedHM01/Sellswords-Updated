@@ -15,7 +15,7 @@ this.perk_ssu_rangeddefense <- this.inherit("scripts/skills/skill", {
 	
 	function onUpdate( _properties )
 	{
-		_properties.TargetAttractionMult *= 10;
+		_properties.AggroMult *= 2;
 	}	
 
 });

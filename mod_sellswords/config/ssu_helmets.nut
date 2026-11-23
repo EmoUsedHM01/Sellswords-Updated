@@ -3872,7 +3872,7 @@
 					[1, "hood/legend_helmet_chain_hood_full"], // 85, -5, 450
 				],
 				Helms = [
-					[1, "helm/ssu_emperors_countenance"], // 300, -18, 12000
+					[1, "legendary/legend_emperors_countenance"], // 300, -18, 12000
 				],
 				Tops = [],
 				Vanity = [
@@ -3881,22 +3881,6 @@
 			}
 		]
 	},
-	{
-		ID = "ssu_ijirok_helmet",	
-		Script = "",
-		Sets = [
-			{
-				Hoods = [
-					[1, "hood/legend_helmet_chain_hood_full"],// 85,-5,450	ss90,-5,600			
-				],
-				Helms = [
-					[1, "helm/ssu_ijirok_helmet"],	 					
-				],
-				Tops = [],
-				Vanity = []
-			}
-		]
-	},	
 	{
 		ID = "ssu_skeleton_helmet",	 //280,-18
 		Script = "",
@@ -5440,7 +5424,7 @@
 				Helms = [
 					[
 						1,
-						"helm/ssu_lindwurm_helmet"
+						"named/legend_named_lindwurm_helmet"
 					]
 				],
 				Tops = [

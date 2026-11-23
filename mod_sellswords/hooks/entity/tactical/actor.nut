@@ -18,7 +18,7 @@
 		if (_victim.getType() == this.Const.EntityType.Wardog || _victim.getType() == this.Const.EntityType.Warhound)
 			return;
 
-		if (_victim.getFaction() == this.getFaction() && _victim.getCurrentProperties().TargetAttractionMult > 0.5 && this.getCurrentProperties().IsAffectedByDyingAllies)
+		if (_victim.getFaction() == this.getFaction() && _victim.getCurrentProperties().TargetAttractionMult * _victim.getCurrentProperties().AggroMult > 0.5 && this.getCurrentProperties().IsAffectedByDyingAllies)
 		{
 			local difficulty = this.Const.Morale.AllyKilledBaseDifficulty - _victim.getXPValue() * this.Const.Morale.AllyKilledXPMult + this.Math.pow(_victim.getTile().getDistanceTo(this.getTile()), this.Const.Morale.AllyKilledDistancePow);
 			if (_killer != null)

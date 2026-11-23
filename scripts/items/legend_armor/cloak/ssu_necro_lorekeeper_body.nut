@@ -54,7 +54,7 @@ this.ssu_necro_lorekeeper_body <- ::inherit("scripts/items/legend_armor/legend_a
 	{
 		this.legend_armor_cloak.onUpdateProperties(_properties);
 		_properties.IsImmuneToStun = true;
-		_properties.TargetAttractionMult *= 1.2;
+		_properties.AggroMult *= 1.2;
 	}
 	
 	function updateVariant()

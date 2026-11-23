@@ -33,7 +33,7 @@ this.perk_ssu_stamina <- this.inherit("scripts/skills/skill", {
 
 	function onUpdate( _properties )
 	{
-		_properties.TargetAttractionMult *= 1.2;
+		_properties.AggroMult *= 1.2;
 	}	
 
 });

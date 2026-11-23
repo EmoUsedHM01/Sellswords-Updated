@@ -3340,7 +3340,69 @@ Removed its damage reduction on Shieldwall along with the two Shieldwall hooks, 
 ...\mod_sellswords\hooks\skills\perks\perk_bullseye.nut
 ...\mod_sellswords\strings.nut
 Bullseye hook now only adds Mark Target on top of the Legends version of the perk
-Removed the changed line of fire penalty and the halved hit chance against allies, the Legends Vision and Aimed Shot bonuses apply again
+
+...\mod_sellswords\hooks\skills\actives\legend_unleash_bear_skill.nut -> legend_unleash_warbear_skill.nut
+Legends renamed the skill to legend_unleash_warbear_skill
+
+...\mod_sellswords\hooks\skills\effects\indomitable_effect.nut
+...\scripts\items\legend_armor\cloak\ssu_necro_lorekeeper_body.nut
+...\scripts\items\legend_helmets\vanity\ssu_necro_lorekeeper_head.nut
+...\scripts\skills\effects\ssu_adrenaline_consequential_effect.nut
+...\scripts\skills\effects\ssu_necro_ghost_possessed_effect.nut
+...\scripts\skills\perks\perk_ssu_rangeddefense.nut
+...\scripts\skills\perks\perk_ssu_stamina.nut
+...\scripts\ai\tactical\behaviors\ssu_necro_ai_ghost_possess.nut
+...\mod_sellswords\hooks\entity\tactical\actor.nut
+Everything that changed TargetAttractionMult now changes the new Legends AggroMult instead, values are the same
+AggroMult only changes how likely enemies are to attack the unit, AI allies no longer treat it as someone to protect
+The ghost possess AI and the morale check on a dying ally read both values, so they behave as before
+
+...\scripts\items\legend_armor\plate\ssu_lindwurm_armor.nut < deleted
+...\scripts\items\legend_armor\plate\ssu_named_lindwurm_armor.nut < deleted
+...\scripts\items\legend_helmets\helm\ssu_lindwurm_helmet.nut < deleted
+...\scripts\items\legend_helmets\helm\ssu_named_lindwurm_helmet.nut < deleted
+...\scripts\crafting\blueprints\ssu_lindwurm_helmet_layered_blueprint.nut < deleted
+...\mod_sellswords\hooks\crafting\blueprints\mod_legend\armor\chest\legend_lindwurm_armor_blueprint.nut < deleted
+...\mod_sellswords\hooks\config\blueprints.nut
+...\mod_sellswords\config\ssu_armors.nut
+...\mod_sellswords\config\ssu_helmets.nut
+...\mod_sellswords\config\ssu_items.nut
+...\mod_sellswords\config\ssu_z_blueprint_defs.nut
+...\mod_sellswords\strings.nut
+Removed the SSU Beast Armours (Legends yoinked)
+
+...\mod_sellswords\hooks\items\legend_armor\named\legend_lindwurm_scale_armor.nut < new
+The Legends Lindwurm armour has the durability and weight of the SSU one it replaced (130 and -14, Legends has 60 and -6)
+
+...\mod_sellswords\hooks\skills\actives\disarm_skill.nut
+Disarm uses the new Legends addHitChanceBonus for its hit chance, so bonuses from perks are no longer dropped from its tooltip
+
+...\mod_sellswords\hooks\entity\world\settlements\buildings\arena_building.nut < deleted
+...\mod_sellswords\hooks\ui\screens\tooltip\tooltip_events.nut
+...\mod_sellswords\strings.nut
+Removed the SSU arena system (Legends yoinked)
+
+...\scripts\items\legend_armor\plate\ssu_emperors_armor.nut < deleted
+...\scripts\items\legend_armor\plate\ssu_ijirok_armor.nut < deleted
+...\scripts\items\legend_helmets\helm\ssu_emperors_countenance.nut < deleted
+...\scripts\items\legend_helmets\helm\ssu_ijirok_helmet.nut < deleted
+...\mod_sellswords\config\ssu_armors.nut
+...\mod_sellswords\config\ssu_helmets.nut
+...\mod_sellswords\strings.nut
+Removed the SSU Legendary Armours (Legends yoinked)
+
+...\mod_sellswords\hooks\entity\world\locations\legendary\unique_goblin_city_location.nut < deleted
+...\mod_sellswords\hooks\entity\world\locations\legendary\black_monolith_location.nut
+...\mod_sellswords\hooks\events\events\dlc4\location\tundra_elk_destroyed_event.nut
+...\mod_sellswords\strings.nut
+The Black Monolith and the Goblin City no longer drop the SSU Emperor armour and helmet on top of the ones the Legends events hand out
+Killing the Ijirok gives the Legends armour and helmet, the hook only adds Winter's Touch to them now
+
+...\mod_sellswords\hooks\items\helmets\legendary\emperors_countenance.nut < deleted
+...\mod_sellswords\hooks\items\helmets\legendary\ijirok_helmet.nut < deleted
+...\mod_sellswords\hooks\items\legend_armor\legendary\legend_emperors_armor.nut < deleted
+...\mod_sellswords\hooks\items\legend_armor\legendary\legend_ijirok_armor.nut < deleted
+Removed the durability and weight hooks of the vanilla/Legends Emperor and Ijirok pieces
 
 
 ----------------------------------------------------------------------------------------------------------------------------
