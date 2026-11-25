@@ -19,7 +19,7 @@
 				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_last_stand.Tooltip1, bonus)
 			});
 			
-			if (currentPercent < 0.33)
+			if (currentPercent < 0.44)
 			{
 				tooltip.push({
 					id = 6,

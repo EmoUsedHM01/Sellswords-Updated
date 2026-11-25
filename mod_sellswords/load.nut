@@ -27,6 +27,13 @@ if (::mods_getRegisteredMod("of_flesh_and_faith_plus") != null)
 		::include(file);
 }
 
+// load all hooks related to Blazing Deserts+
+if (::mods_getRegisteredMod("blazing_deserts_plus") != null)
+{
+	foreach (file in ::IO.enumerateFiles("mod_sellswords/hooks_bdplus"))
+		::include(file);
+}
+
 // update new armor sets
 ::Const.LegendMod.Armors <- {};
 foreach( i, v in ::Const.LegendMod.ArmorObjs )

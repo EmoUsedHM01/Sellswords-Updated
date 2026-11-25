@@ -8,7 +8,15 @@
 	q.getTooltip = @( __original ) function()
 	{
 		local tooltip = this.skill.getTooltip();
-		local hpBonus = ::Math.round(this.getHitpointsDamageReduction() * 100);
+		tooltip.extend(this.getDynamicTooltip());
+		return tooltip;
+	}
+
+	q.getDynamicTooltip = @( __original ) function( _actor = null )
+	{
+		local tooltip = [];
+		local hpBonus = ::Math.round(this.getHitpointsDamageReduction(_actor) * 100);
+
 		if (hpBonus < 100)
 		{
 			tooltip.push({
@@ -18,7 +26,9 @@
 				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_lithe.Tooltip1, (100-hpBonus))
 			});
 		}
-		local armorBonus = ::Math.round(this.getArmorDamageReduction() * 100);
+
+		local armorBonus = ::Math.round(this.getArmorDamageReduction(_actor) * 100);
+
 		if (armorBonus < 100)
 		{
 			tooltip.push({
@@ -42,21 +52,28 @@
 		return tooltip;
 	}
 
-	q.getHitpointsDamageReduction <- function()
+	q.getActorHoverTooltip = @( __original ) function( _activeEntity, _stacks = 1 )
 	{
-		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
+		return ::Mod_Sellswords.text(::Mod_Sellswords.Strings.perk_legend_lithe.Hover, 100 - ::Math.round(this.getArmorDamageReduction() * 100), 100 - ::Math.round(this.getHitpointsDamageReduction() * 100));
+	}
+
+	q.getHitpointsDamageReduction <- function( _actor = null )
+	{
+		local actor = _actor != null ? _actor : this.getContainer().getActor();
+		local fat = actor.getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 		fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
-		if (!this.getContainer().getActor().isPlayerControlled())
+		if (!actor.isPlayerControlled())
 			return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
 		else
 			return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);
 	}
 
-	q.getArmorDamageReduction <- function()
+	q.getArmorDamageReduction <- function( _actor = null )
 	{
-		local fat = this.getContainer().getActor().getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
+		local actor = _actor != null ? _actor : this.getContainer().getActor();
+		local fat = actor.getItems().getStaminaModifier([::Const.ItemSlot.Body, ::Const.ItemSlot.Head]);
 		fat = ::Math.min(::Math.max(0, fat + 25), fat + 35);
-		if (!this.getContainer().getActor().isPlayerControlled())
+		if (!actor.isPlayerControlled())
 			return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.3) * 0.01);
 		else
 			return ::Math.minf(1.0, 1.0 - 0.25 + this.Math.pow(this.Math.abs(fat), 1.4) * 0.01);

@@ -3478,6 +3478,24 @@ Updated a bunch of tooltips to meet the new Legends effects
 ...\brushes\ssu_weaponskills.brush
 Added the new Assistance perk to the Polearm tree (row 7)
 
+...\mod_sellswords\hooks_offplus\offp_background_perks.nut < new
+...\mod_sellswords\hooks_bdplus\bdp_background_perks.nut < new
+...\mod_sellswords\load.nut
+Fixed some BD/OFF+ compat issues
+
+...\mod_sellswords\strings.nut
+Updated various perk descriptions
+
+...\mod_sellswords\strings.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_lithe.nut
+...\mod_sellswords\hooks\skills\perks\perk_legend_last_stand.nut
+Fixed some broken hooks and shit cause of Legends updates
+
+...\mod_sellswords\hooks\skills\perks\perk_legend_balance.nut
+...\mod_sellswords\strings.nut
+Fixed Balance giving a third of the character's whole Melee Defense as Ranged Defense by accident (whoops)
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

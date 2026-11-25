@@ -1158,7 +1158,7 @@ Protect your allies with your shield!
 Master the art of movement!
 
 [color=%passive%][u]Passive:[/u][/color]
-• Reduce the Action Point cost of [color=%skill%]Rotation[/color], [color=%skill%]Footwork[/color], [color=%skill%]Evasion[/color], [color=%skill%]Sprint[/color], [color=%skill%]Climb[/color], and [color=%skill%]Audacious Charge[/color] by [color=%negative%]1[/color] and reduce Fatigue costs by [color=%negative%]50%[/color]
+• Reduce the Action Point cost of [color=%skill%]Rotation[/color], [color=%skill%]Footwork[/color], [color=%skill%]Evasion[/color], [color=%skill%]Climb[/color], and [color=%skill%]Audacious Charge[/color] by [color=%negative%]1[/color] and reduce Fatigue costs by [color=%negative%]50%[/color]
 ";
 
 ::Const.Strings.PerkName.SsuGrandslam <- "Grand Slam";
@@ -1668,22 +1668,12 @@ Bring to your allies the gentle touch of the forest!
 ";
 
 ::Const.Strings.PerkDescription.LegendAthlete = @"
-You're a well-rounded athlete!
+A training a day keeps the exhaustion away.
 
-[color=%active%][u]Active:[/u][/color]
-• Unlocks the [color=%skill%]Sprint[/color] skill which allows you to quickly cover four tiles in a straight line.
+[color=%passive%][u]Passive:[/u][/color]
+• Reduce the Fatigue cost of all your skills and movement by a percentage equal to [color=%negative%]20%[/color] of your maximum usable Fatigue after gear weight is accounted for.
 
-• Does not work across rough terrain or through enemy zones of control.
-
-• Costs [color=%negative%]5[/color] AP and [color=%negative%]25[/color] Fatigue 
-
-• Additionally, unlock the [color=%skill%]Climb[/color] skill which allows you to climb sheer cliffs up to five levels of height in one action.
-
-• Does not trigger attacks of opportunity.
-
-• Costs [color=%negative%]3[/color] AP and [color=%negative%]20[/color] Fatigue.
-
-• Picking the perk will also add [color=%perk%]Furinkazan[/color] to your perk map, which reduces the cost of [color=%skill%]Sprint[/color] and [color=%skill%]Climb[/color].
+• Picking the perk will also add [color=%perk%]Furinkazan[/color] to your perk map.
 ";
 
 ::Const.Strings.PerkDescription.LegendSmackdown = @"
@@ -1698,7 +1688,7 @@ Use your size and strength to bully your way into a prime position.
 
 • Additionally, on hit, reduce targets AP by [color=%negative%]2[/color] for two turns.
 
-• Costs [color=%negative%]2[/color] AP and [color=%negative%]10[/color] Fatigue.
+• Costs [color=%negative%]2[/color] AP and [color=%negative%]15[/color] Fatigue.
 
 • AP cost is reduced to [color=%negative%]1[/color] if wielding a Two-Handed Melee weapon. Works only with melee weapons, unarmed attacks and one handed slings. With one handed slings it will grant the [color=%skill%]Prepare Bullet[/color] effect.
 ";
@@ -1711,7 +1701,7 @@ Use your size and strength to bully your way into a prime position.
 
 • Gain [color=%positive%]+1[/color] additional Action Points for every [color=%negative%]20%[/color] of missing Hitpoints.
 
-• When below [color=%negative%]44%[/color] Hitpoints this character becomes immune to the effects of subsequent injuries, and moral is no longer affected by health loss.
+• When below [color=%negative%]44%[/color] Hitpoints this character becomes immune to the effects of subsequent injuries, and morale is no longer affected by health loss.
 ";
 
 ::Const.Strings.PerkDescription.HoldOut = @"
@@ -1758,7 +1748,7 @@ Looking for this?
 [color=%passive%][u]Passive:[/u][/color]
 • Swapping an item in battle becomes a free action with no Action Point cost, once every turn.
 
-• Does not work when swapping a Shield or between Two-Handed Melee Weapons.
+• Does not work when swapping a Shield.
 ";
 
 ::Const.Strings.PerkDescription.LegendMuscularity = @"
@@ -1779,7 +1769,7 @@ Put your full weight into every blow!
 Learn to take advantage of your initiative and prevent the enemy from attacking effectively by overwhelming them with your attacks!
 
 [color=%passive%][u]Active/Passive:[/u][/color]
-• With every attack, hit or miss, against an opponent that acts after you in the current round, inflict [color=%status%]Overwhelmed[/color] which lowers both Melee and Ranged Skill by [color=%negative%]-10%[/color] for one turn.
+• With every attack, hit or miss, against an opponent that acts after you in the current round, inflict [color=%status%]Overwhelmed[/color] which lowers both Melee and Ranged Skill by [color=%negative%]-5%[/color] for one turn.
 
 • The effect stacks with each attack, up to a maximum of 7 times, and can be applied to multiple targets at once with a single attack.
 
@@ -1795,8 +1785,6 @@ Wade into the thick of battle, dodging blades from behind and above, aware of al
 • Being surrounded no longer affects this character's Defenses at all.
 
 • Upgraded version of [color=%perk%]Ironside[/color], immune to [color=%perk%]Backstabber[/color].
-
-• Also prevents moral checks upon enemies entering your Zone of Control.
 ";
 
 ::Const.Strings.PerkDescription.Underdog = @"
@@ -1804,8 +1792,6 @@ I'm used to it.
 
 [color=%passive%][u]Passive:[/u][/color]
 • The defense malus due to being surrounded by opponents is reduced by [color=%negative%]5[/color].
-
-• If an attacker has the [color=%perk%]Strength In Numbers[/color] perk, the effect of that perk is negated, and the normal defense malus due to being surrounded is applied instead.
 ";
 
 ::Const.Strings.PerkDescription.SunderingStrikes = @"
@@ -1832,7 +1818,7 @@ A gruesome display, enemies are more likely to lose morale when they witness the
 [color=%passive%][u]Passive:[/u][/color]
 • Melee kills are always fatalities.
 
-• Fatalaties have a [color=%negative%]-10[/color] penalty to enemy Resolve checks.
+• Fatalities have a [color=%negative%]-15[/color] penalty to enemy Resolve checks.
 
 • Having the 'Bloodthirsty' trait allows you to trigger an additional positive morale check when killing an enemy.
 ";
@@ -1842,7 +1828,7 @@ A gruesome display, enemies are more likely to lose morale when they witness the
 Use your way with song to cheer on an ally!
 
 [color=%active%][u]Active:[/u][/color]
-• Unlocks the [color=%skill%]Cheer On[/color] skill which grants [color=%positive%]+2[/color] Action Points to an adjacent ally.
+• Unlocks the [color=%skill%]Cheer On[/color] skill which grants [color=%positive%]+2[/color] Action Points to an ally within [color=%positive%]2[/color] tiles.
 
 • Costs [color=%negative%]3[/color] AP and [color=%negative%]10[/color] Fatigue.
 ";
@@ -1902,9 +1888,15 @@ Seize the initiative!
 Learn to use the superior reach of large weapons to keep the enemy from getting close enough to land a good hit.
 
 [color=%passive%][u]Passive:[/u][/color]
-• When hitting an enemy, gain [color=%positive%]+100%[/color] of your Melee Skill as Melee Defense against them until waiting or ending your turn.
+• Each hit with a Two-Handed melee weapon adds a stack of [color=%perk%]Reach Advantage[/color] which increases your Melee Defense by [color=%positive%]+5[/color], up to a maximum of [color=%positive%]5[/color] stacks.
 
-• Also, attempt to prevent them from approaching your Zone of Control with an attack of opportunity until next turn with a damage reduction of [color=%negative%]20%[/color].
+• A single attack hitting multiple targets can add several stacks at once.
+
+• Lose half of your stacks, at least [color=%negative%]1[/color], at the start of your turn.
+
+• If you put away your weapon, you lose all stacks.
+
+• Additionally, while wielding a staff, the defense malus due to being surrounded by opponents is reduced by [color=%positive%]3[/color]. If you have [color=%perk%]Ironside[/color] or [color=%perk%]Battleheart[/color], this perk will instead increase defenses by [color=%positive%]5[/color].
 ";
 
 ::Const.Strings.PerkDescription.Footwork = @"
@@ -1935,7 +1927,9 @@ Just like dancing with your nan when you were young.
 'Excuse me'
 
 [color=%active%][u]Active:[/u][/color]
-• Unlocks the [color=%skill%]Evasion[/color] skill which enables this character to move swiftly and safely through any Zone of Control for the next whole turn without incurring any free attacks.
+• Unlocks the [color=%skill%]Evasion[/color] skill which enables this character to move swiftly and safely through any Zone of Control for the next whole turn without incurring any free attacks. The first attack against you will be an automatic miss.
+
+• Can only be used if your total armor weight is [color=%negative%]30[/color] or less.
 
 • Picking this perk will also add [color=%perk%]Furinkazan[/color] to your perk map, which reduces the cost of [color=%skill%]Evasion[/color]
 
@@ -1975,21 +1969,6 @@ Master throwing weapons to wound or kill the enemy before they even get close.
 • Throwing Spear now ignores the damage reduction from [color=%perk%]Shield Expert[/color].
 ";
 
-::Const.Strings.PerkDescription.SpecFlail = @"
-Master the flail and circumvent your opponent's defenses.
-
-[color=%passive%][u]Passive:[/u][/color]
-• Skills build up [color=%negative%]25%[/color] less Fatigue.
-
-• [color=%skill%]Lash[/color] and [color=%skill%]Hail[/color] ignore the defense bonus of shields.
-
-• [color=%skill%]Pound[/color] ignores an additional [color=%positive%]10%[/color] of Armor on hits to the head.
-
-• [color=%skill%]Thresh[/color] gains [color=%positive%]+5%[/color] chance to hit.
-
-• All flail skills ignore an additional [color=%positive%]25%[/color] of Block value.
-";
-
 ::Const.Strings.PerkDescription.Bullseye = @"
 Nailed it!
 
@@ -2020,20 +1999,13 @@ Always keep a net handy!
 You've learned advanced net throwing techniques.
 
 [color=%passive%][u]Passive:[/u][/color]
-• Reduce the Fatigue cost of throwing a net by [color=%negative%]25%[/color] and the AP cost by [color=%negative%]1[/color].
+• Reduce the Fatigue cost of [color=%skill%]Throw Net[/color] by [color=%negative%]25%[/color] and the AP cost by [color=%negative%]1[/color].
+
+• [color=%skill%]Throw Net[/color] is more likely to hit.
 
 • Grants [color=%positive%]+10[/color] Melee Defense while holding a net.
 
-• Makes throwing other tools such as pots more effective.
-
-• Nets you throw have a chance to be reusable in battle and can be picked up from the ground.
-
-• If the target breaks free:
-- Regular Nets have a [color=%positive%]25%[/color] chance to be reusable.
-- Reinforced Nets have a [color=%positive%]50%[/color] chance to be reusable.
-
-• If the target is killed before breaking free:
-- All nets have a [color=%positive%]100%[/color] chance to be reusable.
+• Can now double grip with a net in your offhand and unlocks Hand to Hand abilities that might be locked from holding a net in offhand.
 ";
 
 ::Const.Strings.PerkDescription.LegendEscapeArtist = @"
@@ -2052,9 +2024,7 @@ Others see it as magic, but your deft hands know better.
 ::Const.Strings.PerkDescription.LegendDogHandling = @"
 You have mastered the art of training dogs. In the heat of battle your hounds will respond and react to your commands.
 
-[color=%active%][u]Active:[/u][/color]
-• Unlocks the [color=%skill%]Dog Handling[/color] skill which allows you to order dogs to attack, or defend allies.
-
+[color=%passive%][u]Passive:[/u][/color]
 • Grants each dog you unleash the [color=%perk%]Overwhelm[/color] perk.
 
 • Increases the Melee Defense of unleashed dogs by [color=%positive%]5[/color].
@@ -2066,7 +2036,7 @@ You have mastered the art of training dogs. In the heat of battle your hounds wi
 You have a way with dogs, the bond you form with them imbues each dog with more confidence and strength, knowing that you are there gives them strength.
 
 [color=%passive%][u]Passive:[/u][/color]
-• Grants each dog you unleash the [color=%perk%]Colossus[/color], [color=%perk%]Fortified Mind[/color], [color=%perk%]Ironside[/color], and [color=%perk%]Clarity[/color] perks.
+• Grants each dog you unleash the [color=%perk%]Colossus[/color], [color=%perk%]Fortified Mind[/color], [color=%perk%]Underdog[/color], and [color=%perk%]Clarity[/color] perks.
 ";
 
 ::Const.Strings.PerkDescription.LegendThrowSand = @"
@@ -2093,13 +2063,12 @@ Ankles, hands, elbows and knees, you've learned how to fight dirty to secure vic
 Become one with your weapon and go for the weak spots!
 
 [color=%passive%][u]Passive:[/u][/color]
-• When wielding a one handed weapon and your off hand is empty or you're holding an offhand throwable item, an extra [color=%positive%]+25%[/color] of damage ignores armor.
+• When holding a Buckler or Mummy Shield in your offhand, an extra [color=%positive%]+25%[/color] of damage ignores armor on Melee attacks.
 
-• Bucklers and parrying daggers gain half of this bonus.
+• With the [color=%perk%]Grandslam[/color] perk, a further [color=%positive%]+20%[/color] of damage ignores armor with Two-Handed weapons, [color=%positive%]+10%[/color] with One-Handed weapons and [color=%positive%]+50%[/color] when Unarmed, also without a Buckler.
 
-• An extra [color=%positive%]+20%[/color] of damage ignores armor when using Two Handed or Throwing Weapons and having the [color=%perk%]Grandslam[/color] perk, but will reduce Armor Penetration by [color=%negative%]10%[/color] for One Handed weapons.
-
-• Having [color=%perk%]Grandslam[/color] also increases Armor penetration and damage by [color=%positive%]50%[/color] when Unarmed.
+[color=%active%][u]Active:[/u][/color]
+• Unlocks the [color=%skill%]Flourish[/color] skill, which increases the Fatigue cost of your attacks by [color=%negative%]75%[/color] and their AP cost by [color=%negative%]1[/color], but while you are faster than your target gives each attack a chance to ignore armor completely based on the Initiative difference.
 ";
 
 ::Const.Strings.PerkDescription.LegendConservation = @"
@@ -2113,12 +2082,13 @@ Conduct profane rituals meant to stave off the passage of time, further preservi
 Unleash an arcing barrage of lightning!
 
 [color=%active%][u]Active:[/u][/color]
-• Unlocks 'Chain Lightning' skill which inflicts damage to up to 3 enemies, dealing [color=%damage%]15-30[/color] damage which ignores armor.
+• Unlocks the [color=%skill%]Chain Lightning[/color] skill which inflicts damage to up to 3 enemies, dealing [color=%damage%]15-40[/color] damage which ignores armor.
 
-• Requires a mystic staff.
+• Requires a staff.
 
-• Costs [color=%negative%]7[/color] AP and [color=%negative%]50[/color] Fatigue.
-• If you have the 'Staff Mastery' perk, reduce the AP cost by 2 and the base fatigue cost by [color=%negative%]25%[/color].
+• Costs [color=%negative%]7[/color] AP and [color=%negative%]30[/color] Fatigue.
+
+• If you have the [color=%perk%]Staff Mastery[/color] perk, reduce the AP cost by [color=%negative%]2[/color] and the Fatigue cost by [color=%negative%]25%[/color].
 ";
 
 ::Const.Strings.PerkDescription.LegendHoldTheLine = @"
@@ -2224,7 +2194,6 @@ Unleash an arcing barrage of lightning!
 	LegendBalance = true,
 	LegendLithe = true,
 	SpecThrowing = true,
-	SpecFlail = true,
 	Bullseye = true,
 	LegendNetCasting = true,
 	LegendMasteryNets = true,
@@ -3196,8 +3165,9 @@ Unleash an arcing barrage of lightning!
 	Tooltip2 = "[color=%positive%]+{1}[/color] Ranged Defense",
 	Tooltip3 = "[color=%negative%]-{1}[/color] Ranged Defense",
 	Tooltip4 = "This character is not wearing any body armor and hence receives no bonus from this perk",
-	Tooltip5 = "This character\'s armor is too heavy or their Initiative is too low to receive any bonus from this perk",
-	Tooltip6 = "The penalty to Initiative from built-up Fatigue is reduced by [color=%positive%]30%[/color]"
+	Tooltip5 = "This character\'s Initiative is too low to gain Melee Defense from this perk",
+	Tooltip6 = "The penalty to Initiative from built-up Fatigue is reduced by [color=%positive%]30%[/color]",
+	Hover = "[color=%positive%]+{1}[/color] Melee Defense, {2} Ranged Defense"
 };
 
 // mod_sellswords\hooks\skills\perks\perk_legend_escape_artist.nut
@@ -3225,7 +3195,14 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.perk_legend_lithe <- {
 	Tooltip1 = "Damage to hitpoints from attacks is reduced by [color=%positive%]{1}%[/color]",
 	Tooltip2 = "Damage to armor from attacks is reduced by [color=%positive%]{1}%[/color]",
-	Tooltip3 = "[color=%negative%]This character\'s body and head armor are too heavy to gain any benefit from being lithe[/color]"
+	Tooltip3 = "[color=%negative%]This character\'s body and head armor are too heavy to gain any benefit from being lithe[/color]",
+	Hover = "[color=%negative%]-{1}%[/color] armor damage taken, [color=%negative%]-{2}%[/color] hitpoint damage taken"
+};
+
+// mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
+::Mod_Sellswords.Strings.perk_legend_muscularity <- {
+	Tooltip = "[color=%positive%]+{1}[/color] damage on melee attacks costing 4 AP and [color=%positive%]+{2}[/color] on those costing 6 AP (based on current Hitpoints)",
+	Hover = "[color=%positive%]+{1}[/color] / [color=%positive%]+{2}[/color] damage on 4 / 6 AP attacks"
 };
 
 // mod_sellswords\hooks\skills\racial\ghost_racial.nut
