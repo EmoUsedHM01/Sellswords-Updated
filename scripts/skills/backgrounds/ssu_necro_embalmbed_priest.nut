@@ -184,16 +184,7 @@ this.ssu_necro_embalmbed_priest <- this.inherit("scripts/skills/backgrounds/char
 
 	function onAdded()
 	{
-		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_miasma"));
-		
 		this.character_background.onAdded();
-	}
-
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.LegendMiasma, 0, false)
 	}
 
 	function buildAttributes(_tag = null, _attrs = null)

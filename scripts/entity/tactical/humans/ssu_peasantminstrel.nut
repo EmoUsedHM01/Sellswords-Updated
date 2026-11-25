@@ -32,7 +32,6 @@ this.ssu_peasantminstrel <- this.inherit("scripts/entity/tactical/human", {
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
 
-		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistMusician);
 		::Legends.Perks.grant(this, ::Legends.Perk.LegendManipulative);
 		::Legends.Perks.grant(this, ::Legends.Perk.LegendMeistersanger);
 		::Legends.Perks.grant(this, ::Legends.Perk.LegendMinnesanger);

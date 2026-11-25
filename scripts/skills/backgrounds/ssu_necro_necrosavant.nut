@@ -159,16 +159,7 @@ this.ssu_necro_necrosavant <- this.inherit("scripts/skills/backgrounds/character
 
 	function onAdded()
 	{
-		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_legend_darkflight"));
-		
 		this.character_background.onAdded();
-	}
-
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.LegendDarkflight, 0, false);
 	}
 	
 	function onAddEquipment()

@@ -1778,7 +1778,7 @@ Wade into the thick of battle, dodging blades from behind and above, aware of al
 [color=%passive%][u]Passive:[/u][/color]
 • Being surrounded no longer affects this character's Defenses at all.
 
-• Upgraded version of [color=%perk%]Underdog[/color], immune to [color=%perk%]Backstabber[/color].
+• Upgraded version of [color=%perk%]Ironside[/color], immune to [color=%perk%]Backstabber[/color].
 
 • Also prevents moral checks upon enemies entering your Zone of Control.
 ";
@@ -1863,15 +1863,6 @@ Adapt to your opponent's moves!
 ::Const.Strings.PerkDescription.Fearsome = @"
 Make them scatter and flee!
 
-[color=#4f1800][u]Passive:[/u][/color]
-• Any attack that inflicts at least [color=%positive%]1[/color] point of damage to Hitpoints triggers a morale check for the opponent with a penalty equal to [color=%negative%]20%[/color] of your current Resolve.
-
-[color=%negative%]Does not trigger multiple times from the same attacker on the same target in one attack.[/color]
-";
-
-::Const.Strings.PerkDescription.Fearsome = @"
-Make them scatter and flee!
-
 [color=%passive%][u]Passive:[/u][/color]
 • Any attack that inflicts at least [color=%positive%]1[/color] point of damage to hitpoints triggers a morale check for the opponent with a penalty equal to [color=%negative%]20%[/color] of your current Resolve.
 
@@ -1935,19 +1926,6 @@ Just like dancing with your nan when you were young.
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]30[/color] Fatigue.
 ";
 
-::Const.Strings.PerkDescription.HoldOut = @"
-Keep it together!
-
-[color=%passive%][u]Passive:[/u][/color]
-• Any negative status effect with a finite duration (e.g., [color=%status%]Bleeding[/color], [color=%status%]Charmed[/color]) has its duration reduced to one turn.
-
-• Status effects that have their effects grow weaker over several turns (e.g. [color=%status%]Goblin Poison[/color]) are at their weakest state from the start.
-
-• Grants a [color=%negative%]25%[/color] reduction to the effect of all negative statuses.
-
-• Raises the chance to survive being struck down and not killed from [color=%negative%]33%[/color] to [color=%positive%]66%[/color].
-";
-
 ::Const.Strings.PerkDescription.LegendBalance = @"
 Gain increased defense by balancing your Armor's weight and mobility.
 
@@ -1992,6 +1970,8 @@ Master the flail and circumvent your opponent's defenses.
 • [color=%skill%]Pound[/color] ignores an additional [color=%positive%]10%[/color] of Armor on hits to the head.
 
 • [color=%skill%]Thresh[/color] gains [color=%positive%]+5%[/color] chance to hit.
+
+• All flail skills ignore an additional [color=%positive%]25%[/color] of Block value.
 ";
 
 ::Const.Strings.PerkDescription.Bullseye = @"
@@ -2013,7 +1993,9 @@ Always keep a net handy!
 [color=%passive%][u]Active:[/u][/color]
 • Unlocks the [color=%skill%]Throw Portable Net[/color] skill which allows you to throw a makeshift net once per battle.
 
-• Increases the range of all nets by [color=%positive%]2[/color] tiles.
+• Increases the range of all nets by [color=%positive%]2[/color] tiles and the range of bombs and flasks by [color=%positive%]1[/color] tile.
+
+• Chance based on your Ranged Skill and Ranged Defense to trap additional adjacent targets when using [color=%skill%]Throw Net[/color]. The chance decreases with each target you ensnare.
 
 • Costs [color=%negative%]4[/color] AP and [color=%negative%]25[/color] Fatigue.
 ";
@@ -2060,13 +2042,15 @@ You have mastered the art of training dogs. In the heat of battle your hounds wi
 • Grants each dog you unleash the [color=%perk%]Overwhelm[/color] perk.
 
 • Increases the Melee Defense of unleashed dogs by [color=%positive%]5[/color].
+
+• Unleashed dogs and wolves pick their fights more carefully, preferring targets they are more likely to hit, and become wary of charging into enemies using Spearwall.
 ";
 
 ::Const.Strings.PerkDescription.LegendDogWhisperer = @"
 You have a way with dogs, the bond you form with them imbues each dog with more confidence and strength, knowing that you are there gives them strength.
 
 [color=%passive%][u]Passive:[/u][/color]
-• Grants each dog you unleash the [color=%perk%]Colossus[/color], [color=%perk%]Fortified Mind[/color], [color=%perk%]Underdog[/color], and [color=%perk%]Clarity[/color] perks.
+• Grants each dog you unleash the [color=%perk%]Colossus[/color], [color=%perk%]Fortified Mind[/color], [color=%perk%]Ironside[/color], and [color=%perk%]Clarity[/color] perks.
 ";
 
 ::Const.Strings.PerkDescription.LegendThrowSand = @"
@@ -2086,7 +2070,7 @@ Ankles, hands, elbows and knees, you've learned how to fight dirty to secure vic
 [color=%active%][u]Active:[/u][/color]
 • Unlocks the [color=%skill%]Debilitate[/color] skill which primes your next attack to [color=%status%]Cripple[/color] a target for three turns, reducing their ability to inflict damage by [color=%negative%]-25%[/color] and increasing the damage they take by [color=%positive%]+15%[/color].
 
-• Costs [color=%negative%]2[/color] AP and [color=%negative%]15[/color] Fatigue.
+• Costs [color=%negative%]4[/color] AP and [color=%negative%]20[/color] Fatigue.
 ";
 
 ::Const.Strings.PerkDescription.Duelist = @"
@@ -2125,7 +2109,7 @@ Unleash an arcing barrage of lightning!
 'DON'T LET THEM BREAK THROUGH!'
 
 [color=%active%][u]Active:[/u][/color]
-• Unlocks the [color=#400080]Hold the Line[/color] skill which allows you to direct your troops to stand their ground, granting [color=%positive%]+10[/color] Defense and Resolve to all allies within four tiles for one turn.
+• Unlocks the [color=#400080]Hold the Line[/color] skill which allows you to direct your troops to stand their ground, granting [color=%positive%]+10[/color] Melee and Ranged Defense and reducing the damage they take by [color=%positive%]10%[/color] to all allies within four tiles for one turn.
 
 • Costs [color=%negative%]5[/color] AP and [color=%negative%]20[/color] Fatigue.
 ";
@@ -2870,8 +2854,8 @@ Unleash an arcing barrage of lightning!
 
 // mod_sellswords\hooks\skills\backgrounds\anatomist_background.nut
 ::Mod_Sellswords.Strings.anatomist_background <- {
-	BackgroundDescription = "Part scientist, part surgeon. Anatomists are unaccustomed to battle, but are blessed with steady hands.\nAfter a battle, Anatomists have a chance to concoct a Sequence for each suitable enemy slain.\nThis chance increases with each Anatomist in your roster.",
-	Tooltip = "Having an Anatomist in your roster allows you to harvest Sequences from defeated enemies. Each additional Anatomist increases the chance of a successful harvest."
+	BackgroundDescription = "Part scientist, part surgeon. Anatomists are unaccustomed to battle, but are blessed with steady hands.",
+	Tooltip = "After a battle, has a chance to concoct a Sequence for each suitable enemy slain, the chance increases with each Anatomist in the company"
 };
 
 // mod_sellswords\hooks\skills\backgrounds\brawler_background.nut
@@ -5955,6 +5939,11 @@ Unleash an arcing barrage of lightning!
 	Descriptions3 = ["playing in the sand"],
 	Name4 = "Vengeful Spirit",
 	Descriptions4 = ["haunting the living"]
+};
+
+// mod_sellswords\config\ssu_scenarios.nut
+::Mod_Sellswords.Strings.ssu_scenarios <- {
+	Group = "Sellswords Updated"
 };
 
 // mod_sellswords\config\ssu_z_perks_tree_special.nut

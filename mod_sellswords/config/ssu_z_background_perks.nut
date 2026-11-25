@@ -42,11 +42,11 @@ setupBackground("scripts/skills/backgrounds/beggar_background", ["scripts/skills
 
 setupBackground("scripts/skills/backgrounds/belly_dancer_background", ["scripts/skills/perks/perk_nimble"], [{def = ::Legends.Perk.Nimble, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/bowyer_background", ["scripts/skills/perks/perk_legend_specialist_poacher"], [{def = ::Legends.Perk.LegendSpecialistPoacher, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/bowyer_background", ["scripts/skills/perks/perk_legend_wind_reader"], [{def = ::Legends.Perk.LegendWindReader, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/brawler_background", ["scripts/skills/perks/perk_legend_grappler"], [{def = ::Legends.Perk.LegendGrappler, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/butcher_background", ["scripts/skills/perks/perk_legend_specialist_butcher"], [{def = ::Legends.Perk.LegendSpecialistButcher, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/butcher_background", ["scripts/skills/perks/perk_legend_slaughterer"], [{def = ::Legends.Perk.LegendSlaughterer, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/caravan_hand_background", ["scripts/skills/perks/perk_bags_and_belts"], [{def = ::Legends.Perk.BagsAndBelts, level = 0, optional = false}]);
 
@@ -74,19 +74,19 @@ setupBackground("scripts/skills/backgrounds/eunuch_background", ["scripts/skills
 
 setupBackground("scripts/skills/backgrounds/executioner_background", ["scripts/skills/perks/perk_coup_de_grace"], [{def = ::Legends.Perk.CoupDeGrace, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/farmhand_background", ["scripts/skills/perks/perk_legend_specialist_farmhand"], [{def = ::Legends.Perk.LegendSpecialistFarmhand, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/farmhand_background", ["scripts/skills/perks/perk_brawny"], [{def = ::Legends.Perk.Brawny, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/fisherman_background", ["scripts/skills/perks/perk_legend_net_casting"], [{def = ::Legends.Perk.LegendNetCasting, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/flagellant_background", ["scripts/skills/perks/perk_legend_specialist_cultist"], [{def = ::Legends.Perk.LegendSpecialistCultist, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/flagellant_background", ["scripts/skills/perks/perk_legend_vengeance"], [{def = ::Legends.Perk.LegendVengeance, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/gambler_background", ["scripts/skills/perks/perk_legend_sleight_of_hand"], [{def = ::Legends.Perk.LegendSleightOfHand, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/gladiator_background", ["scripts/skills/perks/perk_battle_flow"], [{def = ::Legends.Perk.BattleFlow, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/gravedigger_background", ["scripts/skills/perks/perk_legend_specialist_gravedigger"], [{def = ::Legends.Perk.LegendSpecialistGravedigger, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/gravedigger_background", ["scripts/skills/perks/perk_hold_out"], [{def = ::Legends.Perk.HoldOut, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/graverobber_background", ["scripts/skills/perks/perk_legend_specialist_gravedigger"], [{def = ::Legends.Perk.LegendSpecialistGravedigger, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/graverobber_background", ["scripts/skills/perks/perk_legend_nightvision"], [{def = ::Legends.Perk.LegendNightvision, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/hedge_knight_background", ["scripts/skills/perks/perk_steel_brow"], [{def = ::Legends.Perk.SteelBrow, level = 0, optional = false}]);
 
@@ -100,7 +100,7 @@ setupBackground("scripts/skills/backgrounds/juggler_background", ["scripts/skill
 
 setupBackground("scripts/skills/backgrounds/killer_on_the_run_background", ["scripts/skills/perks/perk_backstabber"], [{def = ::Legends.Perk.Backstabber, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/kings_guard_background", ["scripts/skills/perks/perk_legend_specialist_bodyguard"], [{def = ::Legends.Perk.LegendSpecialistBodyguard, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/kings_guard_background", ["scripts/skills/perks/perk_rotation"], [{def = ::Legends.Perk.Rotation, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/legend_alchemist_background", ["scripts/skills/perks/perk_legend_prepared"], [{def = ::Legends.Perk.LegendPrepared, level = 0, optional = false}]);
 
@@ -114,7 +114,7 @@ setupBackground("scripts/skills/backgrounds/legend_belly_dancer_background", ["s
 
 setupBackground("scripts/skills/backgrounds/legend_berserker_background", ["scripts/skills/perks/perk_killing_frenzy"], [{def = ::Legends.Perk.KillingFrenzy, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/legend_blacksmith_background", ["scripts/skills/perks/perk_legend_specialist_blacksmith"], [{def = ::Legends.Perk.LegendSpecialistBlacksmith, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_blacksmith_background", ["scripts/skills/perks/perk_legend_hammer_the_gap"], [{def = ::Legends.Perk.LegendHammerTheGap, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/legend_bladedancer_background", ["scripts/skills/perks/perk_legend_feint"], [{def = ::Legends.Perk.LegendFeint, level = 0, optional = false}]);
 
@@ -148,7 +148,7 @@ setupBackground("scripts/skills/backgrounds/legend_dervish_background", ["script
 
 setupBackground("scripts/skills/backgrounds/legend_donkey_background", ["scripts/skills/perks/perk_legend_pacifist"], [{def = ::Legends.Perk.LegendPacifist, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/legend_druid_background", ["scripts/skills/perks/perk_legend_specialist_herbalist"], [{def = ::Legends.Perk.LegendSpecialistHerbalist, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_druid_background", ["scripts/skills/perks/perk_pathfinder"], [{def = ::Legends.Perk.Pathfinder, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/legend_foot_soldier_background", ["scripts/skills/perks/perk_legend_bloody_harvest"], [{def = ::Legends.Perk.LegendBloodyHarvest, level = 0, optional = false}]);
 
@@ -156,7 +156,7 @@ setupBackground("scripts/skills/backgrounds/legend_gladiator_prizefighter_backgr
 
 setupBackground("scripts/skills/backgrounds/legend_guild_master_background", ["scripts/skills/perks/perk_legend_mastery_nets"], [{def = ::Legends.Perk.LegendMasteryNets, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/legend_herbalist_background", ["scripts/skills/perks/perk_legend_specialist_herbalist"], [{def = ::Legends.Perk.LegendSpecialistHerbalist, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_herbalist_background", ["scripts/skills/perks/perk_legend_poisoner"], [{def = ::Legends.Perk.LegendPoisoner, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/legend_house_guard_background", ["scripts/skills/perks/perk_shield_expert"], [{def = ::Legends.Perk.ShieldExpert, level = 0, optional = false}]);
 
@@ -165,9 +165,9 @@ setupBackground("scripts/skills/backgrounds/legend_husk_background", ["scripts/s
 
 setupBackground("scripts/skills/backgrounds/legend_illusionist_background", ["scripts/skills/perks/perk_dodge"], [{def = ::Legends.Perk.Dodge, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/legend_inventor_background", ["scripts/skills/perks/perk_legend_specialist_inventor"], [{def = ::Legends.Perk.LegendSpecialistInventor, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_inventor_background", ["scripts/skills/perks/perk_legend_prepared"], [{def = ::Legends.Perk.LegendPrepared, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/legend_ironmonger_background", ["scripts/skills/perks/perk_legend_specialist_blacksmith"], [{def = ::Legends.Perk.LegendSpecialistBlacksmith, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_ironmonger_background", ["scripts/skills/perks/perk_legend_smackdown"], [{def = ::Legends.Perk.LegendSmackdown, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/legend_leech_peddler_background", ["scripts/skills/perks/perk_legend_recuperation"], [{def = ::Legends.Perk.LegendRecuperation, level = 0, optional = false}]);
 
@@ -217,11 +217,11 @@ setupBackground("scripts/skills/backgrounds/legend_warden_background", ["scripts
 
 setupBackground("scripts/skills/backgrounds/legend_warlock_background", ["scripts/skills/perks/perk_legend_conservation"], [{def = ::Legends.Perk.LegendConservation, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/legend_youngblood_background", ["scripts/skills/perks/perk_legend_specialist_inquisition"], [{def = ::Legends.Perk.LegendSpecialistInquisition, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/legend_youngblood_background", ["scripts/skills/perks/perk_student"], [{def = ::Legends.Perk.Student, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/lindwurm_slayer_background", ["scripts/skills/perks/perk_legend_big_game_hunter"], [{def = ::Legends.Perk.LegendBigGameHunter, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/lumberjack_background", ["scripts/skills/perks/perk_legend_specialist_woodsman"], [{def = ::Legends.Perk.LegendSpecialistWoodsman, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/lumberjack_background", ["scripts/skills/perks/perk_legend_smashing_shields"], [{def = ::Legends.Perk.LegendSmashingShields, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/manhunter_background", ["scripts/skills/perks/perk_dodge"], [{def = ::Legends.Perk.Dodge, level = 0, optional = false}]);
 
@@ -229,17 +229,17 @@ setupBackground("scripts/skills/backgrounds/mason_background", ["scripts/skills/
 
 setupBackground("scripts/skills/backgrounds/messenger_background", ["scripts/skills/perks/perk_pathfinder"], [{def = ::Legends.Perk.Pathfinder, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/militia_background", ["scripts/skills/perks/perk_legend_specialist_militia"], [{def = ::Legends.Perk.LegendSpecialistMilitia, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/militia_background", ["scripts/skills/perks/perk_legend_spearwaller"], [{def = ::Legends.Perk.LegendSpearwaller, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/miller_background", ["scripts/skills/perks/perk_legend_specialist_farmhand"], [{def = ::Legends.Perk.LegendSpecialistFarmhand, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/miller_background", ["scripts/skills/perks/perk_recover"], [{def = ::Legends.Perk.Recover, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/miner_background", ["scripts/skills/perks/perk_legend_specialist_miner"], [{def = ::Legends.Perk.LegendSpecialistMiner, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/miner_background", ["scripts/skills/perks/perk_legend_bone_breaker"], [{def = ::Legends.Perk.LegendBoneBreaker, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/minstrel_background", ["scripts/skills/perks/perk_legend_minnesanger"], [{def = ::Legends.Perk.LegendMinnesanger, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/monk_background", ["scripts/skills/perks/perk_legend_holy_flame"], [{def = ::Legends.Perk.LegendHolyFlame, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/monk_turned_flagellant_background", ["scripts/skills/perks/perk_legend_specialist_cultist"], [{def = ::Legends.Perk.LegendSpecialistCultist, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/monk_turned_flagellant_background", ["scripts/skills/perks/perk_legend_mind_over_body"], [{def = ::Legends.Perk.LegendMindOverBody, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/nomad_background", ["scripts/skills/perks/perk_legend_throw_sand"], [{def = ::Legends.Perk.LegendThrowSand, level = 0, optional = false}]);
 
@@ -255,7 +255,7 @@ setupBackground("scripts/skills/backgrounds/peddler_background", ["scripts/skill
 
 setupBackground("scripts/skills/backgrounds/pimp_background", ["scripts/skills/perks/perk_legend_manipulative"], [{def = ::Legends.Perk.LegendManipulative, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/poacher_background", ["scripts/skills/perks/perk_legend_specialist_poacher"], [{def = ::Legends.Perk.LegendSpecialistPoacher, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/poacher_background", ["scripts/skills/perks/perk_legend_patient_hunter"], [{def = ::Legends.Perk.LegendPatientHunter, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/raider_background", ["scripts/skills/perks/perk_legend_bloodbath"], [{def = ::Legends.Perk.LegendBloodbath, level = 0, optional = false}]);
 
@@ -269,9 +269,41 @@ setupBackground("scripts/skills/backgrounds/retired_soldier_background", ["scrip
 
 setupBackground("scripts/skills/backgrounds/sellsword_background", ["scripts/skills/perks/perk_legend_back_to_basics"], [{def = ::Legends.Perk.LegendBackToBasics, level = 0, optional = false}]);
 
+setupBackground("scripts/skills/backgrounds/ssu_dryad_archer_background", ["scripts/skills/perks/perk_legend_ballistics"], [{def = ::Legends.Perk.LegendBallistics, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_dryad_avatar_background", ["scripts/skills/perks/perk_legend_roots"], [{def = ::Legends.Perk.LegendRoots, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_dryad_grunt_background", ["scripts/skills/perks/perk_colossus"], [{def = ::Legends.Perk.Colossus, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_dryad_shaman_background", ["scripts/skills/perks/perk_legend_roots"], [{def = ::Legends.Perk.LegendRoots, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_dryad_tamer_background", ["scripts/skills/perks/perk_pathfinder"], [{def = ::Legends.Perk.Pathfinder, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_dryad_warrior_background", ["scripts/skills/perks/perk_battle_forged"], [{def = ::Legends.Perk.BattleForged, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_ancient_auxiliary", ["scripts/skills/perks/perk_shield_expert"], [{def = ::Legends.Perk.ShieldExpert, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_ancient_honour_guard", ["scripts/skills/perks/perk_battle_forged"], [{def = ::Legends.Perk.BattleForged, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_ancient_legionary", ["scripts/skills/perks/perk_reach_advantage"], [{def = ::Legends.Perk.ReachAdvantage, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_embalmbed_priest", ["scripts/skills/perks/perk_legend_miasma"], [{def = ::Legends.Perk.LegendMiasma, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_embalmbed_slave", ["scripts/skills/perks/perk_nine_lives"], [{def = ::Legends.Perk.NineLives, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_embalmbed_soldier", ["scripts/skills/perks/perk_fearsome"], [{def = ::Legends.Perk.Fearsome, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_fallen_hero", ["scripts/skills/perks/perk_ssu_necro_zombie_fallen_hero"], [{def = ::Legends.Perk.SsuNecroZombieFallenHero, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_necrosavant", ["scripts/skills/perks/perk_legend_darkflight"], [{def = ::Legends.Perk.LegendDarkflight, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_necro_zombie", ["scripts/skills/perks/perk_colossus"], [{def = ::Legends.Perk.Colossus, level = 0, optional = false}]);
+
+setupBackground("scripts/skills/backgrounds/ssu_sellsword_background", ["scripts/skills/perks/perk_legend_battleheart"], [{def = ::Legends.Perk.LegendBattleheart, level = 0, optional = false}]);
+
 setupBackground("scripts/skills/backgrounds/servant_background", ["scripts/skills/perks/perk_legend_alert"], [{def = ::Legends.Perk.LegendAlert, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/shepherd_background", ["scripts/skills/perks/perk_legend_specialist_shepherd"], [{def = ::Legends.Perk.LegendSpecialistShepherd, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/shepherd_background", ["scripts/skills/perks/perk_legend_mastery_slings"], [{def = ::Legends.Perk.LegendMasterySlings, level = 0, optional = false}]);
 
 setupBackground("scripts/skills/backgrounds/slave_background", ["scripts/skills/perks/perk_legend_recuperation"], [{def = ::Legends.Perk.LegendRecuperation, level = 0, optional = false}]);
 
@@ -287,4 +319,4 @@ setupBackground("scripts/skills/backgrounds/vagabond_background", ["scripts/skil
 
 setupBackground("scripts/skills/backgrounds/wildman_background", ["scripts/skills/perks/perk_pathfinder"], [{def = ::Legends.Perk.Pathfinder, level = 0, optional = false}]);
 
-setupBackground("scripts/skills/backgrounds/witchhunter_background", ["scripts/skills/perks/perk_legend_specialist_inquisition"], [{def = ::Legends.Perk.LegendSpecialistInquisition, level = 0, optional = false}]);
+setupBackground("scripts/skills/backgrounds/witchhunter_background", ["scripts/skills/perks/perk_fortified_mind"], [{def = ::Legends.Perk.FortifiedMind, level = 0, optional = false}]);

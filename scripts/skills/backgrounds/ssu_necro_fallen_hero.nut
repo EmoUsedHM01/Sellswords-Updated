@@ -175,16 +175,7 @@ this.ssu_necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character
 
 	function onAdded()
 	{
-		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_ssu_necro_zombie_fallen_hero"));
-		
 		this.character_background.onAdded();
-	}
-
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.SsuNecroZombieFallenHero, 0, false)
 	}
 	
 	function buildAttributes(_tag = null, _attrs = null)

@@ -31,7 +31,6 @@ this.ssu_peasantherbalist <- this.inherit("scripts/entity/tactical/human", {
 		local dirt = this.getSprite("dirt");
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
-		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistHerbalist);
 		::Legends.Perks.grant(this, ::Legends.Perk.LegendSmackdown);
 		this.getSprite("socket").setBrush("bust_base_militia");
 		

@@ -189,16 +189,7 @@ this.ssu_necro_embalmbed_soldier <- this.inherit("scripts/skills/backgrounds/cha
 
 	function onAdded()
 	{
-		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_fearsome"));
-		
 		this.character_background.onAdded();
-	}
-
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.Fearsome, 0, false);
 	}
 
 	function buildAttributes(_tag = null, _attrs = null)

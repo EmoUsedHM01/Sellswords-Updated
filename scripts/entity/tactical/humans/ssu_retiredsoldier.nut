@@ -29,7 +29,6 @@ this.ssu_retiredsoldier <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_shield_expert"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_recover"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_assured_conquest"));
-		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistMilitia);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_ssu_discipline"));
 
 		if("Assets" in this.World && this.World.Assets != null && this.World.Assets.getCombatDifficulty() == this.Const.Difficulty.Legendary)

@@ -12,7 +12,6 @@
 		local dirt = this.getSprite("dirt");
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
-		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistMiner);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smackdown"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_hammer"));
 

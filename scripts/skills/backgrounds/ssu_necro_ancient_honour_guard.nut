@@ -179,16 +179,7 @@ this.ssu_necro_ancient_honour_guard <- this.inherit("scripts/skills/backgrounds/
 	
 	function onAdded()
 	{
-		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_battle_forged"));
-		
 		this.character_background.onAdded();
-	}
-
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.BattleForged, 0, false);
 	}
 
 	function buildAttributes(_tag = null, _attrs = null)

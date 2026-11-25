@@ -104,27 +104,23 @@ this.ssu_explore_treasures_contract <- this.inherit("scripts/contracts/contract"
 		else if (item.isItemType(this.Const.Items.ItemType.Helmet))
 			this.m.Flags.set("PrizeType", "helmet");
 
-		local myTile = this.World.State.getPlayer().getTile();
-		local objcamp;
-		local highestDistance = 0;
-		local best;
+		local homeTile = this.m.Home.getTile();
+		local barbarians = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians);
+		local camps = [];
 
-		objcamp = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians).getSettlements();
 		this.m.Flags.set("IsBarbarians", true);
 
-		foreach( b in objcamp )
+		foreach( b in barbarians.getSettlements() )
 		{
 			if (b.isLocationType(this.Const.World.LocationType.Unique))
 				continue;
 
-			local d = myTile.getDistanceTo(b.getTile()) + this.Math.rand(0, 45);
-
-			if (d > highestDistance)
-			{
-				highestDistance = d;
-				best = b;
-			}
+			if (homeTile.getDistanceTo(b.getTile()) <= ::Mod_Sellswords.TreasureCampDistance)
+				camps.push(b);
 		}
+
+		// the camps in range can be gone by the time the contract is looked at, the nearest one is used then
+		local best = camps.len() != 0 ? ::MSU.Array.rand(camps) : barbarians.getNearestSettlement(homeTile);
 
 		this.m.Destination = this.WeakTableRef(best);
 		this.m.Flags.set("DestinationName", this.m.Destination.getName());

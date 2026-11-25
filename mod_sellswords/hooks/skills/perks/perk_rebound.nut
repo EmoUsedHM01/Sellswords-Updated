@@ -1,15 +1,9 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/perks/perk_legend_rebound", function ( q ) {
 
-	q.onUpdate = @( __original ) function ( _properties )
+	// +5 Fatigue regeneration while over 75% fatigued instead of 10% of the accumulated Fatigue, the Legends tooltip reads this too
+	q.getBonus = @( __original ) function ()
 	{
 		local actor = this.getContainer().getActor();
-		local maxFat = actor.getFatigueMax();
-		local currentFat = actor.getFatigue();
-		local ratio = currentFat / maxFat;
-
-		if (ratio >= 0.74000001)
-		{
-			_properties.FatigueRecoveryRate += 5;
-		}
-	};
+		return actor.getFatigue() >= actor.getFatigueMax() * 0.74 ? 5 : 0;
+	}
 });

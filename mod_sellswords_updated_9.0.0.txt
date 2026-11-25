@@ -3404,6 +3404,68 @@ Killing the Ijirok gives the Legends armour and helmet, the hook only adds Winte
 ...\mod_sellswords\hooks\items\legend_armor\legendary\legend_ijirok_armor.nut < deleted
 Removed the durability and weight hooks of the vanilla/Legends Emperor and Ijirok pieces
 
+...\mod_sellswords\strings.nut
+The Battleheart and Dog Whisperer descriptions call the vanilla Underdog by its Legends name, Ironside
+
+...\mod_sellswords\hooks\items\legend_armor\named\legend_lindwurm_scale_armor.nut
+...\mod_sellswords\hooks\items\legend_helmets\named\legend_named_lindwurm_helmet.nut < new
+The Legends Lindwurm armour and helmet are named pieces so the hooks now set what they roll (whoops)
+
+...\mod_sellswords\config\ssu_z_background_perks.nut
+The backgrounds that started with a Legends Specialist perk start with another perk
+
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_farmhand.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_miner.nut
+...\mod_sellswords\hooks\entity\tactical\humans\legend_peasant_woodsman.nut
+...\scripts\entity\tactical\humans\ssu_peasantblacksmith.nut
+...\scripts\entity\tactical\humans\ssu_peasantbutcher.nut
+...\scripts\entity\tactical\humans\ssu_peasantgravedigger.nut
+...\scripts\entity\tactical\humans\ssu_peasantherbalist.nut
+...\scripts\entity\tactical\humans\ssu_peasantminstrel.nut
+...\scripts\entity\tactical\humans\ssu_retiredsoldier.nut
+Removed the Legends Specialist perks from the SSU enemies and enemy hooks
+
+...\mod_sellswords\config\ssu_factions.nut
+...\scripts\contracts\contracts\ssu_explore_treasures_contract.nut
+...\scripts\factions\contracts\ssu_explore_treasures_action.nut
+The Recover Lost Treasures contract picked the barbarian camp furthest away from the player, it now picks a random one within 25 tiles of the town
+
+...\mod_sellswords\config\ssu_scenarios.nut < new
+...\mod_sellswords\strings.nut
+The SSU origins are listed under their own Sellswords Updated header on the new campaign screen instead of Custom
+
+...\mod_sellswords\config\ssu_z_background_perks.nut
+...\scripts\skills\backgrounds\ssu_dryad_archer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_avatar_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_grunt_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_shaman_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_tamer_background.nut
+...\scripts\skills\backgrounds\ssu_dryad_warrior_background.nut
+...\scripts\skills\backgrounds\ssu_necro_ancient_auxiliary.nut
+...\scripts\skills\backgrounds\ssu_necro_ancient_honour_guard.nut
+...\scripts\skills\backgrounds\ssu_necro_ancient_legionary.nut
+...\scripts\skills\backgrounds\ssu_necro_embalmbed_priest.nut
+...\scripts\skills\backgrounds\ssu_necro_embalmbed_slave.nut
+...\scripts\skills\backgrounds\ssu_necro_embalmbed_soldier.nut
+...\scripts\skills\backgrounds\ssu_necro_fallen_hero.nut
+...\scripts\skills\backgrounds\ssu_necro_necrosavant.nut
+...\scripts\skills\backgrounds\ssu_necro_zombie.nut
+...\scripts\skills\backgrounds\ssu_sellsword_background.nut
+Moved the SSU background perks from the bg itself to the background_perks list
+
+...\mod_sellswords\load.nut
+...\mod_sellswords\config\ssu_factions.nut
+...\mod_sellswords\hooks_offplus\offp_mutant_wants_hazard_pay_event.nut < new
+Added some OFF+ compat hooks
+
+...\mod_sellswords\hooks\skills\backgrounds\anatomist_background.nut
+...\mod_sellswords\strings.nut
+The Sequence harvesting text of the Anatomist moved from its background description into a line of its tooltip, which also keeps the Legends tooltip lines now
+
+...\mod_sellswords\strings.nut
+...\mod_sellswords\hooks\skills\perks\perk_rebound.nut
+Updated a bunch of tooltips to meet the new Legends effects
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

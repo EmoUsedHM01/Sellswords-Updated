@@ -130,14 +130,7 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-		this.m.Container.add(this.new("scripts/skills/perks/perk_colossus"));
 		this.m.Container.add(this.new("scripts/skills/racial/ssu_dryad_racial"));
-	}
-
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.Colossus, 0, false)
 	}
 
 	function onChangeAttributes()

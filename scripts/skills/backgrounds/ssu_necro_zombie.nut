@@ -202,16 +202,7 @@ this.ssu_necro_zombie <- this.inherit("scripts/skills/backgrounds/character_back
 
 	function onAdded()
 	{
-		if (this.m.IsNew)
-			this.m.Container.add(this.new("scripts/skills/perks/perk_colossus"));
-		
 		this.character_background.onAdded();
-	}
-
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.Colossus, 0, false);
 	}
 	
 	function buildAttributes(_tag = null, _attrs = null)

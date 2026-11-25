@@ -8,26 +8,15 @@
 		this.m.DailyCost = 35;
 	}
 
-	q.getTooltip = @() function()
+	q.getTooltip = @(__original) function()
 	{
-		local ret = [
-			{
-				id = 2,
-				type = "description",
-				text = this.getDescription()
-			},
-			{
-				id = 10,
-				type = "text",
-				icon = "ui/icons/special.png",
-				text = ::Mod_Sellswords.Strings.anatomist_background.Tooltip
-			}
-		];
-		
-		if (this.getContainer() == null || this.getContainer().getActor() == null)
-			return ret;
-
-		ret.extend(this.getAttributesTooltip());
+		local ret = __original();
+		ret.push({
+			id = 14,
+			type = "text",
+			icon = "ui/icons/special.png",
+			text = ::Mod_Sellswords.Strings.anatomist_background.Tooltip
+		});
 		return ret;
 	}
 

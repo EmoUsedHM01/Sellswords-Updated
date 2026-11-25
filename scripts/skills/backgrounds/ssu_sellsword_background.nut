@@ -147,7 +147,6 @@ this.ssu_sellsword_background <- this.inherit("scripts/skills/backgrounds/charac
 	{
 
 		this.character_background.onAdded();
-		this.m.Container.add(this.new("scripts/skills/perks/perk_legend_battleheart"));
 		local actor = this.getContainer().getActor();
 
 		if (this.Math.rand(0, 2) == 2)
@@ -226,7 +225,7 @@ this.ssu_sellsword_background <- this.inherit("scripts/skills/backgrounds/charac
 			{ armor = "ssu_zombieknight_armor_high", helmet = "ssu_death_knight_helm" },
 			{ armor = "ssu_mercenary_armor_late", helmet = "ssu_mercenary_helmet_late" },
 			{ armor = "ssu_mercenary_armor_heavy", helmet = "ssu_mercenary_helmet_heavy" },
-			{ armor = "oriental/gladiator_harness", helmet = "oriental/gladiator_helmet" },
+			{ armor = "ssu_gladiator_medium", helmet = "oriental/gladiator_helmet" },
 			{ armor = "ssu_adorned_warriors_armor_armor_heavy", helmet = "ssu_adorned_closed_flat_top_with_mail_helmet" },
 			{ armor = "ssu_adorned_mail_shirt_armor_heavy", helmet = "ssu_adorned_full_helm_helmet" },
 			{ armor = "ssu_sellsword_armor_medium_chain", helmet = "ssu_sellsword_helmet_medium" },

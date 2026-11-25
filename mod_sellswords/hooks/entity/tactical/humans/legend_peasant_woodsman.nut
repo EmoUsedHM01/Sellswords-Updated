@@ -12,7 +12,6 @@
 		local dirt = this.getSprite("dirt");
 		dirt.Visible = true;
 		dirt.Alpha = this.Math.rand(0, 255);
-		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistWoodsman);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_smashing_shields"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_mastery_axe"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_reach_advantage"));

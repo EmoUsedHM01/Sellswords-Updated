@@ -18,3 +18,7 @@ while(::Const.FactionTrait.Actions.len() < lastTrait + 1)
 ::Const.FactionTrait.Actions[this.Const.FactionTrait.Settlement].extend([
     "scripts/factions/contracts/ssu_explore_treasures_action"
 ]);
+
+// how many tiles a camp can be away from the town that offers the Recover Lost Treasures contract
+::Mod_Sellswords.TreasureCampDistance <- 25;
+::Mod_Sellswords.HazardPayMutations <- 2;

@@ -151,14 +151,7 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 	{
 		this.character_background.onAdded();
 		this.setupUpdateInjuryLayer();
-		this.m.Container.add(this.new("scripts/skills/perks/perk_battle_forged"));
 		this.m.Container.add(this.new("scripts/skills/racial/ssu_dryad_racial"));
-	}
-
-	function buildPerkTree()
-	{
-		this.character_background.buildPerkTree();
-		this.addPerk(::Const.Perks.PerkDefs.BattleForged, 0, false)
 	}
 
 	function onChangeAttributes()

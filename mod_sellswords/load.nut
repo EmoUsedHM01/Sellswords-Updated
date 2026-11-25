@@ -20,6 +20,13 @@ if (::Is_BR_Exist)
 		::include(file);
 }
 
+// load all hooks related to Of Flesh and Faith+
+if (::mods_getRegisteredMod("of_flesh_and_faith_plus") != null)
+{
+	foreach (file in ::IO.enumerateFiles("mod_sellswords/hooks_offplus"))
+		::include(file);
+}
+
 // update new armor sets
 ::Const.LegendMod.Armors <- {};
 foreach( i, v in ::Const.LegendMod.ArmorObjs )

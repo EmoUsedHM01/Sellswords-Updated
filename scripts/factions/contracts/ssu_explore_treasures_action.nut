@@ -19,7 +19,23 @@ this.ssu_explore_treasures_action <- this.inherit("scripts/factions/faction_acti
 		if (_faction.getPlayerRelation() <= 75)
 		{
 			return;
-		}		
+		}
+
+		// the idol is only ever taken to a camp near the town
+		local barbarians = this.World.FactionManager.getFactionOfType(this.Const.FactionType.Barbarians);
+
+		if (barbarians == null)
+		{
+			return;
+		}
+
+		local homeTile = _faction.getSettlements()[0].getTile();
+		local camp = barbarians.getNearestSettlement(homeTile);
+
+		if (camp == null || homeTile.getDistanceTo(camp.getTile()) > ::Mod_Sellswords.TreasureCampDistance)
+		{
+			return;
+		}
 
 		if ((this.World.getTime().Days <= 80 && this.Math.rand(1, 100) > 10) || this.Math.rand(1, 100) > 20)
 		{

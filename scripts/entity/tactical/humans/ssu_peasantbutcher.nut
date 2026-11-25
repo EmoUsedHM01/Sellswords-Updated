@@ -33,7 +33,6 @@ this.ssu_peasantbutcher <- this.inherit("scripts/entity/tactical/human", {
 		dirt.Alpha = this.Math.rand(0, 255);
 		this.getSprite("socket").setBrush("bust_base_militia");
 		::Legends.Perks.grant(this, ::Legends.Perk.LegendBloodbath);
-		::Legends.Perks.grant(this, ::Legends.Perk.LegendSpecialistButcher);
 		::Legends.Perks.grant(this, ::Legends.Perk.LegendLacerate);
 		::Legends.Perks.grant(this, ::Legends.Perk.SpecCleaver);
 
