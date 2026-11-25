@@ -13,3 +13,10 @@
 ::Const.AI.Behavior.GhostPossessZoCMult <- 1.2;
 ::Const.AI.Behavior.GhostPossessInMeleeWithMe <- 2.0;
 ::Const.AI.Behavior.GhostPossessCanReachMe <- 1.5;
+
+::Const.AI.Behavior.ID.SsuAssistance <- ::Const.AI.Behavior.ID.COUNT;
+::Const.AI.Behavior.ID.COUNT = ::Const.AI.Behavior.ID.COUNT + 1;
+::Const.AI.Behavior.Name.push("SsuAssistance");
+::Const.AI.Behavior.Order.SsuAssistance <- ::Const.AI.Behavior.Order.AttackDefault;
+::Const.AI.Behavior.Score.SsuAssistance <- ::Const.AI.Behavior.Score.Attack * 0.5;
+::Const.AI.Behavior.SsuAssistanceMinHelpers <- 2;

@@ -303,6 +303,14 @@
 		Icon = "ui/perks/perk_19.png",
 		IconDisabled = "ui/perks/perk_19_sw.png"
 	},
+	SsuAssistance = {
+		ID = "perk.ssu_assistance",
+		Script = "scripts/skills/perks/perk_ssu_assistance",
+		Name = this.Const.Strings.PerkName.SsuAssistance,
+		Tooltip = this.Const.Strings.PerkDescription.SsuAssistance,
+		Icon = "ui/perks/ssu_assistance.png",
+		IconDisabled = "ui/perks/ssu_assistance_bw.png"
+	},
 	SsuParthianshot = {
 		ID = "perk.ssu_parthianshot",
 		Script = "scripts/skills/perks/perk_ssu_parthianshot",

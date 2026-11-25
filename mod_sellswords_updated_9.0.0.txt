@@ -3466,6 +3466,18 @@ The Sequence harvesting text of the Anatomist moved from its background descript
 ...\mod_sellswords\hooks\skills\perks\perk_rebound.nut
 Updated a bunch of tooltips to meet the new Legends effects
 
+...\scripts\skills\perks\perk_ssu_assistance.nut < new
+...\scripts\skills\actives\ssu_assistance_skill.nut < new
+...\scripts\skills\effects\ssu_assistance_effect.nut < new
+...\mod_sellswords\hooks\skills\skill_container.nut < new
+...\scripts\ai\tactical\behaviors\ssu_ai_assistance.nut < new
+...\mod_sellswords\config\ssu_ai.nut
+...\mod_sellswords\config\ssu_y_perk_defs.nut
+...\mod_sellswords\hooks\config\z_perks_tree_weapons.nut
+...\mod_sellswords\strings.nut
+...\brushes\ssu_weaponskills.brush
+Added the new Assistance perk to the Polearm tree (row 7)
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

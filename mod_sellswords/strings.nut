@@ -1555,6 +1555,22 @@ Learn to use the superior reach of large weapons to keep the enemy from getting 
 • You also prevent them from approaching your Zone of Control with a [color=%perk%]Spearwall[/color]-like attack which deals [color=%negative%]20%[/color] total damage.
 ";
 
+::Const.Strings.PerkName.SsuAssistance <- "Assistance";
+
+::Const.Strings.PerkDescription.SsuAssistance <- @"
+[color=%negative%][u]Requires:[/u] Two-Handed Melee Weapon[/color]
+Where one blow lands, yours is quick to follow.
+
+[color=%active%][u]Active:[/u][/color]
+• Unlocks the [color=%skill%]Assistance[/color] skill which, until the start of your next turn, makes you perform a free attack against any enemy within your attack range that gets hit by an ally's melee attack.
+
+• These attacks deal [color=%negative%]50%[/color] less damage.
+
+• Can not be used, and does not trigger, while engaged in melee.
+
+• Costs [color=%negative%]4[/color] AP and [color=%negative%]30[/color] Fatigue.
+";
+
 ::Const.Strings.PerkName.SsuParthianshot <- "Parthian Shot";
 
 ::Const.Strings.PerkDescription.SsuParthianshot <- @"
@@ -2172,6 +2188,7 @@ Unleash an arcing barrage of lightning!
 	SsuRavager = true,
 	SsuRapidmarch = true,
 	SsuReachadvantage = true,
+	SsuAssistance = true,
 	SsuParthianshot = true,
 	SsuDryadSummonWolf = true,
 	SsuDryadSummonSnake = true,
@@ -5142,6 +5159,16 @@ Unleash an arcing barrage of lightning!
 	Tooltip2 = "Inflicts the \'Overwhelmed\' debuff to all enemies hit by the attack"
 };
 
+// scripts\skills\actives\ssu_assistance_skill.nut
+::Mod_Sellswords.Strings.ssu_assistance_skill <- {
+	Name = "Assistance",
+	Description = "Ready your weapon to strike any enemy within your attack range that gets hit by an ally. Lasts until the start of your next turn.",
+	Tooltip1 = "Performs a free attack against any enemy in attack range that gets hit by an ally's melee attack",
+	Tooltip2 = "These attacks deal [color=%negative%]{1}%[/color] less damage",
+	WarningWeapon = "[color=%negative%]Requires a Two-Handed Melee Weapon[/color]",
+	WarningEngaged = "[color=%negative%]Can not be used while engaged in melee[/color]"
+};
+
 // scripts\skills\actives\ssu_rapidmarch_skill.nut
 ::Mod_Sellswords.Strings.ssu_rapidmarch_skill <- {
 	Name = "Rapid March",
@@ -5644,6 +5671,15 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.ssu_poisoned_arrows_effect <- {
 	Tooltip = "Inflicts a bleed on the target that does 10 damage per turn, for 2 turns",
 	Log = "{1} is poisoned"
+};
+
+// scripts\skills\effects\ssu_assistance_effect.nut
+::Mod_Sellswords.Strings.ssu_assistance_effect <- {
+	Name = "Assistance",
+	Description = "This character is ready to strike any enemy within attack range that gets hit by an ally.",
+	Tooltip = "Assisting attacks deal [color=%negative%]{1}%[/color] less damage",
+	Warning = "[color=%negative%]Does not trigger while engaged in melee or without a Two-Handed Melee Weapon[/color]",
+	Log = "{1} assists against {2}"
 };
 
 // scripts\skills\effects\ssu_rapidmarch_effect.nut
