@@ -9,6 +9,7 @@ this.ssu_orc_sequence_effect <- this.inherit("scripts/skills/effects/ssu_sequenc
 		this.setSequence("orc");
 		this.m.Icon = "skills/status_effect_127.png";
 		this.m.Overlay = "status_effect_127";
+		this.m.StrongIcon = "skills/status_effect_130.png";
 	}
 
 	function onAdded()

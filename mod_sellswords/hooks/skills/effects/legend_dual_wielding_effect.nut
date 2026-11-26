@@ -12,4 +12,11 @@
 		]);
 	}
 
+	q.onAnySkillExecuted = @(__original) function( _skill, _targetTile, _targetEntity, _forFree )
+	{
+		::Mod_Sellswords.DualWield.MatchSkillID = _skill.getID();
+		__original(_skill, _targetTile, _targetEntity, _forFree);
+		::Mod_Sellswords.DualWield.MatchSkillID = null;
+	}
+
 });

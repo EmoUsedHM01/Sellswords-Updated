@@ -85,6 +85,7 @@ this.ssu_necro_zombie <- this.inherit("scripts/skills/backgrounds/character_back
 		this.m.Bodies = this.Const.Bodies.Muscular;
 		
 		this.m.BackgroundType = this.Const.BackgroundType.Untalented | this.Const.BackgroundType.Outlaw;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroBeast.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Stash = this.Const.LegendMod.ResourceModifiers.Stash[1];

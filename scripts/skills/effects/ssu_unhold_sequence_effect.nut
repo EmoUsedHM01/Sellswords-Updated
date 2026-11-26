@@ -6,6 +6,7 @@ this.ssu_unhold_sequence_effect <- this.inherit("scripts/skills/effects/ssu_sequ
 		this.setSequence("unhold");
 		this.m.Icon = "skills/status_effect_145.png";
 		this.m.Overlay = "status_effect_145";
+		this.m.StrongIcon = "skills/ssu_effect_rock.png";
 	}
 
 	function onStrainAdded()

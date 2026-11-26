@@ -24,6 +24,7 @@ this.ssu_dryad_shaman_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.m.BeardChance = 0;
 		this.m.Level = 2;
 		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Druid | ::Const.BackgroundType.Ranger;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuDryadShaman.Profession;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
 		this.m.Modifiers.Meds = ::Const.LegendMod.ResourceModifiers.Meds[2];

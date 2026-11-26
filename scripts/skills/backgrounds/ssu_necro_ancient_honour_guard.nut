@@ -58,6 +58,7 @@ this.ssu_necro_ancient_honour_guard <- this.inherit("scripts/skills/backgrounds/
 		this.m.Level = this.Math.rand(2, 5);
 		this.m.Names = this.Const.Strings.LegionnaireNames;
 		this.m.BackgroundType = this.Const.BackgroundType.Combat | this.Const.BackgroundType.Outlaw;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroSoldier.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Stash = this.Const.LegendMod.ResourceModifiers.Stash[2];

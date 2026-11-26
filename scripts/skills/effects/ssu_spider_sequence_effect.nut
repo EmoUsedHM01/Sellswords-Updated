@@ -6,6 +6,7 @@ this.ssu_spider_sequence_effect <- this.inherit("scripts/skills/effects/ssu_sequ
 		this.setSequence("spider");
 		this.m.Icon = "skills/status_effect_144.png";
 		this.m.Overlay = "status_effect_144";
+		this.m.StrongIcon = "skills/ssu_effect_redback.png";
 	}
 
 	function onUpdate( _properties )

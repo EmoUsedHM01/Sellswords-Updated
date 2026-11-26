@@ -56,6 +56,7 @@ this.ssu_necro_embalmbed_slave <- this.inherit("scripts/skills/backgrounds/chara
 		
 		this.m.Names = this.Const.Strings.EmbalmedNames;
 		this.m.BackgroundType = this.Const.BackgroundType.Untalented | this.Const.BackgroundType.Outlaw;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroSlave.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Meds = this.Const.LegendMod.ResourceModifiers.Meds[1];

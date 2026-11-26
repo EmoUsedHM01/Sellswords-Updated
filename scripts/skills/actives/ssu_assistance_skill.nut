@@ -110,4 +110,9 @@ this.ssu_assistance_skill <- this.inherit("scripts/skills/skill", {
 		return true;
 	}
 
+	function onAfterUpdate( _properties )
+	{
+		this.m.FatigueCostMult = _properties.IsSpecializedInPolearms ? ::Const.Combat.WeaponSpecFatigueMult : 1.0;
+	}
+
 });

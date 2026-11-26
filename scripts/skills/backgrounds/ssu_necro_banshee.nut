@@ -91,6 +91,7 @@ this.ssu_necro_banshee <- this.inherit("scripts/skills/backgrounds/character_bac
 		this.m.Titles = this.Const.Strings.BansheeTitles;
 		this.m.Level = this.Math.rand(2, 3);
 		this.m.BackgroundType = this.Const.BackgroundType.Female | this.Const.BackgroundType.Performing | this.Const.BackgroundType.Outlaw;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroSpirit.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Terrain = [

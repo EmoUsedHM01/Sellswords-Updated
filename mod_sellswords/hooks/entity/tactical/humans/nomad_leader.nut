@@ -107,7 +107,7 @@
 				]);
 			}
 
-			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+			this.m.Items.addToBag(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
 		
 		local dc = this.World.getTime().Days;

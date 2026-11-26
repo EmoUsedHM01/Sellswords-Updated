@@ -191,7 +191,7 @@ this.ssu_barbarian_championhigh <- this.inherit("scripts/entity/tactical/human",
 				weapons.push("weapons/throwing_spear");
 			}
 
-			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+			this.m.Items.addToBag(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
 
 		local armor = ::Legends.Items.pickArmor([

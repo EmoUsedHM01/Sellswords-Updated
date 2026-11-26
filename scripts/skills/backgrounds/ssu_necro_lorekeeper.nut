@@ -24,6 +24,7 @@ this.ssu_necro_lorekeeper <- this.inherit("scripts/skills/backgrounds/character_
 		this.m.Bodies = this.Const.Bodies.Muscular;
 		
 		this.m.BackgroundType = this.Const.BackgroundType.Untalented | this.Const.BackgroundType.Educated | this.Const.BackgroundType.Noble;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroLorekeeper.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Crafting = this.Const.LegendMod.ResourceModifiers.Crafting[2];

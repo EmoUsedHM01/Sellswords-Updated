@@ -6,6 +6,7 @@ this.ssu_ghoul_sequence_effect <- this.inherit("scripts/skills/effects/ssu_seque
 		this.setSequence("ghoul");
 		this.m.Icon = "skills/status_effect_149.png";
 		this.m.Overlay = "status_effect_149";
+		this.m.StrongIcon = "skills/ssu_effect_skin.png";
 	}
 
 	function onStrainAdded()

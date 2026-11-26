@@ -4,7 +4,8 @@ this.ssu_basilisk_sequence_effect <- this.inherit("scripts/skills/effects/ssu_se
 	{
 		this.ssu_sequence_effect.create();
 		this.setSequence("basilisk");
-		this.m.Icon = "skills/legend_basilisk_peck.png";
+		this.m.Icon = "skills/ssu_effect_basilisk.png";
+		this.m.StrongIcon = "skills/ssu_effect_basilisk_sentry.png";
 	}
 
 	function onUpdate( _properties )

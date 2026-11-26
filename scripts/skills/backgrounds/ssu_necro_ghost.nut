@@ -91,6 +91,7 @@ this.ssu_necro_ghost <- this.inherit("scripts/skills/backgrounds/character_backg
 		this.m.Names = this.Const.Strings.GhostNames;
 		this.m.Titles = this.Const.Strings.GhostTitles;
 		this.m.BackgroundType = this.Const.BackgroundType.Outlaw;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroSpirit.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Terrain = [

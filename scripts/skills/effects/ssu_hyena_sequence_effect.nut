@@ -6,6 +6,7 @@ this.ssu_hyena_sequence_effect <- this.inherit("scripts/skills/effects/ssu_seque
 		this.setSequence("hyena");
 		this.m.Icon = "skills/status_effect_143.png";
 		this.m.Overlay = "status_effect_143";
+		this.m.StrongIcon = "skills/ssu_effect_enraged.png";
 	}
 
 	function onUpdate( _properties )

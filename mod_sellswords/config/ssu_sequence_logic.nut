@@ -84,13 +84,30 @@
 };
 
 // perks of a Sequence are free. Brothers also get them shown in their perk tree
+// a brother who already bought the perk gets the perk point back, the perk is then marked as not refundable so this happens only once
 ::Mod_Sellswords.addSequencePerk <- function (_actor, _perk, _row) {
 
 	if (typeof _actor == "instance")
 		_actor = _actor.get();
 
-	if (_actor.getSkills().hasSkill(::Legends.Perks.getID(_perk)))
+	local id = ::Legends.Perks.getID(_perk);
+
+	if (_actor.getSkills().hasSkill(id))
+	{
+		if (!::isKindOf(_actor, "player"))
+			return;
+
+		local tree = _actor.getBackground().m.PerkTreeMap;
+
+		if (id in tree && tree[id].IsRefundable)
+		{
+			_actor.m.PerkPoints += 1;
+			_actor.m.PerkPointsSpent -= 1;
+			tree[id].IsRefundable = false;
+		}
+
 		return;
+	}
 
 	if (::isKindOf(_actor, "player"))
 		_actor.getBackground().addPerk(_perk, _row, false);

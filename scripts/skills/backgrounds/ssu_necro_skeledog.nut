@@ -88,6 +88,7 @@ this.ssu_necro_skeledog <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.Level = this.Math.rand(2, 3);
 		this.m.Names = this.Const.Strings.DemonHoundNames;
 		this.m.BackgroundType = this.Const.BackgroundType.Outlaw | this.Const.BackgroundType.Ranger | this.Const.BackgroundType.ExpertHunter;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroBeast.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Stash = this.Const.LegendMod.ResourceModifiers.Stash[1];

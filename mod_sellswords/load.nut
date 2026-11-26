@@ -1,6 +1,3 @@
-// load every text first so the rest of the mod can read it
-::include("mod_sellswords/strings.nut");
-
 // load the hook helper
 ::include("mod_sellswords/hook_helper.nut");
 // all folders below must be loaded in that order

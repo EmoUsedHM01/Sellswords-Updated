@@ -40,6 +40,7 @@ this.ssu_necro_necrosavant <- this.inherit("scripts/skills/backgrounds/character
 		
 		this.m.Level = this.Math.rand(2, 4);
 		this.m.BackgroundType = this.Const.BackgroundType.Combat | this.Const.BackgroundType.Outlaw;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroNecrosavant.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Meds = this.Const.LegendMod.ResourceModifiers.Meds[3];

@@ -7,31 +7,23 @@
 	SellswordStrengthMultiplier = 100,
 	EnableHostileSequences = true,
 	SellswordsPerk = "Student",
-	AllLootDrops = false
+	AllLootDrops = false,
+	DualWieldVisuals = true
 };
 
 ::Mod_Sellswords.HooksMod <- ::Hooks.register(::Mod_Sellswords.ID, ::Mod_Sellswords.Version, ::Mod_Sellswords.Name);
 
-// Both the "require" and "conflictWith" functions have an adaptive number of parameters, so you can add as many as you want
-// Add which mods are needed to run this one
 ::Mod_Sellswords.HooksMod.require("mod_msu >= 1.9.0", "mod_modern_hooks >= 0.5.4", "mod_legends >= 19.5.0-alpha1");
-
-// Use this to list which mods may causes conflicts
 ::Mod_Sellswords.HooksMod.conflictWith("mod_ROTU", "mod_fantasybro", "modMoreArrows", "mod_background_perks");
 
-// Like above you can add as many parameters as you need to in order to determine the queue of the mods before adding the parameters that run the callback function
 ::Mod_Sellswords.HooksMod.queue(">mod_msu", ">mod_legends", ">mod_breditor", "<mod_ACU", "<mod_world_editor_legends", function()
 {
-	// Define mod class of this mod
 	::Mod_Sellswords.Mod <- ::MSU.Class.Mod(::Mod_Sellswords.ID, ::Mod_Sellswords.Version, ::Mod_Sellswords.Name);
-
-	// Register the updates with MSU so people know to update
 	::Mod_Sellswords.Mod.Registry.addModSource(::MSU.System.Registry.ModSourceDomain.GitHub, "https://github.com/EmoUsedHM01/Sellswords-Updated");
-	// Add the GitHub api, make sure to use semantic versioning for release tags
 	::Mod_Sellswords.Mod.Registry.setUpdateSource(::MSU.System.Registry.ModSourceDomain.GitHub);
 
-	// Add NexusMods mod source
-	// But the NexusMods api is closed so don't actually
+	// the texts are loaded first, the settings below read their names and descriptions from them
+	::include("mod_sellswords/strings.nut");
 
 	// MSU config page
 	local page = ::Mod_Sellswords.Mod.ModSettings.addPage("General");
@@ -39,36 +31,43 @@
 		"SellswordsSpawn",
 		"Enabled until destroyed",
 		["Enabled", "Enabled until destroyed", "Disabled"],
-		"Enable hostile Sellswords",
-		"Enabled - there will be roaming groups of hostile Sellsword companies,\n\nEnabled until destroyed - there will be roaming groups of hostile Sellsword companies, but these parties will stop spawning once you defeat the Legendary Company Tower location,\n\nDisabled - standard non-hostile mercenary parties will spawn."
+		::Mod_Sellswords.Strings.mod_sellswords.SellswordsSpawn.Name,
+		::Mod_Sellswords.Strings.mod_sellswords.SellswordsSpawn.Description
 	);
 	local settingSellswordStrengthMultiplier = page.addRangeSetting(
 		"SellswordStrengthMultiplier",
 		100, 10, 300, 10.0,
-		"Sellsword Strength Multiplier %",
-		"Affects the CR rating of the hostile SS faction, only affects new spawns, not existing parties."
+		::Mod_Sellswords.Strings.mod_sellswords.SellswordStrengthMultiplier.Name,
+		::Mod_Sellswords.Strings.mod_sellswords.SellswordStrengthMultiplier.Description
 	);
 	page.addDivider("divider_sequences");
 	local settingEnableHostileSequences = page.addBooleanSetting(
 		"EnableHostileSequences",
 		true,
-		"Enable Hostile Sequences",
-		"When enabled, enemies have a low chance to roll with Sequences. If they do, then they also have a chance to drop whichever one they obtain."
+		::Mod_Sellswords.Strings.mod_sellswords.EnableHostileSequences.Name,
+		::Mod_Sellswords.Strings.mod_sellswords.EnableHostileSequences.Description
 	);
 	page.addDivider("divider_perks");
 	local settingSellswordsPerk = page.addEnumSetting(
 		"SellswordsPerk",
 		"Student",
 		["Back to Basics", "Backstabber", "Berserker", "Dodge", "Escape Artist", "Fortified Mind", "Mind Over Body", "Nine Lives", "Pathfinder", "Quick Hands", "Steel Brow", "Student", "Tactical Maneuvers", "Thrives in Chaos", "Underdog"],
-		"Sellsword Scenario Perk",
-		"Choose a company perk to be added when you recruit a bro for the Sellswords Scenario.\n\nStudent by default."
+		::Mod_Sellswords.Strings.mod_sellswords.SellswordsPerk.Name,
+		::Mod_Sellswords.Strings.mod_sellswords.SellswordsPerk.Description
 	);
 	page.addDivider("divider_loot");
 	local settingAllLootDrops = page.addBooleanSetting(
 		"AllLootDrops",
 		false,
-		"All Loot Drops",
-		"When enabled, everything killed in a battle drops its loot as if you had killed it, no matter who made the kill. This includes beasts.\n\nDisabled by default."
+		::Mod_Sellswords.Strings.mod_sellswords.AllLootDrops.Name,
+		::Mod_Sellswords.Strings.mod_sellswords.AllLootDrops.Description
+	);
+	page.addDivider("divider_visuals");
+	local settingDualWieldVisuals = page.addBooleanSetting(
+		"DualWieldVisuals",
+		true,
+		::Mod_Sellswords.Strings.mod_sellswords.DualWieldVisuals.Name,
+		::Mod_Sellswords.Strings.mod_sellswords.DualWieldVisuals.Description
 	);
 
 	// Settings for that config 
@@ -88,12 +87,21 @@
 	settingEnableHostileSequences.addCallback(function(_value) { ::Mod_Sellswords.EnableHostileSequences = _value; });
 	settingSellswordsPerk.addCallback(function(_value) { ::Mod_Sellswords.SellswordsPerk = _value; });
 	settingAllLootDrops.addCallback(function(_value) { ::Mod_Sellswords.AllLootDrops = _value; });
+	settingDualWieldVisuals.addCallback(function(_value) {
+		::Mod_Sellswords.DualWieldVisuals = _value;
 
-	// Important objects for compatibility purposes
+		if (!::MSU.Utils.hasState("world_state"))
+			return;
+
+		foreach (bro in ::World.getPlayerRoster().getAll())
+		{
+			if (bro.hasSprite("shield_icon") && ::Legends.Weapons.isDualWielding(bro))
+				bro.flipOffhandSprite();
+		}
+	});
+
 	if (!("Is_AC_Exist" in this.getroottable())) ::Is_AC_Exist <- ::mods_getRegisteredMod("mod_ACU") != null;
-	// The Legends build of breditor registers under a versioned id, so check for its screen script instead
 	if (!("Is_BR_Exist" in this.getroottable())) ::Is_BR_Exist <- ::IO.enumerateFiles("scripts/ui/screens/world/").find("scripts/ui/screens/world/world_breditor_screen") != null;
 
-	// Load hook files
 	::include("mod_sellswords/load.nut");
 }, ::Hooks.QueueBucket.Normal);

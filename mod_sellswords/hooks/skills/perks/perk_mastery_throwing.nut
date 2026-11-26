@@ -5,8 +5,8 @@
 		if (_targetEntity == null || !_skill.isRanged())
 			return;
 
-		local weapon = this.getContainer().getActor().getMainhandItem();
-		if (weapon == null || !weapon.isWeaponType(::Const.Items.WeaponType.Throwing))
+		local weapon = _skill.getItem();
+		if (weapon == null || !weapon.isItemType(::Const.Items.ItemType.Weapon) || !weapon.isWeaponType(::Const.Items.WeaponType.Throwing))
 			return;
 
 		local actor = this.getContainer().getActor();

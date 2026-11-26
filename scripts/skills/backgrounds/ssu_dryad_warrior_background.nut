@@ -49,6 +49,7 @@ this.ssu_dryad_warrior_background <- ::inherit("scripts/skills/backgrounds/chara
 		this.m.BeardChance = 0;
 		this.m.Level = this.Math.rand(2, 5);
 		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Crusader | ::Const.BackgroundType.Ranger;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuDryadWarrior.Profession;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
 		this.m.Modifiers.Stash = ::Const.LegendMod.ResourceModifiers.Stash[2];

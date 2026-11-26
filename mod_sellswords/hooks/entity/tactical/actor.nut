@@ -247,6 +247,17 @@
 
 	q.flipOffhandSprite = @(__original) function()
 	{
+		// with the Dual-Wield Visuals setting off the Legends crossed weapons are used, anything left of the SSU pose comes off first
+		if (!::Mod_Sellswords.DualWieldVisuals)
+		{
+			this.removeSsuDualWieldTilt();
+			this.getSprite("shield_icon").Rotation = 0;
+			this.setSpriteOffset("arms_icon", this.createVec(0, 0));
+			this.m.IsSsuDualWieldPosed = false;
+			__original();
+			return;
+		}
+
 		__original();
 
 		local pose = ::Mod_Sellswords.DualWield;

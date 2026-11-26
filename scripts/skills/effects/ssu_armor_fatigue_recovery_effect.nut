@@ -9,7 +9,7 @@ this.ssu_armor_fatigue_recovery_effect <- this.inherit("scripts/skills/skill", {
 		this.m.ID = "effects.ssu_ptr_armor_fatigue_recovery";
 		this.m.Name = ::Mod_Sellswords.Strings.ssu_armor_fatigue_recovery_effect.Name;
 		this.m.Description = ::Mod_Sellswords.Strings.ssu_armor_fatigue_recovery_effect.Description;
-		this.m.Icon = "skills/ssu_ptr_armor_fatigue_recovery_effect.png";
+		this.m.Icon = "skills/ssu_effect_armor_fatigue_recovery.png";
 		this.m.Type = this.Const.SkillType.StatusEffect;
 		this.m.IsActive = false;
 		this.m.IsStacking = false;

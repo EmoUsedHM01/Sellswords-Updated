@@ -23,11 +23,12 @@ this.perk_ssu_grandslam <- this.inherit("scripts/skills/skill", {
 		_properties.Initiative -= (0.08 * bodyHealth);
 		
 		local skills = this.getContainer().getAllSkillsOfType(this.Const.SkillType.Active);
-		local weapon = this.getContainer().getActor().getMainhandItem();
-		local throwing = (weapon != null && weapon.isWeaponType(this.Const.Items.WeaponType.Throwing)) ? true: false;
-		local polearm = (weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon)) ? true: false;
 		foreach (s in skills)
 		{
+			local weapon = s.getItem();
+			local throwing = weapon != null && weapon.isItemType(this.Const.Items.ItemType.Weapon) && weapon.isWeaponType(this.Const.Items.WeaponType.Throwing);
+			local polearm = weapon != null && weapon.isItemType(this.Const.Items.ItemType.MeleeWeapon);
+
 			if (s.isAttack() && (!s.isRanged() || throwing || polearm))
 			{
 				s.m.ActionPointCost += 1;

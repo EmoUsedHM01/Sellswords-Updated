@@ -9,6 +9,7 @@ this.ssu_direwolf_sequence_effect <- this.inherit("scripts/skills/effects/ssu_se
 		this.setSequence("direwolf");
 		this.m.Icon = "skills/status_effect_139.png";
 		this.m.Overlay = "status_effect_139";
+		this.m.StrongIcon = "skills/ssu_effect_white_direwolf.png";
 	}
 
 	function onUpdate( _properties )

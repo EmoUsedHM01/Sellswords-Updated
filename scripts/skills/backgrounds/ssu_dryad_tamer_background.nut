@@ -24,6 +24,7 @@ this.ssu_dryad_tamer_background <- ::inherit("scripts/skills/backgrounds/charact
 		this.m.BeardChance = 0;
 		this.m.Level = 2;
 		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Ranger;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuDryadTamer.Profession;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
 		this.m.Modifiers.Cooking = ::Const.LegendMod.ResourceModifiers.Cooking[3];

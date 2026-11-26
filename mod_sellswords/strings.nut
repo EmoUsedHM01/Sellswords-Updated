@@ -5963,3 +5963,31 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.ssu_z_perks_tree_special <- {
 	Name = "Special Perks"
 };
+
+// scripts\!mods_preload\mod_sellswords.nut, the mod settings
+::Mod_Sellswords.Strings.mod_sellswords <- {
+	SellswordsSpawn = {
+		Name = "Enable hostile Sellswords",
+		Description = "Enabled - there will be roaming groups of hostile Sellsword companies,\n\nEnabled until destroyed - there will be roaming groups of hostile Sellsword companies, but these parties will stop spawning once you defeat the Legendary Company Tower location,\n\nDisabled - standard non-hostile mercenary parties will spawn."
+	},
+	SellswordStrengthMultiplier = {
+		Name = "Sellsword Strength Multiplier %",
+		Description = "Affects the CR rating of the hostile SS faction, only affects new spawns, not existing parties."
+	},
+	EnableHostileSequences = {
+		Name = "Enable Hostile Sequences",
+		Description = "When enabled, enemies have a low chance to roll with Sequences. If they do, then they also have a chance to drop whichever one they obtain."
+	},
+	SellswordsPerk = {
+		Name = "Sellsword Scenario Perk",
+		Description = "Choose a company perk to be added when you recruit a bro for the Sellswords Scenario.\n\nStudent by default."
+	},
+	AllLootDrops = {
+		Name = "All Loot Drops",
+		Description = "When enabled, everything killed in a battle drops its loot as if you had killed it, no matter who made the kill. This includes beasts.\n\nDisabled by default."
+	},
+	DualWieldVisuals = {
+		Name = "Enable SSU Dual-Wield Visuals",
+		Description = "When enabled, characters wielding a weapon in each hand hold them side by side and tilted down in battle, instead of the crossed weapons Legends uses.\n\nEnabled by default."
+	}
+};

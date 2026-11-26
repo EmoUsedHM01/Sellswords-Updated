@@ -84,7 +84,7 @@
 			if (this.Const.DLC.Unhold)
 				weapons.push("weapons/throwing_spear");
 
-			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
+			this.m.Items.addToBag(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
 
 		local armor = [

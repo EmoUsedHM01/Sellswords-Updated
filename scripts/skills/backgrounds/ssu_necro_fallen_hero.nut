@@ -51,6 +51,7 @@ this.ssu_necro_fallen_hero <- this.inherit("scripts/skills/backgrounds/character
 		this.m.Names = this.Const.Strings.FallenHero;
 		this.m.Titles = this.Const.Strings.FallenHeroTitles;
 		this.m.BackgroundType = this.Const.BackgroundType.Combat | this.Const.BackgroundType.Outlaw;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuNecroSoldier.Profession;
 		this.m.AlignmentMin = this.Const.LegendMod.Alignment.Dreaded;
 		this.m.AlignmentMax = this.Const.LegendMod.Alignment.Merciless;
 		this.m.Modifiers.Ammo = this.Const.LegendMod.ResourceModifiers.Ammo[1];

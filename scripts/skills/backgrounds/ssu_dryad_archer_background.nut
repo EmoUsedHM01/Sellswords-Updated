@@ -26,6 +26,7 @@ this.ssu_dryad_archer_background <- ::inherit("scripts/skills/backgrounds/charac
 		this.m.BeardChance = 0;
 		this.m.Level = 2;
 		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Ranger | this.Const.BackgroundType.ExpertHunter;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuDryadArcher.Profession;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
 		this.m.Modifiers.Ammo = ::Const.LegendMod.ResourceModifiers.Ammo[2];

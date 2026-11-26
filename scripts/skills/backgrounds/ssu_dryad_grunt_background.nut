@@ -24,6 +24,7 @@ this.ssu_dryad_grunt_background <- ::inherit("scripts/skills/backgrounds/charact
 		this.m.BeardChance = 0;
 		this.m.Level = 1;
 		this.m.BackgroundType = ::Const.BackgroundType.Combat | ::Const.BackgroundType.Ranger;
+		this.m.ProfessionTreeBranches = ::Legends.BackgroundProfessionTrees.SsuDryadGrunt.Profession;
 		this.m.AlignmentMin = ::Const.LegendMod.Alignment.Merciless;
 		this.m.AlignmentMax = ::Const.LegendMod.Alignment.Good;
 		this.m.Modifiers.Meds = this.Const.LegendMod.ResourceModifiers.Meds[1];

@@ -8,7 +8,7 @@ this.ssu_phantom_strike_effect <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.ID = "effects.ssu_phantom_strike";
 		this.m.Name = ::Mod_Sellswords.Strings.ssu_phantom_strike_effect.Name;
-		this.m.Icon = "skills/ssu_phantom_strike_effect.png";
+		this.m.Icon = "skills/ssu_effect_phantom_strike.png";
 		this.m.Type = this.Const.SkillType.Special | this.Const.SkillType.StatusEffect;
 		this.m.Order = this.Const.SkillOrder.VeryLast;
 		this.m.IsActive = false;

@@ -6,6 +6,7 @@ this.ssu_alp_sequence_effect <- this.inherit("scripts/skills/effects/ssu_sequenc
 		this.setSequence("alp");
 		this.m.Icon = "skills/status_effect_147.png";
 		this.m.Overlay = "status_effect_147";
+		this.m.StrongIcon = "skills/ssu_effect_demon.png";
 	}
 
 	function onUpdate( _properties )

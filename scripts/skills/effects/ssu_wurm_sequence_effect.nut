@@ -6,6 +6,7 @@ this.ssu_wurm_sequence_effect <- this.inherit("scripts/skills/effects/ssu_sequen
 		this.setSequence("wurm");
 		this.m.Icon = "skills/status_effect_140.png";
 		this.m.Overlay = "status_effect_140";
+		this.m.StrongIcon = "skills/ssu_effect_stoll.png";
 	}
 
 	// Descendant of Dragons

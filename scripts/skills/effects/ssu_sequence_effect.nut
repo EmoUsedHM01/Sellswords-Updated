@@ -1,7 +1,9 @@
-// shared by the effects of all Sequences. A Sequence has one effect, which grows once the stronger Strain is taken
+// Shared by the effects of all Sequences
+// Sequences have one effect, which grows once the stronger Strain is taken
 this.ssu_sequence_effect <- this.inherit("scripts/skills/skill", {
 	m = {
-		Sequence = ""
+		Sequence = "",
+		StrongIcon = ""
 	},
 	function create()
 	{
@@ -12,7 +14,7 @@ this.ssu_sequence_effect <- this.inherit("scripts/skills/skill", {
 		this.m.IsStacking = false;
 	}
 
-	// the ID and the texts all follow from the key of the Sequence in ::Mod_Sellswords.Sequences
+	// ::Mod_Sellswords.Sequences
 	function setSequence( _sequence )
 	{
 		this.m.Sequence = _sequence;
@@ -26,14 +28,25 @@ this.ssu_sequence_effect <- this.inherit("scripts/skills/skill", {
 		return ::Mod_Sellswords.Strings["ssu_" + this.m.Sequence + "_sequence_effect"];
 	}
 
-	// true once the stronger Strain has been taken
 	function isStrong()
 	{
 		local flag = ::Mod_Sellswords.Sequences[this.m.Sequence].StrongFlag;
 		return flag != null && this.getContainer().getActor().getFlags().has(flag);
 	}
 
-	// hands out the perks and traits of the Strains taken so far. Called each time a Strain is taken
+	function getIconColored()
+	{
+		if (this.m.StrongIcon != "" && this.m.Container != null && !this.m.Container.isNull() && this.isStrong())
+			return this.m.StrongIcon;
+
+		return this.m.Icon;
+	}
+
+	function getIcon()
+	{
+		return this.getIconColored();
+	}
+
 	function onStrainAdded()
 	{
 	}
@@ -85,7 +98,6 @@ this.ssu_sequence_effect <- this.inherit("scripts/skills/skill", {
 		return ret;
 	}
 
-	// skills are kept up from onUpdate: they are not saved, and taking off an item that grants the same skill removes it
 	function keepSkill( _id, _script )
 	{
 		if (!this.getContainer().hasSkill(_id))

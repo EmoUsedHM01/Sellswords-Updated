@@ -7,7 +7,7 @@ this.ssu_necro_lorekeeper_skull_spawn_effect <- this.inherit("scripts/skills/ski
 		this.m.ID = "effects.ssu_necro_lorekeeper_skull_spawn";
 		this.m.Name = ::Mod_Sellswords.Strings.ssu_necro_lorekeeper_skull_spawn_effect.Name;
 		this.m.Description = ::Mod_Sellswords.Strings.ssu_necro_lorekeeper_skull_spawn_effect.Description;
-		this.m.Icon = "skills/ssu_skull_spawn_effect.png";
+		this.m.Icon = "skills/ssu_effect_skull_spawn.png";
 		this.m.SoundOnUse = [
 			"sounds/enemies/dlc6/mirror_image_01.wav",
 			"sounds/enemies/dlc6/mirror_image_02.wav",
