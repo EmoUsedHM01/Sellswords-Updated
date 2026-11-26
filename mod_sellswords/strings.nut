@@ -5989,5 +5989,9 @@ Unleash an arcing barrage of lightning!
 	DualWieldVisuals = {
 		Name = "Enable SSU Dual-Wield Visuals",
 		Description = "When enabled, characters wielding a weapon in each hand hold them side by side and tilted down in battle, instead of the crossed weapons Legends uses.\n\nEnabled by default."
+	},
+	AutoLevel = {
+		Name = "Enable Auto Level",
+		Description = "When enabled, a brother who levels up gains every attribute instead of choosing three, each by a smaller amount than usual.\n\nEach level gives +2 to +3 Hitpoints, Fatigue, Initiative and Ranged Skill, +2 Melee Skill and +1 to +2 Resolve, Melee Defense and Ranged Defense. Each talent star has a 50% chance to add 1 more.\n\nDisabled by default."
 	}
 };

@@ -8,7 +8,8 @@
 	EnableHostileSequences = true,
 	SellswordsPerk = "Student",
 	AllLootDrops = false,
-	DualWieldVisuals = true
+	DualWieldVisuals = true,
+	AutoLevel = false
 };
 
 ::Mod_Sellswords.HooksMod <- ::Hooks.register(::Mod_Sellswords.ID, ::Mod_Sellswords.Version, ::Mod_Sellswords.Name);
@@ -69,6 +70,13 @@
 		::Mod_Sellswords.Strings.mod_sellswords.DualWieldVisuals.Name,
 		::Mod_Sellswords.Strings.mod_sellswords.DualWieldVisuals.Description
 	);
+	page.addDivider("divider_levels");
+	local settingAutoLevel = page.addBooleanSetting(
+		"AutoLevel",
+		false,
+		::Mod_Sellswords.Strings.mod_sellswords.AutoLevel.Name,
+		::Mod_Sellswords.Strings.mod_sellswords.AutoLevel.Description
+	);
 
 	// Settings for that config 
 	settingSellswordsEnable.addCallback(function(_value) {
@@ -87,6 +95,7 @@
 	settingEnableHostileSequences.addCallback(function(_value) { ::Mod_Sellswords.EnableHostileSequences = _value; });
 	settingSellswordsPerk.addCallback(function(_value) { ::Mod_Sellswords.SellswordsPerk = _value; });
 	settingAllLootDrops.addCallback(function(_value) { ::Mod_Sellswords.AllLootDrops = _value; });
+	settingAutoLevel.addCallback(function(_value) { ::Mod_Sellswords.AutoLevel = _value; });
 	settingDualWieldVisuals.addCallback(function(_value) {
 		::Mod_Sellswords.DualWieldVisuals = _value;
 
@@ -102,6 +111,8 @@
 
 	if (!("Is_AC_Exist" in this.getroottable())) ::Is_AC_Exist <- ::mods_getRegisteredMod("mod_ACU") != null;
 	if (!("Is_BR_Exist" in this.getroottable())) ::Is_BR_Exist <- ::IO.enumerateFiles("scripts/ui/screens/world/").find("scripts/ui/screens/world/world_breditor_screen") != null;
+
+	::Hooks.registerLateJS("ui/mods/mod_sellswords/ssu_auto_level.js");
 
 	::include("mod_sellswords/load.nut");
 }, ::Hooks.QueueBucket.Normal);

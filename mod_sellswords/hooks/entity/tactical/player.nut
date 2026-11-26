@@ -97,4 +97,23 @@
 			return this.m.Level < this.Const.LevelXP.len() ? this.Const.LevelXP[this.m.Level] : this.Const.LevelXP[this.Const.LevelXP.len() - 1];
 	}
 
+	q.fillAttributeLevelUpValues = @(__original) function( _amount, _maxOnly = false, _minOnly = false )
+	{
+		::Mod_Sellswords.AutoLevelUp.sync(this);
+
+		if (_minOnly || !::Mod_Sellswords.AutoLevelUp.isActive(this))
+			return __original(_amount, _maxOnly, _minOnly);
+
+		::Mod_Sellswords.AutoLevelUp.fill(this, _amount, _maxOnly);
+	}
+
+	q.getAttributeLevelUpValues = @(__original) function()
+	{
+		::Mod_Sellswords.AutoLevelUp.sync(this);
+
+		local ret = __original();
+		ret.ssuAutoLevel <- ::Mod_Sellswords.AutoLevelUp.isActive(this);
+		return ret;
+	}
+
 });

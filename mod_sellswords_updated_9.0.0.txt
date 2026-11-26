@@ -15,7 +15,7 @@
 ...\mod_sellswords\hooks_offplus\offp_background_perks.nut < new
 ...\mod_sellswords\hooks_bdplus\bdp_background_perks.nut < new
 Now requires MSU 1.9.0 and Legends 19.5.0
-Removed Magic Concept compatibility and the PTR and Magic Concept breditor add-ons
+Removed Magic Concept compatibility (for now) and the PTR and Magic Concept breditor add-ons
 Fixed the breditor check cause the Legends build of breditor registers under a versioned id
 Updated the Breditor hooks (Needs the updated Breditor)
 Added some OFF+ compat hooks
@@ -163,7 +163,7 @@ Removed the Balanced Rucksack (Legends yoinked it alr)
 ...\mod_sellswords\hooks\skills\actives\recover_skill.nut < deleted
 ...\gfx\ui\perks\crbeforethestorm.png < deleted
 ...\gfx\ui\perks\crbeforethestorm_bw.png < deleted
-Removed the some perks (Legends yoinked them alr)
+Removed some SSU perks (Legends yoinked them alr)
 Perks are now registered through ::Legends.Perks.addPerkDefObjects
 Pointed three perk icons at the renamed Legends images
 Removed the description overrides for perks that Legends no longer has
@@ -174,7 +174,7 @@ Clarity is back in the Calm tree
 Removed Before the Storm, Patient Hunter from Legends takes its place in the Fit tree and on backgrounds with a fixed perk tree
 
 ...\scripts\skills\actives\break_free_skill.nut < deleted
-Removed the break free override cause it was a preview copy of the Legends version at the time
+Removed the break free override cause it was a preview copy of the Legends alpha-version at the time
 
 ...\brushes\ssu_equipment.brush
 ...\gfx\ssu_equipment.png
@@ -298,7 +298,6 @@ Bandit Veteran is now the vanilla Marauder and Bandit Warlord is now the Robber 
 ...\mod_sellswords\hooks\hook_food_blueprints.nut < deleted
 ...\mod_sellswords\hooks\hook_utilities_blueprints.nut < deleted
 Legends blueprints are data now, so the crafted item and cost are changed in the new config file
-The blueprint hooks only keep the one in four chance for the named version
 SSU blueprints now use the Legends blueprint data format, the item, cost, ingredients and requirements are all in the new config file
 The Lorekeeper blueprints keep their perk and background requirements
 The food and flask blueprint costs are now set in the blueprint config
@@ -587,8 +586,8 @@ Changed getBarterMult to getHaggleMult, matching Legends
 ...\scripts\entity\tactical\humans\* (6 files)
 ...\scripts\skills\perks\perk_crresilient.nut < deleted
 Changed getAttacker to getEffectOwner, matching the Legends name
-Fixed Resilient not reducing spider poison damage, the 25% reduction was calculated but never applied
 Removed the SSU Resilient perk, the Legends version of Hold Out (Resilient) is used in its place
+Fixed Resilient not reducing spider poison damage, the 25% reduction was calculated but never applied
 Hold Out keeps what the SSU perk added: negative status effects are 25% weaker and a second Sequence can be used without negative effects
 Enemies that had the SSU perk have Hold Out, and every enemy with Hold Out now gets the weaker status effects
 
@@ -715,7 +714,7 @@ Cleaned up and sharpened every SSU weapon inventory icon, large and small, so th
 ...\scripts\entity\tactical\enemies\ssu_zombie_footman.nut
 ...\scripts\entity\tactical\enemies\ssu_zombie_zweihander.nut
 ...\scripts\skills\effects\ssu_consecrated_effect.nut
-Undead can no longer be given injuries
+Undead can no longer be given injuries (unless you're allowed to via Perks and shit)
 
 ...\scripts\contracts\contracts\ssu_explore_treasures_contract.nut
 ...\mod_sellswords\config\ssu_factions.nut
@@ -904,6 +903,12 @@ Fixed Balance giving a third of the character's whole Melee Defense as Ranged De
 ...\scripts\entity\tactical\humans\ssu_barbarian_championhigh.nut
 ...\scripts\entity\tactical\humans\ssu_immortal.nut
 Legends moved the Throwing Spear to the offhand so I had to fix some shit
+
+...\mod_sellswords\config\ssu_auto_level.nut < new
+...\ui\mods\mod_sellswords\ssu_auto_level.js < new
+...\mod_sellswords\hooks\entity\tactical\player.nut
+...\scripts\!mods_preload\mod_sellswords.nut
+Added the Enable Auto Level setting. When on, a level up raises every attribute instead of three chosen ones but by a smaller amount (roughly 2 points less)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
