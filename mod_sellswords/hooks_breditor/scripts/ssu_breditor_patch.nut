@@ -13,4 +13,21 @@
 		return ret;
 	}
 
+	q.prepareyourtraits = @(__original) function()
+	{
+		local ret = __original();
+		local at = ret.len();
+
+		foreach (i, trait in ret)
+		{
+			if (trait[1] == "scripts/skills/traits/glorious_resolve_trait")
+				at = i + 1;
+		}
+
+		foreach (trait in ["kraken", "wolf", "scorpion", "hornet"])
+			ret.insert(at++, ["trait.ssu_gladiator_" + trait, "scripts/skills/traits/ssu_gladiator_" + trait + "_trait"]);
+
+		return ret;
+	}
+
 });

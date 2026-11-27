@@ -2592,7 +2592,7 @@ Unleash an arcing barrage of lightning!
 
 // mod_sellswords\hooks\scenarios\world\gladiators_scenario.nut
 ::Mod_Sellswords.Strings.gladiators_scenario <- {
-	Description = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]You\'ve fought in the arenas of the south for years. First for your freedom, then for crowns, and finally to become immortal. What else does fate have in stock for you?\n\n[color=#bcad8c]Gladiators:[/color] Start with three experienced gladiators with good equipment, but very high daily wages.\n[color=#bcad8c]Legends of the Arena:[/color] Each gladiator has a unique trait in combat.\n[color=#bcad8c]Dirty Fighters:[/color] New recruits gain the Throw Sand skill.\n[color=#bcad8c]Glorious Three:[/color] You can never have more than 16 fighters in your roster, and if all of your three starting men should die, your campaign ends.[/p]"
+	Description = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]You\'ve fought in the arenas of the south for years. First for your freedom, then for crowns, and finally to become immortal. What else does fate have in stock for you?\n\n[color=#bcad8c]Gladiators:[/color] Start with three experienced gladiators with good equipment.\n[color=#bcad8c]Legends of the Arena:[/color] Every gladiator, including any you hire, has one of seven unique traits and demands 50% higher wages.\n[color=#bcad8c]Dirty Fighters:[/color] New recruits gain the Throw Sand skill.\n[color=#bcad8c]Glorious Few:[/color] You can never have more than 16 fighters in your roster, and if fewer than two gladiators remain, your campaign ends.[/p]"
 };
 
 // mod_sellswords\hooks\scenarios\world\legends_noble_scenario.nut
@@ -3245,6 +3245,24 @@ Unleash an arcing barrage of lightning!
 	Tooltip = "+[color=%positive%]{1}%[/color] Damage"
 };
 
+// mod_sellswords\hooks\skills\traits\glorious_endurance_trait.nut
+::Mod_Sellswords.Strings.glorious_endurance_trait <- {
+	Description = "Forged in the arenas of the south, this character has fought many a battle, and every blow will only strengthen their indomitable will and endurance. This fabulous lifestyle demands high pay, and should fewer than two gladiators remain in your company, your campaign ends.",
+	Wage = "[color=%negative%]+50%[/color] Daily Wage"
+};
+
+// mod_sellswords\hooks\skills\traits\glorious_quickness_trait.nut
+::Mod_Sellswords.Strings.glorious_quickness_trait <- {
+	Description = "Forged in the arenas of the south, this character has fought many a battle, and is an expert in dispatching multiple opponents in a row. This fabulous lifestyle demands high pay, and should fewer than two gladiators remain in your company, your campaign ends.",
+	Wage = "[color=%negative%]+50%[/color] Daily Wage"
+};
+
+// mod_sellswords\hooks\skills\traits\glorious_resolve_trait.nut
+::Mod_Sellswords.Strings.glorious_resolve_trait <- {
+	Description = "Forged in the arenas of the south, this character has fought man and beast alike, and it takes a lot to break their resolve. This fabulous lifestyle demands high pay, and should fewer than two gladiators remain in your company, your campaign ends.",
+	Wage = "[color=%negative%]+50%[/color] Daily Wage"
+};
+
 // mod_sellswords\hooks\skills\traits\huge_trait.nut
 ::Mod_Sellswords.Strings.huge_trait <- {
 	Tooltip1 = "Weapons with extra Fatigue build-up on skills have no penalty for this character",
@@ -3581,6 +3599,13 @@ Unleash an arcing barrage of lightning!
 	Title4 = "It\'s time to leave.",
 	Text15 = "[img]gfx/ui/events/legend_heartwood_dead.png[/img]You don\'t think the Dryad should be left to roam the land, but you do set it free nonetheless.\n\nNo sooner than you shout the command does the company leap into action, resulting in the Dryad\'s swift demise. Better to leave nothing left, lest they somehow return down the road.",
 	Text16 = "It\'s time to leave."
+};
+
+// scripts\events\events\ssu_gladiators_end_event.nut
+::Mod_Sellswords.Strings.ssu_gladiators_end_event <- {
+	Text1 = "[img]gfx/ui/events/event_155.png[/img]{Captain. A word, and then I am gone.\n\nDo you know what a gladiator is without another gladiator? A man in a silly helmet. There is nobody left to tell me that I, %gladiator%, am the lesser fighter. Nobody to lie about how many he killed while I was busy killing more. Nobody to drink my wine and swear on the Gilder that a sellsword did it. I fought for the crowd my whole life, and it turns out the only crowd I ever cared for was the men bleeding into the sand next to me.\n\nYour sellswords are fine killers, but they fight for crowns. I never learned how to do that, and I am too pretty to start now. So I am going back south. The arena will have me, and when it finally takes me, at least it will be loud.\n\nKeep my share. Without its gladiators the %companyname% has no name worth shouting anyway, and by morning the rest of them will have worked that out too.}",
+	Text2 = "It was glorious while it lasted.",
+	Title = "The Last Gladiator"
 };
 
 // scripts\events\events\ssu_necro_kriegsgeist_castle_enter_event.nut
@@ -5942,6 +5967,41 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.ssu_dryad_thorns_trait <- {
 	Name = "Thorns",
 	Log = "{1} reflected {2} damage back to {3} due to their thorns"
+};
+
+// scripts\skills\traits\ssu_gladiator_hornet_trait.nut
+::Mod_Sellswords.Strings.ssu_gladiator_hornet_trait <- {
+	Name = "Glorious Agility",
+	Description = "Forged in the arenas of the south, this character has danced around man and beast alike, and is past an opponent before they can raise a hand. This fabulous lifestyle demands high pay, and should fewer than two gladiators remain in your company, your campaign ends.",
+	Tooltip1 = "Ignores Zones of Control",
+	Tooltip2 = "Can move through enemies the same way as through allies",
+	Wage = "[color=%negative%]+50%[/color] Daily Wage"
+};
+
+// scripts\skills\traits\ssu_gladiator_kraken_trait.nut
+::Mod_Sellswords.Strings.ssu_gladiator_kraken_trait <- {
+	Name = "Glorious Mastery",
+	Description = "Forged in the arenas of the south, this character has fought with every weapon the crowd ever called for, and wields each of them as if born to it. This fabulous lifestyle demands high pay, and should fewer than two gladiators remain in your company, your campaign ends.",
+	Tooltip = "Knows every weapon mastery on their perk tree without spending perk points, including masteries that are added to it later",
+	Wage = "[color=%negative%]+50%[/color] Daily Wage"
+};
+
+// scripts\skills\traits\ssu_gladiator_scorpion_trait.nut
+::Mod_Sellswords.Strings.ssu_gladiator_scorpion_trait <- {
+	Name = "Glorious Venom",
+	Description = "Forged in the arenas of the south, this character has survived every poison the pits had to offer, and learned to coat their own weapons in the worst of them. This fabulous lifestyle demands high pay, and should fewer than two gladiators remain in your company, your campaign ends.",
+	Tooltip1 = "Immune to poison",
+	Tooltip2 = "Attacks that hit apply a random poison the target doesn\'t have yet: goblin, webknecht, redback, basilisk or zombie infection",
+	Wage = "[color=%negative%]+50%[/color] Daily Wage",
+	Log = "{1} is poisoned"
+};
+
+// scripts\skills\traits\ssu_gladiator_wolf_trait.nut
+::Mod_Sellswords.Strings.ssu_gladiator_wolf_trait <- {
+	Name = "Glorious Ferocity",
+	Description = "Forged in the arenas of the south, this character has fought many a battle, and strikes again before an opponent has recovered from the last blow. This fabulous lifestyle demands high pay, and should fewer than two gladiators remain in your company, your campaign ends.",
+	Tooltip = "Attacks cost [color=%positive%]1[/color] fewer Action Point, down to a minimum of 3",
+	Wage = "[color=%negative%]+50%[/color] Daily Wage"
 };
 
 // mod_sellswords\config\ssu_necro_perk_trees.nut

@@ -1,6 +1,5 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/states/tactical_state", function ( q ) {
 
-	// Parthian Shot joins the free first tile Legends has for Athletic and Lone Wolf, the path preview counts it in
 	q.getFreeMoveSkills = @( __original ) function ( _activeEntity )
 	{
 		local ret = __original(_activeEntity);
@@ -23,6 +22,25 @@
 		{
 			perk.m.HasMoved = true;
 		}
+	}
+
+	q.computeEntityPath = @( __original ) function ( _activeEntity, _mouseEvent )
+	{
+		if (!_activeEntity.getSkills().hasSkill("trait.ssu_gladiator_hornet"))
+			return __original(_activeEntity, _mouseEvent);
+
+		local getAlliedFactions = _activeEntity.getAlliedFactions;
+		_activeEntity.getAlliedFactions = function ()
+		{
+			local ret = [];
+
+			foreach (faction, _ in this.Tactical.Entities.getAllInstances())
+				ret.push(faction);
+
+			return ret;
+		};
+		__original(_activeEntity, _mouseEvent);
+		_activeEntity.getAlliedFactions = getAlliedFactions;
 	}
 
 });
