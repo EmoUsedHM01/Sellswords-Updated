@@ -910,6 +910,24 @@ Legends moved the Throwing Spear to the offhand so I had to fix some shit
 ...\scripts\!mods_preload\mod_sellswords.nut
 Added the Enable Auto Level setting. When on, a level up raises every attribute instead of three chosen ones but by a smaller amount (roughly 2 points less)
 
+...\mod_sellswords\config\ssu_traits.nut < new
+...\mod_sellswords\hooks\scenarios\world\gladiators_scenario.nut
+...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
+...\mod_sellswords\hooks\skills\traits\glorious_endurance_trait.nut < new
+...\mod_sellswords\hooks\skills\traits\glorious_quickness_trait.nut < new
+...\mod_sellswords\hooks\skills\traits\glorious_resolve_trait.nut < new
+...\mod_sellswords\hooks\states\tactical_state.nut
+...\mod_sellswords\hooks_breditor\scripts\ssu_breditor_patch.nut
+...\scripts\events\events\ssu_gladiators_end_event.nut < new
+...\scripts\skills\traits\ssu_gladiator_kraken_trait.nut < new
+...\scripts\skills\traits\ssu_gladiator_wolf_trait.nut < new
+...\scripts\skills\traits\ssu_gladiator_scorpion_trait.nut < new
+...\scripts\skills\traits\ssu_gladiator_hornet_trait.nut < new
+Reworked the Gladiators origin, every gladiator now has one of seven Gladiator traits and gladiator recruits roll theirs when they show up for hire
+All gladiators cost 50% more wages
+The three starting gladiators are no longer Avatars, the campaign now ends when fewer than two gladiators are left, with a new event from the last gladiator
+The last two gladiators can't be dismissed and don't desert
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

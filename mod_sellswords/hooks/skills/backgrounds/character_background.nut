@@ -22,6 +22,17 @@
 		actor.m.HiringCost *= 10;
 	}
 
+	q.addPerk = @(__original) function( _perk, _preferredRow = 0, _isRefundable = true )
+	{
+		local ret = __original(_perk, _preferredRow, _isRefundable);
+		local kraken = this.getContainer() != null ? this.getContainer().getSkillByID("trait.ssu_gladiator_kraken") : null;
+
+		if (kraken != null)
+			kraken.grantMasteries();
+
+		return ret;
+	}
+
 	q.onAdded = @(__original) function()
 	{
 		if (this.m.DailyCost >= 0)
