@@ -52,13 +52,15 @@
 				gladiators.push(bro);
 		}
 
-		// the last two can't be dismissed and don't desert
+		// the last two can't be dismissed
 		foreach (bro in gladiators)
 		{
+			bro.getFlags().remove("IsPlayerCharacter");
+
 			if (gladiators.len() <= 2)
-				bro.getFlags().add("IsPlayerCharacter", true);
+				bro.getFlags().add("SsuGladiatorProtected", true);
 			else
-				bro.getFlags().remove("IsPlayerCharacter");
+				bro.getFlags().remove("SsuGladiatorProtected");
 		}
 
 		return gladiators;

@@ -173,7 +173,10 @@
 
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.Footwork:
-						this.m.CustomPerkTree[1].push(::Legends.Perk.SsuBackswing);
+					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendTacticalManeuvers:
+						if (!hasPerk(::Legends.Perk.SsuBackswing))
+							this.m.CustomPerkTree[1].push(::Legends.Perk.SsuBackswing);
+
 						continue;
 					case this.m.CustomPerkTree[i][j] == ::Legends.Perk.LegendBackToBasics:
 						this.m.CustomPerkTree[5].push(::Legends.Perk.SsuBattlerhaposdy);
