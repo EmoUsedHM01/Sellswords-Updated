@@ -5982,7 +5982,7 @@ Unleash an arcing barrage of lightning!
 ::Mod_Sellswords.Strings.ssu_gladiator_kraken_trait <- {
 	Name = "Glorious Mastery",
 	Description = "Forged in the arenas of the south, this character has fought with every weapon the crowd ever called for, and wields each of them as if born to it. This fabulous lifestyle demands high pay, and should fewer than two gladiators remain in your company, your campaign ends.",
-	Tooltip = "Knows every weapon mastery on their perk tree without spending perk points, including masteries that are added to it later",
+	Tooltip = "Knows Quick Hands and every Mastery on their perk tree, including Masteries that are added to the tree later",
 	Wage = "[color=%negative%]+50%[/color] Daily Wage"
 };
 

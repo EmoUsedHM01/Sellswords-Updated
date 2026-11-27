@@ -1,5 +1,7 @@
 this.ssu_gladiator_kraken_trait <- this.inherit("scripts/skills/traits/character_trait", {
-	m = {},
+	m = {
+		IsGranting = false
+	},
 	function create()
 	{
 		this.character_trait.create();
@@ -42,36 +44,30 @@ this.ssu_gladiator_kraken_trait <- this.inherit("scripts/skills/traits/character
 	{
 		local background = this.getContainer().getActor().getBackground();
 
-		if (background == null || background.m.PerkTreeMap == null)
+		if (this.m.IsGranting || background == null || background.m.PerkTreeMap == null)
 			return;
 
-		local masteries = [
-			::Legends.Perk.SpecAxe,
-			::Legends.Perk.SpecBow,
-			::Legends.Perk.SpecCleaver,
-			::Legends.Perk.SpecCrossbow,
-			::Legends.Perk.SpecDagger,
-			::Legends.Perk.SpecFlail,
-			::Legends.Perk.SpecHammer,
-			::Legends.Perk.SpecMace,
-			::Legends.Perk.SpecPolearm,
-			::Legends.Perk.SpecSpear,
-			::Legends.Perk.SpecSword,
-			::Legends.Perk.SpecThrowing,
-			::Legends.Perk.LegendMasterySlings,
-			::Legends.Perk.LegendMasteryUnarmed
-		];
+		this.m.IsGranting = true;
+		local quickHands = this.Const.Perks.PerkDefObjects[::Legends.Perk.QuickHands];
 
-		foreach (mastery in masteries)
+		if (!(quickHands.ID in background.m.PerkTreeMap))
+			background.addPerk(::Legends.Perk.QuickHands, 0, false);
+
+		local perks = [];
+
+		foreach (id, perk in background.m.PerkTreeMap)
 		{
-			local perk = this.Const.Perks.PerkDefObjects[mastery];
+			if ((id == quickHands.ID || id.find("mastery") != null) && !this.getContainer().hasSkill(id))
+				perks.push(perk);
+		}
 
-			if (!(perk.ID in background.m.PerkTreeMap) || !background.m.PerkTreeMap[perk.ID].IsRefundable || this.getContainer().hasSkill(perk.ID))
-				continue;
-
-			background.m.PerkTreeMap[perk.ID].IsRefundable = false;
+		foreach (perk in perks)
+		{
+			perk.IsRefundable = false;
 			this.getContainer().add(this.new(perk.Script));
 		}
+
+		this.m.IsGranting = false;
 	}
 
 	function onAdded()

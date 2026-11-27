@@ -21,15 +21,15 @@
 			return;
 
 		local traits = [
-			::Legends.Trait.GloriousEndurance,
-			::Legends.Trait.GloriousQuickness,
-			::Legends.Trait.GloriousResolve,
-			::Legends.Trait.SsuGladiatorKraken,
-			::Legends.Trait.SsuGladiatorWolf,
-			::Legends.Trait.SsuGladiatorScorpion,
-			::Legends.Trait.SsuGladiatorHornet
+			"glorious_endurance_trait",
+			"glorious_quickness_trait",
+			"glorious_resolve_trait",
+			"ssu_gladiator_kraken_trait",
+			"ssu_gladiator_wolf_trait",
+			"ssu_gladiator_scorpion_trait",
+			"ssu_gladiator_hornet_trait"
 		];
-		::Legends.Traits.grant(_bro, traits[this.Math.rand(0, traits.len() - 1)]);
+		_bro.getSkills().add(this.new("scripts/skills/traits/" + traits[this.Math.rand(0, traits.len() - 1)]));
 	}
 
 	q.onGenerateBro <- function( _bro )
