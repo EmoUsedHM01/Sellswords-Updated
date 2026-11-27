@@ -917,6 +917,7 @@ Added the Enable Auto Level setting. When on, a level up raises every attribute 
 ...\mod_sellswords\hooks\skills\traits\glorious_quickness_trait.nut < new
 ...\mod_sellswords\hooks\skills\traits\glorious_resolve_trait.nut < new
 ...\mod_sellswords\hooks\states\tactical_state.nut
+...\mod_sellswords\hooks\ui\screens\character\character_screen.nut < new
 ...\mod_sellswords\hooks_breditor\scripts\ssu_breditor_patch.nut
 ...\scripts\events\events\ssu_gladiators_end_event.nut < new
 ...\scripts\skills\traits\ssu_gladiator_kraken_trait.nut < new

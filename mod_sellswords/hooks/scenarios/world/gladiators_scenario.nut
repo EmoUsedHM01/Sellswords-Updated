@@ -42,7 +42,7 @@
 		this.addGladiatorTrait(_bro);
 	}
 
-	q.onCombatFinished = @(__original) function()
+	q.updateGladiators <- function()
 	{
 		local gladiators = [];
 
@@ -60,6 +60,13 @@
 			else
 				bro.getFlags().remove("IsPlayerCharacter");
 		}
+
+		return gladiators;
+	}
+
+	q.onCombatFinished = @(__original) function()
+	{
+		local gladiators = this.updateGladiators();
 
 		if (gladiators.len() >= 2)
 			return true;
