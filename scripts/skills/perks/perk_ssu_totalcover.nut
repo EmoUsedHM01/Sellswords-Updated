@@ -21,11 +21,9 @@ this.perk_ssu_totalcover <- this.inherit("scripts/skills/skill", {
 	function onUpdate( _properties )
 	{
 		if (this.isInEffect())
-			_properties.BlockMult *= 2.0;
+			_properties.Block += this.getContainer().getActor().getItems().getItemAtSlot(this.Const.ItemSlot.Offhand).getBlock();
 	}
 
-	// The Block handed to adjacent allies through ssu_bolstered_effect.
-	// Block received from another Total Cover is left out, or two of them next to each other would keep raising one another
 	function getSharedBlock()
 	{
 		local actor = this.getContainer().getActor();

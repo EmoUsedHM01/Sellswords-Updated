@@ -3519,47 +3519,73 @@
 	]
 },
 {
-	ID = "ssu_barbarian_champion_fur",   // 75-90, -4--6, 1500
+	ID = "ssu_barbarian_champion_fur",   // 135-155, -14--17, 1375-1550
 	Script = "",
 	Sets = [
 		{
-			Cloth = [			// 75-90, -4--6, 1500
-				[1, "cloth/legend_armor_gambeson_named"],						// 75-90, -4--6, 1500
+			Cloth = [			// 135-155, -14--17, 1375-1550
+				[2, "cloth/legend_armor_gambeson"],								// 65, -8, 250
+				[1, "cloth/legend_armor_gambeson_wolf"],						// 70, -9, 300
 			],
-			Chain = [],
-			Plate = [],
-			Cloak = [],
+			Chain = [
+				[1, "chain/legend_armor_mail_shirt_simple"],					// 25, -3, 250
+				[1, "chain/legend_armor_rusty_mail_shirt"],						// 20, -4, 125
+			],
+			Plate = [
+				[1, "plate/legend_armor_leather_jacket_named"],					// 35-45, -1--2, 750
+			],
+			Cloak = [
+				[1, "cloak/legend_armor_animal_pelt"],							// 15, -2, 250
+			],
 			Tabard = [],
 			Attachments = []
 		}
 	]
 },
 {
-	ID = "ssu_barbarian_champion_skull",   // 75-90, -4--6, 1500
+	ID = "ssu_barbarian_champion_skull",   // 205-275, -23--34, 3220-3950
 	Script = "",
 	Sets = [
 		{
-			Cloth = [			// 75-90, -4--6, 1500
-				[1, "cloth/legend_armor_gambeson_named"],						// 75-90, -4--6, 1500
+			Cloth = [			// 205-275, -23--34, 3220-3950
+				[2, "cloth/legend_armor_gambeson"],								// 65, -8, 250
+				[1, "cloth/legend_armor_gambeson_wolf"],						// 70, -9, 300
 			],
-			Chain = [],
-			Plate = [],
-			Cloak = [],
+			Chain = [
+				[1, "chain/legend_armor_ancient_double_mail"],					// 80, -14, 750
+				[1, "chain/legend_armor_ancient_mail"],							// 35, -6, 300
+				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],			// 45, -7, 200
+			],
+			Plate = [
+				[1, "plate/legend_armor_leather_brigandine_named"],				// 80-100, -5--7, 2500
+			],
+			Cloak = [
+				[4, "cloak/legend_armor_cloak_wooly_dark"],						// 15, -2, 120
+				[1, "cloak/legend_armor_animal_pelt"],							// 15, -2, 250
+			],
 			Tabard = [],
-			Attachments = []
+			Attachments = [
+				[1, "armor_upgrades/legend_armor_skull_chain_upgrade"],			// 10, -2, 150
+			]
 		}
 	]
 },
 {
-	ID = "ssu_barbarian_champion_bronze",   // 115-130, -7--9, 1750
+	ID = "ssu_barbarian_champion_bronze",   // 300-340, -38--45, 6275-6500
 	Script = "",
 	Sets = [
 		{
-			Cloth = [			// 115-130, -7--9, 1750
-				[1, "cloth/legend_armor_gambeson_named"],						// 75-90, -4--6, 1500
+			Cloth = [			// 300-340, -38--45, 6275-6500
+				[1, "cloth/legend_armor_quilted_aketon"],						// 55, -6, 150
+				[1, "cloth/legend_armor_gambeson"],								// 65, -8, 250
 			],
-			Chain = [],
-			Plate = [],
+			Chain = [
+				[1, "chain/legend_armor_mail_shirt"],							// 50, -6, 375
+				[1, "chain/legend_armor_short_mail"],							// 60, -8, 500
+			],
+			Plate = [
+				[1, "plate/legend_armor_thick_plated_barbarian_armor_named"],	// 155-175, -23--26, 5500
+			],
 			Cloak = [],
 			Tabard = [],
 			Attachments = [
@@ -4071,15 +4097,21 @@
 	]
 },
 {
-	ID = "ssu_sellsword_barbarian_fur",   // 75-100, -4--8, 2100-2350
+	ID = "ssu_sellsword_barbarian_fur",   // 120-150, -12--17, 1725-2150
 	Script = "",
 	Sets = [
 		{
-			Cloth = [			// 75-100, -4--8, 2100-2350
-				[1, "cloth/legend_armor_gambeson_named"],						// 75-90, -4--6, 1500
+			Cloth = [			// 120-150, -12--17, 1725-2150
+				[2, "cloth/legend_armor_gambeson"],								// 65, -8, 250
+				[1, "cloth/legend_armor_gambeson_wolf"],						// 70, -9, 300
 			],
-			Chain = [],
-			Plate = [],
+			Chain = [
+				[1, "chain/legend_armor_mail_shirt_simple"],					// 25, -3, 250
+				[1, "chain/legend_armor_rusty_mail_shirt"],						// 20, -4, 125
+			],
+			Plate = [
+				[1, "plate/legend_armor_leather_jacket_named"],					// 35-45, -1--2, 750
+			],
 			Cloak = [],
 			Tabard = [],
 			Attachments = [
@@ -4090,15 +4122,22 @@
 	]
 },
 {
-	ID = "ssu_sellsword_barbarian_skull",   // 75-100, -4--8, 2100-2350
+	ID = "ssu_sellsword_barbarian_skull",   // 180-260, -19--32, 3550-4400
 	Script = "",
 	Sets = [
 		{
-			Cloth = [			// 75-100, -4--8, 2100-2350
-				[1, "cloth/legend_armor_gambeson_named"],						// 75-90, -4--6, 1500
+			Cloth = [			// 180-260, -19--32, 3550-4400
+				[2, "cloth/legend_armor_gambeson"],								// 65, -8, 250
+				[1, "cloth/legend_armor_gambeson_wolf"],						// 70, -9, 300
 			],
-			Chain = [],
-			Plate = [],
+			Chain = [
+				[1, "chain/legend_armor_ancient_double_mail"],					// 80, -14, 750
+				[1, "chain/legend_armor_ancient_mail"],							// 35, -6, 300
+				[1, "chain/legend_armor_reinforced_rotten_mail_shirt"],			// 45, -7, 200
+			],
+			Plate = [
+				[1, "plate/legend_armor_leather_brigandine_named"],				// 80-100, -5--7, 2500
+			],
 			Cloak = [],
 			Tabard = [],
 			Attachments = [
@@ -4109,15 +4148,21 @@
 	]
 },
 {
-	ID = "ssu_sellsword_barbarian_bronze",   // 75-100, -4--8, 2100-2350
+	ID = "ssu_sellsword_barbarian_bronze",   // 260-310, -35--44, 6625-7100
 	Script = "",
 	Sets = [
 		{
-			Cloth = [			// 75-100, -4--8, 2100-2350
-				[1, "cloth/legend_armor_gambeson_named"],						// 75-90, -4--6, 1500
+			Cloth = [			// 260-310, -35--44, 6625-7100
+				[1, "cloth/legend_armor_quilted_aketon"],						// 55, -6, 150
+				[1, "cloth/legend_armor_gambeson"],								// 65, -8, 250
 			],
-			Chain = [],
-			Plate = [],
+			Chain = [
+				[1, "chain/legend_armor_mail_shirt"],							// 50, -6, 375
+				[1, "chain/legend_armor_short_mail"],							// 60, -8, 500
+			],
+			Plate = [
+				[1, "plate/legend_armor_thick_plated_barbarian_armor_named"],	// 155-175, -23--26, 5500
+			],
 			Cloak = [],
 			Tabard = [],
 			Attachments = [

@@ -50,6 +50,12 @@
 				type = "text",
 				icon = "ui/icons/initiative.png",
 				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.net_effect.Tooltip4, debuff)
+			},
+			{
+				id = 14,
+				type = "text",
+				icon = "ui/icons/block.png",
+				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.net_effect.Tooltip5, debuff)
 			}
 		];
 	}
@@ -60,6 +66,7 @@
 		_properties.MeleeDefenseMult *= 1 - 0.01 * this.getdebuff();
 		_properties.RangedDefenseMult *= 1 - 0.01 * this.getdebuff();
 		_properties.InitiativeMult *= 1 - 0.01 * this.getdebuff();
+		_properties.BlockMult *= 1 - 0.01 * this.getdebuff();
 	}
 
 });

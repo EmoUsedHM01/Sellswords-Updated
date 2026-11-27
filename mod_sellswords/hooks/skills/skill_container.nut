@@ -9,15 +9,15 @@
 		if (_caller == null || !_caller.isAttack() || _caller.isRanged())
 			return;
 
-		local actor = this.getActor();
-
-		if (_targetEntity == null || !_targetEntity.isAlive() || _targetEntity.isDying() || _targetEntity.isAlliedWith(actor))
+		if (_targetEntity == null || !_targetEntity.isAlive() || _targetEntity.isDying())
 			return;
 
-		// Only attacks made in their own turn count, so that no assisting attack causes another one
-		local active = this.Tactical.TurnSequenceBar.getActiveEntity();
+		local actor = this.getActor();
 
-		if (active == null || active.getID() != actor.getID())
+		// Only attacks made in their own turn count, and an assisting attack never causes another one
+		local assistance = this.getSkillByID("effects.ssu_assistance");
+
+		if (!actor.isTurnStarted() || assistance != null && assistance.m.IsAssisting)
 			return;
 
 		// Once for every use of a skill, no matter how many targets it hits
@@ -26,9 +26,10 @@
 
 		this.m.SsuAssistanceSkillCount = this.Const.SkillCounter;
 
+		// Every ally of the attacker can assist, whatever their faction: brothers, their animals and allied troops
 		foreach (ally in this.Tactical.Entities.getAllInstancesAsArray())
 		{
-			if (ally.getID() == actor.getID() || !ally.isPlacedOnMap() || !ally.isAlliedWith(actor))
+			if (ally.getID() == actor.getID() || !ally.isPlacedOnMap() || !ally.isAlliedWith(actor) || ally.isAlliedWith(_targetEntity))
 				continue;
 
 			local effect = ally.getSkills().getSkillByID("effects.ssu_assistance");

@@ -70,6 +70,11 @@ this.ssu_assistance_effect <- this.inherit("scripts/skills/skill", {
 			return;
 		}
 
+		if (!actor.getTile().hasLineOfSightTo(targetTile, actor.getCurrentProperties().getVision()))
+		{
+			return;
+		}
+
 		if (actor.isHiddenToPlayer() && !targetTile.IsVisibleForPlayer)
 		{
 			this.assist(attack, _target);
@@ -107,9 +112,12 @@ this.ssu_assistance_effect <- this.inherit("scripts/skills/skill", {
 			this.Tactical.EventLog.log(::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_assistance_effect.Log, this.Const.UI.getColorizedEntityName(actor), this.Const.UI.getColorizedEntityName(_target)));
 		}
 
+		local isVisibleTileNeeded = _attack.m.IsVisibleTileNeeded;
+		_attack.m.IsVisibleTileNeeded = false;
 		this.m.IsAssisting = true;
 		_attack.useForFree(_target.getTile());
 		this.m.IsAssisting = false;
+		_attack.m.IsVisibleTileNeeded = isVisibleTileNeeded;
 	}
 
 	function onAnySkillUsed( _skill, _targetEntity, _properties )

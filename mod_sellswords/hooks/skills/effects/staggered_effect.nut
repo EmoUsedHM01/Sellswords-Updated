@@ -35,10 +35,12 @@
 		if (this.getContainer().hasSkill("perk.hold_out"))
 		{
 			_properties.InitiativeMult *= 0.63;
+			_properties.BlockMult *= 0.63;
 		}
 		else
 		{
 			_properties.InitiativeMult *= 0.5;
+			_properties.BlockMult *= 0.5;
 		}		
 	}		
 });

@@ -1133,7 +1133,7 @@ Learn to target vitals with your piercing attacks!
 Master the art of deflecting blows with your shield, and of holding it where it covers the ones beside you.
 
 [color=%passive%][u]Passive:[/u][/color]
-• Your Block is [color=%positive%]doubled[/color].
+• Gain additional Block equal to [color=%positive%]100%[/color] of your shield's Block value.
 
 • Adjacent allies gain [color=%positive%]50%[/color] of your Block.
 
@@ -1461,9 +1461,9 @@ Learn to beat down your opponents.
 This character is quick to understand the fighting style of their opponents, getting better at fighting them as the combat draws on.
 
 [color=%passive%][u]Passive:[/u][/color]
-• Each attack applies [color=%status%]Distracted[/color] to enemies.
+• Your first melee attack against each enemy, hit or miss, applies a stack of [color=%status%]Distracted[/color] to them.
 
-• [color=%status%]Distracted[/color] enemies have their damage and Initiative reduced by [color=%negative%]35%[/color].
+• [color=%status%]Distracted[/color] enemies have their Melee Skill and Ranged Skill reduced by [color=%negative%]5%[/color], [color=%negative%]15%[/color], [color=%negative%]30%[/color] or [color=%negative%]50%[/color] with one, two, three or four stacks, and lose a stack at the start of each of their turns.
 ";
 
 ::Const.Strings.PerkName.SsuHonorheritage <- "Honoured Heritage";
@@ -2045,7 +2045,7 @@ It's hard to fight with sand in your eyes.
 [color=%passive%][u]Active:[/u][/color]
 • Unlocks the [color=%skill%]Throw Dirt[/color] skill, which lets you throw dirt in the eyes of an enemy to [color=%status%]Distract[/color] them.
 
-• [color=%status%]Distracted[/color] enemies have [color=%negative%]-35%[/color] Initiative and deal [color=%negative%]-35%[/color] Damage.
+• [color=%status%]Distracted[/color] enemies have [color=%negative%]-35%[/color] Initiative and Block and deal [color=%negative%]-35%[/color] Damage.
 
 • Costs [color=%negative%]3[/color] AP and [color=%negative%]5[/color] Fatigue.
 ";
@@ -2826,8 +2826,8 @@ Unleash an arcing barrage of lightning!
 
 // mod_sellswords\hooks\skills\actives\throw_dirt_skill.nut
 ::Mod_Sellswords.Strings.throw_dirt_skill <- {
-	Description = "Throws dirt or sand to distract the enemy. Reduces inititive and damage output of the target by 35% for one turn. Wild Nomad used sand-attack!",
-	Tooltip = "Throws dirt or sand at the face of the target, temporarily blinding them",
+	Description = "Throws dirt or sand to distract the enemy. Reduces Initiative, damage output and Block of the target by 35% for one turn. Wild Nomad used sand-attack!",
+	Tooltip = "Leaves the target [color=%status%]Distracted[/color] for one turn, which reduces their Damage, Initiative and Block by [color=%negative%]35%[/color]",
 	Log = "{1} throws dirt in {2}\'s face to distract them"
 };
 
@@ -3066,7 +3066,8 @@ Unleash an arcing barrage of lightning!
 	Tooltip1 = "[color=%negative%]Unable to move[/color]",
 	Tooltip2 = "[color=%negative%]-{1}%[/color] Melee Defense",
 	Tooltip3 = "[color=%negative%]-{1}%[/color] Ranged Defense",
-	Tooltip4 = "[color=%negative%]-{1}%[/color] Initiative"
+	Tooltip4 = "[color=%negative%]-{1}%[/color] Initiative",
+	Tooltip5 = "[color=%negative%]-50%[/color] Block"
 };
 
 // mod_sellswords\hooks\skills\effects\orc_berserker_potion_effect.nut
@@ -3100,7 +3101,8 @@ Unleash an arcing barrage of lightning!
 // mod_sellswords\hooks\skills\effects\overwhelmed_effect.nut
 ::Mod_Sellswords.Strings.overwhelmed_effect <- {
 	Tooltip1 = "[color=%negative%]-{1}%[/color] Melee Skill",
-	Tooltip2 = "[color=%negative%]-{1}%[/color] Ranged Skill"
+	Tooltip2 = "[color=%negative%]-{1}%[/color] Ranged Skill",
+	Hover = "[color=%negative%]-{1}%[/color] "
 };
 
 // mod_sellswords\hooks\skills\effects\schrat_potion_effect.nut
@@ -5496,9 +5498,9 @@ Unleash an arcing barrage of lightning!
 // scripts\skills\effects\ssu_distracted_effect.nut
 ::Mod_Sellswords.Strings.ssu_distracted_effect <- {
 	Name = "Distracted",
-	Text = "This character was on the receiving end of a dirty trick. Distracted for [color=%negative%]{1}[/color] stack(s), they are slower to react and have a harder time landing clean strikes.",
-	Tooltip1 = "[color=%negative%]-{1}%[/color] Damage",
-	Tooltip2 = "[color=%negative%]-{1}%[/color] Initiative",
+	Text = "This character was on the receiving end of a dirty trick. Distracted for [color=%negative%]{1}[/color] stack(s), they have a harder time landing their attacks.",
+	Tooltip1 = "[color=%negative%]-{1}%[/color] Melee Skill",
+	Tooltip2 = "[color=%negative%]-{1}%[/color] Ranged Skill",
 	Log = "{1} regained his focus thanks to his unnatural physiology"
 };
 

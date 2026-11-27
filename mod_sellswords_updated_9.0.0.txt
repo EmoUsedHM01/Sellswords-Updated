@@ -335,7 +335,7 @@ Updated every reference to a renamed or removed Legends script
 Estoc, longsword and khopesh are the vanilla weapons now, Double Strike is Flux, the shield specialist perk is Shield Mastery
 Poison Immunity and Composure were removed from Legends so those enemies get the immunity directly
 Removed the parrying dagger, shield push, sprint and the named peasant tools from enemies
-The three named barbarian armours use the named gambeson as their cloth layer
+The named barbarian armours (fur, skull and bronze) are layered sets: cloth and mail under a named leather jacket, a named leather brigandine or the named thick plated barbarian armour
 
 ...\mod_sellswords\hooks\skills\perks\perk_legend_athlete.nut
 ...\mod_sellswords\hooks\skills\perks\perk_legend_muscularity.nut
@@ -831,7 +831,7 @@ The free attack of Audacious Charge deals 50% damage instead of 10%, and 75% wit
 ...\scripts\skills\effects\ssu_bolstered_effect.nut
 ...\mod_sellswords\hooks\skills\actives\shieldwall.nut < deleted
 ...\mod_sellswords\hooks\skills\effects\shieldwall_effect.nut < deleted
-Total Cover now doubles the Block of its user and gives adjacent allies 50% of that Block, it requires a shield
+Total Cover now gives its user an additional 100% of the Block of the equipped shield and gives adjacent allies 50% of the user's Block, it requires a shield
 Removed its damage reduction on Shieldwall along with the two Shieldwall hooks, whose tooltips still showed the defense values from before Legends moved Shieldwall to Block
 
 ...\mod_sellswords\hooks\skills\actives\legend_unleash_bear_skill.nut -> legend_unleash_warbear_skill.nut

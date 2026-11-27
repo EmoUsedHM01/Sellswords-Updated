@@ -29,11 +29,13 @@
 		{
 			_properties.DamageTotalMult *= 0.74;
 			_properties.InitiativeMult *= 0.74;
+			_properties.BlockMult *= 0.74;
 		}
 		else
 		{
 			_properties.DamageTotalMult *= 0.65;
 			_properties.InitiativeMult *= 0.65;
+			_properties.BlockMult *= 0.65;
 		}			
 
 		if (actor.hasSprite("status_stunned") && !this.getContainer().hasSkill("effects.stunned") && !this.getContainer().hasSkill("effects.dazed"))

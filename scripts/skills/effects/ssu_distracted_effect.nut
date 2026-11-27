@@ -49,13 +49,13 @@ this.ssu_distracted_effect <- this.inherit("scripts/skills/skill", {
 			{
 				id = 10,
 				type = "text",
-				icon = "ui/icons/regular_damage.png",
+				icon = "ui/icons/melee_skill.png",
 				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_distracted_effect.Tooltip1, this.m.ValidStack)
 			},
 			{
 				id = 11,
 				type = "text",
-				icon = "ui/icons/initiative.png",
+				icon = "ui/icons/ranged_skill.png",
 				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.ssu_distracted_effect.Tooltip2, this.m.ValidStack)
 			}
 		];
@@ -63,7 +63,7 @@ this.ssu_distracted_effect <- this.inherit("scripts/skills/skill", {
 
 	function onRefresh()
 	{
-		local crrd = this.getContainer().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= actor.getBaseProperties().RangedDefense : false;
+		local crrd = this.getContainer().hasSkill("perk.ssu_rangeddefense") ? this.Math.rand(1, 100) <= this.getContainer().getActor().getBaseProperties().RangedDefense : false;
 		if (this.getContainer().getActor().getCurrentProperties().IsResistantToAnyStatuses && this.Math.rand(1, 100) <= 50 || crrd)	
 		{
 			if (!this.getContainer().getActor().isHiddenToPlayer())

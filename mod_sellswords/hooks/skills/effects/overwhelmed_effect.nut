@@ -1,49 +1,27 @@
 ::Mod_Sellswords.HooksMod.hook("scripts/skills/effects/overwhelmed_effect", function ( q ) {
 
+	q.getPenalty <- function()
+	{
+		return this.m.Stacks * (this.getContainer().hasSkill("perk.hold_out") ? 3.75 : 5.0);
+	}
+
+	q.onRefresh = @(__original) function()
+	{
+		__original();
+		this.m.Stacks = this.Math.min(7, this.m.Stacks);
+	}
+
 	q.getTooltip = @(__original) function()
 	{
-		local ret = [
-			{
-				id = 1,
-				type = "title",
-				text = this.getName()
-			},
-			{
-				id = 2,
-				type = "description",
-				text = this.getDescription()
-			}
-		];
+		local ret = __original();
+		local penalty = this.getPenalty();
 
-		if (this.getContainer().hasSkill("perk.hold_out"))
+		foreach (line in ret)
 		{
-			ret.push({
-				id = 10,
-				type = "text",
-				icon = "ui/icons/melee_skill.png",
-				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip1, this.m.Count * 3.75)
-			});
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/ranged_skill.png",
-				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip2, this.m.Count * 3.75)
-			});
-		}
-		else
-		{
-			ret.push({
-				id = 10,
-				type = "text",
-				icon = "ui/icons/melee_skill.png",
-				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip1, this.m.Count * 5)
-			});
-			ret.push({
-				id = 11,
-				type = "text",
-				icon = "ui/icons/ranged_skill.png",
-				text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip2, this.m.Count * 5)
-			});
+			if (line.id == 10)
+				line.text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip1, penalty);
+			else if (line.id == 11)
+				line.text = ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Tooltip2, penalty);
 		}
 
 		return ret;
@@ -51,20 +29,14 @@
 
 	q.onUpdate = @(__original) function( _properties )
 	{
-		// Cap the count at 7
-		if (this.m.Count >= 7)
-			this.m.Count = 7;
+		local penalty = this.getPenalty() * 0.01;
+		_properties.MeleeSkillMult = this.Math.maxf(0.0, _properties.MeleeSkillMult - penalty);
+		_properties.RangedSkillMult = this.Math.maxf(0.0, _properties.RangedSkillMult - penalty);
+	}
 
-		if (this.getContainer().hasSkill("perk.hold_out"))
-		{
-			_properties.MeleeSkillMult = this.Math.maxf(0.0, _properties.MeleeSkillMult - 0.075 * this.m.Count);
-			_properties.RangedSkillMult = this.Math.maxf(0.0, _properties.RangedSkillMult - 0.075 * this.m.Count);
-		}
-		else
-		{
-			_properties.MeleeSkillMult = this.Math.maxf(0.0, _properties.MeleeSkillMult - 0.1 * this.m.Count);
-			_properties.RangedSkillMult = this.Math.maxf(0.0, _properties.RangedSkillMult - 0.1 * this.m.Count);
-		}
+	q.getActorHoverTooltip = @(__original) function( _activeEntity, _stacks = 1 )
+	{
+		return ::Mod_Sellswords.text(::Mod_Sellswords.Strings.overwhelmed_effect.Hover, this.getPenalty()) + ::Legends.Text.inlineIcons(["melee_skill", "ranged_skill"]);
 	}
 
 });
