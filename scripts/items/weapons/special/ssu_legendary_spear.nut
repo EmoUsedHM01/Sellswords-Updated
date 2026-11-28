@@ -67,6 +67,7 @@ this.ssu_legendary_spear <- ::inherit("scripts/items/weapons/weapon", {
 
 		local skill = this.new("scripts/skills/actives/reap_skill");
 		skill.m.Icon = "skills/ssu_ghost_spear_reap.png";
+		skill.m.IconDisabled = "skills/ssu_ghost_spear_reap_sw.png";
 		skill.m.Overlay = "ssu_ghost_spear_reap";
 		skill.m.DirectDamageMult = this.m.DirectDamageMult;
 		this.addSkill(skill);

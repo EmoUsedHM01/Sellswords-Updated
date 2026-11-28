@@ -75,6 +75,7 @@ this.ssu_legendary_hammer <- ::inherit("scripts/items/weapons/weapon", {
 
 		skill = this.new("scripts/skills/actives/shatter_skill");
 		skill.m.Icon = "skills/ssu_earth_shatter.png";
+		skill.m.IconDisabled = "skills/ssu_earth_shatter_bw.png";
 		this.addSkill(skill);
 
 		skill = this.new("scripts/skills/actives/split_shield");

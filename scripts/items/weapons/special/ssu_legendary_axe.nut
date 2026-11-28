@@ -69,6 +69,7 @@ this.ssu_legendary_axe <- ::inherit("scripts/items/weapons/weapon", {
 
 		skill = this.new("scripts/skills/actives/round_swing");
 		skill.m.Icon = "skills/ssu_ice_round_swing.png";
+		skill.m.IconDisabled = "skills/ssu_ice_round_swing_bw.png";
 		this.addSkill(skill);
 
 		skill = this.new("scripts/skills/actives/split_shield");
