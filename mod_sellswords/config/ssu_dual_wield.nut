@@ -67,3 +67,25 @@ local findPrimaryAttackSkill = ::Legends.Weapons.findPrimaryAttackSkill;
 
 	return findPrimaryAttackSkill(_actor, _weapon);
 }
+
+::Mod_Sellswords.DualWield.equipPotAndSpare <- function( _actor, _spare )
+{
+	local items = _actor.getItems();
+
+	if (items.hasEmptySlot(::Const.ItemSlot.Offhand))
+	{
+		items.equip(::Legends.Items.pickItem([
+			[3, "tools/daze_bomb_item"],
+			[1, "tools/fire_bomb_item"],
+			[1, "tools/smoke_bomb_item"]
+		], "scripts/items/"));
+	}
+
+	items.addToBag(::new("scripts/items/" + _spare));
+
+	if (!_actor.isPlayerControlled() && _actor.getAIAgent() != null && _actor.getAIAgent().findBehavior(::Const.AI.Behavior.ID.SsuEquipOffhand) == null)
+	{
+		_actor.getAIAgent().addBehavior(::new("scripts/ai/tactical/behaviors/ssu_ai_equip_offhand"));
+		_actor.getAIAgent().finalizeBehaviors();
+	}
+}

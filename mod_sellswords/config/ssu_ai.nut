@@ -20,3 +20,9 @@
 ::Const.AI.Behavior.Order.SsuAssistance <- ::Const.AI.Behavior.Order.AttackDefault;
 ::Const.AI.Behavior.Score.SsuAssistance <- ::Const.AI.Behavior.Score.Attack * 0.5;
 ::Const.AI.Behavior.SsuAssistanceMinHelpers <- 2;
+
+::Const.AI.Behavior.ID.SsuEquipOffhand <- ::Const.AI.Behavior.ID.COUNT;
+::Const.AI.Behavior.ID.COUNT = ::Const.AI.Behavior.ID.COUNT + 1;
+::Const.AI.Behavior.Name.push("SsuEquipOffhand");
+::Const.AI.Behavior.Order.SsuEquipOffhand <- ::Const.AI.Behavior.Order.SwitchToMelee;
+::Const.AI.Behavior.Score.SsuEquipOffhand <- ::Const.AI.Behavior.Score.Attack * 4;

@@ -33,6 +33,10 @@ this.ssu_hashshashin <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_nimble"));
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendFlux);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendAmbidextrous);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendMasteryNets);
+		::Legends.Perks.grant(this, ::Legends.Perk.QuickHands);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
@@ -132,20 +136,22 @@ this.ssu_hashshashin <- this.inherit("scripts/entity/tactical/human", {
 
 	function assignRandomEquipment()
 	{
+		local weapons = [
+			"weapons/oriental/qatal_dagger",
+			"weapons/shamshir",
+			"weapons/shamshir",
+			"weapons/legend_katar",
+			"weapons/ancient/khopesh"
+		];
+
 		if (this.m.Items.hasEmptySlot(this.Const.ItemSlot.Mainhand))
 		{
-			local weapons = [
-				"weapons/oriental/qatal_dagger",
-				"weapons/shamshir",
-				"weapons/shamshir",
-				"weapons/legend_katar",
-				"weapons/ancient/khopesh"
-			];
-
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 			
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);			
 		}
+
+		::Mod_Sellswords.DualWield.equipPotAndSpare(this, weapons[this.Math.rand(0, weapons.len() - 1)]);
 
 		this.m.Items.equip(::Legends.Items.pickArmor([	
 			[1, "ssu_hashshashin_armor_low_reinforced"], 
@@ -157,12 +163,6 @@ this.ssu_hashshashin <- this.inherit("scripts/entity/tactical/human", {
 			[8, "ssu_hashshashin_helmet_medium"],	
 			[1, "ssu_hashshashin_helmet_high"],					
 		]));
-		
-		local dc = this.World.getTime().Days;
-		if (this.Math.rand(1, 100) <= dc)
-		{
-			this.m.Items.addToBag(this.new("scripts/items/tools/daze_bomb_item"));	
-		}
 	}
 
 	function makeMiniboss()

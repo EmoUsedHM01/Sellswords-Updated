@@ -934,6 +934,21 @@ The last two gladiators can't be dismissed
 ...\mod_sellswords\hooks\skills\backgrounds\character_background.nut
 Footwork updated to the new Legends changes
 
+...\mod_sellswords\hooks_bdplus\ssu_arena_compositions.nut < new
+...\scripts\arena\compositions\ssu_desperados_arena_composition.nut < new
+...\scripts\arena\compositions\ssu_hashshashins_arena_composition.nut < new
+...\scripts\arena\compositions\ssu_orc_warlock_arena_composition.nut < new
+Added Desperado, Hashshashin and Orc Warlock fights to the Blazing Deserts+ arena
+
+...\mod_sellswords\config\ssu_ai.nut
+...\mod_sellswords\config\ssu_dual_wield.nut
+...\scripts\ai\tactical\behaviors\ssu_ai_equip_offhand.nut < new
+...\scripts\entity\tactical\humans\ssu_hashshashin.nut
+...\scripts\entity\tactical\humans\ssu_hashshashin_high.nut
+...\scripts\entity\tactical\humans\ssu_hashshashin_low.nut
+Hashshashins now carry a Flash Pot or Fire Pot in their off hand and a second weapon in their bag, which they draw into the off hand to dual wield once the pot is thrown
+Hashshashins gain Flux, Ambidextrous, Net Mastery and Quick Hands
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 

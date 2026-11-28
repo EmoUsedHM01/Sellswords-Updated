@@ -32,6 +32,10 @@ this.ssu_hashshashin_low <- this.inherit("scripts/entity/tactical/human", {
 		this.setAppearance();
 		this.getSprite("socket").setBrush("bust_base_nomads");
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_nimble"));
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendFlux);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendAmbidextrous);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendMasteryNets);
+		::Legends.Perks.grant(this, ::Legends.Perk.QuickHands);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_duelist"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
@@ -132,6 +136,14 @@ this.ssu_hashshashin_low <- this.inherit("scripts/entity/tactical/human", {
 		}
 		
 		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
+
+		local spares = [
+			"weapons/oriental/qatal_dagger",
+			"weapons/oriental/saif",
+			"weapons/legend_katar",
+			"weapons/scramasax"
+		];
+		::Mod_Sellswords.DualWield.equipPotAndSpare(this, spares[this.Math.rand(0, spares.len() - 1)]);
 
 		this.m.Items.equip(::Legends.Items.pickArmor([
 			[3, "ssu_hashshashin_armor_low"], 		

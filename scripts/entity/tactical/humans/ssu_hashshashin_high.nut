@@ -41,6 +41,10 @@ this.ssu_hashshashin_high <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_anticipation"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_fast_adaption"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_nimble"));
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendFlux);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendAmbidextrous);
+		::Legends.Perks.grant(this, ::Legends.Perk.LegendMasteryNets);
+		::Legends.Perks.grant(this, ::Legends.Perk.QuickHands);
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_crippling_strikes"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_coup_de_grace"));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_dodge"));
@@ -179,6 +183,13 @@ this.ssu_hashshashin_high <- this.inherit("scripts/entity/tactical/human", {
 
 			::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);		
 		}
+
+		local spares = [
+			"weapons/shamshir",
+			"weapons/ancient/khopesh",
+			"weapons/oriental/qatal_dagger"
+		];
+		::Mod_Sellswords.DualWield.equipPotAndSpare(this, spares[this.Math.rand(0, spares.len() - 1)]);
 		
 		local armor = ::Legends.Items.pickArmor([	
 			[1, "ssu_hashshashin_armor_high"],				
@@ -191,10 +202,6 @@ this.ssu_hashshashin_high <- this.inherit("scripts/entity/tactical/human", {
 		this.m.Items.equip(::Legends.Items.pickHelmet([					
 			[1, "ssu_hashshashin_helmet_high"],					
 		]));
-		
-		local dc = this.World.getTime().Days;
-		
-		this.m.Items.addToBag(this.new("scripts/items/tools/daze_bomb_item"));		
 	}
 	
 });

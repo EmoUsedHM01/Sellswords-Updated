@@ -3310,9 +3310,64 @@ Unleash an arcing barrage of lightning!
 	Tooltip7 = "Reserves/Fighting Status"
 };
 
+// mod_sellswords\hooks_bdplus\ssu_arena_compositions.nut
+::Mod_Sellswords.Strings.ssu_arena_compositions <- {
+	DesperadoNames = [
+		"Desperados",
+		"Desperados",
+		"Desperados",
+		"Deserters",
+		"Turncoats",
+		"Oathbreakers",
+		"Broken Banners"
+	],
+	HashshashinNames = [
+		"Hashshashins",
+		"Hashshashins",
+		"Hashshashins",
+		"Silent Knives",
+		"Veiled Blades",
+		"Night Daggers",
+		"Shadows"
+	],
+	OrcWarlockNames = [
+		"Warlock",
+		"Warlock",
+		"Warlock",
+		"Bone Shaman",
+		"Skull Caller",
+		"Blood Seer"
+	],
+	OrcWarlockTitles = [
+		"the Bone Pile",
+		"the Skull Totems",
+		"the Blood Fires",
+		"the Howling Cairns",
+		"the Green Tide"
+	]
+};
+
 // scripts\ai\tactical\behaviors\ssu_necro_ai_spawn_ghost_fragment.nut
 ::Mod_Sellswords.Strings.ssu_necro_ai_spawn_ghost_fragment <- {
 	Name = "{1}\'s Fragment"
+};
+
+// scripts\arena\compositions\ssu_desperados_arena_composition.nut
+::Mod_Sellswords.Strings.ssu_desperados_arena_composition <- {
+	DisplayName = "Desperados",
+	DisplayText = "\"Northerners, Crownling, soldiers of some lord or another who decided they would rather keep their pay than earn it. Now they have neither lord nor pay, only those great heavy weapons and a very short temper. They have killed better men than you for less, I am told. Then again, so has my cook.\""
+};
+
+// scripts\arena\compositions\ssu_hashshashins_arena_composition.nut
+::Mod_Sellswords.Strings.ssu_hashshashins_arena_composition <- {
+	DisplayName = "Hashshashins",
+	DisplayText = "\"Hashshashins. Knives for hire from the deep desert, the kind a Vizier calls on when he wants a rival to simply stop waking up. Caught, all of them, which says something about their skill, or perhaps about the Vizier\'s. Watch your flanks and keep your back to the wall. They will not fight you, they will hunt you.\""
+};
+
+// scripts\arena\compositions\ssu_orc_warlock_arena_composition.nut
+::Mod_Sellswords.Strings.ssu_orc_warlock_arena_composition <- {
+	DisplayName = "Warlock",
+	DisplayText = "\"An orc that speaks with spirits, can you believe it? The rabble say it drinks the blood of the fallen and grows stronger for it, and after what it did to the last pit crew I am inclined to believe them. It came with its warband, and the warband came with an appetite. Do not let it feed, Crownling. Whatever you do, do not let it feed.\""
 };
 
 // scripts\contracts\contracts\ssu_destroy_rebellions_contract.nut
